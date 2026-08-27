@@ -1,0 +1,35 @@
+{
+  "slug": "teatro-clube-da-eskyna-santos",
+  "categories": ["city-culture", "nightlife-sound"],
+  "tags": ["hipster", "hidden-gem"],
+  "coordinates": { "lat": -23.9328, "lng": -46.3268 },
+  "place": { "city": "Santos", "neighborhood": "Centro Histórico", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "A Tribuna",
+      "url": "https://www.atribuna.com.br/galeria/programe-se/teatro-clube-da-eskyna-faz-ponte-com-a-cena-nacional-em-santos-1.518542",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Juicy Santos",
+      "url": "https://www.juicysantos.com.br/eventos-na-regiao/",
+      "feedId": "juicy-santos",
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "quality-gate-before-publish: no verified, stably-hostable hero image found (no Wikimedia/press image located; Instagram photos aren't stable/licensable for hotlinking). Held as draft per rules.md — do not publish active without a real image."
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Rua D. Pedro II, 19, Centro, Santos - SP" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

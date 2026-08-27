@@ -14,7 +14,8 @@
     "city-culture": "City & Culture",
     "food-drink": "Food & Drink",
     "nightlife-sound": "Nightlife & Sound",
-    "wellness-fitness": "Wellness & Fitness"
+    "wellness-fitness": "Wellness & Fitness",
+    "accommodation": "Accommodation"
   },
   "tags": {
     "sectionLabel": "Vibes",
@@ -25,7 +26,8 @@
     "local-legend": "Local legend",
     "late-night": "Late night",
     "hidden-gem": "Hidden gem",
-    "see-and-be-seen": "See and be seen"
+    "see-and-be-seen": "See and be seen",
+    "trending": "Trending"
   },
   "status": {
     "articlesIndexed": "places indexed",

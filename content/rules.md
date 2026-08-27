@@ -10,12 +10,18 @@ thresholds.
 rules:
   - id: trust-gate
     description: >
-      If the candidate's source has trust: review (near-inbox submissions,
-      ad-hoc chat requests, or any source explicitly marked review in
-      sources.md), the place is written with status: draft and is never
+      If the candidate's source has trust: review (near-inbox submissions —
+      i.e. anonymous site visitors — or any source explicitly marked review
+      in sources.md), the place is written with status: draft and is never
       auto-committed to the published set — it's surfaced to the operator
       for explicit approval, regardless of whether every other rule below
-      passes.
+      passes. A place the operator names directly in chat is different:
+      the operator is the approver, so instructing near-editor to add it
+      already is the approval — trust: auto applies, gated by the normal
+      quality-gate-before-publish rule like any other auto source, not by
+      a separate review step. (draft can still happen for these places for
+      an unrelated reason — e.g. no verified hero image yet — see
+      quality-gate-before-publish; that's not the trust-gate rule firing.)
     trigger: "meta.trust == 'review'"
     action: "write meta.json + locale files with status = draft; do not commit; report to operator"
 

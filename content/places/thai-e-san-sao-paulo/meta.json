@@ -1,0 +1,35 @@
+{
+  "slug": "thai-e-san-sao-paulo",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem"],
+  "coordinates": { "lat": -23.5620, "lng": -46.6395 },
+  "place": { "city": "São Paulo", "neighborhood": "Liberdade", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Bendito Guia",
+      "url": "https://www.benditoguia.com.br/empresa/thai-e-san-restaurante-tailandes-liberdade-sao-paulo-sp",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Que Gostoso!",
+      "url": "https://quegostoso.tur.br/2021/02/11/otimo-tailandes-thai-e-san-ganha-filial/",
+      "feedId": null,
+      "originalPublishedAt": "2021-02-11T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet. Held as draft per rules.md."
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.6, "query": "Rua Barão de Iguape, Liberdade, São Paulo" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

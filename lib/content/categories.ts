@@ -7,6 +7,7 @@ export const CATEGORY_COLOR_VAR: Record<Category, string> = {
   "food-drink": "--color-cat-food-drink",
   "nightlife-sound": "--color-cat-nightlife-sound",
   "wellness-fitness": "--color-cat-wellness-fitness",
+  accommodation: "--color-cat-accommodation",
 };
 
 export { CATEGORIES };

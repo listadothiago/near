@@ -35,6 +35,15 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     });
   }
 
+  const availableCats = useMemo(
+    () => new Set(places.flatMap((p) => p.meta.categories)),
+    [places],
+  );
+  const availableTags = useMemo(
+    () => new Set(places.flatMap((p) => p.meta.tags)),
+    [places],
+  );
+
   function toggleTag(tag: Tag) {
     setActiveTags((prev) => {
       const next = new Set(prev);
@@ -88,9 +97,17 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     <div>
       <div className="mt-4 flex flex-wrap items-center gap-1.5">
         <SearchBox value={query} onChange={setQuery} />
-        <CategoryFilters activeCats={activeCats} onToggle={toggleCat} />
+        <CategoryFilters
+          activeCats={activeCats}
+          onToggle={toggleCat}
+          available={availableCats}
+        />
       </div>
-      <TagFilters activeTags={activeTags} onToggle={toggleTag} />
+      <TagFilters
+        activeTags={activeTags}
+        onToggle={toggleTag}
+        available={availableTags}
+      />
 
       <div className="mt-4 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
         <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
@@ -113,6 +130,9 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
               lat: p.meta.coordinates.lat,
               lng: p.meta.coordinates.lng,
               category: p.meta.categories[0],
+              name: p.frontmatter.name,
+              tagline: p.frontmatter.tagline,
+              heroImageUrl: p.meta.heroImage?.url ?? null,
             }))}
             userCoords={userCoords}
           />

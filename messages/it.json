@@ -14,7 +14,8 @@
     "city-culture": "Città & Cultura",
     "food-drink": "Cibo & Bevande",
     "nightlife-sound": "Vita Notturna & Musica",
-    "wellness-fitness": "Benessere & Fitness"
+    "wellness-fitness": "Benessere & Fitness",
+    "accommodation": "Alloggio"
   },
   "tags": {
     "sectionLabel": "Atmosfera",
@@ -25,7 +26,8 @@
     "local-legend": "Leggenda locale",
     "late-night": "Nottambulo",
     "hidden-gem": "Perla nascosta",
-    "see-and-be-seen": "Vedere ed essere visti"
+    "see-and-be-seen": "Vedere ed essere visti",
+    "trending": "In tendenza"
   },
   "status": {
     "articlesIndexed": "luoghi indicizzati",

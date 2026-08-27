@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { CATEGORY_COLOR_VAR, type Category } from "@/lib/content/categories";
 
-type MapPoint = {
+export type MapPoint = {
   slug: string;
   lat: number;
   lng: number;
   category: Category;
+  name: string;
+  tagline: string;
+  heroImageUrl: string | null;
 };
 
 const LAND: number[][][] = [
@@ -25,8 +29,30 @@ const LAND: number[][][] = [
   [[113,-22],[115,-20],[122,-18],[129,-15],[136,-12],[142,-11],[145,-16],[148,-20],[153,-27],[151,-33],[150,-37],[146,-38],[140,-38],[137,-35],[135,-32],[131,-32],[126,-32],[122,-34],[115,-34],[113,-25],[113,-22]],
 ];
 
-function project(lat: number, lon: number, w: number, h: number) {
-  return { x: ((lon + 180) / 360) * w, y: ((90 - lat) / 180) * h };
+const MIN_SPAN = 4; // degrees of longitude at max zoom-in
+const MAX_SPAN = 360; // whole world at max zoom-out
+
+type View = { centerLat: number; centerLng: number; span: number };
+
+function fitBounds(points: MapPoint[]): View {
+  if (points.length === 0) return { centerLat: 20, centerLng: 0, span: 360 };
+  const lats = points.map((p) => p.lat);
+  const lngs = points.map((p) => p.lng);
+  const minLat = Math.min(...lats);
+  const maxLat = Math.max(...lats);
+  const minLng = Math.min(...lngs);
+  const maxLng = Math.max(...lngs);
+  const centerLat = (minLat + maxLat) / 2;
+  const centerLng = (minLng + maxLng) / 2;
+  const latSpread = Math.max(maxLat - minLat, 0.5);
+  const lngSpread = Math.max(maxLng - minLng, 0.5);
+  // Pad generously so pins never sit on the edge, and never zoom in
+  // tighter than MIN_SPAN even for a single point.
+  const span = Math.min(
+    MAX_SPAN,
+    Math.max(MIN_SPAN, Math.max(lngSpread, latSpread * 2) * 1.8),
+  );
+  return { centerLat, centerLng, span };
 }
 
 function readVar(name: string) {
@@ -41,6 +67,51 @@ export default function WorldMap({
   userCoords: { lat: number; lng: number } | null;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const baseView = useMemo(() => fitBounds(points), [points]);
+  const [zoomMultiplier, setZoomMultiplier] = useState(1);
+  const [tooltip, setTooltip] = useState<{ point: MapPoint; x: number; y: number } | null>(
+    null,
+  );
+
+  // Reset zoom when the fitted point set changes (e.g. filters changed).
+  useEffect(() => {
+    setZoomMultiplier(1);
+    setTooltip(null);
+  }, [baseView.centerLat, baseView.centerLng, baseView.span]);
+
+  const view: View = {
+    centerLat: baseView.centerLat,
+    centerLng: baseView.centerLng,
+    span: Math.min(MAX_SPAN, Math.max(MIN_SPAN, baseView.span / zoomMultiplier)),
+  };
+
+  function project(lat: number, lon: number, w: number, h: number) {
+    const latSpan = (view.span * h) / w;
+    const left = view.centerLng - view.span / 2;
+    const top = view.centerLat + latSpan / 2;
+    return {
+      x: ((lon - left) / view.span) * w,
+      y: ((top - lat) / latSpan) * h,
+    };
+  }
+
+  function pointNear(clientX: number, clientY: number) {
+    const canvas = canvasRef.current;
+    if (!canvas) return null;
+    const rect = canvas.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const y = clientY - rect.top;
+    let closest: { point: MapPoint; dist: number } | null = null;
+    for (const pt of points) {
+      const p = project(pt.lat, pt.lng, rect.width, rect.height);
+      const dist = Math.hypot(p.x - x, p.y - y);
+      if (dist < 12 && (!closest || dist < closest.dist)) {
+        closest = { point: pt, dist };
+      }
+    }
+    return closest ? { point: closest.point, x, y } : null;
+  }
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -104,11 +175,12 @@ export default function WorldMap({
       points.forEach((pt) => {
         const p = project(pt.lat, pt.lng, w, h);
         const color = readVar(CATEGORY_COLOR_VAR[pt.category]) || accent;
+        const isActive = tooltip?.point.slug === pt.slug;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, isActive ? 5 : 3.5, 0, Math.PI * 2);
         ctx.fillStyle = color;
         ctx.fill();
-        ctx.lineWidth = 1;
+        ctx.lineWidth = isActive ? 1.5 : 1;
         ctx.strokeStyle = readVar("--color-surface") || "#fff";
         ctx.stroke();
       });
@@ -144,14 +216,73 @@ export default function WorldMap({
       mql.removeEventListener("change", draw);
       themeObserver.disconnect();
     };
-  }, [points, userCoords]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [points, userCoords, view.centerLat, view.centerLng, view.span, tooltip]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      className="block w-full h-[340px] bg-chart-bg"
-      role="img"
-      aria-label="World map showing the location of indexed places"
-    />
+    <div ref={wrapperRef} className="relative">
+      <canvas
+        ref={canvasRef}
+        className="block w-full h-[340px] bg-chart-bg cursor-pointer"
+        role="img"
+        aria-label="Map showing the location of indexed places"
+        onMouseMove={(e) => setTooltip(pointNear(e.clientX, e.clientY))}
+        onMouseLeave={() => setTooltip(null)}
+        onClick={(e) => setTooltip(pointNear(e.clientX, e.clientY))}
+        onTouchStart={(e) => {
+          const t = e.touches[0];
+          if (t) setTooltip(pointNear(t.clientX, t.clientY));
+        }}
+      />
+
+      <div className="absolute top-2 right-2 flex flex-col gap-1">
+        <button
+          type="button"
+          aria-label="Zoom in"
+          onClick={() => setZoomMultiplier((z) => Math.min(z * 1.5, baseView.span / MIN_SPAN))}
+          className="w-7 h-7 flex items-center justify-center rounded-md border border-border bg-surface/90 text-ink text-[0.9rem] leading-none hover:border-accent"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          aria-label="Zoom out"
+          onClick={() => setZoomMultiplier((z) => Math.max(z / 1.5, MAX_SPAN / baseView.span, 1e-6) || 1)}
+          className="w-7 h-7 flex items-center justify-center rounded-md border border-border bg-surface/90 text-ink text-[0.9rem] leading-none hover:border-accent"
+        >
+          −
+        </button>
+      </div>
+
+      {tooltip && (
+        <div
+          className="absolute z-10 w-52 bg-surface border border-border rounded-xl shadow-[0_10px_28px_rgba(32,38,42,.15)] overflow-hidden pointer-events-none"
+          style={{
+            left: Math.min(Math.max(tooltip.x - 104, 4), (wrapperRef.current?.clientWidth ?? 400) - 212),
+            top: tooltip.y > 160 ? tooltip.y - 150 : tooltip.y + 16,
+          }}
+        >
+          {tooltip.point.heroImageUrl && (
+            <div className="relative w-full h-24 bg-surface-2">
+              <Image
+                src={tooltip.point.heroImageUrl}
+                alt={tooltip.point.name}
+                fill
+                sizes="208px"
+                className="object-cover"
+              />
+            </div>
+          )}
+          <div className="p-2.5">
+            <div className="font-serif italic font-medium text-[0.94rem] leading-tight">
+              {tooltip.point.name}
+            </div>
+            <div className="mt-1 text-[0.76rem] text-muted leading-snug">
+              {tooltip.point.tagline}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }

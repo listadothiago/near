@@ -9,6 +9,7 @@ export const TAG_GLYPH: Record<Tag, string> = {
   "late-night": "🌙",
   "hidden-gem": "💎",
   "see-and-be-seen": "👀",
+  trending: "🔥",
 };
 
 export { TAGS };

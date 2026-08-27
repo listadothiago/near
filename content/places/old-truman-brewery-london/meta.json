@@ -1,0 +1,36 @@
+{
+  "slug": "old-truman-brewery-london",
+  "categories": ["city-culture", "food-drink"],
+  "tags": ["hipster", "local-legend"],
+  "coordinates": { "lat": 51.5225, "lng": -0.0716 },
+  "place": { "city": "London", "neighborhood": "Shoreditch", "region": "England", "country": "United Kingdom" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Wikipedia — Truman's Brewery",
+      "url": "https://en.wikipedia.org/wiki/Truman%27s_Brewery",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    },
+    {
+      "name": "New Statesman",
+      "url": "https://www.newstatesman.com/business/2021/09/will-redeveloping-the-old-truman-brewery-change-shoreditch-forever",
+      "feedId": null,
+      "originalPublishedAt": "2021-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/London_-_The_Old_Truman_Brewery_%284%29.jpg",
+    "attribution": "Photo by Fred Romero, CC BY 2.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:London_-_The_Old_Truman_Brewery_(4).jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via neighborhood research (Shoreditch)" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.85, "query": "Old Truman Brewery, 91 Brick Lane, London E1 6QL" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

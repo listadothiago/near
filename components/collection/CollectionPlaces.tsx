@@ -18,6 +18,9 @@ export default function CollectionPlaces({
             lat: p.meta.coordinates.lat,
             lng: p.meta.coordinates.lng,
             category: p.meta.categories[0],
+            name: p.frontmatter.name,
+            tagline: p.frontmatter.tagline,
+            heroImageUrl: p.meta.heroImage?.url ?? null,
           }))}
           userCoords={null}
         />
