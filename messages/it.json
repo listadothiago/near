@@ -33,6 +33,7 @@
     "lastSync": "ultima sincronizzazione"
   },
   "board": {
+    "searchPlaceholder": "Cerca luoghi, quartieri, città…",
     "map": "Mappa",
     "useMyLocation": "Usa la mia posizione",
     "mapCaption": "{count} luoghi localizzati · proiezione equirettangolare",

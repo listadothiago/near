@@ -33,6 +33,7 @@
     "lastSync": "上次同步"
   },
   "board": {
+    "searchPlaceholder": "搜索地点、街区、城市…",
     "map": "地图",
     "useMyLocation": "使用我的位置",
     "mapCaption": "已定位 {count} 个地点 · 等距圆柱投影",

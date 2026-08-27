@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
 import TagFilters from "./TagFilters";
+import SearchBox from "./SearchBox";
 import NearestLatestTabs from "./NearestLatestTabs";
 import WorldMap from "@/components/map/WorldMap";
 import type { PlaceSummary } from "@/lib/content/schema";
@@ -14,6 +15,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
   const t = useTranslations("board");
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
   const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
+  const [query, setQuery] = useState("");
   const [tab, setTab] = useState<"nearest" | "latest">("nearest");
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(
     null,
@@ -42,21 +44,32 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     });
   }
 
-  const filtered = useMemo(
-    () =>
-      places
-        .filter(
-          (p) =>
-            activeCats.size === 0 ||
-            p.meta.categories.some((c) => activeCats.has(c)),
-        )
-        .filter(
-          (p) =>
-            activeTags.size === 0 ||
-            p.meta.tags.some((t) => activeTags.has(t)),
-        ),
-    [places, activeCats, activeTags],
-  );
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return places
+      .filter(
+        (p) =>
+          activeCats.size === 0 ||
+          p.meta.categories.some((c) => activeCats.has(c)),
+      )
+      .filter(
+        (p) => activeTags.size === 0 || p.meta.tags.some((t) => activeTags.has(t)),
+      )
+      .filter((p) => {
+        if (!q) return true;
+        const haystack = [
+          p.frontmatter.name,
+          p.frontmatter.tagline,
+          p.meta.place.neighborhood,
+          p.meta.place.city,
+          p.meta.place.country,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+        return haystack.includes(q);
+      });
+  }, [places, activeCats, activeTags, query]);
 
   function useMyLocation() {
     if (!navigator.geolocation) return;
@@ -73,6 +86,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
 
   return (
     <div>
+      <SearchBox value={query} onChange={setQuery} />
       <CategoryFilters activeCats={activeCats} onToggle={toggleCat} />
       <TagFilters activeTags={activeTags} onToggle={toggleTag} />
 
