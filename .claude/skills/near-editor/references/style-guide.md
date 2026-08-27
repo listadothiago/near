@@ -8,6 +8,30 @@ worth your next hour." Every page should earn a second read from someone
 who found it via social media and has no particular reason to keep
 scrolling.
 
+## Attribution and honesty — non-negotiable
+
+Every fact, quote, or observation in a Near piece traces back to a real
+source, and every source used gets credited and linked — not just the
+one `sources[0]` entry from the original ingestion. If, while researching
+or updating a place, near-editor reads a second, third, or fourth review
+or article and pulls anything from it — a detail, a quote, a data point —
+that source goes into `meta.sources` (dedupe by URL, per
+`dedupe-by-place`) and gets a real in-text link in the body where it's
+used. Don't paraphrase a source's specific observation without linking to
+it; a passing "as one reviewer put it" with no link is not attribution.
+
+**Include the negative alongside the positive.** If a source — any
+source, not just the primary one — raises a real criticism (slow service,
+overpriced, declined since a change of ownership, inconsistent food,
+whatever), that belongs in the piece too, honestly and specifically, not
+smoothed over into vague positivity. Near is not a press release. A piece
+that only ever says nice things about every place stops being trustworthy
+to the reader, and trustworthiness is the entire point of linking sources
+in the first place. This doesn't mean manufacturing balance where none
+exists — if every source is genuinely positive, say so; the rule is
+*don't suppress what's actually there*, not *always find something bad to
+say*.
+
 ## Content bias — lean toward what's current and alive
 
 When a source offers a choice between a well-worn landmark story and

@@ -35,6 +35,17 @@ schema for reference while writing: `references/content-schema.md`.
 3. **Ad-hoc chat request** — the operator names a place directly in
    conversation ("add X in Lisbon"). Always treated as `trust: review` —
    same as near-inbox — never auto-published, per `rules.md`'s `trust-gate`.
+4. **Supplemental research pass** — for a place Near already has, search
+   the web for additional reviews/coverage beyond the original source(s).
+   Every genuinely new source found gets appended to `meta.sources` (dedupe
+   by URL) and, if it adds real information, folded into the long-form
+   body with an in-text link — see "Attribution and honesty" in
+   `references/style-guide.md`, which is the load-bearing rule for this
+   entry point: credit everything used, and if a source raises a real
+   criticism, include it honestly rather than only keeping the flattering
+   parts. This doesn't touch `meta.trust` (an existing `auto` place stays
+   `auto`) and follows the same commit/quality-gate rules as any other
+   update.
 
 ## Pipeline
 
