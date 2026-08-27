@@ -32,6 +32,21 @@ exists — if every source is genuinely positive, say so; the rule is
 *don't suppress what's actually there*, not *always find something bad to
 say*.
 
+## Describe audiences by interest, never by age
+
+When a piece characterizes who a place appeals to — including honestly
+noting it *isn't* for everyone, per the honesty rule above — describe
+that by interest, scene, or vibe ("artistically inclined," "the
+nightlife crowd," "families with young kids," "serious runners"), never
+by age or generation ("young people," "millennials," "an older crowd").
+Age-coding a crowd reads as ageist even when the underlying observation
+(a place skews toward a particular taste or scene) is accurate and worth
+saying — say the real thing (what kind of interest or taste it draws)
+instead of reaching for an age bracket as shorthand for it. Near is
+ageless: a specific, well-observed detail about *why* a place suits one
+kind of visitor over another is always available without resorting to
+"young" or "old" as the explanation.
+
 ## Content bias — lean toward what's current and alive
 
 When a source offers a choice between a well-worn landmark story and
