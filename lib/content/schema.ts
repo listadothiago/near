@@ -121,3 +121,42 @@ export type PlaceSummary = {
   locale: ContentLocale;
   isFallback: boolean;
 };
+
+// A "collection" is an editorial guide bundling several existing places —
+// e.g. a neighborhood walk — rather than a place of its own. It has no
+// coordinates of its own; its map is the union of its places' pins.
+export const collectionMetaSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+  placeSlugs: z.array(z.string()).min(2),
+  coverImage: heroImageSchema.nullable(),
+  trust: z.enum(["auto", "review"]),
+  status: placeStatusSchema,
+  statusHistory: z.array(statusHistoryEntrySchema).min(1),
+  publishedAt: z.iso.datetime({ offset: true }),
+  updatedAt: z.iso.datetime({ offset: true }),
+});
+export type CollectionMeta = z.infer<typeof collectionMetaSchema>;
+
+export const collectionContentFrontmatterSchema = z.object({
+  title: z.string().min(1),
+  dek: z.string().min(1).max(160),
+  seoDescription: z.string().min(1).max(320),
+});
+export type CollectionContentFrontmatter = z.infer<
+  typeof collectionContentFrontmatterSchema
+>;
+
+export type CollectionContent = {
+  meta: CollectionMeta;
+  frontmatter: CollectionContentFrontmatter;
+  body: string;
+  locale: ContentLocale;
+  isFallback: boolean;
+};
+
+export type CollectionSummary = {
+  meta: CollectionMeta;
+  frontmatter: CollectionContentFrontmatter;
+  locale: ContentLocale;
+  isFallback: boolean;
+};

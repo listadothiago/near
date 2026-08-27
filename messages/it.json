@@ -4,7 +4,7 @@
     "toggleTheme": "Cambia tema colore"
   },
   "app": {
-    "wordmark": "Near",
+    "wordmark": "Consigli Vicino a Me",
     "tagline": "Cosa apre, succede e vale la pena scoprire."
   },
   "categories": {
@@ -52,6 +52,10 @@
     "archived": "In evidenza a {month} {year}",
     "translationPending": "Questa pagina non è stata ancora tradotta — viene mostrata la versione in inglese."
   },
+  "collection": {
+    "placesCount": "{count} luoghi",
+    "navLabel": "Guide"
+  },
   "sources": {
     "navLabel": "Fonti",
     "title": "Cosa segue Near",
@@ -73,8 +77,5 @@
     "submit": "Invia",
     "success": "Grazie — è stato inviato per la revisione.",
     "error": "Si è verificato un errore durante l'invio. Riprova tra poco."
-  },
-  "footer": {
-    "tagline": "Near"
   }
 }

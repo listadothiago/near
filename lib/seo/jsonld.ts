@@ -1,4 +1,9 @@
-import type { PlaceContentFrontmatter, PlaceMeta } from "@/lib/content/schema";
+import type {
+  CollectionContentFrontmatter,
+  CollectionMeta,
+  PlaceContentFrontmatter,
+  PlaceMeta,
+} from "@/lib/content/schema";
 
 export function buildPlaceJsonLd({
   meta,
@@ -42,5 +47,46 @@ export function buildPlaceJsonLd({
   return {
     "@context": "https://schema.org",
     "@graph": [placeNode, articleNode],
+  };
+}
+
+export function buildCollectionJsonLd({
+  meta,
+  frontmatter,
+  url,
+  places,
+}: {
+  meta: CollectionMeta;
+  frontmatter: CollectionContentFrontmatter;
+  url: string;
+  places: { name: string; url: string }[];
+}) {
+  const itemListNode = {
+    "@type": "ItemList",
+    "@id": `${url}#itemlist`,
+    itemListElement: places.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: p.name,
+      url: p.url,
+    })),
+  };
+
+  const articleNode = {
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: frontmatter.title,
+    description: frontmatter.seoDescription,
+    author: { "@type": "Organization", name: "Near" },
+    datePublished: meta.publishedAt,
+    dateModified: meta.updatedAt,
+    image: meta.coverImage?.url,
+    mainEntityOfPage: url,
+    mentions: places.map((p) => ({ "@type": "Place", name: p.name })),
+  };
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [itemListNode, articleNode],
   };
 }

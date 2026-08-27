@@ -4,7 +4,7 @@
     "toggleTheme": "切换颜色主题"
   },
   "app": {
-    "wordmark": "Near",
+    "wordmark": "附近攻略",
     "tagline": "正在发生、值得一看的地方。"
   },
   "categories": {
@@ -52,6 +52,10 @@
     "archived": "{year} 年 {month} 月曾推荐",
     "translationPending": "此页面尚未翻译，目前显示英文版本。"
   },
+  "collection": {
+    "placesCount": "{count} 个地点",
+    "navLabel": "指南"
+  },
   "sources": {
     "navLabel": "信源",
     "title": "Near 追踪的信源",
@@ -73,8 +77,5 @@
     "submit": "发送",
     "success": "谢谢，已提交审核。",
     "error": "发送时出了点问题，请稍后重试。"
-  },
-  "footer": {
-    "tagline": "Near"
   }
 }

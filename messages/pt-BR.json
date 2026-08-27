@@ -4,7 +4,7 @@
     "toggleTheme": "Alternar tema de cor"
   },
   "app": {
-    "wordmark": "Near",
+    "wordmark": "Dicas Perto de Mim",
     "tagline": "O que está abrindo, rolando e vale conferir."
   },
   "categories": {
@@ -52,6 +52,10 @@
     "archived": "Destaque em {month} de {year}",
     "translationPending": "Esta página ainda não foi traduzida — mostrando a versão em inglês."
   },
+  "collection": {
+    "placesCount": "{count} lugares",
+    "navLabel": "Guias"
+  },
   "sources": {
     "navLabel": "Fontes",
     "title": "O que o Near acompanha",
@@ -73,8 +77,5 @@
     "submit": "Enviar",
     "success": "Obrigado — isso foi enviado para revisão.",
     "error": "Algo deu errado ao enviar. Tente novamente em instantes."
-  },
-  "footer": {
-    "tagline": "Near"
   }
 }
