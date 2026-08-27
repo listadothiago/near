@@ -22,6 +22,12 @@ export default function Header({ stats }: { stats: NearStats }) {
 
       <div className="flex flex-col items-end gap-2">
         <div className="flex items-center gap-3">
+          <Link
+            href="/sources"
+            className="font-mono text-[0.78rem] text-muted hover:text-accent-ink"
+          >
+            {t("sources.title")}
+          </Link>
           <LocaleSwitcher />
           <ThemeToggle />
         </div>
