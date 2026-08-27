@@ -14,7 +14,8 @@
     "city-culture": "Ciudad y Cultura",
     "food-drink": "Comida y Bebida",
     "nightlife-sound": "Vida Nocturna y Música",
-    "wellness-fitness": "Bienestar y Fitness"
+    "wellness-fitness": "Bienestar y Fitness",
+    "accommodation": "Alojamiento"
   },
   "tags": {
     "sectionLabel": "Ambiente",
@@ -25,7 +26,8 @@
     "local-legend": "Leyenda local",
     "late-night": "Trasnochador",
     "hidden-gem": "Joya escondida",
-    "see-and-be-seen": "Ver y dejarse ver"
+    "see-and-be-seen": "Ver y dejarse ver",
+    "trending": "En tendencia"
   },
   "status": {
     "articlesIndexed": "lugares indexados",

@@ -1,0 +1,31 @@
+{
+  "slug": "bar-das-sao-paulo",
+  "categories": ["nightlife-sound"],
+  "tags": ["lgbtq-friendly", "hidden-gem"],
+  "coordinates": { "lat": -23.5378, "lng": -46.6558 },
+  "place": { "city": "São Paulo", "neighborhood": "Santa Cecília", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "bar Das (official)",
+      "url": "https://bardas.com.br",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    },
+    {
+      "name": "Catraca Livre",
+      "url": "https://catracalivre.com.br/gastronomia/bar-das-achados-elo/",
+      "feedId": "catraca-livre",
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    { "status": "draft", "at": "2026-08-27T00:00:00Z", "note": "near-editor: no verified hero image yet — held in draft per quality-gate-before-publish, not a trust issue" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.5, "query": "Rua Fortunato 133, Santa Cecília, São Paulo (approximate neighborhood center, street-level not confirmed)" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

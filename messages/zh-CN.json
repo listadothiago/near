@@ -14,7 +14,8 @@
     "city-culture": "城市与文化",
     "food-drink": "美食与饮品",
     "nightlife-sound": "夜生活与音乐",
-    "wellness-fitness": "健康与健身"
+    "wellness-fitness": "健康与健身",
+    "accommodation": "住宿"
   },
   "tags": {
     "sectionLabel": "氛围",
@@ -25,7 +26,8 @@
     "local-legend": "本地传奇",
     "late-night": "深夜营业",
     "hidden-gem": "小众宝藏",
-    "see-and-be-seen": "社交打卡地"
+    "see-and-be-seen": "社交打卡地",
+    "trending": "热门"
   },
   "status": {
     "articlesIndexed": "已收录地点",

@@ -6,9 +6,14 @@ export default function Footer() {
   return (
     <footer className="mt-10 pt-4 border-t border-border font-mono text-[0.76rem] text-muted flex justify-between flex-wrap gap-2">
       <span>{t("app.wordmark")}</span>
-      <Link href="/sources" className="hover:text-accent-ink">
-        {t("sources.navLabel")}
-      </Link>
+      <span className="flex gap-3">
+        <Link href="/guides" className="hover:text-accent-ink">
+          {t("collection.navLabel")}
+        </Link>
+        <Link href="/sources" className="hover:text-accent-ink">
+          {t("sources.navLabel")}
+        </Link>
+      </span>
     </footer>
   );
 }

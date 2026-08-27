@@ -1,0 +1,42 @@
+{
+  "slug": "dollywood-pigeon-forge",
+  "categories": ["travel-luxury"],
+  "tags": ["local-legend"],
+  "coordinates": { "lat": 35.805702, "lng": -83.528838 },
+  "place": { "city": "Pigeon Forge", "region": "Tennessee", "country": "United States" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Dollywood (official site)",
+      "url": "https://www.dollywood.com/themepark/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "U.S. News Travel",
+      "url": "https://travel.usnews.com/Pigeon_Forge_TN/Things_To_Do/Dollywood_65198/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "The Wandering Whittens",
+      "url": "https://thewanderingwhittens.com/2025/09/18/my-honest-review-of-dollywood/",
+      "feedId": null,
+      "originalPublishedAt": "2025-09-18T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Thunderhead_%28Dollywood%29_01.JPG",
+    "attribution": "Photo by Coasterman1234, CC BY-SA 3.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Thunderhead_(Dollywood)_01.JPG"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.95, "query": "2700 Dollywood Parks Blvd, Pigeon Forge, TN 37863" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

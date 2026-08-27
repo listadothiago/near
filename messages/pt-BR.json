@@ -14,7 +14,8 @@
     "city-culture": "Cidade & Cultura",
     "food-drink": "Comida & Bebida",
     "nightlife-sound": "Vida Noturna & Música",
-    "wellness-fitness": "Bem-estar & Fitness"
+    "wellness-fitness": "Bem-estar & Fitness",
+    "accommodation": "Hospedagem"
   },
   "tags": {
     "sectionLabel": "Vibes",
@@ -25,7 +26,8 @@
     "local-legend": "Lenda local",
     "late-night": "Vira-noite",
     "hidden-gem": "Achado escondido",
-    "see-and-be-seen": "Ver e ser visto"
+    "see-and-be-seen": "Ver e ser visto",
+    "trending": "Em alta"
   },
   "status": {
     "articlesIndexed": "lugares indexados",

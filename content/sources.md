@@ -73,6 +73,38 @@ sources:
     trust: auto
     status: active
     notes: "No classic RSS feed — near-editor must use the Chrome-automation fallback against ra.co/news."
+
+  - id: juicy-santos
+    name: "Juicy Santos"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://www.juicysantos.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Covers Santos and the Baixada Santista (coastal São Paulo state
+      region), including a "Praia Grande" section
+      (juicysantos.com.br/praia-grande/) and an Instagram-only offshoot
+      (@juicy.praiagrande) — "Juicy Praia Grande" is not a separate site
+      with its own feed, it's part of this same outlet. Don't add it as a
+      distinct source entry.
+
+  - id: a-tribuna
+    name: "A Tribuna"
+    category: world-culture-news
+    region: br
+    language: pt-BR
+    feedUrl: null
+    feedType: html-extract
+    trust: auto
+    status: active
+    notes: >
+      Santos's main daily newspaper. No discoverable RSS feed as of
+      2026-08-27 (checked /feed and the homepage <link> tags, both came up
+      empty) — near-editor must use the Chrome-automation fallback against
+      the site's own section pages.
 ```
 
 ## Categories

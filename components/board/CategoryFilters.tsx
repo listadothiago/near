@@ -6,11 +6,16 @@ import { CATEGORIES, CATEGORY_COLOR_VAR, type Category } from "@/lib/content/cat
 export default function CategoryFilters({
   activeCats,
   onToggle,
+  available,
 }: {
   activeCats: Set<Category>;
   onToggle: (cat: Category | "all") => void;
+  available: Set<Category>;
 }) {
   const t = useTranslations("categories");
+  const visibleCategories = CATEGORIES.filter((cat) => available.has(cat));
+
+  if (visibleCategories.length === 0) return null;
 
   return (
     <div className="flex flex-wrap items-center gap-1.5">
@@ -26,7 +31,7 @@ export default function CategoryFilters({
         <span className="w-2 h-2 rounded-full bg-accent" />
         {t("all")}
       </button>
-      {CATEGORIES.map((cat) => {
+      {visibleCategories.map((cat) => {
         const active = activeCats.has(cat);
         return (
           <button

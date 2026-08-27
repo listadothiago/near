@@ -1,0 +1,36 @@
+{
+  "slug": "beco-do-batman-sao-paulo",
+  "categories": ["city-culture"],
+  "tags": ["hipster"],
+  "coordinates": { "lat": -23.5558, "lng": -46.6919 },
+  "place": { "city": "São Paulo", "neighborhood": "Vila Madalena", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Globe Guide",
+      "url": "https://globeguide.ca/beco-do-batman-sao-paulo/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    },
+    {
+      "name": "Discover Walks",
+      "url": "https://www.discoverwalks.com/blog/brazil/beco-do-batman-sao-paulo/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Beco_do_Batman_-_Vila-Madalena%2C_S%C3%A3o_Paulo_-_SP_07.jpg",
+    "attribution": "Photo by Diego Bravo, CC BY-SA 4.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Beco_do_Batman_-_Vila-Madalena,_S%C3%A3o_Paulo_-_SP_07.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via neighborhood research (Vila Madalena)" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.85, "query": "Beco do Batman, Rua Gonçalo Afonso, Vila Madalena, São Paulo" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

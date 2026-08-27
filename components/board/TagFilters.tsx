@@ -6,18 +6,23 @@ import { TAGS, TAG_GLYPH, type Tag } from "@/lib/content/tags";
 export default function TagFilters({
   activeTags,
   onToggle,
+  available,
 }: {
   activeTags: Set<Tag>;
   onToggle: (tag: Tag) => void;
+  available: Set<Tag>;
 }) {
   const t = useTranslations("tags");
+  const visibleTags = TAGS.filter((tag) => available.has(tag));
+
+  if (visibleTags.length === 0) return null;
 
   return (
     <div className="mt-2 flex flex-wrap items-center gap-1.5">
       <span className="text-[0.68rem] font-mono text-muted uppercase tracking-wide mr-0.5">
         {t("sectionLabel")}
       </span>
-      {TAGS.map((tag) => {
+      {visibleTags.map((tag) => {
         const active = activeTags.has(tag);
         return (
           <button

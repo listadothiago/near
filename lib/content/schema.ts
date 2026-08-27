@@ -7,6 +7,7 @@ export const CATEGORIES = [
   "food-drink",
   "nightlife-sound",
   "wellness-fitness",
+  "accommodation",
 ] as const;
 
 export const categorySchema = z.enum(CATEGORIES);
@@ -25,6 +26,7 @@ export const TAGS = [
   "late-night",
   "hidden-gem",
   "see-and-be-seen",
+  "trending",
 ] as const;
 
 export const tagSchema = z.enum(TAGS);
@@ -122,14 +124,18 @@ export type PlaceSummary = {
   isFallback: boolean;
 };
 
-// A "collection" is an editorial guide bundling several existing places —
-// e.g. a neighborhood walk — rather than a place of its own. It has no
-// coordinates of its own; its map is the union of its places' pins.
+// A "collection" is an editorial story/guide tagging one or more existing
+// places — a neighborhood walk with several pins, or a single-place deep
+// dive that isn't quite a place page of its own. It has no coordinates of
+// its own; its map is the union of its places' pins.
 export const collectionMetaSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
-  placeSlugs: z.array(z.string()).min(2),
+  placeSlugs: z.array(z.string()).min(1),
   coverImage: heroImageSchema.nullable(),
   trust: z.enum(["auto", "review"]),
+  // Not used yet — reserved for a future sponsored-content path. Must be
+  // clearly disclosed in the UI wherever it's ever surfaced; see rules.md.
+  sponsored: z.boolean(),
   status: placeStatusSchema,
   statusHistory: z.array(statusHistoryEntrySchema).min(1),
   publishedAt: z.iso.datetime({ offset: true }),

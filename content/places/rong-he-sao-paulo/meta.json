@@ -1,0 +1,35 @@
+{
+  "slug": "rong-he-sao-paulo",
+  "categories": ["food-drink"],
+  "tags": ["local-legend"],
+  "coordinates": { "lat": -23.5583, "lng": -46.6350 },
+  "place": { "city": "São Paulo", "neighborhood": "Liberdade", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Rong He (official site)",
+      "url": "https://ronghe.com.br/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Diários Gastronômicos",
+      "url": "https://diariosgastronomicos.com.br/rong-he-e-o-espetaculo-do-macarrao/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet. Held as draft per rules.md."
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.7, "query": "Rua da Glória 622, Liberdade, São Paulo" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

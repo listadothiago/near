@@ -1,0 +1,35 @@
+{
+  "slug": "djapa-sao-paulo",
+  "categories": ["food-drink"],
+  "tags": ["local-legend"],
+  "coordinates": { "lat": -23.6013, "lng": -46.6613 },
+  "place": { "city": "São Paulo", "neighborhood": "Moema", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Djapa (official site)",
+      "url": "https://djapa.com.br/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "BaresSP",
+      "url": "https://www.baressp.com.br/restaurantes/japoneses/djapa-moema",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet. Held as draft per rules.md."
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.6, "query": "Djapa, Moema, São Paulo" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}
