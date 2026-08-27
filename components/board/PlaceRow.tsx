@@ -12,6 +12,8 @@ export default function PlaceRow({
   return (
     <Link
       href={`/place/${place.meta.slug}`}
+      target="_blank"
+      rel="noopener noreferrer"
       className="flex gap-2.5 py-2.5 border-t border-border first:border-t-0 group"
     >
       <span
