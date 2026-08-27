@@ -37,6 +37,7 @@
     "translationPending": "This page hasn't been translated yet — showing the English version."
   },
   "sources": {
+    "navLabel": "Sources",
     "title": "What Near watches",
     "intro": "{count} feeds across six beats, each read fresh and geocoded — the publications themselves don't agree on categories or coordinates, so Near assigns both.",
     "trustAuto": "auto-published",

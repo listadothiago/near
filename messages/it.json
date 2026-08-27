@@ -37,6 +37,7 @@
     "translationPending": "Questa pagina non è stata ancora tradotta — viene mostrata la versione in inglese."
   },
   "sources": {
+    "navLabel": "Fonti",
     "title": "Cosa segue Near",
     "intro": "{count} fonti su sei temi, ognuna letta e geolocalizzata — le testate stesse non concordano su categorie o coordinate, quindi è Near ad assegnarle.",
     "trustAuto": "pubblicazione automatica",

@@ -37,6 +37,7 @@
     "translationPending": "此页面尚未翻译，目前显示英文版本。"
   },
   "sources": {
+    "navLabel": "信源",
     "title": "Near 追踪的信源",
     "intro": "涵盖六大分类的 {count} 个信源，每一条都经过实时抓取和地理定位——各家媒体本身对分类和坐标的说法并不一致，因此由 Near 统一判定。",
     "trustAuto": "自动发布",

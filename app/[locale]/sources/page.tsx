@@ -66,11 +66,9 @@ export default async function SourcesPage({
                       <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 rounded-full bg-surface-2 border border-border text-muted align-middle">
                         {s.trust === "auto" ? t("trustAuto") : t("trustReview")}
                       </span>
-                      {s.notes && (
+                      {s.feedType === "html-extract" && (
                         <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 rounded-full bg-surface-2 border border-border text-muted align-middle">
-                          {s.feedType === "html-extract"
-                            ? "no direct feed"
-                            : s.notes}
+                          no direct feed
                         </span>
                       )}
                     </div>

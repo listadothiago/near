@@ -18,9 +18,9 @@ export default function LocaleSwitcher() {
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-1 font-mono text-[0.78rem]">
+    <div className="flex items-center flex-wrap gap-x-1 gap-y-1 font-mono text-[0.78rem]">
       {routing.locales.map((locale, i) => (
-        <span key={locale} className="flex items-center gap-1">
+        <span key={locale} className="flex items-center gap-1 whitespace-nowrap">
           {i > 0 && <span className="text-muted/50">·</span>}
           <Link
             href={pathname}

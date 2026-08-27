@@ -11,5 +11,10 @@ const THEME_SCRIPT = `
 
 export default function ThemeScript() {
   // eslint-disable-next-line react/no-danger
-  return <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />;
+  return (
+    <script
+      suppressHydrationWarning
+      dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}
+    />
+  );
 }
