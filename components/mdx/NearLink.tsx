@@ -17,6 +17,8 @@ export default function NearLink({
   return (
     <Link
       href={`/place/${slug}`}
+      target="_blank"
+      rel="noopener noreferrer"
       className="text-accent-ink underline decoration-accent/40 underline-offset-2 hover:decoration-accent-ink transition-colors"
     >
       {children}
