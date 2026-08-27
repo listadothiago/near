@@ -5,7 +5,7 @@
   },
   "app": {
     "wordmark": "Near",
-    "tagline": "A map of what's opening, playing, and worth the walk — written by Near, geocoded from the press that actually covers it."
+    "tagline": "What's opening, playing, and worth checking out."
   },
   "categories": {
     "all": "All beats",
@@ -75,6 +75,6 @@
     "error": "Something went wrong sending this. Try again in a moment."
   },
   "footer": {
-    "tagline": "Near · a personal field guide, not a newsroom"
+    "tagline": "Near"
   }
 }

@@ -5,7 +5,7 @@
   },
   "app": {
     "wordmark": "Near",
-    "tagline": "Um mapa do que está abrindo, rolando e vale a caminhada — escrito pelo Near, geolocalizado a partir da imprensa que realmente cobre isso."
+    "tagline": "O que está abrindo, rolando e vale conferir."
   },
   "categories": {
     "all": "Todos os temas",
@@ -75,6 +75,6 @@
     "error": "Algo deu errado ao enviar. Tente novamente em instantes."
   },
   "footer": {
-    "tagline": "Near · um guia de campo pessoal, não uma redação"
+    "tagline": "Near"
   }
 }
