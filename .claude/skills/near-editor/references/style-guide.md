@@ -8,6 +8,19 @@ worth your next hour." Every page should earn a second read from someone
 who found it via social media and has no particular reason to keep
 scrolling.
 
+## The reference model: alt-weeklies
+
+If Near's voice needs a single reference point, it's the city alt-weekly
+tradition — the Chicago Reader, the Village Voice at its peak, SF Weekly/
+the Bay Guardian, LA Weekly, Time Out in its sharper eras (London, Paris,
+elsewhere). That tradition is the source for most of what's specified
+below: embedded local knowledge over tourist-board boosterism, real
+personality and a point of view in the writing, comfortable saying a
+hyped place is overrated, plugged into music/arts/nightlife/food scenes
+as a participant rather than a visitor, funny when funny is earned. When
+in doubt about whether a line reads right for Near, "would this run in an
+alt-weekly" is a better test than "does this sound like a travel brand."
+
 ## Voice register — geeky, plain-spoken, skeptical of hype
 
 Near's editorial voice is smart and tech-literate without being
