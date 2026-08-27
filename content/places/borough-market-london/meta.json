@@ -11,6 +11,18 @@
       "url": "https://boroughmarket.org.uk/",
       "feedId": null,
       "originalPublishedAt": "2026-08-20T10:00:00Z"
+    },
+    {
+      "name": "Time Out London",
+      "url": "https://www.timeout.com/london/things-to-do/borough-market",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-25T00:00:00Z"
+    },
+    {
+      "name": "The Guide Magazine",
+      "url": "https://www.theguidemagazine.org/post/the-complete-guide-to-the-best-stalls-in-borough-market",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
     }
   ],
   "heroImage": {
@@ -26,5 +38,5 @@
   ],
   "geocode": { "provider": "manual", "confidence": 1, "query": "Borough Market, London" },
   "publishedAt": "2026-08-20T10:00:00Z",
-  "updatedAt": "2026-08-20T10:00:00Z"
+  "updatedAt": "2026-08-27T00:00:00Z"
 }
