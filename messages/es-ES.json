@@ -1,4 +1,8 @@
 {
+  "a11y": {
+    "changeLanguage": "Cambiar idioma",
+    "toggleTheme": "Cambiar tema de color"
+  },
   "app": {
     "wordmark": "Near",
     "tagline": "Un mapa de lo que abre, suena y merece la caminata — escrito por Near, geolocalizado a partir de la prensa que de verdad lo cubre."

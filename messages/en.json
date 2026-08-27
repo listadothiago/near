@@ -1,4 +1,8 @@
 {
+  "a11y": {
+    "changeLanguage": "Change language",
+    "toggleTheme": "Toggle color theme"
+  },
   "app": {
     "wordmark": "Near",
     "tagline": "A map of what's opening, playing, and worth the walk — written by Near, geocoded from the press that actually covers it."

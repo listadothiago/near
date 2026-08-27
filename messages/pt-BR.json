@@ -1,4 +1,8 @@
 {
+  "a11y": {
+    "changeLanguage": "Mudar idioma",
+    "toggleTheme": "Alternar tema de cor"
+  },
   "app": {
     "wordmark": "Near",
     "tagline": "Um mapa do que está abrindo, rolando e vale a caminhada — escrito pelo Near, geolocalizado a partir da imprensa que realmente cobre isso."
