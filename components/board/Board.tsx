@@ -86,11 +86,13 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
 
   return (
     <div>
-      <SearchBox value={query} onChange={setQuery} />
-      <CategoryFilters activeCats={activeCats} onToggle={toggleCat} />
+      <div className="mt-4 flex flex-wrap items-center gap-1.5">
+        <SearchBox value={query} onChange={setQuery} />
+        <CategoryFilters activeCats={activeCats} onToggle={toggleCat} />
+      </div>
       <TagFilters activeTags={activeTags} onToggle={toggleTag} />
 
-      <div className="mt-5 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
         <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
           <div className="flex justify-between items-center px-4 pt-3.5 pb-2.5">
             <h2 className="font-serif font-medium text-[1.05rem] m-0">
