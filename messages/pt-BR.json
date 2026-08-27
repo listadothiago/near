@@ -1,0 +1,63 @@
+{
+  "app": {
+    "wordmark": "Near",
+    "tagline": "Um mapa do que está abrindo, rolando e vale a caminhada — escrito pelo Near, geolocalizado a partir da imprensa que realmente cobre isso."
+  },
+  "categories": {
+    "all": "Todos os temas",
+    "travel-luxury": "Viagem & Luxo",
+    "world-culture-news": "Mundo & Cultura",
+    "city-culture": "Cidade & Cultura",
+    "food-drink": "Comida & Bebida",
+    "nightlife-sound": "Vida Noturna & Música",
+    "wellness-fitness": "Bem-estar & Fitness"
+  },
+  "status": {
+    "articlesIndexed": "lugares indexados",
+    "sourcesWatched": "fontes monitoradas",
+    "lastSync": "última sincronização"
+  },
+  "board": {
+    "map": "Mapa",
+    "useMyLocation": "Usar minha localização",
+    "mapCaption": "{count} lugares localizados · projeção equirretangular",
+    "nearest": "Mais próximos",
+    "latest": "Mais recentes",
+    "emptyNearest": "Ainda não há lugares localizados. Quando o Near sincronizar, esta lista mostrará as escolhas mais próximas de onde você estiver.",
+    "emptyNearestNoLocation": "Toque em \"Usar minha localização\" no mapa para ordenar {count} lugares por distância.",
+    "emptyLatest": "Ainda não há lugares aqui. Quando o Near sincronizar, as escolhas mais recentes aparecem primeiro."
+  },
+  "place": {
+    "reasonsToCheckOut": "Por que vale a pena conhecer",
+    "readOn": "Ler a matéria completa",
+    "source": "Fonte",
+    "relatedNearby": "Por perto no Near",
+    "closed": "Permanentemente fechado",
+    "archived": "Destaque em {month} de {year}",
+    "translationPending": "Esta página ainda não foi traduzida — mostrando a versão em inglês."
+  },
+  "sources": {
+    "title": "O que o Near acompanha",
+    "intro": "{count} fontes em seis temas, cada uma lida e geolocalizada — as próprias publicações não concordam sobre categorias ou coordenadas, então o Near define as duas coisas.",
+    "trustAuto": "publicação automática",
+    "trustReview": "revisado antes de publicar"
+  },
+  "inbox": {
+    "title": "Fale com o Near",
+    "intro": "Sugira um lugar, avise que algo fechou, ou só diga oi. Uma pessoa lê cada envio.",
+    "typeLabel": "O que é isso?",
+    "typeSuggestion": "Sugerir um lugar",
+    "typeRequest": "Pedido",
+    "typeRemoval": "Avisar que fechou / pedir remoção",
+    "typeMessage": "Mensagem geral",
+    "nameLabel": "Nome do lugar (opcional)",
+    "urlLabel": "Link (opcional)",
+    "bodyLabel": "Sua mensagem",
+    "submit": "Enviar",
+    "success": "Obrigado — isso foi enviado para revisão.",
+    "error": "Algo deu errado ao enviar. Tente novamente em instantes."
+  },
+  "footer": {
+    "tagline": "Near · um guia de campo pessoal, não uma redação"
+  }
+}
