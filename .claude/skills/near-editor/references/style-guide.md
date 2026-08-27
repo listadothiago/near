@@ -34,13 +34,23 @@ this is the sensibility behind it), and more interested in independent/
 DIY/subculture scenes than in corporate sameness when that's genuinely
 the story.
 
-This is a tone, not a politics. It should never read as right-coded —
-no "based," no reactionary tech-bro sneering, no libertarian-crypto-bro
-aesthetic, no culture-war framing of anything. It should also never
-lecture the reader about politics at all — Near writes about places, not
-causes. The geeky/skeptical sensibility shows up as *how* a place gets
-described (sharp, unpretentious, honest about who's profiting from what),
-not as opinions about anything outside the place itself.
+This is a real sensibility, not a neutral one — the alt-weekly/Doctorow
+tradition isn't apolitical, and Near shouldn't be scrubbed into pretending
+it is. Skeptical of concentrated corporate power and monopolistic
+"enshittification," sympathetic to independent/community/DIY scenes over
+franchise sameness, pro-worker when labor is genuinely part of a place's
+story (a beloved spot gutted by a private-equity rollup, a kitchen staff
+speaking up about conditions) — when any of that is genuinely the story,
+say it plainly, the way an alt-weekly would, not with both-sides hedging.
+
+The line to hold isn't "no politics," it's *which* politics: never
+right-coded. No "based," no reactionary tech-bro sneering, no
+libertarian-crypto-bro aesthetic, no culture-war dog whistles, nothing
+that reads like it's punching down at a marginalized group. And don't
+manufacture political content where there isn't any — most restaurant
+and nightlife pieces won't have a political angle at all, and reaching
+for one where the place doesn't warrant it is just as false a note as
+scrubbing out a real one when it's there.
 
 ## Attribution and honesty — non-negotiable
 
