@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
+import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceMeta, PlaceContentFrontmatter } from "@/lib/content/schema";
 
 export default function PlaceHero({
@@ -12,6 +13,7 @@ export default function PlaceHero({
 }) {
   const t = useTranslations("place");
   const tCat = useTranslations("categories");
+  const tTag = useTranslations("tags");
   const location = [meta.place.neighborhood, meta.place.city, meta.place.country]
     .filter(Boolean)
     .join(", ");
@@ -43,12 +45,17 @@ export default function PlaceHero({
         </p>
       )}
 
-      <div className="mt-5 flex items-center gap-2 text-[0.78rem] font-mono text-muted">
-        <span
-          className="w-2 h-2 rounded-full"
-          style={{ background: `var(${CATEGORY_COLOR_VAR[meta.category]})` }}
-        />
-        <span>{tCat(meta.category)}</span>
+      <div className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.78rem] font-mono text-muted">
+        {meta.categories.map((cat, i) => (
+          <span key={cat} className="flex items-center gap-2">
+            {i > 0 && <span className="opacity-50">/</span>}
+            <span
+              className="w-2 h-2 rounded-full"
+              style={{ background: `var(${CATEGORY_COLOR_VAR[cat]})` }}
+            />
+            <span>{tCat(cat)}</span>
+          </span>
+        ))}
         <span className="opacity-50">·</span>
         <span>{location}</span>
       </div>
@@ -59,6 +66,20 @@ export default function PlaceHero({
       <p className="mt-2 text-[1.05rem] text-muted max-w-[60ch]">
         {frontmatter.tagline}
       </p>
+
+      {meta.tags.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {meta.tags.map((tag) => (
+            <span
+              key={tag}
+              className="inline-flex items-center gap-1 rounded-full border border-border bg-surface-2 px-2.5 py-1 text-[0.76rem] text-muted"
+            >
+              <span aria-hidden="true">{TAG_GLYPH[tag]}</span>
+              {tTag(tag)}
+            </span>
+          ))}
+        </div>
+      )}
 
       {meta.status === "closed" && (
         <p className="mt-3 inline-block bg-surface-2 border border-border rounded-lg px-3 py-1.5 text-[0.82rem] font-semibold text-muted">

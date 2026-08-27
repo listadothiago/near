@@ -12,6 +12,24 @@ export const CATEGORIES = [
 export const categorySchema = z.enum(CATEGORIES);
 export type Category = z.infer<typeof categorySchema>;
 
+// Cross-cutting vibe/audience descriptors — orthogonal to the beat
+// categories above (a place's categories say what kind of content it is;
+// tags say who it's for / what the scene feels like). Only ever applied
+// when the source material actually supports it — see rules.md.
+export const TAGS = [
+  "lgbtq-friendly",
+  "hipster",
+  "celebrity-spotted",
+  "influencer-favorite",
+  "local-legend",
+  "late-night",
+  "hidden-gem",
+  "see-and-be-seen",
+] as const;
+
+export const tagSchema = z.enum(TAGS);
+export type Tag = z.infer<typeof tagSchema>;
+
 export const LOCALES = ["en", "pt-BR", "it", "es-ES", "es-419", "zh-CN"] as const;
 export type ContentLocale = (typeof LOCALES)[number];
 
@@ -42,7 +60,8 @@ export const statusHistoryEntrySchema = z.object({
 
 export const placeMetaSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
-  category: categorySchema,
+  categories: z.array(categorySchema).min(1),
+  tags: z.array(tagSchema),
   coordinates: z.object({
     lat: z.number().min(-90).max(90),
     lng: z.number().min(-180).max(180),

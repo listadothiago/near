@@ -1,6 +1,7 @@
 {
   "slug": "lx-factory-lisbon",
-  "category": "city-culture",
+  "categories": ["city-culture", "nightlife-sound"],
+  "tags": ["hipster"],
   "coordinates": { "lat": 38.7042, "lng": -9.1786 },
   "place": { "city": "Lisbon", "neighborhood": "Alcântara", "region": "Lisboa", "country": "Portugal" },
   "trust": "auto",

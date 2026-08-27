@@ -105,7 +105,8 @@ export function getRelatedPlaces(
     .filter((p) => p.meta.slug !== slug)
     .filter(
       (p) =>
-        p.meta.category === current.meta.category ||
+        p.meta.categories.some((c) => current.meta.categories.includes(c)) ||
+        p.meta.tags.some((t) => current.meta.tags.includes(t)) ||
         (current.meta.place.neighborhood &&
           p.meta.place.neighborhood === current.meta.place.neighborhood) ||
         p.meta.place.country === current.meta.place.country,

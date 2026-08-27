@@ -16,6 +16,17 @@
     "nightlife-sound": "Vida Nocturna y Música",
     "wellness-fitness": "Bienestar y Fitness"
   },
+  "tags": {
+    "sectionLabel": "Ambiente",
+    "lgbtq-friendly": "LGBTQ+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Avistamiento vip",
+    "influencer-favorite": "Favorito de influencers",
+    "local-legend": "Leyenda local",
+    "late-night": "Trasnochador",
+    "hidden-gem": "Joya escondida",
+    "see-and-be-seen": "Ver y dejarse ver"
+  },
   "status": {
     "articlesIndexed": "lugares indexados",
     "sourcesWatched": "fuentes monitoreadas",

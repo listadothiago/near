@@ -3,14 +3,17 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
+import TagFilters from "./TagFilters";
 import NearestLatestTabs from "./NearestLatestTabs";
 import WorldMap from "@/components/map/WorldMap";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { Category } from "@/lib/content/categories";
+import type { Tag } from "@/lib/content/tags";
 
 export default function Board({ places }: { places: PlaceSummary[] }) {
   const t = useTranslations("board");
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
+  const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
   const [tab, setTab] = useState<"nearest" | "latest">("nearest");
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(
     null,
@@ -30,12 +33,29 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     });
   }
 
+  function toggleTag(tag: Tag) {
+    setActiveTags((prev) => {
+      const next = new Set(prev);
+      if (next.has(tag)) next.delete(tag);
+      else next.add(tag);
+      return next;
+    });
+  }
+
   const filtered = useMemo(
     () =>
-      activeCats.size === 0
-        ? places
-        : places.filter((p) => activeCats.has(p.meta.category)),
-    [places, activeCats],
+      places
+        .filter(
+          (p) =>
+            activeCats.size === 0 ||
+            p.meta.categories.some((c) => activeCats.has(c)),
+        )
+        .filter(
+          (p) =>
+            activeTags.size === 0 ||
+            p.meta.tags.some((t) => activeTags.has(t)),
+        ),
+    [places, activeCats, activeTags],
   );
 
   function useMyLocation() {
@@ -54,6 +74,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
   return (
     <div>
       <CategoryFilters activeCats={activeCats} onToggle={toggleCat} />
+      <TagFilters activeTags={activeTags} onToggle={toggleTag} />
 
       <div className="mt-5 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
         <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
@@ -75,7 +96,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
               slug: p.meta.slug,
               lat: p.meta.coordinates.lat,
               lng: p.meta.coordinates.lng,
-              category: p.meta.category,
+              category: p.meta.categories[0],
             }))}
             userCoords={userCoords}
           />

@@ -16,6 +16,17 @@
     "nightlife-sound": "Vita Notturna & Musica",
     "wellness-fitness": "Benessere & Fitness"
   },
+  "tags": {
+    "sectionLabel": "Atmosfera",
+    "lgbtq-friendly": "LGBTQ+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Avvistamento vip",
+    "influencer-favorite": "Amato dagli influencer",
+    "local-legend": "Leggenda locale",
+    "late-night": "Nottambulo",
+    "hidden-gem": "Perla nascosta",
+    "see-and-be-seen": "Vedere ed essere visti"
+  },
   "status": {
     "articlesIndexed": "luoghi indicizzati",
     "sourcesWatched": "fonti monitorate",

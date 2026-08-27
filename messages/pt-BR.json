@@ -16,6 +16,17 @@
     "nightlife-sound": "Vida Noturna & Música",
     "wellness-fitness": "Bem-estar & Fitness"
   },
+  "tags": {
+    "sectionLabel": "Vibes",
+    "lgbtq-friendly": "LGBTQIA+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Flagra de famoso",
+    "influencer-favorite": "Queridinho dos influencers",
+    "local-legend": "Lenda local",
+    "late-night": "Vira-noite",
+    "hidden-gem": "Achado escondido",
+    "see-and-be-seen": "Ver e ser visto"
+  },
   "status": {
     "articlesIndexed": "lugares indexados",
     "sourcesWatched": "fontes monitoradas",

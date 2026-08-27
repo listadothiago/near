@@ -1,6 +1,7 @@
 {
   "slug": "time-out-market-lisboa",
-  "category": "food-drink",
+  "categories": ["food-drink"],
+  "tags": ["see-and-be-seen"],
   "coordinates": { "lat": 38.7069, "lng": -9.1456 },
   "place": { "city": "Lisbon", "neighborhood": "Cais do Sodré", "region": "Lisboa", "country": "Portugal" },
   "trust": "auto",
