@@ -37,6 +37,7 @@
     "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
   },
   "sources": {
+    "navLabel": "Fuentes",
     "title": "Lo que Near vigila",
     "intro": "{count} fuentes en seis temas, cada una leída y geolocalizada — las propias publicaciones no coinciden en categorías ni coordenadas, así que Near asigna ambas.",
     "trustAuto": "publicación automática",

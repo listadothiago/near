@@ -37,6 +37,7 @@
     "translationPending": "Esta página ainda não foi traduzida — mostrando a versão em inglês."
   },
   "sources": {
+    "navLabel": "Fontes",
     "title": "O que o Near acompanha",
     "intro": "{count} fontes em seis temas, cada uma lida e geolocalizada — as próprias publicações não concordam sobre categorias ou coordenadas, então o Near define as duas coisas.",
     "trustAuto": "publicação automática",
