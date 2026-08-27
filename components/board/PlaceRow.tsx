@@ -24,7 +24,8 @@ export default function PlaceRow({
         </div>
         <div className="text-[0.76rem] text-muted font-mono mt-0.5">
           {distanceKm !== undefined && `${distanceKm.toFixed(0)} km · `}
-          {place.meta.place.city}, {place.meta.place.country} · {place.meta.source.name}
+          {place.meta.place.city}, {place.meta.place.country} · {place.meta.sources[0].name}
+          {place.meta.sources.length > 1 && ` +${place.meta.sources.length - 1}`}
         </div>
       </div>
     </Link>

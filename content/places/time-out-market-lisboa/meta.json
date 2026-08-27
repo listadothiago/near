@@ -3,13 +3,15 @@
   "category": "food-drink",
   "coordinates": { "lat": 38.7069, "lng": -9.1456 },
   "place": { "city": "Lisbon", "neighborhood": "Cais do Sodré", "region": "Lisboa", "country": "Portugal" },
-  "source": {
-    "name": "Time Out Market Lisboa",
-    "url": "https://www.timeoutmarket.com/lisboa/",
-    "feedId": null,
-    "trust": "auto",
-    "originalPublishedAt": "2026-08-20T10:00:00Z"
-  },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Time Out Market Lisboa",
+      "url": "https://www.timeoutmarket.com/lisboa/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-20T10:00:00Z"
+    }
+  ],
   "heroImage": {
     "strategy": "stock",
     "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/TimeOut_Market_in_Lisbon.jpg",

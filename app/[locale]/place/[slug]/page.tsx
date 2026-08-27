@@ -107,15 +107,21 @@ export default async function PlacePage({
           <MDXRemote source={content.body} components={mdxComponents} />
         </LongFormBody>
         <p className="mt-6 max-w-[65ch] text-[0.85rem] text-muted">
-          {t("source")}:{" "}
-          <a
-            href={content.meta.source.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent-ink underline decoration-accent/40 underline-offset-2"
-          >
-            {content.meta.source.name}
-          </a>
+          {t("source")}
+          {content.meta.sources.length > 1 ? "s" : ""}:{" "}
+          {content.meta.sources.map((s, i) => (
+            <span key={s.url}>
+              {i > 0 && ", "}
+              <a
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-ink underline decoration-accent/40 underline-offset-2"
+              >
+                {s.name}
+              </a>
+            </span>
+          ))}
         </p>
         <RelatedPlaces places={related} />
       </article>
