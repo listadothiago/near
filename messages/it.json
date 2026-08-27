@@ -1,4 +1,8 @@
 {
+  "a11y": {
+    "changeLanguage": "Cambia lingua",
+    "toggleTheme": "Cambia tema colore"
+  },
   "app": {
     "wordmark": "Near",
     "tagline": "Una mappa di ciò che apre, succede e vale la passeggiata — scritta da Near, geolocalizzata dalla stampa che se ne occupa davvero."

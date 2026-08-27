@@ -1,4 +1,8 @@
 {
+  "a11y": {
+    "changeLanguage": "更改语言",
+    "toggleTheme": "切换颜色主题"
+  },
   "app": {
     "wordmark": "Near",
     "tagline": "一张记录新开张、正当红、值得专程一走的地图——由 Near 撰写，坐标来自真正报道这些地方的媒体。"

@@ -21,13 +21,7 @@ export default function Header({ stats }: { stats: NearStats }) {
           </p>
         </div>
 
-        <div className="flex items-center gap-3 flex-wrap">
-          <Link
-            href="/sources"
-            className="font-mono text-[0.78rem] text-muted hover:text-accent-ink whitespace-nowrap"
-          >
-            {t("sources.navLabel")}
-          </Link>
+        <div className="flex items-center gap-2 flex-none">
           <LocaleSwitcher />
           <ThemeToggle />
         </div>
@@ -41,10 +35,13 @@ export default function Header({ stats }: { stats: NearStats }) {
           {t("status.articlesIndexed")}
         </span>
         <span className="whitespace-nowrap">
-          · <strong className="text-ink font-semibold">
-            {stats.sourcesWatched}
-          </strong>{" "}
-          {t("status.sourcesWatched")}
+          ·{" "}
+          <Link href="/sources" className="hover:text-accent-ink underline decoration-muted/40 underline-offset-2">
+            <strong className="text-ink font-semibold">
+              {stats.sourcesWatched}
+            </strong>{" "}
+            {t("status.sourcesWatched")}
+          </Link>
         </span>
         <span className="whitespace-nowrap">
           · {t("status.lastSync")}:{" "}
