@@ -5,7 +5,7 @@
   },
   "app": {
     "wordmark": "Near",
-    "tagline": "Una mappa di ciò che apre, succede e vale la passeggiata — scritta da Near, geolocalizzata dalla stampa che se ne occupa davvero."
+    "tagline": "Cosa apre, succede e vale la pena scoprire."
   },
   "categories": {
     "all": "Tutti i temi",
@@ -75,6 +75,6 @@
     "error": "Si è verificato un errore durante l'invio. Riprova tra poco."
   },
   "footer": {
-    "tagline": "Near · una guida sul campo personale, non una redazione"
+    "tagline": "Near"
   }
 }

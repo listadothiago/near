@@ -12,9 +12,9 @@ export default function Header({ stats }: { stats: NearStats }) {
     <header className="pb-4 border-b border-border">
       <div className="flex flex-wrap justify-between items-start gap-x-4 gap-y-3">
         <div className="max-w-xl">
-          <Link href="/" className="flex items-center gap-2.5">
-            <NearMark className="w-8 h-8 text-accent flex-none" />
-            <span className="font-serif italic font-medium text-[clamp(2.1rem,5vw,3rem)] tracking-tight leading-none">
+          <Link href="/" className="flex items-center gap-1.5">
+            <NearMark className="w-4 h-4 text-accent flex-none" />
+            <span className="font-serif italic font-medium text-[clamp(1.05rem,2.5vw,1.5rem)] tracking-tight leading-none">
               {t("app.wordmark")}
             </span>
           </Link>
