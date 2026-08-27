@@ -33,6 +33,7 @@
     "lastSync": "last sync"
   },
   "board": {
+    "searchPlaceholder": "Search places, neighborhoods, cities…",
     "map": "Map",
     "useMyLocation": "Use my location",
     "mapCaption": "{count} located places · equirectangular chart",
