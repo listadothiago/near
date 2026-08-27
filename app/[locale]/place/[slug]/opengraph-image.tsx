@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { getTranslations } from "next-intl/server";
 import { getPlaceContent } from "@/lib/content/loader";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import type { ContentLocale } from "@/lib/content/schema";
@@ -22,6 +23,7 @@ export default async function OgImage({
 }) {
   const { locale, slug } = await params;
   const content = getPlaceContent(slug, locale as ContentLocale);
+  const t = await getTranslations({ locale, namespace: "app" });
   const accent = content
     ? HEX_BY_VAR[CATEGORY_COLOR_VAR[content.meta.categories[0]]]
     : "#5c7a6c";
@@ -40,7 +42,7 @@ export default async function OgImage({
       >
         <div style={{ width: 64, height: 8, background: accent, marginBottom: 40 }} />
         <div style={{ fontSize: 28, color: "#6C766F", marginBottom: 16, display: "flex" }}>
-          Near
+          near.tips
         </div>
         <div
           style={{
@@ -52,7 +54,7 @@ export default async function OgImage({
             flex: 1,
           }}
         >
-          {content?.frontmatter.name ?? "Near"}
+          {content?.frontmatter.name ?? t("wordmark")}
         </div>
         <div style={{ fontSize: 28, color: "#6C766F", display: "flex" }}>
           {content?.frontmatter.tagline ?? ""}

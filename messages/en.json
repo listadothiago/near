@@ -4,7 +4,7 @@
     "toggleTheme": "Toggle color theme"
   },
   "app": {
-    "wordmark": "Near",
+    "wordmark": "Tips Near Me",
     "tagline": "What's opening, playing, and worth checking out."
   },
   "categories": {
@@ -52,6 +52,10 @@
     "archived": "Featured in {month} {year}",
     "translationPending": "This page hasn't been translated yet — showing the English version."
   },
+  "collection": {
+    "placesCount": "{count} places",
+    "navLabel": "Guides"
+  },
   "sources": {
     "navLabel": "Sources",
     "title": "What Near watches",
@@ -73,8 +77,5 @@
     "submit": "Send",
     "success": "Thanks — this has been sent for review.",
     "error": "Something went wrong sending this. Try again in a moment."
-  },
-  "footer": {
-    "tagline": "Near"
   }
 }

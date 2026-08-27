@@ -4,7 +4,7 @@
     "toggleTheme": "Cambiar tema de color"
   },
   "app": {
-    "wordmark": "Near",
+    "wordmark": "Consejos Cerca de Mí",
     "tagline": "Lo que abre, suena y merece una visita."
   },
   "categories": {
@@ -52,6 +52,10 @@
     "archived": "Destacado en {month} de {year}",
     "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
   },
+  "collection": {
+    "placesCount": "{count} lugares",
+    "navLabel": "Guías"
+  },
   "sources": {
     "navLabel": "Fuentes",
     "title": "Lo que Near vigila",
@@ -73,8 +77,5 @@
     "submit": "Enviar",
     "success": "Gracias — se ha enviado para revisión.",
     "error": "Algo ha fallado al enviarlo. Inténtalo de nuevo en un momento."
-  },
-  "footer": {
-    "tagline": "Near"
   }
 }
