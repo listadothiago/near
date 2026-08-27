@@ -13,8 +13,8 @@ export default function TagFilters({
   const t = useTranslations("tags");
 
   return (
-    <div className="mt-2.5 flex flex-wrap items-center gap-2">
-      <span className="text-[0.72rem] font-mono text-muted uppercase tracking-wide mr-0.5">
+    <div className="mt-2 flex flex-wrap items-center gap-1.5">
+      <span className="text-[0.68rem] font-mono text-muted uppercase tracking-wide mr-0.5">
         {t("sectionLabel")}
       </span>
       {TAGS.map((tag) => {
@@ -24,7 +24,7 @@ export default function TagFilters({
             key={tag}
             type="button"
             onClick={() => onToggle(tag)}
-            className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-[0.76rem] font-medium transition-colors ${
+            className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-medium transition-colors ${
               active
                 ? "border-ink bg-surface-2 text-ink"
                 : "border-border bg-surface text-muted hover:border-grid-strong"

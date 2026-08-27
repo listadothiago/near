@@ -13,11 +13,11 @@ export default function CategoryFilters({
   const t = useTranslations("categories");
 
   return (
-    <div className="mt-5 flex flex-wrap gap-2">
+    <div className="flex flex-wrap items-center gap-1.5">
       <button
         type="button"
         onClick={() => onToggle("all")}
-        className={`inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors ${
+        className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[0.76rem] font-medium transition-colors ${
           activeCats.size === 0
             ? "border-accent bg-surface-2 text-ink"
             : "border-border bg-surface text-muted hover:border-grid-strong"
@@ -33,7 +33,7 @@ export default function CategoryFilters({
             key={cat}
             type="button"
             onClick={() => onToggle(cat)}
-            className={`inline-flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[0.82rem] font-medium transition-colors ${
+            className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[0.76rem] font-medium transition-colors ${
               active
                 ? "border-ink bg-surface-2 text-ink"
                 : "border-border bg-surface text-muted hover:border-grid-strong"

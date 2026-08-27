@@ -12,15 +12,13 @@ export default function SearchBox({
   const t = useTranslations("board");
 
   return (
-    <div className="mt-5 relative max-w-md">
-      <input
-        type="search"
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder={t("searchPlaceholder")}
-        aria-label={t("searchPlaceholder")}
-        className="w-full bg-surface border border-border rounded-full pl-4 pr-4 py-2 text-[0.9rem] placeholder:text-muted focus:outline-none focus:border-accent"
-      />
-    </div>
+    <input
+      type="search"
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      placeholder={t("searchPlaceholder")}
+      aria-label={t("searchPlaceholder")}
+      className="w-44 sm:w-56 flex-none bg-surface border border-border rounded-full px-3.5 py-1.5 text-[0.82rem] placeholder:text-muted focus:outline-none focus:border-accent"
+    />
   );
 }
