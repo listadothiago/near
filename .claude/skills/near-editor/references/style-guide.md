@@ -38,6 +38,37 @@ Weight downward (don't skip entirely, but don't default to it):
 - A landmark that's been unchanged and already well-covered everywhere —
   fine occasionally for texture, not the backbone of the catalog.
 
+## Categories, tags, and "advisor lenses"
+
+A place can carry more than one category (`meta.categories`) when it
+genuinely spans beats, and any number of `meta.tags` when the content
+actually supports them (see `content-schema.md` for the full list and the
+ground rule: never assign a tag the source doesn't back up).
+
+Different beats reward a different angle — think of these as lenses, not
+separate voices to fake:
+- **`food-drink`** — the gastronomic lens: specific about what's actually
+  on the plate/in the glass, why this kitchen's version of a familiar
+  thing is worth the trip, not just "delicious food."
+- **`nightlife-sound`**, especially anything tagged `hipster`,
+  `see-and-be-seen`, or `celebrity-spotted` — the insider-tastemaker lens:
+  write like someone who's actually been there and knows who shows up and
+  when, with real specific color (a resident DJ, a door policy, the hour
+  it actually gets good) — not generic "vibrant nightlife scene" copy.
+  It's fine for this lens to have personality and be a little breathless.
+  It is never fine to invent who was there — no fabricated celebrity
+  sightings, no imagined crowd. If the source doesn't name it, Near
+  doesn't claim it.
+- **`wellness-fitness`** — the practitioner lens: what you'd actually do
+  there and why it's different from the studio down the block.
+- **`travel-luxury`** / **`world-culture-news`** / **`city-culture`** —
+  the field-guide lens: specific, walkable, grounded in the neighborhood.
+
+A future version of Near may split these into dedicated named "advisor"
+skills with more distinct voices per beat — not built yet, flagged here as
+a real idea worth revisiting once there's enough published content to
+tell whether one skill's voice is straining to cover every beat.
+
 ## Neighborhoods are a first-class idea
 
 Always try to capture `place.neighborhood` in `meta.json`, not just city.

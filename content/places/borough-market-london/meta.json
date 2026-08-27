@@ -1,6 +1,7 @@
 {
   "slug": "borough-market-london",
-  "category": "food-drink",
+  "categories": ["food-drink"],
+  "tags": ["local-legend"],
   "coordinates": { "lat": 51.5055, "lng": -0.0910 },
   "place": { "city": "London", "neighborhood": "Southwark", "region": "England", "country": "United Kingdom" },
   "trust": "auto",

@@ -23,7 +23,7 @@ export default async function OgImage({
   const { locale, slug } = await params;
   const content = getPlaceContent(slug, locale as ContentLocale);
   const accent = content
-    ? HEX_BY_VAR[CATEGORY_COLOR_VAR[content.meta.category]]
+    ? HEX_BY_VAR[CATEGORY_COLOR_VAR[content.meta.categories[0]]]
     : "#5c7a6c";
 
   return new ImageResponse(

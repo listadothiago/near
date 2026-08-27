@@ -16,6 +16,17 @@
     "nightlife-sound": "Nightlife & Sound",
     "wellness-fitness": "Wellness & Fitness"
   },
+  "tags": {
+    "sectionLabel": "Vibes",
+    "lgbtq-friendly": "LGBTQ+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Celebrity spotted",
+    "influencer-favorite": "Influencer favorite",
+    "local-legend": "Local legend",
+    "late-night": "Late night",
+    "hidden-gem": "Hidden gem",
+    "see-and-be-seen": "See and be seen"
+  },
   "status": {
     "articlesIndexed": "places indexed",
     "sourcesWatched": "sources watched",

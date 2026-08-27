@@ -16,6 +16,17 @@
     "nightlife-sound": "夜生活与音乐",
     "wellness-fitness": "健康与健身"
   },
+  "tags": {
+    "sectionLabel": "氛围",
+    "lgbtq-friendly": "LGBTQ+友好",
+    "hipster": "潮人聚集",
+    "celebrity-spotted": "明星出没",
+    "influencer-favorite": "网红最爱",
+    "local-legend": "本地传奇",
+    "late-night": "深夜营业",
+    "hidden-gem": "小众宝藏",
+    "see-and-be-seen": "社交打卡地"
+  },
   "status": {
     "articlesIndexed": "已收录地点",
     "sourcesWatched": "追踪信源",

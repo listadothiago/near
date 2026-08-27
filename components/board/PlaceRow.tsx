@@ -16,7 +16,7 @@ export default function PlaceRow({
     >
       <span
         className="w-2 h-2 rounded-full mt-1.5 flex-none"
-        style={{ background: `var(${CATEGORY_COLOR_VAR[place.meta.category]})` }}
+        style={{ background: `var(${CATEGORY_COLOR_VAR[place.meta.categories[0]]})` }}
       />
       <div>
         <div className="font-semibold text-[0.92rem] group-hover:text-accent-ink transition-colors">

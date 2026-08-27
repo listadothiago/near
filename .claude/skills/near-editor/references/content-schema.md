@@ -7,7 +7,32 @@ disagree, the code wins; update this file to match.
 ## Categories (`lib/content/categories.ts`)
 
 `travel-luxury`, `world-culture-news`, `city-culture`, `food-drink`,
-`nightlife-sound`, `wellness-fitness`.
+`nightlife-sound`, `wellness-fitness`. A place can belong to more than one —
+`meta.categories` is an array (min 1). Use more than one when the place
+genuinely spans beats (a converted factory that's both a `city-culture`
+creative district and has real `nightlife-sound` — a notable rooftop bar,
+say — is legitimately both, not just one with a passing mention of the
+other).
+
+## Tags (`lib/content/tags.ts`)
+
+Cross-cutting vibe/audience descriptors, orthogonal to category — a
+separate filterable dimension in the UI (its own filter row, not mixed
+into the category chips). `meta.tags` is an array, default empty (most
+places have none, and that's fine — don't force one on).
+
+`lgbtq-friendly`, `hipster`, `celebrity-spotted`, `influencer-favorite`,
+`local-legend`, `late-night`, `hidden-gem`, `see-and-be-seen`.
+
+Apply a tag only when the place's actual character supports it — read the
+source, don't guess. `hipster` fits a converted-factory creative complex
+with an indie bookstore and street art; it doesn't fit a Michelin-starred
+formal dining room just because both are "cool." `lgbtq-friendly` should
+be based on something real — the source explicitly describing it as a gay
+bar/queer space/Pride-affiliated venue, not an assumption from a
+neighborhood's reputation. If nothing in the source supports any tag,
+ship the place with `tags: []` — an empty array is a completely normal,
+correct result, not a gap to fill.
 
 ## Locales
 
@@ -18,7 +43,8 @@ disagree, the code wins; update this file to match.
 | field | notes |
 |---|---|
 | `slug` | lowercase, hyphenated, no locale in it — shared across all languages |
-| `category` | one of the categories above |
+| `categories` | array, min 1, from the categories above — a place can be more than one |
+| `tags` | array, default `[]`, from the tags above — only when source-supported |
 | `coordinates.lat` / `.lng` | numeric |
 | `place.city` | required |
 | `place.neighborhood` | optional but preferred — capture it whenever the source names one; Near leans on neighborhood identity |
