@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
+import NearMark from "./NearMark";
 import type { NearStats } from "@/lib/content/loader";
 
 export default function Header({ stats }: { stats: NearStats }) {
@@ -11,7 +12,8 @@ export default function Header({ stats }: { stats: NearStats }) {
     <header className="pb-4 border-b border-border">
       <div className="flex flex-wrap justify-between items-start gap-x-4 gap-y-3">
         <div className="max-w-xl">
-          <Link href="/" className="block">
+          <Link href="/" className="flex items-center gap-2.5">
+            <NearMark className="w-8 h-8 text-accent flex-none" />
             <span className="font-serif italic font-medium text-[clamp(2.1rem,5vw,3rem)] tracking-tight leading-none">
               {t("app.wordmark")}
             </span>
