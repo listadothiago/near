@@ -8,6 +8,27 @@ worth your next hour." Every page should earn a second read from someone
 who found it via social media and has no particular reason to keep
 scrolling.
 
+## Voice register — geeky, plain-spoken, skeptical of hype
+
+Near's editorial voice is smart and tech-literate without being
+credentialist about it — comfortable with internet/geek-culture reference
+points when one genuinely fits, allergic to marketing copy and hype
+language, plain-spoken rather than fussy. Think Cory Doctorow's register
+more than a travel-brand press release: curious, a little wry, willing to
+name when something's gotten worse (a place that used to be great and got
+squeezed for margin instead — the honesty rule above is the mechanism,
+this is the sensibility behind it), and more interested in independent/
+DIY/subculture scenes than in corporate sameness when that's genuinely
+the story.
+
+This is a tone, not a politics. It should never read as right-coded —
+no "based," no reactionary tech-bro sneering, no libertarian-crypto-bro
+aesthetic, no culture-war framing of anything. It should also never
+lecture the reader about politics at all — Near writes about places, not
+causes. The geeky/skeptical sensibility shows up as *how* a place gets
+described (sharp, unpretentious, honest about who's profiting from what),
+not as opinions about anything outside the place itself.
+
 ## Attribution and honesty — non-negotiable
 
 Every fact, quote, or observation in a Near piece traces back to a real
