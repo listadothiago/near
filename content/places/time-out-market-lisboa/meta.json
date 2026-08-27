@@ -11,6 +11,18 @@
       "url": "https://www.timeoutmarket.com/lisboa/",
       "feedId": null,
       "originalPublishedAt": "2026-08-20T10:00:00Z"
+    },
+    {
+      "name": "Do Eat Better Experience",
+      "url": "https://doeatbetterexperience.com/blog/time-out-market-lisbon-guide/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
+    },
+    {
+      "name": "Will Fly for Food",
+      "url": "https://www.willflyforfood.net/time-out-market-6-stalls-to-visit-at-mercado-da-ribeira-in-lisbon-portugal/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-27T00:00:00Z"
     }
   ],
   "heroImage": {
@@ -26,5 +38,5 @@
   ],
   "geocode": { "provider": "manual", "confidence": 1, "query": "Time Out Market Lisboa, Mercado da Ribeira" },
   "publishedAt": "2026-08-20T10:00:00Z",
-  "updatedAt": "2026-08-20T10:00:00Z"
+  "updatedAt": "2026-08-27T00:00:00Z"
 }
