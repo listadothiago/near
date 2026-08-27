@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 1,
     });
+    entries.push({
+      url: `${base}/${locale}/sources`,
+      lastModified: new Date(),
+      priority: 0.5,
+    });
 
     const places = getAllPlaces(locale as ContentLocale, {
       includeArchived: true,
