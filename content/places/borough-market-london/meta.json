@@ -3,13 +3,15 @@
   "category": "food-drink",
   "coordinates": { "lat": 51.5055, "lng": -0.0910 },
   "place": { "city": "London", "neighborhood": "Southwark", "region": "England", "country": "United Kingdom" },
-  "source": {
-    "name": "Borough Market",
-    "url": "https://boroughmarket.org.uk/",
-    "feedId": null,
-    "trust": "auto",
-    "originalPublishedAt": "2026-08-20T10:00:00Z"
-  },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Borough Market",
+      "url": "https://boroughmarket.org.uk/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-20T10:00:00Z"
+    }
+  ],
   "heroImage": {
     "strategy": "stock",
     "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/London_-_Borough_Market_%281%29.jpg",

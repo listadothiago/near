@@ -24,10 +24,11 @@ disagree, the code wins; update this file to match.
 | `place.neighborhood` | optional but preferred — capture it whenever the source names one; Near leans on neighborhood identity |
 | `place.region` | optional (state/province) |
 | `place.country` | required |
-| `source.name` / `.url` | the original outlet and article |
-| `source.feedId` | matches an id in `sources.md`, or `null` for near-inbox/chat-originated items |
-| `source.trust` | `auto` or `review` — see SKILL.md trust-gate |
-| `source.originalPublishedAt` | ISO datetime, optional |
+| `trust` | `auto` or `review`, set once when the place is first created — see SKILL.md trust-gate. Does not change when a later mention is appended via dedupe-by-place |
+| `sources` | array, min 1 — every distinct article that has covered this place. One map pin, one page, however many outlets mentioned it |
+| `sources[].name` / `.url` | the outlet and article. Dedupe by `url` when appending a new mention — don't list the same article twice |
+| `sources[].feedId` | matches an id in `sources.md`, or `null` for near-inbox/chat-originated items |
+| `sources[].originalPublishedAt` | ISO datetime, optional |
 | `heroImage` | `null` only if resolution genuinely failed and the place therefore isn't published; otherwise `{strategy: "source"\|"stock", url, attribution, attributionLink, licenseNote?}` |
 | `eventEndsAt` | ISO datetime or `null`. Set only for time-bound happenings (see SKILL.md step 6); `null` for evergreen venues (the common case) |
 | `status` | `draft` \| `active` \| `archived` \| `closed` |

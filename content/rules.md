@@ -16,18 +16,28 @@ rules:
       auto-committed to the published set — it's surfaced to the operator
       for explicit approval, regardless of whether every other rule below
       passes.
-    trigger: "source.trust == 'review'"
+    trigger: "meta.trust == 'review'"
     action: "write meta.json + locale files with status = draft; do not commit; report to operator"
 
   - id: dedupe-by-place
     description: >
       Before creating a new place, check existing meta.json files for
       coordinate proximity (haversine < 150m) or a fuzzy name match. If
-      found, treat the new source item as an update to the existing place
-      (append source reference, refresh updatedAt) instead of creating a
-      new slug.
+      found, this is the same real-world place covered again — not a new
+      place. Append the new item to meta.sources (dedupe by URL first, a
+      given article should only be listed once) rather than creating a
+      new slug or overwriting the existing entry, and refresh updatedAt.
+      One map pin, one article, however many outlets have covered it —
+      every distinct source that mentioned the place stays linked from
+      the same page. meta.trust does not change on an update; a place
+      that started trust: auto stays auto even if a later mention of it
+      comes from a review-tier source (the place is already published and
+      reviewed in spirit by having survived this long, so a routine
+      re-mention doesn't need re-approval) — the trust-gate rule only
+      governs whether a *new* place gets created, not whether an existing
+      one gets a new citation.
     trigger: "candidate place matches an existing place"
-    action: "update existing place; do not create a new slug"
+    action: "append to meta.sources (dedupe by url), refresh updatedAt; do not create a new slug, do not change meta.trust"
 
   - id: quality-gate-before-publish
     description: >

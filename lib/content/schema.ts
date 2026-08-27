@@ -53,13 +53,17 @@ export const placeMetaSchema = z.object({
     region: z.string().optional(),
     country: z.string(),
   }),
-  source: z.object({
-    name: z.string(),
-    url: z.url(),
-    feedId: z.string().nullable(),
-    trust: z.enum(["auto", "review"]),
-    originalPublishedAt: z.iso.datetime({ offset: true }).optional(),
-  }),
+  trust: z.enum(["auto", "review"]),
+  sources: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.url(),
+        feedId: z.string().nullable(),
+        originalPublishedAt: z.iso.datetime({ offset: true }).optional(),
+      }),
+    )
+    .min(1),
   heroImage: heroImageSchema.nullable(),
   eventEndsAt: z.iso.datetime({ offset: true }).nullable(),
   status: placeStatusSchema,

@@ -54,9 +54,12 @@ intent the YAML doesn't). Then, per candidate item:
    successful publishes for this run; log the remainder as deferred in
    `content/_ingestion-log.md`.
 4. **Dedupe.** Check every candidate against existing `meta.json` files —
-   haversine distance < 150m or a fuzzy name match means "update the
-   existing place," not "create a new slug." See `dedupe-by-place` in
-   rules.md.
+   haversine distance < 150m or a fuzzy name match means "this place
+   already exists," not "create a new slug." Append the new item to that
+   place's `meta.sources` array (dedupe by `url`) and refresh `updatedAt`;
+   leave `meta.trust` as it already is. One map pin, one article, however
+   many outlets have covered the place — every distinct mention stays
+   linked from the same page. See `dedupe-by-place` in rules.md.
 5. **Geocode.** Resolve coordinates for the place (Nominatim/OpenStreetMap —
    no API key, but respect its usage policy: identify with a real
    `User-Agent`, stay under 1 req/sec, cache results). If confidence is
