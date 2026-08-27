@@ -1,0 +1,63 @@
+{
+  "app": {
+    "wordmark": "Near",
+    "tagline": "A map of what's opening, playing, and worth the walk — written by Near, geocoded from the press that actually covers it."
+  },
+  "categories": {
+    "all": "All beats",
+    "travel-luxury": "Travel & Luxury",
+    "world-culture-news": "World & Culture News",
+    "city-culture": "City & Culture",
+    "food-drink": "Food & Drink",
+    "nightlife-sound": "Nightlife & Sound",
+    "wellness-fitness": "Wellness & Fitness"
+  },
+  "status": {
+    "articlesIndexed": "places indexed",
+    "sourcesWatched": "sources watched",
+    "lastSync": "last sync"
+  },
+  "board": {
+    "map": "Map",
+    "useMyLocation": "Use my location",
+    "mapCaption": "{count} located places · equirectangular chart",
+    "nearest": "Nearest",
+    "latest": "Latest",
+    "emptyNearest": "No located places yet. Once Near syncs, this fills with the closest picks to wherever you tell it you are.",
+    "emptyNearestNoLocation": "Tap \"Use my location\" on the map to sort {count} places by distance.",
+    "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first."
+  },
+  "place": {
+    "reasonsToCheckOut": "Reasons to check out",
+    "readOn": "Read the full story",
+    "source": "Source",
+    "relatedNearby": "Nearby on Near",
+    "closed": "Permanently closed",
+    "archived": "Featured in {month} {year}",
+    "translationPending": "This page hasn't been translated yet — showing the English version."
+  },
+  "sources": {
+    "title": "What Near watches",
+    "intro": "{count} feeds across six beats, each read fresh and geocoded — the publications themselves don't agree on categories or coordinates, so Near assigns both.",
+    "trustAuto": "auto-published",
+    "trustReview": "reviewed before publishing"
+  },
+  "inbox": {
+    "title": "Tell Near something",
+    "intro": "Suggest a place, flag one that's closed, or just say hello. A human reads every submission.",
+    "typeLabel": "What is this?",
+    "typeSuggestion": "Suggest a place",
+    "typeRequest": "Request",
+    "typeRemoval": "Report closed / ask for removal",
+    "typeMessage": "General message",
+    "nameLabel": "Place name (optional)",
+    "urlLabel": "Link (optional)",
+    "bodyLabel": "Your message",
+    "submit": "Send",
+    "success": "Thanks — this has been sent for review.",
+    "error": "Something went wrong sending this. Try again in a moment."
+  },
+  "footer": {
+    "tagline": "Near · a personal field guide, not a newsroom"
+  }
+}

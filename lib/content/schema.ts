@@ -1,0 +1,100 @@
+import { z } from "zod";
+
+export const CATEGORIES = [
+  "travel-luxury",
+  "world-culture-news",
+  "city-culture",
+  "food-drink",
+  "nightlife-sound",
+  "wellness-fitness",
+] as const;
+
+export const categorySchema = z.enum(CATEGORIES);
+export type Category = z.infer<typeof categorySchema>;
+
+export const LOCALES = ["en", "pt-BR", "it", "es-ES", "es-419", "zh-CN"] as const;
+export type ContentLocale = (typeof LOCALES)[number];
+
+export const placeStatusSchema = z.enum([
+  "draft",
+  "active",
+  "archived",
+  "closed",
+]);
+export type PlaceStatus = z.infer<typeof placeStatusSchema>;
+
+export const heroImageStrategySchema = z.enum(["source", "stock"]);
+
+export const heroImageSchema = z.object({
+  strategy: heroImageStrategySchema,
+  url: z.url(),
+  attribution: z.string(),
+  attributionLink: z.url(),
+  licenseNote: z.string().optional(),
+});
+export type HeroImage = z.infer<typeof heroImageSchema>;
+
+export const statusHistoryEntrySchema = z.object({
+  status: placeStatusSchema,
+  at: z.iso.datetime({ offset: true }),
+  note: z.string().optional(),
+});
+
+export const placeMetaSchema = z.object({
+  slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+  category: categorySchema,
+  coordinates: z.object({
+    lat: z.number().min(-90).max(90),
+    lng: z.number().min(-180).max(180),
+  }),
+  place: z.object({
+    city: z.string(),
+    neighborhood: z.string().optional(),
+    region: z.string().optional(),
+    country: z.string(),
+  }),
+  source: z.object({
+    name: z.string(),
+    url: z.url(),
+    feedId: z.string().nullable(),
+    trust: z.enum(["auto", "review"]),
+    originalPublishedAt: z.iso.datetime({ offset: true }).optional(),
+  }),
+  heroImage: heroImageSchema.nullable(),
+  eventEndsAt: z.iso.datetime({ offset: true }).nullable(),
+  status: placeStatusSchema,
+  statusHistory: z.array(statusHistoryEntrySchema).min(1),
+  geocode: z.object({
+    provider: z.string(),
+    confidence: z.number().min(0).max(1),
+    query: z.string(),
+  }),
+  publishedAt: z.iso.datetime({ offset: true }),
+  updatedAt: z.iso.datetime({ offset: true }),
+});
+export type PlaceMeta = z.infer<typeof placeMetaSchema>;
+
+export const placeContentFrontmatterSchema = z.object({
+  name: z.string().min(1),
+  tagline: z.string().min(1).max(90),
+  bullets: z.array(z.string().min(1)).min(3),
+  seoDescription: z.string().min(1).max(320),
+});
+export type PlaceContentFrontmatter = z.infer<
+  typeof placeContentFrontmatterSchema
+>;
+
+export type PlaceContent = {
+  meta: PlaceMeta;
+  frontmatter: PlaceContentFrontmatter;
+  body: string;
+  locale: ContentLocale;
+  isFallback: boolean;
+};
+
+export type PlaceSummary = {
+  meta: PlaceMeta;
+  frontmatter: PlaceContentFrontmatter;
+  locale: ContentLocale;
+  isFallback: boolean;
+};

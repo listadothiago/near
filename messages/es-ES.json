@@ -1,0 +1,63 @@
+{
+  "app": {
+    "wordmark": "Near",
+    "tagline": "Un mapa de lo que abre, suena y merece la caminata — escrito por Near, geolocalizado a partir de la prensa que de verdad lo cubre."
+  },
+  "categories": {
+    "all": "Todos los temas",
+    "travel-luxury": "Viajes y Lujo",
+    "world-culture-news": "Mundo y Cultura",
+    "city-culture": "Ciudad y Cultura",
+    "food-drink": "Comida y Bebida",
+    "nightlife-sound": "Vida Nocturna y Música",
+    "wellness-fitness": "Bienestar y Fitness"
+  },
+  "status": {
+    "articlesIndexed": "lugares indexados",
+    "sourcesWatched": "fuentes vigiladas",
+    "lastSync": "última sincronización"
+  },
+  "board": {
+    "map": "Mapa",
+    "useMyLocation": "Usar mi ubicación",
+    "mapCaption": "{count} lugares localizados · proyección equirrectangular",
+    "nearest": "Más cercanos",
+    "latest": "Más recientes",
+    "emptyNearest": "Todavía no hay lugares localizados. Cuando Near sincronice, aquí aparecerán los más cercanos a donde nos digas que estás.",
+    "emptyNearestNoLocation": "Toca \"Usar mi ubicación\" en el mapa para ordenar {count} lugares por distancia.",
+    "emptyLatest": "Todavía no hay lugares aquí. Cuando Near sincronice, las novedades más recientes aparecerán primero."
+  },
+  "place": {
+    "reasonsToCheckOut": "Motivos para visitarlo",
+    "readOn": "Leer el artículo completo",
+    "source": "Fuente",
+    "relatedNearby": "Cerca de aquí en Near",
+    "closed": "Cerrado permanentemente",
+    "archived": "Destacado en {month} de {year}",
+    "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
+  },
+  "sources": {
+    "title": "Lo que Near vigila",
+    "intro": "{count} fuentes en seis temas, cada una leída y geolocalizada — las propias publicaciones no coinciden en categorías ni coordenadas, así que Near asigna ambas.",
+    "trustAuto": "publicación automática",
+    "trustReview": "revisado antes de publicar"
+  },
+  "inbox": {
+    "title": "Cuéntale algo a Near",
+    "intro": "Sugiere un lugar, avisa de que ha cerrado, o simplemente saluda. Una persona lee cada envío.",
+    "typeLabel": "¿De qué se trata?",
+    "typeSuggestion": "Sugerir un lugar",
+    "typeRequest": "Petición",
+    "typeRemoval": "Avisar de cierre / pedir retirada",
+    "typeMessage": "Mensaje general",
+    "nameLabel": "Nombre del lugar (opcional)",
+    "urlLabel": "Enlace (opcional)",
+    "bodyLabel": "Tu mensaje",
+    "submit": "Enviar",
+    "success": "Gracias — se ha enviado para revisión.",
+    "error": "Algo ha fallado al enviarlo. Inténtalo de nuevo en un momento."
+  },
+  "footer": {
+    "tagline": "Near · una guía de campo personal, no una redacción"
+  }
+}

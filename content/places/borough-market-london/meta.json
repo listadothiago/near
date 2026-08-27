@@ -1,0 +1,27 @@
+{
+  "slug": "borough-market-london",
+  "category": "food-drink",
+  "coordinates": { "lat": 51.5055, "lng": -0.0910 },
+  "place": { "city": "London", "neighborhood": "Southwark", "region": "England", "country": "United Kingdom" },
+  "source": {
+    "name": "Borough Market",
+    "url": "https://boroughmarket.org.uk/",
+    "feedId": null,
+    "trust": "auto",
+    "originalPublishedAt": "2026-08-20T10:00:00Z"
+  },
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/London_-_Borough_Market_%281%29.jpg",
+    "attribution": "Photo by Fred Romero, CC BY 2.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:London_-_Borough_Market_(1).jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 1, "query": "Borough Market, London" },
+  "publishedAt": "2026-08-20T10:00:00Z",
+  "updatedAt": "2026-08-20T10:00:00Z"
+}

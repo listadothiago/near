@@ -1,0 +1,27 @@
+{
+  "slug": "time-out-market-lisboa",
+  "category": "food-drink",
+  "coordinates": { "lat": 38.7069, "lng": -9.1456 },
+  "place": { "city": "Lisbon", "neighborhood": "Cais do Sodré", "region": "Lisboa", "country": "Portugal" },
+  "source": {
+    "name": "Time Out Market Lisboa",
+    "url": "https://www.timeoutmarket.com/lisboa/",
+    "feedId": null,
+    "trust": "auto",
+    "originalPublishedAt": "2026-08-20T10:00:00Z"
+  },
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/TimeOut_Market_in_Lisbon.jpg",
+    "attribution": "Photo by Dmitry Brant, CC BY-SA 4.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:TimeOut_Market_in_Lisbon.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 1, "query": "Time Out Market Lisboa, Mercado da Ribeira" },
+  "publishedAt": "2026-08-20T10:00:00Z",
+  "updatedAt": "2026-08-20T10:00:00Z"
+}

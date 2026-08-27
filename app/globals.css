@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --paper: #f1f0ea;
+  --surface: #fafaf6;
+  --surface-2: #e7e6de;
+  --ink: #20262a;
+  --muted: #6c766f;
+  --border: #dedcd1;
+  --accent: #5c7a6c;
+  --accent-ink: #33463c;
+  --chart-bg: #e3e2d9;
+  --land: #b7c0b3;
+  --grid-line: #cbcabe;
+  --grid-strong: #98a093;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --cat-travel-luxury: #4c6e7a;
+  --cat-world-culture-news: #8a7c64;
+  --cat-city-culture: #4f7a46;
+  --cat-food-drink: #a15a3b;
+  --cat-nightlife-sound: #7a4f71;
+  --cat-wellness-fitness: #3f8078;
+
+  --shadow: 0 1px 2px rgba(32, 38, 42, 0.05), 0 10px 28px rgba(32, 38, 42, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --paper: #1c2022;
+    --surface: #232829;
+    --surface-2: #292f2f;
+    --ink: #eaede9;
+    --muted: #9aa39c;
+    --border: #343b3a;
+    --accent: #9ab1a2;
+    --accent-ink: #eaf1ec;
+    --chart-bg: #24282b;
+    --land: #4d6059;
+    --grid-line: #3a4241;
+    --grid-strong: #7f8d89;
+
+    --cat-travel-luxury: #7c97a3;
+    --cat-world-culture-news: #a69c87;
+    --cat-city-culture: #8fa37e;
+    --cat-food-drink: #b57a5c;
+    --cat-nightlife-sound: #9c7c93;
+    --cat-wellness-fitness: #6fa39b;
+
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.35);
   }
 }
 
+:root[data-theme="dark"] {
+  --paper: #1c2022;
+  --surface: #232829;
+  --surface-2: #292f2f;
+  --ink: #eaede9;
+  --muted: #9aa39c;
+  --border: #343b3a;
+  --accent: #9ab1a2;
+  --accent-ink: #eaf1ec;
+  --chart-bg: #24282b;
+  --land: #4d6059;
+  --grid-line: #3a4241;
+  --grid-strong: #7f8d89;
+
+  --cat-travel-luxury: #7c97a3;
+  --cat-world-culture-news: #a69c87;
+  --cat-city-culture: #8fa37e;
+  --cat-food-drink: #b57a5c;
+  --cat-nightlife-sound: #9c7c93;
+  --cat-wellness-fitness: #6fa39b;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-chart-bg: var(--chart-bg);
+  --color-land: var(--land);
+  --color-grid-line: var(--grid-line);
+  --color-grid-strong: var(--grid-strong);
+
+  --color-cat-travel-luxury: var(--cat-travel-luxury);
+  --color-cat-world-culture-news: var(--cat-world-culture-news);
+  --color-cat-city-culture: var(--cat-city-culture);
+  --color-cat-food-drink: var(--cat-food-drink);
+  --color-cat-nightlife-sound: var(--cat-nightlife-sound);
+  --color-cat-wellness-fitness: var(--cat-wellness-fitness);
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }

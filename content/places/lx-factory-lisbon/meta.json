@@ -1,0 +1,27 @@
+{
+  "slug": "lx-factory-lisbon",
+  "category": "city-culture",
+  "coordinates": { "lat": 38.7042, "lng": -9.1786 },
+  "place": { "city": "Lisbon", "neighborhood": "Alcântara", "region": "Lisboa", "country": "Portugal" },
+  "source": {
+    "name": "LX Factory",
+    "url": "https://lxfactory.com/",
+    "feedId": null,
+    "trust": "auto",
+    "originalPublishedAt": "2026-08-20T10:00:00Z"
+  },
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lisboa_LX_Factory_1.jpg",
+    "attribution": "Photo by Andrzej Otrębski, CC BY-SA 4.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Lisboa_LX_Factory_1.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 1, "query": "LX Factory, Lisbon" },
+  "publishedAt": "2026-08-20T10:00:00Z",
+  "updatedAt": "2026-08-20T10:00:00Z"
+}
