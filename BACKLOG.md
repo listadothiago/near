@@ -442,6 +442,43 @@ Individually named:
   Island, "what else?" (open-ended — `near-deep-researcher` should map
   the film's actual route/locations and find what's still there). Pairs
   naturally with Katz's Delicatessen above and the other NYC war rooms.
+  **Research already done and verified 2026-08-28** (this push was
+  started, then deprioritized in favour of Baixada Santista/São Paulo —
+  pick it up from here rather than re-researching):
+  - The musical is real and dated: *Warriors*, by Lin-Manuel Miranda and
+    Eisa Davis, opens at the **Lunt-Fontanne Theatre**, previews March
+    2027, opening April 2027. Directed by Jenny Koons, co-directed/
+    choreographed by Andy Blankenbuehler, grew out of the Oct 2024
+    concept album exec-produced by Nas. Gender-flipped — an all-female
+    gang. Sources: Playbill, Broadway.com, NBC New York.
+  - Katz's Delicatessen: **verified open**, 205 E Houston St. (The
+    separate Katz's opening near Memorial City Mall is a different,
+    Houston-Texas business — don't conflate them.)
+  - Confirmed filming locations (movie-locations.com + Scouting NY):
+    the conclave was **97th St Playground / "Dinosaur Playground"** at
+    Riverside Drive (*not* Van Cortlandt Park); the Baseball Furies
+    fight was at the **Firemen's Memorial, W 100th St at Riverside
+    Drive**; the Furies subway scene was **72nd St station**, not the
+    96th St the film claims. **Hoyt–Schermerhorn**'s two disused outer
+    platforms doubled for several stations (crews taped "Union" over
+    "Hoyt" tiles). The **Punks bathroom fight was the only set in the
+    film**, built at Kaufman-Astoria Studios in Queens — so it is *not*
+    a visitable location, don't write it as one.
+  - Coney Island: the Warriors emerge at **Stillwell Avenue station**,
+    but the boardwalk entrance has been rebuilt with ramps and you can
+    no longer get underneath it. **Stauch's Baths**, the final-scene
+    building, was demolished in the 1980s; **Tom's Restaurant Coney
+    Island** has stood on the spot since 2012 — a good pin. The beach
+    confrontation itself was probably *not* shot at Coney (Michael Beck
+    said Jones Beach; others suggest Fort Tilden) — flag as disputed
+    rather than asserting either.
+  - Proposed pin set (5, respecting `run-volume-cap`): Katz's
+    Delicatessen, the Firemen's Memorial in Riverside Park,
+    Hoyt–Schermerhorn Streets station, Deno's Wonder Wheel (verified
+    open — 2026 season opened Mar 29, 106th anniversary of the wheel),
+    Nathan's Famous at Surf & Stillwell (trading since 1916; note the
+    Jan 2026 $450m Smithfield acquisition). Tom's Coney Island gets a
+    mention in the collection body rather than its own pin.
 - [ ] Coolest libraries in the world (global)
 - [ ] War room built from the "Geografia Urbana Queer" document (see
   above)
