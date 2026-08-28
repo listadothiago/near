@@ -1,0 +1,36 @@
+{
+  "slug": "stray-dog-mission-san-francisco",
+  "categories": ["food-drink", "nightlife-sound"],
+  "tags": ["trending"],
+  "coordinates": { "lat": 37.7530125, "lng": -122.404806 },
+  "place": { "city": "San Francisco", "neighborhood": "Mission District", "region": "California", "country": "United States" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "SF Standard",
+      "url": "https://sfstandard.com/2026/06/02/stray-dog-bar-cafe-mission-district/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-02T00:00:00Z"
+    },
+    {
+      "name": "SF Standard",
+      "url": "https://sfstandard.com/2026/06/30/best-new-sf-restaurants-july/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-30T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://assets.sfstandard.com/image/994911177489/image_g0e9vn54nl5j98v93evoqlv71h/-S1200x630-FPNG",
+    "attribution": "Photo via SF Standard",
+    "attributionLink": "https://sfstandard.com/2026/06/02/stray-dog-bar-cafe-mission-district/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request (SF Bay Area research pass)" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.9, "query": "2545 24th St, San Francisco, CA 94110" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}
