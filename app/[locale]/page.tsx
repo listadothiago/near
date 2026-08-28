@@ -26,9 +26,9 @@ export default async function HomePage({
 
   return (
     <>
-      <Header stats={stats} />
+      <Header />
       <Board places={places} />
-      <Footer />
+      <Footer stats={stats} />
     </>
   );
 }

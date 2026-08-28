@@ -37,6 +37,8 @@
   "board": {
     "searchPlaceholder": "搜索任何内容…",
     "map": "地图",
+    "showMap": "显示地图",
+    "hideMap": "隐藏地图",
     "filters": "筛选",
     "useMyLocation": "我的位置",
     "mapCaption": "已定位 {count} 个地点 · 等距圆柱投影",

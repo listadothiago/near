@@ -7,6 +7,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { MapContainer, TileLayer, Marker, Tooltip, ZoomControl, useMap } from "react-leaflet";
 import { CATEGORY_COLOR_VAR, type Category } from "@/lib/content/categories";
+import { haversineKm } from "@/lib/geo/haversine";
 
 export type MapPoint = {
   slug: string;
@@ -55,6 +56,26 @@ function userIcon(color: string) {
 
 const NEIGHBORHOOD_ZOOM = 14;
 
+// Anything within 15% of the nearest pin's distance counts as "the
+// nearest pin(s)" — a cluster of tips on the same block should all be in
+// frame, not just whichever one wins by a few metres.
+const NEAREST_TIE_FACTOR = 1.15;
+
+function nearestPointsTo(
+  coords: { lat: number; lng: number },
+  points: MapPoint[],
+): MapPoint[] {
+  if (points.length === 0) return [];
+  const withDistance = points.map((p) => ({
+    point: p,
+    km: haversineKm(coords.lat, coords.lng, p.lat, p.lng),
+  }));
+  const closest = Math.min(...withDistance.map((d) => d.km));
+  return withDistance
+    .filter((d) => d.km <= closest * NEAREST_TIE_FACTOR)
+    .map((d) => d.point);
+}
+
 // Single effect owns every view change (fit-to-points vs. focus-on-user)
 // so there's exactly one decision per relevant change — two separate
 // effects each calling setView/fitBounds can race and stomp on each
@@ -75,7 +96,19 @@ function MapView({
   useEffect(() => {
     if (userCoords) {
       if (focusUserSignal !== lastAppliedFocusSignal.current) {
-        map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM);
+        // Frame the user together with the nearest pin(s), as tight as
+        // that will go — a neighborhood-level view centred on the user
+        // is useless when it cuts the closest tip out of frame.
+        const nearest = nearestPointsTo(userCoords, points);
+        if (nearest.length === 0) {
+          map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM);
+        } else {
+          const bounds = L.latLngBounds([
+            [userCoords.lat, userCoords.lng],
+            ...nearest.map((p) => [p.lat, p.lng] as [number, number]),
+          ]);
+          map.fitBounds(bounds, { padding: [40, 40], maxZoom: NEIGHBORHOOD_ZOOM });
+        }
         lastAppliedFocusSignal.current = focusUserSignal;
       }
       // Already focused on the user for this signal — leave the view

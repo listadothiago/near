@@ -37,6 +37,8 @@
   "board": {
     "searchPlaceholder": "Busque qualquer coisa…",
     "map": "Mapa",
+    "showMap": "Mostrar mapa",
+    "hideMap": "Ocultar mapa",
     "filters": "Filtros",
     "useMyLocation": "Minha localização",
     "mapCaption": "{count} lugares localizados · projeção equirretangular",

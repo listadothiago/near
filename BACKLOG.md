@@ -103,14 +103,28 @@ Both hit the session token limit mid-run and did not finish or commit:
 - [x] Mobile: header locale/theme controls stack vertically on mobile/
   tablet (done). Filter chips still need their own mobile treatment —
   see the next item, not yet done.
-- [ ] Mobile: collapse category/tag filters under a filter menu/button so
-  the map and listings sit more above the fold.
+- [x] Mobile: collapse category/tag filters under a filter menu/button so
+  the map and listings sit more above the fold (done — commit `857fe77`).
 - [ ] **Mobile pass, broader** (2026-08-28, operator: "really slick web
   app that's immediately understandable and usable... right now it's
   kind of ugly and cluttered on mobile... desktop looks better,
   haven't tested tablet"). Broader than the filter-collapse item above
   — a real audit of every page at mobile viewport width, not just the
-  filter row. In progress.
+  filter row. In progress. Landed so far (2026-08-28, home page):
+  - [x] Tagline: dash prefix dropped, smaller on mobile
+    (`0.76rem`/`0.92rem`), truncated so it stays on one line.
+  - [x] Filters button now shares the search field's row — `SearchBox`
+    went from `w-full` to `flex-1 min-w-0` so the button no longer wraps.
+  - [x] Locale switcher, theme toggle, and the places-indexed/sources-
+    watched/last-sync line all moved out of `Header` and into `Footer`
+    (which now takes the `stats` prop `Header` used to). `LocaleSwitcher`
+    gained a `dropUp` prop so its menu opens upward from the footer.
+  - [x] Map is a disclosure below `md`, collapsed by default; always open
+    from `md` up, where it has its own grid column. Resolved via
+    `matchMedia` after mount rather than CSS-hidden, so Leaflet is never
+    loaded on a phone until the map is actually opened.
+  - Still to audit at mobile width: place pages, collection pages,
+    `/guides`, `/sources`.
 - [x] Nearest/Latest listing rows now show a hero-image thumbnail
   (done 2026-08-28). `PlaceRow` is shared, so the "Nearby on near.tips"
   section on every place page got thumbnails from the same change.
@@ -121,6 +135,13 @@ Both hit the session token limit mid-run and did not finish or commit:
   their geolocation (zoom 14), and the app proactively requests
   geolocation on load instead of requiring a click first (done
   2026-08-28).
+- [x] Refined 2026-08-28: a neighborhood-level view centered on the user
+  is useless when it cuts the closest pin out of frame (the operator's
+  own location in the Baixada Santista has its nearest pin ~57km away in
+  São Paulo). On load and on "My location", the map now fits bounds over
+  the user *plus* the nearest pin(s) — everything within 15% of the
+  closest pin's distance, so a cluster on one block all stays in frame —
+  capped at zoom 14 so a pin 50m away doesn't zoom to street level.
 - [ ] Move the search box up onto the title/tagline line; make
   search + locale switcher + theme toggle sticky at the top of the
   viewport — including on pin detail pages.

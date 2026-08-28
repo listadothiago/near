@@ -37,6 +37,8 @@
   "board": {
     "searchPlaceholder": "Search anything…",
     "map": "Map",
+    "showMap": "Show map",
+    "hideMap": "Hide map",
     "filters": "Filters",
     "useMyLocation": "My location",
     "mapCaption": "{count} located places · equirectangular chart",

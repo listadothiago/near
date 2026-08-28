@@ -31,7 +31,7 @@ export default async function SourcesPage({
 
   return (
     <>
-      <Header stats={stats} />
+      <Header />
       <section className="mt-8">
         <h1 className="font-serif font-medium text-[1.4rem] mb-1">
           {t("title")}
@@ -93,7 +93,7 @@ export default async function SourcesPage({
         </div>
         <SubmitForm />
       </section>
-      <Footer />
+      <Footer stats={stats} />
     </>
   );
 }

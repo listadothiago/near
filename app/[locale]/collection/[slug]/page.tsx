@@ -96,7 +96,7 @@ export default async function CollectionPage({
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <Header stats={stats} />
+      <Header />
       <article className="mt-6">
         {content.isFallback && (
           <p className="mb-4 text-[0.82rem] text-muted bg-surface-2 border border-border rounded-lg px-3 py-2 inline-block">
@@ -113,7 +113,7 @@ export default async function CollectionPage({
         </LongFormBody>
         <CollectionPlaces places={places} />
       </article>
-      <Footer />
+      <Footer stats={stats} />
     </>
   );
 }

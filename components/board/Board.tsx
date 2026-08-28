@@ -29,7 +29,23 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
   const [locating, setLocating] = useState(false);
   const [focusUserSignal, setFocusUserSignal] = useState(0);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [mapOpen, setMapOpen] = useState(false);
+  // The map is a disclosure on small screens only — collapsed by default
+  // so the listings start above the fold — and always open from md up,
+  // where it occupies its own grid column. Resolved after mount rather
+  // than guessed, so the map is never mounted (and Leaflet never loaded)
+  // on a phone until it's actually asked for.
+  const [isWideViewport, setIsWideViewport] = useState(false);
   const activeFilterCount = activeCats.size + activeTags.size;
+  const mapVisible = isWideViewport || mapOpen;
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px)");
+    const sync = () => setIsWideViewport(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
 
   function toggleCat(cat: Category | "all") {
     if (cat === "all") {
@@ -159,35 +175,63 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
 
       <div className="mt-4 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
         <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
-          <div className="flex justify-between items-center px-4 pt-3.5 pb-2.5">
-            <h2 className="font-serif font-medium text-[1.05rem] m-0">
-              {t("map")}
-            </h2>
-            <button
-              type="button"
-              onClick={useMyLocation}
-              disabled={locating}
-              className="text-[0.78rem] font-semibold bg-transparent border border-border text-ink px-2.5 py-1.5 rounded-lg hover:border-accent hover:text-accent-ink transition-colors disabled:opacity-50"
-            >
-              {t("useMyLocation")}
-            </button>
+          <div className="flex justify-between items-center gap-2 px-4 pt-3.5 pb-2.5">
+            {isWideViewport ? (
+              <h2 className="font-serif font-medium text-[1.05rem] m-0">
+                {t("map")}
+              </h2>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setMapOpen((o) => !o)}
+                aria-expanded={mapOpen}
+                className="inline-flex items-center gap-1.5 bg-transparent border-0 p-0 font-serif font-medium text-[1.05rem] text-ink"
+              >
+                {t("map")}
+                <span
+                  aria-hidden="true"
+                  className={`text-muted text-[0.7rem] transition-transform ${
+                    mapOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  ▼
+                </span>
+                <span className="sr-only">
+                  {mapOpen ? t("hideMap") : t("showMap")}
+                </span>
+              </button>
+            )}
+            {mapVisible && (
+              <button
+                type="button"
+                onClick={useMyLocation}
+                disabled={locating}
+                className="text-[0.78rem] font-semibold bg-transparent border border-border text-ink px-2.5 py-1.5 rounded-lg hover:border-accent hover:text-accent-ink transition-colors disabled:opacity-50"
+              >
+                {t("useMyLocation")}
+              </button>
+            )}
           </div>
-          <WorldMap
-            points={filtered.map((p) => ({
-              slug: p.meta.slug,
-              lat: p.meta.coordinates.lat,
-              lng: p.meta.coordinates.lng,
-              category: p.meta.categories[0],
-              name: p.frontmatter.name,
-              tagline: p.frontmatter.tagline,
-              heroImageUrl: p.meta.heroImage?.url ?? null,
-            }))}
-            userCoords={userCoords}
-            focusUserSignal={focusUserSignal}
-          />
-          <p className="m-0 px-4 pt-2.5 pb-3.5 text-[0.76rem] text-muted font-mono">
-            {t("mapCaption", { count: filtered.length })}
-          </p>
+          {mapVisible && (
+            <>
+              <WorldMap
+                points={filtered.map((p) => ({
+                  slug: p.meta.slug,
+                  lat: p.meta.coordinates.lat,
+                  lng: p.meta.coordinates.lng,
+                  category: p.meta.categories[0],
+                  name: p.frontmatter.name,
+                  tagline: p.frontmatter.tagline,
+                  heroImageUrl: p.meta.heroImage?.url ?? null,
+                }))}
+                userCoords={userCoords}
+                focusUserSignal={focusUserSignal}
+              />
+              <p className="m-0 px-4 pt-2.5 pb-3.5 text-[0.76rem] text-muted font-mono">
+                {t("mapCaption", { count: filtered.length })}
+              </p>
+            </>
+          )}
         </section>
 
         <NearestLatestTabs
