@@ -37,6 +37,7 @@
   "board": {
     "searchPlaceholder": "Search anything…",
     "map": "Map",
+    "filters": "Filters",
     "useMyLocation": "My location",
     "mapCaption": "{count} located places · equirectangular chart",
     "nearest": "Nearest",

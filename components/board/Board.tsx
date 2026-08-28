@@ -28,6 +28,8 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
   );
   const [locating, setLocating] = useState(false);
   const [focusUserSignal, setFocusUserSignal] = useState(0);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const activeFilterCount = activeCats.size + activeTags.size;
 
   function toggleCat(cat: Category | "all") {
     if (cat === "all") {
@@ -126,17 +128,34 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     <div>
       <div className="mt-4 flex flex-wrap items-center gap-1.5">
         <SearchBox value={query} onChange={setQuery} />
-        <CategoryFilters
-          activeCats={activeCats}
-          onToggle={toggleCat}
-          available={availableCats}
+        <button
+          type="button"
+          onClick={() => setFiltersOpen((o) => !o)}
+          aria-expanded={filtersOpen}
+          className="sm:hidden inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-[0.78rem] font-semibold text-ink hover:border-accent transition-colors"
+        >
+          {t("filters")}
+          {activeFilterCount > 0 && (
+            <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] rounded-full bg-accent text-surface text-[0.66rem] font-bold px-1">
+              {activeFilterCount}
+            </span>
+          )}
+        </button>
+        <div className={`${filtersOpen ? "contents" : "hidden"} sm:contents`}>
+          <CategoryFilters
+            activeCats={activeCats}
+            onToggle={toggleCat}
+            available={availableCats}
+          />
+        </div>
+      </div>
+      <div className={`${filtersOpen ? "block" : "hidden"} sm:block`}>
+        <TagFilters
+          activeTags={activeTags}
+          onToggle={toggleTag}
+          available={availableTags}
         />
       </div>
-      <TagFilters
-        activeTags={activeTags}
-        onToggle={toggleTag}
-        available={availableTags}
-      />
 
       <div className="mt-4 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
         <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">

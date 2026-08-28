@@ -37,6 +37,7 @@
   "board": {
     "searchPlaceholder": "Busque qualquer coisa…",
     "map": "Mapa",
+    "filters": "Filtros",
     "useMyLocation": "Minha localização",
     "mapCaption": "{count} lugares localizados · projeção equirretangular",
     "nearest": "Mais próximos",
