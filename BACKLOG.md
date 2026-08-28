@@ -28,7 +28,28 @@ auto-deploys to https://near.tips — there is no manual deploy step.
 Working state: clean tree, `npx tsc --noEmit` passes, `npm run build`
 passes (121 pages). 16 places indexed and **all 16 now `status: active`**
 (no drafts remain), 10 sources watched, all published places carry full
-6-locale coverage.
+6-locale coverage. **0 collections exist** — see "Blog view" below.
+
+### Next session: start here
+
+1. **Write the first collection.** Everything needed to view one is now
+   built and shipped; there is simply no post to read. Best-supported by
+   pins that already exist: an **Asian food in São Paulo** piece tying
+   together `rong-he-sao-paulo` (hand-pulled noodles, Liberdade),
+   `thai-e-san-sao-paulo` (Liberdade) and `djapa-sao-paulo` (Moema) — all
+   three published this session. Rong He's noodle photograph is the
+   obvious cover image. Shipping `en` only is fine to start:
+   `resolveLocaleContent` falls back to English with a
+   "translation pending" note, per `full-locale-coverage`.
+2. **Finish the pin → post backlink.** `getCollectionsForPlace()` exists in
+   `lib/content/collectionsLoader.ts` and is fully working but has **no
+   caller** — place pages never show which guides mention them, so the
+   cross-linking is one-directional. A "Featured in" section on
+   `app/[locale]/place/[slug]/page.tsx` closes it; the
+   `collection.featuredIn` UI string is already translated in all six
+   `messages/*.json`. Left undone this session only for lack of budget.
+3. **Continue the mobile audit** on place/collection/`/guides`/`/sources`
+   pages — only the home page was actually done.
 
 **Standing instruction from the operator: keep this file up to date** as
 work happens — it's the handoff document between sessions.
@@ -124,7 +145,10 @@ Both hit the session token limit mid-run and did not finish or commit:
   — a real audit of every page at mobile viewport width, not just the
   filter row. In progress. Landed so far (2026-08-28, home page):
   - [x] Tagline: dash prefix dropped, smaller on mobile
-    (`0.76rem`/`0.92rem`), truncated so it stays on one line.
+    (`0.76rem`/`0.92rem`). Was briefly truncated to force it onto one
+    line; the operator then relaxed that ("the tagline doesnt have to be
+    in same line as title anymore"), so it now wraps in full instead of
+    ellipsizing.
   - [x] Filters button now shares the search field's row — `SearchBox`
     went from `w-full` to `flex-1 min-w-0` so the button no longer wraps.
   - [x] Locale switcher, theme toggle, and the places-indexed/sources-
@@ -162,6 +186,28 @@ Both hit the session token limit mid-run and did not finish or commit:
   "search this area").
 - [ ] Admin/curators should be able to create a new pin page directly
   from the map (click-to-create UX).
+- [x] **Blog view for blog posts** (2026-08-28, operator: "blog posts
+  are associated with multiple place and event pins in the map
+  potentially, but they are not a pin in themselves. We need some way to
+  view the blog view of blog posts"). The routes already existed
+  (`/[locale]/guides` index + `/[locale]/collection/[slug]` detail) but
+  were reachable only from a small footer link, and `/guides` rendered as
+  a bare heading over an empty grid. Added:
+  - `components/collection/CollectionCards.tsx` — the card grid, now
+    shared so a post looks identical wherever it's surfaced.
+  - `components/collection/GuidesStrip.tsx` — a "Guides" section on the
+    home page under the board, showing up to 3 posts with a "See all"
+    link. Renders `null` while no collections exist, so it stays
+    invisible until there's something to read.
+  - An empty state on `/guides` instead of a blank grid.
+  - New `collection.seeAll` / `collection.empty` / `collection.featuredIn`
+    strings across all six locales.
+  Still open from this same request: the pin → post backlink (see "Next
+  session: start here" at the top of this file), and writing an actual
+  post.
+- [x] Title format is now `Dicas perto de mim | near.tips` — the localized
+  wordmark leads, the domain trails (was `near.tips | <wordmark>`).
+  Sub-pages use the `%s | near.tips` template.
 - [ ] **Event ↔ venue linking** (2026-08-28): every event pin
   conceptually belongs to a location/venue (confirmed with operator).
   A venue's own place page should list upcoming events happening there

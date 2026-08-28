@@ -14,9 +14,9 @@ export default function Header() {
             {t("app.wordmark")}
           </span>
         </Link>
-        {/* Kept to a single line at every width — the dash prefix and the
-            larger mobile size both pushed this onto a second row. */}
-        <span className="min-w-0 truncate text-muted text-[0.76rem] sm:text-[0.92rem]">
+        {/* Sits inline with the wordmark when it fits and wraps onto its
+            own line when it doesn't — never truncated. */}
+        <span className="text-muted text-[0.76rem] sm:text-[0.92rem]">
           {t("app.tagline")}
         </span>
       </div>
