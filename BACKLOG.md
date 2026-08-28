@@ -69,13 +69,24 @@ Both hit the session token limit mid-run and did not finish or commit:
 
 ## UI/UX
 
+- [x] Mobile: header locale/theme controls stack vertically on mobile/
+  tablet (done). Filter chips still need their own mobile treatment —
+  see the next item, not yet done.
 - [ ] Mobile: collapse category/tag filters under a filter menu/button so
   the map and listings sit more above the fold.
+- [ ] **Mobile pass, broader** (2026-08-28, operator: "really slick web
+  app that's immediately understandable and usable... right now it's
+  kind of ugly and cluttered on mobile... desktop looks better,
+  haven't tested tablet"). Broader than the filter-collapse item above
+  — a real audit of every page at mobile viewport width, not just the
+  filter row. In progress.
 - [ ] Nearest/Latest (and future Follows) listing rows should show a
   thumbnail image, not just text.
-- [ ] Rename "Use my location" to something like "My location"; clicking
-  it should zoom/center the map to the user's immediate neighborhood
-  around their geolocation, not just drop a pin at low zoom.
+- [x] Rename "Use my location" to "My location"; clicking it now
+  zooms/centers the map to the user's immediate neighborhood around
+  their geolocation (zoom 14), and the app proactively requests
+  geolocation on load instead of requiring a click first (done
+  2026-08-28).
 - [ ] Move the search box up onto the title/tagline line; make
   search + locale switcher + theme toggle sticky at the top of the
   viewport — including on pin detail pages.
@@ -84,6 +95,19 @@ Both hit the session token limit mid-run and did not finish or commit:
   "search this area").
 - [ ] Admin/curators should be able to create a new pin page directly
   from the map (click-to-create UX).
+- [ ] **Event ↔ venue linking** (2026-08-28): every event pin
+  conceptually belongs to a location/venue (confirmed with operator).
+  A venue's own place page should list upcoming events happening there
+  (e.g. teatro-clube-da-eskyna-santos should show Cabaret Latino as an
+  upcoming event). An event's page should link back to its venue's page
+  — currently only done informally via a `<NearLink>` in the body copy
+  (see cabaret-latino-teatro-eskyna-santos), not a structured
+  relationship. Event pages already get "Nearby on near.tips" for free
+  (they're regular places using the same PlacePage component/
+  RelatedPlaces logic) — that part needs no new work. What's actually
+  missing: a structured venue-relationship field (e.g. an optional
+  `venueSlug` on `placeMetaSchema`) plus a "Upcoming events here"
+  section component on the venue's own page.
 
 ## New skills to build
 
