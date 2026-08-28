@@ -30,8 +30,24 @@ passes (121 pages). 16 places indexed and **all 16 now `status: active`**
 (no drafts remain), 10 sources watched. **0 collections exist** — see
 "Blog view" below.
 
-⚠️ **Two known rule violations on the live site, both from this session's
-publish pass — see `content/_ingestion-log.md` for the full accounting:**
+⚠️ **Three open rule questions — see `content/_ingestion-log.md` for the
+full accounting:**
+
+- **`dedupe-by-place`'s 150m radius blocks Near's cross-linking model.**
+  The rule says anything within 150m "is the same real-world place
+  covered again — not a new place." But every remaining cross-link
+  opportunity is a distinct business inside a larger pinned place: Cuia
+  and Megafauna inside Copan (46m/38m from Fel — created anyway this
+  session, deviation logged); Neal's Yard Dairy, Bread Ahead and Black
+  Pig inside Borough Market; Ler Devagar, Landeau Chocolate and Rio
+  Maravilha inside LX Factory; Ritual Coffee, Lost Cat Bar and Cinderella
+  Bakery around Stray Dog; Sidebar and Luka's Taproom near Bar Skula;
+  Flor Discos and Brechó do Eskyna inside Teatro Eskyna; Manteigaria
+  inside Time Out Market. **Proposed amendment, awaiting approval:**
+  proximity should trigger an *identity check* (same name, same business,
+  same source coverage → merge), not imply sameness automatically.
+  `rules.md` is deliberately unchanged pending that call. That list is
+  also the ready-made pin backlog for cross-linking work.
 
 - **12 of 16 active places fail `quality-gate-before-publish`'s
   `body >= 600 words`** (294–555 words). 7 are ones published this

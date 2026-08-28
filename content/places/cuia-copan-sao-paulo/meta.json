@@ -1,0 +1,44 @@
+{
+  "slug": "cuia-copan-sao-paulo",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem", "local-legend"],
+  "coordinates": { "lat": -23.5455, "lng": -46.6431 },
+  "place": { "city": "São Paulo", "neighborhood": "Centro", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Guia MICHELIN — Cuia",
+      "url": "https://guide.michelin.com/us/en/sao-paulo-region/sao-paulo/restaurant/cuia",
+      "feedId": null
+    },
+    {
+      "name": "Vai Se Food (Ailin Aleixo)",
+      "url": "https://www.vaisefood.com/aonde-ir/comidinhas/cuia-o-restaurante-cafe-de-bel-coelho-no-copan/",
+      "feedId": null,
+      "originalPublishedAt": "2021-01-27T00:00:00Z"
+    },
+    {
+      "name": "CNN Brasil Viagem & Gastronomia",
+      "url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/onde-os-chefs-comem-com-bel-coelho-do-cuia-e-do-clandestina-em-sp/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://www.vaisefood.com/wp-content/uploads/2021/01/cuia6.jpg",
+    "attribution": "Photo via Vai Se Food (Ailin Aleixo)",
+    "attributionLink": "https://www.vaisefood.com/aonde-ir/comidinhas/cuia-o-restaurante-cafe-de-bel-coelho-no-copan/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "created to close a cross-link gap: Cuia was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and megafauna-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Cuia, Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo" },
+  "publishedAt": "2026-08-28T00:00:00Z",
+  "updatedAt": "2026-08-28T00:00:00Z"
+}

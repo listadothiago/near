@@ -137,3 +137,77 @@ while they were drafts. Now active, each is missing 3–4 locales
 with a "translation pending" note — but it does mean BACKLOG's
 "all published places carry full 6-locale coverage" line was made false
 by this pass, and has been corrected.
+
+## 2026-08-28T00:00:00Z — cross-link pass: Cuia + Megafauna created
+
+Triggered by the operator spotting an unlinked mention on the live
+`bar-fel-copan-sao-paulo` page: its closing line names "Cuia, chef Bel
+Coelho's café inside Megafauna" with no page to link to. Near's whole
+model is that pins cross-link, so a named venue with no pin is a hole in
+the graph, not just a missing `<a>`.
+
+**Swept for the general case before fixing the specific one.** Two
+classes:
+
+- *Class A — a place that already has a pin, named on another page but
+  not `<NearLink>`ed.* **Zero found** across all 16 places and every
+  locale file. Existing pin-to-pin linking is clean.
+- *Class B — a real venue named in body copy with no pin at all.* Plenty,
+  and they cluster: almost every one is a distinct business inside a
+  larger place Near already pins. Beyond Cuia and Megafauna inside Copan:
+  Neal's Yard Dairy, Bread Ahead and Black Pig inside
+  `borough-market-london`; Ler Devagar, Landeau Chocolate and Rio
+  Maravilha inside `lx-factory-lisbon`; Ritual Coffee Roasters, Lost Cat
+  Bar and Cinderella Bakery around `stray-dog-mission-san-francisco`;
+  Sidebar and Luka's Taproom near `bar-skula-oakland`; Flor Discos and
+  Brechó do Eskyna inside `teatro-clube-da-eskyna-santos`; Manteigaria
+  inside `time-out-market-lisboa`. That's the pin backlog for anyone
+  picking up cross-linking work.
+
+**Created two places**, both passing every condition of
+`quality-gate-before-publish` — checked explicitly this time rather than
+inferred, after the word-count miss logged above:
+
+- `cuia-copan-sao-paulo` — 639 words en / 636 pt-BR, tagline 86 and 87
+  chars, 5 bullets, geocode 0.65, hero from Vai Se Food, 3 sources
+  including the MICHELIN Guide listing.
+- `megafauna-copan-sao-paulo` — 668 words en / 600 pt-BR, tagline 90 and
+  78 chars, 5 bullets, geocode 0.65, hero from São Paulo Secreto, 3
+  sources including the shop's own site and PublishNews. The pt-BR
+  tagline was 92 chars on first write and was cut to 78 before commit —
+  same class of schema break as the nine taglines noted in BACKLOG.
+
+Current-status check per `verify-still-open-before-create`: both
+confirmed operating in 2026 — Cuia via its live MICHELIN Guide listing
+and a second branch since opened in Pinheiros, Megafauna via its own site
+and its 2025 handover to Associação Livros no Centro. The 2021 Vai Se
+Food prices were deliberately **not** carried into the page as current.
+
+### ⚠️ Deliberate `dedupe-by-place` deviation — needs a rules decision
+
+`dedupe-by-place` says a candidate within **150m** of an existing place
+"is the same real-world place covered again — not a new place." Both new
+pins are well inside that: Cuia is 46m from Fel and 10m from Megafauna;
+Megafauna is 38m from Fel. Read literally, the rule forbids creating
+either.
+
+They were created anyway, because the rule's stated intent is to stop the
+*same* venue being covered twice, and these are three distinct businesses
+that happen to share the ground floor of a 1,000-apartment Niemeyer
+building. Flagged rather than quietly bypassed.
+
+This is not a one-off. As the Class B list above shows, **the 150m radius
+blocks essentially every remaining cross-link opportunity Near has**,
+because dense venues — a market hall, a factory complex, a landmark
+building — are exactly where several pinnable businesses sit within
+metres of each other. Proposed amendment, for operator approval rather
+than unilateral edit: proximity should *trigger an identity check*
+(same name, same business, same source coverage → merge) instead of
+automatically implying sameness. `rules.md` is unchanged pending that
+decision.
+
+Locales: both created `en` + `pt-BR` only, matching
+`bar-fel-copan-sao-paulo`'s existing set. This adds 8 to the locale-gap
+count already logged above. `npx tsc --noEmit` and `npm run build` pass
+(133 pages, up from 121), and both pages plus both inline links were
+confirmed rendering in the browser.
