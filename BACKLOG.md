@@ -186,8 +186,23 @@ wrong about this codebase. Verdicts and the commands behind them:
    Lisbon, Porto, Amsterdam — see the "Focus cities" section at the top
    of `content/preferred-destinations.md` for the authoritative list.
    Only once these are genuinely fleshed out does the plan move to step 2.
-2. **Google Analytics 4** setup for near.tips.
-3. **Google Search Console** submission. Before submitting, fix the two
+2. **Analytics — decided 2026-08-28: Vercel Analytics, not GA4.**
+   Operator's call, and it fits Near: cookieless, so no consent banner is
+   needed under LGPD/GDPR (the audience is squarely Brazil + Europe), and
+   no banner means nothing new competing for space in the mobile layout.
+   Setup is `npm i @vercel/analytics` plus `<Analytics />` in the root
+   layout — no property to create, no Measurement ID, no API key.
+   - Add `@vercel/speed-insights` at the same time. Core Web Vitals are a
+     ranking signal, and Near is a map-heavy app — today's
+     collapse-the-map-on-mobile change should have improved LCP on
+     phones noticeably, and this is what would actually confirm it.
+   - Check the event cap on the current Vercel plan before relying on it.
+   - Accepted trade vs GA4: no funnels, cohorts or retention, and weaker
+     custom events. Revisit only if someone needs to hand data to a
+     marketer, where GA4 is the lingua franca.
+   - Do this *before* the content push, so there's baseline history to
+     compare against rather than starting the clock after traffic moves.
+3. **Google Search Console** submission — **still needed regardless of the analytics choice above.** Search Console is where actual search queries come from; GA4 never provided those either, so choosing Vercel Analytics costs nothing here. Verify with a DNS TXT record at the registrar (a domain property covers all subdomains and survives redeploys). No API key. Before submitting, fix the two
    cheap items from the SEO audit above — the missing home-page `<h1>`
    and the missing `hreflang` annotations — since Search Console will
    immediately start reporting the six locales as duplicate content
