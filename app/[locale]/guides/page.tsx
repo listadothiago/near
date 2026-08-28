@@ -31,7 +31,7 @@ export default async function GuidesPage({
 
   return (
     <>
-      <Header stats={stats} />
+      <Header />
       <section className="mt-8">
         <h1 className="font-serif font-medium text-[1.4rem] mb-5">
           {t("navLabel")}
@@ -69,7 +69,7 @@ export default async function GuidesPage({
           ))}
         </div>
       </section>
-      <Footer />
+      <Footer stats={stats} />
     </>
   );
 }

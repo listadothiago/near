@@ -23,7 +23,9 @@ const NAMES: Record<string, string> = {
   "zh-CN": "中文（简体）",
 };
 
-export default function LocaleSwitcher() {
+// dropUp is for the footer, where a downward menu would open off the
+// bottom of the page.
+export default function LocaleSwitcher({ dropUp = false }: { dropUp?: boolean }) {
   const activeLocale = useLocale();
   const pathname = usePathname();
   const t = useTranslations("a11y");
@@ -63,7 +65,9 @@ export default function LocaleSwitcher() {
       {open && (
         <div
           role="menu"
-          className="absolute right-0 top-[calc(100%+6px)] z-20 bg-surface border border-border rounded-xl shadow-[0_10px_28px_rgba(32,38,42,.12)] p-1.5 flex flex-col gap-0.5 min-w-[44px]"
+          className={`absolute left-0 z-20 bg-surface border border-border rounded-xl shadow-[0_10px_28px_rgba(32,38,42,.12)] p-1.5 flex flex-col gap-0.5 min-w-[44px] ${
+            dropUp ? "bottom-[calc(100%+6px)]" : "top-[calc(100%+6px)]"
+          }`}
         >
           {routing.locales.map((locale) => (
             <Link
