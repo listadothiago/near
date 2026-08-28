@@ -9,14 +9,26 @@ the *order*.
 
 ## Where things stand (updated 2026-08-28)
 
-Everything through commit `c42f655` is committed; everything before it
-is also pushed to `origin/main` and live on https://near.tips (Vercel
-auto-deploys from GitHub — no manual deploy step). `c42f655` itself
-(listing thumbnails) is committed locally but **not yet pushed**.
+**Content priority changed 2026-08-28**: the operator redirected the push
+to **Baixada Santista (where they live) and São Paulo (nearby)**, ahead of
+the other focus cities. A New York/*The Warriors* war room was scoped and
+researched first, then parked — its verified research is preserved inline
+under that war-room entry below so it can be resumed without redoing it.
+
+First result of that redirect: an audit found all 7 `status: draft` places
+were held back solely by the missing-hero-image quality gate, and all 7
+were São Paulo/Santos. Hero images were resolved from each place's own
+source article, so the live board went from 9 to **16 active places** —
+including the first Santos coverage to actually appear on the map. See
+`content/_ingestion-log.md` for the per-place detail.
+
+Everything is committed and pushed to `origin/main`, which Vercel
+auto-deploys to https://near.tips — there is no manual deploy step.
 
 Working state: clean tree, `npx tsc --noEmit` passes, `npm run build`
-passes (121 pages). 16 places indexed, 10 sources watched, all published
-places carry full 6-locale coverage.
+passes (121 pages). 16 places indexed and **all 16 now `status: active`**
+(no drafts remain), 10 sources watched, all published places carry full
+6-locale coverage.
 
 **Standing instruction from the operator: keep this file up to date** as
 work happens — it's the handoff document between sessions.

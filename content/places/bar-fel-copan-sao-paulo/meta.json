@@ -1,9 +1,23 @@
 {
   "slug": "bar-fel-copan-sao-paulo",
-  "categories": ["nightlife-sound", "city-culture"],
-  "tags": ["hidden-gem", "hipster"],
-  "coordinates": { "lat": -23.5453, "lng": -46.6427 },
-  "place": { "city": "São Paulo", "neighborhood": "Centro", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "nightlife-sound",
+    "city-culture"
+  ],
+  "tags": [
+    "hidden-gem",
+    "hipster"
+  ],
+  "coordinates": {
+    "lat": -23.5453,
+    "lng": -46.6427
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
   "sources": [
     {
@@ -17,19 +31,38 @@
       "url": "https://avidanocentro.com.br/o_que_fazer/copan-7-atracoes-no-edificio-simbolo-de-sao-paulo/",
       "feedId": null,
       "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "São Paulo Secreto",
+      "url": "https://saopaulosecreto.com/fel-bar-copan/",
+      "feedId": null
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2021/05/20044118/fel-bar.jpg",
+    "attribution": "Photo via São Paulo Secreto",
+    "attributionLink": "https://saopaulosecreto.com/fel-bar-copan/"
+  },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
       "at": "2026-08-27T00:00:00Z",
       "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet for this specific small bar. Held as draft per rules.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "hero image resolved from the place's own source article; quality gate now passes"
     }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Edifício Copan, Av. Ipiranga 200, loja 69, Centro, São Paulo" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Edifício Copan, Av. Ipiranga 200, loja 69, Centro, São Paulo"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-28T00:00:00Z"
 }
