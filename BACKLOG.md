@@ -714,10 +714,20 @@ Individually named:
     authoring in it, per the scope cut above.
 - [ ] User profile: photo, about text, one external link, a shareable
   profile URL, latest favorites, latest comments, latest ratings given.
-  - **Use the avatar URL Google already returns from OAuth.** With image
-    upload dropped, that keeps profile photos working with no blob store
-    and no moderation surface. Custom avatar upload would drag all of
-    that back in — treat it as out of scope unless deliberately revisited.
+  - **Profile photo: take it from Google at launch.** OAuth already
+    returns an avatar URL, so profile photos work on day one with no blob
+    store, no upload UI, and no moderation surface. Most users' Google
+    photo is the one they'd have picked anyway.
+  - Custom avatar upload is a **reasonable later addition**, and worth
+    distinguishing from the photo-in-comments idea that was dropped —
+    it's a far smaller surface. One image per user, replacing rather than
+    accumulating, shown only on that user's own profile. So the
+    moderation load is bounded by user count instead of by comment count,
+    and there's no EXIF/location concern the way there is with someone
+    photographing a venue. Still needs a blob store, which is the only
+    real reason it isn't day-one work.
+  - Sequence it as: Google avatar at launch → custom upload only if users
+    actually ask, or once a blob store exists for some other reason.
 - [ ] Favoriting: users can favorite both pins and blog posts/articles.
 - [ ] Collections: users can bundle favorites into custom-named
   collections; private or public; a collection can itself be favorited
@@ -754,64 +764,6 @@ Individually named:
   - Revisit only if a curator joins who doesn't work in Claude Code, or
     if content velocity becomes bound by operator session time rather
     than by research. Neither is true today.
-- [ ] User profile: photo, about text, one external link, a shareable
-  profile URL, latest favorites, latest comments, latest ratings given.
-- [ ] Favoriting: users can favorite both pins and blog posts/articles.
-- [ ] Collections: users can bundle favorites into custom-named
-  collections; private or public; a collection can itself be favorited
-  and added into other collections.
-- [ ] Comments — NOT a generic "leave a comment" box. The UX should
-  actively prompt the reader for their POV on specific things the
-  article/pin mentions, and separately invite free-form contribution
-  about the pin itself.
-- [ ] **Photo uploads in comments/reviews** (added 2026-08-28, operator:
-  "Users podem ainda avaliar e comentar até mesmo com fotos"). This is
-  what regular users get at launch instead of pin creation — rating,
-  commenting, and attaching their own photos. Implications worth planning
-  for before building:
-  - **Storage**: needs a real blob store (Vercel Blob is the path of
-    least resistance given the existing Vercel setup), not the git repo.
-    Everything in `content/` today is committed text plus hot-linked
-    remote images; user uploads are the first binary write path Near has.
-  - **Moderation**: user-uploaded images are the largest abuse surface
-    the product will have. Needs a takedown path and an admin queue.
-    `rules.md`'s `human-content-preservation` rule already governs how AI
-    skills must treat this content once it exists — and its
-    immediate-takedown carve-out for criminal/extreme content stops being
-    theoretical the moment photo upload ships.
-  - **Privacy**: strip EXIF on upload. Phone photos carry GPS, and this
-    is a location app — a user photographing their local bar would
-    otherwise be publishing their own coordinates.
-  - **Upside worth designing for**: user photos are a genuine answer to
-    the hero-image problem. `quality-gate-before-publish` has no
-    AI-generated fallback by design, which is why seven places sat as
-    drafts for months. A verified user photo could legitimately become a
-    place's hero image, with credit — closing that gap without weakening
-    the no-AI rule.
-- [ ] Ratings: star rating for places/services; flame rating for
-  time-bound things (events/shows/plays that expire and archive).
-- [ ] Follows: users can follow each other; "Follows" becomes a tab
-  alongside Nearest/Latest in listing views.
-- [ ] **Pin-creation access model — revised 2026-08-28, supersedes every
-  earlier draft of this item.** Operator: "pra começar só admin e editor
-  curador pode criar pins... At launch, nosso conteúdo tem curadoria sim."
-  - **At launch: only admin and editor/curator roles can create pins.**
-    Near's content is curated at launch, and that's a deliberate
-    positioning choice, not a limitation to apologise for.
-  - **Deferred entirely to post-launch:** free users creating pins, the
-    1-active-pin quota, the pro/sponsor paid tier, and any question of
-    opening pin creation to everyone. Don't build quota logic or tier
-    enforcement now — none of it is needed for launch, and the shape it
-    should take will be clearer once real UGC exists.
-  - **Monetization is therefore also deferred.** The earlier note here
-    ("since paid-only pin creation is off the table, a different
-    mechanism needs to be worked out") is moot for launch — there is no
-    paid tier at launch to work around.
-  - Admin/editor/curator pins are visible to everyone by default, or as
-    configured by admin.
-  - Net effect on the Stage 4 build: **much smaller.** Roles reduce to
-    admin / editor-curator / regular user, and pin creation needs no
-    per-user limits, no billing, and no tier checks — just a role gate.
 - [x] ~~Admin/curators can create pin pages directly from the map.~~
   Dropped — see the scope cut at the top of this section.
 - [ ] Easy UX for any user to suggest something or file a complaint about
