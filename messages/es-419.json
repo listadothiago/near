@@ -60,7 +60,10 @@
   },
   "collection": {
     "placesCount": "{count} lugares",
-    "navLabel": "Guías"
+    "navLabel": "Guías",
+    "seeAll": "Ver todas",
+    "empty": "Todavía no hay guías publicadas. Las guías juntan varios lugares en algo que vale la pena leer de principio a fin — las primeras ya vienen.",
+    "featuredIn": "Aparece en"
   },
   "sources": {
     "navLabel": "Fuentes",

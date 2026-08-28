@@ -60,7 +60,10 @@
   },
   "collection": {
     "placesCount": "{count} places",
-    "navLabel": "Guides"
+    "navLabel": "Guides",
+    "seeAll": "See all",
+    "empty": "No guides published yet. Guides tie several places together into something worth reading start to finish — the first ones are on the way.",
+    "featuredIn": "Featured in"
   },
   "sources": {
     "navLabel": "Sources",
