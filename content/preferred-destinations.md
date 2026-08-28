@@ -10,6 +10,33 @@ should be updated (add, reprioritize, mark done) as that happens.
 A destination with real coverage should note it inline; a bare entry means
 "not started yet."
 
+## Focus cities (operator-set, 2026-08-28 — work these before anything else)
+
+The operator wants these fleshed out with real depth before the project
+moves on to Google Analytics/Search Console and starts pushing for
+traffic — this supersedes the general "breadth across markets" default
+near-refresh otherwise uses. Within this list, prioritize whichever city
+currently has the least coverage; the list itself has no internal
+ranking beyond "these before anything else."
+
+- London (Shoreditch already in progress — see below)
+- Rome (Pignetto already listed — see below)
+- San Francisco Bay Area (SF + Oakland already in progress — see below)
+- São Paulo (several neighborhoods already in progress — see below)
+- Baixada Santista (Santos in progress; ABC Paulista/Baixada Santista
+  region also has its own war-room backlog entry — see BACKLOG.md)
+- Rio de Janeiro (Copacabana/Ipanema ambiguity noted below)
+- Barcelona
+- New York (Brooklyn sub-neighborhoods already flagged below)
+- Miami
+- Chengdu
+- Seattle
+- Portland
+- Medellín
+- Lisbon
+- Porto
+- Amsterdam
+
 ## Neighborhoods (specific, high-priority)
 
 - Vila Madalena, São Paulo — started 2026-08-27

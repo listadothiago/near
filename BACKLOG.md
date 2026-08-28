@@ -9,9 +9,14 @@ the *order*.
 
 ## Sequencing (explicit, operator-confirmed)
 
-1. **Content first** — beef up destination/place coverage across many
-   different markets (breadth over depth) to get multi-market traction
-   before leaning on UGC.
+1. **Content first** — beef up destination/place coverage. Originally
+   scoped as breadth-across-markets; refined 2026-08-28 into a set of
+   **focus cities to flesh out with real depth first**: London, Rome,
+   San Francisco Bay Area, São Paulo, Baixada Santista, Rio de Janeiro,
+   Barcelona, New York, Miami, Chengdu, Seattle, Portland, Medellín,
+   Lisbon, Porto, Amsterdam — see the "Focus cities" section at the top
+   of `content/preferred-destinations.md` for the authoritative list.
+   Only once these are genuinely fleshed out does the plan move to step 2.
 2. **Google Analytics 4** setup for near.tips.
 3. **Google Search Console** submission.
 4. **User accounts** (Google login) + the full social/UGC feature set
