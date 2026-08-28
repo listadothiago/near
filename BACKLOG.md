@@ -7,6 +7,24 @@ chronological order. Agreed sequencing (see "Sequencing" below) still
 governs what actually gets worked next — this file is the *scope*, not
 the *order*.
 
+## Where things stand (updated 2026-08-28)
+
+Everything through commit `c42f655` is committed; everything before it
+is also pushed to `origin/main` and live on https://near.tips (Vercel
+auto-deploys from GitHub — no manual deploy step). `c42f655` itself
+(listing thumbnails) is committed locally but **not yet pushed**.
+
+Working state: clean tree, `npx tsc --noEmit` passes, `npm run build`
+passes (121 pages). 16 places indexed, 10 sources watched, all published
+places carry full 6-locale coverage.
+
+**Standing instruction from the operator: keep this file up to date** as
+work happens — it's the handoff document between sessions.
+
+The single highest-value next move is **content for the focus cities**
+(see Sequencing below) — the app itself is in good shape; what it lacks
+is depth of coverage.
+
 ## Sequencing (explicit, operator-confirmed)
 
 1. **Content first** — beef up destination/place coverage. Originally
@@ -93,8 +111,11 @@ Both hit the session token limit mid-run and did not finish or commit:
   haven't tested tablet"). Broader than the filter-collapse item above
   — a real audit of every page at mobile viewport width, not just the
   filter row. In progress.
-- [ ] Nearest/Latest (and future Follows) listing rows should show a
-  thumbnail image, not just text.
+- [x] Nearest/Latest listing rows now show a hero-image thumbnail
+  (done 2026-08-28). `PlaceRow` is shared, so the "Nearby on near.tips"
+  section on every place page got thumbnails from the same change.
+  Falls back to a muted category-colored block when a place has no hero
+  image. Future Follows tab will inherit this automatically.
 - [x] Rename "Use my location" to "My location"; clicking it now
   zooms/centers the map to the user's immediate neighborhood around
   their geolocation (zoom 14), and the app proactively requests
@@ -202,6 +223,21 @@ checkbox.
 - [ ] Castro Theatre (San Francisco)
 - [ ] Dalston Superstore (London)
 - [ ] Largo do Arouche (São Paulo) — gay-scene angle
+- [ ] **Akai** (São Vicente, SP) — a genuinely enormous multi-floor
+  perfumery/department store: legit imported perfume brands, but also
+  professional barber equipment and a wide spread of non-perfumery
+  goods. Operator's framing: "like what Walgreens sells, but way bigger
+  than a typical Walgreens, even bigger than a big Walgreens — it has
+  floors and takes up a good part of a block, more like a department
+  store." Likely `shopping` lens (`near-editor-shopping`) filed under
+  `city-culture`. Ties into the existing São Vicente interest (see the
+  LGBTQIA+/centro item above and the Litoral Norte/Baixada Santista war
+  rooms).
+- [ ] **Katz's Delicatessen** (New York) — the "I'll have what she's
+  having" deli from *When Harry Met Sally*. Operator asked to include it
+  "if it's still open" — verify per `rules.md`'s
+  `verify-still-open-before-create` before creating. Natural fit for the
+  NYC war rooms below.
 
 ## LGBTQIA+ coverage pushes
 
@@ -366,6 +402,26 @@ Individually named:
 - [ ] Fresh mozzarella in Naples
 - [ ] Best grano duro pasta in Italy
 - [ ] Vegan ramen in Tokyo
+- [ ] San Diego cannabis scene
+- [ ] Hip hop: São Paulo + Baixada Santista
+- [ ] Ballroom scene, NYC (distinct from the broader multi-city ballroom
+  war room already listed above — this one is NYC-specific)
+- [ ] Daytime/weekday NYC — what's actually good on a weekday afternoon,
+  not the nightlife angle
+- [ ] Chicago daytime/weekday best summer spots — explicitly framed as a
+  ***Ferris Bueller's Day Off*-inspired collection**: create the content
+  and capture the interesting locations as pins tied together in that
+  collection. Note the film's real Chicago locations are a natural spine
+  for it (Art Institute, Wrigley Field, the Loop parade route, Sears/
+  Willis Tower) — verify each is still visitable/open per
+  `verify-still-open-before-create`, and don't assert a filming location
+  as fact without a real source.
+- [ ] New York homage to *The Warriors* — operator's asks: the Broadway
+  stage adaptation of *The Warriors*, riding the F line out to Coney
+  Island, "what else?" (open-ended — `near-deep-researcher` should map
+  the film's actual route/locations and find what's still there). Pairs
+  naturally with Katz's Delicatessen above and the other NYC war rooms.
+- [ ] Coolest libraries in the world (global)
 - [ ] War room built from the "Geografia Urbana Queer" document (see
   above)
 - [ ] War room built from the "Guia Mapeado" Amsterdam/SF document (see
