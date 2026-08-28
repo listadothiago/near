@@ -296,6 +296,19 @@ Both hit the session token limit mid-run and did not finish or commit:
     from `md` up, where it has its own grid column. Resolved via
     `matchMedia` after mount rather than CSS-hidden, so Leaflet is never
     loaded on a phone until the map is actually opened.
+  - [x] **Regression fixed 2026-08-28**: collapsing the map by default
+    hid the "My location" button behind the disclosure, while the empty
+    state still told users to "tap My location **on the map**" — a
+    button they couldn't see. Sorting by distance is a listings feature,
+    not a map feature, so the button now renders whether or not the map
+    is expanded, and the empty-state copy dropped "on the map" in all
+    six locales. Leaflet still doesn't mount until the map is opened, so
+    the mobile performance win is intact.
+  - [x] `/guides` and `/sources` had no `generateMetadata` and inherited
+    the root title, so every route read "Tips Near Me | near.tips". They
+    now emit "Guides | near.tips" / "Sources | near.tips" (and "Guias" /
+    "Fontes" in pt-BR). Found while verifying the title format — the
+    home and place titles were already correct.
   - Still to audit at mobile width: place pages, collection pages,
     `/guides`, `/sources`.
 - [x] Nearest/Latest listing rows now show a hero-image thumbnail

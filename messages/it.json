@@ -45,7 +45,7 @@
     "nearest": "Più vicini",
     "latest": "Più recenti",
     "emptyNearest": "Nessun luogo localizzato ancora. Quando Near si sincronizza, qui compaiono le scelte più vicine a dove dici di trovarti.",
-    "emptyNearestNoLocation": "Tocca \"La mia posizione\" sulla mappa per ordinare {count} luoghi per distanza.",
+    "emptyNearestNoLocation": "Tocca \"La mia posizione\" per ordinare {count} luoghi per distanza.",
     "emptyLatest": "Ancora nessun luogo qui. Quando Near si sincronizza, le scelte più recenti arrivano per prime."
   },
   "place": {

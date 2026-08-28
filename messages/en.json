@@ -45,7 +45,7 @@
     "nearest": "Nearest",
     "latest": "Latest",
     "emptyNearest": "No located places yet. Once Near syncs, this fills with the closest picks to wherever you tell it you are.",
-    "emptyNearestNoLocation": "Tap \"My location\" on the map to sort {count} places by distance.",
+    "emptyNearestNoLocation": "Tap \"My location\" to sort {count} places by distance.",
     "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first."
   },
   "place": {

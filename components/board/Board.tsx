@@ -201,16 +201,18 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
                 </span>
               </button>
             )}
-            {mapVisible && (
-              <button
-                type="button"
-                onClick={useMyLocation}
-                disabled={locating}
-                className="text-[0.78rem] font-semibold bg-transparent border border-border text-ink px-2.5 py-1.5 rounded-lg hover:border-accent hover:text-accent-ink transition-colors disabled:opacity-50"
-              >
-                {t("useMyLocation")}
-              </button>
-            )}
+            {/* Always reachable, including while the map is collapsed —
+                sorting by distance is a listings feature, not a map
+                feature, and hiding this behind the disclosure stranded
+                anyone whose geolocation prompt failed or was declined. */}
+            <button
+              type="button"
+              onClick={useMyLocation}
+              disabled={locating}
+              className="text-[0.78rem] font-semibold bg-transparent border border-border text-ink px-2.5 py-1.5 rounded-lg hover:border-accent hover:text-accent-ink transition-colors disabled:opacity-50"
+            >
+              {t("useMyLocation")}
+            </button>
           </div>
           {mapVisible && (
             <>
