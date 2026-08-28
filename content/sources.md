@@ -105,6 +105,63 @@ sources:
       2026-08-27 (checked /feed and the homepage <link> tags, both came up
       empty) — near-editor must use the Chrome-automation fallback against
       the site's own section pages.
+
+  - id: teatro-clube-da-eskyna-instagram
+    name: "Teatro Clube da Eskyna — Instagram (@teatroclubedaeskyna)"
+    category: nightlife-sound
+    region: br
+    language: pt-BR
+    feedUrl: null
+    feedType: html-extract
+    trust: auto
+    status: active
+    notes: >
+      The venue's own Instagram account — verified 2026-08-27 by reading a
+      linked post directly (instagram.com/p/DchOD52Rhjh/) and confirming it
+      was posted by @teatroclubedaeskyna itself. This is the venue's actual
+      events calendar (see the note on teatro-clube-da-eskyna-santos: there's
+      no separate site with listings). No RSS; near-editor must use the
+      Chrome-automation fallback against the account's post grid. Event
+      announcements here are prime candidates for expirable event pins
+      (meta.eventEndsAt) rather than updates to the venue's own evergreen
+      page. Don't hotlink Instagram's own CDN for hero images — treat it the
+      same as any other source with no stably-hostable image.
+
+  - id: sf-standard
+    name: "SF Standard"
+    category: city-culture
+    region: us
+    language: en
+    feedUrl: null
+    feedType: html-extract
+    trust: auto
+    status: active
+    notes: >
+      San Francisco digital newsroom, strong on restaurant/bar openings
+      with real specificity (named chefs, exact addresses, on-record
+      quotes) — a good fit for Near's "current and alive" content bias.
+      No discoverable public RSS feed as of 2026-08-27; near-editor should
+      use the Chrome-automation fallback against its restaurant-openings
+      roundup pages. Article og:image tags are usable as source-tier hero
+      images with attribution back to the specific article.
+
+  - id: the-oaklandside
+    name: "The Oaklandside"
+    category: city-culture
+    region: us
+    language: en
+    feedUrl: null
+    feedType: html-extract
+    trust: auto
+    status: active
+    notes: >
+      Nonprofit East Bay newsroom (Cityside), sister publication to
+      Berkeleyside — same organization, same articles often run on both
+      sites, don't add Berkeleyside as a separate distinct source. Strong,
+      specific restaurant/bar coverage for Oakland. No discoverable public
+      RSS feed as of 2026-08-27; use the Chrome-automation fallback.
+      Article images are credited to named photographers and usable
+      source-tier with attribution.
 ```
 
 ## Categories

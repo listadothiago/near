@@ -1,0 +1,29 @@
+{
+  "slug": "cabaret-latino-teatro-eskyna-santos",
+  "categories": ["nightlife-sound", "city-culture"],
+  "tags": ["lgbtq-friendly", "trending", "late-night"],
+  "coordinates": { "lat": -23.9328, "lng": -46.3268 },
+  "place": { "city": "Santos", "neighborhood": "Centro Histórico", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Instagram — Teatro Clube da Eskyna (@teatroclubedaeskyna)",
+      "url": "https://www.instagram.com/p/DchOD52Rhjh/",
+      "feedId": "teatro-clube-da-eskyna-instagram",
+      "originalPublishedAt": "2026-08-26T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": "2026-09-12T05:00:00-03:00",
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "quality-gate-before-publish: no verified, stably-hostable hero image (the event flyer only exists on Instagram's CDN, which isn't reliable to hotlink — same call made for the parent venue page). Held as draft per rules.md. eventEndsAt is an estimate (event starts 21h on 2026-09-11; end time assumed ~5am the following morning for a late-running nightlife event, not stated in the source post) — operator named this pin directly in chat from the linked Instagram post, so trust:auto per the operator-is-the-approver rule."
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.65, "query": "R. Pedro II, 19, Sala 2, Centro Histórico, Santos - SP" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}

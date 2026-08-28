@@ -1,0 +1,36 @@
+{
+  "slug": "bar-skula-oakland",
+  "categories": ["food-drink", "nightlife-sound"],
+  "tags": ["trending", "local-legend"],
+  "coordinates": { "lat": 37.8089594, "lng": -122.2506123 },
+  "place": { "city": "Oakland", "neighborhood": "Adams Point", "region": "California", "country": "United States" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "The Oaklandside",
+      "url": "https://oaklandside.org/2026/07/01/bar-skula-lake-merritt-lukas/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-01T00:00:00Z"
+    },
+    {
+      "name": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/food/restaurants/article/bar-skula-oakland-20769409.php",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://oaklandside.org/wp-content/uploads/2026/07/large-NATERA_NOSH_BAR-SKULA_023.jpg",
+    "attribution": "Photo via The Oaklandside",
+    "attributionLink": "https://oaklandside.org/2026/07/01/bar-skula-lake-merritt-lukas/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request (SF Bay Area research pass)" }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.9, "query": "542 Grand Ave, Oakland, CA 94610" },
+  "publishedAt": "2026-08-27T00:00:00Z",
+  "updatedAt": "2026-08-27T00:00:00Z"
+}
