@@ -1,15 +1,21 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
 import TagFilters from "./TagFilters";
 import SearchBox from "./SearchBox";
 import NearestLatestTabs from "./NearestLatestTabs";
-import WorldMap from "@/components/map/WorldMap";
+import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { Category } from "@/lib/content/categories";
 import type { Tag } from "@/lib/content/tags";
+
+const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-[340px] bg-chart-bg" aria-hidden="true" />,
+});
 
 export default function Board({ places }: { places: PlaceSummary[] }) {
   const t = useTranslations("board");
@@ -53,8 +59,9 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     });
   }
 
+  const parsed = useMemo(() => parseQuery(query), [query]);
+
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
     return places
       .filter(
         (p) =>
@@ -64,21 +71,32 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
       .filter(
         (p) => activeTags.size === 0 || p.meta.tags.some((t) => activeTags.has(t)),
       )
+      .filter(
+        (p) =>
+          parsed.categories.length === 0 ||
+          p.meta.categories.some((c) => parsed.categories.includes(c)),
+      )
+      .filter(
+        (p) =>
+          parsed.tags.length === 0 ||
+          p.meta.tags.some((t) => parsed.tags.includes(t)),
+      )
       .filter((p) => {
-        if (!q) return true;
-        const haystack = [
-          p.frontmatter.name,
-          p.frontmatter.tagline,
-          p.meta.place.neighborhood,
-          p.meta.place.city,
-          p.meta.place.country,
-        ]
-          .filter(Boolean)
-          .join(" ")
-          .toLowerCase();
-        return haystack.includes(q);
+        if (parsed.freeTextWords.length === 0) return true;
+        const haystack = normalizeText(
+          [
+            p.frontmatter.name,
+            p.frontmatter.tagline,
+            p.meta.place.neighborhood,
+            p.meta.place.city,
+            p.meta.place.country,
+          ]
+            .filter(Boolean)
+            .join(" "),
+        );
+        return parsed.freeTextWords.every((word) => haystack.includes(word));
       });
-  }, [places, activeCats, activeTags, query]);
+  }, [places, activeCats, activeTags, parsed]);
 
   function useMyLocation() {
     if (!navigator.geolocation) return;

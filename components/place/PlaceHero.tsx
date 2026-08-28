@@ -58,6 +58,15 @@ export default function PlaceHero({
         ))}
         <span className="opacity-50">·</span>
         <span>{location}</span>
+        <span className="opacity-50">·</span>
+        <a
+          href={`https://www.google.com/maps/dir/?api=1&destination=${meta.coordinates.lat},${meta.coordinates.lng}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent-ink underline decoration-accent/40 underline-offset-2 hover:decoration-accent-ink transition-colors"
+        >
+          {t("directions")}
+        </a>
       </div>
 
       <h1 className="mt-2 font-serif italic font-medium text-[clamp(2rem,4.5vw,2.8rem)] leading-tight">

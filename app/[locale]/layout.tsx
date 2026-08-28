@@ -42,7 +42,10 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "app" });
   return {
     metadataBase: new URL(getBaseUrl()),
-    title: { default: t("wordmark"), template: `%s · ${t("wordmark")}` },
+    title: {
+      default: `near.tips | ${t("wordmark")}`,
+      template: `%s · ${t("wordmark")}`,
+    },
     description: t("tagline"),
   };
 }

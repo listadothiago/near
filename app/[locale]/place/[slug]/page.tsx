@@ -14,6 +14,7 @@ import { buildPlaceJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import PlaceHero from "@/components/place/PlaceHero";
+import PlaceMap from "@/components/place/PlaceMap";
 import ReasonsList from "@/components/place/ReasonsList";
 import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
@@ -102,6 +103,7 @@ export default async function PlacePage({
           </p>
         )}
         <PlaceHero meta={content.meta} frontmatter={content.frontmatter} />
+        <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <ReasonsList bullets={content.frontmatter.bullets} />
         <LongFormBody>
           <MDXRemote source={content.body} components={mdxComponents} />

@@ -1,8 +1,13 @@
 "use client";
 
-import WorldMap from "@/components/map/WorldMap";
+import dynamic from "next/dynamic";
 import PlaceRow from "@/components/board/PlaceRow";
 import type { PlaceSummary } from "@/lib/content/schema";
+
+const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
+  ssr: false,
+  loading: () => <div className="w-full h-[340px] bg-chart-bg" aria-hidden="true" />,
+});
 
 export default function CollectionPlaces({
   places,

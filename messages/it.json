@@ -35,7 +35,7 @@
     "lastSync": "ultima sincronizzazione"
   },
   "board": {
-    "searchPlaceholder": "Cerca luoghi, quartieri, città…",
+    "searchPlaceholder": "Chiedi qualsiasi cosa — perle nascoste, bar gay a Roma…",
     "map": "Mappa",
     "useMyLocation": "Usa la mia posizione",
     "mapCaption": "{count} luoghi localizzati · proiezione equirettangolare",
@@ -47,6 +47,7 @@
   },
   "place": {
     "reasonsToCheckOut": "Perché vale la pena visitarlo",
+    "directions": "Indicazioni ↗",
     "readOn": "Leggi l'articolo completo",
     "source": "Fonte",
     "relatedNearby": "Nei dintorni su Near",

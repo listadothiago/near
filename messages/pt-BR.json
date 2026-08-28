@@ -35,7 +35,7 @@
     "lastSync": "última sincronização"
   },
   "board": {
-    "searchPlaceholder": "Buscar lugares, bairros, cidades…",
+    "searchPlaceholder": "Pergunte qualquer coisa — achados escondidos, bares gay em Roma…",
     "map": "Mapa",
     "useMyLocation": "Usar minha localização",
     "mapCaption": "{count} lugares localizados · projeção equirretangular",
@@ -47,6 +47,7 @@
   },
   "place": {
     "reasonsToCheckOut": "Por que vale a pena conhecer",
+    "directions": "Como chegar ↗",
     "readOn": "Ler a matéria completa",
     "source": "Fonte",
     "relatedNearby": "Por perto no Near",

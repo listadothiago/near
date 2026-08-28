@@ -35,7 +35,7 @@
     "lastSync": "上次同步"
   },
   "board": {
-    "searchPlaceholder": "搜索地点、街区、城市…",
+    "searchPlaceholder": "问点什么 —— 小众宝藏、罗马的同志友好酒吧…",
     "map": "地图",
     "useMyLocation": "使用我的位置",
     "mapCaption": "已定位 {count} 个地点 · 等距圆柱投影",
@@ -47,6 +47,7 @@
   },
   "place": {
     "reasonsToCheckOut": "值得一去的理由",
+    "directions": "路线 ↗",
     "readOn": "阅读完整报道",
     "source": "信源",
     "relatedNearby": "Near 上的附近推荐",
