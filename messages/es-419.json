@@ -35,7 +35,7 @@
     "lastSync": "última sincronización"
   },
   "board": {
-    "searchPlaceholder": "Pregunta lo que quieras — joyas escondidas, bares gay en Roma…",
+    "searchPlaceholder": "Busca lo que sea…",
     "map": "Mapa",
     "useMyLocation": "Usar mi ubicación",
     "mapCaption": "{count} lugares localizados · proyección equirrectangular",

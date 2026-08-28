@@ -35,7 +35,7 @@
     "lastSync": "last sync"
   },
   "board": {
-    "searchPlaceholder": "Ask anything — hidden gems, gay bars in Rome…",
+    "searchPlaceholder": "Search anything…",
     "map": "Map",
     "useMyLocation": "Use my location",
     "mapCaption": "{count} located places · equirectangular chart",
