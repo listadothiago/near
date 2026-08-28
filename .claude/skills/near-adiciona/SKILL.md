@@ -23,7 +23,11 @@ Every time this skill runs for a place/link, it always:
 1. **Creates the pin** via `near-editor`'s ad-hoc entry point — same
    `trust: review` handling (the operator naming it in chat is the
    approval, per `rules.md`'s `trust-gate` note on operator-named
-   places), same quality gate, same dedupe check against existing
+   places), same quality gate, same `verify-still-open-before-create`
+   check (a name dropped in chat or a link is exactly the kind of
+   candidate that check exists for — it may be old or the place may
+   have rebranded since whatever list or memory it came from), same
+   dedupe check against existing
    places (haversine/fuzzy-name — see `dedupe-by-place`).
 2. **Proactively considers a blog post or collection.** Before finishing,
    always ask: does this place fit naturally into an existing

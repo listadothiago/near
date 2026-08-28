@@ -45,6 +45,31 @@ rules:
     trigger: "candidate place matches an existing place"
     action: "append to meta.sources (dedupe by url), refresh updatedAt; do not create a new slug, do not change meta.trust"
 
+  - id: verify-still-open-before-create
+    description: >
+      confirmed-closed governs re-checking a place Near already
+      publishes. This rule covers the gap before that: a brand-new
+      candidate — from a source article, an operator mention, a
+      war-room research pass, or an old "should add this" list — can
+      itself be stale. A place written up two years ago, or a name
+      recalled from training data / general knowledge with no source
+      checked this session, may no longer exist by the time near-editor
+      gets to it. Before writing a NEW place (not an update to an
+      existing one), do a basic current-status check: a fresh web
+      search for the place name + city, or a quick claude-in-chrome
+      glance at its Google Maps listing, is enough — this does not need
+      confirmed-closed's full two-checks-3-days-apart rigor, since
+      nothing is being flipped from active to closed, a candidate is
+      just being screened before it's created at all. If that check
+      turns up real signal the place has closed, moved, or rebranded,
+      skip creating it — log why in _ingestion-log.md — rather than
+      publishing a pin for something that's no longer there. This
+      applies to near-editor, near-adiciona, and near-war-room equally;
+      any skill that creates a brand-new place pin is responsible for
+      this check before writing it.
+    trigger: "about to create a place that does not already exist in content/places/"
+    action: "do a basic current-status check before writing; skip and log if the place appears closed/gone rather than publishing stale content"
+
   - id: quality-gate-before-publish
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,

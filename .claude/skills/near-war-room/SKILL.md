@@ -66,7 +66,14 @@ every time:
 4. **Draft pins.** `near-editor` (+ specialist lenses) creates/updates
    every place the push needs, following the normal quality gate —
    no fabrication, no publishing without a real hero image (draft-and-
-   skip per the existing rule if one can't be resolved).
+   skip per the existing rule if one can't be resolved). War-room input
+   is especially likely to include names from an operator's own memory,
+   an old list, or a large pasted research document rather than a
+   freshly-checked source — exactly the case `rules.md`'s
+   `verify-still-open-before-create` rule exists for. Don't skip that
+   check just because a name arrived with a lot of other context around
+   it; a venue can rebrand or close between when a research document was
+   written and when the pin actually gets created.
 5. **Draft the narrative layer.** `near-blogger` writes the actual
    guide/itinerary/post(s), cross-linking every pin from step 4 (and to
    each other where relevant) — see `near-blogger`'s own pipeline for

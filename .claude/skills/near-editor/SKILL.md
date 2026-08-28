@@ -71,17 +71,28 @@ intent the YAML doesn't). Then, per candidate item:
    leave `meta.trust` as it already is. One map pin, one article, however
    many outlets have covered the place — every distinct mention stays
    linked from the same page. See `dedupe-by-place` in rules.md.
-5. **Geocode.** Resolve coordinates for the place (Nominatim/OpenStreetMap —
+5. **Verify the candidate is still actually there.** For anything that
+   didn't clear the dedupe check (i.e. this would be a brand-new
+   place), do a basic current-status check before going any further —
+   a fresh web search for the name + city, or a quick `claude-in-chrome`
+   glance at its Google Maps listing. This matters most for candidates
+   that aren't coming from a source article published this session: an
+   operator-recalled name, an old research list, a war-room candidate
+   pulled from general knowledge rather than a just-checked source. If
+   the place looks closed, moved, or rebranded, skip it and log why —
+   don't publish a pin for somewhere that's no longer there. See
+   `verify-still-open-before-create` in rules.md.
+6. **Geocode.** Resolve coordinates for the place (Nominatim/OpenStreetMap —
    no API key, but respect its usage policy: identify with a real
    `User-Agent`, stay under 1 req/sec, cache results). If confidence is
    below the `quality-gate-before-publish` threshold, skip.
-6. **Classify event vs. evergreen place.** If the source item describes a
+7. **Classify event vs. evergreen place.** If the source item describes a
    one-off or time-bound happening (concert, festival run, pop-up,
    exhibition with an end date) rather than a persistent venue, set
    `meta.eventEndsAt` to that happening's end date/time. Most places are
    evergreen — leave `eventEndsAt: null` unless there's a real end date.
    See the `event-expiry` rule.
-7. **Resolve the hero image**, in order, per `rules.md`:
+8. **Resolve the hero image**, in order, per `rules.md`:
    1. The source article's own image — record `attribution` (credit the
       original outlet) and `attributionLink` (back to the source article).
       Be conservative about outlets known to be rights-sensitive or
@@ -93,7 +104,7 @@ intent the YAML doesn't). Then, per candidate item:
    3. **No further fallback.** There is no AI-generated image tier by
       design. If neither of the above resolves, the place is **skipped**,
       not published without an image — log why in `_ingestion-log.md`.
-8. **Write content, English first.** Draft `name`, `tagline` (≤90 chars —
+9. **Write content, English first.** Draft `name`, `tagline` (≤90 chars —
    the schema and `quality-gate-before-publish` both enforce this; write
    tight from the start rather than truncating after), ≥3 bullets, a
    ≥600-word long-form body. See `references/style-guide.md` for voice —
@@ -115,7 +126,7 @@ intent the YAML doesn't). Then, per candidate item:
    `lib/content/loader.ts`'s `getRelatedPlaces` logic for how relatedness
    is computed, and only link slugs that actually exist
    (`getAllPlaceSlugs()`); an invalid `<NearLink>` fails the Next.js build.
-9. **Hand off to `near-translator` for every other locale.** Localizing
+10. **Hand off to `near-translator` for every other locale.** Localizing
    is not near-editor's own job past the English source — for each of
    `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`, consult
    `.claude/skills/near-translator/SKILL.md` for that specific locale.
@@ -133,12 +144,12 @@ intent the YAML doesn't). Then, per candidate item:
    `resolveLocaleContent`) rather than 404ing, but see `rules.md`'s
    `full-locale-coverage` rule for how a gap should get closed on a
    later run rather than left indefinitely.
-10. **Validate.** Every field must satisfy `lib/content/schema.ts`
+11. **Validate.** Every field must satisfy `lib/content/schema.ts`
     (`placeMetaSchema`, `placeContentFrontmatterSchema`) and the
     `quality-gate-before-publish` rule. A schema violation should fail
     loudly, not get silently patched around — see how `npm run build`
     already throws on invalid frontmatter.
-11. **Apply `trust-gate`.**
+12. **Apply `trust-gate`.**
     - `trust: auto` (curated `sources.md` entries) and everything passes:
       write `content/places/<slug>/meta.json` + locale `.mdx` files with
       `status: active`, then `git add` + commit
@@ -149,7 +160,7 @@ intent the YAML doesn't). Then, per candidate item:
       `status: draft`. **Do not commit.** Report the draft to the operator
       and wait for explicit approval before writing `status: active` and
       committing.
-12. **Log.** Append a run summary to `content/_ingestion-log.md`: sources
+13. **Log.** Append a run summary to `content/_ingestion-log.md`: sources
     checked, places added/updated/skipped (name the specific failed rule
     for skips), near-inbox issues triaged.
 

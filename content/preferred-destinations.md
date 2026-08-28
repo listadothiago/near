@@ -15,6 +15,18 @@ A destination with real coverage should note it inline; a bare entry means
 - Vila Madalena, São Paulo — started 2026-08-27
 - Baixo Augusta / Santa Cecília, São Paulo — started 2026-08-27
 - Moema, São Paulo — started 2026-08-27
+- Selva Club, São Paulo — **not Inferno Club**: the operator flagged
+  (2026-08-28) that Inferno Club no longer exists; Selva Club is a
+  rebrand of the same former venue. Verify current status per
+  `rules.md`'s `verify-still-open-before-create` rule before creating
+  the pin regardless — don't take this note alone as sufficient
+  verification, it's a pointer to the right current name, not a
+  substitute for checking. Selva Club has a Sympla page with its full
+  event calendar and ticket sales
+  (https://www.sympla.com.br/produtor/selva011) — a strong candidate
+  both as a source (add to `content/sources.md` once verified active)
+  and as the basis for expirable event pins at this venue, same pattern
+  as the Teatro Clube da Eskyna Instagram source.
 - Shoreditch, London — started 2026-08-27
 - A North London neighborhood (Dalston or Stoke Newington are reasonable
   candidates — operator asked for "some cool North London area," pick one
