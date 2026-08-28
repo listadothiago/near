@@ -1,6 +1,6 @@
 ---
 name: near-editor
-description: Fetches items from Near's watched sources (content/sources.md), geocodes the featured place, and generates original content (name, tagline, reasons-to-check-out bullets, long-form article, hero image) in all supported locales per content/rules.md, writing to content/places/ and committing auto-trust sources. Review-trust items (near-inbox submissions, ad-hoc chat requests) are staged as drafts for explicit operator approval and never auto-committed. Use when ingesting new source content, triaging the near-inbox GitHub issues, or adding a place requested directly in chat.
+description: Fetches items from Near's watched sources (content/sources.md), geocodes the featured place, and generates the original English source draft (name, tagline, reasons-to-check-out bullets, long-form article, hero image) per content/rules.md, then hands off to near-translator for every other locale. Writes to content/places/ and commits auto-trust sources. Review-trust items (near-inbox submissions, ad-hoc chat requests) are staged as drafts for explicit operator approval and never auto-committed. Use when ingesting new source content, triaging the near-inbox GitHub issues, or adding a place requested directly in chat.
 ---
 
 # near-editor
@@ -98,18 +98,41 @@ intent the YAML doesn't). Then, per candidate item:
    tight from the start rather than truncating after), ≥3 bullets, a
    ≥600-word long-form body. See `references/style-guide.md` for voice —
    read it before drafting, it's opinionated about what makes a Near page
-   worth finishing. Weave in 2–4 `<NearLink slug="...">` cross-links to
+   worth finishing. Also read `references/llm-seo.md` before drafting —
+   near-editor is the source-market SEO specialist the same way every
+   `near-translator` locale is for theirs, and the English draft is what
+   every locale's facts get checked against, so it needs to be as
+   citation-ready as any locale version. When a place's category matches a specialist advisor
+   lens, consult that skill while drafting rather than relying on the
+   generic register alone: `food-drink` places →
+   `.claude/skills/near-editor-gastronomic/SKILL.md`; the rare, genuinely
+   eclectic `nightlife-sound` place → `.claude/skills/near-editor-stefon/SKILL.md`
+   (narrow, sparing use only — see that skill's own guidance on when it
+   applies). Both are lenses on Near's one voice, not separate voices —
+   see "Categories, tags, and 'advisor lenses'" in the style guide. Weave
+   in 2–4 `<NearLink slug="...">` cross-links to
    related existing places (same city/neighborhood/category) — check
    `lib/content/loader.ts`'s `getRelatedPlaces` logic for how relatedness
    is computed, and only link slugs that actually exist
    (`getAllPlaceSlugs()`); an invalid `<NearLink>` fails the Next.js build.
-9. **Localize the rest.** For each other supported locale, write an
-   adapted version — not a literal translation. Same facts, same
-   cross-links (translate the visible text inside `<NearLink>`, keep the
-   `slug` prop unchanged), tone and idiom adjusted for that locale. If a
-   locale can't be produced this run, it's fine to leave it out — the app
-   falls back to English with a "translation pending" note
-   (`lib/content/loader.ts`'s `resolveLocaleContent`) rather than 404ing.
+9. **Hand off to `near-translator` for every other locale.** Localizing
+   is not near-editor's own job past the English source — for each of
+   `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`, consult
+   `.claude/skills/near-translator/SKILL.md` for that specific locale.
+   Each locale is its own local-editor persona (its own
+   `references/locales/<locale>.md`) empowered to diverge from the
+   English draft — different emphasis, added or cut bullets, a different
+   local name — as long as the underlying facts (coordinates, what
+   happened, prices) stay consistent across every locale version; see
+   "Consistent facts across locales" in
+   `.claude/skills/near-editor/references/llm-seo.md`. Same
+   `<NearLink slug="...">` handling either way: visible text localized,
+   `slug` prop unchanged. If a locale can't be produced this run, it's
+   fine to leave it out — the app falls back to English with a
+   "translation pending" note (`lib/content/loader.ts`'s
+   `resolveLocaleContent`) rather than 404ing, but see `rules.md`'s
+   `full-locale-coverage` rule for how a gap should get closed on a
+   later run rather than left indefinitely.
 10. **Validate.** Every field must satisfy `lib/content/schema.ts`
     (`placeMetaSchema`, `placeContentFrontmatterSchema`) and the
     `quality-gate-before-publish` rule. A schema violation should fail

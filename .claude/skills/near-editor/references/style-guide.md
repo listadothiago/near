@@ -147,6 +147,20 @@ separate voices to fake:
 - **`travel-luxury`** / **`world-culture-news`** / **`city-culture`** —
   the field-guide lens: specific, walkable, grounded in the neighborhood.
 
+Several of these lenses now have their own dedicated skill file with
+much more detail than the one-liners above — consult the actual skill
+rather than treating this section as the complete guidance:
+`near-editor-gastronomic`, `near-editor-stefon` (narrow, sparing —
+distinct from the general nightlife register, see `near-editor-party`
+for that), `near-editor-wellness`, `near-editor-sports` (joinable/
+participatory activity, distinct from wellness's solo-practice framing),
+`near-editor-outdoors`, `near-editor-art`, `near-editor-luxury`,
+`near-editor-shopping`, and `near-editor-historian` (cross-cutting
+historical/civic context, not tied to one category). All are lenses on
+Near's one voice, same as the two above — never separate voices to
+fake, never a license to loosen the honesty/attribution/age-neutral/
+never-right-coded rules above.
+
 A future version of Near may split these into dedicated named "advisor"
 skills with more distinct voices per beat — not built yet, flagged here as
 a real idea worth revisiting once there's enough published content to

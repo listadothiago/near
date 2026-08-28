@@ -94,6 +94,72 @@ rules:
     trigger: "google_maps_status == 'permanently_closed' (2x, >= 3 days apart)"
     action: "set status = closed; add statusHistory entry"
 
+  - id: full-locale-coverage
+    description: >
+      Every place with trust: auto and status: active should eventually
+      carry content in all six locales (en, pt-BR, it, es-ES, es-419,
+      zh-CN) — see near-translator (.claude/skills/near-translator/SKILL.md)
+      for how each locale's version gets written. It's fine for a place to
+      launch with fewer locales than that (the app falls back to English
+      with a "translation pending" note rather than 404ing — see
+      lib/content/loader.ts's resolveLocaleContent) and for near-editor to
+      cap how many locales it produces in a single run per
+      run-volume-cap. But a locale gap shouldn't sit indefinitely: a
+      near-refresh run's check-open sweep should also check for places
+      missing one or more locales and treat closing that gap as
+      first-class work, not an afterthought — dispatching near-translator
+      per missing locale the same way it dispatches near-editor for a new
+      place. This rule does not apply to trust: review / status: draft
+      places (no point localizing something that hasn't been approved
+      yet) or to status: closed / status: archived places (not worth the
+      effort on something no longer live on the board).
+    trigger: "status == 'active' AND trust == 'auto' AND missing one or more of the six locale files"
+    action: "near-refresh (or an explicit operator request) dispatches near-translator per missing locale; log closed gaps in _ingestion-log.md"
+
+  - id: dedupe-everywhere
+    description: >
+      dedupe-by-place (above) covers places specifically. The same
+      discipline applies to every other content type any skill creates:
+      collections/blog posts (check existing content/collections/*
+      placeSlugs and theme before creating a near-duplicate — extend the
+      existing one instead), and source entries (check content/sources.md
+      and content/preferred-sources.md for an existing entry, even under
+      a different display name, before adding a new one). Every content-
+      creating skill (near-editor, near-translator, near-blogger,
+      near-adiciona, near-war-room, near-refresh) is responsible for this
+      check before writing, not just near-editor.
+    trigger: "any skill about to create a new collection or source entry"
+    action: "search existing content first; extend/update instead of duplicating if a real match exists"
+
+  - id: source-enrichment
+    description: >
+      Any skill that does web research (near-editor, near-refresh,
+      near-blogger, near-war-room, near-deep-researcher, near-translator
+      when it encounters a genuinely locale-specific outlet) should add
+      genuinely good new sources it finds to content/sources.md, not
+      leave that solely to near-refresh's own "new source discovery"
+      step. Don't onboard off one lucky find (see near-refresh's own
+      guidance on this) — but do record candidates so a pattern across
+      runs is visible.
+    trigger: "a skill's research surfaces a source not already in content/sources.md"
+    action: "record as a candidate (content/preferred-sources.md 'Candidates') or, once proven across multiple hits, add formally to content/sources.md"
+
+  - id: human-content-preservation
+    description: >
+      Once human-authored pins exist (admins, curators/editors, paid/
+      sponsor users, and free users per the account system in
+      BACKLOG.md), any AI skill editing or supplementing that content
+      must preserve the human's original content and append rather than
+      delete or silently overwrite it. A questionable statement gets a
+      linked note/reply, not a silent edit. Content can be submitted for
+      admin removal review if warranted. Immediate takedown (before
+      admin review) is reserved for criminally or extremely offensive
+      content only. Not yet in effect operationally (no human-authored
+      pins exist yet as of this writing) — documented now so it's in
+      place before that feature ships.
+    trigger: "an AI skill edits a place/collection not originally created by that skill or another AI skill"
+    action: "append rather than overwrite; flag questionable content with a linked note rather than silently editing; escalate to admin review if warranted; immediate takedown only for criminal/extreme content"
+
   - id: run-volume-cap
     description: >
       A single near-editor run creates or updates at most 5 places, to
