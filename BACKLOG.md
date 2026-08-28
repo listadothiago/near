@@ -680,7 +680,12 @@ Individually named:
 - [ ] War room built from the "Guia Mapeado" Amsterdam/SF document (see
   above)
 
-## Feature buildout — accounts, social, monetization (Stage 4, after content + GA4 + Search Console)
+## Feature buildout — accounts, social, monetization (Stage 4, after content + analytics + Search Console)
+
+> **Scope cut 2026-08-28:** pin creation at launch is admin/editor-curator
+> only; paid tiers and user-created pins are deferred. Regular users get
+> ratings, comments, and photo uploads. See the pin-creation and photo
+> items below — this materially shrinks Stage 4.
 
 - [ ] Google OAuth login. Operator's own login (baraldi@gmail.com) is
   the permanent admin ("Maximus") account — build an admin area.
@@ -694,24 +699,54 @@ Individually named:
   actively prompt the reader for their POV on specific things the
   article/pin mentions, and separately invite free-form contribution
   about the pin itself.
+- [ ] **Photo uploads in comments/reviews** (added 2026-08-28, operator:
+  "Users podem ainda avaliar e comentar até mesmo com fotos"). This is
+  what regular users get at launch instead of pin creation — rating,
+  commenting, and attaching their own photos. Implications worth planning
+  for before building:
+  - **Storage**: needs a real blob store (Vercel Blob is the path of
+    least resistance given the existing Vercel setup), not the git repo.
+    Everything in `content/` today is committed text plus hot-linked
+    remote images; user uploads are the first binary write path Near has.
+  - **Moderation**: user-uploaded images are the largest abuse surface
+    the product will have. Needs a takedown path and an admin queue.
+    `rules.md`'s `human-content-preservation` rule already governs how AI
+    skills must treat this content once it exists — and its
+    immediate-takedown carve-out for criminal/extreme content stops being
+    theoretical the moment photo upload ships.
+  - **Privacy**: strip EXIF on upload. Phone photos carry GPS, and this
+    is a location app — a user photographing their local bar would
+    otherwise be publishing their own coordinates.
+  - **Upside worth designing for**: user photos are a genuine answer to
+    the hero-image problem. `quality-gate-before-publish` has no
+    AI-generated fallback by design, which is why seven places sat as
+    drafts for months. A verified user photo could legitimately become a
+    place's hero image, with credit — closing that gap without weakening
+    the no-AI rule.
 - [ ] Ratings: star rating for places/services; flame rating for
   time-bound things (events/shows/plays that expire and archive).
 - [ ] Follows: users can follow each other; "Follows" becomes a tab
   alongside Nearest/Latest in listing views.
-- [ ] Pin-creation access model (latest revision — supersedes earlier,
-  stricter drafts of this same idea from earlier in the conversation):
-  - Free users **can** create pins (UGC has real value) — 1 active pin
-    at a time each, no follower-only visibility restriction (that
-    restriction was explicitly dropped).
-  - Paid tier (naming/pricing TBD — "pro" vs. "sponsor", pricing not yet
-    decided) can have multiple simultaneous active pins.
-  - Admin, curator/editor, and paid-tier users can all create pins
-    without the free tier's 1-active-pin limit.
-  - Since the original "paid-only pin creation" monetization angle is
-    now off the table, a different monetization mechanism needs to be
-    worked out.
-  - Admin/editor/curator posts are visible to everyone by default, or as
+- [ ] **Pin-creation access model — revised 2026-08-28, supersedes every
+  earlier draft of this item.** Operator: "pra começar só admin e editor
+  curador pode criar pins... At launch, nosso conteúdo tem curadoria sim."
+  - **At launch: only admin and editor/curator roles can create pins.**
+    Near's content is curated at launch, and that's a deliberate
+    positioning choice, not a limitation to apologise for.
+  - **Deferred entirely to post-launch:** free users creating pins, the
+    1-active-pin quota, the pro/sponsor paid tier, and any question of
+    opening pin creation to everyone. Don't build quota logic or tier
+    enforcement now — none of it is needed for launch, and the shape it
+    should take will be clearer once real UGC exists.
+  - **Monetization is therefore also deferred.** The earlier note here
+    ("since paid-only pin creation is off the table, a different
+    mechanism needs to be worked out") is moot for launch — there is no
+    paid tier at launch to work around.
+  - Admin/editor/curator pins are visible to everyone by default, or as
     configured by admin.
+  - Net effect on the Stage 4 build: **much smaller.** Roles reduce to
+    admin / editor-curator / regular user, and pin creation needs no
+    per-user limits, no billing, and no tier checks — just a role gate.
 - [ ] Admin/curators can create pin pages directly from the map (also
   listed under UI/UX above).
 - [ ] Easy UX for any user to suggest something or file a complaint about
