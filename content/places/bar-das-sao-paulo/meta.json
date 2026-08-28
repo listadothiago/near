@@ -1,9 +1,22 @@
 {
   "slug": "bar-das-sao-paulo",
-  "categories": ["nightlife-sound"],
-  "tags": ["lgbtq-friendly", "hidden-gem"],
-  "coordinates": { "lat": -23.5378, "lng": -46.6558 },
-  "place": { "city": "São Paulo", "neighborhood": "Santa Cecília", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -23.5378,
+    "lng": -46.6558
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Santa Cecília",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
   "sources": [
     {
@@ -19,13 +32,31 @@
       "originalPublishedAt": "2026-08-27T00:00:00Z"
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://catracalivre.com.br/i/RuDvTDKqGupaxw695Zgx_jBelqmLz82fGfosK5gUzzQ/rs:fill:1200:630:1/g:sm/q:80/bG9jYWw6Ly8vMjAyMC8xMC9kYXMtYWNoYWRvcy1lbG8tMS5qcGc",
+    "attribution": "Photo via Catraca Livre",
+    "attributionLink": "https://catracalivre.com.br/gastronomia/bar-das-achados-elo/"
+  },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
-    { "status": "draft", "at": "2026-08-27T00:00:00Z", "note": "near-editor: no verified hero image yet — held in draft per quality-gate-before-publish, not a trust issue" }
+    {
+      "status": "draft",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "near-editor: no verified hero image yet — held in draft per quality-gate-before-publish, not a trust issue"
+    },
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "hero image resolved from the place's own source article; quality gate now passes"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.5, "query": "Rua Fortunato 133, Santa Cecília, São Paulo (approximate neighborhood center, street-level not confirmed)" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Rua Fortunato 133, Santa Cecília, São Paulo (approximate neighborhood center, street-level not confirmed)"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-28T00:00:00Z"
 }

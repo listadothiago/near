@@ -1,9 +1,21 @@
 {
   "slug": "thai-e-san-sao-paulo",
-  "categories": ["food-drink"],
-  "tags": ["hidden-gem"],
-  "coordinates": { "lat": -23.5620, "lng": -46.6395 },
-  "place": { "city": "São Paulo", "neighborhood": "Liberdade", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -23.562,
+    "lng": -46.6395
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Liberdade",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
   "sources": [
     {
@@ -19,17 +31,31 @@
       "originalPublishedAt": "2021-02-11T00:00:00Z"
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://i2.wp.com/quegostoso.tur.br/wp-content/uploads/2021/02/thaiesanrestaurantetailandes_liberdadesp_1_foto_claudioschapochnik_quegostoso.jpg?fit=997%2C570",
+    "attribution": "Photo by Claudio Schapochnik via Que Gostoso!",
+    "attributionLink": "https://quegostoso.tur.br/2021/02/11/otimo-tailandes-thai-e-san-ganha-filial/"
+  },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
       "at": "2026-08-27T00:00:00Z",
       "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet. Held as draft per rules.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "hero image resolved from the place's own source article; quality gate now passes"
     }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.6, "query": "Rua Barão de Iguape, Liberdade, São Paulo" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Rua Barão de Iguape, Liberdade, São Paulo"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-28T00:00:00Z"
 }

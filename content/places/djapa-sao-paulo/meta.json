@@ -1,9 +1,21 @@
 {
   "slug": "djapa-sao-paulo",
-  "categories": ["food-drink"],
-  "tags": ["local-legend"],
-  "coordinates": { "lat": -23.6013, "lng": -46.6613 },
-  "place": { "city": "São Paulo", "neighborhood": "Moema", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.6013,
+    "lng": -46.6613
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Moema",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
   "sources": [
     {
@@ -19,17 +31,31 @@
       "originalPublishedAt": "2026-01-01T00:00:00Z"
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://www.baressp.com.br/bares/fotos/Djapa_fachada_26012015111422.jpg",
+    "attribution": "Photo via BaresSP",
+    "attributionLink": "https://www.baressp.com.br/restaurantes/japoneses/djapa-moema"
+  },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
       "at": "2026-08-27T00:00:00Z",
       "note": "quality-gate-before-publish: no verified, stably-hostable hero image located yet. Held as draft per rules.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "hero image resolved from the place's own source article; quality gate now passes"
     }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.6, "query": "Djapa, Moema, São Paulo" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Djapa, Moema, São Paulo"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-28T00:00:00Z"
 }
