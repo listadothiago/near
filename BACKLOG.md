@@ -85,6 +85,11 @@ full accounting:**
    `messages/*.json`. Left undone this session only for lack of budget.
 3. **Continue the mobile audit** on place/collection/`/guides`/`/sources`
    pages — only the home page was actually done.
+4. **Two cheap SEO wins** from the verified audit below, both small enough
+   to do in one sitting: add an `<h1>` to the home page (it currently has
+   none), and add `hreflang` alternates to `generateMetadata` and
+   `sitemap.xml`. The second matters most — six locales are currently
+   competing with each other instead of being declared as alternates.
 
 **Standing instruction from the operator: keep this file up to date** as
 work happens — it's the handoff document between sessions.
@@ -92,6 +97,84 @@ work happens — it's the handoff document between sessions.
 The single highest-value next move is **content for the focus cities**
 (see Sequencing below) — the app itself is in good shape; what it lacks
 is depth of coverage.
+
+## SEO — verified audit (2026-08-28)
+
+The operator ran `near.tips` past Gemini for an SEO analysis and asked for
+it to be recorded here. Every claim below was **checked against the live
+site** rather than transcribed, because several of them turned out to be
+wrong about this codebase. Verdicts and the commands behind them:
+
+### Gemini was right
+
+- [ ] **Content volume is the real constraint.** 18 places / 10 sources is
+  not enough corpus for topical authority in competitive local verticals.
+  This agrees with this file's own step 1, and is the reason content
+  sits ahead of GA4/Search Console in Sequencing below. **This remains
+  the single highest-value SEO work**, ahead of every technical item here.
+- [ ] **The home page has no `<h1>` at all.** Confirmed: `curl -s
+  https://near.tips/en | grep -c '<h1'` returns **0**. The wordmark in
+  `components/layout/Header.tsx` is a `<span>`. Place pages are fine
+  (correct `h1` → `h2` hierarchy), so this is home/`/guides`/`/sources`
+  only. **Cheap, high-value fix.**
+- [ ] **No geographic or categorical taxonomy pages.** Category, tag and
+  city filtering is client-side React state in `components/board/Board.tsx`
+  with no URL of its own, so there is nothing for a crawler to index or a
+  user to land on from a query like "bares em Santa Cecília". Wants real
+  routes — `/[locale]/city/[city]` and `/[locale]/category/[category]` —
+  each with its own title, `h1`, intro copy and filtered listing. This is
+  the largest *structural* SEO item on the list.
+
+### Gemini was wrong — do not action these
+
+- **"Client-side rendering / SSR risk."** False here. The build reports
+  every page as `● (SSG) prerendered as static HTML`, and the served HTML
+  contains the article body — `curl .../place/borough-market-london |
+  grep -c "oldest food market"` returns 3, with no JS executed. Rendering
+  is not a problem.
+- **"Paucity of persistent, unique URLs for individual venues."** False.
+  Every place has had a unique, persistent, prerendered URL at
+  `/[locale]/place/[slug]` from the start; `sitemap.xml` currently lists
+  **126 URLs** (18 places × 6 locales, plus home/sources/guides per
+  locale). Gemini appears to have judged this from the home page alone.
+
+### Gemini was half right
+
+- [ ] **Structured data exists, but the types are wrong.** Its claim of an
+  "absence of structured data markup" is false — place pages already emit
+  JSON-LD with `Article`, `Place`, `GeoCoordinates`, `PostalAddress` and
+  `Organization`. But its underlying point stands: those are not the types
+  that produce local or event rich results. Two concrete fixes:
+  - Venues should emit `LocalBusiness` (or a subtype — `Restaurant`,
+    `BarOrPub`) rather than only `Article` + `Place`.
+  - **Event pins emit `Article`, not `Event`.** Verified on
+    `cabaret-latino-teatro-eskyna-santos`, which has a real
+    `meta.eventEndsAt` and a known start date and still serializes as an
+    Article. Any place with `eventEndsAt` set should emit `Event` with
+    `startDate`/`endDate` and a `location` pointing at the venue. This
+    ties directly into the Event ↔ venue linking item under UI/UX.
+
+### Gemini missed the biggest technical defect
+
+- [ ] **No `hreflang` annotations anywhere.** Verified: zero `hreflang`
+  occurrences in any page's `<head>`, and zero `xhtml:link` alternates in
+  `sitemap.xml`. Near ships **six locales of every page**, and without
+  hreflang Google treats them as competing near-duplicates rather than
+  alternates of one document — so the locales cannibalise each other's
+  rankings instead of each ranking in its own market. On a site whose
+  whole differentiator is genuine per-locale editions, this is the most
+  damaging technical issue on this page, and Gemini didn't mention it.
+  Needs both: `alternates.languages` in each page's `generateMetadata`,
+  and `alternates` on every `sitemap.xml` entry. `canonical` is already
+  correct and self-referential per locale, so this is additive.
+
+### Already fine — no action
+
+- `robots.txt` is valid, allows everything, and points at the sitemap.
+- `canonical` is present and correct on place pages.
+- Per-locale `<title>` now follows `<name> | near.tips` (changed this
+  session).
+- Place pages have a clean heading hierarchy and real prerendered prose.
 
 ## Sequencing (explicit, operator-confirmed)
 
@@ -104,7 +187,11 @@ is depth of coverage.
    of `content/preferred-destinations.md` for the authoritative list.
    Only once these are genuinely fleshed out does the plan move to step 2.
 2. **Google Analytics 4** setup for near.tips.
-3. **Google Search Console** submission.
+3. **Google Search Console** submission. Before submitting, fix the two
+   cheap items from the SEO audit above — the missing home-page `<h1>`
+   and the missing `hreflang` annotations — since Search Console will
+   immediately start reporting the six locales as duplicate content
+   without the latter.
 4. **User accounts** (Google login) + the full social/UGC feature set
    (favorites, collections, comments, ratings, follows, paid pin
    creation, admin area).
