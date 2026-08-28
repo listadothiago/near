@@ -18,7 +18,7 @@ export default function SearchBox({
       onChange={(e) => onChange(e.target.value)}
       placeholder={t("searchPlaceholder")}
       aria-label={t("searchPlaceholder")}
-      className="w-44 sm:w-56 flex-none bg-surface border border-border rounded-full px-3.5 py-1.5 text-[0.82rem] placeholder:text-muted focus:outline-none focus:border-accent"
+      className="w-full sm:w-72 md:w-96 flex-none bg-surface border border-border rounded-full px-3.5 py-1.5 text-[0.82rem] placeholder:text-muted focus:outline-none focus:border-accent"
     />
   );
 }

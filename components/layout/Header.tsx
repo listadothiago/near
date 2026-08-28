@@ -23,7 +23,7 @@ export default function Header({ stats }: { stats: NearStats }) {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 flex-none">
+        <div className="flex flex-col lg:flex-row items-center gap-1.5 lg:gap-2 flex-none">
           <LocaleSwitcher />
           <ThemeToggle />
         </div>

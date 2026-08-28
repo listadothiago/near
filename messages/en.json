@@ -35,7 +35,7 @@
     "lastSync": "last sync"
   },
   "board": {
-    "searchPlaceholder": "Search places, neighborhoods, cities…",
+    "searchPlaceholder": "Ask anything — hidden gems, gay bars in Rome…",
     "map": "Map",
     "useMyLocation": "Use my location",
     "mapCaption": "{count} located places · equirectangular chart",
@@ -47,6 +47,7 @@
   },
   "place": {
     "reasonsToCheckOut": "Reasons to check out",
+    "directions": "Directions ↗",
     "readOn": "Read the full story",
     "source": "Source",
     "relatedNearby": "Nearby on Near",

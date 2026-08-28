@@ -35,7 +35,7 @@
     "lastSync": "última sincronización"
   },
   "board": {
-    "searchPlaceholder": "Buscar lugares, barrios, ciudades…",
+    "searchPlaceholder": "Pregunta lo que quieras — joyas escondidas, bares gay en Roma…",
     "map": "Mapa",
     "useMyLocation": "Usar mi ubicación",
     "mapCaption": "{count} lugares localizados · proyección equirrectangular",
@@ -47,6 +47,7 @@
   },
   "place": {
     "reasonsToCheckOut": "Motivos para visitarlo",
+    "directions": "Cómo llegar ↗",
     "readOn": "Leer el artículo completo",
     "source": "Fuente",
     "relatedNearby": "Cerca de aquí en Near",
