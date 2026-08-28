@@ -10,7 +10,7 @@ const FLAGS: Record<string, string> = {
   "pt-BR": "🇧🇷",
   it: "🇮🇹",
   "es-ES": "🇪🇸",
-  "es-419": "🌎",
+  "es-419": "🇲🇽",
   "zh-CN": "🇨🇳",
 };
 

@@ -63,14 +63,22 @@ Both hit the session token limit mid-run and did not finish or commit:
 
 ## Known bugs
 
-- [ ] Console error on locale switch (seen switching to Italian, on
-  localhost dev): "Encountered a script tag while rendering React
-  component" from `components/layout/ThemeScript.tsx` — reported twice.
-  Likely a benign Next.js dev-mode warning but confirm no real hydration
-  issue; consider an alternative to `dangerouslySetInnerHTML` on a
-  `<script>` tag if it can be avoided cleanly.
-- [ ] The es-419 locale switcher icon currently uses a globe — replace
-  with the Mexican flag.
+- [x] ~~Console error on locale switch~~ — **investigated 2026-08-28:
+  dev-only, does not affect production.** Verified by reproducing the
+  exact path (locale switch to Italian) on both localhost and
+  https://near.tips: the warning fires only against the React dev
+  build; the production console is completely clean, on load and on
+  locale switch. Tried `next/script` with `strategy="beforeInteractive"`
+  as a fix — it does *not* silence the dev warning (React still walks
+  the script tag during client navigation), so that change was reverted
+  rather than kept as complexity that buys nothing. The real fix, if it
+  ever becomes worth doing, is architectural: hoist `<html>`/`<head>` +
+  ThemeScript into a true root `app/layout.tsx` that doesn't re-render
+  on locale navigation, leaving `app/[locale]/layout.tsx` as a
+  passthrough. Not worth it for a dev-only console message — revisit
+  only if it starts masking real errors during debugging.
+- [x] The es-419 locale switcher icon used a globe — now the Mexican
+  flag (done 2026-08-28).
 
 ## UI/UX
 
