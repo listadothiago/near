@@ -1,0 +1,44 @@
+{
+  "slug": "megafauna-copan-sao-paulo",
+  "categories": ["city-culture"],
+  "tags": ["local-legend", "hidden-gem"],
+  "coordinates": { "lat": -23.5455, "lng": -46.643 },
+  "place": { "city": "São Paulo", "neighborhood": "Centro", "region": "São Paulo", "country": "Brazil" },
+  "trust": "auto",
+  "sources": [
+    {
+      "name": "Livraria Megafauna (official)",
+      "url": "https://www.livrariamegafauna.com.br/sobre-a-livraria/",
+      "feedId": null
+    },
+    {
+      "name": "PublishNews",
+      "url": "https://www.publishnews.com.br/materias/2020/11/19/megafauna-nova-livraria-do-copan-abre-as-portas-na-proxima-segunda-feira-23",
+      "feedId": null,
+      "originalPublishedAt": "2020-11-19T00:00:00Z"
+    },
+    {
+      "name": "São Paulo Secreto",
+      "url": "https://saopaulosecreto.com/megafauna-livraria-copan/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2020/12/22052932/127765046_221937402685546_1834884270949327248_n.jpg",
+    "attribution": "Photo via São Paulo Secreto",
+    "attributionLink": "https://saopaulosecreto.com/megafauna-livraria-copan/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-28T00:00:00Z",
+      "note": "created to close a cross-link gap: Megafauna was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and cuia-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
+    }
+  ],
+  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo" },
+  "publishedAt": "2026-08-28T00:00:00Z",
+  "updatedAt": "2026-08-28T00:00:00Z"
+}
