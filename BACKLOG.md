@@ -321,8 +321,11 @@ Both hit the session token limit mid-run and did not finish or commit:
 - [ ] Map should support drag/pan; the listings panel should update to
   reflect the current map viewport/selection (real-estate-site style
   "search this area").
-- [ ] Admin/curators should be able to create a new pin page directly
-  from the map (click-to-create UX).
+- [x] ~~Admin/curators should be able to create a new pin page directly
+  from the map (click-to-create UX).~~ **Dropped 2026-08-28** — pins are
+  authored through Claude + the `near-*` skills and committed to git.
+  There is no in-app authoring surface to hang this off. See the Stage 4
+  scope cut.
 - [x] **Blog view for blog posts** (2026-08-28, operator: "blog posts
   are associated with multiple place and event pins in the map
   potentially, but they are not a pin in themselves. We need some way to
@@ -682,13 +685,75 @@ Individually named:
 
 ## Feature buildout — accounts, social, monetization (Stage 4, after content + analytics + Search Console)
 
-> **Scope cut 2026-08-28:** pin creation at launch is admin/editor-curator
-> only; paid tiers and user-created pins are deferred. Regular users get
-> ratings, comments, and photo uploads. See the pin-creation and photo
-> items below — this materially shrinks Stage 4.
+> **Scope cut 2026-08-28 (second, deeper revision — supersedes the first).**
+> Operator: "talvez não precisemos nem dessa experiência de postar, admin
+> e curador podem fazer pelo Claude como estou fazendo agora."
+>
+> **There is no in-app pin authoring at all.** Admins and curators create
+> and edit content the way it is already being created — a Claude session
+> running the `near-*` skills, writing to `content/`, committed to git and
+> auto-deployed by Vercel. That pipeline already works and is what
+> produced every place on the site.
+>
+> This draws a clean architectural line, worth stating before anyone
+> builds against the wrong side of it:
+>
+> - **Curated content → git.** Places, collections, sources. Authored by
+>   Claude, reviewed by the operator, versioned, deployed. No database, no
+>   admin CMS, no editor UI, no draft workflow, no image upload.
+> - **User interaction data → a database.** Accounts, favorites, user
+>   collections, comments, ratings, follows. Per-user runtime state that
+>   cannot live in git, because it must be written without a deploy.
+>
+> Everything below is scoped to the second bucket only.
 
 - [ ] Google OAuth login. Operator's own login (baraldi@gmail.com) is
-  the permanent admin ("Maximus") account — build an admin area.
+  the permanent admin ("Maximus") account.
+  - The admin area is now **moderation only** — comments and ratings:
+    review, hide, delete, ban. It is not a CMS and has no content
+    authoring in it, per the scope cut above.
+- [ ] User profile: photo, about text, one external link, a shareable
+  profile URL, latest favorites, latest comments, latest ratings given.
+  - **Use the avatar URL Google already returns from OAuth.** With image
+    upload dropped, that keeps profile photos working with no blob store
+    and no moderation surface. Custom avatar upload would drag all of
+    that back in — treat it as out of scope unless deliberately revisited.
+- [ ] Favoriting: users can favorite both pins and blog posts/articles.
+- [ ] Collections: users can bundle favorites into custom-named
+  collections; private or public; a collection can itself be favorited
+  and added into other collections.
+- [ ] Comments — NOT a generic "leave a comment" box. The UX should
+  actively prompt the reader for their POV on specific things the
+  article/pin mentions, and separately invite free-form contribution
+  about the pin itself.
+- [x] ~~Photo uploads in comments/reviews~~ — **dropped 2026-08-28**,
+  the day after it was added. Takes the blob store, the moderation queue
+  for images, and EXIF stripping out of scope with it. Comments and
+  ratings stay **text-only** at launch.
+  - The one thing genuinely lost: user photos would have been a legitimate
+    answer to the hero-image gap, since `quality-gate-before-publish` has
+    no AI fallback by design. That gap stays open and is still solved the
+    current way — sourcing a real credited photo per place.
+- [ ] Ratings: star rating for places/services; flame rating for
+  time-bound things (events/shows/plays that expire and archive).
+- [ ] Follows: users can follow each other; "Follows" becomes a tab
+  alongside Nearest/Latest in listing views.
+- [x] ~~Pin-creation access model~~ — **resolved by removal, 2026-08-28.**
+  Every version of this item (free-user pins, the 1-active-pin quota, the
+  pro/sponsor tier, role-gated in-app creation) is dropped. Nobody creates
+  pins in the app, including admins. The role model shrinks to what
+  moderation actually needs: **admin** vs **regular user**. There is no
+  "curator" application role either — a curator is simply someone with
+  repo access and a Claude session.
+  - Monetization stays deferred; there is no paid tier at launch.
+  - Non-admin suggestions already have a path that is **built and
+    working**: the near-inbox GitHub-issue flow, which `near-editor`
+    triages under `trust: review` so submissions land as drafts needing
+    explicit approval. That is the contribution route, and it needs no
+    new UI.
+  - Revisit only if a curator joins who doesn't work in Claude Code, or
+    if content velocity becomes bound by operator session time rather
+    than by research. Neither is true today.
 - [ ] User profile: photo, about text, one external link, a shareable
   profile URL, latest favorites, latest comments, latest ratings given.
 - [ ] Favoriting: users can favorite both pins and blog posts/articles.
@@ -747,8 +812,8 @@ Individually named:
   - Net effect on the Stage 4 build: **much smaller.** Roles reduce to
     admin / editor-curator / regular user, and pin creation needs no
     per-user limits, no billing, and no tier checks — just a role gate.
-- [ ] Admin/curators can create pin pages directly from the map (also
-  listed under UI/UX above).
+- [x] ~~Admin/curators can create pin pages directly from the map.~~
+  Dropped — see the scope cut at the top of this section.
 - [ ] Easy UX for any user to suggest something or file a complaint about
   anything — likely an extension of the existing near-inbox mechanism
   rather than a wholly separate system; decide when building.
