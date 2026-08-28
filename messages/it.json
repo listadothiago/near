@@ -37,12 +37,12 @@
   "board": {
     "searchPlaceholder": "Cerca qualsiasi cosa…",
     "map": "Mappa",
-    "useMyLocation": "Usa la mia posizione",
+    "useMyLocation": "La mia posizione",
     "mapCaption": "{count} luoghi localizzati · proiezione equirettangolare",
     "nearest": "Più vicini",
     "latest": "Più recenti",
     "emptyNearest": "Nessun luogo localizzato ancora. Quando Near si sincronizza, qui compaiono le scelte più vicine a dove dici di trovarti.",
-    "emptyNearestNoLocation": "Tocca \"Usa la mia posizione\" sulla mappa per ordinare {count} luoghi per distanza.",
+    "emptyNearestNoLocation": "Tocca \"La mia posizione\" sulla mappa per ordinare {count} luoghi per distanza.",
     "emptyLatest": "Ancora nessun luogo qui. Quando Near si sincronizza, le scelte più recenti arrivano per prime."
   },
   "place": {
@@ -50,7 +50,7 @@
     "directions": "Indicazioni ↗",
     "readOn": "Leggi l'articolo completo",
     "source": "Fonte",
-    "relatedNearby": "Nei dintorni su Near",
+    "relatedNearby": "Nei dintorni su near.tips",
     "closed": "Chiuso definitivamente",
     "archived": "In evidenza a {month} {year}",
     "translationPending": "Questa pagina non è stata ancora tradotta — viene mostrata la versione in inglese."

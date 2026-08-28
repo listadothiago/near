@@ -37,12 +37,12 @@
   "board": {
     "searchPlaceholder": "搜索任何内容…",
     "map": "地图",
-    "useMyLocation": "使用我的位置",
+    "useMyLocation": "我的位置",
     "mapCaption": "已定位 {count} 个地点 · 等距圆柱投影",
     "nearest": "最近",
     "latest": "最新",
     "emptyNearest": "暂无已定位的地点。Near 同步后，这里会显示离你所在位置最近的推荐。",
-    "emptyNearestNoLocation": "点击地图上的“使用我的位置”，按距离排序 {count} 个地点。",
+    "emptyNearestNoLocation": "点击地图上的“我的位置”，按距离排序 {count} 个地点。",
     "emptyLatest": "暂无地点。Near 同步后，最新收录的内容会最先出现在这里。"
   },
   "place": {
@@ -50,7 +50,7 @@
     "directions": "路线 ↗",
     "readOn": "阅读完整报道",
     "source": "信源",
-    "relatedNearby": "Near 上的附近推荐",
+    "relatedNearby": "near.tips 上的附近推荐",
     "closed": "已永久停业",
     "archived": "{year} 年 {month} 月曾推荐",
     "translationPending": "此页面尚未翻译，目前显示英文版本。"

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
@@ -27,6 +27,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     null,
   );
   const [locating, setLocating] = useState(false);
+  const [focusUserSignal, setFocusUserSignal] = useState(0);
 
   function toggleCat(cat: Category | "all") {
     if (cat === "all") {
@@ -104,12 +105,22 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         setUserCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setFocusUserSignal((n) => n + 1);
         setLocating(false);
       },
       () => setLocating(false),
       { timeout: 8000 },
     );
   }
+
+  // Proactively prompt for location on load rather than requiring a
+  // click first — silently falls back to the all-places view if the
+  // browser has no geolocation, or the user declines the permission
+  // prompt.
+  useEffect(() => {
+    useMyLocation();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div>
@@ -153,6 +164,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
               heroImageUrl: p.meta.heroImage?.url ?? null,
             }))}
             userCoords={userCoords}
+            focusUserSignal={focusUserSignal}
           />
           <p className="m-0 px-4 pt-2.5 pb-3.5 text-[0.76rem] text-muted font-mono">
             {t("mapCaption", { count: filtered.length })}

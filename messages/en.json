@@ -37,12 +37,12 @@
   "board": {
     "searchPlaceholder": "Search anything…",
     "map": "Map",
-    "useMyLocation": "Use my location",
+    "useMyLocation": "My location",
     "mapCaption": "{count} located places · equirectangular chart",
     "nearest": "Nearest",
     "latest": "Latest",
     "emptyNearest": "No located places yet. Once Near syncs, this fills with the closest picks to wherever you tell it you are.",
-    "emptyNearestNoLocation": "Tap \"Use my location\" on the map to sort {count} places by distance.",
+    "emptyNearestNoLocation": "Tap \"My location\" on the map to sort {count} places by distance.",
     "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first."
   },
   "place": {
@@ -50,7 +50,7 @@
     "directions": "Directions ↗",
     "readOn": "Read the full story",
     "source": "Source",
-    "relatedNearby": "Nearby on Near",
+    "relatedNearby": "Nearby on near.tips",
     "closed": "Permanently closed",
     "archived": "Featured in {month} {year}",
     "translationPending": "This page hasn't been translated yet — showing the English version."

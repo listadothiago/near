@@ -28,12 +28,19 @@ function isTouchDevice() {
 }
 
 function dotIcon(color: string) {
+  // An actual pin/teardrop shape — a plain colored dot reads as "just a
+  // dot," not "a pin," at map scale.
+  const html = `
+    <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg" style="display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));">
+      <path d="M13 0C5.82 0 0 5.82 0 13c0 9.75 13 21 13 21s13-11.25 13-21C26 5.82 20.18 0 13 0z" fill="${color}" stroke="var(--color-surface)" stroke-width="1.5"/>
+      <circle cx="13" cy="13" r="4.5" fill="var(--color-surface)"/>
+    </svg>`;
   return L.divIcon({
     className: "",
-    html: `<span style="display:block;width:12px;height:12px;border-radius:9999px;background:${color};border:2px solid var(--color-surface);box-shadow:0 1px 3px rgba(0,0,0,.35);"></span>`,
-    iconSize: [12, 12],
-    iconAnchor: [6, 6],
-    tooltipAnchor: [0, -8],
+    html,
+    iconSize: [26, 34],
+    iconAnchor: [13, 34],
+    tooltipAnchor: [0, -30],
   });
 }
 
@@ -46,9 +53,35 @@ function userIcon(color: string) {
   });
 }
 
-function FitBounds({ points }: { points: MapPoint[] }) {
+const NEIGHBORHOOD_ZOOM = 14;
+
+// Single effect owns every view change (fit-to-points vs. focus-on-user)
+// so there's exactly one decision per relevant change — two separate
+// effects each calling setView/fitBounds can race and stomp on each
+// other's result when userCoords resolves asynchronously mid-render.
+function MapView({
+  points,
+  userCoords,
+  focusUserSignal,
+}: {
+  points: MapPoint[];
+  userCoords: { lat: number; lng: number } | null;
+  focusUserSignal: number;
+}) {
   const map = useMap();
+  // Sentinel (-1) guarantees the first available signal always applies,
+  // even if userCoords resolves before this effect's first run.
+  const lastAppliedFocusSignal = useRef(-1);
   useEffect(() => {
+    if (userCoords) {
+      if (focusUserSignal !== lastAppliedFocusSignal.current) {
+        map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM);
+        lastAppliedFocusSignal.current = focusUserSignal;
+      }
+      // Already focused on the user for this signal — leave the view
+      // alone rather than falling through to re-fit every point.
+      return;
+    }
     if (points.length === 0) {
       map.setView([20, 0], 2);
       return;
@@ -60,7 +93,7 @@ function FitBounds({ points }: { points: MapPoint[] }) {
     const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
     map.fitBounds(bounds, { padding: [36, 36] });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [points.map((p) => p.slug).join(","), map]);
+  }, [points.map((p) => p.slug).join(","), userCoords, focusUserSignal, map]);
   return null;
 }
 
@@ -134,9 +167,12 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
 export default function WorldMap({
   points,
   userCoords,
+  focusUserSignal = 0,
 }: {
   points: MapPoint[];
   userCoords: { lat: number; lng: number } | null;
+  /** Bump this (e.g. increment a counter) to re-center/zoom on userCoords. */
+  focusUserSignal?: number;
 }) {
   const locale = useLocale();
   const [mounted, setMounted] = useState(false);
@@ -165,7 +201,7 @@ export default function WorldMap({
           maxZoom={19}
         />
         <ZoomControl position="topright" />
-        <FitBounds points={points} />
+        <MapView points={points} userCoords={userCoords} focusUserSignal={focusUserSignal} />
         {points.map((pt) => (
           <PlaceMarker key={pt.slug} point={pt} placeHref={placeHref} />
         ))}
