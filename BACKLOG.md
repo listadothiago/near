@@ -16,19 +16,21 @@ researched first, then parked — its verified research is preserved inline
 under that war-room entry below so it can be resumed without redoing it.
 
 First result of that redirect: an audit found all 7 `status: draft` places
-were held back solely by the missing-hero-image quality gate, and all 7
 were São Paulo/Santos. Hero images were resolved from each place's own
 source article, so the live board went from 9 to **16 active places** —
-including the first Santos coverage to actually appear on the map. See
-`content/_ingestion-log.md` for the per-place detail.
+including the first Santos coverage to actually appear on the map. Note
+that pass was *wrong* to describe the hero image as the only unmet
+condition — see the rule questions below and the correction in
+`content/_ingestion-log.md`.
 
 Everything is committed and pushed to `origin/main`, which Vercel
 auto-deploys to https://near.tips — there is no manual deploy step.
 
 Working state: clean tree, `npx tsc --noEmit` passes, `npm run build`
-passes (121 pages). 16 places indexed and **all 16 now `status: active`**
-(no drafts remain), 10 sources watched. **0 collections exist** — see
-"Blog view" below.
+passes (133 pages). **18 places, all `status: active`** (no drafts
+remain) — 16 plus `cuia-copan-sao-paulo` and `megafauna-copan-sao-paulo`,
+created to close a cross-link gap. 10 sources watched. **0 collections
+exist** — see "Blog view" below.
 
 ⚠️ **Three open rule questions — see `content/_ingestion-log.md` for the
 full accounting:**
