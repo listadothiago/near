@@ -1,0 +1,51 @@
+{
+  "slug": "berry-bros-and-rudd-london",
+  "categories": [
+    "travel"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5057,
+    "lng": -0.1394
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "St James's",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "darcy",
+  "sources": [
+    {
+      "name": "Berry Bros. & Rudd",
+      "url": "https://www.bbr.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/London_Shopping_0020_%286222742033%29.jpg",
+    "attribution": "Photo by Steve Evans, CC BY 2.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:London_Shopping_0020_(6222742033).jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "London war-room slate, scoped English-only draft"
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 1,
+    "query": "3 St James's St, London SW1A 1EG"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
