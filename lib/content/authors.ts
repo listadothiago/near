@@ -21,7 +21,7 @@ export const AUTHORS: Author[] = [
   { slug: "cubic-v", handle: "CUBIC-V", beats: ["city-culture"] },
   { slug: "plinio", handle: "PLINIO", beats: ["city-culture", "world-culture-news"] },
   { slug: "wild0", handle: "WILD0", beats: ["wellness-fitness"] },
-  { slug: "darcy", handle: "DARCY", beats: ["travel-luxury", "accommodation"] },
+  { slug: "darcy", handle: "DARCY", beats: ["travel", "accommodation"] },
   { slug: "fit-bot", handle: "FIT-BOT", beats: ["wellness-fitness"] },
 ];
 

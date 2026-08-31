@@ -5,9 +5,13 @@ export const mdxComponents = {
   p: (props: React.ComponentPropsWithoutRef<"p">) => (
     <p className="mb-6 last:mb-0" {...props} />
   ),
+  // --accent-ink resolves to plain black in light mode (acid green is
+  // unreadable as text), so colour alone can't mark a link here. The
+  // underline has to do the work: solid, full-weight, and thick enough
+  // to read against body copy.
   a: (props: React.ComponentPropsWithoutRef<"a">) => (
     <a
-      className="text-accent-ink underline decoration-accent/40 underline-offset-2 hover:decoration-accent-ink transition-colors"
+      className="underline decoration-2 underline-offset-[3px] decoration-ink/60 hover:bg-accent hover:text-black hover:decoration-black transition-colors"
       target={props.href?.startsWith("http") ? "_blank" : undefined}
       rel={props.href?.startsWith("http") ? "noopener noreferrer" : undefined}
       {...props}

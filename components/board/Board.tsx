@@ -9,6 +9,7 @@ import SearchBox from "./SearchBox";
 import NearestLatestTabs from "./NearestLatestTabs";
 import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
 import type { PlaceSummary } from "@/lib/content/schema";
+import type { UpcomingEvent } from "@/lib/content/loader";
 import type { Category } from "@/lib/content/categories";
 import type { Tag } from "@/lib/content/tags";
 
@@ -17,7 +18,13 @@ const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
   loading: () => <div className="w-full h-[340px] bg-chart-bg" aria-hidden="true" />,
 });
 
-export default function Board({ places }: { places: PlaceSummary[] }) {
+export default function Board({
+  places,
+  eventsByParent,
+}: {
+  places: PlaceSummary[];
+  eventsByParent?: Record<string, UpcomingEvent[]>;
+}) {
   const t = useTranslations("board");
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
   const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
@@ -181,6 +188,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
           tab={tab}
           onTabChange={setTab}
           userCoords={userCoords}
+          eventsByParent={eventsByParent}
         />
 
         <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">

@@ -8,6 +8,8 @@ import {
   getAllPlaceSlugs,
   getPlaceContent,
   getRelatedPlaces,
+  getUpcomingEventsByParent,
+  getPlaceSummary,
 } from "@/lib/content/loader";
 import type { ContentLocale } from "@/lib/content/schema";
 import { buildPlaceJsonLd } from "@/lib/seo/jsonld";
@@ -18,6 +20,7 @@ import PlaceMap from "@/components/place/PlaceMap";
 import ReasonsList from "@/components/place/ReasonsList";
 import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
+import UpcomingEvents from "@/components/place/UpcomingEvents";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -80,6 +83,14 @@ export default async function PlacePage({
   if (!content) notFound();
 
   const related = getRelatedPlaces(slug, locale as ContentLocale);
+  const upcoming =
+    getUpcomingEventsByParent(locale as ContentLocale)[slug] ?? [];
+  // When this page is itself an event, resolve its venue's display name
+  // so the hero can link back to it.
+  const parentName = content.meta.parentPlace
+    ? (getPlaceSummary(content.meta.parentPlace, locale as ContentLocale)
+        ?.frontmatter.name ?? undefined)
+    : undefined;
   const stats = getStats();
   const t = await getTranslations({ locale, namespace: "place" });
   const url = `${getBaseUrl()}/${locale}/place/${slug}`;
@@ -104,9 +115,14 @@ export default async function PlacePage({
             {t("translationPending")}
           </p>
         )}
-        <PlaceHero meta={content.meta} frontmatter={content.frontmatter} />
+        <PlaceHero
+          meta={content.meta}
+          frontmatter={content.frontmatter}
+          parentName={parentName}
+        />
         <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <ReasonsList bullets={content.frontmatter.bullets} />
+        <UpcomingEvents events={upcoming} />
         <LongFormBody>
           <MDXRemote source={content.body} components={mdxComponents} />
         </LongFormBody>
@@ -120,7 +136,7 @@ export default async function PlacePage({
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-accent-ink underline decoration-accent/40 underline-offset-2"
+                className="underline decoration-2 underline-offset-[3px] decoration-ink/60 hover:bg-accent hover:text-black transition-colors"
               >
                 {s.name}
               </a>

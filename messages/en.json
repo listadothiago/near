@@ -12,7 +12,7 @@
   },
   "app": {
     "wordmark": "Tips Near Me",
-    "tagline": "What's opening, playing, and worth checking out."
+    "tagline": "The alternative guide to everywhere."
   },
   "author": {
     "aiLabel": "Artificial byline",
@@ -77,7 +77,7 @@
   },
   "categories": {
     "all": "All beats",
-    "travel-luxury": "Travel & Luxury",
+    "travel": "Travel",
     "world-culture-news": "World & Culture News",
     "city-culture": "City & Culture",
     "food-drink": "Food & Drink",
@@ -120,7 +120,10 @@
     "relatedNearby": "Nearby on near.tips",
     "closed": "Permanently closed",
     "archived": "Featured in {month} {year}",
-    "translationPending": "This page hasn't been translated yet — showing the English version."
+    "translationPending": "This page hasn't been translated yet — showing the English version.",
+    "nextEvent": "Next",
+    "upcomingHere": "Coming up here",
+    "partOf": "An event at {venue}"
   },
   "sources": {
     "navLabel": "Sources",

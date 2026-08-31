@@ -79,7 +79,10 @@ export function getPlaceSummary(
 
 export function getAllPlaces(
   locale: ContentLocale,
-  { includeArchived = false }: { includeArchived?: boolean } = {},
+  {
+    includeArchived = false,
+    includeHostedEvents = false,
+  }: { includeArchived?: boolean; includeHostedEvents?: boolean } = {},
 ): PlaceSummary[] {
   return getAllPlaceSlugs()
     .map((slug) => getPlaceSummary(slug, locale))
@@ -90,8 +93,57 @@ export function getAllPlaces(
       if (p.meta.eventEndsAt && new Date(p.meta.eventEndsAt) < new Date()) {
         return false;
       }
+      // An event hosted at a venue Near already lists isn't its own board
+      // row or map pin — it would duplicate the venue's card and stack a
+      // second marker on identical coordinates. It surfaces on the
+      // venue's card instead (see getUpcomingEventsByParent), and keeps
+      // its own page for anyone linking straight to it.
+      if (p.meta.parentPlace && !includeHostedEvents) return false;
       return true;
     });
+}
+
+export type UpcomingEvent = {
+  slug: string;
+  name: string;
+  shortTitle?: string;
+  startsAt: string | null;
+  endsAt: string;
+};
+
+/**
+ * Upcoming hosted events, keyed by the venue slug they belong to. Sorted
+ * soonest-first, and already filtered to events that haven't ended.
+ */
+export function getUpcomingEventsByParent(
+  locale: ContentLocale,
+): Record<string, UpcomingEvent[]> {
+  const now = new Date();
+  const out: Record<string, UpcomingEvent[]> = {};
+
+  for (const slug of getAllPlaceSlugs()) {
+    const p = getPlaceSummary(slug, locale);
+    if (!p || !p.meta.parentPlace || !p.meta.eventEndsAt) continue;
+    if (p.meta.status !== "active") continue;
+    if (new Date(p.meta.eventEndsAt) < now) continue;
+
+    (out[p.meta.parentPlace] ??= []).push({
+      slug: p.meta.slug,
+      name: p.frontmatter.name,
+      shortTitle: p.frontmatter.shortTitle,
+      startsAt: p.meta.eventStartsAt ?? null,
+      endsAt: p.meta.eventEndsAt,
+    });
+  }
+
+  for (const list of Object.values(out)) {
+    list.sort(
+      (a, b) =>
+        new Date(a.startsAt ?? a.endsAt).getTime() -
+        new Date(b.startsAt ?? b.endsAt).getTime(),
+    );
+  }
+  return out;
 }
 
 export function getRelatedPlaces(

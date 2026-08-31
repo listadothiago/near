@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { haversineKm } from "@/lib/geo/haversine";
 import type { PlaceSummary } from "@/lib/content/schema";
+import type { UpcomingEvent } from "@/lib/content/loader";
 import PlaceCards from "./PlaceCards";
 
 export default function NearestLatestTabs({
@@ -10,11 +11,13 @@ export default function NearestLatestTabs({
   tab,
   onTabChange,
   userCoords,
+  eventsByParent,
 }: {
   places: PlaceSummary[];
   tab: "nearest" | "latest";
   onTabChange: (tab: "nearest" | "latest") => void;
   userCoords: { lat: number; lng: number } | null;
+  eventsByParent?: Record<string, UpcomingEvent[]>;
 }) {
   const t = useTranslations("board");
 
@@ -91,6 +94,7 @@ export default function NearestLatestTabs({
           <PlaceCards
             places={list}
             distances={tab === "nearest" ? distances : undefined}
+            eventsByParent={eventsByParent}
           />
         )}
       </div>

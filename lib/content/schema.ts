@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const CATEGORIES = [
-  "travel-luxury",
+  "travel",
   "world-culture-news",
   "city-culture",
   "food-drink",
@@ -89,6 +89,13 @@ export const placeMetaSchema = z.object({
     )
     .min(1),
   heroImage: heroImageSchema.nullable(),
+  // A time-bound happening hosted at a venue Near already covers points
+  // at that venue's slug. It keeps its own page and URL (the specifics —
+  // lineup, ticket tiers, door policy — are worth a shareable address),
+  // but it stops being a second board card and a second map pin stacked
+  // on the venue's own coordinates. See rules.md's event-belongs-to-venue.
+  parentPlace: z.string().optional(),
+  eventStartsAt: z.iso.datetime({ offset: true }).nullable().optional(),
   eventEndsAt: z.iso.datetime({ offset: true }).nullable(),
   status: placeStatusSchema,
   statusHistory: z.array(statusHistoryEntrySchema).min(1),

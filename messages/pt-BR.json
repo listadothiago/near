@@ -12,7 +12,7 @@
   },
   "app": {
     "wordmark": "Dicas Perto de Mim",
-    "tagline": "O que está abrindo, rolando e vale conferir."
+    "tagline": "O guia alternativo para qualquer lugar."
   },
   "author": {
     "aiLabel": "Assinatura artificial",
@@ -77,7 +77,7 @@
   },
   "categories": {
     "all": "Todos os temas",
-    "travel-luxury": "Viagem & Luxo",
+    "travel": "Viagem",
     "world-culture-news": "Mundo & Cultura",
     "city-culture": "Cidade & Cultura",
     "food-drink": "Comida & Bebida",
@@ -120,7 +120,10 @@
     "relatedNearby": "Por perto no near.tips",
     "closed": "Permanentemente fechado",
     "archived": "Destaque em {month} de {year}",
-    "translationPending": "Esta página ainda não foi traduzida — mostrando a versão em inglês."
+    "translationPending": "Esta página ainda não foi traduzida — mostrando a versão em inglês.",
+    "nextEvent": "Próximo",
+    "upcomingHere": "Vem aí por aqui",
+    "partOf": "Um evento no {venue}"
   },
   "sources": {
     "navLabel": "Fontes",

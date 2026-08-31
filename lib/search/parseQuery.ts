@@ -14,9 +14,12 @@ export function normalizeText(s: string) {
 // friendly", "late night", "hidden gems" etc. and turn them into real
 // category/tag filters instead of a dumb substring match.
 const CATEGORY_SYNONYMS: Record<string, Category> = {
-  travel: "travel-luxury",
-  luxury: "travel-luxury",
-  luxo: "travel-luxury",
+  travel: "travel",
+  viagem: "travel",
+  // "luxury" is no longer its own beat — DARCY still covers the register,
+  // but a reader searching for it should land on travel rather than nothing.
+  luxury: "travel",
+  luxo: "travel",
   news: "world-culture-news",
   culture: "city-culture",
   cultura: "city-culture",
