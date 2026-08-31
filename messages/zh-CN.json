@@ -148,7 +148,8 @@
     "translationPending": "此页面尚未翻译，目前显示英文版本。",
     "nextEvent": "下一场",
     "upcomingHere": "这里即将上演",
-    "partOf": "{venue} 的一场活动"
+    "partOf": "{venue} 的一场活动",
+    "away": "外"
   },
   "share": {
     "action": "分享",

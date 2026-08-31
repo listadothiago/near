@@ -66,15 +66,47 @@ export function getPlaceContent(
   return { meta, frontmatter, body, locale, isFallback };
 }
 
+/**
+ * The article's opening line, for the board card.
+ *
+ * A tagline says what a place *is*; a snippet shows how it's *written
+ * about*. Carrying both is what separates a card from a directory row —
+ * the reader gets a reason to click that a name and a category can't
+ * give them.
+ *
+ * Deliberately taken from the body rather than added as another
+ * frontmatter field: a hand-written summary is one more thing to keep in
+ * sync across six locales, and it would drift.
+ */
+function extractSnippet(body: string, max = 150): string {
+  const firstPara = body
+    .split(/\n\s*\n/)
+    .map((block) => block.trim())
+    .find((block) => block.length > 0 && !block.startsWith("#"));
+  if (!firstPara) return "";
+
+  const plain = firstPara
+    // JSX tags (NearLink) drop away and leave their label behind.
+    .replace(/<[^>]+>/g, "")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (plain.length <= max) return plain;
+  const cut = plain.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace > 0 ? lastSpace : max).replace(/[,;:.\s]+$/, "")}…`;
+}
+
 export function getPlaceSummary(
   slug: string,
   locale: ContentLocale,
 ): PlaceSummary | null {
   const content = getPlaceContent(slug, locale);
   if (!content) return null;
-  const { body: _body, ...summary } = content;
-  void _body;
-  return summary;
+  const { body, ...summary } = content;
+  return { ...summary, snippet: extractSnippet(body) };
 }
 
 export function getAllPlaces(

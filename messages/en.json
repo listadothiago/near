@@ -148,7 +148,8 @@
     "translationPending": "This page hasn't been translated yet — showing the English version.",
     "nextEvent": "Next",
     "upcomingHere": "Coming up here",
-    "partOf": "An event at {venue}"
+    "partOf": "An event at {venue}",
+    "away": "away"
   },
   "share": {
     "action": "Share",
