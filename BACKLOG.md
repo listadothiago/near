@@ -226,6 +226,8 @@ _Content Creation Flow: Agents consult amongst themselves -> Choose public perso
 - **Fickle Knight** - Hip Hop editor (we need to flesh out personality and TOV)
 - **Dip Tracy** - ballroom/voguing editor (we need to flesh out personality and TOV)
 - **FOX** our all night/24-7 services editor(we need to flesh out personality and TOV)
+- **Alter egos:** new bylines modelled on real people are created via `near-alter-ego` (`.claude/skills/near-alter-ego/SKILL.md`), which collects name / description / avatar direction / credit link and emits the whole persona — skill file, `authors.ts` entry, and localized role+disclosure+bio in all six locales. Guardrails matter here more than for the invented cast: only with the person's involvement, never framed as them speaking, always visibly robotic in the avatar, and retractable on request. **Thiago's own alter ego is the first one queued — still needs his four inputs.**
+
 - Tapana Pantera - High Times Magazine Centerfold. Boujie 420 connoisseur and enthusiast. Avatar: not panther or feline themed, boujie 420 themed. Is both a classic stoner into adjacent pop culture, a wellness enthusiast especially with a 420 spin, and a follower of all relevant cannabis culture events around the world. Researches new sources to follow (use source skill) and articles to create (use war room) when it finds a new destination hosting relevant events. Make sure it is always invoked in war room so we get that content calendar up to that for 420 events!
     
     
