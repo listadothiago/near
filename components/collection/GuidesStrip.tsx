@@ -20,7 +20,7 @@ export default function GuidesStrip({
   return (
     <section className="mt-8">
       <div className="flex items-baseline justify-between gap-3 mb-3">
-        <h2 className="font-serif font-medium text-[1.15rem] m-0">
+        <h2 className="text-[1.3rem] m-0">
           {t("navLabel")}
         </h2>
         {collections.length > featured.length && (

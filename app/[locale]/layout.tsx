@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Manrope, IBM_Plex_Mono } from "next/font/google";
+import { Space_Grotesk, Courier_Prime } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -8,24 +8,18 @@ import { getBaseUrl } from "@/lib/seo/site";
 import ThemeScript from "@/components/layout/ThemeScript";
 import "../globals.css";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  style: ["italic", "normal"],
-  variable: "--font-fraunces",
-  display: "swap",
-});
-
-const manrope = Manrope({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-manrope",
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
-const plexMono = IBM_Plex_Mono({
+const courierPrime = Courier_Prime({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-plex-mono",
+  weight: ["400", "700"],
+  style: ["italic", "normal"],
+  variable: "--font-courier-prime",
   display: "swap",
 });
 
@@ -67,7 +61,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${fraunces.variable} ${manrope.variable} ${plexMono.variable}`}
+      className={`${spaceGrotesk.variable} ${courierPrime.variable}`}
       suppressHydrationWarning
     >
       <head>

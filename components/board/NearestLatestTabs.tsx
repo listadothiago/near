@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { haversineKm } from "@/lib/geo/haversine";
 import type { PlaceSummary } from "@/lib/content/schema";
-import PlaceRow from "./PlaceRow";
+import PlaceCards from "./PlaceCards";
 
 export default function NearestLatestTabs({
   places,
@@ -43,53 +43,55 @@ export default function NearestLatestTabs({
           )
         : [];
 
+  const distances = userCoords
+    ? new Map(
+        list.map((p) => [
+          p.meta.slug,
+          haversineKm(
+            userCoords.lat,
+            userCoords.lng,
+            p.meta.coordinates.lat,
+            p.meta.coordinates.lng,
+          ),
+        ]),
+      )
+    : undefined;
+
   return (
-    <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
-      <div className="flex gap-3.5 px-4 pt-3.5" role="tablist">
+    <section>
+      <div className="flex gap-0 border-b-[3px] border-ink" role="tablist">
         {(["nearest", "latest"] as const).map((id) => (
           <button
             key={id}
             role="tab"
             aria-selected={tab === id}
             onClick={() => onTabChange(id)}
-            className={`text-[0.86rem] font-semibold pb-2.5 border-b-2 transition-colors ${
+            className={`font-display font-bold uppercase tracking-[-0.5px] text-[0.9rem] px-3 py-1.5 border-[3px] border-b-0 border-ink -mb-[3px] transition-colors ${
               tab === id
-                ? "text-ink border-accent"
-                : "text-muted border-transparent"
+                ? "bg-accent text-black"
+                : "bg-surface text-muted hover:text-ink"
             }`}
           >
             {t(id)}
           </button>
         ))}
       </div>
-      <div className="px-4 pb-4 pt-1.5 min-h-[220px]">
+      <div className="pt-4 min-h-[220px]">
         {tab === "nearest" && !userCoords ? (
-          <div className="py-6 text-muted text-[0.88rem] max-w-[38ch]">
+          <div className="py-6 font-mono text-muted text-[0.82rem] max-w-[42ch]">
             {places.length
               ? t("emptyNearestNoLocation", { count: places.length })
               : t("emptyNearest")}
           </div>
         ) : list.length === 0 ? (
-          <div className="py-6 text-muted text-[0.88rem] max-w-[38ch]">
+          <div className="py-6 font-mono text-muted text-[0.82rem] max-w-[42ch]">
             {t(tab === "nearest" ? "emptyNearest" : "emptyLatest")}
           </div>
         ) : (
-          list.map((place) => (
-            <PlaceRow
-              key={place.meta.slug}
-              place={place}
-              distanceKm={
-                tab === "nearest" && userCoords
-                  ? haversineKm(
-                      userCoords.lat,
-                      userCoords.lng,
-                      place.meta.coordinates.lat,
-                      place.meta.coordinates.lng,
-                    )
-                  : undefined
-              }
-            />
-          ))
+          <PlaceCards
+            places={list}
+            distances={tab === "nearest" ? distances : undefined}
+          />
         )}
       </div>
     </section>

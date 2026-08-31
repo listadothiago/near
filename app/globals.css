@@ -1,80 +1,90 @@
 @import "tailwindcss";
 
+/* Neo-brutalist alt-weekly zine system. Newsprint ground, solid black
+   strokes, acid green as the single accent. Geometry is deliberately
+   hard: no radii anywhere, thick borders, offset shadows with no blur. */
 :root {
-  --paper: #f1f0ea;
-  --surface: #fafaf6;
-  --surface-2: #e7e6de;
-  --ink: #20262a;
-  --muted: #6c766f;
-  --border: #dedcd1;
-  --accent: #5c7a6c;
-  --accent-ink: #33463c;
-  --chart-bg: #e3e2d9;
-  --land: #b7c0b3;
-  --grid-line: #cbcabe;
-  --grid-strong: #98a093;
+  --paper: #f4f4f0;
+  --surface: #ffffff;
+  --surface-2: #e6e6e0;
+  --ink: #000000;
+  --muted: #55554e;
+  --border: #000000;
+  --accent: #ccff00;
+  /* Acid green is unreadable as text on newsprint, so links and other
+     text-level accents use black and reserve --accent for fills. */
+  --accent-ink: #000000;
+  --chart-bg: #e6e6e0;
+  --land: #c9c9c0;
+  --grid-line: #d5d5cc;
+  --grid-strong: #8a8a80;
 
-  --cat-travel-luxury: #4c6e7a;
-  --cat-world-culture-news: #8a7c64;
-  --cat-city-culture: #4f7a46;
-  --cat-food-drink: #a15a3b;
-  --cat-nightlife-sound: #7a4f71;
-  --cat-wellness-fitness: #3f8078;
-  --cat-accommodation: #a6832f;
+  --cat-travel-luxury: #2b5f7a;
+  --cat-world-culture-news: #7a6320;
+  --cat-city-culture: #1f6b2f;
+  --cat-food-drink: #9c3d14;
+  --cat-nightlife-sound: #6b2470;
+  --cat-wellness-fitness: #10685f;
+  --cat-accommodation: #7a5a10;
 
-  --shadow: 0 1px 2px rgba(32, 38, 42, 0.05), 0 10px 28px rgba(32, 38, 42, 0.05);
+  --stroke: 3px;
+  --stroke-thick: 4px;
+  --shadow: 8px 8px 0 var(--ink);
+  --shadow-sm: 4px 4px 0 var(--ink);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #1c2022;
-    --surface: #232829;
-    --surface-2: #292f2f;
-    --ink: #eaede9;
-    --muted: #9aa39c;
-    --border: #343b3a;
-    --accent: #9ab1a2;
-    --accent-ink: #eaf1ec;
-    --chart-bg: #24282b;
-    --land: #4d6059;
-    --grid-line: #3a4241;
-    --grid-strong: #7f8d89;
+    --paper: #121212;
+    --surface: #1c1c1a;
+    --surface-2: #262624;
+    --ink: #f4f4f0;
+    --muted: #a3a39a;
+    --border: #f4f4f0;
+    --accent: #ccff00;
+    --accent-ink: #ccff00;
+    --chart-bg: #1c1c1a;
+    --land: #3a3a36;
+    --grid-line: #2e2e2b;
+    --grid-strong: #6f6f68;
 
-    --cat-travel-luxury: #7c97a3;
-    --cat-world-culture-news: #a69c87;
-    --cat-city-culture: #8fa37e;
-    --cat-food-drink: #b57a5c;
-    --cat-nightlife-sound: #9c7c93;
-    --cat-wellness-fitness: #6fa39b;
-    --cat-accommodation: #d4b16a;
+    --cat-travel-luxury: #7cc0dc;
+    --cat-world-culture-news: #d8bd6a;
+    --cat-city-culture: #7fce8d;
+    --cat-food-drink: #f0a07a;
+    --cat-nightlife-sound: #d29ad6;
+    --cat-wellness-fitness: #6fd0c4;
+    --cat-accommodation: #e0bb63;
 
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.35);
+    --shadow: 8px 8px 0 var(--ink);
+    --shadow-sm: 4px 4px 0 var(--ink);
   }
 }
 
 :root[data-theme="dark"] {
-  --paper: #1c2022;
-  --surface: #232829;
-  --surface-2: #292f2f;
-  --ink: #eaede9;
-  --muted: #9aa39c;
-  --border: #343b3a;
-  --accent: #9ab1a2;
-  --accent-ink: #eaf1ec;
-  --chart-bg: #24282b;
-  --land: #4d6059;
-  --grid-line: #3a4241;
-  --grid-strong: #7f8d89;
+  --paper: #121212;
+  --surface: #1c1c1a;
+  --surface-2: #262624;
+  --ink: #f4f4f0;
+  --muted: #a3a39a;
+  --border: #f4f4f0;
+  --accent: #ccff00;
+  --accent-ink: #ccff00;
+  --chart-bg: #1c1c1a;
+  --land: #3a3a36;
+  --grid-line: #2e2e2b;
+  --grid-strong: #6f6f68;
 
-  --cat-travel-luxury: #7c97a3;
-  --cat-world-culture-news: #a69c87;
-  --cat-city-culture: #8fa37e;
-  --cat-food-drink: #b57a5c;
-  --cat-nightlife-sound: #9c7c93;
-  --cat-wellness-fitness: #6fa39b;
-  --cat-accommodation: #d4b16a;
+  --cat-travel-luxury: #7cc0dc;
+  --cat-world-culture-news: #d8bd6a;
+  --cat-city-culture: #7fce8d;
+  --cat-food-drink: #f0a07a;
+  --cat-nightlife-sound: #d29ad6;
+  --cat-wellness-fitness: #6fd0c4;
+  --cat-accommodation: #e0bb63;
 
-  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 28px rgba(0, 0, 0, 0.35);
+  --shadow: 8px 8px 0 var(--ink);
+  --shadow-sm: 4px 4px 0 var(--ink);
 }
 
 @theme inline {
@@ -99,9 +109,16 @@
   --color-cat-wellness-fitness: var(--cat-wellness-fitness);
   --color-cat-accommodation: var(--cat-accommodation);
 
-  --font-serif: var(--font-fraunces), Georgia, serif;
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-courier-prime), ui-monospace, "SF Mono", monospace;
+  /* Long-form body copy stays monospace-adjacent per the zine brief;
+     --font-serif is kept as an alias so any remaining consumer resolves
+     to the display face rather than a browser default serif. */
+  --font-serif: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-hard: var(--shadow);
+  --shadow-hard-sm: var(--shadow-sm);
 }
 
 * {
@@ -117,9 +134,38 @@ body {
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+/* NO ROUNDED CORNERS — the single most load-bearing rule of the
+   aesthetic. Enforced globally so a stray Tailwind rounded-* utility
+   can't quietly soften the system. */
+*,
+*::before,
+*::after {
+  border-radius: 0 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.05;
+}
+
+/* Cheap print simulation on editorial imagery. Scoped to .zine-img so
+   it never touches an AdSense iframe — filtering an ad is a
+   click-manipulation ban risk, see BACKLOG EPIC 1 ARCH-DEFENSE. */
+.zine-img {
+  filter: grayscale(100%) contrast(1.2);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -130,25 +176,32 @@ body {
 
 /* Leaflet map — restyle the default control chrome to match the site's
    tokens, and invert the OSM raster tiles in dark mode (no separate paid
-   dark tile source needed). */
+   dark tile source needed). The tiles also get desaturated so the map
+   reads as newsprint rather than a full-color Google-Maps slab. */
 .leaflet-container {
   background: var(--color-chart-bg);
-  font-family: var(--font-sans);
+  font-family: var(--font-mono);
 }
 
+.leaflet-tile-pane {
+  filter: grayscale(100%) contrast(1.1);
+}
+
+/* Inverting a grayscale raster tile leaves labels dark-on-dark, so the
+   dark variant lifts brightness and contrast back up rather than
+   reusing the light filter's values. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .leaflet-tile-pane {
-    filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+    filter: grayscale(100%) invert(1) brightness(1.15) contrast(1.15);
   }
 }
 
 :root[data-theme="dark"] .leaflet-tile-pane {
-  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
+  filter: grayscale(100%) invert(1) brightness(1.15) contrast(1.15);
 }
 
 .leaflet-control-zoom {
-  border: 1px solid var(--color-border) !important;
-  border-radius: 10px !important;
+  border: var(--stroke) solid var(--color-border) !important;
   overflow: hidden;
   box-shadow: none !important;
 }
@@ -157,15 +210,22 @@ body {
   background: var(--color-surface) !important;
   color: var(--color-ink) !important;
   border-color: var(--color-border) !important;
+  font-family: var(--font-mono);
 }
 
 .leaflet-control-zoom a:hover {
-  border-color: var(--color-accent) !important;
+  background: var(--color-accent) !important;
+  color: #000 !important;
 }
 
 .leaflet-control-attribution {
-  background: color-mix(in srgb, var(--color-surface) 85%, transparent) !important;
+  background: var(--color-surface) !important;
   color: var(--color-muted) !important;
+  font-family: var(--font-mono);
+  font-size: 9px !important;
+  white-space: nowrap;
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
 }
 
 .leaflet-control-attribution a {

@@ -6,20 +6,46 @@ export default function Header() {
   const t = useTranslations();
 
   return (
-    <header className="pb-3 border-b border-border">
-      <div className="max-w-2xl flex flex-wrap items-baseline gap-x-2">
-        <Link href="/" className="inline-flex items-center gap-1.5">
-          <NearMark className="w-3.5 h-3.5 text-accent flex-none" />
-          <span className="font-serif italic font-semibold text-[1.05rem] text-ink tracking-tight leading-none whitespace-nowrap">
-            {t("app.wordmark")}
+    <header className="border-b-[4px] border-ink pb-2 mb-1">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <Link href="/" className="inline-flex items-center gap-1.5 group">
+          <NearMark className="w-4 h-4 text-ink flex-none" />
+          <span className="font-display font-bold uppercase tracking-[-1px] text-[1.25rem] leading-none whitespace-nowrap group-hover:bg-accent transition-colors">
+            NEAR.TIPS
           </span>
         </Link>
-        {/* Sits inline with the wordmark when it fits and wraps onto its
-            own line when it doesn't — never truncated. */}
-        <span className="text-muted text-[0.76rem] sm:text-[0.92rem]">
-          {t("app.tagline")}
-        </span>
+
+        <nav className="flex items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide">
+          <Link
+            href="/"
+            className="border-[2px] border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.tips")}
+          </Link>
+          <Link
+            href="/guides"
+            className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("collection.navLabel")}
+          </Link>
+          <Link
+            href="/sources"
+            className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("sources.navLabel")}
+          </Link>
+          <Link
+            href="/about"
+            className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.about")}
+          </Link>
+        </nav>
       </div>
+
+      <p className="mt-1.5 font-mono text-[0.74rem] text-muted">
+        {t("app.tagline")}
+      </p>
     </header>
   );
 }

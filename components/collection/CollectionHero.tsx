@@ -19,14 +19,14 @@ export default function CollectionHero({
   return (
     <header>
       {meta.coverImage && (
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-surface-2">
+        <div className="relative w-full aspect-[16/9] overflow-hidden bg-surface-2 border-[4px] border-ink">
           <Image
             src={meta.coverImage.url}
             alt={frontmatter.title}
             fill
             priority
             sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover"
+            className="object-cover zine-img"
           />
         </div>
       )}
@@ -43,13 +43,13 @@ export default function CollectionHero({
         </p>
       )}
 
-      <p className="mt-5 text-[0.78rem] font-mono text-muted uppercase tracking-wide">
+      <p className="mt-5 inline-block bg-accent text-black border-[3px] border-ink px-2 py-0.5 text-[0.72rem] font-mono uppercase tracking-wide">
         {t("placesCount", { count: placeCount })}
       </p>
-      <h1 className="mt-2 font-serif italic font-medium text-[clamp(2rem,4.5vw,2.8rem)] leading-tight">
+      <h1 className="mt-2 text-[clamp(2rem,5.5vw,3.2rem)]">
         {frontmatter.title}
       </h1>
-      <p className="mt-2 text-[1.05rem] text-muted max-w-[60ch]">
+      <p className="mt-2 font-mono text-[0.95rem] text-muted max-w-[60ch]">
         {frontmatter.dek}
       </p>
     </header>

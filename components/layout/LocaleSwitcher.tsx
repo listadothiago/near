@@ -57,7 +57,7 @@ export default function LocaleSwitcher({ dropUp = false }: { dropUp?: boolean })
         onClick={() => setOpen((v) => !v)}
         aria-label={t("changeLanguage")}
         aria-expanded={open}
-        className="flex items-center justify-center w-9 h-9 rounded-full border border-border bg-surface text-[1.05rem] leading-none hover:border-accent"
+        className="flex items-center justify-center w-9 h-9 border-[3px] border-ink bg-surface text-[1.05rem] leading-none hover:bg-accent"
       >
         <span aria-hidden="true">{FLAGS[activeLocale]}</span>
       </button>
@@ -65,7 +65,7 @@ export default function LocaleSwitcher({ dropUp = false }: { dropUp?: boolean })
       {open && (
         <div
           role="menu"
-          className={`absolute left-0 z-20 bg-surface border border-border rounded-xl shadow-[0_10px_28px_rgba(32,38,42,.12)] p-1.5 flex flex-col gap-0.5 min-w-[44px] ${
+          className={`absolute left-0 z-20 bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] p-1.5 flex flex-col gap-0.5 min-w-[44px] ${
             dropUp ? "bottom-[calc(100%+6px)]" : "top-[calc(100%+6px)]"
           }`}
         >
@@ -77,7 +77,7 @@ export default function LocaleSwitcher({ dropUp = false }: { dropUp?: boolean })
               locale={locale}
               onClick={() => setOpen(false)}
               aria-label={NAMES[locale]}
-              className={`flex items-center justify-center w-9 h-9 rounded-lg text-[1.1rem] leading-none hover:bg-surface-2 ${
+              className={`flex items-center justify-center w-9 h-9 text-[1.1rem] leading-none hover:bg-accent ${
                 locale === activeLocale ? "bg-surface-2" : ""
               }`}
             >

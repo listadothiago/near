@@ -46,7 +46,7 @@ export default async function SourcesPage({
     <>
       <Header />
       <section className="mt-8">
-        <h1 className="font-serif font-medium text-[1.4rem] mb-1">
+        <h1 className="text-[clamp(1.8rem,5vw,2.6rem)] mb-1">
           {t("title")}
         </h1>
         <p className="text-muted max-w-[64ch] text-[0.94rem] mb-5">
@@ -60,11 +60,11 @@ export default async function SourcesPage({
             return (
               <div
                 key={cat}
-                className="bg-surface border border-border rounded-xl px-4 py-3.5"
+                className="bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] px-4 py-3.5"
               >
                 <h3 className="flex items-center gap-2 text-[0.86rem] font-bold uppercase tracking-wide mb-2.5">
                   <span
-                    className="w-[9px] h-[9px] rounded-full"
+                    className="w-[9px] h-[9px] border border-ink"
                     style={{ background: `var(${CATEGORY_COLOR_VAR[cat]})` }}
                   />
                   {tCat(cat)}
@@ -72,15 +72,15 @@ export default async function SourcesPage({
                 {group.map((s) => (
                   <div
                     key={s.id}
-                    className="py-2 border-t border-border first:border-t-0 first:pt-0"
+                    className="py-2 border-t border-ink/25 first:border-t-0 first:pt-0"
                   >
                     <div className="text-[0.86rem] font-semibold">
                       {s.name}{" "}
-                      <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 rounded-full bg-surface-2 border border-border text-muted align-middle">
+                      <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 bg-surface-2 border border-ink text-muted align-middle font-mono">
                         {s.trust === "auto" ? t("trustAuto") : t("trustReview")}
                       </span>
                       {s.feedType === "html-extract" && (
-                        <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 rounded-full bg-surface-2 border border-border text-muted align-middle">
+                        <span className="ml-1.5 text-[0.68rem] px-1.5 py-0.5 bg-surface-2 border border-ink text-muted align-middle font-mono">
                           no direct feed
                         </span>
                       )}

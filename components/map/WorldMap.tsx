@@ -162,7 +162,7 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
           if (isTouchDevice()) {
             markerRef.current?.openTooltip();
           } else {
-            window.open(placeHref(point.slug), "_blank", "noopener,noreferrer");
+            window.location.href = placeHref(point.slug);
           }
         },
       }}
@@ -170,26 +170,26 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
       <Tooltip direction="top" offset={[0, -10]} opacity={1} className="near-map-tooltip">
         <a
           href={placeHref(point.slug)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-52 bg-surface border border-border rounded-xl shadow-[0_10px_28px_rgba(32,38,42,.15)] overflow-hidden cursor-pointer"
+          className="block w-52 bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden cursor-pointer"
         >
           {point.heroImageUrl && (
-            <div className="relative w-full h-24 bg-surface-2">
+            <div className="relative w-full h-24 bg-surface-2 border-b-[3px] border-ink">
               <Image
                 src={point.heroImageUrl}
                 alt={point.name}
                 fill
                 sizes="208px"
-                className="object-cover"
+                className="object-cover zine-img"
               />
             </div>
           )}
-          <div className="p-2.5">
-            <div className="font-serif italic font-medium text-[0.94rem] leading-tight">
+          <div className="p-2">
+            <div className="font-display font-bold uppercase tracking-[-0.5px] text-[0.85rem] leading-[1.1]">
               {point.name}
             </div>
-            <div className="mt-1 text-[0.76rem] text-muted leading-snug">{point.tagline}</div>
+            <div className="mt-1 font-mono text-[0.68rem] text-muted leading-snug">
+              {point.tagline}
+            </div>
           </div>
         </a>
       </Tooltip>
