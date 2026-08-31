@@ -7,6 +7,8 @@ import { routing } from "@/lib/i18n/routing";
 import { getBaseUrl } from "@/lib/seo/site";
 import ThemeScript from "@/components/layout/ThemeScript";
 import InstallPrompt from "@/components/layout/InstallPrompt";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -50,6 +52,13 @@ export async function generateMetadata({
     // rendering an empty meta tag. Set GOOGLE_SITE_VERIFICATION in the
     // Vercel project (and .env.local for dev) to the value Console gives
     // you under Settings -> Ownership verification -> HTML tag.
+    // iOS ignores the manifest's display mode; these are what make an
+    // Add-to-Home-Screen launch open chrome-free instead of in Safari.
+    appleWebApp: {
+      capable: true,
+      title: "Near",
+      statusBarStyle: "default",
+    },
     verification: process.env.GOOGLE_SITE_VERIFICATION
       ? { google: process.env.GOOGLE_SITE_VERIFICATION }
       : undefined,
@@ -82,6 +91,9 @@ export default async function LocaleLayout({
             {children}
           </div>
           <InstallPrompt />
+          {/* Cookieless — this is why Near needs no consent banner. */}
+          <Analytics />
+          <SpeedInsights />
         </NextIntlClientProvider>
       </body>
     </html>
