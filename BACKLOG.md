@@ -318,6 +318,16 @@ _São Paulo moved to second and Amsterdam to third at the operator's direction. 
 
 _Note what this changes: New York, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego and Seattle were all Phase 2 "do not start" cities under the old list. They are now Phase 1. Lisbon and Oakland/Pigeon Forge, already covered, are not on this list — no need to remove existing content, but it shouldn't be extended either. Seattle now has a source to work from: The Stranger, added the same day._
 
+### Quiosque da Cris (aka Mudança Radical), São Vicente SP — special entry (operator, 2026-08-31)
+
+_Operator direct request, priority within the São Paulo/Baixada Santista refresh (#2 in the order):_ a **really special entry** for Quiosque da Cris (also known as Mudança Radical) on/near Praia do Itararé, São Vicente SP, built as three intertwined threads:
+
+1. **A deep-dive profile of Cris herself** — a pillar of the local LGBT scene. This is Near's first named-person profile, so the bar is higher than a venue pin: everything asserted about a real, living person must be sourced or come from her own public statements; check her Instagram (operator's instruction) for what's currently going on, and treat posts as her own voice, quotable with attribution. If contact is possible, the `near-alter-ego`-style consent instinct applies — a profile this central to a small scene should not surprise its subject.
+2. **The quiosque as a place** — normal pin discipline: verify trading, exact spot on the beach, what's actually served, when it's busiest.
+3. **Praia do Itararé's significance for the LGBT community** — the beach as queer territory, with real history and sources, not vibes. This connects to the existing São Vicente scouting (O Condado, ballroom, the operator's earlier notes) and to Near's standing finding that queer institutions survive by being treated as necessities.
+
+_Operator context that matters: this is the operator's home region (Baixada Santista), so local knowledge is available to fact-check the draft — use it. Instagram research needed (browser session), which also makes this a good candidate for the first run of the sources-skill Instagram checks queued in EPIC 5._
+
 ### Coastal alt-luxury — a beat, not just a set of pins (operator, 2026-08-31)
 
 _Operator raised **Angra dos Reis and surroundings**, then **Litoral Norte SP**, with two distinct reasons — and the second is the more interesting one._
