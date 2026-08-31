@@ -390,12 +390,15 @@ _The list is deliberately long and deliberately unranked. Ranking it before ther
 
 _Convened at the operator's request with every lens chiming in — including RADAR-X, near-seo, the product trio, caretaker, illustrator, translator, blogger, socials. Two prior fan-out attempts died at credit walls mid-research; the session was rerun inline with direct verification. Sources below were actually loaded, not summarised._
 
+**Drafted 2026-08-31 (English only, scoped for token budget — other five locales pending):**
+- **Berry Bros. & Rudd** (`content/places/berry-bros-and-rudd-london`) — published English draft. Hero image re-sourced and verified live (the originally logged Commons file didn't exist; replaced with a confirmed CC BY 2.0 shopfront photo). **Still needs:** pt-BR/es-419/es-ES/it/zh-CN via `near-translator`, and an art-direction pass from `near-illustrator` (currently just the one stock photo, no gallery/illustration call made).
+
 **Verified and ready to draft (in rank order):**
 1. **Gay's the Word** — 66 Marchmont St, Bloomsbury. UK's oldest LGBT+ bookshop, trading since Jan 1979, current hours + events on site. Byline RADAR-X (London shopping). Tags: lgbtq-friendly, local-legend.
 2. **Wilton's Music Hall** — Graces Alley, E1. Oldest grand music hall in the world, Grade II*, ~300 performances/yr, Sept 2026 listings verified live. Byline PLINIO.
 3. **London Otters** — Royal Docks Watersports Centre, E16. UK's LGBTQ-inclusive rowing club, explicitly trans-inclusive; Otterpups beginner courses (six weekends, 3x/yr, 39th cohort Nov 2025), 2026 race dates verified. Byline FIT-BOT. Exactly the operator's joinable-queer-sport ask.
 4. **Walthamstow Wetlands** — 160ha free reserve on a working reservoir serving 3.5M people. Access rules verified; NOTE their own site carries a path-closure notice dated "through August 2025" — check whether stale copy or extended closure before drafting. Byline WILD0 (outdoors default, operator decision same day).
-5. **Berry Bros. & Rudd** — 3 St James's St. 1698, still family-owned, 3 Masters of Wine, B Corp 2025; the cheap way into the expensive institution is the front door. Byline DARCY. First London travel-beat pin.
+5. **~~Berry Bros. & Rudd~~ — DRAFTED 2026-08-31**, see above.
 6. **Hazlitt's** — Soho. Independent Georgian-townhouse hotel, no exterior signage, buzzed in; the honest caveat (a 1718 building behaves like one) is the service. Byline NITE-PORTER.
 7. **Studio Voltaire** — Nelsons Row, Clapham. Artist-run since 1994, named current commissions (Anthea Hamilton; Tatham & O'Sullivan), Wed–Sun. Byline CUBIC-V. South-of-river art anchor.
 
@@ -572,5 +575,12 @@ also adhd. likes concerts in smaller venues def not festivals unless it's really
 OK thats it for the Djaga agent, that was all just context btw
 
 We should actually have an events view as well. What would work best for that? A page in the header menu like guides, with all the calendar features? A filter in the current view? Also adjusting the map should be reflected in the listings that appear in the current view, perhaps, does that make sense and is it doable?
+
+## 🔭 External read: Gemini's cold assessment of near.tips (2026-08-31)
+
+Operator ran near.tips past Gemini with no prior context, to see how the site reads to an outsider. Most of it just confirms what this backlog already tracks (thin 11-source catalogue, personas-as-bylines, London/Santos/SP footprint) — logged here mainly for the one genuinely new signal:
+
+- **The London↔Santos↔SP geographic jump reads as "highly irregular" to someone with zero context**, and Gemini's best guess was that it reflects the founders' personal data/location rather than a deliberate strategy. That guess is *correct* (the seeded-audience reasoning in EPIC 5), but a cold reader has no way to know that — it currently just looks arbitrary or unfinished. **Actionable:** the About page (already queued above, "maintained by various humans empowered by AI...") or the `/sources`/city pages could say explicitly *why* these particular cities come first (operator's home base + real social network = actual first readers), turning an apparent randomness into a credible, even charming, origin story instead of a gap to explain away later.
+- Otherwise a fair external gut-check that the "vibe over volume" stage is showing — consistent with the sources-catalogue and content-density items already tracked in EPIC 4b/2. No new work items beyond the About-page framing note above.
 
 
