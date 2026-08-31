@@ -229,25 +229,36 @@ rules:
 
   - id: full-locale-coverage
     description: >
-      Every place with trust: auto and status: active should eventually
-      carry content in all six locales (en, pt-BR, it, es-ES, es-419,
-      zh-CN) — see near-translator (.claude/skills/near-translator/SKILL.md)
-      for how each locale's version gets written. It's fine for a place to
-      launch with fewer locales than that (the app falls back to English
-      with a "translation pending" note rather than 404ing — see
-      lib/content/loader.ts's resolveLocaleContent) and for near-editor to
-      cap how many locales it produces in a single run per
-      run-volume-cap. But a locale gap shouldn't sit indefinitely: a
-      near-refresh run's check-open sweep should also check for places
-      missing one or more locales and treat closing that gap as
-      first-class work, not an afterthought — dispatching near-translator
-      per missing locale the same way it dispatches near-editor for a new
-      place. This rule does not apply to trust: review / status: draft
-      places (no point localizing something that hasn't been approved
-      yet) or to status: closed / status: archived places (not worth the
-      effort on something no longer live on the board).
-    trigger: "status == 'active' AND trust == 'auto' AND missing one or more of the six locale files"
-    action: "near-refresh (or an explicit operator request) dispatches near-translator per missing locale; log closed gaps in _ingestion-log.md"
+      Every place with trust: auto and status: active carries content in
+      ALL SIX locales (en, pt-BR, it, es-ES, es-419, zh-CN) — see
+      near-translator (.claude/skills/near-translator/SKILL.md) for how
+      each locale's version gets written.
+
+      This rule was weakened until 2026-08-31: it said launching with
+      fewer locales was fine and the gap could be closed later. In
+      practice "later" meant half the catalogue sitting in English
+      fallback across four markets. The operator's call is that being
+      genuinely multilingual is a core strategic property of the app, not
+      a nice-to-have, so a place is no longer considered publishable in a
+      partial state.
+
+      ALL SIX LOCALES ARE NOW PART OF quality-gate-before-publish. A new
+      place ships complete or it doesn't ship. run-volume-cap bounds how
+      many *places* a run creates, not how many locales each one gets —
+      if the cap binds, publish fewer places fully rather than more
+      places partially.
+
+      The English-fallback path in lib/content/loader.ts stays as a
+      safety net so a missing file degrades instead of 404ing, but it is
+      now a bug indicator rather than an expected state. Anything hitting
+      it should be treated as a gap to close, not a design working as
+      intended.
+
+      Does not apply to trust: review / status: draft places (no point
+      localizing something unapproved) or to status: closed / archived
+      (not worth the effort on something off the board).
+    trigger: "any place being published, and any active/auto place missing one of the six locale files"
+    action: "publish only with all six locales present; for the existing backlog, near-refresh dispatches near-translator per missing locale as first-class work until the gap is zero"
 
   - id: dedupe-everywhere
     description: >
