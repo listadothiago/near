@@ -55,9 +55,39 @@ push-to-live per post for operator QA.
 - [ ] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — operator request, SPECIAL: Cris profile + place + beach significance, higher sourcing bar (first named-person profile). See BACKLOG.
 - [ ] O Condado + São Vicente scene items from earlier scouting — need verification pass
 
-### Berlin (deep) — queue empty, needs seeding war-room before its first turn
-### Amsterdam — queue empty, needs seeding
-### San Francisco Bay Area — queue empty; seed with sober-curious + outdoors per BACKLOG note
+### Berlin (deep) — war-room slate 2026-08-31, verified
+- [ ] SchwuZ (nomadic) — STEFAN (Germany's oldest queer club, insolvent Nov 2025, rebuilding as roaming party series; HOW-TO-PIN decision pending — no fixed address)
+- [ ] ://about blank, Ostkreuz — STEFAN (collectively-run queer-left club in the A100 motorway's path; load a fresh A100-status source at draft)
+- [ ] SO36 / Gayhane, Kreuzberg — PLINIO (punk landmark; monthly queer Turkish-Arabic night 25+ years; Gayhane dates 26.09/31.10/28.11/26.12.2026 confirmed)
+- [ ] Möbel Olfe, Kotti — FOODIE-9000 (current schedule: Tue–Sat from 18:00, Tuesday FLINTA*; listicles still print the 2016 lore — the correction is the piece)
+- [ ] Teufelssee, Grunewald — WILD0 (queer nude lake; free, unfenced; FKK/cruising context stated plainly)
+- [ ] Vorspiel e.V. — FIT-BOT (Europe's largest LGBT sports club, 39 sports; Oct 2026 tournaments dated; NO Commons image — gates publish)
+- [ ] Schwules Museum — CUBIC-V (Susan Sontag + rural-queer shows dated to Nov 2, 2026)
+- [ ] Eisenherz Buchladen, Schöneberg — RADAR-X (Europe's oldest surviving gay bookshop, 1978; cross-city queer-bookshop thread with Gay's the Word)
+- [ ] Südblock, Kotti — CUBIC-V (daytime queer living room; counselling, Disability Pride Sep 19 2026, sober-ish counterweight)
+- [ ] Michelberger Hotel — NITE-PORTER (honest-caveat pick; needs one more independent review source + image check at draft)
+
+_Berlin corrections bank (all sourced): visitBerlin still lists SchwuZ as open (closed Nov 1 2025); Möbel Olfe's "Thursday gay night" lore is stale; Timeout still carries Watergate (closed 2024); "Berghain = queer Berlin" — the actual infrastructure is Kotti + Schöneberg + a lake in a forest._
+
+### Amsterdam — war-room slate 2026-08-31, verified
+- [ ] De Trut, Oud-West — STEFAN (40 years, €3 volunteer-run queer club, profits fund LGBTQIA+ projects; WorldPride doc screening 15 Jul 2026)
+- [ ] Café 't Mandje, Zeedijk — PLINIO (Amsterdam's first openly queer café, 1927; Bet van Beeren; interior preserved intact)
+- [ ] Marineterrein Binnenhaven — WILD0 (centre's first legal open-water swim spot since Apr 2025; where you still can't swim, stated plainly)
+- [ ] Sexyland World, Noord — CUBIC-V (different owner every day, 365 programmers/yr; NO usable Commons image — gates publish)
+- [ ] Skatecafé, Noord — FOODIE-9000 (restaurant where the skate ramp becomes the dance floor; weak hero — needs image call)
+- [ ] Rush Hour, Spuistraat — STEFAN as shopping byline (record shop that's a club-culture institution; dated 2026 in-stores confirmed; NO Commons image — gates publish; address 110 vs 116 to resolve)
+
+### San Francisco Bay Area — war-room slate 2026-08-31, verified
+- [ ] The Stud, SoMa — STEFAN (first worker-owned co-op nightclub in the US; 2026 Instagram suspension + Stud Alley arrests; Commons photos show OLD 9th St site — then/now caption or illustration)
+- [ ] Dolphin Club, Aquatic Park — WILD0 (swim SF Bay for a $10 public day-use fee; 1877; alternate days with South End)
+- [ ] Queer Surf, Pacifica — FIT-BOT (sliding-scale queer surf lessons; SWITCH exhibition Jun 13 2026; retry ebar sources via browser at draft)
+- [ ] Heinold's First & Last Chance, Oakland — PLINIO (floor tilted since 1906, last original gas lighting in CA commercial use)
+- [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; RSD Apr 18 2026 confirmed; needs one more independent source at draft)
+- [ ] Lakeshore Lavender Lounge, Oakland — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
+
+_SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
+
+_Amsterdam note: no coffeeshop cleared the two-source bar this pass — the honest-coffeeshop-culture piece reads better as a near-blogger collection; operator decision pending._
 ### Barcelona — queue empty, needs seeding
 ### Rome — queue empty, needs seeding (che.famo.stasera / vernissagerome IG sources queued in EPIC 5)
 ### Portland — queue empty, needs seeding
