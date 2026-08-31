@@ -34,12 +34,21 @@ const SIZES: Record<PlacementSize, string> = {
   "half-page": "w-[300px] h-[600px]",
 };
 
+/** Same formats as SIZES, as a floor rather than a fixed box. */
+const MIN_SIZES: Record<PlacementSize, string> = {
+  mrec: "w-full h-full min-h-[250px]",
+  leaderboard: "w-full h-full min-h-[90px]",
+  "mobile-banner": "w-full h-full min-h-[100px]",
+  "half-page": "w-full h-full min-h-[600px]",
+};
+
 export default function Placement({
   slot,
   size,
   promoHref,
   promoKicker,
   promoTitle,
+  stretch = false,
 }: {
   /** Stable analytics name — keep it when real inventory replaces the promo. */
   slot: string;
@@ -47,6 +56,13 @@ export default function Placement({
   promoHref: string;
   promoKicker: string;
   promoTitle: string;
+  /**
+   * Fill the parent instead of sitting at its exact pixel size — for the
+   * board grid, where a fixed 300x250 in a flexible column leaves a hole
+   * under it. `size` still sets the reserved minimum, so real inventory
+   * has the space it needs and CLS behaves.
+   */
+  stretch?: boolean;
 }) {
   const t = useTranslations("ads");
   const ref = useRef<HTMLDivElement>(null);
@@ -74,7 +90,10 @@ export default function Placement({
   }, [slot, size]);
 
   return (
-    <aside ref={ref} className="flex flex-col items-start">
+    <aside
+      ref={ref}
+      className={`flex flex-col items-start ${stretch ? "h-full" : ""}`}
+    >
       {/* Honest labelling. This is Near's own content today and says so;
           when real inventory lands the label becomes the required ad
           disclosure. Never dress house promo as third-party advertising,
@@ -83,7 +102,7 @@ export default function Placement({
         {t("houseLabel")}
       </p>
       <div
-        className={`${SIZES[size]} max-w-full border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden`}
+        className={`${stretch ? MIN_SIZES[size] : SIZES[size]} max-w-full border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden`}
       >
         <Link
           href={promoHref}

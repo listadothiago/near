@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
@@ -21,9 +21,13 @@ const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
 export default function Board({
   places,
   eventsByParent,
+  promo,
 }: {
   places: PlaceSummary[];
   eventsByParent?: Record<string, UpcomingEvent[]>;
+  /** House placement rendered inside the card grid — a server component,
+      so the page builds it and passes it down as a node. */
+  promo?: ReactNode;
 }) {
   const t = useTranslations("board");
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
@@ -226,6 +230,7 @@ export default function Board({
           eventsByParent={eventsByParent}
           onlyFavorites={onlyFavorites}
           onOnlyFavoritesChange={setOnlyFavorites}
+          promo={promo}
         />
 
         <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">
