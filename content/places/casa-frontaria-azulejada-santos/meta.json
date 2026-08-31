@@ -1,0 +1,70 @@
+{
+  "slug": "casa-frontaria-azulejada-santos",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.9318,
+    "lng": -46.3295
+  },
+  "place": {
+    "city": "Santos",
+    "neighborhood": "Centro Histórico",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Wikipédia — Casa da Frontaria Azulejada",
+      "url": "https://pt.wikipedia.org/wiki/Casa_da_Frontaria_Azulejada",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Juicy Santos",
+      "url": "https://www.juicysantos.com.br/diversao/o-que-fazer-em-santos/voce-conhece-a-historia-da-casa-da-frontaria-azulejada/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Turismo Santos (official)",
+      "url": "https://www.turismosantos.com.br/?q=pt-br/node/4",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Memória Santista",
+      "url": "https://memoriasantista.com.br/casa-da-frontaria-azulejada-o-maior-patrimonio-da-rua-do-comercio/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/CasaAzulejada1.jpg",
+    "attribution": "Photo by Fulviusbsas via Wikimedia Commons (CC BY-SA 4.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:CasaAzulejada1.jpg",
+    "licenseNote": "CC BY-SA 4.0 — attribution required, share-alike"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "Created to close content/requests.md's santos-centro-historico-second, which Teatro Clube da Eskyna had logged: the Eskyna was Near's only Centro Histórico address and had no genuine neighbour to bridge to. Baixada Santista is a Tier 1 hub in BACKLOG.md. 296m from the Eskyna, clear of dedupe-by-place's 150m threshold. Hero image is CC BY-SA 4.0 from Wikimedia Commons rather than a source photo — openly licensed and stably hostable, attribution and licence recorded. All four sources verified reachable before citing."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Rua do Comércio 92, Centro Histórico, Santos, SP"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
