@@ -74,12 +74,75 @@ rules:
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,
       >= 3 bullets, long-form body >= 600 words in at least English,
-      geocode confidence >= 0.6, and a hero image was resolved (source
+      geocode confidence >= 0.6, a hero image was resolved (source
       image with attribution, or licensed stock — there is no AI-generated
-      fallback tier by design). If hero image resolution fails entirely,
-      the place is skipped, not published without an image.
+      fallback tier by design), and the link-density rule below passes.
+      If hero image resolution fails entirely, the place is skipped, not
+      published without an image.
     trigger: "on generation, before write"
     action: "if any check fails, skip publish; log to _ingestion-log.md with the specific failed check"
+
+  - id: link-density
+    description: >
+      The style guide has always required that every source used gets a
+      real in-text link and that a piece ends with a bridge outward
+      (references/style-guide.md, "Attribution and honesty" and
+      "Long-form body"). It was being ignored wholesale — an audit on
+      2026-08-31 found 12 of 18 English bodies with zero external in-text
+      links and 7 of 18 with zero internal ones. Prose guidance clearly
+      isn't enough on its own, so this is now a mechanical gate.
+
+      EXTERNAL: the body must carry at least one in-text markdown link to
+      a URL that also appears in meta.sources. The footer source list
+      does not count — it's a citation block, not attribution at the
+      point of the claim. Where the body states a specific fact, quote,
+      or observation drawn from a source, that sentence is where the
+      link belongs. Do not invent a URL to satisfy this; only link
+      sources actually consulted and recorded in meta.sources.
+
+      INTERNAL: the body must carry at least one <NearLink> to a genuinely
+      related published place — same city or neighborhood, same beat, or
+      a real editorial connection. If no such place exists yet, DO NOT
+      force a weak link to an unrelated pin to clear the gate. Instead
+      append an entry to content/requests.md naming the article that
+      wanted the link and what it needed, and the internal half of this
+      rule is considered satisfied for this run. A logged gap is a
+      correct outcome; a bad link is not.
+    trigger: "on generation, before write, for any place or collection body"
+    action: "if no in-text source link, skip publish and log; if no internal-link target exists, append to content/requests.md and proceed"
+
+  - id: event-belongs-to-venue
+    description: >
+      An event held at a venue Near already publishes is not an
+      independent place. Before this rule existed, it was written as one,
+      which produced two board cards with the same hero photo and two map
+      pins stacked on identical coordinates for a single address — the
+      exact duplication dedupe-by-place exists to prevent, waved through
+      because event-expiry had carved events out of that rule.
+
+      The event still gets its own slug, page, and URL: the specifics
+      that make it worth covering (lineup, ticket tiers, door policy)
+      deserve a shareable address, and folding them into a field on the
+      venue would throw that away. What changes is that it sets
+      meta.parentPlace to the venue's slug, which removes it from the
+      board and the map (lib/content/loader.ts's getAllPlaces) and
+      surfaces it on the venue's card and page instead — a "next event"
+      ribbon on the card, a "coming up here" list on the page, both fed
+      by getUpcomingEventsByParent and both disappearing on their own
+      once eventEndsAt passes.
+
+      Set meta.eventStartsAt too wherever the source states a start time.
+      eventEndsAt is frequently an estimate for a late-running night, and
+      showing an estimated end date as if it were the event date is
+      simply wrong — the Cabaret Latino pin ends at 05:00 the following
+      morning but happens on the 11th.
+
+      An event at a venue Near does NOT cover yet is a different case:
+      either create the venue first and hang the event off it, or publish
+      the event standalone with no parentPlace and log the missing venue
+      to content/requests.md.
+    trigger: "creating a place that is a time-bound happening at a venue Near already publishes"
+    action: "set meta.parentPlace to the venue slug and meta.eventStartsAt where known; do not create a standalone board listing"
 
   - id: event-expiry
     description: >
