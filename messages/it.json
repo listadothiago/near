@@ -119,6 +119,12 @@
     "success": "Grazie — è stato inviato per la revisione.",
     "error": "Si è verificato un errore durante l'invio. Riprova tra poco."
   },
+  "install": {
+    "blurb": "Aggiungi Near alla schermata home — funziona offline una volta aperta la pagina.",
+    "action": "Installa",
+    "dismiss": "Chiudi",
+    "iosHint": "Per installare: tocca Condividi, poi Aggiungi a Home."
+  },
   "nav": {
     "tips": "Dritte",
     "about": "Chi siamo"
@@ -136,6 +142,11 @@
     "nextEvent": "Prossimo",
     "upcomingHere": "In arrivo qui",
     "partOf": "Un evento a {venue}"
+  },
+  "share": {
+    "action": "Condividi",
+    "copied": "Link copiato",
+    "failed": "Copia non riuscita"
   },
   "sources": {
     "navLabel": "Fonti",
