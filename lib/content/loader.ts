@@ -174,13 +174,19 @@ export type NearStats = {
 
 export function getStats(): NearStats {
   const statsPath = path.join(process.cwd(), "content", "_stats.json");
-  if (fs.existsSync(statsPath)) {
-    return JSON.parse(fs.readFileSync(statsPath, "utf8"));
-  }
+  const stored = fs.existsSync(statsPath)
+    ? (JSON.parse(fs.readFileSync(statsPath, "utf8")) as Partial<NearStats>)
+    : {};
+
   return {
+    // Always counted from disk rather than read from _stats.json. The
+    // stored number is a snapshot written by the ingestion pipeline and
+    // it drifts: it said 16 while the board showed 17, so the footer was
+    // telling every visitor the wrong figure. Deriving it means the count
+    // and the board can't disagree again, whatever the file says.
     placesIndexed: getAllPlaces("en").length,
-    sourcesWatched: 0,
-    lastSyncAt: new Date().toISOString(),
+    sourcesWatched: stored.sourcesWatched ?? 0,
+    lastSyncAt: stored.lastSyncAt ?? new Date().toISOString(),
   };
 }
 
