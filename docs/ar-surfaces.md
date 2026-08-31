@@ -78,6 +78,40 @@ useful thing Near could add for someone actually standing on a street.
 It's also the natural prototype for the glasses version — same maths,
 different rendering. Build it on the phone first, where there are users.
 
+## Target devices (operator decision, 2026-08-31)
+
+Constraint: **must be wearable outside.** That immediately removes Quest
+3 and Vision Pro — both are indoor headsets, and neither is something
+anyone walks down a street in. Which is awkward, because they were the
+only class capable of a true world overlay. Accepting the constraint
+means accepting that **Near's AR is bearing-and-distance, not anchored
+overlay**, on every device we're actually targeting.
+
+1. **Meta Ray-Ban Display** — HUD class. The primary target, already
+   scoped in EPIC 3.
+2. **Xreal (Air / One series)** — mirroring class. Probably the largest
+   installed base of consumer display glasses. Needs no new work beyond
+   checking the existing responsive layout reads well on a large virtual
+   screen at their FOV.
+3. **Viture (Luma / Pro)** — mirroring class, same story as Xreal.
+
+So of the three, only one needs real design work. That's a good outcome,
+not a disappointing one: it means the effort concentrates on the HUD
+build rather than being spread across three half-experiences.
+
+**Worth raising, because it may be a bigger prize than 2 and 3 combined:**
+the audio-only Ray-Ban Meta glasses (no display) have sold in far larger
+numbers than any display glasses. Near on those isn't a visual surface at
+all — it's voice: ask what's nearby, hear a name, a beat and a distance.
+That's a genuinely different product with different content requirements
+(everything must work read aloud), and it's not in scope here. But if
+reach is the goal, it deserves its own evaluation rather than being
+ignored because it has no screen.
+
+_Device popularity moves fast and this file has a knowledge cutoff.
+Re-check unit numbers and current model lines before committing
+engineering time._
+
 ## Recommended sequencing
 
 1. **Phone AR-lite first.** Compass + geolocation waypoint view. Ships to
