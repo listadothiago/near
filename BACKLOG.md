@@ -15,7 +15,7 @@
 
 **Current State (Updated 2026-08-31, second pass):**
 
-- **Places:** 18 places, 17 on the board (Cabaret Latino is now a child event of the Eskyna venue, not its own listing). 0 drafts.
+- **Places:** 18 places, 17 on the board (paginated, 12/page) (Cabaret Latino is now a child event of the Eskyna venue, not its own listing). 0 drafts.
     
 - **Collections:** 1 — "'Asian Food' Was Never One Thing" (Rong He / Thai E-San / Djapa), all 6 locales.
     
@@ -63,7 +63,11 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 
 - [ ] **Author avatars (blocked on image generation):** The 8 personas have pages and bylines but no avatars — the 1930s rubber-hose art from EPIC 4 can't be produced from here. `near-illustrator` or hand-sourced art. Persona cards are typographic until then.
 
-- [ ] **Mobile verification (never done):** The browser tooling in this session refused to resize the rendering viewport, so the mobile filter toggle and map disclosure have never been checked by eye. Card grid reflow was verified by measurement (1 col at 390px → 5 at 1180px). **Check near.tips on a phone.**
+- [x] **Mobile verified by operator 2026-08-31** — looks good on a phone.
+
+- [x] **Pagination, not infinite scroll (2026-08-31).** 12 cards per page. Operator's reasoning, which is the right one: an unbounded list means a phone reader never reaches the footer, so anything living down there is effectively invisible. Same fix applied at the root — the **language switch and theme toggle moved from the footer into the header**, since the language switch in particular was undiscoverable. Guides/Sources/About were already in the header nav.
+
+- [ ] **~~Mobile verification (done above)~~:** The browser tooling in this session refused to resize the rendering viewport, so the mobile filter toggle and map disclosure have never been checked by eye. Card grid reflow was verified by measurement (1 col at 390px → 5 at 1180px). **Check near.tips on a phone.**
 
 - [ ] **~~Global Visual Identity (superseded above)~~:**
     

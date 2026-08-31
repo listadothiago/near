@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import NearMark from "./NearMark";
+import LocaleSwitcher from "./LocaleSwitcher";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const t = useTranslations();
@@ -15,6 +17,7 @@ export default function Header() {
           </span>
         </Link>
 
+        <div className="flex items-center gap-2">
         <nav className="flex items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide">
           <Link
             href="/"
@@ -41,6 +44,13 @@ export default function Header() {
             {t("nav.about")}
           </Link>
         </nav>
+
+        {/* These used to live only in the footer, which a reader scrolling
+            a long board on a phone never reached — so the language switch
+            was effectively undiscoverable. */}
+        <LocaleSwitcher />
+        <ThemeToggle />
+        </div>
       </div>
 
       <p className="mt-1.5 font-mono text-[0.74rem] text-muted">

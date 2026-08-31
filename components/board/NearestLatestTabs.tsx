@@ -1,10 +1,17 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { haversineKm } from "@/lib/geo/haversine";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 import PlaceCards from "./PlaceCards";
+import Pagination from "./Pagination";
+
+// Bounded pages, not infinite scroll — the footer holds the theme toggle
+// and secondary links, and an endless list means a phone reader never
+// gets there.
+const PAGE_SIZE = 12;
 
 export default function NearestLatestTabs({
   places,
@@ -60,6 +67,29 @@ export default function NearestLatestTabs({
       )
     : undefined;
 
+  const [page, setPage] = useState(1);
+  const totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+
+  // Filtering, searching or switching tabs can leave the reader stranded
+  // on a page that no longer exists. Reset during render rather than in an
+  // effect — React's documented way to adjust state when inputs change,
+  // and it avoids the extra render pass an effect would cost.
+  const listKey = useMemo(
+    () => `${tab}:${list.map((p) => p.meta.slug).join(",")}`,
+    [tab, list],
+  );
+  const [seenKey, setSeenKey] = useState(listKey);
+  if (seenKey !== listKey) {
+    setSeenKey(listKey);
+    setPage(1);
+  }
+
+  const safePage = Math.min(page, totalPages);
+  const pageItems = list.slice(
+    (safePage - 1) * PAGE_SIZE,
+    safePage * PAGE_SIZE,
+  );
+
   return (
     <section>
       <div className="flex gap-0 border-b-[3px] border-ink" role="tablist">
@@ -91,11 +121,18 @@ export default function NearestLatestTabs({
             {t(tab === "nearest" ? "emptyNearest" : "emptyLatest")}
           </div>
         ) : (
+          <>
           <PlaceCards
-            places={list}
+            places={pageItems}
             distances={tab === "nearest" ? distances : undefined}
             eventsByParent={eventsByParent}
           />
+          <Pagination
+            page={safePage}
+            totalPages={totalPages}
+            onPageChange={setPage}
+          />
+          </>
         )}
       </div>
     </section>
