@@ -35,7 +35,10 @@ export default async function HomePage({
 
   return (
     <>
-      <Header />
+      <Header
+        availableCats={[...new Set(places.flatMap((p) => p.meta.categories))]}
+        availableTags={[...new Set(places.flatMap((p) => p.meta.tags))]}
+      />
       <Board
         places={places}
         eventsByParent={eventsByParent}

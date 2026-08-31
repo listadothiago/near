@@ -7,7 +7,7 @@ import { routing } from "@/lib/i18n/routing";
 import { getBaseUrl } from "@/lib/seo/site";
 import ThemeScript from "@/components/layout/ThemeScript";
 import ThemeKeeper from "@/components/layout/ThemeKeeper";
-import { SearchProvider } from "@/lib/search/SearchProvider";
+import { BoardControlsProvider } from "@/lib/board/controls";
 import InstallPrompt from "@/components/layout/InstallPrompt";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -90,11 +90,11 @@ export default async function LocaleLayout({
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider>
           <ThemeKeeper />
-          <SearchProvider>
+          <BoardControlsProvider>
             <div className="max-w-[1180px] mx-auto px-[22px] pt-3 pb-16 flex-1 w-full">
               {children}
             </div>
-          </SearchProvider>
+          </BoardControlsProvider>
           <InstallPrompt />
           {/* Cookieless — this is why Near needs no consent banner. */}
           <Analytics />
