@@ -211,3 +211,46 @@ Locales: both created `en` + `pt-BR` only, matching
 count already logged above. `npx tsc --noEmit` and `npm run build` pass
 (133 pages, up from 121), and both pages plus both inline links were
 confirmed rendering in the browser.
+
+## 2026-08-31 — near-caretaker sweep #1 (first full pass)
+
+First run of the currency sweep over all 18 published places. Mechanical
+scan first, web verification only where the scan flagged something.
+
+**Class 7 (link rot) — 3 dead URLs found and repaired.**
+
+- `beco-do-batman-sao-paulo` — **both** sources were 404, so the page had
+  zero working citations while appearing fully sourced. Globe Guide had
+  moved the article to `/beco-do-batman-batman-alley/` (URL updated, same
+  piece). DiscoverWalks was gone with no equivalent at that outlet;
+  replaced with BA Street Art, which covers the same fact the page leans
+  on — the alley being constantly repainted. The two in-text links added
+  during the 2026-08-31 link-density backfill pointed at the dead URLs
+  and were updated to match. Worth noting: the backfill *created* two
+  dead in-text citations by linking sources that were already rotten.
+- `megafauna-copan-sao-paulo` — `/sobre-a-livraria/` 404s; site root is
+  live and now cited instead.
+
+Not dead, but unverifiable by HTTP HEAD (bot-blocked or JS-gated), left
+alone: `dollywood.com` (403), `doeatbetterexperience.com` (403),
+`travel.usnews.com` (timeout), `guide.michelin.com` (202).
+
+**Class 1 (people) — 13 named individuals across 9 places, none verified
+this run.** Highest-risk class and the one with no automation. Dolly
+Parton was corrected separately today. Oscar Niemeyer (bar Fel, Cuia,
+Megafauna) is named only as the Copan's architect — correct as written
+regardless, he died in 2012. The remaining 11 (Raquel Braga, Nina Veloso,
+Bel Coelho, Maria Alderete, Rick Mitchell, Jacob Alioto, Jared Hirsch,
+Angela Cao, Nathan Angelo Depante, Magentinha, Rafa Rouxinol) are
+working operators and performers rather than public figures, so a death
+or departure would not reliably surface in search. Deferred rather than
+skipped — flagged here so the next run knows it's outstanding.
+
+**Class 2 (open/closed) —** all 18 verified 3–4 days ago at creation. Too
+recent to be worth a `confirmed-closed` first check this run.
+
+**Classes 3–6 —** scanned, nothing actionable. Recency markers in
+`stray-dog` ("a genuinely busy 2026", "just opened"), `teatro-eskyna`
+("as of this writing") and `cabaret-latino` (event dated 11 Sep 2026,
+still upcoming) are all still accurate at time of sweep. They will not be
+in six months; that's what the next sweeps are for.

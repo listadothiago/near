@@ -21,13 +21,13 @@
   "sources": [
     {
       "name": "Globe Guide",
-      "url": "https://globeguide.ca/beco-do-batman-sao-paulo/",
+      "url": "https://www.globeguide.ca/beco-do-batman-batman-alley/",
       "feedId": null,
       "originalPublishedAt": "2026-08-27T00:00:00Z"
     },
     {
-      "name": "Discover Walks",
-      "url": "https://www.discoverwalks.com/blog/brazil/beco-do-batman-sao-paulo/",
+      "name": "BA Street Art",
+      "url": "https://buenosairesstreetart.com/2024/04/beco-do-batman-street-art-graffiti-best-murals-in-vila-madalena/",
       "feedId": null,
       "originalPublishedAt": "2026-08-27T00:00:00Z"
     }
@@ -45,6 +45,11 @@
       "status": "active",
       "at": "2026-08-27T00:00:00Z",
       "note": "near-editor: added via neighborhood research (Vila Madalena)"
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "near-caretaker link-rot sweep: both sources were 404. Globe Guide had moved the piece to /beco-do-batman-batman-alley/ (URL updated, same article). DiscoverWalks was gone with no replacement at that outlet, so it's swapped for BA Street Art, which covers the same ground — the alley's constant repainting. Both in-text links in en.mdx pointed at the dead URLs and were updated to match."
     }
   ],
   "geocode": {
@@ -53,5 +58,5 @@
     "query": "Beco do Batman, Rua Gonçalo Afonso, Vila Madalena, São Paulo"
   },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-31T00:00:00Z"
 }

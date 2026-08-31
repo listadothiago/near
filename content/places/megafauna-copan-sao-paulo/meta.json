@@ -22,7 +22,7 @@
   "sources": [
     {
       "name": "Livraria Megafauna (official)",
-      "url": "https://www.livrariamegafauna.com.br/sobre-a-livraria/",
+      "url": "https://www.livrariamegafauna.com.br/",
       "feedId": null
     },
     {
@@ -50,6 +50,11 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "created to close a cross-link gap: Megafauna was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and cuia-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "near-caretaker link-rot sweep: the /sobre-a-livraria/ deep link 404s; the shop's site root is live, so the source now points there."
     }
   ],
   "geocode": {
@@ -58,5 +63,5 @@
     "query": "Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
   },
   "publishedAt": "2026-08-28T00:00:00Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-08-31T00:00:00Z"
 }
