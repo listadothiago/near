@@ -29,6 +29,34 @@
 
 _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ultimate source of truth. Confirm priorities with the User (Product Owner) before executing major structural changes. Always ask for user input/choices during strategic decisions. Resolve vague references (e.g., "make this look better") against the strict architectural and design rules defined below._
 
+## 🔖 SESSION HANDOFF (2026-08-31, end of session — read this first)
+
+Everything below is committed and pushed to main; near.tips is live and matches this file. Session ended on the operator's own call to conserve tokens, not because of a blocker.
+
+**Local-LLM question, answered and closed (2026-08-31):** operator asked whether the content pipeline (research/drafting/source-monitoring) could run on a free/self-hosted LLM instead of Claude, since an associate can set one up. Answer given: **no, not for this project.** Near's differentiator is verified, sourced, current writing — every pin this session required real multi-step tool use (fetch, cross-check dates, reject a place that failed `verify-still-open`, catch a search-summary error). Weaker/local models are meaningfully worse at exactly that judgment layer; the win would be more content per dollar and worse content per piece, which fights Near's actual pitch. "Free" also isn't free — it's GPU cost or hosted-inference cost, just relocated. Where a cheaper model WOULD make sense: narrow bulk tasks with no judgment call (dedup checks, simple classification, maybe a first-pass fetch a stronger model verifies after) — not drafting, not verification. Not pursued further; revisit only if token cost becomes the binding constraint, and even then trim fan-out/redundant research first.
+
+**Advertiser leads — SCOPED, NOT BUILT, do this first next session:**
+Operator wants a "Your Ad Here" unit in the house-placement rotation (`components/ads/Placement.tsx` / `HousePromo.tsx`) that pitches advertisers directly, a lead-capture form, and **a Claude-visible alert when a lead comes in** ("alert me in Claude when we have inbound leads if possible").
+- **The design is already there to reuse.** `Placement.tsx` already has a `stretch` mode and per-format type scale (`TYPE` map) built this session — a "Your Ad Here" creative is just another `Placement` render with `promoHref` pointing at a new `/advertise` page instead of a place/collection.
+- **The lead form is the same open question as email collection below** — same inbox pipeline, same risk. Do NOT wire it through `app/api/inbox/route.ts` as-is (see the flag two sections down) until that's resolved, or build a dedicated `/api/leads` route with its own storage from the start rather than overloading the GitHub-issue pipeline with commercial contact data.
+- **"Alert me in Claude" is a real, buildable thing** — options to evaluate next session: (a) a GitHub issue webhook → this Claude Code session gets pinged same as any other GitHub activity if the repo is wired for it, (b) a Vercel deploy-hook / cron that checks for new leads and messages this session via whatever notification path Claude Code exposes, (c) simplest: the operator just checks a `/leads` admin view periodically — least magic, works today, no plumbing. Recommend starting with (c) and layering a real alert on top once the form exists and has real traffic to alert about.
+- Rough build order: `/advertise` landing page (why advertise, what a placement looks like, pricing TBD) → lead form (name, email, company, message, honeypot like the existing inbox form) → storage decision (own table/KV, not GitHub issues) → "Your Ad Here" creative variant in the placement rotation pointing at `/advertise` → notification mechanism, evaluated in the order above.
+
+**GA4 + consent — BUILT, not yet ACTIVATED (operator action required, cannot be done by an agent):**
+1. Create a GA4 property for near.tips at analytics.google.com, grab its Measurement ID.
+2. Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` in Vercel's project env vars.
+3. For the Google Analytics MCP itself: `pipx run analytics-mcp` (needs Python 3.10+); `gcloud auth application-default login --scopes https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/cloud-platform`; add to Claude's MCP config with `GOOGLE_APPLICATION_CREDENTIALS` (path gcloud prints) and `GOOGLE_PROJECT_ID`. Source: github.com/googleanalytics/google-analytics-mcp.
+Until step 1-2 happen, `GoogleAnalytics.tsx` renders nothing and the consent banner never shows — the site behaves exactly as before. This is a deliberate reversal of the prior "No GA4, no cookie banner" decision (see the Analytics line below for the full record) — operator accepted the trade-off explicitly when asked.
+
+**Email collection — FLAGGED, NOT BUILT**, same real risk as advertiser leads above: the existing inbox pipeline files submissions as GitHub issues in this repo, so routing any collected email through it risks a PII leak if the repo is/becomes public. Needs its own decision: what collects the email, what stores it (not GitHub issues), what ESP sends anything. Natural to solve together with the advertiser-leads storage decision above rather than twice.
+
+**Content shipped this session (12 pins + infrastructure), all six locales each, all pushed live:**
+London: Brockwell Lido, Slimelight at Electrowerkz, Gay's the Word, Wilton's Music Hall, London Otters Rowing Club, Walthamstow Wetlands. SP/Baixada: Madê Cozinha Autoral (Santos), Restaurante Almeida (Santos). Plus: sticky header with location-aware search (typing a city/neighbourhood/country scopes the board AND the map, in any site language), collapsible filters at every breakpoint, board card redesign (stat bar, snippet, source count, variable card width), redesigned house ad units with per-format type scale and article images, CTR-by-creative tracking, a text analytics dashboard (`docs/analytics.md`), a full round-robin post-plan (`content/post-plan.md`) with verified queues for London/Berlin/Amsterdam/SF-Bay ready to draft next, and two real bugs fixed (theme reset on navigation; a half-written content folder could crash the whole site — loader now degrades gracefully).
+
+**Immediate next actions, in order:** (1) drain `content/post-plan.md`'s rotation — SP/Baixada slot next per the round-robin (Quiosque da Cris special profile is next in that queue), then Berlin/Amsterdam/SF-Bay have verified queues ready; (2) Barcelona/Rome/Portland seeding war-room died twice at credit walls — rerun it fresh next session; (3) build the advertiser-leads flow per the scope above; (4) once GA4 is activated, wire up the MCP.
+
+---
+
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
 - [x] **~~Jira MCP Integration~~ — decided against.** See the no-Jira decision above. `content/requests.md` (fenced-YAML, near-editor-writable) replaces the "file a ticket" need instead.
