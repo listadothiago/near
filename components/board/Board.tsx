@@ -3,15 +3,11 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
-import CategoryFilters from "./CategoryFilters";
-import TagFilters from "./TagFilters";
 import NearestLatestTabs from "./NearestLatestTabs";
 import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
-import { useSearchQuery } from "@/lib/search/SearchProvider";
+import { useBoardControls } from "@/lib/board/controls";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
-import type { Category } from "@/lib/content/categories";
-import type { Tag } from "@/lib/content/tags";
 
 const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
   ssr: false,
@@ -30,10 +26,9 @@ export default function Board({
   promo?: ReactNode;
 }) {
   const t = useTranslations("board");
-  const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
-  const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
-  // Owned by the sticky header, which is where the field lives now.
-  const { query } = useSearchQuery();
+  // Search and filters live in the sticky header now, so their state
+  // sits above both components. The board only reads them.
+  const { query, activeCats, activeTags } = useBoardControls();
   // Latest is the initial tab on purpose. Nearest needs geolocation,
   // which takes a permission prompt and a GPS fix — so defaulting to it
   // meant the board rendered empty while the reader waited, or stayed
@@ -55,7 +50,6 @@ export default function Board({
   );
   const [locating, setLocating] = useState(false);
   const [focusUserSignal, setFocusUserSignal] = useState(0);
-  const [filtersOpen, setFiltersOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
   const [onlyFavorites, setOnlyFavorites] = useState(false);
   // The map is a disclosure on small screens only — collapsed by default
@@ -64,7 +58,6 @@ export default function Board({
   // than guessed, so the map is never mounted (and Leaflet never loaded)
   // on a phone until it's actually asked for.
   const [isWideViewport, setIsWideViewport] = useState(false);
-  const activeFilterCount = activeCats.size + activeTags.size;
   const mapVisible = isWideViewport || mapOpen;
 
   useEffect(() => {
@@ -75,36 +68,6 @@ export default function Board({
     return () => mq.removeEventListener("change", sync);
   }, []);
 
-  function toggleCat(cat: Category | "all") {
-    if (cat === "all") {
-      setActiveCats(new Set());
-      return;
-    }
-    setActiveCats((prev) => {
-      const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat);
-      else next.add(cat);
-      return next;
-    });
-  }
-
-  const availableCats = useMemo(
-    () => new Set(places.flatMap((p) => p.meta.categories)),
-    [places],
-  );
-  const availableTags = useMemo(
-    () => new Set(places.flatMap((p) => p.meta.tags)),
-    [places],
-  );
-
-  function toggleTag(tag: Tag) {
-    setActiveTags((prev) => {
-      const next = new Set(prev);
-      if (next.has(tag)) next.delete(tag);
-      else next.add(tag);
-      return next;
-    });
-  }
 
   const parsed = useMemo(() => parseQuery(query), [query]);
 
@@ -186,47 +149,6 @@ export default function Board({
 
   return (
     <div>
-      {/* Collapsed by default at every breakpoint. Two rows of category
-          and tag chips is a lot of furniture to look past on the way to
-          the listings, and a reader who wants them knows they want
-          them — the count badge keeps any active filter visible while
-          the panel is shut, so nothing filters invisibly. */}
-      <div className="mt-4 flex flex-wrap items-center gap-1.5">
-        <button
-          type="button"
-          onClick={() => setFiltersOpen((o) => !o)}
-          aria-expanded={filtersOpen}
-          className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
-        >
-          {t("filters")}
-          {activeFilterCount > 0 && (
-            <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] border border-ink bg-accent text-black text-[0.62rem] font-bold px-1">
-              {activeFilterCount}
-            </span>
-          )}
-          <span
-            aria-hidden="true"
-            className={`text-[0.6rem] transition-transform ${filtersOpen ? "rotate-180" : ""}`}
-          >
-            ▼
-          </span>
-        </button>
-        <div className={filtersOpen ? "contents" : "hidden"}>
-          <CategoryFilters
-            activeCats={activeCats}
-            onToggle={toggleCat}
-            available={availableCats}
-          />
-        </div>
-      </div>
-      <div className={filtersOpen ? "block" : "hidden"}>
-        <TagFilters
-          activeTags={activeTags}
-          onToggle={toggleTag}
-          available={availableTags}
-        />
-      </div>
-
       {/* Listings lead, map is secondary — it sits in the narrower
           column on desktop and collapses behind a disclosure on mobile. */}
       <div className="mt-5 grid grid-cols-1 md:grid-cols-[1fr_300px] gap-5 items-start">

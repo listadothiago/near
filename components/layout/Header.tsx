@@ -7,7 +7,11 @@ import NearMark from "./NearMark";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
 import SearchBox from "@/components/board/SearchBox";
-import { useSearchQuery } from "@/lib/search/SearchProvider";
+import CategoryFilters from "@/components/board/CategoryFilters";
+import TagFilters from "@/components/board/TagFilters";
+import { useBoardControls } from "@/lib/board/controls";
+import type { Category } from "@/lib/content/categories";
+import type { Tag } from "@/lib/content/tags";
 
 /**
  * Sticky at every breakpoint, and collapses to a single line once the
@@ -24,16 +28,34 @@ import { useSearchQuery } from "@/lib/search/SearchProvider";
  * reachable however deep into the listings you are. Its state lives in
  * SearchProvider because the board is a sibling, not a child.
  */
-export default function Header() {
+export default function Header({
+  availableCats,
+  availableTags,
+}: {
+  /** Only the board passes these; every other page has nothing to filter. */
+  availableCats?: Category[];
+  availableTags?: Tag[];
+} = {}) {
   const t = useTranslations();
   const pathname = usePathname();
-  const { query, setQuery } = useSearchQuery();
+  const {
+    query,
+    setQuery,
+    activeCats,
+    toggleCat,
+    activeTags,
+    toggleTag,
+    filtersOpen,
+    setFiltersOpen,
+    activeFilterCount,
+  } = useBoardControls();
   const [compact, setCompact] = useState(false);
 
   // Only the board filters on a query, so only the board offers the
   // field. A search box on the about page that does nothing is worse
   // than no search box.
   const showSearch = pathname === "/";
+  const showFilters = showSearch && Boolean(availableCats?.length);
 
   useEffect(() => {
     // Hysteresis: collapse at 90px, expand again at 40px. A single
@@ -96,6 +118,28 @@ export default function Header() {
             </Link>
           </nav>
 
+          {showFilters && (
+            <button
+              type="button"
+              onClick={() => setFiltersOpen(!filtersOpen)}
+              aria-expanded={filtersOpen}
+              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("board.filters")}
+              {activeFilterCount > 0 && (
+                <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] border border-ink bg-accent text-black text-[0.62rem] font-bold px-1">
+                  {activeFilterCount}
+                </span>
+              )}
+              <span
+                aria-hidden="true"
+                className={`text-[0.6rem] transition-transform ${filtersOpen ? "rotate-180" : ""}`}
+              >
+                ▼
+              </span>
+            </button>
+          )}
+
           {/* These used to live only in the footer, which a reader scrolling
               a long board on a phone never reached — so the language switch
               was effectively undiscoverable. */}
@@ -104,7 +148,26 @@ export default function Header() {
         </div>
       </div>
 
-      {!compact && (
+      {/* The panel drops out of the sticky bar itself, so the filters
+          are reachable from anywhere in the listings rather than only
+          from the top of the page. Scrollable, because a tall panel on
+          a phone would otherwise push the results off screen entirely. */}
+      {showFilters && filtersOpen && (
+        <div className="mt-2 max-h-[45vh] overflow-y-auto border-t-[3px] border-ink pt-2">
+          <CategoryFilters
+            activeCats={activeCats}
+            onToggle={toggleCat}
+            available={new Set(availableCats)}
+          />
+          <TagFilters
+            activeTags={activeTags}
+            onToggle={toggleTag}
+            available={new Set(availableTags)}
+          />
+        </div>
+      )}
+
+      {!compact && !filtersOpen && (
         <p className="mt-1.5 font-mono text-[0.74rem] text-muted">
           {t("app.tagline")}
         </p>
