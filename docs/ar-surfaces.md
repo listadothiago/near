@@ -125,11 +125,39 @@ _Device popularity moves fast and this file has a knowledge cutoff.
 Re-check unit numbers and current model lines before committing
 engineering time._
 
+## What we can actually test
+
+**The operator owns a Quest 2 and nothing else.** That is the single most
+practical fact in this document and it should drive sequencing more than
+any market-share argument.
+
+Everything else here — Ray-Ban Display, Xreal, Viture, Vision Pro — would
+be built blind, verified only in a simulator, and shipped on hope. Near
+has already been bitten this session by things that looked right in a
+simulator and behaved differently on real hardware (the PWA install
+prompt never fired, despite a valid manifest, because a service worker
+was missing).
+
+So: **Quest 2 is the first AR surface to build**, not because it's the
+best AR device — its passthrough is low-res monochrome and it's a poor
+window onto the real world — but because it's the one that can be held
+in a hand and checked. And what Quest 2 does well is exactly the cheap
+win: a large virtual screen. Near's existing responsive layout is most of
+the way there already; what it needs is a wide, low-density,
+comfortable-at-distance reading layout.
+
+That also happens to be the same layout Xreal and Viture want. One piece
+of work, three devices, and the only one that gets verified on hardware
+is the one we own.
+
 ## Recommended sequencing
 
-1. **Phone AR-lite first.** Compass + geolocation waypoint view. Ships to
+0. **Quest 2 browse layout** — the only thing testable on hardware we
+   have. Wide, low-density, readable at virtual-screen distance. Doubles
+   as the Xreal/Viture layout.
+1. **Phone AR-lite.** Compass + geolocation waypoint view. Ships to
    everyone, proves the maths, and is genuinely useful on its own.
-2. **Class 1 (Meta Ray-Ban Display)** next, as EPIC 3 already scopes —
+2. **Meta Ray-Ban Display**, as EPIC 3 scopes — but note this is the first step that cannot be verified on hardware we own —
    the constraint set is well documented and the browse/waypoint views
    port directly from step 1.
 3. **Class 3 (WebXR immersive-ar)** last. Highest effort, smallest
