@@ -135,3 +135,30 @@ requests:
       bridges to it in en and pt-BR — rather than just flipping the
       status and leaving the original piece as link-less as before.
 ```
+
+```yaml
+request: adiciona-made-cozinha-autoral-santos
+type: new-place
+city: Santos
+country: Brazil
+why: >
+  Operator direct request (2026-08-31, via near-adiciona flow): "adiciona o
+  madê cozinha autoral e o almeida em santos também". Santos is in the
+  Baixada Santista priority zone (operator's home region) and São Paulo is
+  refresh #2. Verify current trading, exact address, sources and hero image
+  before drafting — operator-named places still pass the full quality gate.
+status: open
+```
+
+```yaml
+request: adiciona-almeida-santos
+type: new-place
+city: Santos
+country: Brazil
+why: >
+  Same operator request as made-cozinha-autoral-santos. "O Almeida" —
+  identify the exact establishment (name is common), confirm which venue the
+  operator means if ambiguous at research time, verify trading + sources +
+  hero before drafting.
+status: open
+```

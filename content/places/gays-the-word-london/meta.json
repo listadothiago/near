@@ -1,0 +1,59 @@
+{
+  "slug": "gays-the-word-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5254,
+    "lng": -0.1262
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Bloomsbury",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "radar-x",
+  "sources": [
+    {
+      "name": "Gay's the Word (official site)",
+      "url": "https://www.gaystheword.co.uk/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Gay's the Word (bookshop)",
+      "url": "https://en.wikipedia.org/wiki/Gay%27s_the_Word_(bookshop)",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gays_the_Word_Storefront.jpg",
+    "attribution": "Spudgun67, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Gays_the_Word_Storefront.jpg",
+    "licenseNote": "CC BY-SA 4.0, photographer credited by username on the Commons record. Storefront exterior."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "First pin from the London war-room slate (ranked #1) and RADAR-X's first shopping byline under the rotating-cast decision. Verified trading: own site lists current opening hours (Tue-Sat 11-6, Sun 1-6, Mon closed) and active events. Founding date 17 January 1979 and the 1984 Operation Tiger raid (charges dropped 1986, defence fund over £55,000, Gore Vidal gave £3,000) are from the Wikipedia article, which cites primary press. Genuine internal thread: the shop was founded by members of Gay Icebreakers — the same group that held disco residencies at the Prince Albert (now Central Station) in 1976, per the LGBT History Project record already cited on that pin. The Pride (2014) film connection is real but the shop scenes were filmed on Kingsgate Road, West Hampstead — stated accurately in the article rather than implying the film was shot here."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Gay's the Word, 66 Marchmont Street, Bloomsbury, London WC1N 1AB"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}

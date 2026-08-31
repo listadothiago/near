@@ -363,6 +363,8 @@ _Convened at the operator's request with every lens chiming in — including RAD
 - **Hampstead Heath ponds** — City of London page bot-blocked the fetch; well-documented but unverified this session. WILD0.
 - **FOODIE-9000's leads** (family caff of the E Pellicci type; south-London diaspora grocer-cafés): explicitly leads, not pitches — twice lost to credit walls, verify next window.
 
+**Operator decisions — RESOLVED same day (2026-08-31):** Sister Midnight: pin now with an honest 'opening' status (schema gains the value when drafted; caretaker inherits re-checks until doors open). DARCY: positive pins first, hatchet licence deferred until the travel beat has standing — revisit after 2-3 London travel pins. /london landing page + city scope: build alongside the content, reusing the Board. Draft order: slate order as ranked. Original questions below for the record.
+
 **Operator decisions pending (asked 2026-08-31):**
 - Sister Midnight, Catford — community benefit society, 1,100+ member-owners, £375,600 raised, renovating the Brookdale Club; NOT YET OPEN. Pin with an 'opening' status (caretaker inherits re-checks) vs cover as a story vs wait for doors.
 - DARCY requests licence to name one over-rated London institution in print, with evidence.
