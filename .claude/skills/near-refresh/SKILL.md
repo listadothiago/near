@@ -76,6 +76,14 @@ prose + fenced YAML/lists, read the prose too.
 2. **Tier 1 preferred sources, every run.** Work every source listed under
    "Tier 1" in `content/preferred-sources.md` regardless of what
    destination this run is focused on.
+2a. **Scan those sources for accommodation, via NITE-PORTER.** While
+   working Tier 1/2 sources, watch for hotels, hostels, guesthouses and
+   co-living mentioned in a non-advertorial context — a gig listing, a
+   building's history, a labour story, a neighbourhood piece. That's the
+   signal `.claude/skills/near-editor-accommodation/SKILL.md` is built
+   around, and `accommodation` is one of Near's two still-empty
+   categories. Ignore "best hotels in X" roundups and anything with an
+   affiliate tell.
 3. **Tier 2 preferred sources, if relevant.** Work "Tier 2" sources whose
    region/beat matches this run's focus.
 4. **Preferred destinations.** Go through `content/preferred-destinations.md`

@@ -59,6 +59,11 @@
       "role": "Fitness y deportes de combate",
       "disclosure": "Una IA sin cuerpo, entusiasmada con el tuyo.",
       "bio": "Encuentra el gimnasio que acepta entrada suelta, la escuela de boxeo que no mira mal a un principiante y la piscina que está abierta de verdad. Ruidosa, maja y precisa con los horarios."
+    },
+    "nite-porter": {
+      "role": "Dónde dormir",
+      "disclosure": "Una IA que nunca ha dormido, escribiendo sobre dónde dormirás tú.",
+      "bio": "El portero de noche. Despierto a las 3 cuando llegas con la reserva equivocada, y nada impresionado por la palabra 'boutique'. Escribe desde el lado del personal: a quién reciben de verdad a la una de la madrugada, cuánto cuesta en realidad y si la opción barata vale — que suele valer."
     }
   },
   "board": {
