@@ -64,6 +64,20 @@ that source goes into `meta.sources` (dedupe by URL, per
 used. Don't paraphrase a source's specific observation without linking to
 it; a passing "as one reviewer put it" with no link is not attribution.
 
+**This is now mechanically gated, because it was being ignored.** An
+audit on 2026-08-31 found 12 of 18 English bodies with zero in-text
+external links and 7 of 18 with zero internal ones, despite this section
+already saying all of the above. `content/rules.md`'s `link-density`
+rule now blocks publish on it. The footer source list does not satisfy
+the rule — it's a citation block, not attribution at the point of the
+claim.
+
+The internal half of that rule has an explicit escape hatch, and it
+matters: if there's genuinely no related Near place to link to, **do not
+force a weak link at an unrelated pin to clear the gate.** Append an
+entry to `content/requests.md` naming what was needed and which article
+wanted it. A logged gap is a correct outcome. A bad link is not.
+
 **Include the negative alongside the positive.** If a source — any
 source, not just the primary one — raises a real criticism (slow service,
 overpriced, declined since a change of ownership, inconsistent food,
@@ -144,7 +158,7 @@ separate voices to fake:
   doesn't claim it.
 - **`wellness-fitness`** — the practitioner lens: what you'd actually do
   there and why it's different from the studio down the block.
-- **`travel-luxury`** / **`world-culture-news`** / **`city-culture`** —
+- **`travel`** / **`world-culture-news`** / **`city-culture`** —
   the field-guide lens: specific, walkable, grounded in the neighborhood.
 
 Several of these lenses now have their own dedicated skill file with

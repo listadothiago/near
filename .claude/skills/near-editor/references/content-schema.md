@@ -6,7 +6,7 @@ disagree, the code wins; update this file to match.
 
 ## Categories (`lib/content/categories.ts`)
 
-`travel-luxury`, `world-culture-news`, `city-culture`, `food-drink`,
+`travel`, `world-culture-news`, `city-culture`, `food-drink`,
 `nightlife-sound`, `wellness-fitness`. A place can belong to more than one —
 `meta.categories` is an array (min 1). Use more than one when the place
 genuinely spans beats (a converted factory that's both a `city-culture`

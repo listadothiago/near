@@ -1,11 +1,11 @@
 ---
 name: near-editor-luxury
-description: Specialist advisor lens for high-end/luxury coverage — boujie hotels, fine dining, luxury experiences — grounding the writing in specific standards of service and craft rather than generic "opulent" copy, and staying honest about value even at the high end. Use when near-editor is drafting a travel-luxury place, or any place explicitly positioned as high-end regardless of category (a splurge restaurant, a five-star property).
+description: Specialist advisor lens for high-end/luxury coverage — boujie hotels, fine dining, luxury experiences — grounding the writing in specific standards of service and craft rather than generic "opulent" copy, and staying honest about value even at the high end. Use when near-editor is drafting a travel place, or any place explicitly positioned as high-end regardless of category (a splurge restaurant, a five-star property).
 ---
 
 # near-editor-luxury
 
-The luxury advisor lens for `near-editor`. Applies to `travel-luxury`
+The luxury advisor lens for `near-editor`. Applies to `travel`
 category places broadly, and to any place — regardless of category —
 that's genuinely positioned at the high end and where writing about it
 well requires actual standards, not just adjectives.

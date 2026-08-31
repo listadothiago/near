@@ -1,6 +1,6 @@
 ---
 name: near-editor-shopping
-description: Specialist advisor lens for shops, boutiques, markets, and retail — grounding coverage in what's actually sold and what makes a specific shop worth visiting instead of generic "great shopping" copy. Use when near-editor is drafting a place centered on retail (usually filed under city-culture or travel-luxury depending on register — shopping has no dedicated meta.categories value of its own).
+description: Specialist advisor lens for shops, boutiques, markets, and retail — grounding coverage in what's actually sold and what makes a specific shop worth visiting instead of generic "great shopping" copy. Use when near-editor is drafting a place centered on retail (usually filed under city-culture or travel depending on register — shopping has no dedicated meta.categories value of its own).
 ---
 
 # near-editor-shopping
@@ -8,7 +8,7 @@ description: Specialist advisor lens for shops, boutiques, markets, and retail �
 The shopping/retail advisor lens for `near-editor`. There's no dedicated
 `shopping` value in `meta.categories` (`lib/content/schema.ts`) —
 shopping content is filed under whichever category actually fits
-(`city-culture` for a neighborhood's independent shops, `travel-luxury`
+(`city-culture` for a neighborhood's independent shops, `travel`
 for a high-end boutique, sometimes `food-drink` for a specialty food
 market) and this lens applies wherever retail is the actual subject,
 regardless of which category the piece ends up in.

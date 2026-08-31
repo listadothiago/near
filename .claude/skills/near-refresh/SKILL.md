@@ -40,6 +40,18 @@ prose + fenced YAML/lists, read the prose too.
    six locale `.mdx` files is a candidate for a `near-translator` pass
    this run (see step 7a below) — first-class refresh work, not an
    afterthought.
+1a. **Drain `content/requests.md`.** Open requests are places Near's own
+   writing has already asked for and couldn't link to — a piece wanted a
+   cross-link, found nothing to point at, and logged the gap per
+   `rules.md`'s `link-density` rule. Treat these as first-class candidates
+   for this run alongside the source-driven ones below, not as a
+   leftovers list: demand that came from the published catalog itself is
+   at least as good a signal as an outlet's RSS feed. When a request gets
+   fulfilled, set its `status: fulfilled`, record the slug that closed
+   it, **and go back and add the link to every article in its `wantedBy`
+   list** — the unfulfilled promise to link is the entire reason the
+   entry existed, and closing the request without doing that leaves the
+   original piece exactly as link-less as before.
 2. **Tier 1 preferred sources, every run.** Work every source listed under
    "Tier 1" in `content/preferred-sources.md` regardless of what
    destination this run is focused on.
