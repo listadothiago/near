@@ -1,10 +1,24 @@
 {
   "slug": "boxpark-shoreditch-london",
-  "categories": ["food-drink", "nightlife-sound"],
-  "tags": ["hipster"],
-  "coordinates": { "lat": 51.5252, "lng": -0.0779 },
-  "place": { "city": "London", "neighborhood": "Shoreditch", "region": "England", "country": "United Kingdom" },
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "hipster"
+  ],
+  "coordinates": {
+    "lat": 51.5252,
+    "lng": -0.0779
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Shoreditch",
+    "region": "England",
+    "country": "United Kingdom"
+  },
   "trust": "auto",
+  "author": "foodie-9000",
   "sources": [
     {
       "name": "Hackney Citizen",
@@ -22,9 +36,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via neighborhood research (Shoreditch)" }
+    {
+      "status": "active",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "near-editor: added via neighborhood research (Shoreditch)"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.85, "query": "Boxpark Shoreditch, 2-10 Bethnal Green Road, London E1 6GY" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.85,
+    "query": "Boxpark Shoreditch, 2-10 Bethnal Green Road, London E1 6GY"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }

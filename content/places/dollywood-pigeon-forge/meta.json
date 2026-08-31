@@ -1,10 +1,22 @@
 {
   "slug": "dollywood-pigeon-forge",
-  "categories": ["travel-luxury"],
-  "tags": ["local-legend"],
-  "coordinates": { "lat": 35.805702, "lng": -83.528838 },
-  "place": { "city": "Pigeon Forge", "region": "Tennessee", "country": "United States" },
+  "categories": [
+    "travel-luxury"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 35.805702,
+    "lng": -83.528838
+  },
+  "place": {
+    "city": "Pigeon Forge",
+    "region": "Tennessee",
+    "country": "United States"
+  },
   "trust": "auto",
+  "author": "darcy",
   "sources": [
     {
       "name": "Dollywood (official site)",
@@ -34,9 +46,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request" }
+    {
+      "status": "active",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "near-editor: added via chat request"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.95, "query": "2700 Dollywood Parks Blvd, Pigeon Forge, TN 37863" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.95,
+    "query": "2700 Dollywood Parks Blvd, Pigeon Forge, TN 37863"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }

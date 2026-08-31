@@ -1,10 +1,25 @@
 {
   "slug": "bar-skula-oakland",
-  "categories": ["food-drink", "nightlife-sound"],
-  "tags": ["trending", "local-legend"],
-  "coordinates": { "lat": 37.8089594, "lng": -122.2506123 },
-  "place": { "city": "Oakland", "neighborhood": "Adams Point", "region": "California", "country": "United States" },
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "trending",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 37.8089594,
+    "lng": -122.2506123
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Adams Point",
+    "region": "California",
+    "country": "United States"
+  },
   "trust": "auto",
+  "author": "stefan",
   "sources": [
     {
       "name": "The Oaklandside",
@@ -28,9 +43,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request (SF Bay Area research pass)" }
+    {
+      "status": "active",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "near-editor: added via chat request (SF Bay Area research pass)"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.9, "query": "542 Grand Ave, Oakland, CA 94610" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.9,
+    "query": "542 Grand Ave, Oakland, CA 94610"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }

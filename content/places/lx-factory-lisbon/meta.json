@@ -1,10 +1,24 @@
 {
   "slug": "lx-factory-lisbon",
-  "categories": ["city-culture", "nightlife-sound"],
-  "tags": ["hipster"],
-  "coordinates": { "lat": 38.7042, "lng": -9.1786 },
-  "place": { "city": "Lisbon", "neighborhood": "Alcântara", "region": "Lisboa", "country": "Portugal" },
+  "categories": [
+    "city-culture",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "hipster"
+  ],
+  "coordinates": {
+    "lat": 38.7042,
+    "lng": -9.1786
+  },
+  "place": {
+    "city": "Lisbon",
+    "neighborhood": "Alcântara",
+    "region": "Lisboa",
+    "country": "Portugal"
+  },
   "trust": "auto",
+  "author": "cubic-v",
   "sources": [
     {
       "name": "LX Factory",
@@ -28,9 +42,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+    {
+      "status": "active",
+      "at": "2026-08-20T10:00:00Z",
+      "note": "seed content"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 1, "query": "LX Factory, Lisbon" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 1,
+    "query": "LX Factory, Lisbon"
+  },
   "publishedAt": "2026-08-20T10:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }

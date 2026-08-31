@@ -1,10 +1,24 @@
 {
   "slug": "megafauna-copan-sao-paulo",
-  "categories": ["city-culture"],
-  "tags": ["local-legend", "hidden-gem"],
-  "coordinates": { "lat": -23.5455, "lng": -46.643 },
-  "place": { "city": "São Paulo", "neighborhood": "Centro", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -23.5455,
+    "lng": -46.643
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
+  "author": "plinio",
   "sources": [
     {
       "name": "Livraria Megafauna (official)",
@@ -38,7 +52,11 @@
       "note": "created to close a cross-link gap: Megafauna was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and cuia-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
     }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
+  },
   "publishedAt": "2026-08-28T00:00:00Z",
   "updatedAt": "2026-08-28T00:00:00Z"
 }

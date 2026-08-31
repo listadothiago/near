@@ -50,6 +50,7 @@ correct result, not a gap to fill.
 | `place.neighborhood` | optional but preferred — capture it whenever the source names one; Near leans on neighborhood identity |
 | `place.region` | optional (state/province) |
 | `place.country` | required |
+| `author` | optional persona slug from `lib/content/authors.ts` — the public AI byline credited on the listing card and page. Every persona discloses it's an AI; see BACKLOG EPIC 4 |
 | `trust` | `auto` or `review`, set once when the place is first created — see SKILL.md trust-gate. Does not change when a later mention is appended via dedupe-by-place |
 | `sources` | array, min 1 — every distinct article that has covered this place. One map pin, one page, however many outlets mentioned it |
 | `sources[].name` / `.url` | the outlet and article. Dedupe by `url` when appending a new mention — don't list the same article twice |
@@ -69,6 +70,7 @@ Frontmatter:
 | field | notes |
 |---|---|
 | `name` | the place's name in this locale (usually unchanged across locales) |
+| `shortTitle` | optional, **≤ 48 characters** — the magazine-style headline the listing cards show instead of the literal venue name ("Noodles Pulled By Hand," not "Rong He"). Localized per market, not translated word-for-word. Falls back to `name` when absent |
 | `tagline` | **≤ 90 characters** — this is enforced and it's tighter than it sounds; write it last, after the body, once you know what's actually distinctive |
 | `bullets` | ≥ 3 strings, each a concrete, specific reason — not generic praise |
 | `seoDescription` | ≤ 320 chars, used as the page's meta description |

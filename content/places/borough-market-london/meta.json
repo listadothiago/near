@@ -1,10 +1,23 @@
 {
   "slug": "borough-market-london",
-  "categories": ["food-drink"],
-  "tags": ["local-legend"],
-  "coordinates": { "lat": 51.5055, "lng": -0.0910 },
-  "place": { "city": "London", "neighborhood": "Southwark", "region": "England", "country": "United Kingdom" },
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5055,
+    "lng": -0.091
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Southwark",
+    "region": "England",
+    "country": "United Kingdom"
+  },
   "trust": "auto",
+  "author": "foodie-9000",
   "sources": [
     {
       "name": "Borough Market",
@@ -34,9 +47,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+    {
+      "status": "active",
+      "at": "2026-08-20T10:00:00Z",
+      "note": "seed content"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 1, "query": "Borough Market, London" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 1,
+    "query": "Borough Market, London"
+  },
   "publishedAt": "2026-08-20T10:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }
