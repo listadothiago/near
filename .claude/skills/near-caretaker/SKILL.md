@@ -56,6 +56,15 @@ Ordered roughly by how badly it reads when missed:
 7. **Link rot.** URLs in `meta.sources` and in-text links that now 404
    or redirect somewhere unrelated. A dead citation is worse than no
    citation, because it looks like sourcing while proving nothing.
+8. **Source drift** — a citation that still resolves but no longer
+   supports the sentence citing it. Distinct from link rot and *harder*,
+   because nothing flags it: the link is green, the page loads, and the
+   claim is wrong anyway. The source may have been updated, or the fact
+   may simply have moved on since the piece was written. Found on the
+   first sweep: the Cuia page said Bel Coelho's Clandestino "closed in
+   2020" while the CNN Brasil article it cited was headlined "do Cuia e
+   da **Clandestina**", because she'd reopened it in 2024. A 200 status
+   code proves a URL exists, not that it still agrees with you.
 
 ## Finding candidates
 
@@ -67,6 +76,11 @@ Cheap mechanical passes first, before spending any web searches:
   against the piece's tense.
 - Sort by `meta.updatedAt` — oldest first, since nothing has looked at
   those in longest.
+- For class 8, HTTP status is not the check. Re-read what the source
+  actually says now and compare it to the sentence citing it — at minimum
+  for the piece's load-bearing claims, since re-reading every citation on
+  every sweep is not affordable. A source whose *title* has changed is a
+  cheap tell worth grepping for.
 - Weight upward anything with `trending`, several sources, or a Tier 1
   hub city: those get the most traffic, so a stale claim there is seen
   most.
