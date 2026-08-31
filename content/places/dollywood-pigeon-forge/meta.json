@@ -1,7 +1,7 @@
 {
   "slug": "dollywood-pigeon-forge",
   "categories": [
-    "travel-luxury"
+    "travel"
   ],
   "tags": [
     "local-legend"
@@ -35,6 +35,18 @@
       "url": "https://thewanderingwhittens.com/2025/09/18/my-honest-review-of-dollywood/",
       "feedId": null,
       "originalPublishedAt": "2025-09-18T00:00:00Z"
+    },
+    {
+      "name": "NPR — Dolly Parton obituary",
+      "url": "https://www.npr.org/2026/08/25/nx-s1-3650175/dolly-parton-obituary",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-25T00:00:00Z"
+    },
+    {
+      "name": "Billboard — Dollywood stays open",
+      "url": "https://www.billboard.com/music/music-news/dollywood-open-dolly-parton-death-1236325074/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-26T00:00:00Z"
     }
   ],
   "heroImage": {
@@ -50,6 +62,11 @@
       "status": "active",
       "at": "2026-08-27T00:00:00Z",
       "note": "near-editor: added via chat request"
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "Dolly Parton died 2026-08-25 (NPR, CNN, Variety). Page asserted present-tense ownership — tagline 'still genuinely hers', shortTitle 'Still Genuinely Dolly's' — so it was factually wrong and tonally bad. Corrected across all six locales rather than rewritten: tense fixed, co-ownership with Herschend stated accurately (the old 'owns the park' was imprecise even before), and a sourced note added that the park stays open per its president. Status stays active; the park is open."
     }
   ],
   "geocode": {
@@ -58,5 +75,5 @@
     "query": "2700 Dollywood Parks Blvd, Pigeon Forge, TN 37863"
   },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-08-31T00:00:00Z"
 }
