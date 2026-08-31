@@ -1,0 +1,52 @@
+{
+  "slug": "london-otters-rowing-london",
+  "categories": [
+    "wellness-fitness"
+  ],
+  "tags": [
+    "lgbtq-friendly"
+  ],
+  "coordinates": {
+    "lat": 51.5077,
+    "lng": 0.06
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Royal Docks",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "fit-bot",
+  "sources": [
+    {
+      "name": "London Otters Rowing Club (official site)",
+      "url": "https://www.londonotters.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Royal_Victoria_Dock_at_dusk.jpg",
+    "attribution": "Simon Burchell, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Royal_Victoria_Dock_at_dusk.jpg",
+    "licenseNote": "CC BY-SA 4.0, photographer named on the Commons record. Shows the Royal Docks water the club rows on, NOT the club itself — Commons has two Pride-parade photos tagged 'London Otters' but neither verifiably depicts the club training, so the honest image is the water. If the club grants a photo, replace this."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "War-room slate pin #3, FIT-BOT byline, and the direct answer to the operator's standing ask for joinable queer-inclusive sport. Verified active via the club's own site: 39th Otterpups beginner cohort graduated 29 November 2025, and the club lists 2026 race entries (Women's Head of the River 14 March, Head of the River Race 28 March). Single-source pin by necessity — the club's site is the authoritative record for its own join process — flagged for a second-source enrichment pass when press coverage is found. 'UK's only LGBTQ-inclusive rowing club' is the club's own description, attributed as such. Coordinates are the Royal Docks Watersports Centre address (1012 Dockside Road, E16 2QT) at geocode confidence 0.5 — sharpen when drafting the /london page."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Royal Docks Watersports Centre, 1012 Dockside Road, London E16 2QT"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
