@@ -38,6 +38,27 @@ function checkDir(root, kind) {
           problems.push(`${kind}/${slug}/${f}  ${field} ${len}>${max}`);
         }
       }
+      // Cross-language bleed. Twice now a stray token from another
+      // language has landed mid-sentence in a zh-CN file (a Russian word,
+      // then an English one) — invisible on review unless you read every
+      // character. Latin letters are legitimate in Chinese copy for proper
+      // nouns and URLs, so only flag a Latin run wedged directly between
+      // two CJK characters, which is what the bleed looks like.
+      if (f === "zh-CN.mdx") {
+        const body = readFileSync(join(dir, f), "utf8");
+        // Lowercase only: "Shoreditch" or "DJ" wedged between CJK is a
+        // proper noun and correct; "professional" or "historic" is an
+        // English word that leaked in mid-sentence.
+        const bleed = body.match(/[\u4e00-\u9fff][a-z]{3,}[\u4e00-\u9fff]/g);
+        if (bleed) {
+          problems.push(`${kind}/${slug}/${f}  latin wedged in CJK: ${[...new Set(bleed)].join(", ")}`);
+        }
+        const cyr = body.match(/[\u0400-\u04FF]+/g);
+        if (cyr) {
+          problems.push(`${kind}/${slug}/${f}  cyrillic: ${[...new Set(cyr)].join(", ")}`);
+        }
+      }
+
       // bullets: schema requires >= 3
       const bullets = (fm.match(/^\s*- "/gm) || []).length;
       if (kind === "places" && bullets > 0 && bullets < 3) {
