@@ -44,6 +44,14 @@ export async function generateMetadata({
       template: `%s | near.tips`,
     },
     description: t("tagline"),
+    // Search Console site verification. Env-driven so the token never
+    // lands in the repo, and omitted entirely when unset rather than
+    // rendering an empty meta tag. Set GOOGLE_SITE_VERIFICATION in the
+    // Vercel project (and .env.local for dev) to the value Console gives
+    // you under Settings -> Ownership verification -> HTML tag.
+    verification: process.env.GOOGLE_SITE_VERIFICATION
+      ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+      : undefined,
   };
 }
 
