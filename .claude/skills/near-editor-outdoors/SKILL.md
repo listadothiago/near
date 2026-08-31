@@ -5,6 +5,14 @@ description: Specialist advisor lens for nature and outdoor settings — beaches
 
 # near-editor-outdoors
 
+**Default byline: WILD0** (operator decision, 2026-08-31). Outdoors
+pieces carry WILD0 unless there's a specific reason not to — the persona
+was already written for this ("trail conditions, water access, and how
+long the walk actually takes versus what the sign claims"), and its
+`role` in every locale's messages file is literally "Outdoors". FIT-BOT
+stays the byline for gym/combat/drop-in fitness; the boundary is the
+same setting-vs-logistics line described below.
+
 The outdoors advisor lens for `near-editor`. Covers natural settings and
 outdoor routes — beaches, trails, parks, swimming holes/pools, cycling
 routes through nature, water access points — as distinct from urban
