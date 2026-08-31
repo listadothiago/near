@@ -19,7 +19,8 @@
     
 - **Collections:** 1 — "'Asian Food' Was Never One Thing" (Rong He / Thai E-San / Djapa), all 6 locales.
     
-- **Sources:** 160+ watched global sources (The Alternative Guide, Indie Guides, AAN Directory, Alt-newspaper index, European cooperatives, ANZ street press, Latin American crónica collectives, Atlas Obscura, etc.). AI research agents are fully authorized and encouraged to browse these aggressively.
+- **Sources:** **11 recorded** in `content/sources.md` — not the "160+" this line claimed until 2026-08-31. The larger number was aspirational and the `/sources` page has been rendering the real 11 all along, which is why it looks thin. Fixing the catalogue is now a tracked task rather than a claim.
+- **Sources (aspiration):** 160+ global (The Alternative Guide, Indie Guides, AAN Directory, Alt-newspaper index, European cooperatives, ANZ street press, Latin American crónica collectives, Atlas Obscura, etc.). AI research agents are fully authorized and encouraged to browse these aggressively.
     
 - **Deployment:** Clean tree, auto-deploys via Vercel to https://near.tips.
     
@@ -256,6 +257,16 @@ _Content Creation Flow: Agents consult amongst themselves -> Choose public perso
 - 🇧🇷 **"ZACK ARIOKA" (Rio Locale Agent - pt-BR):** Flawless Menino do Rio, sharp linen suit, panama hat, poetic Carioca swagger (ginga). Fluid, bisexual, fiercely protective of Rio subcultures. Connects Lapa, Zona Portuária, and Copacabana. Reframes generic descriptions with an insider's architectural/socio-political lens. Tracks indie fashion, Choro revivals, and off-grid parties.Local rio de janeiro linguistic register
     
 Avatars, skills, agents, bots, should all learn and evolve by keeping what they learn about researching and creating their target content saved in local md files
+## 📚 EPIC 4b: Sources — catalogue, skill, war room
+
+- [ ] **Build `near-sources` (doesn't exist).** BACKLOG has referred to "the sources agent" for a while and there is no such skill. It should own `content/sources.md` and `content/preferred-sources.md`: onboarding new outlets, verifying feeds still resolve, retiring dead ones, and keeping the `/sources` page honest. Everything currently done ad hoc by whoever notices.
+
+- [ ] **Revamp the `/sources` page and the catalogue behind it (operator, 2026-08-31).** The page looks old because it *is* thin — 11 entries. Needs the real catalogue built out with working links: the [AAN member directory](https://aan.org/member-directory/) in full (BACKLOG has asked for this twice), the Instagram accounts listed in EPIC 5, Londonist and equivalents for each Tier 1 hub, and The Stranger (added 2026-08-31). Every entry verified reachable before it goes in — a dead source link is the same failure as a dead citation.
+
+- [ ] **Dedicated sources war room.** Operator request: a `near-war-room` variant focused on source discovery and audit rather than content production, so the catalogue gets deliberate attention instead of being a side effect of writing.
+
+- [ ] **Walkable-radius discovery (operator, 2026-08-31).** When a place is discovered or published, always ask what else is within walking distance of it and log the good ones as candidates. This is how alt-weeklies actually work — a scene is a block, not a pin — and Near already has the coordinates and a haversine helper to do it. It would compound: every new place seeds the next few, and it naturally produces the walkable clusters that make collections worth writing. Should become a step in `near-editor` and a standing input to `content/opportunities.md`.
+
 ## 🗺️ EPIC 5: Content Pipeline & War Rooms
 
 - [ ] **AI Data Pass (UI Prep):** Generate enticing, magazine-style short titles for the 18 existing places to support the new listing UI.
