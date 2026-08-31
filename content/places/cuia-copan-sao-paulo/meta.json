@@ -50,6 +50,11 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "created to close a cross-link gap: Cuia was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and megafauna-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "near-caretaker sweep #1, class 3 (ownership/venture changes): copy said Bel Coelho's Clandestino 'closed in 2020' and stopped there. She reopened it as Clandestina in Vila Madalena in 2024 — confirmed by the CNN Brasil piece this page already cited, whose headline names her as 'do Cuia e da Clandestina'. The page was contradicted by its own source. Corrected in en and pt-BR. Bel Coelho verified active as of this sweep; Cuia's Pinheiros second location was already covered."
     }
   ],
   "geocode": {
@@ -58,5 +63,5 @@
     "query": "Cuia, Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
   },
   "publishedAt": "2026-08-28T00:00:00Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-08-31T00:00:00Z"
 }

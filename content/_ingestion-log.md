@@ -254,3 +254,25 @@ recent to be worth a `confirmed-closed` first check this run.
 ("as of this writing") and `cabaret-latino` (event dated 11 Sep 2026,
 still upcoming) are all still accurate at time of sweep. They will not be
 in six months; that's what the next sweeps are for.
+
+### 2026-08-31 — caretaker sweep #1, continued (class 1 + class 3)
+
+- **Bel Coelho verified active** (Cuia, Clandestina; CNN Brasil, Mesa SP,
+  her own site all current). No correction needed on the person.
+- **But the sweep found a stale fact she was attached to.** The Cuia page
+  said her Clandestino "closed in 2020" and stopped there; she reopened
+  it as **Clandestina** in Vila Madalena in 2024. The CNN Brasil article
+  the page *already cited* is headlined "do Cuia e da Clandestina" — so
+  the page was contradicted by its own source, which is a useful reminder
+  that link-checking a citation resolves is not the same as checking it
+  still says what the copy claims. Corrected in en and pt-BR.
+- Cuia's second location in Pinheiros was already covered (as a caveat
+  about muddied search results), so no gap there.
+- Remaining 10 named people still unverified — deferred again.
+
+**Footer count bug, fixed at source.** `_stats.json` said 16 places while
+the board rendered 17, so the footer told every visitor the wrong number.
+`getStats()` now derives `placesIndexed` from disk instead of trusting the
+snapshot, so the count and the board can't disagree again regardless of
+what the file says. The file itself was refreshed too, for anything else
+reading it.
