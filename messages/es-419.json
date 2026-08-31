@@ -73,7 +73,10 @@
     "latest": "Más recientes",
     "emptyNearest": "Todavía no hay lugares localizados. Cuando Near sincronice, aquí van a aparecer los más cercanos a donde nos digas que estás.",
     "emptyNearestNoLocation": "Tocá \"Mi ubicación\" para ordenar {count} lugares por distancia.",
-    "emptyLatest": "Todavía no hay lugares aquí. Cuando Near sincronice, lo más reciente aparece primero."
+    "emptyLatest": "Todavía no hay lugares aquí. Cuando Near sincronice, lo más reciente aparece primero.",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "pageOf": "Página {page} de {total}"
   },
   "categories": {
     "all": "Todos los temas",
