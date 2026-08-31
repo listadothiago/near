@@ -49,6 +49,7 @@ export default async function HousePromo({
         promoKicker={t("placesCount", { count: c.meta.placeSlugs.length })}
         promoTitle={c.frontmatter.title}
         promoTeaser={c.frontmatter.dek}
+        promoImage={c.meta.coverImage?.url ?? null}
         stretch={stretch}
       />
     );
@@ -66,6 +67,7 @@ export default async function HousePromo({
       promoKicker={`${p.meta.place.city}${p.meta.place.neighborhood ? ` · ${p.meta.place.neighborhood}` : ""}`}
       promoTitle={p.frontmatter.shortTitle ?? p.frontmatter.name}
       promoTeaser={p.frontmatter.tagline}
+      promoImage={p.meta.heroImage?.url ?? null}
       stretch={stretch}
     />
   );

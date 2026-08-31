@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import { nearTrack } from "@/lib/analytics";
@@ -93,6 +94,7 @@ export default function Placement({
   promoKicker,
   promoTitle,
   promoTeaser,
+  promoImage,
   stretch = false,
 }: {
   /** Stable analytics name — keep it when real inventory replaces the promo. */
@@ -104,6 +106,12 @@ export default function Placement({
   /** The article's own dek or tagline. Never ad copy written to sell it. */
   promoTeaser?: string;
   /**
+   * The promoted article's own hero, cropped to the format. An empty box
+   * of type is a classified ad; the picture is what makes the unit look
+   * like it belongs to the same publication as the cards around it.
+   */
+  promoImage?: string | null;
+  /**
    * Fill the parent instead of sitting at its exact pixel size — for the
    * board grid, where a fixed 300x250 in a flexible column leaves a hole
    * under it. `size` still sets the reserved minimum, so real inventory
@@ -114,6 +122,14 @@ export default function Placement({
   const t = useTranslations("ads");
   const type = TYPE[size];
   const horizontal = HORIZONTAL.includes(size);
+  // Tall formats wear the image full-bleed behind the type, like a
+  // poster. Wide, short ones can't — 90px of height leaves no room for
+  // text over a picture — so those put it beside the type instead.
+  const posterImage = Boolean(promoImage) && !horizontal;
+  // Reported with every view and click so CTR can be read per creative,
+  // not just per slot. Without this, swapping the artwork and swapping
+  // the promoted article are indistinguishable in the numbers.
+  const creative = !promoImage ? "text" : posterImage ? "poster" : "thumb";
   const ref = useRef<HTMLDivElement>(null);
   const seen = useRef(false);
 
@@ -127,7 +143,7 @@ export default function Placement({
         for (const e of entries) {
           if (e.isIntersecting && !seen.current) {
             seen.current = true;
-            nearTrack("placement_view", { slot, size });
+            nearTrack("placement_view", { slot, size, creative });
             io.disconnect();
           }
         }
@@ -136,7 +152,7 @@ export default function Placement({
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [slot, size]);
+  }, [slot, size, creative]);
 
   return (
     <aside
@@ -155,17 +171,54 @@ export default function Placement({
       >
         <Link
           href={promoHref}
-          onClick={() => nearTrack("placement_click", { slot, size })}
-          className={`group/ad relative flex h-full w-full hover:bg-accent hover:text-black transition-colors ${
+          onClick={() => nearTrack("placement_click", { slot, size, creative })}
+          className={`group/ad relative flex h-full w-full transition-colors ${
+            posterImage ? "" : "hover:bg-accent hover:text-black"
+          } ${
             horizontal
               ? "flex-row items-center gap-3 px-3 py-2"
-              : "flex-col gap-2 p-3"
+              : "flex-col justify-end gap-1.5 p-3"
           }`}
         >
+          {posterImage && promoImage && (
+            <>
+              <Image
+                src={promoImage}
+                alt=""
+                fill
+                sizes="(max-width: 640px) 100vw, 320px"
+                className="object-cover transition-transform duration-300 group-hover/ad:scale-105"
+              />
+              {/* Scrim rather than a flat tint: the type sits at the
+                  bottom, so the darkening should too, or the picture is
+                  wasted. Text on top of it is fixed white in both themes
+                  — it's over a photograph, not over the page. */}
+              <span
+                aria-hidden="true"
+                className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/45 to-black/5 group-hover/ad:from-black/70"
+              />
+            </>
+          )}
+
+          {/* Wide formats put the picture beside the type — 90px of height
+              leaves nowhere to put words on top of a photograph. */}
+          {horizontal && promoImage && (
+            <span className="relative flex-none h-full aspect-square border-r-[3px] border-ink overflow-hidden -my-2 -ml-3 mr-1">
+              <Image
+                src={promoImage}
+                alt=""
+                fill
+                sizes="120px"
+                className="object-cover"
+              />
+            </span>
+          )}
+
           {/* An oversized quote mark bleeding off the corner. A house unit
               that looks like a form field gets ignored; this is the one
-              cheap piece of ornament that says "someone made this". */}
-          {!horizontal && (
+              cheap piece of ornament that says "someone made this".
+              Dropped when there's a photograph doing that job already. */}
+          {!horizontal && !posterImage && (
             <span
               aria-hidden="true"
               className="pointer-events-none absolute -top-3 -right-1 font-display font-bold leading-none text-ink/[0.07] group-hover/ad:text-black/10 text-[7rem] select-none"
@@ -175,17 +228,17 @@ export default function Placement({
           )}
 
           <span
-            className={`font-mono uppercase tracking-wide ${type.kicker} ${
+            className={`relative font-mono uppercase tracking-wide ${type.kicker} ${
               horizontal ? "flex-none" : ""
-            }`}
+            } ${posterImage ? "text-white/80" : ""}`}
           >
             {promoKicker}
           </span>
 
           <span
-            className={`font-display font-bold uppercase tracking-[-1px] ${type.title} ${
+            className={`relative font-display font-bold uppercase tracking-[-1px] ${type.title} ${
               horizontal ? "flex-none" : ""
-            }`}
+            } ${posterImage ? "text-white" : ""}`}
           >
             {promoTitle}
           </span>
@@ -194,15 +247,21 @@ export default function Placement({
               line written to sell it. A house ad that overpromises is
               still a broken promise when the reader arrives. */}
           {promoTeaser && (
-            <span className={`italic text-muted group-hover/ad:text-black/70 ${type.teaser}`}>
+            <span
+              className={`relative italic ${type.teaser} ${
+                posterImage
+                  ? "text-white/85"
+                  : "text-muted group-hover/ad:text-black/70"
+              }`}
+            >
               {promoTeaser}
             </span>
           )}
 
           <span
-            className={`font-mono uppercase tracking-wide underline underline-offset-4 decoration-2 ${type.cta} ${
-              horizontal ? "ml-auto flex-none" : "mt-auto"
-            }`}
+            className={`relative font-mono uppercase tracking-wide underline underline-offset-4 decoration-2 ${type.cta} ${
+              horizontal ? "ml-auto flex-none" : ""
+            } ${posterImage ? "text-accent" : ""}`}
           >
             {t("readOn")}
           </span>

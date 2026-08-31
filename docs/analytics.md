@@ -93,10 +93,28 @@ _Promotion log:_
 
 ### Reading placement numbers
 
+**CTR is the number the operator actually wants**, so it's worth being
+precise about how to compute it and what can corrupt it.
+
 - **CTR = `placement_click` / `placement_view`.** Views are counted at
   50% viewability via IntersectionObserver, roughly the way an ad server
   counts them — so this CTR is comparable to a real one, and a house CTR
   under ~0.5% is a weak unit, not a weak audience.
+- Both events carry `slot`, `size` **and `creative`**, so CTR splits
+  three ways: by position, by format, and by artwork treatment.
+  `creative` is one of:
+  - `poster` — full-bleed hero photo with the type over a scrim (tall
+    formats)
+  - `thumb` — square image beside the type (wide, short formats)
+  - `text` — no image available for the promoted article
+  Without that third dimension, changing the artwork and changing the
+  promoted article look identical in the data. **Always compare like
+  creative to like creative**, and when both change at once, treat the
+  result as uninterpretable rather than guessing which caused it.
+- One caution on `poster` vs `text`: a poster unit will almost certainly
+  win, and that is only partly a design finding. It also means the
+  promoted article *has* a usable hero, which correlates with it being
+  better sourced. Don't read the gap as pure creative lift.
 - A high `placement_view` with near-zero clicks in one slot and not the
   other is a **placement** problem, not a creative problem.
 - Never put a CSS filter on an ad iframe. It reads as click manipulation
