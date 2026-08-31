@@ -5,6 +5,11 @@ import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import NearestLatestTabs from "./NearestLatestTabs";
 import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
+import {
+  buildLocationIndex,
+  matchLocation,
+  stripLocationWords,
+} from "@/lib/search/locations";
 import { useBoardControls } from "@/lib/board/controls";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
@@ -71,8 +76,26 @@ export default function Board({
 
   const parsed = useMemo(() => parseQuery(query), [query]);
 
+  // Location SRP: if the query names a place Near actually covers — a
+  // neighbourhood, city, region or country, in any of the site's
+  // languages — the board scopes to it and says so in a heading, instead
+  // of leaving the reader to guess whether the substring match worked.
+  const locationIndex = useMemo(() => buildLocationIndex(places), [places]);
+  const location = useMemo(
+    () => (query.trim() ? matchLocation(locationIndex, query) : null),
+    [locationIndex, query],
+  );
+
   const filtered = useMemo(() => {
+    // Words spent on the location shouldn't also have to appear in every
+    // result's text — "bares em londres" scopes to London and then
+    // applies "bares" as a category term, not as a substring.
+    const textWords = location
+      ? stripLocationWords(parsed.freeTextWords, location)
+      : parsed.freeTextWords;
+
     return places
+      .filter((p) => !location || location.slugs.has(p.meta.slug))
       .filter(
         (p) =>
           activeCats.size === 0 ||
@@ -92,21 +115,32 @@ export default function Board({
           p.meta.tags.some((t) => parsed.tags.includes(t)),
       )
       .filter((p) => {
-        if (parsed.freeTextWords.length === 0) return true;
+        if (textWords.length === 0) return true;
         const haystack = normalizeText(
           [
             p.frontmatter.name,
             p.frontmatter.tagline,
             p.meta.place.neighborhood,
             p.meta.place.city,
+            p.meta.place.region,
             p.meta.place.country,
           ]
             .filter(Boolean)
             .join(" "),
         );
-        return parsed.freeTextWords.every((word) => haystack.includes(word));
+        return textWords.every((word) => haystack.includes(word));
       });
-  }, [places, activeCats, activeTags, parsed]);
+  }, [places, activeCats, activeTags, parsed, location]);
+
+  // The browser tab should say where you are too — restored on clear.
+  useEffect(() => {
+    if (!location) return;
+    const original = document.title;
+    document.title = `${location.label} · near.tips`;
+    return () => {
+      document.title = original;
+    };
+  }, [location]);
 
   // Named locateMe, not useMyLocation: the `use` prefix made
   // react-hooks/rules-of-hooks treat a plain callback as a hook and error
@@ -151,6 +185,17 @@ export default function Board({
     <div>
       {/* Listings lead, map is secondary — it sits in the narrower
           column on desktop and collapses behind a disclosure on mobile. */}
+      {location && (
+        <div className="mt-5 border-[3px] border-ink bg-accent text-black px-3 py-2 shadow-[var(--shadow-sm)]">
+          <h2 className="m-0 font-display font-bold uppercase tracking-[-1px] text-[1.4rem] leading-none">
+            {location.label}
+          </h2>
+          <p className="m-0 mt-1 font-mono text-[0.68rem] uppercase tracking-wide">
+            {t("locationScope", { count: filtered.length })}
+          </p>
+        </div>
+      )}
+
       <div className="mt-5 grid grid-cols-1 md:grid-cols-[1fr_300px] gap-5 items-start">
         <NearestLatestTabs
           places={filtered}
