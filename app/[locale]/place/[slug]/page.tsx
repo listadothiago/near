@@ -129,7 +129,6 @@ export default async function PlacePage({
           frontmatter={content.frontmatter}
           parentName={parentName}
         />
-        <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <ReasonsList bullets={content.frontmatter.bullets} />
         <UpcomingEvents events={upcoming} />
         {/* Aligned to the reading column, not the page — a unit that
@@ -163,6 +162,11 @@ export default async function PlacePage({
             </span>
           ))}
         </p>
+        {/* Map moved below the article (operator, 2026-08-31): the pitch
+            for a place belongs before the pin on a map of it — "where
+            exactly" is the question a reader has after deciding to go,
+            not before deciding to read. */}
+        <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <RelatedPlaces places={related} />
       </article>
       <Footer stats={stats} />
