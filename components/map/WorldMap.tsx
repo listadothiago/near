@@ -179,7 +179,7 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
                 alt={point.name}
                 fill
                 sizes="208px"
-                className="object-cover zine-img"
+                className="object-cover"
               />
             </div>
           )}

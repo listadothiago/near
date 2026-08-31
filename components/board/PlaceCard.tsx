@@ -29,7 +29,7 @@ export default function PlaceCard({
             alt=""
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
-            className="object-cover zine-img"
+            className="object-cover"
           />
         ) : (
           <div

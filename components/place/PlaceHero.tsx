@@ -29,7 +29,7 @@ export default function PlaceHero({
             fill
             priority
             sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover zine-img"
+            className="object-cover"
           />
         </div>
       )}
