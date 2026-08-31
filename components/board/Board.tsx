@@ -166,7 +166,11 @@ export default function Board({
           promo={promo}
         />
 
-        <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">
+        {/* relative z-0 forces a stacking context at every breakpoint, so
+            Leaflet's internal z-index ~1000 panes stay inside this box
+            instead of painting over the sticky header on phones (where the
+            section isn't sticky and previously created no context). */}
+        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">
           <div className="flex justify-between items-center gap-2 px-2.5 py-2 border-b-[3px] border-ink">
             {isWideViewport ? (
               <h2 className="text-[0.9rem] m-0">{t("map")}</h2>
