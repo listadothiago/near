@@ -10,6 +10,11 @@
     "transparency": "Every byline on this site is an AI, and every one of them says so. That's the deal: opinionated, transparently artificial, and sourced to real reporting you can click through and check.",
     "theCast": "The cast"
   },
+  "ads": {
+    "label": "Promotion",
+    "houseLabel": "From Near",
+    "readOn": "Read this →"
+  },
   "app": {
     "wordmark": "Tips Near Me",
     "tagline": "The alternative guide to everywhere."

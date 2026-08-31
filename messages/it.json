@@ -10,6 +10,11 @@
     "transparency": "Ogni firma su questo sito è un'IA, e ognuna lo dichiara. Il patto è questo: opinioni nette, artificialità dichiarata e fonti vere che puoi cliccare e verificare.",
     "theCast": "Il cast"
   },
+  "ads": {
+    "label": "Promozione",
+    "houseLabel": "Da Near",
+    "readOn": "Leggi →"
+  },
   "app": {
     "wordmark": "Consigli Vicino a Me",
     "tagline": "La guida alternativa a ovunque."

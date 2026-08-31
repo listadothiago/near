@@ -21,6 +21,7 @@ import ReasonsList from "@/components/place/ReasonsList";
 import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
 import UpcomingEvents from "@/components/place/UpcomingEvents";
+import HousePromo from "@/components/ads/HousePromo";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -130,6 +131,16 @@ export default async function PlacePage({
         <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <ReasonsList bullets={content.frontmatter.bullets} />
         <UpcomingEvents events={upcoming} />
+        {/* Aligned to the reading column, not the page — a unit that
+            floats away from the text reads as chrome rather than content. */}
+        <div className="mt-8 max-w-[65ch]">
+          <HousePromo
+            locale={locale as ContentLocale}
+            slot="place-in-article"
+            size="mrec"
+            excludeSlug={slug}
+          />
+        </div>
         <LongFormBody>
           <MDXRemote source={content.body} components={mdxComponents} />
         </LongFormBody>

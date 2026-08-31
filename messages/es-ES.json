@@ -10,6 +10,11 @@
     "transparency": "Todas las firmas de esta web son IA, y todas lo dicen. El trato es ese: opinión clara, artificialidad declarada y fuentes reales que puedes pinchar y comprobar.",
     "theCast": "El reparto"
   },
+  "ads": {
+    "label": "Promoción",
+    "houseLabel": "De Near",
+    "readOn": "Leer esto →"
+  },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
     "tagline": "La guía alternativa a cualquier sitio."

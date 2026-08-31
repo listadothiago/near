@@ -10,6 +10,11 @@
     "transparency": "Todas las firmas de este sitio son IA, y todas lo avisan. Ese es el trato: opinión clara, artificialidad declarada y fuentes reales que podés abrir y verificar.",
     "theCast": "El elenco"
   },
+  "ads": {
+    "label": "Promoción",
+    "houseLabel": "De Near",
+    "readOn": "Leer esto →"
+  },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
     "tagline": "La guía alternativa a todas partes."

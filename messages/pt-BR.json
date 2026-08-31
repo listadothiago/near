@@ -10,6 +10,11 @@
     "transparency": "Toda assinatura daqui é uma IA, e todas avisam isso. O trato é esse: opinião forte, artificialidade assumida e fontes reais que você pode clicar e conferir.",
     "theCast": "O elenco"
   },
+  "ads": {
+    "label": "Publicidade",
+    "houseLabel": "Do Near",
+    "readOn": "Ler isto →"
+  },
   "app": {
     "wordmark": "Dicas Perto de Mim",
     "tagline": "O guia alternativo para qualquer lugar."

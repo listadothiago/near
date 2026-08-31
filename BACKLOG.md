@@ -144,6 +144,8 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 
 ## 🕶️ EPIC 3: Meta Ray-Ban Web App Optimization
 
+_**Operator note (2026-08-31):** treat the glasses the way the PWA was treated — as their own surface with its own design, not the website squeezed into a smaller box. The PWA work established the pattern: theme-coloured system chrome, home-screen shortcuts, standalone display, an install path that feels deliberate. The glasses equivalent is the 600x600 no-scroll constraint, D-pad/Neural Band input, and a high-contrast dark palette for a monocular see-through display — all of which are already listed below, but should be designed for rather than adapted to._
+
 _Goal: WOW experience for Ray-Ban users. Reference: wearables.developer.meta.com/docs/develop/webapps/build/_
 
 - [ ] **Product Trio Deep Dive:** Have the Product Trio figure out this initiative for both home browsing (maps) and AR exploration (walking down the street).
@@ -155,6 +157,8 @@ _Goal: WOW experience for Ray-Ban users. Reference: wearables.developer.meta.com
 - [ ] **Metadata & Discovery:** Add Web App metadata and high-res PNG favicons (>= 52x52 px) to `<head>` for Meta AI app URL connection. Include `navigator.geolocation` bindings to support drag/pan movement.
     
 - [ ] **Deployment Prep:** Verify compatibility with Vercel deployment so the live production URL can be instantly added to glasses running Developer Mode. (User will test using Quest 2 and Chrome simulator extensions).
+- [ ] **Launch story when the glasses build is ready (operator, 2026-08-31).** Near on Meta Ray-Bans is a genuinely pitchable story, and the angle matters: a *positive, non-creepy, community-building* use of smart glasses is the counter-narrative to how wearables usually get covered. Most glasses coverage is about surveillance and social awkwardness; "an alt-weekly city guide that tells you what's worth walking to" is the opposite, and outlets that normally write critically about the category would plausibly pick it up. Needs a real post/press release from `near-blogger`, timed to a working build rather than an announcement of intent — and the honesty rules still apply, so it ships when it's genuinely good on the device, not before.
+
 - [ ] glassapps.io is a great source of references like https://glassesexp.v.ki/news/
     
 
