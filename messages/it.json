@@ -90,7 +90,8 @@
     "favorites": "Salvati",
     "favoriteAdd": "Salva questo posto",
     "favoriteRemove": "Togli dai salvati",
-    "emptyFavorites": "Ancora niente di salvato. Tocca la stella su una scheda per tenerla qui — resta solo su questo dispositivo, senza account."
+    "emptyFavorites": "Ancora niente di salvato. Tocca la stella su una scheda per tenerla qui — resta solo su questo dispositivo, senza account.",
+    "locationScope": "{count, plural, =1 {1 posto qui} other {# posti qui}} — cancella la ricerca per uscire"
   },
   "categories": {
     "all": "Tutti i temi",

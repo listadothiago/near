@@ -90,7 +90,8 @@
     "favorites": "Saved",
     "favoriteAdd": "Save this place",
     "favoriteRemove": "Remove from saved",
-    "emptyFavorites": "Nothing saved yet. Tap the star on any card to keep it here — stored on this device only, no account needed."
+    "emptyFavorites": "Nothing saved yet. Tap the star on any card to keep it here — stored on this device only, no account needed.",
+    "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave"
   },
   "categories": {
     "all": "All beats",

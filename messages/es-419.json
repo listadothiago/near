@@ -90,7 +90,8 @@
     "favorites": "Guardados",
     "favoriteAdd": "Guardar este lugar",
     "favoriteRemove": "Quitar de guardados",
-    "emptyFavorites": "Todavía no hay nada guardado. Tocá la estrella de cualquier card para guardarlo acá — queda solo en este dispositivo, sin cuenta."
+    "emptyFavorites": "Todavía no hay nada guardado. Tocá la estrella de cualquier card para guardarlo acá — queda solo en este dispositivo, sin cuenta.",
+    "locationScope": "{count, plural, =1 {1 lugar acá} other {# lugares acá}} — borrá la búsqueda para salir"
   },
   "categories": {
     "all": "Todos los temas",
