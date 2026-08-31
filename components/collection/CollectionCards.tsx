@@ -5,6 +5,10 @@ import type { CollectionSummary } from "@/lib/content/schema";
 
 // The card grid shared by /guides and the home page's guides strip, so a
 // blog post looks the same wherever it's surfaced.
+//
+// auto-fill rather than auto-fit: with only one guide published, auto-fit
+// collapses the empty tracks and stretches that single card across the
+// whole row, blowing its 16:9 cover up to banner size.
 export default function CollectionCards({
   collections,
 }: {
@@ -13,7 +17,7 @@ export default function CollectionCards({
   const t = useTranslations("collection");
 
   return (
-    <div className="grid gap-4 [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))]">
+    <div className="grid gap-4 [grid-template-columns:repeat(auto-fill,minmax(280px,1fr))]">
       {collections.map((c) => (
         <Link
           key={c.meta.slug}

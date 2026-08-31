@@ -1,0 +1,26 @@
+{
+  "slug": "asian-food-sao-paulo",
+  "placeSlugs": [
+    "rong-he-sao-paulo",
+    "thai-e-san-sao-paulo",
+    "djapa-sao-paulo"
+  ],
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://diariosgastronomicos.com.br/wp-content/uploads/2014/10/Rong-He-Liberdade-restaurante-chines-comida-chinesa-5.jpg",
+    "attribution": "Photo by Dé Comber via Diários Gastronômicos",
+    "attributionLink": "https://diariosgastronomicos.com.br/rong-he-e-o-espetaculo-do-macarrao/"
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "Near's first collection. Commissioned directly by the operator (BACKLOG EPIC 5 'Action Immediate'), so trust: auto per the operator-is-the-approver rule. Ties three already-published, already-sourced places; asserts no facts beyond what those pages establish. Cover image reuses Rong He's hero per the operator's instruction."
+    }
+  ],
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
