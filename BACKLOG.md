@@ -275,7 +275,15 @@ Avatars, skills, agents, bots, should all learn and evolve by keeping what they 
 - [ ] At every refresh, the Chief Editor, SEO and the Trendsetter should collaborate to create a blog post (rich in internal links to the content mentioned) about the trends that arise in the content created in this refresh. Find overarching themes if possible. This will be published to the app as an Editorial post, which should be linked in the home page somewhat prominently (but not as the MAIN THING of the app). It's an editorial, it should be opinionated (if politics involved, leaning left/progressive is always better)
     
 
-**Phase 1 Geographic Priority (Strict MVP Focus):**
+**Phase 1 Geographic Priority — REVISED 2026-08-31 (seeded-audience list):**
+
+_Operator's reasoning, and it's a better prioritisation basis than market size: **these are the cities where Thiago has friends and social followers.** A new guide has no distribution, so the first traffic realistically comes from people who already know the operator and will actually click and share. Coverage in a city with fifty engaged contacts beats coverage in a city with none, regardless of that city's population._
+
+**Refresh order:** London first, then San Francisco, New York, São Paulo, Santos, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego, Seattle.
+
+_Note what this changes: New York, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego and Seattle were all Phase 2 "do not start" cities under the old list. They are now Phase 1. Lisbon and Oakland/Pigeon Forge, already covered, are not on this list — no need to remove existing content, but it shouldn't be extended either. Seattle now has a source to work from: The Stranger, added the same day._
+
+**Phase 1 Geographic Priority (previous list, superseded above):**
 
 - **Tier 1 Core Hubs:** London, São Paulo extended (SP Centro, Largo do Arouche, Santa Cecília, Consolação, Vila Madalena, Moema, Barra Funda, Baixada Santista which is Praia Grande Sao Vicente Santos bertiga e guaruja, ABC, Campinas), and San Francisco Bay Area. Sober curious and outdoors should be big in san francisco bay area.
 - The reason we have baixada santista as such a high priority is I live in Sao Vicente myself and having content around me will be good for my decisions for the app
