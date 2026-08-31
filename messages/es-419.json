@@ -119,6 +119,12 @@
     "success": "Gracias — esto se envió para revisión.",
     "error": "Algo salió mal al enviarlo. Intenta de nuevo en un momento."
   },
+  "install": {
+    "blurb": "Agregá Near a tu pantalla de inicio — funciona sin conexión una vez que abriste la página.",
+    "action": "Instalar",
+    "dismiss": "Cerrar",
+    "iosHint": "Para instalar: tocá Compartir y después Agregar a inicio."
+  },
   "nav": {
     "tips": "Recomendaciones",
     "about": "Quiénes somos"
@@ -136,6 +142,11 @@
     "nextEvent": "Próximo",
     "upcomingHere": "Lo que se viene acá",
     "partOf": "Un evento en {venue}"
+  },
+  "share": {
+    "action": "Compartir",
+    "copied": "Link copiado",
+    "failed": "No se pudo copiar"
   },
   "sources": {
     "navLabel": "Fuentes",

@@ -29,7 +29,22 @@ export default function Board({
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
   const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
   const [query, setQuery] = useState("");
-  const [tab, setTab] = useState<"nearest" | "latest">("nearest");
+  // Latest is the initial tab on purpose. Nearest needs geolocation,
+  // which takes a permission prompt and a GPS fix — so defaulting to it
+  // meant the board rendered empty while the reader waited, or stayed
+  // empty forever if they declined. EPIC 1's ARCH-DEFENSE calls for
+  // exactly this: fall back immediately, never show a blank list.
+  const [tab, setTab] = useState<"nearest" | "latest">("latest");
+  // Once the reader picks a tab themselves, stop moving it under them.
+  const [tabPinned, setTabPinned] = useState(false);
+  // The server always renders Latest (it has no coordinates). If the
+  // reader has already granted location permission the position callback
+  // can resolve during hydration and flip this to Nearest, which
+  // mismatches the server HTML and makes React throw away and re-render
+  // the whole board. Pinning the first client render to the server's
+  // value removes the race outright; deferring the geolocation call was
+  // not sufficient, because concurrent rendering can interleave with it.
+  const [hydrated, setHydrated] = useState(false);
   const [userCoords, setUserCoords] = useState<{ lat: number; lng: number } | null>(
     null,
   );
@@ -125,7 +140,10 @@ export default function Board({
       });
   }, [places, activeCats, activeTags, parsed]);
 
-  function useMyLocation() {
+  // Named locateMe, not useMyLocation: the `use` prefix made
+  // react-hooks/rules-of-hooks treat a plain callback as a hook and error
+  // on every call site. It was never a hook.
+  function locateMe() {
     if (!navigator.geolocation) return;
     setLocating(true);
     navigator.geolocation.getCurrentPosition(
@@ -133,6 +151,11 @@ export default function Board({
         setUserCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude });
         setFocusUserSignal((n) => n + 1);
         setLocating(false);
+        // Promote to Nearest now there's something to sort by — but only
+        // if the reader hasn't already chosen a tab, since yanking the
+        // view out from under someone mid-scroll is worse than showing
+        // Latest for a few seconds longer.
+        setTab((current) => (tabPinned ? current : "nearest"));
       },
       () => setLocating(false),
       { timeout: 8000 },
@@ -144,7 +167,15 @@ export default function Board({
   // browser has no geolocation, or the user declines the permission
   // prompt.
   useEffect(() => {
-    useMyLocation();
+    // Deferred a tick on purpose. When permission is already granted the
+    // position callback can resolve fast enough to flip the tab to
+    // Nearest while React is still hydrating, which mismatches the
+    // server HTML (rendered as Latest) and forces a client re-render of
+    // the whole board. Letting hydration commit first costs nothing
+    // perceptible and keeps the tree stable.
+    setHydrated(true);
+    const id = setTimeout(locateMe, 0);
+    return () => clearTimeout(id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -186,8 +217,11 @@ export default function Board({
       <div className="mt-5 grid grid-cols-1 md:grid-cols-[1fr_300px] gap-5 items-start">
         <NearestLatestTabs
           places={filtered}
-          tab={tab}
-          onTabChange={setTab}
+          tab={hydrated ? tab : "latest"}
+          onTabChange={(next) => {
+            setTabPinned(true);
+            setTab(next);
+          }}
           userCoords={userCoords}
           eventsByParent={eventsByParent}
           onlyFavorites={onlyFavorites}
@@ -225,7 +259,7 @@ export default function Board({
                 anyone whose geolocation prompt failed or was declined. */}
             <button
               type="button"
-              onClick={useMyLocation}
+              onClick={locateMe}
               disabled={locating}
               className="font-mono text-[0.68rem] uppercase tracking-wide bg-accent text-black border-[2px] border-ink px-1.5 py-0.5 hover:bg-surface hover:text-ink transition-colors disabled:opacity-50"
             >

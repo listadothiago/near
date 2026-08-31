@@ -24,6 +24,7 @@ import UpcomingEvents from "@/components/place/UpcomingEvents";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
+import ShareButton from "@/components/layout/ShareButton";
 import { getStats } from "@/lib/content/loader";
 
 export const revalidate = 3600;
@@ -109,7 +110,13 @@ export default async function PlacePage({
       />
       <Header />
       <article className="mt-6">
-        <BackLink />
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <BackLink />
+          <ShareButton
+            title={content.frontmatter.name}
+            dek={content.frontmatter.tagline}
+          />
+        </div>
         {content.isFallback && (
           <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">
             {t("translationPending")}

@@ -119,6 +119,12 @@
     "success": "Thanks — this has been sent for review.",
     "error": "Something went wrong sending this. Try again in a moment."
   },
+  "install": {
+    "blurb": "Add Near to your home screen — works offline once you've opened a page.",
+    "action": "Install",
+    "dismiss": "Dismiss",
+    "iosHint": "To install: tap Share, then Add to Home Screen."
+  },
   "nav": {
     "tips": "Tips",
     "about": "About"
@@ -136,6 +142,11 @@
     "nextEvent": "Next",
     "upcomingHere": "Coming up here",
     "partOf": "An event at {venue}"
+  },
+  "share": {
+    "action": "Share",
+    "copied": "Link copied",
+    "failed": "Copy failed"
   },
   "sources": {
     "navLabel": "Sources",

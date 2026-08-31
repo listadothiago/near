@@ -119,6 +119,12 @@
     "success": "Obrigado — isso foi enviado para revisão.",
     "error": "Algo deu errado ao enviar. Tente novamente em instantes."
   },
+  "install": {
+    "blurb": "Adicione o Near à tela inicial — funciona offline depois que você abre a página.",
+    "action": "Instalar",
+    "dismiss": "Dispensar",
+    "iosHint": "Para instalar: toque em Compartilhar e depois em Adicionar à Tela de Início."
+  },
   "nav": {
     "tips": "Dicas",
     "about": "Sobre"
@@ -136,6 +142,11 @@
     "nextEvent": "A seguir",
     "upcomingHere": "Vem aí por aqui",
     "partOf": "Um evento no {venue}"
+  },
+  "share": {
+    "action": "Compartilhar",
+    "copied": "Link copiado",
+    "failed": "Não deu para copiar"
   },
   "sources": {
     "navLabel": "Fontes",

@@ -119,6 +119,12 @@
     "success": "谢谢，已提交审核。",
     "error": "发送时出了点问题，请稍后重试。"
   },
+  "install": {
+    "blurb": "把 Near 添加到主屏幕——页面打开过之后即可离线阅读。",
+    "action": "安装",
+    "dismiss": "关闭",
+    "iosHint": "安装方法：点按“分享”，然后选择“添加到主屏幕”。"
+  },
   "nav": {
     "tips": "推荐",
     "about": "关于"
@@ -136,6 +142,11 @@
     "nextEvent": "下一场",
     "upcomingHere": "这里即将上演",
     "partOf": "{venue} 的一场活动"
+  },
+  "share": {
+    "action": "分享",
+    "copied": "链接已复制",
+    "failed": "复制失败"
   },
   "sources": {
     "navLabel": "信源",

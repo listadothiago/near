@@ -1,14 +1,3 @@
-import Script from "next/script";
-
-// Applies the stored theme before first paint so a dark-mode visitor
-// doesn't get a flash of the light palette.
-//
-// This has to run ahead of hydration, hence strategy="beforeInteractive"
-// — Next injects it into the initial HTML. A bare <script> element works
-// too, but React 19 warns about script tags rendered as component
-// children (they're inert on client render), so next/script is the
-// supported way to express this. Inline scripts need an id for Next to
-// track them.
 const THEME_SCRIPT = `
 (function () {
   try {
@@ -20,11 +9,26 @@ const THEME_SCRIPT = `
 })();
 `;
 
+/**
+ * Applies the stored theme before first paint, so a reader who chose
+ * light doesn't get a flash of dark on every navigation.
+ *
+ * This has to be a raw inline <script> in <head>, executed synchronously
+ * while the document is parsed. It was briefly switched to next/script
+ * with strategy="beforeInteractive" to silence React's dev warning about
+ * script tags rendered as component children — but that defers execution
+ * past first paint and reintroduced exactly the flash this exists to
+ * prevent. It showed up most clearly when switching locale, which is a
+ * full navigation: the page repainted in the system default before the
+ * stored preference was applied.
+ *
+ * The warning is a dev-only console message. The flash is something
+ * every reader sees, every navigation. Keeping the raw script.
+ */
 export default function ThemeScript() {
   return (
-    <Script
-      id="near-theme"
-      strategy="beforeInteractive"
+    <script
+      suppressHydrationWarning
       dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}
     />
   );

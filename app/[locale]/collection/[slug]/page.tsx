@@ -19,6 +19,7 @@ import LongFormBody from "@/components/place/LongFormBody";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
+import ShareButton from "@/components/layout/ShareButton";
 
 export const revalidate = 3600;
 
@@ -99,7 +100,13 @@ export default async function CollectionPage({
       />
       <Header />
       <article className="mt-6">
-        <BackLink />
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <BackLink />
+          <ShareButton
+            title={content.frontmatter.title}
+            dek={content.frontmatter.dek}
+          />
+        </div>
         {content.isFallback && (
           <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">
             {t("translationPending")}
