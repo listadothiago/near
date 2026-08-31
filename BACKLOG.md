@@ -345,6 +345,34 @@ _Elsewhere:_ Big Sur and Mendocino (CA), Kauai north shore, Fogo Island (Newfoun
 
 _The list is deliberately long and deliberately unranked. Ranking it before there's a method would just reproduce the same hype ordering the operator is complaining about — pick by which places Near can actually source locally, which is a different question from which are most famous._
 
+### London war-room slate (full roster convened 2026-08-31; operator-invited, all skills present)
+
+_Convened at the operator's request with every lens chiming in — including RADAR-X, near-seo, the product trio, caretaker, illustrator, translator, blogger, socials. Two prior fan-out attempts died at credit walls mid-research; the session was rerun inline with direct verification. Sources below were actually loaded, not summarised._
+
+**Verified and ready to draft (in rank order):**
+1. **Gay's the Word** — 66 Marchmont St, Bloomsbury. UK's oldest LGBT+ bookshop, trading since Jan 1979, current hours + events on site. Byline RADAR-X (London shopping). Tags: lgbtq-friendly, local-legend.
+2. **Wilton's Music Hall** — Graces Alley, E1. Oldest grand music hall in the world, Grade II*, ~300 performances/yr, Sept 2026 listings verified live. Byline PLINIO.
+3. **London Otters** — Royal Docks Watersports Centre, E16. UK's LGBTQ-inclusive rowing club, explicitly trans-inclusive; Otterpups beginner courses (six weekends, 3x/yr, 39th cohort Nov 2025), 2026 race dates verified. Byline FIT-BOT. Exactly the operator's joinable-queer-sport ask.
+4. **Walthamstow Wetlands** — 160ha free reserve on a working reservoir serving 3.5M people. Access rules verified; NOTE their own site carries a path-closure notice dated "through August 2025" — check whether stale copy or extended closure before drafting. Byline WILD0 (outdoors default, operator decision same day).
+5. **Berry Bros. & Rudd** — 3 St James's St. 1698, still family-owned, 3 Masters of Wine, B Corp 2025; the cheap way into the expensive institution is the front door. Byline DARCY. First London travel-beat pin.
+6. **Hazlitt's** — Soho. Independent Georgian-townhouse hotel, no exterior signage, buzzed in; the honest caveat (a 1718 building behaves like one) is the service. Byline NITE-PORTER.
+7. **Studio Voltaire** — Nelsons Row, Clapham. Artist-run since 1994, named current commissions (Anthea Hamilton; Tatham & O'Sullivan), Wed–Sun. Byline CUBIC-V. South-of-river art anchor.
+
+**Pending one more source before drafting:**
+- **Jumbi** — Copeland Park, Peckham. Hi-fi music bar & restaurant, African-Caribbean diaspora; own site confirms what/where but no dated event found yet. STEFAN, food-drink secondary.
+- **Hampstead Heath ponds** — City of London page bot-blocked the fetch; well-documented but unverified this session. WILD0.
+- **FOODIE-9000's leads** (family caff of the E Pellicci type; south-London diaspora grocer-cafés): explicitly leads, not pitches — twice lost to credit walls, verify next window.
+
+**Operator decisions pending (asked 2026-08-31):**
+- Sister Midnight, Catford — community benefit society, 1,100+ member-owners, £375,600 raised, renovating the Brookdale Club; NOT YET OPEN. Pin with an 'opening' status (caretaker inherits re-checks) vs cover as a story vs wait for doors.
+- DARCY requests licence to name one over-rated London institution in print, with evidence.
+- /london city landing page + city scope on the board (seo + product trio jointly): build alongside content vs after. Board currently has no city filter; search text-match only.
+- Blogger collection once 4-5 pins land: "London institutions that refuse to die" (Wilton's 1850s → Sister Midnight being born now).
+
+**Audit result (PLINIO):** all seven existing London pins re-checked against their cited sources — no false claims found; Central Station's 1974 thread and the Lido's 1937/1990/1994 dates hold. Boxpark flagged as thin (asserts novelty without interrogating displacement) — a depth fix, not a correction.
+
+**Image calls (near-illustrator, provisional):** Wilton's, Gay's the Word, Wetlands, Berry Bros = Commons-safe. Otters = photo-permission opportunity worth asking. Jumbi + Sister Midnight = image-risk pins; no image, no publish.
+
 **Phase 1 Geographic Priority (previous list, superseded above):**
 
 - **Tier 1 Core Hubs:** London, São Paulo extended (SP Centro, Largo do Arouche, Santa Cecília, Consolação, Vila Madalena, Moema, Barra Funda, Baixada Santista which is Praia Grande Sao Vicente Santos bertiga e guaruja, ABC, Campinas), and San Francisco Bay Area. Sober curious and outdoors should be big in san francisco bay area.
