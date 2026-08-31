@@ -27,6 +27,10 @@ export const TAGS = [
   "hidden-gem",
   "see-and-be-seen",
   "trending",
+  "sober-curious",
+  "420-friendly",
+  "dog-first",
+  "furry",
 ] as const;
 
 export const tagSchema = z.enum(TAGS);

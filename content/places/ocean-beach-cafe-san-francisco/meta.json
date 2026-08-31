@@ -1,0 +1,71 @@
+{
+  "slug": "ocean-beach-cafe-san-francisco",
+  "categories": [
+    "food-drink",
+    "wellness-fitness"
+  ],
+  "tags": [
+    "sober-curious",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 37.7723,
+    "lng": -122.5098
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Outer Richmond",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Ocean Beach Cafe (official site)",
+      "url": "https://www.oceanbeachcafe.com/nonalcoholicbar",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "The Infatuation — Ocean Beach Cafe",
+      "url": "https://www.theinfatuation.com/san-francisco/reviews/ocean-beach-cafe",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "San Francisco Chronicle",
+      "url": "https://www.sfchronicle.com/sf/article/alcohol-free-ocean-beach-cafe-17607788.php",
+      "feedId": null,
+      "originalPublishedAt": "2022-01-01T00:00:00Z"
+    },
+    {
+      "name": "The Bold Italic",
+      "url": "https://www.thebolditalic.com/now-four-years-sober-i-found-non-alcoholic-paradise-in-this-outer-richmond-tavern/",
+      "feedId": null,
+      "originalPublishedAt": "2023-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://static.wixstatic.com/media/be4fb2_94a4517e4f304e2196c9718aed5b966b~mv2.png/v1/fit/w_2500,h_1330,al_c/be4fb2_94a4517e4f304e2196c9718aed5b966b~mv2.png",
+    "attribution": "Photo via Ocean Beach Cafe",
+    "attributionLink": "https://www.oceanbeachcafe.com/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "First entry from content/opportunities.md's top-ranked gap (sf-bay-sober-curious). Opens wellness-fitness, which had zero places, and doubles SF Bay coverage from two. First use of the new sober-curious tag, which BACKLOG EPIC 1 specified but the schema never had. Verified currently trading: own site live and describing active catering and events. Byline is FOODIE-9000 rather than FIT-BOT or WILD0 — the opportunity note hoped this would give an unused persona its first piece, but the piece is about what's in the glass and whether the craft justifies the price, which is squarely gastronomy. Correct beat over tidy roster."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Ocean Beach Cafe, Outer Richmond, San Francisco"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}

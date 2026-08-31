@@ -10,6 +10,10 @@ export const TAG_GLYPH: Record<Tag, string> = {
   "hidden-gem": "💎",
   "see-and-be-seen": "👀",
   trending: "🔥",
+  "sober-curious": "🫖",
+  "420-friendly": "🌿",
+  "dog-first": "🐕",
+  furry: "🐾",
 };
 
 export { TAGS };

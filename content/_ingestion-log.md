@@ -327,3 +327,24 @@ starts closing that.
   rather than letting it imply a current interior view.
 
 Shipped en + pt-BR; other four locales fall back per `full-locale-coverage`.
+
+### 2026-08-31 — new place: Ocean Beach Cafe (San Francisco)
+
+First place written off `content/opportunities.md` rather than a source
+feed or a link request. Top-ranked gap (`sf-bay-sober-curious`) because
+it closed four at once.
+
+- **Opens `wellness-fitness`**, which had zero places despite two
+  personas being written for it.
+- **First use of the `sober-curious` tag** — BACKLOG EPIC 1 specified it
+  (plus 420-friendly, dog-first, furry) but the schema never had them.
+  All four added; `TagFilters` hides tags with no places, so the three
+  unused ones cost nothing and save a later schema change.
+- SF Bay goes from 2 places to 3. Still thin for a Tier 1 hub.
+- Byline is FOODIE-9000, **not** the unused FIT-BOT or WILD0 the
+  opportunity note hoped to activate. The piece is about what's in the
+  glass and whether the craft justifies the price, which is gastronomy.
+  Correct beat beats tidy roster — the empty-byline problem gets solved
+  by writing pieces those personas actually fit, not by misfiling this one.
+- Verified trading: own site live, describing current catering and events.
+  All four sources checked reachable before citing.

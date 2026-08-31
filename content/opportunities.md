@@ -39,14 +39,14 @@ Console data.
 | São Paulo | 8 — best covered |
 | London | 4 |
 | Santos / Baixada Santista | 2 — **Tier 1, operator lives there** |
-| SF Bay Area | 2 — **Tier 1, badly thin** |
+| SF Bay Area | 3 — **Tier 1, still thin** |
 | Lisbon | 2 — not a Tier 1 hub |
 | Pigeon Forge | 1 — not on any priority list |
 | `food-drink` | 10 |
 | `nightlife-sound` | 8 |
 | `city-culture` | 7 |
 | `travel` | 1 |
-| `wellness-fitness` | **0** |
+| `wellness-fitness` | 1 — opened 2026-08-31 |
 | `accommodation` | **0** |
 | `world-culture-news` | **0** |
 
@@ -63,6 +63,15 @@ four markets.
 opportunities:
   - id: sf-bay-sober-curious
     rank: 1
+    status: started
+    shipped:
+      - "ocean-beach-cafe-san-francisco (2026-08-31) — opened the wellness-fitness category and the sober-curious tag"
+    remaining:
+      - "The New Bar — 100% alcohol-free tasting room and retail"
+      - "Better Sunday — Union Street, botanical/non-alc"
+      - "Sipeos — East Bay"
+      - "A collection tying them together once there are 3+ pins"
+
     what: "Alcohol-free / sober-curious bars and bottle shops, SF + East Bay"
     why: >
       Hits four gaps at once: SF Bay is a Tier 1 hub with two places,
