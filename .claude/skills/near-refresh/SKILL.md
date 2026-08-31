@@ -69,6 +69,10 @@ prose + fenced YAML/lists, read the prose too.
    list** — the unfulfilled promise to link is the entire reason the
    entry existed, and closing the request without doing that leaves the
    original piece exactly as link-less as before.
+1c. **Check `content/opportunities.md`.** The ranked queue `near-seo`
+   maintains — coverage gaps, empty categories, bylines with no work,
+   locale backfill. Together with `requests.md` this is demand Near has
+   already analysed; work it before going looking for more.
 2. **Tier 1 preferred sources, every run.** Work every source listed under
    "Tier 1" in `content/preferred-sources.md` regardless of what
    destination this run is focused on.

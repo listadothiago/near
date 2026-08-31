@@ -34,6 +34,19 @@ Consulted by `near-war-room` at the start of a content push, or by
 3. **Report back a short, concrete opportunity list** — not a
    generic "SEO is important" memo. Specific place/topic candidates,
    the query pattern each would capture, and which market(s).
+4. **Write it to `content/opportunities.md`**, the ranked queue this
+   skill owns, so the analysis survives the session that produced it and
+   `near-refresh` can act on it later. Keep the coverage-audit table
+   current when you re-run — a stale audit is worse than none, because
+   it will argue for filling gaps that are already filled.
+
+**On keyword tools:** Near has no Keyword Planner or Search Console
+connection (see `opportunities.md` for why, and why it matters less than
+it sounds at this catalogue size). Don't block opportunity-finding on
+getting one, and don't pretend to volume figures that weren't measured.
+Qualitative query-pattern research plus a coverage audit is the honest
+method available, and at ~20 pages it identifies bigger wins than volume
+data would.
 
 ## Mode 2 — QA pass before publish
 
