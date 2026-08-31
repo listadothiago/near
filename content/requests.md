@@ -162,3 +162,17 @@ why: >
   hero before drafting.
 status: open
 ```
+
+```yaml
+request: made-cozinha-autoral-hero-refresh
+type: image-refresh
+place: made-cozinha-autoral-santos
+why: >
+  Operator flag (2026-08-31): current hero is the Santos bay from Ponta da
+  Praia (setting, not the venue). Replace with an actual photo of the
+  restaurant when possible — best paths: ask the venue directly for a
+  photo (operator has local reach in the Baixada), or a licensed shot of
+  the new Epitacio Pessoa 716 house. Update heroImage + licenseNote when
+  swapped; keep the CC attribution rules.
+status: open
+```

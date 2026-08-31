@@ -41,7 +41,7 @@ push-to-live per post for operator QA.
 - [x] Gay's the Word — RADAR-X (shipped 2026-08-31)
 - [x] Wilton's Music Hall — PLINIO (shipped 2026-08-31)
 - [x] London Otters — FIT-BOT (shipped 2026-08-31)
-- [ ] Walthamstow Wetlands — WILD0 (verified; re-check the stale path-closure notice when drafting)
+- [x] Walthamstow Wetlands — WILD0 (shipped 2026-08-31; closure re-checked, ends this week and article says so)
 - [ ] Berry Bros. & Rudd — DARCY (verified; first London travel pin)
 - [ ] Hazlitt's — NITE-PORTER (verified)
 - [ ] Studio Voltaire — CUBIC-V (verified)
