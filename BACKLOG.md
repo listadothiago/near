@@ -62,7 +62,13 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 
 - [x] **Global Visual Identity** — done, with the colour and category departures noted above. Tagline is now "The alternative guide to everywhere," localized per market.
 
-- [ ] **Author avatars (blocked on image generation):** The 8 personas have pages and bylines but no avatars — the 1930s rubber-hose art from EPIC 4 can't be produced from here. `near-illustrator` or hand-sourced art. Persona cards are typographic until then.
+- [x] **Author avatars — SOLVED PROCEDURALLY 2026-08-31, not with generated art.** Operator's suggestion, and the better call: `components/layout/PixelAvatar.tsx` draws a deterministic 8-bit robot face from each byline's slug — solid silhouette, cut-out eyes, mouth tinted by the persona's beat colour, varying antennae. Distinct per persona, legible at 16px, zero files to host.
+  - **Why this beats commissioning artwork:** EPIC 4 lists ~25 personas and the list keeps growing. Every new byline — `near-flix`, TAPANA PANTERA, alter egos — gets a face for free instead of another item to draw and maintain.
+  - It also can't fall foul of `near-illustrator`'s photoreal ban by construction: an 11×11 grid of squares is not mistakable for documentation, and every Near byline is openly a machine, so blocky robots are the honest form.
+  - NITE-PORTER's hand-drawn Gemini avatar stays in the repo at `public/authors/nite-porter.png` but `hasAvatar` is off — one illustrated face among eight procedural ones reads as an accident. Flip the whole cast on together if bespoke art ever gets made.
+  - **The Chrome/Gemini image pipeline is now reserved for article and collection imagery**, where illustration earns its cost — per `near-illustrator`, a collection is an argument, and arguments illustrate better than they photograph.
+
+- [ ] **~~Author avatars (superseded above)~~:** The 8 personas have pages and bylines but no avatars — the 1930s rubber-hose art from EPIC 4 can't be produced from here. `near-illustrator` or hand-sourced art. Persona cards are typographic until then.
 
 - [x] **Mobile verified by operator 2026-08-31** — looks good on a phone.
 
