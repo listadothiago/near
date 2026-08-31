@@ -19,6 +19,23 @@ The full catalog (~24 feeds) gets added here once the pipeline is proven.
 
 ```yaml
 sources:
+  - id: the-stranger
+    name: "The Stranger"
+    category: city-culture
+    region: us-seattle
+    language: en
+    feedUrl: "https://www.thestranger.com/rss"
+    feedType: rss
+    trust: auto
+    status: active
+    # Operator suggestion, 2026-08-31. Seattle alt-weekly and one of the
+    # clearest living examples of the register near-editor's style guide
+    # points at — opinionated city coverage, real politics, nightlife and
+    # arts written from inside the scene. Verified publishing and serving
+    # a working RSS feed before being added. Seattle isn't a Tier 1 hub,
+    # so treat it as a voice reference and an occasional source rather
+    # than a destination feed to work every run.
+
   - id: atlas-obscura
     name: "Atlas Obscura"
     category: world-culture-news
