@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Tips Near Me | near.tips",
     short_name: "Near",
-    description: "What's opening, playing, and worth checking out.",
+    description: "The alternative guide to everywhere.",
     start_url: "/",
     display: "standalone",
     background_color: "#f4f4f0",

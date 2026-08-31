@@ -12,7 +12,7 @@
   },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
-    "tagline": "Lo que abre, suena y merece una visita."
+    "tagline": "La guía alternativa a cualquier sitio."
   },
   "author": {
     "aiLabel": "Firma artificial",
@@ -77,7 +77,7 @@
   },
   "categories": {
     "all": "Todos los temas",
-    "travel-luxury": "Viajes y Lujo",
+    "travel": "Viajes",
     "world-culture-news": "Mundo y Cultura",
     "city-culture": "Ciudad y Cultura",
     "food-drink": "Comida y Bebida",
@@ -120,7 +120,10 @@
     "relatedNearby": "Cerca de aquí en near.tips",
     "closed": "Cerrado permanentemente",
     "archived": "Destacado en {month} de {year}",
-    "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
+    "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés.",
+    "nextEvent": "Próximo",
+    "upcomingHere": "Lo que viene aquí",
+    "partOf": "Un evento en {venue}"
   },
   "sources": {
     "navLabel": "Fuentes",

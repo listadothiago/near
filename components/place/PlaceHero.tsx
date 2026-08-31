@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/lib/i18n/navigation";
 import Byline from "@/components/layout/Byline";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import { TAG_GLYPH } from "@/lib/content/tags";
@@ -8,9 +9,12 @@ import type { PlaceMeta, PlaceContentFrontmatter } from "@/lib/content/schema";
 export default function PlaceHero({
   meta,
   frontmatter,
+  parentName,
 }: {
   meta: PlaceMeta;
   frontmatter: PlaceContentFrontmatter;
+  /** Set when this place is an event hosted at a venue Near also covers. */
+  parentName?: string;
 }) {
   const t = useTranslations("place");
   const tCat = useTranslations("categories");
@@ -64,11 +68,22 @@ export default function PlaceHero({
           href={`https://www.google.com/maps/dir/?api=1&destination=${meta.coordinates.lat},${meta.coordinates.lng}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-accent-ink underline decoration-accent/40 underline-offset-2 hover:decoration-accent-ink transition-colors"
+          className="underline decoration-2 underline-offset-[3px] decoration-ink/60 hover:bg-accent hover:text-black transition-colors"
         >
           {t("directions")}
         </a>
       </div>
+
+      {meta.parentPlace && parentName && (
+        <p className="mt-3">
+          <Link
+            href={`/place/${meta.parentPlace}`}
+            className="inline-block border-[3px] border-ink bg-surface px-2 py-0.5 font-mono text-[0.72rem] uppercase tracking-wide hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("partOf", { venue: parentName })}
+          </Link>
+        </p>
+      )}
 
       <h1 className="mt-2 text-[clamp(2rem,5.5vw,3.2rem)]">
         {frontmatter.name}

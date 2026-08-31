@@ -1,3 +1,14 @@
+import Script from "next/script";
+
+// Applies the stored theme before first paint so a dark-mode visitor
+// doesn't get a flash of the light palette.
+//
+// This has to run ahead of hydration, hence strategy="beforeInteractive"
+// — Next injects it into the initial HTML. A bare <script> element works
+// too, but React 19 warns about script tags rendered as component
+// children (they're inert on client render), so next/script is the
+// supported way to express this. Inline scripts need an id for Next to
+// track them.
 const THEME_SCRIPT = `
 (function () {
   try {
@@ -10,10 +21,10 @@ const THEME_SCRIPT = `
 `;
 
 export default function ThemeScript() {
-  // eslint-disable-next-line react/no-danger
   return (
-    <script
-      suppressHydrationWarning
+    <Script
+      id="near-theme"
+      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}
     />
   );

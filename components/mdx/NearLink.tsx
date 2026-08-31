@@ -17,7 +17,7 @@ export default function NearLink({
   return (
     <Link
       href={`/place/${slug}`}
-      className="text-accent-ink underline decoration-accent/40 underline-offset-2 hover:decoration-accent-ink transition-colors"
+      className="underline decoration-2 underline-offset-[3px] decoration-ink/60 hover:bg-accent hover:text-black hover:decoration-black transition-colors"
     >
       {children}
     </Link>

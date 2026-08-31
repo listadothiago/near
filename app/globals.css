@@ -19,7 +19,7 @@
   --grid-line: #d5d5cc;
   --grid-strong: #8a8a80;
 
-  --cat-travel-luxury: #2b5f7a;
+  --cat-travel: #2b5f7a;
   --cat-world-culture-news: #7a6320;
   --cat-city-culture: #1f6b2f;
   --cat-food-drink: #9c3d14;
@@ -48,7 +48,7 @@
     --grid-line: #2e2e2b;
     --grid-strong: #6f6f68;
 
-    --cat-travel-luxury: #7cc0dc;
+    --cat-travel: #7cc0dc;
     --cat-world-culture-news: #d8bd6a;
     --cat-city-culture: #7fce8d;
     --cat-food-drink: #f0a07a;
@@ -75,7 +75,7 @@
   --grid-line: #2e2e2b;
   --grid-strong: #6f6f68;
 
-  --cat-travel-luxury: #7cc0dc;
+  --cat-travel: #7cc0dc;
   --cat-world-culture-news: #d8bd6a;
   --cat-city-culture: #7fce8d;
   --cat-food-drink: #f0a07a;
@@ -101,7 +101,7 @@
   --color-grid-line: var(--grid-line);
   --color-grid-strong: var(--grid-strong);
 
-  --color-cat-travel-luxury: var(--cat-travel-luxury);
+  --color-cat-travel: var(--cat-travel);
   --color-cat-world-culture-news: var(--cat-world-culture-news);
   --color-cat-city-culture: var(--cat-city-culture);
   --color-cat-food-drink: var(--cat-food-drink);

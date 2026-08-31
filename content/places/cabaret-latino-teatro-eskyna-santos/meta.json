@@ -36,6 +36,8 @@
     "attributionLink": "https://www.atribuna.com.br/galeria/programe-se/teatro-clube-da-eskyna-faz-ponte-com-a-cena-nacional-em-santos-1.518542",
     "licenseNote": "Depicts the Teatro Clube da Eskyna, the venue hosting this event, not the performance itself."
   },
+  "parentPlace": "teatro-clube-da-eskyna-santos",
+  "eventStartsAt": "2026-09-11T21:00:00-03:00",
   "eventEndsAt": "2026-09-12T05:00:00-03:00",
   "status": "active",
   "statusHistory": [

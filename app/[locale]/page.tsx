@@ -2,7 +2,11 @@ import { setRequestLocale } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
-import { getAllPlaces, getStats } from "@/lib/content/loader";
+import {
+  getAllPlaces,
+  getStats,
+  getUpcomingEventsByParent,
+} from "@/lib/content/loader";
 import { getAllCollections } from "@/lib/content/collectionsLoader";
 import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
@@ -24,13 +28,14 @@ export default async function HomePage({
   setRequestLocale(locale);
 
   const places = getAllPlaces(locale as ContentLocale);
+  const eventsByParent = getUpcomingEventsByParent(locale as ContentLocale);
   const stats = getStats();
   const collections = getAllCollections(locale as ContentLocale);
 
   return (
     <>
       <Header />
-      <Board places={places} />
+      <Board places={places} eventsByParent={eventsByParent} />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />
     </>

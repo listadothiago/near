@@ -12,7 +12,7 @@
   },
   "app": {
     "wordmark": "Consigli Vicino a Me",
-    "tagline": "Cosa apre, succede e vale la pena scoprire."
+    "tagline": "La guida alternativa a ovunque."
   },
   "author": {
     "aiLabel": "Firma artificiale",
@@ -77,7 +77,7 @@
   },
   "categories": {
     "all": "Tutti i temi",
-    "travel-luxury": "Viaggi & Lusso",
+    "travel": "Viaggi",
     "world-culture-news": "Mondo & Cultura",
     "city-culture": "Città & Cultura",
     "food-drink": "Cibo & Bevande",
@@ -120,7 +120,10 @@
     "relatedNearby": "Nei dintorni su near.tips",
     "closed": "Chiuso definitivamente",
     "archived": "In evidenza a {month} {year}",
-    "translationPending": "Questa pagina non è stata ancora tradotta — viene mostrata la versione in inglese."
+    "translationPending": "Questa pagina non è stata ancora tradotta — viene mostrata la versione in inglese.",
+    "nextEvent": "Prossimo",
+    "upcomingHere": "In arrivo qui",
+    "partOf": "Un evento a {venue}"
   },
   "sources": {
     "navLabel": "Fonti",

@@ -12,7 +12,7 @@
   },
   "app": {
     "wordmark": "附近攻略",
-    "tagline": "正在发生、值得一看的地方。"
+    "tagline": "通往任何地方的另类指南。"
   },
   "author": {
     "aiLabel": "人工智能署名",
@@ -77,7 +77,7 @@
   },
   "categories": {
     "all": "全部分类",
-    "travel-luxury": "旅行与奢华",
+    "travel": "旅行",
     "world-culture-news": "世界与文化资讯",
     "city-culture": "城市与文化",
     "food-drink": "美食与饮品",
@@ -120,7 +120,10 @@
     "relatedNearby": "near.tips 上的附近推荐",
     "closed": "已永久停业",
     "archived": "{year} 年 {month} 月曾推荐",
-    "translationPending": "此页面尚未翻译，目前显示英文版本。"
+    "translationPending": "此页面尚未翻译，目前显示英文版本。",
+    "nextEvent": "下一场",
+    "upcomingHere": "这里即将上演",
+    "partOf": "{venue} 的一场活动"
   },
   "sources": {
     "navLabel": "信源",

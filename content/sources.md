@@ -166,7 +166,7 @@ sources:
 
 ## Categories
 
-- `travel-luxury` — Travel & Luxury
+- `travel` — Travel & Luxury
 - `world-culture-news` — World & Culture News
 - `city-culture` — City & Culture
 - `food-drink` — Food & Drink

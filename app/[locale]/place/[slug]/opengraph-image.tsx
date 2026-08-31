@@ -8,7 +8,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 const HEX_BY_VAR: Record<string, string> = {
-  "--color-cat-travel-luxury": "#4c6e7a",
+  "--color-cat-travel": "#4c6e7a",
   "--color-cat-world-culture-news": "#8a7c64",
   "--color-cat-city-culture": "#4f7a46",
   "--color-cat-food-drink": "#a15a3b",

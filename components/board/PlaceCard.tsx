@@ -1,21 +1,32 @@
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import Byline from "@/components/layout/Byline";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceSummary } from "@/lib/content/schema";
+import type { UpcomingEvent } from "@/lib/content/loader";
 
 export default function PlaceCard({
   place,
   distanceKm,
+  upcomingEvent,
 }: {
   place: PlaceSummary;
   distanceKm?: number;
+  upcomingEvent?: UpcomingEvent;
 }) {
   const t = useTranslations("categories");
+  const tp = useTranslations("place");
+  const locale = useLocale();
   const categoryColor = `var(${CATEGORY_COLOR_VAR[place.meta.categories[0]]})`;
   const headline = place.frontmatter.shortTitle ?? place.frontmatter.name;
+  const eventDate = upcomingEvent
+    ? new Date(upcomingEvent.startsAt ?? upcomingEvent.endsAt).toLocaleDateString(
+        locale,
+        { day: "numeric", month: "short" },
+      )
+    : null;
 
   return (
     <Link
@@ -44,6 +55,22 @@ export default function PlaceCard({
           {t(place.meta.categories[0])}
         </span>
       </div>
+
+      {/* A venue with something coming up says so on the card, rather than
+          the event existing as a competing listing for the same address. */}
+      {upcomingEvent && (
+        <div className="flex items-baseline gap-1.5 px-2.5 py-1 bg-accent text-black border-b-[3px] border-ink">
+          <span className="font-mono text-[0.58rem] uppercase tracking-wide font-bold flex-none">
+            {tp("nextEvent")}
+          </span>
+          <span className="font-mono text-[0.62rem] truncate">
+            {upcomingEvent.shortTitle ?? upcomingEvent.name}
+          </span>
+          <span className="font-mono text-[0.58rem] ml-auto flex-none">
+            {eventDate}
+          </span>
+        </div>
+      )}
 
       <div className="flex flex-col gap-1.5 p-2.5 flex-1">
         <h3 className="text-[0.95rem] leading-[1.15] group-hover:bg-accent group-hover:text-black transition-colors self-start">
