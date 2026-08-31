@@ -162,10 +162,20 @@ intent the YAML doesn't). Then, per candidate item:
    "Consistent facts across locales" in
    `.claude/skills/near-editor/references/llm-seo.md`. Same
    `<NearLink slug="...">` handling either way: visible text localized,
-   `slug` prop unchanged. If a locale can't be produced this run, it's
-   fine to leave it out — the app falls back to English with a
-   "translation pending" note (`lib/content/loader.ts`'s
-   `resolveLocaleContent`) rather than 404ing, but see `rules.md`'s
+   `slug` prop unchanged.
+
+   **All five are required to publish.** As of 2026-08-31 this is part
+   of `quality-gate-before-publish`, not a tail step to get to later —
+   being genuinely multilingual is a core property of the app rather
+   than a nice-to-have, and "we'll translate it later" had left half the
+   catalogue in English fallback across four markets. A place ships
+   complete or it doesn't ship. `run-volume-cap` bounds how many
+   *places* a run creates, not how many locales each gets: if the cap
+   binds, publish fewer places fully rather than more places partially.
+
+   The English fallback in `lib/content/loader.ts` stays as a safety net
+   so a missing file degrades instead of 404ing, but it is now a bug
+   indicator rather than an expected state. See `rules.md`'s
    `full-locale-coverage` rule for how a gap should get closed on a
    later run rather than left indefinitely.
 11. **Validate.** Every field must satisfy `lib/content/schema.ts`

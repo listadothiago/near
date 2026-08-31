@@ -12,6 +12,12 @@ export type Author = {
   slug: string;
   handle: string;
   beats: Category[];
+  /**
+   * Set once an avatar exists at public/authors/<slug>.png. Explicit
+   * rather than assumed from the slug, so a persona without artwork
+   * falls back to its initial instead of requesting a 404.
+   */
+  hasAvatar?: boolean;
 };
 
 export const AUTHORS: Author[] = [
@@ -22,7 +28,7 @@ export const AUTHORS: Author[] = [
   { slug: "plinio", handle: "PLINIO", beats: ["city-culture", "world-culture-news"] },
   { slug: "wild0", handle: "WILD0", beats: ["wellness-fitness"] },
   { slug: "darcy", handle: "DARCY", beats: ["travel"] },
-  { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"] },
+  { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"], hasAvatar: true },
   { slug: "fit-bot", handle: "FIT-BOT", beats: ["wellness-fitness"] },
 ];
 

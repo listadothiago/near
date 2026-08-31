@@ -1,5 +1,6 @@
 import { Link } from "@/lib/i18n/navigation";
 import { getAuthor } from "@/lib/content/authors";
+import AuthorAvatar from "./AuthorAvatar";
 
 // asLink={false} is required wherever the byline sits inside a larger
 // link (a listing card) — nested anchors are invalid HTML and break
@@ -19,10 +20,7 @@ export default function Byline({
   const sizeClass = size === "md" ? "text-[0.76rem]" : "text-[0.66rem]";
   const inner = (
     <>
-      <span
-        aria-hidden="true"
-        className="inline-block w-2 h-2 bg-accent border border-ink flex-none"
-      />
+      <AuthorAvatar author={author} size={size === "md" ? 22 : 16} />
       {author.handle}
     </>
   );

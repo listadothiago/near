@@ -9,6 +9,7 @@ import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
+import AuthorAvatar from "@/components/layout/AuthorAvatar";
 import PlaceCards from "@/components/board/PlaceCards";
 
 export const revalidate = 3600;
@@ -60,10 +61,15 @@ export default async function AuthorPage({
         <BackLink />
       </div>
       <article className="mt-4 border-[3px] border-ink bg-surface p-5 shadow-[var(--shadow)]">
-        <p className="font-mono text-[0.7rem] uppercase tracking-wide text-muted">
-          {tA("role")}
-        </p>
-        <h1 className="mt-1 text-[clamp(2rem,5vw,3rem)]">{author.handle}</h1>
+        <div className="flex items-center gap-4">
+          <AuthorAvatar author={author} size={96} />
+          <div>
+            <p className="font-mono text-[0.7rem] uppercase tracking-wide text-muted">
+              {tA("role")}
+            </p>
+            <h1 className="mt-1 text-[clamp(2rem,5vw,3rem)]">{author.handle}</h1>
+          </div>
+        </div>
         <p className="mt-3 inline-block bg-accent text-black border-[3px] border-ink px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide">
           {t("aiLabel")}
         </p>
