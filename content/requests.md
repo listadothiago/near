@@ -103,7 +103,9 @@ requests:
       silently tolerated.
 
   - id: santos-centro-historico-second
-    status: open
+    status: fulfilled
+    fulfilledBy: "casa-frontaria-azulejada-santos"
+    fulfilledAt: "2026-08-31"
     requestedAt: "2026-08-31"
     what: >
       A second Centro Histórico, Santos place — bar, café, record shop,
@@ -125,5 +127,11 @@ requests:
         note: "Already a cited source on the Eskyna page; regional daily with Santos culture coverage."
       - name: "Juicy Santos"
         url: "https://www.juicysantos.com.br/"
-        note: "Named in the Eskyna article as the practical way to find out what's on regionally, but not yet a recorded source entry."
+        note: "Named in the Eskyna article as the practical way to find out what's on regionally. Now a recorded source on casa-frontaria-azulejada-santos."
+    closingNote: >
+      Closed by Casa da Frontaria Azulejada, 296m from the Eskyna and
+      clear of dedupe-by-place. Per this file's own rule, the link was
+      added back to the article that asked for it — the Eskyna page now
+      bridges to it in en and pt-BR — rather than just flipping the
+      status and leaving the original piece as link-less as before.
 ```

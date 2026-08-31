@@ -276,3 +276,27 @@ the board rendered 17, so the footer told every visitor the wrong number.
 snapshot, so the count and the board can't disagree again regardless of
 what the file says. The file itself was refreshed too, for anything else
 reading it.
+
+### 2026-08-31 — new place: Casa da Frontaria Azulejada (Santos)
+
+Created to close `requests.md`'s `santos-centro-historico-second`, logged
+by the Eskyna page when it had no genuine Centro Histórico neighbour to
+bridge to. Baixada Santista is a Tier 1 hub.
+
+- 296m from the Eskyna — clear of `dedupe-by-place`'s 150m threshold.
+- Byline PLINIO, which is the right lens: the piece is about what the
+  building was before it was heritage (cargo warehouse, Hotel Guanabara,
+  fertiliser depot) rather than about the tiles as decoration.
+- Hero is CC BY-SA 4.0 from Wikimedia Commons — openly licensed, stably
+  hostable, attribution and `licenseNote` recorded. First use of an
+  open-licence image rather than a source photo or stock.
+- All four sources verified reachable *before* citing, per this morning's
+  link-rot finding.
+- `link-density` satisfied honestly: 4 in-text source links, 1 internal.
+- **Request contract honoured** — the Eskyna page now links *to* the new
+  place in en and pt-BR, rather than the request being closed and the
+  article that asked for it left as link-less as before.
+
+Shipped en + pt-BR. The other four locales fall back to English with the
+translation-pending notice per `full-locale-coverage`, which explicitly
+allows launching with fewer; `near-translator` backfills them.
