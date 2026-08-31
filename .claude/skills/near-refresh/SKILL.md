@@ -35,7 +35,12 @@ prose + fenced YAML/lists, read the prose too.
    `status` to `closed` off one check. Also apply `age-decay-archive`
    (270 days) and `event-expiry` (past `eventEndsAt`) here — these are
    plain date comparisons, no browser check needed. In the same sweep,
-   check locale coverage per `rules.md`'s `full-locale-coverage` rule:
+   dispatch `near-caretaker`
+   (`.claude/skills/near-caretaker/SKILL.md`) for the deeper currency
+   sweep — business status is only one of seven ways a page goes stale,
+   and the others (a named founder who has died, a price that moved, a
+   "just opened" that's now two years old) have nothing catching them
+   automatically. Also check locale coverage per `rules.md`'s `full-locale-coverage` rule:
    any `status: active`, `trust: auto` place missing one or more of the
    six locale `.mdx` files is a candidate for a `near-translator` pass
    this run (see step 7a below) — first-class refresh work, not an

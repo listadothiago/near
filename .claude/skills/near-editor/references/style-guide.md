@@ -90,6 +90,21 @@ exists — if every source is genuinely positive, say so; the rule is
 *don't suppress what's actually there*, not *always find something bad to
 say*.
 
+## Write current, and let the caretaker maintain it
+
+Don't write to avoid ever needing an update. Copy engineered never to age
+— no names, no prices, no dates, no "opened last spring" — is also
+lifeless, and it lands squarely in the tourist-board register this guide
+exists to avoid. Name the founders. Quote the ticket price. Say it opened
+in 2019. Those specifics are what make a piece worth reading, and the
+fact that they'll eventually need checking is a maintenance cost Near
+accepts on purpose.
+
+`near-caretaker` is the skill that pays that cost — periodic sweeps for
+people who've died or moved on, places that closed or changed hands,
+prices and recency claims that have aged, dead source links. Write the
+better sentence; the caretaker keeps it true.
+
 ## Describe audiences by interest, never by age
 
 When a piece characterizes who a place appeals to — including honestly

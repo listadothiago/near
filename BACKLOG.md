@@ -115,6 +115,7 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 **Notable content decisions (2026-08-31):**
 
 - **Events belong to venues.** An event at a place Near already covers sets `meta.parentPlace` and drops off the board/map, keeping its own page and URL. The venue's card shows a "next" ribbon, its page a "coming up here" list; both expire on their own via `eventEndsAt`. Codified as `event-belongs-to-venue` in `rules.md`. This fixed two stacked pins on identical coordinates for the Eskyna venue.
+- **Staleness is a maintenance job, not a writing constraint (operator, 2026-08-31).** Near keeps writing with real specifics — names, prices, opening years, "just opened" — because that's what makes the content good, and accepts that it ages. New `near-caretaker` skill owns the upkeep: seven staleness classes (people, open/closed, ownership, numbers, recency claims, events, link rot), verify-before-changing, correct-in-place across all six locales including frontmatter, never flatten voice to make a piece age better. Codified as `currency-maintenance` in `rules.md` and wired into `near-refresh` step 1.
 - **Dolly Parton died 2026-08-25.** The Dollywood page asserted present-tense ownership across all six locales and has been corrected (verified against NPR/CNN/Variety; park stays open per its president). Worth remembering as a category of risk: evergreen copy about a living person goes stale silently. A `near-refresh` check for this would be reasonable.
 
 ## 🏛️ EPIC 2: Core Architecture & Content Rules

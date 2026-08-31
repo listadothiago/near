@@ -173,6 +173,32 @@ rules:
     trigger: "now - meta.updatedAt > 270 days AND status == active"
     action: "set status = archived; add statusHistory entry"
 
+  - id: currency-maintenance
+    description: >
+      Published content is written with real specifics — named people,
+      prices, opening years, "just opened" framing — because that's what
+      makes it worth reading. The cost is that it goes stale silently, and
+      the answer is maintenance, not hedging the copy into vagueness.
+      near-caretaker (.claude/skills/near-caretaker/SKILL.md) owns that
+      maintenance and covers seven staleness classes: people (died, left,
+      sold up), open/closed/moved, ownership changes, numbers, recency
+      claims, event references, and link rot.
+
+      Person-dependent claims are the highest risk — present-tense copy
+      about someone who has died is both false and callous, and nothing
+      in the pipeline catches it automatically. Any page naming a living
+      person carries this risk permanently.
+
+      Corrections fix the specific claim in every locale, including the
+      frontmatter (tagline, shortTitle, bullets, seoDescription — all
+      carry factual claims and are easy to miss when only the prose is
+      read), append to statusHistory, and add a sourced note where the
+      change is itself the story. A death or a permanent closure needs
+      two independent sources before it goes in; an operator flag is a
+      prompt to verify, not a source.
+    trigger: "periodic sweep via near-refresh, or an operator flag that something has changed"
+    action: "verify against sources, correct the specific claim in every locale including frontmatter, append statusHistory; never flatten voice to make a piece age better"
+
   - id: confirmed-closed
     description: >
       A place is marked closed only after two independent checks against
