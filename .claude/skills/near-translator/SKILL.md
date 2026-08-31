@@ -46,6 +46,17 @@ facts between locales (see "Consistent facts across locales" in
 - **Register and idiom.** Write the way this locale's own alt-weekly
   register actually sounds (see the locale persona file), not an
   English sentence run through a language filter.
+
+  The failure mode to watch for is the **calque** — a phrase translated
+  word-for-word that is grammatical, comprehensible, and not a thing
+  anyone says. It slips through easily because nothing about it looks
+  wrong. A real example, caught by the operator on 2026-08-31: "bottle
+  shop" was rendered in pt-BR as "loja de garrafas", which is literally
+  correct and completely alien. The word is **adega**. Category nouns —
+  shop types, venue types, drink formats, meal names — are where this
+  bites hardest, because they're exactly the terms each market has its
+  own settled word for. When you write one, ask whether you've heard a
+  local use it, not whether it parses.
 - **Emphasis.** A detail that's the whole hook for an English-speaking
   reader might be unremarkable locally, and vice versa — a locale
   persona can lead with a different bullet, or add one the English
