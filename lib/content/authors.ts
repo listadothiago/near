@@ -28,7 +28,11 @@ export const AUTHORS: Author[] = [
   { slug: "plinio", handle: "PLINIO", beats: ["city-culture", "world-culture-news"] },
   { slug: "wild0", handle: "WILD0", beats: ["wellness-fitness"] },
   { slug: "darcy", handle: "DARCY", beats: ["travel"] },
-  { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"], hasAvatar: true },
+  // hasAvatar is intentionally off. NITE-PORTER has a hand-drawn avatar
+  // at public/authors/nite-porter.png, but one illustrated face among eight
+  // procedural ones reads as an accident rather than a highlight. Flip this
+  // back on when the whole cast has artwork.
+  { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"] },
   { slug: "fit-bot", handle: "FIT-BOT", beats: ["wellness-fitness"] },
 ];
 
