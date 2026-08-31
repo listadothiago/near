@@ -279,7 +279,9 @@ Avatars, skills, agents, bots, should all learn and evolve by keeping what they 
 
 _Operator's reasoning, and it's a better prioritisation basis than market size: **these are the cities where Thiago has friends and social followers.** A new guide has no distribution, so the first traffic realistically comes from people who already know the operator and will actually click and share. Coverage in a city with fifty engaged contacts beats coverage in a city with none, regardless of that city's population._
 
-**Refresh order:** London first, then San Francisco, New York, São Paulo, Santos, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego, Seattle.
+**Refresh order (revised again, same day):** **1. London → 2. São Paulo → 3. Amsterdam**, then San Francisco, New York, Santos, Portland, Rome, Barcelona, Bologna, San Diego, Seattle, **Paris**.
+
+_São Paulo moved to second and Amsterdam to third at the operator's direction. Paris added — position unspecified, so it sits with the tail group rather than being assumed into the top tier; move it up when there's a reason to._
 
 _Note what this changes: New York, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego and Seattle were all Phase 2 "do not start" cities under the old list. They are now Phase 1. Lisbon and Oakland/Pigeon Forge, already covered, are not on this list — no need to remove existing content, but it shouldn't be extended either. Seattle now has a source to work from: The Stranger, added the same day._
 
