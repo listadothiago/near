@@ -1,0 +1,60 @@
+{
+  "slug": "restaurante-almeida-santos",
+  "categories": [
+    "food-drink",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "celebrity-spotted"
+  ],
+  "coordinates": {
+    "lat": -23.9427,
+    "lng": -46.335
+  },
+  "place": {
+    "city": "Santos",
+    "neighborhood": "Vila Mathias",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Restaurante Almeida (official site)",
+      "url": "https://www.restaurantealmeida.com.br/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Plínio Marcos",
+      "url": "https://en.wikipedia.org/wiki/Pl%C3%ADnio_Marcos",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Restaurante_Almeida_-_panoramio.jpg",
+    "attribution": "Emilio Pechini, CC BY 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Restaurante_Almeida_-_panoramio.jpg",
+    "licenseNote": "CC BY 3.0, photographer named on the Commons record — the same santista photographer whose bay shot fronts the Madê pin. This one shows the actual restaurant."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "SP/Baixada rotation cycle 2, operator-requested by name ('o almeida em santos'). Identified as Restaurante Almeida, Av. Ana Costa 1, Vila Mathias — founded 1932, the city's oldest per its own site, which also names the patron lineage (Pagu, Plínio Marcos, Roldão Mendes Rosa, Jamelão, Alcione, Antônio Fagundes, every Santos mayor), the Muniz family ownership since 2016, and the 2018 renovation. Verified trading via the live official site with current hours (Mon-Sat 11-23, Sun 11-22). The Plínio Marcos thread verified against Wikipedia: born Santos 1935, pulled into theatre in 1958 under Pagu's influence, Barrela banned for 21 years, ashes scattered in the Santos ocean in 1999. Dish names taken only from the restaurant's own site (Filé à Almeida, bacalhau, camarão) — an aggregator's dish list was deliberately not used. A Tribuna's 90th-anniversary piece exists but is paywalled and therefore not cited. NOTE: byline PLINIO writing about Plínio Marcos is a happy coincidence of naming, not a claim of connection."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Restaurante Almeida, Av. Ana Costa 1, Vila Mathias, Santos SP"
+  },
+  "publishedAt": "2026-08-31T22:30:00Z",
+  "updatedAt": "2026-08-31T22:30:00Z"
+}

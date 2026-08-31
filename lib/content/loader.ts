@@ -45,11 +45,7 @@ function resolveLocaleContent(slug: string, locale: ContentLocale) {
   if (direct) return { ...direct, isFallback: false };
 
   const fallback = readLocaleFile(slug, "en");
-  if (!fallback) {
-    throw new Error(
-      `Place "${slug}" is missing both ${locale}.mdx and the en.mdx fallback.`,
-    );
-  }
+  if (!fallback) return null;
   return { ...fallback, isFallback: true };
 }
 
@@ -59,10 +55,15 @@ export function getPlaceContent(
 ): PlaceContent | null {
   if (!fs.existsSync(path.join(CONTENT_ROOT, slug, "meta.json"))) return null;
   const meta = readMeta(slug);
-  const { frontmatter, body, isFallback } = resolveLocaleContent(
-    slug,
-    locale,
-  );
+  const resolved = resolveLocaleContent(slug, locale);
+  // A meta.json without any body yet is a place mid-authoring, not a
+  // place. Treat it as absent instead of throwing: one half-written
+  // folder was taking down every page that lists places (the home page
+  // crashed in dev the moment a meta landed before its en.mdx). The
+  // build still surfaces the gap — the pin simply doesn't exist until
+  // its English body does.
+  if (!resolved) return null;
+  const { frontmatter, body, isFallback } = resolved;
   return { meta, frontmatter, body, locale, isFallback };
 }
 
