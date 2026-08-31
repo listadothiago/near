@@ -1,0 +1,60 @@
+{
+  "slug": "wiltons-music-hall-london",
+  "categories": [
+    "city-culture",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 51.5106,
+    "lng": -0.0670
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Whitechapel",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Wilton's Music Hall (official site)",
+      "url": "https://wiltons.org.uk/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Wilton's Music Hall",
+      "url": "https://en.wikipedia.org/wiki/Wilton%27s_Music_Hall",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Wilton%27s_Music_Hall_-_Auditorium_%282013%29.jpg",
+    "attribution": "Wilton's Music Hall, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Wilton%27s_Music_Hall_-_Auditorium_(2013).jpg",
+    "licenseNote": "CC BY-SA 3.0, uploaded by the venue itself per the Commons record. Auditorium interior, 2013 — post-restoration-start but the deliberately un-prettified state is the point of the room."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "War-room slate pin #2, PLINIO byline. Verified operating: official site lists September 2026 productions by name and date (Wiesenthal 1-5 Sep, The Elixir of Love 8-19 Sep, Private Peaceful 21-23 Sep) and states ~300 performances/yr. History from Wikipedia, which is well-cited on this building: 1859 Jacob Maggs hall built BEHIND the Graces Alley houses (frontage was expensive), 1877 fire and rebuild, Methodist East End Mission ownership 1878-1956 incl. the 1889 Great Dock Strike soup kitchen at the Mahogany Bar, near-demolition in slum clearance, saved by the Betjeman/Sellers/Milligan campaign, Grade II* April 1971, GLC purchase, Trust ownership 2004, £3.6M restoration completed September 2015. 'Oldest grand music hall in the world' is the venue's own claim, attributed as such in the article rather than asserted independently."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Wilton's Music Hall, Graces Alley, London E1 8JB"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
