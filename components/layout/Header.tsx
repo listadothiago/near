@@ -58,12 +58,14 @@ export default function Header({
   const showFilters = showSearch && Boolean(availableCats?.length);
 
   useEffect(() => {
-    // Hysteresis: collapse at 90px, expand again at 40px. A single
-    // threshold makes the header flicker open and shut when a reader
-    // rests near it, which is far more annoying than it sounds.
+    // Hysteresis, and the gap must exceed the header's own height change:
+    // collapsing removes ~70px of masthead, which shifts the page and can
+    // push scrollY back under a narrow expand threshold — the header then
+    // reopens, shifts the page down, re-collapses, and oscillates. Seen
+    // live on mobile. Collapse at 120, expand only near the actual top.
     function onScroll() {
       const y = window.scrollY;
-      setCompact((was) => (was ? y > 40 : y > 90));
+      setCompact((was) => (was ? y > 12 : y > 120));
     }
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -71,9 +73,14 @@ export default function Header({
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink pt-2 pb-2 mb-1">
-      <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
-        <Link href="/" className="inline-flex items-center gap-1.5 group flex-none">
+    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink pt-2 pb-2 mb-1">
+      {/* One wrapping row, four items. Phone: brand + controls share the
+          first line, the nav wraps to its own full-width line, search takes
+          another. Desktop: all inline. The old version nested the nav
+          inside an unshrinkable controls block, which was wider than a
+          phone screen — the whole header overflowed sideways. */}
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
+        <Link href="/" className="inline-flex items-center gap-1.5 group flex-none mr-auto sm:mr-0">
           <NearMark className="w-4 h-4 text-ink flex-none" />
           <span className="font-display font-bold uppercase tracking-[-1px] text-[1.25rem] leading-none whitespace-nowrap group-hover:bg-accent transition-colors">
             NEAR.TIPS
@@ -81,17 +88,16 @@ export default function Header({
         </Link>
 
         {showSearch && (
-          <div className="order-3 sm:order-none flex-1 min-w-0 flex sm:max-w-96">
+          <div className="order-4 basis-full sm:order-none sm:basis-auto sm:flex-1 min-w-0 flex sm:max-w-96">
             <SearchBox value={query} onChange={setQuery} />
           </div>
         )}
 
-        <div className="flex items-center gap-2 flex-none">
-          <nav
-            className={`items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide ${
-              compact ? "hidden" : "flex"
-            }`}
-          >
+        <nav
+          className={`order-3 basis-full md:order-none md:basis-auto items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide ${
+            compact ? "hidden" : "flex"
+          }`}
+        >
             <Link
               href="/"
               className="border-[2px] border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
@@ -116,8 +122,9 @@ export default function Header({
             >
               {t("nav.about")}
             </Link>
-          </nav>
+        </nav>
 
+        <div className="flex items-center gap-1.5 flex-none">
           {showFilters && (
             <button
               type="button"
