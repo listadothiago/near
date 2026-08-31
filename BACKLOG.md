@@ -318,6 +318,33 @@ _São Paulo moved to second and Amsterdam to third at the operator's direction. 
 
 _Note what this changes: New York, Portland, Amsterdam, Rome, Barcelona, Bologna, San Diego and Seattle were all Phase 2 "do not start" cities under the old list. They are now Phase 1. Lisbon and Oakland/Pigeon Forge, already covered, are not on this list — no need to remove existing content, but it shouldn't be extended either. Seattle now has a source to work from: The Stranger, added the same day._
 
+### Coastal alt-luxury — a beat, not just a set of pins (operator, 2026-08-31)
+
+_Operator raised **Angra dos Reis and surroundings**, then **Litoral Norte SP**, with two distinct reasons — and the second is the more interesting one._
+
+**Reason one: audience.** "Lots of potential investors" spend time around Angra. That's the seeded-audience logic above applied to a stretch of coast instead of a city, and it's the same argument.
+
+**Reason two, and the actual editorial opening:** _"it is hard to go off the beaten path around there or to find what's really good and not hype."_ That is a precise description of a market failure, and it's Near's whole reason to exist. Coastal luxury coverage is the most compromised category in travel writing — the recommendations are ranked by who pays commission, everything is described as "hidden" and none of it is, and the actual good places are frequently unlisted, seasonal, or reachable only by asking someone. A guide that can tell the difference between genuinely good and merely expensive has something here that a city guide doesn't.
+
+**So treat this as a beat with a method, not a destination list.** The lens is `travel` (the beat) with luxury as one register inside it — consistent with the earlier `travel-luxury` → `travel` rename. Working rules for whoever picks this up:
+
+- **Name the hype explicitly and say why.** A page that quietly omits the over-marketed place is less useful than one that says "this is the famous one, here is what it actually is now, here is what people go to instead." Tulum is the canonical example of a place whose reputation and reality have fully separated.
+- **Season is a hard fact, not a footnote.** Most of these places are two entirely different products in and out of season, and a recommendation that doesn't say which one it means is useless.
+- **Access is content.** Boat-only, 4×4-only, no-cars, one-road-in — this is exactly the "off the beaten path" the operator is describing, and it's checkable.
+- **Beware the sponsored-hotel trap.** If a place only appears in listicles and paid roundups and never in a local source, that's a signal, and usually a negative one.
+
+**Candidate map (unranked — priority to be decided later, per operator).**
+
+_Brazil, and closest to the operator's own reach:_ Angra dos Reis + Ilha Grande, Paraty, Litoral Norte SP (Ilhabela, São Sebastião/Camburi/Maresias, Ubatuba), Trancoso + Caraíva (BA), Fernando de Noronha. Note the overlap with the existing Baixada Santista focus — this coast is continuous with territory Near is already committed to.
+
+_Latin America:_ José Ignacio + Cabo Polonio (UY), Sayulita/San Pancho (MX), Isla Holbox (MX), Bocas del Toro (PA).
+
+_Europe:_ Comporta (PT), Azores + Madeira (PT), Formentera and Menorca (ES, as the counter-argument to Ibiza), the Aeolians and Salina (IT, as the counter-argument to Capri), Hydra and Milos (GR), Cornwall and the Isles of Scilly (UK).
+
+_Elsewhere:_ Big Sur and Mendocino (CA), Kauai north shore, Fogo Island (Newfoundland), Lofoten (NO), Byron Bay and the Northern Rivers (AU), Sri Lanka's south coast (Ahangama/Dickwella), Jambiani (Zanzibar), El Nido/Palawan (PH).
+
+_The list is deliberately long and deliberately unranked. Ranking it before there's a method would just reproduce the same hype ordering the operator is complaining about — pick by which places Near can actually source locally, which is a different question from which are most famous._
+
 **Phase 1 Geographic Priority (previous list, superseded above):**
 
 - **Tier 1 Core Hubs:** London, São Paulo extended (SP Centro, Largo do Arouche, Santa Cecília, Consolação, Vila Madalena, Moema, Barra Funda, Baixada Santista which is Praia Grande Sao Vicente Santos bertiga e guaruja, ABC, Campinas), and San Francisco Bay Area. Sober curious and outdoors should be big in san francisco bay area.

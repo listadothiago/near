@@ -19,8 +19,11 @@ export default function ThemeToggle() {
     const current = theme ?? (prefersDark ? "dark" : "light");
     const next = current === "dark" ? "light" : "dark";
     setTheme(next);
-    document.documentElement.dataset.theme = next;
+    // Storage first, attribute second. ThemeKeeper watches the attribute
+    // and restores it from storage, so writing the attribute first would
+    // make it read the stale value and immediately undo the toggle.
     localStorage.setItem("near-theme", next);
+    document.documentElement.dataset.theme = next;
   }
 
   return (

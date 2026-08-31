@@ -5,9 +5,9 @@ import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import CategoryFilters from "./CategoryFilters";
 import TagFilters from "./TagFilters";
-import SearchBox from "./SearchBox";
 import NearestLatestTabs from "./NearestLatestTabs";
 import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
+import { useSearchQuery } from "@/lib/search/SearchProvider";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 import type { Category } from "@/lib/content/categories";
@@ -32,7 +32,8 @@ export default function Board({
   const t = useTranslations("board");
   const [activeCats, setActiveCats] = useState<Set<Category>>(new Set());
   const [activeTags, setActiveTags] = useState<Set<Tag>>(new Set());
-  const [query, setQuery] = useState("");
+  // Owned by the sticky header, which is where the field lives now.
+  const { query } = useSearchQuery();
   // Latest is the initial tab on purpose. Nearest needs geolocation,
   // which takes a permission prompt and a GPS fix — so defaulting to it
   // meant the board rendered empty while the reader waited, or stayed
@@ -185,13 +186,17 @@ export default function Board({
 
   return (
     <div>
+      {/* Collapsed by default at every breakpoint. Two rows of category
+          and tag chips is a lot of furniture to look past on the way to
+          the listings, and a reader who wants them knows they want
+          them — the count badge keeps any active filter visible while
+          the panel is shut, so nothing filters invisibly. */}
       <div className="mt-4 flex flex-wrap items-center gap-1.5">
-        <SearchBox value={query} onChange={setQuery} />
         <button
           type="button"
           onClick={() => setFiltersOpen((o) => !o)}
           aria-expanded={filtersOpen}
-          className="sm:hidden inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+          className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
         >
           {t("filters")}
           {activeFilterCount > 0 && (
@@ -199,8 +204,14 @@ export default function Board({
               {activeFilterCount}
             </span>
           )}
+          <span
+            aria-hidden="true"
+            className={`text-[0.6rem] transition-transform ${filtersOpen ? "rotate-180" : ""}`}
+          >
+            ▼
+          </span>
         </button>
-        <div className={`${filtersOpen ? "contents" : "hidden"} sm:contents`}>
+        <div className={filtersOpen ? "contents" : "hidden"}>
           <CategoryFilters
             activeCats={activeCats}
             onToggle={toggleCat}
@@ -208,7 +219,7 @@ export default function Board({
           />
         </div>
       </div>
-      <div className={`${filtersOpen ? "block" : "hidden"} sm:block`}>
+      <div className={filtersOpen ? "block" : "hidden"}>
         <TagFilters
           activeTags={activeTags}
           onToggle={toggleTag}
