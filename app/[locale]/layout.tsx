@@ -10,6 +10,8 @@ import ThemeKeeper from "@/components/layout/ThemeKeeper";
 import { BoardControlsProvider } from "@/lib/board/controls";
 import InstallPrompt from "@/components/layout/InstallPrompt";
 import { Analytics } from "@vercel/analytics/next";
+import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
+import ConsentBanner from "@/components/layout/ConsentBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "../globals.css";
 
@@ -96,8 +98,10 @@ export default async function LocaleLayout({
             </div>
           </BoardControlsProvider>
           <InstallPrompt />
-          {/* Cookieless — this is why Near needs no consent banner. */}
+          {/* Cookieless, ungated. */}
           <Analytics />
+          <GoogleAnalytics />
+          <ConsentBanner />
           <SpeedInsights />
         </NextIntlClientProvider>
       </body>

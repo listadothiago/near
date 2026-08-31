@@ -184,5 +184,10 @@
     "420-friendly": "420-friendly",
     "dog-first": "Dog-first",
     "furry": "Furry"
+  },
+  "consent": {
+    "body": "We use Google Analytics to understand how the site is used. It sets cookies; you can decline and nothing else changes.",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }
