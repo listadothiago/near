@@ -1,6 +1,6 @@
 ---
 name: near-refresh
-description: Orchestrates a full refresh pass over Near's content — checks preferred sources first (content/preferred-sources.md), re-verifies existing places are still open, works through content/preferred-destinations.md to find new tips, picks up anything else Near's watched sources recommend, discovers new sources worth adding, and backfills any locale near-translator hasn't covered yet on already-published places. Directs near-editor and near-translator to do the actual writing/publishing. Use when asked to "refresh Near," "run a refresh," or do a periodic content-freshness/growth pass rather than a single one-off place request.
+description: Orchestrates a full refresh pass over Near's content — checks preferred sources first (content/preferred-sources.md), re-verifies existing places are still open, always runs the near-caretaker currency sweep over published content (mandatory every run), works through content/preferred-destinations.md to find new tips, picks up anything else Near's watched sources recommend, discovers new sources worth adding, and backfills any locale near-translator hasn't covered yet on already-published places. Directs near-editor and near-translator to do the actual writing/publishing. Use when asked to "refresh Near," "run a refresh," or do a periodic content-freshness/growth pass rather than a single one-off place request.
 ---
 
 # near-refresh
@@ -34,18 +34,30 @@ prose + fenced YAML/lists, read the prose too.
    the first of the two required closure confirmations — never flip
    `status` to `closed` off one check. Also apply `age-decay-archive`
    (270 days) and `event-expiry` (past `eventEndsAt`) here — these are
-   plain date comparisons, no browser check needed. In the same sweep,
-   dispatch `near-caretaker`
-   (`.claude/skills/near-caretaker/SKILL.md`) for the deeper currency
-   sweep — business status is only one of seven ways a page goes stale,
-   and the others (a named founder who has died, a price that moved, a
-   "just opened" that's now two years old) have nothing catching them
-   automatically. Also check locale coverage per `rules.md`'s `full-locale-coverage` rule:
+   plain date comparisons, no browser check needed. Also check locale
+   coverage per `rules.md`'s `full-locale-coverage` rule:
    any `status: active`, `trust: auto` place missing one or more of the
    six locale `.mdx` files is a candidate for a `near-translator` pass
    this run (see step 7a below) — first-class refresh work, not an
    afterthought.
-1a. **Drain `content/requests.md`.** Open requests are places Near's own
+1a. **Dispatch `near-caretaker` — MANDATORY, every single run, no
+   exceptions.** Invoke `.claude/skills/near-caretaker/SKILL.md` for the
+   currency sweep. This is not conditional on the run's scope, not
+   skippable when the operator names a specific destination, and not
+   something to drop when a run is short on room — if `run-volume-cap`
+   is biting, cut new-place publishing before you cut this.
+
+   Step 1 only establishes whether a place is still trading. That's one
+   of seven ways a page goes stale, and the other six have nothing at all
+   catching them automatically: a named founder who has died, a change of
+   ownership, a price that moved, a "just opened" that's now two years
+   old, prose around an expired event, a source URL that 404s. Those
+   errors sit on the live site indefinitely until this step finds them.
+
+   A run that skipped this step is not a completed refresh. Say so
+   explicitly in the run summary rather than letting it pass silently.
+
+1b. **Drain `content/requests.md`.** Open requests are places Near's own
    writing has already asked for and couldn't link to — a piece wanted a
    cross-link, found nothing to point at, and logged the gap per
    `rules.md`'s `link-density` rule. Treat these as first-class candidates
@@ -115,7 +127,11 @@ prose + fenced YAML/lists, read the prose too.
    advisors under that concept.
 9. **Log and update destinations/sources files.** Append a run summary to
    `content/_ingestion-log.md` (same format as `near-editor`'s own
-   entries — this is one shared log). Update `content/preferred-sources.md`
+   entries — this is one shared log). The summary must state what the
+   `near-caretaker` pass covered and what it changed — including "nothing
+   needed correcting," which is a real and useful result. A summary with
+   no caretaker line means step 1a didn't happen, and that's the signal
+   to run it before calling the refresh done. Update `content/preferred-sources.md`
    if a source proved unreliable this run (move it down a tier or flag
    `status: paused` in `sources.md`) or a candidate graduated. Update
    `content/preferred-destinations.md` if a destination is now well-covered
@@ -128,10 +144,13 @@ A single `near-refresh` invocation doesn't have to do all of the above
 exhaustively — `rules.md`'s `run-volume-cap` still applies to how much
 near-editor publishes in one pass. When the operator asks for "a refresh"
 without more detail, default to: full check-open sweep (step 1, cheap,
-always complete it) + Tier 1 sources (step 2, always) + whichever single
-preferred destination is most overdue for attention. When the operator
-names a specific destination or source, narrow to that and still run the
-check-open sweep first.
+always complete it) + the `near-caretaker` currency sweep (step 1a,
+always, without exception) + Tier 1 sources (step 2, always) + whichever
+single preferred destination is most overdue for attention. When the
+operator names a specific destination or source, narrow the *discovery*
+steps to that — steps 1 and 1a still run in full, because a scoped run
+is about where new content comes from, not about letting published pages
+quietly rot outside the chosen scope.
 
 ## Notes
 

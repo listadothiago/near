@@ -124,8 +124,18 @@ overwrite).
 
 ## Working with near-refresh
 
-`near-refresh` already runs a check-open sweep as its step 1. This skill
-is the deeper version of that step, covering all seven staleness classes
+**Every `near-refresh` run invokes this skill — it's step 1a there, and
+it is mandatory.** Not conditional on run scope, not skipped when the
+operator names a single destination, not the first casualty when
+`run-volume-cap` starts biting (new-place publishing gets cut before this
+does). The reason is asymmetry: skipping discovery for one run costs Near
+some content it could have had, while skipping a currency pass leaves
+falsehoods sitting on a live site indefinitely. The run summary in
+`content/_ingestion-log.md` has to record what this pass covered —
+including "nothing needed correcting", which is a real result.
+
+`near-refresh`'s step 1 check-open sweep only establishes whether a place
+is still trading. This skill is the deeper version of that step, covering all seven staleness classes
 above rather than just business status. `near-refresh` dispatches it; it
 can also be run standalone when the operator flags a specific change, in
 which case verify the flag first (see above) and then sweep for anything

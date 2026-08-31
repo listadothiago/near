@@ -196,8 +196,14 @@ rules:
       change is itself the story. A death or a permanent closure needs
       two independent sources before it goes in; an operator flag is a
       prompt to verify, not a source.
-    trigger: "periodic sweep via near-refresh, or an operator flag that something has changed"
-    action: "verify against sources, correct the specific claim in every locale including frontmatter, append statusHistory; never flatten voice to make a piece age better"
+      near-caretaker runs on EVERY near-refresh pass — step 1a, not
+      optional, not dropped when a run is scoped to one destination, and
+      not the first thing cut when run-volume-cap bites (cut new-place
+      publishing first). A refresh that skipped it is not a completed
+      refresh, and the run summary in _ingestion-log.md must record what
+      the pass covered, including "nothing needed correcting".
+    trigger: "every near-refresh run (mandatory), or an operator flag that something has changed"
+    action: "verify against sources, correct the specific claim in every locale including frontmatter, append statusHistory, record the pass in _ingestion-log.md; never flatten voice to make a piece age better"
 
   - id: confirmed-closed
     description: >
