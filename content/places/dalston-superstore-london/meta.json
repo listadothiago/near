@@ -1,0 +1,72 @@
+{
+  "slug": "dalston-superstore-london",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 51.5477,
+    "lng": -0.0755
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Dalston",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Dalston Superstore (official site)",
+      "url": "https://dalstonsuperstore.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Time Out London — Dalston Superstore's 15th birthday",
+      "url": "https://www.timeout.com/london/nightlife/dalston-superstores-15th-birthday",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "Resident Advisor — Best Clubs in London",
+      "url": "https://ra.co/guides/clubs-in-london",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "UCL Urban Laboratory — LGBTQ+ nightlife spaces in London",
+      "url": "https://www.ucl.ac.uk/bartlett/research-projects/2022/may/lgbtq-nightlife-spaces-london",
+      "feedId": null,
+      "originalPublishedAt": "2017-07-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dalston_Superstore%2C_Dalston%2C_E8_%285273182679%29.jpg",
+    "attribution": "Photo by Ewan Munro via Wikimedia Commons (CC BY-SA 2.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Dalston_Superstore,_Dalston,_E8_(5273182679).jpg",
+    "licenseNote": "CC BY-SA 2.0 — attribution required, share-alike. Exterior shot dated 2010; the frontage is the constant here, but it is not a current interior view."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "London coverage was three places, two of them Shoreditch, and nothing in the queer/nightlife space BACKLOG.md repeatedly flags (Sober Gay London, queer pet-friendly London, Alternative London today). Verified currently open: own site live, listed in Resident Advisor's 2026 London clubs guide. All four sources checked reachable before citing — a UCL News URL surfaced by search turned out to be a genuine 404, so the citation points at the UCL Urban Laboratory project page instead, reached via its canonical URL. Hero is CC BY-SA 2.0 from Wikimedia Commons; it is a 2010 exterior and the licenceNote says so rather than implying it is current."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Dalston Superstore, 117 Kingsland High Street, London E8"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}

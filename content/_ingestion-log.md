@@ -300,3 +300,30 @@ bridge to. Baixada Santista is a Tier 1 hub.
 Shipped en + pt-BR. The other four locales fall back to English with the
 translation-pending notice per `full-locale-coverage`, which explicitly
 allows launching with fewer; `near-translator` backfills them.
+
+### 2026-08-31 — new place: Dalston Superstore (London)
+
+London coverage was three places, two of them Shoreditch, and nothing at
+all in the queer/nightlife space BACKLOG.md repeatedly asks for (Sober
+Gay London, queer pet-friendly London, Alternative London today). This
+starts closing that.
+
+- Byline STEFAN. Angle is the UCL Urban Laboratory finding that London
+  lost 58% of its LGBTQ+ venues 2006–2016 (125 → 53), the largest single
+  cause being conversion into straight venues. Superstore opened in 2009,
+  directly into that decade, and is still trading — which is what makes
+  an ordinary-looking two-floor bar worth a page.
+- Verified currently open: own site live, still listed in Resident
+  Advisor's 2026 London clubs guide.
+- **A search result was a dead citation.** The UCL News URL that search
+  surfaced for the 58% figure returns a genuine 404 — not a bot block, as
+  the initial curl 403s suggested. Caught by loading it in a browser
+  rather than trusting either the search engine or the status code. The
+  citation points at the UCL Urban Laboratory project page instead, via
+  its canonical URL. This is the third time in one day that checking a
+  link before citing it has caught something.
+- Hero is CC BY-SA 2.0 from Wikimedia Commons — second use of the
+  open-licence tier. It is a 2010 exterior, and the `licenseNote` says so
+  rather than letting it imply a current interior view.
+
+Shipped en + pt-BR; other four locales fall back per `full-locale-coverage`.
