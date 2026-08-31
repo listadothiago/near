@@ -1,0 +1,60 @@
+{
+  "slug": "central-station-kings-cross-london",
+  "categories": [
+    "accommodation",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 51.5352,
+    "lng": -0.1206
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "King's Cross",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Central Station (official site)",
+      "url": "https://www.centralstation.co.uk/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "LGBT History Project — Central Station",
+      "url": "https://lgbthistoryuk.org/wiki/Central_Station",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://centralstation.co.uk/wp-content/uploads/2024/05/187025545_221202523103361_8392861923650386644_n-1.jpg",
+    "attribution": "Photo via Central Station",
+    "attributionLink": "https://www.centralstation.co.uk/"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "First place in the accommodation category (previously empty) and NITE-PORTER's first byline. Opens the London refresh, which is first in the revised audience-seeded geographic priority. Verified currently trading: own site lists live opening hours and confirms bar, kitchen and hotel rooms. IMPORTANT CORRECTION CAUGHT PRE-PUBLISH: a search summary stated the venue 'opened December 1991'; the LGBT History Project page it was summarising says no such thing — the pub was previously The Prince Albert and changed name in 1992, with documented queer use of the address back to April 1974. Publishing the search summary's date would have been wrong. The Vox Pop recollection on that page (an anonymous account of a death in the basement in 1996) is explicitly flagged there as a personal recollection, is unverified, and concerns a real person's death — deliberately not used."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Central Station, 37 Wharfdale Road, King's Cross, London N1"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
