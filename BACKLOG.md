@@ -257,6 +257,33 @@ _Content Creation Flow: Agents consult amongst themselves -> Choose public perso
 - 🇧🇷 **"ZACK ARIOKA" (Rio Locale Agent - pt-BR):** Flawless Menino do Rio, sharp linen suit, panama hat, poetic Carioca swagger (ginga). Fluid, bisexual, fiercely protective of Rio subcultures. Connects Lapa, Zona Portuária, and Copacabana. Reframes generic descriptions with an insider's architectural/socio-political lens. Tracks indie fashion, Choro revivals, and off-grid parties.Local rio de janeiro linguistic register
     
 Avatars, skills, agents, bots, should all learn and evolve by keeping what they learn about researching and creating their target content saved in local md files
+## 🆕 EPIC 7: Operator queue — 2026-08-31 (captured, not started)
+
+_Everything below arrived in one burst. Recorded verbatim in intent so nothing is lost; none of it is started except the install-banner fix, which shipped._
+
+**Skills & characters**
+- [ ] **`near-flix` + a public character.** Looks out for alternative / indie / cult / B-movie / foreign-language / repertory screenings — showtimes *and* venues. Time-bound by nature, so it should lean on `event-belongs-to-venue`: the cinema is the place, the screening is a child event. Needs its own byline in the EPIC 4 cast.
+- [ ] **"New article" / "new content" skill.** Invokes a **full war room** — everyone — to decide the single next piece of content and then create it, *plus* the supporting/related articles needed alongside it for internal linking. Can take a focus, or with no focus the war room decides what brings the most user value and SEO traffic for the least effort. This is the natural front door for content work and should probably supersede ad-hoc "write about X" requests.
+- [ ] **Model switching per task.** Instruct skills to select different available models depending on the task and what's available — cheap/fast for mechanical passes, stronger for drafting and editorial judgement. Needs a documented convention rather than per-skill improvisation.
+- [ ] **Allora Dai: full São Vicente sweep** (see geography below).
+
+**Local editors needed** (`near-translator` personas, `references/locales/`)
+- [ ] **Danish** — new locale entirely: schema `LOCALES`, all UI strings, a local editor persona, and **backfill Danish across every existing place when it's created** (all six locales are mandatory to publish, so adding a seventh means a 21-place backfill).
+- [ ] **Amsterdam local** (nl) — pairs with Amsterdam being 3rd in the refresh order.
+- [ ] **Rome local** (it, city-level — Italian exists but has no city persona).
+- [ ] **Portugal local, country-level** (pt-PT — distinct from pt-BR; Lisbon and Porto both matter).
+
+**Geography — additions to the priority list**
+- [ ] **Lisbon** — operator knows many people there. Near already has 2 Lisbon places.
+- [ ] **Copenhagen**, and **Billund** (the LEGO town — verify which town before writing).
+- [ ] **São Vicente, SP** — the operator lives there. Not high-traffic but high-signal. Known leads: **O Condado** (already in the Instagram sources list), a ballroom scene, a hip hop scene, a comics scene, good *sebos* (secondhand bookshops), and large Chinese import shops. **Amuse Club** — mainstream gay but runs genuinely alt events, strongly LGBT-focused, possibly boat parties (verify).
+
+**UI / product**
+- [x] **Install banner reappearing after install — FIXED 2026-08-31.** Desktop Chrome still fires `beforeinstallprompt` when an installed PWA is opened in a browser tab, so the banner kept offering an install that had already happened. Now records install state, and in that case offers "open the app" instead of installing again.
+- [ ] **Card intro snippets.** Listing cards should carry the article's opening line, not just the tagline. Depends on articles being genuinely F-shaped with an enticing first paragraph — which the style guide already demands ("open with something specific and true, not a throat-clearing 'nestled in the heart of'"), so this is partly a content-QA task as well as a UI one.
+- [ ] **Variable card sizes, newspaper-style.** Some cards larger for *predictable* reasons (the very nearest, the very latest, collections above N pins, strongly trending), others larger on an *unpredictable* pattern. Operator's framing: leverage randomness for engagement, "a la Hooked". **Desktop and tablet only — likely overkill on mobile.** Worth a note of caution: variable-ratio reward is deliberately habit-forming, which sits oddly beside a guide whose whole pitch is honesty; keep the unpredictable tier small and never let it bury genuinely nearer/newer results.
+- [ ] **Header whitespace copy.** "near.tips" reads as odd phrasing to a newcomer; the space beside the wordmark should carry something both explanatory and SEO-useful. Currently the tagline sits below — this is about the empty area to its right.
+
 ## 📚 EPIC 4b: Sources — catalogue, skill, war room
 
 - [ ] **Build `near-sources` (doesn't exist).** BACKLOG has referred to "the sources agent" for a while and there is no such skill. It should own `content/sources.md` and `content/preferred-sources.md`: onboarding new outlets, verifying feeds still resolve, retiring dead ones, and keeping the `/sources` page honest. Everything currently done ad hoc by whoever notices.

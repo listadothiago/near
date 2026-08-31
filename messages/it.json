@@ -128,7 +128,9 @@
     "blurb": "Aggiungi Near alla schermata home — funziona offline una volta aperta la pagina.",
     "action": "Installa",
     "dismiss": "Chiudi",
-    "iosHint": "Per installare: tocca Condividi, poi Aggiungi a Home."
+    "iosHint": "Per installare: tocca Condividi, poi Aggiungi a Home.",
+    "installedBlurb": "Near è già installato su questo dispositivo — apri l'app per la versione a schermo intero.",
+    "gotIt": "Ho capito"
   },
   "nav": {
     "tips": "Dritte",
