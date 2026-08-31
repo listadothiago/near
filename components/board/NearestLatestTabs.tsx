@@ -7,6 +7,7 @@ import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 import PlaceCards from "./PlaceCards";
 import Pagination from "./Pagination";
+import { useFavorites } from "@/lib/favorites";
 
 // Bounded pages, not infinite scroll — the footer holds the theme toggle
 // and secondary links, and an endless list means a phone reader never
@@ -19,13 +20,18 @@ export default function NearestLatestTabs({
   onTabChange,
   userCoords,
   eventsByParent,
+  onlyFavorites,
+  onOnlyFavoritesChange,
 }: {
   places: PlaceSummary[];
   tab: "nearest" | "latest";
   onTabChange: (tab: "nearest" | "latest") => void;
   userCoords: { lat: number; lng: number } | null;
   eventsByParent?: Record<string, UpcomingEvent[]>;
+  onlyFavorites: boolean;
+  onOnlyFavoritesChange: (v: boolean) => void;
 }) {
+  const { slugs: favorites } = useFavorites();
   const t = useTranslations("board");
 
   const list =
@@ -67,16 +73,23 @@ export default function NearestLatestTabs({
       )
     : undefined;
 
+  // Favourites is a *scope*, not a sort — applied after the Nearest /
+  // Latest ordering so your saved list stays sortable, which is exactly
+  // where sorting matters most once the list gets long.
+  const scoped = onlyFavorites
+    ? list.filter((p) => favorites.includes(p.meta.slug))
+    : list;
+
   const [page, setPage] = useState(1);
-  const totalPages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(scoped.length / PAGE_SIZE));
 
   // Filtering, searching or switching tabs can leave the reader stranded
   // on a page that no longer exists. Reset during render rather than in an
   // effect — React's documented way to adjust state when inputs change,
   // and it avoids the extra render pass an effect would cost.
   const listKey = useMemo(
-    () => `${tab}:${list.map((p) => p.meta.slug).join(",")}`,
-    [tab, list],
+    () => `${tab}:${onlyFavorites}:${scoped.map((p) => p.meta.slug).join(",")}`,
+    [tab, onlyFavorites, scoped],
   );
   const [seenKey, setSeenKey] = useState(listKey);
   if (seenKey !== listKey) {
@@ -85,7 +98,7 @@ export default function NearestLatestTabs({
   }
 
   const safePage = Math.min(page, totalPages);
-  const pageItems = list.slice(
+  const pageItems = scoped.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE,
   );
@@ -108,6 +121,23 @@ export default function NearestLatestTabs({
             {t(id)}
           </button>
         ))}
+
+        {favorites.length > 0 && (
+          <button
+            type="button"
+            aria-pressed={onlyFavorites}
+            onClick={() => onOnlyFavoritesChange(!onlyFavorites)}
+            className={`ml-auto self-end mb-[3px] inline-flex items-center gap-1.5 border-[3px] border-ink px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide transition-colors ${
+              onlyFavorites
+                ? "bg-accent text-black"
+                : "bg-surface text-muted hover:text-ink"
+            }`}
+          >
+            <span aria-hidden="true">{onlyFavorites ? "\u2605" : "\u2606"}</span>
+            {t("favorites")}
+            <span className="opacity-70">{favorites.length}</span>
+          </button>
+        )}
       </div>
       <div className="pt-4 min-h-[220px]">
         {tab === "nearest" && !userCoords ? (
@@ -116,7 +146,11 @@ export default function NearestLatestTabs({
               ? t("emptyNearestNoLocation", { count: places.length })
               : t("emptyNearest")}
           </div>
-        ) : list.length === 0 ? (
+        ) : onlyFavorites && scoped.length === 0 ? (
+          <div className="py-6 font-mono text-muted text-[0.82rem] max-w-[42ch]">
+            {t("emptyFavorites")}
+          </div>
+        ) : scoped.length === 0 ? (
           <div className="py-6 font-mono text-muted text-[0.82rem] max-w-[42ch]">
             {t(tab === "nearest" ? "emptyNearest" : "emptyLatest")}
           </div>

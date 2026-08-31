@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import Byline from "@/components/layout/Byline";
+import FavoriteButton from "./FavoriteButton";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceSummary } from "@/lib/content/schema";
@@ -54,6 +55,7 @@ export default function PlaceCard({
         >
           {t(place.meta.categories[0])}
         </span>
+        <FavoriteButton slug={place.meta.slug} />
       </div>
 
       {/* A venue with something coming up says so on the card, rather than

@@ -76,7 +76,11 @@
     "emptyLatest": "暂无地点。Near 同步后，最新收录的内容会最先出现在这里。",
     "prev": "上一页",
     "next": "下一页",
-    "pageOf": "第 {page} 页，共 {total} 页"
+    "pageOf": "第 {page} 页，共 {total} 页",
+    "favorites": "已收藏",
+    "favoriteAdd": "收藏这个地方",
+    "favoriteRemove": "取消收藏",
+    "emptyFavorites": "还没有收藏。点任意卡片上的星标即可存到这里——只保存在本机，无需账号。"
   },
   "categories": {
     "all": "全部分类",
