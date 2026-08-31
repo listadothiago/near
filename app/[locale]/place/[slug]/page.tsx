@@ -22,6 +22,7 @@ import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
 import UpcomingEvents from "@/components/place/UpcomingEvents";
 import HousePromo from "@/components/ads/HousePromo";
+import EngagedRead from "@/components/layout/EngagedRead";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -133,6 +134,7 @@ export default async function PlacePage({
         <UpcomingEvents events={upcoming} />
         {/* Aligned to the reading column, not the page — a unit that
             floats away from the text reads as chrome rather than content. */}
+        <EngagedRead slug={slug} />
         <div className="mt-8 max-w-[65ch]">
           <HousePromo
             locale={locale as ContentLocale}

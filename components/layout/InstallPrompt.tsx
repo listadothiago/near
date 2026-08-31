@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { nearTrack } from "@/lib/analytics";
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -94,6 +95,8 @@ export default function InstallPrompt() {
     await deferred.prompt();
     const { outcome } = await deferred.userChoice;
     if (outcome === "accepted") localStorage.setItem(INSTALLED, "1");
+    // Primary conversion goal — see lib/analytics.ts.
+    nearTrack(outcome === "accepted" ? "install_accepted" : "install_dismissed");
     // Either way it shouldn't ask again — accepted means installed,
     // dismissed means they said no once already.
     dismiss();

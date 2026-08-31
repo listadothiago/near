@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { nearTrack } from "@/lib/analytics";
 
 // Installing the PWA hides the URL bar, which quietly removes the main
 // way anyone shared a page. Near's URLs are readable and SEO-shaped, so
@@ -25,6 +26,8 @@ export default function ShareButton({
     if (navigator.share) {
       try {
         await navigator.share({ title, text: dek, url });
+        // ADVOCATE: the only acquisition channel Near doesn't pay for.
+        nearTrack("share_native");
         return;
       } catch {
         // AbortError just means they closed the sheet — fall through to
@@ -35,6 +38,7 @@ export default function ShareButton({
     try {
       await navigator.clipboard.writeText(url);
       setState("copied");
+      nearTrack("share_copied");
       setTimeout(() => setState("idle"), 2000);
     } catch {
       setState("failed");

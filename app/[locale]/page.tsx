@@ -8,6 +8,7 @@ import {
   getUpcomingEventsByParent,
 } from "@/lib/content/loader";
 import { getAllCollections } from "@/lib/content/collectionsLoader";
+import HousePromo from "@/components/ads/HousePromo";
 import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -35,7 +36,18 @@ export default async function HomePage({
   return (
     <>
       <Header />
-      <Board places={places} eventsByParent={eventsByParent} />
+      <Board
+        places={places}
+        eventsByParent={eventsByParent}
+        promo={
+          <HousePromo
+            locale={locale as ContentLocale}
+            slot="board-inline"
+            size="mrec"
+            stretch
+          />
+        }
+      />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />
     </>

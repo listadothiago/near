@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { haversineKm } from "@/lib/geo/haversine";
 import type { PlaceSummary } from "@/lib/content/schema";
@@ -22,6 +22,7 @@ export default function NearestLatestTabs({
   eventsByParent,
   onlyFavorites,
   onOnlyFavoritesChange,
+  promo,
 }: {
   places: PlaceSummary[];
   tab: "nearest" | "latest";
@@ -30,6 +31,7 @@ export default function NearestLatestTabs({
   eventsByParent?: Record<string, UpcomingEvent[]>;
   onlyFavorites: boolean;
   onOnlyFavoritesChange: (v: boolean) => void;
+  promo?: ReactNode;
 }) {
   const { slugs: favorites } = useFavorites();
   const t = useTranslations("board");
@@ -161,6 +163,7 @@ export default function NearestLatestTabs({
             distances={tab === "nearest" ? distances : undefined}
             eventsByParent={eventsByParent}
             tab={tab}
+            promo={promo}
           />
           <Pagination
             page={safePage}
