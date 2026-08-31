@@ -99,8 +99,16 @@ Three tiers, and a genuinely good piece usually blends them:
    own step 9 — each locale persona localizes the post (and may include/
    exclude a specific pin mention if it doesn't land locally, per that
    persona's own judgment, same divergence rules as place content).
-7. **Consult `near-illustrator`** if the piece is long/multi-section
-   enough to benefit from section illustrations.
+7. **Consult `near-illustrator` — always.** Every collection gets an
+   image call: the cover/thumbnail, whether the piece warrants a gallery
+   (high bar — only when it genuinely rewards multiple images *and*
+   plenty of usable ones already exist in the public domain or an
+   open-licensed archive), and whether an original illustration would
+   beat the available photography. Collections are especially good
+   candidates for illustration, because a guide's hook is usually an
+   argument rather than a view, and arguments illustrate better than they
+   photograph. Section illustrations for a long multi-part piece are a
+   judgement call on top of that, not the whole of this step.
 8. **Validate and publish** per the same `quality-gate-before-publish`-
    style discipline as near-editor (schema validation, real sourcing,
    `trust-gate` logic — an ad-hoc/operator-requested post is `trust:
