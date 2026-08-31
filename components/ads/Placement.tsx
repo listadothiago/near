@@ -42,12 +42,57 @@ const MIN_SIZES: Record<PlacementSize, string> = {
   "half-page": "w-full h-full min-h-[600px]",
 };
 
+/**
+ * Type scale per format, because a 300x250 and a 728x90 are not the same
+ * poster at different zoom levels — one is a page, the other is a strip.
+ *
+ * The jump between steps is deliberately large. A house unit whose
+ * kicker, headline and teaser are all roughly the same size reads as a
+ * form field and gets skipped; a hard contrast between a tiny mono
+ * kicker and a headline that nearly fills the box is what makes the eye
+ * stop. `line-clamp` keeps a long title from breaking the reserved box —
+ * the format's dimensions are fixed and the copy is not.
+ */
+const TYPE: Record<
+  PlacementSize,
+  { kicker: string; title: string; teaser: string; cta: string }
+> = {
+  mrec: {
+    kicker: "text-[0.6rem]",
+    title: "text-[1.7rem] leading-[0.95] line-clamp-3 text-balance",
+    teaser: "text-[0.78rem] leading-snug line-clamp-2",
+    cta: "text-[0.66rem]",
+  },
+  "half-page": {
+    kicker: "text-[0.68rem]",
+    title: "text-[2.6rem] leading-[0.92] line-clamp-5 text-balance",
+    teaser: "text-[0.95rem] leading-snug line-clamp-6",
+    cta: "text-[0.78rem]",
+  },
+  leaderboard: {
+    kicker: "text-[0.6rem]",
+    title: "text-[1.5rem] leading-[1] line-clamp-2 max-w-[24ch]",
+    teaser: "text-[0.8rem] leading-snug line-clamp-2 hidden lg:block min-w-0",
+    cta: "text-[0.7rem]",
+  },
+  "mobile-banner": {
+    kicker: "text-[0.55rem]",
+    title: "text-[1.05rem] leading-[1] line-clamp-2",
+    teaser: "hidden",
+    cta: "text-[0.62rem]",
+  },
+};
+
+/** Wide, short formats lay the same parts out on one line. */
+const HORIZONTAL: PlacementSize[] = ["leaderboard", "mobile-banner"];
+
 export default function Placement({
   slot,
   size,
   promoHref,
   promoKicker,
   promoTitle,
+  promoTeaser,
   stretch = false,
 }: {
   /** Stable analytics name — keep it when real inventory replaces the promo. */
@@ -56,6 +101,8 @@ export default function Placement({
   promoHref: string;
   promoKicker: string;
   promoTitle: string;
+  /** The article's own dek or tagline. Never ad copy written to sell it. */
+  promoTeaser?: string;
   /**
    * Fill the parent instead of sitting at its exact pixel size — for the
    * board grid, where a fixed 300x250 in a flexible column leaves a hole
@@ -65,6 +112,8 @@ export default function Placement({
   stretch?: boolean;
 }) {
   const t = useTranslations("ads");
+  const type = TYPE[size];
+  const horizontal = HORIZONTAL.includes(size);
   const ref = useRef<HTMLDivElement>(null);
   const seen = useRef(false);
 
@@ -107,15 +156,54 @@ export default function Placement({
         <Link
           href={promoHref}
           onClick={() => nearTrack("placement_click", { slot, size })}
-          className="flex h-full w-full flex-col justify-center gap-1.5 p-3 hover:bg-accent hover:text-black transition-colors"
+          className={`group/ad relative flex h-full w-full hover:bg-accent hover:text-black transition-colors ${
+            horizontal
+              ? "flex-row items-center gap-3 px-3 py-2"
+              : "flex-col gap-2 p-3"
+          }`}
         >
-          <span className="font-mono text-[0.62rem] uppercase tracking-wide">
+          {/* An oversized quote mark bleeding off the corner. A house unit
+              that looks like a form field gets ignored; this is the one
+              cheap piece of ornament that says "someone made this". */}
+          {!horizontal && (
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute -top-3 -right-1 font-display font-bold leading-none text-ink/[0.07] group-hover/ad:text-black/10 text-[7rem] select-none"
+            >
+              &rdquo;
+            </span>
+          )}
+
+          <span
+            className={`font-mono uppercase tracking-wide ${type.kicker} ${
+              horizontal ? "flex-none" : ""
+            }`}
+          >
             {promoKicker}
           </span>
-          <span className="font-display font-bold uppercase tracking-[-0.5px] text-[1rem] leading-[1.1]">
+
+          <span
+            className={`font-display font-bold uppercase tracking-[-1px] ${type.title} ${
+              horizontal ? "flex-none" : ""
+            }`}
+          >
             {promoTitle}
           </span>
-          <span className="font-mono text-[0.62rem] underline underline-offset-2">
+
+          {/* The teaser is the article's own dek or tagline — never a
+              line written to sell it. A house ad that overpromises is
+              still a broken promise when the reader arrives. */}
+          {promoTeaser && (
+            <span className={`italic text-muted group-hover/ad:text-black/70 ${type.teaser}`}>
+              {promoTeaser}
+            </span>
+          )}
+
+          <span
+            className={`font-mono uppercase tracking-wide underline underline-offset-4 decoration-2 ${type.cta} ${
+              horizontal ? "ml-auto flex-none" : "mt-auto"
+            }`}
+          >
             {t("readOn")}
           </span>
         </Link>

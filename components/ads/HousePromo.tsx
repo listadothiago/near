@@ -48,6 +48,7 @@ export default async function HousePromo({
         promoHref={`/collection/${c.meta.slug}`}
         promoKicker={t("placesCount", { count: c.meta.placeSlugs.length })}
         promoTitle={c.frontmatter.title}
+        promoTeaser={c.frontmatter.dek}
         stretch={stretch}
       />
     );
@@ -64,6 +65,7 @@ export default async function HousePromo({
       promoHref={`/place/${p.meta.slug}`}
       promoKicker={`${p.meta.place.city}${p.meta.place.neighborhood ? ` · ${p.meta.place.neighborhood}` : ""}`}
       promoTitle={p.frontmatter.shortTitle ?? p.frontmatter.name}
+      promoTeaser={p.frontmatter.tagline}
       stretch={stretch}
     />
   );
