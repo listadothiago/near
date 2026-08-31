@@ -5,7 +5,7 @@ import type { PlaceMeta, PlaceContentFrontmatter } from "@/lib/content/schema";
 
 const WorldMap = dynamic(() => import("@/components/map/WorldMap"), {
   ssr: false,
-  loading: () => <div className="w-full h-[340px] bg-chart-bg rounded-2xl" aria-hidden="true" />,
+  loading: () => <div className="w-full h-[340px] bg-chart-bg" aria-hidden="true" />,
 });
 
 export default function PlaceMap({
@@ -16,7 +16,7 @@ export default function PlaceMap({
   frontmatter: PlaceContentFrontmatter;
 }) {
   return (
-    <div className="mt-6 border border-border rounded-2xl overflow-hidden">
+    <div className="mt-6 border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden">
       <WorldMap
         points={[
           {

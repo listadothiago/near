@@ -22,13 +22,13 @@ export default function CategoryFilters({
       <button
         type="button"
         onClick={() => onToggle("all")}
-        className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[0.76rem] font-medium transition-colors ${
+        className={`inline-flex items-center gap-1.5 border-[2px] border-ink px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide transition-colors ${
           activeCats.size === 0
-            ? "border-accent bg-surface-2 text-ink"
-            : "border-border bg-surface text-muted hover:border-grid-strong"
+            ? "bg-accent text-black"
+            : "bg-surface text-muted hover:bg-surface-2"
         }`}
       >
-        <span className="w-2 h-2 rounded-full bg-accent" />
+        <span className="w-2 h-2 bg-accent border border-ink" />
         {t("all")}
       </button>
       {visibleCategories.map((cat) => {
@@ -38,14 +38,14 @@ export default function CategoryFilters({
             key={cat}
             type="button"
             onClick={() => onToggle(cat)}
-            className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[0.76rem] font-medium transition-colors ${
+            className={`inline-flex items-center gap-1.5 border-[2px] border-ink px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide transition-colors ${
               active
-                ? "border-ink bg-surface-2 text-ink"
-                : "border-border bg-surface text-muted hover:border-grid-strong"
+                ? "bg-accent text-black"
+                : "bg-surface text-muted hover:bg-surface-2"
             }`}
           >
             <span
-              className="w-2 h-2 rounded-full"
+              className="w-2 h-2 border border-ink"
               style={{ background: `var(${CATEGORY_COLOR_VAR[cat]})` }}
             />
             {t(cat)}

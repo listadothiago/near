@@ -148,11 +148,11 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
           type="button"
           onClick={() => setFiltersOpen((o) => !o)}
           aria-expanded={filtersOpen}
-          className="sm:hidden inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-[0.78rem] font-semibold text-ink hover:border-accent transition-colors"
+          className="sm:hidden inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
         >
           {t("filters")}
           {activeFilterCount > 0 && (
-            <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] rounded-full bg-accent text-surface text-[0.66rem] font-bold px-1">
+            <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] border border-ink bg-accent text-black text-[0.62rem] font-bold px-1">
               {activeFilterCount}
             </span>
           )}
@@ -173,24 +173,31 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
         />
       </div>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 items-start">
-        <section className="bg-surface border border-border rounded-[14px] shadow-[0_1px_2px_rgba(32,38,42,.05),0_10px_28px_rgba(32,38,42,.05)] overflow-hidden">
-          <div className="flex justify-between items-center gap-2 px-4 pt-3.5 pb-2.5">
+      {/* Listings lead, map is secondary — it sits in the narrower
+          column on desktop and collapses behind a disclosure on mobile. */}
+      <div className="mt-5 grid grid-cols-1 md:grid-cols-[1fr_300px] gap-5 items-start">
+        <NearestLatestTabs
+          places={filtered}
+          tab={tab}
+          onTabChange={setTab}
+          userCoords={userCoords}
+        />
+
+        <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">
+          <div className="flex justify-between items-center gap-2 px-2.5 py-2 border-b-[3px] border-ink">
             {isWideViewport ? (
-              <h2 className="font-serif font-medium text-[1.05rem] m-0">
-                {t("map")}
-              </h2>
+              <h2 className="text-[0.9rem] m-0">{t("map")}</h2>
             ) : (
               <button
                 type="button"
                 onClick={() => setMapOpen((o) => !o)}
                 aria-expanded={mapOpen}
-                className="inline-flex items-center gap-1.5 bg-transparent border-0 p-0 font-serif font-medium text-[1.05rem] text-ink"
+                className="inline-flex items-center gap-1.5 bg-transparent border-0 p-0 font-display font-bold uppercase tracking-[-0.5px] text-[0.9rem] text-ink"
               >
                 {t("map")}
                 <span
                   aria-hidden="true"
-                  className={`text-muted text-[0.7rem] transition-transform ${
+                  className={`text-[0.7rem] transition-transform ${
                     mapOpen ? "rotate-180" : ""
                   }`}
                 >
@@ -209,7 +216,7 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
               type="button"
               onClick={useMyLocation}
               disabled={locating}
-              className="text-[0.78rem] font-semibold bg-transparent border border-border text-ink px-2.5 py-1.5 rounded-lg hover:border-accent hover:text-accent-ink transition-colors disabled:opacity-50"
+              className="font-mono text-[0.68rem] uppercase tracking-wide bg-accent text-black border-[2px] border-ink px-1.5 py-0.5 hover:bg-surface hover:text-ink transition-colors disabled:opacity-50"
             >
               {t("useMyLocation")}
             </button>
@@ -222,26 +229,19 @@ export default function Board({ places }: { places: PlaceSummary[] }) {
                   lat: p.meta.coordinates.lat,
                   lng: p.meta.coordinates.lng,
                   category: p.meta.categories[0],
-                  name: p.frontmatter.name,
+                  name: p.frontmatter.shortTitle ?? p.frontmatter.name,
                   tagline: p.frontmatter.tagline,
                   heroImageUrl: p.meta.heroImage?.url ?? null,
                 }))}
                 userCoords={userCoords}
                 focusUserSignal={focusUserSignal}
               />
-              <p className="m-0 px-4 pt-2.5 pb-3.5 text-[0.76rem] text-muted font-mono">
+              <p className="m-0 px-2.5 py-2 border-t-[3px] border-ink text-[0.66rem] text-muted font-mono">
                 {t("mapCaption", { count: filtered.length })}
               </p>
             </>
           )}
         </section>
-
-        <NearestLatestTabs
-          places={filtered}
-          tab={tab}
-          onTabChange={setTab}
-          userCoords={userCoords}
-        />
       </div>
     </div>
   );

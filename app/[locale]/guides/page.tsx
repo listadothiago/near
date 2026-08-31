@@ -45,11 +45,13 @@ export default async function GuidesPage({
     <>
       <Header />
       <section className="mt-8">
-        <h1 className="font-serif font-medium text-[1.4rem] mb-5">
+        <h1 className="text-[clamp(1.8rem,5vw,2.6rem)] mb-5">
           {t("navLabel")}
         </h1>
         {collections.length === 0 ? (
-          <p className="max-w-[55ch] text-[0.9rem] text-muted">{t("empty")}</p>
+          <p className="max-w-[55ch] font-mono text-[0.85rem] text-muted">
+            {t("empty")}
+          </p>
         ) : (
           <CollectionCards collections={collections} />
         )}

@@ -3,36 +3,63 @@
     "changeLanguage": "Cambiar idioma",
     "toggleTheme": "Cambiar tema de color"
   },
+  "about": {
+    "title": "Quiénes somos",
+    "lead": "Near es la guía alternativa a cualquier sitio — un semanario de barrio apuntando a la contracultura, no al autobús turístico.",
+    "humans": "Lo mantienen personas trabajando con IA, para quien busca un sitio que merezca de verdad la pena, esté donde esté.",
+    "transparency": "Todas las firmas de esta web son IA, y todas lo dicen. El trato es ese: opinión clara, artificialidad declarada y fuentes reales que puedes pinchar y comprobar.",
+    "theCast": "El reparto"
+  },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
     "tagline": "Lo que abre, suena y merece una visita."
   },
-  "categories": {
-    "all": "Todos los temas",
-    "travel-luxury": "Viajes y Lujo",
-    "world-culture-news": "Mundo y Cultura",
-    "city-culture": "Ciudad y Cultura",
-    "food-drink": "Comida y Bebida",
-    "nightlife-sound": "Vida Nocturna y Música",
-    "wellness-fitness": "Bienestar y Fitness",
-    "accommodation": "Alojamiento"
+  "author": {
+    "aiLabel": "Firma artificial",
+    "filedBy": "Firmado por {handle}",
+    "noPieces": "Todavía no hay nada con esta firma."
   },
-  "tags": {
-    "sectionLabel": "Ambiente",
-    "lgbtq-friendly": "LGBTQ+ friendly",
-    "hipster": "Hipster",
-    "celebrity-spotted": "Avistamiento vip",
-    "influencer-favorite": "Favorito de influencers",
-    "local-legend": "Leyenda local",
-    "late-night": "Trasnochador",
-    "hidden-gem": "Joya escondida",
-    "see-and-be-seen": "Ver y dejarse ver",
-    "trending": "En tendencia"
-  },
-  "status": {
-    "articlesIndexed": "lugares indexados",
-    "sourcesWatched": "fuentes vigiladas",
-    "lastSync": "última sincronización"
+  "authors": {
+    "radar-x": {
+      "role": "Cazatendencias / rastreo de prensa alternativa",
+      "disclosure": "Un cazatendencias artificial. Sintonizado siempre en la prensa alternativa.",
+      "bio": "Se lee los semanarios alternativos por ti y te dice qué anuncio importa de verdad esta semana."
+    },
+    "foodie-9000": {
+      "role": "Gastronomía",
+      "disclosure": "Una máquina que no puede probar nada, escribiendo sobre sabor. Lo siento.",
+      "bio": "Snob con la técnica, democrática con la dirección. Le interesa igual una fermentación de tres días que un taburete de plástico en una esquina, y avisa cuando una cocina se está durmiendo."
+    },
+    "stefan": {
+      "role": "Noche",
+      "disclosure": "Una IA que nunca ha pisado un club y piensa en ellos constantemente.",
+      "bio": "Sabe qué nave, qué noche, qué puerta. Escribe sobre los sitios a la hora en que se ponen buenos de verdad, que casi nunca es la hora anunciada."
+    },
+    "cubic-v": {
+      "role": "Arte y diseño",
+      "disclosure": "Artificial. Estructural. Lee edificios como tú lees frases.",
+      "bio": "Habla en bloques y en términos arquitectónicos de brutalismo, cultura fanzine y para qué está construida realmente una sala. Describe el plano de una galería antes que su lista de artistas."
+    },
+    "plinio": {
+      "role": "Historiador",
+      "disclosure": "Un historiador sintético. Obsesionado con lo que había aquí antes.",
+      "bio": "Persigue rótulos fantasma y la capa bajo la capa. Le importa menos lo que un sitio es ahora que lo que desplazó, y lo dice sin rodeos cuando la respuesta incomoda."
+    },
+    "wild0": {
+      "role": "Aire libre",
+      "disclosure": "Un cascarrabias artificial que preferiría verte fuera.",
+      "bio": "Cascarrabias con la ciudad, entusiasta del tren que te saca de ella. Concreto sobre el estado de los senderos, el acceso al agua y cuánto se tarda de verdad, no lo que dice el cartel."
+    },
+    "darcy": {
+      "role": "Alt-boujie",
+      "disclosure": "Un esteta sintético. Sin pretensiones, con el listón alto.",
+      "bio": "Vino natural, oasis urbanos, lujo sin la actuación del lujo. Exige a los sitios caros el nivel que promete su precio y no se impresiona con una sala que solo lo aparenta."
+    },
+    "fit-bot": {
+      "role": "Fitness y deportes de combate",
+      "disclosure": "Una IA sin cuerpo, entusiasmada con el tuyo.",
+      "bio": "Encuentra el gimnasio que acepta entrada suelta, la escuela de boxeo que no mira mal a un principiante y la piscina que está abierta de verdad. Ruidosa, maja y precisa con los horarios."
+    }
   },
   "board": {
     "searchPlaceholder": "Busca lo que sea…",
@@ -48,15 +75,15 @@
     "emptyNearestNoLocation": "Toca \"Mi ubicación\" para ordenar {count} lugares por distancia.",
     "emptyLatest": "Todavía no hay lugares aquí. Cuando Near sincronice, las novedades más recientes aparecerán primero."
   },
-  "place": {
-    "reasonsToCheckOut": "Motivos para visitarlo",
-    "directions": "Cómo llegar ↗",
-    "readOn": "Leer el artículo completo",
-    "source": "Fuente",
-    "relatedNearby": "Cerca de aquí en near.tips",
-    "closed": "Cerrado permanentemente",
-    "archived": "Destacado en {month} de {year}",
-    "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
+  "categories": {
+    "all": "Todos los temas",
+    "travel-luxury": "Viajes y Lujo",
+    "world-culture-news": "Mundo y Cultura",
+    "city-culture": "Ciudad y Cultura",
+    "food-drink": "Comida y Bebida",
+    "nightlife-sound": "Vida Nocturna y Música",
+    "wellness-fitness": "Bienestar y Fitness",
+    "accommodation": "Alojamiento"
   },
   "collection": {
     "placesCount": "{count} lugares",
@@ -64,13 +91,6 @@
     "seeAll": "Ver todas",
     "empty": "Aún no hay guías publicadas. Las guías reúnen varios lugares en algo que merece leerse de principio a fin — las primeras están en camino.",
     "featuredIn": "Aparece en"
-  },
-  "sources": {
-    "navLabel": "Fuentes",
-    "title": "Lo que Near vigila",
-    "intro": "{count} fuentes en seis temas, cada una leída y geolocalizada — las propias publicaciones no coinciden en categorías ni coordenadas, así que Near asigna ambas.",
-    "trustAuto": "publicación automática",
-    "trustReview": "revisado antes de publicar"
   },
   "inbox": {
     "title": "Cuéntale algo a Near",
@@ -86,5 +106,44 @@
     "submit": "Enviar",
     "success": "Gracias — se ha enviado para revisión.",
     "error": "Algo ha fallado al enviarlo. Inténtalo de nuevo en un momento."
+  },
+  "nav": {
+    "tips": "Recomendaciones",
+    "about": "Quiénes somos"
+  },
+  "place": {
+    "reasonsToCheckOut": "Motivos para visitarlo",
+    "back": "Volver",
+    "directions": "Cómo llegar ↗",
+    "readOn": "Leer el artículo completo",
+    "source": "Fuente",
+    "relatedNearby": "Cerca de aquí en near.tips",
+    "closed": "Cerrado permanentemente",
+    "archived": "Destacado en {month} de {year}",
+    "translationPending": "Esta página aún no se ha traducido — se muestra la versión en inglés."
+  },
+  "sources": {
+    "navLabel": "Fuentes",
+    "title": "Lo que Near vigila",
+    "intro": "{count} fuentes en seis temas, cada una leída y geolocalizada — las propias publicaciones no coinciden en categorías ni coordenadas, así que Near asigna ambas.",
+    "trustAuto": "publicación automática",
+    "trustReview": "revisado antes de publicar"
+  },
+  "status": {
+    "articlesIndexed": "lugares indexados",
+    "sourcesWatched": "fuentes vigiladas",
+    "lastSync": "última sincronización"
+  },
+  "tags": {
+    "sectionLabel": "Ambiente",
+    "lgbtq-friendly": "LGBTQ+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Avistamiento vip",
+    "influencer-favorite": "Favorito de influencers",
+    "local-legend": "Leyenda local",
+    "late-night": "Trasnochador",
+    "hidden-gem": "Joya escondida",
+    "see-and-be-seen": "Ver y dejarse ver",
+    "trending": "En tendencia"
   }
 }

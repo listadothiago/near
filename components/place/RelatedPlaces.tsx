@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import PlaceRow from "@/components/board/PlaceRow";
+import PlaceCards from "@/components/board/PlaceCards";
 import type { PlaceSummary } from "@/lib/content/schema";
 
 export default function RelatedPlaces({ places }: { places: PlaceSummary[] }) {
@@ -7,15 +7,9 @@ export default function RelatedPlaces({ places }: { places: PlaceSummary[] }) {
   if (places.length === 0) return null;
 
   return (
-    <section className="mt-10 max-w-[65ch] border-t border-border pt-6">
-      <h2 className="font-serif font-medium text-[1.05rem] mb-1">
-        {t("relatedNearby")}
-      </h2>
-      <div>
-        {places.map((place) => (
-          <PlaceRow key={place.meta.slug} place={place} />
-        ))}
-      </div>
+    <section className="mt-10 border-t-[4px] border-ink pt-6">
+      <h2 className="text-[1.15rem] mb-4">{t("relatedNearby")}</h2>
+      <PlaceCards places={places} />
     </section>
   );
 }

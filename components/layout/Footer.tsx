@@ -11,7 +11,7 @@ export default function Footer({ stats }: { stats: NearStats }) {
   const t = useTranslations();
 
   return (
-    <footer className="mt-10 pt-4 border-t border-border font-mono text-[0.76rem] text-muted flex flex-col gap-3">
+    <footer className="mt-12 pt-4 border-t-[4px] border-ink font-mono text-[0.72rem] text-muted flex flex-col gap-3">
       <div className="flex items-center gap-2">
         <LocaleSwitcher dropUp />
         <ThemeToggle />
@@ -46,14 +46,17 @@ export default function Footer({ stats }: { stats: NearStats }) {
         </span>
       </div>
 
-      <div className="flex justify-between flex-wrap gap-2">
+      <div className="flex justify-between flex-wrap gap-2 uppercase tracking-wide">
         <span>{t("app.wordmark")}</span>
         <span className="flex gap-3">
-          <Link href="/guides" className="hover:text-accent-ink">
+          <Link href="/guides" className="hover:bg-accent hover:text-black">
             {t("collection.navLabel")}
           </Link>
-          <Link href="/sources" className="hover:text-accent-ink">
+          <Link href="/sources" className="hover:bg-accent hover:text-black">
             {t("sources.navLabel")}
+          </Link>
+          <Link href="/about" className="hover:bg-accent hover:text-black">
+            {t("nav.about")}
           </Link>
         </span>
       </div>

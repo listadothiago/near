@@ -37,8 +37,8 @@ export default function SubmitForm() {
   }
 
   return (
-    <section className="mt-10 max-w-[65ch] border-t border-border pt-6">
-      <h2 className="font-serif font-medium text-[1.1rem] mb-1">
+    <section className="mt-10 max-w-[65ch] border-t-[4px] border-ink pt-6">
+      <h2 className="text-[1.15rem] mb-1">
         {t("title")}
       </h2>
       <p className="text-muted text-[0.9rem] mb-4">{t("intro")}</p>
@@ -51,7 +51,7 @@ export default function SubmitForm() {
           <select
             value={type}
             onChange={(e) => setType(e.target.value as typeof type)}
-            className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-[0.9rem]"
+            className="w-full bg-surface border-[3px] border-ink px-3 py-1.5 font-mono text-[0.85rem] focus:outline-none focus:bg-accent focus:text-black"
           >
             <option value="suggestion">{t("typeSuggestion")}</option>
             <option value="request">{t("typeRequest")}</option>
@@ -69,7 +69,7 @@ export default function SubmitForm() {
               type="text"
               value={placeName}
               onChange={(e) => setPlaceName(e.target.value)}
-              className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-[0.9rem]"
+              className="w-full bg-surface border-[3px] border-ink px-3 py-1.5 font-mono text-[0.85rem] focus:outline-none focus:bg-accent focus:text-black"
             />
           </div>
         )}
@@ -83,7 +83,7 @@ export default function SubmitForm() {
               type="url"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
-              className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-[0.9rem]"
+              className="w-full bg-surface border-[3px] border-ink px-3 py-1.5 font-mono text-[0.85rem] focus:outline-none focus:bg-accent focus:text-black"
             />
           </div>
         )}
@@ -97,7 +97,7 @@ export default function SubmitForm() {
             rows={4}
             value={body}
             onChange={(e) => setBody(e.target.value)}
-            className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-[0.9rem]"
+            className="w-full bg-surface border-[3px] border-ink px-3 py-1.5 font-mono text-[0.85rem] focus:outline-none focus:bg-accent focus:text-black"
           />
         </div>
 
@@ -114,7 +114,7 @@ export default function SubmitForm() {
         <button
           type="submit"
           disabled={state === "sending"}
-          className="font-semibold text-[0.88rem] bg-ink text-paper px-4 py-2 rounded-lg disabled:opacity-50"
+          className="font-mono uppercase tracking-wide text-[0.8rem] bg-accent text-black border-[3px] border-ink px-4 py-1.5 shadow-[var(--shadow-sm)] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all disabled:opacity-50"
         >
           {t("submit")}
         </button>

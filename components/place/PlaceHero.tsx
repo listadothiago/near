@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Byline from "@/components/layout/Byline";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceMeta, PlaceContentFrontmatter } from "@/lib/content/schema";
@@ -21,14 +22,14 @@ export default function PlaceHero({
   return (
     <header>
       {meta.heroImage && (
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden bg-surface-2">
+        <div className="relative w-full aspect-[16/9] overflow-hidden bg-surface-2 border-[4px] border-ink">
           <Image
             src={meta.heroImage.url}
             alt={frontmatter.name}
             fill
             priority
             sizes="(max-width: 768px) 100vw, 800px"
-            className="object-cover"
+            className="object-cover zine-img"
           />
         </div>
       )}
@@ -50,7 +51,7 @@ export default function PlaceHero({
           <span key={cat} className="flex items-center gap-2">
             {i > 0 && <span className="opacity-50">/</span>}
             <span
-              className="w-2 h-2 rounded-full"
+              className="w-2 h-2 border border-ink"
               style={{ background: `var(${CATEGORY_COLOR_VAR[cat]})` }}
             />
             <span>{tCat(cat)}</span>
@@ -69,19 +70,25 @@ export default function PlaceHero({
         </a>
       </div>
 
-      <h1 className="mt-2 font-serif italic font-medium text-[clamp(2rem,4.5vw,2.8rem)] leading-tight">
+      <h1 className="mt-2 text-[clamp(2rem,5.5vw,3.2rem)]">
         {frontmatter.name}
       </h1>
-      <p className="mt-2 text-[1.05rem] text-muted max-w-[60ch]">
+      <p className="mt-2 font-mono text-[0.95rem] text-muted max-w-[60ch]">
         {frontmatter.tagline}
       </p>
+
+      {meta.author && (
+        <p className="mt-3">
+          <Byline slug={meta.author} size="md" />
+        </p>
+      )}
 
       {meta.tags.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-1.5">
           {meta.tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center gap-1 rounded-full border border-border bg-surface-2 px-2.5 py-1 text-[0.76rem] text-muted"
+              className="inline-flex items-center gap-1 border-[2px] border-ink bg-surface px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide text-ink"
             >
               <span aria-hidden="true">{TAG_GLYPH[tag]}</span>
               {tTag(tag)}
@@ -91,12 +98,12 @@ export default function PlaceHero({
       )}
 
       {meta.status === "closed" && (
-        <p className="mt-3 inline-block bg-surface-2 border border-border rounded-lg px-3 py-1.5 text-[0.82rem] font-semibold text-muted">
+        <p className="mt-3 inline-block bg-accent text-black border-[3px] border-ink px-2.5 py-1 font-mono text-[0.78rem] uppercase tracking-wide font-bold">
           {t("closed")}
         </p>
       )}
       {meta.status === "archived" && (
-        <p className="mt-3 inline-block bg-surface-2 border border-border rounded-lg px-3 py-1.5 text-[0.82rem] font-semibold text-muted">
+        <p className="mt-3 inline-block bg-accent text-black border-[3px] border-ink px-2.5 py-1 font-mono text-[0.78rem] uppercase tracking-wide font-bold">
           {t("archived", {
             month: new Date(meta.publishedAt).toLocaleString("en", {
               month: "long",

@@ -75,6 +75,9 @@ export const placeMetaSchema = z.object({
     country: z.string(),
   }),
   trust: z.enum(["auto", "review"]),
+  // Public AI byline — a slug from lib/content/authors.ts. Optional so
+  // places written before the persona roster existed still validate.
+  author: z.string().optional(),
   sources: z
     .array(
       z.object({
@@ -101,6 +104,11 @@ export type PlaceMeta = z.infer<typeof placeMetaSchema>;
 
 export const placeContentFrontmatterSchema = z.object({
   name: z.string().min(1),
+  // Magazine-style headline for the listing cards — short and enticing
+  // rather than the literal venue name ("Noodles Pulled By Hand", not
+  // "Rong He"). Optional: the UI falls back to `name`, so a place that
+  // predates this field still renders.
+  shortTitle: z.string().min(1).max(48).optional(),
   tagline: z.string().min(1).max(90),
   bullets: z.array(z.string().min(1)).min(3),
   seoDescription: z.string().min(1).max(320),

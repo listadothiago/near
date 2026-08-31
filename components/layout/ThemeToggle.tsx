@@ -28,7 +28,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={t("toggleTheme")}
-      className="flex items-center justify-center w-9 h-9 rounded-full border border-border bg-surface text-[1rem] leading-none hover:border-accent"
+      className="flex items-center justify-center w-9 h-9 border-[3px] border-ink bg-surface text-[1rem] leading-none hover:bg-accent"
     >
       <span aria-hidden="true">{theme === "dark" ? "☾" : "☀"}</span>
     </button>

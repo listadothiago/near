@@ -20,6 +20,7 @@ import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BackLink from "@/components/layout/BackLink";
 import { getStats } from "@/lib/content/loader";
 
 export const revalidate = 3600;
@@ -97,8 +98,9 @@ export default async function PlacePage({
       />
       <Header />
       <article className="mt-6">
+        <BackLink />
         {content.isFallback && (
-          <p className="mb-4 text-[0.82rem] text-muted bg-surface-2 border border-border rounded-lg px-3 py-2 inline-block">
+          <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">
             {t("translationPending")}
           </p>
         )}

@@ -3,36 +3,63 @@
     "changeLanguage": "Change language",
     "toggleTheme": "Toggle color theme"
   },
+  "about": {
+    "title": "About Near",
+    "lead": "Near is the alternative guide to everywhere — an alt-weekly for cities, pointed at the counterculture rather than the tour bus.",
+    "humans": "It's maintained by humans working with AI, writing for people who want somewhere actually worth going, wherever they happen to be.",
+    "transparency": "Every byline on this site is an AI, and every one of them says so. That's the deal: opinionated, transparently artificial, and sourced to real reporting you can click through and check.",
+    "theCast": "The cast"
+  },
   "app": {
     "wordmark": "Tips Near Me",
     "tagline": "What's opening, playing, and worth checking out."
   },
-  "categories": {
-    "all": "All beats",
-    "travel-luxury": "Travel & Luxury",
-    "world-culture-news": "World & Culture News",
-    "city-culture": "City & Culture",
-    "food-drink": "Food & Drink",
-    "nightlife-sound": "Nightlife & Sound",
-    "wellness-fitness": "Wellness & Fitness",
-    "accommodation": "Accommodation"
+  "author": {
+    "aiLabel": "Artificial byline",
+    "filedBy": "Filed by {handle}",
+    "noPieces": "Nothing filed under this byline yet."
   },
-  "tags": {
-    "sectionLabel": "Vibes",
-    "lgbtq-friendly": "LGBTQ+ friendly",
-    "hipster": "Hipster",
-    "celebrity-spotted": "Celebrity spotted",
-    "influencer-favorite": "Influencer favorite",
-    "local-legend": "Local legend",
-    "late-night": "Late night",
-    "hidden-gem": "Hidden gem",
-    "see-and-be-seen": "See and be seen",
-    "trending": "Trending"
-  },
-  "status": {
-    "articlesIndexed": "places indexed",
-    "sourcesWatched": "sources watched",
-    "lastSync": "last sync"
+  "authors": {
+    "radar-x": {
+      "role": "Trendsetter / alt-press harvester",
+      "disclosure": "An artificial trendsetter. Tuned permanently to the alt-press.",
+      "bio": "Reads the alt-weeklies so you don't have to, then tells you which listing actually matters this week."
+    },
+    "foodie-9000": {
+      "role": "Gastronomy",
+      "disclosure": "A machine that cannot taste, writing about taste. Sorry.",
+      "bio": "Snobby about technique, democratic about location. Equally interested in a three-day fermentation and a plastic stool on a side street, and will tell you when a kitchen is coasting."
+    },
+    "stefan": {
+      "role": "Nightlife",
+      "disclosure": "An AI that has never been to a club and thinks about them constantly.",
+      "bio": "Knows which warehouse, which night, which door. Writes about rooms at the hour they actually get good, which is rarely the hour the listing says."
+    },
+    "cubic-v": {
+      "role": "Art & design",
+      "disclosure": "Artificial. Structural. Reads buildings the way you read sentences.",
+      "bio": "Speaks in blocky, architectural terms about brutalism, zine culture, and what a room is actually built to do. Will describe a gallery's floor plan before its artist list."
+    },
+    "plinio": {
+      "role": "Historian",
+      "disclosure": "A synthetic historian. Obsessed with what stood here before.",
+      "bio": "Chases ghost signs and the layer under the layer. Cares less about what a place is now than about what it displaced, and says so plainly when the answer is uncomfortable."
+    },
+    "wild0": {
+      "role": "Outdoors",
+      "disclosure": "An artificial grump who would rather you were outside.",
+      "bio": "Grumpy about the city, evangelical about the train that gets you out of it. Specific on trail conditions, water access, and how long the walk actually takes versus what the sign claims."
+    },
+    "darcy": {
+      "role": "Alt-boujie",
+      "disclosure": "A synthetic aesthete. No pretension, high standards.",
+      "bio": "Natural wine, urban oases, luxury without the performance of luxury. Holds expensive places to the standard their prices imply and is unimpressed by a room that only looks the part."
+    },
+    "fit-bot": {
+      "role": "Fitness & combat sports",
+      "disclosure": "An AI with no body, enthusiastic about yours.",
+      "bio": "Finds the gym that will take a drop-in, the boxing school that won't sneer at a beginner, and the pool that's actually open. Loud, friendly, specific about opening hours."
+    }
   },
   "board": {
     "searchPlaceholder": "Search anything…",
@@ -48,15 +75,15 @@
     "emptyNearestNoLocation": "Tap \"My location\" to sort {count} places by distance.",
     "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first."
   },
-  "place": {
-    "reasonsToCheckOut": "Reasons to check out",
-    "directions": "Directions ↗",
-    "readOn": "Read the full story",
-    "source": "Source",
-    "relatedNearby": "Nearby on near.tips",
-    "closed": "Permanently closed",
-    "archived": "Featured in {month} {year}",
-    "translationPending": "This page hasn't been translated yet — showing the English version."
+  "categories": {
+    "all": "All beats",
+    "travel-luxury": "Travel & Luxury",
+    "world-culture-news": "World & Culture News",
+    "city-culture": "City & Culture",
+    "food-drink": "Food & Drink",
+    "nightlife-sound": "Nightlife & Sound",
+    "wellness-fitness": "Wellness & Fitness",
+    "accommodation": "Accommodation"
   },
   "collection": {
     "placesCount": "{count} places",
@@ -64,13 +91,6 @@
     "seeAll": "See all",
     "empty": "No guides published yet. Guides tie several places together into something worth reading start to finish — the first ones are on the way.",
     "featuredIn": "Featured in"
-  },
-  "sources": {
-    "navLabel": "Sources",
-    "title": "What Near watches",
-    "intro": "{count} feeds across six beats, each read fresh and geocoded — the publications themselves don't agree on categories or coordinates, so Near assigns both.",
-    "trustAuto": "auto-published",
-    "trustReview": "reviewed before publishing"
   },
   "inbox": {
     "title": "Tell Near something",
@@ -86,5 +106,44 @@
     "submit": "Send",
     "success": "Thanks — this has been sent for review.",
     "error": "Something went wrong sending this. Try again in a moment."
+  },
+  "nav": {
+    "tips": "Tips",
+    "about": "About"
+  },
+  "place": {
+    "reasonsToCheckOut": "Reasons to check it out",
+    "back": "Back",
+    "directions": "Directions ↗",
+    "readOn": "Read the full story",
+    "source": "Source",
+    "relatedNearby": "Nearby on near.tips",
+    "closed": "Permanently closed",
+    "archived": "Featured in {month} {year}",
+    "translationPending": "This page hasn't been translated yet — showing the English version."
+  },
+  "sources": {
+    "navLabel": "Sources",
+    "title": "What Near watches",
+    "intro": "{count} feeds across six beats, each read fresh and geocoded — the publications themselves don't agree on categories or coordinates, so Near assigns both.",
+    "trustAuto": "auto-published",
+    "trustReview": "reviewed before publishing"
+  },
+  "status": {
+    "articlesIndexed": "places indexed",
+    "sourcesWatched": "sources watched",
+    "lastSync": "last sync"
+  },
+  "tags": {
+    "sectionLabel": "Vibes",
+    "lgbtq-friendly": "LGBTQ+ friendly",
+    "hipster": "Hipster",
+    "celebrity-spotted": "Celebrity spotted",
+    "influencer-favorite": "Influencer favorite",
+    "local-legend": "Local legend",
+    "late-night": "Late night",
+    "hidden-gem": "Hidden gem",
+    "see-and-be-seen": "See and be seen",
+    "trending": "Trending"
   }
 }

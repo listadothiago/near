@@ -18,27 +18,29 @@ export default function CollectionCards({
         <Link
           key={c.meta.slug}
           href={`/collection/${c.meta.slug}`}
-          className="block bg-surface border border-border rounded-2xl overflow-hidden group hover:border-accent transition-colors"
+          className="block bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 overflow-hidden group transition-all"
         >
           {c.meta.coverImage && (
-            <div className="relative w-full aspect-[16/9] bg-surface-2">
+            <div className="relative w-full aspect-[16/9] bg-surface-2 border-b-[3px] border-ink">
               <Image
                 src={c.meta.coverImage.url}
                 alt={c.frontmatter.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
-                className="object-cover"
+                className="object-cover zine-img"
               />
             </div>
           )}
-          <div className="p-4">
-            <p className="text-[0.72rem] font-mono text-muted uppercase tracking-wide">
+          <div className="p-3">
+            <p className="inline-block bg-accent text-black border-[2px] border-ink px-1.5 text-[0.66rem] font-mono uppercase tracking-wide">
               {t("placesCount", { count: c.meta.placeSlugs.length })}
             </p>
-            <h2 className="mt-1 font-serif italic font-medium text-[1.2rem] group-hover:text-accent-ink transition-colors">
+            <h2 className="mt-1.5 text-[1.1rem] leading-[1.1]">
               {c.frontmatter.title}
             </h2>
-            <p className="mt-1 text-[0.88rem] text-muted">{c.frontmatter.dek}</p>
+            <p className="mt-1.5 font-mono text-[0.72rem] leading-snug text-muted">
+              {c.frontmatter.dek}
+            </p>
           </div>
         </Link>
       ))}

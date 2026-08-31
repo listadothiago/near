@@ -29,10 +29,10 @@ export default function TagFilters({
             key={tag}
             type="button"
             onClick={() => onToggle(tag)}
-            className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-medium transition-colors ${
+            className={`inline-flex items-center gap-1 border-[2px] border-ink px-1.5 py-0.5 font-mono text-[0.66rem] uppercase tracking-wide transition-colors ${
               active
-                ? "border-ink bg-surface-2 text-ink"
-                : "border-border bg-surface text-muted hover:border-grid-strong"
+                ? "bg-accent text-black"
+                : "bg-surface text-muted hover:bg-surface-2"
             }`}
           >
             <span aria-hidden="true">{TAG_GLYPH[tag]}</span>

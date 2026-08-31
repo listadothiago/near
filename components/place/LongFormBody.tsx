@@ -5,8 +5,8 @@ export default function LongFormBody({
 }) {
   return (
     <div
-      className="mt-8 max-w-[65ch] font-serif text-[1.15rem] text-ink"
-      style={{ lineHeight: 1.75 }}
+      className="mt-8 max-w-[62ch] font-mono text-[0.95rem] text-ink"
+      style={{ lineHeight: 1.7 }}
     >
       {children}
     </div>
