@@ -142,7 +142,13 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 - [ ] **Stale Content:** Frontend timestamp checks to hide expired events automatically.
     
 
-## 🕶️ EPIC 3: Meta Ray-Ban Web App Optimization
+## 🕶️ EPIC 3: AR Surfaces (Meta Ray-Ban and beyond)
+
+_**See `docs/ar-surfaces.md`** — written 2026-08-31 answering "does it have to be only Meta?". Short answer: no, but "AR glasses" is three device classes with different ceilings, and one spec for all of them produces an overlay that can't exist on most of the hardware. HUD glasses (Ray-Ban Display) have no world tracking, so a true overlay is impossible there — bearing and distance only. Mirroring glasses (Xreal/Viture) need nothing; the responsive site already works. Only world-tracked headsets (Quest, Vision Pro, Android XR) can do a real overlay, via WebXR immersive-ar._
+
+_**The finding worth acting on:** a bearing-and-distance waypoint view works on a **phone** today, needs no glasses at all, is the most useful thing Near could add for someone standing on a street, and is the natural prototype for the glasses version — same maths, different rendering. Build it where the users already are._
+
+
 
 _**Operator note (2026-08-31):** treat the glasses the way the PWA was treated — as their own surface with its own design, not the website squeezed into a smaller box. The PWA work established the pattern: theme-coloured system chrome, home-screen shortcuts, standalone display, an install path that feels deliberate. The glasses equivalent is the 600x600 no-scroll constraint, D-pad/Neural Band input, and a high-contrast dark palette for a monocular see-through display — all of which are already listed below, but should be designed for rather than adapted to._
 
