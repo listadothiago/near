@@ -95,10 +95,19 @@ The split is by *use context* rather than by device tier:
   genuine one: planning a trip, browsing a city map at wall scale,
   reading a guide in a room-scale layout.
 
-Worth noting on Quest 2 specifically: its passthrough is low-resolution
-and monochrome, so it's poor for looking *through* at the real world. It
-is perfectly good as a large virtual screen, which puts it closer to the
-mirroring class than to Quest 3 for our purposes.
+Worth being precise about Quest 2, since it's the device we own: **yes,
+it does real AR.** It has passthrough cameras and supports WebXR
+`immersive-ar`, so an anchored overlay is genuinely buildable and
+testable on it. The limitation is visual, not architectural — Quest 2's
+passthrough is low-resolution and greyscale, so the real world looks
+grainy and colourless behind whatever we draw on it. Quest 3 added colour
+passthrough.
+
+Practically that means Quest 2 is a fine **development and verification**
+target for overlay work — the tracking, anchoring and interaction code is
+the same — while being a poor device to judge the *look* on. Build and
+test the mechanics there; don't conclude the experience is ugly when it's
+the passthrough that's ugly.
 
 1. **Meta Ray-Ban Display** — HUD class. The primary target, already
    scoped in EPIC 3.
