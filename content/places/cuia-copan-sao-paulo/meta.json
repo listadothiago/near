@@ -1,10 +1,24 @@
 {
   "slug": "cuia-copan-sao-paulo",
-  "categories": ["food-drink"],
-  "tags": ["hidden-gem", "local-legend"],
-  "coordinates": { "lat": -23.5455, "lng": -46.6431 },
-  "place": { "city": "São Paulo", "neighborhood": "Centro", "region": "São Paulo", "country": "Brazil" },
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "hidden-gem",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.5455,
+    "lng": -46.6431
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
   "trust": "auto",
+  "author": "foodie-9000",
   "sources": [
     {
       "name": "Guia MICHELIN — Cuia",
@@ -38,7 +52,11 @@
       "note": "created to close a cross-link gap: Cuia was named on bar-fel-copan-sao-paulo with no page to link to. Within 150m of bar-fel-copan and megafauna-copan-sao-paulo (same building) — a deliberate dedupe-by-place deviation, see _ingestion-log.md"
     }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.65, "query": "Cuia, Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Cuia, Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
+  },
   "publishedAt": "2026-08-28T00:00:00Z",
   "updatedAt": "2026-08-28T00:00:00Z"
 }

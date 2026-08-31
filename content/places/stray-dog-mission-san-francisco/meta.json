@@ -1,10 +1,24 @@
 {
   "slug": "stray-dog-mission-san-francisco",
-  "categories": ["food-drink", "nightlife-sound"],
-  "tags": ["trending"],
-  "coordinates": { "lat": 37.7530125, "lng": -122.404806 },
-  "place": { "city": "San Francisco", "neighborhood": "Mission District", "region": "California", "country": "United States" },
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 37.7530125,
+    "lng": -122.404806
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Mission District",
+    "region": "California",
+    "country": "United States"
+  },
   "trust": "auto",
+  "author": "stefan",
   "sources": [
     {
       "name": "SF Standard",
@@ -28,9 +42,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-27T00:00:00Z", "note": "near-editor: added via chat request (SF Bay Area research pass)" }
+    {
+      "status": "active",
+      "at": "2026-08-27T00:00:00Z",
+      "note": "near-editor: added via chat request (SF Bay Area research pass)"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 0.9, "query": "2545 24th St, San Francisco, CA 94110" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.9,
+    "query": "2545 24th St, San Francisco, CA 94110"
+  },
   "publishedAt": "2026-08-27T00:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }

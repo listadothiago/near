@@ -1,10 +1,23 @@
 {
   "slug": "time-out-market-lisboa",
-  "categories": ["food-drink"],
-  "tags": ["see-and-be-seen"],
-  "coordinates": { "lat": 38.7069, "lng": -9.1456 },
-  "place": { "city": "Lisbon", "neighborhood": "Cais do Sodré", "region": "Lisboa", "country": "Portugal" },
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "see-and-be-seen"
+  ],
+  "coordinates": {
+    "lat": 38.7069,
+    "lng": -9.1456
+  },
+  "place": {
+    "city": "Lisbon",
+    "neighborhood": "Cais do Sodré",
+    "region": "Lisboa",
+    "country": "Portugal"
+  },
   "trust": "auto",
+  "author": "foodie-9000",
   "sources": [
     {
       "name": "Time Out Market Lisboa",
@@ -34,9 +47,17 @@
   "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
-    { "status": "active", "at": "2026-08-20T10:00:00Z", "note": "seed content" }
+    {
+      "status": "active",
+      "at": "2026-08-20T10:00:00Z",
+      "note": "seed content"
+    }
   ],
-  "geocode": { "provider": "manual", "confidence": 1, "query": "Time Out Market Lisboa, Mercado da Ribeira" },
+  "geocode": {
+    "provider": "manual",
+    "confidence": 1,
+    "query": "Time Out Market Lisboa, Mercado da Ribeira"
+  },
   "publishedAt": "2026-08-20T10:00:00Z",
   "updatedAt": "2026-08-27T00:00:00Z"
 }
