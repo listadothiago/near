@@ -80,12 +80,25 @@ different rendering. Build it on the phone first, where there are users.
 
 ## Target devices (operator decision, 2026-08-31)
 
-Constraint: **must be wearable outside.** That immediately removes Quest
-3 and Vision Pro — both are indoor headsets, and neither is something
-anyone walks down a street in. Which is awkward, because they were the
-only class capable of a true world overlay. Accepting the constraint
-means accepting that **Near's AR is bearing-and-distance, not anchored
-overlay**, on every device we're actually targeting.
+Constraint for picking *new* targets: **wearable outside.** But headsets
+are **not excluded** — operator clarification, same day: Quest 2 and
+Vision Pro are already in scope (EPIC 3 already names Quest 2 as a test
+device), they're just not what the outdoor question was about.
+
+That matters, because it puts a true anchored overlay back on the table.
+The split is by *use context* rather than by device tier:
+
+- **Outdoors, in motion** — HUD and mirroring glasses. Bearing and
+  distance only. No world anchoring is possible on this hardware.
+- **Indoors, stationary** — Quest 3, Vision Pro. Full WebXR
+  `immersive-ar`, real anchoring. Not a street-guide context, but a
+  genuine one: planning a trip, browsing a city map at wall scale,
+  reading a guide in a room-scale layout.
+
+Worth noting on Quest 2 specifically: its passthrough is low-resolution
+and monochrome, so it's poor for looking *through* at the real world. It
+is perfectly good as a large virtual screen, which puts it closer to the
+mirroring class than to Quest 3 for our purposes.
 
 1. **Meta Ray-Ban Display** — HUD class. The primary target, already
    scoped in EPIC 3.
