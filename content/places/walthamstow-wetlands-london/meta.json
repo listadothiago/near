@@ -1,0 +1,59 @@
+{
+  "slug": "walthamstow-wetlands-london",
+  "categories": [
+    "wellness-fitness",
+    "city-culture"
+  ],
+  "tags": [
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 51.5857,
+    "lng": -0.053
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Walthamstow",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "London Wildlife Trust — Walthamstow Wetlands",
+      "url": "https://www.wildlondon.org.uk/walthamstow-wetlands-nature-reserve",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Walthamstow Wetlands",
+      "url": "https://en.wikipedia.org/wiki/Walthamstow_Wetlands",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Reservoir_1%2C_Walthamstow_Wetlands_-_2022-10-08.jpg",
+    "attribution": "The wub, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Reservoir_1,_Walthamstow_Wetlands_-_2022-10-08.jpg",
+    "licenseNote": "CC BY-SA 4.0, photographer credited by username on the Commons record. Reservoir 1 at the reserve itself."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "London rotation, cycle 2 — WILD0's second byline and the first under the WILD0-owns-outdoors decision. Single authoritative source: the London Wildlife Trust's own reserve page, fetched twice today (managing org, free entry, seasonal hours, assistance-dogs-only, no-swimming rule, path closure). TIMING FACT: the Trust's live copy says the pylon-works path closures (paths 1-2-3 and 4-5) are 'expected to be completed by the end of August' — i.e. the closure is ending the week of publication, so the article says exactly that and tells readers heading for those specific paths to check first. Reserve rules stated plainly and without moralising, per the outdoors lens discipline: the no-swimming rule is a working-reservoir safety rule, not decoration. Deliberately NOT tagged dog-first: assistance dogs only. Second source added after verification: Wikipedia confirms the October 2017 public opening (first time in 150 years), the ten named reservoirs, and SSSI designation. NOTE a size discrepancy between sources: the Trust's own page says 160 hectares, Wikipedia says 211 — the article carries the Trust's figure since the Trust runs the site; don't 'fix' one to the other without resolving which boundary each measures."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Walthamstow Wetlands, 2 Forest Road, London N17 9NH"
+  },
+  "publishedAt": "2026-08-31T21:30:00Z",
+  "updatedAt": "2026-08-31T21:30:00Z"
+}
