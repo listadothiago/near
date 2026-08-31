@@ -184,5 +184,10 @@
     "420-friendly": "420 友好",
     "dog-first": "宠物友好",
     "furry": "Furry"
+  },
+  "consent": {
+    "body": "我们使用 Google Analytics 来了解网站的使用情况，它会设置 Cookie；你可以拒绝，网站的其他功能不受影响。",
+    "accept": "接受",
+    "decline": "拒绝"
   }
 }
