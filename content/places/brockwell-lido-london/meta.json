@@ -1,0 +1,65 @@
+{
+  "slug": "brockwell-lido-london",
+  "categories": [
+    "wellness-fitness",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.453,
+    "lng": -0.108
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Herne Hill",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "Wikipedia — Brockwell Lido",
+      "url": "https://en.wikipedia.org/wiki/Brockwell_Lido",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Brixton Buzz — community meeting on the lido's future",
+      "url": "https://www.brixtonbuzz.com/2026/03/community-meeting-to-discuss-brockwell-lidos-future-as-users-seek-clarity-over-long-term-management/",
+      "feedId": null,
+      "originalPublishedAt": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "Historic Pools of Britain — Brockwell Lido",
+      "url": "https://historicpools.org.uk/member_pools/brockwell-lido-brixton-london/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brockwell_Lido.jpg",
+    "attribution": "Photo by Edward via Wikimedia Commons (CC BY 2.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Brockwell_Lido.jpg",
+    "licenseNote": "CC BY 2.0 — attribution required. The Commons record names only the uploader, not a separate author, so the uploader is credited and the file page linked as the full licensing record."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "WILD0's first byline and the first wellness-fitness place in London. Chosen after rejecting Bartitsu: BACKLOG names it as a wanted London topic, but the only London listing on bartitsu.club is a Battersea study group with no address or schedule, on a page marked unfinished — an article topic, not a visitable pin, so no place was created. Brockwell Lido verifies properly and is genuinely current: Fusion Lifestyle entered administration 2026-04-01 and Lambeth took over management on 2026-07-01, with swimmers holding public meetings about the future. Hero is CC BY 2.0 from Commons; attribution required and the record names only an uploader, recorded honestly in licenseNote."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Brockwell Lido, Dulwich Road, Herne Hill, London SE24"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
