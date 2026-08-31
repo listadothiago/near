@@ -160,6 +160,7 @@ export default function NearestLatestTabs({
             places={pageItems}
             distances={tab === "nearest" ? distances : undefined}
             eventsByParent={eventsByParent}
+            tab={tab}
           />
           <Pagination
             page={safePage}

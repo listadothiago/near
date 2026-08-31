@@ -149,6 +149,8 @@ export type PlaceSummary = {
   frontmatter: PlaceContentFrontmatter;
   locale: ContentLocale;
   isFallback: boolean;
+  /** Opening line of the article, trimmed for the board card. */
+  snippet: string;
 };
 
 // A "collection" is an editorial story/guide tagging one or more existing
