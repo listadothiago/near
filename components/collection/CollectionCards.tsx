@@ -31,7 +31,7 @@ export default function CollectionCards({
                 alt={c.frontmatter.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
-                className="object-cover zine-img"
+                className="object-cover"
               />
             </div>
           )}

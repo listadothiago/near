@@ -161,12 +161,14 @@ h6 {
   line-height: 1.05;
 }
 
-/* Cheap print simulation on editorial imagery. Scoped to .zine-img so
-   it never touches an AdSense iframe — filtering an ad is a
-   click-manipulation ban risk, see BACKLOG EPIC 1 ARCH-DEFENSE. */
-.zine-img {
-  filter: grayscale(100%) contrast(1.2);
-}
+/* Editorial imagery runs in full colour. An earlier pass desaturated it
+   for print simulation, but Near is mostly food and nightlife, and
+   grayscale was throwing away the thing those photos are actually for.
+   The hard borders and type carry the zine look on their own.
+
+   Keeping no global image filter also sidesteps the AdSense hazard in
+   BACKLOG EPIC 1's ARCH-DEFENSE note — there is no filter left that
+   could leak onto an ad iframe and read as click manipulation. */
 
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -175,29 +177,23 @@ h6 {
 }
 
 /* Leaflet map — restyle the default control chrome to match the site's
-   tokens, and invert the OSM raster tiles in dark mode (no separate paid
-   dark tile source needed). The tiles also get desaturated so the map
-   reads as newsprint rather than a full-color Google-Maps slab. */
+   tokens. Tiles keep their own colour in light mode; in dark mode they
+   are inverted and hue-rotated back, which darkens the raster without
+   needing a separate paid dark tile source and without turning greens
+   into magenta the way a bare invert does. */
 .leaflet-container {
   background: var(--color-chart-bg);
   font-family: var(--font-mono);
 }
 
-.leaflet-tile-pane {
-  filter: grayscale(100%) contrast(1.1);
-}
-
-/* Inverting a grayscale raster tile leaves labels dark-on-dark, so the
-   dark variant lifts brightness and contrast back up rather than
-   reusing the light filter's values. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .leaflet-tile-pane {
-    filter: grayscale(100%) invert(1) brightness(1.15) contrast(1.15);
+    filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
   }
 }
 
 :root[data-theme="dark"] .leaflet-tile-pane {
-  filter: grayscale(100%) invert(1) brightness(1.15) contrast(1.15);
+  filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(0.9);
 }
 
 .leaflet-control-zoom {
