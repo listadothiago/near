@@ -1,0 +1,66 @@
+{
+  "slug": "slimelight-electrowerkz-london",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night",
+    "see-and-be-seen"
+  ],
+  "coordinates": {
+    "lat": 51.5322,
+    "lng": -0.1053
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Angel",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "i-D",
+      "url": "https://i-d.co/article/slimelight-goth-dark-scene-club-halloween-2024/",
+      "feedId": null,
+      "originalPublishedAt": "2024-10-31T00:00:00Z"
+    },
+    {
+      "name": "Electrowerkz (official site)",
+      "url": "https://www.electrowerkz.co.uk/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Electrowerkz",
+      "url": "https://en.wikipedia.org/wiki/Electrowerkz",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Vile_Creature_at_Electrowerkz_%282022%29_01.jpg",
+    "attribution": "Nessie Spencer, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Vile_Creature_at_Electrowerkz_(2022)_01.jpg",
+    "licenseNote": "CC BY-SA 2.0. Photographer credited by name on the Commons record. Shot inside Electrowerkz in 2022 at a gig, not at Slimelight itself — it documents the room, not the night, and the caption should not imply otherwise."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "Second article of the London refresh. Venue verified currently trading: the official Electrowerkz site was listing dated events for the current week at the time of writing, and states a licence to 6am daily. IMPORTANT FOR FUTURE MAINTENANCE: Slimelight is no longer weekly. i-D reported in 2024 that it had moved to roughly every six weeks outside the Halloween run, and nearly every 'best goth clubs in London' listicle still says Saturdays. The article leads with that correction rather than burying it. Prices (£20 / £10 members) are from the same 2024 piece and are flagged in the text as needing a check before travel. Mayuan Mak, co-founder, died before 2022 — stated once, plainly, because it explains the change of management, and not dwelt on."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.8,
+    "query": "Electrowerkz, 7 Torrens Street, Angel, London EC1V 1NQ"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
