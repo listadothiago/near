@@ -84,16 +84,45 @@ function MapView({
   points,
   userCoords,
   focusUserSignal,
+  locationKey,
 }: {
   points: MapPoint[];
   userCoords: { lat: number; lng: number } | null;
   focusUserSignal: number;
+  /**
+   * Identity of the active location search (e.g. "london"), or null.
+   * A location search takes priority over "focus on me" — the reader
+   * explicitly asked to look at a place, not at their own position.
+   * Without this, the branch below returns early whenever userCoords is
+   * set and the focus signal hasn't changed, so filtering the board to
+   * London by typing in the search box left the map centred wherever it
+   * last focused the reader (e.g. their own city) and never looked at
+   * London's pins at all.
+   */
+  locationKey: string | null;
 }) {
   const map = useMap();
   // Sentinel (-1) guarantees the first available signal always applies,
   // even if userCoords resolves before this effect's first run.
   const lastAppliedFocusSignal = useRef(-1);
+  const lastAppliedLocationKey = useRef<string | null | undefined>(undefined);
   useEffect(() => {
+    if (locationKey !== lastAppliedLocationKey.current) {
+      lastAppliedLocationKey.current = locationKey;
+      if (locationKey !== null) {
+        if (points.length === 0) {
+          map.setView([20, 0], 2);
+        } else if (points.length === 1) {
+          map.setView([points[0].lat, points[0].lng], 12);
+        } else {
+          const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
+          map.fitBounds(bounds, { padding: [36, 36] });
+        }
+        return;
+      }
+      // Location search just cleared — fall through to the normal
+      // userCoords/points logic below on this same render.
+    }
     if (userCoords) {
       if (focusUserSignal !== lastAppliedFocusSignal.current) {
         // Frame the user together with the nearest pin(s), as tight as
@@ -126,7 +155,7 @@ function MapView({
     const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
     map.fitBounds(bounds, { padding: [36, 36] });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [points.map((p) => p.slug).join(","), userCoords, focusUserSignal, map]);
+  }, [points.map((p) => p.slug).join(","), userCoords, focusUserSignal, locationKey, map]);
   return null;
 }
 
@@ -201,11 +230,14 @@ export default function WorldMap({
   points,
   userCoords,
   focusUserSignal = 0,
+  locationKey = null,
 }: {
   points: MapPoint[];
   userCoords: { lat: number; lng: number } | null;
   /** Bump this (e.g. increment a counter) to re-center/zoom on userCoords. */
   focusUserSignal?: number;
+  /** Identity of the active location search — see MapView's own doc. */
+  locationKey?: string | null;
 }) {
   const locale = useLocale();
   const [mounted, setMounted] = useState(false);
@@ -234,7 +266,7 @@ export default function WorldMap({
           maxZoom={19}
         />
         <ZoomControl position="topright" />
-        <MapView points={points} userCoords={userCoords} focusUserSignal={focusUserSignal} />
+        <MapView points={points} userCoords={userCoords} focusUserSignal={focusUserSignal} locationKey={locationKey} />
         {points.map((pt) => (
           <PlaceMarker key={pt.slug} point={pt} placeHref={placeHref} />
         ))}

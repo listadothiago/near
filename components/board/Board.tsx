@@ -267,6 +267,7 @@ export default function Board({
                 }))}
                 userCoords={userCoords}
                 focusUserSignal={focusUserSignal}
+                locationKey={location ? `${location.level}:${location.label}` : null}
               />
               <p className="m-0 px-2.5 py-2 border-t-[3px] border-ink text-[0.66rem] text-muted font-mono">
                 {t("mapCaption", { count: filtered.length })}
