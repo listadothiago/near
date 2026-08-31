@@ -128,7 +128,9 @@
     "blurb": "Add Near to your home screen — works offline once you've opened a page.",
     "action": "Install",
     "dismiss": "Dismiss",
-    "iosHint": "To install: tap Share, then Add to Home Screen."
+    "iosHint": "To install: tap Share, then Add to Home Screen.",
+    "installedBlurb": "Near is installed on this device — open the app for the full-screen version.",
+    "gotIt": "Got it"
   },
   "nav": {
     "tips": "Tips",

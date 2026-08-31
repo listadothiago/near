@@ -128,7 +128,9 @@
     "blurb": "Adicione o Near à tela inicial — funciona offline depois que você abre a página.",
     "action": "Instalar",
     "dismiss": "Dispensar",
-    "iosHint": "Para instalar: toque em Compartilhar e depois em Adicionar à Tela de Início."
+    "iosHint": "Para instalar: toque em Compartilhar e depois em Adicionar à Tela de Início.",
+    "installedBlurb": "O Near já está instalado neste aparelho — abra o app para a versão em tela cheia.",
+    "gotIt": "Entendi"
   },
   "nav": {
     "tips": "Dicas",

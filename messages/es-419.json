@@ -128,7 +128,9 @@
     "blurb": "Agregá Near a tu pantalla de inicio — funciona sin conexión una vez que abriste la página.",
     "action": "Instalar",
     "dismiss": "Cerrar",
-    "iosHint": "Para instalar: tocá Compartir y después Agregar a inicio."
+    "iosHint": "Para instalar: tocá Compartir y después Agregar a inicio.",
+    "installedBlurb": "Near ya está instalado en este dispositivo — abrí la app para la versión a pantalla completa.",
+    "gotIt": "Entendido"
   },
   "nav": {
     "tips": "Recomendaciones",

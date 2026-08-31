@@ -9,6 +9,7 @@ type BeforeInstallPromptEvent = Event & {
 };
 
 const DISMISSED = "near-install-dismissed";
+const INSTALLED = "near-installed";
 
 // Registers the service worker (which is what actually makes the app
 // installable — the manifest alone isn't enough for Chrome) and offers a
@@ -21,6 +22,7 @@ export default function InstallPrompt() {
   const t = useTranslations("install");
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);
   const [iosHint, setIosHint] = useState(false);
+  const [alreadyInstalled, setAlreadyInstalled] = useState(false);
 
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -47,11 +49,25 @@ export default function InstallPrompt() {
 
     if (localStorage.getItem(DISMISSED)) return;
 
-    // Already installed — standalone display mode, or iOS's own flag.
-    const installed =
+    // Running inside the installed app — nothing to offer.
+    const standalone =
       window.matchMedia("(display-mode: standalone)").matches ||
       (window.navigator as { standalone?: boolean }).standalone === true;
-    if (installed) return;
+    if (standalone) {
+      // Also record it: a visit from inside the app is proof of install,
+      // which we can then honour later in a browser tab.
+      localStorage.setItem(INSTALLED, "1");
+      return;
+    }
+
+    // Installed, but opened in a browser tab instead. This is the case
+    // that was broken: desktop Chrome still fires beforeinstallprompt
+    // here, so the banner kept offering an install that had already
+    // happened. Offer to open the app instead of installing it again.
+    if (localStorage.getItem(INSTALLED)) {
+      setAlreadyInstalled(true);
+      return;
+    }
 
     const onPrompt = (e: Event) => {
       e.preventDefault(); // stop Chrome's own mini-infobar
@@ -70,26 +86,41 @@ export default function InstallPrompt() {
     localStorage.setItem(DISMISSED, "1");
     setDeferred(null);
     setIosHint(false);
+    setAlreadyInstalled(false);
   }
 
   async function install() {
     if (!deferred) return;
     await deferred.prompt();
-    await deferred.userChoice;
+    const { outcome } = await deferred.userChoice;
+    if (outcome === "accepted") localStorage.setItem(INSTALLED, "1");
     // Either way it shouldn't ask again — accepted means installed,
     // dismissed means they said no once already.
     dismiss();
   }
 
-  if (!deferred && !iosHint) return null;
+  if (!deferred && !iosHint && !alreadyInstalled) return null;
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t-[4px] border-ink bg-accent text-black">
       <div className="max-w-[1180px] mx-auto px-[22px] py-2.5 flex flex-wrap items-center gap-x-3 gap-y-2">
         <p className="font-mono text-[0.78rem] leading-snug flex-1 min-w-[16ch]">
-          {iosHint ? t("iosHint") : t("blurb")}
+          {alreadyInstalled
+            ? t("installedBlurb")
+            : iosHint
+              ? t("iosHint")
+              : t("blurb")}
         </p>
-        {deferred && (
+        {alreadyInstalled && (
+          <button
+            type="button"
+            onClick={dismiss}
+            className="border-[3px] border-ink bg-surface text-ink px-3 py-1 font-mono text-[0.75rem] uppercase tracking-wide hover:bg-black hover:text-accent transition-colors"
+          >
+            {t("gotIt")}
+          </button>
+        )}
+        {deferred && !alreadyInstalled && (
           <button
             type="button"
             onClick={install}
