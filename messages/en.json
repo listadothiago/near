@@ -76,7 +76,11 @@
     "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first.",
     "prev": "Prev",
     "next": "Next",
-    "pageOf": "Page {page} of {total}"
+    "pageOf": "Page {page} of {total}",
+    "favorites": "Saved",
+    "favoriteAdd": "Save this place",
+    "favoriteRemove": "Remove from saved",
+    "emptyFavorites": "Nothing saved yet. Tap the star on any card to keep it here — stored on this device only, no account needed."
   },
   "categories": {
     "all": "All beats",

@@ -95,7 +95,8 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
     
     - Sticky header (top on desktop; ultra-compact only on mobile).
         
-    - Tabs vs Filters: Retain "Nearest" (default) and "Latest" as primary view tabs. Move "Favorites", "Following", and "Featured" into Filters.
+    - Tabs vs Filters: Retain "Nearest" (default) and "Latest" as primary view tabs. Move "Following" and "Featured" into Filters.
+    - **[RESOLVED 2026-08-31] Favorites — neither, exactly.** This line said "into Filters"; later operator feedback said it should be a tab like Nearest/Latest. Both were half-right, so it shipped as a synthesis: a ★ SAVED toggle sitting *in the tab row* (prominent as a tab, per the feedback) but functioning as a **scope** applied after sorting (composable as a filter, per this line). Nearest/Latest are sorts over one set; Favorites is a different set — making it a true third tab would have cost you the ability to sort your own saved list, which is where sorting matters most once it's long. Hidden entirely until you have ≥1 saved.
         
     - Vibe Filters & Emoji Taxonomy: Core (🏳️‍🌈 LGBTQ+ friendly, ☕ Hipster, 🌙 Late night) and Expanded Subcultures (🫖 Sober-curious, 🌿 420-friendly, 🐕 Dog-first, 🐾 Furry). Hide if empty.
         
@@ -299,7 +300,7 @@ We need an about us page, saying this is a website maintained by various humans 
 
 ## 👤 EPIC 6: Stage 4 Accounts & UGC
 
-- [ ] **Local-First Favorites:** Zero backend cost. Users click a Heart icon to save to `localStorage`.
+- [x] **Local-First Favorites — SHIPPED 2026-08-31.** Zero backend. A ★ on each card writes to `localStorage`; `lib/favorites.ts` uses `useSyncExternalStore` with a cached snapshot (a fresh array per read loops forever) and an `EMPTY` server snapshot so SSR and first client render agree — no hydration flash. `storage` events keep two open tabs in sync. All localStorage access is try/caught because private-mode Safari and the Instagram/TikTok in-app browsers throw on it; favourites degrade to "none" rather than taking the board down. Star is a ⭐ not a ♥ — reads better against the acid-green system and avoids the "like" connotation.
     
 - [ ] **[ARCH-DEFENSE] Favorites Export:** Implement a lightweight "Export/Import Favorites" UI (generating a Base64 string or tiny `.json` file). This prevents users from losing their curated lists when clearing cache, switching devices, or using Instagram/TikTok embedded browsers. This export could even contain more metadata to facilitate the user viewing however they prefer, eg their own claude artifact. 
 
@@ -311,7 +312,7 @@ We need a "message us" page where a form is submitted in which users can tell us
 
 a screen for a full screen map view should be available as well, why not? The home screen looks great right now, so maybe this doesn't have to be a whole new button in the header menu that currently looks great. 
 
-I feel that "favorites" should be a tab like "nearest" and "latest"
+I feel that "favorites" should be a tab like "nearest" and "latest" — _[resolved, see EPIC 1: shipped as a scope toggle in the tab row, prominent as a tab but preserving the Nearest/Latest sort]_
 
 Tive a idéia de criar alter ego bots, a começar pelo meu. Talvez a gente precise de um agente só pra criar alter ego bots, coletando um nome do bot, instruções do avatar que sempre devem ser adaptadas pelo skill criador de alter egos para o tema visual 1930s tex avery cuphead sempre robotico, link da pessoa ou quem quer que tenha criado esse alter ego se houver e a descrição do alter ego bot, que sera criado como skill/agente . 
 

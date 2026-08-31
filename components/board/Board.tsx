@@ -37,6 +37,7 @@ export default function Board({
   const [focusUserSignal, setFocusUserSignal] = useState(0);
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [mapOpen, setMapOpen] = useState(false);
+  const [onlyFavorites, setOnlyFavorites] = useState(false);
   // The map is a disclosure on small screens only — collapsed by default
   // so the listings start above the fold — and always open from md up,
   // where it occupies its own grid column. Resolved after mount rather
@@ -189,6 +190,8 @@ export default function Board({
           onTabChange={setTab}
           userCoords={userCoords}
           eventsByParent={eventsByParent}
+          onlyFavorites={onlyFavorites}
+          onOnlyFavoritesChange={setOnlyFavorites}
         />
 
         <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">

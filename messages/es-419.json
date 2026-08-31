@@ -76,7 +76,11 @@
     "emptyLatest": "Todavía no hay lugares aquí. Cuando Near sincronice, lo más reciente aparece primero.",
     "prev": "Anterior",
     "next": "Siguiente",
-    "pageOf": "Página {page} de {total}"
+    "pageOf": "Página {page} de {total}",
+    "favorites": "Guardados",
+    "favoriteAdd": "Guardar este lugar",
+    "favoriteRemove": "Quitar de guardados",
+    "emptyFavorites": "Todavía no hay nada guardado. Tocá la estrella de cualquier card para guardarlo acá — queda solo en este dispositivo, sin cuenta."
   },
   "categories": {
     "all": "Todos los temas",

@@ -76,7 +76,11 @@
     "emptyLatest": "Ainda não há lugares aqui. Quando o Near sincronizar, as escolhas mais recentes aparecem primeiro.",
     "prev": "Anterior",
     "next": "Próxima",
-    "pageOf": "Página {page} de {total}"
+    "pageOf": "Página {page} de {total}",
+    "favorites": "Salvos",
+    "favoriteAdd": "Salvar este lugar",
+    "favoriteRemove": "Tirar dos salvos",
+    "emptyFavorites": "Nada salvo ainda. Toque na estrela de qualquer card para guardar aqui — fica só neste aparelho, sem precisar de conta."
   },
   "categories": {
     "all": "Todos os temas",
