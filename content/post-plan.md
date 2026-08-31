@@ -51,7 +51,7 @@ push-to-live per post for operator QA.
 
 ### São Paulo / Baixada / Campinas (seeded from operator requests)
 - [x] Madê Cozinha Autoral, Santos — FOODIE-9000 (shipped 2026-08-31; address-move correction is the angle)
-- [ ] Almeida, Santos — operator request 2026-08-31 (identify exact venue, then verify)
+- [x] Almeida, Santos — PLINIO (shipped 2026-08-31; identified as Restaurante Almeida, Av. Ana Costa 1, founded 1932)
 - [ ] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — operator request, SPECIAL: Cris profile + place + beach significance, higher sourcing bar (first named-person profile). See BACKLOG.
 - [ ] O Condado + São Vicente scene items from earlier scouting — need verification pass
 
