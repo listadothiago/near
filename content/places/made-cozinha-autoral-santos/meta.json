@@ -1,0 +1,59 @@
+{
+  "slug": "made-cozinha-autoral-santos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend",
+    "see-and-be-seen"
+  ],
+  "coordinates": {
+    "lat": -23.9765,
+    "lng": -46.302
+  },
+  "place": {
+    "city": "Santos",
+    "neighborhood": "Ponta da Praia",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Boqnews",
+      "url": "https://www.boqnews.com/etc/made-inova-em-santos-com-nova-fase-da-cozinha-de-dario-costa/",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-27T00:00:00Z"
+    },
+    {
+      "name": "Vou de Garfo",
+      "url": "https://voudegarfo.com.br/made/",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Baia_de_Santos%2C_vista_da_Ponta_da_Praia_%282769023980%29.jpg",
+    "attribution": "Emilio Pechini, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Baia_de_Santos,_vista_da_Ponta_da_Praia_(2769023980).jpg",
+    "licenseNote": "CC BY 2.0, photographer named on the Commons record and himself from Santos. Shows the Santos bay from Ponta da Praia — the restaurant's neighbourhood and the fishing water its menu is built on — NOT the restaurant itself. No freely-licensed or venue-supplied photo of the interior was available; replace if the venue grants one."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "First pin of the São Paulo/Baixada rotation slot under the new post plan; operator-requested by name. ADDRESS CORRECTION IS THE STORY: most listings (Foursquare, Vou de Garfo, Rappi) still carry Rua Minas Gerais 93, Boqueirão — the restaurant MOVED to Av. Epitácio Pessoa 716, Ponta da Praia, per Boqnews dated 27 May 2026, which describes the new two-storey corner house in detail. The article leads with that correction. Dário Costa's record verified against the same piece: born in Santos, THIRD place on MasterChef Profissionais 2016 (an earlier search summary's vaguer 'ex-participante' framing undersold him; the precise fact is third place, not winner), WINNER of Mestre do Sabor 2020. Vou de Garfo is retained as a source for the chef's stated ethos and the wood-oven octopus era but carries the OLD address — flagged here so no future refresh 'corrects' the pin backwards. Hours cross-checked between two aggregators with minor conflicts; article states them with a check-first flag."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Madê Cozinha Autoral, Av. Dr. Epitácio Pessoa 716, Ponta da Praia, Santos SP"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
