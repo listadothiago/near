@@ -43,7 +43,15 @@ export const placeStatusSchema = z.enum([
 ]);
 export type PlaceStatus = z.infer<typeof placeStatusSchema>;
 
-export const heroImageStrategySchema = z.enum(["source", "stock"]);
+// "illustration" = drawn by near-illustrator rather than photographed.
+// Always disclosed as AI-generated in `attribution` — Near's whole premise
+// is being transparent about what's artificial, and an undisclosed
+// generated photo would be the one thing that breaks that.
+export const heroImageStrategySchema = z.enum([
+  "source",
+  "stock",
+  "illustration",
+]);
 
 export const heroImageSchema = z.object({
   strategy: heroImageStrategySchema,

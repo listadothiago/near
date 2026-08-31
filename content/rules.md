@@ -74,11 +74,24 @@ rules:
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,
       >= 3 bullets, long-form body >= 600 words in at least English,
-      geocode confidence >= 0.6, a hero image was resolved (source
-      image with attribution, or licensed stock — there is no AI-generated
-      fallback tier by design), and the link-density rule below passes.
-      If hero image resolution fails entirely, the place is skipped, not
-      published without an image.
+      geocode confidence >= 0.6, a hero image was resolved, and the
+      link-density rule below passes. If hero image resolution fails
+      entirely, the place is skipped, not published without an image.
+
+      HERO IMAGE TIERS, in preference order: (1) a real source photo with
+      attribution, (2) licensed stock, (3) an original illustration from
+      near-illustrator. Tier 3 reverses this rule's earlier "no
+      AI-generated fallback tier by design" position — an operator
+      decision on 2026-08-31, on the grounds that a drawn hero beats
+      either a generic stock photo or skipping a genuinely good place for
+      want of a photograph. The earlier position was guarding against
+      passing off synthetic photos as real documentation; that concern is
+      handled instead by the constraints on tier 3 rather than by banning
+      it: illustrations must be visibly stylized and never photoreal (see
+      near-illustrator), and must disclose themselves as AI-generated in
+      meta.heroImage.attribution. A generated image that could be
+      mistaken for a photograph of the actual place is a violation of
+      this rule, not a success.
     trigger: "on generation, before write"
     action: "if any check fails, skip publish; log to _ingestion-log.md with the specific failed check"
 
