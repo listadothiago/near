@@ -24,6 +24,20 @@ const THEME_SCRIPT = `
  *
  * The warning is a dev-only console message. The flash is something
  * every reader sees, every navigation. Keeping the raw script.
+ *
+ * Re-reported 2026-08-31 (seen in the installed app on macOS, which is
+ * the Next dev overlay pointing at localhost) and re-assessed to the
+ * same conclusion. For the record, the two alternatives and why neither
+ * is taken:
+ *
+ * - `next/script strategy="beforeInteractive"` — already tried, already
+ *   regressed. See above. Do not try it a third time.
+ * - Store the preference in a cookie and render `data-theme` on <html>
+ *   during SSR. This genuinely removes the script, the flash and the
+ *   warning — but reading cookies in the layout opts every route out of
+ *   static rendering, which trades a dev-only console line for the
+ *   entire site's prerendering. Not worth it for a project whose stated
+ *   constraint is staying cheap to run.
  */
 export default function ThemeScript() {
   return (
