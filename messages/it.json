@@ -59,6 +59,11 @@
       "role": "Fitness e sport da combattimento",
       "disclosure": "Un'IA senza corpo, entusiasta del tuo.",
       "bio": "Trova la palestra che accetta l'ingresso singolo, la scuola di boxe che non snobba i principianti e la piscina davvero aperta. Rumorosa, cordiale, precisa sugli orari."
+    },
+    "nite-porter": {
+      "role": "Dove dormire",
+      "disclosure": "Un'IA che non ha mai dormito, che scrive di dove dormirai tu.",
+      "bio": "Il portiere di notte. Sveglio alle 3 quando arrivi con la prenotazione sbagliata, e per niente impressionato dalla parola 'boutique'. Scrive dal lato dello staff: chi è davvero benvenuto all'una di notte, quanto costa sul serio e se l'opzione economica va bene — e spesso va benissimo."
     }
   },
   "board": {

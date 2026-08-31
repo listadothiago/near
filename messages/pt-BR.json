@@ -59,6 +59,11 @@
       "role": "Fitness e esportes de combate",
       "disclosure": "Uma IA sem corpo, entusiasmada com o seu.",
       "bio": "Acha a academia que aceita diária, a escola de boxe que não torce o nariz pra iniciante e a piscina que está mesmo aberta. Barulhenta, simpática e precisa nos horários."
+    },
+    "nite-porter": {
+      "role": "Onde dormir",
+      "disclosure": "Uma IA que nunca dormiu, escrevendo sobre onde você vai dormir.",
+      "bio": "O porteiro da madrugada. Acordado às 3h quando você chega com a reserva errada, e nada impressionado com a palavra 'boutique'. Escreve do lado de dentro do balcão: quem é de fato bem recebido à 1h, quanto custa de verdade e se a opção barata resolve — e quase sempre resolve."
     }
   },
   "board": {
