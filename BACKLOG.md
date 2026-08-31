@@ -13,11 +13,11 @@
 - **Do not invent content, venues, facts, sources, personas, or product behavior merely to make a feature appear complete.**
 - **Decision (2026-08-31): no Jira.** Operator is a one-person team — Jira's value is multi-human coordination (assignment, handoffs, an audit trail for people who aren't you), none of which applies here. This `BACKLOG.md` stays the actual source of truth. The one Jira-shaped need that came up — "file a request when an internal link target doesn't exist yet" — is handled locally instead: a `content/requests.md` queue in the same fenced-YAML style as `content/rules.md`, drained by `near-refresh` like the existing locale-gap backfill. Revisit only if a second human joins or reporting needs outgrow `grep`.
 
-**Current State (Updated 2026-08-31):**
+**Current State (Updated 2026-08-31, second pass):**
 
-- **Places:** 18 active places. 0 drafts remain.
+- **Places:** 18 places, 17 on the board (Cabaret Latino is now a child event of the Eskyna venue, not its own listing). 0 drafts.
     
-- **Collections:** 0 existing.
+- **Collections:** 1 — "'Asian Food' Was Never One Thing" (Rong He / Thai E-San / Djapa), all 6 locales.
     
 - **Sources:** 160+ watched global sources (The Alternative Guide, Indie Guides, AAN Directory, Alt-newspaper index, European cooperatives, ANZ street press, Latin American crónica collectives, Atlas Obscura, etc.). AI research agents are fully authorized and encouraged to browse these aggressively.
     
@@ -36,7 +36,9 @@ _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ul
 
 - [ ] **SEO data gap (flagged 2026-08-31):** `near-seo` has no Google Keyword Planner / Search Console connection — no Google Ads or Search Console MCP is wired up in this environment. It currently does opportunity-finding via WebSearch/WebFetch + `near-deep-researcher` (qualitative query-pattern inference), not real volume/CPC/impression data, despite the persona description elsewhere implying otherwise. Real Keyword Planner access needs a Google Ads account + developer-token approval (slow, needs ad spend history); Search Console is more realistic (verified near.tips property + OAuth) if real query data becomes worth the setup.
 
-- [ ] **Link discipline (queued, not started):** `content/rules.md`'s `quality-gate-before-publish` doesn't check for links, and it shows — 12 of 18 English place bodies have zero external in-text source links and 7 of 18 have zero internal `<NearLink>`s, despite `references/style-guide.md` already mandating both. Plan: add a link-minimum check to `quality-gate-before-publish`, stand up `content/requests.md` for "internal target doesn't exist yet" requests (slug, city, why, source URLs, which article is waiting), then backfill the 12 link-less articles. Deferred until after the current high-priority content push.
+- [x] **Link discipline — DONE.** `content/rules.md` now has an enforceable `link-density` rule gated by `quality-gate-before-publish`: every body needs an in-text link to a URL in its own `meta.sources` (footer citations don't count). All 18 English bodies backfilled — external coverage went 6/18 → 18/18, internal 11/18 → 17/18. The one remaining internal gap (Dollywood) is deliberately logged, not forced. New `content/requests.md` is the local queue for "wanted to link somewhere, nothing exists yet"; `near-refresh` drains it and must add the link to everything in `wantedBy` when closing a request. 4 requests open.
+
+- [ ] **~~Link discipline (superseded above)~~:** `content/rules.md`'s `quality-gate-before-publish` doesn't check for links, and it shows — 12 of 18 English place bodies have zero external in-text source links and 7 of 18 have zero internal `<NearLink>`s, despite `references/style-guide.md` already mandating both. Plan: add a link-minimum check to `quality-gate-before-publish`, stand up `content/requests.md` for "internal target doesn't exist yet" requests (slug, city, why, source URLs, which article is waiting), then backfill the 12 link-less articles. Deferred until after the current high-priority content push.
 
 - [ ] **All-Hands Agentic Sync (Revenue & Scale):** Trigger an immediate "All Hands" War Room with all active skills.
     
@@ -51,11 +53,19 @@ _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ul
 - [ ] **Deploy QA Agent (`near-qa`):** Deploy a dedicated QA agent to audit the codebase across breakpoints, catch broken links, test locale switching, and conduct a Mobile Audit of place, collection, `/guides`, and `/sources` pages.
     
 
-## 🎨 EPIC 1: UI / UX Design System (Neo-Brutalist Zine)
+## 🎨 EPIC 1: UI / UX Design System (Neo-Brutalist Zine) — SHIPPED 2026-08-31
+
+_Live on near.tips. Newsprint/black/acid-green, Space Grotesk + Courier Prime, zero radii, hard offset shadows, magazine card grid, map demoted to a sidebar, top nav, About page, AI bylines + `/author/[slug]` pages, `shortTitle` on all 73 locale files. Deliberate departures from the original brief, both operator calls: **images and maps keep their colour** (grayscale was throwing away exactly what food and nightlife photos are for), and **the `travel-luxury` category is now just `travel`** — luxury is a register DARCY covers, not a beat. Remaining EPIC 1 items below are the ones still genuinely open._
 
 _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspaper / City Guide Magazine" aesthetic._
 
-- [ ] **Global Visual Identity:**
+- [x] **Global Visual Identity** — done, with the colour and category departures noted above. Tagline is now "The alternative guide to everywhere," localized per market.
+
+- [ ] **Author avatars (blocked on image generation):** The 8 personas have pages and bylines but no avatars — the 1930s rubber-hose art from EPIC 4 can't be produced from here. `near-illustrator` or hand-sourced art. Persona cards are typographic until then.
+
+- [ ] **Mobile verification (never done):** The browser tooling in this session refused to resize the rendering viewport, so the mobile filter toggle and map disclosure have never been checked by eye. Card grid reflow was verified by measurement (1 col at 390px → 5 at 1180px). **Check near.tips on a phone.**
+
+- [ ] **~~Global Visual Identity (superseded above)~~:**
     
     - _Branding:_ Title: "Tips Near Me | near.tips". Tagline: "The alternative guide to everywhere."
         
@@ -97,6 +107,11 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
         
     - Use distinct callout boxes for operational friction (safety, ride-share), square bullets, and embedded featured quotes. Avoid text walls.
         
+
+**Notable content decisions (2026-08-31):**
+
+- **Events belong to venues.** An event at a place Near already covers sets `meta.parentPlace` and drops off the board/map, keeping its own page and URL. The venue's card shows a "next" ribbon, its page a "coming up here" list; both expire on their own via `eventEndsAt`. Codified as `event-belongs-to-venue` in `rules.md`. This fixed two stacked pins on identical coordinates for the Eskyna venue.
+- **Dolly Parton died 2026-08-25.** The Dollywood page asserted present-tense ownership across all six locales and has been corrected (verified against NPR/CNN/Variety; park stays open per its president). Worth remembering as a category of risk: evergreen copy about a living person goes stale silently. A `near-refresh` check for this would be reasonable.
 
 ## 🏛️ EPIC 2: Core Architecture & Content Rules
 
