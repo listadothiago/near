@@ -88,13 +88,20 @@ This replaces the older "seeded-audience" city list further down this file — t
    ```
    `components/layout/ThemeScript.tsx` renders a raw `<script dangerouslySetInnerHTML>` — something about how the installed-PWA client renders this trips a React warning/error that doesn't happen in a normal browser tab. Needs investigation — possibly needs `next/script` with the right strategy, or the PWA's standalone-mode rendering path differs enough that this needs a different approach entirely. Operator says the installed app "keeps breaking," so treat this as a real bug, not cosmetic.
 
-### Sources catalogue — ASAP per operator, not just "queued"
+### Sources catalogue — DONE (first pass), 2026-09-01
 
-Operator escalated this from EPIC 4b's existing queue to explicit "ASAP" priority and pasted the **full current AAN (Association of Alternative Newsmedia) member directory** (`https://aan.org/member-directory/`) — around 90 US alt-weeklies, e.g. Chicago Reader, The Stranger, Willamette Week, Nashville Scene, Miami New Times, Washington City Paper, Dallas Observer, Metro Times, Baltimore Beat, and dozens more (full list is in this session's chat transcript if needed verbatim — near-sources should re-fetch `aan.org/member-directory` directly rather than relying on a pasted snapshot, since the directory updates).
+Catalogue expanded from ~11 to **107 sources** in `content/sources.md`. What happened:
 
-**Directive, verbatim intent:** onboard ALL of these into `content/sources.md`/`preferred-sources.md`, even for cities outside Near's current target list — RADAR-X (trendsetter) should actively mine them for **trending themes, topics, and lenses**, not just city-specific place leads. This is core to Near's alt-weekly identity, not a nice-to-have. **Also**: search for and onboard equivalent independent/alt-press outlets for the rest of the world (Europe, Latin America, Asia-Pacific) — the AAN list is US-only by definition, and Near's coverage isn't.
+1. **`near-sources` re-fetched the live AAN directory** at `aan.org/member-directory/` directly (not a pasted snapshot) — it currently lists 100 member rows, 90 of which show a working homepage URL. All 90 were added to `content/sources.md`, `id` prefix `aan-`, tagged by city/region (`region: us-<city>`), `category: city-culture`, `trust: auto`, `status: active`, `feedType: html-extract` (no RSS individually verified yet — that's still open, see below).
+2. **First non-US alt-press pass done**: 6 outlets added — The Skinny (Scotland), The Berliner/ex-Exberliner (Berlin), Chilango (Mexico City), Broadsheet (Australia), Metropolis Japan (Tokyo), Concrete Playground (Australia/NZ). This is explicitly a first pass, not exhaustive — Latin America beyond Mexico City and Asia-Pacific beyond Japan/Australia/NZ are thin.
+3. **`/sources` page** (`app/[locale]/sources/page.tsx`) needed no code change — it already renders `getSourceCatalog()` data-driven with a `{count}` in the intro string (`messages/*.json`, `sources.intro`), so it now shows 107 automatically. Verified `lib/content/sourcesCatalog.ts`'s zod schema accepts the new entries and `tsc --noEmit` is clean.
+4. `content/preferred-sources.md` got a new "Tier 3 — AAN member directory batch" section explaining these are unweighted/opportunistic sources for RADAR-X to mine for trend/theme signal, not per-run Tier 1/2 obligations, plus a promotion path (2-3 good hits → promote to a real tier).
 
-Action order: (1) `near-sources` fetches the live AAN directory and adds every outlet with a working site, tagged by city/region, (2) rebuild the actual `/sources` page content to reflect the real (much larger) catalogue rather than today's thin ~11-source list, (3) `near-deep-researcher` or a dedicated pass finds non-US alt-press equivalents, (4) RADAR-X's ongoing job going forward: read across this whole catalogue for trend/theme signal, not just per-city leads.
+**Still open:**
+- ~10 AAN directory rows had no URL in the live fetch (The Pitch KC, Volume One, Queen City Nerve, American Prospect, Pittsburgh Current, Dallas Voice | OUT North Texas, BlueDot Living, Sydney City Hub, Yellow Scene) — need a manual lookup pass for their actual sites.
+- None of the 96 new entries (90 AAN + 6 international) have a verified RSS feed — first real `near-editor`/`near-sources` run against each should confirm a feed URL or lock in the Chrome-automation fallback, and pause any that turn out dead/squatted.
+- International pass is thin outside UK/Germany/Mexico/Japan/Australia-NZ — a dedicated `near-deep-researcher` pass for the rest of Latin America and Asia-Pacific is still needed, per the operator's original directive.
+- RADAR-X's ongoing job going forward: actually read across this larger catalogue for trend/theme signal, not just per-city place leads — not yet exercised against the expanded set.
 
 ### New feature ideas, captured not started
 

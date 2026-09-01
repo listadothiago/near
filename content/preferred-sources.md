@@ -66,6 +66,34 @@ source to the permanent catalog off a single lucky find):
   style paper, etc.) when starting a new city rather than defaulting to
   generic travel-blog sources only.
 
+## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
+
+96 outlets added to `sources.md` in one pass on 2026-09-01, from the live
+AAN directory (`aan.org/member-directory/`, 90 US outlets) plus a first
+international pass (6 non-US outlets: The Skinny/Scotland, The
+Berliner/Berlin, Chilango/Mexico City, Broadsheet/Australia, Metropolis
+Japan/Tokyo, Concrete Playground/Australia-NZ). None have a confirmed
+RSS feed — all `feedType: html-extract`, `trust: auto`, `status: active`
+but functionally untested. Per the operator's directive, RADAR-X should
+read across this whole batch for **trending themes and topics**, not
+just per-city place leads — that's the actual point of onboarding all of
+it rather than cherry-picking a handful. Don't expect near-editor to work
+all 96 every run; treat this tier as "mine for signal when a run touches
+that city/region, or when RADAR-X does a broad trend sweep," and promote
+individual outlets to Tier 1/2 once they've produced two or three
+genuinely good hits.
+
+Still open from this batch:
+- ~10 AAN directory rows had no URL listed in the live fetch (The Pitch
+  KC, Volume One, Queen City Nerve, American Prospect, Pittsburgh
+  Current, Dallas Voice | OUT North Texas, BlueDot Living, Sydney City
+  Hub, Yellow Scene) — need a manual lookup pass to find their sites
+  before they can be added.
+- The international pass above is a first pass only (6 outlets across 5
+  countries) — Latin America (beyond Mexico City) and Asia-Pacific
+  (beyond Japan/Australia/NZ) are thin. Needs a dedicated follow-up pass,
+  per the operator's directive to `near-deep-researcher` or similar.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.
