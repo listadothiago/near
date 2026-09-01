@@ -312,6 +312,8 @@ Google requires its own OAuth Client ID/Secret for **production** sign-in — Cl
 
 This is exactly the kind of "brand-facing, needs a human decision" step that shouldn't be improvised — happy to drive the browser through Google Cloud Console once the operator says what they want the consent screen to show.
 
+**Logo — DONE (2026-09-01).** Operator generated a candidate via Gemini (prompt supplied this session: black-outline pin/compass mark, acid-green `#ccff00` fill, cream `#f4f4f0` background, flat neo-brutalist zine style, no text) and dropped it in `content/photo-inbox/`. On-brand, square (1024×1024, exceeds Google's 120×120 minimum), reads clearly at small sizes. Saved at `public/branding/near-oauth-logo.jpg`. Still open: app name (near.tips vs. Near), support email, and verification-process question above — plus actually uploading this logo to Google Cloud Console, which needs the operator's own login.
+
 **Once that exists:** paste the Client ID/Secret into Clerk's Production → SSO connections → Google page (`Authorized Redirect URI` is already shown there: `https://clerk.near.tips/v1/oauth_callback`), then the app code (already written, see below) should just work.
 
 ## 🔐 Google Sign-In + persistent favorites — CODE DONE, needs operator setup (2026-09-01)
