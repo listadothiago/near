@@ -44,6 +44,32 @@ mirror image of `content/photo-inbox/`: that folder is where results come
 
 ## Open requests
 
-_(none — add new entries above this line, oldest first, each as its own
-`###` heading named `<slug> — <one-line reason>`, followed by the
-complete self-contained prompt in a fenced code block)_
+### the-setlist-2026-10 — replace the stock Interlagos racetrack photo, operator called it ugly
+
+```
+Bold flat-colour risograph / screenprint illustration, 16:9 aspect
+ratio. Scene: an outdoor music festival crowd at night seen from
+slightly behind and above, silhouetted concert-goers with raised arms
+packed together, facing a distant stage lit by a few tall stage-light
+towers throwing warm orange and hot-pink beams up into a dark sky.
+Scattered flecks of confetti or light caught mid-air. Limited palette:
+deep navy/black background, hot pink, acid/lime green, and warm orange
+as the only accent colours, visible print misregistration and grain
+texture like a screenprinted festival poster. Must not look like a real
+photograph — no photographic lighting, no realistic skin/fabric texture,
+flat poster-style colour blocking only. No legible text anywhere in the
+image. No real, identifiable people — all figures are anonymous flat
+silhouettes. No band logos, no real venue signage, no readable text of
+any kind.
+```
+
+Reason: this issue's hero currently uses a real Wikimedia Commons photo
+of the empty Autódromo José Carlos Pace (Interlagos) racetrack — factually
+tied to the venue but visually flat/generic for a live-music piece (an
+empty racetrack straightaway, no music, no crowd, no energy). Operator
+flagged it directly as ugly and said even a generated image would beat
+it. Swap `content/collections/the-setlist-2026-10/meta.json`'s
+`coverImage` to `strategy: "illustration"` once a result lands in
+`content/photo-inbox/`, with `attribution: "Illustration by NEAR — AI-
+generated"` and `attributionLink` pointing at `/about`, then remove this
+entry.
