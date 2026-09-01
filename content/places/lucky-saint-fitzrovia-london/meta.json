@@ -28,7 +28,13 @@
       "originalPublishedAt": "2026-01-01T00:00:00Z"
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/places/lucky-saint-fitzrovia-london/hero-illustration.jpg",
+    "attribution": "Illustration by NEAR — AI-generated",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "Generated from a prompt queued in content/photo-requests.md (no rights-clear photo of the pub was found): a traditional pub bar, a 0.5% pump clip drawn with the same size and prominence as the cask-ale clips beside it, woodcut/linocut style with warm amber/brown tones and a small acid-green accent. No real people depicted."
+  },
   "eventEndsAt": null,
   "status": "draft",
   "statusHistory": [
@@ -36,6 +42,11 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Item 4 of the September 2026 SEO x RADAR-X reprioritization (BACKLOG.md), London sober-curious angle. FOODIE-9000 byline, matching the Ocean Beach Cafe / Sipeos precedent (sober-curious reads as gastronomy beat, not wellness). Club Soda's Covent Garden tasting room and its Queers Without Beers events turned out to be dead ends this session -- the tasting room closed end of January 2026 lease-end per thespiritsbusiness.com and Club Soda's own site, with no new venue announced, so QWB currently has no fixed physical home to cite as a visitable pin. The Sober Bar London is a pop-up CIC with no fixed address either. Redemption Bar (Notting Hill/Shoreditch/Covent Garden) was checked and rejected: multiple sources (HappyCow, Restaurant Guru, Redemption's own site) confirm all locations closed permanently in the aftermath of Covid, despite some stale SEO listings still claiming it's open in 2026 -- do not resurrect this lead without a fresh open-status check. Landed on The Lucky Saint: a real, currently-trading Fitzrovia pub opened 2023 by the UK's leading alcohol-free beer brand, verified open via CAMRA's own 2026 listing. Honest framing: this is not a fully dry bar (it pours real cask ale and Guinness too), the story is that its 0.5% option is treated as a first-class choice rather than an afterthought -- same honesty standard as the Sipeos entry. No rights-clear source photo found. Status held at draft pending near-illustrator's image call; do not publish without a resolved hero image per rules.md's quality gate."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator generated the queued illustration prompt via Gemini and dropped it in content/photo-inbox/. Wired into heroImage, disclosed as AI-generated per rules.md. Image gate is now clear, but status stays draft: this is trust: auto, and rules.md's full-locale-coverage rule requires all six locales before an auto-trust place can go active. Only English exists so far — near-translator still owed for pt-BR/it/es-ES/es-419/zh-CN before this can flip to active."
     }
   ],
   "geocode": {

@@ -6,9 +6,7 @@ but the generation tooling itself is unavailable or broken). This is the
 mirror image of `content/photo-inbox/`: that folder is where results come
 *in*, this file is where requests go *out*.
 
-Two open requests below — image generation tooling wasn't available in
-the session that drafted these two places, so both are held at
-`status: draft` pending an illustration landing in `content/photo-inbox/`.
+**Currently empty — no open requests.**
 
 ## How it works
 
@@ -48,42 +46,6 @@ the session that drafted these two places, so both are held at
 
 ## Open requests
 
-### ishigaki-jujitsu-london — no rights-clear source photo found
-
-```
-Illustrate a scene for a London LGBTQ+ jujitsu club article. Two figures
-mid-throw/grapple on a training mat in a municipal sports-hall interior —
-exposed steel roof trusses, a wall of high windows, a UK/Japanese
-jujitsu-club noticeboard with belts hanging on pegs in the background.
-One rainbow-striped wristband or belt tag is a small, specific detail,
-not a dominant motif. Bold flat-colour risograph / screenprint style,
-limited three- or four-colour palette (deep indigo, warm grey, one acid
-lime-green accent, off-white paper tone), visible print misregistration
-at the edges of shapes, strong flat ink shadows rather than gradients.
-Must NOT look like a real photograph — no photorealistic rendering, no
-3D/octane render look, no airbrushed gloss. No legible text anywhere in
-the image. No recognizable real people — generic, anonymized figures
-only. Aspect ratio 16:9.
-```
-
-### lucky-saint-fitzrovia-london — no rights-clear source photo found
-
-```
-Illustrate a scene for an article about a Fitzrovia, London pub built
-around alcohol-free beer. Interior of a traditional British pub bar —
-dark wood bar counter, brass beer-tap handles in a row (mix of ordinary
-cask-ale pump clips and one clearly labelled "0.5%" pump clip drawn the
-same size and prominence as the others, no text needs to be legible,
-just implied lettering shapes), a full pint glass of pale lager on the
-counter next to a full pint of stout, both equally lit, a small dog
-curled by a bar stool. Warm tungsten pub lighting. High-contrast woodcut
-/ linocut style, black ink linework with two or three flat spot colours
-(warm amber, deep brown, one small acid-green accent), visible carved
-texture in the linework. Must NOT look like a real photograph — no
-photorealistic rendering, no 3D/octane render look. No legible text
-anywhere in the image. No recognizable real people. Aspect ratio 16:9.
-```
-
-_(add new entries above this line, oldest first, each as its own `###`
-heading named `<slug> — <one-line reason>`, followed by the complete
-self-contained prompt in a fenced code block)_
+_(none — add new entries above this line, oldest first, each as its own
+`###` heading named `<slug> — <one-line reason>`, followed by the
+complete self-contained prompt in a fenced code block)_

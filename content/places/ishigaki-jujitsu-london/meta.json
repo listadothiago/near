@@ -34,7 +34,13 @@
       "originalPublishedAt": "2026-01-01T00:00:00Z"
     }
   ],
-  "heroImage": null,
+  "heroImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/places/ishigaki-jujitsu-london/hero-illustration.jpeg",
+    "attribution": "Illustration by NEAR — AI-generated",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "Generated from a prompt queued in content/photo-requests.md (no rights-clear photo of the club was found): two figures mid-throw on a training mat, risograph/screenprint style, indigo/grey/acid-green palette, a rainbow belt-tag as a small detail rather than the focus. No real people depicted."
+  },
   "eventEndsAt": null,
   "status": "draft",
   "statusHistory": [
@@ -42,6 +48,11 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Item 4 of the September 2026 SEO x RADAR-X reprioritization (BACKLOG.md), London martial arts angle. FIT-BOT's first byline (opportunities.md flagged this as the goal). Ishigaki Jujitsu chosen after Bartitsu was checked again and still has no visitable London venue (bartitsu.club's only London-area listing is the same unfinished Battersea study-group page rejected for Brockwell Lido). Ishigaki verified currently active: official site lists live 2026 new-joiner dates, Jikishin Jujitsu Association lists it as an affiliated club, and LGBT History Project + Pride Sports corroborate the 1994 founding and LGBT+ focus. Founded by four people in 1994 specifically so sexuality wasn't a barrier to training; won Out For Sport Club of the Year 2025. Classes: Tuesdays at Finsbury Leisure Centre (Old Street), Wednesdays/Saturdays at in2sports, Canary Wharf. Coordinates are a manual estimate for the Finsbury Leisure Centre area (Norman Street, EC1), not a precise geocode. Status held at draft pending near-illustrator's image call — no rights-clear photo of the club found in this pass, so a hero image still needs to be resolved (illustration tier per rules.md) before this can move to active; do not publish without one."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator generated the queued illustration prompt via Gemini and dropped it in content/photo-inbox/. Wired into heroImage, disclosed as AI-generated per rules.md. Image gate is now clear, but status stays draft: this is trust: auto, and rules.md's full-locale-coverage rule requires all six locales before an auto-trust place can go active. Only English exists so far — near-translator still owed for pt-BR/it/es-ES/es-419/zh-CN before this can flip to active."
     }
   ],
   "geocode": {
