@@ -25,9 +25,12 @@ If the call is "generate an illustration" but the generation tooling
 itself is unavailable or broken this session, don't leave `heroImage`
 null and move on — write a complete, ready-to-paste prompt into
 `content/photo-requests.md` (read it for the exact format) so the
-operator can run it externally and drop the result into
-`content/photo-inbox/`. This is the standing fallback path, not a one-off
-workaround — always prefer it over silently skipping the image call.
+operator, or whatever tool/agent they hand it to, can run it externally
+and drop the result into `content/photo-inbox/`. Write the prompt as if
+the reader has none of this skill's context — a different AI or a
+different session may be the one that actually runs it, not necessarily
+you. This is the standing fallback path, not a one-off workaround —
+always prefer it over silently skipping the image call.
 
 ## The call, every time
 
