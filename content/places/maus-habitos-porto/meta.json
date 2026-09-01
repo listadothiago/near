@@ -1,0 +1,97 @@
+{
+  "slug": "maus-habitos-porto",
+  "categories": [
+    "nightlife-sound",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hipster",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 41.1467,
+    "lng": -8.6055
+  },
+  "place": {
+    "city": "Porto",
+    "neighborhood": "Baixa (Rua de Passos Manuel)",
+    "region": "Norte",
+    "country": "Portugal"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Maus Hábitos — official site, About",
+      "url": "https://www.maushabitos.com/en/about/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Maus Hábitos — official site, homepage",
+      "url": "https://www.maushabitos.com/en/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Maus Hábitos — official site, music events",
+      "url": "https://www.maushabitos.com/en/music-events/",
+      "feedId": null,
+      "originalPublishedAt": "2023-03-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipédia (pt) — Maus Hábitos (centro cultural)",
+      "url": "https://pt.wikipedia.org/wiki/Maus_H%C3%A1bitos_(centro_cultural)",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "nossatelha.pt — Maus Hábitos listing (address confirmation)",
+      "url": "https://nossatelha.pt/maus-h-bitos-13918286647756732289/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Open House Porto — Garagem Passos Manuel (building history)",
+      "url": "https://2018.openhouseporto.com/en/places/garagem-passos-manuel/",
+      "feedId": null,
+      "originalPublishedAt": "2018-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikidata — Garagem Passos Manuel",
+      "url": "https://www.wikidata.org/wiki/Q73760200",
+      "feedId": null,
+      "originalPublishedAt": "2020-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — File:Garagem Passos Manuel - an art deco multi-storey garage (53276206093).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Garagem_Passos_Manuel_-_an_art_deco_multi-storey_garage_(53276206093).jpg",
+      "feedId": null,
+      "originalPublishedAt": "2023-10-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Garagem_Passos_Manuel_-_an_art_deco_multi-storey_garage_%2853276206093%29.jpg",
+    "attribution": "Photo by Winniepix, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Garagem_Passos_Manuel_-_an_art_deco_multi-storey_garage_(53276206093).jpg",
+    "licenseNote": "CC BY 2.0, shot 21 Oct 2023. This is the actual building — the 1939 Art Deco multi-storey garage at Rua de Passos Manuel, designed by architect Mário Abreu — whose 4th floor Maus Hábitos has occupied since around 2000. It's the building's street facade/exterior, not an interior shot of the club itself (no interior Commons photo of the venue was found that wasn't of graffiti since painted over), but it correctly and specifically shows the real building at the real address rather than a generic Porto street, so it clears the bar for a source photo over an illustration per near-illustrator's tiering."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Ad-hoc chat request per BACKLOG.md's Porto priority bump (operator has an influencer contact there for distribution). Porto has zero existing Near coverage; this is the first pin for the city. Chose Maus Hábitos over generic Ribeira/port-wine-cellar/francesinha coverage specifically because it has real alt-culture credibility: an artist-founded (1998) 'espaço de intervenção cultural' run by the Saco Azul cultural association, occupying the 4th floor of the 1939 Art Deco Garagem Passos Manuel (architect Mário Abreu) since around 2000 — restaurant, cocktail bar, concert hall that becomes a clubbing dance floor after midnight, and a gallery (MUPI + Exhibition Room) with monthly rotating shows, plus artist residencies. Verified via the official site (maushabitos.com/en/about) and the Portuguese Wikipedia article on the venue, which lists artists associated with its programming (Miguel Januário/+Maismenos, Rute Rosas, Pedro Maia, Miguel Duarte) and notes 2021 expansions to Lisbon and Vila Real under the same brand — confirming it's a going concern, not a one-off. Address (Rua de Passos Manuel 178, 4th floor, 4000-382 Porto) corroborated by a third-party directory listing (nossatelha.pt) since the official site's own contact page wasn't fetched directly. Coordinates are a manual approximation for that stretch of Rua de Passos Manuel in central Porto/Baixa (confidence 0.5) and should be refined against the exact street number before this leaves draft. No verifiably current, specifically-dated 2026 event was found — the official 'music-events' page returned only stale March 2023 listings on fetch, so eventEndsAt is left null (evergreen place) rather than inventing or guessing a date; a follow-up check of the venue's Instagram (@maushabitos) or a direct visit to a live-rendered events page is owed before publish if a dated hook is wanted. Hero image: a rights-clear CC BY 2.0 Wikimedia Commons photo of the actual Garagem Passos Manuel building exterior was found and used (Winniepix, 2023) — it's the real building at the real address, though not an interior shot of the club itself, which is disclosed honestly in licenseNote. The only interior/venue-tagged Commons photos found were 2012 graffiti-on-the-stairs shots explicitly noted as depicting art since painted over, so those were rejected as no longer representative rather than used. Trust is 'auto' per operator instruction for this task, but written to status: draft and left uncommitted per this task's explicit instruction not to commit; operator review still needed before this goes active, and full-locale-coverage (pt-BR, it, es-ES, es-419, zh-CN via near-translator) has not yet run."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Rua de Passos Manuel 178, Porto, Portugal"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

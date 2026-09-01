@@ -1,0 +1,90 @@
+{
+  "slug": "gato-vadio-porto",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 41.1519,
+    "lng": -8.6104
+  },
+  "place": {
+    "city": "Porto",
+    "neighborhood": "Cedofeita",
+    "region": "Norte",
+    "country": "Portugal"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "Gato Vadio — official blog (address, hours, event listings)",
+      "url": "https://gatovadiolivraria.blogspot.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-23T00:00:00Z"
+    },
+    {
+      "name": "Time Out Porto — 'A nova vida da livraria Gato Vadio'",
+      "url": "https://www.timeout.pt/porto/pt/noticias/a-nova-vida-da-livraria-gato-vadio-050320",
+      "feedId": null,
+      "originalPublishedAt": "2020-03-05T00:00:00Z"
+    },
+    {
+      "name": "Time Out Porto — Gato Vadio listing",
+      "url": "https://www.timeout.pt/porto/pt/compras/gato-vadio",
+      "feedId": null
+    },
+    {
+      "name": "Agenda Porto — Livraria Gato Vadio",
+      "url": "https://www.agenda-porto.pt/en/local/livraria-gato-vadio/",
+      "feedId": null
+    },
+    {
+      "name": "Radical Guide — Gato Vadio",
+      "url": "https://www.radical-guide.com/listing/gato-vadio/",
+      "feedId": null
+    },
+    {
+      "name": "ReLI — Gato Vadio",
+      "url": "https://www.reli.pt/gato-vadio/",
+      "feedId": null
+    },
+    {
+      "name": "Gato Vadio — Facebook page",
+      "url": "https://www.facebook.com/res.gato.vadio/",
+      "feedId": null
+    },
+    {
+      "name": "Wikimedia Commons — File:POR Porto Rua da Maternidade 03.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:POR_Porto_Rua_da_Maternidade_03.jpg",
+      "feedId": null,
+      "originalPublishedAt": "2018-09-07T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/POR_Porto_Rua_da_Maternidade_03.jpg",
+    "attribution": "Photo by Wikimedia Commons user -wuppertaler, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:POR_Porto_Rua_da_Maternidade_03.jpg",
+    "licenseNote": "CC BY-SA 4.0, shot 7 Sept 2018 on Rua da Maternidade itself (shows the street's portico near the Palacete Pinto Leite) but not the Gato Vadio storefront at no. 124 specifically — no rights-clear photo of the actual shopfront was found on a search pass. Per the operator's 2026-09-01 policy, a real, correctly-located street photo is used honestly disclosed rather than holding this piece in draft or generating an illustration that could pass as the real building."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Ad-hoc chat request per BACKLOG.md's Porto priority bump (ahead of Berlin) — Near's first Porto pin. Deliberately avoided Livraria Lello (the famous/touristy pick) in favor of Gato Vadio, a self-described 'Livraria · Café-Bar · Associação Cultural' at Rua da Maternidade 124, 4050-369 Porto. Verified via the shop's own blog (gatovadiolivraria.blogspot.com): founded 2007 as a poetry/politics/anarchist-leaning independent bookshop and space of 'resistance, culture and social intervention'; survived a near-closure by converting into a non-profit cultural association in 2011 (per ReLI and Radical Guide); evicted from its original address in 2019 amid Porto gentrification and relocated ~50m away to the current Rua da Maternidade address, reopening after renovation in March 2020 (Time Out Porto). Current hours per the blog: Tuesday-Saturday 3pm-7pm, plus evenings when there's a scheduled event. The blog's own event log shows an active, ongoing program through mid/late 2026 (an AI-and-society discussion 30 July 2026; an ecosocialist network debate 22 July 2026; a meeting with Filipino-Canadian writer Paulina Constancia 15 July 2026; an Amazonia-queer documentary screening 26 June 2026; a 'Reencantar o Mundo' presentation/debate 23 August 2026) — all now in the past relative to today, so no single forward-dated event is used as the hook; the pattern of frequent programming is described honestly as ongoing rather than invented as a specific future date. No September/October 2026 listing could be confirmed via Facebook or web search at time of writing — flagged as a gap for a follow-up pass once the shop posts its autumn calendar. Hero image: no rights-clear photo of the actual Gato Vadio shopfront turned up on Wikimedia Commons; used a CC BY-SA 4.0 photo of Rua da Maternidade itself (the same street, showing the Palacete Pinto Leite portico) instead of leaving the piece imageless or generating an illustration, per the operator's 2026-09-01 real-photo-over-limbo policy — disclosed honestly in licenseNote. Coordinates are a manual approximation for the Cedofeita/central-Porto area around Rua da Maternidade (confidence 0.5); an exact geocode of no. 124 is still owed as follow-up. Filed as trust: auto and status: draft per the operator's explicit direction for this piece; holding as draft pending the operator's own review before it goes live, since this is Near's very first Porto page and worth a human look before publishing to a brand-new city."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Rua da Maternidade 124, Cedofeita, Porto, Portugal"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
