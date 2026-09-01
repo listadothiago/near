@@ -227,6 +227,18 @@ rules:
     trigger: "google_maps_status == 'permanently_closed' (2x, >= 3 days apart)"
     action: "set status = closed; add statusHistory entry"
 
+  - id: weekly-editorial-column
+    description: >
+      Near runs a recurring weekly editorial column in near-editor's
+      house voice, tracked in content/editorial-column.md (cadence,
+      series index, what makes a good entry). near-refresh checks this
+      every run and treats a new entry as priority near-editor work once
+      7+ days have passed since the last one. Topic is never invented —
+      grounded in something that run's own research actually surfaced,
+      scoped jointly by near-seo + RADAR-X + near-editor per Near's
+      standing content-decision process. Operator decision, 2026-09-01,
+      after the inaugural piece ("The Zombie Listicle Problem").
+
   - id: full-locale-coverage
     description: >
       Every place with trust: auto and status: active carries content in

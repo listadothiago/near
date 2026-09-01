@@ -99,6 +99,16 @@ prose + fenced YAML/lists, read the prose too.
    maintains — coverage gaps, empty categories, bylines with no work,
    locale backfill. Together with `requests.md` this is demand Near has
    already analysed; work it before going looking for more.
+1d. **Check `content/editorial-column.md`'s cadence — every run.** Near
+   runs a recurring weekly editorial column (operator decision,
+   2026-09-01). If more than 7 days have passed since the most recent
+   entry in that file's Series Index, writing this week's column is a
+   priority `near-editor` task for this run: consult `near-seo` + RADAR-X
+   together for a genuine topic grounded in something this run's own
+   research actually surfaced (a dead-listing pattern, a recurring theme
+   across sources, a real opinion worth having) — same process as the
+   inaugural piece, not an invented hook. Append the new entry to the
+   Series Index when done.
 2. **Tier 1 preferred sources, every run.** Work every source listed under
    "Tier 1" in `content/preferred-sources.md` regardless of what
    destination this run is focused on.
