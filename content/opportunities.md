@@ -171,7 +171,13 @@ opportunities:
       - "A Tribuna and Juicy Santos are already recorded sources with regional listings"
     notes: >
       lgbtq-friendly is on only 2 of 20 places despite being a stated
-      core audience.
+      core audience. UPDATE 2026-09-01: Praia Grande gap closed —
+      content/places/canto-dos-ursos-praia-grande published (STEFAN,
+      bear-community karaoke bar, Near's first Praia Grande pin), via
+      near-write-article's full pipeline. Guarujá and Bertioga remain
+      at zero coverage; a dedicated research pass for Guarujá turned up
+      no verifiable lead this round (a "gay bars in Guarujá" listicle
+      turned out to mix in unrelated São Paulo capital clubs).
 
   - id: london-martial-arts-and-sober
     rank: 4  # see September 2026 reprioritization above

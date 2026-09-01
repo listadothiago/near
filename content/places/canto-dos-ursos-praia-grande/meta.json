@@ -1,0 +1,86 @@
+{
+  "slug": "canto-dos-ursos-praia-grande",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": -24.0027,
+    "lng": -46.4172
+  },
+  "place": {
+    "city": "Praia Grande",
+    "neighborhood": "Boqueirão",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Instagram — @cantodosursos520 (bio, address, hours, event activity)",
+      "url": "https://www.instagram.com/cantodosursos520/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Facebook — Canto Dos Ursos",
+      "url": "https://www.facebook.com/canto.dos.ursos.pg/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "TikTok — @cantodosursos520",
+      "url": "https://www.tiktok.com/@cantodosursos520",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Canto dos Ursos — official site",
+      "url": "https://sites.google.com/cantodosursos.club/canto-dos-ursos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/canto-dos-ursos-praia-grande/hero-interior.jpeg",
+    "attribution": "Photo courtesy of the operator, via Google Maps listing",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real interior photo of Canto dos Ursos — disco ball, laser lighting, and the bar shelf's teddy-bear decor, cropped tight to the ceiling/lighting/bar-shelf band of a taller original. Supplied by the operator from the venue's Google Maps listing. The crop deliberately excludes the lower portion of the original photo, which showed many recognizable patron faces with no consent — a privacy/outing risk for a queer nightlife venue near-legal-counsel flagged; the operator chose the crop-to-remove-faces option over using the full photo or falling back to the exterior shot."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "First Near place in Praia Grande — priority-1 content opportunity from content/opportunities.md (LGBTQ Baixada Santista coverage, operator lives in the region). Chosen via near-trendsetter research pass into real, current Baixada Santista LGBTQ venues, operator-selected over a weaker Pink Bar 013 lead (stale Instagram activity, not usable) and a Guarujá search that turned up no verifiable lead. Byline: STEFAN, operator-selected as the writer (nightlife-sound beat, established track record on 3 of the region's existing lgbtq-friendly places). Sourced directly from the venue's own Instagram bio (address, phone, hours), Facebook, TikTok, and official site — all consistent. Address per Instagram bio: Av. Presidente Kennedy 575, Boqueirão, Praia Grande (a secondary web search surfaced '549' for the same street but the venue's own bio was initially treated as authoritative). Coordinates are a street-level geocode (Av. Presidente Kennedy at Boqueirão), not an exact building match — confidence set accordingly. A secondary search claimed an ongoing municipal alvará/licensing dispute affecting hours; this could not be traced to any clickable, verifiable source (not on the venue's own channels or the city site), so it was NOT included per the honesty/attribution rule — unsourced claims don't get published even when a search summary asserts them. No negative reviews were found in this pass. All six locales written this same pass. Held at status: draft pending near-illustrator hero image resolution — this session's web search/fetch tools hit a session limit mid-pipeline before an image could be sourced."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:05:00Z",
+      "note": "Operator supplied a real exterior photo of the venue (Google Maps listing photo) mid-session, resolving the hero-image gate. The photo visibly shows the building's street number as 549 — corrects the Instagram-bio-derived '575' used in the previous entry; address, geocode query, and this note updated accordingly. Saved to public/places/canto-dos-ursos-praia-grande/hero-exterior.jpeg (superseded below). Still held at draft pending near-tov-police, near-legal-counsel, and chief-editor sign-off on the English source before flipping to active."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:10:00Z",
+      "note": "Operator supplied a second, more atmospheric interior photo (disco ball, lasers, bear-plushie bar decor) from the same Google Maps listing. near-legal-counsel flagged it as-is: the lower two-thirds of the original shows dozens of recognizable patron faces inside an LGBTQ nightlife venue with no consent, a real outing/privacy risk. Presented the operator three options (keep the exterior shot / use interior as-is / crop-to-remove-faces); operator chose crop. Cropped to the top ~52% of the frame (ceiling, disco ball, laser beams, bar shelf with teddy-bear decor, only unidentifiable silhouettes of heads at the very bottom edge) — no legible faces remain. Replaces the exterior shot as the published hero: saved to public/places/canto-dos-ursos-praia-grande/hero-interior.jpeg, exterior file removed. heroImage.url and licenseNote updated to match."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:15:00Z",
+      "note": "Sign-off complete. near-tov-police: no opening-line bans, AI-tell sludge, or age-coding found in the English source; voice register reads as STEFAN's established plain-spoken nightlife beat. near-legal-counsel: hero image consent risk resolved per the crop above; no defamation-adjacent claims (the 'other Praia Grande leads had gone quiet since 2023' line is a neutral factual observation, no venue named or disparaged); AI-disclosure and byline compliance confirmed via lib/content/authors.ts's stefan entry; image attribution/licenseNote honestly describes provenance and the crop rationale. Chief editor (near-editor): approved — a real, current, well-sourced first pin for a genuine coverage gap (Praia Grande), honest about the one claim (alvará/licensing dispute) it couldn't verify and deliberately left out rather than publishing an unsourced assertion. All six locales (en, pt-BR, es-419, es-ES, it, zh-CN) written this pass by near-write-article, each a genuine local edition per near-translator, not a literal translation. trust: auto (operator directly commissioned and supplied sourcing/images this session) — flipping to active and publishing."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Av. Presidente Kennedy 549, Boqueirão, Praia Grande, SP — street-level placement, corrected to 549 per the venue's own photographed street number"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

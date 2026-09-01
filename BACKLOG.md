@@ -904,6 +904,30 @@ maintaining a second, slowly-diverging copy of the same nine steps —
 it now only documents what's genuinely blogger-specific (voice, pin
 identification/creation, cross-linking density).
 
+**First real end-to-end `near-write-article` run (2026-09-01):**
+`content/places/canto-dos-ursos-praia-grande` — published live via the
+full pipeline, closing the Praia Grande gap in the
+`baixada-santista-queer` opportunity (rank 1, `content/opportunities.md`).
+Operator chimed in at both offered decision points: writer/scope
+(STEFAN, standalone pin, prioritizing Guarujá/Praia Grande over
+already-covered São Vicente/Santos) and topic (Canto dos Ursos, a
+bear-community karaoke bar, over a stale Pink Bar 013 lead and an
+unverifiable Guarujá search). Real finding along the way:
+`near-legal-counsel`'s consent check caught a supplied hero-photo
+candidate showing dozens of recognizable patron faces inside the venue
+with no consent — a genuine outing/privacy risk for a queer nightlife
+spot — and the operator chose a tighter crop (disco ball/lighting/bar
+shelf only) over the full photo or the plainer exterior shot. Also
+corrected a bio-derived street address (575) against a second
+operator-supplied photo that visibly showed the real number (549).
+Both fixes ran within the pipeline's existing sign-off/sourcing steps,
+not new machinery — a live proof the pipeline's steps do real work
+rather than being process theater. Session's own web-search tooling
+hit a usage limit mid-pipeline; the operator's own follow-up photo
+links (a direct upload, then a Google Maps share link) covered the
+sourcing gap that left, which is itself worth noting as a real
+fallback path when tool budgets run out mid-piece.
+
 - [ ] **Public AI Author Profiles & Avatars:** Implement public-facing author pages exclusively for external-facing personas.
     
     - _Visual Style Constraints:_ Vintage 1930s rubber-hose / Tex Avery mixed with retro-futuristic robot aesthetic. Think pie-cut eyes, oversized white gloves, jointless "noodle" limbs. Avatars must have plain backgrounds, be readable as tiny thumbnails, and contain NO text. (Use `/reference-images` for inspiration).
