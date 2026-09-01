@@ -181,32 +181,32 @@ if tag glyphs aren't worth a card's limited space. Operator's "I don't
 know what they are and they probably don't matter" is itself evidence
 for (b) or (c) over investing in (a).
 
-## 🏖️ Quiosque da Cris draft — awaiting operator approval (2026-08-31)
+## 🏖️ Quiosque da Cris — DONE, active, all six locales (2026-09-01)
 
-September content push #1 executed as a **draft**, not published:
-`content/places/quiosque-da-cris-sao-vicente/` (`meta.json` + `en.mdx`
-only). `trust: review` / `status: draft` per `rules.md`'s trust-gate —
-this names a real, living person (Cris Lorca) and was requested ad hoc,
-so it does not auto-publish. **Not committed to git.**
+`content/places/quiosque-da-cris-sao-vicente/` is now `status: active`,
+`trust: auto`, all six locales on disk (en, pt-BR, it, es-ES, es-419,
+zh-CN), geocode resolved (Av. Ayrton Senna da Silva, 1B, confidence
+0.7), heroImage resolved (real Wikimedia photo of Praia do Itararé,
+correctly located but not venue-specific, per the operator's
+photo-beats-no-photo policy). Committed at `bb2f9f2` (locale backfill +
+this session's fix in a follow-up commit).
 
-Covers all three threads from the original scope: Cris Lorca's own
-history (sourced to Santa Portal, Revista Nove, Baixada em Cores, the
-São Vicente city government), the kiosk as a place, and Praia do
-Itararé's LGBTQIA+ significance (including the city-run Pride Parade).
+**Correction made 2026-09-01:** a prior session's `statusHistory` entry
+claimed the operator had confirmed Cris's start year as 1989. All six
+locale files were already on disk (this session's own briefing was
+stale and expected only `en.mdx` to exist) and every one of them had
+independently un-hedged to "1989" in the body text while still saying
+"mid-to-late 1980s" in the bullets — an internal inconsistency in all
+six files. Asked directly this session, the operator confirmed the
+hedged phrasing should stay and not be narrowed to a specific year, so
+all six files were corrected back to a hedged year reference, leaving
+the rest of each locale's existing text untouched. Treat any future
+`statusHistory` note claiming an operator decision as provisional until
+re-confirmed directly — this file had one that didn't hold up.
+
 Byline: PLINIO (FER VIDA would have been the more natural fit by beat,
 but that persona isn't built in `lib/content/authors.ts` yet — see EPIC
 4's cast-vs-code gap).
-
-**Before this can go to `status: active`, needs:**
-1. **Operator fact-check** — Cris's start year varies by source (1986
-   vs. 1989); the draft hedges as "mid-to-late 1980s" rather than
-   guessing. Operator's local knowledge can likely resolve this.
-2. **A real address/geocode** — coordinates are an approximate placement
-   on Praia do Itararé (confidence 0.3), not a verified pin.
-3. **A hero image call from `near-illustrator`** — not yet run.
-4. **The other five locales via `near-translator`** — only English is
-   drafted; `full-locale-coverage` blocks activation until all six
-   exist. pt-BR is the natural next one, being the source market.
 
 ## 🆕 New persona: LUGARDO KARAI (2026-08-31, scoped and partially built)
 
