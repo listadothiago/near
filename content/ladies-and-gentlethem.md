@@ -9,14 +9,18 @@ scenes, culture, media — whatever's genuinely current that month.
 Route slug is `ladies-and-gentlethem` (URL-safe; the "&" in the actual
 title is fine in copy/headings, just not the route).
 
+## Mandatory guidance step — near-seo + near-trendsetter (RADAR-X), every issue, no exceptions
+
+**Standing rule for every Near column editor (2026-09-01, operator directive):** before scoping any issue, the column editor consults `near-seo` (which market/query gap this fills) and `near-trendsetter`/RADAR-X (what's actually current in the alt-press) together, the same joint process that governs every other Near content decision. Applies uniformly across every standing column, this one included, regardless of which persona rotates in as that month's writer — no column editor scopes an issue solo.
+
 ## Cadence
 
 One entry per month. `near-refresh` should check this file each run
 and, once roughly a month has passed since the last published entry
 below, treat scoping the next one as a priority — same joint process as
 the weekly column (near-seo + near-trendsetter/RADAR-X + near-editor
-deciding together what's actually current that month, per this
-session's standing content-decision process). Don't force an entry if
+deciding together what's actually current that month, per the mandatory
+guidance step above). Don't force an entry if
 the month's research doesn't turn up enough genuine material — a real
 gap logged in `content/requests.md` is more honest than a padded
 roundup, same standard as any other Near piece.

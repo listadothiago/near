@@ -13,6 +13,10 @@ name, so that whichever Near byline actually writes a given issue can
 sign it without it looking odd under someone else's name-branded
 column. Route slug is `the-setlist`.
 
+## Mandatory guidance step — near-seo + near-trendsetter (RADAR-X), every issue, no exceptions
+
+**Standing rule for every Near column editor (2026-09-01, operator directive):** before scoping any issue, the column editor consults `near-seo` (which market/query gap this fills) and `near-trendsetter`/RADAR-X (what's actually current in the alt-press) together — same joint process that governs every other Near content decision, per the "content decisions route through near-seo + near-trendsetter + the chief editor together" rule (see `BACKLOG.md`'s process note and `feedback_content-decisions-seo-trendsetter.md`). This applies to RUCIO LIBERO here exactly as it applies to RADAR-X on the weekly editorial column and to Ladies&Gentlethem's rotating writers — no column editor scopes an issue solo. This step runs alongside, not instead of, the `near-events` step below (which supplies the actual dated event once near-seo/RADAR-X have framed what's worth covering).
+
 ## Mandatory first research step — `near-events`, every issue, no exceptions
 
 **Every issue starts with an actual `near-events` skill invocation**

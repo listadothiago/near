@@ -25,13 +25,17 @@ uncomfortable thing about Near's own process (per the inaugural piece)
 stay exactly as demanding as before — this is a register adjustment, not
 a softening.
 
+## Mandatory guidance step — near-seo + near-trendsetter (RADAR-X), every issue, no exceptions
+
+**Standing rule for every Near column editor (2026-09-01, operator directive):** before scoping any issue, the column editor consults `near-seo` (which market/query gap this fills) and `near-trendsetter`/RADAR-X (what's actually current in the alt-press) together, the same joint process that governs every other Near content decision. This applies uniformly across all standing columns — the weekly editorial column, The Setlist, Ladies&Gentlethem, and any future column — no column editor scopes an issue solo, even when RADAR-X is already the editor here.
+
 ## Cadence
 
 One column per week. `near-refresh` checks this file every run (see its
 own SKILL.md) and, if more than 7 days have passed since the last
 published entry below, treats writing the next one as this run's
 priority near-editor task — consulting `near-seo` + RADAR-X together for
-the topic, per Near's standing content-decision process, exactly like
+the topic per the mandatory guidance step above, exactly like
 the inaugural piece was scoped. Don't force a column if nothing genuine
 turned up that week; a real gap in the log is more honest than a forced
 entry, but should be rare — near-refresh's own research pass routinely
