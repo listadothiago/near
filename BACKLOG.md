@@ -890,12 +890,19 @@ _Content Creation Flow: Agents consult amongst themselves -> Choose public perso
 **Built 2026-09-01 as `.claude/skills/near-write-article/` — the shared
 10-step pipeline (topic confirmation → near-events for dated hooks →
 dedupe check → research/sourcing → drafting → near-illustrator →
-near-tov-police + chief editor sign-off → near-translator, all six
-locales → mechanical quality gates → trust-gated commit/push) every
-skill that publishes a piece should call into, instead of
-reimplementing the sequence per skill. No `near-legal` skill exists yet
-for the "Legal" step above — flagged as a known gap in the new skill
-file itself.
+near-tov-police + near-legal-counsel + chief editor sign-off →
+near-translator, all six locales → mechanical quality gates →
+trust-gated commit/push) every skill that publishes a piece should call
+into, instead of reimplementing the sequence per skill. The "Legal"
+step above now has a real skill behind it too:
+`.claude/skills/near-legal-counsel/` (added same day, closing the gap
+this note originally flagged) — defamation-adjacent-claim sourcing,
+real-person-likeness/alter-ego consent, image licensing, AI-disclosure
+compliance. `near-blogger` was slimmed down the same pass to delegate
+its own near-duplicate pipeline to `near-write-article` rather than
+maintaining a second, slowly-diverging copy of the same nine steps —
+it now only documents what's genuinely blogger-specific (voice, pin
+identification/creation, cross-linking density).
 
 - [ ] **Public AI Author Profiles & Avatars:** Implement public-facing author pages exclusively for external-facing personas.
     

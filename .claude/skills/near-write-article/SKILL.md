@@ -1,6 +1,6 @@
 ---
 name: near-write-article
-description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, TOV police + chief editor sign-off, near-translator for all six locales, and the mechanical publish gates, ending in a git push. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
+description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, near-tov-police + near-legal-counsel + chief editor sign-off, near-translator for all six locales, and the mechanical publish gates, ending in a git push. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
 ---
 
 # near-write-article
@@ -94,17 +94,27 @@ correctness rule, not taste). Generated images disclose themselves as
 AI-generated in `attribution`. If image resolution fails entirely, the
 piece is held, not published without one.
 
-### 7. Sign-off — `near-tov-police` then the chief editor
+### 7. Sign-off — `near-tov-police`, `near-legal-counsel`, then the chief editor
 
-`near-tov-police` runs its full audit (opening-line bans, AI-tell
-sweep, voice register, honesty rule, age-neutral framing, persona-
-drift check) on the drafted English source before anything moves
-further. Findings get fixed by the writing persona/`near-editor`, not
-waved through. Once that passes, the chief editor (`near-editor`'s own
-editorial judgment, or the standing column's named editor persona)
-gives final go-ahead on substance and framing — the two checks are
-different: TOV police checks *how* it's said, the chief editor checks
-*whether it's the right call at all*.
+Three distinct checks, in order, each fixing what's actually theirs
+rather than rubber-stamping:
+
+- **`near-tov-police`** runs its full voice audit (opening-line bans,
+  AI-tell sweep, voice register, honesty rule, age-neutral framing,
+  persona-drift check) on the drafted English source. Checks *how*
+  it's said.
+- **`near-legal-counsel`** checks defamation-adjacent claims (is a
+  negative actually sourced, not just stated), real-person likeness/
+  consent (the `near-alter-ego` guardrails, if relevant), image
+  licensing, AI-disclosure compliance, and trademark/brand-name
+  accuracy. Checks *legal exposure*, not tone or substance — most
+  pieces should sail through this with no findings.
+- **The chief editor** (`near-editor`'s own editorial judgment, or the
+  standing column's named editor persona) gives final go-ahead on
+  substance and framing. Checks *whether it's the right call at all*.
+
+Findings from any of the three get fixed by the writing persona/
+`near-editor`, not waved through — none of the three skips the others.
 
 ### 8. Translate — `near-translator`, all six locales
 
@@ -161,12 +171,3 @@ can be the thing that decides to invoke this pipeline for a given
 piece, but this skill is what actually runs once a piece is chosen.
 Not `near-caretaker` (that's maintaining already-published content, a
 different pipeline entirely).
-
-## Known gap
-
-`BACKLOG.md`'s Content Creation Flow note lists "Legal" as a revision
-step alongside Chief Editor/TOV/SEO — no `near-legal` skill exists yet.
-Until it does, this pipeline has no dedicated legal-risk check; flag
-anything that plausibly needs one (real-person likeness in an alter
-ego, a defamation-adjacent honesty-rule claim, a licensing question on
-an image) to the operator directly rather than silently skipping it.

@@ -67,53 +67,41 @@ Three tiers, and a genuinely good piece usually blends them:
    generic listicle — it's the actual point of having a blogger persona
    instead of just more near-editor pieces.
 
-## Pipeline
+## Pipeline — delegates to `near-write-article`
+
+The actual write-and-publish mechanics (topic confirmation, research,
+drafting, illustration, sign-off, translation, quality gates,
+trust-gated commit/push) are `.claude/skills/near-write-article/`'s
+job — call into that pipeline rather than reimplementing it here. Two
+versions of the same nine steps drifting slowly apart is exactly the
+failure mode that skill exists to prevent. What's genuinely specific to
+`near-blogger` and layers on top of that shared pipeline:
 
 1. **Scope the piece** — a theme, a neighborhood, an itinerary, a "best
    of" angle. Often handed down from `near-war-room` or the operator
-   directly; sometimes near-blogger's own pitch.
-2. **Research** — consult `near-deep-researcher` for history/context/
-   economy/safety depth and for the word-of-mouth tier above; check
-   watched sources per `content/sources.md`/`content/preferred-
-   sources.md` for current media-mentioned material.
-3. **Identify every pin the piece will mention.** For each: does it
+   directly; sometimes near-blogger's own pitch. Feed this into
+   `near-write-article`'s step 1 (topic confirmation).
+2. **Identify every pin the piece will mention.** For each: does it
    already exist in `content/places/`? If yes, link it
    (`<NearLink slug="...">`) — never write a competing description of an
    existing place inside the blog post that contradicts its own page. If
    no, work with `near-editor` (and its category-relevant specialist
    lens — gastronomic, stefon/party, wellness, sports, outdoors, art,
-   luxury, shopping, historian as appropriate) to create the pin first,
-   then link it. A blog post should never reference a place with no
-   corresponding pin.
-4. **Draft the English source**, following the collection frontmatter
-   schema (`title`, `dek` ≤160 chars, `seoDescription` ≤320 chars) and
-   `references/llm-seo.md`'s discipline (front-loaded facts, dek/
-   seoDescription as citable summaries) applied to blogger's own voice.
-5. **Cross-link deliberately.** Every mentioned pin gets linked on first
+   luxury, shopping, historian as appropriate) to create the pin first
+   via its own `near-write-article` pass, then link it. A blog post
+   should never reference a place with no corresponding pin.
+3. **Draft in near-blogger's own voice** (see above) during
+   `near-write-article`'s drafting step, following the collection
+   frontmatter schema (`title`, `dek` ≤160 chars, `seoDescription`
+   ≤320 chars).
+4. **Cross-link deliberately.** Every mentioned pin gets linked on first
    mention; where it naturally helps the reader, pins mentioned in the
    same piece should link to *each other* too (via their own
    `<NearLink>`s, or via `getRelatedPlaces`-style relatedness) — a blog
    post is exactly the place where Near's cross-linking density should
-   be highest.
-6. **Hand off to every `near-translator` locale**, same as near-editor's
-   own step 9 — each locale persona localizes the post (and may include/
-   exclude a specific pin mention if it doesn't land locally, per that
-   persona's own judgment, same divergence rules as place content).
-7. **Consult `near-illustrator` — always.** Every collection gets an
-   image call: the cover/thumbnail, whether the piece warrants a gallery
-   (high bar — only when it genuinely rewards multiple images *and*
-   plenty of usable ones already exist in the public domain or an
-   open-licensed archive), and whether an original illustration would
-   beat the available photography. Collections are especially good
-   candidates for illustration, because a guide's hook is usually an
-   argument rather than a view, and arguments illustrate better than they
-   photograph. Section illustrations for a long multi-part piece are a
-   judgement call on top of that, not the whole of this step.
-8. **Validate and publish** per the same `quality-gate-before-publish`-
-   style discipline as near-editor (schema validation, real sourcing,
-   `trust-gate` logic — an ad-hoc/operator-requested post is `trust:
-   review`-equivalent unless the operator is directly and explicitly
-   commissioning it, same reasoning as near-editor's own trust-gate).
+   be highest. Collections are especially good `near-illustrator`
+   candidates too, because a guide's hook is usually an argument rather
+   than a view, and arguments illustrate better than they photograph.
 
 ## Working jointly with `near-editor`
 
