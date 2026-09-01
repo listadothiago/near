@@ -72,10 +72,10 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Praia_do_Itarar%C3%A9%2C_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
-    "attribution": "Silvio Bergamini, CC BY-SA 3.0, via Wikimedia Commons",
-    "attributionLink": "https://commons.wikimedia.org/wiki/File:Praia_do_Itarar%C3%A9,_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
-    "licenseNote": "A wide shot of Praia do Itararé itself — not the kiosk or the flag specifically, but the correct beach. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a venue-specific shot. Still blocked from active by the separate, unresolved fact-check on Cris's start year and the kiosk's exact address — this only clears the image gate."
+    "url": "https://near.tips/places/quiosque-da-cris-sao-vicente/hero-kiosk-flag.jpeg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "The actual kiosk's pride flag and covered seating area, taken on-site by Near's operator (2026-09-01) — replaces the earlier generic Praia do Itararé beach shot. Straightened from a sideways phone capture (180° rotation), otherwise unedited."
   },
   "eventEndsAt": null,
   "status": "active",
@@ -99,6 +99,11 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Operator, asked directly this session about the Cris Lorca start-year disagreement (1986 vs 1989 across sources), confirmed the hedged 'mid-to-late 1980s' phrasing should stay as-is and not be re-researched or narrowed to a specific year -- this supersedes the prior statusHistory entry's claim that the operator had confirmed 1989 specifically. Found on inspection that all six locale files already existed on disk (committed at bb2f9f2, contrary to this session's initial briefing that only en.mdx existed) and every one of them had independently un-hedged to a specific year -- en.mdx said 'in 1989' outright, and the pt-BR/it/es-ES/es-419/zh-CN editions each said 1989 explicitly too, all contradicting their own hedged bullet points. Corrected the year reference in all six locale files back to hedged phrasing ('mid-to-late 1980s' / regional equivalents), leaving the rest of each edition's existing text untouched. Coordinates/geocode and heroImage were already resolved in the prior session and are unchanged. status/trust were already active/auto from the prior session and remain so."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator supplied a real, venue-specific photo taken on-site at Quiosque da Cris (the kiosk's pride flag hanging on the tent wall, its covered seating area, Brahma/Amstel branded coolers), replacing the earlier generic Praia do Itararé beach shot near-illustrator had settled for. Saved to public/places/quiosque-da-cris-sao-vicente/hero-kiosk-flag.jpeg, straightened 180° from the original sideways phone capture, otherwise unedited. This is a materially better hero image than either the generic-beach fallback or the never-generated illustration brief logged above -- the illustration brief is now moot for this piece since a real, on-site photo exists."
     }
   ],
   "geocode": {
