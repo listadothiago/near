@@ -103,6 +103,22 @@ source to the permanent catalog off a single lucky find):
   same Rabbit Books and Bar opening details (owners, address, timeline).
   Niche but reliable for anything bookshop-related; worth checking again
   for other bookstore/literary-venue pieces.
+- `mackbooks.co.uk` — MACK's own site, publisher of Amelia Abraham's
+  *Sex, Clubs, Dissent: Visualising Queer Nightlife*; primary source for
+  the book's launch/event details, used in the Ladies&Gentlethem Sept
+  2026 issue (link-police retroactive pass, 2026-09-01). Worth checking
+  for other queer-photography/art-book coverage.
+- `huckmag.com` (Huck Magazine) — used for its own coverage/framing of
+  *Sex, Clubs, Dissent*'s argument about queer-nightlife slang being
+  absorbed and stripped of credit, same piece as above. Culture/
+  subculture-focused; worth a second look for other queer-scene angles.
+- `curacaopride.org` — official Curaçao Pride site, used for the 2026
+  "Make Waves" dates/theme in the same L&G issue. Straightforward
+  primary source for that one recurring dated event.
+- `santos.sp.gov.br` — Santos city hall's own news page, used as the
+  primary source for the 9th Parada do Orgulho LGBT+ mention in the same
+  issue. An official municipal source, reliable for Santos civic/Pride
+  event coverage specifically.
 
 ## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
 

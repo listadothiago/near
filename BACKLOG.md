@@ -143,11 +143,9 @@ worthwhile-but-missing external target turned into a published, honest
 and into `near-caretaker` (run it on any body text a currency
 correction touches).
 
-**Action, next session:** run `link-police` retroactively on the
-Ladies&Gentlethem Sept 2026 collection (and its constituent pins) to
-actually close the gap the operator flagged, then spot-check a couple
-other already-published collections for the same pattern before
-assuming this was a one-off.
+**Retroactive pass — DONE (2026-09-01, later session):** Ran `link-police` on the Ladies&Gentlethem Sept 2026 collection's English source. Added real external links for every previously-unlinked sourced claim (MACK's own launch page and Huck Magazine's coverage for the Amelia Abraham photobook, the Leslie-Lohman Museum, `curacaopride.org` for Curaçao Pride, Santos city hall's own news page for the 9th Parada do Orgulho LGBT+) and logged all four as new `preferred-sources.md` candidates. Added reciprocal tie-back links on all five constituent place pages (Dalston Superstore, Café 't Mandje, De Trut, Bar Das, Cabaret Latino at Teatro Clube da Eskyna) back to the collection, English only — **still open: the same reciprocal link in the other five locales (pt-BR/it/es-ES/es-419/zh-CN) on all five place pages.** `npm run build` verified clean before push.
+
+**Spot-check finding:** `content/collections/the-setlist-2026-10/en.mdx` (Primavera Sound São Paulo issue) shows the same under-linking pattern — added one external link (official festival ticketing page, `ingresse.com`) to the opening paragraph as a quick fix, but a full `link-police` pass on that piece (all six locales, plus checking whether The Strokes/Gorillaz/artist mentions warrant links) hasn't run yet. **Not a one-off** — worth treating this as a real gap across already-published pieces generally, not just these two. A broader retroactive sweep (more collections, place pages generally) is still open.
 
 **Standing rule, all column editors (2026-09-01, operator directive):** every standing column's editor — RADAR-X (weekly editorial column), RUCIO LIBERO (The Setlist), Ladies&Gentlethem's rotating writers, and NITE-PORTER once "Do Not Disturb" is built — must consult `near-seo` + `near-trendsetter`/RADAR-X together before scoping any issue, no exceptions. Codified in each column's own doc file (`content/editorial-column.md`, `content/the-setlist.md`, `content/ladies-and-gentlethem.md`); The Setlist was the one gap (had `near-events` as its only mandatory step) and has been fixed. Apply the same requirement to `content/do-not-disturb.md` when that column is actually built.
 
