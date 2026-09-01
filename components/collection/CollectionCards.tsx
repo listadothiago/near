@@ -11,8 +11,14 @@ import type { CollectionSummary } from "@/lib/content/schema";
 // whole row, blowing its 16:9 cover up to banner size.
 export default function CollectionCards({
   collections,
+  columnSlugs,
 }: {
   collections: CollectionSummary[];
+  /** Slugs that are entries in Near's weekly editorial column (see
+   * content/editorial-column.md) — these get a "Weekly Column" badge
+   * instead of the usual place count, same distinction CollectionHero
+   * makes on the entry's own page. */
+  columnSlugs?: Set<string>;
 }) {
   const t = useTranslations("collection");
 
@@ -37,7 +43,9 @@ export default function CollectionCards({
           )}
           <div className="p-3">
             <p className="inline-block bg-accent text-black border-[2px] border-ink px-1.5 text-[0.66rem] font-mono uppercase tracking-wide">
-              {t("placesCount", { count: c.meta.placeSlugs.length })}
+              {columnSlugs?.has(c.meta.slug)
+                ? t("weeklyColumnBadge")
+                : t("placesCount", { count: c.meta.placeSlugs.length })}
             </p>
             <h2 className="mt-1.5 text-[1.1rem] leading-[1.1]">
               {c.frontmatter.title}

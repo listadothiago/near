@@ -11,6 +11,20 @@ same reasoning as the inaugural piece (schema.ts's own "editorial story"
 framing), tying honestly to real places wherever the argument supports
 it, per `collectionMetaSchema`'s `placeSlugs.min(1)` requirement.
 
+**Audience note (operator, 2026-09-01):** write with an eye toward being
+genuinely shareable on LinkedIn — a somewhat more professional-leaning
+readership than Near's usual alt-weekly crowd. This shifts register
+slightly (an argument that holds up in front of people who work in
+travel/media/hospitality, not just people looking for a bar), but it's
+still unmistakably *Near's* voice and specifically the chief editor's
+own — not a corporate-blog register, not near-blogger's fiercer
+individual-columnist voice either. Think "the kind of sharp, opinionated
+industry take a media professional forwards to a colleague," not
+"thought leadership." The honesty, sourcing, and willingness to say an
+uncomfortable thing about Near's own process (per the inaugural piece)
+stay exactly as demanding as before — this is a register adjustment, not
+a softening.
+
 ## Cadence
 
 One column per week. `near-refresh` checks this file every run (see its
@@ -68,9 +82,13 @@ three-section template onto material that doesn't naturally split that
 way. But the recap-of-the-scene and AI-process/best-practice threads
 should be a running presence in the column over time, not a one-off.
 
-**The inaugural piece stays exactly as published — it's a historical
-record, not something to retroactively restructure.** This standing
-structure applies from the second entry forward.
+**Update (2026-09-01, later same day) — reverses the line above.**
+Operator decided the inaugural piece should in fact be rewritten to the
+LinkedIn-shareable/professional-audience register above, rather than
+staying untouched as a historical record. See BACKLOG.md's open threads
+for the scoped task. Facts, sourcing, and the honest AI-process framing
+that made the original piece work should carry over — this is a
+register/audience rewrite, not a re-reporting.
 
 ## Site placement
 
