@@ -119,6 +119,10 @@ source to the permanent catalog off a single lucky find):
   primary source for the 9th Parada do Orgulho LGBT+ mention in the same
   issue. An official municipal source, reliable for Santos civic/Pride
   event coverage specifically.
+- `ingresse.com` — official ticketing site for Primavera Sound São
+  Paulo 2026, used as the external link for The Setlist's first issue
+  (link-police full pass, 2026-09-01). Worth checking for other
+  São Paulo festival/ticketed-event coverage.
 
 ## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
 
