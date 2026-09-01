@@ -1,0 +1,64 @@
+{
+  "slug": "rabbit-books-and-bar-east-village-nyc",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 40.7288,
+    "lng": -73.9818
+  },
+  "place": {
+    "city": "New York",
+    "neighborhood": "East Village",
+    "region": "New York",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "EV Grieve — Rabbit Books and Bar ready for its grand opening on Avenue A",
+      "url": "https://evgrieve.com/2026/08/rabbit-books-and-bar-ready-for-its.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "EV Grieve — A mother-daughter-owned bookstore bar is coming to Avenue A",
+      "url": "https://evgrieve.com/2026/05/a-mother-daughter-owned-bookstore-bar.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-01T00:00:00Z"
+    },
+    {
+      "name": "Shelf Awareness — Rabbit Books and Bar Arriving This Summer in New York City",
+      "url": "https://www.shelf-awareness.com/theshelf/2026-06-03/rabbit_books_and_bar_arriving_this_summer_in_new_york_city.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-03T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://www.therabbitbooksandbar.com/wp-content/uploads/2025/12/steven-hastings-rj4MHc5cmkQ-unsplash-1024x683.jpg",
+    "attribution": "Photo by Steven Hastings on Unsplash",
+    "attributionLink": "https://unsplash.com/photos/rj4MHc5cmkQ",
+    "licenseNote": "Unsplash license (free to use). No real interior/exterior photo of the venue was available yet at pin time (opened 2026-08-15); this is the same bookshop-mood stock photo the venue's own site uses as a placeholder, per near-illustrator's licensed-stock fallback tier."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "FOODIE-9000 byline. Verified via EV Grieve (local East Village blog, two posts tracking the buildout and grand opening) and Shelf Awareness (book-trade press): mother-daughter owners Marianna Vaidman Stone and Emily Samara Stone, 170 Avenue A (former 7-Eleven corner space), opened Saturday August 15, 2026. Café by day, bar by night; international-literature focus; Parisian book-cafe / Irish pub-snug inspiration per owner quote in coverage."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "170 Avenue A, New York, NY 10009"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

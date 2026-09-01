@@ -91,6 +91,18 @@ source to the permanent catalog off a single lucky find):
   fetchable via the normal `WebFetch` path (redirects to a Google login
   wall), so any future check of it needs `claude-in-chrome` or a
   logged-in fetch instead of the default tool.
+- `evgrieve.com` (EV Grieve) — long-running East Village neighborhood
+  blog, genuinely local rather than a generic aggregator; tracked The
+  Rabbit Books and Bar's buildout across three posts (announcement,
+  pre-opening, grand opening) and was the primary source for
+  `content/places/rabbit-books-and-bar-east-village-nyc` (2026-09-01,
+  Near's first NYC-proper pin — no NYC alt-weekly is in `sources.md`
+  yet, worth onboarding this one formally once a second good hit turns
+  up).
+- `shelf-awareness.com` — book-trade press, used to cross-verify the
+  same Rabbit Books and Bar opening details (owners, address, timeline).
+  Niche but reliable for anything bookshop-related; worth checking again
+  for other bookstore/literary-venue pieces.
 
 ## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
 
