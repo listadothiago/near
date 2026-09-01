@@ -9,7 +9,7 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.9690,
+    "lat": -23.969,
     "lng": -46.3612
   },
   "place": {
@@ -75,7 +75,7 @@
     "url": "https://near.tips/places/quiosque-da-cris-sao-vicente/hero-kiosk-flag.jpeg",
     "attribution": "Photo courtesy of the operator",
     "attributionLink": "https://near.tips/about",
-    "licenseNote": "The actual kiosk's pride flag and covered seating area, taken on-site by Near's operator (2026-09-01) — replaces the earlier generic Praia do Itararé beach shot. Straightened from a sideways phone capture (180° rotation), otherwise unedited."
+    "licenseNote": "The actual kiosk's pride flag and covered seating area, taken on-site by Near's operator (2026-09-01) -- replaces the earlier generic Praia do Itararé beach shot. Operator flagged the first upload as upside down; corrected orientation, otherwise unedited."
   },
   "eventEndsAt": null,
   "status": "active",
