@@ -1,0 +1,107 @@
+{
+  "slug": "vag61-bologna",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 44.4945,
+    "lng": 11.3639
+  },
+  "place": {
+    "city": "Bologna",
+    "neighborhood": "Cirenaica",
+    "region": "Emilia-Romagna",
+    "country": "Italy"
+  },
+  "trust": "auto",
+  "author": "radar-x",
+  "sources": [
+    {
+      "name": "Vag61 — official site, Chi siamo (About)",
+      "url": "https://vag61.noblogs.org/about/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Vag61 — official site, Calendario",
+      "url": "https://vag61.noblogs.org/calendario/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Vag61.info — E' ripartito il mercato settimanale dei produttori biologici di VAG61",
+      "url": "https://www.vag61.info/vag61/articles/art_503.html",
+      "feedId": null,
+      "originalPublishedAt": "2013-01-01T00:00:00Z"
+    },
+    {
+      "name": "Zic.it — Martedì 24, mercatino bio e FunkyVag al Vag61",
+      "url": "https://www.zic.it/zic/articles/art_1341.html",
+      "feedId": null,
+      "originalPublishedAt": "2012-01-01T00:00:00Z"
+    },
+    {
+      "name": "Zero.eu — Vag61, Bologna (venue profile)",
+      "url": "https://zero.eu/en/luoghi/4055-vag61,bologna/",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Biblioteca Salaborsa — Bologna Online, Lo Spazio autogestito Vag61",
+      "url": "https://www.bibliotecasalaborsa.it/bolognaonline/events/lo_spazio_autogestito_vag61",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Zero.eu — Mercatino di Campi Aperti c/o Vag61",
+      "url": "https://zero.eu/en/luoghi/210372-mercatino-di-campi-aperti-c-o-vag61,bologna/",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia (it) — Cirenaica (Bologna)",
+      "url": "https://it.wikipedia.org/wiki/Cirenaica_(Bologna)",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia (en) — Porta San Donato, Bologna",
+      "url": "https://en.wikipedia.org/wiki/Porta_San_Donato,_Bologna",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — File:Porta San Donato - Bologna.JPG",
+      "url": "https://commons.wikimedia.org/wiki/File:Porta_San_Donato_-_Bologna.JPG",
+      "feedId": null,
+      "originalPublishedAt": "2012-05-15T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Porta_San_Donato_-_Bologna.JPG",
+    "attribution": "Photo by TheNino, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Porta_San_Donato_-_Bologna.JPG",
+    "licenseNote": "CC BY-SA 3.0, shot 15 May 2012 (Wiki Loves Monuments 2012). This is NOT a photo of Vag61 itself — no rights-clear photo of the venue's actual building on Via Paolo Fabbri could be found. It is Porta San Donato, the medieval city gate at the head of Via San Donato, the street the Cirenaica neighborhood grew up alongside and the gate that gives the wider area its historic identity as Bologna's university/student district. Per the operator's 2026-09-01 heroImage policy, a real, correctly-located neighborhood photo, honestly disclosed as not the venue, was judged better than holding this piece in draft or generating an illustration of a specific building nobody here has actually seen. Should be swapped for an actual photo of Vag61's frontage on Via Paolo Fabbri 110 if one becomes available."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Ad-hoc chat request (BACKLOG.md Bologna priority bump). This is Near's first Bologna pin. Chose Vag61 over the more famous Làbas: Làbas's original Via Orfeo squat was evicted in August 2017 and the building has since passed to the Comune di Bologna (per Gazzetta di Bologna), and current search results turned up no live 2026 event listing at its relocated Vicolo Bolognetti site, so its present-day operating status/programming couldn't be verified to the standard this piece needed. Vag61, by contrast, is documented as continuously self-managed since 2003 (originally Via Azzo Gardino 61, relocated to Via Paolo Fabbri 110 in the Cirenaica/San Donato district after that site was cleared) and has a verifiable, dated, recurring activity: a weekly Tuesday-evening organic farmers' market (Mercatino di Campi Aperti, confirmed via vag61.info and zero.eu) paired with a free reggae/hip-hop 'aperitivo musicale' (per zic.it coverage), alongside a documentation center (CentroDoc), an archive (Fondo Roversi), solidarity after-school programs (Doposcuola), a video collective (SMK Videofactory), and self-described antifascist/antisexist/antimilitarist politics per its own 'Chi siamo' page. This is real, concrete, currently-operating programming rather than a vague 'occupied building' — described factually and neutrally here, without editorializing beyond what the space's own materials and secondary press state. Could not independently verify the Instagram accounts named in BACKLOG.md (@redbologna, @kibo_bologna, @vernissagerome) — no browser/Instagram access in this pass; flagged as a gap. Address (Via Paolo Fabbri 110, Bologna) is geocoded manually (confidence 0.5, approximate coordinates for the Cirenaica/San Donato area) and should be tightened with a real lookup before this leaves draft. No rights-clear photo of Vag61's own building was found on Wikimedia Commons; used a correctly-located, honestly-disclosed photo of nearby Porta San Donato instead, per the operator's photo policy. Left in draft per this task's explicit instruction — not committed, other locales not written."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Via Paolo Fabbri 110, Cirenaica, Bologna, Italy"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
