@@ -887,6 +887,15 @@ _Goal: WOW experience for Ray-Ban users. Reference: wearables.developer.meta.com
 ## 🤖 EPIC 4: AI Agent Roster & Persona Management
 
 _Content Creation Flow: Agents consult amongst themselves -> Choose public persona to write -> Persona writes -> Chief Editor, TOV, SEO, Legal revise -> Editor/Translators localize to all locales. (Capture this process in Jira)._
+**Built 2026-09-01 as `.claude/skills/near-write-article/` — the shared
+10-step pipeline (topic confirmation → near-events for dated hooks →
+dedupe check → research/sourcing → drafting → near-illustrator →
+near-tov-police + chief editor sign-off → near-translator, all six
+locales → mechanical quality gates → trust-gated commit/push) every
+skill that publishes a piece should call into, instead of
+reimplementing the sequence per skill. No `near-legal` skill exists yet
+for the "Legal" step above — flagged as a known gap in the new skill
+file itself.
 
 - [ ] **Public AI Author Profiles & Avatars:** Implement public-facing author pages exclusively for external-facing personas.
     
