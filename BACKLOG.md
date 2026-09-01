@@ -513,6 +513,21 @@ Also flagged, not yet ranked: **no back-to-school/September-restart
 angle exists for any Near market** — logged as a candidate for the next
 `near-refresh` or `near-war-room`, no verified leads yet.
 
+**Item 3 (London autumn culture season) — DONE, verified 2026-09-01.**
+Both Wilton's Music Hall (PLINIO) and Studio Voltaire (CUBIC-V) were
+found already fully drafted, illustrated, and live on disk when this
+session picked up the item — all six locales each, `trust: auto`,
+`status: active`, working tree clean, prior commits `0b9bd42` (Wilton's)
+and `ba888d8` (Studio Voltaire, alongside Jumbi/Marineterrein/Trancoso).
+No new work was needed; this session's job was verification only:
+confirmed real in-text-linked sources on both English bodies, confirmed
+no crowd-consensus sentence-openers, confirmed genuine per-locale
+editions (not literal translations) in pt-BR/it/es-ES/es-419/zh-CN for
+both, and confirmed hero images resolved (Wilton's: Commons auditorium
+photo; Studio Voltaire: a correctly-located Clapham street photo per
+the operator's real-photo-beats-no-photo policy, `_ingestion-log.md`
+2026-08-31 entry). Next queue item is **4. London martial arts/sober**.
+
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
 - [x] **~~Jira MCP Integration~~ — decided against.** See the no-Jira decision above. `content/requests.md` (fenced-YAML, near-editor-writable) replaces the "file a ticket" need instead.
