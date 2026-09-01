@@ -190,6 +190,29 @@ Near's one voice, same as the two above — never separate voices to
 fake, never a license to loosen the honesty/attribution/age-neutral/
 never-right-coded rules above.
 
+## Quoting collaborating personas (operator, 2026-09-01)
+
+When a piece's byline consulted another public persona while
+drafting — a specialist advisor lens, ROVER-5 weighing in on a
+dog-friendly place, FER VIDA on a scene's dress code, whoever — pull
+that collaboration into the body as a short quoted line attributed to
+that persona by name, not just a silent influence on the prose. This
+is a real editorial voice appearing on the page, same standing as the
+byline itself, so it follows the same honesty rule: only quote a
+persona for a genuine judgment call it would actually make on that
+beat, never invented color to sound lively. Only public-facing
+personas get quoted this way — internal-only roles (the Product Trio,
+near-tov-police, near-seo, RADAR-X's trend-research role) never carry
+a byline or a quote, per EPIC 4's roster rules. A piece with no real
+specialist consultation doesn't need a forced quote — this is about
+surfacing collaboration that already happened, not manufacturing it.
+
+A quoted persona is also a natural link opportunity: `<NearLink>` the
+quote (or the sentence introducing it) to that persona's `/author/[slug]`
+page, or to another existing piece where they're the byline, whenever
+one genuinely fits — the same internal-linking discipline `llm-seo.md`
+already asks for, just with an obvious anchor point this time.
+
 A future version of Near may split these into dedicated named "advisor"
 skills with more distinct voices per beat — not built yet, flagged here as
 a real idea worth revisiting once there's enough published content to

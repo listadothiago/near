@@ -176,3 +176,18 @@ why: >
   swapped; keep the CC attribution rules.
 status: open
 ```
+
+```yaml
+request: hazlitts-london-no-natural-internal-link
+type: internal-link
+place: hazlitts-london
+why: >
+  Checked existing London places (gays-the-word-london in Bloomsbury,
+  wiltons-music-hall-london in Whitechapel, and the rest of the London
+  slate) for a natural <NearLink> from the Hazlitt's piece. None are
+  walkable from Frith Street/Soho Square, so no internal link was forced
+  per the link-density escape hatch. Revisit once Near has a genuine Soho
+  place published (a bar, bookshop, or venue on/near Frith or Dean
+  Street) that the Hazlitt's body could plausibly send a reader to next.
+status: open
+```
