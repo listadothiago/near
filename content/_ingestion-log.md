@@ -375,3 +375,57 @@ publish-blockers per their own statusHistory).
   Methodist chapel's facade, foregrounding the hand-glazed ceramic tile
   installation, since the tiles are the one genuinely distinctive,
   describable visual the piece has.
+
+### 2026-09-01 — London martial arts/sober (item 4, September 2026 reprioritization)
+
+Checked BACKLOG.md/opportunities.md first — item 4 had no leads recorded
+(`leads: []`), and unlike item 3 (Wilton's/Studio Voltaire), nothing was
+already drafted on disk. Genuinely fresh research.
+
+- **Martial arts — Ishigaki Jujitsu Club** (`ishigaki-jujitsu-london`).
+  Consulted `near-editor-sports` for the joinable-activity lens first.
+  Checked Bartitsu again per BACKLOG's specific ask (it's named in the
+  Next Up queue) — still no visitable London venue; bartitsu.club's only
+  London-area listing is the same unfinished Battersea study-group page
+  that Brockwell Lido's own statusHistory already rejected. Ishigaki
+  Jujitsu: founded 1994 by four people specifically so sexuality wasn't a
+  barrier to training, now the UK's largest LGBT+ martial arts club,
+  Jikishin-affiliated, Out For Sport Club of the Year 2025, free monthly
+  new-joiner sessions, classes at Finsbury Leisure Centre (Tue) and
+  in2sports Canary Wharf (Wed/Sat). Verified via the club's own site,
+  Jikishin's own affiliated-clubs list, and LGBT History Project /
+  Pride Sports corroboration. FIT-BOT's first byline — opportunities.md
+  had flagged this as the goal.
+- **Sober — false starts before landing.** Club Soda (the obvious first
+  candidate — Covent Garden tasting room, home of the "Queers Without
+  Beers" LGBTQ+ sober social) turned out to have closed its physical
+  space at lease-end, January 2026, with no new venue announced
+  (thespiritsbusiness.com + Club Soda's own site both confirm) — so QWB
+  currently has no fixed address to cite. The Sober Bar London (an
+  LGBTQI+ CIC) is pop-up/no fixed venue. Redemption Bar (Notting
+  Hill/Shoreditch/Covent Garden, alcohol-free vegan restaurant) looked
+  solid from search-summary text alone but turned out to have closed
+  every location permanently after Covid (confirmed via HappyCow,
+  Restaurant Guru, and Redemption's own site, which says outright it
+  hasn't reopened) — several SEO-scraped listicles are stale and still
+  describe it as open, worth flagging for whoever hits this lead next.
+  **Landed on The Lucky Saint** (`lucky-saint-fitzrovia-london`),
+  Fitzrovia — a real, currently-trading pub opened 2023 by the UK's
+  leading alcohol-free beer brand, verified open via CAMRA's 2026
+  listing. Framed honestly: not a dry bar (real cask ale and Guinness on
+  tap too), the actual story is the 0.5% option getting first-class
+  treatment rather than being an afterthought — same honesty standard as
+  the Sipeos entry. FOODIE-9000 byline (gastronomy beat, matching the
+  Ocean Beach Cafe / Sipeos precedent for sober-curious content).
+- **Hero images**: no rights-clear source photo found for either place.
+  No image-generation tooling available this session, so both prompts
+  were written to `content/photo-requests.md` per that file's fallback
+  process instead of leaving heroImage null with no path forward. Both
+  places held at `status: draft` pending an illustration landing in
+  `content/photo-inbox/` — this is the only thing blocking publish;
+  English copy, sourcing, and geocoding are otherwise complete.
+- **Locales**: not yet dispatched to near-translator. `rules.md`'s
+  full-locale-coverage rule exempts `status: draft` places, and there's
+  no point localizing copy that isn't live yet — translation is queued
+  as the very next step once each place's hero image resolves and it
+  flips to `active`.

@@ -180,7 +180,17 @@ opportunities:
       Both named in BACKLOG.md's Next Up queue. Would open
       wellness-fitness and give FIT-BOT its first byline. London is at
       four places and has just moved beyond Shoreditch.
-    leads: []
+    status: >
+      Drafted 2026-09-01 (content/places/ishigaki-jujitsu-london,
+      content/places/lucky-saint-fitzrovia-london), both status: draft
+      pending hero images — see _ingestion-log.md 2026-09-01 entry and
+      BACKLOG.md's item-4 update for full detail.
+    leads:
+      - "Bartitsu — rechecked, still rejected: no visitable London venue"
+      - "Club Soda / Queers Without Beers — dead end, tasting room closed Jan 2026, no new venue"
+      - "Redemption Bar — dead end, all locations closed permanently post-Covid despite stale listicles"
+      - "Ishigaki Jujitsu Club — used (martial arts)"
+      - "The Lucky Saint, Fitzrovia — used (sober-curious)"
 
   - id: locale-backfill
     rank: 5

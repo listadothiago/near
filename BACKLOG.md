@@ -540,6 +540,35 @@ photo; Studio Voltaire: a correctly-located Clapham street photo per
 the operator's real-photo-beats-no-photo policy, `_ingestion-log.md`
 2026-08-31 entry). Next queue item is **4. London martial arts/sober**.
 
+**Item 4 (London martial arts/sober) — drafted 2026-09-01, held at
+draft pending images; NOT yet fully done.** No prior work existed on
+this item (unlike item 3) — `content/opportunities.md`'s
+`london-martial-arts-and-sober` entry had `leads: []`. Fresh research
+this session found and wrote English source drafts for two real,
+verified-open, joinable/visitable London venues:
+`ishigaki-jujitsu-london` (Ishigaki Jujitsu Club — 30-year-old UK's-
+largest LGBT+ martial arts club, FIT-BOT's first byline) and
+`lucky-saint-fitzrovia-london` (The Lucky Saint — a Fitzrovia pub built
+by the UK's leading alcohol-free beer brand, FOODIE-9000 byline).
+Bartitsu was checked again and still rejected (no visitable venue, same
+finding as Brockwell Lido's own note). Club Soda / Queers Without Beers
+and Redemption Bar were both checked and rejected as dead leads — Club
+Soda's tasting room closed lease-end January 2026 with no new venue
+announced, and Redemption Bar's every location closed permanently post-
+Covid despite several stale listicles still claiming otherwise. Full
+detail and sourcing in `content/_ingestion-log.md`'s 2026-09-01 entry.
+**What's blocking full completion:** no image-generation tooling was
+available this session, so no hero image resolved for either place —
+both are `status: draft` with prompts queued in
+`content/photo-requests.md` for whoever runs generation next. Locales
+were not dispatched (rules.md's full-locale-coverage rule exempts draft
+places, and there's no point localizing before the images land). Next
+session picking this up should: run the two queued illustration
+prompts, drop results into `content/photo-inbox/`, wire them into each
+`meta.json` (flip to `active`), then dispatch `near-translator` for all
+five other locales on both places — only then is item 4 actually done.
+Next queue item after that is **5. locale backfill**.
+
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
 - [x] **~~Jira MCP Integration~~ — decided against.** See the no-Jira decision above. `content/requests.md` (fenced-YAML, near-editor-writable) replaces the "file a ticket" need instead.
