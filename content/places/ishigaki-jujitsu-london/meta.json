@@ -42,7 +42,7 @@
     "licenseNote": "Generated from a prompt queued in content/photo-requests.md (no rights-clear photo of the club was found): two figures mid-throw on a training mat, risograph/screenprint style, indigo/grey/acid-green palette, a rainbow belt-tag as a small detail rather than the focus. No real people depicted."
   },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
@@ -53,6 +53,11 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Operator generated the queued illustration prompt via Gemini and dropped it in content/photo-inbox/. Wired into heroImage, disclosed as AI-generated per rules.md. Image gate is now clear, but status stays draft: this is trust: auto, and rules.md's full-locale-coverage rule requires all six locales before an auto-trust place can go active. Only English exists so far — near-translator still owed for pt-BR/it/es-ES/es-419/zh-CN before this can flip to active."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "near-translator wrote genuine local editions for pt-BR, it, es-ES, es-419, and zh-CN (not literal translations, per each locale persona). All six locales now present, satisfying rules.md's full-locale-coverage rule for this trust:auto place. shortTitle/tagline/seoDescription character limits checked and confirmed under schema max for every locale before this flip. Status moved from draft to active."
     }
   ],
   "geocode": {

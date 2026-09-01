@@ -557,17 +557,20 @@ Soda's tasting room closed lease-end January 2026 with no new venue
 announced, and Redemption Bar's every location closed permanently post-
 Covid despite several stale listicles still claiming otherwise. Full
 detail and sourcing in `content/_ingestion-log.md`'s 2026-09-01 entry.
-**What's blocking full completion:** no image-generation tooling was
-available this session, so no hero image resolved for either place —
-both are `status: draft` with prompts queued in
-`content/photo-requests.md` for whoever runs generation next. Locales
-were not dispatched (rules.md's full-locale-coverage rule exempts draft
-places, and there's no point localizing before the images land). Next
-session picking this up should: run the two queued illustration
-prompts, drop results into `content/photo-inbox/`, wire them into each
-`meta.json` (flip to `active`), then dispatch `near-translator` for all
-five other locales on both places — only then is item 4 actually done.
-Next queue item after that is **5. locale backfill**.
+**Item 4 (London martial arts/sober) — now fully DONE, 2026-09-01.**
+Images were resolved earlier in the day (operator-generated Gemini
+illustrations wired into both `meta.json`s), and this pass closed the
+remaining gap: `near-translator` wrote genuine local editions (not
+literal translations) in pt-BR, it, es-ES, es-419, and zh-CN for both
+`ishigaki-jujitsu-london` and `lucky-saint-fitzrovia-london`. All six
+locales now exist for both places, satisfying `content/rules.md`'s
+`full-locale-coverage` rule for these `trust: auto` places — every
+`shortTitle`/`tagline`/`seoDescription` was checked against
+`lib/content/schema.ts`'s character limits before moving on (several
+taglines needed trimming to stay ≤90 chars). Both `meta.json`s flipped
+`status` from `draft` to `active` with a new `statusHistory` entry.
+`npm run build` completed with zero errors. Item 4 is complete — advance
+the queue pointer to **5. locale backfill**.
 
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
