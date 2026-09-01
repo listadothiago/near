@@ -112,6 +112,12 @@ export default function Header({
               {t("collection.navLabel")}
             </Link>
             <Link
+              href="/column"
+              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("nav.column")}
+            </Link>
+            <Link
               href="/sources"
               className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
             >
