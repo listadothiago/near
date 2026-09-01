@@ -110,6 +110,7 @@
   },
   "collection": {
     "placesCount": "{count} lugares",
+    "weeklyColumnBadge": "Columna Semanal",
     "navLabel": "Guías",
     "seeAll": "Ver todas",
     "empty": "Todavía no hay guías publicadas. Las guías juntan varios lugares en algo que vale la pena leer de principio a fin — las primeras ya vienen.",

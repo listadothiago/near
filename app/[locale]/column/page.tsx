@@ -24,7 +24,7 @@ export default async function ColumnRedirectPage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
 
-  const latestSlug = editorialColumnIndex.latestFirst[0];
+  const latestSlug = editorialColumnIndex.slugs[0];
   if (!latestSlug) notFound();
 
   redirect({ href: `/collection/${latestSlug}`, locale });

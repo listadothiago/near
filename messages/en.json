@@ -110,6 +110,7 @@
   },
   "collection": {
     "placesCount": "{count} places",
+    "weeklyColumnBadge": "Weekly Column",
     "navLabel": "Guides",
     "seeAll": "See all",
     "empty": "No guides published yet. Guides tie several places together into something worth reading start to finish — the first ones are on the way.",

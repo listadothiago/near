@@ -9,10 +9,16 @@ export default function CollectionHero({
   meta,
   frontmatter,
   placeCount,
+  isColumn = false,
 }: {
   meta: CollectionMeta;
   frontmatter: CollectionContentFrontmatter;
   placeCount: number;
+  /** True for entries in Near's recurring weekly editorial column (see
+   * content/editorial-column.md) — these read as the masthead's own
+   * opinion piece, not a generic place-tagging guide, so they get a
+   * distinct badge instead of the usual "{count} places" one. */
+  isColumn?: boolean;
 }) {
   const t = useTranslations("collection");
 
@@ -44,7 +50,7 @@ export default function CollectionHero({
       )}
 
       <p className="mt-5 inline-block bg-accent text-black border-[3px] border-ink px-2 py-0.5 text-[0.72rem] font-mono uppercase tracking-wide">
-        {t("placesCount", { count: placeCount })}
+        {isColumn ? t("weeklyColumnBadge") : t("placesCount", { count: placeCount })}
       </p>
       <h1 className="mt-2 text-[clamp(2rem,5.5vw,3.2rem)]">
         {frontmatter.title}

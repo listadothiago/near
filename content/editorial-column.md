@@ -41,12 +41,12 @@ Tips/Guides/Sources/About — a nav link, not a homepage banner or hero;
 operator's explicit call, 2026-09-01, after trying a few more prominent
 options). It always resolves to whichever entry is currently latest via
 `app/[locale]/column/page.tsx`, which reads
-`content/editorial-column-index.json`'s `latestFirst` array and
+`content/editorial-column-index.json`'s `slugs` array and
 redirects to `/collection/<slug>`.
 
 **Whoever flips a column entry's `meta.json` `status` from `draft` to
 `active` must also prepend its slug to
-`content/editorial-column-index.json`'s `latestFirst` array** — the nav
+`content/editorial-column-index.json`'s `slugs` array** — the nav
 link 404s (by design, via `notFound()`) as long as the index is empty or
 only lists slugs that aren't actually active yet, rather than ever
 pointing at unpublished content. Keep this file and the Series Index
@@ -58,6 +58,6 @@ Chronological, most recent first. Each entry: title, slug, publish
 date, one-line topic.
 
 1. **"The Zombie Listicle Problem"** — `zombie-listicle-problem` —
-   drafted 2026-09-01, pending hero image. Outdated "best of" listicles
-   recommending permanently-closed venues; Near's verify-before-and-
-   after-publish discipline as the actual differentiator.
+   published 2026-09-01. Outdated "best of" listicles recommending
+   permanently-closed venues; Near's verify-before-and-after-publish
+   discipline as the actual differentiator.

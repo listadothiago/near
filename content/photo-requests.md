@@ -6,8 +6,6 @@ but the generation tooling itself is unavailable or broken). This is the
 mirror image of `content/photo-inbox/`: that folder is where results come
 *in*, this file is where requests go *out*.
 
-**Currently empty — no open requests.**
-
 ## How it works
 
 1. `near-illustrator` decides a piece genuinely needs a generated
@@ -46,36 +44,6 @@ mirror image of `content/photo-inbox/`: that folder is where results come
 
 ## Open requests
 
-### zombie-listicle-problem — Near's first editorial column, concept piece with no single venue to photograph
-
-```
-Create a bold, flat-colour risograph-style illustration, 16:9 aspect
-ratio, for an editorial column about outdated online "best of" lists
-recommending bars and restaurants that have permanently closed.
-
-Scene: a glowing smartphone screen, held up in the foreground at a
-three-quarter angle, displaying a generic map-app pin over a storefront.
-The storefront behind/around the phone, rendered larger and taking up
-the rest of the frame, is visibly boarded up and abandoned — dusty
-windows, a faded/peeling paper sign, an OLD handwritten "closed" notice
-taped inside the glass — deliberately at odds with the cheerful,
-glowing "OPEN NOW" star-rating review card glowing on the phone screen.
-Warm string lights or a single flickering neon sign in the shape of a
-cocktail glass hangs dark and unlit above the boarded door, as a visual
-irony against the phone's glowing "highly rated" imagery.
-
-Style: bold flat-colour riso print aesthetic (think 2-3 spot colours —
-teal, hot orange/coral, off-white/cream paper texture), visible
-halftone dot grain, thick confident outlines, mid-century travel-poster
-composition. Must NOT look like a real photograph — no photorealistic
-lighting, no photographic textures, no camera blur or depth of field.
-Flat shapes and screenprint-style colour separation only.
-
-No embedded or legible text/typography anywhere in the image (no shop
-sign lettering, no phone-screen text, no captions) — convey "closed
-storefront vs. glowing outdated online review" entirely through imagery
-and composition, not words. No real person's likeness — the phone in
-the foreground can show a hand/arm holding it but no visible face.
-
-Aspect ratio: 16:9.
-```
+_(none — add new entries above this line, oldest first, each as its own
+`###` heading named `<slug> — <one-line reason>`, followed by the
+complete self-contained prompt in a fenced code block)_
