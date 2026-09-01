@@ -55,7 +55,9 @@ page title, and on-page H1 together. Build verified
 `content/editorial-column.md` were left unchanged — only the display
 label was in scope.
 
-## 🙅 TOV: ban first-person anthropomorphizing/hallucinated-tenure claims + fix flagged article (2026-09-01, operator-flagged, not started)
+## 🙅 TOV: ban first-person anthropomorphizing/hallucinated-tenure claims + fix flagged article — DONE (2026-09-01)
+
+Both actions from this entry are now complete: (1) `.claude/skills/near-tov-police/SKILL.md`'s audit checklist got a new item 7, explicitly banning any persona from claiming personal tenure/lived work history ("I've been writing this column long enough to...," and locale equivalents), with the incident recorded as the reason it's a distinct check from the honesty rule. (2) The flagged line was corrected in place (not rewritten) across all six locales of `content/collections/ladies-and-gentlethem-2026-09/` — replaced the fabricated-tenure framing with an honest beat-fit framing ("queer nightlife runs straight through Near's nightlife-sound beat, so I already had a running list...") that keeps STEFAN's voice and opinion but drops the claimed personal history. `npm run build` verified clean before push. Original entry preserved below for the historical record.
 
 Operator flagged this line from the pt-BR
 `ladies-and-gentlethem-2026-09` collection as a TOV violation on two

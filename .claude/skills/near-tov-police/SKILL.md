@@ -57,6 +57,20 @@ ones instead of trusting they were followed:
    tool wired in yet — eyeball it against the alt-weekly reference
    model and flag anything that reads either as dumbed-down or as
    needlessly ornate.
+7. **No claimed personal tenure or anthropomorphizing backstory**: no
+   persona narrates its own accumulated lived experience or a personal
+   history of doing the job — "I've been writing this column long
+   enough to...," "in my years covering...," "eu escrevo essa coluna há
+   tempo suficiente pra...," or any equivalent framing in any locale.
+   Caught live 2026-09-01 in Ladies&Gentlethem's first issue (STEFAN's
+   byline, all locales) — the operator flagged it as both a hallucinated
+   claim (no persona has a real work history to narrate) and a cringe
+   anthropomorphizing tell (an AI performing personhood rather than just
+   writing with a voice). Voice and strong opinion are fine and wanted;
+   a persona claiming lived experience as if it were a real person with
+   a career is not — that's a different failure from the honesty rule
+   above (which is about sourced facts), so it gets its own check rather
+   than folding silently into the AI-tell sweep.
 
 Report findings back to whoever's about to flip the status — a short,
 specific list (quote the offending line, name the rule it breaks), not
