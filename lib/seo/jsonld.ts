@@ -55,11 +55,17 @@ export function buildCollectionJsonLd({
   frontmatter,
   url,
   places,
+  isNewsArticle = false,
 }: {
   meta: CollectionMeta;
   frontmatter: CollectionContentFrontmatter;
   url: string;
   places: { name: string; url: string }[];
+  /** Editorial column entries are timely commentary, not an evergreen
+      guide — NewsArticle (rather than the generic Article) is the
+      schema.org type Google Discover actually looks for on that kind
+      of piece. Every other collection type stays Article. */
+  isNewsArticle?: boolean;
 }) {
   const itemListNode = {
     "@type": "ItemList",
@@ -73,7 +79,7 @@ export function buildCollectionJsonLd({
   };
 
   const articleNode = {
-    "@type": "Article",
+    "@type": isNewsArticle ? "NewsArticle" : "Article",
     "@id": `${url}#article`,
     headline: frontmatter.title,
     description: frontmatter.seoDescription,
