@@ -24,6 +24,13 @@ prose + fenced YAML/lists, read the prose too.
    resolves, pauses dead ones, and reports back a source-health summary.
    The rest of this run trusts that summary rather than assuming last
    run's source list is still accurate.
+0b. **Check `content/photo-inbox/` once per pass.** Read its `README.md`
+   for the process. Match any dropped photos to existing or in-progress
+   pieces per `near-illustrator`'s hero-image tier order (a real,
+   operator-supplied venue photo beats a generic fallback or a generated
+   illustration), wire matches in, and leave unmatched files logged in
+   `_inbox-notes.md` rather than guessing.
+
 0a. **RADAR-X reads the verified sources for what's trending —
    before picking what to write, not after.** Using `near-sources`'
    output, RADAR-X (the trendsetter persona) scans the live, healthy

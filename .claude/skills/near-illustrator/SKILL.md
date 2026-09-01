@@ -9,6 +9,16 @@ Near's art director. Not an optional garnish on long posts — **every
 published place and collection gets an image call from this skill before
 it ships.**
 
+## Check the photo inbox first
+
+Before sourcing stock or generating anything, check `content/photo-inbox/`
+(read its `README.md` for the full process) — the operator drops real
+photos and screenshots there directly. A real, venue-specific,
+operator-supplied photo beats both a correctly-located-but-generic
+fallback and a generated illustration, per the tier order below. Match
+any file there to the piece you're working on before falling back to
+sourcing or generating.
+
 ## The call, every time
 
 For each piece, decide and record three things:
