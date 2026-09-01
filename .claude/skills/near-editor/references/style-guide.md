@@ -255,6 +255,20 @@ fill one. Concretely:
 - End with a bridge outward: a `<NearLink>` to something nearby or related,
   framed as a next move, not a footnote.
 
+## Opening lines
+
+Never open a body with a crowd-consensus claim as the sentence's first
+word — "Everyone," "Todo mundo," "Todo el mundo," "Tutti," or an
+equivalent in any locale. It's a crutch (an easy way to gesture at
+"this place is popular/iconic" without doing the work of a real
+specific detail) and it's an AI-tell `llm-seo.md` already warns about
+elsewhere. If the piece is debunking or complicating a famous image or
+claim about a place, lead with the image/claim itself ("That photo
+you've seen a hundred times...", "One photo keeps surfacing from...")
+rather than the crowd that's repeating it. Caught 2026-09-01 after it
+slipped into consecutive LUGARDO KARAI pieces (Paraty, Trancoso) in
+every locale — worth a specific check in `quality-gate-before-publish`.
+
 ## Bullets
 
 Each bullet is a *reason*, not a fact-dump. "Housed in a 19th-century
