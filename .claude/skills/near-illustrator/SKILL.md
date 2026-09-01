@@ -19,6 +19,16 @@ fallback and a generated illustration, per the tier order below. Match
 any file there to the piece you're working on before falling back to
 sourcing or generating.
 
+## If generation isn't working this session
+
+If the call is "generate an illustration" but the generation tooling
+itself is unavailable or broken this session, don't leave `heroImage`
+null and move on — write a complete, ready-to-paste prompt into
+`content/photo-requests.md` (read it for the exact format) so the
+operator can run it externally and drop the result into
+`content/photo-inbox/`. This is the standing fallback path, not a one-off
+workaround — always prefer it over silently skipping the image call.
+
 ## The call, every time
 
 For each piece, decide and record three things:
