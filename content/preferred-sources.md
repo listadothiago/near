@@ -78,6 +78,19 @@ source to the permanent catalog off a single lucky find):
   pattern already used for `@crisdoquiosque`. Worth the same "check
   before any statusHistory update" treatment near-caretaker gives that
   account.
+- Instagram `@cantodosursos520` — Canto dos Ursos's own account
+  (bear-community karaoke bar, Praia Grande), 18.3K followers, posting
+  multiple times a week; the primary source for that place's address,
+  hours, and event calendar (found while writing
+  `content/places/canto-dos-ursos-praia-grande`, 2026-09-01). Worth
+  checking for Praia Grande LGBTQIA+ nightlife generally, not just this
+  one venue's own currency checks — same `nightlife-sound`/
+  `lgbtq-friendly` beat as `@amuseclub`/`@crisdoquiosque`.
+- Canto dos Ursos's own site (`sites.google.com/cantodosursos.club`) —
+  found alongside the Instagram above; a Google Sites page, not
+  fetchable via the normal `WebFetch` path (redirects to a Google login
+  wall), so any future check of it needs `claude-in-chrome` or a
+  logged-in fetch instead of the default tool.
 
 ## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
 

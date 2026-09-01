@@ -928,6 +928,20 @@ links (a direct upload, then a Google Maps share link) covered the
 sourcing gap that left, which is itself worth noting as a real
 fallback path when tool budgets run out mid-piece.
 
+**`near-write-article` gained a source-capture step (2026-09-01,
+operator directive: "add the sources skill to the writing routine so
+it captures any new sources found as monitored sources... for skills
+to monitor with their lenses").** `near-sources` previously only ran at
+the start of `near-refresh` (health-checking the existing watched
+list). It now has a second entry point, called inline from
+`near-write-article`'s research step on every piece: any source used
+that isn't already in `content/sources.md` gets logged as a candidate
+in `content/preferred-sources.md`, named for the relevant persona's
+beat, so it's findable and monitorable going forward instead of a
+one-off lookup that leaves no trace. First real use: Canto dos Ursos's
+own Instagram and site, captured the same pass that published the
+piece (see `content/_ingestion-log.md`'s 2026-09-01 entry).
+
 - [ ] **Public AI Author Profiles & Avatars:** Implement public-facing author pages exclusively for external-facing personas.
     
     - _Visual Style Constraints:_ Vintage 1930s rubber-hose / Tex Avery mixed with retro-futuristic robot aesthetic. Think pie-cut eyes, oversized white gloves, jointless "noodle" limbs. Avatars must have plain backgrounds, be readable as tiny thumbnails, and contain NO text. (Use `/reference-images` for inspiration).

@@ -692,3 +692,32 @@ column.md`, `content/ladies-and-gentlethem.md`). New standing doc:
 **Build verification:** `npm run build` completed with zero errors —
 `/en/the-setlist`, all five other locales, `/the-setlist/feed.xml`,
 and `/en/collection/the-setlist-2026-10` all generated successfully.
+
+## 2026-09-01 — Canto dos Ursos, Praia Grande (first near-write-article end-to-end run)
+
+- **New place:** `content/places/canto-dos-ursos-praia-grande` — bear-
+  community karaoke bar, Boqueirão, Praia Grande. Near's first Praia
+  Grande pin, closing that gap in the `baixada-santista-queer` content
+  opportunity (rank 1, `content/opportunities.md`). Byline: STEFAN.
+- **New sources captured:** Instagram `@cantodosursos520` and Canto dos
+  Ursos's own site (`sites.google.com/cantodosursos.club`) logged as
+  candidates in `content/preferred-sources.md`, per `near-write-article`'s
+  new step 4 addendum and `near-sources`'s new mid-piece capture entry
+  point — both built this same session so future pieces/personas can
+  find and monitor them by name instead of the lookup being lost.
+- **Hero image:** operator-supplied Google Maps listing photos, two
+  rounds — an exterior shot, then a more atmospheric interior shot that
+  `near-legal-counsel` flagged for showing recognizable patron faces
+  with no consent (a real outing/privacy risk for a queer nightlife
+  venue). Operator chose a tight crop (ceiling/disco-ball/laser/bar-
+  shelf band only) that removes all legible faces. The interior photo
+  also corrected the venue's street number (549, not the Instagram
+  bio's 575) via a visibly photographed sign.
+- **What didn't make the piece:** a search-engine summary asserted an
+  ongoing municipal licensing dispute affecting hours; no clickable
+  source could be found for it (not on the venue's own channels, not on
+  the city site), so it was left out per the honesty/attribution rule.
+
+**Build verification:** `npm run build` completed with zero errors
+after fixing one schema violation (pt-BR `shortTitle` initially ran to
+53 chars against the 48-char limit) — all six locale pages generated.

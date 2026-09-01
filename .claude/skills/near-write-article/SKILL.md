@@ -65,6 +65,22 @@ linked source — not just the original ingestion's `sources[0]` — per
 `style-guide.md`'s attribution rule. Include genuine negatives a
 source raises; don't smooth them into pure positivity.
 
+**Capture any genuinely new source this research turns up.** Research
+for a single piece routinely surfaces a source Near wasn't already
+watching — a venue's own Instagram/TikTok/site, a regional listicle
+site, a local aggregator. Before this piece's `meta.json` gets written,
+hand the list of sources actually used to `near-sources`: anything not
+already in `content/sources.md` gets logged as a candidate entry in
+`content/preferred-sources.md`'s "Candidates not yet in `sources.md`"
+section (name, what it's good for/beat, which piece it was found
+researching, any access quirks like a login wall). This is what makes
+a source *monitorable* going forward — by `near-caretaker` for currency
+checks, by the relevant persona's own beat/lens, and by `near-refresh`
+once it's graduated into `sources.md` proper — instead of a one-off
+lookup that leaves no trace for the next piece that could use it. Don't
+wait for `near-refresh`'s own periodic pass to do this; it happens
+inline, every piece, the moment a new source is used.
+
 ### 5. Choose the persona and write — the right voice, TOV-guided
 
 Pick whichever public persona's beat actually fits (see each

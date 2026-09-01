@@ -1,6 +1,6 @@
 ---
 name: near-sources
-description: Owns content/sources.md and content/preferred-sources.md — verifies watched feeds/pages still resolve, retires dead ones, onboards graduated candidates, and keeps the /sources page honest. Run this first, at the start of every near-refresh, before any content research happens.
+description: Owns content/sources.md and content/preferred-sources.md — verifies watched feeds/pages still resolve, retires dead ones, onboards graduated candidates, and keeps the /sources page honest. Two entry points — run first at the start of every near-refresh (health check before research), and run inline by near-write-article on every piece to capture any newly-found source as a preferred-sources.md candidate so it's monitorable by name for future pieces and by the relevant persona's own beat/lens, not lost after one lookup.
 ---
 
 # near-sources
@@ -15,6 +15,43 @@ first step instead.
 **Operator directive (2026-09-01): every `near-refresh` starts here.**
 Check sources before researching anything, so the rest of the run works
 from a verified list rather than one that might already have rot in it.
+
+**Second operator directive (2026-09-01): also runs inline from
+`near-write-article`, on every piece.** Health-checking is a
+per-refresh job, but *capturing* a newly-found source is a per-piece
+job — waiting for the next `near-refresh` to log a source discovered
+while writing a single place page means it's forgotten by then. See
+"Capture new sources found mid-piece" below.
+
+## Capture new sources found mid-piece (the near-write-article entry point)
+
+When called from `near-write-article`'s research step rather than from
+`near-refresh`:
+
+1. **Compare what was actually used against `content/sources.md`.**
+   Anything not already listed — a venue's own Instagram/TikTok/site, a
+   regional outlet, an aggregator — is a genuinely new source.
+2. **Log each one as a candidate**, appended to
+   `content/preferred-sources.md`'s "Candidates not yet in
+   `sources.md`" section: name, what beat/category it's good for, which
+   piece it was found researching (with a date), and any access quirk
+   worth flagging for whoever checks it next (a login wall, no RSS feed,
+   needs `claude-in-chrome` instead of `WebFetch`, etc.). Follow the
+   existing entries in that section as the format template — don't
+   invent a new structure.
+3. **Don't formally onboard into `sources.md` off a single piece.**
+   Same standing rule as the near-refresh entry point below: a
+   candidate graduates to the full catalog once a second or third
+   genuinely good hit shows up across separate pieces/runs, not on the
+   first find. This step's whole job is making sure that second hit is
+   even possible — a source nobody wrote down doesn't get a second
+   chance to prove itself.
+4. **Name it for the relevant persona's beat**, not just generically —
+   a source found while writing a `nightlife-sound` piece is worth
+   flagging as relevant to that persona's own future research, the same
+   way `@amuseclub`/`@crisdoquiosque`/`@cantodosursos520` all read as
+   Baixada Santista `lgbtq-friendly`/`nightlife-sound` leads in the
+   Candidates list today, not just "some Instagram account."
 
 ## What to do, in order
 
