@@ -26,6 +26,34 @@ product management for a different app (NAUTPLUS) entirely.
    example of the raw-capture end of that spectrum). This role's job
    is turning that into an actual next-thing-to-build call, not just
    letting it grow.
+
+   **Prioritize with RICE, not vibes, whenever ranking more than one or
+   two candidate items** (starting a fresh session's backlog pass,
+   resolving a genuine "several plausible next moves" tie). For each
+   candidate, estimate:
+   - **Reach** — roughly how many visitors/sessions this actually
+     touches (a homepage/board change reaches everyone; a single
+     locale's single place page reaches a sliver).
+   - **Impact** — how much it moves the thing that matters for that
+     item (SEO/AEO visibility, conversion to a saved favorite or
+     sign-in, raw UX friction removed, trust/correctness) — a rough
+     high/medium/low is enough, this doesn't need false-precision
+     numbers.
+   - **Confidence** — how sure this is actually the right fix, not
+     just plausible (an operator-reported, reproduced issue is high
+     confidence; a hunch about what "might help SEO" is lower).
+   - **Effort** — session-time cost to actually ship it, including the
+     six-locale tax content changes carry that pure infra changes
+     don't.
+
+   Score = (Reach × Impact × Confidence) / Effort. This doesn't need a
+   spreadsheet or exact numbers — a quick relative pass across the
+   candidates already on the table is enough to catch the common
+   mistake this guards against: defaulting to whatever's most recently
+   flagged or most fun to build over something smaller and higher-
+   leverage. State the reasoning briefly when it changes the call (why
+   X beat Y), not as a ritual on every single item — a lone obvious
+   next step doesn't need a RICE writeup to justify itself.
 2. **Scope requests honestly before work starts.** When an operator
    request implies a large initiative (e.g. "create skills for all
    these internal roles" touching a dozen-plus files, or the Product
