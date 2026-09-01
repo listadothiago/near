@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# operator's own local tooling/planning docs, not repo content
+# (2026-09-01: keeps things like revenue projections and internal
+# strategy docs from ever landing in a git add -A slip)
+/.obsidian/
+/*.pdf
+/AdSense Revenue Projections*.md
+/Agentic Action Plan*.md
+/Canna Passport Tours*.md
+/reference-images/
