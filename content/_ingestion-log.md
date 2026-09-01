@@ -429,3 +429,80 @@ already drafted on disk. Genuinely fresh research.
   no point localizing copy that isn't live yet — translation is queued
   as the very next step once each place's hero image resolves and it
   flips to `active`.
+
+### 2026-09-01 — Near's first editorial column: "The Zombie Listicle Problem"
+
+Operator asked directly in chat whether the chief editor could publish
+Near's first editorial column. Per the established process, this content
+decision routed through near-seo + RADAR-X (trendsetter lens) + near-editor
+together rather than one persona picking a topic solo.
+
+- **Scoping.** Rejected inventing a topic from nothing. RADAR-X flagged a
+  real, repeated pattern from this session's own research: while sourcing
+  the sober-curious London leads earlier this run (see the 2026-09-01
+  "London martial arts/sober" entry above), four separate candidate venues
+  turned out permanently closed — Club Soda, The New Bar, Better Sunday,
+  Redemption Bar — despite still surfacing as live recommendations in
+  search results and listicles. near-seo's angle: this is a genuine,
+  defensible differentiator for Near (every place gets checked as
+  currently open before publish; most "best of" content never gets
+  re-checked after it's written), not a manufactured hook. near-editor's
+  call: this is a real, sourced, opinionated position Near can hold
+  without forcing a political angle onto a topic that doesn't need one —
+  it's about content-farm/SEO incentives and verification discipline, in
+  keeping with the style guide's skepticism of "enshittification" and
+  content optimized for the moment of publish over the moment of reading.
+- **Format decision.** A recurring named column vs. a one-off inaugural
+  piece: went with a one-off that establishes the format rather than
+  committing to a cadence/name the operator hasn't seen yet. Byline
+  register: near-editor's own even-keeled house voice (not near-blogger's
+  fiercer register) since this reads as a house editorial position, not
+  an individual columnist's opinion piece.
+- **Structural home.** `collectionContentFrontmatterSchema`/
+  `collectionMetaSchema` was the closest existing fit per schema.ts's own
+  "editorial story" framing. Checked whether a pure opinion piece with no
+  place references would need a new content type — `collectionMetaSchema`
+  requires `placeSlugs.min(1)`, so a truly place-less column isn't
+  structurally supported today. Judgment call: proceeded with the
+  existing collection type rather than opening an architecture project,
+  because this specific column genuinely and honestly ties to three real
+  places already verified open this session (Lucky Saint Fitzrovia,
+  Ocean Beach Cafe San Francisco, Ishigaki Jujitsu London) — the
+  three-places framing wasn't forced to satisfy the schema, it's the
+  actual "here's what we'd recommend instead" structure of the piece.
+  Flagging for the operator: a future column with no natural place tie-in
+  would need this revisited (either a genuine placeSlugs stretch, which
+  rules.md's link-density rule already forbids for internal links, or a
+  new content type).
+- **Sourcing.** Two external in-text links, both verified reachable
+  before citing: thespiritsbusiness.com (Club Soda's Jan 2026 closure,
+  with founder quote) and happycow.net (Redemption Bar Shoreditch
+  confirmed closed). Both added to `meta.sources`... note: collections
+  don't carry a `sources` array in the schema the way places do
+  (`collectionMetaSchema` has no `sources` field), so attribution lives
+  entirely in the in-text links per the body itself — same
+  `link-density` discipline, no separate citation block to maintain.
+- **Trust/status.** `trust: auto` — operator commissioned this directly
+  in chat, same reasoning as the asian-food-sao-paulo collection
+  precedent (operator-is-the-approver). Held at `status: draft`, not
+  `active`, purely on the hero image: no image-generation tooling was
+  available this session, so a complete, self-contained illustration
+  prompt was written to `content/photo-requests.md` (riso-style, phone
+  showing a glowing "open" review card held up against a boarded-up,
+  actually-closed storefront) rather than leaving `heroImage` null with
+  no path forward. English copy, all five other locales, sourcing, and
+  internal linking are otherwise complete and gate-compliant.
+- **Locales.** Wrote all six despite `full-locale-coverage` technically
+  exempting `status: draft` — English was solid and the operator's
+  instructions asked for it directly, so did it now rather than
+  deferring; each locale is a genuine local edition (register, examples,
+  and phrasing adjusted per that locale's persona file), not a literal
+  translation, with the underlying facts (closure dates, venue names,
+  source claims) held consistent across all six per llm-seo.md's entity
+  coherence rule.
+- **Build.** `npm run build` passes with zero errors; all six locale
+  routes for `/collection/zombie-listicle-problem` generated correctly.
+  shortTitle/tagline/dek/seoDescription character limits independently
+  checked per file against schema.ts's actual limits (dek <=160,
+  seoDescription <=320) after this exact class of bug broke production
+  earlier the same day.
