@@ -118,6 +118,18 @@ export default function Header({
               {t("nav.column")}
             </Link>
             <Link
+              href="/ladies-and-gentlethem"
+              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("nav.ladiesAndGentlethem")}
+            </Link>
+            <Link
+              href="/the-setlist"
+              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("nav.theSetlist")}
+            </Link>
+            <Link
               href="/sources"
               className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
             >

@@ -35,6 +35,19 @@ export const AUTHORS: Author[] = [
   { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"] },
   { slug: "fit-bot", handle: "FIT-BOT", beats: ["wellness-fitness"] },
   { slug: "lugardo-karai", handle: "LUGARDO KARAI", beats: ["travel"] },
+  // Orchestrating voice of the monthly live-music column (BACKLOG EPIC 4
+  // roster). Actual writing rotates to whichever persona fits a given
+  // month's real material — see content/the-setlist.md.
+  { slug: "rucio-libero", handle: "RUCIO LIBERO", beats: ["nightlife-sound"] },
+  // Consultant tier, same as ROVER-5/Eli The DEI Guy: named and quotable
+  // per style-guide.md's "Quoting collaborating personas" rule, not a
+  // place-writing beat of its own — no `beats`, so it never appears in a
+  // category filter. AI-content-creation-industry specialist, invited
+  // into the weekly editorial column whenever an entry's AI-process
+  // thread (see content/editorial-column.md's standing structure, point
+  // 3) would benefit from an actual expert voice instead of the
+  // masthead speaking generically about "AI in content."
+  { slug: "parser", handle: "PARSER", beats: [] },
 ];
 
 const BY_SLUG = new Map(AUTHORS.map((a) => [a.slug, a]));

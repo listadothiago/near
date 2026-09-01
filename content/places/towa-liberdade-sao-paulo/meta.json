@@ -1,0 +1,65 @@
+{
+  "slug": "towa-liberdade-sao-paulo",
+  "categories": [
+    "food-drink",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.5583,
+    "lng": -46.6339
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Liberdade",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "A Vida no Centro — \"Conheça 8 mercearias orientais na Liberdade\"",
+      "url": "https://avidanocentro.com.br/onde_comer_e_beber/conheca-mercearias-orientais-liberdade/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Revista Fórum — \"SP: o que comprar nos mercadinhos da Liberdade\"",
+      "url": "https://revistaforum.com.br/brasil/o-que-comprar-nos-mercadinhos-da-liberdade/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Guia Viajar Melhor — \"Liberdade: 7 mercadinhos perfeitos para conhecer no bairro japonês\"",
+      "url": "https://guiaviajarmelhor.com.br/liberdade-7-mercadinhos-para-conhecer-no-bairro-japones/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/towa-liberdade-sao-paulo/hero.jpg",
+    "attribution": "Photo by Francisco Antunes, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Feiraliberdadesaopaulo.jpg",
+    "licenseNote": "Feira da Liberdade street-market scene on Praça da Liberdade, the same square Towa fronts onto — no venue-specific photo could be honestly sourced this pass, so the square itself stands in per near-illustrator's tier-1/tier-2 fallback order. Unedited crop from the original."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "São Paulo/Baixada Santista content push (near-war-room), fulfilling open request sp-liberdade-market-or-grocery. Operator-directed research pass (chat request, not a review-tier source) -> trust: auto per rules.md trust-gate. Verified via multiple independent local guides (A Vida no Centro, Revista Fórum, Guia Viajar Melhor) all corroborating address (Praça da Liberdade, 113) and stock (fresh ingredients, prepared Japanese dishes, sauces/seasonings, grains) -- current-status check via these 2026-dated write-ups plus consistent cross-listing, no closure signal found. Coordinates are an approximate placement for the Praça da Liberdade block, not a verified geocode pin-drop -- confidence set conservatively at 0.6. Hero image is the public Feira da Liberdade market scene on the same square (Wikimedia Commons, CC BY-SA 2.0) rather than a Towa-specific photo, since no rights-clear venue photo could be sourced this pass -- logged as an acceptable tier-1/tier-2 compromise, not ideal; flag for near-caretaker/near-illustrator follow-up if a better venue-specific photo turns up."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Praça da Liberdade, 113, Liberdade, São Paulo, SP — approximate placement from published street address, not independently pin-verified"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

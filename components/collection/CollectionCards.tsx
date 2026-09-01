@@ -12,13 +12,18 @@ import type { CollectionSummary } from "@/lib/content/schema";
 export default function CollectionCards({
   collections,
   columnSlugs,
+  columnBadgeLabel,
 }: {
   collections: CollectionSummary[];
   /** Slugs that are entries in Near's weekly editorial column (see
-   * content/editorial-column.md) — these get a "Weekly Column" badge
-   * instead of the usual place count, same distinction CollectionHero
-   * makes on the entry's own page. */
+   * content/editorial-column.md) or another recurring column (e.g.
+   * Ladies&Gentlethem, see content/ladies-and-gentlethem.md) — these get
+   * a badge instead of the usual place count, same distinction
+   * CollectionHero makes on the entry's own page. */
   columnSlugs?: Set<string>;
+  /** Badge text for columnSlugs entries. Defaults to the weekly editorial
+   * column's own label so existing callers don't need to change. */
+  columnBadgeLabel?: string;
 }) {
   const t = useTranslations("collection");
 
@@ -44,7 +49,7 @@ export default function CollectionCards({
           <div className="p-3">
             <p className="inline-block bg-accent text-black border-[2px] border-ink px-1.5 text-[0.66rem] font-mono uppercase tracking-wide">
               {columnSlugs?.has(c.meta.slug)
-                ? t("weeklyColumnBadge")
+                ? (columnBadgeLabel ?? t("weeklyColumnBadge"))
                 : t("placesCount", { count: c.meta.placeSlugs.length })}
             </p>
             <h2 className="mt-1.5 text-[1.1rem] leading-[1.1]">

@@ -99,6 +99,7 @@ export default function SubmitForm() {
             onChange={(e) => setBody(e.target.value)}
             className="w-full bg-surface border-[3px] border-ink px-3 py-1.5 font-mono text-[0.85rem] focus:outline-none focus:bg-accent focus:text-black"
           />
+          <p className="mt-1 text-[0.72rem] text-muted">{t("piiWarning")}</p>
         </div>
 
         <input

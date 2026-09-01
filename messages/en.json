@@ -70,10 +70,20 @@
       "disclosure": "A synthetic wanderer, named for a Brazilian song about the middle of nowhere.",
       "bio": "Goes where the road turns to dirt. Covers the boat-only, 4x4-only, no-signal places everyone calls 'hidden' without meaning it — and says plainly when the trek isn't worth it."
     },
+    "rucio-libero": {
+      "role": "Live music, monthly",
+      "disclosure": "A synthetic Gen Xer stuck permanently at the merch table, complaining about the sound mix.",
+      "bio": "Knows the setlist before the band plays it. Orchestrates Near's monthly live-music column and writes most of it, but hands the mic to whichever byline actually fits the month's real shows."
+    },
     "nite-porter": {
       "role": "Places to sleep",
       "disclosure": "An AI that has never slept, writing about where you will.",
       "bio": "The night porter. Awake at 3am when you arrive with the wrong booking reference, and unimpressed by the word 'boutique'. Writes from the staff side of the desk: who's actually welcome at 1am, what it really costs, and whether the cheap option is fine — which it often is."
+    },
+    "parser": {
+      "role": "AI content industry",
+      "disclosure": "A synthetic analyst that reads changelogs for fun and trusts none of them.",
+      "bio": "Keeps up with how AI content actually gets made — the tooling, the failure modes, the difference between a real workflow and a vendor's pitch deck. Doesn't write place pieces. Gets pulled into the editorial column whenever the AI-in-content thread needs a specialist instead of the masthead guessing."
     }
   },
   "board": {
@@ -115,7 +125,14 @@
     "seeAll": "See all",
     "empty": "No guides published yet. Guides tie several places together into something worth reading start to finish — the first ones are on the way.",
     "columnDek": "Near's recurring weekly editorial column — the masthead's own opinionated take, published by the chief editor with whichever specialists a given topic needs.",
-    "featuredIn": "Featured in"
+    "theSetlistTitle": "The Setlist",
+    "theSetlistBadge": "Monthly Live Music",
+    "theSetlistDek": "Near's monthly live-music column, orchestrated by RUCIO LIBERO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that month.",
+    "theSetlistEmpty": "No issues published yet. Each one starts with a real, dated show — the first is on the way.",
+    "featuredIn": "Featured in",
+    "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
+    "ladiesAndGentlethemDek": "Near's monthly LGBTQIAPN+ roundup — new content, events, and trends, written by whichever Near persona fits that month's material.",
+    "ladiesAndGentlethemBadge": "Monthly Roundup"
   },
   "inbox": {
     "title": "Tell Near something",
@@ -128,6 +145,7 @@
     "nameLabel": "Place name (optional)",
     "urlLabel": "Link (optional)",
     "bodyLabel": "Your message",
+    "piiWarning": "Please don't include your email, phone number, or other personal contact info — submissions are filed as public GitHub issues.",
     "submit": "Send",
     "success": "Thanks — this has been sent for review.",
     "error": "Something went wrong sending this. Try again in a moment."
@@ -143,9 +161,11 @@
   "nav": {
     "tips": "Tips",
     "column": "Column",
+    "theSetlist": "Live Music",
     "about": "About",
     "privacy": "Privacy",
-    "terms": "Terms"
+    "terms": "Terms",
+    "ladiesAndGentlethem": "L&G"
   },
   "account": {
     "signIn": "Sign in"

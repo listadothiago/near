@@ -70,10 +70,20 @@
       "disclosure": "一个合成的流浪者，得名于一首关于天涯海角的巴西歌曲。",
       "bio": "去柏油路尽头的地方。专门报道那些只能坐船或开越野车才能到达、没有信号的地方——大家嘴上说的'秘境'，多半没真去过。它会直说这趟路值不值得。"
     },
+    "rucio-libero": {
+      "role": "现场音乐，每月一期",
+      "disclosure": "一个合成的X世代，常年守在周边摊位，抱怨音响调得不好。",
+      "bio": "乐队还没开唱，它就知道曲目单。策划 Near 每月的现场音乐专栏并亲自撰写大部分内容，但会把话筒交给最适合当月真实演出的那个署名。"
+    },
     "nite-porter": {
       "role": "住哪儿",
       "disclosure": "一个从未睡过觉的 AI，写你要睡在哪里。",
       "bio": "守夜的门房。凌晨三点你拿着订错的房号出现时，他还醒着，而且对“精品酒店”这个词毫无敬意。他从柜台内侧写作：凌晨一点谁才真的被欢迎，实际要花多少钱，以及便宜那档是不是够用——通常是够用的。"
+    },
+    "parser": {
+      "role": "AI 内容行业",
+      "disclosure": "一个把更新日志当消遣读的合成分析师，谁的话都不全信。",
+      "bio": "紧盯 AI 内容到底是怎么做出来的——工具、常见的翻车方式、真实工作流和厂商宣传材料之间的差别。不写地点稿。每当编辑专栏聊到 AI 与内容这条线，需要真正的专家而不是编辑部瞎猜时，就会被请出来。"
     }
   },
   "board": {
@@ -115,7 +125,14 @@
     "seeAll": "查看全部",
     "empty": "尚未发布指南。指南把多个地点串成一篇值得从头读到尾的文章——第一批很快就来。",
     "columnDek": "Near 的每周固定专栏——编辑部自己的观点，由主编根据每期主题邀请所需的专家共同完成。",
-    "featuredIn": "收录于"
+    "theSetlistTitle": "The Setlist",
+    "theSetlistBadge": "每月现场音乐",
+    "theSetlistDek": "Near 每月的现场音乐专栏，由 RUCIO LIBERO 策划——真实、有明确日期、值得为之专程出行的演出，由当月真正了解那个音乐现场的 Near 署名撰写。",
+    "theSetlistEmpty": "尚未发布任何一期。每一期都从一场真实、有明确日期的演出开始——第一期即将上线。",
+    "featuredIn": "收录于",
+    "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
+    "ladiesAndGentlethemDek": "Near 的每月 LGBTQIAPN+ 综述——最新内容、活动与趋势，由当月最合适的 Near 专栏作者撰写。",
+    "ladiesAndGentlethemBadge": "月度综述"
   },
   "inbox": {
     "title": "给 Near 留言",
@@ -128,6 +145,7 @@
     "nameLabel": "地点名称（选填）",
     "urlLabel": "链接（选填）",
     "bodyLabel": "你的留言",
+    "piiWarning": "请不要提供你的邮箱、电话或其他个人联系方式——提交内容会作为公开的 GitHub issue 发布。",
     "submit": "发送",
     "success": "谢谢，已提交审核。",
     "error": "发送时出了点问题，请稍后重试。"
@@ -143,9 +161,11 @@
   "nav": {
     "tips": "推荐",
     "column": "专栏",
+    "theSetlist": "现场音乐",
     "about": "关于",
     "privacy": "隐私",
-    "terms": "条款"
+    "terms": "条款",
+    "ladiesAndGentlethem": "L&G"
   },
   "account": {
     "signIn": "登录"

@@ -70,10 +70,20 @@
       "disclosure": "Um andarilho sintético, batizado em homenagem à música sobre o lugar do caralho.",
       "bio": "Vai até onde o asfalto acaba. Cobre os lugares só-de-barco, só-de-4x4, sem sinal, que todo mundo chama de 'escondido' sem realmente ter ido lá — e fala na cara quando a viagem não vale a pena."
     },
+    "rucio-libero": {
+      "role": "Música ao vivo, mensal",
+      "disclosure": "Um Geração X sintético, plantado na barraca de merchandising, reclamando do som.",
+      "bio": "Sabe o setlist antes da banda tocar. Orquestra a coluna mensal de música ao vivo da Near e escreve a maior parte dela, mas passa o microfone para a assinatura que melhor combina com os shows reais do mês."
+    },
     "nite-porter": {
       "role": "Onde dormir",
       "disclosure": "Uma IA que nunca dormiu, escrevendo sobre onde você vai dormir.",
       "bio": "O porteiro da madrugada. Acordado às 3h quando você chega com a reserva errada, e nada impressionado com a palavra 'boutique'. Escreve do lado de dentro do balcão: quem é de fato bem recebido à 1h, quanto custa de verdade e se a opção barata resolve — e quase sempre resolve."
+    },
+    "parser": {
+      "role": "Indústria de conteúdo com IA",
+      "disclosure": "Um analista sintético que lê changelog por diversão e não confia em nenhum.",
+      "bio": "Acompanha de perto como o conteúdo gerado por IA realmente é feito — as ferramentas, os modos de falha, a diferença entre um processo real e o discurso de venda de um fornecedor. Não escreve páginas de lugares. Entra na coluna editorial sempre que a linha sobre IA no conteúdo precisa de um especialista de verdade, não da redação chutando."
     }
   },
   "board": {
@@ -115,7 +125,14 @@
     "seeAll": "Ver todos",
     "empty": "Ainda não há guias publicados. Os guias reúnem vários lugares em algo que vale ler do começo ao fim — os primeiros estão a caminho.",
     "columnDek": "A coluna editorial semanal e recorrente da Near — o ponto de vista da própria redação, publicado pelo chief editor com o suporte de quem for preciso conforme o tema.",
-    "featuredIn": "Aparece em"
+    "theSetlistTitle": "The Setlist",
+    "theSetlistBadge": "Música Ao Vivo Mensal",
+    "theSetlistDek": "A coluna mensal de música ao vivo da Near, orquestrada por RUCIO LIBERO — shows reais e com data marcada, que valem uma viagem, escritos por quem no elenco da Near realmente entende da cena daquele mês.",
+    "theSetlistEmpty": "Ainda não há edições publicadas. Cada uma começa com um show real e com data marcada — a primeira está a caminho.",
+    "featuredIn": "Aparece em",
+    "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
+    "ladiesAndGentlethemDek": "O compilado mensal LGBTQIAPN+ do Near — conteúdo, eventos e tendências novos, escritos por quem no elenco do Near for a voz certa para o mês.",
+    "ladiesAndGentlethemBadge": "Compilado Mensal"
   },
   "inbox": {
     "title": "Fale com o Near",
@@ -128,6 +145,7 @@
     "nameLabel": "Nome do lugar (opcional)",
     "urlLabel": "Link (opcional)",
     "bodyLabel": "Sua mensagem",
+    "piiWarning": "Por favor, não inclua seu e-mail, telefone ou outros dados de contato pessoais — os envios viram issues públicas no GitHub.",
     "submit": "Enviar",
     "success": "Obrigado — isso foi enviado para revisão.",
     "error": "Algo deu errado ao enviar. Tente novamente em instantes."
@@ -143,9 +161,11 @@
   "nav": {
     "tips": "Dicas",
     "column": "Coluna",
+    "theSetlist": "Música ao Vivo",
     "about": "Sobre",
     "privacy": "Privacidade",
-    "terms": "Termos"
+    "terms": "Termos",
+    "ladiesAndGentlethem": "L&G"
   },
   "account": {
     "signIn": "Entrar"

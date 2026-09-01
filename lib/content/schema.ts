@@ -160,6 +160,10 @@ export type PlaceSummary = {
 export const collectionMetaSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
   placeSlugs: z.array(z.string()).min(1),
+  // Public AI byline — a slug from lib/content/authors.ts. Optional: most
+  // collections read as the masthead's own voice with no single named
+  // writer, same as an unsigned place page.
+  author: z.string().optional(),
   coverImage: heroImageSchema.nullable(),
   trust: z.enum(["auto", "review"]),
   // Not used yet — reserved for a future sponsored-content path. Must be
