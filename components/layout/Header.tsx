@@ -155,20 +155,20 @@ export default function Header({
           <ThemeToggle />
           {/* Only reason to sign in at all: favorites that follow you across
               devices instead of living in one browser's localStorage (see
-              lib/favorites.ts). Icon-sized to match Locale/Theme rather than
-              a full "Sign in" button, per the same undiscoverable-in-footer
-              lesson those two already taught this header. */}
+              lib/favorites.ts). An icon-only version of this button tested
+              as invisible to the operator — visible text beats matching
+              Locale/Theme's icon styling. */}
           <Show when="signed-out">
             <SignInButton mode="modal">
               <button
                 type="button"
-                aria-label={t("account.signIn")}
-                className="inline-flex items-center justify-center w-8 h-8 border-[3px] border-ink bg-surface text-ink hover:bg-accent hover:text-black transition-colors"
+                className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors whitespace-nowrap"
               >
-                <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <circle cx="12" cy="8" r="4" />
                   <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
                 </svg>
+                {t("account.signIn")}
               </button>
             </SignInButton>
           </Show>
