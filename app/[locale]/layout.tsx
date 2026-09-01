@@ -58,6 +58,8 @@ export async function generateMetadata({
           { url: "/feed.xml", title: "Near — Latest" },
           { url: "/column/feed.xml", title: "Near's Weekly Column" },
           { url: "/the-setlist/feed.xml", title: "Near's The Setlist" },
+          { url: "/ladies-and-gentlethem/feed.xml", title: "Near's Ladies&Gentlethem" },
+          { url: "/the-pass/feed.xml", title: "Near's The Pass" },
         ],
       },
     },

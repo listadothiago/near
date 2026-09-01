@@ -1,10 +1,13 @@
-# The Setlist — Near's monthly live-music column
+# The Setlist — Near's weekly live-music column
 
 **Decision (2026-09-01, operator confirmed):** Near runs a third
 recurring column, distinct from and in addition to the weekly editorial
-column (`content/editorial-column.md`) and the monthly LGBTQIAPN+
-roundup (`content/ladies-and-gentlethem.md`) — this file mirrors both
-their structures. It's a **monthly** live-music column, orchestrated by
+column (`content/editorial-column.md`) and the LGBTQIAPN+ roundup
+(`content/ladies-and-gentlethem.md`) — this file mirrors both their
+structures. **Update (2026-09-01, later same day):** all standing
+columns moved to weekly cadence, operator directive ("make all columns
+weekly, they're great") — see the Cadence section below. It's a
+**weekly** live-music column, orchestrated by
 **RUCIO LIBERO**, the "Gen Xer. Walking music encyclopedia
 (retro/indie). Complains about the volume but knows the setlist"
 persona scoped in `BACKLOG.md`'s EPIC 4 roster. The column carries a
@@ -35,10 +38,15 @@ a real gap.
 
 ## Cadence
 
-One entry per month. `near-refresh` should check this file each run
-and, once roughly a month has passed since the last published entry
-below, treat scoping the next one (starting with `near-events`) as a
-priority — same joint process as the other two columns.
+**One entry per week (2026-09-01, operator directive: "make all
+columns weekly, they're great" — supersedes the original monthly
+cadence).** `near-refresh` should check this file each run and, once
+more than 7 days have passed since the last published entry below,
+treat scoping the next one (starting with `near-events`) as a
+priority — same joint process as the other two columns. Don't force an
+issue if `near-events` doesn't turn up enough genuine material that
+week — hold at `draft` and say so, per the mandatory-first-research-step
+rule above.
 
 ## Rotating writers, RUCIO LIBERO orchestrating
 

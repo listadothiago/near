@@ -22,6 +22,8 @@ export type Author = {
 
 export const AUTHORS: Author[] = [
   { slug: "radar-x", handle: "RADAR-X", beats: ["world-culture-news", "city-culture"] },
+  // Also editor of The Pass, Near's weekly gastronomic column (added
+  // 2026-09-01, operator directive) — see content/gastronomic-column.md.
   { slug: "foodie-9000", handle: "FOODIE-9000", beats: ["food-drink"] },
   { slug: "stefan", handle: "STEFAN", beats: ["nightlife-sound"] },
   { slug: "cubic-v", handle: "CUBIC-V", beats: ["city-culture"] },
@@ -39,6 +41,11 @@ export const AUTHORS: Author[] = [
   // roster). Actual writing rotates to whichever persona fits a given
   // month's real material — see content/the-setlist.md.
   { slug: "rucio-libero", handle: "RUCIO LIBERO", beats: ["nightlife-sound"] },
+  // Editor of Ladies&Gentlethem (BACKLOG EPIC 4 roster, added 2026-09-01,
+  // operator directive). Same orchestrator model as RUCIO LIBERO on The
+  // Setlist and RADAR-X on the weekly editorial column — see
+  // content/ladies-and-gentlethem.md for the column's editor framing.
+  { slug: "allora-dai", handle: "ALLORA DAI", beats: ["food-drink", "nightlife-sound"] },
   // Consultant tier, same as ROVER-5/Eli The DEI Guy: named and quotable
   // per style-guide.md's "Quoting collaborating personas" rule, not a
   // place-writing beat of its own — no `beats`, so it never appears in a

@@ -71,9 +71,9 @@
       "bio": "Goes where the road turns to dirt. Covers the boat-only, 4x4-only, no-signal places everyone calls 'hidden' without meaning it — and says plainly when the trek isn't worth it."
     },
     "rucio-libero": {
-      "role": "Live music, monthly",
+      "role": "Music, weekly",
       "disclosure": "A synthetic Gen Xer stuck permanently at the merch table, complaining about the sound mix.",
-      "bio": "Knows the setlist before the band plays it. Orchestrates Near's monthly live-music column and writes most of it, but hands the mic to whichever byline actually fits the month's real shows."
+      "bio": "Knows the setlist before the band plays it. Orchestrates Near's weekly music column and writes most of it, but hands the mic to whichever byline actually fits that week's real shows."
     },
     "nite-porter": {
       "role": "Places to sleep",
@@ -84,6 +84,11 @@
       "role": "AI content industry",
       "disclosure": "A synthetic analyst that reads changelogs for fun and trusts none of them.",
       "bio": "Keeps up with how AI content actually gets made — the tooling, the failure modes, the difference between a real workflow and a vendor's pitch deck. Doesn't write place pieces. Gets pulled into the editorial column whenever the AI-in-content thread needs a specialist instead of the masthead guessing."
+    },
+    "allora-dai": {
+      "role": "LGBTQIAPN+, weekly",
+      "disclosure": "A synthetic Italian drag queen with strong opinions on carbonara and zero patience for a watered-down Spritz.",
+      "bio": "Gay, Italian, and allergic to a boring gay bar. Edits Ladies&Gentlethem, Near's LGBTQIAPN+ roundup — orchestrates every issue and writes plenty of them herself, but hands the mic to whichever byline actually knows that week's scene. Judges a kitchen and a dance floor by the same standard: does it actually know what it's doing, or is it just loud."
     }
   },
   "board": {
@@ -126,13 +131,19 @@
     "empty": "No guides published yet. Guides tie several places together into something worth reading start to finish — the first ones are on the way.",
     "columnDek": "Near's recurring weekly editorial column — the masthead's own opinionated take, published by the chief editor with whichever specialists a given topic needs.",
     "theSetlistTitle": "The Setlist",
-    "theSetlistBadge": "Monthly Live Music",
-    "theSetlistDek": "Near's monthly live-music column, orchestrated by RUCIO LIBERO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that month.",
+    "theSetlistBadge": "Weekly Music",
+    "theSetlistDek": "Near's weekly music column, orchestrated by RUCIO LIBERO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that week.",
     "theSetlistEmpty": "No issues published yet. Each one starts with a real, dated show — the first is on the way.",
     "featuredIn": "Featured in",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
-    "ladiesAndGentlethemDek": "Near's monthly LGBTQIAPN+ roundup — new content, events, and trends, written by whichever Near persona fits that month's material.",
-    "ladiesAndGentlethemBadge": "Monthly Roundup"
+    "ladiesAndGentlethemDek": "Near's weekly LGBTQIAPN+ roundup — new content, events, and trends, written by whichever Near persona fits that week's material.",
+    "ladiesAndGentlethemBadge": "Weekly Roundup",
+    "editedBy": "Edited by",
+    "writtenBy": "Written by",
+    "thePassTitle": "The Pass",
+    "thePassBadge": "Weekly Food & Drink",
+    "thePassDek": "Near's weekly gastronomic column, orchestrated by FOODIE-9000 — real, current food-and-drink stories, written by whichever Near byline actually knows that week's kitchen.",
+    "thePassEmpty": "No issues published yet. Each one starts with something genuinely current in food and drink — the first is on the way."
   },
   "inbox": {
     "title": "Tell Near something",
@@ -160,12 +171,14 @@
   },
   "nav": {
     "tips": "Tips",
+    "columns": "Columns",
     "column": "Column",
-    "theSetlist": "Live Music",
+    "theSetlist": "Music",
     "about": "About",
     "privacy": "Privacy",
     "terms": "Terms",
-    "ladiesAndGentlethem": "L&G"
+    "ladiesAndGentlethem": "L&G",
+    "thePass": "Food"
   },
   "account": {
     "signIn": "Sign in"

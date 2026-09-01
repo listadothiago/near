@@ -164,6 +164,13 @@ export const collectionMetaSchema = z.object({
   // collections read as the masthead's own voice with no single named
   // writer, same as an unsigned place page.
   author: z.string().optional(),
+  // The standing column's editor persona (e.g. RADAR-X on the editorial
+  // column, RUCIO LIBERO on the music column, ALLORA DAI on
+  // Ladies&Gentlethem) — a slug from lib/content/authors.ts. Optional,
+  // and only ever set on column entries. Site-wide credit rule
+  // (2026-09-01, operator directive): when set and different from
+  // `author`, both personas are credited on the published piece.
+  editor: z.string().optional(),
   coverImage: heroImageSchema.nullable(),
   trust: z.enum(["auto", "review"]),
   // Not used yet — reserved for a future sponsored-content path. Must be
