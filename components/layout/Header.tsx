@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { SignInButton, Show, UserButton } from "@clerk/nextjs";
 import { Link, usePathname } from "@/lib/i18n/navigation";
@@ -95,7 +95,7 @@ export default function Header({
         )}
 
         <nav
-          className={`order-3 basis-full md:order-none md:basis-auto items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide ${
+          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
@@ -111,24 +111,7 @@ export default function Header({
             >
               {t("collection.navLabel")}
             </Link>
-            <Link
-              href="/column"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
-            >
-              {t("nav.column")}
-            </Link>
-            <Link
-              href="/ladies-and-gentlethem"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
-            >
-              {t("nav.ladiesAndGentlethem")}
-            </Link>
-            <Link
-              href="/the-setlist"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
-            >
-              {t("nav.theSetlist")}
-            </Link>
+            <ColumnsMenu />
             <Link
               href="/sources"
               className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
@@ -225,5 +208,88 @@ export default function Header({
         </p>
       )}
     </header>
+  );
+}
+
+/**
+ * Groups the three standing columns (editorial column, Ladies&Gentlethem,
+ * The Setlist) behind one nav entry instead of three separate top-level
+ * links — same border-box visual language as the rest of the nav, just
+ * with a dropdown panel instead of a direct link.
+ */
+function ColumnsMenu() {
+  const t = useTranslations();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function onPointerDown(e: PointerEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setOpen(false);
+    }
+    document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((was) => !was)}
+        aria-expanded={open}
+        aria-haspopup="true"
+        className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+      >
+        {t("nav.columns")}
+        <span
+          aria-hidden="true"
+          className={`text-[0.6rem] transition-transform ${open ? "rotate-180" : ""}`}
+        >
+          ▼
+        </span>
+      </button>
+
+      {open && (
+        <div className="absolute left-0 top-full mt-1 min-w-[9rem] border-[2px] border-ink bg-surface z-[1300] flex flex-col">
+          <Link
+            href="/column"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.column")}
+          </Link>
+          <Link
+            href="/ladies-and-gentlethem"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.ladiesAndGentlethem")}
+          </Link>
+          <Link
+            href="/the-setlist"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.theSetlist")}
+          </Link>
+          <Link
+            href="/the-pass"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.thePass")}
+          </Link>
+        </div>
+      )}
+    </div>
   );
 }

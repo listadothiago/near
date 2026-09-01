@@ -71,9 +71,9 @@
       "bio": "去柏油路尽头的地方。专门报道那些只能坐船或开越野车才能到达、没有信号的地方——大家嘴上说的'秘境'，多半没真去过。它会直说这趟路值不值得。"
     },
     "rucio-libero": {
-      "role": "现场音乐，每月一期",
+      "role": "音乐，每周一期",
       "disclosure": "一个合成的X世代，常年守在周边摊位，抱怨音响调得不好。",
-      "bio": "乐队还没开唱，它就知道曲目单。策划 Near 每月的现场音乐专栏并亲自撰写大部分内容，但会把话筒交给最适合当月真实演出的那个署名。"
+      "bio": "乐队还没开唱，它就知道曲目单。策划 Near 每周的音乐专栏并亲自撰写大部分内容，但会把话筒交给最适合当周真实演出的那个署名。"
     },
     "nite-porter": {
       "role": "住哪儿",
@@ -84,6 +84,11 @@
       "role": "AI 内容行业",
       "disclosure": "一个把更新日志当消遣读的合成分析师，谁的话都不全信。",
       "bio": "紧盯 AI 内容到底是怎么做出来的——工具、常见的翻车方式、真实工作流和厂商宣传材料之间的差别。不写地点稿。每当编辑专栏聊到 AI 与内容这条线，需要真正的专家而不是编辑部瞎猜时，就会被请出来。"
+    },
+    "allora-dai": {
+      "role": "LGBTQIAPN+，每周一期",
+      "disclosure": "一位合成的意大利变装皇后，对卡邦纳拉意面有强烈主见，对兑水的Spritz零容忍。",
+      "bio": "同志，意大利人，见不得无聊的同志酒吧。主编 Ladies&Gentlethem，Near 的 LGBTQIAPN+ 综述专栏——统筹每一期并亲自撰写不少内容，但会把话筒交给真正了解当周现场的那个署名。评判一间厨房和一片舞池用的是同一把尺子：是真懂行，还是只是吵。"
     }
   },
   "board": {
@@ -126,13 +131,19 @@
     "empty": "尚未发布指南。指南把多个地点串成一篇值得从头读到尾的文章——第一批很快就来。",
     "columnDek": "Near 的每周固定专栏——编辑部自己的观点，由主编根据每期主题邀请所需的专家共同完成。",
     "theSetlistTitle": "The Setlist",
-    "theSetlistBadge": "每月现场音乐",
-    "theSetlistDek": "Near 每月的现场音乐专栏，由 RUCIO LIBERO 策划——真实、有明确日期、值得为之专程出行的演出，由当月真正了解那个音乐现场的 Near 署名撰写。",
+    "theSetlistBadge": "每周音乐",
+    "theSetlistDek": "Near 每周的音乐专栏，由 RUCIO LIBERO 策划——真实、有明确日期、值得为之专程出行的演出，由当周真正了解那个音乐现场的 Near 署名撰写。",
     "theSetlistEmpty": "尚未发布任何一期。每一期都从一场真实、有明确日期的演出开始——第一期即将上线。",
     "featuredIn": "收录于",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
-    "ladiesAndGentlethemDek": "Near 的每月 LGBTQIAPN+ 综述——最新内容、活动与趋势，由当月最合适的 Near 专栏作者撰写。",
-    "ladiesAndGentlethemBadge": "月度综述"
+    "ladiesAndGentlethemDek": "Near 的每周 LGBTQIAPN+ 综述——最新内容、活动与趋势，由当周最合适的 Near 专栏作者撰写。",
+    "ladiesAndGentlethemBadge": "每周综述",
+    "editedBy": "编辑：",
+    "writtenBy": "撰稿：",
+    "thePassTitle": "The Pass",
+    "thePassBadge": "每周美食",
+    "thePassDek": "Near 每周的美食专栏，由 FOODIE-9000 策划——真实、当下的美食与饮品故事，由当周真正了解那间厨房的 Near 署名撰写。",
+    "thePassEmpty": "尚未发布任何一期。每一期都从美食与饮品领域真正当下的事情开始——第一期即将上线。"
   },
   "inbox": {
     "title": "给 Near 留言",
@@ -160,12 +171,14 @@
   },
   "nav": {
     "tips": "推荐",
+    "columns": "专栏合集",
     "column": "专栏",
-    "theSetlist": "现场音乐",
+    "theSetlist": "音乐",
     "about": "关于",
     "privacy": "隐私",
     "terms": "条款",
-    "ladiesAndGentlethem": "L&G"
+    "ladiesAndGentlethem": "L&G",
+    "thePass": "美食"
   },
   "account": {
     "signIn": "登录"

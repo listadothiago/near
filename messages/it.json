@@ -71,9 +71,9 @@
       "bio": "Va dove l'asfalto finisce. Copre i posti raggiungibili solo in barca o in fuoristrada, senza campo — quelli che tutti chiamano 'nascosti' senza esserci mai stati — e dice chiaramente quando il viaggio non vale la pena."
     },
     "rucio-libero": {
-      "role": "Musica dal vivo, mensile",
+      "role": "Musica, settimanale",
       "disclosure": "Un Gen Xer sintetico, piantato al banco del merchandising, che si lamenta del volume.",
-      "bio": "Conosce la scaletta prima ancora che la band suoni. Orchestra la rubrica mensile di musica dal vivo di Near e ne scrive la maggior parte, ma passa il microfono alla firma più adatta ai concerti reali del mese."
+      "bio": "Conosce la scaletta prima ancora che la band suoni. Orchestra la rubrica settimanale di musica di Near e ne scrive la maggior parte, ma passa il microfono alla firma più adatta ai concerti reali di quella settimana."
     },
     "nite-porter": {
       "role": "Dove dormire",
@@ -84,6 +84,11 @@
       "role": "Industria dei contenuti IA",
       "disclosure": "Un analista sintetico che legge i changelog per divertimento e non si fida di nessuno.",
       "bio": "Segue da vicino come i contenuti IA vengono davvero prodotti — gli strumenti, i modi in cui falliscono, la differenza tra un flusso di lavoro reale e la presentazione di un fornitore. Non scrive schede di luoghi. Interviene nella rubrica editoriale ogni volta che il filone sull'IA nei contenuti ha bisogno di uno specialista vero, non della redazione che tira a indovinare."
+    },
+    "allora-dai": {
+      "role": "LGBTQIAPN+, settimanale",
+      "disclosure": "Una drag queen italiana sintetica, con opinioni forti sulla carbonara e zero pazienza per uno Spritz annacquato.",
+      "bio": "Gay, italiana e allergica a un locale gay noioso. Cura Ladies&Gentlethem, la rassegna LGBTQIAPN+ di Near — orchestra ogni numero e ne scrive parecchi lei stessa, ma passa il microfono alla firma che davvero conosce la scena di quella settimana. Giudica una cucina e una pista da ballo con lo stesso metro: sa davvero quello che fa, o fa solo rumore."
     }
   },
   "board": {
@@ -126,13 +131,19 @@
     "empty": "Nessuna guida pubblicata per ora. Le guide mettono insieme più luoghi in qualcosa che vale la pena leggere dall'inizio alla fine — le prime stanno arrivando.",
     "columnDek": "La rubrica editoriale settimanale e ricorrente di Near — il punto di vista della redazione stessa, pubblicata dal chief editor con il supporto degli specialisti necessari di volta in volta.",
     "theSetlistTitle": "The Setlist",
-    "theSetlistBadge": "Musica dal Vivo Mensile",
-    "theSetlistDek": "La rubrica mensile di musica dal vivo di Near, orchestrata da RUCIO LIBERO — concerti reali e con data certa per cui vale la pena organizzare un viaggio, scritti dalla firma di Near che davvero conosce la scena di quel mese.",
+    "theSetlistBadge": "Musica Settimanale",
+    "theSetlistDek": "La rubrica settimanale di musica di Near, orchestrata da RUCIO LIBERO — concerti reali e con data certa per cui vale la pena organizzare un viaggio, scritti dalla firma di Near che davvero conosce la scena di quella settimana.",
     "theSetlistEmpty": "Nessun numero pubblicato ancora. Ognuno parte da un concerto reale e datato — il primo sta arrivando.",
     "featuredIn": "Compare in",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
-    "ladiesAndGentlethemDek": "La rassegna mensile LGBTQIAPN+ di Near — nuovi contenuti, eventi e tendenze, scritti di volta in volta dalla firma di Near più adatta al mese.",
-    "ladiesAndGentlethemBadge": "Rassegna Mensile"
+    "ladiesAndGentlethemDek": "La rassegna settimanale LGBTQIAPN+ di Near — nuovi contenuti, eventi e tendenze, scritti di volta in volta dalla firma di Near più adatta a quella settimana.",
+    "ladiesAndGentlethemBadge": "Rassegna Settimanale",
+    "editedBy": "A cura di",
+    "writtenBy": "Scritto da",
+    "thePassTitle": "The Pass",
+    "thePassBadge": "Gastronomia Settimanale",
+    "thePassDek": "La rubrica gastronomica settimanale di Near, orchestrata da FOODIE-9000 — storie vere e attuali su cibo e bevande, scritte dalla firma di Near che davvero conosce quella cucina quella settimana.",
+    "thePassEmpty": "Nessun numero pubblicato ancora. Ognuno parte da qualcosa di davvero attuale nel cibo e nelle bevande — il primo sta arrivando."
   },
   "inbox": {
     "title": "Scrivi a Near",
@@ -160,12 +171,14 @@
   },
   "nav": {
     "tips": "Dritte",
+    "columns": "Rubriche",
     "column": "Rubrica",
-    "theSetlist": "Musica dal Vivo",
+    "theSetlist": "Musica",
     "about": "Chi siamo",
     "privacy": "Privacy",
     "terms": "Termini",
-    "ladiesAndGentlethem": "L&G"
+    "ladiesAndGentlethem": "L&G",
+    "thePass": "Gastronomia"
   },
   "account": {
     "signIn": "Accedi"

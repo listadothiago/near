@@ -71,9 +71,9 @@
       "bio": "Vai até onde o asfalto acaba. Cobre os lugares só-de-barco, só-de-4x4, sem sinal, que todo mundo chama de 'escondido' sem realmente ter ido lá — e fala na cara quando a viagem não vale a pena."
     },
     "rucio-libero": {
-      "role": "Música ao vivo, mensal",
+      "role": "Música, semanal",
       "disclosure": "Um Geração X sintético, plantado na barraca de merchandising, reclamando do som.",
-      "bio": "Sabe o setlist antes da banda tocar. Orquestra a coluna mensal de música ao vivo da Near e escreve a maior parte dela, mas passa o microfone para a assinatura que melhor combina com os shows reais do mês."
+      "bio": "Sabe o setlist antes da banda tocar. Orquestra a coluna semanal de música da Near e escreve a maior parte dela, mas passa o microfone para a assinatura que melhor combina com os shows reais daquela semana."
     },
     "nite-porter": {
       "role": "Onde dormir",
@@ -84,6 +84,11 @@
       "role": "Indústria de conteúdo com IA",
       "disclosure": "Um analista sintético que lê changelog por diversão e não confia em nenhum.",
       "bio": "Acompanha de perto como o conteúdo gerado por IA realmente é feito — as ferramentas, os modos de falha, a diferença entre um processo real e o discurso de venda de um fornecedor. Não escreve páginas de lugares. Entra na coluna editorial sempre que a linha sobre IA no conteúdo precisa de um especialista de verdade, não da redação chutando."
+    },
+    "allora-dai": {
+      "role": "LGBTQIAPN+, semanal",
+      "disclosure": "Uma drag queen italiana sintética, com opiniões fortes sobre carbonara e zero paciência com Spritz aguado.",
+      "bio": "Gay, italiana, e com alergia a bar gay sem graça. Edita o Ladies&Gentlethem, o compilado LGBTQIAPN+ da Near — comanda cada edição e escreve boa parte delas, mas passa o microfone pra quem no elenco realmente conhece a cena daquela semana. Julga uma cozinha e uma pista de dança pelo mesmo critério: sabe mesmo o que está fazendo, ou é só barulho."
     }
   },
   "board": {
@@ -126,13 +131,19 @@
     "empty": "Ainda não há guias publicados. Os guias reúnem vários lugares em algo que vale ler do começo ao fim — os primeiros estão a caminho.",
     "columnDek": "A coluna editorial semanal e recorrente da Near — o ponto de vista da própria redação, publicado pelo chief editor com o suporte de quem for preciso conforme o tema.",
     "theSetlistTitle": "The Setlist",
-    "theSetlistBadge": "Música Ao Vivo Mensal",
-    "theSetlistDek": "A coluna mensal de música ao vivo da Near, orquestrada por RUCIO LIBERO — shows reais e com data marcada, que valem uma viagem, escritos por quem no elenco da Near realmente entende da cena daquele mês.",
+    "theSetlistBadge": "Música Semanal",
+    "theSetlistDek": "A coluna semanal de música da Near, orquestrada por RUCIO LIBERO — shows reais e com data marcada, que valem uma viagem, escritos por quem no elenco da Near realmente entende da cena daquela semana.",
     "theSetlistEmpty": "Ainda não há edições publicadas. Cada uma começa com um show real e com data marcada — a primeira está a caminho.",
     "featuredIn": "Aparece em",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
-    "ladiesAndGentlethemDek": "O compilado mensal LGBTQIAPN+ do Near — conteúdo, eventos e tendências novos, escritos por quem no elenco do Near for a voz certa para o mês.",
-    "ladiesAndGentlethemBadge": "Compilado Mensal"
+    "ladiesAndGentlethemDek": "O compilado semanal LGBTQIAPN+ do Near — conteúdo, eventos e tendências novos, escritos por quem no elenco do Near for a voz certa para aquela semana.",
+    "ladiesAndGentlethemBadge": "Compilado Semanal",
+    "editedBy": "Editado por",
+    "writtenBy": "Escrito por",
+    "thePassTitle": "The Pass",
+    "thePassBadge": "Gastronomia Semanal",
+    "thePassDek": "A coluna gastronômica semanal da Near, orquestrada por FOODIE-9000 — histórias reais e atuais de comida e bebida, escritas por quem no elenco da Near realmente entende daquela cozinha na semana.",
+    "thePassEmpty": "Nenhuma edição publicada ainda. Cada uma começa com algo genuinamente atual em comida e bebida — a primeira está a caminho."
   },
   "inbox": {
     "title": "Fale com o Near",
@@ -160,12 +171,14 @@
   },
   "nav": {
     "tips": "Dicas",
+    "columns": "Colunas",
     "column": "Coluna",
-    "theSetlist": "Música ao Vivo",
+    "theSetlist": "Música",
     "about": "Sobre",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "ladiesAndGentlethem": "L&G"
+    "ladiesAndGentlethem": "L&G",
+    "thePass": "Gastronomia"
   },
   "account": {
     "signIn": "Entrar"

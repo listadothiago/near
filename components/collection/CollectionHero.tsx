@@ -59,9 +59,26 @@ export default function CollectionHero({
       <p className="mt-2 font-mono text-[0.95rem] text-muted max-w-[60ch]">
         {frontmatter.dek}
       </p>
-      {meta.author && (
-        <div className="mt-3">
-          <Byline slug={meta.author} size="md" />
+      {(meta.editor || meta.author) && (
+        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1.5">
+          {meta.editor && meta.editor !== meta.author && (
+            <span className="inline-flex items-center gap-1.5">
+              <span className="font-mono text-[0.66rem] uppercase tracking-wide text-muted">
+                {t("editedBy")}
+              </span>
+              <Byline slug={meta.editor} size="md" />
+            </span>
+          )}
+          {meta.author && (
+            <span className="inline-flex items-center gap-1.5">
+              {meta.editor && meta.editor !== meta.author && (
+                <span className="font-mono text-[0.66rem] uppercase tracking-wide text-muted">
+                  {t("writtenBy")}
+                </span>
+              )}
+              <Byline slug={meta.author} size="md" />
+            </span>
+          )}
         </div>
       )}
     </header>
