@@ -9,6 +9,7 @@ import {
   getCollectionContent,
 } from "@/lib/content/collectionsLoader";
 import { getPlaceSummary, getStats } from "@/lib/content/loader";
+import editorialColumnIndex from "@/content/editorial-column-index.json";
 import type { ContentLocale, PlaceSummary } from "@/lib/content/schema";
 import { buildCollectionJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
@@ -116,6 +117,7 @@ export default async function CollectionPage({
           meta={content.meta}
           frontmatter={content.frontmatter}
           placeCount={places.length}
+          isColumn={editorialColumnIndex.slugs.includes(slug)}
         />
         <LongFormBody>
           <MDXRemote source={content.body} components={mdxComponents} />

@@ -110,6 +110,7 @@
   },
   "collection": {
     "placesCount": "{count} luoghi",
+    "weeklyColumnBadge": "Rubrica Settimanale",
     "navLabel": "Guide",
     "seeAll": "Vedi tutte",
     "empty": "Nessuna guida pubblicata per ora. Le guide mettono insieme più luoghi in qualcosa che vale la pena leggere dall'inizio alla fine — le prime stanno arrivando.",

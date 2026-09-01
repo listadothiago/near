@@ -5,15 +5,26 @@
     "ocean-beach-cafe-san-francisco",
     "ishigaki-jujitsu-london"
   ],
-  "coverImage": null,
+  "coverImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/collections/zombie-listicle-problem/hero-illustration.jpeg",
+    "attribution": "Illustration by NEAR — AI-generated",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "Generated from a prompt queued in content/photo-requests.md: a boarded-up storefront (CLOSED sign, X-marked windows, unlit neon cocktail sign) behind a glowing phone showing an outdated 'OPEN NOW' review card. Bold flat-colour riso style. No real people depicted."
+  },
   "trust": "auto",
   "sponsored": false,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Near's first editorial column. Operator-commissioned directly in chat ('can the chief editor publish our first editorial column'), so trust: auto per rules.md's trust-gate (operator naming/commissioning something directly is the approval step). Held at status: draft, not active, purely because heroImage is still null pending near-illustrator generation tooling -- see content/photo-requests.md's zombie-listicle-problem entry. English copy, sourcing (thespiritsbusiness.com on Club Soda's Jan 2026 closure, happycow.net on Redemption Bar Shoreditch's closure), and internal linking (Lucky Saint, Ocean Beach Cafe, Ishigaki Jujitsu -- all verified currently open) are otherwise complete and link-density-compliant. Scoped by near-editor with near-seo (differentiation angle: Near verifies currency, most listicles don't) and RADAR-X (real cross-market pattern surfaced this session: Club Soda, The New Bar, Better Sunday, and Redemption Bar all turned out closed while researching sober-curious content in London and SF). Structural home is a collection per schema.ts's own definition of a collection as 'an editorial story' -- collectionMetaSchema requires placeSlugs.min(1), so a column with zero place references isn't structurally supported without a new content type; this column genuinely references three real places, so no new type was needed. Flip to active + dispatch near-translator once the hero image lands."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator ran the queued photo-requests.md prompt through Gemini and dropped the result in content/photo-inbox/ -- strong match for the brief (boarded storefront, closed sign, unlit neon, glowing outdated review card on a phone). Wired into coverImage, disclosed as AI-generated per rules.md. All six locales were already written, so full-locale-coverage is satisfied -- flipping straight to active. Also added to content/editorial-column-index.json's slugs array and content/editorial-column.md's Series Index, which makes the header nav's COLUMN link live for the first time."
     }
   ],
   "publishedAt": "2026-09-01T00:00:00Z",
