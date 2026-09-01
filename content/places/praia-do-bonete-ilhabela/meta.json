@@ -1,0 +1,74 @@
+{
+  "slug": "praia-do-bonete-ilhabela",
+  "categories": [
+    "travel"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.8756,
+    "lng": -45.3564
+  },
+  "place": {
+    "city": "Ilhabela",
+    "neighborhood": "Bonete",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "lugardo-karai",
+  "sources": [
+    {
+      "name": "Ilhabela.com.br — Guia completo do Bonete",
+      "url": "https://www.ilhabela.com.br/bonete/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Worldpackers — Praia do Bonete, Ilhabela: como ir e o que fazer",
+      "url": "https://www.worldpackers.com/pt-BR/articles/praia-do-bonete",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Naveguetemporada — 10 Praias de Ilhabela Acessíveis Só de Barco",
+      "url": "https://naveguetemporada.com/praias-ilhabela-acesso-barco/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Praia_do_Bonete_vista_de_cima.jpg",
+    "attribution": "Maristela Colucci / MTur Destinos, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Praia_do_Bonete_vista_de_cima.jpg",
+    "licenseNote": "Aerial view of the beach and caiçara village at the trail's end, taken 2018-03-20 for MTur (Brazil's Ministry of Tourism), released CC BY 2.0 — genuinely shows the actual place (the isolation and the settlement) that this piece's access-and-place profile is about. No gallery: the category has ~55 files but most are trail-progress snapshots or duplicates of the same few village/boat scenes, not enough distinct, well-composed images to clear the gallery bar."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "LUGARDO KARAI's debut piece, part of the September 2026 coastal-alt-luxury / Litoral Norte SP content push. The persona itself is brand new — added to lib/content/authors.ts and messages/en.json + pt-BR.json today, 2026-08-31; the other four locale bios are still pending near-translator. heroImage is left null (near-illustrator has not been consulted; the schema's heroImageStrategySchema has no 'pending' value and requires non-null url/attribution/attributionLink whenever an image object is present, so null is the schema-valid way to represent 'not yet chosen') and the exact geocode (currently a manual approximate placement for the beach/community, not tied to a real trailhead or community-center point) both still need resolving before this can go active. No season-specific or dated event was found for this piece — it's an evergreen access-and-place profile, not tied to a calendar event."
+    },
+    {
+      "status": "draft",
+      "at": "2026-08-31T23:40:00Z",
+      "note": "near-illustrator pass: found a genuinely usable CC BY 2.0 aerial photo of the actual beach and caiçara village (Maristela Colucci / MTur Destinos, 2018), which shows the isolation and settlement that this access-and-place profile is actually about. Set as hero with strategy 'source'. No gallery — the Commons category is mostly repetitive trail/boat snapshots."
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T23:59:00Z",
+      "note": "All six locales complete via near-translator (en, pt-BR — the natural home-market voice for this persona — plus it, es-ES, es-419, zh-CN) — full-locale-coverage gate cleared. LUGARDO KARAI's author bio also backfilled into it.json/es-ES.json/es-419.json/zh-CN.json (previously only en/pt-BR existed) so the byline reads correctly in every locale this piece now ships in. Moved to active as part of the September 2026 content push. Geocode confidence remains 0.4 (manual approximation, no single street address exists for this beach/community) — a real trailhead/community-center coordinate is still owed as follow-up, tracked in BACKLOG.md, but does not block publish per rules.md."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.4,
+    "query": "Praia do Bonete, Ilhabela, SP — approximate placement for a beach/caiçara community with no single street address; should be refined against a real trailhead or community-center point"
+  },
+  "publishedAt": "2026-08-31T22:30:00Z",
+  "updatedAt": "2026-08-31T22:30:00Z"
+}
