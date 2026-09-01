@@ -136,6 +136,14 @@ export default function PlaceCard({
       </div>
 
       <div className="flex flex-col gap-1.5 p-2.5 flex-1">
+        {/* shortTitle is a catchy angle ("The Kiosk That Raised the Flag
+            First"), not necessarily a name a reader recognizes — without
+            this, a card can read as unclear about what place it even is. */}
+        {place.frontmatter.shortTitle && (
+          <span className="font-mono text-[0.62rem] uppercase tracking-wide text-muted truncate">
+            {place.frontmatter.name}
+          </span>
+        )}
         <h3
           className={`leading-[1.15] group-hover:bg-accent group-hover:text-black transition-colors self-start ${
             featured ? "text-[0.95rem] md:text-[1.3rem]" : "text-[0.95rem]"

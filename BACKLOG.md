@@ -142,6 +142,23 @@ action needed there). Hasn't written anything yet — first assignment
 should be one of the coastal-alt-luxury candidates already listed in
 EPIC 5 (Ilhabela, Paraty, Trancoso, etc.) or the Angra dos Reis beat.
 
+## 🖼️ UI quick hits (2026-09-01, not started)
+
+- **Article card was missing the place name — FIXED 2026-09-01.**
+  `components/board/PlaceCard.tsx` was rendering `shortTitle` (a catchy
+  angle like "The Kiosk That Raised the Flag First") as the only
+  headline, with no visible link back to the actual place name — real
+  confusion, not just a nitpick. Added a small muted label showing
+  `place.frontmatter.name` above the headline whenever a `shortTitle`
+  exists.
+- **Ad placement below the map widget (desktop).** Operator: "at least
+  on desktop we can totally fit an ad placement" there. Check the board
+  layout component that renders the map sidebar — there's unused space
+  under it worth a `Placement`/house-ad slot, desktop breakpoint only.
+- **Map caption dropped the "equirectangular projection" phrase
+  (2026-09-01, done)** — `board.mapCaption` in all six locale files now
+  just reads "{count} located places", no projection jargon.
+
 ## 🔔 Push notifications in the installed PWA (2026-09-01, scoped, not started)
 
 Operator asked whether accounts existing now makes push notifications

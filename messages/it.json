@@ -83,7 +83,7 @@
     "hideMap": "Nascondi mappa",
     "filters": "Filtri",
     "useMyLocation": "La mia posizione",
-    "mapCaption": "{count} luoghi localizzati · proiezione equirettangolare",
+    "mapCaption": "{count} luoghi localizzati",
     "nearest": "Più vicini",
     "latest": "Più recenti",
     "emptyNearest": "Nessun luogo localizzato ancora. Quando Near si sincronizza, qui compaiono le scelte più vicine a dove dici di trovarti.",
