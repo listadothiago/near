@@ -83,7 +83,7 @@
     "hideMap": "Hide map",
     "filters": "Filters",
     "useMyLocation": "My location",
-    "mapCaption": "{count} located places · equirectangular chart",
+    "mapCaption": "{count} located places",
     "nearest": "Nearest",
     "latest": "Latest",
     "emptyNearest": "No located places yet. Once Near syncs, this fills with the closest picks to wherever you tell it you are.",

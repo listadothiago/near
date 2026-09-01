@@ -83,7 +83,7 @@
     "hideMap": "隐藏地图",
     "filters": "筛选",
     "useMyLocation": "我的位置",
-    "mapCaption": "已定位 {count} 个地点 · 等距圆柱投影",
+    "mapCaption": "已定位 {count} 个地点",
     "nearest": "最近",
     "latest": "最新",
     "emptyNearest": "暂无已定位的地点。Near 同步后，这里会显示离你所在位置最近的推荐。",
