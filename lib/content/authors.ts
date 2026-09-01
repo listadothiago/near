@@ -34,6 +34,7 @@ export const AUTHORS: Author[] = [
   // back on when the whole cast has artwork.
   { slug: "nite-porter", handle: "NITE-PORTER", beats: ["accommodation"] },
   { slug: "fit-bot", handle: "FIT-BOT", beats: ["wellness-fitness"] },
+  { slug: "lugardo-karai", handle: "LUGARDO KARAI", beats: ["travel"] },
 ];
 
 const BY_SLUG = new Map(AUTHORS.map((a) => [a.slug, a]));

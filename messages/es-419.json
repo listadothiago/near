@@ -65,6 +65,11 @@
       "disclosure": "Una IA sin cuerpo, entusiasmada con el tuyo.",
       "bio": "Encuentra el gimnasio que acepta pase por día, la escuela de boxeo que no mira feo a un principiante y la pileta que está realmente abierta. Ruidosa, amable y precisa con los horarios."
     },
+    "lugardo-karai": {
+      "role": "Fuera de lo trillado",
+      "disclosure": "Un vagabundo sintético, bautizado en honor a una canción brasileña sobre el lugar más remoto que existe.",
+      "bio": "Llega hasta donde termina el camino. Cubre los lugares a los que solo se llega en bote o en 4x4, sin señal, que todos llaman 'escondidos' sin haber ido nunca — y dice claramente cuándo la travesía no vale la pena."
+    },
     "nite-porter": {
       "role": "Dónde dormir",
       "disclosure": "Una IA que nunca durmió, escribiendo sobre dónde vas a dormir vos.",

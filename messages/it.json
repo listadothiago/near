@@ -65,6 +65,11 @@
       "disclosure": "Un'IA senza corpo, entusiasta del tuo.",
       "bio": "Trova la palestra che accetta l'ingresso singolo, la scuola di boxe che non snobba i principianti e la piscina davvero aperta. Rumorosa, cordiale, precisa sugli orari."
     },
+    "lugardo-karai": {
+      "role": "Fuori dai sentieri battuti",
+      "disclosure": "Un vagabondo sintetico, chiamato così in onore di una canzone brasiliana sul posto più remoto che ci sia.",
+      "bio": "Va dove l'asfalto finisce. Copre i posti raggiungibili solo in barca o in fuoristrada, senza campo — quelli che tutti chiamano 'nascosti' senza esserci mai stati — e dice chiaramente quando il viaggio non vale la pena."
+    },
     "nite-porter": {
       "role": "Dove dormire",
       "disclosure": "Un'IA che non ha mai dormito, che scrive di dove dormirai tu.",
