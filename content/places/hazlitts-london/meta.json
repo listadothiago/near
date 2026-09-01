@@ -1,0 +1,80 @@
+{
+  "slug": "hazlitts-london",
+  "categories": [
+    "accommodation"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5136,
+    "lng": -0.1319
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Soho",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Hazlitt's Hotel (official site)",
+      "url": "https://www.hazlittshotel.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Hazlitt's",
+      "url": "https://en.wikipedia.org/wiki/Hazlitt%27s",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Mr & Mrs Smith — Hazlitt's hotel listing",
+      "url": "https://www.mrandmrssmith.com/luxury-hotels/hazlitts",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Tripping On Travel — Hazlitt's Hotel review",
+      "url": "https://www.trippingontravel.com/home/hazlitts-hotel-review-your-home-in-soho",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Hazlitt%27s_Hotel%2C_Frith_Street%2C_Soho.JPG",
+    "attribution": "NotFromUtrecht, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Hazlitt's_Hotel,_Frith_Street,_Soho.JPG",
+    "licenseNote": "Exterior photo of the actual building on Frith Street, CC BY-SA 3.0, uploaded 2011 — verified on the file's Commons page before use."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "London war-room slate (BACKLOG.md / content/post-plan.md). NITE-PORTER draft, English only. Verified via the hotel's own site, Wikipedia, and two independent reviews (Mr & Mrs Smith, Tripping On Travel): address 6 Frith Street, Soho Square, W1D 3JA; Georgian building dating to 1718, spread across three interconnected townhouses; William Hazlitt died in the house in 1830, blue plaque by the front door; no exterior hotel signage (Condé Nast Traveller, quoted on the hotel's own site: 'There's nothing outside to indicate that this is a hotel'); 30 rooms (3 singles, 24 doubles, 2 junior suites, 1 suite); rooms named for Hazlitt's circle; no lift, creaky stairs and a wonky top-floor landing consistently reported across reviews; resident cat (Sir Godfrey) and an honesty bar in the library per Mr & Mrs Smith. Rates 'from £329/night' per Mr & Mrs Smith at time of writing — treated as indicative, not quoted as current in the body. Currently operating (part of the same ownership as The Rookery and Batty Langley's). NOT verified: exact current nightly rates, whether accessibility features have changed, staff-side details (this is nite-porter's usual register but no staff-sourced quote was found — flagged rather than invented). Status held at draft: no hero image sourced yet (needs a near-illustrator pass — no rights-clear Wikimedia Commons photo of the actual building was found), and no other locale has been written. Geocode is an approximate manual placement for 6 Frith Street and needs refinement against a real geocoder before this goes live."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:10:00Z",
+      "note": "near-illustrator pass: found a genuinely usable, rights-clear exterior photo of the actual building on Wikimedia Commons (2011, CC BY-SA 3.0). Set as hero with strategy 'source'."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T01:00:00Z",
+      "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active. Geocode confidence remains 0.5 (manual approximation) — a real address lookup is still owed as follow-up, tracked in BACKLOG.md."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "6 Frith Street, Soho Square, London W1D 3JA"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

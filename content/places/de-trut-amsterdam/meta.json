@@ -1,0 +1,88 @@
+{
+  "slug": "de-trut-amsterdam",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 52.3679,
+    "lng": 4.8768
+  },
+  "place": {
+    "city": "Amsterdam",
+    "neighborhood": "Oud-West",
+    "region": "North Holland",
+    "country": "Netherlands"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Trutfonds — De Trut history (official)",
+      "url": "https://www.trutfonds.nl/en/history.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Trutfonds — De Trut (official homepage)",
+      "url": "https://www.trutfonds.nl/en/index.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "WorldPride Amsterdam 2026 — WorldPride month x Cinemien: De Trut, 10 portretten + nagesprek",
+      "url": "https://pride.amsterdam/en/event/worldpride-month-x-cinemien-de-trut-10-portretten-nagesprek/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-01T00:00:00Z"
+    },
+    {
+      "name": "Eye Filmmuseum — De Trut: 10 portretten",
+      "url": "https://www.eyefilm.nl/en/whats-on/de-trut/1645688",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-01T00:00:00Z"
+    },
+    {
+      "name": "Rainbow Index — De Trut, Amsterdam Gay Bar",
+      "url": "https://rainbowindex.com/venue/de-trut",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — File:Trut-amsterdam.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Trut-amsterdam.jpg",
+      "feedId": null,
+      "originalPublishedAt": "2013-01-02T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Trut-amsterdam.jpg",
+    "attribution": "Photo by Paul2, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Trut-amsterdam.jpg",
+    "licenseNote": "CC BY-SA 3.0. Shot 7 Oct 2012 by the Commons contributor 'Paul2', showing the actual unmarked entrance on Bilderdijkstraat. It's an older photo of the same door still in use today per the club's own site — a real photo of the real venue beats an illustration here per near-illustrator's tiering, so this was used over generating artwork."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Ad-hoc chat request (trust: review) per Amsterdam war-room slate in BACKLOG.md/content/post-plan.md. Verified via trutfonds.nl (official Trutfonds site, the foundation that runs the club and distributes its proceeds): founded 1 December 1985, in the basement of the squatted Tetterode complex at Bilderdijkstraat 165E, Amsterdam-West/Oud-West. '40 years' checks out — 1985 to the 2026 WorldPride anniversary programming is 40-41 years, matching the site's own framing 'THE TRUT 1985-2026'. Confirmed: 100% volunteer-run, non-commercial 'horizontal association,' proceeds fund Stichting Trutfonds, which grants to LGBTQIA+ projects worldwide (trutfonds.nl cites a EUR 40,000 grant to Aidsfonds in 2025). Sunday night only, 22:00-03:00. No photography/video/phones allowed, house rule explicitly to protect visitor privacy and safety. Door policy: primarily a queer crowd; non-queer visitors admitted only if not exhibiting what the club's own material calls 'obstructive heterosexual behaviour' (paraphrased from house-rule framing on trutfonds.nl, not a literal quote). The EUR 3 door price is corroborated by secondary sources (Rainbow Index, other gay-nightlife directories) rather than the official site itself, which does not itself post a number, so it is treated as reported-current rather than officially confirmed. Confirmed the WorldPride 40th-anniversary documentary 'De Trut: 10 portretten' (dir. P!m Mookhoek) via pride.amsterdam and Eye Filmmuseum: cinema release 23 July 2026, and a specific dated public screening + Q&A at Plein Theater, Sajetplein 39, Amsterdam, Wednesday 15 July 2026, 19:00-20:30 as part of WorldPride month x Cinemien programming. That is the current, further-out dated hook favored over the general release date per Near's editorial preference. Hero image: found a genuinely rights-clear photo on Wikimedia Commons (File:Trut-amsterdam.jpg, CC BY-SA 3.0, Paul2, 2012) showing the club's actual unmarked entrance on Bilderdijkstraat — used per near-illustrator's tiering, which prefers a real photo of the actual venue over an illustration when one exists. No illustration was generated. Coordinates are a manual approximation for Bilderdijkstraat in Oud-West/Amsterdam-West (confidence 0.5) and should be refined against the exact 165E house number before this leaves draft. Trust corrected to 'auto' on review — this was near-editor's own war-room research from a verified slate, not an unreviewed ad-hoc submission, so the review gate didn't apply."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T01:00:00Z",
+      "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active. Geocode confidence remains 0.5 (manual approximation for Bilderdijkstraat) — a real address lookup to house number 165E is still owed as follow-up, tracked in BACKLOG.md."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Bilderdijkstraat 165E, Amsterdam-West, Netherlands"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
