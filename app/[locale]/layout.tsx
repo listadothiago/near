@@ -52,6 +52,14 @@ export async function generateMetadata({
       template: `%s | near.tips`,
     },
     description: t("tagline"),
+    alternates: {
+      types: {
+        "application/rss+xml": [
+          { url: "/feed.xml", title: "Near — Latest" },
+          { url: "/column/feed.xml", title: "Near's Weekly Column" },
+        ],
+      },
+    },
     // Search Console site verification. Env-driven so the token never
     // lands in the repo, and omitted entirely when unset rather than
     // rendering an empty meta tag. Set GOOGLE_SITE_VERIFICATION in the
