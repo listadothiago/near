@@ -140,7 +140,12 @@
   },
   "nav": {
     "tips": "Dicas",
-    "about": "Sobre"
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos"
+  },
+  "account": {
+    "signIn": "Entrar com o Google"
   },
   "place": {
     "reasonsToCheckOut": "Por que vale a pena conhecer",

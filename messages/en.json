@@ -140,7 +140,12 @@
   },
   "nav": {
     "tips": "Tips",
-    "about": "About"
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "account": {
+    "signIn": "Sign in with Google"
   },
   "place": {
     "reasonsToCheckOut": "Reasons to check it out",

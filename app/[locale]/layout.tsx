@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
 import { Space_Grotesk, Courier_Prime } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -90,20 +91,22 @@ export default async function LocaleLayout({
         <ThemeScript />
       </head>
       <body className="min-h-screen flex flex-col">
-        <NextIntlClientProvider>
-          <ThemeKeeper />
-          <BoardControlsProvider>
-            <div className="max-w-[1180px] mx-auto px-[22px] pt-3 pb-16 flex-1 w-full">
-              {children}
-            </div>
-          </BoardControlsProvider>
-          <InstallPrompt />
-          {/* Cookieless, ungated. */}
-          <Analytics />
-          <GoogleAnalytics />
-          <ConsentBanner />
-          <SpeedInsights />
-        </NextIntlClientProvider>
+        <ClerkProvider>
+          <NextIntlClientProvider>
+            <ThemeKeeper />
+            <BoardControlsProvider>
+              <div className="max-w-[1180px] mx-auto px-[22px] pt-3 pb-16 flex-1 w-full">
+                {children}
+              </div>
+            </BoardControlsProvider>
+            <InstallPrompt />
+            {/* Cookieless, ungated. */}
+            <Analytics />
+            <GoogleAnalytics />
+            <ConsentBanner />
+            <SpeedInsights />
+          </NextIntlClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   );

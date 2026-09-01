@@ -140,7 +140,12 @@
   },
   "nav": {
     "tips": "Recomendaciones",
-    "about": "Quiénes somos"
+    "about": "Quiénes somos",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "account": {
+    "signIn": "Iniciar sesión con Google"
   },
   "place": {
     "reasonsToCheckOut": "Motivos para visitarlo",
