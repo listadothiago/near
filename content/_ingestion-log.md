@@ -348,3 +348,30 @@ it closed four at once.
   by writing pieces those personas actually fit, not by misfiling this one.
 - Verified trading: own site live, describing current catering and events.
   All four sources checked reachable before citing.
+
+### 2026-08-31 — near-illustrator pass: Studio Voltaire (London) and Café 't Mandje (Amsterdam)
+
+Two draft place pages, image call only (both still gated on other
+publish-blockers per their own statusHistory).
+
+- **Café 't Mandje**: real source photo cleared the bar. Wikimedia
+  Commons has a small cluster of same-photographer (Paul2), same-licence
+  (CC BY-SA 4.0) shots from 2022 — an exterior and three interior/
+  memorabilia frames. Set `Tmandje-interior-2022a.jpg` as hero (source
+  strategy, full attribution to Paul2 + Commons file page). Considered a
+  gallery — there's a genuine cluster of open-licensed shots, including
+  older 1976/2008 photos from other uploaders — but none of the
+  candidates clearly show the ceiling of ties that's the actual editorial
+  hook, so a gallery wouldn't add checkable value beyond the one strong
+  hero. No illustration needed: a real photo of the actual brown café
+  beats a drawn version of the same room.
+- **Studio Voltaire**: no usable rights-clear photo found. Commons'
+  Category:Studio Voltaire only holds an unrelated 2017 gig-photo
+  subcategory (musicians who performed there); no shot of the chapel
+  facade or the Tatham/O'Sullivan tiled installation turned up anywhere
+  open-licensed. Falling back to illustration — heroImage stays `null`,
+  brief logged in the place's own statusHistory for whoever runs
+  generation next: a stylized (non-photoreal) illustration of the former
+  Methodist chapel's facade, foregrounding the hand-glazed ceramic tile
+  installation, since the tiles are the one genuinely distinctive,
+  describable visual the piece has.

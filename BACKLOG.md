@@ -57,6 +57,246 @@ London: Brockwell Lido, Slimelight at Electrowerkz, Gay's the Word, Wilton's Mus
 
 ---
 
+## 🗓️ New skill: `near-events` (2026-08-31, built)
+
+Added `.claude/skills/near-events/SKILL.md` — a dated-events research
+specialist per operator request ("always lookout for events too...
+further out the better"). It doesn't decide what market/category to
+research (that's `near-seo`) and doesn't write copy (that's
+`near-editor`/`near-translator`); it sits between them, taking near-seo's
+ranked gap + RADAR-X's trend read and finding the actual dated event —
+preferring far-future confirmed dates over near-term ones, since a
+further-out date keeps a piece useful longer before `near-caretaker`'s
+event-expiry logic needs to touch it. Feeds `near-editor`'s existing
+`event-belongs-to-venue`/`event-expiry` rules rather than replacing them.
+Not yet wired into `near-war-room`'s standard roster call — that's the
+natural next step once it's used a few times ad hoc.
+
+## 🔍 UI: unclear icons under card snippet (operator, 2026-08-31)
+
+Operator noticed tiny icons under the snippet on article/place cards and
+doesn't know what they represent. Operator's own framing is the useful
+signal here: **if the person who runs this product can't identify them
+at a glance, they're probably not earning their space.**
+
+**Identified (2026-08-31):** `components/board/PlaceCard.tsx` lines
+159-171 — a row of small bordered glyph boxes, one per tag, for up to
+the first 3 entries in `place.meta.tags` (`TAG_GLYPH` map in
+`lib/content/tags.ts`). They're `aria-hidden`/decorative — no visible
+label, just the glyph — so a reader has no way to learn what a given
+icon means without hovering or guessing. (For contrast: the stat bar
+*above* the snippet, same component lines 117-136, is self-explanatory —
+distance-or-date on the left, source count on the right.)
+
+**The fix is a judgment call, not a lookup:** either (a) add a visible
+label/tooltip so the glyphs are decodable, (b) keep them decorative but
+only for tags a reader would recognize on sight (🏳️‍🌈 reads fine
+unlabeled; a more abstract glyph doesn't), or (c) cut the row entirely
+if tag glyphs aren't worth a card's limited space. Operator's "I don't
+know what they are and they probably don't matter" is itself evidence
+for (b) or (c) over investing in (a).
+
+## 🏖️ Quiosque da Cris draft — awaiting operator approval (2026-08-31)
+
+September content push #1 executed as a **draft**, not published:
+`content/places/quiosque-da-cris-sao-vicente/` (`meta.json` + `en.mdx`
+only). `trust: review` / `status: draft` per `rules.md`'s trust-gate —
+this names a real, living person (Cris Lorca) and was requested ad hoc,
+so it does not auto-publish. **Not committed to git.**
+
+Covers all three threads from the original scope: Cris Lorca's own
+history (sourced to Santa Portal, Revista Nove, Baixada em Cores, the
+São Vicente city government), the kiosk as a place, and Praia do
+Itararé's LGBTQIA+ significance (including the city-run Pride Parade).
+Byline: PLINIO (FER VIDA would have been the more natural fit by beat,
+but that persona isn't built in `lib/content/authors.ts` yet — see EPIC
+4's cast-vs-code gap).
+
+**Before this can go to `status: active`, needs:**
+1. **Operator fact-check** — Cris's start year varies by source (1986
+   vs. 1989); the draft hedges as "mid-to-late 1980s" rather than
+   guessing. Operator's local knowledge can likely resolve this.
+2. **A real address/geocode** — coordinates are an approximate placement
+   on Praia do Itararé (confidence 0.3), not a verified pin.
+3. **A hero image call from `near-illustrator`** — not yet run.
+4. **The other five locales via `near-translator`** — only English is
+   drafted; `full-locale-coverage` blocks activation until all six
+   exist. pt-BR is the natural next one, being the source market.
+
+## 🆕 New persona: LUGARDO KARAI (2026-08-31, scoped and partially built)
+
+Public byline requested mid-session, named after the Brazilian song "Lugar
+do Caralho" (roughly: "the absolute middle of nowhere"). Beat: genuinely
+remote, hard-to-reach, off-the-grid places — the natural byline for the
+coastal-alt-luxury beat's "access is content" rule (boat-only, 4x4-only,
+no-signal spots) already scoped elsewhere in this file.
+
+**Done this session:** added to `lib/content/authors.ts` (`beats:
+["travel"]`), role/disclosure/bio written for `en` and `pt-BR` in
+`messages/*.json` (pt-BR is the natural home locale for the reference).
+**Not done:** `it` / `es-ES` / `es-419` / `zh-CN` bio strings — needs
+`near-translator` per locale before this byline can appear cleanly
+outside English/Portuguese pages; no avatar yet (procedural
+`PixelAvatar` will render one for free, per the existing pattern, no
+action needed there). Hasn't written anything yet — first assignment
+should be one of the coastal-alt-luxury candidates already listed in
+EPIC 5 (Ilhabela, Paraty, Trancoso, etc.) or the Angra dos Reis beat.
+
+## 📥 Operator queue — 2026-08-31, second burst (captured, not started)
+
+**Backup note:** a full BACKLOG.md snapshot was saved alongside this
+file as `BACKLOG.backup.20260831-231142.md` before this burst was added,
+per operator request ("save a backup in case of breakage").
+
+**Process / product management**
+- [ ] **Product lead RICE review.** Have `near-lead-product` (Product
+  Trio) run a RICE pass over the current backlog, consulting whoever's
+  needed (SEO, RADAR-X, caretaker, translator leads) per item, and
+  publish a ranked output — same pattern as the SEO×RADAR-X September
+  reprioritization above, but backlog-wide rather than just the content
+  queue.
+
+**UI / UX bugs**
+- [ ] **Pagination doesn't scroll to top.** Changing page on the board
+  keeps scroll position, so on page 2+ the user lands mid-list with no
+  context. Paginate → scroll container back to top of the listings.
+- [ ] **Responsiveness: replace fixed 3-breakpoint system with something
+  more fluid.** Current layout snaps at three hard breakpoints; operator
+  wants smoother scaling in between (fluid grid/clamp() typography and
+  spacing, more card-count steps) rather than only 3 fixed states.
+- [ ] **Ad card should show the post's location.** See screenshot
+  (2026-08-31) of the "DO NEAR" asian-food-SP collection promo card —
+  it has no location context at all. House ad/promo creatives should
+  surface the city/neighborhood of what they're promoting, not just
+  category + title.
+
+**Accounts**
+- [ ] **Google Sign-In + persistent (server-side) favorites.** Currently
+  favorites are local-only (`lib/favorites.ts`, shipped 2026-08-31).
+  Operator wants real login (Google OAuth) so favorites survive device
+  changes/cache clears — explicitly requested as something the operator
+  themself would use immediately. This is the first real account
+  surface in EPIC 6 (Stage 4 Accounts & UGC) and needs its own design
+  pass: what Google OAuth provider to use (see `vercel:auth` — Clerk is
+  the native Marketplace option), data model for a user→favorites
+  table, migration path from the existing localStorage favorites so
+  logged-in users don't lose what they already starred.
+
+**Geographic priority**
+- [ ] **Porto and Bologna promoted to top priority, ahead of Berlin.**
+  Operator reason: has a personal influencer contact in each city who
+  can help with distribution — same seeded-audience logic as the
+  existing London/SP/Berlin ordering, just newly discovered leverage.
+  Revise the refresh order in EPIC 5 next time it's touched:
+  **Porto and Bologna now sit ahead of Berlin's deep refresh** in the
+  queue (previously: London → São Paulo → Berlin deep → Amsterdam →
+  ...). Berlin keeps its "deep refresh" scope, just moves down a slot.
+
+**Alter-ego / persona corrections**
+- [ ] **Djaga (Thiago's alter ego) — two corrections to the persona
+  spec captured in EPIC 6 above:**
+  1. Do **not** link the linktr.ee/Th14g0 credit on Djaga's own bio —
+     that credit link pattern is for people *credited via Telegram
+     submissions* (see the new Telegram bot spec below), not for Djaga
+     itself.
+  2. Djaga does **not** need an AI-disclosure tagline like the rest of
+     the cast — operator's framing: "he just is what he is." This is a
+     deliberate, explicit exception to EPIC 4's "radical transparency,
+     every persona must disclose" mandate for this one persona only;
+     don't generalize it to other alter egos without the same explicit
+     call.
+  `near-alter-ego` skill and `lib/content/authors.ts` need updating to
+  match once Djaga is actually built (not yet started).
+
+**New feature — private Telegram control channel (not started, scoped
+here in full since it's a genuinely new system)**
+
+Operator created a bot via BotFather: `t.me/neartipsbot`. **The bot
+token was pasted in plaintext in chat — it must go straight into Vercel
+env vars (e.g. `TELEGRAM_BOT_TOKEN`) and never into a git-tracked file.
+Treat the token the operator already sent as compromised-by-exposure-
+risk; rotate it via BotFather's `/revoke` once the integration exists if
+being cautious, though not strictly required since it only ever touched
+this chat and env vars.**
+
+Spec, as given:
+- **Purpose:** a private, editor-only interface to discuss, create, and
+  update near.tips content and (for admins) non-content changes, without
+  the public knowing Telegram is involved in the process at all. Never
+  mention or expose the Telegram integration publicly.
+- **Polling, not webhook:** a process checks the bot for new messages
+  every **45 seconds** (operator's final number, after floating 30s
+  first) to simulate an always-on presence without needing a persistent
+  server/webhook endpoint.
+- **Authorization tiers:**
+  - **Admin** (initially just the operator, Telegram username
+    `baraldithiago`): can request content changes *and* non-content
+    changes (UI, backend, infra). Admins can authorize new Telegram
+    users directly from within Telegram (no separate admin panel needed
+    for that step).
+  - **Authorized regular users:** can post/update content only, not
+    UI/backend changes.
+  - **Unauthorized users:** get the read-only NLP-to-link feature only
+    (see below) — explicitly fine for anyone, authorized or not.
+- **Sensible-default behavior, not blind execution:** requests from
+  Telegram should be evaluated for whether to act immediately vs. queue.
+  Default to **capturing in BACKLOG.md and queuing** rather than acting
+  right away, the same judgment call this very session is modeling —
+  act immediately only for genuinely small, unambiguous, reversible
+  asks.
+- **A war room is always summoned** to actually carry out any action
+  requested via Telegram — this is a control channel into the existing
+  multi-agent process, not a shortcut around it.
+- **Crediting a suggested place:** if an authorized user (via Telegram
+  only) suggests a place that gets published, they can be credited.
+  Avatar: their Telegram/Google profile photo if available (operator
+  confirmed their own Telegram and Google photos are the same image),
+  otherwise a generic robotic avatar in the house style, same as the
+  rest of the cast. The operator's own credit, if they're the one
+  suggesting via Telegram, uses the linktr.ee/Th14g0 link — this is the
+  one place that link *should* appear (contrast with Djaga above, which
+  should not carry it).
+- **Multimodal input:** the bot should be able to understand images,
+  audio, and video sent by authorized users, not just text.
+- **Read-only NLP → link feature, available to everyone (authorized or
+  not):** answer natural-language questions by assembling a templated
+  near.tips URL rather than generating an answer from scratch — e.g. a
+  question about vegan food in Santos becomes a link to the board
+  filtered by category=food-drink + location=Santos, or a specific
+  place/collection link when the question matches one directly.
+  Clicking through lands on near.tips, which then uses the visitor's own
+  location for Nearest/Latest as normal. This keeps the bot from ever
+  needing to answer content questions itself — it just routes to the
+  real app, which is also good for near.tips traffic.
+- **Build order (once picked up):** (1) `TELEGRAM_BOT_TOKEN` into Vercel
+  env vars; (2) polling worker (45s interval) — needs a place to run
+  that isn't a Vercel Function (those don't stay warm/poll on their own;
+  a Vercel Cron Job hitting `getUpdates` every 45s, or a small
+  long-running worker, are the realistic options — evaluate against
+  `vercel:vercel-functions`/`vercel:workflow` docs before building); (3)
+  authorized-user list + admin flag, stored server-side (not
+  hardcoded), with the operator as the sole seeded admin
+  (`baraldithiago`); (4) the read-only NLP→link feature first, since
+  it's genuinely low-risk and available to everyone; (5) the
+  authenticated content-queue path with the war-room hookup; (6)
+  multimodal handling last, once text works end-to-end.
+
+## 🔄 SEO × RADAR-X reprioritization for September 2026 (2026-08-31)
+
+Full reasoning lives in `content/opportunities.md` (new section at top).
+Short version: Brazil enters spring in September while London/SF enter
+autumn, so the queue was reordered around that split rather than pure
+coverage gaps. New order: **1. Baixada Santista queer/beach content**
+(unblocks the already-scoped Quiosque da Cris / Praia do Itararé piece —
+publish ahead of the season, not after) → **2. SF sober-curious** (still
+good, just no longer season-critical) → **3. NEW: London autumn culture
+season** — Wilton's Music Hall + Studio Voltaire are already
+source-verified and ready to draft, just not yet written → 4. London
+martial arts/sober → 5. locale backfill → 6. world-culture-news beat.
+Also flagged, not yet ranked: **no back-to-school/September-restart
+angle exists for any Near market** — logged as a candidate for the next
+`near-refresh` or `near-war-room`, no verified leads yet.
+
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
 - [x] **~~Jira MCP Integration~~ — decided against.** See the no-Jira decision above. `content/requests.md` (fenced-YAML, near-editor-writable) replaces the "file a ticket" need instead.

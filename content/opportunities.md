@@ -32,6 +32,68 @@ and closing them is worth more than optimising a phrase.
 Revisit this section once there are ~100 pages and three months of
 Console data.
 
+## Reprioritization — SEO × RADAR-X trend meeting, 2026-08-31 (for September 2026)
+
+Ad hoc meeting between `near-seo` and the trendsetter lens (RADAR-X)
+to reprioritize this queue against what's seasonally live in September
+2026 specifically, not just structural coverage gaps.
+
+**The seasonal fact that matters most: Near's two hemispheres are
+entering opposite seasons in September.** Brazil (São Paulo, Baixada
+Santista) enters spring — beach season is *starting*, not peaking, which
+is the correct time to publish (ahead of the crowd, not describing a
+season already gone). London and SF enter autumn — the indoor/cultural
+season (galleries, theatre, live music) ramps up as beach/park content
+loses relevance there.
+
+**Reprioritized order:**
+
+1. **`baixada-santista-queer` (was rank 2 → now rank 1).** Spring start
+   in the operator's home region is the single best-timed opportunity in
+   the queue — Praia do Itararé and the wider São Vicente/Santos/Guarujá
+   queer beach scene should be live *before* the season, not after.
+   Directly unblocks the operator-mandated Quiosque da Cris / Cris
+   profile / Praia do Itararé three-thread piece (BACKLOG.md EPIC 5),
+   which was scoped 2026-08-31 and not yet started. RADAR-X flags this as
+   the one entry in the whole queue with a real publish-by window —
+   miss early September and the "ahead of the season" angle is gone for
+   a year.
+2. **`sf-bay-sober-curious` (was rank 1 → now rank 2).** Still strong —
+   already started, one pin live — but London/SF autumn favors indoor
+   culture over an outdoor-adjacent bar crawl, so it loses the seasonal
+   tailwind it doesn't strictly need (sober-curious bars aren't a beach
+   product). Keep draining the remaining leads (The New Bar, Better
+   Sunday, Sipeos) but it no longer has to win the September slot.
+3. **NEW — `london-autumn-culture-season` (rank 3).** Gap identified by
+   RADAR-X: London's cultural calendar restarts hard in September
+   (gallery reopenings, new theatre seasons, first cold-weather warehouse
+   nights) and Near's *verified, ready-to-draft* London slate
+   (BACKLOG.md's ranked list) already contains exactly this content —
+   Wilton's Music Hall's Sept 2026 listings and Studio Voltaire's current
+   commissions were verified live 2026-08-31 but are still undrafted.
+   This is a seasonal opportunity Near can capture with zero new
+   research, just by drafting what's already verified. Byline order:
+   Wilton's (PLINIO) and Studio Voltaire (CUBIC-V) first since they're
+   the ones with dated, season-specific hooks; Gay's the Word and London
+   Otters aren't season-locked so can follow.
+4. **`london-martial-arts-and-sober` (was rank 3 → now rank 4).** Still
+   real (FIT-BOT's first byline, opens wellness-fitness in London) but
+   has no September-specific hook, so it sits behind the two seasonally
+   live items above.
+5. **`locale-backfill` (unchanged, rank 5).** No seasonality either way —
+   stays queued at the same priority; still the best effort-to-value
+   ratio in the list when nothing more time-sensitive is open.
+6. **`world-culture-news-beat` (unchanged, rank 6, lowest confidence).**
+
+**Gap RADAR-X flagged that isn't in the queue yet: back-to-school /
+September restart has no Near angle at all.** Neither market Near
+covers (SP/Santos, London, SF) has a "students/young professionals
+back in the city" piece queued, and it's a real recurring September
+search pattern (new-in-town guides, cheap-eats-near-campus, etc.). Not
+promoted to a ranked slot yet — no verified leads exist, unlike the
+London autumn slate above — but logged here so a future `near-refresh`
+or `near-war-room` treats it as a candidate rather than starting cold.
+
 ## Coverage audit — 2026-08-31 (20 places, 19 on board)
 
 | dimension | state |
@@ -62,7 +124,7 @@ four markets.
 ```yaml
 opportunities:
   - id: sf-bay-sober-curious
-    rank: 1
+    rank: 2  # see September 2026 reprioritization above
     status: started
     shipped:
       - "ocean-beach-cafe-san-francisco (2026-08-31) — opened the wellness-fitness category and the sober-curious tag"
@@ -90,7 +152,7 @@ opportunities:
       near-blogger illustrates better than it photographs.
 
   - id: baixada-santista-queer
-    rank: 2
+    rank: 1  # bumped 2026-08-31: SP-hemisphere spring start, see above
     what: "LGBTQIA+ Baixada Santista — Santos, São Vicente, Guarujá"
     why: >
       Named directly in BACKLOG.md's Next Up queue, Tier 1, and the
@@ -104,7 +166,7 @@ opportunities:
       core audience.
 
   - id: london-martial-arts-and-sober
-    rank: 3
+    rank: 4  # see September 2026 reprioritization above
     what: "London martial arts (incl. Bartitsu) and Sober Gay London"
     why: >
       Both named in BACKLOG.md's Next Up queue. Would open
@@ -113,7 +175,7 @@ opportunities:
     leads: []
 
   - id: locale-backfill
-    rank: 4
+    rank: 5
     what: "Close the it / es-ES / es-419 / zh-CN gaps on ~11 places"
     why: >
       Not new content, but the highest ratio of reader value to effort in
@@ -125,7 +187,7 @@ opportunities:
       invocation is that locale's own persona, not a batch job.
 
   - id: world-culture-news-beat
-    rank: 5
+    rank: 6
     what: "Anything at all in world-culture-news — RADAR-X has no bylines"
     why: >
       An empty category with a persona already written for it. Likely
