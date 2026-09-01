@@ -50,6 +50,14 @@ export default async function HomePage({
             stretch
           />
         }
+        mapPromo={
+          <HousePromo
+            locale={locale as ContentLocale}
+            slot="board-map"
+            size="mrec"
+            stretch
+          />
+        }
       />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />

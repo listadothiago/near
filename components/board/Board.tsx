@@ -23,12 +23,17 @@ export default function Board({
   places,
   eventsByParent,
   promo,
+  mapPromo,
 }: {
   places: PlaceSummary[];
   eventsByParent?: Record<string, UpcomingEvent[]>;
   /** House placement rendered inside the card grid — a server component,
       so the page builds it and passes it down as a node. */
   promo?: ReactNode;
+  /** Second placement, rendered below the map sidebar. Desktop-only —
+      the mobile map sits inline in the scroll and doesn't have the
+      spare real estate a sticky desktop sidebar does. */
+  mapPromo?: ReactNode;
 }) {
   const t = useTranslations("board");
   // Search and filters live in the sticky header now, so their state
@@ -273,6 +278,11 @@ export default function Board({
                 {t("mapCaption", { count: filtered.length })}
               </p>
             </>
+          )}
+          {mapPromo && (
+            <div className="hidden md:block border-t-[3px] border-ink p-2.5">
+              {mapPromo}
+            </div>
           )}
         </section>
       </div>
