@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
 import { haversineKm } from "@/lib/geo/haversine";
+import { getSourceCatalog } from "./sourcesCatalog";
 import {
   LOCALES,
   placeMetaSchema,
@@ -239,13 +240,16 @@ export function getStats(): NearStats {
     : {};
 
   return {
-    // Always counted from disk rather than read from _stats.json. The
-    // stored number is a snapshot written by the ingestion pipeline and
-    // it drifts: it said 16 while the board showed 17, so the footer was
-    // telling every visitor the wrong figure. Deriving it means the count
-    // and the board can't disagree again, whatever the file says.
+    // Both counted from disk rather than read from _stats.json. The
+    // stored numbers are a snapshot written by the ingestion pipeline and
+    // they drift — placesIndexed said 16 while the board showed 17, and
+    // separately sourcesWatched sat frozen at 10 through a session that
+    // grew the real catalogue to 107, so the footer was telling every
+    // visitor the wrong figures on both counts. Deriving them means the
+    // footer and the actual catalogue can't disagree again, whatever the
+    // file says.
     placesIndexed: getAllPlaces("en").length,
-    sourcesWatched: stored.sourcesWatched ?? 0,
+    sourcesWatched: getSourceCatalog().length,
     lastSyncAt: stored.lastSyncAt ?? new Date().toISOString(),
   };
 }
