@@ -111,6 +111,8 @@
     "favoriteAdd": "Save this place",
     "favoriteRemove": "Remove from saved",
     "emptyFavorites": "Nothing saved yet. Tap the star on any card to keep it here — stored on this device only, no account needed.",
+    "favoriteToastSaved": "Saved on this device only.",
+    "favoriteToastSignIn": "Sign in to keep it on every device",
     "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave"
   },
   "categories": {

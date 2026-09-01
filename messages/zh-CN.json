@@ -111,6 +111,8 @@
     "favoriteAdd": "收藏这个地方",
     "favoriteRemove": "取消收藏",
     "emptyFavorites": "还没有收藏。点任意卡片上的星标即可存到这里——只保存在本机，无需账号。",
+    "favoriteToastSaved": "已保存，仅限本机。",
+    "favoriteToastSignIn": "登录后可在所有设备同步",
     "locationScope": "{count, plural, other {此地共 # 处}} — 清空搜索即可退出"
   },
   "categories": {

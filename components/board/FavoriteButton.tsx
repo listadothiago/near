@@ -27,6 +27,12 @@ export default function FavoriteButton({ slug }: { slug: string }) {
         // implies they mean to come back. Slug only — no personal data
         // ever goes into an event.
         nearTrack(saved ? "favorite_removed" : "favorite_added", { slug });
+        // A single FavoriteToast mounted once at the board level listens
+        // for this — a window event beats threading a callback through
+        // every card just to reach one shared toast.
+        if (!saved) {
+          window.dispatchEvent(new Event("near:favorite-added"));
+        }
       }}
       className={`absolute top-0 right-0 w-7 h-7 flex items-center justify-center border-l-[3px] border-b-[3px] border-ink text-[0.9rem] leading-none transition-colors ${
         saved
