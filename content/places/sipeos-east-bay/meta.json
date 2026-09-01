@@ -1,0 +1,71 @@
+{
+  "slug": "sipeos-east-bay",
+  "categories": [
+    "food-drink",
+    "wellness-fitness"
+  ],
+  "tags": [
+    "sober-curious"
+  ],
+  "coordinates": {
+    "lat": 37.9006,
+    "lng": -122.0644
+  },
+  "place": {
+    "city": "Walnut Creek",
+    "neighborhood": "Broadway Plaza",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Sipeos (official site)",
+      "url": "https://www.sipeos.com/",
+      "feedId": null,
+      "originalPublishedAt": "2024-11-01T00:00:00Z"
+    },
+    {
+      "name": "NBC Bay Area — Walnut Creek opens first non-alcoholic bar, Sipeos",
+      "url": "https://www.nbcbayarea.com/news/local/walnut-creek-non-alcoholic-bar-sipeos/3762002/",
+      "feedId": null,
+      "originalPublishedAt": "2024-12-01T00:00:00Z"
+    },
+    {
+      "name": "East Bay Express — Sipeos Café & Bar de-centers alcohol",
+      "url": "https://eastbayexpress.com/sipeos-cafe-bar-de-centers-alcohol/",
+      "feedId": null,
+      "originalPublishedAt": "2024-12-01T00:00:00Z"
+    },
+    {
+      "name": "Patch — Walnut Creek couple open Sipeos Café & Bar at Broadway Plaza",
+      "url": "https://patch.com/california/walnutcreek/walnut-creek-couple-open-sipeos-cafe-bar-broadway-plaza",
+      "feedId": null,
+      "originalPublishedAt": "2024-12-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Downtown_Walnut_Creek_02_BW.jpg",
+    "attribution": "Joseph Ho, CC BY-SA 2.5, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Downtown_Walnut_Creek_02_BW.jpg",
+    "licenseNote": "Downtown Walnut Creek, not Sipeos itself or Broadway Plaza specifically, but the correct downtown. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a venue-specific shot."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Second pin in the sf-bay-sober-curious set from content/opportunities.md, after the other two candidates on that list (The New Bar, Better Sunday) both turned out to be permanently closed when checked 2026-09-01. Verified Sipeos still trading before drafting: Yelp shows 238 reviews and an August 2026 update with no closed badge, official site is live, and it appears in current 2026 'best restaurants in Walnut Creek' listings. No rights-clear Commons or source photo found — heroImage left null. Illustration brief for near-illustrator: a warm, sunlit Mediterranean cafe patio scene, mezze spread and a non-alcoholic cocktail glass on a marble table, goddess-inspired decor accents (arches, terracotta), Broadway Plaza pedestrian setting in the background — stylized/painterly, not photoreal."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "126 Broadway Lane, Broadway Plaza, Walnut Creek, CA 94596"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

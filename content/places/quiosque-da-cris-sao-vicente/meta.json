@@ -1,0 +1,106 @@
+{
+  "slug": "quiosque-da-cris-sao-vicente",
+  "categories": [
+    "food-drink",
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.9690,
+    "lng": -46.3612
+  },
+  "place": {
+    "city": "São Vicente",
+    "neighborhood": "Praia dos Milionários / Itararé",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Santa Portal — \"Orgulho: Cris do Quiosque e seus 35 anos de luta pela causa LGBTQIA+\"",
+      "url": "https://santaportal.com.br/baixada/orgulho-cris-do-quiosque-e-seus-35-anos-de-luta-pela-causa-lgbtqia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Revista Nove — \"A Cris, do quiosque\"",
+      "url": "https://revistanove.com.br/quiosque-da-cris/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Baixada em Cores — \"Quiosque da Cris, o point LGBT mais popular da região\"",
+      "url": "https://baixadaemcores.wordpress.com/2012/11/23/quiosque-da-cris-o-point-lgbt-mais-popular-da-regiao/",
+      "feedId": null,
+      "originalPublishedAt": "2012-11-23T00:00:00Z"
+    },
+    {
+      "name": "Prefeitura de São Vicente — \"Empreendedorismo, acolhimento e resistência: Cris Lorca constrói legado\"",
+      "url": "https://www.saovicente.sp.gov.br/informacao/empreendedorismo-acolhimento-e-resistencia-cris-lorca-constroi-legado-de-luta-e-representatividade-em-sao-vicente",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Juicy Santos — \"Rolês LGBTs na Baixada Santista que você precisa conhecer\"",
+      "url": "https://www.juicysantos.com.br/diversao/roles-lgbts-na-baixada-santista-que-voce-precisa-conhecer/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Aber Beach — \"Praia Gay em São Paulo: a Praia do Itararé e o Quiosque da Cris\"",
+      "url": "https://blog.aberbeach.com.br/praia-gay-em-sao-paulo-a-praia-do-itarare/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Instagram — @crisdoquiosque (current activity check)",
+      "url": "https://www.instagram.com/crisdoquiosque/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Google Business listing — Quiosque da Cris (address, hours, rating)",
+      "url": "https://share.google/k7byF1RKYSOIHC1LN",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Praia_do_Itarar%C3%A9%2C_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
+    "attribution": "Silvio Bergamini, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Praia_do_Itarar%C3%A9,_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
+    "licenseNote": "A wide shot of Praia do Itararé itself — not the kiosk or the flag specifically, but the correct beach. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a venue-specific shot. Still blocked from active by the separate, unresolved fact-check on Cris's start year and the kiosk's exact address — this only clears the image gate."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-31T23:30:00Z",
+      "note": "September 2026 content push, #1 SEO×RADAR-X priority (ahead of SP-hemisphere spring). Operator-scoped three-thread piece: Cris Lorca profile, the kiosk as a place, Praia do Itararé's LGBTQIA+ significance. Ad-hoc chat request naming a real living person -> trust: review per rules.md trust-gate, not auto-published. Cris's own start year varies across sources (1986 in one Google-summarized search result, 1989 in another) — written conservatively as 'the mid-to-late 1980s' rather than picking one; needs the operator's local knowledge to firm up before this goes to status: active. Exact address/current trading hours not independently verified beyond Instagram activity (posts through late August 2026, so it reads as active) — operator asked to confirm in person or via a direct visit/DM before publish, per the higher bar this skill sets for a named-person profile. Coordinates are an approximate placement on Praia do Itararé, not a verified geocode -- needs a real address or a pin drop before active. Only English drafted this pass; near-translator locales (pt-BR most urgent, being the source market) not yet run -- full-locale-coverage gate blocks activation until all five are done. Hero image not yet resolved via near-illustrator."
+    },
+    {
+      "status": "draft",
+      "at": "2026-08-31T23:55:00Z",
+      "note": "near-illustrator pass: checked Wikimedia Commons for Praia do Itararé — found one genuinely usable, rights-clear photo (File:Praia_do_Itararé,_Itararé_Beach_in_São_Vicente.JPG, by Silvio Bergamini, CC BY-SA 3.0, https://upload.wikimedia.org/wikipedia/commons/f/f7/Praia_do_Itarar%C3%A9%2C_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG) but rejected it as the hero: it's a generic wide shot of the beach with no trace of the kiosk, the flag, or Cris — exactly the case the skill flags as a photo that 'tells the reader nothing,' since this piece's actual hook is the flag and the person, not the view. Deciding illustration is the right call instead; heroImage left null pending an actual generation run. Brief for whoever runs it: a stylized riso/screenprint illustration (bold flat colour, visible misregistration, Near's newsprint-and-acid-green anchor used sparingly as an accent) of a beach kiosk flying a large rainbow flag over its counter, pastéis and cold drinks visible, a mixed crowd at plastic tables (same-sex couples, an older straight couple, a family) under beach umbrellas, Praia do Itararé's waterfront and surf in the background — must read as unmistakably illustrated, never photoreal, and must not depict Cris Lorca's actual likeness since no reference photo of her was sourced or verified for this pass. Disclose per rules.md as 'Illustration by NEAR — AI-generated' with attributionLink to /about once generated."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator confirmed the two outstanding facts directly: start year is 1989, and only her first name, Cris, should be used on this page (no last name). Location confirmed via the operator's own Google Maps link: Av. Ayrton Senna da Silva, 1B, at the Praia dos Milionários/Praia do Itararé boundary, São Vicente — matches the Google Business listing (4.4★, 6,365 reviews, open 6am-2pm). Trust upgraded from review to auto now that the named-person facts are operator-confirmed rather than inferred. Still pending: near-illustrator has not generated the brief already logged below (a real photo of the kiosk/flag itself would still be preferable to the current generic beach photo, but per operator's 2026-09-01 policy a correctly-located real photo is enough to publish now). Only English + this pass exist; other five locales still owed before full-locale-coverage is met — publishing now per explicit operator instruction to unblock, locale backfill to follow."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Av. Ayrton Senna da Silva, 1B, Praia dos Milionários, São Vicente, SP — confirmed via Google Business listing and operator-supplied map link"
+  },
+  "publishedAt": "2026-08-31T23:30:00Z",
+  "updatedAt": "2026-08-31T23:30:00Z"
+}
