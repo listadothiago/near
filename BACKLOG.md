@@ -814,7 +814,26 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
   - **Reverses the old "no AI-generated hero" ban**, which the operator called silly. Hero tiers are now source photo → licensed stock → illustration, as a *preference* order rather than fallback-only: a drawn hero beats a generic stock shot, and beats holding a good place as a draft forever for want of a photo.
   - **Generated images must be visibly stylized and never photoreal** — riso/screenprint, woodcut, ligne claire, travel-poster, halftone, cut-paper, zine-xerox. This is a correctness rule, not taste: an image a reader could mistake for documentation of a real address is a lie about that address. Plus the uncanny-valley problem. Enforced in `quality-gate-before-publish`.
   - All generated images set `strategy: "illustration"` and disclose themselves as AI-generated in `attribution` — same radical-transparency logic as the bylines.
-  - _Gap:_ EPIC 4's Product Trio (`near-lead-product`, `near-lead-ux`, `near-tech-lead`) still doesn't exist as skills; the two UX skills stand in for now.
+  - _Gap closed 2026-09-01:_ EPIC 4's Product Trio now exists as skills —
+    `.claude/skills/near-lead-product/`, `near-lead-ux/`, `near-tech-lead/`.
+    The two UX skills (`near-ux-researcher`, `near-ux-designer`) remain
+    the ones that do the actual research/design legwork; `near-lead-ux`
+    is the decision layer above them. Same pass also built
+    `near-tov-police` and `near-trendsetter` (both referenced constantly
+    throughout this file and `content/*.md` but never built as their own
+    skills until now) and gave every already-built public persona
+    (RADAR-X, FOODIE-9000, STEFAN, CUBIC-V, PLINIO, WILD0, DARCY,
+    FIT-BOT, LUGARDO KARAI, RUCIO LIBERO, PARSER, ALLORA DAI) its own
+    character-sheet skill under `.claude/skills/<slug>/` — operator
+    directive, "roles should be skills" / "public personas should be
+    skills too." NITE-PORTER already had one under a beat-named skill
+    (`near-editor-accommodation`), so it wasn't duplicated. The
+    not-yet-built cast members below (KINETIC, STROBE, SHOPPER-X, Eli
+    The DEI Guy, SENSE-0, ROVER-5, FER VIDA, DANUZA-2, NORMAN HUMAN,
+    Manuel Geographic, Joe Tromundo, Fickle Knight, Dip Tracy, FOX,
+    Tapana Pantera, and the local translators PAULY SEYA/BRICKY/DOG IN
+    THE FOG/ZACK ARIOKA) still only exist as roster descriptions here —
+    give each one a skill file when it's actually built, same template.
 
 - **Staleness is a maintenance job, not a writing constraint (operator, 2026-08-31).** Near keeps writing with real specifics — names, prices, opening years, "just opened" — because that's what makes the content good, and accepts that it ages. New `near-caretaker` skill owns the upkeep: seven staleness classes (people, open/closed, ownership, numbers, recency claims, events, link rot), verify-before-changing, correct-in-place across all six locales including frontmatter, never flatten voice to make a piece age better. Codified as `currency-maintenance` in `rules.md` and wired into `near-refresh` step 1.
 - **Dolly Parton died 2026-08-25.** The Dollywood page asserted present-tense ownership across all six locales and has been corrected (verified against NPR/CNN/Variety; park stays open per its president). Worth remembering as a category of risk: evergreen copy about a living person goes stale silently. A `near-refresh` check for this would be reasonable.
