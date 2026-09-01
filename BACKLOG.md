@@ -570,14 +570,11 @@ decision on notification frequency/digest vs. real-time so this doesn't
 become spammy. Scope this properly (probably with `near-ux-designer`)
 before building rather than wiring ad hoc.
 
-## 🍞 Favorite toast should nudge sign-in (2026-09-01, not started)
+## 🍞 Favorite toast should nudge sign-in — DONE (2026-09-01, later session)
 
-Operator request: the "saved to favorites" toast shown on
-signed-out/local-only favoriting should also encourage the visitor to
-sign in, since that's what makes the list persistent across devices.
-Needs checking whether a toast system already exists in the codebase
-for the favorite-toggle action (`lib/favorites.ts` / the star button
-component) — if not, this is a small new UI piece, not just added copy.
+No toast system existed anywhere in the codebase (checked — `FavoriteButton.tsx` just toggled state with no feedback UI). Built one: new `components/board/FavoriteToast.tsx`, a single instance mounted once in the root layout (`app/[locale]/layout.tsx`, alongside `InstallPrompt`) rather than per-page, since `FavoriteButton`/`PlaceCard` render in several different trees (board, collection pages, related-places, author pages) — a window event (`near:favorite-added`, dispatched by `FavoriteButton` on add) is what triggers it, cheaper than threading a callback through every card. Only shows for signed-out visitors (checked via Clerk's `useUser()` hook inside the component itself, not a wrapping `<Show>`), auto-dismisses after 5s, never blocks the star button. New locale strings (`favoriteToastSaved`, `favoriteToastSignIn`) added to all six `messages/*.json` files.
+
+**Real regression caught and fixed before shipping:** an earlier version wrapped the toast in `<Show when="signed-out">` directly in the root layout — this silently turned every single route dynamic (`npm run build` went from dozens of `●` SSG pages to zero, everything showing `ƒ`), a serious, easy-to-miss regression since the build still succeeds either way. Root-caused to `<Show>`'s layout-level placement specifically (page-level `Show` usage in `Header.tsx` doesn't have this effect). Fixed by moving the signed-out check inside the component via `useUser()` instead of wrapping it externally. Verified via a live dev server: toggling a favorite while signed out produces a `role="status"` toast with the correct copy and a working sign-in CTA (confirmed via the accessibility tree — a screenshot-rendering glitch in this session's browser tooling blocked a visual screenshot, but the DOM/functional check is solid). `npm run build` confirmed SSG is intact after the fix.
 
 ## 🔐 Google Sign-In — Clerk installed live, blocked on Google OAuth branding (2026-09-01)
 

@@ -10,6 +10,7 @@ import ThemeScript from "@/components/layout/ThemeScript";
 import ThemeKeeper from "@/components/layout/ThemeKeeper";
 import { BoardControlsProvider } from "@/lib/board/controls";
 import InstallPrompt from "@/components/layout/InstallPrompt";
+import FavoriteToast from "@/components/board/FavoriteToast";
 import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/layout/GoogleAnalytics";
 import ConsentBanner from "@/components/layout/ConsentBanner";
@@ -111,6 +112,7 @@ export default async function LocaleLayout({
               </div>
             </BoardControlsProvider>
             <InstallPrompt />
+            <FavoriteToast />
             {/* Cookieless, ungated. */}
             <Analytics />
             <GoogleAnalytics />
