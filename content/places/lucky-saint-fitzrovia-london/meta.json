@@ -1,0 +1,48 @@
+{
+  "slug": "lucky-saint-fitzrovia-london",
+  "categories": ["food-drink"],
+  "tags": ["sober-curious", "dog-first"],
+  "coordinates": {
+    "lat": 51.5199,
+    "lng": -0.1467
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Fitzrovia",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Lucky Saint — The Pub, London W1",
+      "url": "https://luckysaint.co/pages/the-lucky-saint-pub-london-w1",
+      "feedId": null,
+      "originalPublishedAt": "2023-03-01T00:00:00Z"
+    },
+    {
+      "name": "CAMRA — Lucky Saint, Fitzrovia pub listing",
+      "url": "https://camra.org.uk/pubs/lucky-saint-london-129248",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Item 4 of the September 2026 SEO x RADAR-X reprioritization (BACKLOG.md), London sober-curious angle. FOODIE-9000 byline, matching the Ocean Beach Cafe / Sipeos precedent (sober-curious reads as gastronomy beat, not wellness). Club Soda's Covent Garden tasting room and its Queers Without Beers events turned out to be dead ends this session -- the tasting room closed end of January 2026 lease-end per thespiritsbusiness.com and Club Soda's own site, with no new venue announced, so QWB currently has no fixed physical home to cite as a visitable pin. The Sober Bar London is a pop-up CIC with no fixed address either. Redemption Bar (Notting Hill/Shoreditch/Covent Garden) was checked and rejected: multiple sources (HappyCow, Restaurant Guru, Redemption's own site) confirm all locations closed permanently in the aftermath of Covid, despite some stale SEO listings still claiming it's open in 2026 -- do not resurrect this lead without a fresh open-status check. Landed on The Lucky Saint: a real, currently-trading Fitzrovia pub opened 2023 by the UK's leading alcohol-free beer brand, verified open via CAMRA's own 2026 listing. Honest framing: this is not a fully dry bar (it pours real cask ale and Guinness too), the story is that its 0.5% option is treated as a first-class choice rather than an afterthought -- same honesty standard as the Sipeos entry. No rights-clear source photo found. Status held at draft pending near-illustrator's image call; do not publish without a resolved hero image per rules.md's quality gate."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "58 Devonshire Street, Fitzrovia, London W1W 5EA"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

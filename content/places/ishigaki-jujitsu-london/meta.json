@@ -1,0 +1,54 @@
+{
+  "slug": "ishigaki-jujitsu-london",
+  "categories": ["wellness-fitness"],
+  "tags": ["lgbtq-friendly", "local-legend"],
+  "coordinates": {
+    "lat": 51.5285,
+    "lng": -0.0939
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Finsbury / Islington",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "fit-bot",
+  "sources": [
+    {
+      "name": "Ishigaki Jujitsu — official site, new joiners",
+      "url": "https://ishigaki.org.uk/pages/new-joiners",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Ishigaki Ju-Jitsu Club — LGBT History Project",
+      "url": "https://lgbthistoryuk.org/wiki/Ishigaki_Ju-Jitsu_Club",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Jikishin Jujitsu Association — find a club",
+      "url": "https://www.jikishin.com/clubs_and_coaches_jikishin_ju_jitsu/jikishin_ju_jitsu_clubs.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Item 4 of the September 2026 SEO x RADAR-X reprioritization (BACKLOG.md), London martial arts angle. FIT-BOT's first byline (opportunities.md flagged this as the goal). Ishigaki Jujitsu chosen after Bartitsu was checked again and still has no visitable London venue (bartitsu.club's only London-area listing is the same unfinished Battersea study-group page rejected for Brockwell Lido). Ishigaki verified currently active: official site lists live 2026 new-joiner dates, Jikishin Jujitsu Association lists it as an affiliated club, and LGBT History Project + Pride Sports corroborate the 1994 founding and LGBT+ focus. Founded by four people in 1994 specifically so sexuality wasn't a barrier to training; won Out For Sport Club of the Year 2025. Classes: Tuesdays at Finsbury Leisure Centre (Old Street), Wednesdays/Saturdays at in2sports, Canary Wharf. Coordinates are a manual estimate for the Finsbury Leisure Centre area (Norman Street, EC1), not a precise geocode. Status held at draft pending near-illustrator's image call — no rights-clear photo of the club found in this pass, so a hero image still needs to be resolved (illustration tier per rules.md) before this can move to active; do not publish without one."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Finsbury Leisure Centre, Norman Street, London EC1V 3AR"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
