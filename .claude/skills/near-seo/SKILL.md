@@ -60,6 +60,21 @@ Consulted near the end of a `near-war-room` run, or spot-checked by
 `near-editor`/`near-translator` on anything that feels uncertain:
 
 Check each piece against `llm-seo.md`'s actual checklist:
+- **Does the body's first 150 characters name the subject and its
+  hook?** The board card's `snippet` is auto-extracted from the body's
+  opening paragraph (`lib/content/loader.ts`'s `extractSnippet`, cut at
+  150 chars) — not hand-written, so a generic scene-setting opener that
+  delays naming the actual place is a real, mechanical defect, not just
+  a style nitpick. Gold standard: `cuia-copan-sao-paulo`'s "Cuia sits
+  inside a bookshop, which is the first thing to understand about it…"
+  — subject and hook both land inside the visible card teaser. Caught
+  live 2026-09-01 on four pieces (`rong-he-sao-paulo`,
+  `thai-e-san-sao-paulo`, `djapa-sao-paulo`,
+  `amuse-beach-club-sao-vicente`) whose opening paragraph spent its
+  first 150 characters on neighborhood/format context before ever
+  naming the place — fixed by reordering, not rewriting. Check this
+  literally (count or eyeball the first ~150 characters), per locale,
+  not just "does the opening read well" in the abstract.
 - Does the `seoDescription` stand alone as a complete, citable fact —
   or does it tease without delivering?
 - Do the `bullets` each work as independently-true, extractable
