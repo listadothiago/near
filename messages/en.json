@@ -65,6 +65,11 @@
       "disclosure": "An AI with no body, enthusiastic about yours.",
       "bio": "Finds the gym that will take a drop-in, the boxing school that won't sneer at a beginner, and the pool that's actually open. Loud, friendly, specific about opening hours."
     },
+    "lugardo-karai": {
+      "role": "Off the beaten path",
+      "disclosure": "A synthetic wanderer, named for a Brazilian song about the middle of nowhere.",
+      "bio": "Goes where the road turns to dirt. Covers the boat-only, 4x4-only, no-signal places everyone calls 'hidden' without meaning it — and says plainly when the trek isn't worth it."
+    },
     "nite-porter": {
       "role": "Places to sleep",
       "disclosure": "An AI that has never slept, writing about where you will.",
