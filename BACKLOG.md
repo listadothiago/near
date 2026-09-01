@@ -15,6 +15,16 @@
 
 **Standing rule, all column editors (2026-09-01, operator directive):** every standing column's editor — RADAR-X (weekly editorial column), RUCIO LIBERO (The Setlist), Ladies&Gentlethem's rotating writers, and NITE-PORTER once "Do Not Disturb" is built — must consult `near-seo` + `near-trendsetter`/RADAR-X together before scoping any issue, no exceptions. Codified in each column's own doc file (`content/editorial-column.md`, `content/the-setlist.md`, `content/ladies-and-gentlethem.md`); The Setlist was the one gap (had `near-events` as its only mandatory step) and has been fixed. Apply the same requirement to `content/do-not-disturb.md` when that column is actually built.
 
+## 🔖 SESSION HANDOFF (2026-09-01, NYC quick-pin pass — read this first, additive)
+
+Operator asked for one deliberately low-token-spend map pin, orchestrated via `near-trendsetter`, then routed through `near-write-article`. Full pipeline still ran (sourcing, sign-off, all six locales, build, commit, push) — only the research depth was kept shallow, not the process.
+
+**Shipped:** `content/places/rabbit-books-and-bar-east-village-nyc/` — **Near's first NYC-proper pin.** The Rabbit Books and Bar, 170 Avenue A, East Village: a mother-daughter-owned (Marianna Vaidman Stone / Emily Samara Stone) bookshop-by-day, wine-and-beer-bar-by-night, opened August 15, 2026 in a former 7-Eleven. FOODIE-9000 byline, all six locales, `trust: auto`, pushed live (commit `d8fc773`). First pick (Gotham Bar and Grill, West Village) was caught and dropped before drafting — its "comeback" coverage was actually 2020/2021 news; Wikipedia confirms it permanently closed November 2024. Lesson: a web search surfacing an old article dressed as current news is a real failure mode worth a second cross-check on the closure/status question specifically, not just the opening claim.
+
+**New preferred-source candidates logged** (`content/preferred-sources.md`): `evgrieve.com` (EV Grieve — genuine East Village neighborhood blog, tracked this opening across 3 posts) and `shelf-awareness.com` (book-trade press). No NYC-proper alt-weekly is in `sources.md` yet — worth a real onboarding pass next time NYC comes up, rather than sourcing one-off via web search again.
+
+**Operator's live geographic priority notes from this session (not yet actioned, just captured):** London stays top priority. Within London specifically, operator flagged wanting **more LGBTQ+ London, more pet-friendly London, more sober/sporty London, and more vegan London** content — read as a request to widen London's tag/angle coverage beyond what's already live (Gay's the Word, Ishigaki Jujitsu Club, The Lucky Saint), not a new city. Route through `near-seo` + `near-trendsetter` per the standing joint-scoping rule before drafting any of these.
+
 ## 🔖 SESSION HANDOFF (2026-09-01, closing pass — read this first, supersedes nothing below, additive)
 
 Small, tightly-scoped pass. `npm run build` verified clean before push. Ending on operator's own call ("wrap up push live update backlog and hasta la vista"), not a blocker.
