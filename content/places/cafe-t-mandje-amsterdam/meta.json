@@ -1,0 +1,82 @@
+{
+  "slug": "cafe-t-mandje-amsterdam",
+  "categories": [
+    "nightlife-sound",
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 52.3745,
+    "lng": 4.8994
+  },
+  "place": {
+    "city": "Amsterdam",
+    "neighborhood": "Zeedijk",
+    "region": "North Holland",
+    "country": "Netherlands"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Café 't Mandje — official site, history page",
+      "url": "https://www.cafetmandje.amsterdam/geschiedenis/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Café 't Mandje",
+      "url": "https://en.wikipedia.org/wiki/Caf%C3%A9_%27t_Mandje",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Bet van Beeren",
+      "url": "https://en.wikipedia.org/wiki/Bet_van_Beeren",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Amsterdam Museum — Café 't Mandje showpiece",
+      "url": "https://www.museum.nl/en/amsterdam-museum/showpiece/cafe-t-mandje",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Tmandje-interior-2022a.jpg",
+    "attribution": "Paul2, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Tmandje-interior-2022a.jpg",
+    "licenseNote": "2022 photo of the actual café interior, uploaded to Commons by user Paul2 under CC BY-SA 4.0; verified on the file's Commons page before use. Alternates also available and rights-clear if a gallery is ever warranted: Tmandje-2012.jpg (exterior facade with Bet van Beeren banners) and Tmandje-interior-2022b.jpg / Tmandje-interior-2022c.jpg (more interior/memorabilia shots), all same photographer and license."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "Amsterdam war-room slate (content/post-plan.md), drafted 2026-08-31 as part of the September 2026 content push. Left in draft, not active, because rules.md's quality-gate-before-publish blocks publishing without a resolved hero image — near-illustrator hasn't been consulted yet, so heroImage is null with strategy pending. The Zeedijk 63 coordinates are also an approximate manual placement (confidence 0.5) and need refining against a real geocoder before this goes live. All facts (opening 1927, Bet van Beeren taking over from her uncle at 25, the tie-cutting ritual, the kissing ban and Queen's Day Orange balls, the 1967 death, Greet van Beeren's 15-year run, the 1982 closure, the 2008 reopening, Diana van Laar's 2007 purchase/ownership, and current hours) were cross-verified across the café's own site, Wikipedia (both the café and Bet van Beeren entries), and the Amsterdam Museum showpiece page, with no contradictions found."
+    },
+    {
+      "status": "draft",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "near-illustrator pass: found a genuinely usable, rights-clear source photo on Wikimedia Commons — Tmandje-interior-2022a.jpg, uploaded by user Paul2, licensed CC BY-SA 4.0, showing the actual café interior. Set as hero with strategy 'source' and full attribution. Considered a gallery (there are 4+ same-license Paul2 photos of this venue plus older 1976/2008 shots from other uploaders) but decided against one per the high-bar rule — a single strong interior shot does more work as the hero than a padded gallery would, and none of the other shots clearly show the ceiling of ties that's the actual editorial hook, so a gallery wouldn't add checkable value over the one hero image. No illustration needed: a real 2022 photo of the actual brown-café interior beats a drawn version of the same room."
+    },
+    {
+      "status": "active",
+      "at": "2026-08-31T23:59:00Z",
+      "note": "All six locales complete via near-translator (pt-BR, it, es-ES, es-419, zh-CN, alongside the English source) — full-locale-coverage gate cleared. Hero image and sourcing already resolved. Moved to active as part of the September 2026 content push. Geocode confidence remains 0.5 (manual approximation) — a real address lookup is still owed as follow-up, tracked in BACKLOG.md, but does not block publish per rules.md (only the hero-image and locale gates are hard blockers)."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Zeedijk 63, Amsterdam, Netherlands — approximate placement, needs refining against a real address lookup"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
