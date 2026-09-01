@@ -49,6 +49,26 @@ genuine CC BY-SA Wikimedia Commons photo of the venue itself (no
 image-generation pipeline was available this run). `npm run build`
 clean.
 
+## 🔖 SESSION HANDOFF (2026-09-01, later session — pushed live, supersedes nothing below, additive)
+
+Everything this pass committed and pushed to `main` as of `3fb123a` (`5aec121..3fb123a`); Vercel auto-deploy should be picking it up now. `npm run build` verified clean locally before push (`/the-setlist`, `/ladies-and-gentlethem`, both feeds, all new places/collections, all 6 locales each). Ending on operator's own call ("publish and you have to publish live, capture backlog and lets clear").
+
+**Shipped this pass:**
+- RADAR-X given a public byline for the first time; inaugural editorial column rewritten to LinkedIn-shareable register + first-person RADAR-X voice, all 6 locales. New `author` field on `collectionMetaSchema`.
+- Collection place lists now sort nearest-first by reader geolocation (`CollectionPlaces.tsx`), matching the main board's pattern.
+- **Ladies&Gentlethem** — new monthly LGBTQIAPN+ column, `/ladies-and-gentlethem`, rotating writers. First issue live (STEFAN): Amelia Abraham's photobook launch, Curaçao Pride, Santos's June Pride.
+- **The Setlist** — new monthly live-music column, `/the-setlist`, orchestrated by RUCIO LIBERO (his call to write personally or defer — same model documented for every column editor, see the new "Column editor: RADAR-X" section in `content/editorial-column.md`). Mandatory `near-events`-first research rule. First issue live: Primavera Sound São Paulo, 5–6 Dec 2026.
+- **PARSER** — new consultant persona (AI-content-industry specialist), quotable in the editorial column's AI-process thread, not a place-writing beat.
+- **PII leak fixed** — repo confirmed genuinely public; `/api/inbox` was filing visitor free-text straight to public GitHub issues. Shipped a visible warning (all 6 locales) + server-side email/phone redaction (`lib/github/inbox.ts`'s `redactPii`) as an actual backstop, not just advisory copy. Structural fix (private store instead of public GitHub issues) still outstanding — see the flag a few sections down.
+- São Paulo/Baixada Santista war room: Towa (Liberdade), Lita (Pinheiros), Amuse Beach Club (São Vicente, LGBTQIA+) — closed both open `content/requests.md` gaps for the region. Baixada Santista leads beyond Amuse Club (O Condado, ballroom/hip-hop/comics/sebo scene) were researched and honestly dropped as unsubstantiated rather than padded.
+- Moltbook (external agent-social platform) recon'd on request, read-only/no-privileges: confirmed it's agent-infrastructure discourse with zero travel/local content and no agent-tips section — not useful for research, and operator explicitly ruled out ever posting Near's site there. Decision: skip entirely, don't revisit unless something material changes.
+
+**Open threads for next session:**
+1. **"Do Not Disturb" (hotels column)** — captured below, not built. NITE-PORTER as editor, same rotating/defer-or-write model as the other columns.
+2. **Column-name check**: The Setlist and Ladies&Gentlethem both need the same "column editor's own call, article writer ≠ column editor" framing added to their own doc files that `content/editorial-column.md` now has for RADAR-X — `content/the-setlist.md` already documents rotation, worth confirming it's phrased with the same explicit "his call" language; `content/ladies-and-gentlethem.md` has no dedicated editor persona at all (pure joint near-seo/RADAR-X/near-editor rotation) and wasn't asked to get one this session — leave as-is unless the operator wants a named editor there too.
+3. **Locale backfill gap**: the two closed `content/requests.md` SP entries got `wantedBy` backlinks added in English only; other 5 locales still need the reciprocal link.
+4. **Stray untracked files** in the working tree (`.obsidian/`, several PDFs/MDs at repo root, `app/manifest (1).ts`, `content/requests (1).md`, `reference-images/`) — still there, still not touched, still worth the operator's own look.
+
 ## 🛎️ CAPTURED, NOT BUILT: fourth standing column — "Do Not Disturb" (hotels), 2026-09-01
 
 Operator request: a new monthly (assume monthly, same cadence as the other rotating-writer columns, unless the operator says otherwise when this gets built) column with `near-editor-accommodation`'s persona, **NITE-PORTER**, as editor — same model as RADAR-X (editorial column) and RUCIO LIBERO (The Setlist): NITE-PORTER orchestrates and can write personally or defer to a better-fit persona each issue, his own call, not a fixed byline requirement. Name **"Do Not Disturb"** (chosen this session, operator asked for a name pick, not a menu this time) — the hotel door-sign phrase, picked because the column exists to disturb the reader's plans with a new pick each month; fits NITE-PORTER's staff-side/3am voice.
