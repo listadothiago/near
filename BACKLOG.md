@@ -142,6 +142,16 @@ action needed there). Hasn't written anything yet — first assignment
 should be one of the coastal-alt-luxury candidates already listed in
 EPIC 5 (Ilhabela, Paraty, Trancoso, etc.) or the Angra dos Reis beat.
 
+## ⚠️ Vercel production alias not auto-promoting (2026-09-01, flagged)
+
+Twice this session, a push to `main` built successfully but `near.tips`
+kept pointing at the *previous* production deployment instead of the
+new one — required a manual `vercel alias set <new-deployment>
+near.tips` each time to actually go live. Worth checking the Vercel
+project's Git integration settings (Settings → Git → Production Branch,
+or a "Automatically assign custom domains" toggle) next time the
+dashboard is open — this should be automatic and isn't.
+
 ## 🖼️ UI quick hits (2026-09-01, not started)
 
 - **Article card was missing the place name — FIXED 2026-09-01.**
