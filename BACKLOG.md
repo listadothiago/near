@@ -1,5 +1,36 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🏳️‍🌈 Ladies&Gentlethem menu label + column title need work (2026-09-01, operator-flagged, not started)
+
+Operator flagged `https://near.tips/pt-BR/collection/ladies-and-gentlethem-2026-09` on two points:
+
+1. **Nav/menu label "L&G" is unclear.** Operator wants it to read as something that clearly signals it's the queer/LGBTQIA+ column — e.g. "Queer" or "LGBTQIA+" — instead of the abbreviation, which doesn't communicate what the column is about at a glance. Check wherever the column's short nav label is set across all six `messages/<locale>.json` files (same pattern as the `nav.column` fix earlier in this file) and `content/ladies-and-gentlethem.md`.
+2. **Issue titles are boring** — this issue is just named after the month ("2026-09"), no hook. Operator wants every issue title to be genuinely engaging and informative, not a calendar label.
+
+**Action, next session:** near-seo + near-trendsetter pass on a better nav label (operator leaning toward "Queer" or "LGBTQIA+", open to better); rename/re-title current and future Ladies&Gentlethem issues with real, engaging titles instead of month-name slugs; check other standing columns (Setlist, editorial column) for the same "boring/date-only title" pattern while at it.
+
+## ✍️ New standing rule: titles must always be engaging and informative (2026-09-01, operator directive — needs a skill/doc update)
+
+Prompted by the Ladies&Gentlethem "2026-09" title complaint above. Operator wants this codified as a standing rule, not a one-off fix: **every published piece's title (place, collection, column issue) must be engaging and informative** — never a bare date, category name, or other placeholder-style label.
+
+**Action, next session:** add this as an explicit checklist item in `near-tov-police` and/or `near-editor`'s style guide (wherever title/headline quality is already gated), so it's enforced on every future piece, not just remembered ad hoc.
+
+## 🔗 New skill: `backlink-pr` — BUILT (2026-09-01)
+
+Built `.claude/skills/backlink-pr/SKILL.md`: an off-page PR/backlink specialist that (1) identifies which sites currently outrank Near for a given market/topic, preferring peer alt-weeklies/local blogs already in `content/sources.md`/`preferred-sources.md` over cold big-site targets, (2) uses `claude-in-chrome` to actually find each target's real contact/submission/guest-post channel rather than guessing an email, (3) pitches honestly and specifically (no templated blasts, no misrepresenting Near, no paid/reciprocal link schemes, hard stop on any site with a stated no-outreach policy), and (4) logs every contact — channel used, date, pitch, response, outcome — in a new durable relationship log, `content/backlink-outreach.md` (same fenced-entry spirit as `content/sources.md`; not yet created on disk, gets created on first real use).
+
+**Wired in as mandatory, not optional:** `near-seo/SKILL.md` Mode 1 (opportunity-finding) now has a step 5 requiring a `backlink-pr` consult alongside its existing `near-trendsetter` step, and its frontmatter description says so. `near-write-article/SKILL.md` step 1 notes the inherited `near-seo`→`backlink-pr` consult; a new closing paragraph after step 10 (publish) hands every newly-live piece to `backlink-pr` as an outreach candidate; the skill's own frontmatter description and pipeline summary were updated to reflect both touchpoints.
+
+**Not done:** the operator's reference video (`youtu.be/t7k8EOZtWYk`) wasn't fetchable for a transcript this session (YouTube pages don't expose transcript text to `WebFetch`) — the skill was built from established digital-PR/link-earning best practice instead, with an explicit note in the skill file to revisit the video later. **The video was also flagged by the operator as possibly having broadly-applicable practices beyond `backlink-pr` specifically — that cross-skill review never happened, since the transcript couldn't be pulled. Worth a manual look (operator watches, summarizes key points back) if that's still wanted.** `content/backlink-outreach.md` itself hasn't been created yet — happens on first real outreach run, not this session (capture/build-the-skill only, no outreach was actually sent).
+
+## 🔍 New skill: `aeo` (Answer Engine Optimization) — BUILT (2026-09-01)
+
+Built `.claude/skills/aeo/SKILL.md`: extends (doesn't duplicate) `near-editor/references/llm-seo.md`'s existing LLM-citability baseline with three AEO-specific checks — (1) structured-data coverage, confirming `lib/seo/jsonld.ts`'s JSON-LD actually matches each page's visible frontmatter rather than drifting out of sync, (2) direct-answer/question-shaped framing where it genuinely earns its place (not forced, same honesty bar as everything else), and (3) a standalone-citability check — pulling the 2-3 most liftable sentences (tagline, `seoDescription`, strongest bullet) and confirming each reads correctly with zero surrounding context. Explicitly stays out of off-page/citation-earning territory — that's `backlink-pr`'s job, cross-referenced rather than duplicated.
+
+**Wired in:** `near-write-article/SKILL.md` step 9 now runs `aeo`'s checks alongside `near-seo`'s existing QA pass (Mode 2), before the mechanical publish gates; the skill's frontmatter description updated accordingly.
+
+**Not done:** same transcript-fetch limitation as above — the operator's reference video (`youtube.com/watch?v=58MR03s0ev8`) wasn't reviewable this session; the skill was built from established AEO practice with an explicit note to revisit the video. Operator did confirm the video's scope directly mid-session: generative engine/answer engine/AI-search optimization best practices — matches this skill's territory exactly, so the checklist above is aimed at the right target even though the video's specific tactics still haven't been pulled in. Also not done: giving `aeo` (or `near-tech-lead`) an actual audit pass across already-published pieces for JSON-LD drift — the skill exists and is wired into new pieces, but no retroactive sweep has run yet.
+
 ## 🏷️ Naming clash: `/column` is THE editorial column, needs a real name, not generic "coluna" (2026-09-01, operator-flagged — nav label fixed same session)
 
 Operator flagged `https://near.tips/pt-BR/column`: it's labeled just

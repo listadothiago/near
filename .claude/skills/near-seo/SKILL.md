@@ -1,6 +1,6 @@
 ---
 name: near-seo
-description: Dedicated SEO specialist — finds content opportunities (what Near should write about next, per market) and runs a QA pass on drafted content against near-editor's shared LLM/SEO discipline. Distinct from references/llm-seo.md (the baseline discipline every editor/translator persona already follows on every piece) — this skill is an active specialist consulted by near-war-room and near-refresh, not a reference doc everyone reads passively. Use at the start of a content push (opportunity-finding) and near the end (QA pass before publish).
+description: Dedicated SEO specialist — finds content opportunities (what Near should write about next, per market) and runs a QA pass on drafted content against near-editor's shared LLM/SEO discipline. Distinct from references/llm-seo.md (the baseline discipline every editor/translator persona already follows on every piece) — this skill is an active specialist consulted by near-war-room and near-refresh, not a reference doc everyone reads passively. Always consults backlink-pr on off-page/outreach targets alongside its own on-page research. Use at the start of a content push (opportunity-finding) and near the end (QA pass before publish).
 ---
 
 # near-seo
@@ -39,6 +39,12 @@ Consulted by `near-war-room` at the start of a content push, or by
    `near-refresh` can act on it later. Keep the coverage-audit table
    current when you re-run — a stale audit is worse than none, because
    it will argue for filling gaps that are already filled.
+5. **Consult `backlink-pr`** on which sites currently outrank Near for
+   this market/topic and are worth targeting for outreach —
+   mandatory, same as the `near-trendsetter` consultation. On-page
+   opportunity (what to write) and off-page opportunity (who to get a
+   link from) are scoped together, not sequentially in separate
+   sessions. See `.claude/skills/backlink-pr/SKILL.md`.
 
 **On keyword tools:** Near has no Keyword Planner or Search Console
 connection (see `opportunities.md` for why, and why it matters less than

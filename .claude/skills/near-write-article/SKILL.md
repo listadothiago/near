@@ -1,6 +1,6 @@
 ---
 name: near-write-article
-description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, near-tov-police + near-legal-counsel + chief editor sign-off, near-translator for all six locales, and the mechanical publish gates, ending in a git push. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
+description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter, plus near-seo's own backlink-pr consultation), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, near-seo + aeo QA, near-tov-police + near-legal-counsel + chief editor sign-off, near-translator for all six locales, the mechanical publish gates, a git push, and a post-publish handoff to backlink-pr for outreach. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
 ---
 
 # near-write-article
@@ -35,6 +35,11 @@ joint step every standing column already codifies in its own doc
 no column editor, and no other piece produced through this pipeline,
 scopes an issue solo. Confirm the specific terms/keywords the piece
 should actually target, not just the general topic.
+
+`near-seo` brings its own mandatory `backlink-pr` consultation into this
+step (see `near-seo/SKILL.md`) — off-page outreach targets get scoped
+alongside the on-page topic, not as an afterthought once the piece is
+live.
 
 ### 2. Time-bound content: `near-events` first, no exceptions
 
@@ -160,7 +165,12 @@ a weak one). Alongside that mechanical floor, run `link-police`'s pass
 on the same body: it pushes past the one-external-one-internal minimum
 toward every genuine linking opportunity, and turns a worthwhile
 missing target into a published "coming soon" shell page (linked both
-ways) instead of a bare, unlinked mention. For a standing-column entry specifically: also prepend
+ways) instead of a bare, unlinked mention. Also run `near-seo`'s QA pass
+(Mode 2) and `.claude/skills/aeo/SKILL.md`'s citability/structured-data
+checks together here — `near-seo` confirms the baseline `llm-seo.md`
+discipline was followed, `aeo` confirms the JSON-LD actually matches the
+page and the most-liftable sentences survive being quoted alone. For a
+standing-column entry specifically: also prepend
 the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed
 only ever show what's listed there.
@@ -180,6 +190,12 @@ Once it passes, commit with a real message (per this repo's normal git
 discipline) and push. A `draft` entry stays uncommitted until the
 operator approves it; nothing skips step 7's sign-off to get pushed
 faster.
+
+Once a piece is genuinely live: hand it to `backlink-pr` as a candidate
+for outreach — either pitching it fresh to a new target scoped back in
+step 1, or as a lighter-touch note to an existing `relationship` contact
+in `content/backlink-outreach.md`. Publishing without ever surfacing the
+piece to `backlink-pr` leaves real off-page opportunity on the table.
 
 ## What this skill is not
 
