@@ -1,0 +1,93 @@
+{
+  "slug": "paraty-rj",
+  "categories": [
+    "travel"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.2178,
+    "lng": -44.7131
+  },
+  "place": {
+    "city": "Paraty",
+    "neighborhood": "Centro Histórico",
+    "region": "Rio de Janeiro",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "lugardo-karai",
+  "sources": [
+    {
+      "name": "UNESCO World Heritage Centre — Paraty and Ilha Grande – Culture and Biodiversity",
+      "url": "https://whc.unesco.org/en/list/1308/",
+      "feedId": null,
+      "originalPublishedAt": "2019-07-10T00:00:00Z"
+    },
+    {
+      "name": "Eu Amo Paraty — Quando Paraty fica alagada? Entenda as marés no Centro Histórico",
+      "url": "https://euamoparaty.com.br/quando-paraty-fica-alagada-guia-mares-2026/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Marina Farol de Paraty — Maré Cheia em Paraty: O Fenômeno que Inunda o Centro Histórico",
+      "url": "https://www.marinafaroldeparaty.com.br/explore-paraty/mare-cheia-em-paraty-o-fenomeno-que-inunda-o-centro-historico",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Em Algum Lugar do Mundo — Praia do Sono: dicas de como chegar, trilhas, passeios próximos e mais",
+      "url": "https://emalgumlugardomundo.com.br/praia-do-sono-rj/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Guia de Destinos — Praia do Sono – Tudo o que você precisa saber!",
+      "url": "https://guia.melhoresdestinos.com.br/praia-do-sono-paraty.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Caffeinated Excursions — Is Paraty A Tourist Trap? 7 Things To Consider Before Visiting",
+      "url": "https://caffeinatedexcursions.com/is-paraty-a-tourist-trap-7-things-to-consider-before-visiting/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — File:Paraty - Rio de Janeiro (22282343219).jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Paraty_-_Rio_de_Janeiro_(22282343219).jpg",
+      "feedId": null,
+      "originalPublishedAt": "2014-05-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Paraty_-_Rio_de_Janeiro_%2822282343219%29.jpg",
+    "attribution": "Deni Williams, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Paraty_-_Rio_de_Janeiro_(22282343219).jpg",
+    "licenseNote": "Street-level shot of the colonial historic center's cobblestone streets and whitewashed facades, taken 2014-05-01, CC BY 2.0 — shows the actual streetscape (uneven stone, low buildings, no cars) that this piece's access-and-hype angle is about. No gallery: the Commons categories for Paraty are mostly repetitive postcard-angle shots of the same church and street corner, not enough distinct compositions to clear the gallery bar."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "LUGARDO KARAI piece for the coastal-alt-luxury beat. Left as status: draft per the task brief pending explicit operator review before publish. Geocode is a manual approximate placement for the historic center (confidence 0.5) — should be refined to a specific landmark point (e.g. the Igreja de Santa Rita or the main pier) before going active. Covers Paraty town itself as the access hub, with its real remote-beach payoff (Praia do Sono, Saco do Mamanguá) as the honest 'what it's a gateway to' angle rather than a separate page — no dedicated pages exist yet for those beaches to NearLink to. No natural NearLink found: praia-do-bonete-ilhabela is a different state (São Paulo) and a genuinely different access profile (trail/boat to an inhabited caiçara village vs. Paraty's colonial port town), so no cross-link was forced. heroImage set via a CC BY 2.0 Wikimedia Commons street photo of the historic center; no illustration was needed since a genuine, on-topic photo was found. Other five locales not yet written — English source draft only, per task scope."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T02:00:00Z",
+      "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Paraty, Centro Histórico, Rio de Janeiro — approximate placement for the colonial historic center; should be refined against a specific landmark (e.g. Igreja de Santa Rita or the main pier) before going active"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

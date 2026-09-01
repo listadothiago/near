@@ -129,10 +129,18 @@ opportunities:
     shipped:
       - "ocean-beach-cafe-san-francisco (2026-08-31) — opened the wellness-fitness category and the sober-curious tag"
     remaining:
-      - "The New Bar — 100% alcohol-free tasting room and retail"
-      - "Better Sunday — Union Street, botanical/non-alc"
-      - "Sipeos — East Bay"
+      - "~~The New Bar~~ — CLOSED permanently 2026-07-12, acquired by The Zero Proof, now online-only. Do not pin. Verified 2026-09-01."
+      - "~~Better Sunday~~ — CLOSED, confirmed via Yelp/usmenuguide.com, site now password-walled. Do not pin. Verified 2026-09-01."
+      - "Sipeos — East Bay (NOT YET VERIFIED — check before drafting given the other two candidates from this same list both turned out closed)"
       - "A collection tying them together once there are 3+ pins"
+    note_2026_09_01: >
+      Two of three original leads here are dead. This list was compiled
+      2026-08-31 and went stale within 24 hours — a reminder that
+      near-sources' fresh-check-first discipline matters even for a
+      short list. Before drafting Sipeos or any replacement, verify
+      it's still trading. Candidate replacements surfaced during
+      verification, also unchecked: The Zero Proof (may have physical
+      SF presence post-acquiring The New Bar), Paper Doll Club.
 
     what: "Alcohol-free / sober-curious bars and bottle shops, SF + East Bay"
     why: >
