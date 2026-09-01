@@ -463,6 +463,8 @@ if tag glyphs aren't worth a card's limited space. Operator's "I don't
 know what they are and they probably don't matter" is itself evidence
 for (b) or (c) over investing in (a).
 
+**DONE (2026-09-01, later session): went with (c), cut the row.** Most of the 13 tags in `TAG_GLYPH` (`lib/content/tags.ts`) are genuinely ambiguous without a label — 🫖 for sober-curious, 🗺️ for local-legend, ☕ for hipster, 👀 for see-and-be-seen — and picking a "recognizable enough" subset (option b) would have been its own subjective call with real odds of being wrong on the borderline ones (is 🔥 for trending actually clear at a glance, or clear once you already know the tag?). The operator's own stated conclusion ("probably not earning their space") pointed at (c) directly, so removed the decorative glyph row from `components/board/PlaceCard.tsx` entirely (and its now-dead `TAG_GLYPH` import) rather than picking a curated subset. `TAG_GLYPH` itself is untouched and still used by `TagFilters.tsx` and `PlaceHero.tsx` — this only removes the unlabeled decorative use on the board card. `npm run build` clean.
+
 ## 🏖️ Quiosque da Cris — DONE, active, all six locales (2026-09-01)
 
 `content/places/quiosque-da-cris-sao-vicente/` is now `status: active`,

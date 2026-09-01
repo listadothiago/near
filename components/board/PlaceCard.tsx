@@ -4,7 +4,6 @@ import { Link } from "@/lib/i18n/navigation";
 import Byline from "@/components/layout/Byline";
 import FavoriteButton from "./FavoriteButton";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
-import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 
@@ -162,20 +161,6 @@ export default function PlaceCard({
           >
             {place.snippet}
           </p>
-        )}
-
-        {place.meta.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1">
-            {place.meta.tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag}
-                aria-hidden="true"
-                className="border border-ink px-1 font-mono text-[0.6rem] leading-tight"
-              >
-                {TAG_GLYPH[tag]}
-              </span>
-            ))}
-          </div>
         )}
 
         <div className="mt-auto pt-1.5 flex items-center justify-between gap-2 border-t border-ink/25">
