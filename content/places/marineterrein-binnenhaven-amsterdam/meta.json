@@ -1,0 +1,94 @@
+{
+  "slug": "marineterrein-binnenhaven-amsterdam",
+  "categories": [
+    "wellness-fitness"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 52.3723,
+    "lng": 4.9155
+  },
+  "place": {
+    "city": "Amsterdam",
+    "neighborhood": "Kattenburg / Marineterrein",
+    "region": "North Holland",
+    "country": "Netherlands"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "Waternet — Binnenhaven Marineterrein eerste officiële zwemlocatie in Amsterdam Centrum",
+      "url": "https://www.waternet.nl/nieuws/2025/februari/binnenhaven-marineterrein-eerste-officiele-zwemlocatie-in-amsterdam-centrum/",
+      "feedId": null,
+      "originalPublishedAt": "2025-02-20T00:00:00Z"
+    },
+    {
+      "name": "Waterschap AGV — Binnenhaven Marineterrein eerste officiële zwemlocatie in Amsterdam Centrum",
+      "url": "https://www.agv.nl/nieuws/2025/februari/binnenhaven-marineterrein-eerste-officiele-zwemlocatie-in-amsterdam-centrum/",
+      "feedId": null,
+      "originalPublishedAt": "2025-02-20T00:00:00Z"
+    },
+    {
+      "name": "IamExpat — Marineterrein to become first official swimming spot in centre of Amsterdam",
+      "url": "https://www.iamexpat.nl/lifestyle/lifestyle-news/marineterrein-become-first-official-swimming-spot-centre-amsterdam",
+      "feedId": null,
+      "originalPublishedAt": "2025-02-21T00:00:00Z"
+    },
+    {
+      "name": "NL Times — Amsterdam promises new official swimming hole in city center",
+      "url": "https://nltimes.nl/2025/02/21/amsterdam-promises-new-official-swimming-hole-city-center",
+      "feedId": null,
+      "originalPublishedAt": "2025-02-21T00:00:00Z"
+    },
+    {
+      "name": "Marineterrein Amsterdam — Wandelen over water (vlonder / zwemsteiger)",
+      "url": "https://marineterrein.nl/news/wandelen-over-water/",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "GGD Amsterdam — Zwemmen in open water",
+      "url": "https://www.ggd.amsterdam.nl/gezond-wonen/zwemmen-open-water/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "De Westkrant — Zwemmen in de gracht, mag dat?",
+      "url": "https://www.dewestkrant.nl/zwemmen-in-de-gracht-833/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "I amsterdam — De beste plekken om buiten te zwemmen",
+      "url": "https://www.iamsterdam.com/zien-en-doen/natuur-en-actief/buitenzwemplekken",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Amsterdam-MarineEtablissement-OpslagScheepvaartmuseum.jpg",
+    "attribution": "IJgilé, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Amsterdam-MarineEtablissement-OpslagScheepvaartmuseum.jpg",
+    "licenseNote": "The former Marine shipyard wall on Kattenburgerstraat, the actual Marineterrein site (now a municipal monument) — not the swim pontoon itself, but the correct location. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a pontoon-specific shot."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "WILD0 piece from the verified Amsterdam war-room slate (BACKLOG.md/content/post-plan.md): the Binnenhaven at Marineterrein became Amsterdam Centrum's first officially designated open-water swim spot, announced by Waternet/Waterschap AGV on 2025-02-20 with the province of Noord-Holland approving the location, taking effect 'from April' 2025 at the start of the swim season — this checks out against multiple independent sources (Waternet, AGV, IamExpat, NL Times) and is stated plainly in the body rather than oversold. No lifeguard, no changing rooms/showers found in any source — swimming is explicitly 'at your own risk,' and the floating dock/vlonder closes for 72 hours after heavy rain when sewage overflow risk is high. Could NOT verify an exact opening address/entrance point beyond 'the Marineterrein site, reachable from Kattenburgerstraat' — geocode below is an approximate placement of the inner harbor (Binnenhaven), not a pinned entrance, and needs refinement. heroImage left null: searched Wikimedia Commons for a rights-clear photo of Marineterrein/Binnenhaven and found nothing usably licensed and specific to the swim spot itself (most Marineterrein-tagged Commons files are of unrelated naval-base buildings or the Scheepvaartmuseum next door). Illustration brief for near-illustrator: an inner-harbor dock scene, people swimming off a low composite boardwalk/pontoon between old naval-base brick facades, overcast Amsterdam light, no lifeguard tower, small digital info-screen showing water quality — should read as a real urban swim spot, not a beach resort. categories set to wellness-fitness (matches wild0's registered beat and the practitioner/access-focused lens); travel was considered but wellness-fitness fits an outdoor-swim-access piece better per categories.ts guidance. Status kept as draft pending geocode refinement and hero image resolution."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Marineterrein Binnenhaven (inner harbor), near Kattenburgerstraat 5, 1018 JA Amsterdam — approximate placement of the harbor basin used for swimming, not a confirmed entrance/access point; needs refinement against the actual vlonder/swim-pontoon location"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

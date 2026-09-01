@@ -1,0 +1,75 @@
+{
+  "slug": "studio-voltaire-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.4633,
+    "lng": -0.1391
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Clapham",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "Studio Voltaire — official site",
+      "url": "https://studiovoltaire.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Studio Voltaire — What's On",
+      "url": "https://studiovoltaire.org/whats-on/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-31T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Studio Voltaire",
+      "url": "https://en.wikipedia.org/wiki/Studio_Voltaire",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wallpaper* — Studio Voltaire reopens in London",
+      "url": "https://www.wallpaper.com/art/studio-voltaire-reopens",
+      "feedId": null,
+      "originalPublishedAt": "2021-02-17T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Voltaire_Road_-_Clapham_Manor_Street_-_geograph.org.uk_-_4349859.jpg",
+    "attribution": "Derek Harper, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Voltaire_Road_-_Clapham_Manor_Street_-_geograph.org.uk_-_4349859.jpg",
+    "licenseNote": "A Clapham street scene near Voltaire Road, not the gallery itself, but the correct neighborhood. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a venue-specific shot."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "London autumn-culture-season push, drafted 2026-08-31 by near-editor (war-room research pass, not a user submission — hence trust: auto). Verified via Studio Voltaire's own site, Wikipedia, and the 2021 Wallpaper* reopening piece: founded 1994 on Voltaire Road by a small Clapham artist collective, moved 1999 into the former Methodist Chapel at 1A Nelsons Row that remains its home; non-profit championing emerging and under-represented artists via exhibitions, commissions, residencies and public programmes; HQ refurbishment reopened Feb 2021 with work by Anthea Hamilton and William Scott; Hamilton (a current studio holder) designed the venue's permanent sculptural 'edible landscape' garden; Joanne Tatham & Tom O'Sullivan, collaborators since 2004, made the permanent hand-glazed-tile installation on the public-facing facade; a LOEWE collaboration marked a 30th-anniversary moment (exact year unconfirmed, likely c. 2024 — not stated as fact in the body). Two recent shows were identified and confirmed CLOSED as of this draft date: Jack Scollard's 'Cruising Archaeology' (22 Apr–5 Jul 2026) and T. Venkanna (17 May–23 Aug 2026) — neither is presented as current. Left as draft, not active, because: (1) heroImage is unresolved — no near-illustrator pass has happened yet, so no hero photo/illustration has been chosen or licensed, and this must clear before publish per the quality-gate-before-publish rule; (2) the live studiovoltaire.org/whats-on/ page needs a fresh check closer to publish to name whatever is actually showing in September 2026, since both verified shows have closed; (3) opening hours were not independently confirmed for this venue specifically (the Wed–Sun gallery norm is common but unverified here), so the body deliberately omits stated hours and points readers to the official site instead. Geocode is a manual estimate for 1A Nelsons Row, Clapham SW4 7JR and should be refined against a proper geocoder before publish."
+    },
+    {
+      "status": "draft",
+      "at": "2026-08-31T00:00:00Z",
+      "note": "near-illustrator pass: searched Wikimedia Commons (Category:Studio Voltaire — turns up only an unrelated 2017 gig-photo subcategory for musicians who performed there, no building/facade shots; also searched Category:Clapham, London and geograph.org.uk-style queries) and general web search for a rights-clear photo of the actual building at 1A Nelsons Row. Nothing usable turned up — no Commons file, no open-licensed archive shot of the chapel exterior or the Tatham/O'Sullivan tiled facade. Decision: fall back to illustration. heroImage stays null pending an actual AI-generation pass (no image-generation tool available to this run). Illustration brief for whoever runs it next: a stylized illustration (bold flat-colour riso/screenprint or ligne-claire register, per near-illustrator's style repertoire) of the former Methodist chapel's facade, foregrounding the hand-glazed ceramic tile installation by Joanne Tatham & Tom O'Sullivan on the public-facing wall — the tiles are the single most distinctive, describable visual the piece has (the interior garden and gallery space are comparatively generic without seeing current programming). Must read as visibly non-photoreal per the style rule; set strategy: 'illustration' and disclose 'Illustration by NEAR — AI-generated' with attributionLink to /about once generated."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "1A Nelsons Row, London SW4 7JR"
+  },
+  "publishedAt": "2026-08-31T00:00:00Z",
+  "updatedAt": "2026-08-31T00:00:00Z"
+}
