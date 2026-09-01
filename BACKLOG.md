@@ -572,6 +572,28 @@ taglines needed trimming to stay ≤90 chars). Both `meta.json`s flipped
 `npm run build` completed with zero errors. Item 4 is complete — advance
 the queue pointer to **5. locale backfill**.
 
+**Item 5 (locale backfill) — DONE, 2026-09-01.** A repo-wide audit found
+exactly one locale gap among published places:
+`content/places/berry-bros-and-rudd-london/` was `trust: auto`,
+`status: active`, with only `en.mdx` — its `statusHistory` note ("London
+war-room slate, scoped English-only draft") shows it went active without
+the other five locales ever being written, a live violation of
+`content/rules.md`'s `full-locale-coverage` rule. `near-translator` wrote
+genuine local editions (not literal translations) for pt-BR, it, es-ES,
+es-419, and zh-CN from the English source, each persona file read first.
+Every `shortTitle`/`tagline`/`seoDescription` was counted against
+`lib/content/schema.ts`'s limits before moving to the next locale (all
+passed: shortTitle ≤44 chars, tagline ≤84 chars, seoDescription ≤182
+chars across the five new locales). `meta.json` got a new `statusHistory`
+entry noting the gap was found and closed. `npm run build` initially
+failed on an unrelated stray untracked file, `lib/content/authors
+(1).ts` — an outdated duplicate/backup of `authors.ts` still carrying the
+old invalid `"travel-luxury"` category value that had already been fixed
+in the real file; deleted it (never tracked in git) rather than reverting
+any content work, and the build then passed with zero errors. All six
+locales now exist for this place. Advance the queue pointer to
+**6. world-culture-news beat**.
+
 ## 🚨 EPIC 0: Infrastructure & Workflow (Urgent / Next Session)
 
 - [x] **~~Jira MCP Integration~~ — decided against.** See the no-Jira decision above. `content/requests.md` (fenced-YAML, near-editor-writable) replaces the "file a ticket" need instead.

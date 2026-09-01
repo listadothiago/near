@@ -39,6 +39,11 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "London war-room slate, scoped English-only draft"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Locale gap found and closed by near-translator backfill (BACKLOG item 5): pt-BR, it, es-ES, es-419, zh-CN written from en.mdx as genuine local editions. full-locale-coverage now satisfied."
     }
   ],
   "geocode": {
@@ -47,5 +52,5 @@
     "query": "3 St James's St, London SW1A 1EG"
   },
   "publishedAt": "2026-08-31T00:00:00Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-01T00:00:00Z"
 }
