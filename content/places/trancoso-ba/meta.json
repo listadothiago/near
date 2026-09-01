@@ -1,0 +1,96 @@
+{
+  "slug": "trancoso-ba",
+  "categories": [
+    "travel"
+  ],
+  "tags": [
+    "celebrity-spotted",
+    "influencer-favorite",
+    "see-and-be-seen"
+  ],
+  "coordinates": {
+    "lat": -16.5893,
+    "lng": -39.1018
+  },
+  "place": {
+    "city": "Trancoso",
+    "neighborhood": "Quadrado",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "lugardo-karai",
+  "sources": [
+    {
+      "name": "Wikipedia — Trancoso, Bahia",
+      "url": "https://en.wikipedia.org/wiki/Trancoso,_Bahia",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Culture Trip — 10 Things To Know About Trancoso, Bahia",
+      "url": "https://theculturetrip.com/brazil/articles/10-things-to-know-about-trancoso-bahia",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Trancoso.org — Trancoso (village history: Jesuit founding, hippies, jet-set)",
+      "url": "https://trancoso.org/en/trancoso",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Azure — Trancoso, Brazil: Relaxed Rustic Brazilian Chic Destination",
+      "url": "https://www.azureazure.com/travel/destinations/trancoso-brazilian-rustic-chic-516/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Exclusive Realty Brasil — Trancoso Real Estate Market 2024",
+      "url": "https://www.exclusiverealtybrasil.com/article/trancoso-real-estate-market-2024-1",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "Brazil Beach House — Why Trancoso Is Brazil's Hidden Luxury Real Estate Hotspot",
+      "url": "https://www.brazilbeachhouse.com/blogg/2025/10/21/why-trancoso-is-brazils-hidden-luxury-real-estate-hotspot",
+      "feedId": null,
+      "originalPublishedAt": "2025-10-21T00:00:00Z"
+    },
+    {
+      "name": "Bahia Homes — New Year's Eve in Trancoso: Everything you need to know",
+      "url": "https://www.bahiahomes.com.br/en/new-years-eve-in-trancoso/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — File:Quadrado de Trancoso, Bahia.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Quadrado_de_Trancoso,_Bahia.jpg",
+      "feedId": null,
+      "originalPublishedAt": "2007-03-29T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Quadrado_de_Trancoso%2C_Bahia.jpg",
+    "attribution": "Aloísio Morais Martins, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Quadrado_de_Trancoso,_Bahia.jpg",
+    "licenseNote": "Straight-on shot of the Quadrado's grass expanse, colorful low houses, and the São João Batista church tower, taken 2007-03-29, CC BY-SA 4.0 — predates the current jet-set-era crowding, which is exactly the point: it shows the square as a plain grass common, not a styled backdrop. No gallery: other Commons files of the Quadrado are repetitive same-angle postcard shots, not enough distinct compositions to clear the gallery bar."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "LUGARDO KARAI piece for the coastal-alt-luxury beat, explicitly commissioned to 'name the hype' on the Quadrado. Left as status: draft pending explicit operator review before publish, per task brief. Geocode is a manual approximate placement for the Quadrado (confidence 0.5) — should be refined against the São João Batista church or a specific pousada before going active. heroImage set via a CC BY-SA 4.0 Wikimedia Commons photo of the Quadrado predating the current tourism wave (2007), chosen deliberately over a more recent styled shot to keep the honest angle. Population and founding-date facts sourced from Wikipedia; jet-set/celebrity claims (Beyoncé, Naomi Campbell, Anderson Cooper, Leonardo DiCaprio, Calvin Klein, Valentino, the Gores) are repeated across multiple travel-press sources but none give first-hand sourcing or exact visit dates — flagged in the body as reported rather than independently verified. Real estate price figures (USD 700k-5M+) are from realty-marketing sources (exclusiverealtybrasil.com, brazilbeachhouse.com) which have an incentive to talk the market up — used cautiously, framed as what sellers are asking rather than verified transaction data. Used NearLink to paraty-rj: both are colonial-era Brazilian coastal towns whose reputation (UNESCO postcard town / boho-chic jet-set square) has visibly diverged from a plainer, older reality, a genuine comparison point for this beat rather than a forced link. Other five locales not yet written — English source draft only, per task scope."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Quadrado, Trancoso, Porto Seguro, Bahia, Brazil — approximate placement for the main square; should be refined against the São João Batista church before going active"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

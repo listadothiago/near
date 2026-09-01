@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import { haversineKm } from "@/lib/geo/haversine";
 import {
   LOCALES,
   placeMetaSchema,
@@ -179,6 +180,16 @@ export function getUpcomingEventsByParent(
   return out;
 }
 
+/**
+ * "Related nearby" is presented to readers as geographic — the copy
+ * says "nearby," not "similar" — so distance has to gate candidates,
+ * not just tag/category overlap. The old version OR'd shared
+ * category/tag in with same-country as equally valid matches, which
+ * let a food-drink place in Oakland show up as "nearby" a food-drink
+ * place in London: same category, wrong hemisphere. Now proximity is
+ * the filter and category/tag overlap is only the tie-breaker among
+ * places that are actually close.
+ */
 export function getRelatedPlaces(
   slug: string,
   locale: ContentLocale,
@@ -186,17 +197,33 @@ export function getRelatedPlaces(
 ): PlaceSummary[] {
   const current = getPlaceSummary(slug, locale);
   if (!current) return [];
+
+  const MAX_KM = 50;
+
   return getAllPlaces(locale)
     .filter((p) => p.meta.slug !== slug)
-    .filter(
-      (p) =>
-        p.meta.categories.some((c) => current.meta.categories.includes(c)) ||
-        p.meta.tags.some((t) => current.meta.tags.includes(t)) ||
-        (current.meta.place.neighborhood &&
-          p.meta.place.neighborhood === current.meta.place.neighborhood) ||
-        p.meta.place.country === current.meta.place.country,
-    )
-    .slice(0, limit);
+    .map((p) => ({
+      place: p,
+      distanceKm: haversineKm(
+        current.meta.coordinates.lat,
+        current.meta.coordinates.lng,
+        p.meta.coordinates.lat,
+        p.meta.coordinates.lng,
+      ),
+    }))
+    .filter(({ distanceKm }) => distanceKm <= MAX_KM)
+    .sort((a, b) => {
+      const aShared =
+        a.place.meta.categories.some((c) => current.meta.categories.includes(c)) ||
+        a.place.meta.tags.some((t) => current.meta.tags.includes(t));
+      const bShared =
+        b.place.meta.categories.some((c) => current.meta.categories.includes(c)) ||
+        b.place.meta.tags.some((t) => current.meta.tags.includes(t));
+      if (aShared !== bShared) return aShared ? -1 : 1;
+      return a.distanceKm - b.distanceKm;
+    })
+    .slice(0, limit)
+    .map(({ place }) => place);
 }
 
 export type NearStats = {

@@ -207,6 +207,18 @@ a byline or a quote, per EPIC 4's roster rules. A piece with no real
 specialist consultation doesn't need a forced quote — this is about
 surfacing collaboration that already happened, not manufacturing it.
 
+## Hero image tiers, note on "generic but correct" (operator, 2026-09-01)
+
+Within the source-photo tier, a real, correctly-located photo that
+isn't of the specific venue (a street scene on the right block, the
+right building complex, the right neighborhood) is preferred over
+holding a piece in draft indefinitely for want of a venue-specific
+shot. Always disclose this honestly in the image's `licenseNote` (say
+plainly that it's the street/area, not the venue itself) — the
+distinction matters for `quality-gate-before-publish`'s honesty rule,
+even though it doesn't block publishing the way a fully wrong or
+fabricated image would.
+
 A quoted persona is also a natural link opportunity: `<NearLink>` the
 quote (or the sentence introducing it) to that persona's `/author/[slug]`
 page, or to another existing piece where they're the byline, whenever

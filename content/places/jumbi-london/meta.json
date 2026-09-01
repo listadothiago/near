@@ -1,0 +1,114 @@
+{
+  "slug": "jumbi-london",
+  "categories": [
+    "nightlife-sound",
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 51.4693,
+    "lng": -0.0568
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Peckham",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Jumbi — official site",
+      "url": "https://www.jumbipeckham.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Jumbi — Entry & Ticketing Info (official)",
+      "url": "https://www.jumbipeckham.com/entry-ticketing-info",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Copeland Park & Bussey Building — Jumbi (resident directory)",
+      "url": "https://www.copelandpark.com/residents/jumbi/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "DJ Mag — Bradley Zero and Nathanael Williams are opening a new hi-fi music bar, Jumbi, in Peckham",
+      "url": "https://djmag.com/news/bradley-zero-and-nathanael-williams-are-opening-new-hi-fi-music-bar-jumbi-peckham",
+      "feedId": null,
+      "originalPublishedAt": "2022-06-01T00:00:00Z"
+    },
+    {
+      "name": "The Vinyl Factory — London has a new hi-fi bar, Jumbi",
+      "url": "https://www.thevinylfactory.com/news/london-peckham-hi-fi-bar-jumbi-bradley-zero",
+      "feedId": null,
+      "originalPublishedAt": "2022-07-02T00:00:00Z"
+    },
+    {
+      "name": "Hot Dinners — Jumbi opens in Peckham with rum cocktails and St Lucian bakes",
+      "url": "https://www.hot-dinners.com/2022070411546/Gastroblog/Latest-news/jumbi-peckham-bar-venue-london",
+      "feedId": null,
+      "originalPublishedAt": "2022-07-04T00:00:00Z"
+    },
+    {
+      "name": "Original Flava — Original Flava Kitchen Launches at Jumbi Peckham",
+      "url": "https://originalflava.com/meals/original-flava-kitchen-launches-at-jumbi-peckham/",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Time Out London — Jumbi (record collection feature)",
+      "url": "https://www.timeout.com/london/bars-and-pubs/jumbi",
+      "feedId": null,
+      "originalPublishedAt": "2025-06-01T00:00:00Z"
+    },
+    {
+      "name": "Resident Advisor — Jumbi presents: A VERY SPECIAL NYE",
+      "url": "https://ra.co/events/2277983",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Copeland Park & Bussey Building — Jumbi presents: A VERY SPECIAL NYE (event listing)",
+      "url": "https://www.copelandpark.com/events/37176/jumbi-presents-a-very-special-nye/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Wonderland Magazine — Jumbi Turns Three In Style",
+      "url": "https://www.wonderlandmagazine.com/2025/07/29/jumbi-turns-three/",
+      "feedId": null,
+      "originalPublishedAt": "2025-07-29T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Copeland_Road%2C_Peckham.jpg",
+    "attribution": "London Less Travelled, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Copeland_Road,_Peckham.jpg",
+    "licenseNote": "Generic street scene on Copeland Road, Peckham (2021, CC BY 2.0) — not the venue itself, but the correct street. Used per operator's 2026-09-01 call: a real, correctly-located photo beats holding a piece in draft for want of a venue-specific shot."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "London war-room slate (BACKLOG.md), ad-hoc chat request. Trust set to 'auto' per task instruction rather than the usual review-gate for ad-hoc requests, since this was commissioned as part of the verified war-room slate rather than an unreviewed inbox submission. Address confirmed via the official site and the Copeland Park resident directory: Unit 4.1/4-1, Copeland Park, 133 Copeland Road, Peckham, London SE15 3SN. Hi-fi concept verified in detail via DJ Mag and The Vinyl Factory's 2022 opening coverage: a deliberate single-turntable setup (not a DJ mixer/two-deck club rig) built to prioritize deep listening and selection over mixing, running 2x Quad 405 power amps plus a Quad 606 into Tannoy Little Red Monitor speakers, with a custom-modified turntable by Isonoe London (Master Sounds external PSU, Grado Labs cartridges), housed in a bespoke booth, playing from co-founder Bradley Zero's (Rhythm Section International) own vinyl collection which guest selectors are invited to dig through. Co-founded July 2022 by Bradley Zero and Nathanael Williams (one half of production duo The Colours That Rise). Food verified via Hot Dinners' 2022 opening piece and the 2025 Original Flava Kitchen residency writeup: Caribbean small plates built on Bradley Zero's and Nathanael Williams's own island heritage — 48-hour marinated jerk chicken smoked on the drum, Nanny's curry goat, oxtail Trini doubles, plantain tostones with scotch bonnet hummus, rum BBQ chicken skewers, and (via the Original Flava Kitchen pop-up) Jamaican-Turkish fusion curry goat manti — plus a rum-led drinks list that deliberately spotlights Black-owned rum brands, a banana mai tai, and a house rum punch. Hours verified via the official Entry & Ticketing Info page: open Tuesday-Sunday, closed Monday; free entry most nights, free before 10pm Friday/Saturday, with a paid Orii Jam Terrace takeover on Tuesdays; the venue explicitly flags itself as NOT currently wheelchair accessible due to steep entrance steps and narrow doorways, worth carrying into the piece as a genuine access note rather than omitting it. Dated 2026 event hook (previously flagged gap): confirmed via Resident Advisor and Copeland Park's own events listing — 'Jumbi presents: A VERY SPECIAL NYE', Wednesday 31 December 2026, dinner service 4-8pm (reservations only), dance floor 7pm-4am (ticketed), lineup including blissy e, Donut, HARUNA, Maxwell Owin, Steffi Bricks, and Steven Julien. This is a real, specific, currently-listed future date rather than an invented one. A separate lead (Juls's 'Jazz Cafe Residency' with four Fridays in Aug/Sept 2026) was investigated and discarded — that residency runs at The Jazz Cafe in Camden, not at Jumbi, so it does not belong on this pin. Categories: nightlife-sound (primary, byline stefan) plus food-drink as a secondary category given the kitchen is a genuine, reviewed program in its own right (Original Flava Kitchen residency, standalone dinner-reservation booking flow) rather than incidental bar snacks. No rights-clear photo of Jumbi's interior, booth, or the Bussey Building exterior turned up on Wikimedia Commons in a targeted search — heroImage left null. Illustration brief logged for near-illustrator: a warm, lamp-lit single-turntable booth scene, crate of vinyl in frame, jerk-smoke haze, one rum-punch glass on the bar — should read as a specific room, not a generic 'DJ booth' stock scene. Coordinates are a manual approximation for 133 Copeland Road / the Bussey Building block in Peckham (confidence 0.5) and should be refined against the exact unit before this leaves draft. Left in draft status per task instruction — not yet locale-complete."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "Unit 4.1, Copeland Park, 133 Copeland Road, Peckham, London SE15 3SN"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
