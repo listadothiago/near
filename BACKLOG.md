@@ -32,6 +32,39 @@
 
 _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ultimate source of truth. Confirm priorities with the User (Product Owner) before executing major structural changes. Always ask for user input/choices during strategic decisions. Resolve vague references (e.g., "make this look better") against the strict architectural and design rules defined below._
 
+## 🎸 The Setlist: third standing column, monthly live music, orchestrated by RUCIO LIBERO — DONE (2026-09-01)
+
+Built end to end, mirroring the weekly editorial column and
+Ladies&Gentlethem: persona added to `lib/content/authors.ts` +
+localized strings in all six `messages/<locale>.json`; new route
+`/the-setlist` (archive page, header nav link, dedicated RSS feed);
+standing doc `content/the-setlist.md` (cadence: monthly,
+hard rule to run the `near-events` skill first on every issue,
+rotating-writer process). First issue live in all six locales
+(`content/collections/the-setlist-2026-10/`): Primavera Sound São
+Paulo's confirmed 5–6 Dec 2026 lineup (The Strokes/Gorillaz
+headlining) at Autódromo de Interlagos, tied to the real Santos venue
+Teatro Clube da Eskyna as an honest local-scene note. Hero image is a
+genuine CC BY-SA Wikimedia Commons photo of the venue itself (no
+image-generation pipeline was available this run). `npm run build`
+clean.
+
+## 🛎️ CAPTURED, NOT BUILT: fourth standing column — "Do Not Disturb" (hotels), 2026-09-01
+
+Operator request: a new monthly (assume monthly, same cadence as the other rotating-writer columns, unless the operator says otherwise when this gets built) column with `near-editor-accommodation`'s persona, **NITE-PORTER**, as editor — same model as RADAR-X (editorial column) and RUCIO LIBERO (The Setlist): NITE-PORTER orchestrates and can write personally or defer to a better-fit persona each issue, his own call, not a fixed byline requirement. Name **"Do Not Disturb"** (chosen this session, operator asked for a name pick, not a menu this time) — the hotel door-sign phrase, picked because the column exists to disturb the reader's plans with a new pick each month; fits NITE-PORTER's staff-side/3am voice.
+
+Not built yet — capture only, per operator's explicit instruction this pass. When actually built, mirror the engineering pattern already proven twice this session (The Setlist, Ladies&Gentlethem): own route + header nav link, own index JSON + doc file (`content/do-not-disturb.md`), `collectionMetaSchema`'s `author` field for the issue byline, `placeSlugs.min(1)` tie to a real hotel/accommodation pin per issue (NITE-PORTER already scouts primarily from `content/sources.md` mentions, not travel-trade press — see `.claude/skills/near-editor-accommodation/`), no fabrication, hold at draft if a month's research doesn't substantiate a real first issue.
+
+## 🔒 PII leak in the inbox pipeline — URGENT FIX SHIPPED (2026-09-01, later same session)
+
+Confirmed the repo (`listadothiago/near`) is genuinely public (`api.github.com/repos/listadothiago/near` → `private: false`), so the risk flagged at lines ~182/192/771 below was live, not hypothetical: `/api/inbox`'s `SubmitForm` files free-text visitor submissions straight to public GitHub issues, verbatim. Anyone typing an email or phone number into the "message" field had it published permanently and indexably.
+
+**Shipped now, operator-flagged urgent:**
+- `components/inbox/SubmitForm.tsx`: added a visible warning under the message field (`inbox.piiWarning`, all six locales) telling visitors not to include contact info, with the reason (public GitHub issue) stated plainly.
+- `lib/github/inbox.ts`: added `redactPii()` as the actual backstop (not just advisory) — regex-redacts email addresses and phone-number-shaped strings from the submission body, place name, and issue title before it's ever sent to GitHub. Deliberately conservative (over-redact rather than under-redact).
+
+**Not fixed, still the real long-term answer**: this is a mitigation, not a structural fix. The durable solution is still what lines 182/192/771 already say — route submissions (and any future email collection) through a private store, not public GitHub issues. Revisit together with the advertiser-leads and email-collection decisions below.
+
 ## 🔖 SESSION HANDOFF (2026-09-01, evening session — READ THIS FIRST, supersedes the earlier 2026-09-01 handoff below)
 
 Everything committed and pushed to main as of this handoff (`2719185`); near.tips is live and matches this file, `npm run build` verified clean before every push. Ending on operator's own call ("publish update backlog clear and see u on the other side"), not a blocker.
@@ -74,7 +107,7 @@ Mid-session, a background agent's report claimed it saw an embedded instruction 
 
 0. **`/column` archive listing — DONE, same session (2026-09-01 evening, later pass).** Was a bare redirect to latest; now `app/[locale]/column/page.tsx` is a real archive page (every entry in `editorial-column-index.json`, newest first, `CollectionCards` grid with a `columnSlugs`-aware "Weekly Column" badge instead of the generic place-count one). New `collection.columnDek` translation key in all six locales. `npm run build` verified clean.
 
-0a. **Rewrite the inaugural column, "The Zombie Listicle Problem," to the LinkedIn-shareable/professional-audience register (operator directive, 2026-09-01, reverses the earlier "leave it as historical record" call).** `content/editorial-column.md` now documents the target register: still unmistakably Near's voice and specifically the chief editor's own (not near-blogger's fiercer voice, not a corporate-blog register) — "the kind of sharp, opinionated industry take a media professional forwards to a colleague," aimed at a somewhat more professional readership than Near's usual alt-weekly crowd, without softening the honesty/sourcing bar or the uncomfortable admission about Near's own AI pipeline that made the original piece work. Task: rewrite `content/collections/zombie-listicle-problem/en.mdx` (facts/sourcing/links carry over, register and framing get the pass), then re-run `near-translator` for all five other locales since the English source is changing, verify against `lib/content/schema.ts`'s character limits per file (this broke production twice already this session — always check), run `npm run build` before pushing.
+0a. **Rewrite the inaugural column, "The Zombie Listicle Problem," to the LinkedIn-shareable/professional-audience register — DONE, same session (2026-09-01, later pass).** `en.mdx` rewritten (facts/sourcing/NearLink targets unchanged, register/framing shifted to the professional/industry-take angle content/editorial-column.md specifies), all five other locales re-translated from the new source by one `near-translator` invocation per locale, `meta.json` statusHistory updated. Caught and fixed two dek overruns (en at 180 chars, es-419 at 161, both over the 160 limit) before `npm run build` came back clean.
 
 1. **Google OAuth verification** — check `Central de verificação` in the `near-tips` GCP project; once it clears, paste the Client ID/Secret into Clerk's Production → SSO connections → Google page (redirect URI already shown there).
 2. **`NewsArticle` JSON-LD for the editorial column** — discussed, not yet built; would help Google Discover pickup on column entries specifically.
@@ -855,7 +888,8 @@ _Content Creation Flow: Agents consult amongst themselves -> Choose public perso
     
 - **DANUZA-2:** Zany socialite / intellectual. Seeks literary events via a posh, radical-left lens. Opinionated, slightly out of touch. (Avatar: Fountain pen holding a martini, dripping ink).
     
-- **RUCIO LIBERO:** Gen Xer. Walking music encyclopedia (retro/indie). Complains about the volume but knows the setlist. (Avatar: Cassette tape with weary pie-cut eyes).
+- **RUCIO LIBERO (built 2026-09-01):** Gen Xer. Walking music encyclopedia (retro/indie). Complains about the volume but knows the setlist. (Avatar: Cassette tape with weary pie-cut eyes). Orchestrates Near's third standing column, The Setlist — a monthly live-music column at `/the-setlist`, rotating writers, mandatory `near-events`-first research rule. See `content/the-setlist.md`. First issue live: Primavera Sound São Paulo (5-6 Dec 2026, The Strokes/Gorillaz).
+- **PARSER (built 2026-09-01):** AI-content-creation-industry specialist consultant — operator-requested ("dedicated Agent Skill Persona... specialized in AI Content Creation Expert to keep up with this field and help orchestrate all this"). Consultant tier, same as ROVER-5/Eli The DEI Guy: named and quotable per `style-guide.md`'s "Quoting collaborating personas" rule (`lib/content/authors.ts` entry, `beats: []` — no place-writing beat of its own, never appears in a category filter). Purpose is dual: (1) an internal orchestrator that keeps up with the actual AI-content-tooling field (workflows, failure modes, what's real vs. vendor pitch) to help coordinate Near's own growing multi-persona/multi-column production process; (2) invited by name into the weekly editorial column whenever an entry's AI-process thread (`content/editorial-column.md`'s standing structure, point 3) needs a specialist voice instead of the masthead speaking generically. No avatar yet, no dedicated `/author` page beyond the standard byline link — same minimal footprint as other consultants until there's a reason to build more.
     
 - **NORMAN HUMAN:** Several puppets in a trench coat (evaluating ultimate inclusivity). Not as nervous as they should be, clumsy, doing their best to blend in. (Avatar: Exactly what it sounds like, drawn in rubber-hose style). They report on inclusivity, accessibility, have the knowledge of relevant degrees in those fields. often collaborate on articles but may write their own when relevant.
     
@@ -906,7 +940,7 @@ _Everything below arrived in one burst. Recorded verbatim in intent so nothing i
 **Geography — additions to the priority list**
 - [ ] **Lisbon** — operator knows many people there. Near already has 2 Lisbon places.
 - [ ] **Copenhagen**, and **Billund** (the LEGO town — verify which town before writing).
-- [ ] **São Vicente, SP** — the operator lives there. Not high-traffic but high-signal. Known leads: **O Condado** (already in the Instagram sources list), a ballroom scene, a hip hop scene, a comics scene, good *sebos* (secondhand bookshops), and large Chinese import shops. **Amuse Club** — mainstream gay but runs genuinely alt events, strongly LGBT-focused, possibly boat parties (verify).
+- [x] **São Vicente, SP leads — worked 2026-09-01 (near-war-room SP/Baixada push).** Published `amuse-beach-club-sao-vicente` (verified live via its own Instagram, September 2026 event calendar, cross-promotion with House of Mamba Negra ballroom/voguing collective). Everything else in this line was checked and dropped for lack of substantiation, not assumed: **O Condado** — the "already in the Instagram sources list" premise in this note was wrong (checked `content/sources.md`/`preferred-sources.md`, not actually present); the only findings were a CNPJ business registration and a possibly-unrelated `@condado.sp` Instagram, no verifiable current menu/scene/hours — dropped. **Ballroom scene** — real activity exists (House of Mamba Negra, confirmed via AMUSE's own booking calendar) but the collective's own base/schedule couldn't be independently verified this pass, so no standalone piece was written; logged instead of forced. **Hip hop scene, comics scene, sebos, large Chinese import shops** — no specific, current, named leads turned up in this pass's research; genuinely open for a future dedicated pass, not silently dropped.
 
 **UI / product**
 - [x] **Install banner reappearing after install — FIXED 2026-08-31.** Desktop Chrome still fires `beforeinstallprompt` when an installed PWA is opened in a browser tab, so the banner kept offering an install that had already happened. Now records install state, and in that case offers "open the app" instead of installing again.
@@ -1183,3 +1217,26 @@ Operator ran near.tips past Gemini with no prior context, to see how the site re
 - Otherwise a fair external gut-check that the "vibe over volume" stage is showing — consistent with the sources-catalogue and content-density items already tracked in EPIC 4b/2. No new work items beyond the About-page framing note above.
 
 
+
+## Session 2026-09-01: Ladies&Gentlethem — new monthly LGBTQIAPN+ column (completed)
+
+Built end to end, mirroring the weekly editorial column's structure:
+- `content/ladies-and-gentlethem.md` (standing doc: cadence, entry bar,
+  rotating-writer process, site placement, series index)
+- `content/ladies-and-gentlethem-index.json`,
+  `app/[locale]/ladies-and-gentlethem/page.tsx` (archive page),
+  `app/ladies-and-gentlethem/feed.xml/route.ts` (RSS), header nav link
+  (`L&G`), new locale message keys across all six `messages/*.json`
+- First entry, `content/collections/ladies-and-gentlethem-2026-09/`
+  (all six locales, status: active), byline STEFAN — Amelia Abraham's
+  *Sex, Clubs, Dissent* photobook (US launch Sept 8 2026), Curaçao Pride
+  (Sept 30–Oct 4 2026), and a first-time roundup of Near's five existing
+  lgbtq-friendly-tagged nightlife places (London, Amsterdam x2, São
+  Paulo, Santos). Hero image at the generic-but-correct illustrated
+  fallback tier (no venue-specific shot ready in time), disclosed as
+  such — flagged for a future near-illustrator upgrade.
+- See `content/_ingestion-log.md`'s matching entry for full detail,
+  including the `npm run build` status (fails on an unrelated concurrent
+  agent's `the-setlist-2026-10` content, not on anything from this
+  task — every file this task touched passes schema's char limits and
+  TypeScript compiled clean).

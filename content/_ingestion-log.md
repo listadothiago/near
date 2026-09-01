@@ -506,3 +506,189 @@ together rather than one persona picking a topic solo.
   checked per file against schema.ts's actual limits (dek <=160,
   seoDescription <=320) after this exact class of bug broke production
   earlier the same day.
+
+## 2026-09-01 — São Paulo / Baixada Santista war-room push (near-war-room)
+
+**Published (3 places, all 6 locales each, trust: auto, status: active):**
+- `content/places/towa-liberdade-sao-paulo` — Japanese-Brazilian grocery on
+  Praça da Liberdade, São Paulo. Fulfills `content/requests.md`'s
+  `sp-liberdade-market-or-grocery`. Verified via three independent local
+  guides (A Vida no Centro, Revista Fórum, Guia Viajar Melhor). Hero image:
+  Wikimedia Commons Feira da Liberdade photo (CC BY-SA 2.0) — not
+  venue-specific, logged as a compromise.
+- `content/places/lita-pinheiros-sao-paulo` — wine bar from chef Tássia
+  Magalhães (Best Chef of Latin America 2025) and sommelier Danyel
+  Steinle, Pinheiros, São Paulo. Fulfills `sp-pinheiros-anchor` — Near's
+  first Pinheiros pin. Verified via CNN Brasil, Taste & Fly, and the
+  venue's own Espaces listing. Hero image: Wikimedia Commons Pinheiros
+  street photo (CC BY-SA 4.0) — not venue-specific, logged as a
+  compromise.
+- `content/places/amuse-beach-club-sao-vicente` — LGBTQIA+ sea-view party
+  venue atop Ilha Porchat, São Vicente. Acts on BACKLOG.md's São Vicente
+  leads paragraph. Verified live via its own Instagram (September 2026
+  event calendar), Facebook, and QLIST listing. Hero image: Wikimedia
+  Commons Ilha Porchat overlook photo (CC BY-SA 3.0) — not
+  venue-specific, logged as a compromise.
+
+**Link-density follow-through:** added the in-text `<NearLink>` this
+publishing pass owed to existing pages per their `content/requests.md`
+`wantedBy` entries — `content/places/rong-he-sao-paulo` and
+`content/collections/asian-food-sao-paulo` now link `towa-liberdade-sao-paulo`;
+`content/places/thai-e-san-sao-paulo` now links both
+`lita-pinheiros-sao-paulo` and `towa-liberdade-sao-paulo`. **English only**
+— the other five locale files on `rong-he-sao-paulo` and
+`thai-e-san-sao-paulo` still need the equivalent link added; logged as a
+residual gap in `content/requests.md` and here for the next
+`near-refresh`/`near-translator` pass.
+
+**Researched and dropped (not published, with reasons):**
+- **O Condado, São Vicente** — BACKLOG.md's São Vicente leads paragraph
+  claimed this was "already in the Instagram sources list"; checked
+  `content/sources.md`/`preferred-sources.md` directly and it was not
+  actually there. Web research found only a CNPJ business registration
+  and a possibly-unrelated Instagram handle (`@condado.sp`), no
+  verifiable current menu, scene, or operating hours. Dropped per
+  `verify-still-open-before-create` — a bare backlog name is not enough
+  to draft from.
+- **São Vicente ballroom scene** — real, current activity exists (House
+  of Mamba Negra, confirmed as a live booking partner via AMUSE Beach
+  Club's own event calendar) but the collective's own base venue and
+  standing schedule could not be independently verified this pass.
+  Mentioned honestly inside the AMUSE page as a real-but-unverified
+  cross-promotion rather than written up as its own place or forced into
+  a bigger claim.
+- **São Vicente hip hop scene, comics scene, sebos (secondhand
+  bookshops), large Chinese import shops** — no specific, current, named
+  venue turned up for any of these in this pass's research budget.
+  Genuinely open leads, not confirmed-dead ones — worth a dedicated
+  research pass rather than another pass at the same shallow search
+  depth.
+- **No collection written.** Baixada Santista yielded one new
+  substantiated place (AMUSE) this pass, not the 3+ needed for a real
+  scene/theme collection per this run's brief — a forced write-up would
+  have been padding. Standalone pin was the honest outcome.
+
+**BACKLOG.md:** checked off the São Vicente leads line with the above
+detail; item 1 of the SEO×RADAR-X September 2026 reprioritization
+(Baixada Santista queer/beach content) gets a second entry beyond
+Quiosque da Cris.
+
+**content/sources.md / preferred-sources.md:** added `vamosgay.com`,
+`qlist.app`, and Instagram `@amuseclub` as candidates (not yet formally
+onboarded off single hits, per `source-enrichment`/dedupe discipline).
+
+**Scope note:** run-volume-cap (5 places/run) was not binding — 3 places
+published, well under cap. Bounding factor was genuine substantiation,
+not the cap.
+
+## Ladies&Gentlethem — new monthly LGBTQIAPN+ column, built end to end (2026-09-01)
+
+Built a second recurring column, mirroring the weekly editorial column's
+structure (content/editorial-column.md) but monthly and with a rotating
+byline instead of a fixed one. Full scope:
+
+- **Doc:** `content/ladies-and-gentlethem.md` — cadence, entry bar,
+  rotating-writer process, site placement, series index.
+- **Engineering:** `content/ladies-and-gentlethem-index.json`,
+  `app/[locale]/ladies-and-gentlethem/page.tsx` (archive page, mirrors
+  `/column`), `app/ladies-and-gentlethem/feed.xml/route.ts` (mirrors
+  `/column/feed.xml`), header nav link (`components/layout/Header.tsx`,
+  labeled `L&G`), new message keys (`nav.ladiesAndGentlethem`,
+  `collection.ladiesAndGentlethemTitle/Dek/Badge`) in all six locale
+  files. `components/collection/CollectionCards.tsx` gained an optional
+  `columnBadgeLabel` prop so the new column's archive card badge doesn't
+  say "Weekly Column".
+- **First entry:** `content/collections/ladies-and-gentlethem-2026-09/`
+  (all six locales). Byline: STEFAN (nightlife-sound beat) — already the
+  author of 3 of Near's 5 existing lgbtq-friendly-tagged nightlife
+  places, so the natural fit for this month's material. Real, current,
+  sourced material: Amelia Abraham's photobook *Sex, Clubs, Dissent:
+  Visualising Queer Nightlife* (MACK; US launch 8 Sept 2026, Leslie-Lohman
+  Museum of Art NYC; huckmag.com coverage of its
+  culture-vulture/credit-erasure argument); Curaçao Pride 2026 "Make
+  Waves" (30 Sept–4 Oct, Willemstad, main parade 1 Oct — a genuinely
+  dated, further-out event per this session's standing preference); a
+  first-time roundup of Near's own existing queer-nightlife map
+  (dalston-superstore-london, cafe-t-mandje-amsterdam, de-trut-amsterdam,
+  bar-das-sao-paulo, cabaret-latino-teatro-eskyna-santos), with a nod to
+  Santos's June 2026 9th Parada do Orgulho LGBT+ and the Baixada
+  Santista Pride circuit. No place-less padding — every venue named ties
+  to an existing active Near place page. Trust: auto (operator
+  commissioned the column directly this session).
+- **Hero image:** no venue-specific photo/illustration was available in
+  time; per operator's explicit direction not to hold the entry back,
+  used the generic-but-correct fallback tier — a programmatically
+  generated, deliberately non-photoreal flat-colour riso-style
+  illustration (mirrorball/dancefloor, no real people, no legible text),
+  disclosed as such in `meta.heroImage.attribution`/`licenseNote`.
+  Flagged for a future upgrade to a commissioned near-illustrator piece.
+- **Status:** flipped straight to `active` on first publish (all six
+  locales written before flipping, satisfying full-locale-coverage).
+
+**Build verification:** `npm run build` currently fails, but the
+failure is unrelated to this work — three files under
+`content/collections/the-setlist-2026-10/` (es-ES, it, pt-BR; then
+named `rucio-libero-2026-10`, since renamed), authored
+by a different, concurrently-running background agent building a
+separate column, have `dek` fields over the 160-char schema limit. Every
+file this task touched or created was individually checked against
+`lib/content/schema.ts`'s limits (dek <=160, seoDescription <=320) and
+passes; TypeScript compiled with zero errors before the build failed at
+static export on the unrelated file. Left `the-setlist-2026-10`
+untouched per the coordination warning against touching other in-flight
+agents' work — that fix belongs to whoever owns that column.
+
+## 2026-09-01 — The Setlist: Near's third standing column (monthly live music), orchestrated by RUCIO LIBERO
+
+Built the third recurring column end to end, mirroring the weekly
+editorial column and Ladies&Gentlethem precedents (`content/editorial-
+column.md`, `content/ladies-and-gentlethem.md`). New standing doc:
+`content/the-setlist.md`.
+
+- **Persona:** RUCIO LIBERO added to `lib/content/authors.ts`
+  (`beats: ["nightlife-sound"]`, no `hasAvatar`, matches roster
+  convention) and localized `authors.rucio-libero` role/disclosure/bio
+  strings added to all six `messages/<locale>.json` files. Orchestrating
+  voice of the column; actual byline rotates by month (this issue:
+  RUCIO LIBERO itself, since nothing in the roster fit the material
+  better).
+- **Site placement:** new route `/the-setlist` (`app/[locale]/the-
+  setlist/page.tsx`, archive pattern identical to `/column` and
+  `/ladies-and-gentlethem`), header nav link added in
+  `components/layout/Header.tsx` (re-read immediately before editing to
+  avoid clobbering the concurrently-added L&G nav link), dedicated feed
+  at `/the-setlist/feed.xml`, added to `app/[locale]/layout.tsx`'s RSS
+  alternates. Index file `content/the-setlist-index.json`.
+- **Mandatory research step:** invoked the `near-events` skill first, as
+  the column's own doc now hard-requires for every future issue. Found
+  Primavera Sound São Paulo's newly-confirmed day-by-day lineup — 5-6
+  Dec 2026, Autódromo de Interlagos, The Strokes/FKA twigs/Lily
+  Allen/CMAT/Courtney Barnett (5 Dec) and Gorillaz/Arca/Yung Lean (6
+  Dec) — verified via musicfestivalwizard.com, wikimetal.com.br, and
+  tenhomaisdiscosqueamigos.com. ~3 months out at publish time, genuinely
+  dated and sourced, no invented details. Also checked and dropped C6
+  Fest São Paulo (21-24 May 2026 — already past as of this session's
+  2026-09-01 current date).
+- **First entry:** `content/collections/the-setlist-2026-10/` (all six
+  locales). Tied to `teatro-clube-da-eskyna-santos` (a real, already-
+  covered Santos/Baixada Santista nightlife-sound venue) as an honest
+  local-scene companion note — the piece is explicit that no Interlagos
+  act is playing there, only that it's a real place to catch a show
+  while planning the trip. Byline: RUCIO LIBERO, first-person.
+- **Hero image:** no image-generation pipeline was available this run.
+  Rather than hold at draft or fabricate one, sourced a genuine,
+  appropriately-licensed Wikimedia Commons photo of Autódromo José
+  Carlos Pace (Interlagos) itself — the actual festival venue —
+  `strategy: "stock"`, CC BY-SA 3.0, photographer Morio, fully
+  attributed per `rules.md`. Not AI-generated, so no illustration
+  disclosure needed.
+- **Status:** held at `draft` first (heroImage null), flipped to
+  `active` once the stock photo was resolved and all six locales were
+  validated against `lib/content/schema.ts`'s `dek` (<=160) and
+  `seoDescription` (<=320) limits — several locale deks initially ran
+  over and were trimmed before publish.
+- **`BACKLOG.md`:** EPIC 4 roster line for RUCIO LIBERO marked built.
+
+**Build verification:** `npm run build` completed with zero errors —
+`/en/the-setlist`, all five other locales, `/the-setlist/feed.xml`,
+and `/en/collection/the-setlist-2026-10` all generated successfully.

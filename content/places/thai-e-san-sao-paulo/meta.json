@@ -50,6 +50,11 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "hero image resolved from the place's own source article; quality gate now passes"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "content/requests.md's sp-pinheiros-anchor and sp-liberdade-market-or-grocery closed this session (near-war-room SP/Baixada push) by publishing lita-pinheiros-sao-paulo and towa-liberdade-sao-paulo -- this page was in both requests' wantedBy list, so per rules.md dedupe-everywhere/link-density the English body now links both new places. Only English updated this pass; the other five locale files still need the same two links added to close the wantedBy commitment fully -- logged as a residual gap for the next near-refresh/near-translator pass rather than left silently undone."
     }
   ],
   "geocode": {
@@ -58,5 +63,5 @@
     "query": "Rua Barão de Iguape, Liberdade, São Paulo"
   },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-09-01T00:00:00Z"
 }

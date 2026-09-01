@@ -1,0 +1,30 @@
+{
+  "slug": "ladies-and-gentlethem-2026-09",
+  "author": "stefan",
+  "placeSlugs": [
+    "dalston-superstore-london",
+    "cafe-t-mandje-amsterdam",
+    "de-trut-amsterdam",
+    "bar-das-sao-paulo",
+    "cabaret-latino-teatro-eskyna-santos"
+  ],
+  "coverImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/collections/ladies-and-gentlethem-2026-09/hero-illustration.jpeg",
+    "attribution": "Illustration by NEAR — AI-generated",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "Generic-but-correct fallback tier per rules.md's hero-image tiers and the operator's explicit 2026-09-01 direction not to hold this entry's publication for a venue-specific shot: a programmatically generated, deliberately non-photoreal flat-colour riso-style illustration (mirrorball over an abstract dancefloor, blocky silhouette figures, no legible text) evoking queer nightlife broadly rather than any single real venue or person. No real people depicted. A future pass may upgrade this to a commissioned near-illustrator piece or real venue photography — log any such upgrade in content/photo-requests.md."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "First issue of Ladies&Gentlethem, Near's new monthly LGBTQIAPN+ roundup (see content/ladies-and-gentlethem.md for the standing decision). Scoped jointly by near-seo + near-trendsetter/RADAR-X + near-editor per this session's standing content-decision process. Byline: STEFAN (nightlife-sound beat) — the natural fit both by beat and by track record: STEFAN already wrote 3 of Near's 5 existing lgbtq-friendly-tagged nightlife places referenced here (bar-das-sao-paulo, dalston-superstore-london, de-trut-amsterdam, cabaret-latino-teatro-eskyna-santos), so this issue is largely a first-person lap through ground STEFAN already covers. Real, current, sourced material: Amelia Abraham's photobook 'Sex, Clubs, Dissent: Visualising Queer Nightlife' (MACK, US launch 8 Sept 2026 at the Leslie-Lohman Museum of Art, NYC) and its argument about queer-nightlife slang/aesthetics being absorbed and stripped of credit (huckmag.com); Curaçao Pride 2026, 'Make Waves,' 30 Sept-4 Oct in Willemstad, main parade 1 Oct (curacaopride.org, misterbandb.com) -- a genuinely dated, further-out event per this session's standing preference. No place-less padding: every venue named ties to an existing active Near place page. Trust: auto per rules.md (operator directly commissioned this column this session). Hero image at the generic-but-correct fallback tier -- no venue-specific shot was ready in time and the operator explicitly directed against holding the entry back for one; queued for a future upgrade in content/photo-requests.md. All six locales written before flipping to active, so full-locale-coverage is satisfied on first publish."
+    }
+  ],
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

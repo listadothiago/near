@@ -1,0 +1,65 @@
+{
+  "slug": "lita-pinheiros-sao-paulo",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "hipster",
+    "trending"
+  ],
+  "coordinates": {
+    "lat": -23.567,
+    "lng": -46.689
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Pinheiros",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "CNN Brasil Viagem & Gastronomia — \"Para brindar sem pressa: conheça o Lita, novo bar de vinhos em Pinheiros\"",
+      "url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/para-brindar-sem-pressa-conheca-o-lita-novo-bar-de-vinhos-em-pinheiros/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Taste & Fly — \"Lita, dos mesmos donos do Nelita, já nasce como um dos melhores bares de vinho de SP\"",
+      "url": "https://www.tasteandfly.com.br/lita-dos-mesmos-donos-do-nelita-ja-nasce-como-um-dos-melhores-bares-de-vinho-de-sp/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Espaces — Lita Wine Bar listing (menu, hours, address)",
+      "url": "https://espaces.com.br/lita-wine-bar",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/lita-pinheiros-sao-paulo/hero.jpg",
+    "attribution": "Photo by Rodrigo Tetsuo Argenton, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Ruas_de_Pinheiros_01.jpg",
+    "licenseNote": "A Pinheiros street scene standing in for the neighborhood, since no rights-clear venue-specific photo of Lita's actual dining room could be sourced this pass. Unedited crop from the original."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "São Paulo/Baixada Santista content push (near-war-room), fulfilling open request sp-pinheiros-anchor -- Near's first Pinheiros pin. Operator-directed research pass (chat request) -> trust: auto per rules.md trust-gate. Verified via CNN Brasil and Taste & Fly editorial coverage plus the venue's own Espaces listing (address, hours, menu concept) -- all corroborate Rua Ferreira de Araújo, 333, chef Tássia Magalhães (Best Chef of Latin America 2025 per Taste & Fly) and sommelier Danyel Steinle, a sister project to their restaurant Nelita. Coverage reads as recent ('novo bar de vinhos'), Espaces listing shows current hours (Tue-Sun, closed Mon), no closure signal found -- satisfies verify-still-open-before-create. Coordinates approximate for the Rua Ferreira de Araújo block, not an independently verified geocode pin -- confidence 0.6. Hero image is a general Pinheiros street scene (Wikimedia Commons, CC BY-SA 4.0), not venue-specific -- logged as an acceptable compromise pending a real interior/exterior photo of Lita itself."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Rua Ferreira de Araújo, 333, Pinheiros, São Paulo, SP — approximate placement from published street address, not independently pin-verified"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

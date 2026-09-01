@@ -1,0 +1,30 @@
+{
+  "slug": "the-setlist-2026-10",
+  "author": "rucio-libero",
+  "placeSlugs": [
+    "teatro-clube-da-eskyna-santos"
+  ],
+  "coverImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Autodromo_Jose_Carlos_Pace_Reta_Oposta.jpg",
+    "attribution": "Photo by Morio, CC BY-SA 3.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Autodromo_Jose_Carlos_Pace_Reta_Oposta.jpg"
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "First issue of The Setlist, Near's monthly live-music column orchestrated by RUCIO LIBERO (BACKLOG.md EPIC 4 roster entry, now built — see lib/content/authors.ts and content/the-setlist.md for the full standing decision). Research done via the mandatory near-events skill first: Primavera Sound Sao Paulo's dates (5-6 Dec 2026, Autodromo de Interlagos) confirmed via musicfestivalwizard.com, wikimetal.com.br, and tenhomaisdiscosqueamigos.com (day-by-day lineup: Strokes/FKA twigs/Lily Allen/CMAT/Courtney Barnett on 5 Dec, Gorillaz/Arca/Yung Lean on 6 Dec) -- genuinely far-out and dated, per the site-wide 'further out is better' preference, ~3 months from publish. Also checked C6 Fest Sao Paulo (21-24 May 2026) but that date is already past as of this session's 2026-09-01 current date, so it was logged and dropped rather than used. Tied honestly to teatro-clube-da-eskyna-santos, a real Santos (Baixada Santista) nightlife-sound venue Near already covers, as the local-scene companion note -- the piece does not claim Interlagos acts play there, only that it is a real place to catch a show locally while planning the Sao Paulo trip. English copy complete, all six locales in progress. Held at status: draft pending a hero image."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Resolved the hero-image gate without near-illustrator generation (no image pipeline available this run): sourced a genuine, appropriately-licensed Wikimedia Commons photo of Autodromo Jose Carlos Pace (Interlagos) itself, the actual venue hosting Primavera Sound Sao Paulo -- strategy: stock, CC BY-SA 3.0, photographer Morio, attributed and linked per rules.md. Not AI-generated, so no illustration disclosure needed; still disclosed via normal stock attribution. All six locales (en, pt-BR, it, es-ES, es-419, zh-CN) written and validated against schema.ts's dek (max 160) and seoDescription (max 320) limits before this flip. Added to content/the-setlist-index.json's slugs array and content/the-setlist.md's Series Index, making the header nav's live-music link live for the first time."
+    }
+  ],
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

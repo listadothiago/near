@@ -39,7 +39,8 @@ discipline that governs places and sources.
 ```yaml
 requests:
   - id: sp-liberdade-market-or-grocery
-    status: open
+    status: fulfilled
+    fulfilledBy: "content/places/towa-liberdade-sao-paulo"
     requestedAt: "2026-08-31"
     what: >
       A Liberdade day-market, Japanese-Brazilian grocery, or street-food
@@ -57,9 +58,15 @@ requests:
       - "content/collections/asian-food-sao-paulo"
       - "content/places/rong-he-sao-paulo"
     sourceLeads: []
+    note: >
+      English links added to both wantedBy items and to
+      thai-e-san-sao-paulo. The other five locale files on rong-he and
+      thai-e-san still need the equivalent link added -- residual gap
+      for the next near-refresh/near-translator pass.
 
   - id: sp-pinheiros-anchor
-    status: open
+    status: fulfilled
+    fulfilledBy: "content/places/lita-pinheiros-sao-paulo"
     requestedAt: "2026-08-31"
     what: >
       Any published Pinheiros place — Near covers none at all right now.
@@ -147,7 +154,12 @@ why: >
   Baixada Santista priority zone (operator's home region) and São Paulo is
   refresh #2. Verify current trading, exact address, sources and hero image
   before drafting — operator-named places still pass the full quality gate.
-status: open
+status: fulfilled
+fulfilledBy: "made-cozinha-autoral-santos"
+fulfilledAt: "2026-08-31"
+closingNote: >
+  Published as content/places/made-cozinha-autoral-santos; hero later
+  swapped to a real venue photo, see made-cozinha-autoral-hero-refresh.
 ```
 
 ```yaml
@@ -160,7 +172,12 @@ why: >
   identify the exact establishment (name is common), confirm which venue the
   operator means if ambiguous at research time, verify trading + sources +
   hero before drafting.
-status: open
+status: fulfilled
+fulfilledBy: "restaurante-almeida-santos"
+fulfilledAt: "2026-09-01"
+closingNote: >
+  Operator confirmed already live (2026-09-01). Published as
+  content/places/restaurante-almeida-santos.
 ```
 
 ```yaml
@@ -174,7 +191,12 @@ why: >
   photo (operator has local reach in the Baixada), or a licensed shot of
   the new Epitacio Pessoa 716 house. Update heroImage + licenseNote when
   swapped; keep the CC attribution rules.
-status: open
+status: fulfilled
+fulfilledAt: "2026-09-01"
+closingNote: >
+  Operator supplied a Revista Nove photo (Dário Costa at the restaurant
+  entrance/dining room) into content/photo-inbox/; heroImage and
+  licenseNote updated in meta.json, source article added to meta.sources.
 ```
 
 ```yaml

@@ -65,6 +65,19 @@ source to the permanent catalog off a single lucky find):
   major cities; actively look for the local equivalent (a Chicago Reader-
   style paper, etc.) when starting a new city rather than defaulting to
   generic travel-blog sources only.
+- `vamosgay.com` — Latin America LGBTQIA+ travel guide, useful for
+  cross-checking São Paulo coast (São Vicente/Santos/Guarujá) queer
+  venues; found while verifying AMUSE Beach Club (2026-09-01). Only one
+  genuinely good hit so far, not yet formally onboarded.
+- `qlist.app` — venue-listing aggregator for LGBTQIA+ nightlife (used to
+  cross-verify AMUSE Beach Club's address/hours, 2026-09-01). Worth
+  checking again next time a Baixada Santista or São Paulo LGBTQIA+
+  venue needs verification, not yet formally onboarded off one hit.
+- Instagram `@amuseclub` — AMUSE Beach Club's own account, active with
+  a live September 2026 event calendar; the same current-status-check
+  pattern already used for `@crisdoquiosque`. Worth the same "check
+  before any statusHistory update" treatment near-caretaker gives that
+  account.
 
 ## Tier 3 — AAN member directory batch (2026-09-01), check opportunistically
 

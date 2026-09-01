@@ -50,6 +50,11 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "hero image resolved from the place's own source article; quality gate now passes"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "content/requests.md's sp-liberdade-market-or-grocery closed this session (near-war-room SP/Baixada push) by publishing towa-liberdade-sao-paulo -- this page was in that request's wantedBy list, so per rules.md link-density the English body now links Towa directly. Only English updated this pass; the other five locale files still need the same link -- logged as a residual gap for the next near-refresh/near-translator pass."
     }
   ],
   "geocode": {
@@ -58,5 +63,5 @@
     "query": "Rua da Glória 622, Liberdade, São Paulo"
   },
   "publishedAt": "2026-08-27T00:00:00Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-09-01T00:00:00Z"
 }

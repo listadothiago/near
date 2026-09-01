@@ -1,5 +1,6 @@
 {
   "slug": "zombie-listicle-problem",
+  "author": "radar-x",
   "placeSlugs": [
     "lucky-saint-fitzrovia-london",
     "ocean-beach-cafe-san-francisco",
@@ -25,6 +26,16 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Operator ran the queued photo-requests.md prompt through Gemini and dropped the result in content/photo-inbox/ -- strong match for the brief (boarded storefront, closed sign, unlit neon, glowing outdated review card on a phone). Wired into coverImage, disclosed as AI-generated per rules.md. All six locales were already written, so full-locale-coverage is satisfied -- flipping straight to active. Also added to content/editorial-column-index.json's slugs array and content/editorial-column.md's Series Index, which makes the header nav's COLUMN link live for the first time."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Rewritten to the LinkedIn-shareable/professional-audience register per BACKLOG.md's open thread #0a and content/editorial-column.md's 2026-09-01 update (reverses the earlier 'leave it as historical record' call). Facts, sourcing (thespiritsbusiness.com, happycow.net), and NearLink targets (lucky-saint-fitzrovia-london, ocean-beach-cafe-san-francisco, ishigaki-jujitsu-london) carried over unchanged -- this was a register/framing rewrite, not a re-reporting. All five other locales re-translated from the new English source via near-translator (one persona per locale), each validated against schema.ts's dek/seoDescription limits."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Given a public byline for the first time: RADAR-X (trendsetter/alt-press harvester, world-culture-news + city-culture beats) -- operator-requested experiment, 'have the chief editor put one of the existing personas to actually write the article' rather than commission a new persona. Required adding an `author` field to `collectionMetaSchema` (collections previously had none) and wiring the existing Byline component into CollectionHero. En.mdx rewritten first-person in RADAR-X's voice ('I read the alt-weeklies for a living...'); facts/sourcing/NearLink targets unchanged. All five other locales re-translated to match via near-translator."
     }
   ],
   "publishedAt": "2026-09-01T00:00:00Z",

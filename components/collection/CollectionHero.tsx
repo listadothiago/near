@@ -4,6 +4,7 @@ import type {
   CollectionMeta,
   CollectionContentFrontmatter,
 } from "@/lib/content/schema";
+import Byline from "@/components/layout/Byline";
 
 export default function CollectionHero({
   meta,
@@ -58,6 +59,11 @@ export default function CollectionHero({
       <p className="mt-2 font-mono text-[0.95rem] text-muted max-w-[60ch]">
         {frontmatter.dek}
       </p>
+      {meta.author && (
+        <div className="mt-3">
+          <Byline slug={meta.author} size="md" />
+        </div>
+      )}
     </header>
   );
 }

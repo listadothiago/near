@@ -38,6 +38,21 @@ entry, but should be rare — near-refresh's own research pass routinely
 surfaces exactly this kind of pattern (dead listings, a recurring theme
 across sources, a real editorial opinion worth having).
 
+## Column editor: RADAR-X
+
+**Clarified 2026-09-01 (operator):** RADAR-X is this column's editor,
+not a fixed byline that must sign every issue — same model as every
+Near column editor (RUCIO LIBERO for The Setlist, and any future one):
+**write it personally or defer to whichever persona actually fits that
+week's material, editor's own call.** RADAR-X wrote the inaugural piece
+himself because the alt-press-harvester beat was the natural fit for a
+column about listicle rot; a future week might genuinely call for
+someone else's voice (PARSER, if the week's real hook is an AI-content-
+tooling story; a specialist advisor lens; another cast member entirely).
+Being the column's editor is not the same job as being that week's
+article writer — RADAR-X owns the column's continuity and quality bar,
+the byline on any given issue is whoever actually earns it that week.
+
 ## What makes a good entry
 
 Same bar as the inaugural piece: grounded in something Near's own
@@ -81,6 +96,18 @@ in effect). Use judgment on proportion; don't force a mechanical
 three-section template onto material that doesn't naturally split that
 way. But the recap-of-the-scene and AI-process/best-practice threads
 should be a running presence in the column over time, not a one-off.
+
+**PARSER (added 2026-09-01)** is the standing consultant to invite into
+point 3 above whenever it needs a specialist voice rather than the
+masthead speaking generically about "AI in content" — an AI-content-
+industry specialist (`lib/content/authors.ts`, consultant tier, same as
+ROVER-5/Eli The DEI Guy: named and quotable, no place-writing beat of
+its own). Not mandatory every week — only when the AI-process thread
+would genuinely benefit from a real specialist's read (a tooling shift,
+a failure mode worth naming, a genuine best practice), same standard as
+any other quoted collaboration per `style-guide.md`'s "Quoting
+collaborating personas" rule. Quote PARSER by name in the body when
+consulted, same as any other specialist lens.
 
 **Update (2026-09-01, later same day) — reverses the line above.**
 Operator decided the inaugural piece should in fact be rewritten to the
