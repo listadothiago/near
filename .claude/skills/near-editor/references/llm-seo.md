@@ -79,9 +79,13 @@ Ironically, the writing patterns that read as "obviously AI-generated
 filler" to both human readers and to ranking/quality systems are exactly
 the patterns that also make for bad LLM-citation material: vague
 superlatives with nothing under them ("a must-visit hidden gem"), listy
-padding that restates the same claim three ways, or a body that never
-actually commits to a specific, checkable fact. The main style guide's
-honesty and specificity rules (`references/style-guide.md`) are already
-the fix for this — there's no separate "SEO voice" to layer on top that
-would make a page rank or get cited better than just being genuinely
-specific and honest already does.
+padding that restates the same claim three ways, a body that never
+actually commits to a specific, checkable fact, or a faux-candor opener
+that announces honesty instead of just being honest ("I'll say the
+quiet part first," "let's be honest," "here's the thing nobody tells
+you" — see `style-guide.md`'s "Opening lines" section for the full rule
+and the incident that caught it). The main style guide's honesty and
+specificity rules (`references/style-guide.md`) are already the fix for
+this — there's no separate "SEO voice" to layer on top that would make
+a page rank or get cited better than just being genuinely specific and
+honest already does.

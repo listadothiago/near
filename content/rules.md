@@ -78,6 +78,21 @@ rules:
       link-density rule below passes. If hero image resolution fails
       entirely, the place is skipped, not published without an image.
 
+      This gate also covers the two AI-tell opener bans in
+      style-guide.md's "Opening lines" section: no body (place, column
+      entry, or blog post, any locale) may open with a crowd-consensus
+      claim ("Everyone," "Todo mundo," "Todo el mundo," "Tutti," or
+      equivalent) as the sentence's first word, and none may open with a
+      faux-candor framing device ("I'll say the quiet part first," "Vou
+      logo dizer a parte que ninguém fala," "let's be honest," "here's
+      the thing nobody tells you," or equivalent) that announces candor
+      instead of just being candid. Check the opening sentence of every
+      locale, not just English, before flipping status to active — a
+      translated piece can reintroduce either pattern even when the
+      English source is clean. Caught live 2026-09-01 in The Setlist's
+      first issue (faux-candor opener, all six locales) after this rule
+      already existed in prose but wasn't yet a checked gate item.
+
       HERO IMAGE TIERS, in preference order: (1) a real source photo with
       attribution, (2) licensed stock, (3) an original illustration from
       near-illustrator. Tier 3 reverses this rule's earlier "no

@@ -269,6 +269,20 @@ rather than the crowd that's repeating it. Caught 2026-09-01 after it
 slipped into consecutive LUGARDO KARAI pieces (Paraty, Trancoso) in
 every locale — worth a specific check in `quality-gate-before-publish`.
 
+**Never open with a faux-candor framing device** — "I'll say the quiet
+part first," "Vou logo dizer a parte que ninguém fala," "let's be
+honest," "here's the thing nobody tells you," or any equivalent in any
+locale that announces the piece is about to be candid instead of just
+being candid. It's performed transparency, not real transparency, and
+it's one of the clearest AI-tells there is: a human writer with an
+actual opinion just states it. Say the specific true thing directly —
+skip the throat-clearing about how bold or honest you're about to be.
+Caught 2026-09-01 in The Setlist's first issue, across all six locales
+("I'll say the quiet part first: most 'festival preview' pieces run
+when the tickets are already gone...") — same
+`quality-gate-before-publish` check as the crowd-consensus rule above
+should catch this too.
+
 ## Bullets
 
 Each bullet is a *reason*, not a fact-dump. "Housed in a 19th-century
