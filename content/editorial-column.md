@@ -34,6 +34,44 @@ Near's own limitations where relevant, sourced and fact-checked like
 any other piece, ties to real places where the argument naturally
 supports it rather than forcing a plug.
 
+**Standing structure, from the second entry onward (operator directive,
+2026-09-01):** every column is still one piece, chosen and written by
+the chief editor with whichever specialist skills/consultancies the
+topic actually needs (near-seo, RADAR-X, a specialist advisor lens,
+etc. — same joint scoping as the inaugural piece) — but from here on it
+routinely covers, in whatever proportion the week's material actually
+supports:
+
+1. **The opinion itself** — same bar as above, the column's actual
+   argument.
+2. **A recap of the scene reflected in that week's own recent posts** —
+   what pattern, mood, or throughline shows up across what Near
+   actually published recently (a geographic push, a recurring theme
+   across bylines, what a run of new places says about a scene right
+   now). This is Near looking at its own output and finding the
+   throughline, not inventing a trend from nothing.
+3. **An honest look at the AI-content-creation process and the wider
+   AI-in-content scene** — how Near's own pipeline is actually working
+   (or where it's straining), and what's happening more broadly in
+   AI-generated/AI-assisted content as a space. When this surfaces a
+   genuine best practice — something Near does, or sees done well
+   elsewhere, that's worth another outlet or reader adopting — say so
+   plainly and specifically, not as a vague "AI is changing things"
+   aside. This is Near being transparent about its own machinery, which
+   is the same radical-transparency commitment behind every byline's
+   AI disclosure, applied to the column format itself.
+
+Not every week needs all three in equal weight — some weeks the real
+opinion piece IS the AI-process story (like the inaugural piece was,
+in effect). Use judgment on proportion; don't force a mechanical
+three-section template onto material that doesn't naturally split that
+way. But the recap-of-the-scene and AI-process/best-practice threads
+should be a running presence in the column over time, not a one-off.
+
+**The inaugural piece stays exactly as published — it's a historical
+record, not something to retroactively restructure.** This standing
+structure applies from the second entry forward.
+
 ## Site placement
 
 A `COLUMN` link sits in the header nav (same visual weight as
