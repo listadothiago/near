@@ -140,7 +140,12 @@
   },
   "nav": {
     "tips": "推荐",
-    "about": "关于"
+    "about": "关于",
+    "privacy": "隐私",
+    "terms": "条款"
+  },
+  "account": {
+    "signIn": "使用 Google 登录"
   },
   "place": {
     "reasonsToCheckOut": "值得一去的理由",

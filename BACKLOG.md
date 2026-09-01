@@ -142,6 +142,110 @@ action needed there). Hasn't written anything yet — first assignment
 should be one of the coastal-alt-luxury candidates already listed in
 EPIC 5 (Ilhabela, Paraty, Trancoso, etc.) or the Angra dos Reis beat.
 
+## 🔔 Push notifications in the installed PWA (2026-09-01, scoped, not started)
+
+Operator asked whether accounts existing now makes push notifications
+worth doing. Answer: accounts help but aren't required — Web Push
+subscriptions work per-browser on their own; login mainly lets a
+subscription/preferences follow a person across devices instead of
+being re-asked per browser, and gives push a natural home in
+`user.unsafeMetadata` alongside favorites.
+
+**Content model, per operator (2026-09-01):**
+- New content in the visitor's own city/region (needs a location or a
+  "my city" preference captured somewhere — check whether the existing
+  Nearest-tab geolocation can double as this, or if it needs its own
+  saved preference).
+- Any new big blog post/collection (editorial pieces, per EPIC 5's
+  refresh-trends-post idea) — a broadcast-style notification, not
+  per-user targeted.
+- **A favorited collection gets new content → notify.** If a user has
+  starred a collection and a new place/post is added to it, alert them.
+- **A favorited place gets... same idea** — operator said "same thing"
+  for locations; exact trigger needs defining (an update to that place?
+  a new event at that venue, per `event-belongs-to-venue`? probably the
+  latter is the more natural fit, alongside e.g. a status change).
+
+**Still open before this is buildable:** the actual delivery mechanism
+(Web Push API + service worker subscription storage — where do
+subscriptions live, `unsafeMetadata` again or something else since
+they're not simple display data), the "my city" capture, and a
+decision on notification frequency/digest vs. real-time so this doesn't
+become spammy. Scope this properly (probably with `near-ux-designer`)
+before building rather than wiring ad hoc.
+
+## 🍞 Favorite toast should nudge sign-in (2026-09-01, not started)
+
+Operator request: the "saved to favorites" toast shown on
+signed-out/local-only favoriting should also encourage the visitor to
+sign in, since that's what makes the list persistent across devices.
+Needs checking whether a toast system already exists in the codebase
+for the favorite-toggle action (`lib/favorites.ts` / the star button
+component) — if not, this is a small new UI piece, not just added copy.
+
+## 🔐 Google Sign-In — Clerk installed live, blocked on Google OAuth branding (2026-09-01)
+
+**Progress (done via browser automation, operator approved each step):**
+- Clerk installed from the Vercel Marketplace onto the `near` project (all three environments: Production/Preview/Development), **Hobby plan, $0/mo**, no paid add-ons enabled.
+- `CLERK_SECRET_KEY` / `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` are now provisioned as Vercel env vars automatically.
+- Google sign-in is already enabled and working on the **Development** instance, using Clerk's own shared OAuth credentials (fine for local dev/testing only).
+- Production domain set to `near.tips` in Clerk's config. A DNS warning appeared ("some DNS records could not be configured automatically") — likely Clerk wanting a `clerk.near.tips`-style subdomain for its frontend API proxy; not yet resolved, needs a look at Clerk's domain settings alongside near.tips' actual DNS provider.
+
+**Blocked on, needs the operator's decision (not code, a branding/identity choice):**
+Google requires its own OAuth Client ID/Secret for **production** sign-in — Clerk's shared dev credentials are explicitly dev-only. Getting real credentials means creating a Google Cloud project and OAuth consent screen, which asks for:
+- App name (shown on the Google sign-in screen — "near.tips"? "Near"?)
+- App logo
+- Support email
+- Whether to go through Google's verification process (needed once the app requests more than basic scopes, or exceeds ~100 test users — near.tips only needs `openid`/`email`/`profile`, which usually doesn't require full verification, but worth confirming)
+
+This is exactly the kind of "brand-facing, needs a human decision" step that shouldn't be improvised — happy to drive the browser through Google Cloud Console once the operator says what they want the consent screen to show.
+
+**Once that exists:** paste the Client ID/Secret into Clerk's Production → SSO connections → Google page (`Authorized Redirect URI` is already shown there: `https://clerk.near.tips/v1/oauth_callback`), then the app code (already written, see below) should just work.
+
+## 🔐 Google Sign-In + persistent favorites — CODE DONE, needs operator setup (2026-09-01)
+
+Implemented per operator request (they'd use this themselves). No
+database was added — Clerk's per-user `unsafeMetadata` stores the
+favorites array directly on the account, which is enough for a plain
+list of slugs and means one less piece of infrastructure to run.
+
+**Done:**
+- `npm install @clerk/nextjs`, `middleware.ts` (`clerkMiddleware` wraps
+  the existing next-intl locale middleware — nothing is route-gated,
+  Clerk is only there to make a session available).
+- `ClerkProvider` added to `app/[locale]/layout.tsx`.
+- `components/layout/Header.tsx`: an icon-sized sign-in control next to
+  Locale/Theme (`SignInButton`/`UserButton`), same "don't bury it in the
+  footer" lesson those two already taught this header.
+- `lib/favorites.ts` rewritten: signed-out visitors keep the exact
+  original localStorage behavior; signed-in users read/write
+  `user.unsafeMetadata.favorites` instead, so the list follows them
+  across devices. **Migration on first sign-in:** whatever was starred
+  locally before the account existed gets merged (union, not overwrite)
+  into the account's list once, then localStorage is cleared so it
+  doesn't shadow the account copy on a later sign-out.
+- `account.signIn` translation key added to all six locale message
+  files.
+- `tsc --noEmit` passes clean.
+
+**Cannot be finished by an agent — needs the operator's own login:**
+1. **Install Clerk from the Vercel Marketplace**: `vercel integration
+   add clerk` (or via the Vercel dashboard) — this provisions
+   `CLERK_SECRET_KEY` and `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+   automatically. Needs the operator's Vercel account.
+2. **Enable Google as a sign-in method inside Clerk's own dashboard**
+   (Clerk ships email/password by default; Google OAuth is a toggle in
+   the Clerk instance settings, plus optionally a custom Google OAuth
+   app if the operator wants near.tips branding on the consent screen
+   instead of Clerk's shared one).
+3. Pull the provisioned env vars locally (`vercel env pull`) so local
+   dev has them too.
+
+**Until step 1 happens, the site will not build/deploy** — Clerk throws
+on a missing publishable key, and this hasn't been deployed yet for
+that reason. This is the next thing the operator needs to do by hand;
+ping when done and the deploy can go out immediately after.
+
 ## 📥 Operator queue — 2026-08-31, second burst (captured, not started)
 
 **Backup note:** a full BACKLOG.md snapshot was saved alongside this

@@ -140,7 +140,12 @@
   },
   "nav": {
     "tips": "Dritte",
-    "about": "Chi siamo"
+    "about": "Chi siamo",
+    "privacy": "Privacy",
+    "terms": "Termini"
+  },
+  "account": {
+    "signIn": "Accedi con Google"
   },
   "place": {
     "reasonsToCheckOut": "Perché vale la pena visitarlo",

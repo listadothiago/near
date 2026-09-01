@@ -51,6 +51,12 @@ export default function Footer({ stats }: { stats: NearStats }) {
           <Link href="/about" className="hover:bg-accent hover:text-black">
             {t("nav.about")}
           </Link>
+          <Link href="/privacy" className="hover:bg-accent hover:text-black">
+            {t("nav.privacy")}
+          </Link>
+          <Link href="/terms" className="hover:bg-accent hover:text-black">
+            {t("nav.terms")}
+          </Link>
         </span>
       </div>
     </footer>

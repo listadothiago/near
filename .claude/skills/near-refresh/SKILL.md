@@ -1,6 +1,6 @@
 ---
 name: near-refresh
-description: Orchestrates a full refresh pass over Near's content — checks preferred sources first (content/preferred-sources.md), re-verifies existing places are still open, always runs the near-caretaker currency sweep over published content (mandatory every run), works through content/preferred-destinations.md to find new tips, picks up anything else Near's watched sources recommend, discovers new sources worth adding, and backfills any locale near-translator hasn't covered yet on already-published places. Directs near-editor and near-translator to do the actual writing/publishing. Use when asked to "refresh Near," "run a refresh," or do a periodic content-freshness/growth pass rather than a single one-off place request.
+description: Orchestrates a full refresh pass over Near's content — starts with near-sources verifying every watched feed still resolves, then RADAR-X reading what's actually trending in those sources (independent/alt-press weighted heavily) to guide the run's content picks, always runs near-caretaker's currency sweep (mandatory every run), re-verifies existing places are still open, works through content/preferred-destinations.md, picks up anything else Near's watched sources recommend, and backfills any locale near-translator hasn't covered yet. Directs near-editor and near-translator to do the actual writing/publishing. Use when asked to "refresh Near," "run a refresh," or do a periodic content-freshness/growth pass rather than a single one-off place request.
 ---
 
 # near-refresh
@@ -18,7 +18,26 @@ prose + fenced YAML/lists, read the prose too.
 
 ## Order of operations
 
-1. **Check-open sweep, first.** Before looking for anything new, sweep
+0. **`near-sources` first, every run, no exceptions (operator directive,
+   2026-09-01).** Invoke `.claude/skills/near-sources/SKILL.md` before
+   any content research starts. It verifies every watched source still
+   resolves, pauses dead ones, and reports back a source-health summary.
+   The rest of this run trusts that summary rather than assuming last
+   run's source list is still accurate.
+0a. **RADAR-X reads the verified sources for what's trending —
+   before picking what to write, not after.** Using `near-sources`'
+   output, RADAR-X (the trendsetter persona) scans the live, healthy
+   sources — weighting genuinely independent newspapers/alt-weeklies
+   over aggregators and PR-adjacent outlets, per `near-sources`'
+   own trust weighting — for what's actually current: a scene heating
+   up, a venue getting real coverage, a recurring theme across multiple
+   outlets. This trend read is what should steer which candidates from
+   steps 2-5 below get prioritized this run, not just proximity to a
+   preferred destination. Where a trend has an actual dated instance
+   worth attaching content to, hand off to `.claude/skills/near-events/SKILL.md`
+   to pin down the specific date (further out is better — see that
+   skill's own guidance) before handing the candidate to `near-editor`.
+1. **Check-open sweep.** Sweep
    existing `content/places/*/meta.json` for places due a liveness check:
    - Any `status: active` place not checked in a while (no explicit
      interval is enforced — use judgment, but a place whose `updatedAt`
