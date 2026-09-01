@@ -116,6 +116,25 @@ The site's own aesthetic — newsprint, hard black strokes, acid green
 a card to the board it sits on. Don't apply it so uniformly that every
 piece looks identical.
 
+**Default/fallback pick: bold flat-colour riso-style, when nothing more
+specific is called for.** Operator singled out the
+`ladies-and-gentlethem-2026-09` hero (`content/collections/ladies-and-
+gentlethem-2026-09/meta.json`'s `coverImage`) as a favorite: a
+programmatically generated, deliberately non-photoreal flat-colour
+riso/screenprint illustration — mirrorball over an abstract dancefloor,
+blocky silhouette figures, no legible text, evoking the scene broadly
+rather than depicting any single real venue or person. Direct operator
+instruction, 2026-09-01: use something in this style as the fallback
+whenever no venue-specific shot or stronger illustration idea is ready
+in time, and reach for it as the honest best option on its own merits
+whenever this skill's own judgement doesn't clearly favor a different
+style from the repertoire above. This doesn't retire the rest of the
+repertoire or the "vary across pieces" rule — a piece with a stronger,
+more specific illustration idea (a woodcut for a market, a travel-
+poster reduction for a coastline) should still take it. This is the
+right default to reach for absent that, not a mandate to reuse a single
+literal image or make every hero look identical.
+
 Avoid: photoreal rendering, 3D/octane render looks, generic "AI art"
 airbrushed gloss, anything with garbled text baked into it.
 

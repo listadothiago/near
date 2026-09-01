@@ -156,7 +156,11 @@ long-form body ≥ 600 words in at least English, geocode confidence ≥
 0.6, hero image resolved, link-density rule passes (real in-text
 external + internal links, not just a footer citation block — log a
 genuine internal-link gap to `content/requests.md` rather than forcing
-a weak one). For a standing-column entry specifically: also prepend
+a weak one). Alongside that mechanical floor, run `link-police`'s pass
+on the same body: it pushes past the one-external-one-internal minimum
+toward every genuine linking opportunity, and turns a worthwhile
+missing target into a published "coming soon" shell page (linked both
+ways) instead of a bare, unlinked mention. For a standing-column entry specifically: also prepend
 the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed
 only ever show what's listed there.
@@ -186,4 +190,5 @@ decides *what* gets written across a whole session) or `near-war-room`
 can be the thing that decides to invoke this pipeline for a given
 piece, but this skill is what actually runs once a piece is chosen.
 Not `near-caretaker` (that's maintaining already-published content, a
-different pipeline entirely).
+different pipeline entirely). Not `link-police` (a focused internal
+audit this pipeline calls into at step 9, not a competing sequence).

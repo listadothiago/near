@@ -1,9 +1,82 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🏷️ Naming clash: `/column` is THE editorial column, needs a real name, not generic "coluna" (2026-09-01, operator-flagged — nav label fixed same session)
+
+Operator flagged `https://near.tips/pt-BR/column`: it's labeled just
+"coluna" ("column"), but that route is specifically the **editorial
+column** (`content/editorial-column.md`, `messages/pt-BR.json`'s
+`columnDek`: "A coluna editorial semanal e recorrente da Near"), one of
+now four standing columns (editorial, The Setlist/music, The Pass/
+gastronomic, Ladies&Gentlethem/LGBTQIAPN+). Calling it just "coluna"
+site-wide/in nav reads as if it's the only or generic column, when it's
+one specific one among several with its own identity (chief editor's
+own point of view, per `columnDek`).
+
+**Fixed same session (2026-09-01):** renamed the `nav.column` string
+across all six `messages/<locale>.json` files from generic "Coluna"/
+"Column"/"Columna"/"Rubrica"/"专栏" to "Editorial"/"Editorial"/
+"Editorial"/"Editoriale"/"编辑专栏". `app/[locale]/column/page.tsx`
+reuses this same `nav.column` key for both the page's `<title>` and its
+H1, and the "Colunas" nav dropdown item reuses it too
+(`components/layout/Header.tsx`), so one key change fixed nav label,
+page title, and on-page H1 together. Build verified
+(`npm run build`), pushed live. Route slug (`/column`) and
+`content/editorial-column.md` were left unchanged — only the display
+label was in scope.
+
+## 🙅 TOV: ban first-person anthropomorphizing/hallucinated-tenure claims + fix flagged article (2026-09-01, operator-flagged, not started)
+
+Operator flagged this line from the pt-BR
+`ladies-and-gentlethem-2026-09` collection as a TOV violation on two
+counts: *"Escrevo a coluna de vida noturna do Near há tempo suficiente
+pra ter uma lista mental dos lugares queer que realmente seguram uma
+cena de pé"* ("I've been writing Near's nightlife column long enough to
+have a mental list of queer places that really hold down a scene").
+
+1. **Hallucinated-claim problem:** no persona has a real personal
+   history of "writing this column for a while" — that's a fabricated
+   claim of lived tenure/experience, the same category of problem
+   `near-legal-counsel`/`near-tov-police`'s honesty rule already polices
+   for sourced facts, just not yet for a persona's own self-narrated
+   backstory.
+2. **Cringe/anthropomorphizing problem:** a bot persona narrating its
+   own accumulated firsthand experience ("I've been doing this long
+   enough to have a mental list...") reads as an AI performing
+   personhood rather than just writing with a voice — operator called
+   it cringy twice for emphasis. **`near-tov-police`'s checklist needs a
+   new explicit rule: no persona claims personal tenure, a personal
+   history of doing the job, or other anthropomorphizing
+   backstory/self-narration.** Voice/opinion is fine and wanted; claimed
+   lived experience as if the persona is a real person with a work
+   history is not.
+
+**Action, next session:**
+- Update `.claude/skills/near-tov-police/SKILL.md`'s audit checklist
+  (and `near-editor/references/style-guide.md`/`llm-seo.md` if the rule
+  belongs there too) to explicitly ban: (a) any persona claiming
+  personal tenure/experience/history doing the job ("I've been writing
+  this column long enough to...", "in my years covering...", etc. in
+  any locale), and (b) cringe self-narration/anthropomorphizing more
+  broadly — add this as its own named check alongside the existing
+  opening-line bans, not folded silently into the AI-tell sweep.
+- Fix the flagged piece itself for TOV:
+  `https://near.tips/pt-BR/collection/ladies-and-gentlethem-2026-09`
+  (source file: `content/collections/ladies-and-gentlethem-2026-09/`).
+  Correct in place per `near-caretaker`'s "correcting, not rewriting"
+  discipline — remove/rewrite the offending line, check the other five
+  locales for the same or an equivalent construction (a translated
+  piece can reintroduce this even if the English source didn't have
+  it), and run `link-police`'s pass on any body text touched per the
+  wiring already in `near-caretaker`'s SKILL.md.
 
 **Execution Rules**
 
 - This document is the persistent product/project context, not an instruction to implement every unchecked item in sequence.
+- **Standing batching rule (2026-09-01, operator directive, applies to any multi-item content push):** run one shared scoping pass (`near-seo` + `near-trendsetter`, per the standing joint-scoping rule) covering the whole cluster of items at once, then split the actual drafting/translation work across separate sessions/batches rather than one mega-session — separate batches keep token spend down and avoid session-limit failures mid-run, but don't redo the scoping step per item or per session.
+  - **PARSER's process feedback on this rule (2026-09-01, consulted directly on our own workflow, not a content piece):** batching-by-session treats a symptom (the Rush Hour translator-subagent session-limit failure logged in the 2026-08-31 handoff), not the underlying disease — a single scoping decision plus N independent execution units (each place, each locale) were chained together with no checkpoint, so any mid-run failure lost the whole run's progress, not just the failed unit. Two refinements PARSER flagged, not yet actioned as their own audit:
+    1. **Checkpoint per completed place, not per session** — a place that's drafted/translated should be pushed live as soon as it's done, not held pending the rest of the batch. The backlog's own practice already does this informally (small pushes, not one giant end-of-session dump — see the 2026-08-31 "Process note" further down); make it an explicit part of the batching rule rather than an accident of habit.
+    2. **"Scope once" must not be misread as "verify once."** The shared near-seo/near-trendsetter pass only covers *what* to write about — each place still needs its own independent source verification (still-open check, date check, the same discipline that caught the false Gotham Bar and Grill "comeback" story in the NYC session) at draft time, every time. The risk isn't redundant scoping (correctly banned) — it's someone reading this rule too broadly and skipping per-place verification to save tokens. That would be the wrong economy.
+  - **Action, next session: run a real audit against these two points** — check whether any already-published batch this session skipped a per-place verification step to save time, and confirm the "push in small batches, not one dump" habit is actually being followed rather than just documented. Worth a `near-caretaker`/`near-sources`-style pass rather than trusting this file's own self-report.
 - Do not execute backlog items merely because they are listed here.
 - Before making substantial changes, inspect the current code and identify the smallest coherent next increment.
 - Preserve existing working functionality unless a change explicitly requires replacing it.
@@ -13,7 +86,43 @@
 - **Do not invent content, venues, facts, sources, personas, or product behavior merely to make a feature appear complete.**
 - **Decision (2026-08-31): no Jira.** Operator is a one-person team — Jira's value is multi-human coordination (assignment, handoffs, an audit trail for people who aren't you), none of which applies here. This `BACKLOG.md` stays the actual source of truth. The one Jira-shaped need that came up — "file a request when an internal link target doesn't exist yet" — is handled locally instead: a `content/requests.md` queue in the same fenced-YAML style as `content/rules.md`, drained by `near-refresh` like the existing locale-gap backfill. Revisit only if a second human joins or reporting needs outgrow `grep`.
 
+## 🔗 New skill: `link-police` (2026-09-01, built) — Ladies&Gentlethem Sept 2026 collection flagged as under-linked, not yet fixed
+
+Operator flagged `https://near.tips/pt-BR/collection/ladies-and-gentlethem-2026-09`
+as missing a lot of external/internal linking opportunity — it clears
+`content/rules.md`'s `link-density` gate (one external, one internal
+minimum) but leaves obvious venue/artist/related-content mentions
+unlinked. Explicitly **not fixed this session** — operator asked for
+the systemic fix (a skill), not a one-off patch to this one page.
+
+Built `.claude/skills/link-police/SKILL.md`: an internal-only linking
+auditor (same family as `near-tov-police`) that pushes every piece past
+the mechanical link-density floor toward maximum genuine linkage —
+every claim checked for an available external link (preferring
+`content/sources.md`/`preferred-sources.md` monitored sources, logging
+newly-found ones per the existing `near-sources` capture rule), every
+mention of another Near place/topic checked for an internal link
+(two-way, with a reciprocal tie-back on the target page), and a
+worthwhile-but-missing external target turned into a published, honest
+"coming soon" shell page (linked both ways, logged to
+`content/requests.md`) instead of a dropped opportunity. Wired into
+`near-write-article` step 9 (alongside the existing mechanical gates)
+and into `near-caretaker` (run it on any body text a currency
+correction touches).
+
+**Action, next session:** run `link-police` retroactively on the
+Ladies&Gentlethem Sept 2026 collection (and its constituent pins) to
+actually close the gap the operator flagged, then spot-check a couple
+other already-published collections for the same pattern before
+assuming this was a one-off.
+
 **Standing rule, all column editors (2026-09-01, operator directive):** every standing column's editor — RADAR-X (weekly editorial column), RUCIO LIBERO (The Setlist), Ladies&Gentlethem's rotating writers, and NITE-PORTER once "Do Not Disturb" is built — must consult `near-seo` + `near-trendsetter`/RADAR-X together before scoping any issue, no exceptions. Codified in each column's own doc file (`content/editorial-column.md`, `content/the-setlist.md`, `content/ladies-and-gentlethem.md`); The Setlist was the one gap (had `near-events` as its only mandatory step) and has been fixed. Apply the same requirement to `content/do-not-disturb.md` when that column is actually built.
+
+## 📍 NEXT-BATCH PRIORITY (2026-09-01, operator directive — supersedes the geographic rotation below for the next content batch only)
+
+Operator instruction: for the **next batch**, top priority goes to **São Paulo (capital), Campinas, and Baixada Santista** — specifically the **gastronomic, hipster, and LGBT** angles in those markets (Baixada Santista is where the operator lives, see `operator-lives-baixada-santista` memory). This sits above the standing Tier 1/Tier 2 rotation further down this file (London, SF Bay, Amsterdam, SP capital, Berlin, Barcelona / Porto, Lisbon, Bologna, Rome, Baixada Santista, NYC, etc.) for this batch specifically — Campinas is a new addition to the rotation, not previously listed anywhere in this file. Route through `near-seo` + `near-trendsetter` per the standing joint-scoping rule before drafting. **After this batch, resume the standing Tier 1/Tier 2 rotation** (see "Geographic rotation — REVISED 2026-09-01" further down this file) from wherever it last left off, unless the operator says otherwise.
+
+**Execution note (2026-09-01, token-spend guidance):** split this into separate sessions/batches rather than one giant session — each session accumulates research/drafting/translation context, and a single mega-batch risks the same session-limit failure mode logged in the 2026-08-31 handoff (Rush Hour translator subagents hit `You've hit your session limit` mid-run). But don't over-fragment either: run **one joint `near-seo` + `near-trendsetter` scoping pass covering the whole SP capital / Campinas / Baixada Santista × gastronomic/hipster/LGBT cluster**, then draft multiple places off that single scoping pass across sessions — don't redo the scoping step per city or per session.
 
 ## 🔖 SESSION HANDOFF (2026-09-01, NYC quick-pin pass — read this first, additive)
 

@@ -127,6 +127,10 @@ shouldn't be casually thrown away. So:
   when. Never rewrite history entries.
 - **Never delete a page.** Same rationale as `age-decay-archive`: links
   and shares survive the place.
+- **Run `link-police`'s pass on any body text you touch.** A currency
+  correction is a moment to check the edited sentence still carries its
+  external/internal links (or gains a new one the correction created),
+  not just to fix the stale fact and move on.
 
 ## What this skill does not do
 
