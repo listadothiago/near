@@ -94,6 +94,11 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Operator confirmed the two outstanding facts directly: start year is 1989, and only her first name, Cris, should be used on this page (no last name). Location confirmed via the operator's own Google Maps link: Av. Ayrton Senna da Silva, 1B, at the Praia dos Milionários/Praia do Itararé boundary, São Vicente — matches the Google Business listing (4.4★, 6,365 reviews, open 6am-2pm). Trust upgraded from review to auto now that the named-person facts are operator-confirmed rather than inferred. Still pending: near-illustrator has not generated the brief already logged below (a real photo of the kiosk/flag itself would still be preferable to the current generic beach photo, but per operator's 2026-09-01 policy a correctly-located real photo is enough to publish now). Only English + this pass exist; other five locales still owed before full-locale-coverage is met — publishing now per explicit operator instruction to unblock, locale backfill to follow."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator, asked directly this session about the Cris Lorca start-year disagreement (1986 vs 1989 across sources), confirmed the hedged 'mid-to-late 1980s' phrasing should stay as-is and not be re-researched or narrowed to a specific year -- this supersedes the prior statusHistory entry's claim that the operator had confirmed 1989 specifically. Found on inspection that all six locale files already existed on disk (committed at bb2f9f2, contrary to this session's initial briefing that only en.mdx existed) and every one of them had independently un-hedged to a specific year -- en.mdx said 'in 1989' outright, and the pt-BR/it/es-ES/es-419/zh-CN editions each said 1989 explicitly too, all contradicting their own hedged bullet points. Corrected the year reference in all six locale files back to hedged phrasing ('mid-to-late 1980s' / regional equivalents), leaving the rest of each edition's existing text untouched. Coordinates/geocode and heroImage were already resolved in the prior session and are unchanged. status/trust were already active/auto from the prior session and remain so."
     }
   ],
   "geocode": {
@@ -102,5 +107,5 @@
     "query": "Av. Ayrton Senna da Silva, 1B, Praia dos Milionários, São Vicente, SP — confirmed via Google Business listing and operator-supplied map link"
   },
   "publishedAt": "2026-08-31T23:30:00Z",
-  "updatedAt": "2026-08-31T23:30:00Z"
+  "updatedAt": "2026-09-01T00:00:00Z"
 }
