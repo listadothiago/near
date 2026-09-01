@@ -13,23 +13,75 @@
 - **Do not invent content, venues, facts, sources, personas, or product behavior merely to make a feature appear complete.**
 - **Decision (2026-08-31): no Jira.** Operator is a one-person team — Jira's value is multi-human coordination (assignment, handoffs, an audit trail for people who aren't you), none of which applies here. This `BACKLOG.md` stays the actual source of truth. The one Jira-shaped need that came up — "file a request when an internal link target doesn't exist yet" — is handled locally instead: a `content/requests.md` queue in the same fenced-YAML style as `content/rules.md`, drained by `near-refresh` like the existing locale-gap backfill. Revisit only if a second human joins or reporting needs outgrow `grep`.
 
-**Current State (Updated 2026-08-31, second pass):**
+**Current State (Updated 2026-09-01, evening pass):**
 
-- **Places:** 18 places, 17 on the board (paginated, 12/page) (Cabaret Latino is now a child event of the Eskyna venue, not its own listing). 0 drafts.
-    
-- **Collections:** 1 — "'Asian Food' Was Never One Thing" (Rong He / Thai E-San / Djapa), all 6 locales.
-    
-- **Sources:** **11 recorded** in `content/sources.md` — not the "160+" this line claimed until 2026-08-31. The larger number was aspirational and the `/sources` page has been rendering the real 11 all along, which is why it looks thin. Fixing the catalogue is now a tracked task rather than a claim.
-- **Sources (aspiration):** 160+ global (The Alternative Guide, Indie Guides, AAN Directory, Alt-newspaper index, European cooperatives, ANZ street press, Latin American crónica collectives, Atlas Obscura, etc.). AI research agents are fully authorized and encouraged to browse these aggressively.
-    
-- **Deployment:** Clean tree, auto-deploys via Vercel to https://near.tips.
-    
+- **Places:** 48 places, all `status: active`, 0 drafts. All full-locale-coverage compliant (a repo-wide audit this session found and closed the one gap, Berry Bros & Rudd).
+
+- **Collections:** 2 — "'Asian Food' Was Never One Thing" (Rong He / Thai E-San / Djapa) and "The Zombie Listicle Problem" (Near's first weekly editorial column entry), both all 6 locales.
+
+- **Editorial column:** NEW, standing weekly feature — see `content/editorial-column.md`. Header nav `COLUMN` link, dedicated RSS at `/column/feed.xml`.
+
+- **Sources:** **107 recorded** in `content/sources.md` (was 11 as of 2026-08-31) — full AAN directory onboarded plus a first non-US pass. `/sources` page and footer stats both derive this live from the catalogue now (two separate stale-count bugs fixed this session).
+
+- **RSS:** NEW — `/feed.xml` (site-wide latest) and `/column/feed.xml` (editorial column only), both discoverable via `<link rel="alternate">`.
+
+- **Deployment:** Clean tree, auto-deploys via Vercel to https://near.tips. **Caught and fixed a real ~1hr production outage this session** — schema violations were silently failing every build; see handoff below.
+
 - **Product Vision:** "The alternative guide to everywhere." A neo-brutalist, alt-weekly zine powered by a team of highly opinionated, transparently artificial agents (1930s rubber-hose aesthetic).
-    
+
 
 _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ultimate source of truth. Confirm priorities with the User (Product Owner) before executing major structural changes. Always ask for user input/choices during strategic decisions. Resolve vague references (e.g., "make this look better") against the strict architectural and design rules defined below._
 
-## 🔖 SESSION HANDOFF (2026-09-01, end of session — READ THIS FIRST, supersedes the 2026-08-31 one below)
+## 🔖 SESSION HANDOFF (2026-09-01, evening session — READ THIS FIRST, supersedes the earlier 2026-09-01 handoff below)
+
+Everything committed and pushed to main as of this handoff (`2719185`); near.tips is live and matches this file, `npm run build` verified clean before every push. Ending on operator's own call ("publish update backlog clear and see u on the other side"), not a blocker.
+
+### Process established this session — read before doing more content work
+
+**Content decisions route through near-seo + near-trendsetter (RADAR-X) + the chief editor (near-editor) together, not any one persona alone.** The product trio owns everything else (infra, UI, process). This was an explicit operator correction mid-session — see the memory file `feedback_content-decisions-seo-trendsetter.md` for the full record.
+
+### Shipped this session
+
+**Content:**
+- Rush Hour (Amsterdam): completed es-ES/es-419, all six locales, active.
+- Paraty/Trancoso: fixed crowd-consensus sentence-openers ("Everyone/Todo mundo...") across all 12 locale files; new style-guide rule bans the pattern sitewide.
+- Sources catalogue: 11 → 107 (full AAN directory + first non-US pass).
+- Quiosque da Cris: real on-site photo from the operator wired in as hero (replacing a generic beach fallback), orientation bug caught by the operator and fixed.
+- London autumn culture (Wilton's Music Hall, Studio Voltaire): verified already live from a prior session.
+- London martial arts/sober (item 4): **Ishigaki Jujitsu Club** (FIT-BOT's first byline) and **The Lucky Saint** (FOODIE-9000), both fully live, all six locales, Gemini-generated illustrations.
+- Berry Bros & Rudd: found and closed the one full-locale-coverage gap on the live site (was English-only despite `trust: auto`/`active`).
+- Madê Cozinha Autoral: swapped generic Santos-bay hero photo for a real venue photo (chef Dário Costa) sourced from Revista Nove, with the article added as a cited source.
+- **Near's first editorial column, "The Zombie Listicle Problem"** — see below, it's now a whole standing feature.
+
+**Infrastructure / product:**
+- `content/photo-inbox/` and `content/photo-requests.md`: a working two-way pipeline for operator-supplied photos in and self-contained AI-generation prompts out. Used successfully five times this session (Quiosque da Cris, OAuth logo, Ishigaki, Lucky Saint, the column's own hero).
+- New brand mark (operator-generated via Gemini) rolled out across every icon surface — favicon, apple-touch-icon, PWA 192/512 icons — replacing a stale pre-rebrand sage-green pin nobody had swapped since EPIC 1 shipped.
+- **Google OAuth branding**: app name set to "Near" (site wordmark stays "Tips Near Me | near.tips" everywhere else — deliberate SEO asset, not renamed), logo uploaded, verification submitted to Google's review queue (status: pending, check `Central de verificação` in the `near-tips` GCP project).
+- **Caught and fixed a real ~1hr production outage**: schema-limit violations (tagline/shortTitle over `lib/content/schema.ts`'s character caps — two from this session's own translation work, one from a content-push agent) were silently failing every `npm run build` on Vercel; near.tips kept serving a stale deployment the whole time. Fixed, verified with independent local builds before every push from that point on. **Lesson for every future session: run `npm run build` locally (or at minimum check every shortTitle/tagline/seoDescription against the actual schema limits) before committing frontmatter — visual review alone isn't enough.**
+- Also fixed: footer's `sourcesWatched` stat was frozen at the old snapshot value (10) while the real catalogue grew to 107 — same class of drift bug `placesIndexed` had already been fixed for, now both derive live from disk.
+
+**Weekly editorial column — new standing feature:**
+- `content/editorial-column.md`: cadence (weekly), voice (near-editor's house register), full structure. **From the 2nd entry onward** (operator directive), every column should cover — in whatever proportion the week's material supports — the opinion itself, a recap of the scene reflected in that week's recent posts, and an honest look at the AI-content-creation process/AI-in-content scene, surfacing concrete best practices when genuinely applicable. The inaugural piece stays exactly as published, a historical record.
+- `near-refresh` checks the cadence every run (new step 1d) and treats a new entry as priority work once 7+ days have passed.
+- Site placement: a `COLUMN` link in the header nav (operator iterated live on prominence, landed on nav-link weight — see git history if the reasoning matters later), resolving via `/column` to whichever slug is in `content/editorial-column-index.json`. That index is intentionally empty/gated until an entry is actually `active`, so the link never points at unpublished content.
+- Dedicated RSS at `/column/feed.xml`; site-wide `/feed.xml` also new.
+
+### Prompt-injection scare — resolved, false alarm
+
+Mid-session, a background agent's report claimed it saw an embedded instruction telling it to hide file changes from the operator. When asked to reproduce the exact text from its transcript, it retracted the claim entirely — no injection was ever found, it had mischaracterized its own summary. Separately, several genuine harness file-watcher notices this session (for changes made via `Bash`/Python scripts rather than the `Edit` tool) carried oddly-phrased "don't tell the user" boilerplate; these were flagged to the operator each time out of caution, but are understood now to be a mundane harness artifact tied to non-tool-tracked file writes, not tampering. No actual injection occurred this session.
+
+### Open threads for next session
+
+1. **Google OAuth verification** — check `Central de verificação` in the `near-tips` GCP project; once it clears, paste the Client ID/Secret into Clerk's Production → SSO connections → Google page (redirect URI already shown there).
+2. **`NewsArticle` JSON-LD for the editorial column** — discussed, not yet built; would help Google Discover pickup on column entries specifically.
+3. **Google Search Console** — `GOOGLE_SITE_VERIFICATION` env var is already wired in code, just never actually set up. Biggest free discoverability lever still on the table; needs the operator's own Google account.
+4. **IndexNow** — free Bing/Yandex instant-indexing ping, not yet implemented, mentioned as a cheap win.
+5. **Stray duplicate files** in the working tree (`app/manifest (1).ts`, `content/requests (1).md`, one image in `reference-images/`) — untracked, not affecting the deployed site, but worth the operator's own look in case something's actively duplicating files during editing.
+6. **Queue position**: SEO×RADAR-X September reprioritization is at item 6 (world-culture-news beat) — see that section below for the full ordered list.
+
+---
+
+## 🔖 SESSION HANDOFF (2026-09-01, end of session — supersedes the 2026-08-31 one below)
 
 Everything committed and pushed to main as of this handoff; near.tips is live and matches this file. Ending on operator's own call to start fresh and save tokens, not because of a blocker. **Two background subagents hit a session/API limit mid-run** (see Rush Hour note below) — that's the only incomplete thread.
 
