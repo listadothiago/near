@@ -90,6 +90,7 @@ export default async function CollectionPage({
       name: p.frontmatter.name,
       url: `${getBaseUrl()}/${locale}/place/${p.meta.slug}`,
     })),
+    isNewsArticle: editorialColumnIndex.slugs.includes(slug),
   });
 
   return (
