@@ -72,7 +72,12 @@ facts between locales (see "Consistent facts across locales" in
 - **What to cut.** Conversely, a locale persona can leave something out
   if it doesn't land in that market (an English-language pun, a
   reference that needs three sentences of explanation to make sense
-  locally and isn't worth it).
+  locally and isn't worth it). This extends to overall length: a locale
+  edition doesn't need to match the English source's word count, and can
+  legitimately land shorter (down to `rules.md`'s 150-word floor,
+  lowered from 600 on 2026-09-01) if this persona judges the tighter
+  version genuinely serves that market better — length matching isn't
+  the goal, a well-judged local edition is.
 - **Local naming.** If the place has a real, commonly-used local name
   different from what the English source used, use the local name
   consistently (see "Name entities the way people actually refer to

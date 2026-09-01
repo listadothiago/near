@@ -1,5 +1,11 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 📏 Word-count floor lowered 600 → 150 words (2026-09-01, operator directive, DONE)
+
+Operator asked to sanity-check defaulting to a smaller word count for standard pieces while staying SEO/AEO-friendly, unless a piece is a Featured Article/blog/column (exceptions). Answer given: worth doing — shorter default copy saves real tokens (draft + 6-locale translation cost compounds), and it's SEO/AEO-neutral-to-positive rather than negative, since both audiences reward front-loaded, citable, specific copy over length for its own sake, not raw length. The risk isn't the floor being too high, it's drafts padding toward a target length that never needed to be a target. Operator then directed lowering the floor itself from 600 to 150 words, explicitly not retroactive (nothing already published needs trimming), and confirmed `near-translator` locale personas can land a locale edition shorter than a 600-word English source (down to the new 150-word floor) if the persona judges it serves that market better — translators are editors, not literal-length-matching translators.
+
+**Shipped:** `content/rules.md`'s `quality-gate-before-publish` gate lowered to 150 words, with an explanatory note (floor not target, SEO/AEO reasoning, Featured Article/blog/column exceptions stay the standing exception, not retroactive). `.claude/skills/near-write-article/SKILL.md` step 9 updated to match. `.claude/skills/near-translator/SKILL.md`'s "What to cut" section extended to cover overall length, not just individual details. No code-level enforcement existed for the old 600-word number (it was editorial discipline only, not a `schema.ts` check), so no schema change was needed.
+
 ## 🏳️‍🌈 Ladies&Gentlethem menu label + column title need work (2026-09-01, operator-flagged, not started)
 
 Operator flagged `https://near.tips/pt-BR/collection/ladies-and-gentlethem-2026-09` on two points:

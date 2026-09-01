@@ -73,10 +73,28 @@ rules:
   - id: quality-gate-before-publish
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,
-      >= 3 bullets, long-form body >= 600 words in at least English,
+      >= 3 bullets, long-form body >= 150 words in at least English,
       geocode confidence >= 0.6, a hero image was resolved, and the
       link-density rule below passes. If hero image resolution fails
       entirely, the place is skipped, not published without an image.
+
+      The 150-word floor (lowered from 600 on 2026-09-01, operator
+      directive) is a floor, not a target — write as tight as the piece
+      actually needs, don't pad toward a target length. It exists to
+      catch genuinely thin/stub content, not to mandate a minimum essay
+      length: SEO/AEO both reward front-loaded, citable, specific copy
+      over length for its own sake (see llm-seo.md and aeo/SKILL.md),
+      and shorter drafts cost less to write and translate across all six
+      locales. Reserve real length for pieces where depth is the actual
+      value — Featured Articles, near-blogger long-form guides, and
+      standing-column issues are the standing exceptions, not the
+      default. Each near-translator locale persona is also an editor,
+      not a literal-translation pass: a locale edition may legitimately
+      land shorter than its English source (down to this same 150-word
+      floor) if that locale's persona judges the shorter version serves
+      that market better — it does not need to match the source's length.
+      This does not retroactively apply to already-published content;
+      nothing needs trimming just because the floor moved.
 
       This gate also covers the two AI-tell opener bans in
       style-guide.md's "Opening lines" section: no body (place, column

@@ -157,7 +157,9 @@ acceptable partial state.
 
 All of `content/rules.md`'s `quality-gate-before-publish` conditions,
 checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
-long-form body ≥ 600 words in at least English, geocode confidence ≥
+long-form body ≥ 150 words in at least English (a floor, not a target —
+write tight, don't pad; see `rules.md` for the 2026-09-01 directive and
+its Featured Article/blog/column exceptions), geocode confidence ≥
 0.6, hero image resolved, link-density rule passes (real in-text
 external + internal links, not just a footer citation block — log a
 genuine internal-link gap to `content/requests.md` rather than forcing
