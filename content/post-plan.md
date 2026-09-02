@@ -111,6 +111,28 @@ standard._
 - [ ] **Bar Italia, 22 Frith Street, Soho W1D 4RF** — PLINIO or FOODIE-9000. **DRAFT THIS ONE FIRST: it closes a gap Near logged weeks ago.** `content/requests.md`'s `hazlitts-london-no-natural-internal-link` asked specifically for "a bar, bookshop, or venue on/near Frith or Dean Street" that Hazlitt's could link to. Bar Italia is on Frith Street, a few minutes' walk. Opened 1949 by the Polledri family and still run by the third generation, Veronica and Anthony Polledri; original red-and-white Formica, a vintage Gaggia, and a floor hand-laid by a family member. **Open 07:00–05:00 daily** — not quite 24h, and listings that claim 24h are wrong, which is the correction. Publishing it also lets the Hazlitt's request be closed.
 - [ ] **E. Pellicci, Bethnal Green E2** — FOODIE-9000, with a PLINIO consult. A caff run by four generations of the same family since 1900, with a **Grade II listed Art Deco interior** (listed 2005, Historic England entry 1391332, cited as "an increasingly rare example of the stylish Italian cafe that flourished in London in the inter-war years"). Maria Pellicci has cooked there since 1966 and was made a Knight of the Order of the Star of Italy in 2025; the caff placed 83rd in TasteAtlas's 2025 "100 Most Legendary Restaurants". **CURRENCY RISK, per rules.md: this piece depends on a named living person.** Re-verify Maria Pellicci's status at draft and flag the page to `near-caretaker` — present-tense copy about someone who has died is the exact failure that rule exists to prevent.
 
+**LONDON EAST END — added 2026-09-02 after the operator described the
+actual trip: friend based Camden/King's Cross, everything they want to do
+is East End (V&A East, Gilbert & George).** This reranks the batch. It
+also means **Peckham (Hausu, TOAD) is the wrong side of the river for
+this trip** — keep them queued, but they are not tester-verifiable this
+week. The two venues below are what the friend is literally going to
+stand inside, and Near has neither.
+
+- [ ] **The Gilbert & George Centre, 5a Heneage Street, Spitalfields E1 5LJ** — CUBIC-V. **Highest tester value in the whole batch.** Free entry, on Gilbert & George's own "Art for All" principle; free highlight tours Saturdays at 4pm. **CRITICAL PRACTICAL DETAIL: open Thursday to Sunday only, 11:00–17:45.** A visitor arriving Mon–Wed cannot get in, and that is exactly the fact a guide should lead with rather than bury. Currently showing 'Our George Crompton, WORLDS and WINDOWS'. **INTERNAL LINK READY:** Near already publishes the Old Truman Brewery on Brick Lane, a few minutes' walk.
+- [ ] **V&A East Museum, East Bank, 107 Carpenters Road, Queen Elizabeth Olympic Park, Stratford E20 2AR** — CUBIC-V. Opened **18 April 2026**. Admission free, including two permanent "Why We Make" galleries with 500+ objects. Opening exhibition *The Music is Black: A British Story*, 125 years of Black British music, ticketed separately at £22.50 (£10 for students and under-26s) — so "free museum, paid headline show" is the honest framing.
+- [ ] **V&A East Storehouse, Hackney Wick** — CUBIC-V. Opened 2025. **THE CORRECTION: this is a SEPARATE venue from the V&A East Museum above, in a different neighbourhood, and listings routinely conflate the two.** 250,000 objects and 350,000 books in a working, behind-the-scenes store you can walk into. Verify the current access/booking model at draft.
+
+_Trip routing this actually implies, for whoever drafts these: the
+friend's base is King's Cross, where Near already publishes Central
+Station. One East End day covers Gilbert & George (Heneage St) → Old
+Truman Brewery (Brick Lane, published, 5 min) → E. Pellicci (Bethnal
+Green) → V&A East Storehouse (Hackney Wick) → V&A East Museum
+(Stratford), running west to east. La Camionera on Well Street sits
+naturally at the Hackney end of that line. That is a real day, and it is
+made of four published pins plus four queued ones — worth considering as
+a near-blogger collection once the pins exist._
+
 _Unverified leads for the next London food pass, deliberately NOT claimed
 as verified: Tayyabs (Whitechapel Punjabi), Mangal 2 (Dalston ocakbaşı),
 Silk Road (Camberwell Xinjiang), Maltby Street and Netil markets as
