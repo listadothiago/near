@@ -13,6 +13,7 @@ changes.
 3. [Product Trio read on the north star and the three scenarios (2026-09-02)](#3-product-trio-read-on-the-north-star-and-the-three-scenarios-2026-09-02)
 4. [Operator response to the Trio read (2026-09-02)](#4-operator-response-to-the-trio-read-2026-09-02)
 5. [near-ux-designer — first thinking on the location page type (2026-09-02)](#5-near-ux-designer--first-thinking-on-the-location-page-type-2026-09-02)
+6. [near-lead-product — the coverage numbers, measured (2026-09-02)](#6-near-lead-product--the-coverage-numbers-measured-2026-09-02)
 
 ---
 
@@ -1479,3 +1480,88 @@ lucky. **A location with one pin should look deliberate.**
 
 Hand off to `near-illustrator` if the thin-coverage state wants an asset rather
 than pure type.
+
+---
+
+## 6. near-lead-product — the coverage numbers, measured (2026-09-02)
+
+§5 named thin coverage as "the state to design first" and estimated that "most
+locations will resolve to two or three pins." Nobody had counted. I counted,
+straight from the 59 active `meta.json` files, before any more design or routing
+work gets done on a guess.
+
+**The estimate was optimistic by an order of magnitude.**
+
+| level | distinct pages | 1 pin | 2–3 | 4–5 | 6–11 | 12+ |
+|---|---|---|---|---|---|---|
+| neighborhood | 49 | **44** | 4 | 1 | 0 | 0 |
+| city | 19 | 10 | 5 | 2 | 1 | 1 |
+| region | 11 | 5 | 2 | 1 | 1 | 2 |
+| country | 6 | 1 | 0 | 2 | 1 | 2 |
+
+**Ninety percent of neighborhoods (44 of 49) contain exactly one pin.** Thin
+coverage is not the edge case to design for — at the neighborhood level it is
+very nearly the only case. A one-pin neighborhood page is not a sparse
+aggregation page; it is a place page with a second URL pointing at it.
+
+### What this does to the build
+
+Shipping all four levels unfiltered is **85 pages × 6 locales = 510 URLs** —
+more than doubling the site's current 498. Overwhelmingly single-pin, all
+mutually near-duplicate, all generated from the same rows. That is the
+"cemetery of thin pages" §1 warns about and the listicle-farm failure §4 rules
+against, arriving not through bad intent but through a `generateStaticParams`
+that iterates an index nobody had measured.
+
+Gating by minimum pin count:
+
+| min pins | nbhd | city | region | country | pages | URLs |
+|---|---|---|---|---|---|---|
+| ≥1 | 49 | 19 | 11 | 6 | 85 | 510 |
+| **≥2** | **5** | **9** | **6** | **5** | **25** | **150** |
+| ≥3 | 3 | 5 | 4 | 5 | 17 | 102 |
+
+**Recommendation: gate at ≥2 and make the threshold a named constant, not a
+magic number.** It is the point where a location page starts answering "what is
+this place like" rather than restating a single pin, it cuts the URL count by
+71%, and it lets coverage promote pages into existence automatically as content
+lands — which is the correct relationship between the two.
+
+The five neighborhoods that clear ≥2 today: Centro Histórico (4), Centro (3),
+Liberdade (3), Vila Madalena (2), Shoreditch (2).
+
+### A routing bug this surfaced, worth catching before it ships
+
+Neighborhood names are **not globally unique**. `Centro Histórico` — the single
+largest neighborhood by pin count — spans **Santos and Paraty**, two different
+cities in two different states. A flat `/in/centro-historico`, the shape the
+operator directive assumed, would silently merge them into one page. `Centro`
+and `Liberdade` are the same class of name and will collide the moment a second
+Brazilian city lands.
+
+So the neighborhood URL must be city-scoped. §1's own Layer-2 proposal already
+had this right — `/en/sao-paulo/pinheiros`, not `/en/pinheiros`. The flat `/in/`
+shape survives for city, region and country, which are unambiguous within the
+current index. `buildLocationIndex` keys on `level:normalized-label` with no
+parent in the key, so this is a real defect in the index shape, not only in the
+route.
+
+### The honest conclusion
+
+**Location pages are blocked on content density, not on design or routing.**
+§5's design thinking is sound and the routing is a day's work; neither is the
+constraint. Five neighborhood pages is not the neighborhood strategy the
+operator endorsed in §4 — it is a pilot, and it should be called one.
+
+The city level is where this actually pays off now: London (18), São Paulo (11),
+Santos (5), Amsterdam (4). Nine city pages clear ≥2 and several are genuinely
+dense enough to carry a written take and a map today.
+
+**What I am not deciding here:** whether the next content batch should
+deliberately deepen a few neighborhoods to make the layer viable, or spread
+wider. That is a content-priority call and belongs to `near-seo` +
+`near-trendsetter` + the chief editor per `content/rules.md`, not to this role.
+What I am handing them is the number that makes it a real decision: the
+neighborhood layer needs roughly **three to four pins in a target neighborhood**
+before its page type earns its URL, and today only five neighborhoods anywhere
+have two.

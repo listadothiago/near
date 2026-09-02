@@ -189,6 +189,30 @@ strategy read is **endorsed direction** (see
 `docs/chatgpt-three-year-strategy-2026-09.md` §4), and location-filtered board
 views need real, linkable URLs.
 
+### ⚠️ MEASURED 2026-09-02 — read before building this
+
+The coverage numbers behind this directive were finally counted (full table in
+`docs/chatgpt-three-year-strategy-2026-09.md` §6). Two findings change the shape
+of the work:
+
+1. **44 of 49 neighborhoods have exactly one pin.** Unfiltered, all four levels
+   ship 85 pages × 6 locales = **510 URLs**, more than doubling the site's 498
+   and almost all of them single-pin near-duplicates. **Gate at ≥2 pins** (a
+   named constant, not a magic number): 25 pages / 150 URLs, and coverage
+   promotes pages into existence as content lands.
+2. **Neighborhood names are not unique.** `Centro Histórico` spans **Santos and
+   Paraty**; a flat `/in/centro-historico` merges two cities in two states into
+   one page. `Centro` and `Liberdade` will collide next. Neighborhood URLs must
+   be **city-scoped** (`/en/santos/centro-historico`, as §1's Layer-2 proposal
+   already had it). `buildLocationIndex` keys on `level:label` with no parent —
+   the defect is in the index shape, not just the route.
+
+**Net: this is blocked on content density, not on design or routing.** The city
+level pays off now (London 18, São Paulo 11, Santos 5, Amsterdam 4); the
+neighborhood level is a five-page pilot and should be called one. Whether to
+deepen a few neighborhoods next is a **content call** — `near-seo` +
+`near-trendsetter` + chief editor, not the trio.
+
 ### What already exists — this is smaller than it sounds
 
 - `neighborhood` is **already a first-class schema field**
