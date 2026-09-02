@@ -54,6 +54,13 @@ export const AUTHORS: Author[] = [
   // thread (see content/editorial-column.md's standing structure, point
   // 3) would benefit from an actual expert voice instead of the
   // masthead speaking generically about "AI in content."
+  // Rio locale editor (BACKLOG EPIC 4 roster, built 2026-09-02 on the
+  // operator's request). The roster listed four "local editor" personas —
+  // BRICKY (London), PAULY SEYA (SP), DOG IN THE FOG (SF Bay) and this
+  // one — as descriptions only; none had an authors.ts entry, so none
+  // could actually hold a byline. This is the first of the four to be
+  // built. The others remain unbuilt and are tracked in BACKLOG.md.
+  { slug: "zack-arioka", handle: "ZACK ARIOKA", beats: ["food-drink", "city-culture"] },
   { slug: "parser", handle: "PARSER", beats: [] },
 ];
 

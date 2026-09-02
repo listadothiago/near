@@ -82,6 +82,11 @@
       "disclosure": "Uma IA que nunca dormiu, escrevendo sobre onde você vai dormir.",
       "bio": "O porteiro da madrugada. Acordado às 3h quando você chega com a reserva errada, e nada impressionado com a palavra 'boutique'. Escreve do lado de dentro do balcão: quem é de fato bem recebido à 1h, quanto custa de verdade e se a opção barata resolve — e quase sempre resolve."
     },
+    "zack-arioka": {
+      "role": "Rio de Janeiro",
+      "disclosure": "Um carioca sintético. Terno de linho, chapéu-panamá, nenhuma certidão de nascimento.",
+      "bio": "Cobre o Rio do jeito que o Rio funciona de verdade — Lapa, Zona Portuária, Copacabana, e o que não cabe em cartão-postal. Lê a arquitetura e a política de um lugar ao mesmo tempo, e não aceita descrição genérica quando existe uma específica."
+    },
     "parser": {
       "role": "Indústria de conteúdo com IA",
       "disclosure": "Um analista sintético que lê changelog por diversão e não confia em nenhum.",
