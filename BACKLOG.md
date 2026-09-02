@@ -2012,6 +2012,61 @@ _Elsewhere:_ Big Sur and Mendocino (CA), Kauai north shore, Fogo Island (Newfoun
 
 _The list is deliberately long and deliberately unranked. Ranking it before there's a method would just reproduce the same hype ordering the operator is complaining about — pick by which places Near can actually source locally, which is a different question from which are most famous._
 
+### London war room — scope, 2026-09-02 (Product-Trio-led)
+
+_Scoped once, drafted across sessions (operator's standing preference for
+multi-item pushes). This block is the contract; each drafting session takes
+one numbered unit and does not re-scope._
+
+**State going in:** 20 active London pins, spread across Soho, Bloomsbury,
+Peckham, Dalston, Clapham, Shoreditch, Whitechapel, Herne Hill, King's
+Cross, Walthamstow, Royal Docks. **Zero London collections.** No `/london`
+page. `place.neighborhood` is populated in `meta.json` but nothing on the
+board reads it.
+
+**The Product Trio's read: London's gap is not more pins, it's that the 20
+already there are unreachable as a set.** A reader who lands on Wilton's
+has no route to the other nineteen. That makes the collection and the city
+scope the highest-value units here, and it inverts the usual war-room
+order — narrative layer first, new pins second.
+
+Units, in execution order:
+
+1. **Bar Italia, Soho — finish it.** ✅ scoped 2026-09-02: `meta.json`
+   written, hero sourced (Matt Brown, CC BY 2.0, 2025 storefront), build
+   passes. **Still owed before active:** a 16:9 hero crop, the step 9a
+   `google-discover-audit`, sign-offs, and all five non-English locales.
+   Held at `status: "draft"` until then.
+2. **The collection — "London institutions that refuse to die."** The
+   angle the 2026-08-31 slate already identified, and the one the existing
+   pins actually support: Wilton's (1850s), Bar Italia (1949), Berry Bros.
+   (1698), Gay's the Word (1979), Central Station (1974), Brockwell Lido
+   (1937). `near-blogger`, cross-linking every pin. This is the unit that
+   turns 20 orphans into a set.
+3. **`/london` city landing page + city scope on the board.** Operator
+   resolved this 2026-08-31 — build alongside the content, reusing the
+   Board. `near-tech-lead` + `near-lead-ux`. The board has no city filter
+   today; search is text-match only.
+4. **New pins, only after 1–3.** From the slate's own pending list —
+   Hampstead Heath ponds (WILD0, fetch was bot-blocked), Sister Midnight
+   (pin with `opening` status per the operator's resolution),
+   FOODIE-9000's family-caff leads. Each needs
+   `verify-still-open-before-create` re-run; the slate is a year old in
+   research terms.
+
+**Deprioritised, deliberately:** the themed London sub-lists in "Next Up"
+(Lactose-Intolerant, Vegan, Sober Gay, Martial Arts, pet-friendly, Goth,
+Indie sleaze). Each is a collection over pins that mostly don't exist yet
+— they get cheap once unit 4 has run a few cycles, and expensive if forced
+now.
+
+**First finding, worth recording:** the new `google-discover-audit` card
+spec killed a hero on its first real use. The obvious Bar Italia photo on
+Commons (Spudgun67, 2014) is 3000×4000 **portrait** and fails outright.
+The replacement is 4032×3024 — clears the 1200px/300,000px floor, but it's
+4:3, not 16:9, so a crop is owed. Expect this to recur: Commons
+architecture photography skews portrait, because buildings are tall.
+
 ### London war-room slate (full roster convened 2026-08-31; operator-invited, all skills present)
 
 _Convened at the operator's request with every lens chiming in — including RADAR-X, near-seo, the product trio, caretaker, illustrator, translator, blogger, socials. Two prior fan-out attempts died at credit walls mid-research; the session was rerun inline with direct verification. Sources below were actually loaded, not summarised._

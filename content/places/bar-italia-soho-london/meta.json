@@ -1,0 +1,88 @@
+{
+  "slug": "bar-italia-soho-london",
+  "categories": [
+    "food-drink",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5136,
+    "lng": -0.1316
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Soho",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Bar Italia Soho (Instagram — the only live channel the family updates)",
+      "url": "https://www.instagram.com/baritaliasoho/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Bar Italia",
+      "url": "https://en.wikipedia.org/wiki/Bar_Italia",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "Outernet — Outernet welcomes Soho's iconic Bar Italia",
+      "url": "https://www.outernet.com/news/outernet-welcomes-sohos-iconic-bar-italia",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-09T00:00:00Z"
+    },
+    {
+      "name": "Gaggia — Bar Italia in London's Soho",
+      "url": "https://www.gaggiadirect.com/blog/bar-italia-in-londons-soho",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "Faber — The Experience Journal: Bar Italia, Soho",
+      "url": "https://www.faber.design/stories/the-experience-journal-bar-italia-soho",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "This Is Soho — Bar Italia",
+      "url": "https://www.thisissoho.co.uk/brands/bar-italia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bar_Italia_2025-01-27.jpg",
+    "attribution": "Matt Brown, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Bar_Italia_2025-01-27.jpg",
+    "licenseNote": "Storefront of the actual building at 22 Frith Street, shot 27 January 2025, CC BY 2.0 — verified on the file's Commons page before use. 4032x3024 (4:3 landscape), so it clears Discover's 1200px/300,000px floor but is not 16:9; a 16:9 crop is owed before this goes active."
+  },
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "English body drafted during the London slate but never completed — no meta.json, no hero, no locales. Left uncommitted on purpose rather than shipped half-built."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "London war room, scoping pass. meta.json written and hero sourced from Wikimedia Commons (Matt Brown, CC BY 2.0, 27 Jan 2025, 4032x3024, storefront of the actual building at 22 Frith Street). The other Commons candidate, Spudgun67's 2014 shot, is 3000x4000 portrait and fails the google-discover-audit card spec outright — recorded so a later pass doesn't re-litigate it. VERIFIED in-body: hours 07:00-05:00 per the bar's own Instagram bio, against Google's listing and two write-ups that say 04:00 (the discrepancy is stated in the body rather than resolved); Polledri family ownership into the third generation; the Baird blue plaque at 22 Frith Street; the second site at Outernet opened 9 January 2025. NOT VERIFIED: the 1949 opening-day anecdote (Abbott and Costello, the coffee-drinking contest) is family testimony and is labelled as such in the body; the Angelucci blend claim comes from Faber alone. Held at draft pending: the 16:9 hero crop, near-tov-police / near-legal-counsel / chief-editor sign-off, the mandatory google-discover-audit step 9a run, and all five non-English locales. Geocode is a manual approximation for 22 Frith Street and needs a real lookup."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "22 Frith Street, Soho, London W1D 4RF"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}
