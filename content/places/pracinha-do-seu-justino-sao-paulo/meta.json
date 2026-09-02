@@ -1,0 +1,81 @@
+{
+  "slug": "pracinha-do-seu-justino-sao-paulo",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "hipster",
+    "dog-first"
+  ],
+  "coordinates": {
+    "lat": -23.5551,
+    "lng": -46.6903
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Vila Madalena",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "review",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Guia da Semana — Pracinha do Seu Justino inaugura na Vila Madalena",
+      "url": "https://www.guiadasemana.com.br/bares-drinks/noticia/pracinha-do-seu-justino-inaugura-na-vila-madalena",
+      "feedId": null
+    },
+    {
+      "name": "Guia da Semana — Pracinha do Seu Justino promove open de chopp Colorado",
+      "url": "https://www.guiadasemana.com.br/bares-drinks/noticia/pracinha-do-seu-justino-promove-open-de-chopp-todas-as-quintas-feiras-saiba-mais",
+      "feedId": null
+    },
+    {
+      "name": "BaresSP — Pracinha do Seu Justino",
+      "url": "https://www.baressp.com.br/bares/pracinha-do-seu-justino",
+      "feedId": null
+    },
+    {
+      "name": "Instagram — @seujustino",
+      "url": "https://www.instagram.com/seujustino/",
+      "feedId": null
+    },
+    {
+      "name": "Instagram — @pracinhadoseujustino",
+      "url": "https://www.instagram.com/pracinhadoseujustino/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://www.baressp.com.br/bares/fotos2/pracinha-do-seu-justino-baressp-1-min_120220191738.jpg",
+    "attribution": "Photo via BaresSP",
+    "attributionLink": "https://www.baressp.com.br/bares/pracinha-do-seu-justino"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "near-write-article: created via 2026-09-01 sp-capital-hipster-gastronomic opportunity pass. Sourced from aggregator/listicle content (guiadasemana.com.br, baressp.com.br) rather than an already-watched auto-trust feed, so trust: review / status: draft pending operator approval per trust-gate. Two-name resolution: 'Seu Justino' (Rua Harmonia 77, original, live music/feijoada) and 'Pracinha do Seu Justino' (Rua Harmonia 117, open-air gastro-bar spinoff, opened by the same operator) are related but distinct, currently-open venues on the same block — confirmed via both Instagram bios (different addresses/phone numbers) and Guia da Semana's own 'inaugura' piece. This page covers Pracinha specifically, per the hipster-gastronomic angle scoped for this pass."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Operator approved as-is. English + pt-BR live; it/es-ES/es-419/zh-CN follow-up still open (draft status had exempted full-locale-coverage)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "near-translator: added it, es-ES, es-419, zh-CN local editions. All six locales now complete; full-locale-coverage gate (content/rules.md) is satisfied."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.65,
+    "query": "Pracinha do Seu Justino, Rua Harmonia 117, Vila Madalena, São Paulo"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
