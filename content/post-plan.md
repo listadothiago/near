@@ -5,20 +5,18 @@ cycle, instead of finishing one city before starting the next. Every
 audience city gets fresh content every cycle, the Latest tab stays
 geographically alive, and no community waits weeks for its turn.
 
-**Rotation order (operator's, verbatim):**
+**Tier rotation (operator directive, 2026-09-01 — see `.claude/skills/content-rotation/SKILL.md`, the source of truth for this rule):**
 
-1. London
-2. São Paulo / Baixada Santista / Campinas (one slot, operator picks or
-   queue order decides)
-3. Berlin (deep refresh standard applies to its posts)
-4. Amsterdam
-5. San Francisco Bay Area
-6. Barcelona
-7. Rome
-8. Portland
+Tier 1 — London, Brighton, San Francisco, Oakland — repeats 4 full
+cycles before Tier 2 gets a turn. Tier 2 — Berlin, Amsterdam,
+Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
+Bangkok, plus one rotating surprise-city slot picked fresh by near-seo
+each time. São Paulo / Baixada Santista / Campinas stays a standing
+override priority independent of this rotation (operator's home
+region — see NEXT-BATCH PRIORITY note below).
 
-Repeat until done. Paris/NYC/Seattle/San Diego/Santos-specific/Bologna
-join the rotation when their queues first get seeded.
+Paris/NYC/Seattle/San Diego/Santos-specific/Bologna join Tier 2 when
+their queues first get seeded.
 
 **How this works with research:** publishing rotates; research batches.
 A post's expensive half is verification, and that amortizes when a

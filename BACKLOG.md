@@ -1,5 +1,64 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🔖 SESSION HANDOFF (2026-09-01, late night — read first)
+
+Ending on operator's own call, low on tokens. Shipped this pass: search
+now available on every page (not just board), a real bug fix (map
+sidebar's ad slot was permanently unreachable on tall content —
+fixed), infinite scroll replacing board pagination, `near-backlog` skill
+(RICE-menu-dispatch method), `content-rotation` skill (new tier rules,
+see below), the Pracinha do Seu Justino and Studio Voltaire
+currency-fix pieces, and a `content/seo-forecast-3month.md` honest
+3-month SEO plan (**this file went missing before commit, likely
+swept away by one of the crashed background agents' git operations —
+needs rewriting next session, was never committed so nothing to
+recover from git history**).
+
+**Operator directive, tier/rotation overhaul (2026-09-01, captured in
+`.claude/skills/content-rotation/SKILL.md` and `content/post-plan.md`):**
+Tier 1 is now just London, Brighton, San Francisco, Oakland, repeating
+4 full cycles before Tier 2 gets a turn. Tier 2: Berlin, Amsterdam,
+Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
+Bangkok, plus one rotating surprise-city slot near-seo repicks each
+time it comes up. São Paulo/Baixada/Campinas stays a standing
+override, independent of the tier rotation.
+
+**Not done — needs a fresh session:**
+- **The 12-24 month content roadmap** the operator asked for
+  (collab: near-trendsetter, aeo, chief editor) — not written this
+  session, ran out of runway. This is real open work, not optional.
+- **near-war-room needs a "cleanup" step added** to every run (check
+  post-plan.md queue items against what's actually shipped before
+  presenting/dispatching — same discipline `near-backlog` now has,
+  operator wants it baked into `near-war-room` too).
+- **near-backlog needs a two-way sync step** with the (not-yet-written)
+  content roadmap once that exists — noted as a TODO in
+  `near-backlog/SKILL.md`, not yet implemented since the roadmap
+  doesn't exist yet.
+- **Seven background content-drafting agents hit the session API
+  limit mid-run** (SO36/Gayhane, The Stud, Eisenherz Buchladen,
+  Dolphin Club, Schwules Museum, Heinold's, Möbel Olfe — all Berlin/SF
+  Bay queue items). None of these are actually shipped — their
+  post-plan.md checkboxes correctly stayed unchecked. Two left
+  **broken, incomplete, untracked directories** on disk that need
+  cleanup before a retry: `content/places/heinolds-first-last-chance-oakland/`
+  (only a pt-BR.mdx, no meta.json, no English source) and
+  `content/places/schwules-museum-berlin/` (5 non-English locale
+  files, no meta.json, no English source). Both are untracked (never
+  committed) — safe to delete and redraft from scratch, or salvage the
+  locale prose if it's usable once a real en.mdx + meta.json exist.
+  There's also an uncommitted `git stash` entry (adds a reciprocal
+  link from `gays-the-word-london` to Eisenherz Buchladen, which
+  doesn't exist yet) — drop it rather than apply it as-is; the link
+  target needs to exist first.
+- **Barraca da Dheia** (`content/places/barraca-da-dheia-guaruja/`)
+  is still `status: draft`/`trust: review`, awaiting operator approval
+  — geography was corrected mid-draft (Guarujá/Pitangueiras, not
+  São Vicente/Itararé as originally scoped), see `content/opportunities.md`.
+- Sister Midnight (London) needs a schema change (new `opening` status
+  value) before it can be drafted. Hampstead Heath ponds (London)
+  needs a different source path (bot-blocked).
+
 ## 🧹 Stray untracked files at repo root — CLEANED UP (2026-09-01)
 
 Investigated the long-standing open item (untracked `.obsidian/`, PDFs/MDs, `app/manifest (1).ts`, `content/requests (1).md`, `reference-images/`). Findings: `app/manifest (1).ts` and `content/requests (1).md` were stale duplicates superseded by the real files (the real `content/requests.md` already had two items marked `fulfilled` that the "(1)" copy still showed as `open`) — **deleted both**, operator-confirmed. The rest (`.obsidian/` — an active Obsidian vault config, 3 operator planning docs including AdSense revenue projections and an internal strategy doc, and `reference-images/` — 21 generic-named Gemini-generated images with no piece attribution) aren't repo content at all — **added to `.gitignore`** rather than deleted, since they're the operator's own local files and the revenue-projection/strategy docs specifically shouldn't ever risk landing in a public commit via a broad `git add -A`. `npm run build` verified clean before push. `reference-images/`'s contents were not reviewed for reusable heroes this pass — operator declined that option, worth revisiting if a specific piece needs a hero and none of the standard sourcing tiers work.
