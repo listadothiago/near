@@ -165,6 +165,39 @@ Still open from this batch:
   (reliable `og:image`, useful for source-tier hero images). Found
   researching the same piece; not yet trust-tested across multiple hits.
 
+### Brighton — found during the 2026-09-02 seeding pass (Tier 1 city, zero sources)
+
+Brighton is Tier 1 and had **no watched sources and no queue** — the same
+pattern found in San Francisco earlier the same day. Two of these are
+strong enough to onboard to `sources.md` on the next pass rather than
+waiting for a second hit.
+
+- `gscene.com` / `scenemag.co.uk` — **Gscene / Scene Magazine**, LGBTQ+
+  news and listings with deep Brighton roots. It carried both the "Queer
+  the Marly" campaign outcome and the community objections to the Pride
+  Village Party move. This is the alt-press outlet Near's style guide
+  keeps pointing at, for the UK's queer capital. **Top graduation
+  candidate.**
+- `brightonandhovenews.org` — **Brighton and Hove News**, genuinely
+  independent local news (Brighton, Hove, Portslade, Rottingdean,
+  Woodingdean). Broke the Green Door Store Pride charity concert. Proven
+  on a real story, not just present.
+- `democracy.brighton-hove.gov.uk` — the council's own decisions,
+  agendas and papers. Not a feed and not discovery, but **authoritative**
+  for civic stories: it holds the actual Pride 2022-2026 decisions and an
+  "Evolution of Pride in Kemptown" paper. Use as a verification source
+  for anything about council policy — this is how the Pride Village Party
+  piece avoids being he-said-she-said.
+- `quartersbrighton.co.uk` — Quarters' own site and listings; the primary
+  source for Polyglamorous dates now that the party has moved there from
+  Chalk.
+- `thegreendoorstore.co.uk` — Green Door Store's own site, for listings.
+
+_Flagged for `near-caretaker`: Brighton listicles and directories are
+unusually stale — they still call The Actors "The Marlborough" and still
+place Polyglamorous at Chalk. Treat any Brighton aggregator as
+unverified until checked against the two outlets above._
+
 ### Baixada Santista — found researching `barraca-da-dheia-guaruja` (2026-09-02)
 
 - `andadireito.com.br` — **Anda Direito**, a Brazilian LGBTQ+ community
