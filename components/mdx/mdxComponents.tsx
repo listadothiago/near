@@ -1,7 +1,9 @@
 import NearLink from "./NearLink";
+import Figure from "./Figure";
 
 export const mdxComponents = {
   NearLink,
+  Figure,
   p: (props: React.ComponentPropsWithoutRef<"p">) => (
     <p className="mb-6 last:mb-0" {...props} />
   ),
