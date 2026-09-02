@@ -23,7 +23,45 @@ getting explicit approval.**
 
 ## Open
 
-_None yet._
+### UFSCar — Universidade Federal de São Carlos (`ufscar.br`)
+
+- **Site / target:** `ufscar.br`, and specifically the DArtes / Imagem e
+  Som course and the `e-zine.ufscar.br` project. A federal-university
+  `.br` domain — the highest-authority link realistically reachable for
+  Near right now.
+- **Why there is a real angle:** Near's founder is a **UFSCar Computer
+  Science graduate** (`lib/content/curator.ts`), and UFSCar ran
+  **Zambo Zine** (`ufscar.br/~zine`, archived 1997–2017), a student
+  e-zine of exactly the alt-weekly lineage Near descends from — cinema,
+  independent music, local culture. Zambo Zine won the **Prêmio Jovem
+  Cientista** in the Arts section at CIC in October 1998 and an
+  **honourable mention at FILE** (MIS, São Paulo) in August 2000.
+- **⚠️ What must NOT be claimed, checked 2026-09-02:** the operator
+  recalled having created Zambo Zine. **The archived record does not
+  support it and credits other people** — issue #4's 1997 credits name
+  *J. E. Zanardi, Maurício B. Pellegrinetti, Thomas Castro* as editors,
+  coordinated by *Telma Olivieri*; #8 names *Maurício Dotto Martucci* as
+  editor; #11 credits *"zanardi & thomas (t96) pelos outros zambos"*. A
+  "thiago lynch" appears in #12 — a different surname. No SIBGRAPI paper
+  was found under Baraldi either. Issues #1–#3 are not archived, so
+  earlier involvement is unproven rather than disproven. **Any pitch
+  claiming authorship of Zambo Zine is off the table until documented.**
+  Telma Olivieri, who coordinated the project throughout, is the person
+  who would actually know.
+- **Also unverified:** that today's `e-zine.ufscar.br` descends from
+  Zambo Zine. It is a **Department of Letters** project (© 2000–2026);
+  Zambo Zine was **DArtes / Imagem e Som**. Different departments, no
+  connection found. Do not assert lineage.
+- **The honest pitch:** an alumnus's independent, six-language city
+  guide built on the same alt-weekly tradition the university's own
+  student e-zine worked in — offered as an alumni/course-interest story
+  or a link from a course or project page, not as a claim on Zambo
+  Zine's history.
+- **Contact channel:** not yet identified. DArtes / Imagem e Som course
+  coordination and the UFSCar alumni channel are the obvious starts.
+- **Touches:** none. Logged as a prospect 2026-09-02.
+- **State:** `prospect`
+
 
 ## Closed / declined
 
