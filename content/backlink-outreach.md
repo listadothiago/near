@@ -63,6 +63,54 @@ getting explicit approval.**
 - **State:** `prospect`
 
 
+### Alumni channels — UFSCar and CSU East Bay (researched 2026-09-02)
+
+Concrete, verified channels for the alumni angle. **Read the SEO reality
+check at the end before spending effort here.**
+
+**Alumni UFSCar** — `alumni.ufscar.br`. Official university-wide alumni
+platform (egressos, students, staff), ~3,000 users. Profiles, geographic
+and course search, events. *Almost certainly behind a login, so expect
+no public dofollow link* — value is the relationship and the route to
+the two channels below, not the link itself.
+
+**Departmental "ex-alunos" registries** — the pattern exists at
+`dep.ufscar.br/exalunos/` (Produção) and `deciv.ufscar.br/exalunos/`
+(Civil). **To check:** whether the Departamento de Computação runs the
+equivalent, since that is the operator's actual department. A public
+alumni listing on a departmental page is a real `.br` link.
+
+**Revista GEMInIS** — `revistageminis.ufscar.br`. UFSCar academic journal
+on **media convergence and transmedia production**, run by researchers
+from the Imagem e Som course. **This is the strongest of the set and the
+least like link-farming:** Near is genuinely on-topic for it — an
+AI-produced, six-locale editorial product with a radical-disclosure
+policy and a documented human/agent/source split is a legitimate object
+of study, not a favour being asked. An academic citation outranks any
+alumni directory entry. Verify current scope and submission terms first.
+
+**CSU East Bay Class Notes** —
+`csueastbay.edu/alumni/class-notes-forms.html`, contact
+`Alumni@csueastbay.edu`. Explicitly invites alumni to submit career news
+for the magazine's Class Notes and social channels. Note the campus was
+**California State University, Hayward** until its 2005 rename, which is
+how it appears on the operator's CV.
+**Eligibility caveat:** the CV records a *Certificate in Multimedia*, not
+a degree. Confirm certificate holders count as alumni before submitting;
+do not assume.
+
+**The honest SEO read, so nobody over-invests:** alumni-directory and
+class-note links are typically login-gated, nofollowed, or absent
+entirely, and hunting them at scale is exactly the low-value link
+building Google's spam policies target. **The value here is editorial,
+not algorithmic** — one genuine article or journal citation on a
+university domain is worth more than every directory entry combined, and
+is the only version of this worth an outreach email. Pitch the story;
+do not shop for links.
+
+- **Touches:** none. Logged as prospects 2026-09-02.
+- **State:** `prospect`
+
 ## Closed / declined
 
 _None yet._
