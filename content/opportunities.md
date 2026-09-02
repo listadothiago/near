@@ -223,3 +223,82 @@ opportunities:
       earns its place at all before writing to fill it — an empty
       category is only a gap if the beat is one Near actually wants.
 ```
+
+## Scoping pass — SP capital / Campinas / Baixada Santista, 2026-09-01
+
+Joint `near-seo` + `near-trendsetter` pass per BACKLOG.md's "NEXT-BATCH
+PRIORITY" directive (operator, 2026-09-01): gastronomic, hipster, and
+LGBT angles across these three markets, superseding the standing
+rotation for one batch. `backlink-pr` consulted alongside — see note at
+the end. **Scoping only — nothing below is verified to near-editor's
+publish bar yet; each candidate still needs its own still-open/dated-fact
+check at draft time, per the standing "scope once, verify every time"
+rule.**
+
+**Coverage gap check:** São Paulo capital has 8 places (best-covered
+market) but nothing yet tagged hipster/gastronomic in Vila Madalena/
+Pinheiros specifically, and no LGBT angle beyond Towa/Bar Das. Baixada
+Santista has 8 places including Amuse Beach Club (LGBTQIA+, São
+Vicente) but the wider queer-beach thread (BACKLOG's
+`baixada-santista-queer`) is still only one pin deep. **Campinas has
+zero Near coverage** — a genuine new-market opening, not a gap-fill.
+
+- id: sp-capital-hipster-gastronomic
+  what: >
+    Pracinha do Seu Justino (Vila Madalena) — open-air gastro-bar from
+    the Vila Seu Justino team, boteco tables + vertical gardens; reads
+    as the hipster-gastronomic angle the operator asked for. Needs
+    independent second source and still-open check at draft (found via
+    aggregator blogs, not yet cross-checked against a monitored source).
+  why: "Vila Madalena/Pinheiros hipster scene has real search demand and zero Near coverage."
+  market: "São Paulo capital"
+  angle: "gastronomic + hipster"
+
+- id: campinas-first-pin
+  what: >
+    Two candidate threads for Near's first-ever Campinas pin: (1) Bar
+    Flor da Lua — craft beer, cocktails, vegan food, explicitly
+    described as a mixed/welcoming LGBT-friendly crowd, hits gastronomic
+    + LGBT + hipster in one place if it verifies; (2) Livre Club (Vila
+    Itapura), ~20-year-old LGBT+ nightclub, straightforwardly the LGBT
+    angle if Flor da Lua doesn't clear sourcing.
+  why: "Zero coverage today — highest-leverage single opening in this batch, per near-trendsetter (a new market beats a gap-fill in an already-covered one)."
+  market: "Campinas"
+  angle: "gastronomic + LGBT + hipster"
+  notes: >
+    Both leads are currently sourced from listicle/aggregator content
+    (Gazeta de São Paulo, QLIST, quintoandar guides) — no Campinas outlet
+    is in content/sources.md yet. near-sources should onboard a real
+    local outlet (alt-weekly or city blog equivalent) before or during
+    drafting, same pattern as juicy-santos for the Baixada.
+
+- id: baixada-queer-thread-continuation
+  what: >
+    Barraca da Dheia (São Vicente/Itararé beach scene) — named
+    specifically as a gathering point for the LGBT+ community, sits
+    right alongside Quiosque da Cris and Praia do Itararé, continuing
+    the `baixada-santista-queer` thread BACKLOG.md already flagged as
+    the single best-timed opportunity in the whole queue (spring
+    starting now). Canto dos Ursos (bear-community space, Praia Grande)
+    is already live — don't duplicate, but worth a reciprocal-link check
+    once Barraca da Dheia drafts.
+  why: "Directly continues the operator's own home-region priority and the still-open Quiosque da Cris / Praia do Itararé thread (BACKLOG EPIC 5, post-plan.md)."
+  market: "Baixada Santista"
+  angle: "LGBT"
+
+**Backlink-pr consult (2026-09-01):** the strongest outranking sources
+for this cluster are `juicysantos.com.br` (already monitored, Baixada)
+and Revista Nove (already monitored, cited on Madê Cozinha Autoral) —
+both peer outlets rather than cold big-site targets, so outreach here is
+a natural extension of existing source relationships, not new-relationship
+cold outreach. No Campinas-market outlet is monitored or contacted yet;
+flagged to `backlink-pr` as a genuine gap to open once the first Campinas
+piece is live and has something worth linking to.
+
+**Handoff to near-editor:** draft in this order — Campinas first
+(new-market opening, zero-effort seasonal argument doesn't apply but
+"first pin in a market" always outranks incremental coverage), then
+Baixada (seasonal window per the existing reprioritization), then SP
+capital (already best-covered, lowest urgency of the three). Split
+across sessions per the standing batching rule — do not redo this
+scoping pass per city.

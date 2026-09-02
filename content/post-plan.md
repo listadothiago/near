@@ -49,11 +49,14 @@ push-to-live per post for operator QA.
 - [ ] Sister Midnight — STEFAN (operator-approved as 'opening'-status pin; schema needs the status value first)
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
 
-### São Paulo / Baixada / Campinas (seeded from operator requests)
+### São Paulo / Baixada / Campinas (NEXT-BATCH PRIORITY, scoped 2026-09-01 — see content/opportunities.md)
 - [x] Madê Cozinha Autoral, Santos — FOODIE-9000 (shipped 2026-08-31; address-move correction is the angle)
 - [x] Almeida, Santos — PLINIO (shipped 2026-08-31; identified as Restaurante Almeida, Av. Ana Costa 1, founded 1932)
 - [ ] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — operator request, SPECIAL: Cris profile + place + beach significance, higher sourcing bar (first named-person profile). See BACKLOG.
 - [ ] O Condado + São Vicente scene items from earlier scouting — need verification pass
+- [ ] **Campinas — first pin ever, draft this first.** Bar Flor da Lua (craft beer/cocktails/vegan, mixed LGBT-friendly crowd — try first, hits gastronomic+LGBT+hipster in one) or Livre Club (Vila Itapura, ~20yr LGBT+ nightclub) as fallback. Currently sourced from aggregator/listicle content only — needs a real second source and a Campinas outlet onboarded to sources.md before/during drafting.
+- [ ] Barraca da Dheia, Itararé/São Vicente — LGBT+ beach gathering point, continues the baixada-santista-queer thread alongside Quiosque da Cris; spring-timing argument from the Aug-31 reprioritization still applies.
+- [ ] Pracinha do Seu Justino, Vila Madalena (São Paulo capital) — hipster-gastronomic angle, open-air boteco/vertical-garden space from the Vila Seu Justino team; needs independent second source at draft.
 
 ### Berlin (deep) — war-room slate 2026-08-31, verified
 - [ ] SchwuZ (nomadic) — STEFAN (Germany's oldest queer club, insolvent Nov 2025, rebuilding as roaming party series; HOW-TO-PIN decision pending — no fixed address)

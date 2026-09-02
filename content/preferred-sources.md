@@ -152,6 +152,19 @@ Still open from this batch:
   (beyond Japan/Australia/NZ) are thin. Needs a dedicated follow-up pass,
   per the operator's directive to `near-deep-researcher` or similar.
 
+- `guiadasemana.com.br` — São Paulo bares/restaurantes desk, covers
+  openings and promos specifically (e.g. the "inaugura" piece on Pracinha
+  do Seu Justino, plus its own recurring-promo coverage). Found while
+  researching `pracinha-do-seu-justino-sao-paulo`; `feedType` untested,
+  no RSS confirmed yet — html-extract candidate. Good for disambiguating
+  near-identical venue names (it ran both the opening piece and later
+  promo coverage, which is what confirmed Pracinha and Seu Justino are
+  related-but-distinct addresses).
+- `baressp.com.br` — São Paulo bar directory/listicle site with per-venue
+  pages carrying address, phone, hours, and a dedicated venue photo
+  (reliable `og:image`, useful for source-tier hero images). Found
+  researching the same piece; not yet trust-tested across multiple hits.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.
