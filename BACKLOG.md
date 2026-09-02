@@ -589,15 +589,26 @@ action needed there). Hasn't written anything yet — first assignment
 should be one of the coastal-alt-luxury candidates already listed in
 EPIC 5 (Ilhabela, Paraty, Trancoso, etc.) or the Angra dos Reis beat.
 
-## ⚠️ Vercel production alias not auto-promoting (2026-09-01, flagged)
+## ⚠️ Vercel production alias not auto-promoting (2026-09-01, flagged — re-checked 2026-09-02, currently fine)
 
-Twice this session, a push to `main` built successfully but `near.tips`
+Twice on 2026-09-01, a push to `main` built successfully but `near.tips`
 kept pointing at the *previous* production deployment instead of the
 new one — required a manual `vercel alias set <new-deployment>
 near.tips` each time to actually go live. Worth checking the Vercel
 project's Git integration settings (Settings → Git → Production Branch,
 or a "Automatically assign custom domains" toggle) next time the
 dashboard is open — this should be automatic and isn't.
+
+**2026-09-02 recheck:** operator again reported near.tips "not
+refreshing." `vercel inspect` on the deployment currently aliased to
+near.tips showed it was created at the exact same timestamp as the
+latest commit (`9b89d62`, 2026-09-01 22:48) and is Ready/Production —
+so auto-promotion *did* work this time; nothing was stuck. Likely just
+browser/CDN caching on the operator's end. Leaving this item open
+since the underlying Git-integration setting was never actually
+checked/fixed, just worked around manually — still worth a dashboard
+look next time it's open, but it is intermittent, not currently
+broken.
 
 ## 🖼️ UI quick hits (2026-09-01, not started)
 
@@ -1583,3 +1594,34 @@ Built end to end, mirroring the weekly editorial column's structure:
   agent's `the-setlist-2026-10` content, not on anything from this
   task — every file this task touched passes schema's char limits and
   TypeScript compiled clean).
+
+## 🆕 Session 2026-09-02: new backlog items from operator dump (not started, needs a fresh session)
+
+Operator pasted a large batch of material and directives in one go. Logged here verbatim-in-spirit so a future session can pick each up individually. **Vercel/near.tips "not refreshing" was checked this session and is NOT broken** — `vercel inspect` confirms the production deployment aliased to near.tips was built at the exact timestamp of the latest commit (9b89d62) and is Ready. Likely just CDN/browser caching on the operator's end; no action needed unless it recurs.
+
+### near-blogger: monetization/content-strategy knowledge (operator flip-flopped, net: DO learn it)
+Operator first pasted a Jessie on a Journey ("jessieonajourney.com") blogging-monetization article link and said to have near-blogger learn from it and update skills/backlog, then immediately said "actually no scratch and discard that entirely" — but then pasted a much larger dump of the same site's actual resource library (checklists, content-audit framework, AI-repurposing prompts, content pillars/topic-cluster method, etc.) and asked near-blogger to learn from *that* instead, and even **write a blog-post "manifesto" once it figures out what to do with all this material**, to be published in the **editorial category**. Treat the second, larger ask as the live instruction (the "scratch that" applied only to the single-article version). Action: invoke near-blogger to digest the pasted material (blog content-strategy workbook, content audit framework — tiering posts High/Middle/Low performer, content-repurposing "1-to-10" AI-prompt framework, Trello-style content creation/promotion workflow) and extract what's actually applicable to Near (an AI-bylined multi-persona alt-weekly, not a solo travel blogger) vs. what doesn't transfer (e.g. Jessie's affiliate-tool recommendations, her own course/membership upsells are not relevant). Then write the manifesto piece, editorial category.
+
+### backlink-pr: learn outreach templates + operator's AI ethics stance + Gmail access
+- Same pasted material included podcast-guest-pitch email templates ("Template #1"/"Template #2") and outreach-days/spreadsheet concepts — near-backlog should route these to **backlink-pr** as reusable outreach-email templates/structure, adapted to Near's voice (not copied verbatim — Jessie's templates are self-promotional solo-blogger voice, Near's is the cheeky-AI-characters voice below).
+- **Operator's explicit AI ethics code, to be baked into backlink-pr's standing instructions**: "we openly use AI, we send traffic back to sources, and we are cheeky about it with fun characters representing actually useful perspectives." This should be stated plainly in any outreach backlink-pr sends (disclose AI authorship, don't hide it) and should inform tone (confident/cheeky, not apologetic).
+- **backlink-pr should be granted Gmail access** (`mcp__claude_ai_Gmail__*` tools are available) to send outreach emails and make appointments directly, not just draft them for the operator to send manually. Needs a skill-file update authorizing this and defining guardrails (e.g. still not auto-sending anything the operator would consider spammy/low-quality; log every send to `content/backlink-outreach.md` as already required).
+
+### NEW SKILL: affiliate-pr (make-money outreach, mirrors backlink-pr)
+Operator wants a new skill, same shape as backlink-pr but for **affiliate program outreach** instead of backlinks — find affiliate programs/opportunities relevant to Near's content (travel, nightlife, food/drink, etc.), reach out, negotiate/apply, with Gmail access to send emails and schedule calls. Explicit goal stated by operator: "go make us money please." Needs a new `.claude/skills/affiliate-pr/SKILL.md`, likely cloned/adapted from backlink-pr's structure, with its own durable relationship log (parallel to `content/backlink-outreach.md`, e.g. `content/affiliate-outreach.md`).
+
+### NEW SKILL: ad-sales (sell ads on-site to advertisers)
+Operator wants a new skill to actively sell ad placements on near.tips to potential advertisers — same "able to email and do everything" mandate, Gmail access included. Needs a new `.claude/skills/ad-sales/SKILL.md`. Open questions for whoever picks this up: what ad inventory/formats actually exist on the site today (check current AdSense/ad-slot setup mentioned elsewhere in this backlog), what a legitimate direct-advertiser pitch looks like distinct from AdSense passive revenue, and a relationship log similar to the two above.
+
+### AEO skill: Lenny's Podcast / Ethan Smith (Graphite) transcript on Answer Engine Optimization
+Operator pasted a full transcript of Lenny's Podcast episode "The ultimate guide to AEO" with Ethan Smith (Graphite CEO). Route to the **aeo** skill to mine for tactics applicable to Near: (1) citation optimization matters more than "ranking #1" in LLM answers — get mentioned across many sources (Reddit with real disclosed identity, YouTube/Vimeo video, blogs/affiliates) rather than just owning the top URL; (2) answer the long tail of follow-up questions on-page, not just the head query; (3) Reddit-native, disclosed, non-spammy participation works, mass fake accounts don't and get caught; (4) help-center/FAQ content is an underused AEO surface — put obscure/tail use-case Q&A there; (5) track "share of voice" across ChatGPT/Perplexity/Gemini, not just one engine, since citation overlap between them is only ~35-70%; (6) 100%-AI-generated undisclosed content measurably doesn't rank (Graphite's own study) — reinforces Near's existing AI-disclosure stance, doesn't contradict it. Needs an aeo-skill session to actually extract and fold in the relevant tactics.
+
+### Frontend/PWA + cleanup/caretaker: hide stale content (2yr since last update)
+**New standing rule, not yet implemented:** any published place/collection/column-issue whose *last update* (not creation date) is more than 2 years old must be hidden from the live app/PWA (marked inactive or equivalent status) — content can have been created any time, but must have been *updated* within the last 2 years to display. Operator was explicit: "make super sure of that so content is not stale ever." Scope: (1) frontend/app rendering logic needs a check gating display on last-updated timestamp; (2) `near-caretaker` and `near-cleanup`-equivalent skills need this folded into their sweep logic — but operator also stressed they should keep doing their existing deeper verification (dead links, closed venues, factual currency) beyond just the date check, the 2-year rule is a floor/backstop, not a replacement for real verification.
+
+### Miscalendared event published as a standing column — needs a real fix, not just a relabel
+Operator flagged (context of *which* piece not fully specified in this dump — check most recently published column-type entries around this session) that something about a specific **event** got created as a **column** entry, which is wrong. Operator directive: "amend the column and alert the editors so this does not happen." Fix required: (1) find and convert the mis-modeled entry from a column/collection into a proper **event** (with an expire date) — if it's a festival, model as multiple sub-events; (2) if it references venues not yet in the catalogue, create those venues properly too; (3) figure out why this happened (which skill created it as a column) and alert/correct that skill's instructions so events aren't miscast as columns again. Needs investigation to identify the specific piece before it can be fixed — not enough detail in the dump to identify it directly.
+
+### Infinite scroll parity: article/place/SRP/landing pages
+Operator directive: **all** of article pages, place pages, search-results-page, and landing pages should have infinite-scroll-with-load-more, matching what the home page/board already does (home's infinite scroll shipped 2026-09-01 per the session handoff above). Currently likely only the home board has it. Needs a frontend audit of which of these four page types paginate today vs. not, then the same load-more pattern applied consistently.
+
