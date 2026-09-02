@@ -189,6 +189,39 @@ the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed
 only ever show what's listed there.
 
+### 9b. Revenue pass — `backlink-pr` + `affiliate-pr` + `ad-sales`
+
+**Operator directive, 2026-09-02: the north star is growing the site
+organically AND making money, so the revenue skills are part of the
+write process, not an afterthought bolted on once a piece is live.**
+All three run on every piece. Each answers one narrow question:
+
+- **`backlink-pr`** — who should link to this? Pitch it to an existing
+  relationship or log a new target. (Already mandatory at step 1 for
+  scoping; this is the post-draft half.)
+- **`affiliate-pr`** — does this piece contain a natural purchase moment
+  a reader would act on, and is there an approved program serving it?
+  Accommodation and dated ticketed events are the strongest surfaces.
+- **`ad-sales`** — does researching this piece surface a plausible
+  advertiser lead? A venue piece means the venue, its neighbours and its
+  promoters are now known, sourced and contactable. Log them as
+  prospects.
+
+**The wall, which none of the three may cross:** coverage decisions are
+made at step 1 by `near-seo` / `near-trendsetter` / the rotation, on the
+merits, and this step runs *against the piece that already exists*. No
+place is ever queued because it monetizes, no negative is ever softened
+for a partner or advertiser, and no link is invented where the piece has
+no natural purchase moment. Any affiliate link is disclosed visibly at
+the point of the link. If a monetization opportunity would require
+changing the copy, the answer is no — say so and log it.
+
+Recording the answer is the deliverable, including "no opportunity here",
+which is the common and correct outcome for most pieces. Logs:
+`content/backlink-outreach.md`, `content/affiliate-outreach.md`,
+`content/ad-sales-outreach.md`. **No outreach email is ever sent without
+showing the operator the exact draft and getting explicit approval.**
+
 ### 10. Trust gate, then commit and push
 
 `meta.trust: "auto"` (an already-watched, already-trusted source, or
