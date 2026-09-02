@@ -107,8 +107,20 @@ name per "Quoting collaborating personas."
 ### 6. Images — `near-illustrator`
 
 Art-direction call on every piece, no exceptions: hero/thumbnail
-choice, whether a gallery is warranted (high bar), whether an original
-illustration would out-click available photography. Hero tiers in
+choice, **whether in-body images are needed**, whether a gallery is
+warranted (high bar), whether an original
+illustration would out-click available photography.
+
+**Operator directive, 2026-09-02: `near-illustrator` is ALWAYS consulted
+on mid-post imagery, not only the hero — every piece, including short
+ones.** A published piece must never read as an undifferentiated wall of
+text; an image landing partway down is part of the deliverable, not a
+nice-to-have reserved for long posts. Run this against the **drafted
+body** from step 5 (a wall of text can't be judged before the text
+exists), and record the answer — including an explicit "none needed" —
+per `near-illustrator`'s logging rule.
+
+Hero tiers in
 preference order: real source photo with attribution → licensed stock
 → original illustration (visibly stylized, never photoreal — a
 correctness rule, not taste). Generated images disclose themselves as

@@ -721,3 +721,51 @@ and `/en/collection/the-setlist-2026-10` all generated successfully.
 **Build verification:** `npm run build` completed with zero errors
 after fixing one schema violation (pt-BR `shortTitle` initially ran to
 53 chars against the 48-char limit) — all six locale pages generated.
+
+## 2026-09-02 — The Stud, SoMa, San Francisco (STEFAN) — drafted, held for hero
+
+- **New place:** `content/places/the-stud-san-francisco` — first
+  worker-owned cooperative nightclub in the US, 1123 Folsom St. From
+  `post-plan.md`'s San Francisco Tier 1 queue. Held at `status: draft`;
+  hero image is the only outstanding gate. Locales not yet written
+  (`full-locale-coverage` does not require localizing a draft).
+- **`verify-still-open-before-create`:** operator raised a closure
+  concern mid-draft. Checked and REFUTED — the venue is open and
+  programming through May 2027. The false signal is real and became the
+  piece's correction section: two Yelp listings exist (the closed 399
+  9th St one is stamped "Updated September 2026"), and `studsf.com/closed`
+  is a spring-2020 announcement about the old site carrying no visible
+  date. Flagged in `preferred-sources.md` for `near-caretaker`.
+- **Dropped on legal grounds:** the war-room slate's "Stud Alley
+  arrests" angle. Stud Alley is an unpermitted Pride-weekend block party
+  at Kissling & 11th; no source connects the bar to organizing it, no
+  statement from the collective exists in any coverage, and reporting
+  describes vandalism at the party. Attributing it to the venue would be
+  defamation-adjacent on zero sourcing, so it was excluded rather than
+  hedged.
+- **Fact reconciled:** co-op headcount — Wikipedia says 15 at the 30 Dec
+  2016 takeover, SF Heritage says seventeen currently. Used SF Heritage's
+  and framed it as current.
+- **Source gap found:** all six sources used were new to Near. San
+  Francisco is a Tier 1 rotation city with three published pins and ZERO
+  watched sources. Logged as a batch of candidates in
+  `preferred-sources.md` under a new San Francisco heading, with Mission
+  Local as the top graduation pick.
+
+**`near-illustrator` image call** (first piece run under the operator's
+2026-09-02 always-consult-on-mid-post-images directive):
+
+- **Hero:** original illustration, tier 3. Commons holds only the old
+  9th St building; running it would reinforce the exact error the piece
+  corrects. Prompt queued in `content/photo-requests.md`.
+- **In-body: YES, one image**, placed in the correction section. The body
+  runs four sections with no visual break, and the correction is a
+  then/now comparison — the case where an in-body image does
+  argumentative rather than decorative work. Specced as a two-panel
+  diptych (shuttered old site / lit current one) so it carries the
+  correction visually. Prompt queued alongside the hero.
+- **Gallery:** no. Fails the second condition outright — no stock of
+  usable open-licensed images exists for the current address.
+- **Generation:** not available this session, so both prompts went to
+  `content/photo-requests.md` per the standing fallback rather than
+  leaving `heroImage` null with no path forward.

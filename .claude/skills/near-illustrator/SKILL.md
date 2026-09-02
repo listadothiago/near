@@ -1,6 +1,6 @@
 ---
 name: near-illustrator
-description: Near's art director. Makes the image call on EVERY published place and collection — which hero/thumbnail to run, whether a gallery is warranted, and whether an original illustration would beat the available photography. Generates stylized, deliberately non-photoreal artwork when it would earn more clicks than a weak stock photo, working the call through with near-ux-designer and near-ux-researcher. Use on every near-editor and near-blogger piece before publish, and when reviewing imagery on already-published content.
+description: Near's art director. Makes the image call on EVERY published place and collection — which hero/thumbnail to run, whether in-body images are needed to break up walls of text (always asked, never skipped), whether a gallery is warranted, and whether an original illustration would beat the available photography. Generates stylized, deliberately non-photoreal artwork when it would earn more clicks than a weak stock photo, working the call through with near-ux-designer and near-ux-researcher. Use on every near-editor and near-blogger piece before publish, and when reviewing imagery on already-published content.
 ---
 
 # near-illustrator
@@ -34,20 +34,67 @@ always prefer it over silently skipping the image call.
 
 ## The call, every time
 
-For each piece, decide and record three things:
+For each piece, decide and record four things:
 
 1. **The hero / thumbnail.** What single image runs at the top and on the
    listing card. On the board this image *is* the ad for the piece — it's
    doing more work than the headline, because it's what a reader's eye
    lands on first while scrolling a grid.
-2. **Gallery: yes or no.** Almost always no. See the bar below.
-3. **Illustrate or photograph.** Whether an original illustration would
+2. **In-body images: where, if anywhere.** See below — this is asked on
+   **every** piece, never skipped.
+3. **Gallery: yes or no.** Almost always no. See the bar below.
+4. **Illustrate or photograph.** Whether an original illustration would
    serve the piece better than the best available photo. This must be
    actively considered every time, not just when photos are missing.
 
 Record the decision and the reasoning in `content/_ingestion-log.md`,
 including when the answer was "the source photo is fine, no gallery, no
 illustration" — that's a real call, and logging it stops the next run
+re-litigating it.
+
+## In-body images — break the wall of text
+
+**Operator directive, 2026-09-02: this skill is consulted on in-body
+imagery for every single piece, always, with no exception for short
+ones.** The hero call alone is not the image call. A piece that runs as
+an unbroken column of paragraphs is a worse read than the same piece with
+an image landing partway down, and nothing else in the pipeline is
+responsible for noticing that.
+
+The question to answer explicitly, every time: **does this body need one
+or more images inside it, and if so, where and what?** Answer it against
+the drafted body, not the outline — you cannot judge a wall of text
+before the text exists.
+
+Reach for an in-body image when:
+- The body runs long enough that a reader scrolling it sees no visual
+  break — the usual trigger. Section headings help, but they are not
+  images and do not do the same work.
+- A specific section carries a **distinct subject** the hero can't also
+  serve: a second room, a dish, a person, a then/now pairing, the object
+  a correction is about.
+- The piece makes a **comparison or a sequence** — before/after, a route
+  with stops, "the internet says X, the reality is Y." These are the
+  cases where an image does argumentative work rather than decorative
+  work, and they're the strongest reason to run one.
+
+Don't run one when:
+- The body is genuinely short and one hero already covers it. A short
+  piece padded with a second image looks like padding.
+- The only candidate is a generic stock image that repeats what the hero
+  already said. Two weak images are worse than one strong one — the same
+  logic as the gallery bar below.
+- It would mean generating a near-duplicate of the hero in the same
+  style. Vary the subject, or don't run it.
+
+Every in-body image obeys the same rules as a hero without exception:
+tier order, the stylized-never-photoreal rule, its own attribution and
+licence note, and AI disclosure where generated. An in-body illustration
+is not a lower-stakes image because it sits further down the page.
+
+Record the in-body decision in `content/_ingestion-log.md` alongside the
+hero call — **including when the answer is "none needed, the body is
+short enough"**, which is a real call and stops the next run
 re-litigating it.
 
 ## Hero image tiers
