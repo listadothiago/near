@@ -85,6 +85,38 @@ Everything downstream waits on that.
 **Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
 until `near-seo` has real Search Console data.
 
+## 🛑 OUTREACH FREEZE (2026-09-02, OPERATOR DIRECTIVE — in force)
+
+**Operator, verbatim:** *"by farming links i mean we will have to message
+people, email people, talk to people. quality links. by we need the site to
+be more fleshed out before any pr campaigns, until then the pr skills can
+offer guidance but no outreach until we are ready"*
+
+Two rulings. First, a **correction of terms**: "farming links" here means
+real human outreach for quality links — messaging, emailing, talking to
+people — not directory drops or scaled link acquisition. An earlier session
+note used "farming" loosely in the spammy sense; that reading is wrong and
+is corrected here.
+
+Second, a **hard freeze**: `backlink-pr`, `affiliate-pr` and `ad-sales` may
+research, identify channels, draft pitches and keep their logs current, but
+**may not contact anyone** until the operator says so. The reasoning is
+sound and worth restating: you get one first impression per contact, and
+spending it on a ~60-place site costs more than waiting.
+
+Enforced in three places rather than left as prose: the freeze banner now
+heads all three outreach logs (`content/backlink-outreach.md`,
+`content/affiliate-outreach.md`, `content/ad-sales-outreach.md`), and
+`near-write-article`'s step 9b — the step that reads most like an
+authorisation to pitch — carries it inline.
+
+**Open for the operator:** the freeze has no defined end, which makes it
+permanent by drift. `near-lead-product` has proposed a testable exit
+condition (materially deeper coverage, six genuinely complete locales, a
+column with a real run behind it, Search Console showing indexation, zero
+broken heroes) recorded at the top of `content/backlink-outreach.md`.
+**Not decided — the operator sets the bar.**
+
 ## 🖼️ Discover readiness audit (2026-09-02) — MEASURED, two fixed, one systemic gap open
 
 Operator supplied a five-point Google Discover checklist. Audited each against

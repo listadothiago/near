@@ -196,6 +196,16 @@ only ever show what's listed there.
 
 ### 9b. Revenue pass — `backlink-pr` + `affiliate-pr` + `ad-sales`
 
+> **🛑 OUTREACH FROZEN (operator, 2026-09-02).** This step still runs on
+> every piece, but **nothing may be sent**. No email, DM, form or
+> conversation, for any of the three skills, until the operator lifts the
+> freeze — the site must be more fleshed out before any PR campaign, and
+> a pitch from a thin site burns that contact permanently. Research,
+> target identification, draft pitches and log entries are all still
+> wanted; only the send is blocked. Entries stay at `prospect`. Full
+> statement of the directive and its proposed exit condition is at the top
+> of `content/backlink-outreach.md`.
+
 **Operator directive, 2026-09-02: the north star is growing the site
 organically AND making money, so the revenue skills are part of the
 write process, not an afterthought bolted on once a piece is live.**
