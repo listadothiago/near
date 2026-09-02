@@ -110,7 +110,14 @@ export default function NearestLatestTabs({
   };
 
   return (
-    <section>
+    // min-w-0 is load-bearing, not cosmetic. This section is the `1fr`
+    // column of the board's `md:grid-cols-[1fr_300px]` grid, and a grid
+    // item's default `min-width: auto` means `1fr` cannot shrink below the
+    // card grid's min-content width (~572px). Between the md breakpoint
+    // (768px) and ~910px that pushed `1fr + 300px` past the container and
+    // spilled the map/promo rail off the right edge — up to 158px of
+    // horizontal overflow at exactly 768px. Removing this reintroduces it.
+    <section className="min-w-0">
       <div className="flex gap-0 border-b-[3px] border-ink" role="tablist">
         {(["nearest", "latest"] as const).map((id) => (
           <button
