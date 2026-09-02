@@ -33,7 +33,20 @@ session.
      nothing) — see the infinite-scroll pass, which kept the original
      footer-reachability safeguard rather than discarding it outright.
 
-2. **Always present a menu, never just proceed** on anything with more
+2. **Check the queue item isn't already shipped before dispatching** —
+   a quick `ls content/places/` / `grep` for the slug or a fuzzy name
+   match in the coordinating session, not delegated to the agent as its
+   first step. `post-plan.md`'s queue checkboxes have gone stale more
+   than once in a single session (Berry Bros & Rudd, Studio Voltaire —
+   both already live, both still showing `- [ ]`): dispatching a full
+   agent run to discover that costs a run, and once nearly produced a
+   duplicate place before the agent reached its own dedupe check. The
+   agent's `dedupe-by-place` step (`content/rules.md`) is still
+   mandatory as a second check, but don't rely on it as the *first*
+   line of defense when a cheap grep here catches it before any agent
+   time is spent.
+
+3. **Always present a menu, never just proceed** on anything with more
    than one reasonable next step — `AskUserQuestion` with 2-4 options,
    the top one visibly marked `(Recommended)` and backed by its RICE
    score in the description/preview, not just asserted. This applies to
@@ -42,7 +55,7 @@ session.
    step inside an already-approved decision (e.g. which locale to
    translate next once the piece itself is approved).
 
-3. **Dispatch execution to a background agent**, not inline tool calls,
+4. **Dispatch execution to a background agent**, not inline tool calls,
    once a specific next item is chosen and the work is substantial
    (drafting a piece end-to-end, a multi-file code change, a research
    pass). The dispatch prompt must be self-contained: cite the exact
@@ -54,7 +67,7 @@ session.
    small enough to keep running the loop across many items in one
    sitting.
 
-4. **Trust-gate every publish decision** — this is the one step that
+5. **Trust-gate every publish decision** — this is the one step that
    never gets skipped to move faster:
    - `trust: "auto"` (an already-watched/already-trusted source, or a
      lead solid enough on independent re-verification — a 300-year-old
@@ -71,14 +84,14 @@ session.
      outcome — not a failure to route around. See the anti-fabrication
      rule in `BACKLOG.md` (~line 129).
 
-5. **On approval of a review-trust draft**, flip `status` to `active`,
+6. **On approval of a review-trust draft**, flip `status` to `active`,
    check `content/rules.md`'s `full-locale-coverage` rule before
    pushing (an `active` place needs all six locales — flag and fix the
    gap rather than ship a known rule violation, even if the operator's
    "approve as-is" only asked for the languages already drafted), then
    commit and push.
 
-6. **Keep the durable files current as you go**, same commit as the
+7. **Keep the durable files current as you go**, same commit as the
    content change where possible, separate commit when the content is
    scoping-only:
    - Tick off drained `post-plan.md` queue items.
@@ -89,7 +102,7 @@ session.
      session's chat — the analysis needs to survive past the session
      that produced it.
 
-7. **Report back concisely** after each dispatched agent returns:
+8. **Report back concisely** after each dispatched agent returns:
    what got verified (or didn't), what's drafted, what's still open,
    and — if anything needs a decision — the menu for what's next,
    RICE'd, recommendation first.
