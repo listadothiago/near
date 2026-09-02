@@ -1,0 +1,106 @@
+# near-backlog
+
+The operating method for working through `BACKLOG.md`,
+`content/post-plan.md`, and `content/opportunities.md` in a session —
+how to pick what's next, how to get it done without babysitting every
+step, and how to keep the operator in control of anything that
+actually goes live. Not a content-writing skill itself: it's the
+scoring/menu/dispatch loop that decides what near-editor, near-seo,
+near-write-article, or a code fix actually work on next, session to
+session.
+
+## The loop
+
+1. **Score candidates with RICE**, adapted to what's actually being
+   compared:
+   - **Content pieces** (place/collection candidates): Reach = search/
+     audience demand, Impact = how much it moves a real priority
+     (seasonal window, operator's home region, an explicit operator
+     ask), Confidence = how verified the lead already is, Effort =
+     inverse of how much research/translation work remains (a
+     pre-verified war-room queue item is Effort 1; a cold lead needing
+     a new market's sourcing onboarded is higher).
+   - **Market/geography rotation calls**: same shape, but Impact should
+     fold in monetization (ad CPM tier by market) whenever the operator
+     frames the choice around revenue/lucrativeness rather than pure
+     content-gap coverage — don't apply this weighting by default, only
+     when that's the stated goal, since `BACKLOG.md`'s standing
+     priorities (operator's home region, seasonal timing) are usually
+     the right default lens.
+   - **Infra/product asks**: Impact should reflect retention/UX value
+     against any documented reason the current behavior is what it is
+     (a deliberate design comment is a real cost to reversing, not
+     nothing) — see the infinite-scroll pass, which kept the original
+     footer-reachability safeguard rather than discarding it outright.
+
+2. **Always present a menu, never just proceed** on anything with more
+   than one reasonable next step — `AskUserQuestion` with 2-4 options,
+   the top one visibly marked `(Recommended)` and backed by its RICE
+   score in the description/preview, not just asserted. This applies to
+   picking the next piece, picking a market, and picking how granularly
+   to commit. Skip the menu only for the single obvious next mechanical
+   step inside an already-approved decision (e.g. which locale to
+   translate next once the piece itself is approved).
+
+3. **Dispatch execution to a background agent**, not inline tool calls,
+   once a specific next item is chosen and the work is substantial
+   (drafting a piece end-to-end, a multi-file code change, a research
+   pass). The dispatch prompt must be self-contained: cite the exact
+   `BACKLOG.md`/`post-plan.md`/`opportunities.md` entry driving the
+   work, name the persona/skill files to load, state the trust-gate
+   rule explicitly (see below), and list the concrete pipeline steps
+   from `near-write-article/SKILL.md` rather than assuming the agent
+   will infer them. This keeps the coordinating session's own context
+   small enough to keep running the loop across many items in one
+   sitting.
+
+4. **Trust-gate every publish decision** — this is the one step that
+   never gets skipped to move faster:
+   - `trust: "auto"` (an already-watched/already-trusted source, or a
+     lead solid enough on independent re-verification — a 300-year-old
+     obviously-still-open institution, say) → the agent may go straight
+     to `status: "active"`, all six locales, build-verify, commit, and
+     push in the same run, per `near-write-article/SKILL.md` step 10.
+   - `trust: "review"` (a single aggregator/listicle lead, a thin
+     search-snippet find, anything not independently corroborated) →
+     the agent writes `status: "draft"` and stops. **Never commits or
+     pushes a review-trust piece itself.** It reports back with an
+     explicit approve/reject decision point for the operator.
+   - An honest "this didn't check out, holding at draft" or "the lead's
+     geography/facts were wrong, corrected to X" is a valid, expected
+     outcome — not a failure to route around. See the anti-fabrication
+     rule in `BACKLOG.md` (~line 129).
+
+5. **On approval of a review-trust draft**, flip `status` to `active`,
+   check `content/rules.md`'s `full-locale-coverage` rule before
+   pushing (an `active` place needs all six locales — flag and fix the
+   gap rather than ship a known rule violation, even if the operator's
+   "approve as-is" only asked for the languages already drafted), then
+   commit and push.
+
+6. **Keep the durable files current as you go**, same commit as the
+   content change where possible, separate commit when the content is
+   scoping-only:
+   - Tick off drained `post-plan.md` queue items.
+   - Log any newly-used source not already in `content/sources.md` to
+     `content/preferred-sources.md`'s candidates section.
+   - Write scoping-only output (a `near-seo`/`near-trendsetter` pass
+     with no draft yet) to `content/opportunities.md`, not just this
+     session's chat — the analysis needs to survive past the session
+     that produced it.
+
+7. **Report back concisely** after each dispatched agent returns:
+   what got verified (or didn't), what's drafted, what's still open,
+   and — if anything needs a decision — the menu for what's next,
+   RICE'd, recommendation first.
+
+## What this skill is not
+
+Not a replacement for `near-write-article` (the actual publish
+pipeline this dispatches into), `near-seo`/`near-trendsetter`
+(the content-decision owners this defers to on what's worth writing),
+or `near-lead-product` (infra/product prioritization — this skill's
+RICE method applies there too, but the product trio still owns the
+actual infra backlog calls). This is the outer loop that decides what
+to point those skills at next and how tightly to gate the result before
+it goes live.
