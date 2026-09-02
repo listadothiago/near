@@ -1,5 +1,136 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🎯 SESSION HANDOFF (2026-09-02, PO session — READ THIS FIRST)
+
+A large operator dump was processed into files. **Nothing was implemented** —
+this session was intake, diagnosis and capture only. Where to pick up:
+
+**Read these three new docs before touching anything they cover:**
+- `docs/external-seo-geo-audit-2026-09.md` — external audit. **INPUT, not
+  policy.** §2 lists which of its premises are factually wrong; don't rebuild
+  on them.
+- `docs/assignment-provenance-and-human-curation-2026-09.md` — the 15-part
+  provenance brief. Owner `near-product-owner`, deliverable is a DDR,
+  **present before coding.**
+- `.claude/skills/near-product-owner/SKILL.md` — new role. Read it before
+  spec'ing anything large; it defines the DDR shape and the
+  captured → input → directive → policy ladder.
+
+**Live status board** (statuses + agent owners, generated this session):
+https://claude.ai/code/artifact/b78e713e-7adf-44ca-ba6b-11d64768dc9c
+
+**The critical path, stated plainly:** `near-ux-designer` is blocking the
+single biggest SEO/AEO move on the board. `/[locale]/in/[location]` cannot
+ship until the aggregation-page pattern exists — and the **thin-coverage
+state must be designed first** (at 60 places most locations resolve to 2–3
+pins; three cards in a twelve-card grid reads *abandoned*, not *early*).
+Everything downstream waits on that.
+
+**Cheapest real wins available right now**, none blocked:
+1. `app/sitemap.ts` — drop `<priority>`, fix `lastmod` on the three static
+   per-locale entries (owner `near-tech-lead`).
+2. Audit canonical + hreflang across six locales on one place page — nobody
+   has ever inspected the rendered `<head>` (owner `near-seo` +
+   `near-tech-lead`). This is the true P0.
+3. `max-image-preview:large` in `app/robots.ts` for Discover eligibility —
+   but confirm against current Google docs first, **not training data**.
+
+**Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
+until `near-seo` has real Search Console data.
+
+## 🆕 New skill: `near-product-owner` (2026-09-02, BUILT)
+
+`.claude/skills/near-product-owner/SKILL.md`. Sits **under**
+`near-lead-product`: the lead decides *what next and in what order*; the PO
+decides *what exactly this is, what the options are, what's recommended, and
+how we know it's done.* Owns intake of large operator dumps, the
+captured → input → directive → policy ladder, nine-section Design Decision
+Records in `docs/ddr-*.md`, failable acceptance criteria (six-locale tax,
+thin-coverage state, listicle-farm test), and handoff to a named skill.
+Internal-only, no byline. Not `productnaut-pm` (different product entirely).
+
+## 🔍 Search Console reality check (2026-09-02, DIAGNOSED — mostly a non-issue)
+
+Operator pasted GSC showing "não foi possível buscar o sitemap", 0 pages
+found, and `/` as "rastreada, mas não indexada". **Verified live the same
+day — the site is fine:**
+
+- `https://near.tips/sitemap.xml` → `200 application/xml`, 137ms, 56.9 KB,
+  **390 `<loc>` entries**.
+- `https://near.tips/robots.txt` → `200`, `allow: /`, sitemap declared.
+- `https://near.tips/` → `307` → `/en`. Expected locale redirect.
+
+GSC's read is stale from submission time. **Action: resubmit, then wait.**
+"Crawled, currently not indexed" on a five-day-old domain is normal.
+
+Two real fixes surfaced anyway, both in `app/sitemap.ts`, both tiny:
+
+1. **Drop `<priority>` entirely.** Not a ranking mechanism Google uses.
+2. **Fix `lastmod` on the three static per-locale entries** (lines ~14-32).
+   They pass `new Date()`, so `/`, `/sources` and `/guides` claim to change
+   on **every build** — training Google to re-crawl for nothing. Place and
+   collection entries are already correct (`meta.updatedAt`). `lastmod` must
+   mean *the indexable representation changed*.
+
+Owner: `near-tech-lead`. Full context: `docs/external-seo-geo-audit-2026-09.md`.
+
+## 📰 Google Discover / Android News feed as a traffic surface (2026-09-02, OPERATOR DIRECTIVE — not started)
+
+**Operator, verbatim:** *"google android news tab picks up automated ass
+content like this lets make sure we are geared to appear in this feed this has
+to be huge source of traffic"* — attached: the Android Discover feed serving a
+verified fan account's cast-list post alongside Jornal O Globo.
+
+The observation is correct and the strategic read is sharper than it looks:
+Discover is **not** a search surface. It has no query. It rewards fresh,
+entity-rich, visually strong, feed-shaped content — which is why a fan account
+outranks a newspaper there. Near's dated-events discipline and
+`near-illustrator`'s hero-image standard are already most of the way to
+Discover-shaped; nothing about it conflicts with the anti-listicle-farm rule.
+
+Known eligibility mechanics to verify before building (do **not** trust
+training data here — `near-seo` and `aeo` must confirm against current Google
+documentation):
+
+- Large, high-resolution images (the `max-image-preview:large` robots
+  directive is the usual gate — **Near does not currently set it**;
+  `app/robots.ts` sets only `allow: /`).
+- Clear publish/update dates and a real byline — which collides directly with
+  the provenance assignment above. **Sequence these together.**
+- Entity clarity and topical consistency per surface.
+- No clickbait; Discover demotes it. Near's headline rule already agrees.
+
+Owners: `near-seo` + `aeo` (eligibility research), `near-tech-lead`
+(robots/metadata), `near-illustrator` (image spec), `near-product-owner` (DDR
+if it turns out to be more than a metadata change — decide *after* the
+research, not before).
+
+## 🧾 ASSIGNMENT: provenance, human curation & source authority (2026-09-02, COMMISSIONED — not started)
+
+Full brief saved at
+`docs/assignment-provenance-and-human-curation-2026-09.md`. Fifteen-part
+operator brief on separating **human taste (authority)** / **sources
+(evidence)** / **AI agents (production)** / **Near (publisher)** without the
+personas ever pretending to be human.
+
+Owner: `near-product-owner`. Deliverable is a nine-section DDR at
+`docs/ddr-provenance-2026-09.md`, **presented for approval before any code.**
+Hard constraints: extend the existing byline/source mechanisms rather than
+building a parallel architecture; flat files only (Git + Markdown +
+frontmatter, no DB, no CMS); MCP-readable Markdown, never model-specific
+prompts; never mark an AI persona as a real `Person` in structured data.
+
+## 📥 External SEO/GEO audit (2026-09-02, INPUT — not policy)
+
+`docs/external-seo-geo-audit-2026-09.md`. External read of the sitemap and
+architecture. Corroborates two existing house positions (`/in/[location]` as a
+real route; it must not be a card grid) and adds a five-layer URL model whose
+**Layer 3 (intent URLs like `/london/vegan`) stays shut until `near-seo` has
+real Search Console data** — building it on imagination is the documented path
+to a cemetery of thin pages. Near-side corrections to the audit's wrong
+premises are recorded in §2 of that doc. Nothing adopted; routes to the
+Strategy Summit.
+
 ## 🔗 Location-filtered views must be shareable by link (2026-09-02, OPERATOR DIRECTIVE — not started)
 
 **Operator, verbatim:** *"I personally love the focus on neighborhood. And I
