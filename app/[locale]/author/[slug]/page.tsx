@@ -4,6 +4,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { getAllAuthorSlugs, getAuthor } from "@/lib/content/authors";
+import { buildAlternates } from "@/lib/seo/alternates";
 import { getAllPlaces, getStats } from "@/lib/content/loader";
 import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
@@ -32,6 +33,7 @@ export async function generateMetadata({
   return {
     title: author.handle,
     description: `${tA("role")} — ${tA("disclosure")}`,
+    alternates: buildAlternates(locale, `/author/${slug}`),
   };
 }
 

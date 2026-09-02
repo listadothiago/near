@@ -9,6 +9,7 @@ import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CollectionCards from "@/components/collection/CollectionCards";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -25,7 +26,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "collection" });
   // Without this the page inherits the root default and every route
   // shows the same title.
-  return { title: t("navLabel") };
+  return { title: t("navLabel"), alternates: buildAlternates(locale, "/guides") };
 }
 
 export default async function GuidesPage({

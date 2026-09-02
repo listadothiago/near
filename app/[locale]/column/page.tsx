@@ -10,6 +10,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CollectionCards from "@/components/collection/CollectionCards";
 import editorialColumnIndex from "@/content/editorial-column-index.json";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -31,7 +32,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "nav" });
-  return { title: t("column") };
+  return { title: t("column"), alternates: buildAlternates(locale, "/column") };
 }
 
 export default async function ColumnArchivePage({

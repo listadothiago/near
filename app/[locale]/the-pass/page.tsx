@@ -10,6 +10,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CollectionCards from "@/components/collection/CollectionCards";
 import thePassIndex from "@/content/the-pass-index.json";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -34,7 +35,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "collection" });
-  return { title: t("thePassTitle") };
+  return { title: t("thePassTitle"), alternates: buildAlternates(locale, "/the-pass") };
 }
 
 export default async function ThePassArchivePage({

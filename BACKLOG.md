@@ -1,5 +1,52 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## ✅ SHIPPED (2026-09-02, lead-product session): the head/sitemap P0 bundle
+
+The previous handoff called "audit canonical + hreflang across six locales"
+**the true P0** and guessed nobody had inspected the rendered `<head>`. That
+was right, and the audit found worse than expected: **11 of 13 route types
+shipped no canonical and no hreflang at all.** Only `/place` and `/collection`
+had them, and neither declared `x-default`. Six locale home pages — the most
+crawled URLs on the site — had **no `generateMetadata` whatsoever.**
+
+RICE put this above the `/in/[location]` work (blocked on `near-ux-designer`'s
+aggregation pattern anyway) and above Discover research: reach is every URL ×
+six locales, confidence is maximal once inspected rather than guessed, and
+effort was a single session. Everything else on the board is either blocked,
+research-first, or narrower.
+
+Shipped, all verified in the built HTML rather than assumed:
+
+1. **`lib/seo/alternates.ts`** — one `buildAlternates(locale, path)` helper
+   emitting canonical + six hreflang + `x-default`. Wired into every route
+   type: home, place, collection, author, guides, sources, about, and all four
+   column landings. Verified: 7 `<link rel="alternate">` tags render per page.
+2. **`/privacy` and `/terms`** — English-only bodies served under six locale
+   prefixes were six undeclared duplicates. All six now canonicalize to `/en`,
+   with **no** hreflang (declaring translations that don't exist is worse than
+   declaring none) and are dropped from the sitemap.
+3. **`app/sitemap.ts`** — `<priority>` removed entirely; `lastmod` now derives
+   from content frontmatter everywhere, so no URL claims to change per build.
+   Added the seven missing route types. **390 → 498 URLs**, each carrying
+   `xhtml:link` hreflang alternates that agree with the in-page tags by
+   construction (both generated from `routing.locales`).
+4. **`max-image-preview:large`** + `max-snippet:-1` + `max-video-preview:-1`
+   in the root layout. **Checked against Google's live "Get on Discover" doc,
+   not training data**: this is *not* an eligibility gate — content is eligible
+   once indexed and policy-compliant. What it gates is the large-image
+   treatment a Discover card *is*, so Near was opting itself down to a
+   thumbnail against its own hero-image standard.
+
+Note for whoever does the sitemap next: **do not reach for `fs.statSync`
+mtimes** for `lastmod`. A CI checkout rewrites every mtime to clone time —
+the same defect as `new Date()`, just harder to spot. That trap is commented
+in the file.
+
+**Next up, in order:** resubmit the sitemap in Search Console (the fixes are
+worth nothing until Google re-reads it) → `near-ux-designer`'s thin-coverage
+aggregation pattern, still the single blocker on `/in/[location]` → the
+Discover eligibility research, which is now unblocked on the metadata side.
+
 ## 🎯 SESSION HANDOFF (2026-09-02, PO session — READ THIS FIRST)
 
 A large operator dump was processed into files. **Nothing was implemented** —

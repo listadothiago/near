@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { getBaseUrl } from "@/lib/seo/site";
+import { ROBOTS_PREVIEW_DIRECTIVES } from "@/app/robots";
 import ThemeScript from "@/components/layout/ThemeScript";
 import ThemeKeeper from "@/components/layout/ThemeKeeper";
 import { BoardControlsProvider } from "@/lib/board/controls";
@@ -53,6 +54,10 @@ export async function generateMetadata({
       template: `%s | near.tips`,
     },
     description: t("tagline"),
+    // Opts every page into large image previews (Discover cards, rich
+    // results) and uncapped snippets. See app/robots.ts for why this lives
+    // in page metadata rather than robots.txt.
+    robots: ROBOTS_PREVIEW_DIRECTIVES,
     alternates: {
       types: {
         "application/rss+xml": [

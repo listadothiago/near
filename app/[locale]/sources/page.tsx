@@ -9,6 +9,7 @@ import { CATEGORIES, CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import SubmitForm from "@/components/inbox/SubmitForm";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -25,7 +26,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "sources" });
   // Without this the page inherits the root default and every route
   // shows the same title.
-  return { title: t("navLabel") };
+  return { title: t("navLabel"), alternates: buildAlternates(locale, "/sources") };
 }
 
 export default async function SourcesPage({

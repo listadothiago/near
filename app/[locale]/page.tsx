@@ -1,4 +1,6 @@
+import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { buildAlternates } from "@/lib/seo/alternates";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
@@ -18,6 +20,19 @@ import GuidesStrip from "@/components/collection/GuidesStrip";
 // Revalidate periodically so events that have passed their eventEndsAt
 // drop off the board without requiring a new commit/deploy.
 export const revalidate = 3600;
+
+// The six locale home pages are the most-crawled URLs on the site and were
+// shipping with neither a canonical nor an hreflang set — six near-identical
+// boards competing with each other. Title/description stay inherited from
+// the root layout; only the alternates are declared here.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return { alternates: buildAlternates(locale) };
+}
 
 export default async function HomePage({
   params,
