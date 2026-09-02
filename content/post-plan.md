@@ -11,9 +11,9 @@ Tier 1 — London, Brighton, San Francisco, Oakland — repeats 4 full
 cycles before Tier 2 gets a turn. Tier 2 — Berlin, Amsterdam,
 Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
 Bangkok, plus one rotating surprise-city slot picked fresh by near-seo
-each time. São Paulo / Baixada Santista / Campinas stays a standing
-override priority independent of this rotation (operator's home
-region — see NEXT-BATCH PRIORITY note below).
+each time. São Paulo / Baixada Santista / Campinas's standing-override
+priority was revoked by the operator (2026-09-01 late night) — it's a
+normal Tier 2 queue now, no bump.
 
 Paris/NYC/Seattle/San Diego/Santos-specific/Bologna join Tier 2 when
 their queues first get seeded.
@@ -47,7 +47,7 @@ push-to-live per post for operator QA.
 - [ ] Sister Midnight — STEFAN (operator-approved as 'opening'-status pin; schema needs the status value first)
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
 
-### São Paulo / Baixada / Campinas (NEXT-BATCH PRIORITY, scoped 2026-09-01 — see content/opportunities.md)
+### São Paulo / Baixada / Campinas (normal Tier 2 queue — priority bump revoked 2026-09-01 late night)
 - [x] Madê Cozinha Autoral, Santos — FOODIE-9000 (shipped 2026-08-31; address-move correction is the angle)
 - [x] Almeida, Santos — PLINIO (shipped 2026-08-31; identified as Restaurante Almeida, Av. Ana Costa 1, founded 1932)
 - [x] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — shipped; checkbox was stale, caught during 2026-09-01 queue cleanup.

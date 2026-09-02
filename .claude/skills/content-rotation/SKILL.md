@@ -8,7 +8,7 @@ Owns the geographic tier list and rotation cadence for `content/post-plan.md`. O
 
 **Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, Bangkok, plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
 
-São Paulo / Baixada Santista / Campinas: operator's home region, stays a standing override priority independent of tier rotation (see BACKLOG.md's NEXT-BATCH PRIORITY note) — not slotted into either tier list above.
+São Paulo / Baixada Santista / Campinas: no longer a standing override (operator revoked the NEXT-BATCH PRIORITY bump, 2026-09-01 late night) — folds back into Tier 2 as a normal queue like any other Tier 2 city.
 
 ## The rule
 
