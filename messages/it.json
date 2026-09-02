@@ -249,5 +249,36 @@
     "statNewest": "{count, plural, one {il più recente # giorno fa} other {il più recente # giorni fa}}",
     "statNewestToday": "il più recente oggi",
     "countBadge": "{count}"
+  },
+  "curator": {
+    "eyebrow": "Chi c'è dietro",
+    "jobTitle": "Fondatore e curatore, Near",
+    "metaTitle": "{name} — l'umano dietro Near",
+    "metaDescription": "{name} ha costruito sistemi di contenuto in Booking.com ed Expedia, diretto una rete di guide urbane a Barcellona e vissuto in otto delle città che Near copre. Tutte le firme di Near sono IA; il giudizio editoriale è suo.",
+    "lede": "Le firme di Near sono tutte artificiali, e lo dichiarano. Questa pagina è la parte che non lo è.",
+    "whyHeading": "Perché esiste questa pagina",
+    "whyBody": "Ogni pezzo su Near è scritto da una persona artificiale dichiarata, e nessuna di esse è una persona vera — non viene mai presentata come tale, né nel testo né nei dati strutturati dietro. È una scelta voluta, ma lascia una domanda legittima: chi ha deciso che valesse la pena pubblicare tutto questo? La risposta è un umano, con un nome, una storia verificabile e quindici anni passati a costruire esattamente questo tipo di sistema dentro aziende di viaggio.",
+    "workHeading": "La storia che conta qui",
+    "roles": {
+      "booking": "Ha diretto la redazione e fatto da content product owner. Ha costruito il sistema di generazione di contenuti che ancora regge le operazioni editoriali di Booking.com — cioè contenuto di viaggio automatizzato su scala, diciassette anni fa.",
+      "lecool": "Direttore dei contenuti di una rete paneuropea di blog di cultura urbana e programmazione cittadina. Near è riconoscibilmente la stessa idea, rifatta con macchine migliori.",
+      "expedia": "Ha gestito prodotti di generazione automatica di contenuti e costruito il sistema di audit che ne controlla l'output. Ancora in produzione.",
+      "hotels": "Ha gestito l'esperienza di prenotazione end-to-end e decuplicato il programma di test multivariati — anni per imparare cosa spinge davvero qualcuno a cliccare, invece di ciò che il team dà per scontato.",
+      "taskrabbit": "Ha guidato l'espansione europea in Francia, Germania e Portogallo, con un team di localizzazione dedicato. Near esce in sei lingue per ragioni imparate qui.",
+      "farfetch": "Ha gestito la piattaforma CRM e di comunicazione con i clienti di un marketplace del lusso da circa 3 miliardi di dollari di GMV."
+    },
+    "degree": "{degree} · {institution}",
+    "citiesHeading": "Le città",
+    "citiesBody": "Vissute, non visitate. {pins} luoghi di Near stanno in {cities} città di questa lista — la mappa della copertura e la biografia sono quasi la stessa mappa, ed è tutto qui il motivo per fidarsi di questo invece che di un elenco generato. I vuoti sono dichiarati, e sono i prossimi.",
+    "pinCount": "{count, plural, one {# luogo} other {# luoghi}}",
+    "notYet": "non ancora coperta",
+    "languagesHeading": "Lingue, compresa quella che manca",
+    "languagesBody": "Portoghese madrelingua, inglese e italiano fluenti, spagnolo professionale. Copre cinque delle sei edizioni di Near. L'edizione cinese è prodotta a macchina e verificata sull'originale inglese, non da un lettore madrelingua — quindi lo si dice qui, invece di lasciar intendere il contrario.",
+    "aiHeading": "Cosa fa davvero l'IA",
+    "aiBody": "Le personas scrivono. Non scelgono cosa meriti copertura, non decidono quando una fonte è affidabile e non pubblicano senza che i controlli falliscano rumorosamente prima. Le fonti sono elencate su ogni pezzo, così puoi scavalcare Near del tutto e leggere l'originale.",
+    "linkedin": "LinkedIn",
+    "aboutLink": "Su Near",
+    "sourcesLink": "Cosa segue Near",
+    "oversightNote": "Supervisione editoriale:"
   }
 }

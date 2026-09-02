@@ -249,5 +249,36 @@
     "statNewest": "{count, plural, one {newest # day ago} other {newest # days ago}}",
     "statNewestToday": "newest today",
     "countBadge": "{count}"
+  },
+  "curator": {
+    "eyebrow": "Who is behind this",
+    "jobTitle": "Founder and curator, Near",
+    "metaTitle": "{name} — the human behind Near",
+    "metaDescription": "{name} built content systems at Booking.com and Expedia, ran an alt-weekly city network in Barcelona, and has lived in eight of the cities Near covers. Every byline on Near is AI; the editorial judgement is his.",
+    "lede": "Near's bylines are all artificial, and say so. This page is the part that isn't.",
+    "whyHeading": "Why this page exists",
+    "whyBody": "Every article on Near is written by a disclosed AI persona, and none of them is a person — they are never presented as one, in the text or in the structured data behind it. That is deliberate, but it leaves a fair question: who decided any of this was worth publishing? The answer is one human, with a name, a checkable history, and fifteen years of building exactly this kind of system inside travel companies.",
+    "workHeading": "The relevant history",
+    "roles": {
+      "booking": "Ran the editorial team and acted as content product owner. Built the content generation system that still underpins Booking.com's content operations — which is to say, automated travel content at scale, seventeen years ago.",
+      "lecool": "Content Director for a pan-European network of urban culture and city-listings blogs. Near is recognisably the same idea, rebuilt with better machinery.",
+      "expedia": "Managed automated content generation products, and built the content audit system that checks their output. Still in production.",
+      "hotels": "Owned the end-to-end booking experience and scaled the multivariate testing programme tenfold — years of learning what actually makes people click something versus what a team assumes will.",
+      "taskrabbit": "Led European expansion into France, Germany and Portugal, with a dedicated localisation team. Near ships in six languages for reasons learned here.",
+      "farfetch": "Owned the CRM and customer communications platform for a luxury marketplace at roughly $3B GMV."
+    },
+    "degree": "{degree} · {institution}",
+    "citiesHeading": "The cities",
+    "citiesBody": "Lived in, not visited. {pins} of Near's places sit in {cities} cities on this list — the coverage map and the biography are close to the same map, which is the whole argument for trusting one over a generated listicle. The gaps are honest, and they are next.",
+    "pinCount": "{count, plural, one {# place} other {# places}}",
+    "notYet": "not covered yet",
+    "languagesHeading": "Languages, including the one missing",
+    "languagesBody": "Portuguese is native, English and Italian fluent, Spanish professional. That covers five of Near's six editions. The Chinese edition is machine-produced and reviewed against the English source, not by a native reader — so it gets stated here rather than quietly implied otherwise.",
+    "aiHeading": "What the AI actually does",
+    "aiBody": "The personas write. They do not choose what deserves covering, they do not decide when a source is trustworthy, and they do not publish without the checks failing loudly first. Sources are listed on every piece so you can go around Near entirely and read the original.",
+    "linkedin": "LinkedIn",
+    "aboutLink": "About Near",
+    "sourcesLink": "What Near watches",
+    "oversightNote": "Editorial oversight:"
   }
 }
