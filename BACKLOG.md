@@ -2727,12 +2727,25 @@ concession transfer makes every published number a decay risk (the exact
 and a route worth riding is not a route you ride because it saves R$ 3.
 The hook is **the crossing itself** — a protected lane that ends at a
 boat across a working container port — not its price.
-- **Bikes board ahead of the car queue** — only 2011 sourcing
-  (vadebike.org). Operator confirmed as a local: *"sourcing is old but
-  it's true mate… as a local i say it is kind of perenially free."*
-  **Runs as curator first-hand testimony bylined to the operator and
-  linked to `/about/thiago-baraldi`, never as reported fact**, with an
-  explicit invitation for readers to correct it.
+- **Bikes board ahead of the car queue, and have done for a long time.**
+  Documented by vadebike.org in **2011**; operator confirms as a local
+  that it still holds — *"sourcing is old but it's true mate… as a local
+  i say it is kind of perenially free."*
+
+  **Frame it as duration, not as a present-tense fact.** Operator's
+  correction, 2026-09-02: *"worth noting it has been traditonally free
+  and there is that 2011 source to confirm."* The 2011 date is not a
+  weakness here — for a claim that something is *long-standing*, an old
+  citation is the evidence. A fifteen-year-old source plus a local saying
+  it still holds establishes continuity in a way neither does alone. So:
+  **"traditionally free, documented since at least 2011, and still free
+  last time a local checked"** — the 2011 link carries the tradition, the
+  operator's testimony carries the present, bylined to him and linked to
+  `/about/thiago-baraldi`. Invite readers to tell us if it ever stops
+  being true.
+
+  (The earlier note in this file treating the 2011 source as merely stale
+  was wrong and is superseded by this.)
 
 **The lane**
 - **7.874 m continuous** from the São Vicente border to Av. Mário Covas
