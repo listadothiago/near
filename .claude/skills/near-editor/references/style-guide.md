@@ -321,6 +321,39 @@ reads as sneering. Same for length — the October issue was flagged as
 simply too long, and process talk plus rank-pulling is most of what was
 padding it. Cut to what a reader needs and stop.
 
+## Give the reader something to do: the "don't miss this" (operator, 2026-09-02)
+
+The generous counterpart to the rank-pulling ban above, and the same
+reader's answer to what he actually wants from a piece: *"se você for,
+não perca isso aqui — não perca o Gorillaz."* His own model for it is the
+restaurant tip — *"se você for lá, não deixe de pedir o drink X"* — and
+his reason is worth quoting: **"geralmente isso me convence."** Not the
+argument, not the register: the specific small thing he now wants to go
+try.
+
+So every recommending piece should hand the reader at least one
+concrete, actionable pick — the set to catch, the dish to order, the room
+to walk into, the hour to show up. Rules:
+
+- **Specific enough to act on.** "Don't miss Gorillaz closing Sunday" or
+  "don't leave without ordering the X" — a named thing, not "make sure to
+  soak up the atmosphere."
+- **Small.** It's a tip inside the recommendation, not a second argument.
+  One or two sentences.
+- **Earned, not invented.** Only pick what the sourcing actually
+  supports. Inventing a signature dish to have a tip is a sourcing
+  violation, not a style flourish — if nothing specific is known, leave
+  it out and say what is known.
+- **Generous in posture.** This is the register working correctly:
+  the writer knows something useful and hands it over. That is the
+  opposite of the "you're always wrong, follow me" failure above, which
+  is why the two rules belong together — the fix for rank-pulling is not
+  a blander voice, it's a voice that gives the reader something.
+
+Distinct from the `bullets` "why you should go" box, which is scannable
+*before* reading and argues the case. This lives in the body and assumes
+the reader is already going.
+
 ## Never publish the editorial process as copy (operator, 2026-09-02)
 
 The reader gets the piece, never the reasoning behind the piece. Cut
