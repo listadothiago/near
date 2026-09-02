@@ -1,6 +1,133 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
-## 🎯 SESSION HANDOFF (2026-09-02, evening — READ THIS FIRST)
+## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
+
+The operator delivered a large batch of directives and then asked for a
+clean handoff. **Nothing in this section has been implemented.** It is
+recorded so the next session can pick it up; every item names the skill
+that should process it.
+
+### State of the tree
+
+- **Nothing to push live.** Working tree is clean apart from one untracked
+  draft (below); `main` is level with `origin/main` at `6975785`.
+- **`content/places/bar-italia-soho-london/en.mdx` is an unfinished draft.**
+  A background agent researching it hit the session limit mid-pipeline.
+  The English body is written and sourced (hours corrected against the
+  bar's own Instagram, the Outernet second site, the Baird plaque), but it
+  has **no `meta.json`, no hero image, no illustrator/TOV/legal pass and
+  no locales**. Not publishable. Left untracked deliberately. Next session:
+  resume it through `near-write-article` from the illustrator step, or
+  delete it — do not commit it as-is.
+
+### P0 — operator called this top priority
+
+**Link the curator page (`/about/thiago-baraldi`) from the About page and
+from the footer of every page.** For credibility; the curator page is the
+only `Person` in the site's structured data and currently has no site-wide
+entry point. Use the operator's Google profile photo or associated
+Gravatar, whichever is easier. → `near-tech-lead` + `near-lead-ux`.
+
+### New skills to build (none exist yet)
+
+1. **`google-discover-audit`** — best practice for Google Discover
+   eligibility plus any Apple News / AR equivalent. Quality hero images,
+   clickable headlines and snippets; **check the current published
+   guidelines rather than assuming**. The operator was explicit that this
+   is **also a mandatory step inside `near-write-article`**, not just a
+   standalone audit. Related prior work: `docs/ar-surfaces.md`, and the
+   `max-image-preview:large` finding already shipped.
+2. **`language-tic-police`** — "implacable." A harder-edged sibling to
+   `near-tov-police`, hunting language tics specifically. Scope it against
+   what `near-tov-police` already covers so the two don't overlap.
+
+### Writing rules to infuse into `near-write-article`
+
+Operator-set, applies to every piece:
+
+- **Break paragraphs every 100 words maximum.**
+- **250 words maximum per image**, hero image included. At 250 words and
+  every 250 words thereafter, **a new sub-header is required** for SEO.
+- These do **not** cap word count — they dictate how many images and
+  sub-headers a given length must carry.
+
+### Prioritization method
+
+`near-lead-product`, `near-product-owner`, `near-cpo` and the Product Trio
+should use **RICE _and_ MoSCoW**, plus their own specialist judgement, when
+prioritizing anything — not RICE alone as the current skills say.
+
+### Neighborhood-first strategy
+
+**→ `docs/neighborhood-first-index-2026-09.md`** holds the full list.
+
+- Operator framing: *"Let's earn our place as a cool-neighborhood first
+  website."*
+- **War rooms for all of them** — every neighborhood in that file is a
+  `near-war-room` target producing places, collections, guides and column
+  issues, not one pin each.
+- **Tier 1 is now London, New York, Berlin, Barcelona** (search trends).
+  **Rio de Janeiro is Tier 2**, with a deep dive wanted on the "Copanema"
+  Copacabana/Ipanema corridor.
+- Also flagged: the international-visitors list as a queue/rotation input,
+  and whether Bangkok is disproportionately large for 420 content
+  (unverified → `near-deep-researcher`).
+
+### Content commissions
+
+- **Alt-luxury nautical guide to Angra dos Reis** and sensibly navigable
+  surroundings, possibly out to Paraty. Should be **rich in dated events**
+  → `near-events` first, then `near-war-room` with `near-editor-luxury`
+  and `near-editor-outdoors`.
+- **Ironberg gyms** — start with **Santos and São Paulo capital only**
+  (not the whole state, per the operator's follow-up). Tag as **both
+  fitness and late-night/24-7**; Ironberg is an influencer favorite and
+  something of a cultural phenomenon. **The focus is fitness, not an art
+  joke.** `fit-bot` should research and record **whether each location
+  offers a day pass**, and should do this on every gym it writes.
+  - **Any 24/7 gym is worth adding and following**, not just Ironberg.
+  - **One-off art cameo, Ironberg Santos only:** invite `near-editor-art`
+    to comment semi-sarcastically on the Ironberg aesthetic — the
+    clothing, the ambiance. `near-illustrator` may be invited too. If real
+    photos can't be sourced (check online **and Google Maps**), run the
+    schtick of illustrating via the art references the art bot names in
+    its appraisal. This cameo happens **once** — not a recurring bit.
+
+### UI / product findings from the operator's screenshots
+
+- **Huge white space on desktop** on column/collection pages beside the
+  body column — usable for post cards or a small ad unit.
+  → `near-lead-ux` + `near-tech-lead`. Second screenshot flags the same
+  gap next to the article hero as an ad slot.
+- **The board layout is "wonky."** Two screenshots at desktop width show
+  the map/card rail misaligned. Distinct from the 768–910px overflow fixed
+  earlier today — this is at full desktop width. → `near-tech-lead`.
+- **Favorites should be a heart**, labelled *liked / gostei*, not a star.
+  → `near-lead-ux`.
+- **The filter set is a promise we're not keeping.** If the board offers
+  Vira-noite, Sober Curious, Lenda Local, Flagra de Famoso, Querido dos
+  Influencers, Pet-Friendly, Achado Escondido, etc., **those filters must
+  be populated fast**. Each needs an editor skill accountable for it —
+  reusing an existing persona is fine, but that persona must then be on
+  the hook for refreshing that filter's content regularly.
+  → `near-lead-product` to assign; `near-refresh` to schedule.
+
+### Byline upgrade — AI writer credit block
+
+On every article, next to the byline avatar, show **a badge and a
+custom, slightly cheeky bio/tagline written for that specific article**.
+The operator's example, on the `legends-hotel-brighton` page:
+`NITE-PORTER [AI Writer] [Não frequenta cabaré.]`
+
+- Every locale's editor/translator must invent **its own** joke tag **in
+  its own language** — not a translation of the English one.
+- The tag must always relate to the article it is signing.
+→ `near-lead-ux` for the component, `near-write-article` for generating
+the tag, `near-translator` for the per-locale versions.
+
+---
+
+## 📋 PREVIOUS HANDOFF (2026-09-02, evening)
 
 **Everything below is live on near.tips.** Working tree clean, 12 commits
 pushed, production verified.
