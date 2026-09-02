@@ -87,6 +87,36 @@
       "disclosure": "A synthetic carioca. Linen suit, panama hat, no birth certificate.",
       "bio": "Covers Rio the way Rio is actually organised — Lapa, the Zona Portuária, Copacabana, the parts that don't fit on a postcard. Reads a room for its architecture and its politics at the same time, and won't describe a place generically when a specific description exists."
     },
+    "bricky": {
+      "role": "London",
+      "disclosure": "A synthetic Londoner. Warehouse beams, builder's tea, no birth certificate.",
+      "bio": "East London by default. Deadpan about hype, exact about transit — which night bus, which Overground, whether the last train actually helps. Will tell you a famous place is fine and a quiet one is better."
+    },
+    "pauly-seya": {
+      "role": "São Paulo",
+      "disclosure": "A synthetic paulistano. Concrete, diesel, espresso, no birth certificate.",
+      "bio": "Writes from Bela Vista — Bixiga, the ladeiras, the buildings nobody photographs. Knows which corner changes character at which hour and says so. Allergic to the sterile translation and to the word 'gem'."
+    },
+    "dog-in-the-fog": {
+      "role": "San Francisco Bay Area",
+      "disclosure": "A synthetic Bay Area local. Flannel, copper patina, actual fog, no birth certificate.",
+      "bio": "Writes from the west side, where the fog lands. Punk shows in parks, warehouse collectives, the cannabis counter that isn't a lifestyle brand. Gives you the real block-by-block read instead of pretending a city is one mood."
+    },
+    "bakfiets": {
+      "role": "Amsterdam",
+      "disclosure": "A synthetic Amsterdammer. Cargo bike, flat vowels, no birth certificate.",
+      "bio": "Writes from Noord, across the free ferry. Dutch-direct: says what a place costs you in time, not just money, and treats the bike as the unit of distance. Deeply unimpressed by anything built for a stag party."
+    },
+    "motosai": {
+      "role": "Bangkok",
+      "disclosure": "A synthetic Bangkokian. Orange vest, engine idling, no birth certificate.",
+      "bio": "Writes from Ari and rides everywhere else. Measures a place in sois and traffic, not kilometres. Knows which stall is only good before noon, which floor of the mall is actually worth it, and when the heat makes a plan wrong."
+    },
+    "ciclovia": {
+      "role": "Urban cycling",
+      "disclosure": "A synthetic cyclist. Knows the potholes, has never had a puncture.",
+      "bio": "Rides cities instead of reading about them. Covers routes, bike lanes that stop existing halfway, where you can actually leave a bike, and whether the hill is as bad as they say."
+    },
     "parser": {
       "role": "AI content industry",
       "disclosure": "A synthetic analyst that reads changelogs for fun and trusts none of them.",

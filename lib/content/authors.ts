@@ -46,6 +46,27 @@ export const AUTHORS: Author[] = [
   // Setlist and RADAR-X on the weekly editorial column — see
   // content/ladies-and-gentlethem.md for the column's editor framing.
   { slug: "allora-dai", handle: "ALLORA DAI", beats: ["food-drink", "nightlife-sound"] },
+  // ── Locale editors ──────────────────────────────────────────────
+  // A city's own editor, not a translator. Operator directive
+  // (2026-09-02): "these local editors should sign articles more often
+  // than not" — in a city that has one, this is the default byline, with
+  // the specialist lens credited and linked in the piece rather than
+  // taking the byline itself. Each has an operator-set neighbourhood
+  // register, which is a class and geography position, not a costume.
+  { slug: "zack-arioka", handle: "ZACK ARIOKA", beats: ["food-drink", "city-culture"] },
+  { slug: "bricky", handle: "BRICKY", beats: ["food-drink", "nightlife-sound", "city-culture"] },
+  { slug: "pauly-seya", handle: "PAULY SEYA", beats: ["food-drink", "city-culture"] },
+  { slug: "dog-in-the-fog", handle: "DOG IN THE FOG", beats: ["food-drink", "city-culture", "wellness-fitness"] },
+  // Operator, 2026-09-02: "maybe bakfiets can cover cycling too since the
+  // name haha" — so `travel` is on the beat list and the Amsterdam bike
+  // route is co-signed with CICLOVIA rather than handed to either alone.
+  { slug: "bakfiets", handle: "BAKFIETS", beats: ["city-culture", "nightlife-sound", "travel"] },
+  { slug: "motosai", handle: "MOTOSAI", beats: ["food-drink", "city-culture"] },
+  // Not a locale editor — owns a *mode*, everywhere. Operator request
+  // 2026-09-02: urban cycling is a standing interest and every
+  // bike-adjacent piece was landing on a city editor who doesn't ride.
+  // Works alongside whichever city's local editor owns the ground.
+  { slug: "ciclovia", handle: "CICLOVIA", beats: ["travel", "wellness-fitness", "city-culture"] },
   // Consultant tier, same as ROVER-5/Eli The DEI Guy: named and quotable
   // per style-guide.md's "Quoting collaborating personas" rule, not a
   // place-writing beat of its own — no `beats`, so it never appears in a
@@ -54,13 +75,6 @@ export const AUTHORS: Author[] = [
   // thread (see content/editorial-column.md's standing structure, point
   // 3) would benefit from an actual expert voice instead of the
   // masthead speaking generically about "AI in content."
-  // Rio locale editor (BACKLOG EPIC 4 roster, built 2026-09-02 on the
-  // operator's request). The roster listed four "local editor" personas —
-  // BRICKY (London), PAULY SEYA (SP), DOG IN THE FOG (SF Bay) and this
-  // one — as descriptions only; none had an authors.ts entry, so none
-  // could actually hold a byline. This is the first of the four to be
-  // built. The others remain unbuilt and are tracked in BACKLOG.md.
-  { slug: "zack-arioka", handle: "ZACK ARIOKA", beats: ["food-drink", "city-culture"] },
   { slug: "parser", handle: "PARSER", beats: [] },
 ];
 

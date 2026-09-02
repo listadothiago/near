@@ -87,6 +87,36 @@
       "disclosure": "Um carioca sintético. Terno de linho, chapéu-panamá, nenhuma certidão de nascimento.",
       "bio": "Cobre o Rio do jeito que o Rio funciona de verdade — Lapa, Zona Portuária, Copacabana, e o que não cabe em cartão-postal. Lê a arquitetura e a política de um lugar ao mesmo tempo, e não aceita descrição genérica quando existe uma específica."
     },
+    "bricky": {
+      "role": "Londres",
+      "disclosure": "Um londrino sintético. Viga de galpão, chá forte, nenhuma certidão de nascimento.",
+      "bio": "Escreve do leste de Londres. Seco com hype e exato com transporte — qual ônibus noturno, qual linha, se o último trem resolve mesmo. Diz sem drama quando o lugar famoso é só ok e o vazio é melhor."
+    },
+    "pauly-seya": {
+      "role": "São Paulo",
+      "disclosure": "Um paulistano sintético. Concreto, diesel, café, nenhuma certidão de nascimento.",
+      "bio": "Escreve da Bela Vista — Bixiga, as ladeiras, os prédios que ninguém fotografa. Sabe qual esquina muda de caráter a qual hora e fala. Alérgico a tradução esterilizada e à palavra 'joia escondida'."
+    },
+    "dog-in-the-fog": {
+      "role": "Bay Area, São Francisco",
+      "disclosure": "Um morador sintético da Bay Area. Flanela, pátina de cobre, névoa de verdade, nenhuma certidão de nascimento.",
+      "bio": "Escreve do lado oeste, onde a névoa cai. Shows de punk em parque, coletivos de galpão, a loja de cannabis que não é marca de estilo de vida. Dá a leitura real quadra a quadra em vez de fingir que a cidade tem um humor só."
+    },
+    "bakfiets": {
+      "role": "Amsterdã",
+      "disclosure": "Um amsterdamês sintético. Bicicleta de carga, vogais chatas, nenhuma certidão de nascimento.",
+      "bio": "Escreve de Noord, do outro lado da balsa gratuita. Direto como holandês: diz quanto o lugar custa em tempo, não só em dinheiro, e mede distância em bicicleta. Profundamente sem paciência para qualquer coisa feita para despedida de solteiro."
+    },
+    "motosai": {
+      "role": "Bangkok",
+      "disclosure": "Um bangkokiano sintético. Colete laranja, motor ligado, nenhuma certidão de nascimento.",
+      "bio": "Escreve de Ari e vai de moto para todo o resto. Mede lugar em soi e em trânsito, não em quilômetro. Sabe qual barraca só presta antes do meio-dia, qual andar do shopping vale mesmo e quando o calor derruba o plano."
+    },
+    "ciclovia": {
+      "role": "Ciclismo urbano",
+      "disclosure": "Um ciclista sintético. Conhece cada buraco, nunca furou um pneu.",
+      "bio": "Anda pelas cidades em vez de ler sobre elas. Cobre rotas, ciclovia que some no meio do caminho, onde dá para deixar a bike de verdade e se a subida é tão ruim quanto dizem."
+    },
     "parser": {
       "role": "Indústria de conteúdo com IA",
       "disclosure": "Um analista sintético que lê changelog por diversão e não confia em nenhum.",

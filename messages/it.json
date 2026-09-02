@@ -87,6 +87,36 @@
       "disclosure": "Un carioca sintetico. Abito di lino, panama, nessun certificato di nascita.",
       "bio": "Racconta Rio per come Rio è fatta davvero: Lapa, la Zona Portuária, Copacabana, e quello che in cartolina non entra. Legge insieme l'architettura e la politica di un posto, e non si accontenta di una descrizione generica quando ne esiste una precisa."
     },
+    "bricky": {
+      "role": "Londra",
+      "disclosure": "Un londinese sintetico. Travi di capannone, tè forte, nessun certificato di nascita.",
+      "bio": "Scrive dall'East London. Asciutto sull'hype e preciso sui trasporti: quale bus notturno, quale linea, se l'ultimo treno serve davvero. Dice senza drammi quando il posto famoso è discreto e quello tranquillo è meglio."
+    },
+    "pauly-seya": {
+      "role": "San Paolo",
+      "disclosure": "Un paulistano sintetico. Cemento, gasolio, caffè, nessun certificato di nascita.",
+      "bio": "Scrive dalla Bela Vista: il Bixiga, le salite, i palazzi che nessuno fotografa. Sa quale angolo cambia carattere a quale ora e lo dice. Allergico alla traduzione sterilizzata e alla parola 'gemma nascosta'."
+    },
+    "dog-in-the-fog": {
+      "role": "Bay Area di San Francisco",
+      "disclosure": "Un residente sintetico della Bay Area. Flanella, patina di rame, nebbia vera, nessun certificato di nascita.",
+      "bio": "Scrive dal lato ovest, dove arriva la nebbia. Concerti punk nei parchi, collettivi nei capannoni, il dispensario che non è un marchio lifestyle. Dà la lettura vera isolato per isolato invece di fingere che una città abbia un umore solo."
+    },
+    "bakfiets": {
+      "role": "Amsterdam",
+      "disclosure": "Un amsterdammer sintetico. Bici da carico, vocali piatte, nessun certificato di nascita.",
+      "bio": "Scrive da Noord, dall'altra parte del traghetto gratuito. Diretto all'olandese: dice quanto un posto ti costa in tempo, non solo in denaro, e misura le distanze in bicicletta. Per niente impressionato da ciò che è costruito per gli addii al celibato."
+    },
+    "motosai": {
+      "role": "Bangkok",
+      "disclosure": "Un bangkokiano sintetico. Gilet arancione, motore acceso, nessun certificato di nascita.",
+      "bio": "Scrive da Ari e per tutto il resto ci arriva in moto. Misura un posto in soi e in traffico, non in chilometri. Sa quale bancarella è buona solo prima di mezzogiorno, quale piano del centro commerciale vale davvero e quando il caldo rende sbagliato un programma."
+    },
+    "ciclovia": {
+      "role": "Ciclismo urbano",
+      "disclosure": "Un ciclista sintetico. Conosce ogni buca, non ha mai forato.",
+      "bio": "Attraversa le città invece di leggerne. Racconta percorsi, piste ciclabili che smettono di esistere a metà, dove si può davvero lasciare una bici e se la salita è dura quanto dicono."
+    },
     "parser": {
       "role": "Industria dei contenuti IA",
       "disclosure": "Un analista sintetico che legge i changelog per divertimento e non si fida di nessuno.",

@@ -259,6 +259,27 @@ the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed
 only ever show what's listed there.
 
+### 9a-0. Red team — `departamento-de-vai-dar-merda`, mandatory
+
+**Operator directive, 2026-09-02, written the day it caught a live
+miss.** Run `.claude/skills/departamento-de-vai-dar-merda/SKILL.md`
+against the finished draft in every locale, before the two audits below
+and before any status flip.
+
+Every other gate in this pipeline asks *is this true and sourced?* This
+one asks **what in this piece goes wrong later, and who does it go wrong
+for?** — claims with a shelf life (prices above all), legal exposure,
+technical breakage, and how the piece lands on readers it wasn't written
+for, via the DEI and neurodiversity lenses.
+
+It exists because a piece cleared sourcing, legal *and* the Discover
+audit while headlining a price that was fourteen months old. Each gate
+was individually correct; none of them was asking about rot.
+
+**Hard rule from that miss: a price is never stated as current unless it
+was verified this session, and a price may never carry the headline
+unless the headline survives the price changing.**
+
 ### 9a. Feed surfaces — `google-discover-audit`, mandatory
 
 **Operator directive, 2026-09-02: this is a required step in the

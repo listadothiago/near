@@ -2127,6 +2127,73 @@ decorating an empty room.
   both crop to 16:9 in the layout while the OG/Discover card uses the raw
   file, so a 4:3 hero looks fine on-site and still ships a 4:3 card.
 
+## 🎙️ LOCALE EDITORS + CICLOVIA — BUILT 2026-09-02, debuts owed
+
+Operator directive: *"we need more posts from the local editors"*, then
+*"create all those personas already defined as skills and add their debut
+to backlog"*, plus a new Amsterdam and Bangkok editor and an urban
+cyclist.
+
+**Standing byline rule (operator, verbatim):** *"these local editors
+should sign articles more often than not tbh but also credit and link the
+contributors."* In a city that has a local editor, **that editor is the
+default byline.** The specialist lens (FOODIE-9000, STEFAN, CUBIC-V,
+FIT-BOT…) gets credited and linked in the body rather than taking the
+byline. Demonstrated on `balcao-arpoador-rio`: ZACK ARIOKA signs,
+FOODIE-9000 is quoted and linked, the curator is credited and linked for
+first-hand testimony.
+
+### Built and shippable
+
+Each has `lib/content/authors.ts` entry + bios in all six
+`messages/<locale>.json` + a `.claude/skills/<slug>/SKILL.md`.
+
+| byline | city / mode | register | status |
+|---|---|---|---|
+| ZACK ARIOKA | Rio de Janeiro | Leblon | ✅ **debuted** — `balcao-arpoador-rio` |
+| BRICKY | London | East London | debut owed |
+| PAULY SEYA | São Paulo | Bela Vista | debut owed |
+| DOG IN THE FOG | SF Bay Area | west side / the fog | debut owed |
+| BAKFIETS | Amsterdam | Noord | debut owed |
+| MOTOSAI | Bangkok | Ari | debut owed |
+| CICLOVIA | urban cycling, all cities | — | **two** debuts owed |
+
+Registers are operator-set except BAKFIETS (Noord) and MOTOSAI (Ari),
+which are **my picks and easy to change** — as are both new names.
+*Bakfiets* is the cargo bike; *motosai* is the orange-vest motorbike taxi.
+
+### Debut assignments
+
+- **CICLOVIA — two debuts, operator-specified.** (1) **Santos →
+  Guaiúba**, the Guarujá beach; operator notes it's also a very good
+  stand-up paddle spot, so `wellness-fitness` has a real hook and WILD0
+  or FIT-BOT is the contributor to credit. Home region, so PAULY SEYA
+  contributes on the Santos end. Route needs real sourcing — the ferry
+  crossing to Guarujá is the load-bearing logistics question and cannot
+  be assumed. (2) **Amsterdam, inside to outside** — city out to the
+  countryside, **co-signed with BAKFIETS** per the operator (*"maybe
+  bakfiets can cover cycling too since the name haha"*). BAKFIETS carries
+  `travel` on his beats for exactly this.
+- **BRICKY — build first among the city editors.** London is Tier 1 with
+  19 active pins and is where the next neighbourhood push lands (Dalston
+  to 4). His debut should be one of those Dalston pins, not a standalone.
+- **PAULY SEYA** — São Paulo / Centro is already the operator's picked
+  next SP pin (needs +1 to reach 4, and must sit outside Edifício Copan).
+  That is his debut.
+- **DOG IN THE FOG** — sober-curious Bay Area is the standing operator
+  priority with verified leads still open (The New Bar, Better Sunday,
+  Sipeos). That is his debut.
+- **BAKFIETS** — Amsterdam has 4 pins already; his debut is either a
+  fifth or the CICLOVIA co-sign above.
+- **MOTOSAI** — Bangkok is **Tier 2 with zero pins**. His debut needs
+  either a Tier 2 turn to come around or an explicit operator exception,
+  the way Rio got one. Flag rather than assume.
+
+### Still unbuilt
+
+`hasAvatar` is off for all seven — no artwork exists. Avatar direction is
+recorded in each skill file for whenever illustration happens.
+
 ### Operator directives captured 2026-09-02, mid-session
 
 1. **✅ CODIFIED — "the write article skills should try to reuse the same
