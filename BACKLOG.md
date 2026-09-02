@@ -145,6 +145,21 @@ are not where the next pins go.
 | Oakland / Adams Point | 1 | +3 | |
 | São Paulo / Pinheiros | 1 | +3 | Borderline on saturation — chief editor's call |
 
+### 🚫 Constraint, operator: no polygons
+
+*"lets not try to have polygons at this point"* — a neighborhood stays a
+**label on a place**, not a geographic shape. No boundary GeoJSON, no
+containment tests, no "is this point inside Cedofeita" geometry.
+
+This matters because it prunes a branch that was about to look attractive:
+`near-ux-designer`'s "map-first, not map-adjacent" idea (§5 of the strategy
+doc) reads naturally as *draw the neighborhood*. It doesn't have to. A cluster
+of pins on a plain map already tells the reader a neighborhood is walkable,
+which was the actual argument. Boundaries would mean sourcing and maintaining
+shape data per neighborhood across six locales, for a line on a map.
+
+If a location page ever gets a map, it plots **its own pins** and nothing else.
+
 ### Sequencing note for whoever picks this up
 
 Per the standing geographic preference, **Santos / São Vicente / São Paulo
