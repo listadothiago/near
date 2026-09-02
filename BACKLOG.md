@@ -85,6 +85,41 @@ Everything downstream waits on that.
 **Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
 until `near-seo` has real Search Console data.
 
+## 📈 Google Trends dump (2026-09-02) — INPUT, mostly not usable
+
+Operator pasted a Trends comparison of London / San Francisco / São Paulo and
+asked that search trends be considered. Honest read, recorded so the same
+dump doesn't get re-litigated:
+
+**The window and the query mix make most of it unusable for Near.** It was
+*worldwide, last 24 hours*. The top queries are navigational and
+weather/logistics — "time london", "weather london", "flights to london",
+"hotel london" — which Near cannot and should not compete for. The rising set
+is mostly hard news ("mayor of london dvla prosecution" +3,700%). Near is not
+a news site chasing 24-hour spikes; the whole strategy is long-tail evergreen
+plus genuinely dated events. **Chasing this would be the listicle-farm
+posture in a new costume.**
+
+**Two items in the dump are real and on-beat, and both are London:**
+
+1. **BFI London Film Festival, 7–18 October 2026** — the 70th edition, opening
+   with *Elsinore* (Simon Stone), closing with *The Debut* (Jesse Eisenberg)
+   at the Royal Festival Hall. Verified against the BFI's own listings, not
+   the Trends row. Rising +150–200%. This is exactly the shape the standing
+   rule wants: specific, dated, and ~5 weeks out rather than next weekend.
+2. **Bayeux Tapestry at the British Museum** (+250%) — worth `near-events`
+   confirming dates and ticketing before anything is built on it.
+
+**Methodology note for `near-seo`:** the 24-hour worldwide window is the wrong
+instrument. Use a 12-month window with category filters and per-country
+scoping, and treat Trends as a *timing* signal for events already on the
+radar, never as topic selection. Real query-gap work waits on Search Console
+data, which is the documented reason Layer-3 intent URLs stay shut.
+
+Neither London item changes the current push — see the neighborhood directive
+below, which the operator set after this. Logged for `near-events` and the
+London slate.
+
 ## 🏘️ OPERATOR DIRECTIVE (2026-09-02): deepen neighborhoods — queer + "Portlandia"
 
 **Operator, verbatim:** *"neigborhoods sounds good. portlandia style ones and
@@ -125,7 +160,7 @@ are not where the next pins go.
 
 | neighborhood | now | need | note |
 |---|---|---|---|
-| Santos / Centro Histórico | 3 | **+1** | Cheapest win anywhere. Live page, already has a queer pin, operator's own region |
+| Santos / Centro Histórico | 2 | +2 | **Corrected 2026-09-02**: the third row there (Cabaret Latino) is a *hosted event* on Teatro Clube da Eskyna, which `getAllPlaces` filters off the board and off the location page. Count board pins, not `meta.json` files |
 | São Vicente / Ilha Porchat | 1 | +3 | AMUSE. Home region |
 | São Paulo / Santa Cecília | 1 | +3 | The genuinely current SP answer, not Frei Caneca |
 | Praia Grande / Boqueirão | 1 | +3 | Home region, essentially uncovered in English |
@@ -162,10 +197,31 @@ If a location page ever gets a map, it plots **its own pins** and nothing else.
 
 ### Sequencing note for whoever picks this up
 
+**Counting rule, learned the hard way:** a neighborhood's size is its count of
+**board pins** (`getAllPlaces`), not of `meta.json` directories. Hosted events
+carry a `parentPlace` and are deliberately filtered off the board, so they
+never count toward a location page. The first version of this table got this
+wrong and called Santos a one-pin win when it needs two.
+
+Actual cheapest wins, recounted:
+
+| neighborhood | pins | need |
+|---|---|---|
+| São Paulo / Centro | 3 | **+1** |
+| São Paulo / Liberdade | 3 | **+1** |
+| Santos / Centro Histórico | 2 | +2 |
+
+Everything else on the lists above needs +3.
+
+**Operator picked São Paulo / Centro for the first pin (2026-09-02).** Note
+for whoever writes it: all three existing Centro pins (Bar Fel, Cuia,
+Megafauna) are inside **Edifício Copan**. The page currently reads as a
+building, not a neighborhood — so the fourth pin should sit elsewhere in
+Centro, or the grouping will just be Copan with extra steps.
+
 Per the standing geographic preference, **Santos / São Vicente / São Paulo
-outrank the others** — which here aligns with both the cheapest work and the
-least-saturated coverage. Santos / Centro Histórico needs **one pin** to leave
-the thin state and serves both themes at once. Praia Grande / Boqueirão and
+outrank the others**, and Santos / Centro Histórico still serves both themes
+at once once it gets its two. Praia Grande / Boqueirão and
 Santos / Vila Mathias are near-invisible in English-language coverage, which is
 exactly the gap the "up and coming" filter is pointing at.
 
