@@ -2678,3 +2678,155 @@ Not urgent (nothing is factually wrong), but it is the single most
 visible AI-tell on the board, since the cards sit next to each other in
 a grid. Do it as a batch, not one at a time, so the replacements are
 varied against each other rather than against nothing.
+
+## Santos → Guaiúba cluster — scoped 2026-09-02, one research pass, six pieces
+
+Operator directive, 2026-09-02: *"listing cool stops for a refreshment
+along the way should benefit the riders and make for nice new articles
+from the same ish research."* This is `near-write-article` step 4a
+(research reuse) and the recorded "scope the cluster once, draft
+separately" preference, applied deliberately rather than accidentally.
+**Scope the whole cluster here; draft the pieces in separate sessions.**
+
+### The spine
+
+CICLOVIA's debut. Not a route from a fixed start — the operator
+corrected that framing twice: *"the ferry is connected by bike lanes to
+departure is anywhere technically, its easy to reach on bike"* and
+*"gonzaga is an option but anywhere along the ciclovia works innit."*
+The piece is **a protected lane network with a boat at the end of it**,
+not an A-to-B itinerary. Gonzaga is named in passing as the entry point
+for readers sleeping there, nothing more.
+
+### Verified research (do not re-derive; all checked 2026-09-02)
+
+**The ferry — Travessia Santos–Guarujá**
+- Cyclists cross **free**, stated outright as `Ciclistas: Gratuito` on
+  the state's own service page. Pedestrians R$ 3,10 · motorcycles
+  R$ 6,20 · cars R$ 12,30. Fare table last updated 05/09/2024.
+- **One boat system**, not two — cars, motorbikes, pedestrians and bikes
+  all board the same balsa. There is no paid alternative to avoid.
+- **`COBRANÇA UNIDIRECIONAL`** — charged only boarding at the Guarujá
+  terminal. Santos → Guarujá is free for everyone regardless. What the
+  cyclist exemption actually buys is **the ride home**.
+- Operator: `Departamento Hidroviário` (SEMIL) through the transition.
+  **PPP signed 15 May 2026** with the Acqua Vias SP consortium — 14
+  lines, 20 years, R$ 2,5 bn. Concessionaire takes full control around
+  month seven. State says base fares and existing gratuities carry over.
+- **Pedestrians go free in H2 2026**, which ends the cyclist advantage.
+
+**Editorial steer, operator 2026-09-02 — do not build the piece on the
+fare.** *"the ferry being free or not shouldnt be a huge deal, tell rider
+they will have to see for themselves, wont be a million brl i am sure."*
+The fares stay in as background, not as the hook or the headline. Tell
+the reader the crossing is cheap-to-free, that the operator changed hands
+in May 2026 and the rules are in flux, and that they should **check at
+the terminal**. Reasons this is right and not just a preference: the
+concession transfer makes every published number a decay risk (the exact
+`departamento-de-vai-dar-merda` failure mode the falafel price created),
+and a route worth riding is not a route you ride because it saves R$ 3.
+The hook is **the crossing itself** — a protected lane that ends at a
+boat across a working container port — not its price.
+- **Bikes board ahead of the car queue** — only 2011 sourcing
+  (vadebike.org). Operator confirmed as a local: *"sourcing is old but
+  it's true mate… as a local i say it is kind of perenially free."*
+  **Runs as curator first-hand testimony bylined to the operator and
+  linked to `/about/thiago-baraldi`, never as reported fact**, with an
+  explicit invitation for readers to correct it.
+
+**The lane**
+- **7.874 m continuous** from the São Vicente border to Av. Mário Covas
+  Jr. at Ponta da Praia — and that eastern end *is* the ferry terminal.
+- ⚠️ **Do not publish a citywide network total.** Sources give 20,9 km,
+  21 km, 30,9 km and 50 km, including municipal ones. The spread is too
+  wide to split. Use the 7.874 m orla figure only. Logged as a
+  `near-sources` finding: when a city publishes four different figures
+  for its own bike network, that affects how we cite it elsewhere.
+
+**Autopropelidos — operator raised it, and it checks out with limits**
+- CONTRAN Res. 996/2023 via **Lei Municipal 4.221/2023**, enforced by
+  CET-Santos. Enforcement resumed Jan 2026, stepped up Mar 2026 (early
+  sweeps were guidance only, no seizures).
+- **Allowed on the lane:** pedal bikes, e-bikes, patinetes and
+  autopropelidos **up to 1.000 W and 20 km/h**.
+- **Banned and impounded:** ciclomotores in the 1.000–3.000 W band,
+  anything over 4.000 W, motorbikes. **Fine R$ 88,38** plus seizure to
+  the CET-Santos pound.
+- The line worth writing: **much of what is sold in Brazil as an
+  "electric bike" is legally a ciclomotor**, and on this lane that is
+  the difference between a ride and losing the vehicle. Not published
+  anywhere in English.
+- Santos, São Vicente **and Guarujá** each passed equivalents, so the
+  rule does not change when you roll off the ferry.
+
+**Rentals**
+- **Bike Santos — verified live.** 43 stations (39 adult, 4 kids), daily
+  06:00–23:00, first 45 min free with a 15-min gap between trips,
+  R$ 7,31 per extra 45 min, day pass R$ 7,00, monthly R$ 14,00, annual
+  R$ 126,01.
+- **Caveat that nobody writes down:** dock-based with a 45-minute free
+  window, and the crossing plus the far side blows through it. Bike
+  Santos gets you to the ferry and back; it is **not** the bike you take
+  to Guaiúba. Say so plainly.
+- 🚫 **Santos Bikes (santosbikes.com.br) — do NOT link.** Rental page
+  returns "Nenhum registro encontrado", rental absent from the live
+  service menu, and the contact number is a **(47)** area code — Santa
+  Catarina, not the Baixada. Caught by `verify-still-open-before-create`;
+  would have shipped as a dead link.
+
+**Guaiúba**
+- South Guarujá, immediately after Praia do Tombo, near the Base Aérea
+  de Santos entrance. Four large quiosques plus a smaller one;
+  portuguese-stone calçadão.
+- SUP, canoeing, and surf on a south swell. **Board and kayak rental on
+  the beach itself.** Umbrellas and chairs rentable — arrive by 10h at
+  weekends or there are none left.
+- Operator's own steer: *"beach in guaruja very cool spot for stand up
+  as well."*
+
+### The six pieces
+
+Existing pins the route already has, both banks — **no stops need
+inventing**: `casa-frontaria-azulejada-santos`,
+`restaurante-almeida-santos`, `made-cozinha-autoral-santos` (Santos),
+and `barraca-da-dheia-guaruja` (Pitangueiras, `local-legend` +
+`lgbtq-friendly` — an LGBTQ+ beach barraca as the far-bank payoff).
+
+New, from this same research pass:
+
+1. **`praia-da-guaiuba-guaruja`** — the destination pin, and the gap
+   that currently stops the collection working. `outdoors` +
+   `wellness-fitness`. SUP is the hook; WILD0 or FIT-BOT consulted on
+   the paddle read per operator steer.
+2. **`ze-do-coco-santos`** — Canal 6, coconut water and artisanal
+   cocadas, named repeatedly as the orla's known stop. `food-drink`,
+   likely `local-legend`. Directly on the lane.
+3. **`centro-de-paquera-do-embare-santos`** — the CPE, 11 snack kiosks
+   open **24 h** opposite the Basílica de Santo Antônio do Embaré. A
+   consolidated local institution literally named "the Embaré flirting
+   centre". `city-culture` + `local-legend`. Strongest new pin in the
+   cluster and it stands entirely on its own.
+4. **`quiosque-da-helena-guaiuba-guaruja`** — named quiosque on Guaiúba.
+   `food-drink`. Needs its own verification before creation; currently
+   single-sourced.
+5. **The Ponta da Praia elevated calçadão / açaí kiosks** at the ferry
+   end — sunset spot. Possibly a pin, possibly just a beat in the route
+   piece. Decide at draft time rather than forcing a thin page.
+6. **The collection** — CICLOVIA bylined, PAULY SEYA credited on the
+   Santos end, stringing the above along the lane → ferry → cove spine.
+
+### Why this is a real Discover opportunity
+
+**Nobody has written this in English.** Every source found was
+Portuguese-language and mostly municipal. An English-language piece
+carrying the fare table, the 7.874 m figure, the 1.000 W / 20 km/h
+threshold and the H2 2026 pedestrian change has no competition in the
+index and the specificity Discover rewards over listicle padding.
+
+### Illustration
+
+Queued in `content/photo-requests.md` as `santos-guaiuba-de-bike` — a
+mid-century travel-poster schematic route map, operator generating
+externally and dropping into `content/photo-inbox/`. The container ships
+are not decoration: the balsa crosses the working channel of Latin
+America's largest port, which is the hook.

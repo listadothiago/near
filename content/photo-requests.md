@@ -73,3 +73,69 @@ it. Swap `content/collections/the-setlist-2026-10/meta.json`'s
 `content/photo-inbox/`, with `attribution: "Illustration by NEAR — AI-
 generated"` and `attributionLink` pointing at `/about`, then remove this
 entry.
+
+### santos-guaiuba-de-bike — hero for CICLOVIA's Santos → Guaiúba route piece
+
+```
+Mid-century travel-poster illustration of a stylized, schematic coastal
+bike route map, 16:9 aspect ratio, viewed from a high oblique angle so
+the coastline reads as a map but the landscape still has depth.
+
+Composition, left to right: a long curving city beachfront on the left,
+drawn as a simple arc of pale sand with a strip of green park running
+its whole length and a row of flat, blocky pastel apartment towers
+behind it. The towers cluster densest at the left end of the arc, where the
+route begins, thinning out toward the headland point where the arc ends. From that point, a wide
+blue-green water channel cuts diagonally across the middle of the frame,
+with two or three enormous flat-silhouette container ships stacked with
+tiny coloured cargo boxes moving through it, plus a small blunt-nosed
+car ferry crossing perpendicular to them. On the right bank, low green
+hills covered in dense tropical forest, rising steeper toward the back
+of the frame. Nestled into those hills on the far right, a small
+sheltered cove beach with calm water and two or three tiny flat
+silhouettes of stand-up paddleboarders standing upright on boards.
+
+Running across the whole scene, a single bold continuous route line —
+solid, confident, one unbroken stroke — tracing from the left beachfront,
+along the green strip, to the headland point, across the water on the
+ferry, and over the hills to the cove. Mark four or five points along the
+line with simple flat geometric dots or circles. No text labels of any
+kind on the markers.
+
+Style: mid-century modern travel poster / vintage railway tourism poster
+reduction. Flat blocked colour with hard edges, heavily simplified
+geometric shapes, subtle paper grain and slight ink misregistration.
+Limited palette: warm cream/sand, deep teal and ocean blue, forest and
+olive green, burnt orange, with a single acid/lime green used only for
+the route line so it pops against everything else. Slightly muted,
+printed-poster colour, not digital-bright.
+
+Must not look like a real photograph and must not look like a screenshot
+of a real digital map application — no satellite imagery, no photographic
+texture, no realistic water reflections, no 3D rendering, no glossy
+airbrushed "AI art" finish. Flat poster colour blocking only.
+
+Absolutely no legible text, letters, numbers, road numbers, place names,
+compass roses with letters, or scale bars anywhere in the image. No real,
+identifiable people — the paddleboarders and any other figures are
+anonymous flat silhouettes with no facial features. No real company
+logos, shipping-line branding, or brand marks on the container ships.
+```
+
+Reason: CICLOVIA's debut piece is a route with stops (Santos beachfront →
+Ponta da Praia ferry terminal → across the Port of Santos channel →
+Guarujá side → Guaiúba cove). `near-illustrator` lists "a route" and "a
+comparison or a sequence" as the strongest cases for generating rather
+than sourcing — an illustrated route map does argumentative work a photo
+of any single stop cannot, and there is no existing photograph that shows
+the route as a route. Style deliberately varied away from the riso
+default, which is already carrying `the-setlist-2026-10`.
+
+Note the container ships are not decoration: the balsa crosses the working
+channel of Latin America's largest port, and that crossing is the piece's
+hook. Keep them large in frame.
+
+Drop the result in `content/photo-inbox/` with a filename containing
+`santos-guaiuba`. Wire it in with `strategy: "illustration"`,
+`attribution: "Illustration by NEAR — AI-generated"`, `attributionLink`
+pointing at `/about`, then remove this entry.

@@ -252,6 +252,37 @@ adding one at a time.
   **no visible date**, and it still ranks — the direct cause of the
   false-closure signal this piece had to correct.
 
+### Baixada Santista cycling + transport — found researching the Santos → Guaiúba route (2026-09-02)
+
+- `cicloviasdesantos.com` — **Ciclovias de Santos**, a dedicated local
+  site for the city's cycling network. Potentially a real find for
+  CICLOVIA's beat and the only non-municipal source found that treats
+  the lane network as a subject in itself. **Currency unverified** — do
+  not cite until someone confirms it is still publishing.
+- `servicos.sp.gov.br` — São Paulo state's service catalogue. Carries
+  the **official Travessia Santos–Guarujá fare table** (`Ciclistas:
+  Gratuito`, `COBRANÇA UNIDIRECIONAL`) with a last-updated date on the
+  page. Authoritative for fares and gratuities; a reference source, not
+  a discovery one.
+- `alltrails.com` — the orla ciclovia page carries ~35 rider reviews.
+  Recorded specifically because **Reddit returned nothing usable on this
+  crossing across four separate queries** — a genuine null result, not a
+  gap in searching. Where a Brazilian coastal route has no Reddit
+  presence, AllTrails and Google reviews are the available UGC surface
+  and the research floor's Reddit step has to be satisfied elsewhere.
+- ⚠️ `santos.sp.gov.br` — already listed above and still authoritative
+  for civic news, but **flagged for a specific defect**: it publishes
+  mutually contradictory figures for the size of its own bike network
+  (20,9 km, 21 km, 30,9 km and 50 km across municipal and press
+  sources). Cite its *dated, specific* claims (the 7.874 m orla stretch,
+  Lei 4.221/2023, the R$ 88,38 fine) and treat its aggregate statistics
+  as unreliable.
+- 🚫 `santosbikes.com.br` — **not usable.** A Santos bike shop whose
+  rental page returns "Nenhum registro encontrado", with rental absent
+  from its live service menu and a **(47)** contact number (Santa
+  Catarina, not the Baixada). Recorded so the next run does not
+  re-discover it and link it as a rental option.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.
