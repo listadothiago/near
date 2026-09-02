@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { getAllAuthorSlugs, getAuthor } from "@/lib/content/authors";
 import { buildAlternates } from "@/lib/seo/alternates";
+import { CURATOR } from "@/lib/content/curator";
+import { Link } from "@/lib/i18n/navigation";
 import { getAllPlaces, getStats } from "@/lib/content/loader";
 import type { ContentLocale } from "@/lib/content/schema";
 import Header from "@/components/layout/Header";
@@ -55,6 +57,7 @@ export default async function AuthorPage({
   const stats = getStats();
   const t = await getTranslations({ locale, namespace: "author" });
   const tA = await getTranslations({ locale, namespace: `authors.${slug}` });
+  const tCur = await getTranslations({ locale, namespace: "curator" });
 
   return (
     <>
@@ -80,6 +83,20 @@ export default async function AuthorPage({
         </p>
         <p className="mt-3 max-w-[60ch] text-[0.95rem] leading-relaxed text-muted">
           {tA("bio")}
+        </p>
+        {/* The trust chain, made walkable. This byline is a declared AI
+            persona and never a Person in structured data; the link points
+            at the one human who is actually accountable for it. Without
+            this, a reader landing on an author page has no route to a
+            responsible party at all. */}
+        <p className="mt-5 border-t-[length:var(--stroke)] border-[var(--ink)] pt-3 max-w-[60ch] font-mono text-[0.75rem] text-muted">
+          {tCur("oversightNote")}{" "}
+          <Link
+            href={`/about/${CURATOR.slug}`}
+            className="underline underline-offset-4 text-ink"
+          >
+            {CURATOR.name}
+          </Link>
         </p>
       </article>
 

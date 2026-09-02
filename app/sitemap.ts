@@ -4,6 +4,7 @@ import { getAllPlaces } from "@/lib/content/loader";
 import { getAllCollections } from "@/lib/content/collectionsLoader";
 import { getAllAuthorSlugs } from "@/lib/content/authors";
 import { getLocationPages } from "@/lib/content/locationPages";
+import { CURATOR } from "@/lib/content/curator";
 import type { ContentLocale } from "@/lib/content/schema";
 import { getBaseUrl } from "@/lib/seo/site";
 
@@ -77,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     push(locale, "/guides", newestCollection);
     push(locale, "/sources", newestAny);
     push(locale, "/about", newestAny);
+    push(locale, `/about/${CURATOR.slug}`, newestAny);
 
     // Column landing pages list collection issues, so they move with them.
     for (const col of [

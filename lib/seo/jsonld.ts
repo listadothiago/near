@@ -96,3 +96,66 @@ export function buildCollectionJsonLd({
     "@graph": [itemListNode, articleNode],
   };
 }
+
+/**
+ * The curator's `Person` node — the only one on the site.
+ *
+ * Near's bylines are AI personas and are marked `Organization` wherever
+ * they appear (see `buildPlaceJsonLd`). That is a correctness rule, not a
+ * modesty one: telling a search engine a generated persona is a human
+ * being is a lie it is specifically built to detect. So exactly one real
+ * human is declared here, as the publisher's founder, and every claim in
+ * it is checkable against a public profile.
+ */
+export function buildCuratorJsonLd({
+  url,
+  siteUrl,
+  name,
+  jobTitle,
+  description,
+  sameAs,
+  degree,
+  worksFor,
+}: {
+  url: string;
+  siteUrl: string;
+  name: string;
+  jobTitle: string;
+  description: string;
+  sameAs: readonly string[];
+  degree: { name: string; institution: string };
+  worksFor: readonly { org: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": `${url}#person`,
+        name,
+        jobTitle,
+        description,
+        url,
+        sameAs: [...sameAs],
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: degree.institution,
+        },
+        hasCredential: {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "degree",
+          name: degree.name,
+        },
+        knowsAbout: worksFor.map((w) => w.org),
+        founderOf: { "@id": `${siteUrl}#organization` },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${siteUrl}#organization`,
+        name: "Near",
+        url: siteUrl,
+        founder: { "@id": `${url}#person` },
+      },
+    ],
+  };
+}
