@@ -119,7 +119,7 @@ this trip** — keep them queued, but they are not tester-verifiable this
 week. The two venues below are what the friend is literally going to
 stand inside, and Near has neither.
 
-- [ ] **The Gilbert & George Centre, 5a Heneage Street, Spitalfields E1 5LJ** — CUBIC-V. **Highest tester value in the whole batch.** Free entry, on Gilbert & George's own "Art for All" principle; free highlight tours Saturdays at 4pm. **CRITICAL PRACTICAL DETAIL: open Thursday to Sunday only, 11:00–17:45.** A visitor arriving Mon–Wed cannot get in, and that is exactly the fact a guide should lead with rather than bury. Currently showing 'Our George Crompton, WORLDS and WINDOWS'. **INTERNAL LINK READY:** Near already publishes the Old Truman Brewery on Brick Lane, a few minutes' walk.
+- [x] **The Gilbert & George Centre, 5a Heneage Street, Spitalfields E1 5LJ** — CUBIC-V. **SHIPPED 2026-09-02**, six locales, live. Hours correction confirmed against the official visitor page (Thu–Sun 11:00–17:45; aggregators publish '10am–5pm' and are wrong). Carries the Backyard Biennial: East (15 Jul–6 Sep 2026), which EXPIRES 6 SEP — flagged to near-caretaker. **Highest tester value in the whole batch.** Free entry, on Gilbert & George's own "Art for All" principle; free highlight tours Saturdays at 4pm. **CRITICAL PRACTICAL DETAIL: open Thursday to Sunday only, 11:00–17:45.** A visitor arriving Mon–Wed cannot get in, and that is exactly the fact a guide should lead with rather than bury. Currently showing 'Our George Crompton, WORLDS and WINDOWS'. **INTERNAL LINK READY:** Near already publishes the Old Truman Brewery on Brick Lane, a few minutes' walk.
 - [ ] **V&A East Museum, East Bank, 107 Carpenters Road, Queen Elizabeth Olympic Park, Stratford E20 2AR** — CUBIC-V. Opened **18 April 2026**. Admission free, including two permanent "Why We Make" galleries with 500+ objects. Opening exhibition *The Music is Black: A British Story*, 125 years of Black British music, ticketed separately at £22.50 (£10 for students and under-26s) — so "free museum, paid headline show" is the honest framing.
 - [ ] **V&A East Storehouse, Hackney Wick** — CUBIC-V. Opened 2025. **THE CORRECTION: this is a SEPARATE venue from the V&A East Museum above, in a different neighbourhood, and listings routinely conflate the two.** 250,000 objects and 350,000 books in a working, behind-the-scenes store you can walk into. Verify the current access/booking model at draft.
 
@@ -221,3 +221,28 @@ _Amsterdam note: no coffeeshop cleared the two-source bar this pass — the hone
 _Maintenance: whoever drafts a post ticks it here in the same commit.
 near-refresh reads this file; the rotation position is wherever the last
 shipped post sits in the order above._
+
+
+## OPERATOR OVERRIDE, 2026-09-02: LONDON ONLY
+
+The rotation cadence is SUSPENDED. Operator: "our focus for now is
+london london london ... lets push as much london content live as we
+can asap." London is not taking its turn in the round-robin, it is
+taking every turn until the operator says otherwise. **Do not advance
+the cycle counter in the Rotation position block for pieces published
+under this override** — they are not London's turn, they are an
+override, and advancing the counter would silently cost Brighton, San
+Francisco and Oakland their places.
+
+Reader profile for this run, which should change what gets picked: two
+hip locals (one straight woman, one gay and nerdier), plus a visiting
+tester. Locals do not need landmarks. They need **specific dated
+events, at short notice, the week of 2026-09-07, daytime preferred** —
+a deliberate one-off inversion of the site-wide "favor further-out
+dates" preference, justified only by a tester being on the ground.
+Run `near-events` before drafting.
+
+Format rule for this run, from the reader directly: essential info
+(address, price, exact hours, dates, booking) goes INLINE in bullets
+and body. Sources prove the claim; they are never the only way to get
+the fact.

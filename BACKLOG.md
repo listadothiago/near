@@ -1,5 +1,69 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🔖 OPEN CAPTURE (2026-09-02, end of session — read first)
+
+Session ended on the operator's call, low on tokens, immediately after
+publishing `gilbert-and-george-centre-london` (CUBIC-V, six locales,
+built, committed, pushed live). Four operator directives arrived
+mid-turn and are captured here rather than acted on:
+
+1. **THE AD BOX UNDER THE MAP IS STILL TOO TALL — HALVE IT AGAIN.**
+   Operator, verbatim: *"the ad box under map should be half as tall
+   ... its still quite tall."* This is a SECOND pass on the same
+   complaint, not a duplicate of the resolved item at line ~321 or
+   ~463. Earlier this session it went 300x250 `mrec` → 320x100
+   `mobile-banner` in `app/[locale]/page.tsx` (measured live in Chrome:
+   291px → 141px). The operator has now looked at the 141px result and
+   still wants it roughly halved. Options for whoever picks this up:
+   drop `stretch` (which is inflating the rendered height above the
+   nominal 100px), add a genuinely short format to
+   `components/ads/Placement.tsx`'s `TYPE` map, or cap the container.
+   **Constraint that still holds: never put a CSS filter on an ad
+   iframe** — reads as click manipulation, gets AdSense accounts
+   banned. Also do not sell a format wider than the column's fixed
+   300px, which is why `leaderboard` was rejected before.
+
+2. **LONDON ONLY, FOR NOW.** Operator: *"our focus for now is london
+   london london"* and *"lets push as much london content live as we
+   can asap."* This SUSPENDS the `content-rotation` tier cadence for
+   the duration — London is not taking its turn, it is taking every
+   turn. The cycle counter in `content/post-plan.md` should NOT be
+   advanced for these pieces; note them as an operator override.
+
+3. **WRITE FOR A LOCAL, NOT JUST A VISITOR — AND FIND DATED DAYTIME
+   EVENTS.** Two readers in play: a straight, very hip local woman and
+   a gay, very hip, nerdier friend. Both live there or know it, so
+   "here is a famous thing" is worthless to them. What is wanted is
+   **specific dated events, short notice, the week of 2026-09-07,
+   daytime preferred.** This is a deliberate ONE-OFF exception to the
+   standing "favor further-out dates" preference, granted only because
+   a real tester is on the ground this week — do not generalise it.
+   `near-events` should run before drafting, per the pipeline.
+
+4. **ESSENTIAL INFO INLINE, SOURCES AS PROOF.** Operator, relaying the
+   reader: *"she wants complete info, with sources but not having to
+   click the sources to quickly view the essential info."* Address,
+   price, exact hours, dates, booking rules and phone numbers belong in
+   the body and bullets; links exist to prove the claim, never as the
+   only route to it. The Gilbert & George piece is the reference
+   implementation. Worth promoting into
+   `near-editor/references/style-guide.md` as a standing rule.
+
+**Still-blocked London items** (unchanged, both real blockers):
+Sister Midnight needs an `'opening'` value in the place status enum in
+`lib/content/schema.ts`, plus display wiring in
+`components/place/PlaceHero.tsx` and locale strings; Hampstead Heath
+ponds has a bot-blocked source and needs browser-automation
+verification.
+
+**Next London pins, already researched and queued in
+`content/post-plan.md`, in drafting order:** V&A East Museum and V&A
+East Storehouse (separate venues — listings conflate them), Bar Italia
+(closes the logged `hazlitts-london-no-natural-internal-link`
+request), E. Pellicci (currency risk: depends on a named living
+person, re-verify at draft), La Camionera (filed under Dalston by
+guides; actually Well Street, Hackney E9), The Divine.
+
 ## 🔖 SESSION HANDOFF (2026-09-01, late night — read first)
 
 Ending on operator's own call, low on tokens. Shipped this pass: search
