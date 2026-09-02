@@ -2018,17 +2018,33 @@ _Scoped once, drafted across sessions (operator's standing preference for
 multi-item pushes). This block is the contract; each drafting session takes
 one numbered unit and does not re-scope._
 
-**State going in:** 20 active London pins, spread across Soho, Bloomsbury,
-Peckham, Dalston, Clapham, Shoreditch, Whitechapel, Herne Hill, King's
-Cross, Walthamstow, Royal Docks. **Zero London collections.** No `/london`
-page. `place.neighborhood` is populated in `meta.json` but nothing on the
-board reads it.
+**Scope revised mid-session after an absorption pass over the local
+feedback files (operator: "before a big content push we should absorb all
+of that and figure out how we gonna work"). The first version of this
+block was written without that sweep and got London's shape wrong. What
+follows replaces it.**
 
-**The Product Trio's read: London's gap is not more pins, it's that the 20
-already there are unreachable as a set.** A reader who lands on Wilton's
-has no route to the other nineteen. That makes the collection and the city
-scope the highest-value units here, and it inverts the usual war-room
-order — narrative layer first, new pins second.
+**Real state, counted rather than assumed** (board pins via `getAllPlaces`,
+2026-09-02): **19 active London pins across 17 neighborhoods.** Every one
+of those neighborhoods sits at 1 pin except Shoreditch (2) and St James's
+(2). Zero London collections.
+
+That number kills the previous framing. London's problem is not that 20
+pins are unreachable as a set — it's that **London is 17 one-pin
+neighborhoods**, and per the 2026-09-02 neighborhoods directive the
+threshold that matters is 2 pins for a location page at all and **4 pins
+before it stops rendering thin**. London currently clears the second
+threshold nowhere.
+
+**So the unit of work is a neighborhood, not the city.** Three pins in one
+London neighborhood beats three across three, and the "spread the city"
+instinct is precisely what the directive rules out.
+
+**Soho is disqualified on saturation** (operator: *"up and coming too, not
+the ones already covered way too much elsewhere"* — a disqualifier, not a
+tiebreak). Finishing Bar Italia is still correct, because it's an existing
+pin being completed, not a Soho push. It takes Soho to 2 and no page gets
+built there.
 
 Units, in execution order:
 
@@ -2036,36 +2052,92 @@ Units, in execution order:
    written, hero sourced (Matt Brown, CC BY 2.0, 2025 storefront), build
    passes. **Still owed before active:** a 16:9 hero crop, the step 9a
    `google-discover-audit`, sign-offs, and all five non-English locales.
-   Held at `status: "draft"` until then.
-2. **The collection — "London institutions that refuse to die."** The
-   angle the 2026-08-31 slate already identified, and the one the existing
-   pins actually support: Wilton's (1850s), Bar Italia (1949), Berry Bros.
-   (1698), Gay's the Word (1979), Central Station (1974), Brockwell Lido
-   (1937). `near-blogger`, cross-linking every pin. This is the unit that
-   turns 20 orphans into a set.
-3. **`/london` city landing page + city scope on the board.** Operator
-   resolved this 2026-08-31 — build alongside the content, reusing the
-   Board. `near-tech-lead` + `near-lead-ux`. The board has no city filter
-   today; search is text-match only.
-4. **New pins, only after 1–3.** From the slate's own pending list —
-   Hampstead Heath ponds (WILD0, fetch was bot-blocked), Sister Midnight
-   (pin with `opening` status per the operator's resolution),
-   FOODIE-9000's family-caff leads. Each needs
-   `verify-still-open-before-create` re-run; the slate is a year old in
-   research terms.
+   Held at `status: "draft"` until then. **Going active also closes the
+   open `hazlitts-london-no-natural-internal-link` request** in
+   `content/requests.md` — Bar Italia is the Frith Street neighbour that
+   request was waiting for, 100m from Hazlitt's, and the Bar Italia body
+   already links back. Add the reciprocal link from Hazlitt's and mark the
+   request fulfilled at the same time.
+2. **Take one London neighborhood from 1 to 4.** Per the directive's own
+   tables, London's eligible targets are **Dalston (queer, +3)**,
+   **Peckham (+3)** and **Walthamstow (+3)**. Dalston is the
+   recommendation: it's the one that also serves the operator's standing
+   London angle asks (more LGBTQ+, sober/sporty, vegan, pet-friendly
+   London, BACKLOG line ~1064), and Dalston Superstore is already the
+   foothold. Selection is a content call — `near-seo` + `near-trendsetter`
+   + chief editor, not the trio.
+3. **The collection — "London institutions that refuse to die."** English
+   body drafted 2026-09-02 (`content/collections/london-institutions-that-refuse-to-die/`),
+   five pins: Berry Bros (1698), Wilton's (1859), Brockwell Lido (1937),
+   Central Station (1974), Gay's the Word (1979). Bar Italia is
+   deliberately **not** in it — a `<NearLink>` to a draft slug is a dead
+   link, since `loader.ts` filters drafts off. Fold it in as the sixth
+   when it goes active. Still owed: `meta.json`, sign-offs, step 9a, five
+   locales.
+4. **New pins beyond the neighborhood target**, last. Hampstead Heath
+   ponds (WILD0, the fetch was bot-blocked), Sister Midnight (pin with
+   `opening` status per the operator's resolution), FOODIE-9000's
+   family-caff leads. Each needs `verify-still-open-before-create` re-run
+   — the slate's research is from 2026-08-31.
 
 **Deprioritised, deliberately:** the themed London sub-lists in "Next Up"
 (Lactose-Intolerant, Vegan, Sober Gay, Martial Arts, pet-friendly, Goth,
-Indie sleaze). Each is a collection over pins that mostly don't exist yet
-— they get cheap once unit 4 has run a few cycles, and expensive if forced
-now.
+Indie sleaze) — collections over pins that mostly don't exist yet. Also
+**dropped from this scope: a `/london` city landing page.** The location
+layer at `/in/[...location]` already is the city scope; building a
+parallel city page while no London neighborhood clears 4 pins would be
+decorating an empty room.
 
-**First finding, worth recording:** the new `google-discover-audit` card
-spec killed a hero on its first real use. The obvious Bar Italia photo on
-Commons (Spudgun67, 2014) is 3000×4000 **portrait** and fails outright.
-The replacement is 4032×3024 — clears the 1200px/300,000px floor, but it's
-4:3, not 16:9, so a crop is owed. Expect this to recur: Commons
-architecture photography skews portrait, because buildings are tall.
+### Captured from the absorption sweep — open, and affecting this push
+
+- **Wilton's hero fails the card spec.** `Wilton's Music Hall -
+  Auditorium (2013).jpg` is **500×329** — under the 1200px width floor and
+  under 300,000 total pixels, on an **active** pin. Re-source:
+  `Wilton's Music Hall - geograph.org.uk - 1756668.jpg` (Paul Smith,
+  CC BY-SA 2.0, 3072×2304) shows the Graces Alley terrace, which is the
+  page's own central fact. → `near-illustrator`.
+- **A full hero-dimension audit is owed catalogue-wide.** Wilton's was
+  found by accident. Nothing has ever checked the others, and
+  `heroImageSchema` has no width/height to check against — the two
+  findings compound. → `near-tech-lead` (schema) + `near-illustrator`
+  (sweep).
+- **`content/opportunities.md` is stale on London.** Its rank-3
+  `london-autumn-culture-season` entry says Wilton's and Studio Voltaire
+  are "verified but still undrafted" — both have been active since
+  2026-09-01. The seasonal window it describes is real; the premise
+  underneath it isn't.
+- **Berry Bros. still owes five locales and an art-direction pass**, per
+  the 2026-08-31 slate. It's in the collection above, so this is now
+  load-bearing.
+- **Boxpark flagged thin by PLINIO** (asserts novelty without
+  interrogating displacement) — a depth fix, not a correction.
+- **Walthamstow Wetlands' own site carried a path-closure notice dated
+  "through August 2025"** — never resolved as stale copy vs extended
+  closure. Cheap `near-caretaker` check, and it gates Walthamstow as a
+  neighborhood target.
+- **Discover card spec, first real use.** It killed a hero immediately:
+  the obvious Bar Italia photo on Commons (Spudgun67, 2014) is 3000×4000
+  **portrait** and fails outright. Commons architecture photography skews
+  portrait because buildings are tall — now recorded in
+  `near-illustrator`, along with the trap that `<Figure>` and `PlaceHero`
+  both crop to 16:9 in the layout while the OG/Discover card uses the raw
+  file, so a 4:3 hero looks fine on-site and still ships a 4:3 card.
+
+### How we work — the gap this sweep exposed
+
+`near-war-room` step 3 says "check for existing coverage first." It does
+not say **read the feedback files first**, and so this push started by
+re-deriving London from `content/places/` while the answer — a whole
+operator directive that disqualifies Soho and redefines the unit of work —
+sat unread in this same file. That is a process bug, not a judgment call.
+
+**Fix: a war room opens by draining the local feedback surfaces**, before
+scoping and before research —`BACKLOG.md`'s operator directives,
+`content/requests.md` (open requests), `content/opportunities.md`,
+`content/photo-requests.md`, `content/_ingestion-log.md`. Anything found
+gets folded into the scope block or explicitly deprioritised there;
+anything stale gets corrected in place rather than worked around.
+Codified as step 0 in `.claude/skills/near-war-room/SKILL.md`.
 
 ### London war-room slate (full roster convened 2026-08-31; operator-invited, all skills present)
 

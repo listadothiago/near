@@ -71,11 +71,17 @@ loses relevance there.
    (BACKLOG.md's ranked list) already contains exactly this content —
    Wilton's Music Hall's Sept 2026 listings and Studio Voltaire's current
    commissions were verified live 2026-08-31 but are still undrafted.
-   This is a seasonal opportunity Near can capture with zero new
-   research, just by drafting what's already verified. Byline order:
-   Wilton's (PLINIO) and Studio Voltaire (CUBIC-V) first since they're
-   the ones with dated, season-specific hooks; Gay's the Word and London
-   Otters aren't season-locked so can follow.
+
+   **Corrected 2026-09-02 (London war room, absorption sweep): the
+   premise above is stale.** Wilton's, Studio Voltaire, Gay's the Word
+   and London Otters are all `active` and have been since 2026-09-01 —
+   the "zero new research, just draft what's verified" win was already
+   taken. The seasonal window itself is still real, so this stays ranked,
+   but it now needs **new** material rather than drafting a backlog that
+   no longer exists. Re-scope against the neighborhoods directive before
+   promoting it: London's unit of work is a neighborhood to 4 pins, and
+   an autumn-culture angle only pays if it lands inside Dalston, Peckham
+   or Walthamstow rather than spreading across another four postcodes.
 4. **`london-martial-arts-and-sober` (was rank 3 → now rank 4).** Still
    real (FIT-BOT's first byline, opens wellness-fitness in London) but
    has no September-specific hook, so it sits behind the two seasonally

@@ -1,0 +1,30 @@
+{
+  "slug": "london-institutions-that-refuse-to-die",
+  "placeSlugs": [
+    "berry-bros-and-rudd-london",
+    "wiltons-music-hall-london",
+    "brockwell-lido-london",
+    "central-station-kings-cross-london",
+    "gays-the-word-london"
+  ],
+  "author": "plinio",
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Wilton%27s_Music_Hall_-_geograph.org.uk_-_1756668.jpg",
+    "attribution": "Paul Smith, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Wilton's_Music_Hall_-_geograph.org.uk_-_1756668.jpg",
+    "licenseNote": "The Graces Alley frontage — the terrace Wilton's hides behind, which is the piece's own central fact. 3072x2304, clears the Discover card floor; 4:3 rather than 16:9, so a crop is owed before this goes active. Verified on the file's Commons page before use."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "London war room, unit 3. English body drafted by PLINIO. Asserts no facts beyond what the five member pages already establish and source — every date, figure and name here is carried from those pins, not newly researched. Bar Italia is deliberately EXCLUDED despite fitting the theme: it is status draft, and loader.ts filters drafts off, so a NearLink to it would be a dead link. Fold it in as the sixth member when it goes active. Held at draft pending: near-tov-police / near-legal-counsel / chief-editor sign-off, the mandatory google-discover-audit step 9a, a 16:9 cover crop, and all five non-English locales. Note for whoever picks this up: Berry Bros. still owes five locales and an art-direction pass from the 2026-08-31 slate, and it is load-bearing here."
+    }
+  ],
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}

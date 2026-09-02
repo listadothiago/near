@@ -45,6 +45,28 @@ every time:
 
 ## Pipeline
 
+0. **Drain the local feedback surfaces first.** Before scoping, before
+   research, before touching `content/places/`. Read, for anything
+   touching this topic or destination:
+   - `BACKLOG.md`'s operator directives — the standing ones, not just
+     the war-room slate for this city. A directive can redefine the unit
+     of work or disqualify a target outright.
+   - `content/requests.md` — every entry still marked `status: open`.
+   - `content/opportunities.md` — and **correct it in place if it's
+     stale**, rather than working around it.
+   - `content/photo-requests.md` and `content/photo-inbox/`.
+   - `content/_ingestion-log.md` for the last runs on this topic.
+
+   Everything found goes into the scope block in step 1, either folded in
+   or explicitly deprioritised with a reason. **Added 2026-09-02 after
+   this step's absence cost a real push:** the London war room was scoped
+   by re-deriving the city from `content/places/`, while the 2026-09-02
+   neighborhoods directive — which disqualifies Soho on saturation and
+   makes "take one neighborhood to 4" the unit of work rather than "add
+   pins to a city" — sat unread in `BACKLOG.md`. The scope had to be
+   rewritten mid-session. Coverage counting is step 3; this is not that.
+   This is reading what the operator already decided.
+
 1. **Scope the push.** Take the operator's topic/destination (a
    `BACKLOG.md` war-room entry, or a fresh request) and define what
    "done" looks like: roughly how many pins, whether one blog post or

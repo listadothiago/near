@@ -224,6 +224,21 @@ hard spec on top of the taste call: **at least 1200px wide, more than
 text-heavy graphics are called out by Google by name, and a
 portrait-orientation crop fails the card however good the image is.
 
+**Wikimedia Commons architecture photography skews portrait**, because
+buildings are tall and photographers frame them that way. Expect the
+best-composed shot of a venue's exterior to be the one that fails the
+card, and expect to be choosing the second-best landscape frame instead.
+Found on the first real run of this check (Bar Italia, Soho, 2026-09-02:
+the obvious 2014 Commons shot is 3000×4000 portrait and fails outright;
+the replacement is 4032×3024). **Search Commons for landscape candidates
+first** rather than picking on composition and then measuring.
+
+A related distinction worth holding: `<Figure>` and `PlaceHero` both
+crop to 16:9 in the layout, so a 4:3 source *looks* right on the page.
+The Discover/OG card does not use that crop — it uses the raw
+`heroImage.url`. A 4:3 hero therefore passes visually on-site and still
+ships a 4:3 card. Judge the file, not the rendered page.
+
 Check this while sourcing or generating, not after —
 `google-discover-audit` re-checks it at `near-write-article` step 9a and
 hands failures straight back here, which is a wasted lap. Verified

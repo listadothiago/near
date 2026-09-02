@@ -211,6 +211,16 @@ why: >
   per the link-density escape hatch. Revisit once Near has a genuine Soho
   place published (a bar, bookshop, or venue on/near Frith or Dean
   Street) that the Hazlitt's body could plausibly send a reader to next.
+update: >
+  2026-09-02 — the target now exists in draft. bar-italia-soho-london is
+  at 22 Frith Street, roughly 100m down the same pavement from Hazlitt's
+  at number 6, and its body already links back to Hazlitt's on exactly
+  the contrast this request was waiting for (a hotel selling silence, and
+  the counter still serving at four in the morning when the silence stops
+  working). Held open only because Bar Italia is status draft and
+  loader.ts filters drafts off, so a NearLink from Hazlitt's would be a
+  dead link today. Close this the moment Bar Italia goes active, adding
+  the reciprocal link in the same pass.
 status: open
 ```
 
