@@ -85,6 +85,60 @@ Everything downstream waits on that.
 **Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
 until `near-seo` has real Search Console data.
 
+## 🖼️ Discover readiness audit (2026-09-02) — MEASURED, two fixed, one systemic gap open
+
+Operator supplied a five-point Google Discover checklist. Audited each against
+the actual site rather than agreeing in principle. Scores below are honest.
+
+| checklist item | state |
+|---|---|
+| `max-image-preview:large` | ✅ **shipped today** (commit 389e698) |
+| Indexation | 🟡 sitemap 612 URLs, resubmitted 2026-09-02, waiting on Google |
+| Mobile-first UX | 🟡 tablet-width overflow bug found and fixed today (6c86e03); speed unmeasured |
+| Images ≥1200px wide | ❌ **only 32 of 60 heroes pass** — see below |
+| E-E-A-T / bylines | 🟡 bylines + author pages exist; the provenance DDR is the open work |
+| Headlines, no clickbait | 🟡 rules exist; headline-formula retrofit still open |
+
+### Hero-image measurement (all 60 places, real pixel dimensions)
+
+Measured by range-fetching each hero and parsing the JPEG/PNG/WEBP header —
+not by trusting the URL. Script kept at `scratchpad/imgsize2.mjs` pattern;
+re-runnable. **Throttle it**: Wikimedia 429s aggressively on parallel fetches
+and needs a descriptive `User-Agent`.
+
+- **32 of 60 are ≥1200px** and Discover-eligible for the large treatment.
+- **17 are under 1200px**, worst first: 480px (ica-london, since replaced),
+  570px (djapa-sao-paulo, pracinha-do-seu-justino-sao-paulo), 640px
+  (restaurante-almeida-santos), 740px (cuia-copan-sao-paulo), 800px
+  (de-trut-amsterdam), 940px (gays-the-word-london), 945px, 997px, then a
+  cluster at 1024–1089px.
+- **11 unresolved** (Wikimedia 429) — re-run to finish the count.
+
+### Two bugs found and fixed the same day
+
+1. **`legends-hotel-brighton` was serving a hero image that 404s on a live,
+   `active` page.** The Commons URL used hash directory `9/9e`; the file is
+   under `8/8f`. **The two-level hash path is derived from the filename's MD5
+   and cannot be guessed** — whoever wrote that URL constructed it by hand.
+   Fixed. **Standing rule: verify a hero URL returns 200 before publishing,
+   and get Commons URLs from the API (`action=query&prop=imageinfo`), never by
+   assembling them.**
+2. `ica-london` hero swapped from a 480×640 portrait shot in 2006 to a CC0
+   4645×3100 frontage photographed 17 May 2026.
+
+### The systemic one, for `near-illustrator` — still open
+
+**Near's own generated illustrations are 1024×572** (`ishigaki-jujitsu-london`,
+`lucky-saint-fitzrovia-london`). Those are the images Near fully controls, and
+they are the ones failing the threshold by spec rather than by luck. The
+generation spec should produce **≥1200px wide** so anything Near makes itself
+clears Discover automatically. Sourced photos will always vary; house-made
+assets shouldn't.
+
+Also open: a re-check pass for the 17 undersized heroes, preferring a larger
+file of the same subject on Commons (the API returns `width`/`height`, so this
+is mechanical) over regenerating anything.
+
 ## 📈 Google Trends dump (2026-09-02) — INPUT, mostly not usable
 
 Operator pasted a Trends comparison of London / San Francisco / São Paulo and
