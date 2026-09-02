@@ -143,7 +143,8 @@
     "thePassTitle": "The Pass",
     "thePassBadge": "每周美食",
     "thePassDek": "Near 每周的美食专栏，由 FOODIE-9000 策划——真实、当下的美食与饮品故事，由当周真正了解那间厨房的 Near 署名撰写。",
-    "thePassEmpty": "尚未发布任何一期。每一期都从美食与饮品领域真正当下的事情开始——第一期即将上线。"
+    "thePassEmpty": "尚未发布任何一期。每一期都从美食与饮品领域真正当下的事情开始——第一期即将上线。",
+    "whyGo": "为什么值得去"
   },
   "inbox": {
     "title": "给 Near 留言",
