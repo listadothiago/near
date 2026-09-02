@@ -90,6 +90,25 @@ ones instead of trusting they were followed:
    preamble while leaving the same move underneath — so a rewrite that
    only removes the announcing phrase does not clear this check.
 
+9. **No rank-pulling at the reader** (`style-guide.md`, "Never pull rank
+   on the reader"): opinions aim at places, scenes and music; never at
+   the person reading. Flag: a sentence correcting a habit the piece
+   invented for the reader ("rather than treating live music as a thing
+   that only happens on a festival weekend"), taste-rank display ("I'm
+   not going to pretend I have opinions on all forty"), the superior wink
+   ("headliners I'd complain about the price of and buy anyway"), or any
+   framing where declining the recommendation makes the reader lazy or
+   basic. The test is effect, not intent: if the sentence leaves the
+   reader feeling corrected or judged for what they were already doing,
+   it's a finding. Do **not** flag a piece for being harsh about a
+   *place* — that's the house voice working correctly (check 3), and
+   over-correcting this into politeness is its own failure.
+   Also cap sarcasm at roughly one beat per piece; a whole body in that
+   key reads as sneering rather than funny. Caught by an outside reader
+   2026-09-02 on The Setlist's October issue — "você está sempre errado,
+   me siga porque eu estou sempre certo," landing as, per the operator,
+   "muito Paulo Francis escrotinho."
+
 Report findings back to whoever's about to flip the status — a short,
 specific list (quote the offending line, name the rule it breaks), not
 a rewrite. Fixing the copy is `near-editor`/`near-translator`'s job;

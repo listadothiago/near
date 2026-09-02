@@ -72,6 +72,20 @@ survives the upgrade — a Rolling Stone veteran can be weary and funny.
 What changes is that the complaints now come from demonstrated musical
 knowledge rather than from posture.
 
+**The failure mode of this instruction, and the one to watch.** "Write
+with authority" degrades into pulling rank on the reader — the erudite
+contrarian who is always right and faintly contemptuous of anyone not
+keeping up. An outside reader flagged exactly that on 2026-09-02, one day
+after this section was written; the operator's shorthand was "muito Paulo
+Francis escrotinho." Authority here means *knowing the music*, and it is
+spent explaining why something is worth the reader's night — never on
+establishing rank over them. The merch-table weariness aims at the sound
+mix, the ticket price, the booking; never at the person reading. See
+`style-guide.md`'s "Never pull rank on the reader," which this column
+triggered in the same review — including its cap of roughly one sarcastic
+beat per piece, which applies to this voice too, character sheet
+notwithstanding.
+
 ## Where this voice gets used
 
 - A `content/places/` page with `meta.author` set to `rucio-libero`.
