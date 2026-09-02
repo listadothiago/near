@@ -2843,3 +2843,55 @@ mid-century travel-poster schematic route map, operator generating
 externally and dropping into `content/photo-inbox/`. The container ships
 are not decoration: the balsa crosses the working channel of Latin
 America's largest port, which is the hook.
+
+### Calls made by the chief editor and the Product Trio, 2026-09-02
+
+Operator directive: *"let chief editor, product trio and any agents they
+invoke make those calls."* These are decided. The drafting session
+inherits them and does not re-litigate them.
+
+**`near-lead-product` declined the content ranking, correctly.** Its own
+scope note carves content priority out to `near-seo` +
+`near-trendsetter` + the chief editor. It ruled only on dependency and
+horizon, which are structural rather than editorial.
+
+**Horizon: this batch, the next two sessions.**
+
+- **Must — `praia-da-guaiuba-guaruja`.** On dependency, not merit. It is
+  the destination and the collection cannot ship without it. RICE ranks
+  it below the CPE; MoSCoW overrides, because a low-scoring item that
+  unblocks a high-scoring one is a Must regardless of score. This is the
+  exact blindness the RICE+MoSCoW directive exists to catch.
+- **Must — the CICLOVIA collection.** Operator-directed debut.
+  Obligation, not reach.
+- **Should — `ze-do-coco-santos`, `centro-de-paquera-do-embare-santos`.**
+  Both stand alone; neither blocks anything.
+- **Won't, this batch — `quiosque-da-helena-guaiuba-guaruja`.**
+  Single-sourced. **Flip condition:** one independent source confirming
+  it currently trades. Recorded as a decision, not left to rot.
+
+**Chief editor — Ponta da Praia elevated calçadão is a BEAT, not a pin.**
+No named venue behind it: "the açaí kiosks at Ponta da Praia" has no
+single address and no operator, so nothing satisfies
+`verify-still-open-before-create`, and the page would be about a
+pavement. Thin pages cost board trust. As a beat it does more work
+anyway — it is the hinge of the route, the last stop on the Santos side
+before the boat. **Flip condition:** a specific named kiosk there
+verifies, at which point it earns its own pin.
+
+**Chief editor — framing: open on the boat, not the bike.** The lane is
+the setup; the crossing is the story. Open on a protected bike lane that
+runs seven kilometres along a beach and then does not stop at the water —
+it continues onto a ferry, across the working channel of Latin America's
+largest port, close enough to container ships that they fill the frame.
+That is the sentence nobody has written in English and it earns the piece
+before any fare, distance or regulation appears.
+
+Second beat is the tradition line — free and boarding ahead of the car
+queue since at least 2011 — which reframes the ride as a decision the
+city made and kept rather than a transport quirk.
+
+**Regulations, wattage, Bike Santos pricing and the fare are service copy
+and run below the fold.** They are genuinely useful and they must not
+smother the hook. This is consistent with the operator's separate steer
+not to build the piece on the fare.
