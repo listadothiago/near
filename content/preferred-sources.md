@@ -165,6 +165,35 @@ Still open from this batch:
   (reliable `og:image`, useful for source-tier hero images). Found
   researching the same piece; not yet trust-tested across multiple hits.
 
+### San Francisco — whole-city gap, found researching `the-stud-san-francisco` (2026-09-02)
+
+SF is a **Tier 1 rotation city with three published pins and zero
+watched sources**. Every source below was found from scratch on a single
+piece, which is the tell. Worth a batch onboarding pass rather than
+adding one at a time.
+
+- `missionlocal.org` — nonprofit local newsroom, Mission/SoMa focus.
+  Broke the Meta/Instagram reversal on The Stud and covered the Stud
+  Alley arrests independently. Strongest of these for Near's beat:
+  neighbourhood-level, covers queer nightlife as civic news rather than
+  listings. Highest-priority graduation candidate.
+- `sfist.com` — SF news/culture blog, close daily coverage of nightlife,
+  venues and closures. Reliable dated reporting; useful for currency
+  checks by `near-caretaker`.
+- `sfbaytimes.com` — LGBTQ+ community paper, publishes the small-business
+  and community-institution angle other outlets skip. Directly on
+  Near's beat.
+- `sfheritage.org` — SF Heritage's Legacy Business profiles. Not a feed
+  and not news, but an authoritative reference for founding dates,
+  addresses, ownership history and legacy status. Best used as a
+  verification source, not a discovery one.
+- `sfchronicle.com` — metro daily. **Paywalled**, headline/lede only via
+  fetch; usable for corroboration, not as a primary.
+- `studsf.com` — the venue's own site and calendar. Flagged for
+  `near-caretaker`: its `/closed` page is a spring-2020 announcement with
+  **no visible date**, and it still ranks — the direct cause of the
+  false-closure signal this piece had to correct.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.

@@ -1,0 +1,95 @@
+{
+  "slug": "the-stud-san-francisco",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 37.7766,
+    "lng": -122.4093
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "SoMa",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "The Stud — official site",
+      "url": "https://www.studsf.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "The Stud — events calendar (official)",
+      "url": "https://www.studsf.com/calendar",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "The Stud — 2020 closure announcement for the 9th & Harrison location (official, undated on page)",
+      "url": "https://www.studsf.com/closed",
+      "feedId": null,
+      "originalPublishedAt": "2020-05-01T00:00:00Z"
+    },
+    {
+      "name": "SF Heritage — The Stud (Legacy Business profile)",
+      "url": "https://www.sfheritage.org/community/the-stud/",
+      "feedId": null,
+      "originalPublishedAt": "2024-04-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — The Stud (bar)",
+      "url": "https://en.wikipedia.org/wiki/The_Stud_(bar)",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Mission Local — After outcry, Meta reverses suspension of SoMa queer bar's Instagram page",
+      "url": "https://missionlocal.org/2026/07/soma-queer-gay-bar-meta-suspended-instagram-hate-homophobia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-26T00:00:00Z"
+    },
+    {
+      "name": "SFist — Stud Asks Meta For Help With Instagram Suspension, Asserts Posts Falsely Flagged as Human Trafficking",
+      "url": "https://sfist.com/2026/07/25/stud-asks-meta-for-help-with-instagram-suspension-asserts-posts-falsely-flagged-as-human-trafficking/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-25T00:00:00Z"
+    },
+    {
+      "name": "San Francisco Chronicle — Historic S.F. gay bar temporarily suspended from Instagram over 'human trafficking' claim",
+      "url": "https://www.sfchronicle.com/sf/article/stud-bar-instagram-human-trafficking-22360414.php",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-24T00:00:00Z"
+    },
+    {
+      "name": "San Francisco Bay Times — Suspension of The Stud's Instagram Account Reveals Vulnerability of LGBTQ+ Small Businesses",
+      "url": "https://sfbaytimes.com/suspension-of-the-studs-instagram-account-reveals-vulnerability-of-lgbtq-small-businesses/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-30T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "San Francisco Tier 1 queue (content/post-plan.md), war-room slate 2026-08-31. Drafted via near-write-article. Trust 'auto': operator directly commissioned this pin in chat, and the slate was war-room-verified. VERIFY-STILL-OPEN: operator raised a closure concern mid-draft; checked and REFUTED. The Stud is open at 1123 Folsom St. Evidence: (1) the venue's own calendar is actively programming through May 2027 (Slaughter Haus 10-11 Oct 2026, Queer Nonprofit Happy Hour monthly on second Tuesdays, Nudie Nubie Show SF 8 May 2027, TRUCK weekly Weds 9:30pm, PUMPS drag Fridays); (2) it was covered as an operating business by Mission Local, SFist, the SF Chronicle and SF Bay Times through July 2026 during the Meta/Instagram suspension story; (3) SF Heritage's Legacy Business profile lists it at the current address. SOURCE OF THE FALSE CLOSURE SIGNAL, now the subject of a correction section in the body: two Yelp listings exist — 'the-stud-san-francisco' (399 9th St, genuinely closed, but stamped 'Updated September 2026' which reads as a fresh closure) and 'the-stud-san-francisco-2' (1123 Folsom, operating, updated July 2026). Separately, studsf.com/closed is the spring-2020 announcement about the 9th & Harrison site and carries NO visible date on the page, so it surfaces looking current. This is the same trap the war-room slate already flagged on the image side (Commons photos show the old 9th St building). DROPPED FROM THE PIECE on legal grounds: the slate's proposed 'Stud Alley arrests' angle. Stud Alley is an unpermitted Pride-weekend block party at Kissling & 11th (SFPD arrested 20 on 27 June 2026; the DA charged 18 with misdemeanour unlawful assembly, failure to disperse, and resisting/obstructing). No source found connects the BAR to organising it, and no statement from the collective appears in any coverage; sources describe the party as involving graffiti and vandalism, so attributing it to the venue would be defamation-adjacent on zero sourcing. Excluded rather than hedged. FACT RECONCILED: co-op member count — Wikipedia says 15 at the 30 Dec 2016 takeover, SF Heritage says seventeen currently; used SF Heritage's figure and attributed it as current. HERO IMAGE: unresolved, which is why this is status draft and not active. Commons has only the old 9th St site, which would actively reinforce the exact error this piece corrects. Operator suggested Google Maps listing photos (repo precedent: Canto dos Ursos, operator-supplied) — flagged as not licence-clear, since Maps photos remain the uploader's copyright. near-illustrator brief if tier 3 is chosen: a visibly stylized, non-photoreal SoMa club interior — low warm stage light, drag silhouette mid-turn, a crowd reading as mixed and queer rather than generic, Folsom Street frontage implied not literal; must NOT read as a photograph of the actual room, and must disclose AI generation in heroImage.attribution. LOCALES: not yet written — full-locale-coverage does not require localizing a draft, so the six locales are pending the hero decision and the status flip. Coordinates are a manual approximation for 1123 Folsom St between 7th and 8th (confidence 0.6, meets the gate) and should be refined before publish."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "1123 Folsom St, San Francisco, CA 94103"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}
