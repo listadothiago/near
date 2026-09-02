@@ -86,6 +86,38 @@ lookup that leaves no trace for the next piece that could use it. Don't
 wait for `near-refresh`'s own periodic pass to do this; it happens
 inline, every piece, the moment a new source is used.
 
+#### 4a. Spend the research on as many pieces as it will honestly carry
+
+**Standing rule (operator, 2026-09-02): a research pass should produce as
+many articles as it can, not one.** Research is the expensive step and it
+is almost always broader than the piece that triggered it — the sources
+loaded for one venue routinely establish a neighbour, a second venue on
+the same street, a dated event, or the collection that ties them
+together. Writing one piece and discarding the rest is the waste this
+rule exists to stop.
+
+Before drafting, ask what else the material already substantiates, and
+write those in the same run:
+
+- **Same neighbourhood is the strongest case — do those in one go.** It
+  is also what the neighborhoods directive rewards, since the unit of
+  work there is taking one neighbourhood to 4 pins, and four pins
+  researched together cost far less than four researched apart.
+- **Invoke additional guest editors as needed** rather than forcing one
+  persona to cover beats that aren't theirs. Three venues on one street
+  can legitimately be a gastronomic, a nightlife and a historian piece —
+  that's three bylines on one research pass, not a reason to write only
+  the one that fits the persona already in the room.
+- **A collection is often free.** If the run produces three or more
+  related pins, the piece tying them together asserts no new facts and
+  needs no new sourcing.
+
+The limit is honesty, not volume: only write what the research actually
+substantiates. A second piece that needs facts nobody verified is a new
+research job, not a bonus — log it as a lead and move on. This is the
+opposite of padding, and `near-war-room`'s "refuse to proceed on a topic
+research can't substantiate" still governs.
+
 ### 5. Choose the persona and write — the right voice, TOV-guided
 
 Pick whichever public persona's beat actually fits (see each

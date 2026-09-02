@@ -769,3 +769,38 @@ after fixing one schema violation (pt-BR `shortTitle` initially ran to
 - **Generation:** not available this session, so both prompts went to
   `content/photo-requests.md` per the standing fallback rather than
   leaving `heroImage` null with no path forward.
+
+## 2026-09-02 — London war room, unit 1 (near-write-article)
+
+`bar-italia-soho-london` completed and moved to **active**, all six
+locales. English body was drafted 2026-09-01 and predated the structural
+rules, so it was brought up to them retroactively: one 127-word paragraph
+split, and two in-body `<Figure>` images added against a 645-word body
+that needed three images and had one.
+
+Image calls: hero is Matt Brown's 2025 storefront (CC BY 2.0, 4032×3024).
+In-body are the Baird blue plaque (Spudgun67, CC BY-SA 4.0) and A.
+Angelucci at 23b Frith Street (Ewan Munro, CC BY-SA 2.0) — the latter
+earns its place because the body argues about the Angelucci blend nobody
+can reproduce. **Every Bar Italia and Baird-plaque candidate on Wikimedia
+Commons is portrait**, which is the finding now recorded in
+`near-illustrator`; the hero passes at 4:3 rather than shipping a portrait
+card, and the two in-body crops were not visually verified because
+upload.wikimedia.org refused direct fetches this session.
+
+translator note (all five locales): the `it` edition does the most
+independent work, per persona — an Italian reader of an Italian bar in
+London gets a weekly-rhythm paragraph on when the room is actually
+readable that the English source doesn't carry. `es-419` and `zh-CN` add
+visitor-practical framing (no booking, counter service, cards accepted)
+for readers travelling in. No facts diverge from the English source.
+
+Closed `hazlitts-london-no-natural-internal-link` (open since 2026-09-01):
+Bar Italia is the Frith Street neighbour that request was waiting for.
+Reciprocal link added to `hazlitts-london/en.mdx` — **English only**, the
+Hazlitt's locale editions still owe it.
+
+Collection `london-institutions-that-refuse-to-die` drafted the same day
+(English, status draft) — five pins, Bar Italia deliberately excluded at
+the time because a `NearLink` to a draft slug is a dead link. It is now
+active, so fold it in as the sixth member on the next pass.

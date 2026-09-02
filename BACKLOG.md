@@ -2048,16 +2048,20 @@ built there.
 
 Units, in execution order:
 
-1. **Bar Italia, Soho — finish it.** ✅ scoped 2026-09-02: `meta.json`
-   written, hero sourced (Matt Brown, CC BY 2.0, 2025 storefront), build
-   passes. **Still owed before active:** a 16:9 hero crop, the step 9a
-   `google-discover-audit`, sign-offs, and all five non-English locales.
-   Held at `status: "draft"` until then. **Going active also closes the
-   open `hazlitts-london-no-natural-internal-link` request** in
-   `content/requests.md` — Bar Italia is the Frith Street neighbour that
-   request was waiting for, 100m from Hazlitt's, and the Bar Italia body
-   already links back. Add the reciprocal link from Hazlitt's and mark the
-   request fulfilled at the same time.
+1. **✅ Bar Italia, Soho — DONE 2026-09-02, active, all six locales.**
+   Hero: Matt Brown, CC BY 2.0, 2025 storefront. The body predated the
+   structural rules and failed them — one 127-word paragraph, and 1 image
+   against a 645-word body needing 3 — both fixed, with two in-body
+   `<Figure>`s (the Baird plaque; A. Angelucci at 23b, which the body
+   already argues about). Step 9a audit **passed with one caveat**: the
+   hero is 4:3, not 16:9, and Commons has no landscape alternative —
+   every Bar Italia and Baird-plaque candidate there is portrait.
+   Closed the open `hazlitts-london-no-natural-internal-link` request;
+   the reciprocal link is in `hazlitts-london/en.mdx` (English only — the
+   Hazlitt's locale editions still carry the un-linked ending).
+   Soho is now at 2 board pins, which clears
+   `MIN_PLACES_FOR_LOCATION_PAGE` — **no page push follows**, Soho is
+   saturation-disqualified.
 2. **Take one London neighborhood from 1 to 4.** Per the directive's own
    tables, London's eligible targets are **Dalston (queer, +3)**,
    **Peckham (+3)** and **Walthamstow (+3)**. Dalston is the
@@ -2122,6 +2126,44 @@ decorating an empty room.
   `near-illustrator`, along with the trap that `<Figure>` and `PlaceHero`
   both crop to 16:9 in the layout while the OG/Discover card uses the raw
   file, so a 4:3 hero looks fine on-site and still ships a 4:3 card.
+
+### Operator directives captured 2026-09-02, mid-session
+
+1. **✅ CODIFIED — "the write article skills should try to reuse the same
+   research to write as many articles as it can, as a rule… especially if
+   these are new articles in same neighborhood, try to do them in one go,
+   invoke additional guest editors if needed."** Now
+   `near-write-article` step 4a. Research is the expensive step and is
+   almost always broader than the piece that triggered it; same-
+   neighbourhood batching is called out as the strongest case, since the
+   neighborhoods directive's unit of work is 4 pins in one place and four
+   researched together cost far less than four researched apart. Guest
+   editors get invoked rather than forcing one persona across beats that
+   aren't theirs — three venues on a street can be three bylines off one
+   research pass. The stated limit is honesty, not volume: a second piece
+   needing unverified facts is a new research job, logged as a lead.
+
+2. **❌ OPEN — the local editor personas were never built.** Operator:
+   *"we need more posts from the local editors, where is zack arioka for
+   rio?"* and *"bricky for london?"* **Straight answer: nowhere. Neither
+   exists.** BRICKY (London) and ZACK ARIOKA (Rio) — along with PAULY
+   SEYA (SP) and DOG IN THE FOG (SF Bay) — exist only as roster
+   descriptions in this file (~line 1910). They are **not** in
+   `lib/content/authors.ts`, so they cannot be set as a `meta.author` and
+   cannot hold a byline; there is no skill file for any of them.
+   `BACKLOG-ARCHIVE.md` line 267 already recorded this and it never got
+   picked up. Building them is a real task: an entry in `authors.ts`, an
+   author page, and a skill file each.
+
+   **Rio has a second, harder problem: zero pins.** London 20, São Paulo
+   11, Santos 5, Amsterdam 4, SF 3 — Rio de Janeiro **0**, and Rio sits
+   in the Phase 2 expansion hold. So ZACK ARIOKA has nothing to write
+   about yet even once he exists; standing him up is cheap, giving him a
+   beat means opening a Phase 2 city. **BRICKY is the one to build
+   first** — London is Tier 1, has 20 pins, and is where the next
+   neighbourhood push lands, so an East London locale editor has work the
+   day he ships. Flag to the operator that Rio needs a Phase 2 decision,
+   not just a persona.
 
 ### How we work — the gap this sweep exposed
 

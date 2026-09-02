@@ -221,7 +221,16 @@ update: >
   loader.ts filters drafts off, so a NearLink from Hazlitt's would be a
   dead link today. Close this the moment Bar Italia goes active, adding
   the reciprocal link in the same pass.
-status: open
+status: fulfilled
+fulfilledAt: "2026-09-02"
+closingNote: >
+  bar-italia-soho-london went active the same day with all six locales.
+  Reciprocal NearLink added to the end of hazlitts-london/en.mdx, on the
+  contrast this request was always waiting for: a hotel selling silence,
+  and the counter a hundred metres away still serving at four in the
+  morning when the silence stops working. English only for now — the
+  Hazlitt's locale editions still carry the un-linked ending and should
+  pick this up on their next pass.
 ```
 
 ```yaml
