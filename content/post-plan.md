@@ -80,6 +80,31 @@ written down.
 - [x] Studio Voltaire — CUBIC-V (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
 - [x] Jumbi — STEFAN (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
 - [ ] Sister Midnight — STEFAN (operator-approved as 'opening'-status pin; schema needs the status value first)
+
+**LONDON FOOD — seeded 2026-09-02, verified, and built for on-the-ground
+testing.** The operator has a friend in London this week who can verify
+in person, so these are grouped into two WALKABLE CLUSTERS rather than
+scattered, and every entry carries an address and real opening hours so a
+tester knows when to turn up. London's published food coverage was thin —
+Borough Market, Boxpark, Jumbi's kitchen and Lucky Saint, almost no
+actual restaurants — and all of these sit on Near's own beat (queer-owned
+/ queer-led food) rather than restaurant-trade press.
+
+_Cluster A — Peckham. Jumbi is already published, so this is an existing
+pin plus two new ones within walking distance._
+
+- [ ] **Hausu + Upstairs at Hausu, 11A Station Way, Peckham Rye Station SE15 4RX** — FOODIE-9000. Chef Holly Middleton-Joseph's kitchen (Chinese and Trinidadian influences), opened Oct 2024 with her brother Tom Middleton-Joseph and Christian Williams; the upstairs listening bar is named after the 1977 Japanese cult horror film *Hausu*, runs hi-fi and a full bar to midnight. **THE PAIRING: Near already publishes <NearLink> Jumbi, also Peckham, also a hi-fi listening bar with a Caribbean-diaspora kitchen.** Two hi-fi rooms with diaspora kitchens, minutes apart — that is a genuine cross-link and arguably a collection. Covered by Wallpaper*, Hot Dinners, Broadsheet.
+- [ ] **TOAD Bakery, 44 Peckham Road SE5 8PX** — FOODIE-9000 or ALLORA DAI. Queer-owned, and specifically sources from queer suppliers and producers, which is the angle — a supply chain, not just an owner. **Hours are tight: Tue–Sat 08:00–15:00, closed Sun/Mon.** A tester must go on a weekday morning.
+
+_Cluster B — Hackney / Dalston. Dalston Superstore is already published._
+
+- [ ] **La Camionera, 243 Well Street, Hackney E9 6RG** — ALLORA DAI or STEFAN. **The strongest single candidate in this batch.** A lesbian bar, which is a nearly-extinct category, opened by Alex Loveless and Clara Solis from body2body — Dalston Superstore's trans masc night — and community-funded into existence. Café by day, wine and cocktails by night, terracotta and a fig tree in the garden. Real press: Wallpaper*, The Face. **THE CORRECTION: guides file it under "Dalston". It is on Well Street in Hackney, E9** — a different neighbourhood and a 25-minute walk. Hours: Mon–Tue 16:00–23:00, Wed–Sun 10:00–late, so the daytime café is testable.
+- [ ] **The Divine, Dalston** — STEFAN. 200-capacity café, show-bar and nightclub, opened Feb 2024 by Jonny Woo, John Sizzle and Colin Rothbart as The Glory's "naughty little sister". **THE CORRECTION, and it is a good one: The Glory closed on 31 January 2024 after ten years in Haggerston, and guides still list it as open — one carries a "New 2025 Review" of a venue that had already been shut for a year.** Confirm The Divine's address and current hours at draft.
+
+_London food dating note: verify hours at draft — three of these four are
+day-part-restricted (TOAD closes at 15:00; La Camionera opens at 16:00 on
+Mon/Tue), which is exactly the kind of detail a listicle gets wrong and a
+tester on the ground can settle._
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
 
 ### Brighton (Tier 1) — SEEDED 2026-09-02, research-verified, not yet drafted
