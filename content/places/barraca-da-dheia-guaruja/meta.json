@@ -1,0 +1,82 @@
+{
+  "slug": "barraca-da-dheia-guaruja",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -23.9945,
+    "lng": -46.2555
+  },
+  "place": {
+    "city": "Guarujá",
+    "neighborhood": "Pitangueiras",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "allora-dai",
+  "sources": [
+    {
+      "name": "Anda Direito — Barraca da Dheia (LGBTQ+ community place directory)",
+      "url": "https://andadireito.com.br/zine/lugares/barraca-da-dheia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Bendito Guia — Barraca da Dhéia, LGBT Pitangueiras Guarujá SP (address/phone listing)",
+      "url": "https://www.benditoguia.com.br/empresa/barraca-da-dheia-lgbt-pitangueiras-guaruja-sp",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "A Tribuna — Litoral de São Paulo entra no Mapa do Turismo LGBTQIAPN+ com destinos inclusivos",
+      "url": "https://www.atribuna.com.br/cidades/litoral-de-s-o-paulo-entra-no-mapa-do-turismo-lgbtqiapn-com-destinos-inclusivos-entenda-1.448590",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Secretaria de Turismo e Viagens do Estado de São Paulo — Mapa do Turismo LGBT acrescenta novos municípios inclusivos",
+      "url": "https://www.turismo.sp.gov.br/publico/noticia.php?codigo=4212",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Instagram — @barracadadheia (venue's own channel)",
+      "url": "https://www.instagram.com/barracadadheia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Rainbow_flag_and_blue_skies.jpg",
+    "attribution": "Ludovic Bertron, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Rainbow_flag_and_blue_skies.jpg",
+    "licenseNote": "NOT a photograph of this venue — a generic backlit rainbow flag against clear sky (Ludovic Bertron, 2008, CC BY 2.0). Operator's explicit call, 2026-09-02: use a generic rainbow-flag/clear-sky image when nothing venue-specific is licence-clear. Same precedent as the Jumbi hero, where a correctly-located but non-venue photo was preferred over holding a good place in draft. Tier 1 and 2 venue-specific options were genuinely exhausted first under near-illustrator's 2026-09-02 sourcing order: photo-inbox empty, and this venue has NO official website, only Instagram, whose CDN URLs expire and are not licence-clear. Chosen over the queued tier-3 illustration because a real licensed photo outranks a generated one and unblocks publish inside the seasonal window. No people, no legible text, crops cleanly to 16:9."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-02T19:00:00Z",
+      "note": "REDRAFT FROM ZERO. A previous version of this piece was lost entirely — never committed, swept by a crashed agent's git op (see commit c20151f, 2026-09-01) — so nothing was recovered or reused here. Written via near-write-article. Operator directed the Baixada seasonal push on 2026-09-02, choosing it over the rotation's London turn on near-seo's recommendation; trust 'auto' follows from that direct commission, superseding the earlier 'review' marking in post-plan.md. OPENS A ZERO-COVERAGE MARKET: Near's first Guarujá pin (content/opportunities.md's coverage audit had Guarujá and Bertioga at zero). Byline allora-dai — the LGBTQIAPN+ beat, food-drink category, correct for a queer beach barraca. SEASONAL RATIONALE: opportunities.md ranks baixada-santista-queer #1 with the only hard publish-by window in the queue — spring starts on this coast now, and the 'ahead of the season' angle expires for a year if missed. VERIFIED: Anda Direito (Brazil's LGBTQ+ community place directory) lists the venue as currently open and carries its own self-description, quoted in the body. Address Av. Marechal Deodoro da Fonseca 1522, Pitangueiras, Guarujá-SP 11410-223, and phone +55 13 99773-3751, consistent across Anda Direito and Bendito Guia. SOURCING LIMITATION STATED HONESTLY: the A Tribuna article body and the state tourism pages could NOT be read directly — A Tribuna returned navigation chrome only, plataforma.turismo.sp.gov.br has an expired TLS certificate, turismo.sp.gov.br returned a portal index, and guaruja.sp.gov.br returned 403. The Mapa do Turismo LGBT claim rests on A Tribuna's own headline plus corroborating summaries from Diário do Litoral and the state site; the body attributes it as reported rather than as directly read. The named support points (Barraca da Dhéia on Pitangueiras, Barraca da Márcia É Show on Enseada, Quiosque 39) come from that same reporting. DELIBERATELY NOT PUBLISHED AS FACT: Bendito Guia's opening hours (Mon-Fri 9-18, Sat 9-13) are office hours pasted onto a beach barraca on a weekend-economy beach, and the same listing shows a 5.0 rating from ZERO reviews — flagged as directory noise in the body itself, with a call-ahead instruction instead of invented hours. HERO IMAGE: unresolved, and it is the only gate blocking publish. near-illustrator's tiers were worked in order under the new 2026-09-02 directive: photo-inbox is empty (README only); there is NO official website for this venue, only Instagram @barracadadheia, whose CDN URLs expire and are not licence-clear, so tiers 1 and 2 are genuinely unavailable rather than skipped. Falls to tier 3 illustration; generation tooling is unavailable this session, so a self-contained prompt is queued in content/photo-requests.md per the standing fallback. LOCALES: not written — full-locale-coverage does not require localizing a draft, and holding them until the hero resolves avoids redoing six files if the piece shifts. Coordinates are a manual approximation for the Pitangueiras beachfront at Av. Mal. Deodoro da Fonseca 1522 (confidence 0.6, meets the gate)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-02T20:00:00Z",
+      "note": "Flipped to active. Hero resolved at TIER 2 (licensed stock), not the queued tier-3 illustration: operator's call 2026-09-02 to use a generic rainbow-flag/clear-sky image when nothing venue-specific is licence-clear. Selected Ludovic Bertron's 'Rainbow flag and blue skies' (2008, CC BY 2.0, Wikimedia Commons), inspected before use — backlit flag against sky, no people, no legible text, crops cleanly to 16:9. licenseNote states plainly it is NOT a photo of the venue, and strategy is 'stock' rather than 'source' precisely because 'source' would claim it shows the actual place. The illustration prompt was removed from photo-requests.md as no longer needed. All six locales written and every gate checked explicitly. Locale editions differ genuinely rather than translating: es-419 adds a Guarulhos/Congonhas-to-Santos-to-ferry route and a carry-cash warning because beach-stall card terminals are unreliable; zh-CN carries the same practical guidance plus navigate-by-address; es-ES trims visitor scaffolding and uses Spain-specific vocabulary (chiringuito); pt-BR, the home market, drops orientation a local would not need. Word/character counts: en 570, es-419 599, es-ES 590, it 531, pt-BR 530, zh-CN 510 word-equivalents (816 CJK chars). Every locale carries the in-text source link to Anda Direito and two NearLinks (Quiosque da Cris, Canto dos Ursos) forming the real three-town coastal circuit."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Av. Marechal Deodoro da Fonseca 1522, Pitangueiras, Guarujá - SP, 11410-223"
+  },
+  "publishedAt": "2026-09-02T19:00:00Z",
+  "updatedAt": "2026-09-02T19:00:00Z"
+}
