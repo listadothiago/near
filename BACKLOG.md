@@ -85,6 +85,77 @@ Everything downstream waits on that.
 **Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
 until `near-seo` has real Search Console data.
 
+## 🏛️ C-LEVEL ROSTER (2026-09-02, BUILT — operator directive)
+
+Five internal executive roles, none with a public byline:
+`near-ceo`, `near-cfo`, `near-cmo`, `near-cto`, `near-cpo`.
+
+**Operator's framing, and the design principle:** *"the c level doesnt
+have to duplicate, each can simply focus on their level. good to have
+different perspectives on things anyway."* So the split is **altitude,
+not territory** — the product ladder now reads
+`near-product-owner` (what exactly is this?) →
+`near-lead-product` (what next, in what order?) →
+`near-cpo` (what is this product for, and what will it never be?),
+and the technology ladder reads
+`near-tech-lead` (this change, this week) →
+`near-cto` (this direction, this year).
+
+**Two roles cover ground nobody owned at all:**
+- **`near-cfo`** — money. Unit economics, whether a monetisation path is
+  worth its editorial cost, and reality-checking the AdSense/revenue
+  projections sitting at the repo root against real Search Console data
+  before anything is built on them.
+- **`near-cmo`** — go-to-market sequencing across the five
+  marketing-adjacent skills, positioning, and **ownership of the
+  outreach freeze and its exit condition**, which is currently proposed
+  but not ruled on.
+
+**`near-ceo` is not the operator.** The operator is. That role resolves
+cross-functional deadlock and produces one synthesised read across the
+functions; it escalates, it never overrules, and every operator ruling
+(the freeze, no polygons, the column constraint, the neighborhood push)
+stands above it.
+
+**Unchanged at every altitude:** content decisions stay with `near-seo` +
+`near-trendsetter` + the chief editor per `content/rules.md`. A C-level
+role that starts commissioning coverage is how a guide becomes a
+brochure, and each of the five files says so explicitly.
+
+### First tasks, already named in the files
+
+1. `near-cmo` — turn the proposed outreach-freeze exit condition into a
+   testable bar and put it to the operator. A freeze with no defined end
+   becomes permanent by drift.
+2. `near-cpo` — ratify a north star. The external strategy read proposed
+   one, the Trio and operator responded, **nothing has been ratified.**
+3. `near-cfo` — check the repo-root revenue projections' traffic
+   assumptions against Search Console before they inform anything.
+
+## 🕶️ AR: the shippable half, and why it is link-strategy (2026-09-02)
+
+**Operator:** *"it could be good for marketing to get this to work on meta
+and (android?) AR glasses ASAP"* and *"AR experience could get good
+backlinks, AR is still news innit"*.
+
+The second point is right and sharpens the first. An AR demo is a
+**link-earning asset, not an outreach ask** — people cite a working demo
+without being pitched — so it **costs nothing against the outreach
+freeze**, because nobody is contacted. It is also plausibly the
+readiness milestone that would justify lifting the freeze. `near-cmo`
+owns that sequencing.
+
+**What to build first, per `docs/ar-surfaces.md` §"Recommended
+sequencing":** not glasses. A **bearing-and-distance waypoint view on a
+phone** — it needs no hardware, is the most useful thing Near could add
+for someone standing on a street, is testable today, and is the same
+maths as the glasses version with different rendering. Ray-Ban Display
+has no world tracking, so a true overlay cannot exist there regardless.
+
+**Standing tension to respect:** EPIC 3 already says the launch story
+ships "timed to a working build rather than an announcement of intent."
+Build first, pitch when the freeze lifts.
+
 ## 🛑 OUTREACH FREEZE (2026-09-02, OPERATOR DIRECTIVE — in force)
 
 **Operator, verbatim:** *"by farming links i mean we will have to message
