@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { getAllPlaces, getStats } from "@/lib/content/loader";
 import {
@@ -9,6 +9,7 @@ import {
   findLocationPage,
   getAncestors,
   getChildren,
+  getSupersededBy,
   summarizeFreshness,
 } from "@/lib/content/locationPages";
 import type { Category, ContentLocale, PlaceSummary } from "@/lib/content/schema";
@@ -101,7 +102,16 @@ export default async function LocationPage({
 
   const allPlaces = getAllPlaces(locale as ContentLocale);
   const page = findLocationPage(allPlaces, location);
-  if (!page) notFound();
+  if (!page) {
+    // A location that lost its URL for being a duplicate of a finer one
+    // (Lisboa -> Lisbon) still gets an answer: it was a real address and
+    // may have been shared. 308, because the move is permanent.
+    const superseded = getSupersededBy(allPlaces, location);
+    if (superseded) {
+      permanentRedirect(`/${locale}/in/${superseded.segments.join("/")}`);
+    }
+    notFound();
+  }
 
   const allPages = getLocationPages(allPlaces);
   const ancestors = getAncestors(page, allPages);

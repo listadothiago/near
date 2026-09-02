@@ -1546,6 +1546,22 @@ current index. `buildLocationIndex` keys on `level:normalized-label` with no
 parent in the key, so this is a real defect in the index shape, not only in the
 route.
 
+### Follow-up, same day: the duplicate-parent rule
+
+Shipping the pages surfaced a third defect the counts alone didn't show.
+`/in/lisbon` (city, 2 places) and `/in/lisboa` (region, 2 places) hold the
+**same two places** — two URLs for one document. It isn't a Lisbon naming
+quirk; five pairs were identical: United Kingdom/England, Netherlands and
+North Holland/Amsterdam, Norte/Porto, Lisboa/Lisbon.
+
+A location whose place set exactly equals a finer location's adds nothing a
+reader or a crawler can distinguish. Specificity wins again, and the retired
+URLs **308 to their survivor** rather than 404ing. Self-correcting like the
+coverage floor: the moment Near covers a second Dutch city, `/in/netherlands`
+stops being a copy of Amsterdam and earns its URL back.
+
+Net: 24 → **19 pages**, 144 → 114 URLs.
+
 ### The honest conclusion
 
 **Location pages are blocked on content density, not on design or routing.**

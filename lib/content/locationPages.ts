@@ -133,7 +133,94 @@ export function getLocationPages(places: PlaceSummary[]): LocationPage[] {
     }
   }
 
-  return [...byUrl.values()].sort((a, b) => b.places.length - a.places.length);
+  return dropRedundantParents([...byUrl.values()]).sort(
+    (a, b) => b.places.length - a.places.length,
+  );
+}
+
+const placeKey = (page: LocationPage) =>
+  page.places
+    .map((p) => p.meta.slug)
+    .sort()
+    .join(",");
+
+/**
+ * Drops a location whose place set is *identical* to that of a finer
+ * location inside it.
+ *
+ * "Lisboa" the region holds exactly the two places "Lisbon" the city
+ * holds, so the two pages are the same document at two URLs — a reader
+ * cannot tell them apart because there is nothing to tell apart. Same for
+ * Norte/Porto, North Holland/Amsterdam, Netherlands/Amsterdam, and
+ * United Kingdom/England.
+ *
+ * Specificity wins again, consistently with the name-collision rule
+ * above. And like the coverage floor, this corrects itself as content
+ * lands: the moment Near covers a second Dutch city, the Netherlands page
+ * stops being a copy of Amsterdam and earns its URL back.
+ */
+function dropRedundantParents(pages: LocationPage[]): LocationPage[] {
+  return pages.filter(
+    (page) =>
+      !pages.some(
+        (finer) =>
+          finer !== page &&
+          LEVELS.indexOf(finer.level) < LEVELS.indexOf(page.level) &&
+          placeKey(finer) === placeKey(page),
+      ),
+  );
+}
+
+/**
+ * The page a dropped location should send readers to.
+ *
+ * A URL removed by `dropRedundantParents` still deserves an answer —
+ * /in/lisboa was a real address and may have been shared — so the route
+ * redirects it to the page that superseded it rather than 404ing. Returns
+ * null when the location never existed at all.
+ */
+export function getSupersededBy(
+  places: PlaceSummary[],
+  segments: string[],
+): LocationPage | null {
+  const wanted = segments.map((s) => s.toLowerCase()).join("/");
+  const survivors = getLocationPages(places);
+
+  // Rebuild the pre-drop set to find what was asked for.
+  const all = new Map<string, LocationPage>();
+  for (const place of places) {
+    for (const level of LEVELS) {
+      const label = place.meta.place[level];
+      if (!label) continue;
+      const parentCity =
+        level === "neighborhood" ? place.meta.place.city : undefined;
+      if (level === "neighborhood" && !parentCity) continue;
+      const segs = segmentsFor(level, label, parentCity);
+      const key = `${level}:${segs.join("/")}`;
+      let entry = all.get(key);
+      if (!entry) {
+        entry = { label, level, segments: segs, parentCity, places: [] };
+        all.set(key, entry);
+      }
+      entry.places.push(place);
+    }
+  }
+
+  const dropped = [...all.values()].find(
+    (p) =>
+      p.segments.join("/") === wanted &&
+      p.places.length >= MIN_PLACES_FOR_LOCATION_PAGE,
+  );
+  if (!dropped) return null;
+
+  const key = placeKey(dropped);
+  return (
+    survivors.find(
+      (s) =>
+        placeKey(s) === key &&
+        LEVELS.indexOf(s.level) <= LEVELS.indexOf(dropped.level),
+    ) ?? null
+  );
 }
 
 export function findLocationPage(
