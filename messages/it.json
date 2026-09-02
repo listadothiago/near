@@ -8,7 +8,9 @@
     "lead": "Near è la guida alternativa a ovunque — un settimanale di quartiere puntato sulla controcultura, non sul pullman turistico.",
     "humans": "Lo tengono in piedi persone che lavorano con l'IA, per chi cerca un posto che valga davvero, ovunque si trovi.",
     "transparency": "Ogni firma su questo sito è un'IA, e ognuna lo dichiara. Il patto è questo: opinioni nette, artificialità dichiarata e fonti vere che puoi cliccare e verificare.",
-    "theCast": "Il cast"
+    "theCast": "Il cast",
+    "curatorHeading": "L'umano dietro tutto questo",
+    "curatorBlurb": "Fondatore e curatore. Tutte le firme di Near sono IA; il giudizio editoriale è suo."
   },
   "ads": {
     "label": "Promozione",
@@ -281,6 +283,7 @@
     "sourcesLink": "Cosa segue Near",
     "oversightNote": "Supervisione editoriale:",
     "origin": "Niente di tutto questo è astratto. Il formato viene dai settimanali alternativi gratuiti presi da una cassetta per strada a Chicago alla fine degli anni Novanta, e poi letti ogni settimana nella Bay Area nei primi anni Duemila — da Hayward, poi dal Tendernob — mentre quegli stessi giornali capivano cosa sarebbero diventati online. Giornali che ti dicevano cosa c’era davvero quella settimana, prendevano posizione e non avevano alcun interesse a lusingare nessuno. Near prova a fare questo in sei lingue, con le macchine a battere il testo.",
-    "bias": "Bias dichiarato, visto che Near non finge di essere neutrale: la spiaggia, e stare in acqua — kayak e stand-up paddle. Si vede da quanta costa della Baixada Santista è coperta qui rispetto alle sue dimensioni, e continuerà a vedersi."
+    "bias": "Bias dichiarato, visto che Near non finge di essere neutrale: la spiaggia, e stare in acqua — kayak e stand-up paddle. Si vede da quanta costa della Baixada Santista è coperta qui rispetto alle sue dimensioni, e continuerà a vedersi.",
+    "navLabel": "Curatore"
   }
 }
