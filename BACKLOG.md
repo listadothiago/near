@@ -51,10 +51,28 @@ override, independent of the tier rotation.
   link from `gays-the-word-london` to Eisenherz Buchladen, which
   doesn't exist yet) — drop it rather than apply it as-is; the link
   target needs to exist first.
-- **Barraca da Dheia** (`content/places/barraca-da-dheia-guaruja/`)
-  is still `status: draft`/`trust: review`, awaiting operator approval
-  — geography was corrected mid-draft (Guarujá/Pitangueiras, not
-  São Vicente/Itararé as originally scoped), see `content/opportunities.md`.
+- **Barraca da Dheia is gone — needs a full redraft, not just an
+  approval flip.** Operator approved it (2026-09-01 late night), but
+  by then `content/places/barraca-da-dheia-guaruja/` no longer existed
+  on disk — never committed (still `review`/`draft`), so it was
+  apparently swept away by the same destructive git operation that
+  lost `content/seo-forecast-3month.md` (one of the 7 crashed
+  background agents this session likely ran something like `git
+  clean`/`checkout .`/`reset --hard` while cleaning up its own mess).
+  **Redraft from scratch**: Barraca da Dhéia, Praia de Pitangueiras,
+  Guarujá (not São Vicente/Itararé — the original lead's geography was
+  wrong, corrected via independent verification last time: BenditoGuia,
+  Anda Direito, TripAdvisor, and the venue's own active Instagram
+  @barracadadheia all corroborated it). Once redrafted and verified
+  again, it has standing operator pre-approval — no need to hold for a
+  second sign-off round if it checks out the same way.
+  **Standing rule (2026-09-01 late night, operator directive): the
+  chief editor (near-editor's own sign-off in `near-write-article`
+  step 7) can approve `review`-trust pieces on the operator's behalf
+  going forward** — flip straight to `active` once chief-editor sign-off
+  passes, don't hold for a separate operator approval round by default.
+  See `near-backlog/SKILL.md`, which needs this folded into its
+  trust-gate section next session.
 - Sister Midnight (London) needs a schema change (new `opening` status
   value) before it can be drafted. Hampstead Heath ponds (London)
   needs a different source path (bot-blocked).

@@ -82,6 +82,11 @@ session.
      obviously-still-open institution, say) → the agent may go straight
      to `status: "active"`, all six locales, build-verify, commit, and
      push in the same run, per `near-write-article/SKILL.md` step 10.
+   - **Standing rule (2026-09-01 late night, operator directive): the
+     chief editor's sign-off (`near-write-article` step 7) counts as
+     operator approval.** A `review`-trust piece that passes chief-
+     editor sign-off may flip straight to `active` and push — don't
+     hold for a separate operator approval round by default.
    - `trust: "review"` (a single aggregator/listicle lead, a thin
      search-snippet find, anything not independently corroborated) →
      the agent writes `status: "draft"` and stops. **Never commits or

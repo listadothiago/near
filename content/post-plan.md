@@ -18,6 +18,15 @@ normal Tier 2 queue now, no bump.
 Paris/NYC/Seattle/San Diego/Santos-specific/Bologna join Tier 2 when
 their queues first get seeded.
 
+**Posts per stop (operator directive, 2026-09-01 late night):** Tier 1
+cities get **1 post per stop** — fast cadence is the point, 4 cities ×
+4 cycles = 16 posts before Tier 2's turn. Tier 2 cities get **2 posts
+per stop** — they're visited far less often, so a slightly bigger
+batch makes each turn worth the research overhead, per the existing
+"research batches, publishing rotates" principle below. A city whose
+queue can't support its post count that stop drains what it has and is
+skipped on the rest, per the empty-queue rule below — never padded.
+
 **How this works with research:** publishing rotates; research batches.
 A post's expensive half is verification, and that amortizes when a
 city's candidates are researched together (the London war room proved
