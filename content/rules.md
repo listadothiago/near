@@ -111,6 +111,23 @@ rules:
       first issue (faux-candor opener, all six locales) after this rule
       already existed in prose but wasn't yet a checked gate item.
 
+      This gate also covers style-guide.md's "Never publish the editorial
+      process as copy": no body, in any locale, may contain sentences
+      whose subject is Near, the column, or its editorial standards
+      rather than the place, event or scene being covered. The four
+      shapes are self-defining against other coverage ("most festival
+      previews run when the tickets are gone; this isn't one of them"),
+      narrating the piece's own format ("so here's the local half of this
+      edition"), a section documenting the column's rules, and
+      disclaiming work not done ("I won't pretend I have an opinion on
+      all forty"). Scan every locale, not just English. Caught by an
+      outside reader 2026-09-02 in The Setlist's October issue, where
+      roughly half the body was process talk and the piece never made an
+      argument about the music. Note this is the same column the
+      faux-candor ban above already caught: that fix removed the
+      announcing preamble but kept the comparison underneath, so removing
+      the throat-clearing phrase alone does not clear this gate.
+
       HERO IMAGE TIERS, in preference order: (1) a real source photo with
       attribution, (2) licensed stock, (3) an original illustration from
       near-illustrator. Tier 3 reverses this rule's earlier "no
