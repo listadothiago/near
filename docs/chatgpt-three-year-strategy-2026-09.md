@@ -1332,3 +1332,60 @@ be settled at the summit regardless of which scenario is chosen:** canonical
 place identity, `neighborhood` as a real field, and machine-readable
 `lastVerified`. All three are schema work on a 60-place catalogue. All three are
 migrations on a 10,000-place one.
+
+---
+
+## 4. Operator response to the Trio read (2026-09-02)
+
+**Operator, verbatim:** *"I personally love the focus on neighborhood. And I
+think our pages filtered by location (eg city or neighborhood) should be
+shareable with a link."*
+
+This is the first thing in this whole file that has been ruled on rather than
+debated, and it lands on the layer-2 half of the document — the part all three
+Trio seats independently flagged as the real structural gap. Treat the
+neighborhood emphasis as **operator-endorsed direction**, ahead of the summit,
+with the caveat that endorsement of the direction is not yet adoption of the
+document's volume targets.
+
+### Correction to §3's tech-lead read
+
+Checking the repo before writing this up: **`neighborhood` is already a
+first-class field.** `lib/content/schema.ts:85` carries
+`neighborhood: z.string().optional()`, and 58 of 60 places already populate it.
+There is also already a location index and matcher (`lib/search/locations.ts`,
+`buildLocationIndex` / `matchLocation`) that resolves a typed query to a
+neighborhood, city, region or country across all six locales, and a "Location
+SRP" path in `Board.tsx` that already retitles the document when a query
+resolves to a covered place. §3's claim that neighborhood "is not currently a
+first-class field" and needs a backfill was wrong — the schema work it asked for
+is essentially done, which moves layer-2 from *this is a quarter of migration*
+to *this is a routing and UX problem*. The rest of §3's argument stands, and the
+canonical-identity and `lastVerified` points are unaffected.
+
+### Why the shareable-link request is the right next move, and not a small one
+
+The gap is precise. Board state — query, categories, tags — lives in React state
+in `lib/board/controls.tsx`, and that file carries an explicit, reasoned
+decision not to mirror it to the URL: *"Deliberately not URL params: typing into
+the search field would push a history entry per keystroke and wreck the back
+button."* That rationale was correct for a **search field**. It was never
+argued for a **resolved location**, which is a different thing: it's stable, it's
+an entity Near actually covers, and it's the one board state a reader would ever
+want to send to someone.
+
+So Near today can already answer "what's in Pinheiros?" — it just has no way to
+*link* to the answer. Nothing is shareable, nothing is crawlable, nothing is
+citable by an AI assistant, and the location SRP that already exists is
+invisible to Google. That is the entire layer-2 opportunity from §1, sitting one
+routing decision away, on data that is already written.
+
+It also reframes the sequencing argument in §3. The Trio said neighborhood pages
+need density first. That's true for a *curated* neighborhood page with an
+editorial argument — but a **shareable, indexable URL for a filter that already
+works** needs no new content at all. The two should be separated: ship the
+addressable location view now on the 60 places that exist, and let the designed,
+edited neighborhood page follow the density.
+
+`near-lead-ux`'s warning from §3 still binds on the second half: whatever a
+location URL renders must not be the card grid with a heading bolted on top.
