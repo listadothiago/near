@@ -1975,6 +1975,43 @@ Operator directive: **all** of article pages, place pages, search-results-page, 
 
 
 ### NEW SKILL: content-generation specialist + a column about making this site with AI
+
+**⚠️ EDITORIAL CONSTRAINT — operator, 2026-09-02.** *"dont make us look bad
+in the column, do we really need to get into baseline number? those are
+great to have privately. its just a column doesnt have to get into all
+that."*
+
+This **overrides** the note further down suggesting the column run on
+Near's own TOV corrections and audit findings. It does not run on Near's
+dashboard.
+
+- **Never publish Near's baseline metrics.** Coverage counts, how many
+  heroes failed a threshold, how many headlines shared a shape, how thin a
+  layer was before it was gated. Those stay in `BACKLOG.md` and the audit
+  logs. They are operating data, and publishing them tells competitors and
+  readers the site is early — which is a fact worth knowing internally and
+  worth nothing publicly.
+- **Never publish a confession.** A column whose recurring move is "here is
+  what we got wrong" reads as unreliable, not as candid, and it undercuts
+  the exact authority the curator page was built to establish.
+- **Teach the mechanism, not the incident.** The transferable half of a
+  finding is almost always generic. *"A case-sensitive check for a
+  title-case pattern silently passes everything"* is the useful sentence;
+  *"ours matched 0 of 16"* is the part that stays private. Same lesson,
+  no exposure.
+- **Frame decisions as principles, not repairs.** "Gate a generated page
+  type on a minimum-content threshold so coverage promotes pages into
+  existence" is a design principle other people can use. The same content
+  rendered as "we nearly shipped hundreds of thin pages" is a confession
+  with no added instructional value.
+- **Where the specificity comes from instead:** the skill spec already
+  requires web research on every invocation. Ground issues in the wider
+  industry, published research and named external examples — that is what
+  keeps the column from becoming the generic AI-opinion writing `near-seo`
+  flagged as saturated, without spending Near's own numbers to do it.
+
+`near-legal-counsel` and the chief editor own this check at sign-off,
+alongside the standing "no editorial process as copy" rule.
 Operator wants a new specialist skill for **content generation** whose flagship output is a standing column, published on near.tips itself, **about the process of generating this site's content with AI** — written by that specialist skill, i.e. the skill writing publicly about its own craft. This is the column idea the operator is "mais a fim de ver" but hasn't started.
 
 Requirements as stated:
