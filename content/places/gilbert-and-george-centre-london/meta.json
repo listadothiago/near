@@ -1,0 +1,82 @@
+{
+  "slug": "gilbert-and-george-centre-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 51.5190385,
+    "lng": -0.0711546
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Spitalfields",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "The Gilbert & George Centre — Your Visit",
+      "url": "https://gilbertandgeorgecentre.org/about/your-visit/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "The Gilbert & George Centre — What's On",
+      "url": "https://gilbertandgeorgecentre.org/whats-on/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "The Gilbert & George Centre — Backyard Biennial 2026",
+      "url": "https://gilbertandgeorgecentre.org/east-ends-first-ever-backyard-biennial/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-15T00:00:00Z"
+    },
+    {
+      "name": "Whitechapel Gallery — Backyard Biennial: East",
+      "url": "https://www.whitechapelgallery.org/exhibitions/backyard-biennial-east/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-15T00:00:00Z"
+    },
+    {
+      "name": "Museums + Heritage Advisor — London's The Gilbert & George Centre to open in April 2023",
+      "url": "https://museumsandheritage.com/advisor/posts/londons-the-gilbert-george-centre-to-open-in-april-2023/",
+      "feedId": null,
+      "originalPublishedAt": "2023-03-24T00:00:00Z"
+    },
+    {
+      "name": "SIRS Architects — The Gilbert & George Centre",
+      "url": "https://www.sir-s.net/art-gallery",
+      "feedId": null,
+      "originalPublishedAt": "2023-04-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Heneage_Street%2C_Spitalfields_-_geograph.org.uk_-_4340578.jpg",
+    "attribution": "Chris Whippet, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Heneage_Street,_Spitalfields_-_geograph.org.uk_-_4340578.jpg",
+    "licenseNote": "Heneage Street, Spitalfields — the Centre's own street, photographed 2015, which is BEFORE the Centre opened (1 April 2023) and therefore does not show the building as it is now. Used per the operator's 2026-09-01 call that a real, correctly-located photo beats holding a piece in draft: see the studio-voltaire-london precedent. Not used: photographs on the Centre's own site, which are dominated by reproductions of Gilbert & George artworks — the building shots are rights-unclear and the artwork shots are separately copyrighted, so neither clears for reuse. UPGRADE PATH: a rights-clear exterior of 5a Heneage Street post-2023, or a licensed image from the Centre or SIRS Architects with permission."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "London East End push, drafted and published 2026-09-02 by CUBIC-V via near-write-article (operator-directed after describing a real trip: friend based Camden/King's Cross with an East End itinerary — hence trust: auto, not a user submission). Verified directly against gilbertandgeorgecentre.org: address 5a Heneage Street, Spitalfields E1 5LJ, just off Brick Lane, Aldgate East 5 min (District, Hammersmith & City); free entry on the artists' 'Art for All' principle; free highlight tour every Saturday 4PM, no booking, £5 donation suggested; general admission needs no booking though some special events do; photography permitted but no flash, filming, tripods, selfie sticks or large cameras; no cafe on site; accessibility arranged via 020 7477 2484. HOURS CORRECTION, and it is the reason this piece leads with hours: the official visitor page states Thursday-Sunday 11:00-17:45, closed Monday-Wednesday, while secondary listings (search-result summaries, aggregator profiles) publish '10am-5pm'. The official figure is the one used throughout; the discrepancy is stated in the body because acting on the wrong one costs an hour at the start of the day. Current exhibition confirmed via the What's On page: 'Our George Crompton, WORLDS and WINDOWS by Gilbert & George', a memorial to the artists' friend George Crompton (died September 2025), including the triptych CROMPTON STREET shown for the first time, NUMBER TWELVE, Postcard Art from WORLDS AND WINDOWS (1989, not exhibited since 1990), and THE URETHRA POSTCARD ART (2009, 564 works). No end date is published for this exhibition, so the body names it but points at the live What's On page rather than implying a run. History cross-checked against Museums + Heritage Advisor and SIRS Architects: charity established 2017, building acquired 2015, opened to the public 1 April 2023 with THE PARADISICAL PICTURES, ~40,000 visitors in the first year, converted former brewery complex by SIRS Architects with the artists, 280 sqm across three levels. DATED-CONTENT FLAG FOR near-caretaker: the body carries the Backyard Biennial: East (15 July - 6 September 2026, free, 40+ East London partners, led by Whitechapel Gallery), which EXPIRES 6 SEPTEMBER 2026 — four days after publish. The section is written to name the dates explicitly and to say what is true after the 6th ('the biennial is over and the Centre carries on as normal'), so it degrades honestly rather than going stale, but it should be revisited or trimmed on the next currency pass. Geocode is an exact Nominatim hit on the building itself ('The Gilbert and George Centre, 5a, Heneage Street'), not a street-level estimate. Internal link to old-truman-brewery-london is a genuine one on two axes, not a forced one: a few minutes' walk up the same road, and the same brewery-to-culture conversion at a different scale."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.95,
+    "query": "5a Heneage Street, London E1 5LJ"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}
