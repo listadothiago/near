@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { SignInButton, Show, UserButton } from "@clerk/nextjs";
-import { Link, usePathname } from "@/lib/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/lib/i18n/navigation";
 import NearMark from "./NearMark";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
@@ -39,6 +39,7 @@ export default function Header({
 } = {}) {
   const t = useTranslations();
   const pathname = usePathname();
+  const router = useRouter();
   const {
     query,
     setQuery,
@@ -52,11 +53,14 @@ export default function Header({
   } = useBoardControls();
   const [compact, setCompact] = useState(false);
 
-  // Only the board filters on a query, so only the board offers the
-  // field. A search box on the about page that does nothing is worse
-  // than no search box.
-  const showSearch = pathname === "/";
-  const showFilters = showSearch && Boolean(availableCats?.length);
+  // The field is available everywhere now — off the board, submitting
+  // (Enter) takes the reader to the board, where the query (shared via
+  // BoardControlsProvider, which wraps every page already) is already
+  // applied. Category/tag filters stay board-only since only the board
+  // has anything to filter.
+  const isBoard = pathname === "/";
+  const showSearch = true;
+  const showFilters = isBoard && Boolean(availableCats?.length);
 
   useEffect(() => {
     // Hysteresis, and the gap must exceed the header's own height change:
@@ -90,7 +94,11 @@ export default function Header({
 
         {showSearch && (
           <div className="order-4 basis-full sm:order-none sm:basis-auto sm:flex-1 min-w-0 flex sm:max-w-96">
-            <SearchBox value={query} onChange={setQuery} />
+            <SearchBox
+              value={query}
+              onChange={setQuery}
+              onSubmit={isBoard ? undefined : () => router.push("/")}
+            />
           </div>
         )}
 
