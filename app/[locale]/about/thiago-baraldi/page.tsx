@@ -90,7 +90,8 @@ export default async function CuratorPage({
         <h1 className="text-[clamp(1.9rem,5vw,2.8rem)] leading-[1.05] mb-3">
           {CURATOR.name}
         </h1>
-        <p className="text-[1.1rem] leading-[1.55] mb-6">{t("lede")}</p>
+        <p className="text-[1.1rem] leading-[1.55] mb-4">{t("lede")}</p>
+        <p className="leading-[1.6] mb-6">{t("origin")}</p>
 
         <h2 className="text-[1.15rem] mt-8 mb-2">{t("whyHeading")}</h2>
         <p className="leading-[1.6] mb-3">{t("whyBody")}</p>
@@ -126,7 +127,15 @@ export default async function CuratorPage({
               key={c.city}
               className="border-[length:var(--stroke)] border-[var(--ink)] px-2.5 py-1 text-[0.85rem]"
             >
-              {c.city}{" "}
+              {c.city}
+              {/* The neighbourhood is the part that proves it was lived in
+                  rather than passed through — Garbatella, not "Rome". */}
+              {c.region && (
+                <span className="text-[0.8rem] text-[var(--muted)]">
+                  {" "}
+                  · {c.region}
+                </span>
+              )}{" "}
               <span className="font-mono text-[0.7rem] text-[var(--muted)]">
                 {c.pins > 0 ? t("pinCount", { count: c.pins }) : t("notYet")}
               </span>
@@ -134,9 +143,13 @@ export default async function CuratorPage({
           ))}
         </ul>
 
+        {/* Disclosed, not neutralised. A curator page claiming no taste
+            would be less trustworthy than one naming its slant. */}
+        <p className="leading-[1.6] mt-4">{t("bias")}</p>
+
         <h2 className="text-[1.15rem] mt-8 mb-2">{t("languagesHeading")}</h2>
         {/* The gap is stated, not buried. A curator page implying oversight
-            of six locales when the curator reads four would be the exact
+            of six locales when the curator reads five would be the exact
             unearned authority claim this page exists to avoid. */}
         <p className="leading-[1.6]">{t("languagesBody")}</p>
 

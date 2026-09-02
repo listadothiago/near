@@ -254,13 +254,13 @@
     "eyebrow": "Who is behind this",
     "jobTitle": "Founder and curator, Near",
     "metaTitle": "{name} — the human behind Near",
-    "metaDescription": "{name} built content systems at Booking.com and Expedia, ran an alt-weekly city network in Barcelona, and has lived in eight of the cities Near covers. Every byline on Near is AI; the editorial judgement is his.",
+    "metaDescription": "{name} built content systems at Booking.com and Expedia, ran a pan-European city-listings network from Barcelona, and has lived in most of the cities Near covers. Every byline on Near is AI; the editorial judgement is his.",
     "lede": "Near's bylines are all artificial, and say so. This page is the part that isn't.",
     "whyHeading": "Why this page exists",
     "whyBody": "Every article on Near is written by a disclosed AI persona, and none of them is a person — they are never presented as one, in the text or in the structured data behind it. That is deliberate, but it leaves a fair question: who decided any of this was worth publishing? The answer is one human, with a name, a checkable history, and fifteen years of building exactly this kind of system inside travel companies.",
     "workHeading": "The relevant history",
     "roles": {
-      "booking": "Ran the editorial team and acted as content product owner. Built the content generation system that still underpins Booking.com's content operations — which is to say, automated travel content at scale, seventeen years ago.",
+      "booking": "Ran the editorial team and acted as content product owner. Built the content generation system that became the foundation of Booking.com’s content operations — automated travel content at scale, seventeen years ago.",
       "lecool": "Digital Content Director for a pan-European network of urban culture and city-listings blogs. Le Cool got there first, and got it right; Near owes it the format.",
       "expedia": "Managed automated content generation products, and built the content audit system that checks their output. Still in production.",
       "hotels": "Owned the end-to-end booking experience and scaled the multivariate testing programme tenfold — years of learning what actually makes people click something versus what a team assumes will.",
@@ -269,7 +269,7 @@
     },
     "degree": "{degree} · {institution}",
     "citiesHeading": "The cities",
-    "citiesBody": "Lived in, not visited. {pins} of Near's places sit in {cities} cities on this list — the coverage map and the biography are close to the same map, which is the whole argument for trusting one over a generated listicle. The gaps are honest, and they are next.",
+    "citiesBody": "Lived in, not visited. {pins} of Near’s places sit in {cities} cities on this list — the coverage map and the biography are close to the same map. The neighbourhoods are the point, not decoration: this is someone who finds one he likes and stays in it, which is why Near is built around neighbourhoods rather than cities. The gaps are honest, and they are next.",
     "pinCount": "{count, plural, one {# place} other {# places}}",
     "notYet": "not covered yet",
     "languagesHeading": "Languages, including the one missing",
@@ -279,6 +279,8 @@
     "linkedin": "LinkedIn",
     "aboutLink": "About Near",
     "sourcesLink": "What Near watches",
-    "oversightNote": "Editorial oversight:"
+    "oversightNote": "Editorial oversight:",
+    "origin": "None of this is an abstraction. The format comes from free alt-weeklies pulled out of a street box in Chicago in the late 1990s, then read every week in the Bay Area in the early 2000s — from Hayward, later from the Tendernob — as those same papers were working out what they became online. Papers that told you what was actually on this week, took a position, and had no interest in flattering anyone. Near is an attempt at that in six languages, with machines doing the typing.",
+    "bias": "Declared bias, since Near does not pretend to be neutral: the beach, and being on the water — kayak and stand-up paddle. It shows in how much of the Baixada Santista coast is covered here relative to its size, and it will keep showing."
   }
 }
