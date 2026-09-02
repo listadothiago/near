@@ -101,6 +101,23 @@ _Cluster B — Hackney / Dalston. Dalston Superstore is already published._
 - [ ] **La Camionera, 243 Well Street, Hackney E9 6RG** — ALLORA DAI or STEFAN. **The strongest single candidate in this batch.** A lesbian bar, which is a nearly-extinct category, opened by Alex Loveless and Clara Solis from body2body — Dalston Superstore's trans masc night — and community-funded into existence. Café by day, wine and cocktails by night, terracotta and a fig tree in the garden. Real press: Wallpaper*, The Face. **THE CORRECTION: guides file it under "Dalston". It is on Well Street in Hackney, E9** — a different neighbourhood and a 25-minute walk. Hours: Mon–Tue 16:00–23:00, Wed–Sun 10:00–late, so the daytime café is testable.
 - [ ] **The Divine, Dalston** — STEFAN. 200-capacity café, show-bar and nightclub, opened Feb 2024 by Jonny Woo, John Sizzle and Colin Rothbart as The Glory's "naughty little sister". **THE CORRECTION, and it is a good one: The Glory closed on 31 January 2024 after ten years in Haggerston, and guides still list it as open — one carries a "New 2025 Review" of a venue that had already been shut for a year.** Confirm The Divine's address and current hours at draft.
 
+_SCOPE CORRECTION, operator 2026-09-02: **the London food focus does NOT
+have to be queer-only.** The four above were all queer-owned/led, which
+over-rotated the batch — Near's beat is independent, embedded,
+local-legend places, and the LGBTQIA+ angle is one strong lane inside
+that, not the whole road. Broader candidates below, verified to the same
+standard._
+
+- [ ] **Bar Italia, 22 Frith Street, Soho W1D 4RF** — PLINIO or FOODIE-9000. **DRAFT THIS ONE FIRST: it closes a gap Near logged weeks ago.** `content/requests.md`'s `hazlitts-london-no-natural-internal-link` asked specifically for "a bar, bookshop, or venue on/near Frith or Dean Street" that Hazlitt's could link to. Bar Italia is on Frith Street, a few minutes' walk. Opened 1949 by the Polledri family and still run by the third generation, Veronica and Anthony Polledri; original red-and-white Formica, a vintage Gaggia, and a floor hand-laid by a family member. **Open 07:00–05:00 daily** — not quite 24h, and listings that claim 24h are wrong, which is the correction. Publishing it also lets the Hazlitt's request be closed.
+- [ ] **E. Pellicci, Bethnal Green E2** — FOODIE-9000, with a PLINIO consult. A caff run by four generations of the same family since 1900, with a **Grade II listed Art Deco interior** (listed 2005, Historic England entry 1391332, cited as "an increasingly rare example of the stylish Italian cafe that flourished in London in the inter-war years"). Maria Pellicci has cooked there since 1966 and was made a Knight of the Order of the Star of Italy in 2025; the caff placed 83rd in TasteAtlas's 2025 "100 Most Legendary Restaurants". **CURRENCY RISK, per rules.md: this piece depends on a named living person.** Re-verify Maria Pellicci's status at draft and flag the page to `near-caretaker` — present-tense copy about someone who has died is the exact failure that rule exists to prevent.
+
+_Unverified leads for the next London food pass, deliberately NOT claimed
+as verified: Tayyabs (Whitechapel Punjabi), Mangal 2 (Dalston ocakbaşı),
+Silk Road (Camberwell Xinjiang), Maltby Street and Netil markets as
+alternatives to the already-published Borough Market. Each needs the full
+verify-still-open plus a second independent source before it enters the
+queue proper._
+
 _London food dating note: verify hours at draft — three of these four are
 day-part-restricted (TOAD closes at 15:00; La Camionera opens at 16:00 on
 Mon/Tue), which is exactly the kind of detail a listicle gets wrong and a
