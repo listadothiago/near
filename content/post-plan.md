@@ -91,7 +91,7 @@ _Berlin corrections bank (all sourced): visitBerlin still lists SchwuZ as open (
 - [ ] The Stud, SoMa — STEFAN (first worker-owned co-op nightclub in the US; 2026 Instagram suspension + Stud Alley arrests; Commons photos show OLD 9th St site — then/now caption or illustration)
 - [ ] Dolphin Club, Aquatic Park — WILD0 (swim SF Bay for a $10 public day-use fee; 1877; alternate days with South End)
 - [ ] Queer Surf, Pacifica — FIT-BOT (sliding-scale queer surf lessons; SWITCH exhibition Jun 13 2026; retry ebar sources via browser at draft)
-- [ ] Heinold's First & Last Chance, Oakland — PLINIO (floor tilted since 1906, last original gas lighting in CA commercial use)
+- [x] Heinold's First & Last Chance, Oakland — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
 - [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; RSD Apr 18 2026 confirmed; needs one more independent source at draft)
 - [ ] Lakeshore Lavender Lounge, Oakland — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
 
