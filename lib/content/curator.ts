@@ -23,6 +23,12 @@
 export const CURATOR = {
   slug: "thiago-baraldi",
   name: "Thiago Baraldi",
+  /**
+   * Self-hosted rather than hotlinked from Gravatar. The face attached to
+   * the site's only `Person` node should not depend on a third party
+   * staying up, and the AI cast's avatars are local for the same reason.
+   */
+  photo: "/branding/thiago-baraldi.jpg",
   /** Public profile. Deliberately not the email or phone from the CV. */
   sameAs: ["https://www.linkedin.com/in/baraldi"],
   degree: {

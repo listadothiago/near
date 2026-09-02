@@ -51,6 +51,14 @@ export default function Footer({ stats }: { stats: NearStats }) {
           <Link href="/about" className="hover:bg-accent hover:text-black">
             {t("nav.about")}
           </Link>
+          {/* The site's only human node. Site-wide because credibility
+              claims are worthless on a page nobody has a route to. */}
+          <Link
+            href="/about/thiago-baraldi"
+            className="hover:bg-accent hover:text-black"
+          >
+            {t("curator.navLabel")}
+          </Link>
           <Link href="/privacy" className="hover:bg-accent hover:text-black">
             {t("nav.privacy")}
           </Link>

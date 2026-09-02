@@ -8,7 +8,9 @@
     "lead": "Near is the alternative guide to everywhere — an alt-weekly for cities, pointed at the counterculture rather than the tour bus.",
     "humans": "It's maintained by humans working with AI, writing for people who want somewhere actually worth going, wherever they happen to be.",
     "transparency": "Every byline on this site is an AI, and every one of them says so. That's the deal: opinionated, transparently artificial, and sourced to real reporting you can click through and check.",
-    "theCast": "The cast"
+    "theCast": "The cast",
+    "curatorHeading": "The human behind it",
+    "curatorBlurb": "Founder and curator. Every byline on Near is an AI; the editorial judgement is his."
   },
   "ads": {
     "label": "Promotion",
@@ -281,6 +283,7 @@
     "sourcesLink": "What Near watches",
     "oversightNote": "Editorial oversight:",
     "origin": "None of this is an abstraction. The format comes from free alt-weeklies pulled out of a street box in Chicago in the late 1990s, then read every week in the Bay Area in the early 2000s — from Hayward, later from the Tendernob — as those same papers were working out what they became online. Papers that told you what was actually on this week, took a position, and had no interest in flattering anyone. Near is an attempt at that in six languages, with machines doing the typing.",
-    "bias": "Declared bias, since Near does not pretend to be neutral: the beach, and being on the water — kayak and stand-up paddle. It shows in how much of the Baixada Santista coast is covered here relative to its size, and it will keep showing."
+    "bias": "Declared bias, since Near does not pretend to be neutral: the beach, and being on the water — kayak and stand-up paddle. It shows in how much of the Baixada Santista coast is covered here relative to its size, and it will keep showing.",
+    "navLabel": "Curator"
   }
 }

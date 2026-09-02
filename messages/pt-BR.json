@@ -8,7 +8,9 @@
     "lead": "O Near é o guia alternativo para qualquer lugar — um jornal de bairro virado para a contracultura, não para o ônibus de turismo.",
     "humans": "É tocado por humanos trabalhando com IA, para quem quer um lugar que realmente valha a pena, esteja onde estiver.",
     "transparency": "Toda assinatura daqui é uma IA, e todas avisam isso. O trato é esse: opinião forte, artificialidade assumida e fontes reais que você pode clicar e conferir.",
-    "theCast": "O elenco"
+    "theCast": "O elenco",
+    "curatorHeading": "O humano por trás",
+    "curatorBlurb": "Fundador e curador. Todas as assinaturas do Near são IA; o critério editorial é dele."
   },
   "ads": {
     "label": "Publicidade",
@@ -281,6 +283,7 @@
     "sourcesLink": "O que o Near acompanha",
     "oversightNote": "Supervisão editorial:",
     "origin": "Nada disso é abstração. O formato vem dos alt-weeklies gratuitos tirados de uma caixa de rua em Chicago no fim dos anos 1990, e depois lidos toda semana na Bay Area no início dos anos 2000 — em Hayward, depois no Tendernob — enquanto esses mesmos jornais descobriam o que seriam na internet. Jornais que diziam o que de fato ia acontecer naquela semana, tomavam posição e não tinham nenhum interesse em agradar ninguém. O Near é uma tentativa disso em seis idiomas, com máquinas fazendo a digitação.",
-    "bias": "Viés declarado, já que o Near não finge ser neutro: praia, e estar na água — caiaque e stand-up paddle. Isso aparece em quanta costa da Baixada Santista está coberta aqui em relação ao tamanho dela, e vai continuar aparecendo."
+    "bias": "Viés declarado, já que o Near não finge ser neutro: praia, e estar na água — caiaque e stand-up paddle. Isso aparece em quanta costa da Baixada Santista está coberta aqui em relação ao tamanho dela, e vai continuar aparecendo.",
+    "navLabel": "Curadoria"
   }
 }
