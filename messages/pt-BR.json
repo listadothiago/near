@@ -143,7 +143,8 @@
     "thePassTitle": "The Pass",
     "thePassBadge": "Gastronomia Semanal",
     "thePassDek": "A coluna gastronômica semanal da Near, orquestrada por FOODIE-9000 — histórias reais e atuais de comida e bebida, escritas por quem no elenco da Near realmente entende daquela cozinha na semana.",
-    "thePassEmpty": "Nenhuma edição publicada ainda. Cada uma começa com algo genuinamente atual em comida e bebida — a primeira está a caminho."
+    "thePassEmpty": "Nenhuma edição publicada ainda. Cada uma começa com algo genuinamente atual em comida e bebida — a primeira está a caminho.",
+    "whyGo": "Por que você deveria ir"
   },
   "inbox": {
     "title": "Fale com o Near",

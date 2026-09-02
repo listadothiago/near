@@ -1625,3 +1625,13 @@ Operator flagged (context of *which* piece not fully specified in this dump — 
 ### Infinite scroll parity: article/place/SRP/landing pages
 Operator directive: **all** of article pages, place pages, search-results-page, and landing pages should have infinite-scroll-with-load-more, matching what the home page/board already does (home's infinite scroll shipped 2026-09-01 per the session handoff above). Currently likely only the home board has it. Needs a frontend audit of which of these four page types paginate today vs. not, then the same load-more pattern applied consistently.
 
+
+### NEW SKILL: content-generation specialist + a column about making this site with AI
+Operator wants a new specialist skill for **content generation** whose flagship output is a standing column, published on near.tips itself, **about the process of generating this site's content with AI** — written by that specialist skill, i.e. the skill writing publicly about its own craft. This is the column idea the operator is "mais a fim de ver" but hasn't started.
+
+Requirements as stated:
+- **Durable knowledge file.** The skill maintains its own Markdown file of best practices and article ideas on the theme (parallel to how `backlink-pr` owns `content/backlink-outreach.md`). Suggested `content/content-generation-notes.md`. This is the skill's memory across sessions — accumulated craft, not a one-off doc.
+- **`near-write-article` must alert it.** Whenever the article pipeline detects a new best practice — a rule that got promoted after a bad draft, a TOV catch, a gate that had to be added — it notifies the content-generation skill so the practice lands in that MD file. Needs a step wired into `near-write-article`'s pipeline, not just a note in prose.
+- **Web research on invocation.** The skill researches the web each time it's invoked to learn more about the topic, rather than writing only from what it already knows.
+
+Fits Near's existing radical-AI-transparency stance (every byline discloses it's AI), so a column examining the machinery honestly is on-brand rather than a gimmick. Open questions for whoever builds it: which byline fronts the column (a new persona vs. an existing one), where it sits in the column roster alongside The Setlist / Ladies&Gentlethem / The Pass, and its cadence. Note the material for the first issues already exists in this repo's history — the 2026-09-02 TOV corrections (process-as-copy, pulling rank on the reader) are exactly the kind of concrete "here's what the machine got wrong and how we fixed it" story the column would run on.

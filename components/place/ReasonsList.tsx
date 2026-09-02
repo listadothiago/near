@@ -1,11 +1,19 @@
 import { useTranslations } from "next-intl";
 
-export default function ReasonsList({ bullets }: { bullets: string[] }) {
+export default function ReasonsList({
+  bullets,
+  // Collections reuse this box under their own heading ("Why you should
+  // go"), so the label is overridable while the styling stays shared.
+  title,
+}: {
+  bullets: string[];
+  title?: string;
+}) {
   const t = useTranslations("place");
 
   return (
     <section className="mt-8 max-w-[65ch] border-[3px] border-ink bg-surface p-4 shadow-[var(--shadow-sm)]">
-      <h2 className="text-[1.05rem] mb-3">{t("reasonsToCheckOut")}</h2>
+      <h2 className="text-[1.05rem] mb-3">{title ?? t("reasonsToCheckOut")}</h2>
       <ul className="space-y-2">
         {bullets.map((bullet, i) => (
           <li

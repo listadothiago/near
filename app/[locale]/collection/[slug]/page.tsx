@@ -17,6 +17,7 @@ import { mdxComponents } from "@/components/mdx/mdxComponents";
 import CollectionHero from "@/components/collection/CollectionHero";
 import CollectionPlaces from "@/components/collection/CollectionPlaces";
 import LongFormBody from "@/components/place/LongFormBody";
+import ReasonsList from "@/components/place/ReasonsList";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -81,6 +82,7 @@ export default async function CollectionPage({
 
   const stats = getStats();
   const t = await getTranslations({ locale, namespace: "place" });
+  const tCollection = await getTranslations({ locale, namespace: "collection" });
   const url = `${getBaseUrl()}/${locale}/collection/${slug}`;
   const jsonLd = buildCollectionJsonLd({
     meta: content.meta,
@@ -120,6 +122,14 @@ export default async function CollectionPage({
           placeCount={places.length}
           isColumn={editorialColumnIndex.slugs.includes(slug)}
         />
+        {/* Above the body on purpose: the box exists to be read at a
+            glance before committing to the piece. */}
+        {content.frontmatter.bullets && (
+          <ReasonsList
+            bullets={content.frontmatter.bullets}
+            title={tCollection("whyGo")}
+          />
+        )}
         <LongFormBody>
           <MDXRemote source={content.body} components={mdxComponents} />
         </LongFormBody>

@@ -186,6 +186,16 @@ export type CollectionMeta = z.infer<typeof collectionMetaSchema>;
 export const collectionContentFrontmatterSchema = z.object({
   title: z.string().min(1),
   dek: z.string().min(1).max(160),
+  // The scannable "why you should go" box, mirroring a place page's
+  // `bullets` — concrete reasons (a new record, a specific artist), not
+  // atmosphere. Optional rather than min(3) like places, because
+  // collections also carry essays where the box is meaningless: a piece
+  // arguing against listicles has nothing to recommend going to. Column
+  // issues that DO recommend something are required to carry it by
+  // content/rules.md's quality-gate-before-publish, which is where that
+  // editorial distinction belongs — the schema only knows the field is
+  // sometimes inapplicable.
+  bullets: z.array(z.string().min(1)).min(3).optional(),
   seoDescription: z.string().min(1).max(320),
 });
 export type CollectionContentFrontmatter = z.infer<

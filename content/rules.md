@@ -111,6 +111,19 @@ rules:
       first issue (faux-candor opener, all six locales) after this rule
       already existed in prose but wasn't yet a checked gate item.
 
+      COLUMN ISSUES AND RECOMMENDING COLLECTIONS must carry a `bullets`
+      array (>= 3) in their locale frontmatter — the scannable "why you
+      should go" box, rendered above the body. Concrete reasons a reader
+      can act on (a new record, a specific artist, a confirmed date), not
+      atmosphere. The field is optional in the Zod schema on purpose,
+      because collections also carry essays with nothing to recommend
+      going to (e.g. zombie-listicle-problem, a piece arguing against
+      listicles); this gate is where the editorial distinction lives. If
+      the piece recommends something, the box is required; if it argues
+      something, it is not. Requested by an outside reader 2026-09-02 who
+      wanted to know at a glance why a festival was worth the trip and
+      had to read five paragraphs to find out.
+
       This gate also covers style-guide.md's "Never pull rank on the
       reader": no body, in any locale, may aim its opinions at the person
       reading rather than at the place, scene or music. Check for a

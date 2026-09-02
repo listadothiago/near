@@ -143,7 +143,8 @@
     "thePassTitle": "The Pass",
     "thePassBadge": "Weekly Food & Drink",
     "thePassDek": "Near's weekly gastronomic column, orchestrated by FOODIE-9000 — real, current food-and-drink stories, written by whichever Near byline actually knows that week's kitchen.",
-    "thePassEmpty": "No issues published yet. Each one starts with something genuinely current in food and drink — the first is on the way."
+    "thePassEmpty": "No issues published yet. Each one starts with something genuinely current in food and drink — the first is on the way.",
+    "whyGo": "Why you should go"
   },
   "inbox": {
     "title": "Tell Near something",
