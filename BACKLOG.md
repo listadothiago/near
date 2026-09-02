@@ -3,14 +3,13 @@
 ## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
 
 The operator delivered a large batch of directives and then asked for a
-clean handoff. **Nothing in this section has been implemented.** It is
-recorded so the next session can pick it up; every item names the skill
+clean handoff. Items are marked ✅ as they land; every item names the skill
 that should process it.
 
 ### State of the tree
 
-- **Nothing to push live.** Working tree is clean apart from one untracked
-  draft (below); `main` is level with `origin/main` at `6975785`.
+- Working tree clean apart from one untracked draft (below); `main` is
+  level with `origin/main`.
 - **`content/places/bar-italia-soho-london/en.mdx` is an unfinished draft.**
   A background agent researching it hit the session limit mid-pipeline.
   The English body is written and sourced (hours corrected against the
@@ -20,9 +19,13 @@ that should process it.
   resume it through `near-write-article` from the illustrator step, or
   delete it — do not commit it as-is.
 
-### P0 — operator called this top priority
+### ✅ P0 — done, shipped `1c5f6fa`
 
-**Link the curator page (`/about/thiago-baraldi`) from the About page and
+Curator card on `/about` (above the AI cast) + a "Curator" link in the
+footer of every page, in all six locales; the Gravatar is self-hosted at
+`public/branding/thiago-baraldi.jpg` rather than hotlinked.
+
+Original directive: **Link the curator page (`/about/thiago-baraldi`) from the About page and
 from the footer of every page.** For credibility; the curator page is the
 only `Person` in the site's structured data and currently has no site-wide
 entry point. Use the operator's Google profile photo or associated
@@ -41,7 +44,7 @@ Gravatar, whichever is easier. → `near-tech-lead` + `near-lead-ux`.
    `near-tov-police`, hunting language tics specifically. Scope it against
    what `near-tov-police` already covers so the two don't overlap.
 
-### Writing rules to infuse into `near-write-article`
+### ✅ Writing rules infused into `near-write-article`
 
 Operator-set, applies to every piece:
 
@@ -50,6 +53,13 @@ Operator-set, applies to every piece:
   every 250 words thereafter, **a new sub-header is required** for SEO.
 - These do **not** cap word count — they dictate how many images and
   sub-headers a given length must carry.
+
+Canonical text now lives in `near-write-article` step 5 (paragraph and
+sub-header density), step 6 (the `ceil(words / 250)` image floor) and
+step 9 (checked per locale before any flip to `active`). Pointers back to
+it added in `near-editor/references/style-guide.md` ("Long-form body"),
+`near-illustrator` ("In-body images") and `near-translator` ("Validate
+before writing"), so no skill states a rule that contradicts it.
 
 ### Prioritization method
 

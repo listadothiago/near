@@ -255,6 +255,13 @@ fill one. Concretely:
 - End with a bridge outward: a `<NearLink>` to something nearby or related,
   framed as a next move, not a footnote.
 
+**Structure, operator-set 2026-09-02 (canonical text in
+`near-write-article` step 5):** a paragraph break every 100 words at
+most, and a new sub-header at 250 words and every 250 thereafter. These
+set density, not length — a piece is never padded or trimmed to hit
+them. "Earn a long paragraph" above still holds; 100 words is where a
+paragraph stops being long and starts being a wall.
+
 ## Opening lines
 
 Never open a body with a crowd-consensus claim as the sentence's first

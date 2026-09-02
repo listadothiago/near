@@ -96,6 +96,25 @@ editor persona either writes it personally or defers, per that
 column's own doc — being editor isn't the same job as being that
 issue's writer.
 
+**The structural rules below (operator, 2026-09-02) apply while
+drafting, to every piece.** They are not a post-hoc reformatting pass —
+a body written as three 400-word paragraphs and then chopped up reads
+like a body that was chopped up.
+
+- **A paragraph break every 100 words, maximum.** Long paragraphs are
+  the single most reliable tell of an unedited machine draft, and on a
+  phone they are a wall.
+- **A new sub-header at 250 words, and every 250 words thereafter.** For
+  SEO and for scanning — a reader who lands mid-page needs to know where
+  they are. Sub-headers are `##` in the body, and each one should say
+  what its section is actually about, not "Overview".
+- **These are density rules, not a word-count cap.** They do not make a
+  piece shorter or longer; they dictate how many sub-headers (and, at
+  step 6, how many images) a given length has to carry. A 700-word body
+  needs at least two sub-headers whether or not it wanted them. If a
+  section genuinely has nothing to break on at 250 words, that is a
+  signal the section is padded — cut it rather than bending the rule.
+
 Write following `near-editor/references/style-guide.md` and
 `llm-seo.md` directly while drafting, not just as a post-hoc check —
 `near-tov-police`'s job in step 7 is confirming the discipline was
@@ -119,6 +138,15 @@ nice-to-have reserved for long posts. Run this against the **drafted
 body** from step 5 (a wall of text can't be judged before the text
 exists), and record the answer — including an explicit "none needed" —
 per `near-illustrator`'s logging rule.
+
+**Operator directive, 2026-09-02: 250 words maximum per image, hero
+included.** That sets the floor mechanically — `ceil(words / 250)`
+images, so ≤250 words is hero-only, 400 words needs a second image, 900
+words needs four. `near-illustrator` still decides *which* images,
+*what* subject, and *where* they land, and may run more than the floor
+where the piece earns it; what it may not do is come back under the
+floor. If an image can't be resolved to meet the floor, that's step 6's
+existing hold condition, not a reason to publish thin.
 
 Hero tiers in
 preference order: real source photo with attribution → licensed stock
@@ -177,7 +205,12 @@ checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
 long-form body ≥ 150 words in at least English (a floor, not a target —
 write tight, don't pad; see `rules.md` for the 2026-09-01 directive and
 its Featured Article/blog/column exceptions), geocode confidence ≥
-0.6, hero image resolved, link-density rule passes (real in-text
+0.6, hero image resolved, the step 5/6 structural rules hold in **every
+locale, not just English** (no paragraph over 100 words; a sub-header at
+250 words and each 250 after; at least `ceil(words / 250)` images
+counting the hero) — a locale edition is a real edition, so a
+`near-translator` pass that merges paragraphs or drops a sub-header
+fails this gate the same way the English would, link-density rule passes (real in-text
 external + internal links, not just a footer citation block — log a
 genuine internal-link gap to `content/requests.md` rather than forcing
 a weak one). Alongside that mechanical floor, run `link-police`'s pass

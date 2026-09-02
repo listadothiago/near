@@ -120,7 +120,17 @@ Every locale MDX file must satisfy `placeContentFrontmatterSchema` /
 `collectionContentFrontmatterSchema` (`lib/content/schema.ts`) exactly
 like the English version — tagline ≤90 chars, ≥3 bullets, `seoDescription`
 ≤320 chars. `<NearLink slug="...">` text gets translated/localized; the
-`slug` prop never changes. If a locale isn't produced this run, that's
+`slug` prop never changes.
+
+The structural rules hold per locale, not just in the English source
+(operator, 2026-09-02 — canonical text in `near-write-article` step 5):
+no paragraph over 100 words, a sub-header at 250 words and every 250
+after, and the same images the English carries. Word counts move between
+languages — a Portuguese edition of a 240-word English body can cross
+250 and take a sub-header the source never needed. Count in the locale
+you're writing, not in the original.
+
+If a locale isn't produced this run, that's
 fine — the app falls back to English with a "translation pending" note
 (`lib/content/loader.ts`'s `resolveLocaleContent`) rather than 404ing, so
 there's no pressure to rush a weak localization just to fill the slot.

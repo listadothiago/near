@@ -178,6 +178,13 @@ or more images inside it, and if so, where and what?** Answer it against
 the drafted body, not the outline — you cannot judge a wall of text
 before the text exists.
 
+**The floor, operator-set 2026-09-02: 250 words maximum per image, hero
+included** — `ceil(words / 250)` images minimum. So a body of 250 words
+or under is legitimately hero-only, 400 words takes a second image, 900
+takes four. The judgement below decides *which* image and *where*, and
+can go above the floor when the piece earns it; "the body is short
+enough" is only an available answer under 250 words.
+
 Reach for an in-body image when:
 - The body runs long enough that a reader scrolling it sees no visual
   break — the usual trigger. Section headings help, but they are not
@@ -191,8 +198,8 @@ Reach for an in-body image when:
   work, and they're the strongest reason to run one.
 
 Don't run one when:
-- The body is genuinely short and one hero already covers it. A short
-  piece padded with a second image looks like padding.
+- The body is under the 250-word floor and one hero already covers it. A
+  short piece padded with a second image looks like padding.
 - The only candidate is a generic stock image that repeats what the hero
   already said. Two weak images are worse than one strong one — the same
   logic as the gallery bar below.
