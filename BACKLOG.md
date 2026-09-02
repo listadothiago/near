@@ -1,5 +1,69 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🎯 SESSION HANDOFF (2026-09-02, evening — READ THIS FIRST)
+
+**Everything below is live on near.tips.** Working tree clean, 12 commits
+pushed, production verified.
+
+### Shipped and verified live
+
+1. **Canonical + hreflang on every route.** 11 of 13 route types had
+   neither; the six locale home pages had no `generateMetadata` at all.
+   One helper (`lib/seo/alternates.ts`), `x-default` everywhere.
+2. **Sitemap made honest.** `<priority>` dropped, every `lastmod` from
+   content frontmatter so no URL claims to change per build, seven route
+   types added. **390 → 630 URLs.**
+3. **`max-image-preview:large`** — verified against Google's live docs:
+   *not* a Discover eligibility gate, but it gates the large-image
+   treatment a Discover card is.
+4. **Addressable location pages** — `/[locale]/in/[...location]`,
+   **20 pages × 6 locales**. Gated at ≥2 places; neighborhoods are
+   city-scoped because names collide (Centro Histórico spans Santos and
+   Paraty). Duplicate parents retired with 308s.
+5. **Board layout overflow fixed** — `1fr` could not shrink below
+   min-content, spilling the map/promo rail up to 158px off-screen
+   between 768–910px.
+6. **A live page serving a 404 hero image** (`legends-hotel-brighton`) —
+   Commons URL hash directory was hand-assembled. Corrected.
+7. **Curator page** (`/about/thiago-baraldi`, six locales) — the human
+   node the trust chain lacked. The only `Person` in structured data;
+   every AI author page links up to it.
+8. **The ICA, London** — six locales, hung on the BFI London Film
+   Festival (7–18 Oct 2026). Created `/in/london/st-james-s` as a side
+   effect.
+9. **Five C-level roles** — `near-ceo`, `near-cfo`, `near-cmo`,
+   `near-cto`, `near-cpo`, split by altitude.
+
+### ⚠️ Corrections made this session — do not re-derive these wrong
+
+- **Count board pins, not `meta.json` files.** Hosted events carry
+  `parentPlace` and are filtered off the board. Santos / Centro Histórico
+  needs +2, not +1.
+- **The TOV headline-formula check never worked.** It was case-sensitive
+  against title-case headlines: reported 0, actual 16. Fixed in the skill.
+- **Rio Cinema Dalston is not an LFF venue.** Checked before publishing.
+
+### 🚫 No PARSER article exists
+
+The content-generation column was **scoped and constrained, not written**.
+PARSER has no column route, no index JSON, and no drafted issue, and the
+content-generation specialist skill does not exist yet. Anything claiming
+otherwise is wrong. The operator's constraint (teach the mechanism, never
+publish Near's baselines) is recorded under the column's backlog item.
+
+### Next, in order
+
+1. **`near-cmo`: make the outreach-freeze exit condition testable** and
+   put it to the operator. Everything PR-shaped is blocked behind it.
+2. **AR waypoint view on a phone** — the shippable half, a link-earning
+   asset that costs nothing against the freeze.
+3. **`near-cpo`: ratify a north star.** Still unratified.
+4. **Neighborhood deepening** — São Paulo / Centro and Liberdade are +1
+   each; Santos / Centro Histórico +2.
+5. **Resubmit sitemap in Search Console** if not already reflected — it
+   changed structurally four times today.
+
+
 ## ✅ SHIPPED (2026-09-02, lead-product session): the head/sitemap P0 bundle
 
 The previous handoff called "audit canonical + hreflang across six locales"
