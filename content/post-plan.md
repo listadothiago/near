@@ -42,7 +42,7 @@ push-to-live per post for operator QA.
 - [x] Wilton's Music Hall — PLINIO (shipped 2026-08-31)
 - [x] London Otters — FIT-BOT (shipped 2026-08-31)
 - [x] Walthamstow Wetlands — WILD0 (shipped 2026-08-31; closure re-checked, ends this week and article says so)
-- [ ] Berry Bros. & Rudd — DARCY (verified; first London travel pin)
+- [x] Berry Bros. & Rudd — DARCY (shipped 2026-08-31/09-01; first London travel pin)
 - [ ] Hazlitt's — NITE-PORTER (verified)
 - [ ] Studio Voltaire — CUBIC-V (verified)
 - [ ] Jumbi — STEFAN (needs one dated-event source)
