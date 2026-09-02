@@ -10,6 +10,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CollectionCards from "@/components/collection/CollectionCards";
 import theSetlistIndex from "@/content/the-setlist-index.json";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -33,7 +34,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "collection" });
-  return { title: t("theSetlistTitle") };
+  return { title: t("theSetlistTitle"), alternates: buildAlternates(locale, "/the-setlist") };
 }
 
 export default async function TheSetlistArchivePage({

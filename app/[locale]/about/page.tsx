@@ -8,6 +8,7 @@ import { AUTHORS } from "@/lib/content/authors";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AuthorCard from "@/components/layout/AuthorCard";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -22,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about" });
-  return { title: t("title"), description: t("lead") };
+  return { title: t("title"), description: t("lead"), alternates: buildAlternates(locale, "/about") };
 }
 
 export default async function AboutPage({

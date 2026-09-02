@@ -14,6 +14,7 @@ import {
 import type { ContentLocale } from "@/lib/content/schema";
 import { buildPlaceJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
+import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import PlaceHero from "@/components/place/PlaceHero";
 import PlaceMap from "@/components/place/PlaceMap";
@@ -47,18 +48,10 @@ export async function generateMetadata({
   const content = getPlaceContent(slug, locale as ContentLocale);
   if (!content) return {};
 
-  const path = `/place/${slug}`;
-  const languages = Object.fromEntries(
-    routing.locales.map((l) => [l, `${getBaseUrl()}/${l}${path}`]),
-  );
-
   return {
     title: content.frontmatter.name,
     description: content.frontmatter.seoDescription,
-    alternates: {
-      canonical: `/${locale}${path}`,
-      languages,
-    },
+    alternates: buildAlternates(locale, `/place/${slug}`),
     openGraph: {
       title: content.frontmatter.name,
       description: content.frontmatter.seoDescription,

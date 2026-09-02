@@ -10,6 +10,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CollectionCards from "@/components/collection/CollectionCards";
 import ladiesAndGentlethemIndex from "@/content/ladies-and-gentlethem-index.json";
+import { buildAlternates } from "@/lib/seo/alternates";
 
 export const revalidate = 3600;
 
@@ -32,7 +33,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "collection" });
-  return { title: t("ladiesAndGentlethemTitle") };
+  return { title: t("ladiesAndGentlethemTitle"), alternates: buildAlternates(locale, "/ladies-and-gentlethem") };
 }
 
 export default async function LadiesAndGentlethemArchivePage({

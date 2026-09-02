@@ -13,10 +13,17 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "What near.tips collects, why, and how to control it.",
-};
+// The body is English-only, so the six locale-prefixed URLs are six
+// copies of the same document. They all canonicalize to /en and carry no
+// hreflang: declaring translations that don't exist is worse than
+// declaring none. Revisit when these are actually translated.
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Privacy Policy",
+    description: "What near.tips collects, why, and how to control it.",
+    alternates: { canonical: "/en/privacy" },
+  };
+}
 
 // English-only for now (2026-09-01) — shipped to unblock Google OAuth's
 // consent-screen requirement, which needs a reachable privacy policy URL

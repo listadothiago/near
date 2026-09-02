@@ -13,6 +13,7 @@ import editorialColumnIndex from "@/content/editorial-column-index.json";
 import type { ContentLocale, PlaceSummary } from "@/lib/content/schema";
 import { buildCollectionJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
+import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import CollectionHero from "@/components/collection/CollectionHero";
 import CollectionPlaces from "@/components/collection/CollectionPlaces";
@@ -41,15 +42,10 @@ export async function generateMetadata({
   const content = getCollectionContent(slug, locale as ContentLocale);
   if (!content) return {};
 
-  const path = `/collection/${slug}`;
-  const languages = Object.fromEntries(
-    routing.locales.map((l) => [l, `${getBaseUrl()}/${l}${path}`]),
-  );
-
   return {
     title: content.frontmatter.title,
     description: content.frontmatter.seoDescription,
-    alternates: { canonical: `/${locale}${path}`, languages },
+    alternates: buildAlternates(locale, `/collection/${slug}`),
     openGraph: {
       title: content.frontmatter.title,
       description: content.frontmatter.seoDescription,
