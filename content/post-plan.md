@@ -43,20 +43,20 @@ push-to-live per post for operator QA.
 - [x] London Otters — FIT-BOT (shipped 2026-08-31)
 - [x] Walthamstow Wetlands — WILD0 (shipped 2026-08-31; closure re-checked, ends this week and article says so)
 - [x] Berry Bros. & Rudd — DARCY (shipped 2026-08-31/09-01; first London travel pin)
-- [ ] Hazlitt's — NITE-PORTER (verified)
-- [ ] Studio Voltaire — CUBIC-V (verified)
-- [ ] Jumbi — STEFAN (needs one dated-event source)
+- [x] Hazlitt's — NITE-PORTER (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
+- [x] Studio Voltaire — CUBIC-V (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
+- [x] Jumbi — STEFAN (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
 - [ ] Sister Midnight — STEFAN (operator-approved as 'opening'-status pin; schema needs the status value first)
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
 
 ### São Paulo / Baixada / Campinas (NEXT-BATCH PRIORITY, scoped 2026-09-01 — see content/opportunities.md)
 - [x] Madê Cozinha Autoral, Santos — FOODIE-9000 (shipped 2026-08-31; address-move correction is the angle)
 - [x] Almeida, Santos — PLINIO (shipped 2026-08-31; identified as Restaurante Almeida, Av. Ana Costa 1, founded 1932)
-- [ ] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — operator request, SPECIAL: Cris profile + place + beach significance, higher sourcing bar (first named-person profile). See BACKLOG.
+- [x] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — shipped; checkbox was stale, caught during 2026-09-01 queue cleanup.
 - [ ] O Condado + São Vicente scene items from earlier scouting — need verification pass
 - [ ] **Campinas — first pin ever, draft this first.** Bar Flor da Lua (craft beer/cocktails/vegan, mixed LGBT-friendly crowd — try first, hits gastronomic+LGBT+hipster in one) or Livre Club (Vila Itapura, ~20yr LGBT+ nightclub) as fallback. Currently sourced from aggregator/listicle content only — needs a real second source and a Campinas outlet onboarded to sources.md before/during drafting.
-- [ ] Barraca da Dheia, Itararé/São Vicente — LGBT+ beach gathering point, continues the baixada-santista-queer thread alongside Quiosque da Cris; spring-timing argument from the Aug-31 reprioritization still applies.
-- [ ] Pracinha do Seu Justino, Vila Madalena (São Paulo capital) — hipster-gastronomic angle, open-air boteco/vertical-garden space from the Vila Seu Justino team; needs independent second source at draft.
+- [ ] Barraca da Dheia, Guarujá (Praia de Pitangueiras, not São Vicente/Itararé — corrected via on-draft verification, see content/opportunities.md) — drafted, `status: draft`/`trust: review`, awaiting operator approval, not yet ticked done.
+- [x] Pracinha do Seu Justino, Vila Madalena (São Paulo capital) — shipped; checkbox was stale, caught during 2026-09-01 queue cleanup.
 
 ### Berlin (deep) — war-room slate 2026-08-31, verified
 - [ ] SchwuZ (nomadic) — STEFAN (Germany's oldest queer club, insolvent Nov 2025, rebuilding as roaming party series; HOW-TO-PIN decision pending — no fixed address)
@@ -73,12 +73,12 @@ push-to-live per post for operator QA.
 _Berlin corrections bank (all sourced): visitBerlin still lists SchwuZ as open (closed Nov 1 2025); Möbel Olfe's "Thursday gay night" lore is stale; Timeout still carries Watergate (closed 2024); "Berghain = queer Berlin" — the actual infrastructure is Kotti + Schöneberg + a lake in a forest._
 
 ### Amsterdam — war-room slate 2026-08-31, verified
-- [ ] De Trut, Oud-West — STEFAN (40 years, €3 volunteer-run queer club, profits fund LGBTQIA+ projects; WorldPride doc screening 15 Jul 2026)
-- [ ] Café 't Mandje, Zeedijk — PLINIO (Amsterdam's first openly queer café, 1927; Bet van Beeren; interior preserved intact)
-- [ ] Marineterrein Binnenhaven — WILD0 (centre's first legal open-water swim spot since Apr 2025; where you still can't swim, stated plainly)
+- [x] De Trut, Oud-West — STEFAN (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
+- [x] Café 't Mandje, Zeedijk — PLINIO (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
+- [x] Marineterrein Binnenhaven — WILD0 (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
 - [ ] Sexyland World, Noord — CUBIC-V (different owner every day, 365 programmers/yr; NO usable Commons image — gates publish)
 - [ ] Skatecafé, Noord — FOODIE-9000 (restaurant where the skate ramp becomes the dance floor; weak hero — needs image call)
-- [ ] Rush Hour, Spuistraat — STEFAN as shopping byline (record shop that's a club-culture institution; dated 2026 in-stores confirmed; NO Commons image — gates publish; address 110 vs 116 to resolve)
+- [x] Rush Hour, Spuistraat — STEFAN as shopping byline (shipped, all six locales completed 2026-09-01; checkbox was stale)
 
 ### San Francisco Bay Area — war-room slate 2026-08-31, verified
 - [ ] The Stud, SoMa — STEFAN (first worker-owned co-op nightclub in the US; 2026 Instagram suspension + Stud Alley arrests; Commons photos show OLD 9th St site — then/now caption or illustration)
