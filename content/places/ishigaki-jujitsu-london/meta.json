@@ -1,7 +1,12 @@
 {
   "slug": "ishigaki-jujitsu-london",
-  "categories": ["wellness-fitness"],
-  "tags": ["lgbtq-friendly", "local-legend"],
+  "categories": [
+    "wellness-fitness"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
   "coordinates": {
     "lat": 51.5285,
     "lng": -0.0939
@@ -65,6 +70,6 @@
     "confidence": 0.6,
     "query": "Finsbury Leisure Centre, Norman Street, London EC1V 3AR"
   },
-  "publishedAt": "2026-09-01T00:00:00Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "publishedAt": "2026-09-01T17:38:45Z",
+  "updatedAt": "2026-09-01T17:38:45Z"
 }
