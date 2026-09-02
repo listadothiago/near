@@ -61,7 +61,7 @@ correct result, not a gap to fill.
 | `status` | `draft` \| `active` \| `archived` \| `closed` |
 | `statusHistory` | append, never rewrite — `{status, at, note?}` |
 | `geocode.provider` / `.confidence` (0–1) / `.query` | |
-| `publishedAt` / `updatedAt` | ISO datetimes |
+| `publishedAt` / `updatedAt` | ISO datetimes — **full UTC timestamp, never a date-only midnight stamp**. Write the actual moment of publishing (`2026-09-01T22:48:49Z`), not `2026-09-01T00:00:00Z`. The board's Latest tab sorts on `publishedAt` descending, and `Array.sort` is stable: every place sharing a midnight stamp ties, and the tie falls back to the input order, which is the alphabetical slug order from `getAllPlaceSlugs()`. A day's worth of midnight stamps therefore renders Latest as an alphabetical list and pins whatever sorts first (once: `amuse-beach-club-sao-vicente`) to the top of the homepage indefinitely |
 
 ## `content/places/<slug>/<locale>.mdx`
 
