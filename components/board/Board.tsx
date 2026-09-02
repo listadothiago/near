@@ -220,7 +220,13 @@ export default function Board({
             Leaflet's internal z-index ~1000 panes stay inside this box
             instead of painting over the sticky header on phones (where the
             section isn't sticky and previously created no context). */}
-        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4">
+        {/* max-h + overflow-y-auto on desktop only: the sticky box's own
+            height (map + caption + promo) can exceed the viewport, and a
+            sticky element can't be scrolled past — anything below the fold
+            (the ad under the map) was permanently unreachable. Mobile keeps
+            plain overflow-hidden since it isn't sticky there; the page
+            itself scrolls past it instead. */}
+        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4 md:max-h-[calc(100vh-2rem)] md:overflow-y-auto md:overflow-x-hidden">
           <div className="flex justify-between items-center gap-2 px-2.5 py-2 border-b-[3px] border-ink">
             {isWideViewport ? (
               <h2 className="text-[0.9rem] m-0">{t("map")}</h2>
