@@ -6,12 +6,12 @@ import { haversineKm } from "@/lib/geo/haversine";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 import PlaceCards from "./PlaceCards";
-import Pagination from "./Pagination";
+import InfiniteLoad from "./InfiniteLoad";
 import { useFavorites } from "@/lib/favorites";
 
-// Bounded pages, not infinite scroll — the footer holds the theme toggle
-// and secondary links, and an endless list means a phone reader never
-// gets there.
+// Loaded in batches via scroll (InfiniteLoad caps automatic loads and
+// falls back to a manual "Load more" button so the footer stays
+// reachable — see InfiniteLoad.tsx for the reasoning).
 const PAGE_SIZE = 12;
 
 export default function NearestLatestTabs({
@@ -82,13 +82,13 @@ export default function NearestLatestTabs({
     ? list.filter((p) => favorites.includes(p.meta.slug))
     : list;
 
-  const [page, setPage] = useState(1);
-  const totalPages = Math.max(1, Math.ceil(scoped.length / PAGE_SIZE));
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [autoLoadsUsed, setAutoLoadsUsed] = useState(0);
 
   // Filtering, searching or switching tabs can leave the reader stranded
-  // on a page that no longer exists. Reset during render rather than in an
-  // effect — React's documented way to adjust state when inputs change,
-  // and it avoids the extra render pass an effect would cost.
+  // mid-list with a stale visible count. Reset during render rather than
+  // in an effect — React's documented way to adjust state when inputs
+  // change, and it avoids the extra render pass an effect would cost.
   const listKey = useMemo(
     () => `${tab}:${onlyFavorites}:${scoped.map((p) => p.meta.slug).join(",")}`,
     [tab, onlyFavorites, scoped],
@@ -96,14 +96,18 @@ export default function NearestLatestTabs({
   const [seenKey, setSeenKey] = useState(listKey);
   if (seenKey !== listKey) {
     setSeenKey(listKey);
-    setPage(1);
+    setVisibleCount(PAGE_SIZE);
+    setAutoLoadsUsed(0);
   }
 
-  const safePage = Math.min(page, totalPages);
-  const pageItems = scoped.slice(
-    (safePage - 1) * PAGE_SIZE,
-    safePage * PAGE_SIZE,
-  );
+  const safeVisibleCount = Math.min(visibleCount, scoped.length);
+  const pageItems = scoped.slice(0, safeVisibleCount);
+  const hasMore = safeVisibleCount < scoped.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount((v) => v + PAGE_SIZE);
+    setAutoLoadsUsed((n) => n + 1);
+  };
 
   return (
     <section>
@@ -165,10 +169,10 @@ export default function NearestLatestTabs({
             tab={tab}
             promo={promo}
           />
-          <Pagination
-            page={safePage}
-            totalPages={totalPages}
-            onPageChange={setPage}
+          <InfiniteLoad
+            hasMore={hasMore}
+            autoLoadsUsed={autoLoadsUsed}
+            onLoadMore={handleLoadMore}
           />
           </>
         )}

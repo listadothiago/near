@@ -104,16 +104,14 @@
     "emptyNearest": "No located places yet. Once Near syncs, this fills with the closest picks to wherever you tell it you are.",
     "emptyNearestNoLocation": "Tap \"My location\" to sort {count} places by distance.",
     "emptyLatest": "No places yet. Once Near syncs, the most recent picks land here first.",
-    "prev": "Prev",
-    "next": "Next",
-    "pageOf": "Page {page} of {total}",
     "favorites": "Saved",
     "favoriteAdd": "Save this place",
     "favoriteRemove": "Remove from saved",
     "emptyFavorites": "Nothing saved yet. Tap the star on any card to keep it here — stored on this device only, no account needed.",
     "favoriteToastSaved": "Saved on this device only.",
     "favoriteToastSignIn": "Sign in to keep it on every device",
-    "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave"
+    "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave",
+    "loadMore": "Load more"
   },
   "categories": {
     "all": "All beats",

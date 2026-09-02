@@ -104,16 +104,14 @@
     "emptyNearest": "Ainda não há lugares localizados. Quando o Near sincronizar, esta lista mostrará as escolhas mais próximas de onde você estiver.",
     "emptyNearestNoLocation": "Toque em \"Minha localização\" para ordenar {count} lugares por distância.",
     "emptyLatest": "Ainda não há lugares aqui. Quando o Near sincronizar, as escolhas mais recentes aparecem primeiro.",
-    "prev": "Anterior",
-    "next": "Próxima",
-    "pageOf": "Página {page} de {total}",
     "favorites": "Salvos",
     "favoriteAdd": "Salvar este lugar",
     "favoriteRemove": "Tirar dos salvos",
     "emptyFavorites": "Nada salvo ainda. Toque na estrela de qualquer card para guardar aqui — fica só neste aparelho, sem precisar de conta.",
     "favoriteToastSaved": "Salvo só neste aparelho.",
     "favoriteToastSignIn": "Entre pra manter em todos os aparelhos",
-    "locationScope": "{count, plural, =1 {1 lugar aqui} other {# lugares aqui}} — limpe a busca para sair"
+    "locationScope": "{count, plural, =1 {1 lugar aqui} other {# lugares aqui}} — limpe a busca para sair",
+    "loadMore": "Carregar mais"
   },
   "categories": {
     "all": "Todos os temas",
