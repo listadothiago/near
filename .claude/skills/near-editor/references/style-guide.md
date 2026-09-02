@@ -283,6 +283,49 @@ when the tickets are already gone...") — same
 `quality-gate-before-publish` check as the crowd-consensus rule above
 should catch this too.
 
+## Never publish the editorial process as copy (operator, 2026-09-02)
+
+The reader gets the piece, never the reasoning behind the piece. Cut
+every sentence whose subject is Near, the column, or its standards:
+
+- **No self-defining against other coverage.** "Most 'festival preview'
+  pieces run when the tickets are already gone. This isn't one of them,"
+  "A maioria das 'prévias de festival' sai quando o ingresso já esgotou
+  — essa não é uma delas." Publishing early *is* the argument; announcing
+  that you publish early is not. Note this is the same move the
+  faux-candor rule above already caught in this column — that fix removed
+  the "I'll say the quiet part first" preamble but left the comparison
+  underneath, so the rule now covers the move itself, not just its
+  throat-clearing.
+- **No narrating the format.** "I cover the world, not just headliners,
+  so here's the local half of this edition," "Eu cubro o mundo... então
+  aqui vai a metade local desta edição." The reader does not need the
+  column's structure explained; just write the local half.
+- **No section documenting the column's own rules.** The Setlist's
+  October issue ended on a heading literally titled "A regra que essa
+  coluna segue," explaining that each edition starts with a real search
+  for a real dated show and that a thin month gets said out loud rather
+  than padded. All of that is true, and all of it belongs in the skill
+  file, not on the page.
+- **No editorial-timing commentary.** "…is exactly the kind of thing
+  that deserves a column edition the day it becomes confirmable, not the
+  week of the event." That is a note to the editor, not a sentence for
+  a reader.
+- **No disclaiming the work you didn't do.** "I won't pretend I have a
+  formed opinion on all forty — I don't yet." Either bring a take or
+  write about what you do have; a disclaimer is not a substitute for
+  either. This is not in tension with the honesty rule: honesty governs
+  what you claim about *places*, and it is satisfied by leaving a weak
+  claim out, not by narrating its absence.
+
+Why it matters: process talk reads as the writer justifying itself to an
+editor rather than writing for a reader, and it crowds out the actual
+reporting — the October Setlist spent roughly half its body on its own
+standards and never got around to why The Strokes and Gorillaz on one
+bill is interesting. The discipline should be *visible in the work* and
+invisible on the page. Caught by an outside reader, 2026-09-02, quoting
+four such lines back as the reason the piece read "meio esquisito."
+
 ## Bullets
 
 Each bullet is a *reason*, not a fact-dump. "Housed in a 19th-century

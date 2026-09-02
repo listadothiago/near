@@ -72,6 +72,24 @@ ones instead of trusting they were followed:
    above (which is about sourced facts), so it gets its own check rather
    than folding silently into the AI-tell sweep.
 
+8. **No editorial process published as copy** (`style-guide.md`, "Never
+   publish the editorial process as copy"): flag any sentence whose
+   subject is Near, the column, or its standards rather than the place,
+   event or scene being covered. The four shapes to scan for are
+   self-defining against other coverage ("most festival previews run
+   when tickets are gone; this isn't one of them"), narrating the piece's
+   own format ("so here's the local half of this edition"), a section
+   documenting the column's rules, and disclaiming work not done ("I
+   won't pretend I have an opinion on all forty"). Quickest mechanical
+   version: read each sentence and ask what its subject is — if it's the
+   column rather than the subject matter, it's a finding. Caught by an
+   outside reader 2026-09-02 in The Setlist's October issue, where about
+   half the body was process talk, including a closing section headed "A
+   regra que essa coluna segue." Note the lineage: the faux-candor check
+   (1) already caught this column's opener once, and the fix stripped the
+   preamble while leaving the same move underneath — so a rewrite that
+   only removes the announcing phrase does not clear this check.
+
 Report findings back to whoever's about to flip the status — a short,
 specific list (quote the offending line, name the rule it breaks), not
 a rewrite. Fixing the copy is `near-editor`/`near-translator`'s job;
