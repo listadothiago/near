@@ -236,5 +236,18 @@
     "body": "Usamos Google Analytics para entender cómo se usa el sitio. Usa cookies; puedes rechazar y nada más cambia.",
     "accept": "Aceptar",
     "decline": "Rechazar"
+  },
+  "location": {
+    "metaTitle": "{location} — lo que cubre Near",
+    "metaDescription": "Los {count} sitios que Near cubre en {location}, con qué es cada uno y cuándo se comprobó por última vez.",
+    "heading": "En {location}",
+    "lede": "{count} sitios en {location}, agrupados por lo que de verdad te llevaría hasta allí.",
+    "thinLede": "Near cubre {count} sitios en {location} por ahora. Es una lectura temprana, no completa — pero cada uno está aquí porque alguien pensó que merecía el paseo.",
+    "thinNextStep": "Irán llegando más según las <sources>fuentes que Near sigue</sources> saquen cosas que merezcan estar aquí.",
+    "statPlaces": "{count, plural, one {# sitio} other {# sitios}}",
+    "statChecked": "{count, plural, one {# comprobado en los últimos 90 días} other {# comprobados en los últimos 90 días}}",
+    "statNewest": "{count, plural, one {el más reciente hace # día} other {el más reciente hace # días}}",
+    "statNewestToday": "el más reciente hoy",
+    "countBadge": "{count}"
   }
 }
