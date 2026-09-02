@@ -55,6 +55,14 @@ session.
    step inside an already-approved decision (e.g. which locale to
    translate next once the piece itself is approved).
 
+   **Every option offered in that menu must already have passed step 2's
+   already-shipped check.** Don't RICE-score or present a queue item the
+   operator would have to discover mid-task is already done — do the
+   grep first, silently drop anything already live, and only surface
+   genuinely open items. If a whole queue turns out stale, say so and
+   run the cleanup (tick the real checkboxes, commit) before presenting
+   the menu, not after.
+
 4. **Dispatch execution to a background agent**, not inline tool calls,
    once a specific next item is chosen and the work is substantial
    (drafting a piece end-to-end, a multi-file code change, a research
