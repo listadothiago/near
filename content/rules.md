@@ -161,6 +161,23 @@ rules:
       announcing preamble but kept the comparison underneath, so removing
       the throat-clearing phrase alone does not clear this gate.
 
+      HEADLINE FORMULA CHECK (operator, 2026-09-02). No piece may ship
+      with a `shortTitle` that reuses its own byline's recent headline
+      shape, or duplicates an existing headline's shape for the same
+      subject noun. Measured, not guessed: an audit that day found 27 of
+      58 English shortTitles opening with "The " and 14 using the
+      identical `The <noun> that/who/where/with <verb>` frame — including
+      four bookshop pins across four DIFFERENT bylines all taking the
+      same shape, which proves the formula is a house tic rather than any
+      persona's voice. Check before the status flip with:
+      `grep -h '^shortTitle:' content/places/*/en.mdx | sort | uniq -c | sort -rn`
+      and compare against the byline's own last two pins. `The <noun>
+      that…` is rationed, not banned. Swapping "The" for "A" does not
+      clear this — the SHAPE must change. Policed by near-tov-police
+      (Job 1b) and again by the chief editor at sign-off, because a
+      formula is invisible from inside one piece and only visible against
+      the catalogue.
+
       HERO IMAGE TIERS, in preference order: (1) a real source photo with
       attribution, (2) licensed stock, (3) an original illustration from
       near-illustrator. Tier 3 reverses this rule's earlier "no
