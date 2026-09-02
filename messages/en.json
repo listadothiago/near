@@ -236,5 +236,18 @@
     "body": "We use Google Analytics to understand how the site is used. It sets cookies; you can decline and nothing else changes.",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "location": {
+    "metaTitle": "{location} — what Near covers",
+    "metaDescription": "The {count} places Near covers in {location}, with what each one is and when it was last checked.",
+    "heading": "In {location}",
+    "lede": "{count} places in {location}, grouped by what you'd actually go there for.",
+    "thinLede": "Near covers {count} places in {location} so far. That's an early read, not a full one — but every one of them is here because someone thought it was worth the walk.",
+    "thinNextStep": "More will land as the <sources>sources Near watches</sources> turn up things worth adding here.",
+    "statPlaces": "{count, plural, one {# place} other {# places}}",
+    "statChecked": "{count, plural, one {# checked in the last 90 days} other {# checked in the last 90 days}}",
+    "statNewest": "{count, plural, one {newest # day ago} other {newest # days ago}}",
+    "statNewestToday": "newest today",
+    "countBadge": "{count}"
   }
 }

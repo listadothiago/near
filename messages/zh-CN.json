@@ -236,5 +236,18 @@
     "body": "我们使用 Google Analytics 来了解网站的使用情况，它会设置 Cookie；你可以拒绝，网站的其他功能不受影响。",
     "accept": "接受",
     "decline": "拒绝"
+  },
+  "location": {
+    "metaTitle": "{location} — Near 的覆盖范围",
+    "metaDescription": "Near 在{location}收录的 {count} 个地方，包括每个地方是什么，以及最近一次核实的时间。",
+    "heading": "在{location}",
+    "lede": "{location}的 {count} 个地方，按你真正会去的理由分组。",
+    "thinLede": "Near 目前在{location}收录了 {count} 个地方。这是初步的一份，不是全部——但每一个都在这里，是因为有人觉得值得走这一趟。",
+    "thinNextStep": "随着 <sources>Near 关注的信源</sources>挖出更多值得收录的地方，这里还会增加。",
+    "statPlaces": "{count} 个地方",
+    "statChecked": "{count} 个在过去 90 天内核实",
+    "statNewest": "最新的在 {count} 天前",
+    "statNewestToday": "最新的就在今天",
+    "countBadge": "{count}"
   }
 }

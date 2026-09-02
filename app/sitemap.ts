@@ -3,6 +3,7 @@ import { routing } from "@/lib/i18n/routing";
 import { getAllPlaces } from "@/lib/content/loader";
 import { getAllCollections } from "@/lib/content/collectionsLoader";
 import { getAllAuthorSlugs } from "@/lib/content/authors";
+import { getLocationPages } from "@/lib/content/locationPages";
 import type { ContentLocale } from "@/lib/content/schema";
 import { getBaseUrl } from "@/lib/seo/site";
 
@@ -91,6 +92,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // closest honest signal without re-deriving per-author sets here.
     for (const slug of authorSlugs) {
       push(locale, `/author/${slug}`, newest(placeDates, buildDate));
+    }
+
+    // Location pages aggregate places, so each moves with the newest place
+    // it holds — not with the build.
+    for (const loc of getLocationPages(places)) {
+      push(
+        locale,
+        `/in/${loc.segments.join("/")}`,
+        newest(
+          loc.places.map((p) => new Date(p.meta.updatedAt)),
+          buildDate,
+        ),
+      );
     }
 
     for (const place of places) {
