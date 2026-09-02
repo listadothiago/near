@@ -63,6 +63,11 @@
       "status": "draft",
       "at": "2026-08-31T00:00:00Z",
       "note": "near-illustrator pass: searched Wikimedia Commons (Category:Studio Voltaire — turns up only an unrelated 2017 gig-photo subcategory for musicians who performed there, no building/facade shots; also searched Category:Clapham, London and geograph.org.uk-style queries) and general web search for a rights-clear photo of the actual building at 1A Nelsons Row. Nothing usable turned up — no Commons file, no open-licensed archive shot of the chapel exterior or the Tatham/O'Sullivan tiled facade. Decision: fall back to illustration. heroImage stays null pending an actual AI-generation pass (no image-generation tool available to this run). Illustration brief for whoever runs it next: a stylized illustration (bold flat-colour riso/screenprint or ligne-claire register, per near-illustrator's style repertoire) of the former Methodist chapel's facade, foregrounding the hand-glazed ceramic tile installation by Joanne Tatham & Tom O'Sullivan on the public-facing wall — the tiles are the single most distinctive, describable visual the piece has (the interior garden and gallery space are comparatively generic without seeing current programming). Must read as visibly non-photoreal per the style rule; set strategy: 'illustration' and disclose 'Illustration by NEAR — AI-generated' with attributionLink to /about once generated."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "near-caretaker currency re-check (2026-09-01, requested as part of a stray post-plan.md queue item — page was already published/committed in ba888d8, not a new piece). Re-verified studiovoltaire.org/whats-on/ directly: the two shows the body previously called out as closed (Scollard, Venkanna) are indeed closed, but the body had gone stale on what's actually on now. Confirmed via WebFetch of the live whats-on page plus corroborating WebSearch results (newexhibitions.com, e-flux, Secession Vienna's own programme, katherinehubbard.com): Christine Hazell's 'Different Faces' is currently running (15 Jul-18 Oct 2026), and Katherine Hubbard's 'The Great Room' opens 7 Oct 2026 through 10 Jan 2027 (developed alongside an extended chapter at Secession, Vienna, 12 Jun-30 Aug 2026). Corrected the 'What's actually on' section in all six locales to name these two shows instead of just pointing at closed ones, while keeping the Scollard/Venkanna closures for record and the standing pointer to the live whats-on page. No other facts in the piece needed correction; heroImage/status/trust untouched."
     }
   ],
   "geocode": {
@@ -71,5 +76,5 @@
     "query": "1A Nelsons Row, London SW4 7JR"
   },
   "publishedAt": "2026-08-31T00:00:00Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-01T00:00:00Z"
 }
