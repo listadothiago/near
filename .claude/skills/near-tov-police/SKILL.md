@@ -149,6 +149,16 @@ grep -h '^shortTitle:' content/places/*/en.mdx | sort | uniq -c | sort -rn
 
 Findings to raise:
 
+**Use `grep -i`.** The documented frame check was case-sensitive until
+2026-09-02 and therefore matched nothing: real headlines are title-case
+("The Alley **That** Repaints Itself"), so the pattern found 0 instances
+while 16 were sitting in the catalogue. The check silently passed every
+piece it existed to catch.
+
+```
+grep -hiE '^shortTitle: "The .+ (that|who|where|with) ' content/places/*/en.mdx | wc -l
+```
+
 1. **The frame** — `The <noun> that/who/where/with…`. Not banned outright
    (it is sometimes genuinely the truest headline), but it is now a
    rationed house resource. If the byline in hand has used it recently,

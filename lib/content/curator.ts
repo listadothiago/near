@@ -49,21 +49,23 @@ export const CURATOR = {
    * connection — see `getCuratorCoverage`.
    */
   livedIn: [
-    { city: "São Paulo", country: "Brazil" },
-    { city: "Santos", country: "Brazil", region: "Baixada Santista" },
-    { city: "Amsterdam", country: "Netherlands" },
-    { city: "Barcelona", country: "Spain" },
-    { city: "London", country: "United Kingdom" },
-    { city: "Lisbon", country: "Portugal" },
-    { city: "Rome", country: "Italy" },
-    { city: "San Francisco", country: "United States" },
+    { city: "São Carlos", country: "Brazil", region: "interior de São Paulo" },
+    { city: "São Paulo", country: "Brazil", region: "Brigadeiro Luís Antônio, Moema" },
+    { city: "São Vicente", country: "Brazil", region: "Baixada Santista" },
+    { city: "Hayward", country: "United States", region: "East Bay" },
+    { city: "San Francisco", country: "United States", region: "Tendernob" },
+    { city: "Amsterdam", country: "Netherlands", region: "Nieuwmarkt, Oosterpark" },
+    { city: "Barcelona", country: "Spain", region: "El Raval" },
+    { city: "London", country: "United Kingdom", region: "Lower Goswell Road, Old Street, Whitecross Street" },
+    { city: "Lisbon", country: "Portugal", region: "Carcavelos" },
+    { city: "Rome", country: "Italy", region: "Piramide, Garbatella / San Paolo" },
   ],
   /**
    * Publishing locales this curator can actually read and check, and the
    * one he cannot.
    *
    * Stating the gap is the point. A curator page that implies oversight
-   * of all six locales when the curator reads four of them would be
+   * of all six locales when the curator reads five of them would be
    * exactly the unearned authority claim this page exists to avoid.
    */
   locales: {
