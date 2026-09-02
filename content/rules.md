@@ -111,6 +111,17 @@ rules:
       first issue (faux-candor opener, all six locales) after this rule
       already existed in prose but wasn't yet a checked gate item.
 
+      This gate also covers style-guide.md's "Never pull rank on the
+      reader": no body, in any locale, may aim its opinions at the person
+      reading rather than at the place, scene or music. Check for a
+      sentence correcting a habit the piece invented for the reader,
+      taste-rank display, the superior wink, or framing that makes
+      declining the recommendation lazy or basic; and cap sarcasm at
+      roughly one beat per piece. The test is effect, not intent. This
+      does NOT soften the house voice toward places — being harsh about a
+      venue, a line-up or a price is correct and stays. Caught by an
+      outside reader 2026-09-02 on The Setlist's October issue.
+
       This gate also covers style-guide.md's "Never publish the editorial
       process as copy": no body, in any locale, may contain sentences
       whose subject is Near, the column, or its editorial standards
