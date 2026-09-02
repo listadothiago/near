@@ -1,0 +1,64 @@
+{
+  "slug": "heinolds-first-last-chance-oakland",
+  "categories": [
+    "city-culture",
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 37.793678,
+    "lng": -122.274558
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Jack London Square",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Heinold%27s_First_and_Last_Chance_Saloon",
+      "feedId": null
+    },
+    {
+      "name": "Oakland North",
+      "url": "https://oaklandnorth.net/2011/07/26/the-legends-of-oaklands-oldest-bar/",
+      "feedId": null,
+      "originalPublishedAt": "2011-07-26T00:00:00Z"
+    },
+    {
+      "name": "United for Libraries (ALA) — Literary Landmarks",
+      "url": "https://www.ala.org/united/products_services/literarylandmarks/landmarksbyyear/1998/london",
+      "feedId": null,
+      "originalPublishedAt": "1998-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Heinold%E2%80%99s_First_and_Last_Chance%2C_Exterior_%282024%29-L1004644.jpg",
+    "attribution": "Photo by Frank Schulenburg, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Heinold%E2%80%99s_First_and_Last_Chance,_Exterior_(2024)-L1004644.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "near-write-article: finished orphaned draft from prior session (pt-BR only), added English source + remaining locales, sourced hero image, published per content-rotation Tier 1/Oakland turn"
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.9,
+    "query": "48 Webster St, Oakland, CA 94607 (Jack London Square)"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}
