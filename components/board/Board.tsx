@@ -225,7 +225,11 @@ export default function Board({
             sticky element can't be scrolled past — anything below the fold
             (the ad under the map) was permanently unreachable. Mobile keeps
             plain overflow-hidden since it isn't sticky there; the page
-            itself scrolls past it instead. */}
+            itself scrolls past it instead.
+            The promo below was narrowed from a 300x250 mrec to a 320x100
+            banner (2026-09-02), which buys back 150px of this height
+            budget — but this guard stays, because the map itself is the
+            variable part and can still overflow on short viewports. */}
         <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4 md:max-h-[calc(100vh-2rem)] md:overflow-y-auto md:overflow-x-hidden">
           <div className="flex justify-between items-center gap-2 px-2.5 py-2 border-b-[3px] border-ink">
             {isWideViewport ? (

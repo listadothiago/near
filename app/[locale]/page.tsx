@@ -51,10 +51,18 @@ export default async function HomePage({
           />
         }
         mapPromo={
+          /* 320x100 rather than a 300x250 mrec: this unit sits inside the
+             sticky map column, whose combined height (map + caption + ad)
+             can already exceed the viewport — see Board.tsx's note on the
+             max-h/overflow workaround. A short format buys back 150px of
+             that budget and makes the column behave at more heights.
+             mobile-banner, not leaderboard, because the column is a fixed
+             300px: a 728x90 sold into 300px would misrepresent the
+             inventory to whoever buys it. */
           <HousePromo
             locale={locale as ContentLocale}
             slot="board-map"
-            size="mrec"
+            size="mobile-banner"
             stretch
           />
         }
