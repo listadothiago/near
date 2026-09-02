@@ -42,6 +42,23 @@ push-to-live per post for operator QA.
 
 ---
 
+## Rotation position
+
+**Tier 1 order:** London → Brighton → San Francisco → Oakland.
+
+**Cycle 1 of 4 — in progress.** London took its turn (2026-08-31),
+Oakland took its turn (Heinold's, 2026-09-01). Brighton was skipped
+legitimately (queue empty, never seeded). **San Francisco was skipped
+in error** — its queue is seeded and verified, so SF is owed the next
+turn before cycle 1 closes.
+
+Next stop: **San Francisco** (closes cycle 1), then cycle 2 opens at
+London. Tier 2 gets its single turn after cycle 4 closes.
+
+Whoever ships a post updates this block in the same commit — the cycle
+count is not derivable from the checkboxes alone, so it has to be
+written down.
+
 ## Queues
 
 ### London (war-room slate 2026-08-31, verified)
@@ -55,6 +72,13 @@ push-to-live per post for operator QA.
 - [x] Jumbi — STEFAN (shipped; checkbox was stale, caught during 2026-09-01 queue cleanup)
 - [ ] Sister Midnight — STEFAN (operator-approved as 'opening'-status pin; schema needs the status value first)
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
+
+### Brighton (Tier 1) — queue empty, never seeded
+
+Tier 1 city with no candidates, so it is skipped every cycle under the
+empty-queue rule — which quietly demotes it out of the tier it was
+placed in. Needs a near-war-room (mini, single-city) seeding pass
+before its next turn comes around in cycle 2.
 
 ### São Paulo / Baixada / Campinas (normal Tier 2 queue — priority bump revoked 2026-09-01 late night)
 - [x] Madê Cozinha Autoral, Santos — FOODIE-9000 (shipped 2026-08-31; address-move correction is the angle)
@@ -87,13 +111,20 @@ _Berlin corrections bank (all sourced): visitBerlin still lists SchwuZ as open (
 - [ ] Skatecafé, Noord — FOODIE-9000 (restaurant where the skate ramp becomes the dance floor; weak hero — needs image call)
 - [x] Rush Hour, Spuistraat — STEFAN as shopping byline (shipped, all six locales completed 2026-09-01; checkbox was stale)
 
-### San Francisco Bay Area — war-room slate 2026-08-31, verified
+### San Francisco (Tier 1) — war-room slate 2026-08-31, verified
+
+_Split out from the old combined "SF Bay Area" queue on 2026-09-02: SF
+and Oakland are two separate Tier 1 cities and get two separate turns,
+so one merged queue made the round-robin unservable._
+
 - [ ] The Stud, SoMa — STEFAN (first worker-owned co-op nightclub in the US; 2026 Instagram suspension + Stud Alley arrests; Commons photos show OLD 9th St site — then/now caption or illustration)
 - [ ] Dolphin Club, Aquatic Park — WILD0 (swim SF Bay for a $10 public day-use fee; 1877; alternate days with South End)
 - [ ] Queer Surf, Pacifica — FIT-BOT (sliding-scale queer surf lessons; SWITCH exhibition Jun 13 2026; retry ebar sources via browser at draft)
-- [x] Heinold's First & Last Chance, Oakland — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
+
+### Oakland (Tier 1) — war-room slate 2026-08-31, verified
+- [x] Heinold's First & Last Chance — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
 - [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; RSD Apr 18 2026 confirmed; needs one more independent source at draft)
-- [ ] Lakeshore Lavender Lounge, Oakland — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
+- [ ] Lakeshore Lavender Lounge — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
 
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
 
