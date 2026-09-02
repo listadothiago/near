@@ -46,14 +46,14 @@ push-to-live per post for operator QA.
 
 **Tier 1 order:** London → Brighton → San Francisco → Oakland.
 
-**Cycle 1 of 4 — in progress.** London took its turn (2026-08-31),
-Oakland took its turn (Heinold's, 2026-09-01). Brighton was skipped
-legitimately (queue empty, never seeded). **San Francisco was skipped
-in error** — its queue is seeded and verified, so SF is owed the next
-turn before cycle 1 closes.
+**Cycle 1 of 4 — CLOSED 2026-09-02.** London took its turn
+(2026-08-31), Oakland took its turn (Heinold's, 2026-09-01), San
+Francisco took its owed turn (The Stud, 2026-09-02). Brighton was
+skipped legitimately — queue empty, never seeded, and still is.
 
-Next stop: **San Francisco** (closes cycle 1), then cycle 2 opens at
-London. Tier 2 gets its single turn after cycle 4 closes.
+Next stop: **London**, opening cycle 2 of 4. Tier 2 gets its single
+turn after cycle 4 closes. Brighton needs a seeding pass before its
+cycle-2 turn comes around or it will be skipped a second time.
 
 Whoever ships a post updates this block in the same commit — the cycle
 count is not derivable from the checkboxes alone, so it has to be
@@ -117,7 +117,7 @@ _Split out from the old combined "SF Bay Area" queue on 2026-09-02: SF
 and Oakland are two separate Tier 1 cities and get two separate turns,
 so one merged queue made the round-robin unservable._
 
-- [ ] The Stud, SoMa — STEFAN (first worker-owned co-op nightclub in the US; 2026 Instagram suspension + Stud Alley arrests; Commons photos show OLD 9th St site — then/now caption or illustration)
+- [x] The Stud, SoMa — STEFAN (shipped 2026-09-02, all six locales. Angle landed on the co-op + a stale-closure correction; the slate's 'Stud Alley arrests' half was DROPPED on legal grounds — no source connects the bar to that block party. Hero/in-body both real photos from the venue's own site, not the planned illustration.)
 - [ ] Dolphin Club, Aquatic Park — WILD0 (swim SF Bay for a $10 public day-use fee; 1877; alternate days with South End)
 - [ ] Queer Surf, Pacifica — FIT-BOT (sliding-scale queer surf lessons; SWITCH exhibition Jun 13 2026; retry ebar sources via browser at draft)
 
