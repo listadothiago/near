@@ -1,0 +1,83 @@
+{
+  "slug": "legends-hotel-brighton",
+  "categories": [
+    "accommodation",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 50.8196,
+    "lng": -0.1327
+  },
+  "place": {
+    "city": "Brighton",
+    "neighborhood": "Kemptown",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Legends Resort Brighton — official site",
+      "url": "https://legendsresortbrighton.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Legends Resort Brighton — The Basement Club",
+      "url": "https://legendsresortbrighton.com/category/the-basement-club/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Legends Resort Brighton — Brighton Cabaret",
+      "url": "https://legendsresortbrighton.com/category/brighton-cabaret/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "VisitBritain — LGBTQIA+ guide to Brighton",
+      "url": "https://www.visitbritain.com/en/things-to-do/lgbtqia-guide-brighton",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Brighton & Hove City Council — Pride 2022-2026 inclusive (decision record)",
+      "url": "https://democracy.brighton-hove.gov.uk/ieDecisionDetails.aspx?Id=5866",
+      "feedId": null,
+      "originalPublishedAt": "2023-12-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Marine_Parade%2C_Brighton_-_geograph.org.uk_-_4388744.jpg",
+    "attribution": "Philip Halling, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Marine_Parade,_Brighton_-_geograph.org.uk_-_4388744.jpg",
+    "licenseNote": "NOT a photograph of the hotel itself — Marine Parade, the correct street, looking along the Kemptown seafront terrace Legends sits on, with the Victorian railings and shelters and the pier beyond. Same precedent as the Jumbi hero: a real, correctly-located photo beats holding a piece for want of a venue-specific shot. Chosen over a greyer, scaffolded alternative of the same street because it reads at thumbnail size on the board; no identifiable faces. near-illustrator's order was worked properly first: photo-inbox empty, and the venue's own official site (checked per the 2026-09-02 directive) serves only logos and beverage-brand marks, no usable room or interior photography. The available Legends logo is a white-on-transparent WATERMARK variant intended to sit over the venue's own imagery — invisible on a light card — so it fails the board-thumbnail check despite logos being permitted as of the same day's directive."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-02T21:00:00Z",
+      "note": "First pin drawn from the Brighton queue seeded earlier the same day, and Brighton's first pin ever — the city was Tier 1 but had been skipped every rotation cycle for want of a seeded queue. CORRECTION MADE DURING DRAFTING: this was selected on the stated rationale that it would OPEN the `accommodation` category and give NITE-PORTER a first byline. That rationale was WRONG. It came from content/opportunities.md's coverage audit, which is dated 2026-08-31 at 20 places while the catalogue now holds 56 — hazlitts-london (nite-porter, accommodation) shipped in between. A fresh count at draft time: accommodation 2 active, nite-porter 2 bylines. The genuinely empty category is `world-culture-news` (0 active), NOT accommodation. The piece still stands on its own merits — Brighton's first pin ever, and accommodation is genuinely thin at two — but the strategic claim was corrected rather than carried, and opportunities.md's stale audit was replaced in the same commit. Scouting followed near-editor-accommodation's own rule (alt-press/scene mentions rather than travel-trade or booking-site rankings): Legends surfaced through Brighton LGBTQ+ scene coverage, not a hotel-trade listing. VERIFIED: official site live and detailed; address 31-34 Marine Parade, Brighton BN2 1TR. Basement Club nights confirmed from the venue's own site — Flavour (Fri, DJ Ben), Fusion (Sat, DJ Peter Castle), Glitter (Sun, DJ Patch), Fever (last Thursday monthly, Peter Castle, 70s-80s disco/soul/funk). Sunday cabaret 3.30pm with Davina Sparkle, Miss Jason, Dave Lynn. Rooms: singles, compact doubles, superior with sea views; check-in 15:00, checkout 11:30; 24h front desk, luggage storage, en-suite, Wi-Fi. CONFLICT RESOLVED: a secondary summary gave the resident nights as 'Glitter Curious' and 'Friday Night Shift' with DJs 'Peter Castle, Ben and Patch'; the official site's current naming (Flavour/Fusion/Glitter/Fever) was preferred as more authoritative and current, and the older names were left out rather than blended. Spelling reconciled to the official site's 'Davina Sparkle' over a secondary source's 'Davinia Sparkle'. CURRENCY FACT CARRIED INTO THE COPY: the venue is under new ownership with the bar and terrace refurbished, so older reviews describe a room that no longer exists — stated in the body so a reader cross-checking reviews is not misled. THE HONEST NEGATIVE, which is the piece's spine and exactly what NITE-PORTER exists to say: the rooms sit directly above a nightclub running three nights a week. Stated plainly rather than smoothed, per style-guide's requirement to include genuine negatives a source raises. LOCALES: pending. Coordinates are a manual approximation for the 31-34 Marine Parade terrace (confidence 0.6, meets the gate)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-02T22:00:00Z",
+      "note": "Flipped to active. All six locales written; every quality-gate condition checked explicitly including the NEW headline-formula check added the same day. shortTitle 'Rooms above a basement club' is a plain-description shape, deliberately not the 'The <noun> that…' frame that the 2026-09-02 audit found on 14 of 58 pins; NITE-PORTER's existing two are 'Fifty Years of the Same Address' and 'The Hotel With No Sign On The Door', so this is a third distinct shape for the byline. Hero is tier 2, a correctly-located Marine Parade streetscape, NOT the venue — stated in licenseNote. Locales are genuine editions: es-419 and zh-CN both add the London-Victoria train route and card-acceptance notes a traveller from those markets needs and the English source has no reason to carry; pt-BR/es-ES/it keep the source's shape. INTERNAL LINK: Brighton has no other published pin, so the NearLink goes to hazlitts-london — a genuine accommodation-beat connection (same category, same NITE-PORTER byline, both historic UK buildings, and an actual editorial contrast: one sells silence, the other sells a sound system) rather than a forced geographic link. The Brighton-proximity gap is logged to content/requests.md per the link-density escape hatch."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.6,
+    "query": "Legends Hotel, 31-34 Marine Parade, Brighton BN2 1TR"
+  },
+  "publishedAt": "2026-09-02T21:00:00Z",
+  "updatedAt": "2026-09-02T21:00:00Z"
+}

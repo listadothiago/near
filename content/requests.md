@@ -213,3 +213,21 @@ why: >
   Street) that the Hazlitt's body could plausibly send a reader to next.
 status: open
 ```
+
+```yaml
+request: brighton-no-local-internal-link
+type: internal-link
+place: legends-hotel-brighton
+why: >
+  Legends is Brighton's FIRST pin, so no walkable or same-city internal
+  link target exists. Rather than force a weak one, the body links to
+  hazlitts-london on a genuine accommodation-beat connection (same
+  category, same NITE-PORTER byline, and a real editorial contrast --
+  Hazlitt's sells silence, Legends sells the club underneath you).
+  Revisit once a second Brighton pin ships: content/post-plan.md's
+  Brighton queue was seeded 2026-09-02 with The Actors (Kemptown),
+  Polyglamorous @ Quarters, Green Door Store and Club Revenge, any of
+  which would be a strong local link from here -- The Actors especially,
+  since it is a few minutes away in the same Kemptown village.
+status: open
+```

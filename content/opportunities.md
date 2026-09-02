@@ -94,28 +94,34 @@ promoted to a ranked slot yet — no verified leads exist, unlike the
 London autumn slate above — but logged here so a future `near-refresh`
 or `near-war-room` treats it as a candidate rather than starting cold.
 
-## Coverage audit — 2026-08-31 (20 places, 19 on board)
+## Coverage audit — REFRESHED 2026-09-02 (56 places)
 
-| dimension | state |
+_The previous audit here was dated 2026-08-31 at 20 places and had gone
+badly stale — it still reported `accommodation` at 0 and three bylines at
+zero, all of which had been fixed in the intervening two days. It caused a
+real mis-scoping on 2026-09-02 (Legends was picked partly to "open
+accommodation," which Hazlitt's had already opened). Counts below are
+generated from active `meta.json` files, not remembered._
+
+| dimension | active count |
 |---|---|
-| São Paulo | 8 — best covered |
-| London | 4 |
-| Santos / Baixada Santista | 2 — **Tier 1, operator lives there** |
-| SF Bay Area | 3 — **Tier 1, still thin** |
-| Lisbon | 2 — not a Tier 1 hub |
-| Pigeon Forge | 1 — not on any priority list |
-| `food-drink` | 10 |
-| `nightlife-sound` | 8 |
-| `city-culture` | 7 |
-| `travel` | 1 |
-| `wellness-fitness` | 1 — opened 2026-08-31 |
-| `accommodation` | **0** |
-| `world-culture-news` | **0** |
+| `food-drink` | 23 |
+| `city-culture` | 21 |
+| `nightlife-sound` | 20 |
+| `wellness-fitness` | 7 |
+| `travel` | 5 |
+| `accommodation` | 2 — thin, no longer zero |
+| `world-culture-news` | **0 — the only empty category left** |
 
-**Three of eight bylines have never written anything:** RADAR-X
-(`world-culture-news`), WILD0 (outdoors), FIT-BOT (fitness/combat
-sports). The cast was designed around beats the catalogue doesn't cover —
-which is a content gap wearing a persona costume.
+Bylines by active pins: stefan 13, foodie-9000 13, plinio 10, cubic-v 6,
+lugardo-karai 3, wild0 3, nite-porter 2, radar-x 2, darcy 2, fit-bot 2,
+allora-dai 1. **No byline is at zero any more.**
+
+**What this actually says:** the coverage gap is no longer "empty
+categories and unused bylines" — that framing is spent. It is
+`world-culture-news` (still zero, RADAR-X's home beat) and the long tail:
+allora-dai at 1, and accommodation/travel thin against a food-drink and
+nightlife core that is now well served.
 
 Locale coverage: `en` and `pt-BR` complete; `it` 10/20, `es-ES` 9/20,
 `es-419` 9/20, `zh-CN` 9/20. Half the catalogue is English-fallback in

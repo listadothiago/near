@@ -114,6 +114,63 @@ specific list (quote the offending line, name the rule it breaks), not
 a rewrite. Fixing the copy is `near-editor`/`near-translator`'s job;
 this skill's job is catching what would otherwise slip through.
 
+## Job 1b — Headline formula policing (mandatory, every piece)
+
+**Operator directive, 2026-09-02, after spotting PLINIO reusing the same
+headline shape on nearly every pin.** An audit that day proved it was not
+one byline — it was house-wide:
+
+- **27 of 58** English `shortTitle`s began with "The " (46%).
+- **14** used the identical `The <noun> that/who/where/with <verb>`
+  frame.
+- The clinching evidence: **four bookshop pins, four different bylines,
+  one shape** — "The Bookshop That Refused to Die Twice" (CUBIC-V), "The
+  Bookshop That Beat Customs" (RADAR-X), "The Bookshop That Pulled Centro
+  Back" (PLINIO), "The Bookshop Where the Bar Opens at Night"
+  (FOODIE-9000). Four supposedly distinct writers converging on one
+  structure for one subject is proof the formula is a house tic wearing
+  costumes, not any persona's voice.
+- WILD0 had near-duplicates of itself: "The Harbor You're Now Allowed to
+  Swim In" and "The Reservoir You're Allowed Into".
+
+**Why this matters beyond taste.** A `shortTitle` is the card headline on
+the board — the thing competing for a tap against eleven neighbours. When
+half the grid opens with the same three words, the board reads as one
+voice with a template, which is exactly the "AI sludge" tell the whole
+persona cast exists to avoid. It also flattens the distinctiveness that
+makes a headline liftable by an answer engine (see `aeo`).
+
+**The check.** Before any status flip, run this against the catalogue and
+compare the piece in hand:
+
+```
+grep -h '^shortTitle:' content/places/*/en.mdx | sort | uniq -c | sort -rn
+```
+
+Findings to raise:
+
+1. **The frame** — `The <noun> that/who/where/with…`. Not banned outright
+   (it is sometimes genuinely the truest headline), but it is now a
+   rationed house resource. If the byline in hand has used it recently,
+   or the same subject noun already carries it elsewhere in the
+   catalogue, it is a finding.
+2. **Same opening word as that byline's last two pins.** Three "The"s in
+   a row from one persona is drift, full stop.
+3. **Near-duplicate of an existing headline**, especially same subject
+   noun (bookshop, bar, hotel) plus same relative clause.
+
+The fix is never to swap "The" for "A". Reach for a different *shape*
+altogether: a concrete detail ("Trading Since 1276", "Seven Thousand
+Tiles From Portugal"), a flat declarative ("Noodles Pulled By Hand"), a
+correction ("Isaan, Not Just 'Thai'"), a fragment ("Theater, Records,
+Coffee. One Door."), or a number. FOODIE-9000's set is the model — 13
+pins, almost no repetition of shape.
+
+**The chief editor checks this too**, per the same directive: it is a
+sign-off item at step 7, not only an audit item here. Two passes,
+because a formula is invisible from inside a single piece and only
+visible against the catalogue.
+
 ## Job 2 — Persona drift management
 
 On any long or multi-piece generation session — a `near-war-room` push,

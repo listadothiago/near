@@ -397,6 +397,43 @@ bill is interesting. The discipline should be *visible in the work* and
 invisible on the page. Caught by an outside reader, 2026-09-02, quoting
 four such lines back as the reason the piece read "meio esquisito."
 
+## Headlines: never reuse your own shape (operator, 2026-09-02)
+
+The `shortTitle` is the card headline on the board. It is the thing
+competing for a tap against eleven neighbours, so it has to be the most
+specific sentence you can write about this place — and it has to not
+look like the last one you wrote.
+
+**The house has a formula problem, measured not guessed.** An audit on
+2026-09-02 found 27 of 58 English `shortTitle`s opening with "The " and
+14 using the identical `The <noun> that/who/where/with <verb>` frame.
+Four bookshop pins across four *different* bylines all took the same
+shape. Four distinct writers converging on one structure for one subject
+means the formula is not anybody's voice — it is the default the model
+reaches for when it stops trying.
+
+**The rule while drafting:**
+
+- Before settling a headline, look at the byline's own last two pins. If
+  you are about to open with the same word a third time, change shape.
+- `The <noun> that…` is not banned — sometimes it is the truest headline
+  a place has — but treat it as rationed. If another pin already carries
+  it for the same subject noun, yours cannot.
+- Swapping "The" for "A" is not a fix. Change the *shape*.
+
+**Shapes that work, all from the live catalogue:**
+
+- A hard fact: "Trading Since 1276", "Seven Thousand Tiles From Portugal"
+- A flat declarative: "Noodles Pulled By Hand"
+- A correction: "Isaan, Not Just 'Thai'"
+- A fragment: "Theater, Records, Coffee. One Door."
+- A consequence: "Madê Moved House and Raised the Stakes"
+- A plain description: "Rooms above a basement club"
+
+FOODIE-9000's thirteen pins are the model — near-zero repetition of
+shape across the set. Read a byline's existing headlines before adding
+to them.
+
 ## Bullets
 
 Each bullet is a *reason*, not a fact-dump. "Housed in a 19th-century

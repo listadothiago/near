@@ -1388,3 +1388,29 @@ Operator approved rewriting it via `near-write-article`; **not done.** `content/
 Elson's process advice, and he's explicit it's what works best for him: *"ele faz um texto que eu não gosto muito, eu corrijo, eu reescrevo... às vezes jogo fora um parágrafo inteiro e escrevo de outra forma, aí eu mostro pra ele 'oh, eu fiz isso aqui'. Ele vai melhorando aos poucos."* His suggestion to the operator: **hand-rewrite four or five pieces exactly the way you want them and show those as the target**, rather than only adding more prose rules.
 
 This is a different learning mechanism from everything in this repo today — every TOV correction so far has been an abstract rule in `style-guide.md`. Worth building: a `references/gold-standard/` folder under `near-editor` holding operator-rewritten before/after pairs, consulted by `near-write-article` and `near-tov-police` as the concrete target for register, alongside the rules. **Blocked on the operator**: the examples have to be genuinely hand-written by Thiago, not generated — the whole value is that they encode taste the rules can't express. Note this also pairs with the content-generation-column idea below; "what the machine got wrong and how a human fixed it" is exactly that column's material.
+
+## Headline-formula retrofit on already-published pins (flagged 2026-09-02)
+
+Operator spotted PLINIO reusing one headline shape; the audit found it
+house-wide (27/58 English `shortTitle`s open with "The ", 14 use
+`The <noun> that/who/where/with <verb>`). The rule is now enforced going
+forward — `content/rules.md`'s quality gate, `near-tov-police` Job 1b,
+the chief editor's sign-off, and `style-guide.md` for drafting — but the
+**existing catalogue was not retrofitted.**
+
+Worst offenders, for `near-caretaker` to work through (each needs the
+change in all six locale files, not just English):
+
+- **Four bookshops, four bylines, one shape** — "The Bookshop That
+  Refused to Die Twice" (cubic-v), "The Bookshop That Beat Customs"
+  (radar-x), "The Bookshop That Pulled Centro Back" (plinio), "The
+  Bookshop Where the Bar Opens at Night" (foodie-9000). At least two
+  should change.
+- **WILD0 near-duplicates of itself** — "The Harbor You're Now Allowed to
+  Swim In" and "The Reservoir You're Allowed Into".
+- **PLINIO** — 8 of 10 pins open with "The"; 5 use the full frame.
+
+Not urgent (nothing is factually wrong), but it is the single most
+visible AI-tell on the board, since the cards sit next to each other in
+a grid. Do it as a batch, not one at a time, so the replacements are
+varied against each other rather than against nothing.

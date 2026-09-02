@@ -58,6 +58,36 @@ queer venue are a real outing risk (see `near-legal-counsel`, and the
 `canto-dos-ursos-praia-grande` precedent), so prefer frames with no
 identifiable faces, or crop.
 
+## Venue logos and brand assets — usable, with two real limits
+
+**Operator directive, 2026-09-02: a venue's own logo is fair game as an
+image.** Using a business's logo in editorial coverage *of that business*
+is nominative use and is normally fine — record it like any other source
+image, attributed to the venue, and flag it to `near-legal-counsel` only
+if the piece is critical enough that the brand association could be read
+as endorsement.
+
+Two limits that are practical rather than legal, and both are checkable
+rather than matters of taste:
+
+- **A flat wordmark is usually a weak hero.** On the board the hero is
+  competing for a tap against eleven neighbours, and a logo says only the
+  name the headline already says. Prefer it when nothing better exists,
+  not over a real photo or a strong illustration.
+- **Check the actual file before choosing it.** Venue sites typically
+  serve a *watermark* or transparent-background variant intended to sit
+  over their own photography — white-on-transparent is invisible on a
+  light card. Download it and look at it on both themes; a logo that
+  disappears on the board is not a hero, whatever its licence.
+
+Where a logo genuinely earns its place: an in-body image where the
+brand mark itself is the subject (an anniversary lockup, a rebrand, a
+changed name), or a hero for a venue with no photographable interior.
+The Stud's 60th-anniversary logo is the worked example — rejected as a
+hero for being a flat black-and-white wordmark, but it carried a fact
+nobody else had published, which went into the copy instead. **A logo
+that is wrong for the page can still be right for the research.**
+
 ## When images are hard to find: take the easy generic one
 
 **Operator directive, 2026-09-02: when venue-specific imagery is genuinely

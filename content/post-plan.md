@@ -46,6 +46,11 @@ push-to-live per post for operator QA.
 
 **Tier 1 order:** London → Brighton → San Francisco → Oakland.
 
+**Brighton took a turn 2026-09-02** (Legends) — out of strict cycle
+order, on the operator's call, because seeding its queue the same day
+made it finally drawable after being skipped every cycle since the tier
+list existed. Treat Brighton as served for cycle 2.
+
 **Cycle 1 of 4 — CLOSED 2026-09-02.** London took its turn
 (2026-08-31), Oakland took its turn (Heinold's, 2026-09-01), San
 Francisco took its owed turn (The Stud, 2026-09-02). Brighton was
@@ -83,7 +88,7 @@ still needs a fresh at-draft currency check per `verify-still-open`.
 - [ ] **The Actors, Kemptown (ex-The Marlborough)** — PLINIO, with a CUBIC-V consult on the theatre programming. A pub the queer community fought to keep: the "Queer the Marly" campaign (co-chair Michelle Steele) won it **Asset of Community Value** status from Brighton & Hove City Council, and it reopened in 2021 as The Actors — 60-seat theatre above an LGBTQ+ and BIPOC-friendly pub, queer since the 1970s, specifically named as where the trans and disabled communities gather. THE CORRECTION: listicles and directories still call it The Marlborough. Best source is Scene Magazine (Jan 2022) — **old, so the ACV status and current operators must be re-verified at draft.**
 - [ ] **Polyglamorous @ Quarters** — ALLORA DAI. Brighton's biggest queer dance party, now at Quarters, in the arches that once held the Zap and The Arch. THE CORRECTION: aggregators still list it as monthly at Chalk. It moved. Same stale-listicle shape as Möbel Olfe and The Stud. Confirmed running Oct 2026; pull exact dates at draft from quartersbrighton.co.uk.
 - [ ] **Green Door Store, Trafalgar Arches** — STEFAN. Railway-arch grassroots venue, free entry, late bar nightly; named an iconic grassroots venue by the Music Venue Trust. Ran its **first-ever Pride charity concert** in 2026 — reported by Brighton and Hove News (2026-07-19), an independent local outlet, not a listicle. Address: 234 Trafalgar Arches, Lower Goods Yard.
-- [ ] **Legends, seafront** — NITE-PORTER. **STRATEGIC: this opens `accommodation`, still Near's only zero-coverage category** (`content/opportunities.md` coverage audit), and gives NITE-PORTER a real byline. A seafront hotel with a subterranean club underneath it — genuinely a place to sleep AND a venue, which is exactly the accommodation profile that skill is built for. Needs a second independent source and an image check at draft.
+- [x] **Legends, seafront** — NITE-PORTER. SHIPPED 2026-09-02, all six locales. Brighton's first pin ever. **STRATEGIC: this opens `accommodation`, still Near's only zero-coverage category** (`content/opportunities.md` coverage audit), and gives NITE-PORTER a real byline. A seafront hotel with a subterranean club underneath it — genuinely a place to sleep AND a venue, which is exactly the accommodation profile that skill is built for. Needs a second independent source and an image check at draft.
 - [ ] **Club Revenge** — STEFAN or PLINIO. Brighton's best-known LGBTQ+ club, running since 1991. Lowest-priority of the nightlife picks: well covered elsewhere, so it needs a genuine angle beyond "it exists and is old" before it earns a draft.
 
 **The Brighton collection, not a pin — RADAR-X:** the **Pride Village Party** story. Brighton & Hove City Council's 5-year Pride plan (2023–2028, approved Dec 2023) moved the Kemptown street party off **St James Street** to Marine Parade only from 2025, focusing it on six LGBTQIA+ venues and reinstating traffic on St James Street. Gscene reported objections "spanning the breadth of LGBTQ+ communities." A gay village being routed around by its own city's Pride is a real, documented, council-minuted story — and `world-culture-news` is one of Near's two empty categories with RADAR-X as a byline that has never written. Primary sources exist and are citable: `democracy.brighton-hove.gov.uk` carries the actual decisions and an "Evolution of Pride in Kemptown" paper.

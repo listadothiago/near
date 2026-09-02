@@ -145,6 +145,11 @@ rather than rubber-stamping:
 - **The chief editor** (`near-editor`'s own editorial judgment, or the
   standing column's named editor persona) gives final go-ahead on
   substance and framing. Checks *whether it's the right call at all*.
+  **Also owns the second headline-formula pass** (operator, 2026-09-02):
+  compare the `shortTitle` against the byline's own recent pins and the
+  wider catalogue, because a repeated shape is invisible from inside a
+  single piece. `near-tov-police`'s Job 1b is the first pass; this is the
+  one that catches what it missed.
 
 Findings from any of the three get fixed by the writing persona/
 `near-editor`, not waved through — none of the three skips the others.
