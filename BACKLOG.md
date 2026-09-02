@@ -1,5 +1,70 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🔗 Location-filtered views must be shareable by link (2026-09-02, OPERATOR DIRECTIVE — not started)
+
+**Operator, verbatim:** *"I personally love the focus on neighborhood. And I
+think our pages filtered by location (eg city or neighborhood) should be
+shareable with a link."*
+
+Two rulings in one sentence: the neighborhood emphasis from the external
+strategy read is **endorsed direction** (see
+`docs/chatgpt-three-year-strategy-2026-09.md` §4), and location-filtered board
+views need real, linkable URLs.
+
+### What already exists — this is smaller than it sounds
+
+- `neighborhood` is **already a first-class schema field**
+  (`lib/content/schema.ts:85`, optional) and is **already populated on 58 of
+  60 places**. No backfill needed. (This corrects the Product Trio read in §3
+  of the strategy doc, which wrongly called it a missing field.)
+- `lib/search/locations.ts` already has `buildLocationIndex` / `matchLocation`,
+  resolving a typed query to a neighborhood, city, region or country across all
+  six locales.
+- `components/board/Board.tsx` already has a **"Location SRP" path** — when a
+  query resolves to a covered location it filters the board and even retitles
+  the document.
+
+So Near can already answer "what's in Pinheiros?" It just cannot **link** to
+the answer. Not shareable, not crawlable, not indexable, not citable by an AI
+assistant.
+
+### The one real blocker, and it's a deliberate past decision
+
+`lib/board/controls.tsx` holds query/category/tag state in React and says so on
+purpose: *"Deliberately not URL params: typing into the search field would push
+a history entry per keystroke and wreck the back button."*
+
+**That reasoning is correct for a search field and was never argued for a
+resolved location.** A matched location is stable, is an entity Near covers, and
+is the one piece of board state anyone would want to send to someone else. Do
+not simply revert the decision — preserve it for free-text typing.
+
+Two candidate approaches, for `near-tech-lead` to rule on (read
+`node_modules/next/dist/docs/` first — App Router shape has real breaking
+changes here):
+
+1. **Real routes** — e.g. `/[locale]/in/[location]`, statically generated from
+   the existing location index. Best for SEO/AEO, gives a genuine layer-2 page
+   type, costs a new route + `generateStaticParams`. Preferred if it holds up.
+2. **`replaceState` sync for resolved locations only** — cheap, no new route,
+   keeps the back button intact because a resolved match is not a keystroke.
+   Gets shareability but *not* crawlability. Reasonable as a first step, not as
+   the destination.
+
+### Constraints
+
+- **`near-lead-ux` binding note:** whatever a location URL renders must not be
+  the existing card grid with a heading bolted on. There is currently **no
+  designed pattern for an aggregation page**, and shipping fifty of them by
+  extending the grid is the fastest route to looking like the listicle farm the
+  strategy doc warns against. `near-ux-designer` owns this pattern.
+- **Split the two halves.** The addressable location view needs *no new
+  content* and can ship on the current 60 places. The curated, edited
+  neighborhood page with an actual editorial argument still needs the density
+  the Trio flagged. Ship the first now; let the second follow.
+- Six locales, as always — the location index is already multilingual, so the
+  URL/slug strategy has to be too.
+
 ## 🧭 STRATEGY SUMMIT: turn the external 3-year analysis into policy (2026-09-02, captured, not started)
 
 **Reference saved:** `docs/chatgpt-three-year-strategy-2026-09.md` — a full
