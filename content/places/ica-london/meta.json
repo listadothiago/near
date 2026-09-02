@@ -1,0 +1,66 @@
+{
+  "slug": "ica-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 51.5068,
+    "lng": -0.1299
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "St James's",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "ICA (official site) — Cinema programme",
+      "url": "https://www.ica.art/cinema",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Institute of Contemporary Arts",
+      "url": "https://en.wikipedia.org/wiki/Institute_of_Contemporary_Arts",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "BFI London Film Festival 2026 — venues",
+      "url": "https://whatson.bfi.org.uk/lff/Online/default.asp?BOparam::WScontent::loadArticle::permalink=venues",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Institute_of_Contemporary_Arts_-_17_May_2026.jpg",
+    "attribution": "Aethonatic, CC0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Institute_of_Contemporary_Arts_-_17_May_2026.jpg",
+    "licenseNote": "CC0 (public domain dedication), photographer credited by username on the Commons record. 4645x3100, comfortably over the 1200px Discover threshold, and photographed 17 May 2026 — a current view of the Nash frontage rather than a twenty-year-old one."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "Added as the fourth London city-culture pin and the first cinema anywhere in Near's coverage, hung on the 70th BFI London Film Festival (7-18 October 2026), where the ICA is a confirmed partner venue. Venue list verified against BFI's own LFF venues page and press coverage of the 2026 programme, not from training data: Rio Cinema Dalston was checked first as a better editorial fit and is NOT an LFF venue, so it was dropped rather than asserted. Founding year 1946, the six founders, the 1968 move to Nash House, the Independent Group's 1952-63 run, the 1957 Debord screening, the 1976 Post-Partum Document row and the preserved bloodstain are from the Wikipedia article, which cites primary press. The 2024 staff allegations are stated as allegations and attributed, not as findings. Creates a St James's location page by pairing with berry-bros-and-rudd-london."
+    }
+  ],
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.8,
+    "query": "Institute of Contemporary Arts, Nash House, The Mall, London SW1Y 5AH"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}
