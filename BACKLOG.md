@@ -85,6 +85,78 @@ Everything downstream waits on that.
 **Do not** start Layer-3 intent URLs (`/london/vegan`). Deliberately shut
 until `near-seo` has real Search Console data.
 
+## 🏘️ OPERATOR DIRECTIVE (2026-09-02): deepen neighborhoods — queer + "Portlandia"
+
+**Operator, verbatim:** *"neigborhoods sounds good. portlandia style ones and
+gay ones lol"* — answering the content question left open by the coverage
+measurement (`docs/chatgpt-three-year-strategy-2026-09.md` §6): deepen a few
+neighborhoods rather than spread wider.
+
+This is a **content call, so it belongs to `near-seo` + `near-trendsetter` +
+the chief editor** to execute. What follows is scope, not selection — the
+thresholds and the existing footholds, so nobody re-derives them.
+
+### The arithmetic that makes a target a target
+
+- **2 pins** → the neighborhood gets a page at all (`MIN_PLACES_FOR_LOCATION_PAGE`).
+- **4 pins** → it stops rendering in the thin state and gets category grouping
+  (`GROUP_FROM` in `app/[locale]/in/[...location]/page.tsx`).
+
+So the unit of work is **"take one neighborhood to 4,"** not "add pins." Three
+new pins in one neighborhood beats three in three.
+
+### Third constraint, operator (verbatim): *"up and coming too, not the ones already covered way too much elsewhere"*
+
+This is a **filter, not a tiebreak**, and it removes the names that would
+otherwise top the list. A neighborhood every listings site has already written
+to death is one Near cannot say anything new about — and saying the obvious
+thing about Soho is precisely the directory posture the whole location layer
+was gated to avoid. **Saturation disqualifies; it does not merely deprioritise.**
+
+**Ruled out on saturation** (keep the existing pins, don't build the page):
+London / Soho, London / Shoreditch, San Francisco / Mission District, New York
+/ East Village, São Paulo / Vila Madalena, London / Spitalfields.
+
+Shoreditch and Vila Madalena are the awkward cases: both are **already live
+pages** at 2 pins. They stay live — they're honest and thin-state — but they
+are not where the next pins go.
+
+### Queer, with a foothold and still findable (pins today → need for 4)
+
+| neighborhood | now | need | note |
+|---|---|---|---|
+| Santos / Centro Histórico | 3 | **+1** | Cheapest win anywhere. Live page, already has a queer pin, operator's own region |
+| São Vicente / Ilha Porchat | 1 | +3 | AMUSE. Home region |
+| São Paulo / Santa Cecília | 1 | +3 | The genuinely current SP answer, not Frei Caneca |
+| Praia Grande / Boqueirão | 1 | +3 | Home region, essentially uncovered in English |
+| London / Dalston | 1 | +3 | Borderline — past its "up-and-coming" window, still under-covered vs Soho |
+| Brighton / Kemptown | 1 | +3 | |
+| Amsterdam / Zeedijk | 1 | +3 | |
+
+### "Portlandia" (twee/indie/artisanal), same filter
+
+| neighborhood | now | need | note |
+|---|---|---|---|
+| Santos / Vila Mathias | 1 | +3 | Home region |
+| Porto / Cedofeita | 1 | +3 | Strong fit, thinly covered in English |
+| Bologna / Cirenaica | 1 | +3 | |
+| London / Walthamstow | 1 | +3 | |
+| London / Peckham | 1 | +3 | |
+| Oakland / Adams Point | 1 | +3 | |
+| São Paulo / Pinheiros | 1 | +3 | Borderline on saturation — chief editor's call |
+
+### Sequencing note for whoever picks this up
+
+Per the standing geographic preference, **Santos / São Vicente / São Paulo
+outrank the others** — which here aligns with both the cheapest work and the
+least-saturated coverage. Santos / Centro Histórico needs **one pin** to leave
+the thin state and serves both themes at once. Praia Grande / Boqueirão and
+Santos / Vila Mathias are near-invisible in English-language coverage, which is
+exactly the gap the "up and coming" filter is pointing at.
+
+Standing rules still apply: dated events preferred, further-out dates over
+near-term ones, six locales per piece, `near-write-article` is the pipeline.
+
 ## 🆕 New skill: `near-product-owner` (2026-09-02, BUILT)
 
 `.claude/skills/near-product-owner/SKILL.md`. Sits **under**
