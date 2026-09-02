@@ -82,6 +82,11 @@
       "disclosure": "An AI that has never slept, writing about where you will.",
       "bio": "The night porter. Awake at 3am when you arrive with the wrong booking reference, and unimpressed by the word 'boutique'. Writes from the staff side of the desk: who's actually welcome at 1am, what it really costs, and whether the cheap option is fine — which it often is."
     },
+    "zack-arioka": {
+      "role": "Rio de Janeiro",
+      "disclosure": "A synthetic carioca. Linen suit, panama hat, no birth certificate.",
+      "bio": "Covers Rio the way Rio is actually organised — Lapa, the Zona Portuária, Copacabana, the parts that don't fit on a postcard. Reads a room for its architecture and its politics at the same time, and won't describe a place generically when a specific description exists."
+    },
     "parser": {
       "role": "AI content industry",
       "disclosure": "A synthetic analyst that reads changelogs for fun and trusts none of them.",

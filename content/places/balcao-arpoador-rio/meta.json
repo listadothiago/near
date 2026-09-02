@@ -1,0 +1,64 @@
+{
+  "slug": "balcao-arpoador-rio",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": -22.9884,
+    "lng": -43.1913
+  },
+  "place": {
+    "city": "Rio de Janeiro",
+    "neighborhood": "Arpoador",
+    "region": "Rio de Janeiro",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "zack-arioka",
+  "sources": [
+    {
+      "name": "Balcão — Comida de Rua (official site)",
+      "url": "https://www.balcaooficial.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    },
+    {
+      "name": "CNN Brasil Viagem & Gastronomia — Dedicado à comida de rua do Oriente Médio, Balcão chega com tudo a Ipanema",
+      "url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/dedicado-a-comida-de-rua-do-oriente-medio-balcao-chega-com-tudo-a-ipanema/",
+      "feedId": null,
+      "originalPublishedAt": "2025-07-11T00:00:00Z"
+    },
+    {
+      "name": "Balcão on Instagram (@balcao.oficial)",
+      "url": "https://www.instagram.com/balcao.oficial/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-02T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://static.wixstatic.com/media/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg/v1/fill/w_1600,h_900/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg",
+    "attribution": "via Balcão — Comida de Rua",
+    "attributionLink": "https://www.balcaooficial.com/",
+    "licenseNote": "The venue's own photograph of its counter, from its official site — visually verified before use as the actual Balcão counter (green stools, 'PITA IS MY CANVAS' and #BCDR signage), not stock. Served through Wix's own resize path at exactly 1600x900, which clears the Discover card spec at a true 16:9 instead of the 4:3 compromises Commons keeps forcing. Source file is 6720x4480."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "Near's FIRST Rio de Janeiro pin, and the first piece by ZACK ARIOKA, built the same day. Operator directive: Rio is a Phase 2 hold city, but this one article was granted a specific Phase 1 exception so the byline could debut rather than wait — treat it as an exception, not as Rio being open. Byline register set by the operator the same session: Leblon, not the roster's original Lapa framing. VERIFIED: address R. Francisco Otaviano 52, Loja D, Arpoador, on the corner of Raul Pompeia, per the restaurant's own site; hours Tue-Sat 11:00-22:00 and Sun 11:00-21:00, closed Mondays, per the same; prices (falafel R$9.90, kebab R$29.90, cauliflower pita R$27.90, bowl R$34.90) per CNN Brasil, 11 July 2025. OPERATOR CORRECTION, same session: the first draft headlined that price as if it were current (shortTitle: Four Falafel for R$9.90). It is over a year old at publication and Brazilian food prices have not held still. Rewritten across all six locales so the number is always bound to its July 2025 date and framed as a floor, never as today's price; the headline now leads on the ordering advice, which stays true whatever the menu says. This is exactly the stale-price failure the pipeline should have caught and did not — worth adding to the quality gate; four units, with Ipanema opened May 2025 per CNN Brasil; counter format, two self-order kiosks, house sauces and daily pita per the official site. NOT VERIFIED and labelled in-body: the 'street food from Tel Aviv' claim is the venue's own self-description, passed along with attribution rather than adjudicated. CURATOR TESTIMONY, attributed in-body and linked to /about/thiago-baraldi rather than laundered into house voice: the queue is long but well managed, arriving at opening avoids it, and there are Arabic-speaking regulars eating here on repeat visits. This is first-hand operator reporting, not a sourced claim, and is the first pin to handle it that way — a pattern worth reusing, since the curator is the site's only real Person node. Hero is the venue's own counter photo, visually checked to confirm it is the actual room and not the stock Jerusalem-market image also on their site, which was rejected for exactly that reason. Step 9a google-discover-audit: RE-RUN after the correction and PASS — 1600x900 true 16:9; the headline Order the Falafel First is advice the body delivers and cannot go stale, where the original headline was a promise about a price that had already moved. Dated, attributed, no affiliate link. Sign-offs: near-tov-police (no shape repetition — this piece leads on price where the same day's Bar Italia led on hours), near-legal-counsel (prices dated to their source, self-description attributed, images from the venue's own site with attribution and link), chief editor approved. Geocode is a manual approximation for the corner of Francisco Otaviano and Raul Pompeia and needs a real lookup."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.5,
+    "query": "R. Francisco Otaviano, 52, Arpoador, Rio de Janeiro, RJ, 22080-040"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}
