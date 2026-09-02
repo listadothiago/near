@@ -1,5 +1,55 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+## 🧭 STRATEGY SUMMIT: turn the external 3-year analysis into policy (2026-09-02, captured, not started)
+
+**Reference saved:** `docs/chatgpt-three-year-strategy-2026-09.md` — a full
+external strategy read of near.tips from ChatGPT, delivered to the operator
+2026-09-02 and saved verbatim. It is **input, not policy.** Nothing in it has
+been adopted; no skill, rule, or roadmap has been changed on the back of it.
+
+**The ask:** the **Product Trio** (near-lead-product, near-lead-ux,
+near-tech-lead) plus **near-seo**, **aeo**, **near-trendsetter** and the
+**Chief Editor** must meet — as one session, together, not one at a time — and
+convert that document into four concrete outputs:
+
+1. **Guidelines** — what of it becomes standing rule in `content/rules.md`,
+   `content-schema.md`, and the editor style guide (candidates from the doc:
+   the four content layers; the per-place "fact box"; `Last checked` /
+   `Status: Active` surfaced on every place; the plain-language
+   question-headings pattern for LLM retrieval; canonical entity identity per
+   place; "the site accumulates the reputation, not the personas").
+2. **Skill updates** — which skills change and how. Obvious candidates:
+   `near-seo` (intent-page and long-tail opportunity model, density-over-breadth
+   city policy), `aeo` (question-answer framing, structured-data coverage,
+   tracking AI-visibility separately in Search Console's generative-AI report),
+   `link-police` (the source → place → guide → neighborhood → city graph loop),
+   `near-caretaker` (freshness as a *product feature*, not just hygiene),
+   `near-illustrator`/`near-write-article` (fact box as a required element).
+3. **Roadmap** — accept, reject, or rewrite the doc's 12-quarter arc, and say
+   which parts Near actually commits to for Q4 2026 (its "foundation" quarter:
+   technical SEO base, ~300 excellent places, 3–5 cities, ~20 real guides,
+   Search Console from day one, no ads yet).
+4. **Backlog** — the resulting items, written into this file as normal work.
+
+**Points where the doc will collide with existing Near policy — resolve
+explicitly, don't paper over:**
+- **Density vs. breadth.** The doc says 500 places in London beats 50 in ten
+  cities. Near currently runs a geographic rotation and a
+  `content/preferred-destinations.md` list, and the operator's Baixada Santista
+  priority is a standing bias. Which wins?
+- **Persona reputation.** The doc wants Near, not FOODIE-9000, to accumulate
+  authority. Near's whole editorial architecture is persona-first. That is a
+  real tension and the Chief Editor should rule on it.
+- **Neighborhood and intent pages don't exist yet** as a route type. That is a
+  near-tech-lead question (routing, IA, sitemap, multilingual URLs) before it
+  is an SEO one.
+- **Monetisation timing.** The doc says don't turn ads on yet; Near already
+  runs AdSense and has an `ad-sales` skill and outreach log. Reconcile.
+
+Deliverable: one written decision record, then the edits. Do **not** start
+implementing pieces of the document ad hoc before this meeting happens — the
+value is in one coherent ruling, not six skills each half-absorbing it.
+
 ## 🔖 OPEN CAPTURE (2026-09-02, end of session — read first)
 
 Session ended on the operator's call, low on tokens, immediately after
