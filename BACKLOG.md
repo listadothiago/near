@@ -33,13 +33,32 @@ Gravatar, whichever is easier. → `near-tech-lead` + `near-lead-ux`.
 
 ### New skills to build (none exist yet)
 
-1. **`google-discover-audit`** — best practice for Google Discover
-   eligibility plus any Apple News / AR equivalent. Quality hero images,
-   clickable headlines and snippets; **check the current published
-   guidelines rather than assuming**. The operator was explicit that this
-   is **also a mandatory step inside `near-write-article`**, not just a
-   standalone audit. Related prior work: `docs/ar-surfaces.md`, and the
-   `max-image-preview:large` finding already shipped.
+1. ✅ **`google-discover-audit`** — built 2026-09-02 against Google's
+   live "Get on Discover" doc and Discover content policies (not from
+   training data), and wired in as **mandatory step 9a** of
+   `near-write-article`. The hero card spec (≥1200px, >300,000px, ~16:9)
+   is also stated up-front in `near-illustrator` so it's checked at
+   sourcing time instead of failing an audit lap later.
+
+   Three findings worth the operator's attention:
+   - **`heroImageSchema` stores no width/height** (`lib/content/schema.ts`),
+     so the card spec can't be checked mechanically — every audit has to
+     eyeball the asset. → `near-tech-lead`.
+   - **Discover's transparency rule wants a clear byline**, and every
+     Near byline is a disclosed AI persona. Not fixable and shouldn't be
+     — faking a human byline is exactly the deception the policy exists
+     to catch. The mitigation is the curator page, now linked site-wide.
+     If a Discover manual action or a sustained drop appears, this is
+     hypothesis one. It's a real trade-off, not a bug.
+   - **Apple News no longer takes unsolicited applications.** It's a
+     watch item, not a task — don't prep a submission. Keeping the RSS
+     feeds valid (RSS 2.0, UTF-8, `language` with locale) is the cheap
+     prerequisite and good hygiene anyway.
+
+   The trade press claims the Feb 2026 Discover core update penalises
+   AI-generated content. **That is inference, not Google's position** —
+   the content policies don't mention AI at all. Recorded in the skill
+   as a hypothesis so nobody acts on it as policy.
 2. **`language-tic-police`** — "implacable." A harder-edged sibling to
    `near-tov-police`, hunting language tics specifically. Scope it against
    what `near-tov-police` already covers so the two don't overlap.

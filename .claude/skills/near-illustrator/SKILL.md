@@ -216,6 +216,20 @@ hero call — **including when the answer is "none needed, the body is
 short enough"**, which is a real call and stops the next run
 re-litigating it.
 
+## The card spec every hero has to clear
+
+A hero is also a **Google Discover card and an OG card**, so it has a
+hard spec on top of the taste call: **at least 1200px wide, more than
+300,000 total pixels, as close to 16:9 as the source allows.** Logos and
+text-heavy graphics are called out by Google by name, and a
+portrait-orientation crop fails the card however good the image is.
+
+Check this while sourcing or generating, not after —
+`google-discover-audit` re-checks it at `near-write-article` step 9a and
+hands failures straight back here, which is a wasted lap. Verified
+against Google's published guidance 2026-09-02; see
+`.claude/skills/google-discover-audit/SKILL.md` for the source list.
+
 ## Hero image tiers
 
 `rules.md`'s `quality-gate-before-publish` defines three, in preference

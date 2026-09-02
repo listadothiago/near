@@ -1,6 +1,6 @@
 ---
 name: near-write-article
-description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter, plus near-seo's own backlink-pr consultation), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, near-seo + aeo QA, near-tov-police + near-legal-counsel + chief editor sign-off, near-translator for all six locales, the mechanical publish gates, a git push, and a post-publish handoff to backlink-pr for outreach. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
+description: The one shared pipeline every Near skill uses to actually write and publish a piece — a place page, a blog post/collection, or a standing-column issue. Wraps topic confirmation (near-seo + near-trendsetter, plus near-seo's own backlink-pr consultation), research/sourcing (near-sources, near-deep-researcher), drafting in the right persona's voice per near-tov-police's discipline, near-illustrator for images, near-seo + aeo QA, a mandatory google-discover-audit feed check, near-tov-police + near-legal-counsel + chief editor sign-off, near-translator for all six locales, the mechanical publish gates, a git push, and a post-publish handoff to backlink-pr for outreach. Use this instead of improvising the sequence — near-editor, near-blogger, near-war-room, and every standing column editor should call into this rather than each reimplementing it slightly differently.
 ---
 
 # near-write-article
@@ -226,6 +226,24 @@ standing-column entry specifically: also prepend
 the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed
 only ever show what's listed there.
+
+### 9a. Feed surfaces — `google-discover-audit`, mandatory
+
+**Operator directive, 2026-09-02: this is a required step in the
+pipeline, not a standalone audit anyone can skip.** `near-seo` optimises
+for a query and `aeo` for a machine that quotes you; Discover is a feed
+where nobody typed anything, so neither check covers it. Run
+`.claude/skills/google-discover-audit/SKILL.md` against the finished
+body, the resolved hero and the final `shortTitle`.
+
+The two that most often fail here: the **hero card spec** (≥1200px wide,
+>300,000 pixels, ~16:9, reaching `og:image`) — hand a failure back to
+`near-illustrator` rather than downgrading the check — and
+**headline-over-promise**, read as a card with no body attached, which is
+a documented misleading-preview violation and the failure mode Near's
+punchy house style produces most easily. Record the verdict, including a
+clean pass. The skill also covers Apple News (closed to new publishers —
+a watch item, not a task) and the AR card surfaces.
 
 ### 9b. Revenue pass — `backlink-pr` + `affiliate-pr` + `ad-sales`
 
