@@ -86,7 +86,7 @@ before its next turn comes around in cycle 2.
 - [x] Quiosque da Cris / Mudança Radical + Praia do Itararé, São Vicente — shipped; checkbox was stale, caught during 2026-09-01 queue cleanup.
 - [ ] O Condado + São Vicente scene items from earlier scouting — need verification pass
 - [ ] **Campinas — first pin ever, draft this first.** Bar Flor da Lua (craft beer/cocktails/vegan, mixed LGBT-friendly crowd — try first, hits gastronomic+LGBT+hipster in one) or Livre Club (Vila Itapura, ~20yr LGBT+ nightclub) as fallback. Currently sourced from aggregator/listicle content only — needs a real second source and a Campinas outlet onboarded to sources.md before/during drafting.
-- [ ] Barraca da Dheia, Guarujá (Praia de Pitangueiras, not São Vicente/Itararé — corrected via on-draft verification, see content/opportunities.md) — drafted, `status: draft`/`trust: review`, awaiting operator approval, not yet ticked done.
+- [x] Barraca da Dhéia, Guarujá (Praia das Pitangueiras) — ALLORA DAI, shipped 2026-09-02, all six locales. Full redraft from zero (the earlier draft was lost, never committed — commit c20151f). Near's FIRST Guarujá pin, closing that zero-coverage gap. Published inside the spring seasonal window on near-seo's rank-1 call.
 - [x] Pracinha do Seu Justino, Vila Madalena (São Paulo capital) — shipped; checkbox was stale, caught during 2026-09-01 queue cleanup.
 
 ### Berlin (deep) — war-room slate 2026-08-31, verified

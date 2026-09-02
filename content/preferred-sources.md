@@ -165,6 +165,31 @@ Still open from this batch:
   (reliable `og:image`, useful for source-tier hero images). Found
   researching the same piece; not yet trust-tested across multiple hits.
 
+### Baixada Santista — found researching `barraca-da-dheia-guaruja` (2026-09-02)
+
+- `andadireito.com.br` — **Anda Direito**, a Brazilian LGBTQ+ community
+  platform that maps queer-run and queer-friendly places nationally,
+  including categories (`barraquinhas`) no mainstream guide indexes. It
+  was the only source that confirmed Barraca da Dhéia was open AND
+  carried the venue's own words. Strongest new candidate here and a
+  national-scope asset, not just a Baixada one — high-priority
+  graduation. Note: some detail sits behind a registered-user wall.
+- `benditoguia.com.br` — Brazilian business directory with LGBT
+  categories; useful for address/phone confirmation. **Low trust on
+  operational data** — it served office hours (Mon-Fri 9-18) for a beach
+  barraca and a 5.0 rating from zero reviews. Corroborate, never rely.
+- `diariodolitoral.com.br` — Baixada Santista daily, covers the regional
+  LGBTQIAPN+ beat. Blocked WebFetch with 403 this pass; may need browser
+  automation.
+- `turismo.sp.gov.br` / `plataforma.turismo.sp.gov.br` — São Paulo state
+  tourism secretariat, owner of the **Mapa do Turismo LGBT**. Authoritative
+  for which municipalities are certified. Access is poor: the plataforma
+  subdomain has an **expired TLS certificate** and the main site returns a
+  portal index rather than article bodies. Flagged for `near-caretaker`.
+- `atribuna.com.br` — already known for the Baixada, but recording that
+  article bodies did not render via WebFetch this pass (navigation chrome
+  only), so it needs browser automation to be genuinely usable.
+
 ### San Francisco — whole-city gap, found researching `the-stud-san-francisco` (2026-09-02)
 
 SF is a **Tier 1 rotation city with three published pins and zero

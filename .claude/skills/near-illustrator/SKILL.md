@@ -58,6 +58,49 @@ queer venue are a real outing risk (see `near-legal-counsel`, and the
 `canto-dos-ursos-praia-grande` precedent), so prefer frames with no
 identifiable faces, or crop.
 
+## When images are hard to find: take the easy generic one
+
+**Operator directive, 2026-09-02: when venue-specific imagery is genuinely
+hard to find, always look for an easy, suitable generic image rather than
+holding the piece or defaulting to generation.** A published piece with an
+honest generic hero beats a perfect piece nobody can read because it is
+stuck in `draft` waiting for a photograph that does not exist.
+
+Run it in this order, and only fall through when a tier is genuinely
+exhausted rather than merely inconvenient:
+
+1. Photo inbox → 2. the venue's own official site → 3. **an easy generic
+licensed image** → 4. original illustration → 5. queue a prompt and hold.
+
+Step 3 is the one this directive adds, and it sits *above* generation.
+Where to find one fast — Wikimedia Commons is the default, and its API
+answers this in a single query without browsing:
+
+```
+https://commons.wikimedia.org/w/api.php?action=query&generator=search
+&gsrsearch=<terms>&gsrnamespace=6&gsrlimit=12&prop=imageinfo
+&iiprop=url|extmetadata|size&format=json
+```
+
+Read `extmetadata` for `LicenseShortName` and `Artist` before choosing,
+and **look at the image** before wiring it in.
+
+What makes a generic image *suitable* rather than lazy filler:
+
+- **Honestly related to the subject** — a rainbow flag for a queer venue,
+  a correctly-located street scene for a bar on that street (the Jumbi
+  precedent). Not a stock cocktail glass standing in for a specific bar.
+- **Clean at thumbnail size**: no people whose faces are identifiable, no
+  legible text, crops to 16:9 without losing the subject.
+- **Properly licensed with real attribution**, recorded in
+  `heroImage.attribution` and `attributionLink`.
+- **`licenseNote` must state plainly that it is NOT a photograph of the
+  venue.** This is the condition that makes the whole approach honest
+  rather than misleading, and it is not optional.
+
+Set `strategy: "stock"` for these, not `"source"` — `"source"` claims the
+image shows the actual place.
+
 ## If generation isn't working this session
 
 If the call is "generate an illustration" but the generation tooling

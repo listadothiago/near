@@ -34,6 +34,24 @@ getting explicit approval.**
 - **Wall note:** the piece was queued by the rotation and drafted before
   any commercial thought — coverage decision is traceable and independent.
 
+### Barraca da Dhéia + the Guarujá coastal cluster — `prospect`
+- **Found:** researching `barraca-da-dheia-guaruja`, 2026-09-02.
+- **Why a lead:** a small independent beach barraca with a phone number
+  and no website, in a market Near has just opened and where it now has
+  the only real English/Italian/Spanish/Chinese coverage. Exactly the
+  "independent local business never approached by anyone selling digital"
+  profile in this skill's own lead ranking. Two named neighbours from the
+  same state tourism listing are equally reachable: Barraca da Márcia É
+  Show (Praia da Enseada) and Quiosque 39.
+- **Contact channel:** +55 13 99773-3751 (phone; no website exists).
+- **Seasonality:** their season is starting now, which is when a beach
+  business actually has budget and reason to advertise.
+- **NOT YET PITCHED.** No traffic data (GA4 unwired) — honest
+  founding-advertiser framing only. Needs an operator-gated draft, and
+  note the pitch would be by phone or WhatsApp, not email.
+- **Wall note:** coverage was directed by the operator and drafted before
+  any commercial consideration.
+
 ### Adjacent SF leads from the same research — `prospect`
 - Slaughter Haus (takes the room 10–11 Oct 2026) and the promoters behind
   TRUCK / PUMPS: dated events in a covered market, the highest-intent
