@@ -124,6 +124,15 @@ rules:
       wanted to know at a glance why a festival was worth the trip and
       had to read five paragraphs to find out.
 
+      RECOMMENDING PIECES must also carry at least one concrete "don't
+      miss this" — a named, actionable pick (the set to catch, the dish to
+      order, the hour to show up), per style-guide.md's "Give the reader
+      something to do." One or two sentences, in the body, and only what
+      the sourcing supports: inventing a signature dish to satisfy this
+      gate is a sourcing violation, not a stylistic one. Requested by an
+      outside reader 2026-09-02 — "se você for lá, não deixe de pedir o
+      drink X... geralmente isso me convence."
+
       This gate also covers style-guide.md's "Never pull rank on the
       reader": no body, in any locale, may aim its opinions at the person
       reading rather than at the place, scene or music. Check for a
