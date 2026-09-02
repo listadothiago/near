@@ -10,8 +10,10 @@ works if each rung stays on its own:
 
 - **`near-product-owner`** — *what exactly is this?* Specs, DDRs,
   failable acceptance criteria, options and a recommendation.
-- **`near-lead-product`** — *what next, and in what order?* RICE across
-  competing items, honest scoping, keeping `BACKLOG.md` truthful.
+- **`near-lead-product`** — *what next, and in what order?* RICE **and**
+  MoSCoW across competing items (operator directive 2026-09-02 — RICE
+  ranks, MoSCoW commits to a named horizon, specialist judgement breaks
+  ties and says why), honest scoping, keeping `BACKLOG.md` truthful.
 - **`near-cpo`** — *what is this product for, and what will it never
   be?* The north star, the portfolio, and the refusals.
 

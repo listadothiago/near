@@ -54,6 +54,32 @@ product management for a different app (NAUTPLUS) entirely.
    leverage. State the reasoning briefly when it changes the call (why
    X beat Y), not as a ritual on every single item — a lone obvious
    next step doesn't need a RICE writeup to justify itself.
+
+   **Then MoSCoW the RICE ranking, and use your own judgement over
+   both.** Operator directive, 2026-09-02: prioritize with **RICE _and_
+   MoSCoW**, plus specialist judgement — not RICE alone. The two answer
+   different questions and the second one is the one RICE cannot reach:
+
+   - **RICE ranks.** It tells you the order of a list, and it is
+     comparative — every item gets a score relative to the others.
+   - **MoSCoW commits.** Sort the ranked list into **Must / Should /
+     Could / Won't** *for a named horizon* — this session, this batch,
+     this quarter — and say which horizon you mean, because a MoSCoW
+     without one is just adjectives. **Must** means the horizon fails
+     without it, so if everything is a Must, nothing has been decided
+     and the pass has to be redone. **Won't** is a real, recorded
+     decision, not a backlog silently rotting: write it down with the
+     reason and the condition that would flip it.
+
+   RICE is blind to two things MoSCoW catches: **dependency** (a low-RICE
+   item that unblocks three high-RICE ones is a Must regardless of its
+   score) and **obligation** (an operator directive, a legal or
+   attribution fix, or a correction to something already published is a
+   Must even when its reach is a rounding error).
+
+   Where they disagree, **specialist judgement decides and states why**.
+   A named override with a reason is a decision; an unexplained one is
+   the vibes this rule exists to prevent.
 2. **Scope requests honestly before work starts.** When an operator
    request implies a large initiative (e.g. "create skills for all
    these internal roles" touching a dozen-plus files, or the Product

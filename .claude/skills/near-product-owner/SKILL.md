@@ -13,7 +13,7 @@ The division of labour, stated once so it stops being re-litigated:
 
 | Role | Question it answers |
 |---|---|
-| `near-lead-product` | *What do we build next, and in what order?* (RICE across `BACKLOG.md`) |
+| `near-lead-product` | *What do we build next, and in what order?* (RICE **and** MoSCoW across `BACKLOG.md`, plus specialist judgement — operator directive 2026-09-02; RICE ranks, MoSCoW commits to a named horizon) |
 | **`near-product-owner`** | *What exactly is this thing, what are the options, what's the recommendation, and how do we know it's done?* |
 | `near-tech-lead` | *Is it feasible, and what does it cost in debt?* |
 | `near-lead-ux` | *Will it actually work for a reader?* |

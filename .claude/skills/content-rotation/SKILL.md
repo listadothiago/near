@@ -4,9 +4,16 @@ Owns the geographic tier list and rotation cadence for `content/post-plan.md`. O
 
 ## Tiers
 
-**Tier 1 (repeats 4x before rotating into Tier 2):** London, Brighton, San Francisco, Oakland.
+**Tier 1 (repeats 4x before rotating into Tier 2):** London, Brighton, San Francisco, Oakland, **Bangkok**.
 
-**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, Bangkok, plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+
+**Bangkok promoted Tier 2 → Tier 1, operator directive 2026-09-02:**
+*"Bangkok is most visited city in the world, bump to tier 1."* This is
+the only Tier 1 city with **zero pins**, so its first turns are net-new
+coverage rather than deepening, and its queue in `post-plan.md` has to be
+seeded before its turn can be drawn. MOTOSAI is its locale editor and his
+debut is unblocked by this promotion.
 
 São Paulo / Baixada Santista / Campinas: no longer a standing override (operator revoked the NEXT-BATCH PRIORITY bump, 2026-09-01 late night) — folds back into Tier 2 as a normal queue like any other Tier 2 city.
 

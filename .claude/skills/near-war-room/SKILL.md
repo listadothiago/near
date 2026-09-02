@@ -67,6 +67,37 @@ every time:
    rewritten mid-session. Coverage counting is step 3; this is not that.
    This is reading what the operator already decided.
 
+0b. **Cleanup — reconcile the queue and the disk against what actually
+   shipped.** Operator directive: the same discipline `near-backlog`
+   already has, baked into every war-room run, before anything is
+   presented or dispatched. Three checks:
+
+   - **`content/post-plan.md` queue vs. reality.** An unchecked queue
+     item whose pin is live, or a checked one with nothing on disk, both
+     mean the plan is lying about state. Fix the file, don't work around
+     it.
+   - **Half-built directories under `content/places/`.** A failed
+     background run leaves locale files with no `meta.json` and no
+     English source — invisible to the board (`loader.ts` never sees
+     them) and invisible to `git status` if untracked. They are not
+     coverage, and counting them as coverage is how a neighbourhood gets
+     scored as done when it isn't. Either complete or delete; never
+     leave.
+
+     ```
+     for d in content/places/*/; do
+       [ -f "$d/meta.json" ] && [ -f "$d/en.mdx" ] || echo "INCOMPLETE: $d"
+     done
+     ```
+
+   - **Stray `git stash` entries and uncommitted work** from an
+     interrupted run, which routinely contain the reciprocal link or the
+     locale edition a previous push owed.
+
+   Findings go in the scope block. A cleanup that is bigger than the
+   push gets flagged to the operator rather than silently absorbing the
+   session.
+
 1. **Scope the push.** Take the operator's topic/destination (a
    `BACKLOG.md` war-room entry, or a fresh request) and define what
    "done" looks like: roughly how many pins, whether one blog post or

@@ -7,11 +7,13 @@ geographically alive, and no community waits weeks for its turn.
 
 **Tier rotation (operator directive, 2026-09-01 — see `.claude/skills/content-rotation/SKILL.md`, the source of truth for this rule):**
 
-Tier 1 — London, Brighton, San Francisco, Oakland — repeats 4 full
-cycles before Tier 2 gets a turn. Tier 2 — Berlin, Amsterdam,
-Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
-Bangkok, plus one rotating surprise-city slot picked fresh by near-seo
-each time. São Paulo / Baixada Santista / Campinas's standing-override
+Tier 1 — London, Brighton, San Francisco, Oakland, **Bangkok** (promoted
+from Tier 2 by operator directive 2026-09-02: most-visited city in the
+world; it is the only Tier 1 city with zero pins, so its queue must be
+seeded before its turn can be drawn) — repeats 4 full cycles before Tier
+2 gets a turn. Tier 2 — Berlin, Amsterdam, Barcelona, Rome, Portland,
+Mexico City, Las Vegas, Orlando, Chengdu, plus one rotating
+surprise-city slot picked fresh by near-seo each time. São Paulo / Baixada Santista / Campinas's standing-override
 priority was revoked by the operator (2026-09-01 late night) — it's a
 normal Tier 2 queue now, no bump.
 

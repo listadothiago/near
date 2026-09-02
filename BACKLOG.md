@@ -59,9 +59,23 @@ Gravatar, whichever is easier. → `near-tech-lead` + `near-lead-ux`.
    AI-generated content. **That is inference, not Google's position** —
    the content policies don't mention AI at all. Recorded in the skill
    as a hypothesis so nobody acts on it as policy.
-2. **`language-tic-police`** — "implacable." A harder-edged sibling to
-   `near-tov-police`, hunting language tics specifically. Scope it against
-   what `near-tov-police` already covers so the two don't overlap.
+2. ✅ **`language-tic-police` — BUILT 2026-09-02.** The scoping line
+   against `near-tov-police` is **where in the piece the failure lives**:
+   tov-police owns openers, headlines, register and stance; tic-police
+   owns the sentence interior. The sharper distinction is method —
+   tov-police *judges*, tic-police *counts*. Its founding premise is that
+   a tic is invisible from inside a single draft (the four-bookshops
+   headline audit proved it), so its unit of analysis is the catalogue,
+   never the draft alone. Covers recurring constructions (the em-dash
+   gloss, "not X but Y", the withheld noun, the rule-of-three close, the
+   fragment-for-emphasis), a per-language watchlist word census with
+   `quietly` and `tucked away` banned outright rather than rationed, and
+   a paragraph/sentence-shape check. Runs on **every locale** — a
+   translation grows its own tics. Wired into `near-write-article` step 7,
+   which is now four sign-offs rather than three. Findings come back as
+   the replacement, and the replacement is a concrete fact; a tic that
+   can't be replaced with a fact means the sentence was never carrying
+   information and gets deleted.
 
 ### ✅ Writing rules infused into `near-write-article`
 
@@ -80,11 +94,24 @@ it added in `near-editor/references/style-guide.md` ("Long-form body"),
 `near-illustrator` ("In-body images") and `near-translator` ("Validate
 before writing"), so no skill states a rule that contradicts it.
 
-### Prioritization method
+### Prioritization method — ✅ CODIFIED 2026-09-02
 
 `near-lead-product`, `near-product-owner`, `near-cpo` and the Product Trio
-should use **RICE _and_ MoSCoW**, plus their own specialist judgement, when
-prioritizing anything — not RICE alone as the current skills say.
+use **RICE _and_ MoSCoW**, plus their own specialist judgement, when
+prioritizing anything — not RICE alone as the skills used to say.
+
+Canonical text is in `near-lead-product` step 1; `near-product-owner` and
+`near-cpo` point at it. The framing: **RICE ranks, MoSCoW commits.** A
+MoSCoW pass must name its horizon (this session / batch / quarter) or it
+is just adjectives; if everything is a Must, nothing was decided. **Won't**
+is a recorded decision with a reason and a flip condition, not silent rot.
+The two things RICE is structurally blind to and MoSCoW catches: a
+**dependency** (a low-RICE item unblocking three high-RICE ones is a Must
+regardless of score) and an **obligation** (an operator directive, a legal
+or attribution fix, a correction to something already published is a Must
+even at rounding-error reach). Where they disagree, specialist judgement
+decides **and states why** — a named override is a decision, an
+unexplained one is the vibes the rule exists to prevent.
 
 ### Neighborhood-first strategy
 
@@ -95,12 +122,21 @@ prioritizing anything — not RICE alone as the current skills say.
 - **War rooms for all of them** — every neighborhood in that file is a
   `near-war-room` target producing places, collections, guides and column
   issues, not one pin each.
-- **Tier 1 is now London, New York, Berlin, Barcelona** (search trends).
-  **Rio de Janeiro is Tier 2**, with a deep dive wanted on the "Copanema"
-  Copacabana/Ipanema corridor.
+- ⚠️ **Superseded tier list — corrected in place 2026-09-02.** This
+  section used to read *"Tier 1 is now London, New York, Berlin,
+  Barcelona; Rio de Janeiro is Tier 2."* That is no longer the tier list.
+  The **single source of truth is
+  `.claude/skills/content-rotation/SKILL.md`** (operator directive
+  2026-09-01, amended 2026-09-02), which reads: Tier 1 = London,
+  Brighton, San Francisco, Oakland, Bangkok. Rio is not in either tier —
+  it got a **one-article Phase 1 exception** (operator, 2026-09-02) and
+  has one live pin, `balcao-arpoador-rio`. The "Copanema"
+  Copacabana/Ipanema deep dive is still wanted and is now the obvious
+  second Rio unit.
 - Also flagged: the international-visitors list as a queue/rotation input,
   and whether Bangkok is disproportionately large for 420 content
-  (unverified → `near-deep-researcher`).
+  (unverified → `near-deep-researcher`; more relevant now that Bangkok is
+  Tier 1).
 
 ### Content commissions
 
@@ -928,10 +964,14 @@ override, independent of the tier rotation.
 - **The 12-24 month content roadmap** the operator asked for
   (collab: near-trendsetter, aeo, chief editor) — not written this
   session, ran out of runway. This is real open work, not optional.
-- **near-war-room needs a "cleanup" step added** to every run (check
-  post-plan.md queue items against what's actually shipped before
-  presenting/dispatching — same discipline `near-backlog` now has,
-  operator wants it baked into `near-war-room` too).
+- ✅ **DONE 2026-09-02 — `near-war-room` cleanup step**, added as
+  pipeline step 0b. Three checks before anything is presented or
+  dispatched: `post-plan.md` queue vs. what actually shipped; half-built
+  `content/places/` directories (locale files with no `meta.json`/`en.mdx`
+  — invisible to `loader.ts` *and* to `git status` when untracked, and
+  the reason a neighbourhood can score as done when it isn't, with a
+  shell one-liner to find them); and stray `git stash`/uncommitted work
+  from interrupted runs.
 - **near-backlog needs a two-way sync step** with the (not-yet-written)
   content roadmap once that exists — noted as a TODO in
   `near-backlog/SKILL.md`, not yet implemented since the roadmap
@@ -1947,7 +1987,7 @@ _Everything below arrived in one burst. Recorded verbatim in intent so nothing i
 
 - [ ] **Revamp the `/sources` page and the catalogue behind it (operator, 2026-08-31).** The page looks old because it *is* thin — 11 entries. Needs the real catalogue built out with working links: the [AAN member directory](https://aan.org/member-directory/) in full (BACKLOG has asked for this twice), the Instagram accounts listed in EPIC 5, Londonist and equivalents for each Tier 1 hub, and The Stranger (added 2026-08-31). Every entry verified reachable before it goes in — a dead source link is the same failure as a dead citation.
 
-- [ ] **Dedicated sources war room.** Operator request: a `near-war-room` variant focused on source discovery and audit rather than content production, so the catalogue gets deliberate attention instead of being a side effect of writing.
+- [x] **Dedicated sources war room — BUILT 2026-09-02** as `.claude/skills/near-sources-war-room/SKILL.md`. Produces no place pages by design (the failure mode was source work losing to content work every time they competed). Scopes by *gap* rather than appetite, in priority order: a Tier 1 city with no sources (Bangkok, right now), a beat with no sources behind a filter the board promises, a locale with no native-language sources. Runs `near-sources`' health check first, discovers with `near-trendsetter`, verifies every candidate published within 90 days before it is written down, tiers conservatively (most finds are Tier 3), and closes by checking `/sources` actually renders what the files now say — the operator's original complaint. The thrice-requested AAN member directory is named in it as the standing job.
 
 - [ ] **Walkable-radius discovery (operator, 2026-08-31).** When a place is discovered or published, always ask what else is within walking distance of it and log the good ones as candidates. This is how alt-weeklies actually work — a scene is a block, not a pin — and Near already has the coordinates and a haversine helper to do it. It would compound: every new place seeds the next few, and it naturally produces the walkable clusters that make collections worth writing. Should become a step in `near-editor` and a standing input to `content/opportunities.md`.
 
@@ -2164,8 +2204,10 @@ which are **my picks and easy to change** — as are both new names.
 
 ### Debut assignments
 
-- **CICLOVIA — two debuts, operator-specified.** (1) **Santos →
-  Guaiúba**, the Guarujá beach; operator notes it's also a very good
+- **CICLOVIA — two debuts, operator-specified. (1) is the confirmed next
+  content job** — operator, 2026-09-02: *"santos guaiuba it is"* — to be
+  drafted once the outstanding skill work below is cleared. (1)
+  **Santos → Guaiúba**, the Guarujá beach; operator notes it's also a very good
   stand-up paddle spot, so `wellness-fitness` has a real hook and WILD0
   or FIT-BOT is the contributor to credit. Home region, so PAULY SEYA
   contributes on the Santos end. Route needs real sourcing — the ferry
@@ -2185,14 +2227,62 @@ which are **my picks and easy to change** — as are both new names.
   Sipeos). That is his debut.
 - **BAKFIETS** — Amsterdam has 4 pins already; his debut is either a
   fifth or the CICLOVIA co-sign above.
-- **MOTOSAI** — Bangkok is **Tier 2 with zero pins**. His debut needs
-  either a Tier 2 turn to come around or an explicit operator exception,
-  the way Rio got one. Flag rather than assume.
+- **MOTOSAI — ✅ UNBLOCKED.** Operator, 2026-09-02: *"find an exception
+  for motosai. Bangkok is most visited city in the world, bump to tier
+  1."* Bangkok is now **Tier 1** in
+  `.claude/skills/content-rotation/SKILL.md` and `content/post-plan.md`.
+  It is the only Tier 1 city with **zero pins**, so the work is: seed a
+  Bangkok queue (near-war-room, single-city), then MOTOSAI's debut is
+  the first pin drawn from it. Ari is the obvious first neighbourhood —
+  it is his register, it is not the saturated Sukhumvit/Khao San
+  coverage the operator's up-and-coming disqualifier rules out, and the
+  neighborhoods directive wants 4 pins in one place rather than 4
+  scattered.
 
 ### Still unbuilt
 
 `hasAvatar` is off for all seven — no artwork exists. Avatar direction is
 recorded in each skill file for whenever illustration happens.
+
+### Operator directives captured 2026-09-02, late — the research floor
+
+**✅ CODIFIED as `near-write-article` step 4-0, mandatory on every
+article.** Four verbatim directives, one rule:
+
+1. *"when writing articles always use deep research make sure to look at
+   reddit and google reviews for every article write too. and look at
+   least 5 preferred sources for related additional context for every
+   article write. use trendsetter and sources when doing that."*
+   `near-deep-researcher` is no longer conditional. Reddit is read for
+   the failure modes no publication prints; Google reviews are read
+   **recent-and-low, never the average** — the rating is worthless, the
+   specifics (hours contradicting the listing, card-only, still open) are
+   the point. Five preferred sources for *context*, not five citations
+   for one fact — and fewer than five having anything to say is itself a
+   finding, meaning either the subject is thin or the source catalogue
+   has a hole in that city/beat. `near-trendsetter` picks which sources
+   are live; `near-sources` verifies and logs. The five consulted get
+   named in `statusHistory`, so a thorough pass is distinguishable from a
+   skipped one.
+2. *"if it makes sense, feel free to check me in this writing checklist
+   too."* The operator is a source and Near's only real `Person`. For the
+   Baixada Santista, São Paulo, Rio, or anywhere he has been: ask before
+   publishing. Specific questions only, non-blocking if he's not in the
+   session, and his answers are **curator first-hand testimony** —
+   attributed in-body and linked to `/about/thiago-baraldi`, per the
+   Balcão pattern, never absorbed into house voice.
+3. *"you can quote these ugc testimonies with links why not."*
+   **Overrides my initial no-quoting draft.** Reddit and review quotes
+   run, short, linked to the actual comment, attributed to the platform
+   and the public handle (never an identity dug out from behind one),
+   and dated. `near-legal-counsel` still governs negative ones:
+   repeating a defamatory allegation is republication and is not
+   defended by the quote marks.
+4. *"summaries can paraphrase of course, but also quote if a quote is
+   relevant or funny."* Paraphrase is the default because it reports the
+   pattern rather than elevating one stranger; quote when the verbatim
+   line is funnier, sharper or more specific than any paraphrase — which
+   is common, since nobody paraphrases a good complaint well.
 
 ### Operator directives captured 2026-09-02, mid-session
 

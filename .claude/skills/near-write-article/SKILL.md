@@ -86,6 +86,101 @@ lookup that leaves no trace for the next piece that could use it. Don't
 wait for `near-refresh`'s own periodic pass to do this; it happens
 inline, every piece, the moment a new source is used.
 
+#### 4-0. The research floor — mandatory, every article, no exceptions
+
+**Operator directive, 2026-09-02.** `near-deep-researcher` is not
+"whenever the piece needs real context" any more — it runs on **every**
+article, and it is not done until all four of the following are done.
+This is a floor, not a checklist to satisfy minimally.
+
+1. **`near-deep-researcher`, always.** Multi-source, conflicts
+   reconciled, not a single-pass lookup. A piece that feels obvious is
+   exactly the one that ships a stale price.
+2. **Reddit, every article.** The city and neighbourhood subreddits plus
+   any topic sub that fits. This is where the failure modes live that no
+   publication prints — the queue that is worse than listed, the place
+   that changed hands, the "it's been dead since the refurb" thread.
+   Search the venue name and the street name, and read the *dates*: a
+   2019 complaint about a 2019 owner is not a fact about today.
+3. **Google reviews, every article.** Read the **recent** ones and the
+   **low** ones, not the average. What you are mining is: hours that
+   contradict the official listing, queue behaviour, whether the room is
+   loud, whether it is card-only, whether it is still open. The rating
+   itself is close to worthless; the specifics are the point.
+4. **At least five `content/preferred-sources.md` entries**, for related
+   context — not five citations for one fact, five sources consulted for
+   the surrounding picture. If fewer than five preferred sources have
+   anything to say about this subject, that is itself a finding: either
+   the subject is thinner than assumed, or the source catalogue has a
+   hole in that city/beat, and the hole gets logged.
+
+5. **Ask the operator, when the operator would know.** Operator
+   directive, same day: *"if it makes sense, feel free to check me in
+   this writing checklist too."* He is a real source and Near's only
+   real `Person` — for anywhere in the **Baixada Santista, São Paulo,
+   Rio** or anywhere else he has actually been, ask before publishing,
+   not after. The Balcão pin is the model: the managed queue and the
+   Arabic-speaking regulars were both his, both unpublishable from
+   research alone, and both are the best details in the piece.
+
+   **"If it makes sense" is doing real work in that sentence** — this is
+   not a prompt to ask about every venue on earth. Ask when he plausibly
+   has ground truth, and ask a **specific** question ("does the queue at
+   X actually move?"), never "any thoughts?". Treat it as
+   **non-blocking**: if he is not in the session, note the open question
+   in `statusHistory` and publish what is sourced rather than stalling.
+   His answers are **curator first-hand testimony** — attributed in-body
+   and linked to `/about/thiago-baraldi`, per the Balcão pattern, never
+   absorbed into house voice.
+
+**Route this through `near-trendsetter` and `near-sources`, both.**
+`near-trendsetter` (RADAR-X) picks which sources are the live ones for
+this subject and city rather than defaulting to whatever is at the top of
+the file; `near-sources` verifies each one resolves and is legitimately
+trusted, and logs anything new per the capture rule above.
+
+**Reddit and Google reviews are testimony, not fact** — the same class as
+family lore and venue self-description, and they get the same treatment:
+never stated as fact, always labelled as what they are.
+
+**Quote them, with links.** Operator directive, 2026-09-02: *"you can
+quote these ugc testimonies with links why not."* A linked quote is more
+honest than a paraphrase, not less — it shows the reader exactly what the
+claim rests on and lets them judge it. So the house move is:
+
+- **Quote short and link to the actual comment or review**, the same as
+  any other citation. An unlinkable quote does not run.
+- **Attribute to the platform and the public display name** the person
+  chose to post under — *"a commenter on r/london, March 2026"* or the
+  review's own handle. Never dig for, infer, or publish a real identity
+  behind a handle.
+- **Date it.** UGC rots faster than press: a 2019 complaint about a 2019
+  owner is not a fact about today.
+- **Frame it as one person's account**, not the verdict. *"One reviewer
+  in March 2026 says…"* is fine; *"reviewers say…"* over a single quote
+  is not.
+- **A pattern is the stronger claim** and should be reported as one when
+  it is real: *"the queue comes up in review after review through 2026"*,
+  with two or three linked examples.
+- **Paraphrase by default; quote when the quote earns it.** Operator,
+  same day: *"summaries can paraphrase of course, but also quote if a
+  quote is relevant or funny."* A summary is usually the honest form —
+  it reports the pattern rather than elevating one stranger. Reach for
+  the verbatim line when it is **funnier, sharper, or more specific than
+  any paraphrase would be**, which is a real and common case: nobody
+  paraphrases a good complaint well. Both forms carry the link either
+  way; the choice is about which one tells the reader more.
+- **`near-legal-counsel` still governs the negative ones.** A quoted
+  allegation of something a business could sue over — dirty kitchen,
+  theft, discrimination — is republication, and repeating a defamatory
+  claim is not a defence. Those need the piece to be visibly reporting
+  *that the claim was made*, or they don't run. A quote about a slow
+  queue needs none of this.
+
+Record in `statusHistory` that this floor was met, and name the five
+preferred sources actually consulted — otherwise the next editor cannot
+tell a thorough pass from a skipped one.
+
 #### 4a. Spend the research on as many pieces as it will honestly carry
 
 **Standing rule (operator, 2026-09-02): a research pass should produce as
@@ -187,15 +282,22 @@ correctness rule, not taste). Generated images disclose themselves as
 AI-generated in `attribution`. If image resolution fails entirely, the
 piece is held, not published without one.
 
-### 7. Sign-off — `near-tov-police`, `near-legal-counsel`, then the chief editor
+### 7. Sign-off — `near-tov-police`, `language-tic-police`, `near-legal-counsel`, then the chief editor
 
-Three distinct checks, in order, each fixing what's actually theirs
+Four distinct checks, in order, each fixing what's actually theirs
 rather than rubber-stamping:
 
 - **`near-tov-police`** runs its full voice audit (opening-line bans,
-  AI-tell sweep, voice register, honesty rule, age-neutral framing,
+  headline-formula policing, AI-tell sweep, voice register, honesty
+  rule, age-neutral framing, process-as-copy, rank-pulling,
   persona-drift check) on the drafted English source. Checks *how*
   it's said.
+- **`language-tic-police`** runs the sentence-interior pass — recurring
+  constructions, the watchlist words, paragraph and sentence-length
+  shape — measured against the catalogue rather than judged inside the
+  piece. Its whole premise is that a tic is invisible from within a
+  single draft, so this cannot be folded into the check above. Runs on
+  **every locale**, not only English: a translation grows its own tics.
 - **`near-legal-counsel`** checks defamation-adjacent claims (is a
   negative actually sourced, not just stated), real-person likeness/
   consent (the `near-alter-ego` guardrails, if relevant), image

@@ -1,6 +1,6 @@
 ---
 name: motosai
-description: MOTOSAI's public AI byline and voice — Near's Bangkok locale editor, Ari register. Load this before drafting any Bangkok piece in this voice so the character sheet and the locale-editor discipline are consulted rather than improvised. Created 2026-09-02 on the operator's request; Bangkok is a Tier 2 city with no pins yet, so check BACKLOG.md before assuming a Bangkok piece is in scope.
+description: MOTOSAI's public AI byline and voice — Near's Bangkok locale editor, Ari register. Load this before drafting any Bangkok piece in this voice so the character sheet and the locale-editor discipline are consulted rather than improvised. Created 2026-09-02 on the operator's request; Bangkok was promoted to Tier 1 the same day (most-visited city in the world) but still has zero pins, so a Bangkok piece is net-new coverage and needs its queue seeded first.
 ---
 
 # MOTOSAI
