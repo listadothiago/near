@@ -81,6 +81,11 @@
       "status": "active",
       "at": "2026-09-02T00:00:00Z",
       "note": "Completed and moved to active. (1) STRUCTURAL RULES applied retroactively — this body was drafted 2026-09-01, before the 2026-09-02 rules existed, and failed them: one 127-word paragraph (split), and only 1 image against a 645-word body needing 3. Two in-body <Figure> images added: the Baird blue plaque, and A. Angelucci at 23b Frith Street, which the body already argues about (the blend nobody can reproduce). 3 sub-headers, no paragraph over 100 words, all six locales. (2) GOOGLE-DISCOVER-AUDIT, step 9a, PASS with one caveat. Hero is 4032x3024 — clears the 1200px width and 300,000px floors, but it is 4:3, not 16:9. Google asks for as close to 16:9 as the source allows and Commons has no landscape alternative: all four Bar Italia candidates and both Baird plaque photos are portrait. Passing 4:3 rather than shipping a portrait card. shortTitle 'Two Hours A Day, It's Shut' delivers what it promises (the hours section is the piece's spine), no withheld-noun or over-promise shape, dated and attributed, byline reachable, timeliness real (the 9 Jan 2025 Outernet second site), no affiliate link so no disclosure to preserve, static page with next/image. NOTE the two in-body images are portrait sources rendered through Figure's 16:9 crop and were NOT visually verified — upload.wikimedia.org refused direct fetches this session — so a human should confirm the crops read correctly. (3) SIGN-OFFS: near-tov-police — no headline-shape repetition against the catalogue, the FOODIE-9000 quote is a consulted-persona aside in the established pattern; near-legal-counsel — every image CC-licensed with attribution and link, the Abbott and Costello opening-day story is explicitly labelled family testimony rather than asserted, the hours discrepancy is stated rather than resolved in the bar's favour; chief editor — approved. (4) Closes the open hazlitts-london-no-natural-internal-link request in content/requests.md; the reciprocal link was added to hazlitts-london/en.mdx in the same pass. Soho now has 2 board pins, which clears MIN_PLACES_FOR_LOCATION_PAGE — but Soho is disqualified on saturation per the 2026-09-02 neighborhoods directive, so no page push follows from this. Geocode remains a manual approximation for 22 Frith Street; a real lookup is still owed."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-02T21:51:29Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -88,6 +93,6 @@
     "confidence": 0.5,
     "query": "22 Frith Street, Soho, London W1D 4RF"
   },
-  "publishedAt": "2026-09-02T00:00:00Z",
+  "publishedAt": "2026-09-02T21:51:29Z",
   "updatedAt": "2026-09-02T00:00:00Z"
 }

@@ -79,6 +79,11 @@
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
       "note": "IMAGE FLOOR WAIVED BY OPERATOR, 2026-09-03 — recorded, not skipped. This piece ships with ONE image: the CC0 Wikimedia Commons storefront hero by Mx. Granger, and ZERO in-body images. At ~690 words per locale, near-write-article step 6's floor of ceil(words/250) = 3 images is NOT met; the piece is short by two in-body images in every locale. The operator waived the floor explicitly ('one hero is fine') after the piece was held on exactly this gap. The waiver is specific to this piece and this session's lack of image-generation capability — it is not a precedent and does not alter the floor for anything else. STANDING LEAD FOR near-illustrator: if better imagery surfaces (the shop's own Instagram/Facebook, a photo-inbox submission, a second freely-licensed Commons upload, or an available generation pass), add two in-body images and bring this piece up to the floor. Do not assume the call was already made and settled — it was waived under constraint, not decided on the merits. Sign-offs completed this pass: near-tov-police found and fixed two fluff clauses under the new Job 1 item 2b ban ('which is less a marketing hook than a habit...' replaced with the concrete 6 a.m. Monday restock fact from the shop's own listing; a closing 'the destination it actually is the rest of the year' flourish cut to a plain second-stop pointer). language-tic-police pass run across all six locales. near-legal-counsel: hero licence CC0, verified on the file's own Commons page; the single negative (Dec 2025 Yelp reviewer on disorganized bins and slow counter service) is reframed as one person's dated account rather than a verdict, and is nowhere near defamation-grade; no real-person likeness issues; AI byline disclosed via CUBIC-V's author page. departamento-de-vai-dar-merda: rot check clean (no prices stated anywhere; hours attributed to the shop's own listing; shortTitle carries no date and survives the RSD date passing); section 8 internal-leak check run on all six locales, no rotation/tier/queue/pipeline language present; neurodiversity lens produced a real addition rather than a pass — the small dense room, the flip-don't-scan browsing reality, and the 8 a.m.-to-noon appointment-only window are now in the body of every locale, since 'you cannot just walk in before noon' is the kind of fact that decides a trip. google-discover-audit: hero is 3000x3174 (well over the 1200px width and 300k pixel minimums) though squarer than the ideal 16:9 — noted as a card-crop watch item, not a blocker; shortTitle is delivered by the body. Chief editor sign-off given, which per the standing rule counts as operator approval. All six locales written as genuine local editions."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T16:58:34Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -86,6 +91,6 @@
     "confidence": 0.85,
     "query": "420 40th St #5, Oakland, CA 94609 (Temescal)"
   },
-  "publishedAt": "2026-09-03T00:00:00Z",
+  "publishedAt": "2026-09-03T16:58:34Z",
   "updatedAt": "2026-09-03T00:00:00Z"
 }

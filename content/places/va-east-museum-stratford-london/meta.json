@@ -99,6 +99,11 @@
       "status": "active",
       "at": "2026-09-03T18:00:00Z",
       "note": "DATA FIX, no editorial change. This record carried eventStartsAt 2026-04-18 and eventEndsAt 2027-01-10 — the run of the paid exhibition — on the VENUE itself, with no parentPlace. getAllPlaces expired anything with a past eventEndsAt regardless of whether it was an event or a venue, so on 2027-01-10 the V&A East Museum would have silently disappeared from the board, the map and every listing across all six locales, with no error and no trace. Found by the Product Trio/UX scoping pass on the events and map views (content/design-events-map-views-2026-09-03.md). Both event fields are cleared here: the museum is a venue, not a time-bound happening. The exhibition's dates are unchanged in the body copy, where they were always the useful place for them, and both contested closing dates (vam.ac.uk 10 Jan 2027, queenelizabetholympicpark.co.uk 3 Jan 2027) remain attributed there. The loader is fixed in the same commit so expiry keys on parentPlace and can no longer delist a venue this way. If the exhibition should have its own page, per rules.md's event-belongs-to-venue it becomes a child place pointing at this slug — it does not go back on the venue record. near-caretaker's standing dated-content flag on this page is unaffected and still stands."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T12:09:29Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -106,6 +111,6 @@
     "confidence": 0.95,
     "query": "V&A East Museum, Carpenters Road, London E20 2AR"
   },
-  "publishedAt": "2026-09-03T00:00:00Z",
+  "publishedAt": "2026-09-03T12:09:29Z",
   "updatedAt": "2026-09-03T00:00:00Z"
 }

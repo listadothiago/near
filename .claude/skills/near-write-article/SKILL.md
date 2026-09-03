@@ -447,6 +447,16 @@ acceptable partial state.
 
 ### 9. Mechanical quality gates — before any status flip to `active`
 
+**`publishedAt` must be a real timestamp, never `T00:00:00Z`.** Added
+2026-09-03 after the operator reported new work not appearing at the top
+of the board's Latest tab. Eight active pins had been written with the
+midnight placeholder, producing an exact tie that a stable sort resolved
+alphabetically — so four same-day Sitges pins sat mid-board behind a
+slug starting `1234-`. Use the actual publish moment to the second (the
+commit time is the honest value). A midnight `publishedAt` fails this
+gate exactly like an over-length tagline. Same for `updatedAt` on an
+edit.
+
 All of `content/rules.md`'s `quality-gate-before-publish` conditions,
 checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
 long-form body ≥ 150 words in at least English (a floor, not a target —

@@ -70,6 +70,11 @@
       "status": "active",
       "at": "2026-09-02T00:00:00Z",
       "note": "London East End push, drafted and published 2026-09-02 by CUBIC-V via near-write-article (operator-directed after describing a real trip: friend based Camden/King's Cross with an East End itinerary — hence trust: auto, not a user submission). Verified directly against gilbertandgeorgecentre.org: address 5a Heneage Street, Spitalfields E1 5LJ, just off Brick Lane, Aldgate East 5 min (District, Hammersmith & City); free entry on the artists' 'Art for All' principle; free highlight tour every Saturday 4PM, no booking, £5 donation suggested; general admission needs no booking though some special events do; photography permitted but no flash, filming, tripods, selfie sticks or large cameras; no cafe on site; accessibility arranged via 020 7477 2484. HOURS CORRECTION, and it is the reason this piece leads with hours: the official visitor page states Thursday-Sunday 11:00-17:45, closed Monday-Wednesday, while secondary listings (search-result summaries, aggregator profiles) publish '10am-5pm'. The official figure is the one used throughout; the discrepancy is stated in the body because acting on the wrong one costs an hour at the start of the day. Current exhibition confirmed via the What's On page: 'Our George Crompton, WORLDS and WINDOWS by Gilbert & George', a memorial to the artists' friend George Crompton (died September 2025), including the triptych CROMPTON STREET shown for the first time, NUMBER TWELVE, Postcard Art from WORLDS AND WINDOWS (1989, not exhibited since 1990), and THE URETHRA POSTCARD ART (2009, 564 works). No end date is published for this exhibition, so the body names it but points at the live What's On page rather than implying a run. History cross-checked against Museums + Heritage Advisor and SIRS Architects: charity established 2017, building acquired 2015, opened to the public 1 April 2023 with THE PARADISICAL PICTURES, ~40,000 visitors in the first year, converted former brewery complex by SIRS Architects with the artists, 280 sqm across three levels. DATED-CONTENT FLAG FOR near-caretaker: the body carries the Backyard Biennial: East (15 July - 6 September 2026, free, 40+ East London partners, led by Whitechapel Gallery), which EXPIRES 6 SEPTEMBER 2026 — four days after publish. The section is written to name the dates explicitly and to say what is true after the 6th ('the biennial is over and the Centre carries on as normal'), so it degrades honestly rather than going stale, but it should be revisited or trimmed on the next currency pass. Geocode is an exact Nominatim hit on the building itself ('The Gilbert and George Centre, 5a, Heneage Street'), not a street-level estimate. Internal link to old-truman-brewery-london is a genuine one on two axes, not a forced one: a few minutes' walk up the same road, and the same brewery-to-culture conversion at a different scale."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-02T14:36:00Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -77,6 +82,6 @@
     "confidence": 0.95,
     "query": "5a Heneage Street, London E1 5LJ"
   },
-  "publishedAt": "2026-09-02T00:00:00Z",
+  "publishedAt": "2026-09-02T14:36:00Z",
   "updatedAt": "2026-09-02T00:00:00Z"
 }

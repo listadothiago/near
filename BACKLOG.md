@@ -3858,7 +3858,7 @@ broken invisibly: two metas carried `originalPublishedAt: null` (fails
    explicit fallback ladder rather than silently not running. See below.
 6. **The video vignette** — not shipped on-site. See below.
 
-### 🚨 URGENT — "Latest" sort ignores the time of day (operator-reported, 2026-09-03)
+### ~~🚨 URGENT — "Latest" sort ignores the time of day~~ — **FIXED 2026-09-03**
 
 Operator: *"i see the content live, it is just that it does not appear at
 the very top of latest as it should"* → *"that sort should consider time
@@ -3886,9 +3886,17 @@ outranks everything published later that same day.
    (`publishedAt` desc, then `updatedAt` desc, then slug), so a future
    data slip degrades predictably instead of alphabetically.
 
-Not attempted this session at the operator's instruction (*"i dont think
-you have tokens to fix now buddy"*). Everything needed to do it cold is
-above.
+**Both halves shipped** (operator reversed the defer: *"maybe u can fix
+lets see"*). Code: `NearestLatestTabs.tsx` now falls through
+`publishedAt` → `updatedAt` → slug, so a future data slip degrades
+predictably instead of alphabetically. Data: 14 active pins had their
+midnight placeholder replaced with the author timestamp of the commit
+that first added their English source — the true publish moment, not a
+guess — each recording the correction in its own `statusHistory`. Gate:
+`near-write-article` step 9 now rejects a `T00:00:00Z` publishedAt the
+same way it rejects an over-length tagline, so this cannot recur.
+The four Sitges pins now sort above the V&A and 1-2-3-4 Go! pins, which
+is the order the operator expected.
 
 ### Still queued after this
 

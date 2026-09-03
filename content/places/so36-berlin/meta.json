@@ -75,6 +75,11 @@
       "status": "active",
       "at": "2026-09-02T00:00:00Z",
       "note": "Near's first Berlin pin, per content/post-plan.md's Berlin queue (war-room slate verified 2026-08-31), byline PLINIO. Dedupe check: content/places/ had zero existing Berlin entries at time of writing; no haversine or fuzzy-name conflict possible. Verified independently rather than trusting the queue note at face value: SO36's own ticket shop (so36.com) lists GAYHANE — QueerOriental Dancefloor on 26.09.2026, 31.10.2026, 28.11.2026, and 26.12.2026, confirming the queue note's dates exactly. Also found a '28 JAHRE GAYHANE' anniversary ticket page for 31.01.2026, consistent with Wikipedia's dating of Gayhane's founding to 1997 by Turkish performer/DJ Fatma Souad, with DJ Ipek (Ipek Ipekcioglu) a resident since the same year — so the night is a real, continuously-running 28-year institution, not a rebrand or a defunct listing kept alive by stale aggregators. SO36 itself: a non-profit collective (Sub Opus 36 e.V.) at Oranienstraße 190, 10999 Berlin-Kreuzberg, opened as a music venue in 1978 in a building that started as an 1861 beer garden and later a cinema; central to Berlin's punk scene (Dead Kennedys, Die Toten Hosen played there), still operating today per The Berliner's 2018 '40 years' retrospective and the club's own current 2026 ticket calendar. Applied the Berlin corrections bank from post-plan.md naturally: this piece leans on SO36/Kreuzberg-Kotti as the real queer-nightlife infrastructure rather than reaching for the stale 'Berghain = queer Berlin' framing, since that's genuinely what the Gayhane story is about. Hero image: a real, correctly-located CC BY-SA 3.0 photo of the SO36 storefront on Oranienstraße from Wikimedia Commons (2011, by user Jajabis) — first tier of the image-sourcing hierarchy, no illustration needed. All facts checked cleanly (address, history, still-operating status, and all four 2026 Gayhane dates confirmed directly against SO36's own site), so filed straight to trust: auto, status: active per the operator's instruction, rather than holding at review. External link used: SO36's own official site. No internal link candidate yet — this is Near's first Berlin pin, nothing to link to honestly. New source so36.com logged as a preferred-sources.md candidate (not yet in sources.md)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-03T22:18:51Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -82,6 +87,6 @@
     "confidence": 0.85,
     "query": "Oranienstraße 190, 10999 Berlin-Kreuzberg, Germany"
   },
-  "publishedAt": "2026-09-02T00:00:00Z",
+  "publishedAt": "2026-09-03T22:18:51Z",
   "updatedAt": "2026-09-02T00:00:00Z"
 }

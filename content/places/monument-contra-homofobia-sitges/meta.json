@@ -53,6 +53,11 @@
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
       "note": "Fourth pin from the operator's 2026-09-03 Sitges directive, and the piece that stopped the queer half of the push being three bars. Sourced primarily from the Ajuntament de Sitges's own municipal sculpture-park catalogue (materials, 110cm sculpture on a 35x80x80cm cement pedestal, painted iron, Passeig Marítim, 2006, and the plaque text 'Sitges contra la homofobia / Mai mes / 5 d'octubre de 1996-2006'), cross-checked against PinkNews's contemporaneous 2006 report of the unveiling. LEGAL/SOURCING CALL, deliberate: aggregated search summaries and travel guides carry a much graver account of 5 October 1996 including a named killing. NONE of that was traceable to a source that could be fetched and verified this session, so it is NOT stated. The body reports exactly what the two verified sources say, names the fact that they differ in detail, and says plainly that fuller accounts circulating in guidebooks are not sourced well enough to repeat. Do not 'complete' this paragraph in a later pass without a real primary source. Superlative 'Spain's first LGBTQ+ monument' also appeared in search summaries and is NOT claimed, for the same reason. Coordinates 41.232766, 1.801865 come from the geotag on the Wikimedia Commons category for the monument, consistent with Nominatim's Passeig Maritim (Vinyet) node. The in-body Figure is dated 26 July 2016 by its own EXIF and titled by its uploader as showing tributes for the Orlando shooting victims; the caption attributes that reading to the uploader rather than asserting it. RESEARCH FLOOR NOT FULLY MET: reddit.com is refused to this session's search backend, so the UGC leg of near-write-article step 4-0 could not be run."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -60,6 +65,6 @@
     "confidence": 0.8,
     "query": "Monument contra l'homofòbia, Passeig Marítim, 08870 Sitges"
   },
-  "publishedAt": "2026-09-03T00:00:00Z",
+  "publishedAt": "2026-09-03T22:09:14Z",
   "updatedAt": "2026-09-03T00:00:00Z"
 }

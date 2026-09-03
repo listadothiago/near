@@ -77,6 +77,11 @@
       "status": "active",
       "at": "2026-09-02T00:00:00Z",
       "note": "First piece drafted from the Santos → Guaiúba cluster research pass scoped in BACKLOG.md 2026-09-02, and the Product Trio's Must-on-dependency for this batch — the route piece and the CICLOVIA collection both need a destination pin to link to. Geocode is a real Nominatim hit on the OSM natural=beach feature (-24.0176, -46.2924), not an approximate placement. Trust set to auto rather than review despite having originated in an operator-named target: the trust-gate exists to stop an operator-recalled venue publishing unverified, and the verification concern is fully discharged here — this is a public municipal beach with an OSM feature, a Guarujá tourism-portal listing, and a CETESB bathing-water classification, none of which can quietly have closed or rebranded. Flagged to the operator in the same session rather than downgraded silently. Hero resolved by near-illustrator at tier 1 (real, correctly-located photograph) — Commons has no photo of the Guaiúba calçadão or its kiosks, and the 'GUAIUBA GUARUJÁ - panoramio' file set is unreliable by filename (one of them is a vermilion flycatcher on a concrete block, nothing to do with the beach), so both images here were checked visually before use. Deliberately did NOT publish a citywide Santos bike-network figure — see the sourcing warning in BACKLOG.md. In-body image floor (250 words per image) wants three images for a 717-word body and this has two; the missing one is a shot of the kiosks and the portuguese-stone calçadão, which does not exist under a usable licence and is logged in content/photo-requests.md rather than padded with a duplicate sunset."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-03T00:46:07Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -84,6 +89,6 @@
     "confidence": 0.9,
     "query": "Guaiuba Guaruja — matched OSM natural=beach 'Praia do Guaiúba, Guarujá, São Paulo, Brasil'"
   },
-  "publishedAt": "2026-09-02T00:00:00Z",
+  "publishedAt": "2026-09-03T00:46:07Z",
   "updatedAt": "2026-09-02T00:00:00Z"
 }

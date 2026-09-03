@@ -66,6 +66,11 @@
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
       "note": "Second pin from the operator's 2026-09-03 Sitges directive (queer + cinema) — this is the queer half. verify-still-open-before-create PASSED on two independent checks: OpenStreetMap carries a node literally named PARROTS at 16 Carrer de Joan Tarrida (41.2357478, 1.8071803), and the group's own site resolves and lists the pub among its venues. AFGAL founding membership and the sister venues (Parrots Sitges Hotel, Central Bar, Le Patio, Bears Bar, El Palco, Runway Terrace Bar) are the group's own claim, attributed as such. CONFLICT LEFT VISIBLE: gaysitgesguide gives pub from 08:30, terrace from 17:00, season March-October plus Carnival; other guides print 11:00-03:00 daily year-round. The body states the disagreement and tells the reader to check, rather than picking a side — this is a resort town and the seasonal caveat is the more useful claim. NO PRICE IS STATED anywhere in this piece, per the red-team price-rot rule. Dated events verified this session: Bears Week 4-13 September 2026 (Bear Village from the 7th); Sitges Film Festival 8-18 October 2026; Carnival 20 February - 2 March 2027 stated WITH the caveat that the Ajuntament confirms exact dates each autumn. RESEARCH FLOOR NOT FULLY MET, recorded honestly: reddit.com is refused to this session's search backend and Tripadvisor returned HTTP 403, so the Reddit and Google-reviews legs of near-write-article step 4-0 could not be run on this venue. Five preferred/new sources were consulted instead (parrots-sitges.com, gaysitgesguide.com, thegaypassport.com, misterbandb.com, tapasitges.com), all logged to preferred-sources.md as candidates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -73,6 +78,6 @@
     "confidence": 0.95,
     "query": "Parrots, 16 Carrer de Joan Tarrida / Plaça de la Indústria, 08870 Sitges"
   },
-  "publishedAt": "2026-09-03T00:00:00Z",
+  "publishedAt": "2026-09-03T22:09:14Z",
   "updatedAt": "2026-09-03T00:00:00Z"
 }
