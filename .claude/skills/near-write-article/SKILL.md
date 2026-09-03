@@ -78,10 +78,20 @@ directive.
 
 ### 3. Check for an existing place first — `dedupe-by-place`
 
-Before creating any new place, check existing `meta.json` files for
-coordinate proximity (haversine < 150m) or a fuzzy name match, per
-`content/rules.md`'s `dedupe-by-place` rule. A duplicate mention gets
-appended to the existing place's `meta.sources`, not a new slug.
+Run **`node scripts/check-duplicates.mjs`** before creating any new
+place, and again before committing one. It compares venue name +
+coordinates across every place folder, drafts included — never slugs,
+because all three duplicates that got through differed by a whole
+locality segment and no slug comparison would have flagged them.
+
+What it prints is **pairs to check, not duplicates**. Proximity triggers
+an identity check, it is not automatic sameness: 150m in SoMa or Soho
+covers plenty of genuinely different venues, and the current baseline is
+six such pairs, all legitimately distinct. Same venue → append the new
+mention to the existing place's `meta.sources`, not a new slug. Different
+venue → create it and note the near-miss in the commit message.
+Undecidable → hold at draft and ask. Full rule: `dedupe-by-place` in
+`content/rules.md`.
 
 ### 4. Research and source — `near-sources` + `near-deep-researcher`
 

@@ -27,12 +27,49 @@ rules:
 
   - id: dedupe-by-place
     description: >
-      Before creating a new place, check existing meta.json files for
-      coordinate proximity (haversine < 150m) or a fuzzy name match. If
-      found, this is the same real-world place covered again — not a new
-      place. Append the new item to meta.sources (dedupe by URL first, a
-      given article should only be listed once) rather than creating a
-      new slug or overwriting the existing entry, and refresh updatedAt.
+      Before creating a new place, run an identity check against EVERY
+      existing meta.json — including status: draft folders. All three
+      duplicates found so far were drafts sitting next to a live pin for
+      the same venue, so a check that only scans active content misses
+      exactly the case this rule exists to catch.
+
+      Match on VENUE NAME + COORDINATES, never on slug similarity. The
+      slugs of real duplicates have differed by a whole locality segment
+      (dolphin-club-aquatic-park-san-francisco vs dolphin-club-san-
+      francisco; the-stud-soma-san-francisco vs the-stud-san-francisco),
+      so string distance between slugs would never have flagged any of
+      them. Compare the human venue name in meta.title/name, stripped of
+      district and city qualifiers, against every existing place within
+      the same city.
+
+      Proximity TRIGGERS AN IDENTITY CHECK — it is not automatic
+      sameness. Haversine < 150m in a dense district (SoMa, Soho, Silom)
+      routinely covers two genuinely different bars, and treating them
+      as one would silently drop real coverage. So:
+
+        - Coordinates within 150m, OR a fuzzy name match anywhere in the
+          same city (whichever fires — they are independent triggers,
+          and the name trigger has no distance bound because two entries
+          for one venue often carry geocodes hundreds of metres apart)
+          → STOP and decide identity explicitly.
+        - Same venue? It is a re-cover, not a new place. Append the new
+          item to meta.sources (dedupe by URL first, a given article
+          should only be listed once) rather than creating a new slug or
+          overwriting the existing entry, and refresh updatedAt.
+        - Different venue that happens to be nearby, or shares a name
+          with an unrelated business? Create it, and say in the commit
+          message which existing pin it was checked against — the
+          near-miss is what makes the next check cheap.
+        - Cannot tell from the sources at hand? Hold at draft and ask.
+          Do not resolve an identity question by creating a second slug.
+
+      Do not resolve a duplicate by deleting the extra folder until its
+      research has been compared against the survivor's — the loser
+      sometimes carries a fact the live pin lacks, and sometimes the
+      comparison surfaces an error on the live pin (this is how The
+      Stud's card title was found claiming worker ownership since 1966
+      rather than 2016).
+
       One map pin, one article, however many outlets have covered it —
       every distinct source that mentioned the place stays linked from
       the same page. meta.trust does not change on an update; a place
@@ -42,8 +79,8 @@ rules:
       re-mention doesn't need re-approval) — the trust-gate rule only
       governs whether a *new* place gets created, not whether an existing
       one gets a new citation.
-    trigger: "candidate place matches an existing place"
-    action: "append to meta.sources (dedupe by url), refresh updatedAt; do not create a new slug, do not change meta.trust"
+    trigger: "candidate place is within 150m of, or fuzzy-name-matches, any existing place (active OR draft) in the same city"
+    action: "run an explicit identity check on venue name + coordinates; if same venue, append to meta.sources (dedupe by url) and refresh updatedAt — do not create a new slug, do not change meta.trust; if a different venue, create it and record the near-miss; if undecidable, hold at draft and ask"
 
   - id: verify-still-open-before-create
     description: >
