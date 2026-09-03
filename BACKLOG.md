@@ -3253,15 +3253,88 @@ Note the bike-route piece itself (the CICLOVIA collection) is still
 **unwritten** — it is a scoped Must in the earlier batch, not a
 deployment problem.
 
-### 8. Repo integrity — needs attention
+### 8. Repo integrity — RESOLVED 2026-09-03 (commit db609a1)
 
-`public/places/lita-pinheiros-sao-paulo/hero.jpg` shows as deleted in the
-working tree and **cannot be restored**: `git checkout` fails with
-`unable to read sha1 file` for blob `6a5896a8dd…`. The object is missing
-or corrupt in the local store. Left uncommitted rather than committing
-the deletion. Tried `git fetch origin && git checkout origin/main -- <path>`: **fails
-the same way**, so the blob is not recoverable from the remote either and
-the hero needs re-sourcing via `near-illustrator`. Check first whether
-the live page is currently broken — if Vercel built from a commit that
-still had the blob, the deployed image may be fine while the repo copy is
-not.
+**Do NOT re-source the Lita hero. It is restored and byte-exact.** The
+earlier note below was wrong on the key point.
+
+`public/places/lita-pinheiros-sao-paulo/hero.jpg` was deleted in the
+working tree and would not restore — `git fsck` confirmed
+`missing blob 6a5896a8dd…`, so the local object store itself was corrupt,
+not just the checkout. The previous note concluded the blob was gone from
+the remote too and the hero needed re-sourcing via `near-illustrator`.
+That conclusion was an artefact of the test used: `git checkout
+origin/main -- <path>` reads the LOCAL object store, so it was always
+going to fail regardless of what the remote held. The remote had the file
+intact the whole time.
+
+Recovery that worked, and the technique worth reusing: clone the remote
+into a scratch dir, `git cat-file -p main:<path>` the bytes back out, then
+`git hash-object -w` the restored file into the local store. It
+regenerated the identical SHA — content addressing proves the restore is
+byte-exact rather than a lookalike. `git fsck` is now clean and checkout
+of that path works again.
+
+**The deletion was not isolated.** Chasing a passing build turned up four
+casualties of the same event, all large binaries deleted while their text
+siblings survived, several stamped `Sep 2 21:14`:
+
+1. the `hero.jpg` git blob (11.7 MB);
+2. the `node` binary itself, gone from nvm's v24.18.0 while its
+   `npm`/`npx`/`vercel` symlinks remained — every one of them pointing at
+   a `.js` file that needs `node` to run, so the whole toolchain was dead;
+3. `node_modules/@swc/core-darwin-arm64/swc.darwin-arm64.node` (26 MB),
+   gone while its `LICENSE` and `package.json` stayed;
+4. a Turbopack cache `.sst` file, breaking `next build` on a stale index.
+
+That signature reads like a disk-cleanup tool with a size threshold, not
+random corruption. All four are fixed (Node reinstalled at v24.20.0,
+which nvm's `default` alias already resolves to; `npm install` after
+removing the half-present swc package; `rm -rf .next`).
+
+**Still unaudited:** other `public/places/*/hero.jpg` files, and any other
+repo open that evening. These were only found because a build happened to
+sit in the path of the work — nothing systematically checks for them.
+A `git fsck` plus a sweep for zero-byte or missing hero files is cheap
+insurance before the next publish run.
+
+### 9. Date rendering is off by one — unfixed
+
+The homepage Latest card for `va-east-museum-stratford-london` renders
+**"SEP 2, 26"** for a place whose `meta.json` carries
+`"publishedAt": "2026-09-03T00:00:00Z"`. Dates are stored as midnight UTC
+and rendered in a negative-offset timezone, which shifts the displayed
+day back by one. This is **not** specific to that pin — every place on the
+site is stored the same way, so every card and byline date is suspect in
+any timezone west of UTC. Worth a `near-tech-lead` look: either store a
+date-only value, or render in a fixed timezone rather than the viewer's.
+
+### 10. Queue "verified" stamps are ageing out silently
+
+`content/post-plan.md` marks queue candidates as verified at research
+time, and later sessions read that stamp as a guarantee. It is a
+snapshot, and the gap widens the longer an item sits. Evidence from the
+2026-09-03 session alone: the V&A East entry was marked verified and was
+wrong on price (it gave "£10 for students and under-26s"; £10 is the
+**Art Fund** rate, the student/under-26 rate is **£11**), missed the
+weekday/weekend **£22.50 / £24.50** split entirely, and missed a strike
+ballot that had been public since July. Every correction in the London
+batch — Gilbert & George's hours, Bar Italia's "24h" claim, this one —
+came from a drafting agent re-checking, never from the queue itself.
+
+Separately and relatedly, Bar Italia was the **fourth** stale
+`- [ ]` checkbox caught in three sessions (after Berry Bros, Studio
+Voltaire, Hazlitt's, Jumbi) — and it was flagged "DRAFT THIS ONE FIRST",
+so it was first in line to burn a full agent run on already-shipped work.
+`near-backlog`'s pre-dispatch grep catches *shipped* items; nothing
+catches *stale facts* in items still open. Worth dating each queue entry's
+verification explicitly, and treating anything older than ~a week as
+needing a re-check at draft rather than trusting the stamp.
+
+### 11. Vercel MCP cannot reach the team scope
+
+`list_deployments` returns **403 Forbidden**: *"Not authorized: Trying to
+access resource under scope `eu-7e28`."* Deploy status had to be confirmed
+by fetching the live pages instead, which is a stronger check for "is it
+live" but blind to build warnings or other failing deploys. Needs a
+re-auth or a token with that scope.
