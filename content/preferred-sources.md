@@ -320,3 +320,31 @@ adding one at a time.
 - `ianvisits.co.uk` — London transport/museum news, strong on closures
   and openings. NOTE: 403s on automated fetch; reachable via search
   summaries or a browser, so budget for that.
+- `theartnewspaper.com` — international art-world news, and notably
+  better than the general press on **museum labour**. Found researching
+  V&A East Storehouse (2026-09-03), where it was the ONLY source
+  carrying the building-specific ballot (100% of collections access
+  officers for strike action, 88% turnout) and Prospect's actual
+  demands, none of which appears on the PCS release or in the sector
+  trade press. Use it whenever a museum piece has an industrial-relations
+  angle; `pcs.org.uk` gives you the dates, this gives you the substance.
+- `artfund.org` — UK art charity; runs Museum of the Year and publishes
+  the winner/finalist announcements plus a museum directory whose
+  structured data carries clean addresses and coordinates. Found
+  researching V&A East Storehouse (2026-09-03), where it settled that
+  the venue was a *finalist*, not the winner — its own site still badges
+  it "Shortlisted". Good for catching a venue's stale self-description.
+- `vam.ac.uk` per-venue event listings (`/whatson`, and the `/event/<id>/`
+  detail pages) — worth calling out separately from the `vam.ac.uk` entry
+  above, because this is where the *dated, free, drop-in* programming
+  lives that the visit pages and every aggregator omit entirely. The
+  10 September 2026 Remiiya Badru drop-in was found here and nowhere
+  else. NOTE the access quirk: `/east/whats-on` and `/east/storehouse/whats-on`
+  both 404, and the venue filter on `/whatson` is applied client-side —
+  fetch `/whatson` whole and filter the event teasers yourself.
+- Tripadvisor — attempted for visitor testimony on V&A East Storehouse
+  queues (2026-09-03) and returned **HTTP 403 to every automated fetch**,
+  so no quote could be read and verified and none was published. Logged
+  as a known-blocked source rather than a candidate: budget a browser
+  session for it, or use a first-party queue policy instead, which in
+  that piece was the stronger citation anyway.

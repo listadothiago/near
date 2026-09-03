@@ -1,0 +1,118 @@
+{
+  "slug": "va-east-storehouse-hackney-wick-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 51.5464368,
+    "lng": -0.0211827
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Hackney Wick",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "V&A East Storehouse — Plan your visit",
+      "url": "https://www.vam.ac.uk/east/storehouse/visit",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A East — venue overview and live alerts",
+      "url": "https://www.vam.ac.uk/east",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — David Bowie Centre (display page, ticketing)",
+      "url": "https://www.vam.ac.uk/exhibitions/david-bowie-centre",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — David Bowie Centre FAQs",
+      "url": "https://www.vam.ac.uk/info/david-bowie-centre-faqs",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — Order an Object",
+      "url": "https://www.vam.ac.uk/info/order-an-object",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — Look What I Found with Remiiya Badru, 10 September 2026",
+      "url": "https://www.vam.ac.uk/event/a9Gp3gZ0br/look-what-i-found-with-remiiya-badru-september-2026",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — The Everythingists, Es Devlin",
+      "url": "https://www.vam.ac.uk/event/Lw3G7Vr8AO/the-everythingists-es-devlin",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "PCS — V&A workers announce strike dates",
+      "url": "https://www.pcs.org.uk/news-events/news/va-workers-announce-strike-dates",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-24T00:00:00Z"
+    },
+    {
+      "name": "The Art Newspaper — 'Amazon-style' conditions: Prospect members vote to strike at V&A East Storehouse",
+      "url": "https://www.theartnewspaper.com/2026/07/30/amazon-style-conditions-va-east-storehouse-officers-overwhelmingly-vote-to-strike-as-other-museum-workers-also-consider-industrial-action",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-30T00:00:00Z"
+    },
+    {
+      "name": "Art Fund — The Box wins Museum of the Year 2026",
+      "url": "https://www.artfund.org/our-purpose/news/art-fund-museum-of-the-year-2026-announced",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-26T00:00:00Z"
+    },
+    {
+      "name": "Time Out London — The V&A East Will Open This Weekend (an umbrella-name conflation example)",
+      "url": "https://www.timeout.com/london/news/the-v-a-east-will-open-this-weekend-heres-everything-you-need-to-know-about-the-major-new-london-museum-041526",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-15T00:00:00Z"
+    },
+    {
+      "name": "V&A East Storehouse press release — opening 31 May 2025, 250,000 objects",
+      "url": "https://vanda-production-assets.s3.amazonaws.com/2024/10/22/10/03/27/3c0d5de7-4abd-412d-8908-a1f885e55fc8/V&A%20East%20Storehouse_22%20Oct_Press%20Release.pdf",
+      "feedId": null,
+      "originalPublishedAt": "2024-10-22T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/View_from_the_second_floor%2C_V%26A_East_Storehouse_01.jpg",
+    "attribution": "14GTR, CC0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:View_from_the_second_floor,_V%26A_East_Storehouse_01.jpg",
+    "licenseNote": "Interior of the Collections Hall from the second floor, photographed 6 June 2025 — one week after the 31 May 2025 public opening, so it shows the building in actual operation with visitors on the gantries. 5184x3456, CC0 (public-domain dedication, no attribution legally required but given anyway per house practice). Clears Discover's 1200px-wide and 300,000-pixel floors comfortably; aspect is 3:2 rather than the ~16:9 the card spec prefers, which is the closest landscape shape available in the free-licence pool and better than the 4:3 the sibling V&A East Museum pin shipped with. Chosen over the exterior shot (V&A East Storehouse exterior view 01.jpg, 4723x3242, same author/licence) because the whole editorial argument of this pin is that the storage IS the exhibit, and a shed exterior does not show that — the exterior runs as an in-body figure instead, where it earns its place by proving the Parkes Street address for the Museum-vs-Storehouse disambiguation. Not used: photography on vam.ac.uk, which is rights-reserved V&A press imagery and does not clear for reuse. NEAR-ILLUSTRATOR IN-BODY CALL (explicitly made, not skipped): 1052-word body needs ceil(1052/250) = 5 images including the hero, and it has exactly 5 — hero plus four in-body figures, all real photographs, all CC0 by 14GTR from the same 6 June 2025 visit: the Parkes Street exterior (address proof), the Robin Hood Gardens facade suspended in the hall (the strongest single object in the free pool and squarely CUBIC-V's brutalism beat), and the third-floor view across the hall. No illustration was generated; tier 1 was available throughout, so tiers 2 and 3 were never reached."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "London East End push, drafted and published 2026-09-03 by CUBIC-V via near-write-article under the operator's LONDON ONLY override in content/post-plan.md. The Rotation position cycle counter is deliberately NOT advanced, per the explicit prohibition in that override — this is an override piece, not London's turn. TRUST: auto. vam.ac.uk is the venue's own official site and every core fact re-verified cleanly against it this session, which is the documented auto-trust condition in the run brief and in near-backlog step 5. DEDUPE-BY-PLACE: run. Nearest existing pin is va-east-museum-stratford-london at 907m — well outside the 150m haversine threshold — and no existing slug fuzzy-matches 'Storehouse'. These are two separate real-world venues at two separate addresses, so a separate pin is correct rather than a meta.sources append. VERIFIED FIRST-PARTY against vam.ac.uk today: address 2 Parkes Street, Queen Elizabeth Olympic Park, Hackney Wick, London E20 3AX; hours Daily 10:00-18:00, Thursday and Saturday 10:00-22:00, closed 24-26 December; general admission FREE with no booking ('General admission to Storehouse is free and you don't need to book'); the V&A's own queue language, quoted verbatim in the body, including the 30-minute priority rule; Order an Object free, at least two weeks' advance booking, maximum 5 objects from the same venue, appointments 1-4 hours plus a 15-minute handling briefing, unaccompanied from age 16; Hackney Wick Overground 0.3 miles / 8 minutes, Stratford 0.9 miles / 20 minutes, bus 388 outside Here East. Opening 31 May 2025 and the 250,000 objects / 350,000 books / 1,000 archives / four levels / 16,000 sqm figures confirmed against the V&A's own October 2024 press release and corroborated by Wikipedia and the Diller Scofidio + Renfro project page. THE CORRECTION THE QUEUE ENTRY ASKED FOR — the access/booking model HAS changed, and this is the headline finding of the pass. The DAVID BOWIE CENTRE IS NO LONGER FREE. The V&A's own FAQ states 'You will need a ticket to access the David Bowie Centre from Monday 13 July 2026' with tickets on sale from 7 July 2026, and the display page lists £5.00, concessions available, Members free. The site's own embedded booking payload confirms it independently: ticketing {ticketed: true, free: false, cid: 447} and a £5.00 schema.org price. This reverses the position that held for most of the Centre's first ten months — it opened 13 September 2025 on FREE timed tickets, and from Tuesday 3 February 2026 needed no ticket at all — and a large amount of still-highly-ranked coverage from that window says it is free. Wikipedia's V&A East article, checked this session, still does not mention a charge. Per the red-team price rule the £5 was verified this session and does NOT carry the headline: the shortTitle is about free walk-in general admission, which survives the £5 changing. CORRECTIONS TO THE QUEUE ENTRY'S OWN CLAIMS: (1) the entry says 'Opened 2025' — precise date is Saturday 31 May 2025, now stated. (2) The entry says the Storehouse is 'in a different neighbourhood' from the Museum. TRUE and the core correction holds — Storehouse E20 3AX in Hackney Wick inside Here East, Museum E20 2AR on the Stratford side of Carpenters Road — but they are about a kilometre apart within the same park, so the body says 'a walk, not a trek' rather than implying opposite ends of London. This matches the framing already published on the sibling Museum pin. (3) The entry's '250,000 objects and 350,000 books' is CORRECT and additionally there are 1,000 archives. CONFLATION EVIDENCE — the run brief asked for a concrete wrong listing and said not to invent one if none was found. No listing was found that publishes a flatly wrong ADDRESS for either venue: Art Fund's structured data, Visit London and the V&A all carry Parkes Street E20 3AX correctly. What WAS found and is used is the umbrella-name failure mode, which is real and demonstrable: Time Out's April 2026 headline 'The V&A East Will Open This Weekend' refers to the Museum while the Storehouse had been open eleven months — the article body distinguishes them correctly, so the piece says exactly that ('the article itself is careful; the card in a feed is not') rather than accusing Time Out of an error it did not make. This is the honest version of the claim and it is the one that shipped. STRIKE / PCS-PROSPECT ACTION — checked as instructed, and it DOES affect the Storehouse, materially more than the Museum. The V&A's live alert names 'V&A East Storehouse and V&A East Museum' as closed 4-5 September 2026; both reopened on the 6th, so the hard closure falls entirely BEFORE the tester's week of 2026-09-07. Action short of a strike (overtime ban, work-to-rule, withdrawal of cooperation) began 4 September and continues indefinitely; the dispute is unresolved. NEW AND STOREHOUSE-SPECIFIC, not on the Museum pin: The Art Newspaper (30 July 2026) reports Prospect balloting 100% of collections access officers AT THIS BUILDING in favour of strike action on an 88% turnout, over conditions in which staff 'are not entitled to morning or afternoon breaks, making it difficult for staff to take a drink of water or use the toilet during their shift', with Prospect demanding two paid 15-minute breaks per shift, 4% minimum pay rise, time-and-a-half on bank holidays and London Living Wage accreditation within 12 months. That is quoted in-body and attributed to Prospect via The Art Newspaper, not asserted in Near's voice — near-legal-counsel point, since it is a republished negative about a named employer. The connection is made plainly and without editorialising: collections access officers are the staff who bring an ordered object to the table. FLAGGED TO near-caretaker. DATED CONTENT FOR THE TESTER'S WEEK, per the override's reader profile (week of 2026-09-07, daytime): found, real, and free. 'Look What I Found with Remiiya Badru', Thursday 10 September 2026, 12:00-14:00, Collection Hall, free, drop-in, no booking — and it was RESCHEDULED FROM Saturday 5 September, i.e. moved by the strike closure, which is stated in the body. Also live and free through 18 October 2026: Es Devlin's 'The Everythingists' in Gallery 2 (opened 3 September 2026), Lawrence Lek's 'Guanyin II: The Caretaker', and Shahed Saleem's 'I Was Born Here'. Order an Object is deliberately called out as NOT available for that week because of its two-week lead time — the most useful single line in the piece for the stated reader. No eventEndsAt is set on this pin: the Storehouse is an evergreen venue, and per the event-belongs-to-venue rule the dated programming inside it is not spun out as separate pins. RESEARCH FLOOR: near-deep-researcher multi-source pass run; five-plus preferred-sources.md entries consulted — vam.ac.uk, pcs.org.uk, museumsassociation.org, queenelizabetholympicpark.co.uk, londonist.com, ianvisits.co.uk, timeout.com. HONEST GAPS, not papered over: (a) Google/Tripadvisor reviews were sought and Tripadvisor returned HTTP 403 to every fetch attempt, so no verbatim UGC quote could be read and verified. Per the pipeline's 'an unlinkable quote does not run' rule, NONE was published — the queue claim rests instead on the V&A's own first-party 30-minute priority policy, quoted verbatim, which is a stronger source anyway. (b) No Reddit thread on this venue surfaced across repeated searches. Both gaps are recorded here rather than filled with paraphrase. All six locales written by near-translator as genuine local editions (en, es-419, es-ES, it, pt-BR, zh-CN), satisfying full-locale-coverage. Structural gates hold in every locale: no paragraph over 100 words, a sub-header at least every 250 words, and at least ceil(words/250) images counting the hero. link-police pass: 8 in-text external links all present in meta.sources, 4 internal NearLinks (va-east-museum-stratford-london, old-truman-brewery-london, gilbert-and-george-centre-london, central-station-kings-cross-london), matching the west-to-east East End day sketched in post-plan.md. DATED-CONTENT FLAGS FOR near-caretaker: (1) the £5 David Bowie Centre price and its 13 July 2026 start; (2) the entire industrial-action section — the dispute is UNRESOLVED and further strike dates may be called at any time; (3) the three free displays and the Badru drop-in, all of which expire (18 October 2026 and 10 September 2026 respectively); (4) vam.ac.uk's own page still badges the venue 'Art Fund Museum of the Year 2026 Shortlisted' — the award was decided in favour of The Box, Plymouth in July 2026, so the body says 'finalist' and names the winner rather than repeating the venue's stale self-description."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.95,
+    "query": "V&A East Storehouse, Parkes Street, London E20 3AX"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

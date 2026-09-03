@@ -804,3 +804,114 @@ Collection `london-institutions-that-refuse-to-die` drafted the same day
 (English, status draft) — five pins, Bar Italia deliberately excluded at
 the time because a `NearLink` to a draft slug is a dead link. It is now
 active, so fold it in as the sixth member on the next pass.
+
+---
+
+## 2026-09-03 — V&A East Storehouse, Hackney Wick (CUBIC-V)
+
+`va-east-storehouse-hackney-wick-london`, published `active`, `trust: auto`,
+all six locales. Drafted through `near-write-article` under the LONDON ONLY
+override in `content/post-plan.md`; the Rotation position cycle counter and
+`content-rotation`'s NEXT-UP block were both deliberately left alone (NEXT-UP
+already reads San Francisco and already counts this piece among the three
+override posts).
+
+`dedupe-by-place`: run and passed. Nearest pin is
+`va-east-museum-stratford-london` at **907m** — far outside the 150m
+haversine threshold — and nothing fuzzy-matches "Storehouse". Two separate
+buildings at two separate addresses, so a separate slug is correct rather
+than a `meta.sources` append on the Museum.
+
+`verify-still-open-before-create`: passed against the venue's own site, which
+carries a live alert banner and current opening hours.
+
+The trust gate cleared on the first condition in the run brief: every core
+fact re-verified first-party against `vam.ac.uk`, so `auto` applied and the
+piece went straight to `active` without a separate approval round.
+
+**The access-model check was the whole point and it moved.** The David Bowie
+Centre has required a £5 ticket since Monday 13 July 2026 — the V&A's own FAQ
+states it outright, the display page lists £5.00 with concessions, and the
+page's embedded booking payload independently reports
+`ticketing: {ticketed: true, free: false}`. It opened in September 2025 on
+free timed tickets and dropped the ticket requirement entirely in February
+2026, so a large amount of still-high-ranking coverage — Wikipedia's `V&A East`
+article included — says the Bowie archive is free. It has not been since July.
+Per the red-team price rule the figure was verified this session and does not
+carry the headline: the `shortTitle` is about free walk-in general admission,
+which survives the £5 changing. General admission itself is unchanged and free.
+
+Corrections landed against the queue entry's own claims: opening date is
+31 May 2025 precisely; the 250,000 objects / 350,000 books figures are right
+and there are also 1,000 archives; the "different neighbourhood" framing is
+true but the two buildings are ~1km apart inside the same park, so the body
+says "a walk, not a trek" rather than overstating it, matching the framing
+already published on the Museum pin.
+
+**On the conflation claim, the honest version shipped.** The brief asked for a
+real wrong listing and said not to invent one. None was found publishing a
+wrong address — Art Fund, Visit London and the V&A all carry Parkes Street
+E20 3AX correctly. What is demonstrable is the umbrella-name failure: Time
+Out's April 2026 headline "The V&A East Will Open This Weekend" is about the
+Museum while the Storehouse had been open eleven months. The article body
+distinguishes them properly, so the piece says exactly that — "the article
+itself is careful; the card in a feed is not" — rather than accusing Time Out
+of an error it did not make.
+
+Dated content for the tester's week of 2026-09-07, found and real rather than
+manufactured: **Look What I Found with Remiiya Badru**, Thursday 10 September
+2026, 12:00–14:00, Collection Hall, free, drop-in, no booking — and it was
+**rescheduled from Saturday 5 September because the strike closed the
+building**, which is stated in the body. Three free displays also run to
+18 October 2026 (Es Devlin, Lawrence Lek, Shahed Saleem). Order an Object was
+deliberately ruled OUT for that week on its two-week lead time; telling the
+reader they have already missed it is more useful than selling it to them.
+
+The PCS/Prospect action does affect this building, more than it affects the
+Museum. Closures were 4–5 September only, reopening the 6th, so the tester's
+week is clear of the hard closure; the overtime ban and work-to-rule continue
+indefinitely and the dispute is unresolved. New and Storehouse-specific:
+Prospect balloted **100% of collections access officers here** in favour of
+strike action on 88% turnout, over conditions The Art Newspaper reported as
+staff having no morning or afternoon breaks. Republished as a reported
+allegation attributed to Prospect, not asserted in house voice —
+`near-legal-counsel`'s requirement for a negative about a named employer.
+
+Image calls (`near-illustrator`, in-body explicitly asked and answered): five
+images against a 1052-word body, which is exactly the `ceil(words / 250)`
+floor. Hero is the Collections Hall from the second floor, 5184×3456, **CC0**,
+by 14GTR, shot 6 June 2025 — a week after opening, so the building is in
+actual operation. Every image in the piece comes from the same photographer's
+CC0 set from that visit: the Parkes Street exterior (which earns its place by
+proving the address for the Museum-vs-Storehouse correction), the Robin Hood
+Gardens facade suspended three storeys inside the hall, and the third-floor
+view. Tier 1 throughout; no stock, no generation. Aspect is 3:2 rather than
+~16:9 — the closest landscape shape in the free-licence pool, and better than
+the 4:3 the sibling Museum pin shipped with.
+
+**Two research-floor gaps, recorded rather than papered over.** Tripadvisor
+returned HTTP 403 to every fetch attempt, so no visitor quote could be read
+and verified and none was published — the queue claim rests instead on the
+V&A's own 30-minute priority policy, quoted verbatim, which is the better
+citation anyway. And no Reddit thread on this venue surfaced across repeated
+searches. Preferred sources consulted: `vam.ac.uk`, `pcs.org.uk`,
+`museumsassociation.org`, `queenelizabetholympicpark.co.uk`, `londonist.com`,
+`ianvisits.co.uk`, `timeout.com`. New candidates logged to
+`preferred-sources.md`: `theartnewspaper.com`, `artfund.org`, the `vam.ac.uk`
+`/whatson` event-listing path (with its 404 and client-side-filter quirks),
+and Tripadvisor as known-blocked.
+
+translator note (all five locales): the £5 correction, the two-week lead time
+and the 10 September drop-in are byte-identical facts everywhere, as are the
+four `NearLink`s. `zh-CN` runs shortest at 854 words per its persona's
+break-up-the-clauses discipline and still clears its own image floor at 4.
+`it` understates where the English is flatter. No facts diverge from the
+English source.
+
+Flagged to `near-caretaker`, all perishable: the £5 and its 13 July 2026 start
+date; the entire industrial-action section, since the dispute is unresolved
+and further strike dates can be called at any time; the three free displays
+(18 October 2026) and the Badru drop-in (10 September 2026); and `vam.ac.uk`'s
+own page still badging the venue "Art Fund Museum of the Year 2026
+Shortlisted" when The Box, Plymouth won it in July — the piece says "finalist"
+and names the winner instead.
