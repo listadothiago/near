@@ -78,6 +78,25 @@ source to the permanent catalog off a single lucky find):
   pattern already used for `@crisdoquiosque`. Worth the same "check
   before any statusHistory update" treatment near-caretaker gives that
   account.
+- `goldminemag.com` (Goldmine Magazine) — record-collecting trade press,
+  runs a "Record Store Recon" review series on individual indie record
+  stores; used to corroborate 1-2-3-4 Go! Records' Oakland reputation
+  (2026-09-03). Worth checking again for any future record-shop/vinyl
+  pieces.
+- `discogs.com/record-stores` — Discogs' record-store directory, useful
+  for cross-checking a record shop/label's existence, address, and
+  (for labels) release catalog; used for 1-2-3-4 Go! Records
+  (2026-09-03).
+- `visitoakland.com` — Oakland's official tourism-board listings site;
+  used to corroborate 1-2-3-4 Go! Records' address/hours (2026-09-03).
+  Treat as a lower-editorial-weight but useful corroborating source for
+  Oakland venues generally (city tourism sites confirm existence/hours,
+  not scene credibility).
+- `nationaltoday.com` — general holiday/observance-date reference site;
+  used to confirm the official Record Store Day 2027 date (April 17)
+  alongside `hepcat.se` and `craterecords.be`, none of which is Record
+  Store Day's own site — worth finding recordstoreday.com's own release
+  calendar as the primary source next time this date is needed.
 - Instagram `@cantodosursos520` — Canto dos Ursos's own account
   (bear-community karaoke bar, Praia Grande), 18.3K followers, posting
   multiple times a week; the primary source for that place's address,

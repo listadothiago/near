@@ -164,6 +164,24 @@ including when the answer was "the source photo is fine, no gallery, no
 illustration" — that's a real call, and logging it stops the next run
 re-litigating it.
 
+### Queer-beat heroes — lead visibly queer (operator directive, 2026-09-03)
+
+For the Queer beat / column / LGBTQ+ content, prefer a hero that reads
+as queer at thumbnail size — a rainbow or other pride flag is always a
+good option. On a grid, a generic room shot tells a reader nothing about
+who a place is for; a pride flag does it before they read a word.
+
+This is a preference about what earns the click, not a licence to lower
+the sourcing bar. The photo-inbox → venue's-own-site → stock →
+generation order still holds, and depicting a flag on a venue that
+doesn't fly one is a factual claim, not a design choice. Where the venue
+genuinely does fly one, that is the shot to look for.
+
+The directive arrived attached to Amuse Beach Club, São Vicente, whose
+operator-supplied images were a one-off exception and are explicitly not
+a precedent for other pieces. If applying the rule above turns up a
+better hero for Amuse, the operator has pre-approved swapping it in.
+
 ## In-body images — break the wall of text
 
 **Operator directive, 2026-09-02: this skill is consulted on in-body

@@ -6,7 +6,7 @@ Owns the geographic tier list and rotation cadence for `content/post-plan.md`. O
 
 **Tier 1 (repeats 4x before rotating into Tier 2):** London, Brighton, San Francisco, Oakland, **Bangkok**.
 
-**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne** (both added by operator directive, 2026-09-03), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne, Seattle** (Tokyo/Melbourne added by operator directive 2026-09-03; **Seattle** same day — *"make sure seattle is at least tier 2"*, so it is a Tier 2 member outright rather than waiting on its queue being seeded as the `post-plan.md` note previously had it. Its queue is empty, so its turn hits the empty-queue rule and is skipped until seeded), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
 
 **Bangkok promoted Tier 2 → Tier 1, operator directive 2026-09-02:**
 *"Bangkok is most visited city in the world, bump to tier 1."* This is
@@ -47,9 +47,25 @@ order:           London → Brighton → San Francisco → Oakland → Bangkok
 served-cycle-2:  Brighton (Legends, 2026-09-02);
                  London — turn treated as SATISFIED, see note
                  San Francisco (Dolphin Club, 2026-09-03)
-NEXT-UP:         Oakland
+NEXT-UP:         Oakland (turn IN PROGRESS, not yet consumed — see note)
 then:            Bangkok → (cycle 3 opens at London)
 ```
+
+**Note on Oakland's cycle-2 turn (2026-09-03):** 1-2-3-4 Go! Records was
+drafted for this turn — independent sourcing came back strong (5+
+corroborating sources: shop's own site, East Bay Express, Discogs, Yelp,
+Goldmine, VisitOakland) and the stale RSD date was replaced with the
+next real one (Apr 17 2027) — but the piece is held at `status: draft`
+on an image-floor gap (only one real CC0 photo resolved, no
+image-generation capability available this session to meet the
+in-body-image floor for the body length). Per `near-write-article`
+step 6, an unmet image floor is a hold condition, not something to
+publish through. **Oakland's turn is therefore not yet consumed** —
+`NEXT-UP` stays on Oakland until this piece either ships (image gap
+resolved, chief-editor sign-off) or the operator decides to swap in a
+different Oakland queue item for this turn. Bangkok's queue is
+empty/unseeded (documented Bangkok caveat below) regardless, so it
+would need seeding before its turn either way.
 
 **Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**
 strictly, the three London pieces shipped under the london-only override

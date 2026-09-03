@@ -3113,19 +3113,19 @@ with a tagline explaining the number — **and then withdrew it himself**:
 So: **a short summary paragraph, positioned between the bullets and the
 long-form body, saying why the place is worth going to. No number, no
 stars, no rating of any kind.** The name "valeapenabilidade" can stay as
-the internal/section name.
+the internal/section name. It can have an seo friendly paragraph title. Basically the gist of this article.
 
 - **It must be translated, not transliterated.** *"translate
   valeapenabilidade to en and other languages please, or it will be
   incomprehensible."* Needs a real equivalent per locale — this is a
   `near-translator` job per locale, not one coined word reused six
-  times.
+  times. deprecated, lets find another name for this
 - Schema impact: this is a new required-ish content field across every
   place page and every locale, so it is a `lib/content/schema.ts` change
   plus a backfill across the whole existing catalogue. Scope it honestly
   before starting; it is not a small job.
 
-The paragraph seems like a strong good idea, but the score idea I am not sure. Maybe we dont need to score things. Summon the C level skills and legal counsel to advise. 
+The paragraph seems like a strong good idea, but the score idea I am not sure. Maybe we dont need to score things. 
 ### D. Columns must never be mixed with guides
 
 Operator: *"columns should never be mixed with guides because they are
@@ -3358,7 +3358,7 @@ Includes a **Parser column**, which does not exist yet.
 - **Amuse Beach Club, São Vicente — operator-supplied photos.** Three
   Google-hosted images, *"ok to use those btw"*, and he pre-empted the
   objection himself: *"i know legal wont like that but for this club its
-  fine."*
+  fine."*.
 
   ```
   https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl7dEaJ6YuZW75bUQDMrS8I7pLGxrnBmSHVKdkHZy1PW1eWhyq5F7wf4HhDnkVa-Tmeu_bP-Jv43qtA1FjSu2Z35qTJi7bIQKRo0edPQkmzhib3o3xx1R2kvgBy5CeK7MttZtMx=s1360-w1360-h1020-rw
@@ -3373,7 +3373,7 @@ Includes a **Parser column**, which does not exist yet.
   `public/places/amuse-beach-club-sao-vicente/` rather than hotlinking.
   **(b)** Check each one visually before publishing and describe it
   honestly in `licenseNote`, including where it came from.
-
+response from thiago: this is a one-off exception for this one club btw. for similar cases moving forward (attention illustrator skill, learn this) try to use a more obviously gay hero image, eg. some kind of rainbow flag or similar pride flag is always good for the Queer beat /column / content. illustrator, if by these rules you actually find a better image for Amuse Club, feel free. Events, please have a pass for upcoming events at Amuse Club too.
 ### 7. Live-site staleness — ROOT CAUSE FOUND, FIXED
 
 Operator reported the board showing *"no ciclovia no guaiuba"* and
@@ -3386,7 +3386,7 @@ every run, and the lesson generalises: **committing is not shipping.**
 
 Note the bike-route piece itself (the CICLOVIA collection) is still
 **unwritten** — it is a scoped Must in the earlier batch, not a
-deployment problem.
+deployment problem. 
 
 ### 8. Repo integrity — RESOLVED 2026-09-03 (commit db609a1)
 
@@ -3495,5 +3495,163 @@ Tokyo and Melbourne added to Tier 2 in the same session — done, see
 `.claude/skills/content-rotation/SKILL.md` and `content/post-plan.md`'s
 tier list.
 
+more input from thiago:
+ If you are building the whole coast into one weekend, Barraca da Dhéia on Pitangueiras is the other end of Guarujá's beach culture, and the same lane network runs west past Santos into São Vicente, where Quiosque da Cris has been holding down Praia do Itararé since the eighties. Somewhere in the middle, Restaurante Almeida is the Santos lunch that makes the crossing worth doing on a full stomach. This paragraph in https://near.tips/en/place/praia-da-guaiuba-guaruja says Almeida is somewhere is in the middle of quiosque and ferry, it is not. All of these are on the ciclovia bike lane network, yes, but Almeida would be a detour here
+
+for crying out loud do not leak internal dialog like Near's first Pinheiros pin — the neighborhood has been a coverage gap despite being a Tier 1 São Paulo target in https://near.tips/en/place/lita-pinheiros-sao-paulo EVER. The departamento de vai dar merda skill should be invoked at the end of every article writing and make sure among its many checks that internal discourse is not leaked to front end. maybe even create a dedicated skill for this and make sure it is invoked by departamento de vai dar merda. Also " rather than filing as a marketing line." is fluff. sentence works better without that. TOV and TOV police skills take note to avoid fluff like this. Also might as well add to backlog considering a post for the mentioned Nelita place?
+
+search console:
+Última atualização: 27/08/2026
+
+check_circle
+
+Páginas indexadas
+
+Estas páginas podem ser exibidas no Google
+
+Não foi possível indexar nenhuma página nos últimos 90 dias
+
+# 
+
+Sitemaps enviados
+
+|Sitemap|Tipo|Enviado|Última leitura|Status|Páginas encontradas|Vídeos encontrados||
+|---|---|---|---|---|---|---|---|
+|https://near.tips/sitemap.xml|Sitemap|2 de set. de 2026|2 de set. de 2026|Processado|630|0|
+
+normal?
+
+We need more events nested in places like it was nicely done with Teatro da eskyna, but in our priority tier 1 and 2 locations when we do their content. 
+
+near.tips should have an events view as well.
+
+remember events expire and are archieved away from the main views when their date is passed. Make sure the front end filters them away, this is not refresh dependent
+
+make sure seattle is at least tier 2
+
+**65** places indexed· [**107** sources watched](https://near.tips/en/sources)· last sync: 2026-08-31 00:00 UTC - this info should be in header not footer!
+
+the map pins are already piling up and becoming hard to use especially when zoomed out. We need a pin clustering mechanic. And the pin tooltip is very wonky right now, the text leaks, the image leaks...that pin tool tip needs to be responsive. Show a pin cluster grouping pins if multiple pins exist and look clustered at that zoom level. Clicking the cluster pin should zoom to cluster if possible to show its individual pins (and or events and or articles). Cards shown in page should reflect what is shown in map pins, and the other way around too, keep map and cards view synced.
 
 
+we need to build a page for full map view. event skills should be invited to EVERY article writing to find associated events if they exist, and write the event article if needed, capture in backlog but execute in the same run if possible. we love them events! Events that are further out in the future (but confirmed) are great as they live longer
+
+the events view should sort the cards by nearest+soonest, within the geographic and any other filters and sorts of the user
+
+please invoke product trio and the UX team skills/agents to figure out how we will tackle the events views and full map views
+
+to capture in the article writing skill: at the beginning of every article write, the sources skill must check the preferred sources, starting with AAN indie paper sources, and then all preferred sources for relevant sources for the article in question, check with trendsetter and seo and product team and pr team that shortlist and then ensure that the rest of the process prioritizes these sources whenever possible. Important for our brand identity and editorial direction. also make sure to capture any new good sources found as preferred throughout the article writing process. 
+TOV should already be part of the article writing process, make sure it also learns from the sources used in the writing process any new best practices that it finds, updating its guidelines as needed. TOV can also research web when it doubt
+
+AEO skill should be part of the writing skill process if it isnt already
+
+article writing skill should always consult with a local editor skill when one exists, and local editor should be considered to author or have a credited collaboration in the article. articles should have other credited collaborators whenever possible, even me (curator) if I am the source of any tip
+
+For me (curator), only credit me automatically when collaborator or quoted. Do not generally automatically create whole articles in my name, I will ask when I want to post to my column/blog
+
+parser agent skill content gen specialist should also participate in every article writing both to advise and learn best practices for his own files and guidelines.
+
+parser biweekly column should include his latest learnings, also deep research what is worth noting in the field before deciding what to write about. i expect his articles to have the most potential for the linkedin crowd but ffs avoid corporate jargon linkedin jargon cringe jargon etc stick to your personality.
+
+new social-media skill that knows researches learns and specializes in social media skills. Invited to every article writing process.
+
+we need those landing pages asap, for instance i would like to share the sober-curious filtered view with a sober friend. any location, filtered, sorted etc view should have a share link and share button 
+
+we should have a special article full of need related pins for cool stops covering the ENTIRE baixada santista ciclovias network, which with gaps here and there extends all the way from Praia Grande afaik (maybe further south) to Guaruja via ferry boat. This would be a big effort content push, low priority for now i think on that basis, we can for now just make sure we tag every article written as relevant for #cycling for example. 
+
+hey we should start using #hashtags clickable ones of course, across all of our articles. Make this a rule of content writing from now on and also let's build out the hashtag system (should also lead to an srp with nearest/latest/faves) and we should also edit past articles with hashtags when we can. use hashtags as an element in the article UI but also mid-text, like old timey blogs and twitter users 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+## 📋 Directive-wiring ledger — 2026-09-03 batch
+
+Added by `near-backlog` after the operator asked whether skills should be
+checked for backlog changes *before* being used. They should, and weren't:
+this batch sat **uncommitted in `BACKLOG.md`** while a piece was dispatched
+to a background agent, which therefore ran the old pipeline. New
+`near-backlog` step **0-A** now makes `git diff BACKLOG.md` the first
+action of every session.
+
+**The general lesson: a directive that lives only in `BACKLOG.md` is
+invisible to every skill and every dispatched agent.** Agents read
+`.claude/skills/*`. Prose here saying something "should" happen is not
+evidence it was wired in.
+
+### ✅ Wired into skill files this session
+
+- **`near-events` invited to EVERY article**, not just event-shaped ones;
+  events nested in the place page (Teatro da Eskyna as reference); further-out
+  dates preferred because they live longer; child event article executed in the
+  same run where feasible. → `near-write-article` step 2.
+- **AAN indie papers first** in the preferred-source shortlist, built before
+  open-web research and cleared with trendsetter/SEO/product/PR. →
+  `near-write-article` step 4-A.
+- **Local editor consulted and credited** where one exists; collaborators
+  credited generally; **curator credited only when quoted or collaborating,
+  never auto-bylined**. → `near-write-article` step 5-A.
+- **`parser` participates in every article**, advising and learning. →
+  `near-write-article` step 5-B.
+- **No internal-discourse leaks to the front end** — the Pinheiros
+  "coverage gap / Tier 1 target" leak quoted as the worked example; tier,
+  rotation, queue, strategy and agent mechanics all banned from published
+  copy, in every locale. → `departamento-de-vai-dar-merda` §8 +
+  `near-write-article` step 9a-0.
+- **Fluff-clause ban** with the delete-and-see-if-anything-is-lost test;
+  *"rather than filing as a marketing line"* as the caught example. →
+  `near-tov-police` Job 1, item 2b.
+- **Queer-beat heroes should read as queer at thumbnail size** (pride flag
+  where the venue genuinely flies one); Amuse Beach Club's operator-supplied
+  images recorded as a one-off exception, not a precedent. → `near-illustrator`.
+- **Seattle is Tier 2 outright**, not queue-gated. → `content-rotation` +
+  `post-plan.md`.
+
+### ⛔ Still open from this batch — NOT yet wired
+
+- **New `social-media` skill.** Does not exist. Directive is that it join
+  every article write. `near-write-article` step 5-C names `near-socials` as
+  the interim stand-in and flags the gap.
+- **Dedicated internal-leak skill.** Operator floated one; the check
+  currently lives inside `departamento-de-vai-dar-merda` §8, which is
+  sufficient but not what was asked for.
+- **Events view + full map view + pin clustering.** Product/UX work, not
+  content: pin clustering with click-to-zoom, a responsive pin tooltip (text
+  and image currently leak), map/card view kept in sync, a full-map page, an
+  events view sorted nearest+soonest within the user's filters, and
+  **front-end filtering of expired events** (explicitly *not* refresh-dependent).
+  → Product Trio + `near-lead-ux`, as the operator requested.
+- **Sitemap/indexing concern.** Search Console: 630 pages submitted and
+  processed, but *"não foi possível indexar nenhuma página nos últimos 90
+  dias"*. Operator asked "normal?" — **it is not obviously normal and nobody
+  has answered him.** → `near-seo`.
+- **Header vs. footer.** The "65 places indexed · 107 sources watched · last
+  sync" line should be in the header, not the footer.
+- **Shareable filtered views.** Every location/filtered/sorted view needs a
+  share link and share button — the operator's own use case is sending the
+  sober-curious filtered view to a friend. Landing pages wanted "asap".
+- **Hashtag system.** Clickable hashtags across all articles, mid-text as
+  well as as a UI element, an SRP with nearest/latest/faves, plus
+  backfilling past articles. Content rule *and* a build.
+- **Guaiuba factual fix.** `https://near.tips/en/place/praia-da-guaiuba-guaruja`
+  places Restaurante Almeida "somewhere in the middle" between Quiosque da Cris
+  and the ferry. It is not — it is a detour off that route. → `near-caretaker`.
+- **Nelita (São Paulo)** — operator asked whether it's worth a post.
+- **Amuse Beach Club** — events pass wanted for upcoming events there.
+- **`valeapenabilidade`** — operator now says the name is deprecated and needs
+  replacing; the summary paragraph itself stays and may carry an SEO-friendly
+  paragraph title. The scoring idea is dropped, and he removed the request to
+  summon C-level/legal on it.

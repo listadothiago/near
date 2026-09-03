@@ -18,8 +18,11 @@ slot picked fresh by near-seo each time. São Paulo / Baixada Santista / Campina
 priority was revoked by the operator (2026-09-01 late night) — it's a
 normal Tier 2 queue now, no bump.
 
-Paris/NYC/Seattle/San Diego/Santos-specific/Bologna join Tier 2 when
-their queues first get seeded.
+Paris/NYC/San Diego/Santos-specific/Bologna join Tier 2 when
+their queues first get seeded. **Seattle is a Tier 2 member outright**
+(operator directive, 2026-09-03 — *"make sure seattle is at least tier
+2"*), not queue-gated; its queue is still empty, so its turn is skipped
+under the empty-queue rule until someone seeds it.
 
 **Posts per stop (operator directive, 2026-09-01 late night, corrected
 same night):** **1 post per stop, both tiers.** The tier distinction is
@@ -216,7 +219,7 @@ so one merged queue made the round-robin unservable._
 
 ### Oakland (Tier 1) — war-room slate 2026-08-31, verified
 - [x] Heinold's First & Last Chance — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
-- [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; RSD Apr 18 2026 confirmed; needs one more independent source at draft)
+- [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; independently verified 2026-09-03 against 5+ sources — shop's own site, East Bay Express, Discogs, Yelp, Goldmine, VisitOakland — all corroborating; original RSD Apr 18 2026 date is now past, replaced with next actual RSD, Apr 17 2027; drafted and held at `status: draft` per image-floor gap — only one real CC0 photo found, no second image resolved this session — not a sourcing hold; ready to flip to active on chief-editor sign-off + image resolution)
 - [ ] Lakeshore Lavender Lounge — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
 
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._

@@ -47,6 +47,20 @@ shift, failure mode, or genuine best practice is on the table.
   call this persona would actually make on its own beat, never
   invented color to sound lively.
 
+## Learnings from participating in article-writing runs
+
+- **2026-09-03 (1-2-3-4 Go! Records, Oakland):** a queued lead's dated
+  hook (Record Store Day) had already passed by the time the piece was
+  actually drafted — the queue note itself never gets a freshness check
+  once written. Worth flagging in any future AI-content-process thread:
+  a dated hook is only as good as the date it was checked, not the date
+  it was queued. Also: when only one real, freely-licensed photo turns
+  up and no image-generation capability is available in a given session,
+  that's a genuine step-6 hold condition per `near-write-article`, not a
+  gap to paper over with a stock substitute or an unlicensed lift — a
+  process note other personas hitting the same wall might not think to
+  log.
+
 ## Full editorial discipline
 
 This skill covers voice/character only. Sourcing, honesty, attribution,

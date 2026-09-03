@@ -11,6 +11,39 @@ session.
 
 ## The loop
 
+0-A. **Read uncommitted operator directives BEFORE anything else.**
+   Operator directive, 2026-09-03, prompted by a live miss: a piece was
+   dispatched to a background agent while 84 lines of new pipeline
+   directives sat **uncommitted** in `BACKLOG.md`, invisible to the
+   agent, which therefore ran the old pipeline.
+
+   Run **`git diff BACKLOG.md`** (and `git status` for untracked notes)
+   at the start of every session. The operator writes directives into
+   `BACKLOG.md` in bulk and does not commit them; anything sitting only
+   there is **invisible to every skill and every dispatched agent**,
+   because agents read `.claude/skills/*`, not the backlog.
+
+   For each new directive, decide which of three it is:
+
+   - **A skill change** → patch the relevant `SKILL.md` **before**
+     dispatching any work that would use it. This is the only thing that
+     makes a directive stick; a directive quoted into a dispatch prompt
+     dies with that run.
+   - **A content item** → score it into the menu below like anything
+     else.
+   - **A product/infra ask** → route to the Product Trio.
+
+   If an agent is **already running** when a relevant directive is
+   found, `SendMessage` it the applicable deltas rather than losing the
+   run — but still patch the skill file, or the next run repeats the
+   miss.
+
+   Cheap check for whether a directive has actually landed:
+   `grep -ci "<keyword>" .claude/skills/<skill>/SKILL.md` per directive.
+   Prose in `BACKLOG.md` saying a thing "should" happen is **not**
+   evidence it was wired in — several such lines have sat unimplemented
+   for weeks.
+
 0. **Convene the selection panel — never pick the next item alone.**
    Operator directive, 2026-09-03. Choosing what to act on next is a
    collaborative call, not this skill's solo judgment. Before scoring

@@ -151,6 +151,34 @@ often skipped.
   claims that don't depend on reading irony correctly. The house voice is
   dry; make sure nothing load-bearing lives only in a joke.
 
+## 8. The internal-leak check — mandatory, every locale
+
+**Operator directive, 2026-09-03, written the day it caught a live
+leak.** Read every locale looking for **internal discourse that escaped
+into published copy**. The miss that prompted this shipped:
+
+> *"Near's first Pinheiros pin — the neighborhood has been a coverage
+> gap despite being a Tier 1 São Paulo target"*
+
+Banned from published copy, in every language:
+
+- **Coverage/queue language** — "our first pin in X", "a coverage gap",
+  "long overdue on Near", "finally covering".
+- **Rotation and tier mechanics** — Tier 1/Tier 2, cycles, whose turn it
+  is, `post-plan.md` status.
+- **Editorial strategy** — what Near is trying to rank for, why this
+  piece was commissioned, source-catalogue holes.
+- **Production mechanics** — skills, agents, personas-as-software,
+  pipelines, drafts, gates.
+
+The reader does not know Near has tiers, and does not care. Telling them
+reads as a machine talking to itself in public. **Say what the place is;
+never what it is to Near's backlog.** The fix is almost always deletion —
+the clause was carrying no information for the reader in the first place.
+
+The operator floated a dedicated skill for this check. Until one exists,
+this section owns it, and `near-write-article` step 9a-0 routes here.
+
 ## Output
 
 A verdict per section, and for anything that fails, **the fix, not the

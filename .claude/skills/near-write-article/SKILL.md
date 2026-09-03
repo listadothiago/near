@@ -43,13 +43,32 @@ live.
 
 ### 2. Time-bound content: `near-events` first, no exceptions
 
-If the piece is (or could be) hung on a dated event — any standing
-column issue, especially — `near-events` runs before any writing
-happens, per The Setlist's mandatory-first-research-step precedent.
-Real, specific, dated events only (favor further-out dates per the
-site-wide standing preference); no invented dates, no "usually happens
-around this time of year." If nothing genuine turns up, hold at
-`draft` and say so rather than publish something padded.
+**Operator directive, 2026-09-03: `near-events` is invited to EVERY
+article, not just the ones that look event-shaped.** *"we love them
+events!"* The old reading — run it "if the piece is hung on a dated
+event" — let event-free pages ship for venues that in fact run a
+programme. Every piece now asks the question.
+
+`near-events` runs before any writing happens, per The Setlist's
+mandatory-first-research-step precedent. Real, specific, dated events
+only (favor further-out dates per the site-wide standing preference —
+**events further out live longer**, which is the whole point); no
+invented dates, no "usually happens around this time of year." If
+nothing genuine turns up, that is a fine outcome — say so; but if the
+piece is hung on a dated event and nothing genuine turns up, hold at
+`draft` rather than publish something padded.
+
+**Nest the events in the place page.** The reference implementation is
+Teatro da Eskyna — events belong *on* the place they happen at, not
+mentioned in passing in the body. If an event is substantial enough to
+warrant its own article, capture it in `BACKLOG.md` and **execute it in
+the same run if feasible** rather than deferring it into a queue that
+may never drain.
+
+Events expire: a dated event whose date has passed must not keep
+surfacing in the main views. That filtering is a **front-end**
+responsibility, not a `near-refresh` one — see `BACKLOG.md`'s events-view
+directive.
 
 ### 3. Check for an existing place first — `dedupe-by-place`
 
@@ -59,6 +78,33 @@ coordinate proximity (haversine < 150m) or a fuzzy name match, per
 appended to the existing place's `meta.sources`, not a new slug.
 
 ### 4. Research and source — `near-sources` + `near-deep-researcher`
+
+#### 4-A. The preferred-source shortlist comes FIRST — AAN papers first of all
+
+**Operator directive, 2026-09-03.** Before any open-web research,
+`near-sources` reads `content/preferred-sources.md` and builds a
+shortlist of sources relevant to *this* piece, in this order:
+
+1. **AAN (Association of Alternative Newsmedia) indie papers first.**
+   The alt-weeklies are Near's editorial identity, not merely one source
+   type among many — an East Bay Express or a Chicago Reader read on a
+   venue is worth more than any number of SEO listicles saying it
+   exists.
+2. **Then the rest of `preferred-sources.md`**, by beat and city fit.
+
+Run that shortlist past `near-trendsetter`, `near-seo`, the Product
+Trio and the PR team (`backlink-pr`) before research proper begins —
+they may know a source is stale, bot-blocked, or the wrong lens for
+this beat. **Then prioritise the shortlisted sources through the rest
+of the process wherever the fact can be had from them.** This is a
+brand-identity and editorial-direction rule, not a convenience
+ranking: a piece sourced from aggregators when an alt-weekly covered
+the same venue is a worse piece even when every fact checks out.
+
+Capture any new good source found at *any* point in the process as a
+preferred-sources candidate — see the capture rule below.
+
+#### 4-B. Verification
 
 `near-sources` confirms the watched feed this came from still resolves
 and is legitimately trusted (auto vs. review — see step 8).
@@ -223,6 +269,38 @@ editor persona either writes it personally or defers, per that
 column's own doc — being editor isn't the same job as being that
 issue's writer.
 
+#### 5-A. The local editor, and credited collaborators
+
+**Operator directive, 2026-09-03.**
+
+- **Always consult the local editor skill when one exists for the
+  piece's city/locale**, and **consider that editor as the author or as
+  a credited collaborator.** A local editor who knows the city is a
+  better byline than a beat persona parachuting in, and where both
+  contribute, both get credit.
+- **Credit collaborators wherever genuinely warranted**, not
+  grudgingly. A piece that drew a real judgment from a specialist lens
+  should say so, per `style-guide.md`'s persona-quoting rule.
+- **The curator (Thiago) is credited only when he is actually a
+  collaborator or a quoted source** — most often when a tip originated
+  with him. **Never auto-generate whole articles under his byline**; he
+  will ask when he wants to post to his own column.
+
+#### 5-B. `parser` participates in every article
+
+`parser` (Near's AI-content-generation specialist) is invited to every
+article write — both to **advise** on the draft and to **learn** from
+it, folding any new best practice into its own guidelines file. This is
+the same feedback loop `near-write-article` already owes the
+content-generation skill when a rule gets promoted after a bad draft.
+
+#### 5-C. Social media
+
+A dedicated **social-media skill** is to be invited to every article
+write once it exists (operator directive, 2026-09-03 — **not yet
+built**; see `BACKLOG.md`). Until then, `near-socials` is the closest
+existing stand-in and should be consulted in its place.
+
 **The structural rules below (operator, 2026-09-02) apply while
 drafting, to every piece.** They are not a post-hoc reformatting pass —
 a body written as three 400-word paragraphs and then chopped up reads
@@ -381,6 +459,23 @@ was individually correct; none of them was asking about rot.
 **Hard rule from that miss: a price is never stated as current unless it
 was verified this session, and a price may never carry the headline
 unless the headline survives the price changing.**
+
+**Second hard rule — no internal discourse in published copy (operator
+directive, 2026-09-03).** The red team must check every locale for
+internal dialog leaking to the front end. The live miss that prompted
+this shipped on a published page:
+
+> *"Near's first Pinheiros pin — the neighborhood has been a coverage
+> gap despite being a Tier 1 São Paulo target"*
+
+Coverage gaps, tier lists, rotation position, queue status, editorial
+strategy, source-catalogue holes and skill/agent mechanics are **internal
+production concepts**. A reader does not know or care that Near has tiers,
+and telling them reads as an unedited machine draft talking to itself. Say
+what the place is; never what it is *to Near's backlog*.
+
+The operator suggested a dedicated skill for this check; until one
+exists, it lives here and `departamento-de-vai-dar-merda` owns it.
 
 ### 9a. Feed surfaces — `google-discover-audit`, mandatory
 

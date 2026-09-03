@@ -42,6 +42,23 @@ ones instead of trusting they were followed:
    content"): vague superlatives with nothing under them ("a must-visit
    hidden gem"), listy padding restating one claim three ways, a body
    that never commits to a specific checkable fact.
+2b. **Fluff clauses — cut them (operator directive, 2026-09-03).** The
+   recurring failure is a trailing qualifier clause that adds no fact and
+   exists only to sound considered. Caught live:
+
+   > *"...rather than filing as a marketing line."*
+
+   The sentence was better without it. **Test: delete the clause. If the
+   sentence loses no information, it was fluff — leave it deleted.**
+   Typical shapes: `rather than X-ing as Y`, `which is no small thing`,
+   `and that matters`, `in the best possible way`, `if you know where to
+   look`. Related to but distinct from `language-tic-police`'s job: that
+   skill *counts* recurring constructions across the catalogue, this one
+   *judges* whether this clause earns its place in this sentence.
+
+   Same rule as everywhere else in the pipeline — a clause that can't be
+   replaced with a concrete fact means the sentence was never carrying
+   information, and gets deleted rather than rewritten.
 3. **Voice register** (`style-guide.md`'s "Voice register" section):
    reads like the alt-weekly tradition — opinionated, plain-spoken,
    comfortable saying a hyped place is overrated — not like a
