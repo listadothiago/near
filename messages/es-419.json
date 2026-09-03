@@ -148,7 +148,9 @@
     "favoriteToastSaved": "Guardado solo en este dispositivo.",
     "favoriteToastSignIn": "Iniciá sesión para tenerlo en todos tus dispositivos",
     "locationScope": "{count, plural, =1 {1 lugar acá} other {# lugares acá}} — borrá la búsqueda para salir",
-    "loadMore": "Cargar más"
+    "loadMore": "Cargar más",
+    "share": "Compartir",
+    "shareCopied": "Enlace copiado"
   },
   "categories": {
     "all": "Todos los temas",
