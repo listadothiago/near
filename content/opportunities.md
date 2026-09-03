@@ -314,3 +314,267 @@ Baixada (seasonal window per the existing reprioritization), then SP
 capital (already best-covered, lowest urgency of the three). Split
 across sessions per the standing batching rule — do not redo this
 scoping pass per city.
+
+## Bangkok seeding pass — near-sources-war-room, 2026-09-03
+
+**Scope block.** Gap: Bangkok is the only Tier 1 city with zero pins, zero
+entries in `content/sources.md` and zero in `content/preferred-sources.md`,
+so the empty-queue rule skips its turn every cycle and its Tier 1 promotion
+(operator directive 2026-09-02) is currently worth nothing. MOTOSAI's debut
+is blocked on this. Target: 8-12 verified sources, 5-8 verified queue
+candidates. **No place pages written — scoping only.**
+
+**Health check first:** nothing to check. No Bangkok/Thailand entry exists in
+either sources file, so there was no existing catalogue to verify or retire.
+Everything below is net-new discovery.
+
+**WRITE CONSTRAINT, this session:** another agent held `sources.md`,
+`preferred-sources.md`, `post-plan.md` and `content/places/`. Findings are
+parked here deliberately and need merging into the two source files by hand.
+
+### AAN / alt-weekly question — answered plainly
+
+**There is no AAN member in Bangkok, and no AAN member anywhere in Asia.**
+AAN is 126 titles across North America plus a single Sydney member. Near's
+own alt-weekly tradition has no franchise here, and nothing was substituted
+for it. What Bangkok has instead, and what the tiers below reflect, is a
+three-way split: (a) one genuine English-language city magazine with a real
+alt-weekly lineage (BK), (b) a strong Thai-language independent digital
+press (The MATTER, The Momentum, art4d) that is closer to a culture
+magazine than to a newsweekly, and (c) an unusually large content-farm
+layer of expat SEO blogs that must be kept out of the catalogue.
+
+### Sources — TIER 2 (check when working Bangkok or its beats)
+
+Nothing earned Tier 1. Per the skill's own rule, a run that promotes half
+its finds has not made a judgement; Tier 1 should be earned by two or three
+good hits, and none of these has been used on a piece yet.
+
+- **BK Magazine** — `https://bkmagazine.com/` — English. **The single most
+  Near-shaped outlet in Bangkok.** Descends from the free print weekly
+  (BK/Asia City), still runs a weekend listings column, nightlife, food,
+  neighbourhood and LGBTQ+ coverage with actual reporting. Beats: food-drink,
+  nightlife-sound, city-culture, LGBTQ+. **Verified 2026-09-03: newest post
+  2026-09-01** ("17 things to do in Bangkok this weekend (Sep 3-6)"). No
+  access quirk — plain `WebFetch` works. Legacy archive lives on the old
+  `bk.asia-city.com` domain and still resolves; treat old links as archive,
+  not as current fact.
+- **The MATTER** — `https://thematter.co/` — **Thai only.** Independent
+  digital culture/society magazine, essayistic, young readership; the
+  closest thing Bangkok has to an alt-weekly's back half. Beats: city-culture,
+  world-culture-news, gender/queer commentary. **Verified 2026-09-03: newest
+  post 2026-09-03.** Fetches cleanly. Thai-language, so it is a *lead*
+  source for MOTOSAI, not a citation for the English edition without care.
+- **The Momentum** — `https://themomentum.co/` — **Thai only.** Longer-form
+  reported features; sections Report / Life / Lifestyle / Culture / People.
+  Runs sex-worker rights and gender-discrimination reporting, which is
+  directly on Near's queer beat. **Verified 2026-09-03: newest post
+  2026-09-03.** Fetches cleanly.
+- **art4d** — `https://www.art4d.com/` — **Thai + English, bilingual.**
+  Thailand's architecture/design/art title, Bangkok-based since 1995.
+  Beats: city-culture, design, gallery and venue architecture. **Verified
+  2026-09-03: September 2026 content live.** Fetches cleanly. The best
+  single source for "why this building/space is like that", which is a
+  weakness in every listicle.
+
+### Sources — TIER 3 (opportunistic, mined for signal not obligation)
+
+- **Prachatai English** — `https://prachataienglish.com/` — English (Thai
+  parent at `prachatai.com`). Independent non-profit, human rights and
+  democratisation. **Access quirk: 403s `WebFetch` — needs
+  `claude-in-chrome`.** Verified live and publishing via search-index only
+  (current Senate/iLaw and lèse-majesté stories indexed 2026). Off Near's
+  beats most of the time; useful for the rights context behind a queer venue
+  piece, and explicitly NOT for editorialising (see MOTOSAI's stated limits).
+- **Time Out Bangkok** — `https://www.timeout.com/bangkok` — English.
+  Trade-adjacent and listicle-shaped, so **not** a voice source — but its
+  events desk is genuinely current and it is the fastest way to a dated hook.
+  **Verified 2026-09-03: newest post 2026-09-03.** Use as an
+  `near-events` calendar, cross-checked against a primary source, never as
+  the sole citation for a fact.
+- **Spectrum (สเปกตรัม)** — `https://spectrumth.com/` — **Thai only.**
+  Bangkok's dedicated queer/gender online magazine; winner of the Bangkok
+  Pride "Value of Online News" award 2025. Exactly the outlet Near's core
+  queer beat wants. **Access quirk: 403s `WebFetch`, and search-index
+  results surface only 2025-and-older pieces — LAST-90-DAYS FRESHNESS COULD
+  NOT BE CONFIRMED THIS SESSION.** Listed as a candidate, not as verified;
+  re-check with `claude-in-chrome` before it goes into `sources.md`.
+- **Bangkok Art Biennale** — `https://www.bkkartbiennale.com/` — EN/TH.
+  Not press; an institutional calendar, but the authoritative primary for
+  BAB 2026 dates and its ten venues. Verified current (BAB 2026 pages live).
+- **Made in Song Wat** — the Song Wat merchants'/creatives' collective,
+  60+ members, primary for Awakening Song Wat and Song Wat Week. **Mostly
+  IG/Facebook-native — no reliable RSS.** Neighbourhood-level, which is the
+  level Near actually wants and almost nobody else publishes at.
+
+### Rejected, with reasons — do not re-add
+
+- **Fungjaizine** (`fungjaizine.com`) — Thai indie-music magazine, founded
+  2014, would have been an ideal `nightlife-sound` source. **Last post
+  2024-12-18. Fails the 90-day rule; effectively dormant.** Its parent
+  Fungjai still co-promotes Maho Rasop, so the org is alive and the
+  *magazine* is not. Do not list.
+- **Friday Bangkok** (`fridaybangkok.com`) — plausible-looking English city
+  guide, but its EN front page's newest item verified 2026-09-03 was **March
+  2026**. Either dormant or the EN edition is a stale mirror of a live Thai
+  one. Fails as listed; recheck the Thai side before reconsidering.
+- **Coconuts Bangkok** — archive still resolves and still ranks, which is
+  exactly the trap. Not publishing. Archive-only.
+- **The whole expat-SEO layer** — `khaosanroad.com`, `bangkoknightguide.com`,
+  `thaiest.com`, `airportels.asia`, `biscalab.com`, `thegaypassport.com`,
+  `travelgay.com`, `bangkok-nights.com`, `nightlifeplus.app` and the rest.
+  Named here so a future run does not rediscover them and mistake ranking
+  for authority. They are the *subject* of Near's correction format, not
+  sources for it.
+
+### Candidate queue — 6 candidates, verified 2026-09-03
+
+Every one carries a correction angle, because Bangkok's listicle layer is
+the thickest of any city Near covers and the corrections are unusually easy
+to land.
+
+- id: bkk-song-wat-mischa-cheap
+  what: Mischa Cheap, Song Wat Rd (Chinatown/Samphanthawong) — cheap-drinks
+    bar run by screenwriter/cultural organiser Note Pongsuang; the room where
+    the Song Wat cinema-and-politics conversation actually happens. Pair or
+    alternate with **Longlai** (vinyl bar, rotating guest chefs).
+  byline: MOTOSAI (or STEFAN if it drafts as pure nightlife)
+  angle: "The neighbourhood's own bar, not the neighbourhood's rooftop."
+  correction: Every Song Wat guide published in 2026 sells the street as a
+    daytime café-and-photo walk that "closes at sunset". That stopped being
+    true over the last year — Song Wat now has a real after-dark character,
+    and the guides have not caught up. Michelin's own neighbourhood guide is
+    the highest-ranking version of the stale frame.
+  dated hook: **Song Wat Week, November 2026** — Made in Song Wat's annual
+    festival across 60+ member businesses. Pull exact dates at draft.
+  verify at draft: hours, address, that Note Pongsuang is still operating it.
+
+- id: bkk-live-music-obituary
+  what: The 2026 collapse of Bangkok's independent live-music room. **Studio
+    Lam (Sukhumvit Soi 51) closed end of February 2026** after 12 years —
+    announced by Maft Sai on 2 Jan 2026, reported by Mixmag Asia and Bangkok
+    Post. **Noise House (Lat Phrao) closed 29 March 2026** with a
+    "GOODBYE NOISE HOUSE / End of an Era, Bonds Remain" send-off, 20+ bands
+    across 3 stages. Best shape is a RADAR-X collection, not a pin — you
+    cannot pin a closed bar.
+  byline: RADAR-X (collection) with STEFAN quoted
+  angle: Two rooms, two months apart, both the actual infrastructure of the
+    scene rather than its shopfront.
+  correction: **This is the strongest correction available in Bangkok right
+    now.** BK Magazine's own "10 best venues to find live music in Bangkok"
+    still carries Studio Lam, and it is far from alone — RA, Time Out and
+    every nightlife listicle still list one or both. Same shape as Möbel Olfe
+    and The Stud, but with two venues and a hard, sourced date each.
+  note: Needs a living counterweight so the piece is not pure elegy — find
+    what took the load (Bar Temp, Jam, the Song Wat vinyl rooms) and verify
+    it independently before drafting.
+
+- id: bkk-wtf-gallery-cafe
+  what: WTF Gallery & Café, Sukhumvit Soi 51 — bar and exhibition space in
+    one, programming ecological issues, human-rights campaigners, political
+    prisoners, freedom of expression. Currently showing *The Silence Wind,
+    Invisible Waves*.
+  byline: CUBIC-V (art), MOTOSAI quoted on the soi
+  angle: A gallery that is also the bar you stay in, run by a curator, a
+    photojournalist and a hotel — and the last thing standing on its own soi.
+  correction: Two. (1) Every guide files WTF under "Thonglor" — it is
+    **Sukhumvit Soi 51**, a different address and a different walk.
+    (2) Guides describe the Soi 51 "cluster" of WTF + Studio Lam +
+    Zudrangma Records as a night out; **Studio Lam closed Feb 2026**, so the
+    cluster is now one venue. Directly reinforces the obituary piece above.
+  verify at draft: hours (site says Thu-Sat 18:00-24:00, Sun 15:00-20:00,
+    closed Mon-Wed — narrow, and exactly the kind of thing listicles omit),
+    and what is actually hanging on the walls that week.
+
+- id: bkk-benjakitti-forest-park
+  what: Benjakitti Forest Park, Khlong Toei — 41ha "sponge city" wetland with
+    elevated wooden skywalks, built 2022 on the old Tobacco Monopoly land, now
+    joined to Lumphini by the **Green Mile**, a ~1.4km elevated green corridor.
+    Free, daily 05:00-21:00.
+  byline: WILD0, with MOTOSAI on how you actually get there
+  angle: The one genuinely good piece of new public space in the city, and a
+    walk you can do above the traffic.
+  correction: The standing listicle line is that "Lumphini is Bangkok's park".
+    Benjakitti Forest Park is four years old, bigger in ambition, and
+    **physically connected to Lumphini** — the two are one walk, not two
+    destinations. Guides that predate 2022 (still ranking) describe the old
+    2004 lake park only.
+  fit: MOTOSAI's heat-and-hours discipline is the whole value-add — the
+    17:00-21:00 window is the honest recommendation and no guide says so.
+
+- id: bkk-bangkok-art-biennale-2026
+  what: **Bangkok Art Biennale 2026: "Angels and Mara", 29 October 2026 –
+    28 February 2027**, ten venues including Wat Arun, Wat Pho, Wat Prayun,
+    BACC, Museum Siam, the Bangkok National Museum and One Bangkok.
+  byline: CUBIC-V
+  angle: A biennale hung inside working temples. The venue list is the story.
+  why now: Far-out, confirmed, four-month run — per the standing
+    favour-dated-events rule this is the longest-lived dated hook found in
+    Bangkok, and it opens right in Bangkok's Tier 1 window.
+  correction: To be found at draft — likely the venue count and which temples
+    are actually participating this edition, which shifts between editions and
+    which aggregators copy forward from BAB 2024.
+  caution: Institutional, not alt-press. Needs a specific angle (one venue,
+    one artist, the temple-siting argument) or it becomes the listicle.
+
+- id: bkk-thailand-coffee-fest-2026
+  what: **Thailand Coffee Fest 2026, 10-13 September 2026**, IMPACT
+    Exhibition Center Halls 5-8, Muang Thong Thani. 380+ exhibitors,
+    20,000+ sqm, SEA's largest.
+  byline: FOODIE-9000, MOTOSAI on the getting-there
+  angle: Thai-grown coffee has stopped being a novelty; this is where the
+    northern farms sell direct.
+  correction: The honest one is geographic and Near-shaped — **it is not in
+    Bangkok.** Muang Thong Thani is Nonthaburi, an hour out, and the listings
+    that call it a "Bangkok festival" are setting up a bad afternoon. This is
+    MOTOSAI's distance-is-time doctrine applied literally.
+  caution: **Near-term (7 days out), which cuts against the standing prefer-
+    further-out rule.** Only worth it if a Bangkok turn is drawn this week;
+    otherwise skip and take BAB 2026 instead.
+
+**Leads, deliberately NOT claimed as verified** — Bar Temp; Jam (Charoen
+Rat); Candide Books (Nang Loeng); Passport Bookshop (Phra Athit); Barbon
+(rooftop, Hostel Urby, Song Wat); Bangkok CityCity Gallery; Nova Contemporary;
+the Ari coffee-and-records strip that is MOTOSAI's own register and currently
+has no candidate on this list.
+
+**Two stale facts I nearly propagated, logged so nobody else does:**
+(1) "Talad Rot Fai Srinakarin has closed" — **false.** It is open Thu-Sun and
+is the last surviving Rot Fai site. What closed was the Ratchada operation
+(as The One Ratchada, May 2025), which then **reopened 27 March 2026** behind
+Esplanade Ratchada, daily 17:00-01:00. The whole tangle is sourced only to
+aggregators so far and needs a primary before it is used as a correction.
+(2) "G-Star reopened" — a Thai queer-media piece about G-Star Bangkok
+"coming back" is dated 2025, while G-Star Pavilion Pub reads as **closed as
+of April 2026**. Unresolved; do not build a queer-nightlife pin on it without
+a primary source.
+
+### Tier 1 sustainability verdict — NOT YET. The promotion outruns the sourcing.
+
+Bangkok is genuinely rich in *material* and genuinely thin in *sources Near
+can watch*, and those are different problems.
+
+The honest count is **one** outlet that is both English-language and shaped
+like Near (BK Magazine). Everything else is either Thai-only (The MATTER,
+The Momentum, Spectrum), institutional (BAB, Made in Song Wat), or
+listings-grade (Time Out). Near has no `th` locale — MOTOSAI is a Bangkok
+*position*, not Thai copy — so the Thai-language tier is a research input
+that has to be translated and cross-checked on every use, not a feed
+`near-refresh` can cheaply skim. That is a real per-piece cost that London,
+Berlin or San Francisco do not carry.
+
+Set against that, the correction surface is the best of any city in the
+catalogue. Bangkok has the world's densest layer of stale, high-ranking
+travel content, and this pass turned up two hard-dated venue closures still
+being recommended by outlets including BK's own listicle. Near's strongest
+recurring format is unusually well-fed here.
+
+**Recommendation:** Bangkok is drawable now — the queue above is enough for
+its cycle-2 turn and a couple after it. But it should be reassessed after
+three shipped pieces rather than treated as settled, and the two things that
+would actually make Tier 1 sustainable are (a) confirming Spectrum is live
+and onboarding it, since queer Bangkok is a core beat currently sourced by
+nothing, and (b) finding one more English-language independent, because a
+Tier 1 city resting on a single watchable feed is one masthead away from
+being unsourced again. If neither lands within the next two Bangkok turns,
+the honest call is to put Bangkok back in Tier 2 and say why.

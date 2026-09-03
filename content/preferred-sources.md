@@ -383,3 +383,55 @@ adding one at a time.
   history but carries some stale figures (an old $6.50 guest fee still
   posted there as of 2026-09-03) — cross-check its numbers against the
   venue's own current page before trusting them.
+
+### Bangkok — whole-city gap, found during the 2026-09-03 seeding pass (Tier 1 city, zero sources)
+
+Bangkok was promoted to Tier 1 on 2026-09-02 with **zero pins and zero
+sources**. This pass seeded it. All entries freshness-checked 2026-09-03
+against the 90-day rule. None is Tier 1 yet — none has been used on a
+published piece.
+
+**Tier 2 — check when working Bangkok**
+
+- **BK Magazine** (`bkmagazine.com`, English) — the one genuinely
+  Near-shaped outlet in the city, descended from the free print weekly.
+  Newest post 2026-09-01; fetches cleanly. **Caveat: it is itself part
+  of the biggest correction in the city** — its "10 best live music
+  venues" listicle still carries Studio Lam, which closed. Use it, don't
+  trust it unchecked.
+- **The MATTER** (`thematter.co`, **Thai only**) — indie culture and
+  society. Newest 2026-09-03.
+- **The Momentum** (`themomentum.co`, **Thai only**) — long-form
+  reported features, including sex-worker rights and gender reporting.
+  Newest 2026-09-03.
+- **art4d** (`art4d.com`, Thai + English) — architecture, design and art
+  in Bangkok since 1995. September 2026 content live.
+
+**Tier 3 — opportunistic**
+
+- **Prachatai English** — independent news; **403s on WebFetch**, needs a
+  browser session. Live via its index.
+- **Time Out Bangkok** — listicle-grade for editorial, but its events
+  desk is current. **Calendar use only.**
+- **Spectrum** (`spectrumth.com`) — Thai queer/gender magazine, Bangkok
+  Pride award 2025. **403s, and its index only surfaces 2025 content, so
+  freshness is NOT confirmed.** Candidate, not verified — do not cite
+  until a browser session confirms it is still publishing.
+- **Bangkok Art Biennale**, **Made in Song Wat** — institutional
+  primaries, good for dated programming.
+
+**Rejected this pass, with reasons** (recorded so the next pass doesn't
+re-litigate them): **Fungjaizine** — would be the ideal music source,
+but last post 2024-12-18, dormant. **Friday Bangkok** — English front
+page newest item March 2026. **Coconuts Bangkok** — archive-only. The
+named expat-SEO listicle layer — fails the editorial bar outright.
+
+**No AAN member exists in Bangkok, or anywhere in Asia** — the directory
+is 126 North American titles plus one in Sydney. Nothing was substituted
+in its place; the AAN-first rule simply has nothing to reach for here,
+which is a fact about the city's media landscape, not a gap in the pass.
+
+**Two stale facts nearly propagated, logged as traps:** Talad Rot Fai
+Srinakarin has **not** closed (the Ratchada site closed, then reopened
+2026-03-27), and the "G-Star reopened" thread conflicts with a closure
+reading. Both marked do-not-use without a primary source.

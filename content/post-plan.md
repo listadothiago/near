@@ -229,6 +229,39 @@ so one merged queue made the round-robin unservable._
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
 
 _Amsterdam note: no coffeeshop cleared the two-source bar this pass — the honest-coffeeshop-culture piece reads better as a near-blogger collection; operator decision pending._
+### Bangkok (Tier 1) — SEEDED 2026-09-03, research-verified, not yet drafted
+
+_Seeded by a `near-sources-war-room` pass on the day Bangkok became
+NEXT-UP with an empty queue. Full analysis, source tiers and rejected
+candidates in `content/opportunities.md`. Sources are now in
+`preferred-sources.md`; **MOTOSAI** is the locale editor and his debut is
+here._
+
+**THE CITY-WIDE CORRECTION, and it is the strongest angle available:**
+two hard-dated 2026 closures are still being recommended by live guides.
+**Studio Lam closed at the end of February 2026** after 12 years (Maft
+Sai's bar; reported by Mixmag Asia and Bangkok Post) and **Noise House
+closed 29 March 2026**. BK Magazine's own "10 best live music venues"
+listicle still carries Studio Lam — **our best Bangkok source is itself
+part of the correction**, which is exactly the Möbel Olfe / The Stud
+shape.
+
+- [ ] **BAB 2026 "Angels and Mara"** — CUBIC-V. Bangkok Art Biennale, **29 Oct 2026 – 28 Feb 2027**, across ten venues including Wat Arun and Wat Pho. **The best far-out dated hook found in the city** — a four-month window that stays live well past publication, per the standing further-out-dates preference.
+- [ ] **Mischa Cheap / Song Wat** — FOODIE-9000 or RADAR-X. **THE CORRECTION: guides still say the street dies at sunset.** It doesn't. Dated hook: Song Wat Week, Nov 2026.
+- [ ] **The live-music obituary collection** — STEFAN, near-blogger format. Built on the Studio Lam + Noise House closures above; a collection, not a pin, because the story is the pattern. **Verify both closure dates against primaries at draft** and check nothing else on the list has closed since.
+- [ ] **WTF Gallery & Café, Thonglor** — CUBIC-V. Gallery/bar hybrid, long-running independent.
+- [ ] **Benjakitti Forest Park + the Green Mile** — WILD0. Reclaimed tobacco-factory land; the elevated walkway connecting to Lumphini.
+- [ ] Thailand Coffee Fest, 10–13 Sep 2026 — **LOW PRIORITY, two problems**: it is near-term (against the further-out preference) and **it is not actually in Bangkok**. Do not draft as a Bangkok pin without resolving both.
+
+_Bangkok Tier 1 sustainability — **"not yet", per the seeding pass.**
+Exactly one watchable English-language Near-shaped feed exists (BK
+Magazine), and no AAN member exists in Bangkok or anywhere in Asia. The
+Thai-language tier (The MATTER, The Momentum) is a **research input, not
+a `near-refresh` feed**, since Near has no `th` locale. Bangkok is
+drawable now on this queue, but reassess after three shipped pieces: if
+Spectrum isn't confirmed live and a second English independent isn't
+found within two turns, **the honest call is Tier 2**. Operator decision._
+
 ### Barcelona — queue empty, needs seeding
 ### Rome — queue empty, needs seeding (che.famo.stasera / vernissagerome IG sources queued in EPIC 5)
 ### Portland — queue empty, needs seeding
