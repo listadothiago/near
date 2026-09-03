@@ -107,8 +107,13 @@ export const placeMetaSchema = z.object({
   // but it stops being a second board card and a second map pin stacked
   // on the venue's own coordinates. See rules.md's event-belongs-to-venue.
   parentPlace: z.string().optional(),
-  eventStartsAt: z.iso.datetime({ offset: true }).nullable().optional(),
-  eventEndsAt: z.iso.datetime({ offset: true }).nullable(),
+  // Both optional as well as nullable: an evergreen pin has no event at
+  // all, and requiring it to spell out `"eventEndsAt": null` broke the
+  // build on every new venue folder. Nothing downstream distinguishes
+  // absent from explicitly-null — loader.ts guards both reads on
+  // truthiness — so the two are interchangeable here.
+  eventStartsAt: z.iso.datetime({ offset: true }).nullish(),
+  eventEndsAt: z.iso.datetime({ offset: true }).nullish(),
   status: placeStatusSchema,
   statusHistory: z.array(statusHistoryEntrySchema).min(1),
   geocode: z.object({

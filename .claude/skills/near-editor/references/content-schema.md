@@ -57,7 +57,7 @@ correct result, not a gap to fill.
 | `sources[].feedId` | matches an id in `sources.md`, or `null` for near-inbox/chat-originated items |
 | `sources[].originalPublishedAt` | ISO datetime, optional |
 | `heroImage` | `null` only if resolution genuinely failed and the place therefore isn't published; otherwise `{strategy: "source"\|"stock", url, attribution, attributionLink, licenseNote?}` |
-| `eventEndsAt` | ISO datetime or `null`. Set only for time-bound happenings (see SKILL.md step 6); `null` for evergreen venues (the common case) |
+| `eventEndsAt` | ISO datetime, optional. Set only for time-bound happenings (see SKILL.md step 6); for evergreen venues (the common case) write `null` or leave the key out entirely — both parse, and nothing downstream tells them apart |
 | `status` | `draft` \| `active` \| `archived` \| `closed` |
 | `statusHistory` | append, never rewrite — `{status, at, note?}` |
 | `geocode.provider` / `.confidence` (0–1) / `.query` | |

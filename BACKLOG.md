@@ -210,7 +210,24 @@ rice and moscow and judgement." Implemented as step 0 of the
   - Runs under the LONDON-ONLY override; per that block, publishing it
     does **not** advance the rotation cycle counter.
 
-### Schema DX: `eventEndsAt` is a build-breaking trap for evergreen pins (2026-09-03, found while shipping the Storehouse — NOT fixed)
+### ~~Schema DX: `eventEndsAt` is a build-breaking trap for evergreen pins~~ ✅ DONE 2026-09-03
+
+**DONE.** `lib/content/schema.ts:110-111` — both `eventStartsAt` and
+`eventEndsAt` are now `.nullish()`, so a pin may omit the key, write
+`null`, or carry a real datetime. Checked the "does anything distinguish
+absent from explicitly null" question before changing it: no. All four
+downstream reads are in `lib/content/loader.ts` (138, 145, 180, 182) and
+every one is a truthiness guard, so the two cases were already
+interchangeable — the schema was the only thing insisting otherwise, and
+`content/rules.md`'s `event-expiry` rule already described no-`eventEndsAt`
+as "the default". Also fixed `eventStartsAt`, which was `.nullable()
+.optional()` — the same thing spelled the long way — so the pair now reads
+consistently. Verified the schema accepts absent/null/datetime and still
+rejects a non-datetime string; `npx next build` clean.
+`near-editor/references/content-schema.md` updated so the next content run
+doesn't think the key is mandatory.
+
+Original entry:
 
 → `near-tech-lead`. In `lib/content/schema.ts`, `eventEndsAt` is
 `nullable()` but **not** `optional()`, so every new pin — including
