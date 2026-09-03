@@ -290,3 +290,33 @@ adding one at a time.
 - A source that goes stale (feed dead, site redesigned, stops covering
   actual places) should be flagged here and in `sources.md`
   (`status: paused`), not silently skipped run after run.
+- `vam.ac.uk` (and its `/east` section) — the V&A's own site, including
+  live alert banners for closures and industrial action, plus per-
+  exhibition pages carrying prices and closing dates. Found researching
+  V&A East Museum (2026-09-03). The alert banner is the single most
+  useful part: it is where the 4–5 September 2026 strike closure was
+  published, and it is authoritative in a way no aggregator is. Treat
+  the exhibition pages as authoritative for price/date but still expect
+  disagreement with the venue's own partner listings (see below).
+- `pcs.org.uk` news — Public and Commercial Services Union. Publishes
+  strike dates and "action short of a strike" for UK public museums and
+  galleries before venues put notices up. Found researching V&A East
+  Museum (2026-09-03), where it was the only source explaining that the
+  overtime ban and work-to-rule continue indefinitely past the two
+  announced closure days. Genuinely load-bearing for any UK national
+  museum piece with a dated visit hook.
+- `museumsassociation.org` (Museums Journal) — UK museum-sector trade
+  press; sober, dated, and good on labour disputes, closures and
+  funding. Cross-checked the V&A strike ballot figures (2026-09-03).
+- `queenelizabetholympicpark.co.uk` — official listings for the Olympic
+  Park venues (V&A East, Sadler's Wells East, London College of
+  Fashion, UCL East). Useful for what is on across the East Bank
+  cluster. CAVEAT WORTH RECORDING: on V&A East it published a different
+  full price and a different exhibition closing date than the V&A's own
+  page, so it is a discovery source, not a price/date authority.
+- `londonist.com` — London city-culture site; ran a genuinely critical
+  V&A East review (the headset audio complaint) rather than press-
+  release copy. Worth watching for London pins generally.
+- `ianvisits.co.uk` — London transport/museum news, strong on closures
+  and openings. NOTE: 403s on automated fetch; reachable via search
+  summaries or a browser, so budget for that.
