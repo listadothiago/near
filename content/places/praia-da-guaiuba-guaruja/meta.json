@@ -1,0 +1,89 @@
+{
+  "slug": "praia-da-guaiuba-guaruja",
+  "categories": [
+    "travel",
+    "wellness-fitness"
+  ],
+  "tags": [
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -24.0176,
+    "lng": -46.2924
+  },
+  "place": {
+    "city": "Guarujá",
+    "neighborhood": "Guaiúba",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "ciclovia",
+  "sources": [
+    {
+      "name": "Portal Guarujá de Turismo — \"Praia do Guaiúba\"",
+      "url": "https://portalguaruja.tur.br/atracoes/praia-do-guaiuba/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Naturam — \"Praia do Guaiúba Guarujá — o que fazer\"",
+      "url": "https://naturam.com.br/praia-do-guaiuba-guaruja/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Doral Guarujá — \"As melhores praias para fazer stand up paddle em Guarujá\"",
+      "url": "https://doralguaruja.com.br/10-as-melhores-praias-para-fazer-stand-up-paddle-em-guaruja/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Costa Norte — \"Praia do Tombo: a praia do Guarujá recordista do selo Bandeira Azul\"",
+      "url": "https://costanorte.com.br/cidades/guaruja/praia-do-tombo.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Prefeitura de Guarujá — \"Praia do Tombo conquista 16ª Bandeira Azul consecutiva\"",
+      "url": "https://www.guaruja.sp.gov.br/praia-do-tombo-conquista-16a-bandeira-azul-consecutiva-e-sedia-evento-nacional-2",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Jornal da Orla — \"Guarujá lidera balneabilidade com todas as praias próprias para banho\"",
+      "url": "https://jornaldaorla.com.br/noticias/balneabilidade-praias-guaruja-verao-2025/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "CETESB — Mapa de Qualidade das Praias Litorâneas (classificação semanal)",
+      "url": "https://arcgis.cetesb.sp.gov.br/portal/apps/experiencebuilder/experience/?id=bdd0cbd4bf094df9a000bf663254c21f&page=Classifica%C3%A7%C3%A3o-Semanal",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-05T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Praia_do_Tombo_e_Praia_do_Guaiuba_em_Guaruj%C3%A1.jpg",
+    "attribution": "Photo by Jose Roberto Seixas, public domain, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Praia_do_Tombo_e_Praia_do_Guaiuba_em_Guaruj%C3%A1.jpg",
+    "licenseNote": "Aerial of the south end of Guarujá, taken 2022-01-02. Praia do Guaiúba is the sheltered cove in the foreground; Praia do Tombo and the city are beyond the headland. Shows the beach itself and the exact geography the piece describes, rather than a generic beach shot. 3000x1686 native, so it clears the Discover card spec uncropped."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-02T00:00:00Z",
+      "note": "First piece drafted from the Santos → Guaiúba cluster research pass scoped in BACKLOG.md 2026-09-02, and the Product Trio's Must-on-dependency for this batch — the route piece and the CICLOVIA collection both need a destination pin to link to. Geocode is a real Nominatim hit on the OSM natural=beach feature (-24.0176, -46.2924), not an approximate placement. Trust set to auto rather than review despite having originated in an operator-named target: the trust-gate exists to stop an operator-recalled venue publishing unverified, and the verification concern is fully discharged here — this is a public municipal beach with an OSM feature, a Guarujá tourism-portal listing, and a CETESB bathing-water classification, none of which can quietly have closed or rebranded. Flagged to the operator in the same session rather than downgraded silently. Hero resolved by near-illustrator at tier 1 (real, correctly-located photograph) — Commons has no photo of the Guaiúba calçadão or its kiosks, and the 'GUAIUBA GUARUJÁ - panoramio' file set is unreliable by filename (one of them is a vermilion flycatcher on a concrete block, nothing to do with the beach), so both images here were checked visually before use. Deliberately did NOT publish a citywide Santos bike-network figure — see the sourcing warning in BACKLOG.md. In-body image floor (250 words per image) wants three images for a 717-word body and this has two; the missing one is a shot of the kiosks and the portuguese-stone calçadão, which does not exist under a usable licence and is logged in content/photo-requests.md rather than padded with a duplicate sunset."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.9,
+    "query": "Guaiuba Guaruja — matched OSM natural=beach 'Praia do Guaiúba, Guarujá, São Paulo, Brasil'"
+  },
+  "publishedAt": "2026-09-02T00:00:00Z",
+  "updatedAt": "2026-09-02T00:00:00Z"
+}

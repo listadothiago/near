@@ -2895,3 +2895,173 @@ city made and kept rather than a transport quirk.
 and run below the fold.** They are genuinely useful and they must not
 smother the hook. This is consistent with the operator's separate steer
 not to build the piece on the fare.
+
+## Operator directive batch — 2026-09-02, late session
+
+Recorded verbatim on arrival. Nothing in this block is built yet except
+the recurring task in the last section, which was wired the same session.
+
+### A. The operator page (`/about/thiago-baraldi`) — rewrite
+
+Operator, on the current Portuguese rendering of that page: *"isso pode
+ser mais informacional bullet point menos cringe menos AI sounding COM
+URGENCIA"*, and later *"keep all of it not cringe, dry as possible for
+cringe safety"* and *"very bot ai seo llm friendly"*.
+
+Concrete asks, in the operator's own terms:
+
+- **Bullet points, informational.** The current page is paragraphs of
+  narrative about alt-weeklies, Hayward, the Tendernob and "quinze anos
+  construindo exatamente esse tipo de sistema". The operator wants the
+  same facts delivered dry. The prose voice that is correct for a place
+  page is wrong for this page.
+- **Dry for cringe safety.** Explicitly a tone instruction, not a length
+  one — the failure mode being avoided is the page reading as
+  self-mythologising. Cut the register, keep the résumé.
+- **LinkedIn is just a link.** *"as fo linkedin, it can be a simple link
+  to my profile thats all."* No embedded summary of the profile.
+- **Use the persona-page layout.** The operator screenshotted
+  `near.tips/en/author/radar-x` and said *"yea this page is much nicer i
+  want that for my operator page"* — the bordered card, the avatar
+  block, the role line above the name, the filed-by list below. So this
+  is a layout reuse job, not a fresh design.
+- **Order him after the bots.** *"also list me as operator AFTER the
+  bots."* Wherever bylines are enumerated, the human operator sorts
+  last, not first. Note this is deliberately the opposite of the usual
+  instinct and is consistent with the standing rule that every byline is
+  a disclosed AI persona and `CURATOR` is the only real `Person` node.
+- **Goal is SEO authority.** *"well main goal is still seo authoritay
+  like id be happy for me just just display like the other bots and my
+  landing page be my posts."* So the operator page should function as an
+  author landing page whose body is his own posts, structurally the same
+  as a persona page.
+
+### B. "hello, world!" — the operator's first post
+
+Operator: *"here is my first post: hello, world!"*, body supplied
+verbatim below, then *"corrija somente ortografia e pontuação e pode
+postar rs"* — i.e. **authorized to publish**, with spelling and
+punctuation correction only. Do not rewrite, do not restructure, do not
+edit for voice. This is the one piece on Near written by the human.
+
+Body as supplied:
+
+> Eu gosto de fazer conteúdo geolocalizado automatizado et cetera desde
+> sempre, já fiz várias versões disso na vida como guia de viagem
+> inteligente, até com Wordpress e plugins altamente esotéricos já fiz
+> isso.. Pra mim, é porque eu acho o Google Maps muito cheio de coisa
+> demais, e ás vezes isso é bom, e resolve. Mas às vezes eu quero aquela
+> sensação de dica firme, um score de valeapenabilidade que só aquelas
+> publicações como os alt weeklies ou suplementos semanais como as
+> Vejinhas do mundo sabiam conferir. Escalar isso e garantir a
+> consistência editorial sempre foi e ainda é um problema. Aqui pela
+> primeira vez estou brigando com esse problema de forma agêntica.
+
+- **Hero image required.** *"hero image no post please! algo abstrato is
+  fine"* — abstract is explicitly acceptable, so this does not block on
+  photography.
+- Byline is the operator himself, which makes it the first non-persona
+  byline on the site. Everything in section A about ordering him after
+  the bots applies.
+
+### C. "Valeapenabilidade" — summary paragraph, no score
+
+The operator proposed a 1–5 "valeapenabilidade" score set by the agents
+during the write, shown prominently between the bullets and the body,
+with a tagline explaining the number — **and then withdrew it himself**:
+
+> *"you know what that could be controversial and messy, lets not do
+> valeapenabilidade score. However I like having an additional summary
+> paragraph before the big text with a summary of why it's worth
+> checking out, just don't score it. Prob ok to call that
+> valeapenabilidade, but no scores those will be a mess."*
+
+So: **a short summary paragraph, positioned between the bullets and the
+long-form body, saying why the place is worth going to. No number, no
+stars, no rating of any kind.** The name "valeapenabilidade" can stay as
+the internal/section name.
+
+- **It must be translated, not transliterated.** *"translate
+  valeapenabilidade to en and other languages please, or it will be
+  incomprehensible."* Needs a real equivalent per locale — this is a
+  `near-translator` job per locale, not one coined word reused six
+  times.
+- Schema impact: this is a new required-ish content field across every
+  place page and every locale, so it is a `lib/content/schema.ts` change
+  plus a backfill across the whole existing catalogue. Scope it honestly
+  before starting; it is not a small job.
+
+### D. Columns must never be mixed with guides
+
+Operator: *"columns should never be mixed with guides because they are
+not centered around pins."* A guide is built around pins; a column is
+not. Wherever the two currently share a surface — nav, listings, the
+board, sitemaps — they need separating. Note the nav already has a
+distinct `Columns ▾` item, so the defect is likely in listing/collection
+surfaces rather than the header.
+
+### E. New skill — `Ariana Granny`
+
+Operator: *"we need an agent skill called Ariana Granny who looks out
+for hip seniors."* A persona/advisor lens for places that work for
+older people who are still going out — the beat is scene participation,
+not accessibility compliance, though the two overlap. Naming and remit
+are the operator's; the standing style-guide rule that audiences are
+described **by interest, never by age** is in obvious tension with a
+persona defined by an age bracket, and that tension has to be resolved
+in the skill file rather than ignored. Likely resolution: the persona
+covers the beat, the copy still describes people by interest.
+
+### F. The daily recurring task — WIRED THIS SESSION
+
+Operator's full spec, assembled from consecutive messages:
+
+- **Schedule:** every day at **08:00 America/Sao_Paulo**.
+- **Who it convenes:** the Product Trio, the chief editor,
+  `near-trendsetter` and `near-seo`.
+- **What it does:** choose the next action from `BACKLOG.md` and
+  **execute it**. If the backlog is empty, do a full refresh of the next
+  rotation's content priority.
+- **Prioritisation:** *"really apply RICE and MoSCoW to that daily
+  recurring task to."* Not optional, not a ritual — the standing
+  `near-lead-product` discipline, horizon named.
+- **It ships.** *"that task should always push changes live and update
+  backlog"*, and *"that recurring task is authorized to push them
+  live."* Standing operator authorization to commit and deploy.
+- **Volume:** *"one run can and should create multiple articles aim for
+  at least 3"*, later softened — *"the minimum 3 articles thing may not
+  make sense but still the more the merrier where applicable in one
+  go."* So: three is a target, not a gate; never pad to reach it.
+- **Scope — corrected mid-thread by the operator.** First stated as
+  content-only (*"no tech or UI changes for this, it runs automode so
+  content onlt / i mean only"*), then **reversed**: *"hum since tech
+  lead in in that group, yeah it can do whatever is priority not just
+  content in that daily refresh. let them do anything from the recurring
+  task."* The reversal is the operative version — the run may take
+  whatever the prioritisation actually ranks first, including tech and
+  UI.
+- **Escalation bar:** *"ask me if really really triple really critical
+  if not knock your artificial selves out and push to live with my
+  blessing."* A deliberately high bar. Default is to proceed.
+- **End of run:** *"always recommend clear or compact at the end of the
+  run"* and be ready to clear when the task is done.
+
+**Still in force and NOT overridden by any of the above:** the outreach
+freeze (nothing sent, for any outreach skill, until the operator lifts
+it), the `trust: review` → draft-and-report gate, and the rule that no
+outreach email is ever sent without the operator seeing the exact draft.
+"Push to live with my blessing" is publish authorization, not send
+authorization.
+
+- **One-off extra run requested:** *"and also extraordinarily run that
+  recurring task today at 11.31pm"* — 2026-09-02, 23:31
+  America/Sao_Paulo.
+
+### Suggested order for the first runs
+
+Not a decision — the daily task's own RICE/MoSCoW pass owns this. But
+the obvious read: **B (hello, world!) is the Must**, because it is
+explicitly authorized to publish and it is blocked only on the operator
+page and the columns surface it lands on; **A is its dependency**; **D**
+is small and structural; **C** is the largest and touches every page in
+the catalogue; **E** is a new skill file and depends on nothing.
