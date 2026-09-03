@@ -148,7 +148,9 @@
     "favoriteToastSaved": "Saved on this device only.",
     "favoriteToastSignIn": "Sign in to keep it on every device",
     "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave",
-    "loadMore": "Load more"
+    "loadMore": "Load more",
+    "share": "Share",
+    "shareCopied": "Link copied"
   },
   "categories": {
     "all": "All beats",

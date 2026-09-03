@@ -10,6 +10,7 @@ import ThemeToggle from "./ThemeToggle";
 import SearchBox from "@/components/board/SearchBox";
 import CategoryFilters from "@/components/board/CategoryFilters";
 import TagFilters from "@/components/board/TagFilters";
+import ShareViewButton from "@/components/board/ShareViewButton";
 import { useBoardControls } from "@/lib/board/controls";
 import type { Category } from "@/lib/content/categories";
 import type { Tag } from "@/lib/content/tags";
@@ -135,6 +136,7 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-1.5 flex-none">
+          {showFilters && <ShareViewButton />}
           {showFilters && (
             <button
               type="button"
