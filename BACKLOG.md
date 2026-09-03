@@ -3012,11 +3012,27 @@ persona defined by an age bracket, and that tension has to be resolved
 in the skill file rather than ignored. Likely resolution: the persona
 covers the beat, the copy still describes people by interest.
 
-### F. The daily recurring task — WIRED THIS SESSION
+### F. The daily recurring task — SUPERSEDED, now shipped as launchd
+
+⚠️ **This section is the original spec and is kept for the requirements
+only.** The first implementation used session-only `CronCreate` jobs,
+which die when the Claude session exits and were therefore useless for
+an overnight schedule. The operator caught it and asked for a real one.
+
+**The live implementation is `scripts/near-nightly-run.sh` +
+`scripts/near-nightly-prompt.md` + `scripts/launchd/`, installed via
+`scripts/near-nightly-install.sh`, running twice daily at 02:07 and
+08:03 America/Sao_Paulo.** The prompt file is the authoritative brief;
+read that, not this section. Everything below is still an accurate
+statement of what the operator asked for, and the prompt file
+implements all of it.
 
 Operator's full spec, assembled from consecutive messages:
 
-- **Schedule:** every day at **08:00 America/Sao_Paulo**.
+- **Schedule:** every day at **08:00 America/Sao_Paulo** — later
+  changed to **twice daily, 02:00 and 08:00**: *"run it twice a day
+  persistently, 2am and 8 am editions so i wake up to shit that got
+  done."*
 - **Who it convenes:** the Product Trio, the chief editor,
   `near-trendsetter` and `near-seo`.
 - **What it does:** choose the next action from `BACKLOG.md` and
@@ -3055,7 +3071,12 @@ authorization.
 
 - **One-off extra run requested:** *"and also extraordinarily run that
   recurring task today at 11.31pm"* — 2026-09-02, 23:31
-  America/Sao_Paulo.
+  America/Sao_Paulo. **Not run.** The operator had hit his monthly spend
+  limit that evening (two `/compact` attempts failed on it), so starting
+  a three-hour autonomous session would most likely have burned the
+  remainder on an error. Deliberately skipped and reported; the 02:07
+  launchd edition covers the same ground. No action needed — this is
+  closed, not pending.
 
 ### Suggested order for the first runs
 
@@ -3073,9 +3094,21 @@ guess I gave u a lot. have fun. try not to get stuck and avoid asking me
 things for a bit as I will be sleeping ok?"* — so nothing here blocks on
 him. The nightly run picks it up.
 
-**Done this session:** the persistent twice-nightly launchd run
-(`scripts/near-nightly-*`), and the tov-police embodiment rule below.
-Everything else is open.
+**Closed in that session — do not redo:**
+
+1. The persistent twice-nightly launchd run (`scripts/near-nightly-*`,
+   02:07 + 08:03), installed and verified loaded.
+2. The tov-police embodiment rule (item 1 below), fixed in all six
+   locales of `balcao-arpoador-rio` and written into the skill file.
+3. The live-site staleness (item 7 below) — it was five unpushed
+   commits; pushed.
+4. The Claude Code CLI, which was a dangling symlink and would have made
+   every scheduled run a no-op; reinstalled (2.1.259).
+5. The Catalan locale, **cancelled by the operator on 2026-09-03** — see
+   STEFAN under item 2.
+
+**Everything else in this section is open** and is the nightly run's to
+prioritise. Nothing here is blocked on the operator.
 
 ### 1. AI personas do not live anywhere — DONE, now enforced
 
@@ -3100,13 +3133,20 @@ the only real instance.
 - **STEFAN** — keeps the nightlife-savant remit and adds: Catalan
   (implicitly, *"doesn't have to be explicit"*), **able to read Catalan
   and find/add Catalan sources**, and **Barcelona & Region editor**.
-  Plus a real infra ask: *"make sure there is a new catalan locale that
-  is populated with anything posted in catalonia (that is, not all
-  content needs to be in catalan, but any content pertaining to that
-  region should)"* — a **seventh locale, conditionally populated by
-  region**, which is a new pattern: every existing locale is populated
-  for everything. Schema, `LOCALES`, loader, routing and fallback all
-  need to handle a partial locale.
+  **The Catalan locale is CANCELLED — operator, 2026-09-03:** *"the
+  catalan exception language, mah ok lets not do that."* He had asked
+  for a seventh locale populated only for content pertaining to
+  Catalonia; on being told that a region-conditional locale is a new
+  pattern (every existing locale is populated for everything, so schema,
+  `LOCALES`, loader, routing and fallback would all need to handle a
+  partial locale) he dropped it. **Do not build it.** Near stays at six
+  locales, all populated for everything.
+
+  Everything else about STEFAN stands: the Catalan register, reading
+  Catalan, and sourcing Catalan-language outlets into
+  `content/sources.md` — that is source and register work, and none of
+  it needs a seventh locale. Catalan-language material gets cited and
+  read; the published editions remain the six.
 - **ZACK ARIOKA** — *"can also do alt luxury around the world."*
 - **LUGARDO KARAI** — *"writes articles about amazing spots anywhere in
   the world, in any category, takes trendsetter as guidance before
