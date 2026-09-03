@@ -228,9 +228,13 @@ closingNote: >
   Reciprocal NearLink added to the end of hazlitts-london/en.mdx, on the
   contrast this request was always waiting for: a hotel selling silence,
   and the counter a hundred metres away still serving at four in the
-  morning when the silence stops working. English only for now — the
-  Hazlitt's locale editions still carry the un-linked ending and should
-  pick this up on their next pass.
+  morning when the silence stops working. 2026-09-03 — locale gap now
+  closed too: es-419, es-ES, it, pt-BR and zh-CN each carry an equivalent
+  closing paragraph with the same reciprocal NearLink, written as local
+  editions rather than translations (vosotros/ustedes split honored, a
+  Madrid-hours aside in es-ES, a red-eye-from-Brazil jetlag framing in
+  pt-BR, a jetlag framing in zh-CN). All six locales now link to
+  bar-italia-soho-london; no caveat outstanding.
 ```
 
 ```yaml
