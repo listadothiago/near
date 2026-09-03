@@ -69,6 +69,12 @@ source to the permanent catalog off a single lucky find):
   cross-checking São Paulo coast (São Vicente/Santos/Guarujá) queer
   venues; found while verifying AMUSE Beach Club (2026-09-01). Only one
   genuinely good hit so far, not yet formally onboarded.
+- `dolphinclub.org` — official site for San Francisco's Dolphin Club
+  (Aquatic Park open-water swim club); has the authoritative, currently-
+  maintained guest day-use fee/hours (caught an outdated $10 fee vs. the
+  actual current $12), useful for any future SF Bay open-water swimming
+  piece (South End Rowing Club, Aquatic Park itself). Found while
+  verifying Dolphin Club (2026-09-01).
 - `qlist.app` — venue-listing aggregator for LGBTQIA+ nightlife (used to
   cross-verify AMUSE Beach Club's address/hours, 2026-09-01). Worth
   checking again next time a Baixada Santista or São Paulo LGBTQIA+
@@ -105,11 +111,29 @@ source to the permanent catalog off a single lucky find):
   checking for Praia Grande LGBTQIA+ nightlife generally, not just this
   one venue's own currency checks — same `nightlife-sound`/
   `lgbtq-friendly` beat as `@amuseclub`/`@crisdoquiosque`.
+- `prinz-eisenherz.buchkatalog.de` — Eisenherz Buchladen's own site
+  (Berlin's/Germany's oldest gay bookshop); used to verify founding
+  history and current address/programming while drafting
+  `content/places/eisenherz-buchladen-berlin` (2026-09-01). Worth
+  onboarding for Berlin `city-culture`/`lgbtq-friendly` currency checks
+  generally, alongside `visitberlin.de` (city-culture beat, English-
+  language municipal tourism site, also used on this piece for a
+  second-source cross-check).
 - Canto dos Ursos's own site (`sites.google.com/cantodosursos.club`) —
   found alongside the Instagram above; a Google Sites page, not
   fetchable via the normal `WebFetch` path (redirects to a Google login
   wall), so any future check of it needs `claude-in-chrome` or a
   logged-in fetch instead of the default tool.
+- `so36.com` — SO36's own official ticket shop/site (Berlin, Kreuzberg);
+  its per-date event pages list the full run of upcoming dates for a
+  recurring night (used to independently confirm all four 2026 GAYHANE
+  dates while writing `content/places/so36-berlin`, 2026-09-02) — a
+  reliable primary source for any future SO36 piece and a model for
+  checking other Berlin venues' own ticket shops directly rather than
+  trusting aggregator listings.
+- `the-berliner.com` (The Berliner, formerly Exberliner) already in
+  `sources.md`, cross-checked here for SO36's 40th-anniversary
+  retrospective — no new onboarding needed, noting the hit for context.
 - `evgrieve.com` (EV Grieve) — long-running East Village neighborhood
   blog, genuinely local rather than a generic aggregator; tracked The
   Rabbit Books and Bar's buildout across three posts (announcement,
@@ -350,6 +374,12 @@ All used on the four Sitges pins shipped that day; none was previously in
   of these four pins. Google/Tripadvisor reviews were likewise 403. This
   is a standing constraint, not a one-off — worth solving with
   `claude-in-chrome` before the next research floor is claimed as met.
+- `oaklandnorth.net` — Oakland North, UC Berkeley J-school's local news
+  outlet; good long-form local-history reporting on Oakland institutions
+  (used for corroborating the 1906-earthquake/tilted-floor legend at
+  Heinold's First and Last Chance Saloon). Found researching
+  `heinolds-first-last-chance-oakland`; not yet trust-tested across
+  multiple hits.
 
 ## Notes for `near-refresh`
 

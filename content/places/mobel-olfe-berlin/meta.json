@@ -1,0 +1,85 @@
+{
+  "slug": "mobel-olfe-berlin",
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 52.4989,
+    "lng": 13.4207
+  },
+  "place": {
+    "city": "Berlin",
+    "neighborhood": "Kreuzberg",
+    "region": "Berlin",
+    "country": "Germany"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Möbel Olfe — official site, schedule page",
+      "url": "https://moebel-olfe.de",
+      "feedId": null
+    },
+    {
+      "name": "visitBerlin.de — Möbel Olfe listing (FLINTA* Tuesday detail)",
+      "url": "https://www.visitberlin.de/en/mobel-olfe",
+      "feedId": null
+    },
+    {
+      "name": "flintaworld.de — Möbel Olfe queer bar guide",
+      "url": "https://www.flintaworld.de/moebel-olfe-queer-bar-berlin/",
+      "feedId": null
+    },
+    {
+      "name": "Siegessäule — Möbel Olfe venue listing",
+      "url": "https://www.siegessaeule.de/orte/mobel-olfe/",
+      "feedId": null
+    },
+    {
+      "name": "gay-location.com — Möbel Olfe listing (stale rota lore, used for the correction)",
+      "url": "https://www.gay-location.com/berlin/shops/moebel-olfe.html",
+      "feedId": null
+    },
+    {
+      "name": "Wikimedia Commons — File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
+      "feedId": null,
+      "originalPublishedAt": "2023-09-03T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Moebel_olfe_reichenbach-str-177_2023-09-03_a.png/1024px-Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
+    "attribution": "Photo by Babewyn, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
+    "licenseNote": "CC BY-SA 4.0, shot 3 September 2023, showing the Möbel Olfe storefront itself at Reichenberger Straße 177, Berlin-Kreuzberg (Zentrum Kreuzberg / NZK building) — the correct building."
+  },
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Per content/post-plan.md's Berlin queue (war-room slate verified 2026-08-31), byline FOODIE-9000. Dedupe check: grepped content/places/ for moebel/mobel/kotti/olfe — zero prior hits; only existing Berlin pin is so36-berlin (different address, ~170m away, no conflict). Did not trust the queue note's schedule claim at face value — verified independently. Current schedule confirmed directly against the venue's own site (moebel-olfe.de): 'Dienstag (FLINTA*-Abend) bis Samstag ab 18 Uhr' — Tuesday (FLINTA* evening) through Saturday from 18:00, closed Sunday/Monday. Corroborated independently by visitBerlin.de ('Every Tuesday at 9:30pm, FLINTA* night kicks off at Olfe with DJs and a dance floor') and flintaworld.de ('Flinta* night every Tuesday... the Flinta* Tuesdays are usually packed'). Siegessäule (siegessaeule.de), Berlin's own long-running queer press outlet, additionally confirms Tuesday as 'stadtbekannter Treff für FLTI*' and notes Thursday still runs busy/gay-leaning informally ('Schwulenschubsen... alles aus den Nähten platzt') without framing it as a formal fixed slot. Separately verified the stale claim being corrected: gay-location.com and several other listicle/directory pages still print a rigid three-day rota — 'Tuesdays for lesbians, Thursdays for gay men' (some older sources add a Friday trans night) — treating that as the venue's current identity. That framing is dated; the venue's own current site organizes the week around one official themed night (Tuesday FLINTA*, a term that itself supersedes older women-only framing) plus five other open nights with no formally announced Thursday or Friday theme, even though Thursday remains informally busy per Siegessäule. Framed the correction honestly: didn't just assert the old listicles are wrong, cited exactly which claim (the rigid lesbian/gay/trans three-day split) is outdated and against which current sources. Hero image: real, correctly-located CC BY-SA 4.0 photo of the storefront from Wikimedia Commons (2023, by user Babewyn) — first tier of the image-sourcing hierarchy, no illustration needed. All facts checked cleanly across venue's own site plus three independent current sources, so filed straight to trust: auto, status: active. External links used: moebel-olfe.de (official), visitBerlin.de, flintaworld.de, siegessaeule.de. Internal link: so36-berlin (same Kotti neighborhood, same-night FLINTA*/queer-Kreuzberg thread). New sources logged as preferred-sources.md candidates: moebel-olfe.de, flintaworld.de, siegessaeule.de."
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-03T22:40:00Z",
+      "note": "Recovered from stash@{0} on 2026-09-03 and demoted from active to draft. This piece was written but never committed — it sat in a stash that also held the only copies of several other pins, and post-plan.md/content-rotation had already recorded it as shipped. It is not live and never was. Demoted rather than published because it carries only 1 of the six locales, and full-locale-coverage makes all six mandatory for active. Committing it as a draft so it stops being recoverable-only-by-luck; locale backfill is queued."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.85,
+    "query": "Reichenberger Straße 177, 10999 Berlin-Kreuzberg, Germany"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

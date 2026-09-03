@@ -1,0 +1,61 @@
+{
+  "slug": "dolphin-club-aquatic-park-san-francisco",
+  "categories": [
+    "wellness-fitness",
+    "city-culture"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": 37.808,
+    "lng": -122.4177
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Fisherman's Wharf",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "Dolphin Club (official site)",
+      "url": "https://dolphinclub.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Dolphin Club (San Francisco)",
+      "url": "https://en.wikipedia.org/wiki/Dolphin_Club_(San_Francisco)",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dolphin_Club_and_South_End_Rowing_Club%2C_San_Francisco.jpg",
+    "attribution": "Photo via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Dolphin_Club_and_South_End_Rowing_Club,_San_Francisco.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "wild0: added via war-room SF Bay Area queue (content/post-plan.md), re-verified fee/hours against official site"
+    },
+    {
+      "status": "draft",
+      "at": "2026-09-03T22:40:00Z",
+      "note": "Recovered from stash@{0} on 2026-09-03 and demoted from active to draft. This piece was written but never committed — it sat in a stash that also held the only copies of several other pins, and post-plan.md/content-rotation had already recorded it as shipped. It is not live and never was. Demoted rather than published because it carries only 2 of the six locales, and full-locale-coverage makes all six mandatory for active. Committing it as a draft so it stops being recoverable-only-by-luck; locale backfill is queued. Also fixed 2 source(s) carrying originalPublishedAt: null, which fails placeMetaSchema and is why this piece could never have built — further evidence it was never verified. Set to the consultation date, NOT a claimed source publication date; correct these to the real publication dates on the locale-backfill pass before this goes active."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.85,
+    "query": "502 Jefferson St, San Francisco, CA 94109"
+  },
+  "publishedAt": "2026-09-01T00:00:00Z",
+  "updatedAt": "2026-09-01T00:00:00Z"
+}

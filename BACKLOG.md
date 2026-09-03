@@ -3797,3 +3797,75 @@ evidence; these are):
   worth re-scoring.
 
 from thiago: i added a video inbox folder in the content folder, right now it has a vignette that you can use as you see fit (promo vignette for near.tips, 10 second video)
+
+---
+
+## Decisions taken 2026-09-03 (operator: *"make those decisions for me and capture in backlg"*)
+
+### The root cause of all three "lost/broken content" items was one stash
+
+`stash@{0}` was not a small stale change. Popping it recovered **five
+whole place folders that existed nowhere else in the repo**, plus the
+missing `en.mdx`/`meta.json` for a sixth. Everything below follows from
+that.
+
+**What was in it:** `eisenherz-buchladen-berlin`, `mobel-olfe-berlin`,
+`so36-berlin`, `the-stud-soma-san-francisco`,
+`dolphin-club-aquatic-park-san-francisco`, and the missing English source
++ meta for `schwules-museum-berlin`. Also a real content edit to
+`gays-the-word-london` and 40 lines of `preferred-sources.md`.
+
+**So the two items reported as damage were misdiagnosed:**
+- **Eisenherz was never lost** — it was in the stash, never committed.
+- **`schwules-museum-berlin` was never "incomplete"** — its `en.mdx` and
+  `meta.json` were in the stash. The five locale files on disk were the
+  visible half of a whole piece.
+
+**The much worse thing this exposes: `post-plan.md` and
+`content-rotation`'s `ROTATION-STATE` record pieces as SHIPPED that were
+never committed and have never been live.** `dolphin-club-aquatic-park-san-francisco`
+is recorded as San Francisco's served cycle-2 turn. It returns 404 on
+near.tips and always has. Same for `so36-berlin`, `schwules-museum-berlin`,
+`eisenherz-buchladen-berlin`. **A tick in `post-plan.md` is not evidence a
+piece is live** — the same lesson as "prose in BACKLOG.md is not evidence
+a directive was wired in", now with a second confirmed instance.
+
+**None of this work had ever been build-verified**, which is how it stayed
+broken invisibly: two metas carried `originalPublishedAt: null` (fails
+`placeMetaSchema` outright) and five taglines were over the 90-char gate.
+
+### Decisions
+
+1. **Commit everything recovered, immediately, before anything else.**
+   This work has now nearly been lost twice. Untracked-in-a-stash is not
+   a storage location.
+2. **Ship only what actually passes the gates.** `so36-berlin` and
+   `schwules-museum-berlin` have all six locales and now build clean →
+   published `active`. The other four carry 1–2 locales, and
+   `full-locale-coverage` makes all six mandatory → **demoted `active` →
+   `draft`** rather than shipped with a known rule violation. Each
+   records why in its own `statusHistory`.
+3. **Fix the gate failures honestly, not cosmetically.** The two null
+   `originalPublishedAt` values are set to the **consultation** date and
+   explicitly flagged in `statusHistory` as *not* claimed source
+   publication dates — they must be corrected before those pieces go
+   active. The four over-length `schwules-museum` taglines were trimmed
+   by dropping the *"two shows close 2/11"* clause: it fixed the length
+   and removed a dated claim that would have rotted anyway.
+4. **Correct the false shipped-records** in `post-plan.md` and
+   `content-rotation` — San Francisco's cycle-2 turn is **not** served.
+5. **UGC research floor** — `near-write-article` step 4-0 gets an
+   explicit fallback ladder rather than silently not running. See below.
+6. **The video vignette** — not shipped on-site. See below.
+
+### Still queued after this
+
+- [ ] **Locale backfill for the four recovered drafts** (`dolphin-club`
+  needs 4 locales, `eisenherz`/`mobel-olfe`/`the-stud` need 5 each), plus
+  correcting the two placeholder `originalPublishedAt` dates. Then they
+  can go active. This is real, verified, already-written English content
+  — the cheapest publishable inventory Near currently has.
+- [ ] **Audit every other `- [x]` in `post-plan.md` against what is
+  actually live.** Two independent stale-tick incidents in one day is a
+  pattern. A ten-line script that curls every ticked slug would settle it
+  permanently, and should be run before any future queue is trusted.
