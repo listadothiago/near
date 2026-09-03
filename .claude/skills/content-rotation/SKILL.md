@@ -6,7 +6,7 @@ Owns the geographic tier list and rotation cadence for `content/post-plan.md`. O
 
 **Tier 1 (repeats 4x before rotating into Tier 2):** London, Brighton, San Francisco, Oakland, **Bangkok**.
 
-**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne** (both added by operator directive, 2026-09-03), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
 
 **Bangkok promoted Tier 2 → Tier 1, operator directive 2026-09-02:**
 *"Bangkok is most visited city in the world, bump to tier 1."* This is

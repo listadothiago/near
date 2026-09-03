@@ -1712,7 +1712,7 @@ per operator request ("save a backup in case of breakage").
      deliberate, explicit exception to EPIC 4's "radical transparency,
      every persona must disclose" mandate for this one persona only;
      don't generalize it to other alter egos without the same explicit
-     call.
+     call. well this is not really an alter ego, just persona encoding some preferences that may match some audiences. Not every agent built with alter ego must say it who it is based on or who created it.
   `near-alter-ego` skill and `lib/content/authors.ts` need updating to
   match once Djaga is actually built (not yet started).
 
@@ -3091,7 +3091,7 @@ Body as supplied:
 > consistência editorial sempre foi e ainda é um problema. Aqui pela
 > primeira vez estou brigando com esse problema de forma agêntica.
 
-- **Hero image required.** *"hero image no post please! algo abstrato is
+- **Hero image required.** *"hero image no post por favor! algo abstrato is
   fine"* — abstract is explicitly acceptable, so this does not block on
   photography.
 - Byline is the operator himself, which makes it the first non-persona
@@ -3125,10 +3125,11 @@ the internal/section name.
   plus a backfill across the whole existing catalogue. Scope it honestly
   before starting; it is not a small job.
 
+The paragraph seems like a strong good idea, but the score idea I am not sure. Maybe we dont need to score things. Summon the C level skills and legal counsel to advise. 
 ### D. Columns must never be mixed with guides
 
 Operator: *"columns should never be mixed with guides because they are
-not centered around pins."* A guide is built around pins; a column is
+not centered around pins necessairily."* A guide is built around pins; a column is
 not. Wherever the two currently share a surface — nav, listings, the
 board, sitemaps — they need separating. Note the nav already has a
 distinct `Columns ▾` item, so the defect is likely in listing/collection
@@ -3274,7 +3275,7 @@ the only real instance.
   pattern (every existing locale is populated for everything, so schema,
   `LOCALES`, loader, routing and fallback would all need to handle a
   partial locale) he dropped it. **Do not build it.** Near stays at six
-  locales, all populated for everything.
+  locales, all populated for everything. . 
 
   Everything else about STEFAN stands: the Catalan register, reading
   Catalan, and sourcing Catalan-language outlets into
@@ -3472,3 +3473,27 @@ access resource under scope `eu-7e28`."* Deploy status had to be confirmed
 by fetching the live pages instead, which is a stronger check for "is it
 live" but blind to build warnings or other failing deploys. Needs a
 re-auth or a token with that scope.
+
+
+### 12. New-locale expansion: Japanese, French, Dutch (operator directive, 2026-09-03)
+
+Operator: *"Next priority locales are japanese, french and dutch."*
+Current six locales (`lib/i18n/routing.ts:4`) are `en, pt-BR, it, es-ES,
+es-419, zh-CN` — none of the three requested are live. This is a
+**seventh-plus locale**, which directly collides with the standing rule
+recorded in this file (~"Near stays at six locales, all populated for
+everything") from when a partial-locale pattern was explicitly rejected:
+schema, `LOCALES`, loader, routing, and fallback would all need to
+handle a non-uniform locale set. Product trio owns this call — it is
+not a content-drafting task, it's an infra decision about whether Near
+goes from six locales to nine (and whether they're uniform or partial).
+Scope it honestly (translation pipeline capacity, editor bylines per
+new locale, schema/backfill cost per the existing six→N precedent)
+before starting.
+
+Tokyo and Melbourne added to Tier 2 in the same session — done, see
+`.claude/skills/content-rotation/SKILL.md` and `content/post-plan.md`'s
+tier list.
+
+
+
