@@ -235,6 +235,16 @@ h6 {
   box-shadow: none !important;
   padding: 0 !important;
   margin: 0 !important;
+  /* Leaflet sets `white-space: nowrap` on .leaflet-tooltip
+     (leaflet.css:584). It inherits, so without this reset the name and
+     tagline render as single unbroken lines inside the fixed-width,
+     overflow-hidden card below and get clipped mid-word — taglines are
+     schema-capped at 90 chars, several times the card's width. This
+     line is the actual fix for the "text leaks" report; keep it with
+     the other resets rather than assuming the card's own classes cover
+     it. */
+  white-space: normal !important;
+  overflow-wrap: anywhere;
 }
 
 .near-map-tooltip::before {

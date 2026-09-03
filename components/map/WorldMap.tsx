@@ -197,9 +197,15 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
       }}
     >
       <Tooltip direction="top" offset={[0, -10]} opacity={1} className="near-map-tooltip">
+        {/* Width is viewport-clamped, not fixed: a Leaflet Tooltip has no
+            autoPan/keepInView (unlike a Popup), so a pin near an edge pushes
+            this card past the map frame, whose overflow-hidden then slices
+            it — the "image leaks" report. The frame's overflow-hidden is
+            load-bearing (it keeps Leaflet's z-1000 panes off the sticky
+            header), so the card yields instead. */}
         <a
           href={placeHref(point.slug)}
-          className="block w-52 bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden cursor-pointer"
+          className="block w-[min(13rem,calc(100vw-3rem))] max-w-[13rem] bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden cursor-pointer"
         >
           {point.heroImageUrl && (
             <div className="relative w-full h-24 bg-surface-2 border-b-[3px] border-ink">
@@ -216,7 +222,7 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
             <div className="font-display font-bold uppercase tracking-[-0.5px] text-[0.85rem] leading-[1.1]">
               {point.name}
             </div>
-            <div className="mt-1 font-mono text-[0.68rem] text-muted leading-snug">
+            <div className="mt-1 font-mono text-[0.68rem] text-muted leading-snug line-clamp-2">
               {point.tagline}
             </div>
           </div>
