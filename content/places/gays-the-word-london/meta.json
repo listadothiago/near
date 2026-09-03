@@ -47,6 +47,11 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "First pin from the London war-room slate (ranked #1) and RADAR-X's first shopping byline under the rotating-cast decision. Verified trading: own site lists current opening hours (Tue-Sat 11-6, Sun 1-6, Mon closed) and active events. Founding date 17 January 1979 and the 1984 Operation Tiger raid (charges dropped 1986, defence fund over £55,000, Gore Vidal gave £3,000) are from the Wikipedia article, which cites primary press. Genuine internal thread: the shop was founded by members of Gay Icebreakers — the same group that held disco residencies at the Prince Albert (now Central Station) in 1976, per the LGBT History Project record already cited on that pin. The Pride (2014) film connection is real but the shop scenes were filmed on Kingsgate Road, West Hampstead — stated accurately in the article rather than implying the film was shot here."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-01T00:00:00Z",
+      "note": "Added a genuine reciprocal internal link to Eisenherz Buchladen (Berlin), drafted the same day — both are pre-1980, still-independent queer bookshops founded within three months of each other. Content-only edit, no status/trust change."
     }
   ],
   "geocode": {
@@ -55,5 +60,5 @@
     "query": "Gay's the Word, 66 Marchmont Street, Bloomsbury, London WC1N 1AB"
   },
   "publishedAt": "2026-08-31T22:06:20Z",
-  "updatedAt": "2026-08-31T22:06:20Z"
+  "updatedAt": "2026-09-03T22:30:00Z"
 }
