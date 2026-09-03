@@ -3900,13 +3900,32 @@ is the order the operator expected.
 
 ### Still queued after this
 
-- [ ] **`dolphin-club-aquatic-park-san-francisco` is a DUPLICATE — merge
-  and delete, do not backfill.** Correction to this session's own earlier
-  call: `dolphin-club-san-francisco` is already live with six locales
-  covering the same venue, so San Francisco's cycle-2 turn WAS served and
-  the rotation note has been reverted. Merge the better research from the
-  duplicate (the $12/$12.67 fee correction, the Jan 1 2027 Alcatraz swim
-  hook) into the live pin, then delete the folder.
+- [x] ~~**`dolphin-club-aquatic-park-san-francisco` is a DUPLICATE — merge
+  and delete, do not backfill.**~~ **DONE 2026-09-03.** Correction to this
+  session's own earlier call: `dolphin-club-san-francisco` is already live
+  with six locales covering the same venue, so San Francisco's cycle-2 turn
+  WAS served and the rotation note has been reverted.
+
+  **The merge turned out to be a no-op — the live pin already carried both
+  facts.** It quotes "$12 cash or check, $12.67 by card" against the club's
+  own visit page and explicitly flags the stale $10 figure still circulating
+  in older write-ups; and it has the New Year's Day Alcatraz swim, correctly
+  dated January 1 2027, correctly framed as a members' race you can watch
+  from the beach for free rather than enter. The duplicate's research was
+  a subset, not an improvement, so nothing was merged.
+
+  Folder deleted. Safe to delete outright rather than redirect: it was
+  `status: "draft"` and never live, so no URL is being broken, and a
+  repo-wide grep found zero inbound references outside the backlog prose
+  and the rotation-skill correction note. Build clean after removal.
+
+  Worth keeping as a pattern: the duplicate carried a *second slug for a
+  venue Near already covered*, which `dedupe-by-place` exists to catch. It
+  got past that check because the slugs aren't near-neighbours as strings —
+  `dolphin-club-aquatic-park-san-francisco` vs `dolphin-club-san-francisco`
+  differ by a whole locality segment. A slug-similarity check would not have
+  caught it; matching on venue **name + coordinates** would have (the two
+  metas sit ~380m apart on the same cove).
 - [ ] **Locale backfill for the three genuinely-new recovered drafts**
   (`eisenherz`/`mobel-olfe`/`the-stud` need 5 locales each), plus
   correcting the two placeholder `originalPublishedAt` dates. Then they

@@ -61,7 +61,11 @@ san-francisco` — a DUPLICATE of the same venue under a second slug,
 which is a dedupe-by-place violation, not a missing pin. SF's turn
 stands as served. The general lesson survives the specific error: verify
 a slug is live with a curl before ticking, and check for a near-miss
-slug before concluding a piece is missing. -->
+slug before concluding a piece is missing. RESOLVED 2026-09-03: the
+duplicate folder is deleted. Its research was a subset of the live
+pin's, so nothing needed merging. Note for `dedupe-by-place`: the two
+slugs differ by a whole locality segment, so string similarity would
+never have flagged them — match on venue name + coordinates instead. -->
 
 **Note on the Sitges push (2026-09-03) — BARCELONA'S TIER 2 TURN IS
 SPENT.** Four Sitges pins and a collection shipped that day off the
