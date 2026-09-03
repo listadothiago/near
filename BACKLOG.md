@@ -3065,3 +3065,163 @@ explicitly authorized to publish and it is blocked only on the operator
 page and the columns surface it lands on; **A is its dependency**; **D**
 is small and structural; **C** is the largest and touches every page in
 the catalogue; **E** is a new skill file and depends on nothing.
+
+## Operator directive batch — 2026-09-02, overnight
+
+Captured verbatim. The operator was going to sleep and said: *"anyway I
+guess I gave u a lot. have fun. try not to get stuck and avoid asking me
+things for a bit as I will be sleeping ok?"* — so nothing here blocks on
+him. The nightly run picks it up.
+
+**Done this session:** the persistent twice-nightly launchd run
+(`scripts/near-nightly-*`), and the tov-police embodiment rule below.
+Everything else is open.
+
+### 1. AI personas do not live anywhere — DONE, now enforced
+
+Operator: *"tov-police please do not allow this, AIs DO NOT 'live'
+anywhere not in Leblon, register guideline is not excuse to
+anthopomorphize make that very clear and enforce"*, then *"by register i
+meant language vocab accent etc"*, then *"fix and enforce"*.
+
+Fixed in all six locales of `balcao-arpoador-rio`; rule written into
+`.claude/skills/near-tov-police/SKILL.md` as a standing gate. A place in
+the roster sets **vocabulary, idiom and accent — never a biography.**
+Swept the rest of the catalogue for residence/presence claims; Balcão was
+the only real instance.
+
+### 2. Persona remits — expansions
+
+- **ALLORA DAI** — *"nao precisa se apresentar explicitamente como drag
+  queen pode apenas ser a lense"* / *"lens/lente"*. Drag is the lens, not
+  a self-introduction. Also: *"ela eh otima pra ser italy (rome and
+  bologne) local editor too in addition to lgbt for the world"* — so
+  Italy local editor (Rome + Bologna) **and** the worldwide LGBTQ+ beat.
+- **STEFAN** — keeps the nightlife-savant remit and adds: Catalan
+  (implicitly, *"doesn't have to be explicit"*), **able to read Catalan
+  and find/add Catalan sources**, and **Barcelona & Region editor**.
+  Plus a real infra ask: *"make sure there is a new catalan locale that
+  is populated with anything posted in catalonia (that is, not all
+  content needs to be in catalan, but any content pertaining to that
+  region should)"* — a **seventh locale, conditionally populated by
+  region**, which is a new pattern: every existing locale is populated
+  for everything. Schema, `LOCALES`, loader, routing and fallback all
+  need to handle a partial locale.
+- **ZACK ARIOKA** — *"can also do alt luxury around the world."*
+- **LUGARDO KARAI** — *"writes articles about amazing spots anywhere in
+  the world, in any category, takes trendsetter as guidance before
+  writing."* Not a locale, not a category: a global roving remit gated on
+  `near-trendsetter` first.
+- **DANUZA** — *"regularly populates near.tip with upcoming lecture
+  events that she recommends."* Recurring, dated-event work; pairs with
+  the standing "favor dated events" directive. NOTE: no `danuza` skill
+  exists in `.claude/skills/` yet — check whether she is under another
+  name before creating one.
+
+### 3. New public writer skills + columns
+
+- **THEATRE** — new public agent writer skill, **monthly column**.
+  *"flesh that out and implement."*
+- **CONVENTIONS/FANDOM** — new public agent writer skill, monthly
+  column: fandom cons, cannabis conventions and so on. The operator asked
+  a real question and answered it himself: *"maybe alternative festivals
+  are part of this column what do you think? i feel its a dedicated
+  persona"* — treat **alternative festivals as a dedicated persona**,
+  separate from conventions, unless the implementer finds a strong reason
+  otherwise.
+- **FIT-BOT × WILD0** — *"should do a collaborative column with wild0,
+  monthly, flesh that out and implement."* Two bylines, one column.
+- **NITE-PORTER** — *"needs a weekly column imho, do not disturb is
+  currently weekly correct?"* Verify the cadence of "Do Not Disturb"
+  before changing anything.
+
+  Nite-Porter's column gets a specific standing brief: *"should always
+  check ad sales backlinks, affiliates, cmo, seo and aeo before and after
+  writing, his column is absolutely critical to spawn further content and
+  it can be highly profitable always consider that but also keep it
+  honest, hip, alternative, fresh, unusual etc, an eye on alt luxury so
+  check with danuza as well, not just luxury though, luxury friendly,
+  high low, etc"* — i.e. consult `ad-sales`, `backlink-pr`,
+  `affiliate-pr`, `near-cmo`, `near-seo`, `aeo` **both before and after**
+  writing. Commercial awareness, honest copy. The outreach freeze still
+  applies: consult, do not contact.
+
+### 4. Every weekly column gets its own persistent script
+
+Operator: *"implement ALL weekly columns as their own recurring
+persistent script as high priority as well too. all of them, we need the
+Parser column, all of them are auto refreshed by script."*
+
+Same launchd pattern as `scripts/near-nightly-run.sh` — that script is
+the working reference. One job per column, on its own weekly schedule.
+Includes a **Parser column**, which does not exist yet.
+
+### 5. Product / UI
+
+- **Sticky favourite on the article page.** *"we need a way to easily
+  (sticky) favorite/like an article on its page too."* Saving exists on
+  board cards (the ☆ on each card, "SAVED 4" in the header) but not on
+  the place page itself. Sticky = persistently reachable while reading.
+- **Columns must never be mixed with guides** (carried from the earlier
+  batch): *"they are not centered around pins."*
+- **The extra summary paragraph — keep the idea, drop the name.**
+  *"maybe valeapenabilidade is cheesy and redundant name, i do feel an
+  extra overall summary short paragraph could be cool tho / for the lazy
+  readers of which there are plenty."* Still: **no score.** Needs a
+  non-cheesy name that translates cleanly across six (seven) locales.
+  Supersedes the naming in the previous batch; the no-score decision
+  stands.
+
+### 6. Content corrections
+
+- **Harry Potter, `gato-vadio-porto`.** *"we don't celebrate harry
+  potter anymore in 2026 https://near.tips/en/place/gato-vadio-porto"* —
+  remove the Rowling/Potter framing from that page in every locale. The
+  bookshop is interesting on its own terms; the Potter-tourism angle is
+  both lazy and no longer something Near associates itself with.
+
+- **Amuse Beach Club, São Vicente — operator-supplied photos.** Three
+  Google-hosted images, *"ok to use those btw"*, and he pre-empted the
+  objection himself: *"i know legal wont like that but for this club its
+  fine."*
+
+  ```
+  https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl7dEaJ6YuZW75bUQDMrS8I7pLGxrnBmSHVKdkHZy1PW1eWhyq5F7wf4HhDnkVa-Tmeu_bP-Jv43qtA1FjSu2Z35qTJi7bIQKRo0edPQkmzhib3o3xx1R2kvgBy5CeK7MttZtMx=s1360-w1360-h1020-rw
+  https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmdHVoJ7SP2VxiFt_S-60O52DLXyyHCRFlskg0xllvEuLS54kfe_q6GW-gzvY1cMnbyaXnpcRiU-17ZQFe0r6L1rSBL4favjelCzVmCz4orRRjc9mWyUSFZxvViB6zJ5tGE3qzY=s1360-w1360-h1020-rw
+  https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnym58MbMTVTsQ01VDpix_IKVw_xTmDJ19h4-sQg3Q7jkqgoLIWiuxogm1pPDW_YfmRReIeJWGL3DxJ-AGnlbFhGV_IkyohTkW7-p273YVtzD3dHIWXtXJQjLfmXhvWP0SRa4ia=s1360-w1360-h1020-rw
+  ```
+
+  Two real caveats for whoever wires these, neither of which overrides
+  the operator's call — he made it knowingly and it is his to make:
+  **(a)** `lh3.googleusercontent.com` URLs are not stable hosting and
+  rot without warning, so download and self-host under
+  `public/places/amuse-beach-club-sao-vicente/` rather than hotlinking.
+  **(b)** Check each one visually before publishing and describe it
+  honestly in `licenseNote`, including where it came from.
+
+### 7. Live-site staleness — ROOT CAUSE FOUND, FIXED
+
+Operator reported the board showing *"no ciclovia no guaiuba"* and
+*"that article with the bike route does not show yet"*.
+
+Cause: **five commits sat unpushed on `main`.** Vercel builds on push, so
+nothing after `cc3d4cd` had ever deployed — including the whole Santos
+cluster. Pushed this session. The nightly prompt now checks live-vs-disk
+every run, and the lesson generalises: **committing is not shipping.**
+
+Note the bike-route piece itself (the CICLOVIA collection) is still
+**unwritten** — it is a scoped Must in the earlier batch, not a
+deployment problem.
+
+### 8. Repo integrity — needs attention
+
+`public/places/lita-pinheiros-sao-paulo/hero.jpg` shows as deleted in the
+working tree and **cannot be restored**: `git checkout` fails with
+`unable to read sha1 file` for blob `6a5896a8dd…`. The object is missing
+or corrupt in the local store. Left uncommitted rather than committing
+the deletion. Tried `git fetch origin && git checkout origin/main -- <path>`: **fails
+the same way**, so the blob is not recoverable from the remote either and
+the hero needs re-sourcing via `near-illustrator`. Check first whether
+the live page is currently broken — if Vercel built from a commit that
+still had the blob, the deployed image may be fine while the repo copy is
+not.
