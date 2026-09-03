@@ -17,8 +17,13 @@ import Footer from "@/components/layout/Footer";
 import Board from "@/components/board/Board";
 import GuidesStrip from "@/components/collection/GuidesStrip";
 
-// Revalidate periodically so events that have passed their eventEndsAt
-// drop off the board without requiring a new commit/deploy.
+// Revalidate periodically so the board picks up newly published places
+// without a deploy. This is NOT what makes expired events disappear —
+// that filter runs client-side in Board.tsx at render time, per the
+// operator's "this is not refresh dependent" directive (2026-09-03). The
+// earlier comment here claimed revalidation handled expiry, which was
+// true only within the hour and not at all for a page served from cache
+// beyond it.
 export const revalidate = 3600;
 
 // The six locale home pages are the most-crawled URLs on the site and were

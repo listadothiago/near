@@ -39,6 +39,39 @@ export default function Board({
   // Search and filters live in the sticky header now, so their state
   // sits above both components. The board only reads them.
   const { query, activeCats, activeTags } = useBoardControls();
+
+  // Event expiry is filtered here, at render time, and not left to the
+  // page's `revalidate` window. Operator directive, 2026-09-03: "remember
+  // events expire and are archieved away from the main views when their
+  // date is passed. Make sure the front end filters them away, this is not
+  // refresh dependent." The server filter in getUpcomingEventsByParent is
+  // correct but runs when the page is generated, so a page cached at 23:00
+  // keeps advertising an event that ended at midnight until something
+  // regenerates it — and a reader on a static-served page can sit well past
+  // the hour.
+  //
+  // `now` stays null until after mount so the first client render matches
+  // the server's HTML exactly; hydrating against a different clock is a
+  // mismatch. The filter therefore applies from the first effect, not the
+  // first paint, which is invisible to the reader and safe.
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    setNow(Date.now());
+    // Re-check on the hour so a long-lived tab doesn't keep a stale event
+    // on screen. Cheap: it filters an in-memory map, no fetch.
+    const id = setInterval(() => setNow(Date.now()), 60 * 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  const liveEventsByParent = useMemo(() => {
+    if (!eventsByParent || now === null) return eventsByParent;
+    const out: Record<string, UpcomingEvent[]> = {};
+    for (const [parent, list] of Object.entries(eventsByParent)) {
+      const live = list.filter((e) => new Date(e.endsAt).getTime() >= now);
+      if (live.length) out[parent] = live;
+    }
+    return out;
+  }, [eventsByParent, now]);
   // Latest is the initial tab on purpose. Nearest needs geolocation,
   // which takes a permission prompt and a GPS fix — so defaulting to it
   // meant the board rendered empty while the reader waited, or stayed
@@ -210,7 +243,7 @@ export default function Board({
             setTab(next);
           }}
           userCoords={userCoords}
-          eventsByParent={eventsByParent}
+          eventsByParent={liveEventsByParent}
           onlyFavorites={onlyFavorites}
           onOnlyFavoritesChange={setOnlyFavorites}
           promo={promo}
