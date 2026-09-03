@@ -47,25 +47,29 @@ order:           London → Brighton → San Francisco → Oakland → Bangkok
 served-cycle-2:  Brighton (Legends, 2026-09-02);
                  London — turn treated as SATISFIED, see note
                  San Francisco (Dolphin Club, 2026-09-03)
-NEXT-UP:         Oakland (turn IN PROGRESS, not yet consumed — see note)
-then:            Bangkok → (cycle 3 opens at London)
+                 Oakland (1234-go-records-temescal-oakland, 2026-09-03)
+NEXT-UP:         Bangkok — will hit the empty-queue rule, see note
+then:            (cycle 3 opens at London)
 ```
 
-**Note on Oakland's cycle-2 turn (2026-09-03):** 1-2-3-4 Go! Records was
-drafted for this turn — independent sourcing came back strong (5+
-corroborating sources: shop's own site, East Bay Express, Discogs, Yelp,
-Goldmine, VisitOakland) and the stale RSD date was replaced with the
-next real one (Apr 17 2027) — but the piece is held at `status: draft`
-on an image-floor gap (only one real CC0 photo resolved, no
-image-generation capability available this session to meet the
-in-body-image floor for the body length). Per `near-write-article`
-step 6, an unmet image floor is a hold condition, not something to
-publish through. **Oakland's turn is therefore not yet consumed** —
-`NEXT-UP` stays on Oakland until this piece either ships (image gap
-resolved, chief-editor sign-off) or the operator decides to swap in a
-different Oakland queue item for this turn. Bangkok's queue is
-empty/unseeded (documented Bangkok caveat below) regardless, so it
-would need seeding before its turn either way.
+**Note on Oakland's cycle-2 turn (2026-09-03) — CONSUMED.** 1-2-3-4 Go!
+Records shipped for this turn, all six locales. Independent sourcing came
+back strong (5+ corroborating sources: shop's own site, East Bay Express,
+Discogs, Yelp, Goldmine, VisitOakland) and the queue's stale RSD date
+(Apr 18 2026, already past) was replaced with the next real one, Apr 17
+2027. The piece was briefly held on an image-floor gap — only one real
+CC0 photo resolved, no image-generation capability available — and the
+**operator explicitly waived the in-body image floor** for it ("one hero
+is fine"). That waiver is recorded in the piece's own `statusHistory`
+along with a standing lead for `near-illustrator` to bring it up to the
+floor if better imagery surfaces. The waiver was specific to that piece
+and does not change the floor for anything else.
+
+**Bangkok is now NEXT-UP and its queue is still empty/unseeded** (see the
+Bangkok caveat below) — so on current state its turn hits the empty-queue
+rule and gets skipped, consuming the turn and opening cycle 3 at London.
+Anyone drawing this turn should seed Bangkok's `post-plan.md` queue first
+if they want it to actually run; deliberately not seeded here.
 
 **Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**
 strictly, the three London pieces shipped under the london-only override

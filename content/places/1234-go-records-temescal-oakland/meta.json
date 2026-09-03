@@ -1,0 +1,91 @@
+{
+  "slug": "1234-go-records-temescal-oakland",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 37.828623,
+    "lng": -122.260472
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Temescal",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "1-2-3-4 Go! Records — official site",
+      "url": "https://1234gorecords.com/info",
+      "feedId": null
+    },
+    {
+      "name": "1-2-3-4 Go! Records — official site (home)",
+      "url": "https://1234gorecords.com/",
+      "feedId": null
+    },
+    {
+      "name": "East Bay Express",
+      "url": "https://eastbayexpress.com/1234-go-on-the-go-1/",
+      "feedId": null,
+      "originalPublishedAt": "2011-03-01T00:00:00Z"
+    },
+    {
+      "name": "Discogs — record store listing",
+      "url": "https://www.discogs.com/record-stores/store/1234gorecords",
+      "feedId": null
+    },
+    {
+      "name": "Yelp — 1-2-3-4 Go Records (Oakland)",
+      "url": "https://www.yelp.com/biz/1-2-3-4-go-records-oakland",
+      "feedId": null
+    },
+    {
+      "name": "Goldmine Magazine — Record Store Recon podcast",
+      "url": "https://www.goldminemag.com/podcast/1-2-3-4-go-records-gets-a-stellar-record-store-recon-review-on-the-goldmine-podcast",
+      "feedId": null
+    },
+    {
+      "name": "VisitOakland listing",
+      "url": "https://www.visitoakland.com/listing/1-2-3-4-go!-records/7981/",
+      "feedId": null
+    },
+    {
+      "name": "Record Store Day — official 2027 date",
+      "url": "https://nationaltoday.com/record-store-day/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/1-2-3-4_Go%21_Records.jpg",
+    "attribution": "Photo by Mx. Granger, CC0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:1-2-3-4_Go!_Records.jpg"
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "near-write-article: Oakland Tier-1 rotation turn. Independently re-verified queue lead (address, hours, label status, RSD claim) against shop's own site, East Bay Express (AAN-listed, already in content/sources.md), Discogs, Yelp, Goldmine Magazine's Record Store Recon, and VisitOakland — five-plus independent sources beyond the original queue lead, corroborating on all points. Original queue RSD date (Apr 18 2026) confirmed as the *2026* RSD date via the shop's own site, but that date is already past relative to today (2026-09-03); replaced with the next actual RSD, officially April 17 2027, per Record Store Day's own release calendar. near-events consulted; no independently-dated in-store show found beyond RSD, so RSD carries the hook. Research floor: near-deep-researcher pass across shop, label, and press sources; Reddit search for the venue turned up no venue-specific threads (logged, not fabricated); Yelp reviews read for recent/low entries (Dec 2025 complaint, Jan 2026 praise) and paraphrased rather than quoted verbatim since no individual review permalink was resolvable. Five-plus preferred-sources.md-relevant entries consulted. Image floor: one real, CC0-licensed storefront photo (Wikimedia Commons, Mx. Granger) secured for the hero; no second real photo found and no image-generation capability was available in this session to meet the full in-body image floor for a 694-word body — flagged as an open gap for near-illustrator/operator rather than silently skipped. Set to draft per trust: review pending explicit operator approval, though independent verification came back strong (multiple corroborating, credible, independent sources on address/hours/label status/shop being open) and would support a review-to-active flip on sign-off."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "IMAGE FLOOR WAIVED BY OPERATOR, 2026-09-03 — recorded, not skipped. This piece ships with ONE image: the CC0 Wikimedia Commons storefront hero by Mx. Granger, and ZERO in-body images. At ~690 words per locale, near-write-article step 6's floor of ceil(words/250) = 3 images is NOT met; the piece is short by two in-body images in every locale. The operator waived the floor explicitly ('one hero is fine') after the piece was held on exactly this gap. The waiver is specific to this piece and this session's lack of image-generation capability — it is not a precedent and does not alter the floor for anything else. STANDING LEAD FOR near-illustrator: if better imagery surfaces (the shop's own Instagram/Facebook, a photo-inbox submission, a second freely-licensed Commons upload, or an available generation pass), add two in-body images and bring this piece up to the floor. Do not assume the call was already made and settled — it was waived under constraint, not decided on the merits. Sign-offs completed this pass: near-tov-police found and fixed two fluff clauses under the new Job 1 item 2b ban ('which is less a marketing hook than a habit...' replaced with the concrete 6 a.m. Monday restock fact from the shop's own listing; a closing 'the destination it actually is the rest of the year' flourish cut to a plain second-stop pointer). language-tic-police pass run across all six locales. near-legal-counsel: hero licence CC0, verified on the file's own Commons page; the single negative (Dec 2025 Yelp reviewer on disorganized bins and slow counter service) is reframed as one person's dated account rather than a verdict, and is nowhere near defamation-grade; no real-person likeness issues; AI byline disclosed via CUBIC-V's author page. departamento-de-vai-dar-merda: rot check clean (no prices stated anywhere; hours attributed to the shop's own listing; shortTitle carries no date and survives the RSD date passing); section 8 internal-leak check run on all six locales, no rotation/tier/queue/pipeline language present; neurodiversity lens produced a real addition rather than a pass — the small dense room, the flip-don't-scan browsing reality, and the 8 a.m.-to-noon appointment-only window are now in the body of every locale, since 'you cannot just walk in before noon' is the kind of fact that decides a trip. google-discover-audit: hero is 3000x3174 (well over the 1200px width and 300k pixel minimums) though squarer than the ideal 16:9 — noted as a card-crop watch item, not a blocker; shortTitle is delivered by the body. Chief editor sign-off given, which per the standing rule counts as operator approval. All six locales written as genuine local editions."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.85,
+    "query": "420 40th St #5, Oakland, CA 94609 (Temescal)"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

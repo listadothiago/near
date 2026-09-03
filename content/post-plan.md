@@ -219,7 +219,7 @@ so one merged queue made the round-robin unservable._
 
 ### Oakland (Tier 1) — war-room slate 2026-08-31, verified
 - [x] Heinold's First & Last Chance — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
-- [ ] 1-2-3-4 Go! Records, Temescal — CUBIC-V as shopping byline (shop + working punk label; independently verified 2026-09-03 against 5+ sources — shop's own site, East Bay Express, Discogs, Yelp, Goldmine, VisitOakland — all corroborating; original RSD Apr 18 2026 date is now past, replaced with next actual RSD, Apr 17 2027; drafted and held at `status: draft` per image-floor gap — only one real CC0 photo found, no second image resolved this session — not a sourcing hold; ready to flip to active on chief-editor sign-off + image resolution)
+- [x] 1-2-3-4 Go! Records, Temescal — CUBIC-V (shipped 2026-09-03, all six locales; shop + working punk label, independently verified against 5+ sources — shop's own site, East Bay Express, Discogs, Yelp, Goldmine, VisitOakland. Queue's RSD date, Apr 18 2026, was already past; replaced with the next real one, **Apr 17 2027**. Ships with hero only — the ceil(words/250) in-body image floor was **explicitly waived by the operator**, recorded in `statusHistory`; open lead for near-illustrator to add two in-body images if better imagery surfaces.)
 - [ ] Lakeshore Lavender Lounge — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
 
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
