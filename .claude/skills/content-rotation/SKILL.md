@@ -46,8 +46,9 @@ cycle:           2 of 4
 order:           London → Brighton → San Francisco → Oakland → Bangkok
 served-cycle-2:  Brighton (Legends, 2026-09-02);
                  London — turn treated as SATISFIED, see note
-NEXT-UP:         San Francisco
-then:            Oakland → Bangkok → (cycle 3 opens at London)
+                 San Francisco (Dolphin Club, 2026-09-03)
+NEXT-UP:         Oakland
+then:            Bangkok → (cycle 3 opens at London)
 ```
 
 **Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**

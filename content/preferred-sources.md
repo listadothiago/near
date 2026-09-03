@@ -348,3 +348,19 @@ adding one at a time.
   as a known-blocked source rather than a candidate: budget a browser
   session for it, or use a first-party queue policy instead, which in
   that piece was the stronger citation anyway.
+- `dolphinclub.org` — official site of San Francisco's Dolphin Club
+  (founded 1877), the source of truth for its current day-use fee and
+  guest hours; caught a live price drift this session (queue note said
+  ~$10, official visit page says $12/$12.67). Found researching Dolphin
+  Club, Aquatic Park (2026-09-03). Good for any future SF outdoors/
+  wellness piece touching Aquatic Park.
+- `serc.com` — official site of the South End Rowing Club, Dolphin
+  Club's next-door neighbor at Aquatic Park; confirmed the alternating
+  public-access-day arrangement between the two clubs. Found in the same
+  research pass (2026-09-03). Also the likely subject of its own future
+  pin — same cove, same guest-day model, un-pinned as of this session.
+- `openwaterpedia.com` — wiki focused on open-water swimming clubs and
+  venues; useful secondary cross-check for Dolphin Club/South End
+  history but carries some stale figures (an old $6.50 guest fee still
+  posted there as of 2026-09-03) — cross-check its numbers against the
+  venue's own current page before trusting them.
