@@ -48,7 +48,7 @@ served-cycle-2:  Brighton (Legends, 2026-09-02);
                  London — turn treated as SATISFIED, see note
                  San Francisco (Dolphin Club, 2026-09-03)
                  Oakland (1234-go-records-temescal-oakland, 2026-09-03)
-NEXT-UP:         Bangkok — will hit the empty-queue rule, see note
+NEXT-UP:         Bangkok — queue SEEDED 2026-09-03, turn is live
 then:            (cycle 3 opens at London)
 ```
 
@@ -65,11 +65,12 @@ along with a standing lead for `near-illustrator` to bring it up to the
 floor if better imagery surfaces. The waiver was specific to that piece
 and does not change the floor for anything else.
 
-**Bangkok is now NEXT-UP and its queue is still empty/unseeded** (see the
-Bangkok caveat below) — so on current state its turn hits the empty-queue
-rule and gets skipped, consuming the turn and opening cycle 3 at London.
-Anyone drawing this turn should seed Bangkok's `post-plan.md` queue first
-if they want it to actually run; deliberately not seeded here.
+**Bangkok is NEXT-UP and its queue is now SEEDED (2026-09-03), so the
+empty-queue skip no longer applies.** A `near-sources-war-room` pass
+landed six research-verified candidates in `post-plan.md` and four
+Bangkok sources in `preferred-sources.md` (BK Magazine, The MATTER, The
+Momentum, art4d). Bangkok takes its cycle-2 turn for real rather than
+being skipped; cycle 3 opens at London only once it has shipped.
 
 **Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**
 strictly, the three London pieces shipped under the london-only override
@@ -95,10 +96,15 @@ city in `order` has been served. When cycle 4 closes, set `tier: 2` for
 exactly one cycle (including the rotating surprise-city slot, picked
 fresh by `near-seo`), then return to `tier: 1, cycle: 1 of 4`.
 
-**Bangkok caveat:** it is in `order` but has zero pins and an unseeded
-queue, so its first turn will hit the empty-queue rule and be skipped
-unless a single-city research pass seeds it first. That is a real,
-recurring cost of its Tier 1 promotion — seed it, or expect the skip.
+**Bangkok caveat — RESOLVED 2026-09-03.** It still has zero pins, but the
+unseeded queue that would have forced a skip was seeded by a
+`near-sources-war-room` pass, so its first turn runs normally. The
+underlying cost of the Tier 1 promotion stands and is now a *sustainability*
+question rather than a seeding one: exactly one watchable English-language
+Near-shaped feed exists (BK Magazine) and there is no AAN member in Bangkok
+or anywhere in Asia. Per the seeding pass, **reassess after three shipped
+pieces** — if Spectrum isn't confirmed live and a second English independent
+isn't found within two turns, the honest call is Tier 2. Operator decision.
 
 ## Overrides
 
