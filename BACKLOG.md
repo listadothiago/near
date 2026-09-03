@@ -3858,10 +3858,49 @@ broken invisibly: two metas carried `originalPublishedAt: null` (fails
    explicit fallback ladder rather than silently not running. See below.
 6. **The video vignette** — not shipped on-site. See below.
 
+### 🚨 URGENT — "Latest" sort ignores the time of day (operator-reported, 2026-09-03)
+
+Operator: *"i see the content live, it is just that it does not appear at
+the very top of latest as it should"* → *"that sort should consider time
+stamp, add that to backlog as urgent fix."*
+
+**Diagnosed, not yet fixed.** The sort itself is correct —
+`components/board/NearestLatestTabs.tsx:43` sorts descending on
+`publishedAt`. The bug is in the **data**: pieces are being written with a
+midnight placeholder rather than a real timestamp. Eight active pins
+currently share the exact value `2026-09-03T00:00:00Z`, including all four
+Sitges pins, both V&A pins and 1-2-3-4 Go! Records. `Array.prototype.sort`
+is stable, so an eight-way tie falls back to directory order — which is
+alphabetical, so `casino-prado-sitges` and `1234-go-records` win on the
+letter C and the digit 1, and the newest work lands mid-pack. Worse,
+`dolphin-club-san-francisco` carries `T00:30:00Z` and therefore
+outranks everything published later that same day.
+
+**The fix has two halves and both are needed:**
+1. **Data** — `publishedAt` must carry the real publish time, not
+   `T00:00:00Z`. This is a `near-write-article` publish-gate change: reject
+   a midnight timestamp the way the other mechanical gates reject an
+   over-length tagline. Backfill the existing midnight values from each
+   piece's git commit time, which is the true publish moment.
+2. **Code** — give the sort a deterministic tie-break anyway
+   (`publishedAt` desc, then `updatedAt` desc, then slug), so a future
+   data slip degrades predictably instead of alphabetically.
+
+Not attempted this session at the operator's instruction (*"i dont think
+you have tokens to fix now buddy"*). Everything needed to do it cold is
+above.
+
 ### Still queued after this
 
-- [ ] **Locale backfill for the four recovered drafts** (`dolphin-club`
-  needs 4 locales, `eisenherz`/`mobel-olfe`/`the-stud` need 5 each), plus
+- [ ] **`dolphin-club-aquatic-park-san-francisco` is a DUPLICATE — merge
+  and delete, do not backfill.** Correction to this session's own earlier
+  call: `dolphin-club-san-francisco` is already live with six locales
+  covering the same venue, so San Francisco's cycle-2 turn WAS served and
+  the rotation note has been reverted. Merge the better research from the
+  duplicate (the $12/$12.67 fee correction, the Jan 1 2027 Alcatraz swim
+  hook) into the live pin, then delete the folder.
+- [ ] **Locale backfill for the three genuinely-new recovered drafts**
+  (`eisenherz`/`mobel-olfe`/`the-stud` need 5 locales each), plus
   correcting the two placeholder `originalPublishedAt` dates. Then they
   can go active. This is real, verified, already-written English content
   — the cheapest publishable inventory Near currently has.
@@ -3869,3 +3908,25 @@ broken invisibly: two metas carried `originalPublishedAt: null` (fails
   actually live.** Two independent stale-tick incidents in one day is a
   pattern. A ten-line script that curls every ticked slug would settle it
   permanently, and should be run before any future queue is trusted.
+
+### The video vignette — decision: not shipped on-site
+
+`content/video-inbox/ADDITIONAL_CREATIVE_DIRECTION_.mp4`, 10.0s, 720p,
+24fps, **5.77 MB — roughly 4.6 Mbps, several times too heavy for the web.**
+
+Decisions taken:
+- **Left untracked, deliberately.** A 5.8 MB binary does not belong in
+  this repo's git history; every clone and every Vercel build would carry
+  it forever. If it is ever needed in-repo it goes in compressed, or
+  through git-lfs, or hosted and referenced by URL.
+- **Not placed on the site.** Nobody in this session has watched it —
+  putting an unreviewed video on the homepage is both a content call and
+  a Core Web Vitals call (a 5.8 MB autoplaying asset would wreck LCP on
+  mobile), and neither is safe to make blind.
+- **Routed to `near-socials`** as a distribution asset, which is what a
+  10-second promo vignette is actually for, and where the format is a
+  strength rather than a performance cost.
+- **If it is to go on-site**, it needs: re-encode to ~1 Mbps VP9/H.264
+  (target under 1.5 MB), a poster frame, `preload="none"`, lazy mount
+  below the fold, muted, and a reduced-motion opt-out. That is a Product
+  Trio item, not a content one.

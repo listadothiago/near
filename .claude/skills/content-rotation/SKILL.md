@@ -46,12 +46,22 @@ cycle:           2 of 4
 order:           London → Brighton → San Francisco → Oakland → Bangkok
 served-cycle-2:  Brighton (Legends, 2026-09-02);
                  London — turn treated as SATISFIED, see note
-                 San Francisco (Dolphin Club, 2026-09-03)
+                 San Francisco (dolphin-club-san-francisco, 2026-09-03)
                  Oakland (1234-go-records-temescal-oakland, 2026-09-03)
 NEXT-UP:         Bangkok — queue SEEDED 2026-09-03, turn is live
 then:            (cycle 3 opens at London)
 tier-2-served:   Barcelona & Region (Sitges batch, 2026-09-03) — see note
+
 ```
+<!-- CORRECTION, 2026-09-03: San Francisco's turn was briefly marked
+UNSERVED here on the belief that its Dolphin Club pin had never shipped.
+That was wrong and is reversed. `dolphin-club-san-francisco` IS live,
+six locales, WILD0. The stashed folder was `dolphin-club-aquatic-park-
+san-francisco` — a DUPLICATE of the same venue under a second slug,
+which is a dedupe-by-place violation, not a missing pin. SF's turn
+stands as served. The general lesson survives the specific error: verify
+a slug is live with a curl before ticking, and check for a near-miss
+slug before concluding a piece is missing. -->
 
 **Note on the Sitges push (2026-09-03) — BARCELONA'S TIER 2 TURN IS
 SPENT.** Four Sitges pins and a collection shipped that day off the

@@ -166,6 +166,35 @@ This is a floor, not a checklist to satisfy minimally.
    the subject is thinner than assumed, or the source catalogue has a
    hole in that city/beat, and the hole gets logged.
 
+**When legs 2 and 3 are blocked — the fallback ladder.** Decided
+2026-09-03, after the Sitges run found that `reddit.com` is refused
+outright to the search backend and Google/Tripadvisor reviews return 403.
+That made legs 2 and 3 **silently unrunnable on every article**, which
+had been quietly degrading the floor rather than tripping it. Never
+declare the floor met when they did not run. Work the ladder in order:
+
+1. **Retry through the search index** — a `site:reddit.com <venue>`
+   query often surfaces cached thread text even when the domain itself
+   refuses a fetch.
+2. **Escalate to `claude-in-chrome`.** The browser tools run in the
+   operator's real Chrome session and are not subject to the fetch
+   backend's refusals. This is the intended path for UGC checks and
+   should be reached for before giving up, not after. Load
+   `tabs_context_mcp` + `navigate` + `get_page_text` in one `ToolSearch`
+   call. Do not trigger dialogs; do not log in to anything.
+3. **Substitute an equivalent UGC source** where one exists for that
+   market — a local forum, a Google Maps listing read through the
+   browser, the venue's own social comments.
+4. **If all of that fails, say so, in three places** — the piece's
+   `statusHistory`, `content/preferred-sources.md`, and the run report.
+   Name which leg did not run and why. An unmet floor that is recorded
+   is recoverable; an unmet floor that is glossed is how a whole batch
+   ships unverified.
+
+**A blocked leg is never grounds to upgrade `trust`.** If the UGC checks
+could not run, the piece has *less* corroboration than a normal one, not
+the same amount.
+
 5. **Ask the operator, when the operator would know.** Operator
    directive, same day: *"if it makes sense, feel free to check me in
    this writing checklist too."* He is a real source and Near's only
