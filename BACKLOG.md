@@ -969,6 +969,43 @@ mid-turn and are captured here rather than acted on:
    banned. Also do not sell a format wider than the column's fixed
    300px, which is why `leaderboard` was rejected before.
 
+   **THIRD REPORT, 2026-09-03, with a screenshot — and it is now worse
+   than "too tall", it is visibly broken.** Operator: *"the ad box
+   remains broken."* The screenshot (board, São Vicente map, "63 located
+   places") shows the `board-map` slot rendering as a **box several
+   times its nominal 100px, almost entirely empty**, with the promo
+   title (*"THE ZOMBIE LISTICLE PROBL…"*) **clipped at the right edge**
+   and a lone "3 PLACES" kicker floating left. It does not read as an ad
+   unit; it reads as a layout failure.
+
+   **Diagnosis — strong hypothesis, still wants one browser
+   confirmation before the fix is written.** `mapPromo` in
+   `app/[locale]/page.tsx:77-82` passes `size="mobile-banner"` **with
+   `stretch`**. `stretch` swaps `SIZES` for `MIN_SIZES`
+   (`components/ads/Placement.tsx:39-44`), and `mobile-banner` there is
+   `w-full h-full min-h-[100px]` — **a floor with no ceiling, plus
+   `h-full`.** Inside the sticky map column the parent stretches it, so
+   the declared 320x100 is not what ships. That is why the
+   300x250 → 320x100 change did not fix the complaint: **the format
+   was never the binding constraint, `stretch` was.**
+   - The clipped headline is consistent with the same cause — the box
+     is sized by the parent rather than the format, so the horizontal
+     layout's type is being laid out against a width the `TYPE` scale
+     for `mobile-banner` (`title: text-[1.05rem] line-clamp-2`) was not
+     picked for.
+   - **Likely fix, cheapest first: drop `stretch` on this one slot** so
+     it renders at its true `SIZES` value, and only then judge whether
+     100px is still too tall. Adding a `max-h` is the fallback if the
+     column layout genuinely needs a filling element.
+   - **Worth checking while in there:** whether `stretch` is inflating
+     the `board-inline` `mrec` slot at `:61-66` the same way.
+   - **This is inventory integrity, not just cosmetics** — a slot sold
+     as 320x100 that renders at 300px+ misrepresents the inventory to
+     whoever eventually buys it, which is the same principle that got
+     `leaderboard` rejected for this column.
+   → `near-tech-lead` + `near-lead-ux`. Small fix, three reports deep,
+   and it is on the home board where every visitor sees it.
+
 2. ~~**LONDON ONLY, FOR NOW.**~~ **LIFTED BY THE OPERATOR 2026-09-03.**
    Recorded 2026-09-02 from the operator verbatim: *"our focus for now
    is london london london"* and *"lets push as much london content
