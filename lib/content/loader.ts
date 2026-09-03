@@ -125,8 +125,27 @@ export function getAllPlaces(
       if (!p) return false;
       if (p.meta.status === "draft") return false;
       if (p.meta.status === "archived" && !includeArchived) return false;
-      if (p.meta.eventEndsAt && new Date(p.meta.eventEndsAt) < new Date()) {
-        return false;
+      // Expiry applies to hosted EVENTS only — a record that points at a
+      // parent venue. This guard exists because the filter used to key on
+      // eventEndsAt alone, which silently delists any venue that borrowed
+      // the event dates to record something time-bound about itself.
+      // va-east-museum-stratford-london did exactly that with an
+      // exhibition run (18 Apr 2026 - 10 Jan 2027) and would have vanished
+      // from the whole site on 2027-01-10 — a live venue, no error, no
+      // trace. Dropping a finished event is correct; dropping the museum
+      // hosting it is not, so the two cases are now distinguished.
+      const expired =
+        !!p.meta.eventEndsAt && new Date(p.meta.eventEndsAt) < new Date();
+      if (expired && p.meta.parentPlace) return false;
+      if (expired && process.env.NODE_ENV !== "production") {
+        // Ambiguous by construction: time-bound but belonging to nothing.
+        // Warn rather than guess — silently keeping it is the safer of the
+        // two behaviours, but it should not pass unnoticed.
+        console.warn(
+          `[near] ${p.meta.slug} has a past eventEndsAt but no parentPlace, ` +
+            `so it is NOT being expired. If it is an event, give it a ` +
+            `parentPlace; if it is a venue, clear its event dates.`,
+        );
       }
       // An event hosted at a venue Near already lists isn't its own board
       // row or map pin — it would duplicate the venue's card and stack a
