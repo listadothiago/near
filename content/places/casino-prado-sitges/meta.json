@@ -1,0 +1,71 @@
+{
+  "slug": "casino-prado-sitges",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 41.2381,
+    "lng": 1.8106
+  },
+  "place": {
+    "city": "Sitges",
+    "neighborhood": "Centre",
+    "region": "Catalonia",
+    "country": "Spain"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Casino Prado Suburense — Història (official site)",
+      "url": "https://www.casinoprado.cat/historia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Casino Prado Suburense — Viquipèdia",
+      "url": "https://ca.wikipedia.org/wiki/Casino_Prado_Suburense",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Cineclub Sitges — Cinema Prado",
+      "url": "https://cineclubsitges.com/cinema-prado-cinema-prop-barcelona/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Sitges Film Festival — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sitges_Film_Festival",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Casino_Prado_%28Sitges%29_-_1.jpg",
+    "attribution": "MARIA ROSA FERRE, CC BY-SA 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Casino_Prado_(Sitges)_-_1.jpg",
+    "licenseNote": "CC BY-SA 2.0 — attribution required, share-alike. The Carrer de Francesc Gumà façade, photographed 28 March 2013. 3696x2448, clears the Discover card floor on width and pixel count; 3:2 rather than 16:9, so the card crop loses a little top and bottom. Verified on the file's Commons page before use."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "First Spain/Catalonia pin on Near, from the operator's 2026-09-03 Sitges directive (queer + cinema). Verified currently operating: OpenStreetMap carries it as an active `cinema` at Carrer de Sant Isidre (41.2381, 1.8106), its own site's history page resolves, and Cineclub Sitges describes current original-version/cineclub programming. Founding 1877, building begun 1869 and opened February 1870, architect Josep Maria Martino i Arroyo, stage 1890 reworked 1924, Ferrer Pino/Pere Jou façade work, the 1968 I Setmana Internacional de Cinema Fantàstic, the 1968-1982 and post-2014 cineclub runs, ~1,000 members, Trinitat Catasús 1988, town prize 1999, Creu de Sant Jordi 2017 and the Catalan Film Academy's Cinemes Centenaris listing (October 2020) all come from casinoprado.cat's own history page cross-checked against the Catalan Wikipedia article. CONFLICT LEFT VISIBLE RATHER THAN RESOLVED: the Catalan Wikipedia dates the first cinema session to 12 July 1907, the town's cultural guide gives 1911 for first projections; the body states both and says they are unreconciled rather than picking one. dedupe-by-place checked — nearest existing pin is 700km away, and the El Retiro society 170m downhill is a genuinely separate institution (and is NOT being published this run, see below). RESEARCH FLOOR NOT FULLY MET, recorded honestly: Reddit is inaccessible to this session's tooling (the search backend refuses reddit.com for this user agent) and Google/Tripadvisor reviews returned HTTP 403, so the UGC half of near-write-article's step 4-0 could not be run. The festival's own site sitgesfilmfestival.com also 403s WebFetch. Sourced from primary/official material instead and said so."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.9,
+    "query": "Casino Prado, Carrer de Sant Isidre / Carrer de Francesc Gumà 6-14, 08870 Sitges"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

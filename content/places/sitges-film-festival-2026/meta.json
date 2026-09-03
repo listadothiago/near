@@ -1,0 +1,78 @@
+{
+  "slug": "sitges-film-festival-2026",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 41.2368,
+    "lng": 1.8239
+  },
+  "place": {
+    "city": "Sitges",
+    "neighborhood": "Aiguadolç",
+    "region": "Catalonia",
+    "country": "Spain"
+  },
+  "trust": "auto",
+  "author": "radar-x",
+  "sources": [
+    {
+      "name": "Sitges Film Festival — 'The Cutting Edge of Fantastic Genre Cinema Lands at Sitges 2026' (official announcement)",
+      "url": "https://sitgesfilmfestival.com/en/noticies/cutting-edge-fantastic-genre-cinema-lands-sitges-26",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Sitges Tourism (sitgesanytime.com) — 59th International Fantastic Film Festival of Catalonia",
+      "url": "https://www.sitgesanytime.com/en/calendar/pln330/sitges-international-fantastic-film-festival-of-catalonia",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Festivals of Spain — Sitges Film Festival 2026 (8-18 October, 59th ed.)",
+      "url": "https://www.festivalesdeespana.com/en/festival/sitges-film-festival-sitges",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Sitges Film Festival — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sitges_Film_Festival",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Societat Recreativa El Retiro — Remodelació (official site)",
+      "url": "https://elretirositges.cat/remodelacio/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Guillermo_del_Toro%2C_Festival_de_Sitges_2017.jpg",
+    "attribution": "GuillemMedina, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Guillermo_del_Toro,_Festival_de_Sitges_2017.jpg",
+    "licenseNote": "CC BY-SA 4.0 — attribution required, share-alike. HONEST DISCLOSURE: Guillermo del Toro at the 2017 Sitges festival. It is the festival, at Sitges, but it is 2017 and del Toro is NOT announced for the 2026 edition — the caption and body make no such implication, and the body names only what the 2026 announcement actually names. 6016x4016, comfortably clears the Discover card floor; 3:2 rather than 16:9."
+  },
+  "eventStartsAt": "2026-10-08T00:00:00Z",
+  "eventEndsAt": "2026-10-18T23:59:59Z",
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "Third pin from the operator's 2026-09-03 Sitges directive — the dated hook the whole push was selected on. DATES VERIFIED FROM THREE INDEPENDENT SOURCES before writing: the town's official tourism site (sitgesanytime.com), Festivals of Spain, and the festival's own 2026 announcement page — all give 8-18 October 2026, 59th edition. ACCESS CAVEAT, stated rather than hidden: sitgesfilmfestival.com returns HTTP 403 to this session's fetcher on every path tried, so the official announcement's text (the Carrie 50th-anniversary tribute, the classics retrospective, the Asian genre strand, the Spanish cinema tribute, and the second Josefina Molina Award at EUR 10,000) was read through the search index's rendering of that page rather than by fetching it directly. Anyone re-verifying should use a browser rather than WebFetch. No lineup, no guest and no ticket price is asserted, because none could be verified this session — the del Toro hero is 2017 and its licenseNote says so explicitly so the card cannot imply a 2026 booking. event-belongs-to-venue CONSIDERED AND DELIBERATELY NOT APPLIED: the festival is town-wide across the Auditori at the Melia, Casino Prado, El Retiro and the seafront King Kong Area, not a happening at one venue Near covers, so setting parentPlace to casino-prado-sitges would be factually wrong and would also pull the run's main dated hook off the board and the map. Published standalone; the missing Auditori/Melia venue pin is logged to content/requests.md. eventEndsAt is set to 2026-10-18T23:59:59Z so event-expiry drops it from the board the moment the festival is over. REAL NEGATIVE CARRIED, not smoothed: El Retiro has been on festival venue lists for decades but its own site records renovation starting 4 May 2024 with no published reopening date, so the body tells readers not to build a schedule around it. RESEARCH FLOOR NOT FULLY MET: reddit.com is refused to this session's search backend, so the UGC leg of step 4-0 could not be run."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.85,
+    "query": "Auditori, Melia Sitges, Carrer de la Bufera, Aiguadolc, 08870 Sitges (festival base; the festival itself is town-wide)"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}
