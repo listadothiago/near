@@ -53,7 +53,9 @@ session.
    - **`near-trendsetter`** — what is live in the alt-press right now,
      what has a closing window, what is already over. Owns "is this
      still current?"
-   - **`near-seo`** — search demand, the query/market gap this fills,
+   - **`near-seo`** — search demand (including the saved trend feeds in
+     `content/trends-feeds.md`, checked every run per the 2026-09-03
+     operator directive), the query/market gap this fills,
      cannibalisation risk. Co-owns content calls with near-trendsetter
      per the standing rule that those two make content decisions.
    - **The Product Trio — `near-lead-product`, `near-tech-lead`,

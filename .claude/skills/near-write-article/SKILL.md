@@ -36,6 +36,12 @@ no column editor, and no other piece produced through this pipeline,
 scopes an issue solo. Confirm the specific terms/keywords the piece
 should actually target, not just the general topic.
 
+**Both roles read `content/trends-feeds.md` at this step** — the saved
+Google Trends feeds the operator directed every content skill to check
+on every run (2026-09-03). They inform the terms this piece targets;
+they don't dictate the topic, because Near's angle and filter still
+govern what is worth covering at all.
+
 `near-seo` brings its own mandatory `backlink-pr` consultation into this
 step (see `near-seo/SKILL.md`) — off-page outreach targets get scoped
 alongside the on-page topic, not as an afterthought once the piece is

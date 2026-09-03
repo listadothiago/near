@@ -28,6 +28,16 @@ this piece is aimed at?**
    alt-weeklies (the AAN member directory,
    aan.org/member-directory, is RADAR-X's own primary source list and
    equally this role's), not generic travel-content aggregators.
+1-B. **Read the search-trend feeds — every run, no exceptions.**
+   `content/trends-feeds.md` holds the saved Google Trends feeds the
+   operator directed this role and `near-seo` to check *"always, at
+   every run"* (2026-09-03). They are the second half of "what's
+   current": the alt-press says what a scene is doing, the trend feeds
+   say what people are searching for this week. Honour Near's angle and
+   filter when reading them — a trending query is a candidate to test
+   against the beat, never a mandate to cover it. Report which feeds you
+   actually managed to fetch, and say so plainly if one was blocked
+   rather than inventing entries.
 2. **Surface real patterns, not invented trends.** A recurring theme
    across multiple independent sources, a dead-listing pattern (per the
    zombie-listicle-problem precedent), a genuine scene shift — grounded

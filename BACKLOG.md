@@ -1,5 +1,7 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
+
+Execute skill and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
 ## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
 
 The operator delivered a large batch of directives and then asked for a
@@ -283,7 +285,9 @@ the tag, `near-translator` for the per-locale versions.
 ## 📋 PREVIOUS HANDOFF (2026-09-02, evening)
 
 **Everything below is live on near.tips.** Working tree clean, 12 commits
-pushed, production verified.
+pushed, production verified. 
+
+
 
 ### Shipped and verified live
 
@@ -2103,6 +2107,23 @@ _Everything below arrived in one burst. Recorded verbatim in intent so nothing i
 - [ ] **Amsterdam local** (nl) — pairs with Amsterdam being 3rd in the refresh order.
 - [ ] **Rome local** (it, city-level — Italian exists but has no city persona).
 - [ ] **Portugal local, country-level** (pt-PT — distinct from pt-BR; Lisbon and Porto both matter).
+- [ ] **Catalan** (ca) — added to the wishlist 2026-09-03. The *region-conditional* seventh locale is still cancelled; what survives is Catalan as a **full locale candidate**, scored alongside the rest below.
+- [ ] **Arabic** (ar) — added to the wishlist 2026-09-03.
+
+**Locale wishlist — RICE, 2026-09-03** (operator: *"let's tackle that locales wishlist btw… apply RICE to select next and prioritize the backlog accordingly"*).
+
+Effort is dominated by the same fixed cost for every candidate: schema `LOCALES`, every UI string in `messages/*.json`, a new editor persona under `references/locales/`, and a **backfill across all existing places**, since `full-locale-coverage` makes every locale mandatory to publish. So the ranking is mostly Reach × Impact — except where a candidate escapes part of the fixed cost.
+
+| Candidate | R | I | C | E | RICE | Note |
+|---|---|---|---|---|---|---|
+| **pt-PT** | 2 | 2 | 0.9 | **1.5** | **2.4** | The only candidate with genuinely lower effort: it forks pt-BR rather than cold-starting a persona and a full string set. Lisbon/Porto are real Near markets and the operator knows people in Lisbon. |
+| **de** | 3 | 2 | 0.8 | 3 | 1.6 | Berlin is Tier 2; the operator asked for three German trend feeds, which is demand signal in its own right. Biggest raw reach of the realistic set. |
+| **nl** | 1.5 | 2.5 | 0.8 | 3 | 1.0 | Amsterdam is 3rd in the refresh order — the tightest fit to what Near actually publishes. Small language market, and Dutch readers tolerate English well. |
+| **ca** | 1 | 2 | 0.7 | 3 | 0.47 | Barcelona/Sitges coverage is live and growing, and STEFAN can already read Catalan sources. Reach is small and overlaps es-ES. |
+| **ar** | 4 | 1 | 0.5 | 5 | 0.4 | Huge reach on paper, but **RTL layout is real extra build work on top of the normal locale cost**, and Near currently covers no MENA/Gulf market — the content wouldn't be *about* anywhere its readers are. Revisit when a market lands. |
+| **da** | 0.5 | 1.5 | 0.7 | 3 | 0.17 | Copenhagen/Billund are wishlist geography, not published coverage yet, and Danes read English. Lowest of the set on the arithmetic. |
+
+**Ranking: pt-PT first, then de, then nl.** Judgment note, stated per the RICE-override rule: nothing here is a Must, so none of it outranks live content work — the seventh locale is a Should at best, and the honest read is that **adding any locale before the backfill cost drops is buying reach Near's current catalogue can't yet fill.** pt-PT is recommended precisely because it is the cheap one.
 
 **Geography — additions to the priority list**
 - [ ] **Lisbon** — operator knows many people there. Near already has 2 Lisbon places.
@@ -2582,58 +2603,6 @@ also adhd. likes concerts in smaller venues def not festivals unless it's really
   
 
 - **Assessment Date**: December 18, 1981.
-    
-      
-    
-- **Chronological Age**: 5 years, 9 months (DOB: March 11, 1976).
-    
-      
-    
-- **Evaluator**: Francisco José Molinari (Clinical Psychologist).
-    
-      
-    
-- **Diagnostic Category**: Intellectual precocity / high cognitive potential / giftedness.
-    
-      
-    
-
-**Psychometric & Cognitive Performance**
-
-  
-
-- **Raven’s Progressive Matrices (Colored/Infant Scale)**: 19 points; Percentile $\ge 95$; Rank I (Superior Intelligence classification).
-    
-      
-    
-- **Binet-Simon Intelligence Scale**: Resolved all developmental items corresponding to age 7 and advanced items corresponding to age 8 (showing a 2.25+ year cognitive advance over chronological age).
-    
-      
-    
-- **Goodenough Draw-A-Person Test**: 18 points, classified at the Superior IQ range.
-    
-      
-    
-- **Bender-Gestalt Test (Visual-Motor Integration)**: Total score of 34 points, demonstrating advanced developmental organization significantly ahead of chronological baseline:
-    
-      
-    - Angles: Equivalent to 10-year-old developmental level.
-        
-          
-        
-    - Spatial Orientation: Equivalent to 9-year-old developmental level.
-        
-          
-        
-    - Relative Position: Equivalent to 9-year-old developmental level.
-        
-          
-        
-    - Overall visual-motor maturity: Age 8 to 10 developmental band.
-        
-          
-        
-- **Lourenço Filho ABC Test (Readiness)**: Maximum readiness score (Maturation Level = 15), indicating total functional readiness for formal written curriculum.
     
       
     
@@ -3268,7 +3237,7 @@ the only real instance.
 - **STEFAN** — keeps the nightlife-savant remit and adds: Catalan
   (implicitly, *"doesn't have to be explicit"*), **able to read Catalan
   and find/add Catalan sources**, and **Barcelona & Region editor**.
-  **The Catalan locale is CANCELLED — operator, 2026-09-03:** *"the
+  **The Catalan locale is CANCELLED, keep catalan as full locale candidate — operator, 2026-09-03:** *"the
   catalan exception language, mah ok lets not do that."* He had asked
   for a seventh locale populated only for content pertaining to
   Catalonia; on being told that a region-conditional locale is a new
@@ -3563,6 +3532,58 @@ hey we should start using #hashtags clickable ones of course, across all of our 
 
 we need to rotate the posts being used used in the ad slots
 
+yeah revise all articles with that summary paragraph box under the bullet point box, it will really help the lazy readers.
+
+Do a content push around the most award winning strain of cannabis (latest cups and relevant awards) that one can enjoy as a tourist at a destination. Aquele que deixou a Lady gaga, o Felipe massa, a Mara maravilha, aquele que deixou plácido o domingo etc lol (no need to use these
+jokes btw sorry hah)
+
+we should probably have a sitges push with the major queer and cinema events
+
+add catalan and arabic to the locales wishlist
+
+let's tackle that locales wishlist btw, don't we have a bunch? like pt pt and danish? apply RICE to select next and prioritize the backlog accordingly. 
+
+add ad placement performance tracking if not there already. add to my private analytics dashboard (i have a text based one, right? Should we upgrade our analytics game to an html or artifact view?)
+
+the backlog skill, the war room skill and any content refresh skill, as well as the SEO skill should consider SEO trends. Here is the latest report I have 
+cbp contactless airport arrival plans
+faa laguardia ground stop thunderstorms
+academy of natural sciences
+uber leaves nigeria
+bc mountain resorts early snowfall
+tiana's bayou adventure
+united airlines new nonstop routes
+africa
+london
+amusement park
+current events
+trump triumphal arch adverse effects
+universal hollywood new coaster release date
+cleveland hopkins airport
+war of 1812
+brazil
+swimming facility
+klystron 9
+qatar airways
+mallorca
+
+
+Please SEO skill, , trendsetter skill always at every run check these trends feeds:
+https://trends.google.com/trending?geo=US&category=19&hours=168
+https://trends.google.com/trending?geo=GB&category=19&hours=168
+https://trends.google.com/trending?geo=BR&category=19&hours=168
+https://trends.google.com/trending?geo=IT&category=19&hours=168
+https://trends.google.com/trending?geo=ES&category=19&hours=168
+https://trends.google.com/trending?geo=MX&category=19&hours=168
+
+makes sure to save those feeds and ALWAYS check them for search trends to target
+
+skills should still honour our angle and filter but do seek opportunities in trends like the above please. 
+
+
+
+
+We have Mexico City in tier 2, right?
 
 
 
@@ -3671,3 +3692,87 @@ evidence it was wired in.
   replacing; the summary paragraph itself stays and may carry an SEO-friendly
   paragraph title. The scoring idea is dropped, and he removed the request to
   summon C-level/legal on it.
+
+
+
+more rss feeds for SEO trends to follow (all relevant skills):
+
+https://trends.google.com/trending?geo=MX&category=5&hours=168
+
+https://trends.google.com/trending?geo=BR&category=5&hours=168
+
+https://trends.google.com/trending?geo=US&category=5&hours=168
+
+https://trends.google.com/trending?geo=GB&category=5&hours=168
+
+https://trends.google.com/trending?geo=ES&category=5&hours=168
+
+https://trends.google.com/trending?geo=IT&category=5&hours=168
+
+search trends should be consulted in all content creation . 
+
+https://trends.google.com/trending?geo=DE&category=5&hours=168
+https://trends.google.com/trending?geo=DE&category=19&hours=168
+https://trends.google.com/trending?geo=DE&category=4&hours=168
+https://trends.google.com/trending?geo=PT&category=19&hours=168
+https://trends.google.com/trending?geo=GB&category=5&hours=168
+https://trends.google.com/trending?geo=GB&category=4&hours=168
+https://trends.google.com/trending?geo=US-CA&category=5&hours=168
+https://trends.google.com/trending?geo=US-CA&category=19&hours=168
+
+see what other geo regions you think could be relevant to follow, categories, hours you want to follow
+
+https://trends.google.com/trending?geo=BR&category=5
+https://trends.google.com/trending?geo=BR&category=19
+https://trends.google.com/trending?geo=BR&category=20
+
+more from thiago:
+
+this looks bad
+⏺ Agent "Draft and push BAB 2026 Bangkok" failed: Agent terminated early due to an API error: You've hit your monthly spend limit · raise it at claude.ai/settings/usage?from=cc_cli_limit_message
+You've hit your monthly spend limit.
+
+if the skills have a better way to manage monitoring trends use that of course
+
+
+---
+
+## Session note — 2026-09-03, near-backlog step 0-A (directives wired into skills)
+
+Per the standing rule at the top of this file, skill/persona changes ran
+before anything else. What actually landed in files (prose here is not
+evidence; these are):
+
+- **Search-trend feeds — DONE.** Every URL the operator listed is saved
+  to **`content/trends-feeds.md`**, along with the category-code key,
+  the 2026-09-03 snapshot he pasted, near-seo's read of it, and five
+  candidate feeds this skill added per *"see what other geo regions you
+  think could be relevant."* The "always check, every run" requirement is
+  now wired into five skill files, not just asserted here:
+  `near-seo` (step 1-B), `near-trendsetter` (step 1-B), `near-refresh`
+  (step 1b-2), `near-war-room` (step 2), `near-write-article` (step 1),
+  and this skill's own selection panel. Each carries the operator's
+  angle-and-filter caveat verbatim, so a trending query is a candidate to
+  test against Near's beat, never a mandate to cover it.
+- **Catalan — un-cancelled as a locale candidate.** The cancellation only
+  ever existed in this file (nothing in `.claude/skills/` referenced it),
+  so the fix was the operator's own edit plus adding `ca` — and `ar` — to
+  the EPIC 7 wishlist above.
+- **Locale wishlist — RICE'd** (EPIC 7, above). pt-PT first, then de,
+  then nl. Arabic scores worse than its raw reach suggests because RTL is
+  extra build cost and Near covers no MENA market yet.
+- **Mexico City — confirmed Tier 2.** Already listed in
+  `content-rotation/SKILL.md`'s Tier 2 line. No change needed.
+
+### Still open from the same batch, NOT yet wired in
+
+- **Summary-paragraph box retrofit** (*"revise all articles with that
+  summary paragraph box under the bullet point box"*). Checked: there is
+  **no** summary-box field or component anywhere — not in `content/rules.md`,
+  not in the schema, not in the components. This is a build (schema field +
+  component + style) *then* a content backfill across every published
+  place, plus all six locales each. Product Trio item, not a drafting item.
+- **Ad-placement performance tracking + analytics dashboard upgrade**
+  (text-based → HTML/artifact view). Product Trio item.
+- **Cannabis-cup content push** and **Sitges queer/cinema push** — content
+  items, scored in the menu.

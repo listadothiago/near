@@ -26,6 +26,16 @@ Consulted by `near-war-room` at the start of a content push, or by
    persona applies to its own market — see "SEO and query patterns" in
    each `references/locales/<locale>.md`, and `near-deep-researcher` is
    the right tool to pull this together across markets in one pass).
+1-B. **Read `content/trends-feeds.md` and fetch the feeds — every run,
+   no exceptions.** Operator directive, 2026-09-03: *"search trends
+   should be consulted in all content creation."* Those saved Google
+   Trends pages are the closest thing Near has to real demand data, and
+   they partly answer the "no Keyword Planner" problem noted below.
+   Honour Near's angle and filter when reading them — *"skills should
+   still honour our angle and filter but do seek opportunities in trends
+   like the above"* — so a trending query becomes a candidate only where
+   it touches a Near market, a Near beat, or a dated event. Report which
+   feeds fetched and which were blocked; never invent trend entries.
 2. **Gap analysis.** Check what Near already covers
    (`getAllPlaceSlugs()`/existing collections) against what's actually
    being searched for — a popular query pattern with no matching Near

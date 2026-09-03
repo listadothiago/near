@@ -95,6 +95,13 @@ prose + fenced YAML/lists, read the prose too.
    list** — the unfulfilled promise to link is the entire reason the
    entry existed, and closing the request without doing that leaves the
    original piece exactly as link-less as before.
+1b-2. **Check the search-trend feeds — every run.**
+   `content/trends-feeds.md` holds the saved Google Trends pages the
+   operator directed every content skill to consult (2026-09-03).
+   Fetch them, pull only the entries that touch a Near market, beat, or
+   dated event — Near's angle and filter still govern — and carry those
+   into the run's picks alongside RADAR-X's alt-press read. Say plainly
+   which feeds were blocked rather than inventing entries.
 1c. **Check `content/opportunities.md`.** The ranked queue `near-seo`
    maintains — coverage gaps, empty categories, bylines with no work,
    locale backfill. Together with `requests.md` this is demand Near has

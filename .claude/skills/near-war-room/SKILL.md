@@ -105,8 +105,13 @@ every time:
    Brazil-focused push should prioritize `pt-BR` quality even if every
    locale eventually gets covered).
 2. **Research.** `near-deep-researcher` + `near-seo` Mode 1 establish
-   the real, current, specific material to work from — named venues,
-   teams, events, dates, sources. Refuse to proceed to drafting on a
+   the real, current, specific material to work from. This includes the
+   **search-trend feeds in `content/trends-feeds.md`, which are checked
+   on every push** (operator directive, 2026-09-03) — read them through
+   Near's angle and filter, as a source of candidate angles for the
+   chosen topic rather than a topic list in their own right. What comes
+   out of this step is named venues, teams, events, dates, sources —
+   nothing vaguer. Refuse to proceed to drafting on a
    topic that research can't actually substantiate; a war room that
    can't find enough real material should report that back rather than
    pad the output with vague content.
