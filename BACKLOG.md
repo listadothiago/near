@@ -210,6 +210,29 @@ rice and moscow and judgement." Implemented as step 0 of the
 
 ### UI / product findings from the operator's screenshots
 
+- **The "you are here" map marker is too subtle to find (2026-09-03,
+  operator-reported — NOT started).** → `near-lead-ux` +
+  `near-tech-lead`. **Cause located, so this is a small fix, not an
+  investigation:** `components/map/WorldMap.tsx:48-55` (`userIcon`),
+  rendered at `:273-279`.
+  - It is **not actually neon**, despite how it reads on screen. It is a
+    **12px dot filled with `--color-accent` (`#5c7a6c`, a muted sage
+    green)** plus a 30%-opacity halo ring. Sage green over green-grey
+    map tiles is close to camouflage, and 12px is small on a dense board.
+  - It is also **completely static** — no pulse, no animation. Every
+    mapping product the user has muscle memory for (Google, Apple,
+    Citymapper) animates this dot, and animation is what the eye
+    actually finds. That is probably the highest-value half of the fix.
+  - Options, cheapest first: bump the size; swap off `--color-accent` to
+    a colour that is *deliberately* not in the map palette, so it reads
+    as UI chrome rather than as content; add a white/paper outer ring for
+    contrast on any tile (the standard trick, and it works on both light
+    and dark tiles); add a slow pulse.
+  - **Constraint:** it must stay legible in **both light and dark
+    themes**, and it must not read as a *place pin* — the whole point is
+    that it is the reader, not a tip. Distinguishing it from
+    `PlaceMarker` matters as much as making it brighter.
+  - `prefers-reduced-motion` must disable any pulse.
 - **Huge white space on desktop** on column/collection pages beside the
   body column — usable for post cards or a small ad unit.
   → `near-lead-ux` + `near-tech-lead`. Second screenshot flags the same
