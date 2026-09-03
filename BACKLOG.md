@@ -1,7 +1,7 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
 
-Execute skill and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
+Execute skill and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute all quick wins first. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
 ## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
 
 The operator delivered a large batch of directives and then asked for a
@@ -3943,17 +3943,50 @@ is the order the operator expected.
   differ by a whole locality segment. A slug-similarity check would not have
   caught it; matching on venue **name + coordinates** would have (the two
   metas sit ~380m apart on the same cove).
-- [ ] **Locale backfill for the ~~three~~ TWO genuinely-new recovered
-  drafts** (`eisenherz`/`mobel-olfe` need 5 locales each). Then they can
-  go active. This is real, verified, already-written English content —
-  the cheapest publishable inventory Near currently has.
+- [x] ~~**Locale backfill for the ~~three~~ TWO genuinely-new recovered
+  drafts** (`eisenherz`/`mobel-olfe` need 5 locales each).~~ **DONE
+  2026-09-03**, commit `29c24a9`. Ten locale editions written (pt-BR,
+  es-ES, es-419, it, zh-CN × 2 pins), both metas flipped `draft` →
+  `active`, build clean, pushed to `main`, **all 12 URLs verified 200 on
+  near.tips with genuinely localized `meta description`** — not an
+  English fallback, which is what the first check caught before the
+  deploy had landed and is worth repeating on any future locale push.
 
-  **`the-stud-soma-san-francisco` is OFF this list — it was a duplicate,
+  Written as local editions per each locale persona rather than
+  translations: es-ES flags Spain's later going-out clock against
+  Berlin's real 18:00 open, es-419 and zh-CN add the cash-vs-card and
+  findability details those readers need and the English draft had no
+  reason to carry, it adds the weekly-rhythm read that persona asks for.
+  Two gate failures caught by the build and fixed honestly rather than
+  waived: three Spanish/Italian taglines over 90 chars and one Italian
+  `shortTitle` at 49 of 48.
+
+  Also fixed in passing: the Möbel Olfe English source named SO36's
+  Gayhane nights without linking them. Now a `NearLink` to
+  `so36-berlin`, in all six locales.
+
+  **`the-stud-soma-san-francisco` was OFF this list — a duplicate,
   deleted 2026-09-03.** `the-stud-san-francisco` was already live with all
-  six locales, same venue, coordinates ~90m apart. That removes 5 of the
-  15 translation passes this item was scoped at, and with it the
-  `originalPublishedAt` placeholder correction, which was only ever needed
-  for the duplicate.
+  six locales, same venue, coordinates ~90m apart. That removed 5 of the
+  15 translation passes this item was originally scoped at, and with it
+  the `originalPublishedAt` placeholder correction, which was only ever
+  needed for the duplicate.
+
+  **Why this was picked as the session's next action (RICE × MoSCoW,
+  2026-09-03).** Reach: two Berlin pins × six locales = twelve new
+  indexable URLs, on a city Near already covers. Impact: high — these
+  were finished, verified, source-checked pieces sitting at zero traffic
+  for a purely mechanical reason. Confidence: near-total, since the
+  English was already written and gate-passing. Effort: the lowest of
+  anything open — no research, no venue verification, no new sourcing.
+  MoSCoW put it at **Must** on the dependency rule rather than on score:
+  `full-locale-coverage` was the single thing blocking already-paid-for
+  inventory from being live, and this work had already nearly been lost
+  twice. The two items it was ranked against both lose on effort or
+  confidence — the Stud fact-import is a research task (unverified
+  claims, Should), and the summary-box retrofit is a schema + component
+  build plus a backfill across every published place in six locales
+  (Product Trio, not a quick win).
 
 - [ ] **Import two facts the deleted Stud duplicate had and the live pin
   doesn't** — the 2026 Instagram suspension, and a clarification that the
