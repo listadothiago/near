@@ -60,15 +60,22 @@ skipped in cycle 1 legitimately — its queue was empty and unseeded at
 the time. That is no longer true: it was seeded 2026-09-02 and has four
 verified candidates left plus a collection.
 
-Next stop: **London**, which still owes cycle 2 its turn — and whose
-queue is effectively BLOCKED, both remaining items included: Sister
-Midnight needs an 'opening' status value in the schema, and Hampstead
-Heath's source is bot-blocked. Unblocking one of those is a prerequisite,
-not a drafting task. Tier 2 gets its single turn after cycle 4 closes.
+**Next stop: see `NEXT-UP` in
+`.claude/skills/content-rotation/SKILL.md` — that block is now the
+source of truth for whose turn it is, and this narrative is secondary to
+it (operator directive, 2026-09-03: the rotation skill tracks what is
+next).** As of 2026-09-03 it reads **San Francisco**, London's cycle-2
+turn having been marked satisfied by the three override pieces.
 
-Whoever ships a post updates this block in the same commit — the cycle
-count is not derivable from the checkboxes alone, so it has to be
-written down.
+London is no longer queue-blocked, for whenever its next turn comes:
+Sister Midnight (needs an `'opening'` status value in the schema) and
+Hampstead Heath (bot-blocked source) are both still blocked, but E.
+Pellicci, La Camionera, The Divine, Hausu and TOAD are open and
+verified. Tier 2 gets its single turn after cycle 4 closes.
+
+Whoever ships a post updates **both** this block and `NEXT-UP` in the
+same commit — the cycle count is not derivable from the checkboxes
+alone, so it has to be written down.
 
 ## Queues
 
@@ -225,16 +232,37 @@ near-refresh reads this file; the rotation position is wherever the last
 shipped post sits in the order above._
 
 
-## OPERATOR OVERRIDE, 2026-09-02: LONDON ONLY
+## ~~OPERATOR OVERRIDE, 2026-09-02: LONDON ONLY~~ — **LIFTED 2026-09-03**
 
-The rotation cadence is SUSPENDED. Operator: "our focus for now is
-london london london ... lets push as much london content live as we
-can asap." London is not taking its turn in the round-robin, it is
-taking every turn until the operator says otherwise. **Do not advance
-the cycle counter in the Rotation position block for pieces published
-under this override** — they are not London's turn, they are an
-override, and advancing the counter would silently cost Brighton, San
-Francisco and Oakland their places.
+**The operator lifted this on 2026-09-03. Normal Tier 1 / Tier 2
+rotation is back in force.** Whose turn it is now lives in the
+`NEXT-UP` block of `.claude/skills/content-rotation/SKILL.md`, which is
+the source of truth — read it before drafting for any city. As of the
+lift: **NEXT-UP is San Francisco**, with London's cycle-2 turn marked
+satisfied by the three pieces shipped under the override (a judgment
+call, recorded and reversible in that file).
+
+Kept below, struck through, because the record of what was suspended
+and why is what makes the next override legible.
+
+> ~~The rotation cadence is SUSPENDED. Operator: "our focus for now is
+> london london london ... lets push as much london content live as we
+> can asap." London is not taking its turn in the round-robin, it is
+> taking every turn until the operator says otherwise. **Do not advance
+> the cycle counter in the Rotation position block for pieces published
+> under this override** — they are not London's turn, they are an
+> override, and advancing the counter would silently cost Brighton, San
+> Francisco and Oakland their places.~~
+
+Shipped under the override before it was lifted: the Gilbert & George
+Centre, the V&A East Museum, and the V&A East Storehouse. None of them
+advanced the cycle counter, which is why the pointer sat still while
+three London posts went live — the failure mode the `content-rotation`
+NEXT-UP block now exists to prevent.
+
+**The reader-profile and format directives below survive the lift** —
+they were about how to write, not about which city, and the format rule
+in particular is a standing improvement.
 
 Reader profile for this run, which should change what gets picked: two
 hip locals (one straight woman, one gay and nerdier), plus a visiting

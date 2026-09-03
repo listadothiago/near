@@ -11,8 +11,64 @@ session.
 
 ## The loop
 
-1. **Score candidates with RICE**, adapted to what's actually being
-   compared:
+0. **Convene the selection panel — never pick the next item alone.**
+   Operator directive, 2026-09-03. Choosing what to act on next is a
+   collaborative call, not this skill's solo judgment. Before scoring
+   anything, load and genuinely consult each of these, and carry each
+   one's actual position into the decision:
+
+   - **`near-trendsetter`** — what is live in the alt-press right now,
+     what has a closing window, what is already over. Owns "is this
+     still current?"
+   - **`near-seo`** — search demand, the query/market gap this fills,
+     cannibalisation risk. Co-owns content calls with near-trendsetter
+     per the standing rule that those two make content decisions.
+   - **The Product Trio — `near-lead-product`, `near-tech-lead`,
+     `near-lead-ux`** — owns everything that is not a content call:
+     infra, schema, build, and any user-facing consequence. A blocked
+     content item (Sister Midnight's `'opening'` status enum, a
+     bot-blocked source) is *their* item, not a drafting item, and they
+     say whether unblocking it is cheap or not.
+   - **`near-cmo`** — distribution, audience growth, and whether the
+     piece has anywhere to go once published.
+   - **Chief editor** (`near-write-article` step 7's sign-off role) —
+     editorial coherence: does this belong on Near at all, does it fit
+     what was just published, is the byline right.
+
+   **`near-ceo` breaks ties.** If two functions disagree and neither
+   owns the call, that is exactly what that role is for — invoke it
+   rather than splitting the difference silently.
+
+   Consulting the panel does not mean five separate agent dispatches
+   for a routine pick. Load the skill files and reason in each voice
+   in-session; dispatch a real agent only when a function needs actual
+   research to have a position (near-seo needing live search data,
+   near-trendsetter needing a fresh alt-press read).
+
+   **Record the panel's positions in the menu you present** — the
+   operator should see that near-seo wanted X and the chief editor
+   wanted Y, not just the winner. A unanimous panel is a fine and
+   common outcome; note that too.
+
+1. **Score candidates with RICE *and* MoSCoW, then apply judgment** —
+   the two together, because neither alone is enough and the operator
+   asked for both:
+
+   - **RICE** gives the ranking within a class of comparable items (see
+     the adaptations below).
+   - **MoSCoW** gives the *class*: Must / Should / Could / Won't-this-
+     time. A Must outranks any Could regardless of RICE score — a
+     rules.md violation on live content, a factual error on a published
+     page, or an explicit operator ask is a Must even when its RICE
+     score is unremarkable. Sort by MoSCoW band first, RICE within the
+     band.
+   - **Judgment overrides both, and must be stated out loud when it
+     does.** The arithmetic is an input, not the decision. If the panel
+     picks something the score does not favour, write down why in the
+     menu — an unexplained override of a score is how the london-only
+     situation persisted for four cycles.
+
+   RICE, adapted to what's actually being compared:
    - **Content pieces** (place/collection candidates): Reach = search/
      audience demand, Impact = how much it moves a real priority
      (seasonal window, operator's home region, an explicit operator
@@ -107,6 +163,12 @@ session.
 7. **Keep the durable files current as you go**, same commit as the
    content change where possible, separate commit when the content is
    scoping-only:
+   - **Advance the rotation pointer.** `NEXT-UP` in
+     `.claude/skills/content-rotation/SKILL.md` is the source of truth
+     for whose turn it is — read it before proposing any city's piece,
+     and rewrite it in the same commit as a shipped post. A city drawn
+     out of turn needs a stated reason in the menu, and an operator
+     override does not advance it at all.
    - Tick off drained `post-plan.md` queue items.
    - Log any newly-used source not already in `content/sources.md` to
      `content/preferred-sources.md`'s candidates section.

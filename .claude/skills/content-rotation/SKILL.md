@@ -25,11 +25,85 @@ Tier 1 cities get 4 full rotation cycles before Tier 2 gets a turn. One cycle = 
 
 The "4 Tier 1 cycles before Tier 2" rule needs a counter, and it is not
 derivable from `post-plan.md`'s checkboxes (they record what shipped,
-not which cycle it belonged to). The count lives in a **Rotation
-position** block at the top of `post-plan.md`'s queues, updated in the
-same commit as any shipped post. A city skipped under the empty-queue
+not which cycle it belonged to). A city skipped under the empty-queue
 rule still consumes its turn in the cycle; a city skipped in error is
 owed its turn before that cycle closes.
+
+## NEXT UP — this skill's own state, kept current
+
+Operator directive, 2026-09-03: **the rotation skill tracks what is
+next.** Reconstructing the position by reading checkboxes and prose has
+failed repeatedly (stale ticks, an override that swallowed four cycles).
+The pointer lives here, in this block, and is rewritten in the same
+commit as any shipped post. `post-plan.md`'s **Rotation position** block
+stays as the human-readable narrative, but **this block wins** if the
+two ever disagree.
+
+<!-- ROTATION-STATE: keep machine-legible, one fact per line -->
+```
+tier:            1
+cycle:           2 of 4
+order:           London → Brighton → San Francisco → Oakland → Bangkok
+served-cycle-2:  Brighton (Legends, 2026-09-02);
+                 London — turn treated as SATISFIED, see note
+NEXT-UP:         San Francisco
+then:            Oakland → Bangkok → (cycle 3 opens at London)
+```
+
+**Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**
+strictly, the three London pieces shipped under the london-only override
+do NOT advance the counter, so London still owed cycle 2 its turn. But it
+received three posts in two days while Brighton, SF and Oakland received
+none — holding a fourth for it would invert the point of the rule. Its
+turn is therefore marked satisfied and the pointer moves to San
+Francisco. If the operator disagrees, set `NEXT-UP: London` and this is
+undone. London's queue is **no longer fully blocked** — Sister Midnight
+and Hampstead Heath still are, but E. Pellicci, La Camionera, The Divine,
+Hausu and TOAD are all open and verified, so it is drawable next cycle.
+
+**Reading the pointer:** `NEXT-UP` is the city whose turn it is, full
+stop. Before drafting for it, check its queue in `post-plan.md`: if the
+queue is empty or every remaining item is blocked, the city is **skipped
+and consumes its turn** — advance `NEXT-UP` to the next city and record
+the skip and its reason on the `served-cycle-N` line. Never pad a turn
+with an unverified post.
+
+**Writing the pointer:** whoever ships a post edits this block — move
+`NEXT-UP` on, append to `served-cycle-N`, and roll `cycle` when the last
+city in `order` has been served. When cycle 4 closes, set `tier: 2` for
+exactly one cycle (including the rotating surprise-city slot, picked
+fresh by `near-seo`), then return to `tier: 1, cycle: 1 of 4`.
+
+**Bangkok caveat:** it is in `order` but has zero pins and an unseeded
+queue, so its first turn will hit the empty-queue rule and be skipped
+unless a single-city research pass seeds it first. That is a real,
+recurring cost of its Tier 1 promotion — seed it, or expect the skip.
+
+## Overrides
+
+An operator may suspend the cadence for a city or theme ("London only",
+say). When that happens:
+
+- Record the override **with its date, and quote the operator verbatim**,
+  so its provenance is never in doubt later.
+- Pieces shipped under an override do **not** advance `NEXT-UP`, `cycle`,
+  or `served-cycle-N` — they are not the city's turn.
+- **An override is temporary by default and expires when the operator's
+  stated reason does.** State the expiry condition when recording it. If
+  the reason has passed and nobody has lifted it, say so and ask rather
+  than letting it run indefinitely — the London-only override (recorded
+  2026-09-02, lifted 2026-09-03) ran past its own justification because
+  nothing was watching for that.
+- **Lifted overrides get struck through, not deleted** — the record of
+  what was suspended and why is what makes the next one legible.
+
+_Override log:_
+- ~~**LONDON ONLY**, recorded 2026-09-02 (commit `f1b0fdd`), operator
+  verbatim: *"our focus for now is london london london ... lets push as
+  much london content live as we can asap."* Shipped under it: Gilbert &
+  George Centre, V&A East Museum, V&A East Storehouse.~~ **LIFTED by the
+  operator 2026-09-03** — normal Tier 1/Tier 2 rotation resumes at
+  `NEXT-UP` above.
 
 ## Sync obligation
 

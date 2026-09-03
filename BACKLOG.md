@@ -138,6 +138,30 @@ unexplained one is the vibes the rule exists to prevent.
   (unverified → `near-deep-researcher`; more relevant now that Bangkok is
   Tier 1).
 
+### Prioritization is a panel call, not a solo one (2026-09-03, operator directive — BUILT into `near-backlog`)
+
+The operator: `near-backlog` "should always use trendsetter SEO product
+trio CMO and chief editor to pick next priority collaboratively using
+rice and moscow and judgement." Implemented as step 0 of the
+`near-backlog` loop.
+
+- **Panel:** `near-trendsetter` (what's current, closing windows),
+  `near-seo` (demand, gaps, cannibalisation), the Product Trio
+  (`near-lead-product` / `near-tech-lead` / `near-lead-ux` — owns every
+  non-content call, including whether a blocked content item is cheap to
+  unblock), `near-cmo` (distribution), and the chief editor (editorial
+  coherence, byline fit). **`near-ceo` breaks ties.**
+- **Method: RICE *and* MoSCoW, then judgment.** MoSCoW sets the band
+  (a Must outranks any Could regardless of score — rules.md violations
+  on live content, factual errors on published pages, explicit operator
+  asks); RICE ranks within the band; judgment can override both **but
+  has to say so out loud in the menu.**
+- **The menu shows the panel's positions, not just the winner** — where
+  near-seo and the chief editor disagreed, and how it resolved.
+- Consulting the panel is in-session reasoning across the loaded skill
+  files, not five agent dispatches per pick. Dispatch only when a
+  function needs real research to have a position.
+
 ### Content commissions
 
 - **Alt-luxury nautical guide to Angra dos Reis** and sensibly navigable
@@ -922,12 +946,21 @@ mid-turn and are captured here rather than acted on:
    banned. Also do not sell a format wider than the column's fixed
    300px, which is why `leaderboard` was rejected before.
 
-2. **LONDON ONLY, FOR NOW.** Operator: *"our focus for now is london
-   london london"* and *"lets push as much london content live as we
-   can asap."* This SUSPENDS the `content-rotation` tier cadence for
-   the duration — London is not taking its turn, it is taking every
-   turn. The cycle counter in `content/post-plan.md` should NOT be
-   advanced for these pieces; note them as an operator override.
+2. ~~**LONDON ONLY, FOR NOW.**~~ **LIFTED BY THE OPERATOR 2026-09-03.**
+   Recorded 2026-09-02 from the operator verbatim: *"our focus for now
+   is london london london"* and *"lets push as much london content
+   live as we can asap."* It suspended the `content-rotation` tier
+   cadence; three pieces shipped under it (Gilbert & George Centre, V&A
+   East Museum, V&A East Storehouse), none of which advanced the
+   counter.
+   **Normal Tier 1 / Tier 2 rotation is back in force.** Whose turn it
+   is now lives in the `NEXT-UP` block of
+   `.claude/skills/content-rotation/SKILL.md` — the operator's directive
+   the same day was that the rotation skill tracks this itself rather
+   than being reconstructed from checkboxes and prose. Two further
+   changes landed with the lift: overrides now carry a stated expiry
+   condition and get struck through rather than deleted when lifted,
+   and `near-backlog` no longer picks the next item alone (see below).
 
 3. **WRITE FOR A LOCAL, NOT JUST A VISITOR — AND FIND DATED DAYTIME
    EVENTS.** Two readers in play: a straight, very hip local woman and
