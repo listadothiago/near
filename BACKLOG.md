@@ -208,6 +208,21 @@ rice and moscow and judgement." Implemented as step 0 of the
   - Runs under the LONDON-ONLY override; per that block, publishing it
     does **not** advance the rotation cycle counter.
 
+### Schema DX: `eventEndsAt` is a build-breaking trap for evergreen pins (2026-09-03, found while shipping the Storehouse — NOT fixed)
+
+→ `near-tech-lead`. In `lib/content/schema.ts`, `eventEndsAt` is
+`nullable()` but **not** `optional()`, so every new pin — including
+evergreen places with no event at all — must carry an explicit
+`"eventEndsAt": null` or the build fails at `loader.ts:22`. It cost the
+Storehouse run a full build cycle, and it will cost every future pin one
+until someone changes it.
+
+Fix is `.nullish()` (or `.optional()` alongside the existing
+`.nullable()`), plus a check of whether anything downstream distinguishes
+"absent" from "explicitly null" — if nothing does, this is a one-line
+change. Small, but it taxes every single content run, so it pays for
+itself immediately.
+
 ### UI / product findings from the operator's screenshots
 
 - **The "you are here" map marker is too subtle to find (2026-09-03,
