@@ -1,11 +1,20 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { useLocale } from "next-intl";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { MapContainer, TileLayer, Marker, Tooltip, ZoomControl, useMap } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Tooltip,
+  ZoomControl,
+  useMap,
+  useMapEvents,
+} from "react-leaflet";
+import Supercluster from "supercluster";
 import { CATEGORY_COLOR_VAR, type Category } from "@/lib/content/categories";
 import { haversineKm } from "@/lib/geo/haversine";
 
@@ -45,6 +54,28 @@ function dotIcon(color: string) {
   });
 }
 
+function clusterIcon(count: number) {
+  // A square, not a circle: the global no-radius rule is the house visual
+  // language, and it's also why leaflet.markercluster's CSS was never an
+  // option (see content/design-events-map-views-2026-09-03.md §5.1). Size
+  // grows with the count so a 40-pin cluster reads as bigger than a 2-pin
+  // one without having to read the number.
+  const size = count < 10 ? 30 : count < 50 ? 36 : 42;
+  const html = `
+    <div style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;
+      background:var(--color-accent);color:var(--color-black,#000);
+      border:3px solid var(--color-ink);box-shadow:0 2px 3px rgba(0,0,0,.35);
+      font-family:var(--font-mono,monospace);font-weight:700;font-size:${count > 99 ? 11 : 13}px;
+      line-height:1;">${count}</div>`;
+  return L.divIcon({
+    className: "",
+    html,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
+    tooltipAnchor: [0, -size / 2],
+  });
+}
+
 function userIcon(color: string) {
   return L.divIcon({
     className: "",
@@ -55,6 +86,24 @@ function userIcon(color: string) {
 }
 
 const NEIGHBORHOOD_ZOOM = 14;
+
+/**
+ * Every programmatic view change on this map must be unanimated.
+ *
+ * Leaflet's animated zoom path is a silent no-op in this container —
+ * confirmed in the browser, not inferred: `setZoom(6)` and
+ * `fitBounds(londonToParis)` both left the map at zoom 2 centred on
+ * [20, 0], while the identical calls with `animate: false` landed on
+ * zoom 6 at the right centre. Wheel zoom, which takes a different code
+ * path, was working the whole time, which is what made this so easy to
+ * miss.
+ *
+ * That is also why the board's map has always opened on the whole world
+ * rather than framed on its pins: MapView's fit below has been quietly
+ * failing since it was written. The pins were correct, so nothing looked
+ * broken enough to chase.
+ */
+const VIEW_OPTS = { animate: false } as const;
 
 // Anything within 15% of the nearest pin's distance counts as "the
 // nearest pin(s)" — a cluster of tips on the same block should all be in
@@ -111,12 +160,12 @@ function MapView({
       lastAppliedLocationKey.current = locationKey;
       if (locationKey !== null) {
         if (points.length === 0) {
-          map.setView([20, 0], 2);
+          map.setView([20, 0], 2, VIEW_OPTS);
         } else if (points.length === 1) {
-          map.setView([points[0].lat, points[0].lng], 12);
+          map.setView([points[0].lat, points[0].lng], 12, VIEW_OPTS);
         } else {
           const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
-          map.fitBounds(bounds, { padding: [36, 36] });
+          map.fitBounds(bounds, { padding: [36, 36], ...VIEW_OPTS });
         }
         return;
       }
@@ -130,13 +179,13 @@ function MapView({
         // is useless when it cuts the closest tip out of frame.
         const nearest = nearestPointsTo(userCoords, points);
         if (nearest.length === 0) {
-          map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM);
+          map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM, VIEW_OPTS);
         } else {
           const bounds = L.latLngBounds([
             [userCoords.lat, userCoords.lng],
             ...nearest.map((p) => [p.lat, p.lng] as [number, number]),
           ]);
-          map.fitBounds(bounds, { padding: [40, 40], maxZoom: NEIGHBORHOOD_ZOOM });
+          map.fitBounds(bounds, { padding: [40, 40], maxZoom: NEIGHBORHOOD_ZOOM, ...VIEW_OPTS });
         }
         lastAppliedFocusSignal.current = focusUserSignal;
       }
@@ -145,15 +194,15 @@ function MapView({
       return;
     }
     if (points.length === 0) {
-      map.setView([20, 0], 2);
+      map.setView([20, 0], 2, VIEW_OPTS);
       return;
     }
     if (points.length === 1) {
-      map.setView([points[0].lat, points[0].lng], 12);
+      map.setView([points[0].lat, points[0].lng], 12, VIEW_OPTS);
       return;
     }
     const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
-    map.fitBounds(bounds, { padding: [36, 36] });
+    map.fitBounds(bounds, { padding: [36, 36], ...VIEW_OPTS });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [points.map((p) => p.slug).join(","), userCoords, focusUserSignal, locationKey, map]);
   return null;
@@ -232,6 +281,188 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
   );
 }
 
+const TILE_MAX_ZOOM = 19;
+/**
+ * Past this, supercluster stops aggregating and every point stands alone.
+ * One below the tile ceiling on purpose: there has to be a zoom level at
+ * which a stubborn cluster is guaranteed to have broken apart, otherwise
+ * "click to zoom in" can be a promise the map cannot keep.
+ */
+const CLUSTER_MAX_ZOOM = 17;
+
+type ClusterProps = { point: MapPoint };
+
+/**
+ * Aggregates pins with `supercluster` rather than leaflet.markercluster.
+ *
+ * The full reasoning is in
+ * `content/design-events-map-views-2026-09-03.md` §5.1, but the short
+ * version: react-leaflet is at v5 and the usual React wrapper for the
+ * Leaflet plugin targets v4, so the plugin route means reaching around
+ * React into imperative layer management — exactly what MapView's
+ * single-effect discipline exists to prevent. supercluster is a pure
+ * index instead: give it points, ask it what's visible, get plain data
+ * back as React state.
+ *
+ * On not violating MapView's "one effect owns every view change": the
+ * cluster click below calls setView imperatively from a user gesture,
+ * and changes none of MapView's dependencies (the slug list, userCoords,
+ * focusUserSignal, locationKey are all untouched by a zoom). So it can't
+ * race that effect — there is still exactly one *declarative* owner of
+ * the view.
+ */
+function ClusterLayer({
+  points,
+  placeHref,
+}: {
+  points: MapPoint[];
+  placeHref: (slug: string) => string;
+}) {
+  const map = useMap();
+  const [view, setView] = useState<{ bbox: [number, number, number, number]; zoom: number } | null>(
+    null,
+  );
+
+  const readView = useCallback(() => {
+    const b = map.getBounds();
+    // Clamped because a world-wrapped view at low zoom reports longitudes
+    // outside ±180, which supercluster reads as an empty range and answers
+    // with no clusters at all — an empty map at the exact zoom level where
+    // the reader most needs to see everything.
+    setView({
+      bbox: [
+        Math.max(-180, b.getWest()),
+        Math.max(-90, b.getSouth()),
+        Math.min(180, b.getEast()),
+        Math.min(90, b.getNorth()),
+      ],
+      zoom: Math.round(map.getZoom()),
+    });
+  }, [map]);
+
+  useMapEvents({ moveend: readView, zoomend: readView });
+  // MapView fits the bounds on mount, which fires moveend — but only when
+  // that fit actually moves the map. Seed the view directly so a map that
+  // happens to open already framed still renders its pins.
+  useEffect(readView, [readView]);
+
+  const index = useMemo(() => {
+    const sc = new Supercluster<ClusterProps>({
+      radius: 60,
+      maxZoom: CLUSTER_MAX_ZOOM,
+    });
+    sc.load(
+      points.map((point) => ({
+        type: "Feature" as const,
+        properties: { point },
+        geometry: { type: "Point" as const, coordinates: [point.lng, point.lat] },
+      })),
+    );
+    return sc;
+  }, [points]);
+
+  const clusters = useMemo(() => {
+    if (!view) return [];
+    return index.getClusters(view.bbox, view.zoom);
+  }, [index, view]);
+
+  return (
+    <>
+      {clusters.map((c) => {
+        const [lng, lat] = c.geometry.coordinates;
+        // supercluster returns a union of leaf and cluster features; the
+        // `cluster` flag is only present on the latter, so `in` is the
+        // narrowing that TypeScript accepts here.
+        if (!("cluster" in c.properties)) {
+          const { point } = c.properties;
+          return <PlaceMarker key={point.slug} point={point} placeHref={placeHref} />;
+        }
+        const clusterId = c.properties.cluster_id;
+        return (
+          <ClusterMarker
+            key={`cluster-${clusterId}`}
+            lat={lat}
+            lng={lng}
+            count={c.properties.point_count}
+            leaves={index.getLeaves(clusterId, 6).map((l) => l.properties.point)}
+            placeHref={placeHref}
+            onClick={() => {
+              // Fit the cluster's members, rather than
+              // `getClusterExpansionZoom`. That function answers a
+              // narrower question than it looks like it does — the zoom at
+              // which this cluster first splits, which is often exactly one
+              // level up. Verified in the browser: clicking the 32-pin
+              // Europe cluster at zoom 1 returned 2, so the click zoomed one
+              // step and still showed a 32-pin cluster. Fitting the bounds
+              // does what clicking a cluster visibly promises: it shows you
+              // what is inside.
+              const members = index.getLeaves(clusterId, Infinity);
+              const bounds = L.latLngBounds(
+                members.map((m) => [
+                  m.geometry.coordinates[1],
+                  m.geometry.coordinates[0],
+                ] as [number, number]),
+              );
+              // maxZoom matters for the degenerate case: venues at the same
+              // address give bounds of zero size, which fitBounds answers by
+              // slamming to the tile ceiling — a street-level view of a
+              // cluster that still hasn't separated. Stop short, and let the
+              // hover list be the way in.
+              map.fitBounds(bounds, { padding: [36, 36], maxZoom: TILE_MAX_ZOOM - 3, ...VIEW_OPTS });
+            }}
+          />
+        );
+      })}
+    </>
+  );
+}
+
+function ClusterMarker({
+  lat,
+  lng,
+  count,
+  leaves,
+  placeHref,
+  onClick,
+}: {
+  lat: number;
+  lng: number;
+  count: number;
+  /** First few members, for the hover list. */
+  leaves: MapPoint[];
+  placeHref: (slug: string) => string;
+  onClick: () => void;
+}) {
+  const icon = useMemo(() => clusterIcon(count), [count]);
+  return (
+    <Marker position={[lat, lng]} icon={icon} eventHandlers={{ click: onClick }}>
+      {/* The stacked-list fallback. Zooming breaks most clusters apart, but
+          two venues at the same address never separate however far you zoom
+          — without this, those pins would be unreachable from the map. The
+          list is also just faster than zooming when you only want to know
+          what's in there. */}
+      <Tooltip direction="top" opacity={1} className="near-map-tooltip">
+        <div className="w-[min(13rem,calc(100vw-3rem))] max-w-[13rem] bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] p-2">
+          {leaves.map((p) => (
+            <a
+              key={p.slug}
+              href={placeHref(p.slug)}
+              className="block font-display font-bold uppercase tracking-[-0.5px] text-[0.78rem] leading-[1.15] mb-1 last:mb-0 hover:bg-accent hover:text-black"
+            >
+              {p.name}
+            </a>
+          ))}
+          {count > leaves.length && (
+            <div className="mt-1 font-mono text-[0.62rem] text-muted uppercase">
+              +{count - leaves.length}
+            </div>
+          )}
+        </div>
+      </Tooltip>
+    </Marker>
+  );
+}
+
 export default function WorldMap({
   points,
   userCoords,
@@ -273,9 +504,7 @@ export default function WorldMap({
         />
         <ZoomControl position="topright" />
         <MapView points={points} userCoords={userCoords} focusUserSignal={focusUserSignal} locationKey={locationKey} />
-        {points.map((pt) => (
-          <PlaceMarker key={pt.slug} point={pt} placeHref={placeHref} />
-        ))}
+        <ClusterLayer points={points} placeHref={placeHref} />
         {userCoords && (
           <Marker
             position={[userCoords.lat, userCoords.lng]}

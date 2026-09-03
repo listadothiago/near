@@ -920,3 +920,44 @@ Phase 3/4, since they touch the same surfaces: **five of six locales have
 no RSS feed at all** (`/pt-BR/feed.xml`, `/es-419/feed.xml`,
 `/zh-CN/feed.xml` all 404 — `app/feed.xml/` has no `[locale]` segment),
 and there is **no RSS autodiscovery `<link>` in the head**.
+
+---
+
+## Addendum 2 — Phase 2 (clustering) shipped, and the bug it exposed
+
+Phase 2 landed as specified in §5.1: `supercluster`, not
+`leaflet.markercluster`. `ClusterLayer` in `components/map/WorldMap.tsx`
+holds the index, re-reads the viewport on `moveend`/`zoomend`, and renders
+whatever `getClusters(bbox, zoom)` returns — clusters as square `divIcon`s
+sized by count, singles as the existing teardrop `PlaceMarker`.
+
+Two things this plan got wrong, both found by clicking the thing rather
+than by reading it:
+
+**1. `getClusterExpansionZoom` is the wrong function for click-to-zoom.**
+It returns the zoom at which a cluster *first* splits, which is frequently
+one level up. Clicking the 32-pin Europe cluster at zoom 1 returned 2 — one
+step, still a 32-pin cluster. Fixed by fitting the cluster's actual member
+bounds (`getLeaves`), capped at `TILE_MAX_ZOOM - 3` so coincident venues
+don't slam to street level. Drill-down now runs 27 → 23 → 21 → 8 → 2 across
+zooms 5, 8, 10, 12, 16 and resolves into individual pins.
+
+**2. Animated Leaflet view changes have never worked on this map — a
+pre-existing bug this plan did not know about.** `setZoom(6)` and an
+animated `fitBounds` are both silent no-ops in this container; the same
+calls with `animate: false` land correctly. Wheel zoom takes a different
+code path and always worked, which is why nothing looked broken.
+
+The consequence is bigger than clustering: **`MapView`'s fit-to-points has
+been failing silently since it was written**, which is why the board's map
+always opened on the whole world instead of framed on its pins. Every
+programmatic view call now goes through a documented `VIEW_OPTS =
+{ animate: false }`.
+
+Anyone building `/map` (P3) should assume this constraint holds there too —
+it is a property of how Leaflet animates inside this layout, not of the
+340px board column.
+
+The stacked-list fallback is doing real work already, not just guarding a
+hypothetical: Bar Italia and Hazlitt's sit metres apart in Soho and stay
+clustered at the zoom cap. Hovering the cluster lists both as links.

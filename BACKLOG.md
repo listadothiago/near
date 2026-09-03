@@ -3561,6 +3561,8 @@ we should have a special article full of need related pins for cool stops coveri
 
 hey we should start using #hashtags clickable ones of course, across all of our articles. Make this a rule of content writing from now on and also let's build out the hashtag system (should also lead to an srp with nearest/latest/faves) and we should also edit past articles with hashtags when we can. use hashtags as an element in the article UI but also mid-text, like old timey blogs and twitter users 
 
+we need to rotate the posts being used used in the ad slots
+
 
 
 
@@ -3634,6 +3636,20 @@ evidence it was wired in.
   events view sorted nearest+soonest within the user's filters, and
   **front-end filtering of expired events** (explicitly *not* refresh-dependent).
   → Product Trio + `near-lead-ux`, as the operator requested.
+  Scoped in `content/design-events-map-views-2026-09-03.md`. Shipped so far,
+  2026-09-03: ✅ responsive tooltip (text + image leak fixed), ✅ front-end
+  expiry, ✅ shareable filtered views via URL state + share button,
+  ✅ **pin clustering with click-to-zoom** (supercluster; drill-down verified
+  in-browser down to individual pins, with a hover list for venues that stay
+  coincident at the zoom cap). Still open: **the full-map page**, **the events
+  view**, and the **viewport dimension of map↔card sync** — filtering already
+  syncs both, but panning/zooming the map does not narrow the cards and
+  hovering a card does not highlight its pin.
+  Landmine for whoever picks this up: **animated Leaflet view changes are
+  silent no-ops in this app** — every programmatic `setView`/`fitBounds` must
+  pass `animate: false` (see `VIEW_OPTS` in `components/map/WorldMap.tsx`).
+  This had been silently breaking the map's fit-to-points since it was
+  written; assume it applies to `/map` too.
 - **Sitemap/indexing concern.** Search Console: 630 pages submitted and
   processed, but *"não foi possível indexar nenhuma página nos últimos 90
   dias"*. Operator asked "normal?" — **it is not obviously normal and nobody
