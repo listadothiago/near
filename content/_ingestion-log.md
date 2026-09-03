@@ -915,3 +915,88 @@ and further strike dates can be called at any time; the three free displays
 own page still badging the venue "Art Fund Museum of the Year 2026
 Shortlisted" when The Box, Plymouth won it in July — the piece says "finalist"
 and names the winner instead.
+
+---
+
+## 2026-09-03 — Sitges war room (operator override): 4 places + 1 collection, all six locales
+
+Operator directive, verbatim: *"we should probably have a sitges push with the
+major queer and cinema events."* Ran through `near-war-room` into
+`near-write-article`. **Operator override, not a rotation turn — the
+`content-rotation` `NEXT-UP` pointer was deliberately NOT advanced.** First
+Spain/Catalonia coverage on Near; the catalogue had zero Iberian-Spanish pins
+before this.
+
+**Shipped, `status: active`, `trust: auto`, six locales each:**
+
+- `casino-prado-sitges` — PLINIO. The 1877 members' society whose own members
+  put on the 1968 fantastic-cinema week that became the Sitges festival, and
+  which still runs the cinema.
+- `sitges-film-festival-2026` — RADAR-X. 59th edition, 8–18 October 2026.
+  `eventStartsAt`/`eventEndsAt` set so `event-expiry` drops it off the board on
+  its own the day after it closes.
+- `parrots-pub-sitges` — STEFAN. The Plaça de la Indústria terrace.
+- `monument-contra-homofobia-sitges` — CUBIC-V. The 2006 pink triangle on the
+  Passeig Marítim.
+- `sitges-fantastic-and-queer` (collection) — STEFAN. Ties the four together
+  and asserts no facts the member pages don't already source.
+
+**Rules fired.** `verify-still-open-before-create` — passed on all four
+(OpenStreetMap carries both cinemas as active `cinema` nodes and a node
+literally named PARROTS at Joan Tarrida 16; the monument's coordinates come
+from its geotagged Commons category), and **failed on a fifth candidate**, see
+below. `dedupe-by-place` — no existing pin within 700km; the Prado and El
+Retiro sit 170m apart, above the 150m threshold, and are separate institutions
+anyway. `event-belongs-to-venue` — considered and deliberately not applied to
+the festival (town-wide, and hanging it off the Prado would be false and would
+pull the run's dated hook off the board); missing Auditori/Meliá venue logged
+to `requests.md`. `link-density`, `full-locale-coverage`,
+`quality-gate-before-publish` — all checked mechanically, zero outstanding
+issues; every locale carries ≥3 bullets, a sub-header per 250 words, at least
+`ceil(words/250)` images, no paragraph over 100 words, a real in-text external
+link and a real `NearLink`.
+
+**Did not check out — Societat Recreativa El Retiro.** Scoped as the fifth
+pin. Its own site records renovation starting 4 May 2024 with no published
+reopening date, so it was not written. This is not a gap in the run, it is the
+run working: three of the four shipped pieces now tell readers to check El
+Retiro rather than assume it, which is information no other Sitges guide
+carries.
+
+**Claims deliberately NOT made.** Aggregated search summaries carry a much
+graver account of 5 October 1996 in Sitges, including a named killing, and the
+superlative "Spain's first LGBTQ+ monument". Neither was traceable to a source
+that could be fetched and verified, so neither ran. The monument piece reports
+what the Ajuntament's own catalogue and PinkNews's 2006 report each say, names
+the fact that they differ, and says outright that fuller accounts circulating
+in guidebooks are not sourced well enough to repeat.
+
+**Research floor NOT fully met, recorded rather than glossed.**
+`near-write-article` step 4-0 requires Reddit and Google reviews on every
+article. `reddit.com` is refused outright to this session's search backend and
+Tripadvisor/Google returned HTTP 403, so neither leg ran on any of the four
+pins. Nine-plus primary/official sources were consulted instead and every pin's
+`statusHistory` says so explicitly. `sitgesfilmfestival.com` also 403s
+WebFetch, so the official 2026 announcement was read via the search index —
+flagged in `preferred-sources.md` as an access quirk for whoever re-verifies.
+
+**Images.** All eleven images across the run are rights-clear Wikimedia
+Commons files, licence and dimensions verified per file via the Commons API
+before use. Two heroes carry honest "this is the street/area, not the venue"
+or "this is 2017, not 2026" disclosures in `licenseNote` — the del Toro festival
+hero in particular says explicitly that he is **not** announced for 2026, so
+the card cannot imply a booking.
+
+**Cleanup found but NOT actioned (needs an operator call, see report):**
+`content/places/schwules-museum-berlin/` holds five locale files with no
+`meta.json` and no `en.mdx` — invisible to the loader, not coverage.
+`stash@{0}` contains a reciprocal link into `eisenherz-buchladen-berlin`, a
+slug that does not exist on disk although `post-plan.md` marks it shipped;
+applying that stash would break the build, since `NearLink` throws on an
+unknown slug.
+
+Sources newly used and logged as candidates: `casinoprado.cat`,
+`elretirositges.cat`, `sitges.cat`, `sitgesanytime.com`, `gaysitgesguide.com`,
+`parrots-sitges.com`, `thegaypassport.com`, `misterbandb.com`,
+`tapasitges.com`, `thepinknews.com`, `cineclubsitges.com`.
+

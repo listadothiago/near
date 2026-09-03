@@ -1,0 +1,78 @@
+{
+  "slug": "parrots-pub-sitges",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "see-and-be-seen"
+  ],
+  "coordinates": {
+    "lat": 41.2357,
+    "lng": 1.8072
+  },
+  "place": {
+    "city": "Sitges",
+    "neighborhood": "Centre",
+    "region": "Catalonia",
+    "country": "Spain"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Parrots Group Sitges (official site)",
+      "url": "https://www.parrots-sitges.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Gay Sitges Guide — Parrots Pub",
+      "url": "https://www.gaysitgesguide.com/bar/parrots-pub/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "The Gay Passport — Parrots Pub & Terrace",
+      "url": "https://thegaypassport.com/venue/parrots-pub-terrace/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "misterb&b — Sitges gay bars and clubs",
+      "url": "https://www.misterbandb.com/gay-guide/spain/sitges/50-bars-clubs",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Tapa Sitges — Sitges Carnival 2027 dates",
+      "url": "https://tapasitges.com/en/blog/sitges-carnival-2027",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sitges._Pla%C3%A7a_de_la_Ind%C3%BAstria.jpg",
+    "attribution": "Enrique Íñiguez Rodríguez (Qoan), CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Sitges._Pla%C3%A7a_de_la_Ind%C3%BAstria.jpg",
+    "licenseNote": "CC BY-SA 4.0 — attribution required, share-alike. HONEST DISCLOSURE per style-guide.md's 'generic but correct' note: this is Plaça de la Indústria itself, the square Parrots' terrace occupies, NOT a photograph of the bar. Shot 5 July 2016, so it also predates the knock-through with the former Mojito & Co. 5152x3864, clears the Discover card floor; 4:3 rather than 16:9, so the card crop loses top and bottom."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "Second pin from the operator's 2026-09-03 Sitges directive (queer + cinema) — this is the queer half. verify-still-open-before-create PASSED on two independent checks: OpenStreetMap carries a node literally named PARROTS at 16 Carrer de Joan Tarrida (41.2357478, 1.8071803), and the group's own site resolves and lists the pub among its venues. AFGAL founding membership and the sister venues (Parrots Sitges Hotel, Central Bar, Le Patio, Bears Bar, El Palco, Runway Terrace Bar) are the group's own claim, attributed as such. CONFLICT LEFT VISIBLE: gaysitgesguide gives pub from 08:30, terrace from 17:00, season March-October plus Carnival; other guides print 11:00-03:00 daily year-round. The body states the disagreement and tells the reader to check, rather than picking a side — this is a resort town and the seasonal caveat is the more useful claim. NO PRICE IS STATED anywhere in this piece, per the red-team price-rot rule. Dated events verified this session: Bears Week 4-13 September 2026 (Bear Village from the 7th); Sitges Film Festival 8-18 October 2026; Carnival 20 February - 2 March 2027 stated WITH the caveat that the Ajuntament confirms exact dates each autumn. RESEARCH FLOOR NOT FULLY MET, recorded honestly: reddit.com is refused to this session's search backend and Tripadvisor returned HTTP 403, so the Reddit and Google-reviews legs of near-write-article step 4-0 could not be run on this venue. Five preferred/new sources were consulted instead (parrots-sitges.com, gaysitgesguide.com, thegaypassport.com, misterbandb.com, tapasitges.com), all logged to preferred-sources.md as candidates."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.95,
+    "query": "Parrots, 16 Carrer de Joan Tarrida / Plaça de la Indústria, 08870 Sitges"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

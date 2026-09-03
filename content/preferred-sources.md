@@ -302,6 +302,55 @@ adding one at a time.
   Catarina, not the Baixada). Recorded so the next run does not
   re-discover it and link it as a rental option.
 
+### Sitges / Catalonia — found on the 2026-09-03 Sitges war room
+
+All used on the four Sitges pins shipped that day; none was previously in
+`sources.md`.
+
+- `casinoprado.cat` — Casino Prado Suburense's own site. Its `/historia/`
+  page is a properly detailed institutional history (founding, architect,
+  the 1968 fantastic-cinema week, awards) and is the primary source for
+  `content/places/casino-prado-sitges`. Good candidate for onboarding on
+  the Catalonia `city-culture` beat.
+- `elretirositges.cat` — Societat Recreativa El Retiro's own site. Its
+  `/remodelacio/` page is the authoritative record of the renovation that
+  closed the hall on 4 May 2024, and is the reason that pin was NOT
+  written. Check it on every future Sitges pass — the reopening is itself
+  the story.
+- `sitges.cat` — Ajuntament de Sitges. The `parc-escultoric` catalogue is
+  a genuinely good municipal source with materials, dimensions and
+  inscriptions per work; primary source for the Monument contra
+  l'homofòbia pin.
+- `sitgesanytime.com` — the town's official tourism board. Carries the
+  festival's confirmed 2026 dates and edition number; the most reliable
+  date source available given the access quirk below.
+- `gaysitgesguide.com` — dedicated local gay guide. The only source found
+  that gives Parrots' **seasonal** opening window (March–October plus
+  Carnival) rather than reprinting year-round hours; that caveat is the
+  most useful thing on the Parrots pin.
+- `parrots-sitges.com` — Parrots Group's own site; the source for the
+  group's venue list and its AFGAL founding membership.
+- `thegaypassport.com`, `misterbandb.com`, `tapasitges.com` — guide/
+  aggregator tier, used for cross-checks (venue counts, Bears Week and
+  Carnival dates) and always attributed as guides rather than as fact.
+  `tapasitges.com` self-flags that the Ajuntament confirms Carnival dates
+  each autumn, which is the right posture and worth remembering.
+- `thepinknews.com` — contemporaneous 2006 report on the Sitges monument's
+  unveiling. Useful generally for pre-2010 LGBTQ+ civic history where a
+  municipal page is thin.
+- **ACCESS QUIRK, important:** `sitgesfilmfestival.com` — the festival's
+  own site — returns **HTTP 403 to WebFetch on every path tried**
+  (2026-09-03), as does `festivalesdeespana.com`, `visitsitges.com` and
+  Tripadvisor. The official 2026 announcement text was only readable
+  through the search index's rendering of the page. Anyone re-verifying
+  the lineup needs `claude-in-chrome`, not WebFetch.
+- **TOOLING GAP, not a source:** `reddit.com` is refused outright to this
+  session's search backend ("domains not accessible to our user agent"),
+  so `near-write-article`'s step 4-0 Reddit leg could not be run on any
+  of these four pins. Google/Tripadvisor reviews were likewise 403. This
+  is a standing constraint, not a one-off — worth solving with
+  `claude-in-chrome` before the next research floor is claimed as met.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.

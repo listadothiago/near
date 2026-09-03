@@ -3774,5 +3774,24 @@ evidence; these are):
   place, plus all six locales each. Product Trio item, not a drafting item.
 - **Ad-placement performance tracking + analytics dashboard upgrade**
   (text-based → HTML/artifact view). Product Trio item.
-- **Cannabis-cup content push** and **Sitges queer/cinema push** — content
-  items, scored in the menu.
+- **Cannabis-cup content push** — content item, scored in the menu.
+- ~~**Sitges queer/cinema push**~~ — **DONE 2026-09-03.** Ran as a
+  `near-war-room` push. Four pins shipped active in all six locales
+  (`casino-prado-sitges`, `sitges-film-festival-2026`, `parrots-pub-sitges`,
+  `monument-contra-homofobia-sitges`) plus the collection
+  `sitges-fantastic-and-queer`. Both halves of the directive covered: the
+  cinema half is anchored on the festival's verified 8–18 October 2026 dates
+  and the 1877 society hall its 1968 ancestor ran in; the queer half on the
+  Joan Tarrida strip and the town's 2006 anti-homophobia monument. A fifth
+  candidate, Societat Recreativa El Retiro, was researched and deliberately
+  **not** written — its hall has been closed for renovation since 4 May 2024
+  with no published reopening date — and is logged as a held lead in
+  `content/requests.md` and `content/opportunities.md`. This was an operator
+  override, so it did **not** advance the `content-rotation` `NEXT-UP`
+  pointer, which stays at Bangkok. Full run record in
+  `content/_ingestion-log.md`. Note: this run makes the locale RICE table's
+  "Barcelona/Sitges coverage is live and growing" justification for `ca`
+  true for the first time — it was aspirational when written, so that row is
+  worth re-scoring.
+
+from thiago: i added a video inbox folder in the content folder, right now it has a vignette that you can use as you see fit (promo vignette for near.tips, 10 second video)

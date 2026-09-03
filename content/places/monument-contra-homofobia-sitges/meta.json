@@ -1,0 +1,65 @@
+{
+  "slug": "monument-contra-homofobia-sitges",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 41.232766,
+    "lng": 1.801865
+  },
+  "place": {
+    "city": "Sitges",
+    "neighborhood": "Passeig Marítim",
+    "region": "Catalonia",
+    "country": "Spain"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "Ajuntament de Sitges — Parc escultòric: 18 · Sitges contra l'homofòbia",
+      "url": "https://www.sitges.cat/serveis/cultura/parc-escultoric/18-sitges-contra-lhomofobia",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "PinkNews — Monument against homophobia in Sitges (11 October 2006)",
+      "url": "https://www.thepinknews.com/2006/10/11/monument-against-homophobia-in-sitges/",
+      "feedId": null,
+      "originalPublishedAt": "2006-10-11T00:00:00Z"
+    },
+    {
+      "name": "Wikimedia Commons — Category: Monument against homophobia in Sitges (geotagged)",
+      "url": "https://commons.wikimedia.org/wiki/Category:Monument_against_homophobia_in_Sitges",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sitges_gay-memorial.jpg",
+    "attribution": "BoBink, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Sitges_gay-memorial.jpg",
+    "licenseNote": "CC BY-SA 3.0 — attribution required, share-alike. The monument itself, photographed 5 September 2011. 3396x2476, clears the Discover card floor on width and pixel count; 4:3 rather than 16:9, so the card crop loses top and bottom."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "Fourth pin from the operator's 2026-09-03 Sitges directive, and the piece that stopped the queer half of the push being three bars. Sourced primarily from the Ajuntament de Sitges's own municipal sculpture-park catalogue (materials, 110cm sculpture on a 35x80x80cm cement pedestal, painted iron, Passeig Marítim, 2006, and the plaque text 'Sitges contra la homofobia / Mai mes / 5 d'octubre de 1996-2006'), cross-checked against PinkNews's contemporaneous 2006 report of the unveiling. LEGAL/SOURCING CALL, deliberate: aggregated search summaries and travel guides carry a much graver account of 5 October 1996 including a named killing. NONE of that was traceable to a source that could be fetched and verified this session, so it is NOT stated. The body reports exactly what the two verified sources say, names the fact that they differ in detail, and says plainly that fuller accounts circulating in guidebooks are not sourced well enough to repeat. Do not 'complete' this paragraph in a later pass without a real primary source. Superlative 'Spain's first LGBTQ+ monument' also appeared in search summaries and is NOT claimed, for the same reason. Coordinates 41.232766, 1.801865 come from the geotag on the Wikimedia Commons category for the monument, consistent with Nominatim's Passeig Maritim (Vinyet) node. The in-body Figure is dated 26 July 2016 by its own EXIF and titled by its uploader as showing tributes for the Orlando shooting victims; the caption attributes that reading to the uploader rather than asserting it. RESEARCH FLOOR NOT FULLY MET: reddit.com is refused to this session's search backend, so the UGC leg of near-write-article step 4-0 could not be run."
+    }
+  ],
+  "geocode": {
+    "provider": "wikimedia-commons-geotag",
+    "confidence": 0.8,
+    "query": "Monument contra l'homofòbia, Passeig Marítim, 08870 Sitges"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

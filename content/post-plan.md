@@ -265,7 +265,24 @@ drawable now on this queue, but reassess after three shipped pieces: if
 Spectrum isn't confirmed live and a second English independent isn't
 found within two turns, **the honest call is Tier 2**. Operator decision._
 
-### Barcelona — queue empty, needs seeding
+### Barcelona / Catalonia — SEEDED and part-drained, 2026-09-03 (Sitges operator override)
+
+Operator directive 2026-09-03: *"we should probably have a sitges push
+with the major queer and cinema events."* Ran as a `near-war-room` push.
+**This was an operator override, NOT a rotation turn — it does not
+advance the `NEXT-UP` pointer, which stays where `content-rotation`
+left it.**
+
+- [x] Casino Prado Suburense, Sitges — PLINIO (1877 society; its members' 1968 fantastic-cinema week is the direct ancestor of the Sitges festival; still a working cinema. Six locales, shipped 2026-09-03)
+- [x] Sitges Film Festival 2026, 59th ed. — RADAR-X (8–18 Oct 2026, dates verified from three sources; Carrie 50th-anniversary tribute; `eventEndsAt` set so it self-expires. Six locales, shipped 2026-09-03)
+- [x] Parrots Pub, Plaça de la Indústria — STEFAN (30+ years, AFGAL founding member; seasonal-hours caveat carried honestly. Six locales, shipped 2026-09-03)
+- [x] Monument contra l'homofòbia, Passeig Marítim — CUBIC-V (2006 pink triangle, municipal sculpture park, 5 Oct 1996. Six locales, shipped 2026-09-03)
+- [ ] **Societat Recreativa El Retiro, Sitges — HELD, DO NOT DRAFT YET.** The obvious fifth pin and it did not check out: the saló-teatre has been closed for renovation since 4 May 2024 per the society's own site, which publishes no reopening date. Re-check the site (`elretirositges.cat/remodelacio/`) before drafting; there is a genuinely good piece here the moment it reopens — 1870 society, burned down 1916, rebuilt by Miquel Utrillo, Creu de Sant Jordi 2017, and its 1970 false ceiling has just come out to expose Utrillo's vaults. A rights-clear Commons hero and frontage shot are already identified and in use on the collection page.
+- [ ] Bears Bar / the rest of the Joan Tarrida strip — STEFAN (a second, non-Parrots room on the strip is the obvious next pin; Parrots' own piece says plainly it is the anchor rather than the interesting end)
+- [ ] Platja de l'Home Mort / Platja de la Bassa Rodona — WILD0 or STEFAN (Commons has rights-clear photos of both; needs real sourcing on current status and access)
+- [ ] Barcelona city proper — still unseeded. Sitges is 40 minutes away and now gives the `ca`/`es-ES` market a foothold it did not have.
+
+### Barcelona (city) — queue empty, needs seeding
 ### Rome — queue empty, needs seeding (che.famo.stasera / vernissagerome IG sources queued in EPIC 5)
 ### Portland — queue empty, needs seeding
 

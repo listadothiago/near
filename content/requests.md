@@ -254,3 +254,42 @@ why: >
   since it is a few minutes away in the same Kemptown village.
 status: open
 ```
+
+```yaml
+request: sitges-auditori-melia-venue-missing
+type: missing-venue
+place: sitges-film-festival-2026
+why: >
+  content/rules.md's event-belongs-to-venue says an event at a venue Near
+  does NOT cover is published standalone with the missing venue logged
+  here. That is what happened: the Sitges Film Festival's main screen is
+  the 1,380-seat Auditori inside the Melia Sitges hotel at Aiguadolc
+  (41.2368, 1.8239), which Near has no pin for, so the festival ships
+  with no parentPlace. It is also town-wide across the Auditori, Casino
+  Prado, El Retiro and the seafront King Kong Area, so hanging it off any
+  single venue would have been wrong even if the Auditori existed as a
+  pin -- and would have pulled the run's main dated hook off the board.
+  If the Auditori ever gets its own pin, do NOT retro-fit parentPlace on
+  the festival for that reason.
+status: open
+```
+
+```yaml
+request: sitges-el-retiro-held-on-renovation
+type: held-lead
+place: sitges-film-festival-2026
+why: >
+  Societat Recreativa El Retiro (1870, Carrer d'Angel Vidal 17-21,
+  41.2366/1.8108) was scoped as the fifth pin of the 2026-09-03 Sitges
+  war room and deliberately NOT written. Its own site
+  (elretirositges.cat/remodelacio/) records renovation starting 4 May
+  2024 with no published reopening date, which trips
+  verify-still-open-before-create. Three shipped pieces now tell readers
+  to check rather than assume it. The piece is genuinely good when it
+  reopens: fire in 1916, rebuilt by Miquel Utrillo, Creu de Sant Jordi
+  2017, and a 1970 false ceiling just removed to expose Utrillo's vaults.
+  Rights-clear Commons images already identified (151 Cinema El Retiro,
+  CC BY-SA 4.0; and the open-air stage, same licence).
+status: open
+```
+

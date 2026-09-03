@@ -1,0 +1,29 @@
+{
+  "slug": "sitges-fantastic-and-queer",
+  "placeSlugs": [
+    "casino-prado-sitges",
+    "sitges-film-festival-2026",
+    "parrots-pub-sitges",
+    "monument-contra-homofobia-sitges"
+  ],
+  "author": "stefan",
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Platja_de_la_Bassa_Rodona%2C_panor%C3%A0mica.jpg",
+    "attribution": "Isidro Jabato, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Platja_de_la_Bassa_Rodona,_panor%C3%A0mica.jpg",
+    "licenseNote": "CC BY-SA 4.0 — attribution required, share-alike. Platja de la Bassa Rodona, the beach the Passeig Marítim runs along, photographed 24 July 2015. 4912x1080 — well over the Discover pixel and width floor, and a 4.5:1 panorama rather than 16:9, so the card crop takes the centre."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "Narrative layer for the 2026-09-03 Sitges war room, tying the run's four pins together. Per near-write-article step 4a, this piece asserts NO facts beyond what the four member pages already establish and source — every date, figure and name is carried across from those pins rather than newly researched, which is why it needs no sourcing of its own beyond the one Wikipedia link it makes in text. dedupe-everywhere checked: no existing collection covers Spain, Catalonia or a film festival. The 19th-century indiano-money-into-societies framing is carried from the Casino Prado pin, where it is sourced to casinoprado.cat's own history page. All four member pins are status active, so no NearLink here points at a draft the loader would filter out. Byline STEFAN as the de-facto Barcelona/region voice (near-tov-police's own persona-pairing note); PLINIO, RADAR-X and CUBIC-V carry the individual pins."
+    }
+  ],
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}

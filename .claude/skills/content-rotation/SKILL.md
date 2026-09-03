@@ -52,6 +52,18 @@ NEXT-UP:         Bangkok — queue SEEDED 2026-09-03, turn is live
 then:            (cycle 3 opens at London)
 ```
 
+**Note on the Sitges push (2026-09-03) — POINTER NOT ADVANCED.** Four
+Sitges pins and a collection shipped that day off the operator's direct
+directive (*"we should probably have a sitges push with the major queer
+and cinema events"*). Sitges is not in either tier's order, and an
+operator override is not a rotation turn, so **nothing in the
+ROTATION-STATE block above changed**: `NEXT-UP` is still Bangkok, and
+Barcelona's Tier 2 turn is still unspent. Recording it here so the next
+run can see that a Catalonia batch shipping does not mean Barcelona's
+turn was taken. Side effect worth knowing: `post-plan.md`'s Barcelona
+entry is no longer an empty queue — it now carries three drafted-and-
+verified leads plus one explicitly held one.
+
 **Note on Oakland's cycle-2 turn (2026-09-03) — CONSUMED.** 1-2-3-4 Go!
 Records shipped for this turn, all six locales. Independent sourcing came
 back strong (5+ corroborating sources: shop's own site, East Bay Express,

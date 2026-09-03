@@ -578,3 +578,61 @@ nothing, and (b) finding one more English-language independent, because a
 Tier 1 city resting on a single watchable feed is one masthead away from
 being unsourced again. If neither lands within the next two Bangkok turns,
 the honest call is to put Bangkok back in Tier 2 and say why.
+
+## Sitges war room — leads NOT drafted, 2026-09-03
+
+The operator's 2026-09-03 directive ("a sitges push with the major queer
+and cinema events") shipped four pins and one collection. What the same
+research pass surfaced and did **not** turn into content, so the next run
+does not re-derive it:
+
+**1. Societat Recreativa El Retiro — the one that did not check out.**
+Sitges' other 19th-century society and a festival screening venue for
+decades. Its hall closed 4 May 2024 for a renovation restoring Miquel
+Utrillo's 1916 vaults (a 1970 false ceiling removed; first phase ~EUR
+1.2m, part-subsidised by the Diputació, the Generalitat and EU funds,
+the balance on an EUR 800,000 mortgage), and the society publishes no
+reopening date. Not written, per `verify-still-open-before-create`.
+Re-check `elretirositges.cat/remodelacio/` first thing on any future
+Catalonia pass — the reopening is a better story than the pin would have
+been.
+
+**2. The strip beyond Parrots.** misterb&b lists twenty-four gay bars and
+clubs inside a five-minute walk. The Parrots piece says plainly that
+Parrots is the anchor and not the interesting end, which leaves an
+obvious, honest second pin (Bears Bar, El Palco, or a non-Parrots-Group
+room — the group's concentration on that strip is itself a story worth
+reporting properly rather than in an aside).
+
+**3. The beaches.** Platja de l'Home Mort and Platja de la Bassa Rodona
+both have rights-clear Commons photography and both are load-bearing in
+Sitges' queer history. Neither was written because neither had current,
+verifiable sourcing on access and status this session. Needs real
+research, not a listicle read.
+
+**4. Dated events already verified and reusable.** Bears Week 4–13 Sept
+2026 (Bear Village on the seafront at the foot of Carrer Bonaire from the
+7th); Sitges Film Festival 8–18 Oct 2026 (59th, Carrie 50th tribute,
+Josefina Molina Award 2nd ed. at EUR 10,000); Sitges Carnival 20 Feb – 2
+Mar 2027, **with the standing caveat that the Ajuntament confirms exact
+dates each autumn** — re-confirm in autumn 2026 before anything leans on
+it harder than the current hedged phrasing.
+
+**5. Trends read.** `content/trends-feeds.md` was consulted per the
+standing rule. The live feeds could not be re-fetched (Google Trends
+pages are not WebFetch-friendly and the session's fetcher is being 403'd
+broadly), so the operator's 2026-09-03 snapshot in that file was used as
+the last known read, as the file itself instructs. Its only Spain signal
+is **`mallorca`** — a different island and a different beat, and near-seo
+had already flagged it as "a plausible neighbour to the Sitges work". It
+did not change what was covered here, and Near's angle-and-filter rule
+means it should not have. Recorded so the next run does not mistake
+"snapshot reused" for "feeds checked live".
+
+**6. The `ca` locale question.** BACKLOG.md's locale RICE table justifies
+`ca` partly on "Barcelona/Sitges coverage is live and growing", which was
+not true when written — Near had zero Spain pins until this run. It is
+true now (four Sitges pins, one collection). That row deserves a re-score
+rather than being left resting on a claim that has only just become
+accurate.
+
