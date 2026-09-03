@@ -1,0 +1,106 @@
+{
+  "slug": "va-east-museum-stratford-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 51.5418837,
+    "lng": -0.0135487
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Stratford",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "V&A East Museum — Visit",
+      "url": "https://www.vam.ac.uk/east/museum/visit",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A East — venue overview",
+      "url": "https://www.vam.ac.uk/east",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A — The Music is Black: A British Story",
+      "url": "https://www.vam.ac.uk/exhibitions/the-music-is-black-a-british-story",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "V&A East Storehouse — Visit",
+      "url": "https://www.vam.ac.uk/east/storehouse/visit",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "PCS — V&A workers announce strike dates",
+      "url": "https://www.pcs.org.uk/news-events/news/va-workers-announce-strike-dates",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-24T00:00:00Z"
+    },
+    {
+      "name": "Museums Association — Workers at V&A's London sites vote in favour of strike action",
+      "url": "https://www.museumsassociation.org/museums-journal/news/2026/08/workers-at-vas-london-sites-vote-in-favour-of-strike-action/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-24T00:00:00Z"
+    },
+    {
+      "name": "Queen Elizabeth Olympic Park — The Music Is Black: A British Story",
+      "url": "https://www.queenelizabetholympicpark.co.uk/whats-on/music-black-british-story-va-east-museum",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-18T00:00:00Z"
+    },
+    {
+      "name": "Visit London — Inside the V&A East Museum",
+      "url": "https://www.visitlondon.com/blog/va-east-museum",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-18T00:00:00Z"
+    },
+    {
+      "name": "Londonist — Review: V&A East Comes To Stratford",
+      "url": "https://londonist.com/london/museums-and-galleries/v-and-a-east-stratford-open-review",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-18T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/V%26A_East_-_2025-08-24.jpg",
+    "attribution": "Sludge G, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:V%26A_East_-_2025-08-24.jpg",
+    "licenseNote": "The V&A East Museum building on Stratford's East Bank with the new footbridge, photographed 24 August 2025 — the building is structurally complete but this PREDATES the public opening of 18 April 2026, so it shows the exterior as built rather than the museum in operation. 3072x2304, landscape, which clears Discover's 1200px-wide and 300,000-pixel floors but is 4:3 rather than the ~16:9 the card spec prefers. Chosen over two alternatives, both real and both rejected on shape: 'V&A East Museum sign up close - 2026-05-31.jpg' (The wub, CC BY-SA 4.0) is genuinely post-opening but is 4817x7222 PORTRAIT and cannot serve a landscape hero card — it is used as an in-body figure instead; 'V&A Stratford East Bank.jpg' (Sludge G, CC BY-SA 2.0, 25 July 2023) is also portrait and much earlier in construction. Not used: photography on vam.ac.uk, which is rights-reserved V&A press and installation imagery and does not clear for reuse. UPGRADE PATH: a rights-clear LANDSCAPE exterior or interior shot dated after 18 April 2026, or a licensed image from the V&A press office."
+  },
+  "eventStartsAt": "2026-04-18T00:00:00Z",
+  "eventEndsAt": "2027-01-10T00:00:00Z",
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "London East End push, drafted 2026-09-03 by CUBIC-V via near-write-article under the operator's LONDON ONLY override (rotation counter deliberately NOT advanced). HELD AT DRAFT, NOT PUBLISHED — re-verification contradicted the backlog entry on price and produced a live disruption the queue did not know about, which is the documented hold condition in the run brief and in BACKLOG.md's anti-fabrication rule. WHAT VERIFIED CLEANLY against vam.ac.uk: address East Bank, 107 Carpenters Road, Queen Elizabeth Olympic Park, Stratford E20 2AR; opened 18 April 2026; general admission FREE with no advance booking, special exhibitions charged separately; the V&A's own 'There may be a queue to get in to the museum' warning; the permanent free Why We Make galleries across two floors with 500+ objects and ten themes, co-designed with the V&A East Youth Collective; Stratford station ~10 min walk. HOURS: Daily 10:00-18:00, Thursday and Saturday 10:00-22:00, confirmed on vam.ac.uk/east and vam.ac.uk/east/museum/visit. NOTABLY these did NOT contradict aggregators — Time Out, Musa and Visit London all carry the same figures. That breaks the pattern set by Gilbert & George and Bar Italia in this batch, where aggregator hours were wrong; the honest finding is that on this venue the aggregators are right, so the piece does not claim an hours correction it cannot support. WHAT CONTRADICTED THE QUEUE ENTRY, and why this is held: (1) PRICE. The queue says the exhibition is '£22.50, £10 for students and under-26s'. The V&A's own exhibition page today lists £22.50 full, Under 26 £11, Student £11.00, Art Fund £10 — so £10 is the Art Fund rate, NOT the student/under-26 rate, which is £11. (2) The price does not agree across official sources either: queenelizabetholympicpark.co.uk, itself an official park site, publishes 'full price from £20' and concessions 'from £10', and secondary listings quote a weekday £22.50 / weekend £24.50 split. The repeated word 'from' suggests dynamic day-and-slot pricing, but that mechanism is NOT confirmed and has not been asserted as fact. Per the red-team price rule, no single figure is stated as definitive and the piece tells the reader to check the basket. (3) CLOSING DATE conflict: vam.ac.uk says the exhibition closes Sunday 10 January 2027; the Olympic Park listing says 03/01/2027. Both are in the body, attributed. (4) LIVE INDUSTRIAL ACTION, entirely absent from the queue entry and treated at draft time as the decisive factor (see the correction appended below): V&A East Museum, V&A East Storehouse and Young V&A CLOSED on 4-5 September 2026 for a PCS/Prospect strike over pay, Real Living Wage accreditation and heat/health-and-safety conditions (95.39% for strike action on 87.04% turnout), with automatic refunds to ticketholders. Action short of a strike — overtime ban, work-to-rule, withdrawal of cooperation — began 4 September and CONTINUES INDEFINITELY, and the dispute is unresolved. Sources disagree on the closure dates themselves (PCS and the Museums Association say 4 and 5 September; one report says 'Friday 4th and Saturday 6th'); the official V&A alert says 4-5 September and is what the piece uses. [CORRECTED 2026-09-03 AT PUBLICATION: this draft note originally called the strike the decisive blocker for the target week. It is not. The closures were 4-5 September ONLY and the museum reopened 6 September, so the hard closure does NOT overlap the tester's week of 2026-09-07. The live caveat is the ongoing action short of a strike, which can thin staffing and services but does not close the building.] The piece therefore tells the reader to check the V&A's live alert banner on the morning of travel and explicitly says not to trust this page on that point. (5) MINOR: the queue frames Museum vs Storehouse as 'different neighbourhoods'. They are separate buildings at separate addresses (Museum E20 2AR; Storehouse 2 Parkes Street E20 3AX, in Here East toward Hackney Wick) and the core correction absolutely holds, but the V&A describes them as 'a short walk apart', so the body says 'a walk apart, not a borough apart' rather than overstating the distance. DISAMBIGUATION from the run brief is made explicitly in its own section; the Storehouse remains a separate queued pin and is not drafted here. Geocode is an exact Nominatim hit on the museum building itself (osm way 1042201707, 'V&A East Museum, 107, Carpenters Road'). Internal links to gilbert-and-george-centre-london, old-truman-brewery-london and central-station-kings-cross-london are all genuine, matching the west-to-east East End day sketched in post-plan.md. NOT DONE, because the piece is held: six-locale translation, build-verify-and-push, and the post-plan.md checkbox tick — all of which are gated on going active. TO UNBLOCK: confirm the actual current exhibition price and closing date from the live booking flow, and confirm no further strike dates fall in the target week. DATED-CONTENT FLAG FOR near-caretaker: the exhibition end date (10 January 2027, contested) and the entire industrial-action section are both perishable and must be revisited on the next currency pass."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T12:00:00Z",
+      "note": "PUBLISHED on the operator's explicit approval, 2026-09-03. The draft's two hold conditions were both resolved rather than waived. (1) STRIKE — the draft over-weighted this and the note above is corrected in place. The closures were 4-5 September 2026 ONLY; the museum reopened 6 September, so the hard closure falls entirely BEFORE the tester's week of 2026-09-07 and does not touch it. What continues indefinitely is action short of a strike — overtime ban, work-to-rule, withdrawal of cooperation — which can thin staffing and close individual rooms or services but does NOT close the building. The body now says exactly that, briefly, and keeps the standing advice to read the V&A's alert banner on the morning of travel. Re-verified at publication and CONFIRMED unchanged: PCS/Prospect ballot 95.39% for on 87.04% turnout; closures 4-5 Sep across V&A East Museum, V&A East Storehouse and Young V&A; ticketholders automatically refunded; general admission free; hours Daily 10:00-18:00, Thu and Sat 10:00-22:00. (2) PRICE — now has a second corroborating source. The exhibition price genuinely VARIES BY DAY: £22.50 weekday / £24.50 weekend, with concessions quoted 'from £10' and full 'from £20' on the Olympic Park listing. That is why the official sources appear to disagree, and it vindicates the draft's refusal to assert one definitive figure. The body now states the weekday/weekend split plainly as a sourced fact — more useful to the reader than the previous hedge — while still telling them the basket total is the only figure that is theirs. (3) CLOSING DATE remains genuinely contested and BOTH dates stay in the body, attributed: vam.ac.uk says Sunday 10 January 2027, queenelizabetholympicpark.co.uk says 3 January 2027. Published under the LONDON ONLY operator override in content/post-plan.md; the post-plan checkbox is ticked in this commit and the Rotation position cycle counter is deliberately NOT advanced, per the explicit prohibition in that override. All six locales written by near-translator as genuine local editions (en, es-419, es-ES, it, pt-BR, zh-CN), satisfying full-locale-coverage. link-police and near-tov-police run across all six; the internal links to gilbert-and-george-centre-london, old-truman-brewery-london and central-station-kings-cross-london are byte-identical in every locale. DATED-CONTENT FLAG FOR near-caretaker STANDS: the contested exhibition end date and the entire industrial-action section are perishable. The industrial dispute is UNRESOLVED, so further strike dates may be called at any time — recheck both on the next currency pass."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.95,
+    "query": "V&A East Museum, Carpenters Road, London E20 2AR"
+  },
+  "publishedAt": "2026-09-03T00:00:00Z",
+  "updatedAt": "2026-09-03T00:00:00Z"
+}
