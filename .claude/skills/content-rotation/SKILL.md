@@ -50,19 +50,28 @@ served-cycle-2:  Brighton (Legends, 2026-09-02);
                  Oakland (1234-go-records-temescal-oakland, 2026-09-03)
 NEXT-UP:         Bangkok — queue SEEDED 2026-09-03, turn is live
 then:            (cycle 3 opens at London)
+tier-2-served:   Barcelona & Region (Sitges batch, 2026-09-03) — see note
 ```
 
-**Note on the Sitges push (2026-09-03) — POINTER NOT ADVANCED.** Four
-Sitges pins and a collection shipped that day off the operator's direct
-directive (*"we should probably have a sitges push with the major queer
-and cinema events"*). Sitges is not in either tier's order, and an
-operator override is not a rotation turn, so **nothing in the
-ROTATION-STATE block above changed**: `NEXT-UP` is still Bangkok, and
-Barcelona's Tier 2 turn is still unspent. Recording it here so the next
-run can see that a Catalonia batch shipping does not mean Barcelona's
-turn was taken. Side effect worth knowing: `post-plan.md`'s Barcelona
+**Note on the Sitges push (2026-09-03) — BARCELONA'S TIER 2 TURN IS
+SPENT.** Four Sitges pins and a collection shipped that day off the
+operator's directive (*"we should probably have a sitges push with the
+major queer and cinema events"*). This was **first recorded as an
+override and that was wrong** — the operator corrected it the same day
+(*"i didnt mean to override with sitges take my input as any backlog
+item by default"*), so it was an ordinary backlog item drawn out of turn
+and it counts. Sitges is not itself in either tier's order, but it is
+Barcelona & Region (STEFAN's remit), so **Barcelona's Tier 2 turn is
+marked served** rather than left waiting to be drawn again. `NEXT-UP`
+stays **Bangkok** — Sitges was drawn ahead of it, which does not consume
+Bangkok's turn. Side effect worth knowing: `post-plan.md`'s Barcelona
 entry is no longer an empty queue — it now carries three drafted-and-
-verified leads plus one explicitly held one.
+verified leads plus one explicitly held one, which is exactly what
+Barcelona's *next* turn should draw from.
+
+The stated reason for drawing out of turn, per the rule that this must
+be written down: the Sitges Film Festival's 8–18 October window closes,
+and the piece would have been worth less after it.
 
 **Note on Oakland's cycle-2 turn (2026-09-03) — CONSUMED.** 1-2-3-4 Go!
 Records shipped for this turn, all six locales. Independent sourcing came
@@ -120,8 +129,18 @@ isn't found within two turns, the honest call is Tier 2. Operator decision.
 
 ## Overrides
 
-An operator may suspend the cadence for a city or theme ("London only",
-say). When that happens:
+**An operator request is NOT an override by default.** Operator
+directive, 2026-09-03, verbatim: *"i didnt mean to override with sitges
+take my input as any backlog item by default."* Anything the operator
+asks for enters `BACKLOG.md` as an ordinary candidate, gets RICE/MoSCoW
+scored against everything else in `near-backlog`'s menu, and — when it
+ships — **counts against rotation accounting exactly like any other
+piece**. It is not exempt from the cadence just because he asked for it.
+
+An **override** is the narrower thing: the operator explicitly
+*suspending* the cadence for a city or theme ("London only", say). That
+requires him to say so. If he has not, it is a normal item. When he
+does:
 
 - Record the override **with its date, and quote the operator verbatim**,
   so its provenance is never in doubt later.

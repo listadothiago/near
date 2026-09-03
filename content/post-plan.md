@@ -265,13 +265,17 @@ drawable now on this queue, but reassess after three shipped pieces: if
 Spectrum isn't confirmed live and a second English independent isn't
 found within two turns, **the honest call is Tier 2**. Operator decision._
 
-### Barcelona / Catalonia — SEEDED and part-drained, 2026-09-03 (Sitges operator override)
+### Barcelona / Catalonia — SEEDED and part-drained, 2026-09-03 (Sitges push)
 
 Operator directive 2026-09-03: *"we should probably have a sitges push
 with the major queer and cinema events."* Ran as a `near-war-room` push.
-**This was an operator override, NOT a rotation turn — it does not
-advance the `NEXT-UP` pointer, which stays where `content-rotation`
-left it.**
+**Not an override — a normal backlog item.** It was first filed as an
+override and the operator corrected that the same day: *"i didnt mean to
+override with sitges take my input as any backlog item by default."* So
+it counts against rotation: **Barcelona's Tier 2 turn is marked served**
+in `content-rotation`. `NEXT-UP` stays **Bangkok** — Sitges was drawn
+ahead of Bangkok's turn, not in place of it, and the stated reason for
+drawing out of turn was the festival's 8–18 October window closing.
 
 - [x] Casino Prado Suburense, Sitges — PLINIO (1877 society; its members' 1968 fantastic-cinema week is the direct ancestor of the Sitges festival; still a working cinema. Six locales, shipped 2026-09-03)
 - [x] Sitges Film Festival 2026, 59th ed. — RADAR-X (8–18 Oct 2026, dates verified from three sources; Carrie 50th-anniversary tribute; `eventEndsAt` set so it self-expires. Six locales, shipped 2026-09-03)

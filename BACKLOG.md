@@ -3787,8 +3787,10 @@ evidence; these are):
   **not** written — its hall has been closed for renovation since 4 May 2024
   with no published reopening date — and is logged as a held lead in
   `content/requests.md` and `content/opportunities.md`. This was an operator
-  override, so it did **not** advance the `content-rotation` `NEXT-UP`
-  pointer, which stays at Bangkok. Full run record in
+  ordinary backlog item, not an override (operator correction, same day:
+  *"i didnt mean to override with sitges take my input as any backlog item
+  by default"*), so **Barcelona's Tier 2 turn is marked served**. `NEXT-UP`
+  stays at Bangkok, which Sitges was drawn ahead of rather than replacing. Full run record in
   `content/_ingestion-log.md`. Note: this run makes the locale RICE table's
   "Barcelona/Sitges coverage is live and growing" justification for `ca`
   true for the first time — it was aspirational when written, so that row is

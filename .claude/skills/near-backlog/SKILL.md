@@ -203,7 +203,16 @@ session.
      for whose turn it is — read it before proposing any city's piece,
      and rewrite it in the same commit as a shipped post. A city drawn
      out of turn needs a stated reason in the menu, and an operator
-     override does not advance it at all.
+     override does not advance it at all — but **an operator request is
+     not an override.** Operator, 2026-09-03: *"i didnt mean to override
+     with sitges take my input as any backlog item by default."* His
+     asks are ordinary candidates: scored in the menu like everything
+     else, and counted against rotation when they ship. Only an explicit
+     suspension of the cadence ("London only") is an override. When in
+     doubt, treat it as a normal item and say which city's turn it
+     spent — the failure mode this fixes is a city's turn quietly never
+     being marked served because the work was filed as "operator asked
+     for it."
    - Tick off drained `post-plan.md` queue items.
    - Log any newly-used source not already in `content/sources.md` to
      `content/preferred-sources.md`'s candidates section.
