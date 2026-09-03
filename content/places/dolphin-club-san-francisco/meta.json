@@ -1,0 +1,100 @@
+{
+  "slug": "dolphin-club-san-francisco",
+  "categories": [
+    "wellness-fitness"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 37.808433,
+    "lng": -122.421055
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Fisherman's Wharf",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "Dolphin Club — official site",
+      "url": "https://dolphinclub.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "Dolphin Club — visit/guest info page (official, current fee and hours)",
+      "url": "https://dolphinclub.org/visit/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "South End Rowing Club — official site",
+      "url": "https://serc.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-03T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Dolphin Club (San Francisco)",
+      "url": "https://en.wikipedia.org/wiki/Dolphin_Club_(San_Francisco)",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "National Geographic — Where to wild swim in San Francisco with the Dolphin Club",
+      "url": "https://www.nationalgeographic.com/travel/article/best-wild-swimming-san-francisco",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Openwaterpedia — Dolphin Club",
+      "url": "https://www.openwaterpedia.com/wiki/Dolphin_Club",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "raceroster.com — 2026 Alcatraz Sharkfest Swim / Dolphin Club Escape from Alcatraz race info (member race, Sept 12 2026)",
+      "url": "https://www.raceroster.com/events/2026/113016/2026-alcatraz-sharkfest-swim",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Dolphin Club — News archive (New Year's Day Alcatraz swim, annual tradition)",
+      "url": "http://dolphinclub.org/category/news/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dolphin_club_front.jpg",
+    "attribution": "Neal Mueller (Nealmueller), Wikimedia Commons, CC BY-SA 4.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Dolphin_club_front.jpg",
+    "licenseNote": "Facade/exterior photo of the Dolphin Club clubhouse at 502 Jefferson St, taken March 2020, CC BY-SA 4.0. Chosen over the beach-view image (used in-body instead) because it reads distinctly as the club's own building at thumbnail size, with no identifiable faces."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "San Francisco Tier 1 queue (content/post-plan.md), war-room slate 2026-08-31, drafted via near-write-article. Rotation: NEXT-UP was San Francisco per content-rotation/SKILL.md, cycle 2. Dedupe check: grepped content/places/ for dolphin/aquatic-park, no existing pin, this is net-new. Trust 'auto': queue item, war-room-verified slate, independently re-verified this session rather than trusted blind. VERIFICATION FINDINGS: (1) FEE CORRECTED — the queue note said ~$10; the club's own current visit page (dolphinclub.org/visit) states $12 cash/check, $12.67 by card, which is what's published here, with the drift from $10 called out explicitly in-body rather than silently overwritten (older aggregators — National Geographic, Secret San Francisco, a stale search snippet citing $10 — still carry the older figure). This is a price-drift catch, not a structural change: still walk-up, no membership/sponsorship required, so the trust gate holds. (2) HOURS confirmed current: Mon/Wed/Fri, 9am-5pm Nov-Apr, 8am-5pm May-Oct, no holidays, per the same official visit page. (3) 1877 FOUNDING confirmed via Wikipedia and the club's own site; the 1906-earthquake angle from the assignment brief was checked and DROPPED — no source (Wikipedia, Openwaterpedia, general SF-earthquake retrospectives) connects the club specifically to earthquake/fire history, so it's excluded rather than implied. Women's admission (1976 suit, 1977 admitted, ~40% of ~2,000 members now) is sourced to Wikipedia and stated as such. (4) ALTERNATE-DAYS ARRANGEMENT WITH SOUTH END CONFIRMED, with correction: the clubs do NOT share one building (an early search summary suggested they did) — they occupy separate, adjacent clubhouses at 502 and 500 Jefferson St, per Openwaterpedia and general club-history sources. What's real: Dolphin Club takes public guests Mon/Wed/Fri, South End Rowing Club takes Tue/Thu/Sat, so between the two the cove has guest access most weekdays — this is the actual 'alternate days' fact, stated precisely in-body rather than the vaguer 'shared building' framing the slate implied. (5) DATED EVENT: found the Dolphin Club's members-only 'Escape from Alcatraz' race (Sept 12, 2026, days out from this draft — too near-term and members-only to be the piece's hook) and the New Year's Day Alcatraz swim, an annual 40-year tradition, member race but free to watch from the beach, next running January 1, 2027 — used this one per the standing further-out-date preference and because it's genuinely open to the public as a spectator event even though the swim itself is members-only. (6) UGC/REDDIT: searched r/sanfrancisco and general Reddit for a guest account; nothing came back with a linkable, dateable source (search results kept surfacing Wikipedia/NatGeo instead of actual threads). Yelp reviews were blocked (403) from direct fetch. Per the anti-fabrication rule, no UGC quote is used in this piece rather than inventing one — logged as an open gap rather than papered over. IMAGES: hero is the clubhouse facade (Dolphin_club_front.jpg, Neal Mueller, CC BY-SA 4.0, March 2020) — a real source photo, tier 1, no faces. In-body Figure is a beach-view shot of both clubhouses together (Pax Ahimsa Gethen/Funcrunch, CC BY-SA 4.0, Sept 2017), which also supplied precise coordinates (37.808433, -122.421055) used here in place of a manual approximation. Both verified to exist and licensed via direct Commons file-page fetch, not assumed from a filename guess. RESEARCH FLOOR: near-deep-researcher-style multi-source pass across the club's own site, South End's site, Wikipedia, National Geographic, Openwaterpedia, and race-registration sites; fewer than five content/preferred-sources.md entries existed for this specific subject going in, which is itself the finding — San Francisco's outdoors/wellness beat has a thin source catalogue outside the venue's own site and Wikipedia. New sources (dolphinclub.org, serc.com, openwaterpedia.com) logged to content/preferred-sources.md candidates. Operator ground-truth check: not applicable, outside the Baixada Santista/SP/Rio scope this session covers."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T00:30:00Z",
+      "note": "Flipped to active after all six locales written and quality-gate-before-publish conditions checked: shortTitle <=48, tagline <=90, seoDescription <=320, >=3 bullets, in-text external + internal links present, opener bans checked in every locale, paragraph/sub-header density rules held, >=2 images (hero + in-body) against a ~700-word en body. Internal links: the-stud-san-francisco and ocean-beach-cafe-san-francisco, both genuine SF connections."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.85,
+    "query": "502 Jefferson St, San Francisco, CA 94109 (coordinates cross-checked against Commons photo EXIF geotag)"
+  },
+  "publishedAt": "2026-09-03T00:30:00Z",
+  "updatedAt": "2026-09-03T00:30:00Z"
+}
