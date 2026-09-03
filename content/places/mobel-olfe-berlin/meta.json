@@ -62,7 +62,7 @@
     "licenseNote": "CC BY-SA 4.0, shot 3 September 2023, showing the Möbel Olfe storefront itself at Reichenberger Straße 177, Berlin-Kreuzberg (Zentrum Kreuzberg / NZK building) — the correct building."
   },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "active",
@@ -73,6 +73,11 @@
       "status": "draft",
       "at": "2026-09-03T22:40:00Z",
       "note": "Recovered from stash@{0} on 2026-09-03 and demoted from active to draft. This piece was written but never committed — it sat in a stash that also held the only copies of several other pins, and post-plan.md/content-rotation had already recorded it as shipped. It is not live and never was. Demoted rather than published because it carries only 1 of the six locales, and full-locale-coverage makes all six mandatory for active. Committing it as a draft so it stops being recoverable-only-by-luck; locale backfill is queued."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:55:00Z",
+      "note": "Locale backfill complete — pt-BR, es-ES, es-419, it, zh-CN written as genuine local editions per each locale persona. full-locale-coverage now satisfied, so the piece goes active for the first time. Also added the missing internal link to so36-berlin in the English source (the Gayhane mention was unlinked). publishedAt set to the real publish moment."
     }
   ],
   "geocode": {
@@ -80,6 +85,6 @@
     "confidence": 0.85,
     "query": "Reichenberger Straße 177, 10999 Berlin-Kreuzberg, Germany"
   },
-  "publishedAt": "2026-09-01T00:00:00Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "publishedAt": "2026-09-03T23:55:00Z",
+  "updatedAt": "2026-09-03T23:55:00Z"
 }
