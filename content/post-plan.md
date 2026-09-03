@@ -68,8 +68,12 @@ verified candidates left plus a collection.
 `.claude/skills/content-rotation/SKILL.md` — that block is now the
 source of truth for whose turn it is, and this narrative is secondary to
 it (operator directive, 2026-09-03: the rotation skill tracks what is
-next).** As of 2026-09-03 it reads **San Francisco**, London's cycle-2
-turn having been marked satisfied by the three override pieces.
+next).** As of 2026-09-03 it reads **Bangkok**, after Oakland consumed
+its cycle-2 turn with 1-2-3-4 Go! Records. London's cycle-2 turn was
+marked satisfied by the three override pieces; Brighton and San
+Francisco are served. **Bangkok's queue is empty and unseeded, so on
+current state its turn hits the empty-queue rule, is skipped, and cycle
+3 opens at London** — a seeding pass is in progress to change that.
 
 London is no longer queue-blocked, for whenever its next turn comes:
 Sister Midnight (needs an `'opening'` status value in the schema) and
