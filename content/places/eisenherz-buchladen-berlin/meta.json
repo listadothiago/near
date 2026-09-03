@@ -47,7 +47,7 @@
     "licenseNote": "CC BY-SA 3.0. Storefront at the current Motzstraße 23 address, photographed 2014; still the shop's current location as of this writing."
   },
   "eventEndsAt": null,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "active",
@@ -58,6 +58,11 @@
       "status": "draft",
       "at": "2026-09-03T22:40:00Z",
       "note": "Recovered from stash@{0} on 2026-09-03 and demoted from active to draft. This piece was written but never committed — it sat in a stash that also held the only copies of several other pins, and post-plan.md/content-rotation had already recorded it as shipped. It is not live and never was. Demoted rather than published because it carries only 1 of the six locales, and full-locale-coverage makes all six mandatory for active. Committing it as a draft so it stops being recoverable-only-by-luck; locale backfill is queued."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:55:00Z",
+      "note": "Locale backfill complete — pt-BR, es-ES, es-419, it, zh-CN written as genuine local editions per each locale persona, not literal translations. full-locale-coverage now satisfied, so the piece goes active for the first time. publishedAt set to the real publish moment rather than the midnight placeholder the earlier draft carried."
     }
   ],
   "geocode": {
@@ -65,6 +70,6 @@
     "confidence": 0.7,
     "query": "Eisenherz Buchladen, Motzstraße 23, 10777 Berlin-Schöneberg"
   },
-  "publishedAt": "2026-09-01T00:00:00Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "publishedAt": "2026-09-03T23:55:00Z",
+  "updatedAt": "2026-09-03T23:55:00Z"
 }
