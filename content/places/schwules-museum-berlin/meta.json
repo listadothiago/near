@@ -70,6 +70,11 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Drafted per content/post-plan.md's Berlin queue (war-room slate verified 2026-08-31), byline CUBIC-V. Dedupe check: grepped content/places/ for existing Berlin coordinates — only so36-berlin exists (52.5004, 13.4222, Kreuzberg), ~5.7km from this site (52.5043, 13.3582, Tiergarten), no haversine or fuzzy-name conflict. Did not trust the queue note's Nov 2, 2026 date at face value given this session's Studio Voltaire staleness catch — re-verified directly against the museum's own exhibitions page and berlin.de's ticketing pages. Correction to the queue note: Nov 2, 2026 is not an opening date, it's the shared CLOSING date for both 'Susan Sontag - Seeing and Being Seen' (running since 12 June 2026) and 'Cruising the Countryside - Rural Queer Lives' (running since 1 May 2026) — both real, both currently on, both ending the same day, which is itself a genuine and further-out-favoring hook (see them before they're gone, not 'just opened'). A third show, 'Better Happy Than Normal! Queer Experiences in Christian Fundamentalist Contexts' (26 June-2 Nov 2026), closes the same day too. Museum facts (founded 1985 after the 1984 'Eldorado' show at the Märkisches Museum, first museum in the world dedicated to gay history, moved 2013 to a former printing factory at Lützowstraße 73, Tiergarten, ~1,600sqm, periodicals archive from 1896, ~50,000 objects) cross-checked against Wikipedia and the museum's own site, consistent. Geocoded via Nominatim directly against the street address rather than eyeballing a neighborhood centroid. Hero image: real CC BY-SA 4.0 photo of the museum's own current building from Wikimedia Commons, first tier of the sourcing hierarchy. Facts checked cleanly and independently corroborated (not a single-aggregator lead), so filed to trust: auto, status: active. External links: museum's own site + berlin.de ticketing. Internal link: so36-berlin (both Berlin queer-culture pins, cross-linked). New source berlinartlink.com logged to preferred-sources.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-01T00:00:00Z to 2026-09-03T22:18:51Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -77,6 +82,6 @@
     "confidence": 0.9,
     "query": "Lützowstraße 73, 10785 Berlin, Germany"
   },
-  "publishedAt": "2026-09-01T00:00:00Z",
+  "publishedAt": "2026-09-03T22:18:51Z",
   "updatedAt": "2026-09-01T00:00:00Z"
 }

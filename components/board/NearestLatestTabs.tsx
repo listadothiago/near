@@ -38,11 +38,28 @@ export default function NearestLatestTabs({
 
   const list =
     tab === "latest"
-      ? [...places].sort(
-          (a, b) =>
+      ? // Ties are the normal case, not the edge case: a batch published in
+        // one session can share a publishedAt to the second, and pieces
+        // written before the midnight-timestamp gate existed share
+        // T00:00:00Z exactly. Array.prototype.sort is stable, so an
+        // untied-broken tie silently falls back to the order places arrived
+        // in — alphabetical by slug — which buried four same-day Sitges pins
+        // mid-board behind a "1234-" and a "casino-". Fall through to
+        // updatedAt so a genuinely-newer edit surfaces, then to slug so the
+        // order is at least deterministic and testable.
+        [...places].sort((a, b) => {
+          const byPublished =
             new Date(b.meta.publishedAt).getTime() -
-            new Date(a.meta.publishedAt).getTime(),
-        )
+            new Date(a.meta.publishedAt).getTime();
+          if (byPublished !== 0) return byPublished;
+
+          const byUpdated =
+            new Date(b.meta.updatedAt ?? b.meta.publishedAt).getTime() -
+            new Date(a.meta.updatedAt ?? a.meta.publishedAt).getTime();
+          if (byUpdated !== 0) return byUpdated;
+
+          return a.meta.slug.localeCompare(b.meta.slug);
+        })
       : userCoords
         ? [...places].sort(
             (a, b) =>

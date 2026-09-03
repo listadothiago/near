@@ -59,6 +59,11 @@
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
       "note": "First Spain/Catalonia pin on Near, from the operator's 2026-09-03 Sitges directive (queer + cinema). Verified currently operating: OpenStreetMap carries it as an active `cinema` at Carrer de Sant Isidre (41.2381, 1.8106), its own site's history page resolves, and Cineclub Sitges describes current original-version/cineclub programming. Founding 1877, building begun 1869 and opened February 1870, architect Josep Maria Martino i Arroyo, stage 1890 reworked 1924, Ferrer Pino/Pere Jou façade work, the 1968 I Setmana Internacional de Cinema Fantàstic, the 1968-1982 and post-2014 cineclub runs, ~1,000 members, Trinitat Catasús 1988, town prize 1999, Creu de Sant Jordi 2017 and the Catalan Film Academy's Cinemes Centenaris listing (October 2020) all come from casinoprado.cat's own history page cross-checked against the Catalan Wikipedia article. CONFLICT LEFT VISIBLE RATHER THAN RESOLVED: the Catalan Wikipedia dates the first cinema session to 12 July 1907, the town's cultural guide gives 1911 for first projections; the body states both and says they are unreconciled rather than picking one. dedupe-by-place checked — nearest existing pin is 700km away, and the El Retiro society 170m downhill is a genuinely separate institution (and is NOT being published this run, see below). RESEARCH FLOOR NOT FULLY MET, recorded honestly: Reddit is inaccessible to this session's tooling (the search backend refuses reddit.com for this user agent) and Google/Tripadvisor reviews returned HTTP 403, so the UGC half of near-write-article's step 4-0 could not be run. The festival's own site sitgesfilmfestival.com also 403s WebFetch. Sourced from primary/official material instead and said so."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "geocode": {
@@ -66,6 +71,6 @@
     "confidence": 0.9,
     "query": "Casino Prado, Carrer de Sant Isidre / Carrer de Francesc Gumà 6-14, 08870 Sitges"
   },
-  "publishedAt": "2026-09-03T00:00:00Z",
+  "publishedAt": "2026-09-03T22:09:14Z",
   "updatedAt": "2026-09-03T00:00:00Z"
 }

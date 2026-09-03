@@ -52,6 +52,11 @@
       "status": "active",
       "at": "2026-09-02T00:00:00Z",
       "note": "Added as the fourth London city-culture pin and the first cinema anywhere in Near's coverage, hung on the 70th BFI London Film Festival (7-18 October 2026), where the ICA is a confirmed partner venue. Venue list verified against BFI's own LFF venues page and press coverage of the 2026 programme, not from training data: Rio Cinema Dalston was checked first as a better editorial fit and is NOT an LFF venue, so it was dropped rather than asserted. Founding year 1946, the six founders, the 1968 move to Nash House, the Independent Group's 1952-63 run, the 1957 Debord screening, the 1976 Post-Partum Document row and the preserved bloodstain are from the Wikipedia article, which cites primary press. The 2024 staff allegations are stated as allegations and attributed, not as findings. Creates a St James's location page by pairing with berry-bros-and-rudd-london."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T23:10:00Z",
+      "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-02T18:41:38Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
     }
   ],
   "eventStartsAt": null,
@@ -61,6 +66,6 @@
     "confidence": 0.8,
     "query": "Institute of Contemporary Arts, Nash House, The Mall, London SW1Y 5AH"
   },
-  "publishedAt": "2026-09-02T00:00:00Z",
+  "publishedAt": "2026-09-02T18:41:38Z",
   "updatedAt": "2026-09-02T00:00:00Z"
 }
