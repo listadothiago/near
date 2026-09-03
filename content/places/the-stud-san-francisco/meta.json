@@ -94,6 +94,11 @@
       "status": "active",
       "at": "2026-09-02T18:00:00Z",
       "note": "Flipped to active after all six locales were written and every quality-gate-before-publish condition was checked explicitly rather than assumed. Gates: shortTitle <=48, tagline <=90, seoDescription <=320, >=3 bullets, >=1 in-text external link to a URL in meta.sources, >=1 <NearLink>, and the opener bans (no crowd-consensus first word, no faux-candor framing) verified in ALL SIX locales, not just English. Body length: en 643 words, pt-BR 520, es-ES 542, es-419 527, it 493. zh-CN measured 784 CJK characters (~490 word-equivalents) — a naive whitespace word count returns 69 and FALSE-FAILS the 150-word floor, because Chinese does not delimit words with spaces. Worth knowing for any future automated gate. Locales are genuine local editions per each near-translator persona, not literal translations: es-419 adds practical arrival/payment notes for a traveller from the region and es-ES does not (Spain-specific vocabulary, no LatAm constructions); zh-CN adds card-acceptance, ride-hailing and navigate-by-address guidance for a mainland traveller, and specifically warns that searching the venue NAME surfaces the old address — the locale where the false-closure trap bites hardest; pt-BR and it run tighter than the English source, which each persona is entitled to do. Internal links: stray-dog-mission-san-francisco and ocean-beach-cafe-san-francisco in every locale, both genuine SF connections rather than forced. In-body Figure renders in all six via the new components/mdx/Figure.tsx."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-03T00:00:00Z",
+      "note": "Factual correction to shortTitle in en, pt-BR and zh-CN, which read 'Worker-Owned Since 1966' and conflated two different dates. The Stud was founded in 1966; it became a worker-owned cooperative on 30 December 2016. The body copy, bullets and tagline had both dates right throughout — only the card title was wrong, which is the one field that travels furthest from its own context (listing cards, share previews). it/es-ES/es-419 omitted the date entirely and needed no change. Found while deduping 'the-stud-soma-san-francisco', a draft second slug for this same venue, now deleted."
     }
   ],
   "geocode": {

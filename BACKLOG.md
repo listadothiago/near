@@ -3926,15 +3926,38 @@ is the order the operator expected.
   differ by a whole locality segment. A slug-similarity check would not have
   caught it; matching on venue **name + coordinates** would have (the two
   metas sit ~380m apart on the same cove).
-- [ ] **Locale backfill for the three genuinely-new recovered drafts**
-  (`eisenherz`/`mobel-olfe`/`the-stud` need 5 locales each), plus
-  correcting the two placeholder `originalPublishedAt` dates. Then they
-  can go active. This is real, verified, already-written English content
-  — the cheapest publishable inventory Near currently has.
-- [ ] **Audit every other `- [x]` in `post-plan.md` against what is
-  actually live.** Two independent stale-tick incidents in one day is a
-  pattern. A ten-line script that curls every ticked slug would settle it
-  permanently, and should be run before any future queue is trusted.
+- [ ] **Locale backfill for the ~~three~~ TWO genuinely-new recovered
+  drafts** (`eisenherz`/`mobel-olfe` need 5 locales each). Then they can
+  go active. This is real, verified, already-written English content —
+  the cheapest publishable inventory Near currently has.
+
+  **`the-stud-soma-san-francisco` is OFF this list — it was a duplicate,
+  deleted 2026-09-03.** `the-stud-san-francisco` was already live with all
+  six locales, same venue, coordinates ~90m apart. That removes 5 of the
+  15 translation passes this item was scoped at, and with it the
+  `originalPublishedAt` placeholder correction, which was only ever needed
+  for the duplicate.
+
+- [ ] **Import two facts the deleted Stud duplicate had and the live pin
+  doesn't** — the 2026 Instagram suspension, and a clarification that the
+  "Stud Alley" arrests were unaffiliated with the bar. Both are genuinely
+  useful (the second actively protects the venue from a false association)
+  but neither is verified to Near's floor yet, so this is a research task,
+  not a copy-paste. Not done as part of the dedupe on purpose.
+- [x] ~~**Audit every other `- [x]` in `post-plan.md` against what is
+  live.**~~ **DONE 2026-09-03** via `scripts/verify-shipped.sh`. Every
+  `status: active` place and collection returns 200 on near.tips — 40+
+  URLs, zero stale ticks in the published direction. The two incidents
+  that motivated this were both the *same* stash, not a systemic pattern.
+
+  The scan's real value was the opposite direction: it flagged two
+  `status: draft` folders as skipped, and one of them
+  (`the-stud-soma-san-francisco`) turned out to be a duplicate of live
+  content. **Worth making routine — a draft sitting next to an active pin
+  for the same venue is the signal `dedupe-by-place` keeps missing.**
+
+  The script exists at `scripts/verify-shipped.sh` and should be run
+  before any future queue is trusted.
 
 ### The video vignette — decision: not shipped on-site
 
