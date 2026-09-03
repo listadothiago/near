@@ -158,6 +158,32 @@ unexplained one is the vibes the rule exists to prevent.
     schtick of illustrating via the art references the art bot names in
     its appraisal. This cameo happens **once** — not a recurring bit.
 
+- **London East End day — `near-blogger` collection (captured 2026-09-03,
+  operator-approved follow-up; NOT started).** Once the V&A East
+  Storehouse pin lands, the East End walking day described in
+  `content/post-plan.md` (LONDON EAST END section) is made of enough
+  published pins to be a real collection rather than a wishlist. Route,
+  west to east: Central Station (King's Cross, the friend's base) →
+  Gilbert & George Centre (Heneage St, Spitalfields) → Old Truman
+  Brewery (Brick Lane, ~5 min walk) → E. Pellicci (Bethnal Green) → V&A
+  East Storehouse (Hackney Wick) → V&A East Museum (Stratford), with La
+  Camionera (Well Street, E9) sitting naturally at the Hackney end.
+  - **Gate: do not draft until the pin count supports it.** Published
+    today: Central Station, Gilbert & George Centre, Old Truman Brewery,
+    V&A East Museum. Storehouse is in flight. E. Pellicci and La
+    Camionera are still queued — the collection is stronger with them,
+    so the honest sequencing is to drain those two first, or write the
+    collection around the five that exist and cross-link the rest in
+    later.
+  - Hard practical facts the collection must lead with, not bury:
+    Gilbert & George is **Thu–Sun 11:00–17:45 only** (a Mon–Wed visitor
+    cannot get in) and TOAD/La Camionera are day-part-restricted. This
+    is a routing piece; wrong hours make it useless.
+  - **Peckham (Hausu, TOAD, Jumbi) is a separate day and the wrong side
+    of the river** — do not fold it into this route.
+  - Runs under the LONDON-ONLY override; per that block, publishing it
+    does **not** advance the rotation cycle counter.
+
 ### UI / product findings from the operator's screenshots
 
 - **Huge white space on desktop** on column/collection pages beside the
