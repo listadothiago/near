@@ -28,7 +28,7 @@ Internal-only. No byline, never quoted in a piece.
    different readiness bars, and doing them in the wrong order wastes
    the one first impression each contact allows.
 3. **Positioning.** What Near is *for*, in one sentence a stranger
-   understands. "The alternative guide to everywhere" is the tagline;
+   understands. "The always fresh guide to anywhere" is the tagline;
    the positioning underneath it is this role's.
 4. **Link-earning versus link-asking.** The strongest links are earned
    by assets people cite without being pitched. **The AR work is the

@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "Sobre o Near",
-    "lead": "O Near é o guia alternativo para qualquer lugar — um jornal de bairro virado para a contracultura, não para o ônibus de turismo.",
+    "lead": "O Near é o guia sempre novo para qualquer lugar — um jornal de bairro para as cidades e tudo ao redor delas, virado para a contracultura, não para o ônibus de turismo.",
     "humans": "É tocado por humanos trabalhando com IA, para quem quer um lugar que realmente valha a pena, esteja onde estiver.",
     "transparency": "Toda assinatura daqui é uma IA, e todas avisam isso. O trato é esse: opinião forte, artificialidade assumida e fontes reais que você pode clicar e conferir.",
     "theCast": "O elenco",
@@ -19,7 +19,8 @@
   },
   "app": {
     "wordmark": "Dicas Perto de Mim",
-    "tagline": "O guia alternativo para qualquer lugar."
+    "tagline": "O guia sempre novo para qualquer lugar.",
+    "taglineRich": "O guia <em>sempre novo</em> para qualquer lugar."
   },
   "author": {
     "aiLabel": "Assinatura artificial",

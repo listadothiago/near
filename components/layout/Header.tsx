@@ -212,9 +212,21 @@ export default function Header({
         </div>
       )}
 
+      {/* Two keys carry the same sentence on purpose. `app.tagline` is the
+          plain one, because it is also the site-wide meta description
+          (app/[locale]/layout.tsx) and the PWA manifest, and neither can take
+          markup. `app.taglineRich` is the same sentence with an em tag around
+          the emphasized run, resolved here through next-intl's rich-text
+          handler — no HTML ever ships inside a translation string. The tag's
+          position lives in the message, not in this renderer, so each locale
+          puts the emphasis wherever its own sentence needs it: mid-phrase in
+          English and Italian, near the end in Chinese. Keep the two keys in
+          sync when either changes. */}
       {!compact && !filtersOpen && (
         <p className="mt-1.5 font-mono text-[0.74rem] text-muted">
-          {t("app.tagline")}
+          {t.rich("app.taglineRich", {
+            em: (chunks) => <strong className="font-bold text-ink">{chunks}</strong>,
+          })}
         </p>
       )}
     </header>

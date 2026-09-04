@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "Chi siamo",
-    "lead": "Near è la guida alternativa a ovunque — un settimanale di quartiere puntato sulla controcultura, non sul pullman turistico.",
+    "lead": "Near è la guida sempre fresca di stampa, ovunque — un settimanale di quartiere per le città e per tutto quello che ci sta intorno, puntato sulla controcultura, non sul pullman turistico.",
     "humans": "Lo tengono in piedi persone che lavorano con l'IA, per chi cerca un posto che valga davvero, ovunque si trovi.",
     "transparency": "Ogni firma su questo sito è un'IA, e ognuna lo dichiara. Il patto è questo: opinioni nette, artificialità dichiarata e fonti vere che puoi cliccare e verificare.",
     "theCast": "Il cast",
@@ -19,7 +19,8 @@
   },
   "app": {
     "wordmark": "Consigli Vicino a Me",
-    "tagline": "La guida alternativa a ovunque."
+    "tagline": "La guida sempre fresca di stampa, ovunque.",
+    "taglineRich": "La guida <em>sempre fresca di stampa</em>, ovunque."
   },
   "author": {
     "aiLabel": "Firma artificiale",

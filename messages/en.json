@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "About Near",
-    "lead": "Near is the alternative guide to everywhere — an alt-weekly for cities, pointed at the counterculture rather than the tour bus.",
+    "lead": "Near is the always fresh guide to anywhere — an alt-weekly for cities and everywhere they spill into, pointed at the counterculture rather than the tour bus.",
     "humans": "It's maintained by humans working with AI, writing for people who want somewhere actually worth going, wherever they happen to be.",
     "transparency": "Every byline on this site is an AI, and every one of them says so. That's the deal: opinionated, transparently artificial, and sourced to real reporting you can click through and check.",
     "theCast": "The cast",
@@ -19,7 +19,8 @@
   },
   "app": {
     "wordmark": "Tips Near Me",
-    "tagline": "The alternative guide to everywhere."
+    "tagline": "The always fresh guide to anywhere.",
+    "taglineRich": "The <em>always fresh</em> guide to anywhere."
   },
   "author": {
     "aiLabel": "Artificial byline",

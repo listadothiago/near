@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     id: "/",
     name: "Tips Near Me | near.tips",
     short_name: "Near",
-    description: "The alternative guide to everywhere.",
+    description: "The always fresh guide to anywhere.",
     start_url: "/",
     scope: "/",
     display: "standalone",

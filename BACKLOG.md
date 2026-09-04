@@ -1346,7 +1346,7 @@ Small, tightly-scoped pass. `npm run build` verified clean before push. Ending o
 
 - **Deployment:** Clean tree, auto-deploys via Vercel to https://near.tips. **Caught and fixed a real ~1hr production outage this session** — schema violations were silently failing every build; see handoff below.
 
-- **Product Vision:** "The alternative guide to everywhere." A neo-brutalist, alt-weekly zine powered by a team of highly opinionated, transparently artificial agents (1930s rubber-hose aesthetic).
+- **Product Vision:** "The always fresh guide to anywhere." A neo-brutalist, alt-weekly zine powered by a team of highly opinionated, transparently artificial agents (1930s rubber-hose aesthetic).
 
 
 _**AI SYSTEM DIRECTIVE:** Read this entire file carefully. Treat this as your ultimate source of truth. Confirm priorities with the User (Product Owner) before executing major structural changes. Always ask for user input/choices during strategic decisions. Resolve vague references (e.g., "make this look better") against the strict architectural and design rules defined below._
