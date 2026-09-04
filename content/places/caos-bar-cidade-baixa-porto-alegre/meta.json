@@ -1,0 +1,90 @@
+{
+  "slug": "caos-bar-cidade-baixa-porto-alegre",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "hidden-gem",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": -30.0429,
+    "lng": -51.2241
+  },
+  "place": {
+    "city": "Porto Alegre",
+    "neighborhood": "Cidade Baixa",
+    "region": "Rio Grande do Sul",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Caos Bar (official site) — agenda and about",
+      "url": "https://caospoa.com.br/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Caos Bar (@caospoa) on Instagram",
+      "url": "https://www.instagram.com/caospoa/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Sul 21 — Caos Bar recebe festival de rock latino-americano",
+      "url": "https://sul21.com.br/noticias/cultura/2025/02/caos-bar-recebe-festival-de-rock-latino-americano-nesta-sexta-14/",
+      "feedId": null,
+      "originalPublishedAt": "2025-02-13T00:00:00Z"
+    },
+    {
+      "name": "Cogumelo Media — Caos Bar: onde o underground respira",
+      "url": "https://cogumelomedia.com.br/2025/10/16/caos-bar-onde-o-underground-respira/",
+      "feedId": null,
+      "originalPublishedAt": "2025-10-16T00:00:00Z"
+    },
+    {
+      "name": "Bandsintown — Caos venue listings",
+      "url": "https://www.bandsintown.com/v/10381237-caos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Econodata — Caos Arte Ltda company registration (CNPJ 48.454.035/0001-27)",
+      "url": "https://www.econodata.com.br/consulta-empresa/48454035000127-caos-arte-ltda",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-01T00:00:00Z"
+    },
+    {
+      "name": "Restaurant Guru — Caos, Porto Alegre (user reviews)",
+      "url": "https://restaurantguru.com.br/Caos-Porto-Alegre",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-20T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://caospoa.com.br/wp-content/uploads/2025/09/DSC_9426-redimensionado-para-grande-1.jpeg",
+    "attribution": "Photo via Caos Bar (official site)",
+    "attributionLink": "https://caospoa.com.br/",
+    "licenseNote": "Published by the venue itself as promotional material on its own homepage and used here in editorial coverage of that venue. 1437x958 JPEG, clears the Discover/OG card spec. Shows the actual room at Rua João Alfredo 701 — packed floor, low black ceiling, graffiti and the sticker-covered pillar. No photographer credit or watermark on the file. Crowd faces are visible; these are attendees at a public gig in a photo the venue published itself, and this is not a venue where depiction carries an outing risk."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-04T17:22:38Z",
+      "note": "Queue entry was a single-pass lead, so re-verified from scratch before drafting. Currently open in 2026, confirmed independently: first-party site caospoa.com.br is live and its WordPress uploads are dated 2026/08 and 2026/09, with a forward agenda of six dated shows; Instagram @caospoa active at 21.2K followers; Bandsintown lists five upcoming concerts plus a 27 Jul 2026 attendee note; Restaurant Guru shows 4.6/126 with a mid-2026 review. Corroborated by Sul 21 (Feb 2025, one of the two watched Porto Alegre independent feeds) and Cogumelo Media (Oct 2025), plus Econodata for the company registration (Caos Arte Ltda, 28 Oct 2022) — which corrected an assumption the lead invited: this is a 2022 room that invokes the 1990s/2000s POA circuit as lineage, not a survivor of it, and the body says so. Trust upgraded from review to auto on that corroboration. Research floor: near-deep-researcher run multi-source. Reddit leg did not run — site:reddit.com returned nothing for this venue in either Portuguese or English, so no cached threads existed to read; recorded rather than glossed. Google reviews leg ran via Restaurant Guru's mirror of the Google listing (direct Google/Tripadvisor fetches 403 as usual) and a quoted mid-2026 review is in the body. Matinal checked and does NOT list Caos in its current Agendão week (31 Aug-6 Sep) — a real negative, so the dated events come from the venue's own agenda instead. Six preferred/consulted sources logged above. Images: photo inbox empty; hero and both in-body images are tier-1 first-party photos and the venue's own wordmark from caospoa.com.br, no stock and no generation needed. The Metal/Hardcore Contra a Fome wordmark was rejected as an image — it is black artwork on a transparent background and would vanish on the dark theme. 626-word body carries 3 images against a floor of 3, two sub-headers, longest paragraph 98 words. Equipment theft disclosed as the venue's own posted statement, not asserted as fact."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.9,
+    "query": "Rua João Alfredo 701, Cidade Baixa, Porto Alegre, RS, Brazil"
+  },
+  "publishedAt": "2026-09-04T17:22:38Z",
+  "updatedAt": "2026-09-04T17:22:38Z"
+}
