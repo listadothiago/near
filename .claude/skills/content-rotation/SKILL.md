@@ -140,40 +140,33 @@ two ever disagree.
 
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
-ten:             #1 under share-of-output (opened 2026-09-03)
-spent:           T1 6 of 6 (SPENT)   T2 3 of 3 (SPENT)   T3 0 of 1
-t1-order:        London → Brighton → San Francisco → Oakland → Bangkok
-t1-spent:        Brighton (Legends, 2026-09-02)
-                 London — SATISFIED, see note
-                 San Francisco (dolphin-club-san-francisco, 2026-09-03)
-                 Oakland (1234-go-records-temescal-oakland, 2026-09-03)
-                 Bangkok (bangkok-art-biennale-2026, 2026-09-04 — first
-                 Bangkok pin; queue has five more candidates left in
-                 post-plan.md, but the rotation slot itself is spent)
-                 London — 6th-of-6 real draw
-                 (la-camionera-hackney-london, 2026-09-04, CUBIC-V)
-t2-spent:        Barcelona & Region — Sitges burst, 4 pins + collection,
-                 2026-09-03. Exactly the burst shape the new rule wants,
-                 and it landed before the rule existed. See note.
-t3-spent:        nothing yet, but the share is now SPENDABLE — the
-                 sources pass ran 2026-09-03 and cleared Porto Alegre,
-                 Curitiba and Salvador. Draw Porto Alegre.
-NEXT-UP:         Porto Alegre (Tier 3) — Tier 1 and Tier 2 are both now
-                 fully SPENT for this ten (La Camionera closed Tier 1's
-                 sixth slot, 2026-09-04); Tier 3 is the only unspent
-                 share left, so its turn opens now rather than waiting
-                 for a full-ten reset. Per "Writing the pointer," a full
-                 reset (new t1-order, zeroed spent:) only happens once
-                 ALL THREE shares are spent — that has not happened yet,
-                 T3 is still 0 of 1 — so this is Tier 3 taking its normal
-                 turn within the current ten, not a new ten opening.
-then:            once Porto Alegre ships, all three shares (T1, T2, T3)
-                 will be SPENT for ten #1 — THAT is when to reset
-                 t1-order, zero spent:, and open ten #2 per this block's
-                 own "Writing the pointer" instructions; do not reset
-                 early
-t3-draw:         Porto Alegre (first cleared, deepest candidate list),
-                 then Curitiba, then Salvador
+ten:             #2 under share-of-output (opened 2026-09-04)
+spent:           T1 0 of 6   T2 0 of 3   T3 0 of 1
+t1-order:        Brighton → San Francisco → Oakland → Bangkok → London
+                 (advanced to where ten #1's round-robin left off: ten #1
+                 ended on London as its 6th draw, so ten #2 resumes at
+                 Brighton. Five cities over six slots means one city draws
+                 twice — the wrap lands the 6th slot back on Brighton.)
+t1-spent:        nothing yet this ten
+t2-spent:        nothing yet this ten — burst goes to Rome, the next city
+                 in Tier 2's order after Barcelona (which took ten #1's
+                 burst via Sitges). Check Rome's queue in post-plan.md
+                 before drafting; if empty it is HELD and the burst
+                 passes on, per the hold rule.
+t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
+                 t3-draw after Porto Alegre.
+NEXT-UP:         Brighton (Tier 1) — first draw of ten #2. Ten #1 closed
+                 2026-09-04 when Porto Alegre spent Tier 3's share
+                 (caos-bar-cidade-baixa-porto-alegre, STEFAN, first Porto
+                 Alegre pin), making all three shares SPENT and
+                 triggering the reset this block calls for.
+then:            after Brighton, follow t1-order above. Tier 2's and Tier
+                 3's bursts (Rome, Curitiba) get drawn within this ten as
+                 their shares come up — they are not queued behind all
+                 six Tier 1 slots.
+t3-draw:         Curitiba (next cleared), then Salvador. Porto Alegre
+                 SERVED 2026-09-04 — its post-plan.md queue still has
+                 unspent candidates, but the rotation slot is spent.
 held:            Seattle (T2, no queue) · Florianópolis, Recife, Belo
                  Horizonte (T3 — feeds verified, pins not)
 ```

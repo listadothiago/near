@@ -1047,3 +1047,66 @@ Two stale-fact traps caught and written down before they could
 propagate: Florianópolis's Underground Rock Bar is **historic, not
 open** (2026 search hits are tribute nights held elsewhere), and Recife's
 Flowers Records rests on a **2013** citation.
+
+---
+
+## 2026-09-04 — Caos Bar, Cidade Baixa, Porto Alegre (`caos-bar-cidade-baixa-porto-alegre`)
+
+STEFAN, `nightlife-sound`, six locales, `trust: auto`. Porto Alegre's
+first pin, and the post that spent Tier 3's share and closed ten #1.
+
+**Verification.** The queue entry was a single seeding-pass lead, so it
+was re-verified from zero before a word was drafted — the Floripa and
+Recife traps logged above are exactly the failure this guards against.
+Currently open in 2026, on six independent legs: the venue's own site
+(`caospoa.com.br`) is live with a forward agenda of six dated shows and
+WordPress uploads stamped 2026/08 and 2026/09; Instagram `@caospoa`
+active at 21.2K followers; Bandsintown lists five upcoming concerts plus
+a 27 Jul 2026 attendee note; Restaurant Guru shows 4.6 over 126 reviews
+with a mid-2026 review; **Sul 21** (one of the two watched Porto Alegre
+feeds) covered a Latin American rock festival there in Feb 2025; and
+Cogumelo Media ran an owner interview in Oct 2025.
+
+**One fact corrected before drafting.** The venue presents itself as heir
+to the 1990s/2000s Porto Alegre underground (Garagem Hermética, Sub Jazz,
+Área 51, Heaven Café). Econodata's CNPJ record shows Caos Arte Ltda
+registered **28 October 2022**. Both things are true and the piece says
+so plainly — claimed lineage, not lived. This is the kind of blur that
+becomes a fabrication if it is repeated uncritically.
+
+**Research floor.** Reddit leg **did not run** — `site:reddit.com`
+returned nothing for this venue in Portuguese or English, so there were
+no cached threads to read. Recorded rather than glossed. The Google
+reviews leg ran via Restaurant Guru's mirror (Google and Tripadvisor 403
+as usual) and a dated review is quoted in the body. **Matinal does not
+list Caos in its current Agendão week (31 Aug–6 Sep)** — a real negative,
+so the dated events come from the venue's own agenda instead of a
+listings desk.
+
+**Image call.** Photo inbox empty. All three images are tier-1
+first-party, no stock and no generation needed.
+
+- **Hero:** the venue's own homepage photo of a packed floor
+  (`DSC_9426...jpeg`, 1437x958 JPEG, ~508KB) — clears the Discover/OG
+  card spec, shows the actual room, no watermark or photographer credit.
+  Crowd faces are visible; these are attendees at a public gig in a photo
+  the venue published itself, and this is not a venue where depiction
+  carries an outing risk.
+- **In-body 1:** the CAOS wordmark with *música independente ou morte*
+  lettered through it. Exactly the case the skill names as earning a
+  brand mark a slot — the logo *is* the fact the piece is about.
+- **In-body 2:** the stage-eye view of the room.
+- **Rejected:** the Metal/Hardcore Contra a Fome wordmark
+  (`hardcore-2.png`) — black artwork on an RGBA transparent background,
+  which would vanish on the dark theme. Checked the alpha channel rather
+  than eyeballing the render, per the skill's own warning.
+- No gallery. No illustration — real photos of the actual room existed
+  and beat anything drawn.
+
+**Gates.** 626-word English body, 3 images against a floor of 3, two
+sub-headers, longest paragraph 98 words; every locale re-measured
+independently and passes (zh-CN checked on CJK-equivalent length, 538
+equiv. words, not raw character count, which had produced a false
+failure). Six external links and two internal per locale, all resolving.
+Dedupe clean — still the same six known-distinct baseline pairs, no Caos
+pair flagged. Build passes, all six locale pages generated.

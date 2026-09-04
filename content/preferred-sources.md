@@ -55,6 +55,36 @@ Found while researching specific places, worth formal onboarding once a
 second or third genuinely good item from them shows up (don't add a
 source to the permanent catalog off a single lucky find):
 
+- `caospoa.com.br` + `instagram.com/caospoa` (Caos Bar, Porto Alegre —
+  first-party) — the venue's own WordPress site carries a real forward
+  agenda with dated lineups and start times, and its uploads folder is
+  date-stamped, which doubles as a cheap currency check on whether a
+  venue is actually still operating. Instagram (21.2K followers) is the
+  livelier feed of the two. Found researching
+  `caos-bar-cidade-baixa-porto-alegre`, 2026-09-04. Worth watching for
+  Porto Alegre independent-music dates generally, not just this venue.
+- `cogumelomedia.com.br` (Cogumelo Media) — small Brazilian independent
+  underground/alt-music site; ran the deepest interview available on
+  Caos Bar (owner on booking policy and politics, Oct 2025) when the
+  bigger outlets had only listings. Found on the same pass, 2026-09-04.
+  Fetches fine; single-author-ish, so treat as a good interview source
+  rather than a currency check.
+- `bandsintown.com` venue pages — per-venue upcoming-concert lists with
+  dates and times, plus attendee notes that are datable. Useful as a
+  second, non-first-party confirmation that a music venue is live and
+  booking, and it resolved for Porto Alegre where the local listings
+  desks did not. Note: the site 403s WebFetch but reads fine through
+  `claude-in-chrome`. Found 2026-09-04.
+- `restaurantguru.com.br` — mirrors Google listing ratings and review
+  text for Brazilian venues, which makes it a usable stand-in for the
+  Google-reviews research leg when Google and Tripadvisor 403. Carries
+  review dates, so recency can be judged. HEAD 405s; fetch with GET.
+  Found 2026-09-04.
+- `econodata.com.br` — Brazilian CNPJ/company registry lookup. Not
+  editorial, but it settles "when did this business actually start"
+  cheaply, and on the Caos Bar pass it corrected a lineage claim the
+  venue's own press had blurred. Good anti-fabrication tool for any
+  Brazilian venue whose founding date matters. Found 2026-09-04.
 - `dazeddigital.com` (Dazed) — UK culture/queer-beat coverage, strong on
   founder-interview pieces (e.g. La Camionera's Alex Loveless/Clara Solis
   interview, found researching `la-camionera-hackney-london`,

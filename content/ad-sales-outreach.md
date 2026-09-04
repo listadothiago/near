@@ -88,6 +88,16 @@ getting explicit approval.**
   TRUCK / PUMPS: dated events in a covered market, the highest-intent
   buyer profile in `ad-sales`'s own ranking. Contactable via the venue.
 
+### Porto Alegre leads from the Caos Bar research — `prospect`
+Logged 2026-09-04. Nothing sent; outreach frozen.
+- **Caos Bar** — poor advertiser fit and worth saying so plainly: it runs
+  food-donation door nights and is currently soliciting donations to
+  replace stolen equipment. Not a business to pitch an ad to right now.
+- **Better adjacent leads on the same street:** Espaço Cultural 512 (Rua
+  João Alfredo, already a post-plan lead) and the promoters behind the
+  dated Sept/Oct bills — Dominium Prod, and the Coiote 16 Oct date.
+  Dated-event promoters are the high-intent profile `ad-sales` ranks top.
+
 ## Closed / declined
 
 _None yet._

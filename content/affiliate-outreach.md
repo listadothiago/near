@@ -68,6 +68,17 @@ stops a future session re-litigating.
   co-op survives on thin margins; routing its readers through a
   commission-taking intermediary would undercut the argument it makes.
 
+### Caos Bar, Porto Alegre — no opportunity
+Logged 2026-09-04.
+- **Tickets:** shows sell through Sympla, and Near has no approved
+  program covering it. Even with one, several of this venue's nights take
+  a kilo of food rather than money at the door.
+- **Accommodation:** the piece is a single venue page, not a trip guide;
+  there is no natural lodging moment in it.
+- **Verdict:** no affiliate link. Inserting one would mean adding a
+  purchase moment the copy does not have, which is the case the wall
+  explicitly forbids.
+
 ## Closed / declined
 
 _None yet._

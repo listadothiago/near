@@ -78,19 +78,22 @@ push-to-live per post for operator QA.
 
 ## Rotation position
 
-**Tier 1 order:** London → Brighton → San Francisco → Oakland → Bangkok.
+**Tier 1 order (ten #2):** Brighton → San Francisco → Oakland → Bangkok
+→ London, wrapping back to Brighton for the sixth slot.
 
-**Ten #1 under the new share rule, opened 2026-09-03.** Tier 1 has spent
-5 of its 6 (Brighton, London, San Francisco, Oakland, Bangkok — BAB 2026,
-2026-09-04). **Tier 2 is fully spent** — the Sitges burst on 2026-09-03
-was four pins plus a collection for Barcelona & Region, which is exactly
-the burst shape the new rule asks for and landed the day before the rule
-existed. **Tier 3 has spent nothing and its share does not carry**: all
-six cities are held pending sources.
+**TEN #1 CLOSED 2026-09-04.** All three shares spent: Tier 1's six
+(Brighton, London, San Francisco, Oakland, Bangkok, then London again
+with La Camionera), Tier 2's burst (the Sitges run for Barcelona &
+Region, four pins plus a collection), and finally Tier 3's single share
+— **Porto Alegre, Caos Bar, 2026-09-04**, the city's first pin and the
+first Tier 3 post ever drawn.
 
-`NEXT-UP` is now **London**, closing Tier 1's six for this ten. Once
-London ships, Tier 1's six is fully spent and the next ten opens per
-`content-rotation/SKILL.md`'s own instructions.
+**Ten #2 opened 2026-09-04.** `NEXT-UP` is **Brighton**. Tier 2's burst
+this ten goes to **Rome** (next after Barcelona; check its queue before
+drafting — an empty queue means it is held and the burst passes on), and
+Tier 3's to **Curitiba**. The machine-legible pointer in
+`content-rotation/SKILL.md` is authoritative if this narrative and that
+block ever disagree.
 
 *Everything below this line describes the old nested-cycle regime and is
 kept as history, not as live mechanics.*
@@ -337,9 +340,16 @@ standing culture desk). Candidates are **leads, not research-verified** —
 the full `near-write-article` floor applies to each. Byline assignment
 still open; needs a pt-BR editor call.
 
-- [ ] **Caos Bar**, Rua João Alfredo, Cidade Baixa — the motto is
+- [x] **Caos Bar**, Rua João Alfredo, Cidade Baixa — the motto is
   literally "música independente ou morte". Best single-line angle of
-  the six cities.
+  the six cities. (Shipped 2026-09-04 as
+  `caos-bar-cidade-baixa-porto-alegre`, STEFAN, six locales — Porto
+  Alegre's first pin, and it spent Tier 3's share for ten #1. Lead
+  verified and one detail corrected: the venue reads as an heir to the
+  1990s/2000s POA underground but Caos Arte Ltda only registered in
+  October 2022, so the piece frames the lineage as claimed rather than
+  lived. Real dated shows from the venue's own agenda, out to Coiote's
+  first Porto Alegre date on 16 Oct 2026.)
 - [ ] **Butikin Hifi**, Av. Independência — vinyl-only listening room,
   originally 1960s, reinaugurated 2024 in the same building. The
   reopening date is the hook and it is checkable.

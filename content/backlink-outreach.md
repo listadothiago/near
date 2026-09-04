@@ -142,6 +142,19 @@ do not shop for links.
 - **Touches:** none. Logged as prospects 2026-09-02.
 - **State:** `prospect`
 
+### Caos Bar / Porto Alegre — `prospect` (OUTREACH FROZEN)
+Logged 2026-09-04 off `caos-bar-cidade-baixa-porto-alegre`. Nothing sent.
+- **Sul 21** and **Matinal** — the two watched Porto Alegre independents.
+  Matinal notably does NOT list Caos in its Agendão; a note flagging a
+  live independent venue its listings desk is missing is a genuine
+  editorial offer rather than a link ask, and is the strongest target here.
+- **Cogumelo Media** — small underground-music site that already ran the
+  deepest Caos interview; natural fit, low domain value, high relevance.
+- **Caos Bar itself** — first-party, has an engaged 21.2K Instagram
+  following and an active donations appeal after an equipment theft. A
+  venue is usually happy to share coverage of itself. Highest-probability
+  touch of the three, and the one to make first when the freeze lifts.
+
 ## Closed / declined
 
 _None yet._
