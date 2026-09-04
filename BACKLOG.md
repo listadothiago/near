@@ -4099,9 +4099,65 @@ thiago adds:
 
 the hero image is broken here https://near.tips/en/place/mobel-olfe-berlin
 
-Add Florianopolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador to Tier 3. This is a new tier. It runs once after tier 2 has ran twice in the rotation.
+~~Add Florianopolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador to Tier 3. This is a new tier. It runs once after tier 2 has ran twice in the rotation.~~ ✅ **DONE 2026-09-03** — Tier 3 exists with all six cities, but the *cadence* was changed rather than implemented as specified; see below.
 
-Product Trio who are all smart agents (lead product, lead ux and tech lead) please examine, critique and even alter this rotation logic. for me it is easy to communicate in terms of tiers, and eventually it will be easy to see tiers in dashboards. Consult with SEO for priorities, since our main goal is to grow SEO traffic inbound and retention.
+~~Product Trio who are all smart agents (lead product, lead ux and tech lead) please examine, critique and even alter this rotation logic. for me it is easy to communicate in terms of tiers, and eventually it will be easy to see tiers in dashboards. Consult with SEO for priorities, since our main goal is to grow SEO traffic inbound and retention.~~
+
+✅ **DONE 2026-09-03 — rotation rebuilt as share-of-output.** Operator
+approved both calls. Canonical in `content-rotation`; `post-plan.md`
+synced per the sync obligation.
+
+**A tier is now a share of every ten posts** — 6 Tier 1 (round-robin),
+3 Tier 2 (burst to one city), 1 Tier 3 (burst to one city). Tier
+vocabulary kept deliberately: it is how the operator thinks about
+geography and it renders as share-of-output bars in a dashboard.
+
+Why the nested cycle was replaced:
+
+- **Tier 3 as specified was unreachable.** Tier 2 had grown to 13 slots,
+  so a super-cycle was 33 posts and "after Tier 2 runs twice" put
+  Florianópolis **66 posts out** — more than the 75 pins the site has
+  published in its entire existence. Nobody decided that; it fell out of
+  the arithmetic.
+- **Adding a city silently changed the cadence for everyone.** Tokyo,
+  Melbourne, Seattle and the surprise slot all joined Tier 2 in one day,
+  diluting every Tier 2 city *and* pushing Tier 3 further away. Under a
+  share, adding a city splits *that tier's* share more ways and touches
+  nothing else.
+- **A third nested counter was not survivable.** The skill's own state
+  block already needed a hand-maintained pointer plus four prose
+  corrections to stay honest with one counter.
+
+**Two rule reversals, both flagged because they overturn earlier
+operator directives:**
+
+1. **Lower tiers now burst, reversing "1 post per stop, both tiers"
+   (2026-09-01 late night).** Ten cities sit at exactly one pin. A
+   one-pin city ranks for nothing, has no internal linking mass and no
+   collection to hang it on — a thin orphan is a mild SEO negative, not
+   a down payment, and one-post-per-stop is what manufactures them.
+   Frequency still carries the priority signal; batch size carries the
+   ranking. Tier 1 is unaffected and still round-robins.
+2. **A held city no longer consumes its share**, reversing the
+   empty-queue rule. Charging a city for a turn it could not take is
+   what kept Brighton skipped from the tier list's creation until it
+   was seeded.
+
+**All six Tier 3 cities are HELD**, not live: none has a queue in
+`post-plan.md` or a single feed in `sources.md`/`preferred-sources.md`.
+Clearing one needs **≥1 watchable local feed and ≥3 verified candidate
+pins**, mirroring the Bangkok seeding pass. **→ NEXT ACTION: a
+`near-sources-war-room` pass over the six.** A city that yields no
+watchable independent source stays held rather than being covered from
+trade press and listings — that is Bangkok's sustainability question
+arriving early, and cheaper to answer before rotation than after.
+
+**Framing correction worth keeping:** "Brazil is Tier 3" understates
+what exists. Brazil is already Near's **second-largest bloc — 25 pins**
+(São Paulo 11, Santos 5, Guarujá 2, São Vicente 2, Praia Grande,
+Paraty, Ilhabela, Rio, Trancoso) against London's 22. Tier 3 covers the
+*unopened* Brazilian cities; the Baixada Santista / São Paulo cluster
+stays in Tier 2 as deep existing coverage.
 
 everybody and agent know that  our main goal now is to grow SEO traffic inbound and retention, right???
 

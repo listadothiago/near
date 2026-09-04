@@ -4,9 +4,38 @@ Owns the geographic tier list and rotation cadence for `content/post-plan.md`. O
 
 ## Tiers
 
-**Tier 1 (repeats 4x before rotating into Tier 2):** London, Brighton, San Francisco, Oakland, **Bangkok**.
+A tier is a **share of output**, not a position in a nested cycle — see
+[The rule](#the-rule). Membership below; cadence there.
 
-**Tier 2 (rotates in after Tier 1 has cycled 4 times):** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne, Seattle** (Tokyo/Melbourne added by operator directive 2026-09-03; **Seattle** same day — *"make sure seattle is at least tier 2"*, so it is a Tier 2 member outright rather than waiting on its queue being seeded as the `post-plan.md` note previously had it. Its queue is empty, so its turn hits the empty-queue rule and is skipped until seeded), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+**Tier 1 — 6 of every 10 posts, round-robin:** London, Brighton, San
+Francisco, Oakland, **Bangkok**.
+
+**Tier 2 — 3 of every 10 posts, burst to one city:** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne, Seattle** (Tokyo/Melbourne added by operator directive 2026-09-03; **Seattle** same day — *"make sure seattle is at least tier 2"*, so it is a Tier 2 member outright rather than waiting on its queue being seeded as the `post-plan.md` note previously had it. Its queue is empty, so it is **held** until seeded — see the hold rule), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row.
+
+**Tier 3 — 1 of every 10 posts, burst to one city.** Operator directive,
+2026-09-03: Florianópolis, Porto Alegre, Curitiba, Belo Horizonte,
+Recife, Salvador.
+
+**All six are HELD until a sources pass clears them** (operator decision,
+same day). None has a queue in `post-plan.md` or a single feed in
+`sources.md` / `preferred-sources.md` — they appear only in
+`preferred-destinations.md`. A held city does **not** consume Tier 3's
+share; the share passes to the next cleared city, and if none is
+cleared, Tier 3's slot goes back to Tier 2 for that ten. Clearing a city
+means the `near-sources-war-room` pass found **≥1 watchable local feed
+and ≥3 verified candidate pins**, exactly as Bangkok's seeding pass
+worked. A city that yields no watchable independent source stays held
+rather than being covered from trade press and listings — that is the
+Bangkok sustainability question arriving early, and it is cheaper to
+answer before the city is in rotation than after.
+
+Worth stating plainly, because the tier name understates it: **Brazil is
+already Near's second-largest bloc** — 25 pins across São Paulo (11),
+Santos (5), Guarujá (2), São Vicente (2), Praia Grande, Paraty,
+Ilhabela, Rio and Trancoso, against London's 22. Tier 3 is not "Brazil
+is low priority"; it is the *unopened* Brazilian cities, while the
+Baixada Santista / São Paulo cluster continues to sit in Tier 2 as deep
+existing coverage.
 
 **Bangkok promoted Tier 2 → Tier 1, operator directive 2026-09-02:**
 *"Bangkok is most visited city in the world, bump to tier 1."* This is
@@ -19,15 +48,65 @@ São Paulo / Baixada Santista / Campinas: no longer a standing override (operato
 
 ## The rule
 
-Tier 1 cities get 4 full rotation cycles before Tier 2 gets a turn. One cycle = each Tier 1 city gets one post (per `post-plan.md`'s existing round-robin mechanic). After 4 such cycles, rotate to Tier 2 for one cycle, then back to Tier 1 for another 4.
+**A tier is a share of every ten posts.** Six go to Tier 1, three to
+Tier 2, one to Tier 3.
 
-## Where the cycle count lives
+- **Tier 1 spends its six round-robin**, one post per city in `order`,
+  wrapping when it reaches the end. Deepening cities that already rank
+  is what the tier is for.
+- **Tier 2 and Tier 3 spend their share as a burst on ONE city** —
+  three consecutive posts for one Tier 2 city, one for a Tier 3 city —
+  not spread a post each across the membership. Next ten, the next city
+  in that tier's order gets the burst.
+- The ten is a **ledger, not a queue**: within a ten the posts can be
+  drawn in any order, and a piece drawn out of turn for a dated reason
+  (a festival window closing) spends its tier's share like any other.
 
-The "4 Tier 1 cycles before Tier 2" rule needs a counter, and it is not
-derivable from `post-plan.md`'s checkboxes (they record what shipped,
-not which cycle it belonged to). A city skipped under the empty-queue
-rule still consumes its turn in the cycle; a city skipped in error is
-owed its turn before that cycle closes.
+### Why share-of-output, and why bursts
+
+Replaced the nested "Tier 1 ×4, then Tier 2 ×1" cycle on 2026-09-03,
+after the Product Trio review the operator asked for. Three reasons,
+all of which the old rule failed on:
+
+1. **Nested cycles made lower tiers unreachable, silently.** Tier 2 had
+   grown to 13 slots, so a super-cycle was 33 posts and Tier 3 "after
+   Tier 2 runs twice" put Florianópolis **66 posts out** — more than the
+   75 pins the site had published in its entire existence. Nobody
+   decided that; it fell out of the arithmetic.
+2. **Adding a city used to change the cadence for everyone.** Tokyo,
+   Melbourne, Seattle and the surprise slot all joined Tier 2 in one
+   day, diluting every Tier 2 city *and* pushing Tier 3 further away.
+   Under a share, adding a city splits **that tier's** share more ways
+   and touches nothing else. That property is the point.
+3. **Round-robin below Tier 1 manufactured thin content, which is the
+   opposite of the SEO goal.** Ten cities sit at exactly one pin. A
+   one-pin city ranks for nothing, has no internal linking mass and no
+   collection to hang it on — it is an orphan, a mild negative rather
+   than a down payment. A city is worth opening when it can reach
+   cluster depth in a short window, so the share goes in as a burst:
+   several pins plus a collection that links them.
+
+Tier vocabulary is deliberately kept — it is how the operator thinks
+about geography and it renders straightforwardly in a dashboard as
+share-of-output bars.
+
+## Where the count lives
+
+The share needs a counter and it is **not** derivable from
+`post-plan.md`'s checkboxes, which record what shipped and not which ten
+it belonged to. Track `posts-this-ten` and the per-tier spend in the
+ROTATION-STATE block below.
+
+A **held** city (empty or fully-blocked queue) does not consume its
+tier's share — the share passes to the next city in that tier's order,
+and the hold is recorded with its reason. This reverses the old
+empty-queue rule, which charged a city for a turn it could not take and
+so pushed unseeded cities permanently out of reach. A city skipped in
+**error**, rather than held, is owed its post before the ten closes.
+
+If a tier cannot spend its share at all — every member held — the
+remainder falls to the tier above it, and the shortfall is recorded on
+the `held:` line rather than passing unremarked.
 
 ## NEXT UP — this skill's own state, kept current
 
@@ -41,17 +120,21 @@ two ever disagree.
 
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
-tier:            1
-cycle:           2 of 4
-order:           London → Brighton → San Francisco → Oakland → Bangkok
-served-cycle-2:  Brighton (Legends, 2026-09-02);
-                 London — turn treated as SATISFIED, see note
+ten:             #1 under share-of-output (opened 2026-09-03)
+spent:           T1 4 of 6   T2 3 of 3 (SPENT)   T3 0 of 1
+t1-order:        London → Brighton → San Francisco → Oakland → Bangkok
+t1-spent:        Brighton (Legends, 2026-09-02)
+                 London — SATISFIED, see note
                  San Francisco (dolphin-club-san-francisco, 2026-09-03)
                  Oakland (1234-go-records-temescal-oakland, 2026-09-03)
-NEXT-UP:         Bangkok — queue SEEDED 2026-09-03, turn is live
-then:            (cycle 3 opens at London)
-tier-2-served:   Barcelona & Region (Sitges batch, 2026-09-03) — see note
-
+t2-spent:        Barcelona & Region — Sitges burst, 4 pins + collection,
+                 2026-09-03. Exactly the burst shape the new rule wants,
+                 and it landed before the rule existed. See note.
+t3-spent:        nothing — all six Tier 3 cities HELD pending the
+                 sources pass. Share does not carry; see hold rule.
+NEXT-UP:         Bangkok (Tier 1) — queue SEEDED 2026-09-03, live
+then:            London, to close Tier 1's six
+held:            Seattle (T2, no queue) · all of Tier 3 (no sources)
 ```
 <!-- CORRECTION, 2026-09-03: San Francisco's turn was briefly marked
 UNSERVED here on the belief that its Dolphin Club pin had never shipped.
@@ -104,8 +187,8 @@ and does not change the floor for anything else.
 empty-queue skip no longer applies.** A `near-sources-war-room` pass
 landed six research-verified candidates in `post-plan.md` and four
 Bangkok sources in `preferred-sources.md` (BK Magazine, The MATTER, The
-Momentum, art4d). Bangkok takes its cycle-2 turn for real rather than
-being skipped; cycle 3 opens at London only once it has shipped.
+Momentum, art4d). Bangkok takes its post for real rather than being
+held; Tier 1's six close at London once it has shipped.
 
 **Note on London's cycle-2 turn (judgment call, 2026-09-03, reversible):**
 strictly, the three London pieces shipped under the london-only override
@@ -118,18 +201,20 @@ undone. London's queue is **no longer fully blocked** — Sister Midnight
 and Hampstead Heath still are, but E. Pellicci, La Camionera, The Divine,
 Hausu and TOAD are all open and verified, so it is drawable next cycle.
 
-**Reading the pointer:** `NEXT-UP` is the city whose turn it is, full
+**Reading the pointer:** `NEXT-UP` is the city whose post is next, full
 stop. Before drafting for it, check its queue in `post-plan.md`: if the
-queue is empty or every remaining item is blocked, the city is **skipped
-and consumes its turn** — advance `NEXT-UP` to the next city and record
-the skip and its reason on the `served-cycle-N` line. Never pad a turn
-with an unverified post.
+queue is empty or every remaining item is blocked, the city is **held —
+it does not consume its tier's share**. Move `NEXT-UP` to the next city
+in that tier's order and record the hold and its reason on the `held:`
+line. Never pad a share with an unverified post.
 
 **Writing the pointer:** whoever ships a post edits this block — move
-`NEXT-UP` on, append to `served-cycle-N`, and roll `cycle` when the last
-city in `order` has been served. When cycle 4 closes, set `tier: 2` for
-exactly one cycle (including the rotating surprise-city slot, picked
-fresh by `near-seo`), then return to `tier: 1, cycle: 1 of 4`.
+`NEXT-UP` on, increment the right counter on `spent:`, and append to the
+matching `tN-spent:` line. When all three shares are spent, open the
+next ten: reset `spent:` to zeroes, advance `t1-order` to where the
+round-robin left off, and hand Tier 2's and Tier 3's bursts to the next
+cleared city in each. `near-seo` picks the surprise city fresh whenever
+that slot takes Tier 2's burst.
 
 **Bangkok caveat — RESOLVED 2026-09-03.** It still has zero pins, but the
 unseeded queue that would have forced a skip was seeded by a
@@ -158,8 +243,8 @@ does:
 
 - Record the override **with its date, and quote the operator verbatim**,
   so its provenance is never in doubt later.
-- Pieces shipped under an override do **not** advance `NEXT-UP`, `cycle`,
-  or `served-cycle-N` — they are not the city's turn.
+- Pieces shipped under an override do **not** advance `NEXT-UP`, `spent`,
+  or any `tN-spent` line — they do not come out of a tier's share.
 - **An override is temporary by default and expires when the operator's
   stated reason does.** State the expiry condition when recording it. If
   the reason has passed and nobody has lifted it, say so and ask rather

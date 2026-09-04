@@ -7,31 +7,51 @@ geographically alive, and no community waits weeks for its turn.
 
 **Tier rotation (operator directive, 2026-09-01 — see `.claude/skills/content-rotation/SKILL.md`, the source of truth for this rule):**
 
-Tier 1 — London, Brighton, San Francisco, Oakland, **Bangkok** (promoted
-from Tier 2 by operator directive 2026-09-02: most-visited city in the
-world; it is the only Tier 1 city with zero pins, so its queue must be
-seeded before its turn can be drawn) — repeats 4 full cycles before Tier
-2 gets a turn. Tier 2 — Berlin, Amsterdam, Barcelona, Rome, Portland,
-Mexico City, Las Vegas, Orlando, Chengdu, Tokyo, Melbourne (both added
-by operator directive, 2026-09-03), plus one rotating surprise-city
-slot picked fresh by near-seo each time. São Paulo / Baixada Santista / Campinas's standing-override
-priority was revoked by the operator (2026-09-01 late night) — it's a
-normal Tier 2 queue now, no bump.
+**A tier is a share of every ten posts** — 6 Tier 1, 3 Tier 2, 1 Tier 3.
+Replaced the nested "Tier 1 ×4 then Tier 2 ×1" cycle on 2026-09-03.
+
+Tier 1 (6 of 10, round-robin) — London, Brighton, San Francisco,
+Oakland, **Bangkok** (promoted from Tier 2 by operator directive
+2026-09-02: most-visited city in the world; it is the only Tier 1 city
+with zero pins, so its queue had to be seeded before it could be drawn —
+done 2026-09-03). Tier 2 (3 of 10, burst) — Berlin, Amsterdam,
+Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
+Tokyo, Melbourne (both added by operator directive, 2026-09-03), plus
+one rotating surprise-city slot picked fresh by near-seo each time.
+São Paulo / Baixada Santista / Campinas's standing-override priority was
+revoked by the operator (2026-09-01 late night) — it's a normal Tier 2
+queue now, no bump. **Tier 3 (1 of 10, burst)** — Florianópolis, Porto
+Alegre, Curitiba, Belo Horizonte, Recife, Salvador (operator directive,
+2026-09-03), **all six HELD** until a sources pass finds each ≥1
+watchable local feed and ≥3 verified candidates.
 
 Paris/NYC/San Diego/Santos-specific/Bologna join Tier 2 when
 their queues first get seeded. **Seattle is a Tier 2 member outright**
 (operator directive, 2026-09-03 — *"make sure seattle is at least tier
-2"*), not queue-gated; its queue is still empty, so its turn is skipped
-under the empty-queue rule until someone seeds it.
+2"*), not queue-gated; its queue is still empty, so it is **held** until
+someone seeds it.
 
-**Posts per stop (operator directive, 2026-09-01 late night, corrected
-same night):** **1 post per stop, both tiers.** The tier distinction is
-purely about how often a city's turn comes around (Tier 1 gets 4 turns
-for every 1 Tier 2 turn), not how much gets published per turn — a
-bigger batch for the lower tier would work against the point of it
-being lower priority. A city whose queue can't support even 1 post that
-stop drains what it has (zero, in the empty-queue case) and is
-skipped on the rest, per the empty-queue rule below — never padded.
+**Posts per stop — REVERSED 2026-09-03, and this reverses an explicit
+operator directive, so the reasoning is on the record.** The 2026-09-01
+late-night rule was *1 post per stop, both tiers*, on the argument that
+a bigger batch for a lower tier works against the point of it being
+lower. Tier 1 still works that way. **Tier 2 and Tier 3 now spend their
+whole share as a burst on ONE city** — 3 consecutive posts for one Tier
+2 city, 1 for a Tier 3 city — rather than one post each across the
+membership.
+
+What changed is evidence, not preference. Ten cities are now sitting at
+exactly **one pin**. A one-pin city ranks for nothing, has no internal
+linking mass and no collection to hang it on; it is a thin orphan, which
+is a mild SEO negative rather than a down payment on future coverage.
+One-post-per-stop at the lower tiers is what produced them, and it would
+keep producing them. The burst preserves the original intent — a lower
+tier's city still comes around far less often — while making each
+appearance actually worth something. Frequency carries the priority
+signal; batch size carries the ranking.
+
+A city whose queue can't support its share drains what it has and is
+**held** for the rest, never padded.
 
 **How this works with research:** publishing rotates; research batches.
 A post's expensive half is verification, and that amortizes when a
@@ -39,8 +59,12 @@ city's candidates are researched together (the London war room proved
 this). So each city keeps a queue of VERIFIED candidates below, drained
 top-down on the city's turn. When a queue is down to 1, near-war-room
 (mini, single-city) refills it. A city whose turn arrives with an empty
-queue is skipped that cycle rather than padded with an unverified post —
-rules.md's quality gate outranks the rotation.
+queue is **held** rather than padded with an unverified post —
+rules.md's quality gate outranks the rotation. Note the change: a held
+city no longer *consumes* its tier's share, as the old empty-queue rule
+had it. Charging a city for a turn it couldn't take is what pushed
+unseeded cities permanently out of reach — Brighton was skipped every
+cycle from the tier list's creation until it was seeded on 2026-09-02.
 
 **Rules that still bind every post:** all six locales at publish,
 link-density, verify-still-open, real hero image or no publish,
@@ -50,7 +74,18 @@ push-to-live per post for operator QA.
 
 ## Rotation position
 
-**Tier 1 order:** London → Brighton → San Francisco → Oakland.
+**Tier 1 order:** London → Brighton → San Francisco → Oakland → Bangkok.
+
+**Ten #1 under the new share rule, opened 2026-09-03.** Tier 1 has spent
+4 of its 6 (Brighton, London, San Francisco, Oakland). **Tier 2 is fully
+spent** — the Sitges burst on 2026-09-03 was four pins plus a
+collection for Barcelona & Region, which is exactly the burst shape the
+new rule asks for and landed the day before the rule existed. **Tier 3
+has spent nothing and its share does not carry**: all six cities are
+held pending sources.
+
+*Everything below this line describes the old nested-cycle regime and is
+kept as history, not as live mechanics.*
 
 **Brighton took a turn 2026-09-02** (Legends) — out of strict cycle
 order, on the operator's call, because seeding its queue the same day
