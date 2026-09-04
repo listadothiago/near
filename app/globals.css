@@ -228,6 +228,68 @@ h6 {
   color: var(--color-muted) !important;
 }
 
+/* "You are here" marker — see userIcon() in components/map/WorldMap.tsx.
+   The ring is the legibility mechanism, not decoration: it guarantees a
+   light/dark boundary against arbitrary OSM raster underneath, so the
+   marker survives on a motorway, a park and a dense city block alike. */
+.near-userloc {
+  display: block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+
+.near-userloc__core,
+.near-userloc__pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 9999px;
+}
+
+.near-userloc__core {
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+  background: var(--userloc-color, var(--color-accent));
+  border: 2px solid var(--color-surface);
+  outline: 1px solid var(--color-ink);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.near-userloc__pulse {
+  width: 18px;
+  height: 18px;
+  margin: -9px 0 0 -9px;
+  border: 2px solid var(--userloc-color, var(--color-accent));
+  opacity: 0;
+  animation: near-userloc-pulse 2.6s ease-out infinite;
+}
+
+@keyframes near-userloc-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* The pulse is an affordance for finding yourself, not an animation the
+   reader has to sit through — anyone who has asked for less motion gets
+   the static ringed dot, which is already legible on its own. */
+@media (prefers-reduced-motion: reduce) {
+  .near-userloc__pulse {
+    animation: none;
+  }
+}
+
 .near-map-tooltip {
   pointer-events: auto !important;
   background: transparent !important;
