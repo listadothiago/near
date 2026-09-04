@@ -22,8 +22,12 @@ São Paulo / Baixada Santista / Campinas's standing-override priority was
 revoked by the operator (2026-09-01 late night) — it's a normal Tier 2
 queue now, no bump. **Tier 3 (1 of 10, burst)** — Florianópolis, Porto
 Alegre, Curitiba, Belo Horizonte, Recife, Salvador (operator directive,
-2026-09-03), **all six HELD** until a sources pass finds each ≥1
-watchable local feed and ≥3 verified candidates.
+2026-09-03). The sources pass ran the same day: **Porto Alegre, Curitiba
+and Salvador are CLEARED and drawable**; **Florianópolis, Recife and
+Belo Horizonte stay HELD** — all six have a verified live local feed
+now, but only the first three have three candidate pins good enough to
+draft from. Queues below. Draw order is by readiness, so Porto Alegre
+goes first and Belo Horizonte last.
 
 Paris/NYC/San Diego/Santos-specific/Bologna join Tier 2 when
 their queues first get seeded. **Seattle is a Tier 2 member outright**
@@ -320,6 +324,82 @@ drawing out of turn was the festival's 8–18 October window closing.
 - [ ] Bears Bar / the rest of the Joan Tarrida strip — STEFAN (a second, non-Parrots room on the strip is the obvious next pin; Parrots' own piece says plainly it is the anchor rather than the interesting end)
 - [ ] Platja de l'Home Mort / Platja de la Bassa Rodona — WILD0 or STEFAN (Commons has rights-clear photos of both; needs real sourcing on current status and access)
 - [ ] Barcelona city proper — still unseeded. Sitges is 40 minutes away and now gives the `ca`/`es-ES` market a foothold it did not have.
+
+### Porto Alegre (Tier 3) — SEEDED 2026-09-03, CLEARED, first Tier 3 city to draw
+
+Two independent local outlets in `sources.md` (Matinal, reader-funded and
+non-profit, which runs the weekly "Agendão" listings; and Sul 21, with a
+standing culture desk). Candidates are **leads, not research-verified** —
+the full `near-write-article` floor applies to each. Byline assignment
+still open; needs a pt-BR editor call.
+
+- [ ] **Caos Bar**, Rua João Alfredo, Cidade Baixa — the motto is
+  literally "música independente ou morte". Best single-line angle of
+  the six cities.
+- [ ] **Butikin Hifi**, Av. Independência — vinyl-only listening room,
+  originally 1960s, reinaugurated 2024 in the same building. The
+  reopening date is the hook and it is checkable.
+- [ ] **Espaço Cultural 512**, Rua João Alfredo — an artist's atelier
+  that became a room for new MPB, forró and samba. Sits on the same
+  street as Caos Bar, so the two link naturally.
+- [ ] **Bar Ocidente** — lowest priority; needs an angle beyond
+  longevity before it earns a draft.
+
+### Curitiba (Tier 3) — SEEDED 2026-09-03, CLEARED
+
+Plural (crowdfunded 2019, takes no public advertising money) plus
+Curitiba Cult for dated listings. Same caveat: leads, not verified.
+
+- [ ] **92 Graus The Underground Pub**, São Francisco — staging original
+  bands since 1991, described locally as the city's most traditional
+  alternative music house.
+- [ ] **Changes**, R. Presidente Carlos Cavalcanti 1138, São Francisco —
+  reopened 2026 on a historic corner, with ticketed curation. A
+  reopening in the current year is exactly the freshness angle Near
+  wants; get the date from Plural.
+- [ ] **Harvest Folk Bar**, São Francisco — small room, folk and
+  acoustic.
+
+### Salvador (Tier 3) — SEEDED 2026-09-03, CLEARED
+
+Correio Nagô (Instituto Mídia Étnica) is the source that matters here —
+covering Salvador's culture from the commercial dailies alone would
+misrepresent the city.
+
+- [ ] **Discodelia Pub & Records**, Rua do Meio 141, Rio Vermelho — pub
+  and record shop in one. The most Near-shaped venue found in this
+  entire pass.
+- [ ] **SAN**, R. Conselheiro Pedro Luiz 488, Rio Vermelho — LGBTQIA+
+  nightlife anchor.
+- [ ] **Casa da Felicidade**, Rua da Paciência, Rio Vermelho — curated
+  parties, B-sides and pop.
+
+### Florianópolis / Recife / Belo Horizonte (Tier 3) — STILL HELD
+
+Feeds verified (`underfloripa.com.br`, `marcozero.org`, `bhaz.com.br`),
+candidate pins not. What each needs before it clears — verification, not
+more discovery:
+
+- **Florianópolis**: Coffeeshop Club (R. Manoel Severino de Oliveira
+  592, Lagoa da Conceição) and Caverna Bugio (Centro Histórico) need a
+  third. ⚠️ **Underground Rock Bar dominates search results and is
+  historic, not open** — the 2026 hits are tribute nights held
+  elsewhere. Do not draft it as live.
+- **Recife**: Cais do Sertão (Armazém 10, Recife Antigo) and Caixa
+  Cultural are solid but institutional, which is not really Near's
+  register. ⚠️ Flowers Records (Boa Vista) is the interesting one and
+  its only citation is a **2013** blog post — confirm it still exists.
+- **Belo Horizonte**: Discoteca Pública (R. Hermilo Alves 134, Santa
+  Tereza, strong on Minas music), Old Bar (Santa Tereza, live music and
+  drag, run by a same-sex couple), Bar Museu. All from listicles. BH is
+  the largest of the six and has the thinnest independent press layer —
+  it goes last.
+
+_Tier 3 dating gap, flagged for `near-events`: none of these queues
+carries a **dated** hook yet, and the standing preference is for
+specific dated events with further-out dates. The Agendão (Porto
+Alegre) and Curitiba Cult feeds are the two places to mine for them
+before drafting._
 
 ### Barcelona (city) — queue empty, needs seeding
 ### Rome — queue empty, needs seeding (che.famo.stasera / vernissagerome IG sources queued in EPIC 5)

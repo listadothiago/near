@@ -16,10 +16,30 @@ Francisco, Oakland, **Bangkok**.
 2026-09-03: Florianópolis, Porto Alegre, Curitiba, Belo Horizonte,
 Recife, Salvador.
 
-**All six are HELD until a sources pass clears them** (operator decision,
-same day). None has a queue in `post-plan.md` or a single feed in
-`sources.md` / `preferred-sources.md` — they appear only in
-`preferred-destinations.md`. A held city does **not** consume Tier 3's
+**Sources pass RAN 2026-09-03 — three cities cleared, three still
+held.** All six now have at least one verified live local feed in
+`sources.md`, so the feed half of the gate is met everywhere. The pin
+half is not:
+
+- **CLEARED — Porto Alegre, Curitiba, Salvador.** Each has a declared,
+  funded independent outlet (Matinal + Sul 21, Plural, Correio Nagô) and
+  three or more named candidate pins with addresses and 2026 local-press
+  corroboration. Drawable.
+- **STILL HELD — Florianópolis, Recife, Belo Horizonte.** Feeds are
+  fine; the candidate pins are not yet verified to the bar. Floripa's
+  most-cited venue turned out to be historic rather than open, Recife's
+  record-shop lead rests on a 2013 blog post, and BH's candidates come
+  from listicles with the thinnest independent press layer of the six.
+  These need per-venue verification, not more discovery.
+
+**Draw order within Tier 3 is by readiness, not population.** Porto
+Alegre first — it has two independents and the deepest candidate list.
+Belo Horizonte is the largest of the six and goes last.
+
+The original hold rationale, kept because it still governs the three
+that remain held: none of the six had a queue in `post-plan.md` or a
+single feed in `sources.md` / `preferred-sources.md` — they appeared
+only in `preferred-destinations.md`. A held city does **not** consume Tier 3's
 share; the share passes to the next cleared city, and if none is
 cleared, Tier 3's slot goes back to Tier 2 for that ten. Clearing a city
 means the `near-sources-war-room` pass found **≥1 watchable local feed
@@ -130,11 +150,15 @@ t1-spent:        Brighton (Legends, 2026-09-02)
 t2-spent:        Barcelona & Region — Sitges burst, 4 pins + collection,
                  2026-09-03. Exactly the burst shape the new rule wants,
                  and it landed before the rule existed. See note.
-t3-spent:        nothing — all six Tier 3 cities HELD pending the
-                 sources pass. Share does not carry; see hold rule.
+t3-spent:        nothing yet, but the share is now SPENDABLE — the
+                 sources pass ran 2026-09-03 and cleared Porto Alegre,
+                 Curitiba and Salvador. Draw Porto Alegre.
 NEXT-UP:         Bangkok (Tier 1) — queue SEEDED 2026-09-03, live
 then:            London, to close Tier 1's six
-held:            Seattle (T2, no queue) · all of Tier 3 (no sources)
+t3-draw:         Porto Alegre (first cleared, deepest candidate list),
+                 then Curitiba, then Salvador
+held:            Seattle (T2, no queue) · Florianópolis, Recife, Belo
+                 Horizonte (T3 — feeds verified, pins not)
 ```
 <!-- CORRECTION, 2026-09-03: San Francisco's turn was briefly marked
 UNSERVED here on the belief that its Dolphin Club pin had never shipped.

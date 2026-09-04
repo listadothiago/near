@@ -514,3 +514,78 @@ which is a fact about the city's media landscape, not a gap in the pass.
 Srinakarin has **not** closed (the Ratchada site closed, then reopened
 2026-03-27), and the "G-Star reopened" thread conflicts with a closure
 reading. Both marked do-not-use without a primary source.
+
+### Tier 3 Brazil — seeding pass, 2026-09-03
+
+Ran to clear the hold on the six Tier 3 cities (Florianópolis, Porto
+Alegre, Curitiba, Belo Horizonte, Recife, Salvador). Before this pass,
+**all six had zero entries in either sources file** — the tier existed
+on paper and had nothing behind it.
+
+**Feeds found and verified.** One watchable feed per city minimum, all
+fetched 2026-09-03: `matinal.org` and `sul21.com.br` (Porto Alegre),
+`plural.jor.br` and `curitibacult.com.br` (Curitiba),
+`underfloripa.com.br` (Florianópolis), `marcozero.org` (Recife),
+`correionago.com.br` (Salvador), `bhaz.com.br` (Belo Horizonte). All are
+in `sources.md` with per-source notes.
+
+**Access quirk worth generalising: two of the best sources look dead to
+a bare `curl`.** `sul21.com.br/feed/` returns 502 and
+`plural.jor.br/feed/` returns 403 with no User-Agent, and both return
+200 with a browser UA. Brazilian independents run aggressive bot
+filters. **A bare-curl failure is not evidence a Brazilian source is
+dead** — retry with a UA before retiring anything in this region.
+
+**Rejected, with reasons** (so the next pass doesn't re-litigate):
+`guiafloripa.com.br` — feed resolves, newest item 2025-11-13, fails the
+90-day rule. `culturalizabh.com.br` and `revistaencontro.com.br` — no
+feed at either `/feed` or `/feed/`, 404. `otempo.com.br` — no feed found
+at the obvious paths; it is also a mainstream daily, so it was not worth
+a browser session. The expat/SEO listicle layer (`viajali`,
+`grupodicas`, hotel blogs) fails the editorial bar outright, same as in
+Bangkok.
+
+**Candidate pins, by city.** These are *leads*, not verified pins —
+`near-write-article`'s research floor still applies to every one.
+
+- **Porto Alegre** (strongest): Caos Bar, Rua João Alfredo, Cidade Baixa
+  — motto "música independente ou morte". Espaço Cultural 512, same
+  street, an atelier turned MPB/forró/samba room. Bar Ocidente. Butikin
+  Hifi, Av. Independência — vinyl-only listening room in its original
+  1960s building, reopened 2024.
+- **Curitiba**: 92 Graus The Underground Pub, São Francisco — staging
+  original bands since 1991, and locally described as the city's most
+  traditional alternative music house. Changes, R. Presidente Carlos
+  Cavalcanti 1138 — reopened 2026 in a historic corner. Harvest Folk
+  Bar, São Francisco.
+- **Salvador**: Discodelia Pub & Records, Rua do Meio 141, Rio Vermelho
+  — pub and record shop in one, exactly Near-shaped. SAN, R. Conselheiro
+  Pedro Luiz 488, Rio Vermelho — LGBTQIA+ nightlife anchor. Casa da
+  Felicidade, Rua da Paciência, Rio Vermelho.
+- **Florianópolis**: Coffeeshop Club, R. Manoel Severino de Oliveira
+  592, Lagoa da Conceição. Caverna Bugio, Centro Histórico. ⚠️
+  Underground Rock Bar surfaces constantly in search and is **historic,
+  not current** — the 2026 hits are tribute nights held elsewhere. Do
+  not draft it as a live venue.
+- **Recife**: Cais do Sertão, Armazém 10, Recife Antigo. Caixa Cultural
+  Recife. Flowers Records, Boa Vista — ⚠️ the only citation found is a
+  2013 blog post; confirm it still exists before drafting.
+- **Belo Horizonte** (weakest): Discoteca Pública, R. Hermilo Alves 134,
+  Santa Tereza — strong on Minas music specifically. Old Bar, Santa
+  Tereza — live music and drag, run by a same-sex couple. Bar Museu,
+  Santa Tereza.
+
+**No AAN member exists anywhere in Brazil** — the directory is 126 North
+American titles plus one in Sydney, the same wall Bangkok hit. But
+unlike Bangkok, Brazil has a real substitute: **AJOR**, the national
+association of independent digital journalism. Matinal, Plural and Marco
+Zero all belong to that world. Next Brazilian pass should work the AJOR
+membership list the way earlier passes worked the AAN directory.
+
+**Structural finding for the operator.** The sourcing quality is *not*
+even across the six, and it does not track city size. Porto Alegre,
+Curitiba, Recife and Salvador each have a declared, funded, genuinely
+independent local outlet. **Belo Horizonte — the largest of the six —
+has the thinnest independent layer of any of them**, and BHAZ is a
+provisional stand-in rather than a real find. If the tier is ordered by
+readiness rather than by population, BH goes last.

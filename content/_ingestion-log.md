@@ -1000,3 +1000,50 @@ Sources newly used and logged as candidates: `casinoprado.cat`,
 `parrots-sitges.com`, `thegaypassport.com`, `misterbandb.com`,
 `tapasitges.com`, `thepinknews.com`, `cineclubsitges.com`.
 
+
+## 2026-09-03 — `near-sources-war-room`, Tier 3 Brazil seeding pass
+
+Scope: the six Tier 3 cities added by operator directive the same day.
+Gap named before starting — **all six had zero entries in both
+`sources.md` and `preferred-sources.md`**, so the tier was unreachable in
+practice regardless of cadence. Target: ≥1 watchable local feed and ≥3
+candidate pins per city. No place pages produced, per this skill's rule.
+
+**Result: 8 sources added, feed half of the gate met for all six cities,
+pin half met for three.** Cleared: Porto Alegre, Curitiba, Salvador.
+Still held: Florianópolis, Recife, Belo Horizonte.
+
+New in `sources.md`: `matinal`, `sul21`, `plural-curitiba`,
+`curitiba-cult`, `under-floripa`, `marco-zero-conteudo`, `correio-nago`,
+`bhaz`. Every `feedUrl` fetched 2026-09-03 and returned a `<pubDate>`
+inside 48 hours.
+
+**Access quirk that would have caused false retirements.**
+`sul21.com.br/feed/` returns **502** and `plural.jor.br/feed/` returns
+**403** to a bare `curl`, and both return 200 with a browser
+User-Agent. These are two of the four best sources in the pass. Recorded
+in `preferred-sources.md` as a regional rule: a bare-curl failure is not
+evidence a Brazilian source is dead.
+
+Rejected with reasons: `guiafloripa.com.br` (feed live, newest item
+2025-11-13, fails the 90-day rule), `culturalizabh.com.br` and
+`revistaencontro.com.br` (no feed, 404 at both paths),
+`otempo.com.br` (no feed at the obvious paths, and mainstream),
+the expat/SEO listicle layer (fails the editorial bar).
+
+**Structural findings routed to the operator, not decided here:**
+(1) There is **no AAN member anywhere in Brazil** — the directory is 126
+North American titles plus Sydney — but unlike Bangkok, Brazil has a
+real substitute in **AJOR**, the national association of independent
+digital journalism, which the next Brazilian pass should work as a
+directory. (2) Source quality across the six does **not** track city
+size: Belo Horizonte is the largest and has the thinnest independent
+layer, so readiness and population disagree, and the draw order now
+follows readiness.
+
+Candidate pins were logged as **leads in `post-plan.md`**, explicitly not
+research-verified — the `near-write-article` floor still applies to each.
+Two stale-fact traps caught and written down before they could
+propagate: Florianópolis's Underground Rock Bar is **historic, not
+open** (2026 search hits are tribute nights held elsewhere), and Recife's
+Flowers Records rests on a **2013** citation.

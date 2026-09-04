@@ -1816,6 +1816,136 @@ sources:
       Auckland, and Wellington. First non-US pass added 2026-09-01. No
       RSS verified; use the Chrome-automation fallback against
       concreteplayground.com.
+
+  # --- Tier 3 Brazil seeding pass, 2026-09-03 ---
+  # One watchable local feed per Tier 3 city. Every feedUrl below was
+  # fetched on 2026-09-03 and returned a <pubDate> from the last 48h
+  # unless noted. See preferred-sources.md for the reasoning and the
+  # rejects.
+
+  - id: matinal
+    name: "Matinal"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://www.matinal.org/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Porto Alegre. Reader-funded, non-profit, explicitly independent —
+      the closest thing Near has to an alt-weekly in southern Brazil.
+      Runs "Agendão", a weekly cultural listings product, which is the
+      part near-events wants. Feed verified 2026-09-03.
+
+  - id: sul21
+    name: "Sul 21"
+    category: world-culture-news
+    region: br
+    language: pt-BR
+    feedUrl: "https://sul21.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Porto Alegre. Independent, not tied to the big economic groups,
+      with a standing /editoria/agenda/ culture desk. ACCESS QUIRK: the
+      feed 502s without a browser User-Agent and returns 200 with one —
+      it is a bot filter, not an outage. Do not retire it on a bare-curl
+      failure. Verified 2026-09-03.
+
+  - id: plural-curitiba
+    name: "Plural"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://www.plural.jor.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Curitiba and Paraná. Crowdfunded via Catarse in 2019, takes no
+      public advertising money, funded by subscribers — an unusually
+      clean independence statement. Publishes many times a day. ACCESS
+      QUIRK: 403s without a browser User-Agent, same shape as sul21.
+      Verified 2026-09-03.
+
+  - id: curitiba-cult
+    name: "Curitiba Cult"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://curitibacult.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Curitiba's cultural agenda. Listings-grade rather than editorial —
+      use it for dated programming, not for a point of view. Verified
+      2026-09-03.
+
+  - id: under-floripa
+    name: "Under Floripa"
+    category: nightlife-sound
+    region: br
+    language: pt-BR
+    feedUrl: "https://underfloripa.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Florianópolis. Weekly agenda of the local and independent music
+      scene — the only Floripa outlet found that covers the underground
+      rather than the tourist calendar. Verified 2026-09-03.
+
+  - id: marco-zero-conteudo
+    name: "Marco Zero Conteúdo"
+    category: world-culture-news
+    region: br
+    language: pt-BR
+    feedUrl: "https://marcozero.org/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Recife. Independent, non-profit, investigative — strongest on
+      urban and social coverage of Pernambuco, thinner on nightlife.
+      Best used for context and for the city's own arguments about
+      itself, not as a listings feed. Verified 2026-09-03.
+
+  - id: correio-nago
+    name: "Correio Nagô"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://correionago.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Salvador. Portal of the Instituto Mídia Étnica; Black Brazilian
+      press, human rights and Afro-Bahian culture. Academic mappings of
+      Brazilian Black media single it out for collaborative reporting
+      and independent sourcing. For Salvador this is not one source
+      among several — covering the city's culture from the commercial
+      dailies alone would misrepresent it. Verified 2026-09-03.
+
+  - id: bhaz
+    name: "BHAZ"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://bhaz.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Belo Horizonte. Digital-native local outlet, publishes daily, feed
+      verified 2026-09-03. WEAKEST of the seven — it is a local news
+      site rather than a declared independent in the sense Matinal,
+      Plural, Marco Zero and Correio Nagô are, and BH's ownership
+      picture was not established this pass. Treat as provisional and
+      re-examine before BH's first turn.
 ```
 
 ## Categories
