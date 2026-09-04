@@ -346,6 +346,39 @@ rules:
       change is itself the story. A death or a permanent closure needs
       two independent sources before it goes in; an operator flag is a
       prompt to verify, not a source.
+
+      A correction MUST set updatedAt to the moment the correction is
+      made — a real full timestamp, never a date-only midnight stamp.
+      Operator directive, 2026-09-04, answering "should an editorial
+      correction set updatedAt to the correction's date?": yes. Before
+      this, updatedAt tracked roughly when a file was last written by
+      the ingestion run that created it, so the two corrections the
+      operator himself asked for landed 5 minutes (Mobel Olfe) and 43
+      minutes (The Stud) after publish and read as untouched since
+      publication. updatedAt is now reader-facing — components/layout/
+      Dateline.tsx renders "Revised <date>" from it, PlaceCard shows
+      "Rev.", and it already drove JSON-LD dateModified and sitemap
+      lastmod — so leaving it unbumped publishes a false freshness
+      signal to readers, crawlers and answer engines alike.
+
+      Scope: bump for anything that changes what a reader reads or what
+      a machine indexes — a corrected fact, a status flip, a reworked
+      sentence, frontmatter, a new locale, an added source. Do NOT bump
+      for edits with no reader-visible effect (whitespace, key
+      reordering, a build-only field). The display rule already absorbs
+      trivia: a revision shows only when it is both >=24h later and a
+      different UTC calendar day, so a same-day typo fix bumps the
+      field honestly without claiming a revision on the page.
+
+      NEVER backfill or invent an updatedAt to make a piece look
+      fresher, and never bump it on a piece you did not actually
+      change. Fabricated freshness is the same class of error as a
+      fabricated fact — see the anti-fabrication rule in BACKLOG.md.
+      Separately: 20 of 81 meta files currently carry an updatedAt
+      EARLIER than their publishedAt. isRevised() guards the render, but
+      the ordering is impossible on its face and points at an ingestion
+      bug. Never "fix" one by editing dates to taste; correct it only
+      when you know the true moment, otherwise log it.
       near-caretaker runs on EVERY near-refresh pass — step 1a, not
       optional, not dropped when a run is scoped to one destination, and
       not the first thing cut when run-volume-cap bites (cut new-place
@@ -353,7 +386,7 @@ rules:
       refresh, and the run summary in _ingestion-log.md must record what
       the pass covered, including "nothing needed correcting".
     trigger: "every near-refresh run (mandatory), or an operator flag that something has changed"
-    action: "verify against sources, correct the specific claim in every locale including frontmatter, append statusHistory, record the pass in _ingestion-log.md; never flatten voice to make a piece age better"
+    action: "verify against sources, correct the specific claim in every locale including frontmatter, set updatedAt to the correction moment (real timestamp, never backfilled), append statusHistory, record the pass in _ingestion-log.md; never flatten voice to make a piece age better"
 
   - id: confirmed-closed
     description: >

@@ -125,6 +125,26 @@ shouldn't be casually thrown away. So:
   Readers who visited before deserve to see what changed.
 - **Append to `statusHistory`** with what changed, what verified it, and
   when. Never rewrite history entries.
+- **Set `updatedAt` to the moment you make the correction** — a real
+  full timestamp, never `T00:00:00Z`. Operator directive, 2026-09-04.
+  This field is now reader-facing: `components/layout/Dateline.tsx`
+  renders `Revised <date>` from it and `PlaceCard` shows `Rev.`, on top
+  of the JSON-LD `dateModified` and sitemap `lastmod` it already drove.
+  Leaving it alone after a correction tells every reader and crawler the
+  page hasn't been touched since publication, which is the exact
+  falsehood this skill exists to remove. The two corrections that
+  prompted the directive — Möbel Olfe, The Stud — sat 5 and 43 minutes
+  after their publish stamps and showed nothing.
+
+  Bump it for anything a reader reads or a machine indexes: a corrected
+  fact, a status flip, frontmatter, a reworked sentence, a new locale, an
+  added source. Don't bump for whitespace or non-rendering fields. A
+  same-day fix still bumps honestly — the display rule needs both ≥24h
+  and a different UTC day before it claims a revision on the page, so
+  small edits won't overstate themselves.
+
+  **Never backfill it, and never bump it on a piece you didn't change.**
+  Inventing freshness is the same class of error as inventing a fact.
 - **Never delete a page.** Same rationale as `age-decay-archive`: links
   and shares survive the place.
 - **Run `link-police`'s pass on any body text you touch.** A currency

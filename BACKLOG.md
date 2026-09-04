@@ -4328,4 +4328,17 @@ Decisions worth not re-deriving:
 
 ⚠️ **Known follow-up, content-side not code-side:** the two corrections the operator cited — the Möbel Olfe hero and The Stud's title — do **not** show a Revised badge, because their `meta.json` gaps are five and forty-three minutes. The edits were real but never got a meaningful `updatedAt` bump. That is a content-pipeline discipline question (does an editorial correction bump `updatedAt` to the correction's date?) for `near-caretaker`/`near-editor`, and it was deliberately **not** fixed here — inventing revision dates to make the site look fresher is the exact opposite of the point.
 
+✅ **ANSWERED AND WIRED IN, 2026-09-04.** Operator, asked directly whether an editorial correction should set `updatedAt` to the correction's date: *"I say yes too."* The rule is now **patched into the skill files agents actually read**, not just recorded here — per `near-backlog` step 0-A, a directive living only in `BACKLOG.md` is invisible to every dispatched agent:
+
+- `content/rules.md` → `currency-maintenance` (the rule of record: bump scope, the never-backfill prohibition, and the `updatedAt >= publishedAt` invariant), and its one-line `action:` field, which is what a skimming agent actually reads.
+- `.claude/skills/near-caretaker/SKILL.md` → "Correcting, not rewriting", as a peer bullet to `statusHistory`, since that is the checklist a correction pass works through.
+- `.claude/skills/near-write-article/SKILL.md` → step 9's mechanical gates, beside the existing no-midnight-timestamp gate.
+- `.claude/skills/near-editor/references/content-schema.md` → the `publishedAt`/`updatedAt` row, so the field's reader-facing status is visible at the point of writing it.
+
+**Scope of the bump:** anything a reader reads or a machine indexes — corrected fact, status flip, frontmatter, reworked sentence, new locale, added source. Not whitespace or non-rendering fields. Same-day edits bump honestly and simply don't clear the ≥24h + different-UTC-day display threshold, so the field can be truthful without the page overstating itself.
+
+**Deliberately still not done:** Möbel Olfe and The Stud were **not** retro-bumped. Their corrections predate the rule; assigning them a revision date now would be fabricating the freshness signal this whole item exists to make honest. They will earn a badge the next time they are genuinely corrected.
+
+🐛 **Open, unexamined — ingestion sets `updatedAt` before `publishedAt`.** 20 of 81 meta files carry an `updatedAt` *earlier* than their `publishedAt`. `isRevised()` guards the render so nothing wrong is displayed, but the ordering is impossible on its face and suggests ingestion stamps a publish date ahead of the edit that created the file. Product-trio item (`near-tech-lead`). Fix the writer, not the data — and never by editing dates to taste.
+
 Also I feel the fonts in general on desktop are a bit too tiny, kinda too hard to read the secondary ones even. I like everything in look and feel though, it's really a great look

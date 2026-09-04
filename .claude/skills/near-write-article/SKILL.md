@@ -467,6 +467,15 @@ commit time is the honest value). A midnight `publishedAt` fails this
 gate exactly like an over-length tagline. Same for `updatedAt` on an
 edit.
 
+**And `updatedAt` must actually move when you edit a published piece.**
+Operator directive, 2026-09-04. It is no longer a machine-only field —
+`Dateline.tsx` renders `Revised <date>` from it and `PlaceCard` shows
+`Rev.`, so a correction that leaves it untouched ships a visible
+falsehood about how current the page is. Set it to the real moment of
+the edit for any change a reader reads or a machine indexes; leave it
+for whitespace-only changes. Never backfill it to look fresher. Full
+rule: `currency-maintenance` in `content/rules.md`.
+
 All of `content/rules.md`'s `quality-gate-before-publish` conditions,
 checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
 long-form body ≥ 150 words in at least English (a floor, not a target —
