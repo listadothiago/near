@@ -162,10 +162,10 @@ t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
 NEXT-UP:         San Francisco (Tier 1) — second draw of ten #2, per
                  t1-order after Brighton took the first on 2026-09-04.
-                 Note SF is also still owed a cycle-2 turn from the old
-                 regime, and its queue carries the Dolphin Club pin that
-                 was written but never finished (committed at draft, 2 of
-                 6 locales) — finishing that is the obvious draw.
+                 SF's queue has ONE open item: Queer Surf, Pacifica.
+                 The Dolphin Club pin is NOT an open draw — it is live,
+                 active, all six locales (verified 2026-09-04); the
+                 "2 of 6 locales" note here was wrong and is removed.
 then:            after San Francisco, follow t1-order above. Tier 2's and Tier
                  3's bursts (Rome, Curitiba) get drawn within this ten as
                  their shares come up — they are not queued behind all
