@@ -10,6 +10,8 @@ import { ROBOTS_PREVIEW_DIRECTIVES } from "@/app/robots";
 import ThemeScript from "@/components/layout/ThemeScript";
 import ThemeKeeper from "@/components/layout/ThemeKeeper";
 import { BoardControlsProvider } from "@/lib/board/controls";
+import { SiteFreshnessProvider } from "@/components/layout/SiteFreshnessProvider";
+import { getSiteFreshness } from "@/lib/content/siteFreshness";
 import InstallPrompt from "@/components/layout/InstallPrompt";
 import FavoriteToast from "@/components/board/FavoriteToast";
 import { Analytics } from "@vercel/analytics/next";
@@ -98,6 +100,12 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
 
+  // Computed once here rather than in Header (a client component rendered
+  // by fifteen separate pages) and memoized in lib/content/freshness.ts,
+  // so the header stamp costs one meta-only scan per server process, not
+  // a content scan per request.
+  const freshness = getSiteFreshness();
+
   return (
     <html
       lang={locale}
@@ -111,11 +119,13 @@ export default async function LocaleLayout({
         <ClerkProvider>
           <NextIntlClientProvider>
             <ThemeKeeper />
+            <SiteFreshnessProvider value={freshness}>
             <BoardControlsProvider>
               <div className="max-w-[1180px] mx-auto px-[22px] pt-3 pb-16 flex-1 w-full">
                 {children}
               </div>
             </BoardControlsProvider>
+            </SiteFreshnessProvider>
             <InstallPrompt />
             <FavoriteToast />
             {/* Cookieless, ungated. */}

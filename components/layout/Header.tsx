@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { SignInButton, Show, UserButton } from "@clerk/nextjs";
 import { Link, usePathname, useRouter } from "@/lib/i18n/navigation";
 import NearMark from "./NearMark";
@@ -12,6 +12,8 @@ import CategoryFilters from "@/components/board/CategoryFilters";
 import TagFilters from "@/components/board/TagFilters";
 import ShareViewButton from "@/components/board/ShareViewButton";
 import { useBoardControls } from "@/lib/board/controls";
+import { useSiteFreshness } from "./SiteFreshnessProvider";
+import { formatContentDate } from "@/lib/content/freshness";
 import type { Category } from "@/lib/content/categories";
 import type { Tag } from "@/lib/content/tags";
 
@@ -39,6 +41,8 @@ export default function Header({
   availableTags?: Tag[];
 } = {}) {
   const t = useTranslations();
+  const locale = useLocale();
+  const freshness = useSiteFreshness();
   const pathname = usePathname();
   const router = useRouter();
   const {
@@ -222,12 +226,30 @@ export default function Header({
           puts the emphasis wherever its own sentence needs it: mid-phrase in
           English and Italian, near the end in Chinese. Keep the two keys in
           sync when either changes. */}
+      {/* The freshness stamp sits on the tagline's own line on purpose:
+          the tagline makes the claim, and the stamp is the receipt. Put
+          anywhere else in the header it reads as an unrelated status
+          widget. It links to whichever piece carries that timestamp, so
+          the claim is one click from being checked. */}
       {!compact && !filtersOpen && (
-        <p className="mt-1.5 font-mono text-[0.74rem] text-muted">
-          {t.rich("app.taglineRich", {
-            em: (chunks) => <strong className="font-bold text-ink">{chunks}</strong>,
-          })}
-        </p>
+        <div className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-[0.74rem] text-muted">
+          <p>
+            {t.rich("app.taglineRich", {
+              em: (chunks) => <strong className="font-bold text-ink">{chunks}</strong>,
+            })}
+          </p>
+          {freshness && (
+            <Link
+              href={freshness.href}
+              className="whitespace-nowrap underline decoration-2 underline-offset-[3px] decoration-ink/40 hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("freshness.siteUpdated")}{" "}
+              <time dateTime={freshness.at}>
+                {formatContentDate(freshness.at, locale)}
+              </time>
+            </Link>
+          )}
+        </div>
       )}
     </header>
   );

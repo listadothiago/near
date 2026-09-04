@@ -186,6 +186,12 @@
     "thePassEmpty": "尚未发布任何一期。每一期都从美食与饮品领域真正当下的事情开始——第一期即将上线。",
     "whyGo": "为什么值得去"
   },
+  "freshness": {
+    "published": "发布于",
+    "revised": "修订于",
+    "revisedShort": "修订",
+    "siteUpdated": "全站更新"
+  },
   "inbox": {
     "title": "给 Near 留言",
     "intro": "推荐一个地方，提醒我们某处已经关闭，或者只是打个招呼——每一条留言都会有人阅读。",
