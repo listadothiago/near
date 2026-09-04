@@ -55,6 +55,23 @@ Found while researching specific places, worth formal onboarding once a
 second or third genuinely good item from them shows up (don't add a
 source to the permanent catalog off a single lucky find):
 
+- `dazeddigital.com` (Dazed) — UK culture/queer-beat coverage, strong on
+  founder-interview pieces (e.g. La Camionera's Alex Loveless/Clara Solis
+  interview, found researching `la-camionera-hackney-london`,
+  2026-09-04). Good for city-culture and nightlife-sound stories with a
+  real subject interview, not just a listing.
+- `i-d.co` (i-D) — same beat as Dazed, queer/youth-culture angle; found
+  on the same La Camionera pass (2026-09-04), independently corroborated
+  the founder story and FLINTA-owned framing.
+- `camra.org.uk` (CAMRA pub listings) — useful for a live, dated
+  "still open, these are the hours" cross-check on UK pubs/bars
+  specifically, since CAMRA volunteers update listings on the ground;
+  found verifying `la-camionera-hackney-london` (2026-09-04). Not a
+  press/editorial source, a currency-check source.
+- `theinfatuation.com` — restaurant/bar review site, useful as a
+  UGC-adjacent proxy for queue/crowd/service behaviour when Google
+  Maps/Tripadvisor reviews are blocked to fetch tools; found on the same
+  La Camionera pass (2026-09-04).
 - Time Out's other city editions beyond London (Time Out São Paulo, Time
   Out New York, etc.) — same publisher, same reliability profile as
   `timeout-london`, straightforward to onboard per-city as coverage

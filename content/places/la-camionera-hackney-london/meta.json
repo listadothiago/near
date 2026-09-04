@@ -1,0 +1,101 @@
+{
+  "slug": "la-camionera-hackney-london",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 51.5444500,
+    "lng": -0.0468899
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Hackney",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "La Camionera — official site (hours, accessibility, walk-in policy)",
+      "url": "https://www.lacamionera.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "PinkNews — New lesbian bar La Camionera officially opens in London",
+      "url": "https://www.thepinknews.com/2024/05/21/new-lesbian-bar-la-camionera-opens-in-london/",
+      "feedId": null,
+      "originalPublishedAt": "2024-05-21T00:00:00Z"
+    },
+    {
+      "name": "Wallpaper* — The Hackney bar reviving London's legacy of lesbian spaces",
+      "url": "https://www.wallpaper.com/travel/bars/la-camionera-london-lesbian-bar",
+      "feedId": null,
+      "originalPublishedAt": "2024-06-01T00:00:00Z"
+    },
+    {
+      "name": "Dazed — La Camionera: How the stars aligned for London's new lesbian bar",
+      "url": "https://www.dazeddigital.com/life-culture/article/62084/1/la-camionera-london-lesbian-bar-founders-interview",
+      "feedId": null,
+      "originalPublishedAt": "2024-03-01T00:00:00Z"
+    },
+    {
+      "name": "i-D — Inside La Camionera, the Heart of London's 'Lesbian Renaissance'",
+      "url": "https://i-d.co/article/la-camionera-hackney-london-lesbian-bar-2024/",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "name": "Dalston Superstore — body2body event page",
+      "url": "https://dalstonsuperstore.com/event/body2body-3/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "CAMRA — La Camionera, Hackney (pub listing)",
+      "url": "https://camra.org.uk/pubs/la-camionera-hackney-198008",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-08T00:00:00Z"
+    },
+    {
+      "name": "The Infatuation — La Camionera review (queue/crowd behaviour)",
+      "url": "https://www.theinfatuation.com/london/reviews/la-camionera",
+      "feedId": null,
+      "originalPublishedAt": "2024-08-01T00:00:00Z"
+    },
+    {
+      "name": "La Camionera — Instagram (@camionera.e9)",
+      "url": "https://www.instagram.com/camionera.e9/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/LesbianPrideFlag2010London.jpg",
+    "attribution": "Gray Marchiori-Simpson, CC BY 2.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:LesbianPrideFlag2010London.jpg",
+    "licenseNote": "This is NOT a photograph of La Camionera itself — no rights-clear photo of the venue's interior, tiles or garden was found anywhere (checked Wikimedia Commons image search directly, no results for 'La Camionera Hackney'; the press photography on Wallpaper*/Dazed/i-D/PinkNews is rights-reserved editorial imagery, not licensed for reuse). This is a lesbian pride flag photographed at London Pride, 3 July 2010, by Gray Marchiori-Simpson, CC BY 2.0. 3872x2592, clears Discover's 1200px-wide and 300,000-pixel floors comfortably, ~3:2 aspect. Chosen per the queer-beat house rule to lead visibly queer at thumbnail size, and because it is honestly related to the subject (a lesbian bar) rather than a generic bar-interior stock substitute. Tier 1 (real source photo) and tier 2 (licensed stock of the actual venue) were both checked and both failed; this is tier-2-generic under near-illustrator's 'honestly related, properly licensed, license note states plainly it is not the venue' rule. No image-generation tool was available this session to attempt a tier-3 original illustration as an alternative; if the operator wants one, a ready prompt can be added to content/photo-requests.md on request."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-04T00:00:00Z",
+      "note": "Drafted via near-write-article, operator-directed from content/post-plan.md's London queue (Cluster B / Hackney-Dalston section), CUBIC-V byline (design/art angle: Clara Solis's hand-painted azulejo-and-Picasso-Minotaur tiles, Studio Popelo/Wet Studio interior). DEDUPE-BY-PLACE: ran `node scripts/check-duplicates.mjs` — no existing slug or nearby coordinate match for La Camionera anywhere in content/places/ (checked drafts too). GEOCODE: Nominatim resolved the address directly to the venue's own OSM node (amenity=bar, name=La Camionera), confidence 0.95 — about as clean a geocode as this project gets. VERIFICATION, multi-source: address and current hours confirmed against the venue's own site (lacamionera.com) — Mon-Tue 16:00-23:00, Wed & Sun 11:00-23:00, Thu-Sat 11:00-23:30, walk-ins only (booking system since discontinued) — cross-checked against CAMRA's pub-listing entry (last updated 8 May 2026, matching hours) and the venue's Instagram bio (which still shows an older 'Weds-Sun 10am-late' shorthand — the official site is treated as the more current and authoritative source, and the discrepancy is noted here for near-caretaker rather than silently resolved). Alex Loveless / Clara Solis / body2body / Dalston Superstore founder story corroborated across PinkNews, Wallpaper*, Dazed and i-D independently — all four agree on names, the body2body connection, the Broadway Market pop-up, the ~£80k fundraiser and the May 2024 permanent opening. Wallpaper* is the source for the Studio Popelo/Wet Studio design credit and the azulejo/Picasso-Minotaur tile detail. PRESS RE-CHECK: Wallpaper* and i-D/Dazed corroborate as the queue entry said. 'The Face' specifically was searched for and NOT found — no Face Magazine feature on La Camionera turned up in repeated searches; it is not cited in this piece, and the queue entry's claim of Face coverage should be treated as unconfirmed rather than repeated. TRUST GATE: set to 'auto'. Reasoning: the operator directly named/commissioned this piece in chat from the post-plan.md queue entry (the trust-gate rule's 'operator names it directly in chat' condition — same pattern as the va-east-storehouse override precedent), and independent re-verification this session found corroboration strong enough to clear the bar on its own merits regardless: five independent editorial outlets (PinkNews, Wallpaper*, Dazed, i-D, CAMRA) agree on every core fact, the venue's own official site confirms current hours/policy, and the geocode resolved directly to the venue's own OSM node at 0.95 confidence. Per the 2026-09-01 standing rule, chief-editor sign-off (this pass) counts as operator approval, so this flips straight to active in the same run rather than holding for a separate round. near-tov-police pass run: no banned openers, no faux-candor, no anthropomorphizing/claimed-tenure language (CUBIC-V never claims to have visited), one genuine sourced negative included (mixed service reports at capacity), no editorial-process-as-copy, no rank-pulling. Job 1b headline-formula check: shortTitle changed from an earlier 'The Tiles Are Not From Dalston' draft to 'Not Dalston. Well Street, Hackney.' because CUBIC-V's immediately preceding two pins ('The Bookshop That Refused to Die Twice', 'The Mill That Became a Scene') both open with 'The' — three in a row would be drift; the new headline is a correction-fragment shape per the catalogue's own documented fix pattern. near-legal-counsel pass: no unsourced defamation-adjacent claims (the one negative is a paraphrased pattern, not a quoted allegation); founders named using only their own widely-published, self-disclosed professional facts (multiple outlets already name them on the record), not an alter-ego case; every image has a full attribution/license trail; CUBIC-V's AI disclosure applies automatically via the author field; venue/brand names (Dalston Superstore, Gay's the Word) used descriptively, no implied partnership. RESEARCH FLOOR: near-deep-researcher-style multi-source pass run (5+ preferred/press sources: PinkNews, Wallpaper*, Dazed, i-D, CAMRA, The Infatuation). REDDIT LEG: searched directly (site:reddit.com La Camionera) and via general query — no Reddit thread on the venue surfaced. Honest gap, not filled with paraphrase; fallback ladder step 1 (search-index retry) tried and came back empty, claude-in-chrome escalation not run this session — flagged as unmet rather than glossed. GOOGLE/UGC REVIEWS LEG: not read directly via Google Maps/Tripadvisor (blocked in this session's tooling); substituted The Infatuation's review roundup as the closest available UGC-adjacent proxy for queue/crowd behaviour and mixed service reports — flagged as a partial substitution per the fallback ladder, not a full satisfaction of the UGC leg. Per the standing rule, this blocked-leg status is a reason this piece has LESS corroboration than a fully-verified one, not grounds by itself to upgrade trust — the auto decision above rests on the five independent press sources and the official site, not on the UGC legs. IMAGE: hero is a licensed stock lesbian-pride-flag photo, NOT a photo of the venue — see heroImage.licenseNote for the full tier-1/tier-2/tier-3 reasoning (no CC photo of the venue exists on Wikimedia Commons, checked directly; press photography on Wallpaper*/Dazed/i-D/PinkNews is rights-reserved). Three more CC-licensed in-body images: Dalston Superstore exterior and Broadway Market street scene for the founders'/origin story, and a Lisbon azulejo panel explicitly labeled as design reference rather than the venue's own tiles — 995-word body needs ceil(995/250)=4 images including the hero, and it has exactly 4. No image-generation tool was available this session to attempt an original illustration as an alternative; noted for the operator in case one is wanted later. INTERNAL LINKS: dalston-superstore-london (founders' prior venue) and gays-the-word-london (same beat, same city)."
+    }
+  ],
+  "geocode": {
+    "provider": "nominatim",
+    "confidence": 0.95,
+    "query": "243 Well Street, Hackney, London E9 6RG"
+  },
+  "publishedAt": "2026-09-04T15:22:00Z",
+  "updatedAt": "2026-09-04T00:00:00Z"
+}

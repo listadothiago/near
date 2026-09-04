@@ -141,7 +141,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #1 under share-of-output (opened 2026-09-03)
-spent:           T1 5 of 6   T2 3 of 3 (SPENT)   T3 0 of 1
+spent:           T1 6 of 6 (SPENT)   T2 3 of 3 (SPENT)   T3 0 of 1
 t1-order:        London → Brighton → San Francisco → Oakland → Bangkok
 t1-spent:        Brighton (Legends, 2026-09-02)
                  London — SATISFIED, see note
@@ -150,20 +150,28 @@ t1-spent:        Brighton (Legends, 2026-09-02)
                  Bangkok (bangkok-art-biennale-2026, 2026-09-04 — first
                  Bangkok pin; queue has five more candidates left in
                  post-plan.md, but the rotation slot itself is spent)
+                 London — 6th-of-6 real draw
+                 (la-camionera-hackney-london, 2026-09-04, CUBIC-V)
 t2-spent:        Barcelona & Region — Sitges burst, 4 pins + collection,
                  2026-09-03. Exactly the burst shape the new rule wants,
                  and it landed before the rule existed. See note.
 t3-spent:        nothing yet, but the share is now SPENDABLE — the
                  sources pass ran 2026-09-03 and cleared Porto Alegre,
                  Curitiba and Salvador. Draw Porto Alegre.
-NEXT-UP:         London (Tier 1) — closes Tier 1's six for this ten;
-                 queue is no longer fully blocked (E. Pellicci, La
-                 Camionera, The Divine, Hausu, TOAD all open and
-                 verified; Sister Midnight and Hampstead Heath still
-                 blocked, per the 2026-09-03 note below)
-then:            Tier 1 six will be SPENT once London ships — reset
-                 t1-order and open the next ten per this block's own
-                 "Writing the pointer" instructions
+NEXT-UP:         Porto Alegre (Tier 3) — Tier 1 and Tier 2 are both now
+                 fully SPENT for this ten (La Camionera closed Tier 1's
+                 sixth slot, 2026-09-04); Tier 3 is the only unspent
+                 share left, so its turn opens now rather than waiting
+                 for a full-ten reset. Per "Writing the pointer," a full
+                 reset (new t1-order, zeroed spent:) only happens once
+                 ALL THREE shares are spent — that has not happened yet,
+                 T3 is still 0 of 1 — so this is Tier 3 taking its normal
+                 turn within the current ten, not a new ten opening.
+then:            once Porto Alegre ships, all three shares (T1, T2, T3)
+                 will be SPENT for ten #1 — THAT is when to reset
+                 t1-order, zero spent:, and open ten #2 per this block's
+                 own "Writing the pointer" instructions; do not reset
+                 early
 t3-draw:         Porto Alegre (first cleared, deepest candidate list),
                  then Curitiba, then Salvador
 held:            Seattle (T2, no queue) · Florianópolis, Recife, Belo
@@ -233,6 +241,18 @@ Francisco. If the operator disagrees, set `NEXT-UP: London` and this is
 undone. London's queue is **no longer fully blocked** — Sister Midnight
 and Hampstead Heath still are, but E. Pellicci, La Camionera, The Divine,
 Hausu and TOAD are all open and verified, so it is drawable next cycle.
+
+**Note on London's real 6th-of-6 draw (2026-09-04) — TIER 1 NOW FULLY
+SPENT.** `la-camionera-hackney-london` shipped as the actual drawn London
+turn that this block's own NEXT-UP had been pointing at (see the entry
+above — "closes Tier 1's six for this ten"), distinct from the earlier
+"SATISFIED, see note" credit London got for its three-piece burst under
+the since-lifted London-only override. This is a real, counted draw, not
+a second satisfied-by-proxy credit, and it is what brings T1 to 6 of 6.
+With T2 already SPENT (Sitges burst) and only T3 left unspent (0 of 1),
+`NEXT-UP` moves to Porto Alegre — Tier 3's turn — rather than resetting
+into a new ten, since a reset per "Writing the pointer" requires all
+three shares spent, and T3 hasn't gone yet this ten.
 
 **Reading the pointer:** `NEXT-UP` is the city whose post is next, full
 stop. Before drafting for it, check its queue in `post-plan.md`: if the
