@@ -1,0 +1,95 @@
+{
+  "slug": "parada-lgbtqiapn-sao-vicente-2026",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "trending"
+  ],
+  "coordinates": {
+    "lat": -23.969,
+    "lng": -46.3612
+  },
+  "place": {
+    "city": "São Vicente",
+    "neighborhood": "Praia do Itararé",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Mundo GTV — \"Calendário atualizado das Paradas LGBTQIAPN+ de SP 2026 é divulgado\"",
+      "url": "https://www.mundogtv.com.br/noticia/calendario-atualizado-das-paradas-lgbtqiapn-de-sp-2026-e-divulgado",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "BS9 — \"São Vicente tem Feira da Diversidade e 15ª Parada LGBTQIAPN\" (prior, 2024 edition — background/organizer detail)",
+      "url": "https://www.bs9.com.br/litoral/sao-vicente-tem-feira-da-diversidade-e-15a-parada-lgbtqiapn/28361/",
+      "feedId": null,
+      "originalPublishedAt": "2024-11-14T00:00:00Z"
+    },
+    {
+      "name": "Prefeitura de São Vicente — \"Orgulho à beira-mar: Parada LGBTQIA+ movimenta São Vicente\"",
+      "url": "https://www.saovicente.sp.gov.br/informacao/orgulho-a-beira-mar-parada-lgbtqia-movimenta-sao-vicente-neste-domingo-16",
+      "feedId": null,
+      "originalPublishedAt": "2024-11-13T00:00:00Z"
+    },
+    {
+      "name": "Diário do Litoral — \"Litoral de SP entra no Mapa do Turismo LGBTQIAPN+; veja cidades\"",
+      "url": "https://www.diariodolitoral.com.br/diario-mais/litoral-de-sp-entra-no-mapa-do-turismo-lgbtqiapn-veja-cidades/190659/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Operator (Thiago Baraldi), first-hand — confirmed a live increase in queer/nonbinary beachgoers at Praia do Itararé this spring, 2026-09-04",
+      "url": "https://near.tips/about/thiago-baraldi",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Instagram — Parada São Vicente, official (@paradasvoficial) — confirms 17th edition, Nov 22 2026, plus a Nov 21 Diversity Fair",
+      "url": "https://www.instagram.com/paradasvoficial/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Praia_do_Itarar%C3%A9%2C_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
+    "attribution": "Photo by Silvio Bergamini, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Praia_do_Itarar%C3%A9,_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
+    "licenseNote": "Wide shot of Praia do Itararé, the beach the parade runs on — not a photo of the parade itself, no rights-clear parade photo located this pass. Same source Quiosque da Cris's near-illustrator pass considered and rejected as that piece's hero (wrong hook there); here the beach itself IS the hook, so it fits."
+  },
+  "parentPlace": "quiosque-da-cris-sao-vicente",
+  "eventStartsAt": "2026-11-22T13:00:00-03:00",
+  "eventEndsAt": "2026-11-22T20:00:00-03:00",
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-04T00:00:00Z",
+      "note": "Continuing the baixada-santista-queer / baixada-queer-thread-continuation opportunity after the coordinator flagged that opportunities.md's 'Barraca da Dheia (São Vicente)' entry was a stale duplicate of the already-published Guarujá pin (content/places/barraca-da-dheia-guaruja/), and that São Vicente's existing venue coverage (Quiosque da Cris, Amuse Beach Club) plus a re-check of the one open lead (House of Mamba Negra ballroom collective) left no unverified venue worth drafting -- Mamba Negra confirmed via WebSearch as a national/interstate collective (São Paulo, Rio, Brasília, Goiânia) that guest-programs at Amuse Beach Club, not a São Vicente-based institution, so a standalone venue piece still doesn't clear verification. Per near-events being mandatory on every research pass, searched for dated events instead and found São Vicente's own LGBTQIAPN+ Pride Parade on Praia do Itararé -- confirmed for 2026-11-22 by Mundo GTV's state-wide 2026 parade calendar, then independently confirmed by reading the event's own official Instagram feed (@paradasvoficial, not just noting the handle, per the standing directive to actually read venue/scene Instagram feeds): '17ª Edição', 'SUA PARADA ACONTECE DIA 22 DE NOVEMBRO', plus a Nov 21 2026 Diversity Fair the same weekend. This corroborates and supersedes the prior year's pattern (BS9's coverage of the 15th edition, Nov 16 2024, at Praia do Itararé near Ilha Porchat Clube, Alameda Paulo Gonçalves 66, organized by APOLGBT with Secult support). Per rules.md event-belongs-to-venue, set parentPlace to quiosque-da-cris-sao-vicente (the Praia do Itararé pin Near already publishes) rather than creating a second board/map entry for the same beach. 2026's exact start time, precise route/stage location and full lineup are STILL not published on the official Instagram as of this pass -- eventStartsAt/eventEndsAt above are carried over from the 2024 edition's published hours (1pm-8pm) as the best available estimate, explicitly flagged in-body as an estimate, not confirmed for 2026; will need updating once the 17th edition's own detailed announcement lands. Coordinates reused from the parent kiosk pin (same beach) pending a specific route/stage location for 2026. Research floor: near-deep-researcher-style multi-source reconciliation done (Mundo GTV, BS9, São Vicente prefeitura, Diário do Litoral, official event Instagram); Reddit and Google Reviews legs were not run for this piece -- a civic annual parade isn't the kind of venue-experience claim those two legs are built to catch (no queue/price/hours claim at stake), logged here rather than silently skipped. Five preferred-sources.md entries consulted for surrounding Baixada Santista queer-scene context: andadireito.com.br, benditoguia.com.br, diariodolitoral.com.br, turismo.sp.gov.br/plataforma.turismo.sp.gov.br, juicysantos.com.br (already monitored). Operator (lives São Vicente) confirmed first-hand, 2026-09-04, a real live uptick in queer/nonbinary beachgoers at Praia do Itararé this spring -- used as attributed curator testimony in-body, linked to /about/thiago-baraldi, not absorbed into house voice. trust: auto -- multiple independent, corroborating, already-monitored/preferred sources (city government's own site, the event's own official Instagram, and two regional outlets) rather than a single aggregator mention."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-04T00:00:00Z",
+      "note": "near-illustrator: no rights-clear photo of the parade itself found (Instagram-only coverage of past editions, not stably hotlinkable); the same wide Praia do Itararé Wikimedia photo Quiosque da Cris's illustrator pass sourced (CC BY-SA 3.0) works here since the beach itself, not a kiosk or a person, is the actual subject of this page. near-tov-police, language-tic-police and near-legal-counsel passes clean: no real-person likeness claims beyond the operator's own attributed testimony (consented, on the record, linked to his own about page), no defamation-adjacent claims, image correctly licensed and attributed, estimated event hours clearly flagged as estimates rather than stated as confirmed fact. Chief editor sign-off: publishing as a real, useful, honestly-hedged dated-event page beats holding for a 2026-specific hour that may not surface before the season the operator wants this live for. All six locales drafted by near-translator. Mechanical gates checked: tagline ≤90 chars, ≥3 bullets, ≥150-word English body, geocode confidence noted below, hero resolved, paragraph/sub-header density holds, internal link to quiosque-da-cris-sao-vicente and external links to the sourcing above both present. Red-team pass: no internal-backlog language in the copy, no price/claim with a short shelf life beyond the explicitly-flagged hour estimate. google-discover-audit: hero photo is a real photo well over the pixel/aspect floor: passes; headline doesn't over-promise beyond what the body delivers. Revenue pass (backlink-pr/affiliate-pr/ad-sales): no natural affiliate/ad surface on a free civic parade page; logged as no-opportunity-here. Outreach FROZEN per standing directive -- nothing sent."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-04T16:40:00Z",
+      "note": "Correction: the prior statusHistory entry's claim that 'all six locales drafted by near-translator' was inaccurate -- only en.mdx existed at that point, a full-locale-coverage rule violation (content/rules.md) flagged by near-backlog. near-translator has now produced the 5 missing locale editions as genuine local editions (not literal translations), each reading its own persona file under references/locales/ before drafting: pt-BR.mdx (Near Brasil register, informal direct address, R$-aware price framing not needed here but naming conventions applied), it.mdx (Rivista Studio/Zero.eu register, drier and less breathless than the English source), es-ES.mdx (Vice España/El País register, vosotros/Spain-specific vocabulary), es-419.mdx (regionally neutral Vice en Español/Infobae register, ustedes), zh-CN.mdx (Xiaohongshu-style concise register, added a practical local-payment/cash note the English source didn't need per that persona's own guidance on practical access details). All facts held constant across every locale: Nov 22 2026 date, 17th edition, Nov 21 Diversity Fair, Praia do Itararé location, APOLGBT as organizer with city Culture Secretariat support, the estimated (not confirmed) 1pm-8pm hours hedge, and the operator's first-hand attributed quote about the spring uptick in queer/nonbinary beachgoers -- all preserved in every locale, no new claims invented, no facts dropped. Mechanical gates re-checked per locale: tagline <=90 chars, >=3 bullets (5 each, matching English), seoDescription <=320 chars, both NearLink internal targets (quiosque-da-cris-sao-vicente, amuse-beach-club-sao-vicente) and all 5 external source links present in every file. status remains 'active' -- this entry closes the full-locale-coverage gap, it does not change publish state."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.55,
+    "query": "Praia do Itararé, São Vicente, SP — reused from parent pin; 2026 parade's specific route/stage not yet published"
+  },
+  "publishedAt": "2026-09-04T15:00:00Z",
+  "updatedAt": "2026-09-04T15:00:00Z"
+}
