@@ -286,14 +286,25 @@ zero Near coverage** — a genuine new-market opening, not a gap-fill.
 
 - id: baixada-queer-thread-continuation
   what: >
-    Barraca da Dheia (São Vicente/Itararé beach scene) — named
-    specifically as a gathering point for the LGBT+ community, sits
-    right alongside Quiosque da Cris and Praia do Itararé, continuing
-    the `baixada-santista-queer` thread BACKLOG.md already flagged as
-    the single best-timed opportunity in the whole queue (spring
-    starting now). Canto dos Ursos (bear-community space, Praia Grande)
-    is already live — don't duplicate, but worth a reciprocal-link check
-    once Barraca da Dheia drafts.
+    CORRECTED 2026-09-04: Barraca da Dheia is not a São Vicente/Itararé
+    venue — it's `content/places/barraca-da-dheia-guaruja/` (Praia de
+    Pitangueiras, Guarujá), already drafted, verified, and published
+    (active, 2026-09-02). This entry's original "São Vicente/Itararé"
+    location note was wrong and is struck. The actual São Vicente
+    queer-beach thread (Quiosque da Cris, Praia do Itararé's
+    significance, Amuse Beach Club) is fully covered and published —
+    see `content/places/quiosque-da-cris-sao-vicente/` (three-thread
+    piece: Cris profile + kiosk + beach significance) and
+    `content/places/amuse-beach-club-sao-vicente/`. The one genuinely
+    open lead in this thread is **House of Mamba Negra**, a
+    ballroom/voguing collective cross-promoted on Amuse Beach Club's own
+    Instagram booking calendar — real, current activity, but the
+    collective's own base/schedule couldn't be independently verified as
+    of the 2026-09-01 pass (see BACKLOG.md's São Vicente leads note).
+    Worth a fresh verification attempt before drafting a standalone
+    piece. Canto dos Ursos (bear-community space, Praia Grande) is
+    already live and reciprocally linked where relevant — don't
+    duplicate.
   why: "Directly continues the operator's own home-region priority and the still-open Quiosque da Cris / Praia do Itararé thread (BACKLOG EPIC 5, post-plan.md)."
   market: "Baixada Santista"
   angle: "LGBT"
@@ -693,3 +704,45 @@ near-trendsetter before this is drafted.**
 Timing note: if it is written at all, the useful window is *before*
 21 October, and it needs a `near-refresh` pass the moment that release
 opens or it becomes stale advice.
+
+## Trend-feed pass — 2026-09-04 (second read, for this backlog-selection run)
+
+Fetched live: BR/cat19, GB/cat19, US/cat5, ES/cat19. (BR/cat19 confirmed
+this run — the 2026-09-04 method caveat above about BR cat19/cat5
+returning identical unfiltered results was not re-tested since only one
+BR category was pulled this time.)
+
+- **BR:** unchanged from the earlier read today — football fixtures,
+  Vorcaro bank-fraud story, politics, obituaries. `setembro amarelo` and
+  `my vintage dress` recur, both already logged and already correctly
+  not pursued this week. No new signal.
+- **GB:** `bayeux tapestry` / `bayeux tapestry london` trending again,
+  reinforcing the find already logged above — this is now confirmed
+  live on a second read, not a one-day spike. Rest of the list (Dyson
+  toothbrush, celebrity deaths, football transfers, GPT-6 speculation)
+  is off-beat.
+- **US (food & drink):** no Near-relevant entries — celebrity news,
+  sports, an OpenAI water-usage story. Confirms the category-5 feed is
+  currently dead weight for the US read.
+- **ES (travel):** no Near-relevant entries — football, Norwegian
+  royals, Spanish politics/economy, a heat-dome weather story. Nothing
+  touching Sitges/Barcelona/Mallorca this week.
+
+**Read for this run: nothing new outranks the standing queue.** The one
+repeat-confirmed signal (Bayeux Tapestry) already has an owned line
+above with a decision pending from near-seo + near-trendsetter, not a
+fresh discovery. Everything else the feeds surfaced this week is
+off-beat and correctly discarded per the file's own filter rule.
+
+**2026-09-04 correction:** the "Barraca da Dheia" lead this section
+pointed to was already resolved — it's a Guarujá pin, published, not a
+São Vicente one, and the note above conflated it with the São Vicente
+Itararé thread by mistake. That thread (Quiosque da Cris + Amuse Beach
+Club) is itself fully published. See the corrected
+`baixada-queer-thread-continuation` entry above: the one remaining open
+lead in this cluster is House of Mamba Negra (ballroom/voguing
+collective), still needing independent verification of its own
+base/schedule before a standalone piece can be drafted. Secondary,
+lower-urgency action still open: resolve the chief editor's Bayeux
+Tapestry objection (what-to-do-instead angle vs. straight coverage)
+before London's next turn comes up.

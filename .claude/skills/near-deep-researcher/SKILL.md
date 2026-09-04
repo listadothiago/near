@@ -31,7 +31,16 @@ result. What "deep" means in practice:
    Anything load-bearing in a published piece needs a live source found
    this session — flag clearly which parts of a research summary are
    "worth verifying" recall vs. "confirmed via source X."
-4. **Return a structured brief**, not a raw dump: key facts (with
+4. **Check for the destination's/venue's Instagram account and actually
+   read its feed.** Operator directive, 2026-09-04: this is a permanent,
+   first-class step, not something to reach for only when a proper
+   outlet turns up nothing. In many destinations Instagram is genuinely
+   the best source available — no site, no RSS, but a live feed that is
+   the real record of events, closures and scene shifts. Log any account
+   found this way as a `preferred-sources.md` candidate per
+   `near-sources`'s capture rule, and treat its posts as a live lead for
+   dated events, not only as an image search.
+5. **Return a structured brief**, not a raw dump: key facts (with
    sources), open questions/conflicts, and a plain read on confidence
    level — this is what the requesting persona actually drafts from.
 

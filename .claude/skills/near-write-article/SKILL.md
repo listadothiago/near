@@ -36,6 +36,19 @@ no column editor, and no other piece produced through this pipeline,
 scopes an issue solo. Confirm the specific terms/keywords the piece
 should actually target, not just the general topic.
 
+**A single place page and a single dated event are not the only two
+shapes a piece can take.** Operator directive, 2026-09-04, surfaced
+when a thin-venue market (São Vicente/Itararé, after its handful of
+real venues were already covered) got pushed to find "one more pin"
+instead of the better answer. A `near-blogger` long-form guide or a
+standing-column issue is **always** a live option at this step, not a
+fallback reached for only when a place/event search comes up empty.
+When a scene's material is real but spread thin across several
+venues/observations/testimony rather than concentrated in one
+venue or one dated event, tying it together as a blog piece or column
+issue is usually the *better* piece, not the consolation one — weigh
+it alongside place/event from the start of scoping, every time.
+
 **Both roles read `content/trends-feeds.md` at this step** — the saved
 Google Trends feeds the operator directed every content skill to check
 on every run (2026-09-03). They inform the terms this piece targets;
@@ -119,6 +132,16 @@ the same venue is a worse piece even when every fact checks out.
 
 Capture any new good source found at *any* point in the process as a
 preferred-sources candidate — see the capture rule below.
+
+**Instagram accounts are a permanent, first-class source in this
+shortlist, not a fallback.** Operator directive, 2026-09-04: always
+check whether the venue/destination has an Instagram account, and
+actually read its recent posts, not just note it exists — in plenty of
+destinations it is the best source available (no site, no RSS, but a
+live feed that's the real record of events and scene shifts). Read it
+for dated events specifically, feeding step 2's `near-events` pass, not
+only as an image lead for step 6. Log it as a `preferred-sources.md`
+candidate per the capture rule below.
 
 #### 4-B. Verification
 

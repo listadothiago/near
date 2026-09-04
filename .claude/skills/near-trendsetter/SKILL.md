@@ -28,6 +28,14 @@ this piece is aimed at?**
    alt-weeklies (the AAN member directory,
    aan.org/member-directory, is RADAR-X's own primary source list and
    equally this role's), not generic travel-content aggregators.
+1-A. **Check destination/venue Instagram accounts, and actually read the
+   feed.** Operator directive, 2026-09-04: Instagram is a permanent,
+   first-class source, not a fallback — in many destinations it is the
+   best available record of what's current (see `near-sources`'s own
+   "Instagram accounts are a permanent, first-class source type"
+   section). Scanning a watched account's recent posts for an
+   announced event or scene shift belongs in this role's normal sweep
+   alongside the alt-press read, not as an afterthought.
 1-B. **Read the search-trend feeds — every run, no exceptions.**
    `content/trends-feeds.md` holds the saved Google Trends feeds the
    operator directed this role and `near-seo` to check *"always, at

@@ -53,6 +53,34 @@ When called from `near-write-article`'s research step rather than from
    Baixada Santista `lgbtq-friendly`/`nightlife-sound` leads in the
    Candidates list today, not just "some Instagram account."
 
+## Instagram accounts are a permanent, first-class source type
+
+**Operator directive, 2026-09-04.** Always look out for a destination's
+or venue's Instagram account as a preferred source, and actually check
+its feed — not just note the handle exists. In plenty of destinations
+(Bangkok's Made in Song Wat, the Baixada Santista queer-beach scene's
+`@amuseclub`/`@crisdoquiosque`/`@cantodosursos520`) Instagram is
+genuinely the best or only source: no site, no RSS, but a live,
+frequently-posted feed that is the actual record of what a venue or
+scene is doing. Treat this as standing practice, not a fallback reached
+for only when a proper outlet is missing:
+
+- When researching any venue/scene, check for an Instagram account
+  alongside the usual outlet search, and log it in
+  `preferred-sources.md`'s Candidates section the same as any other
+  find (see "Capture new sources found mid-piece" above) — name, beat,
+  which piece it surfaced from, access quirks (no RSS, CDN image URLs
+  expire and aren't licence-clear for hero images, may need
+  `claude-in-chrome` if `WebFetch` can't render it).
+- **Actually read the feed for events**, not just confirm the account
+  exists. A venue's own posts are often the single fastest way to a
+  genuine dated hook (a party, a pop-up, a closure announcement) that
+  no aggregator or listicle will carry — this is a live source for
+  `near-events` and `near-trendsetter`'s "what's current" question, not
+  only for `near-illustrator`'s hero-image search.
+- Same graduation rule as any other candidate: a second or third real
+  hit promotes it toward `sources.md`; one lookup does not.
+
 ## What to do, in order
 
 1. **Read `content/sources.md` and `content/preferred-sources.md`** —
