@@ -141,13 +141,18 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 0 of 6   T2 0 of 3   T3 0 of 1
+spent:           T1 1 of 6   T2 0 of 3   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → Bangkok → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
                  Brighton. Five cities over six slots means one city draws
                  twice — the wrap lands the 6th slot back on Brighton.)
-t1-spent:        nothing yet this ten
+t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
+                 Trafalgar Arches, STEFAN; Brighton's 2nd pin ever).
+                 Brighton's post-plan.md queue still holds The Actors and
+                 Club Revenge plus the held Polyglamorous entry and the
+                 Pride Village Party collection, but the rotation slot is
+                 spent.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -155,12 +160,13 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         Brighton (Tier 1) — first draw of ten #2. Ten #1 closed
-                 2026-09-04 when Porto Alegre spent Tier 3's share
-                 (caos-bar-cidade-baixa-porto-alegre, STEFAN, first Porto
-                 Alegre pin), making all three shares SPENT and
-                 triggering the reset this block calls for.
-then:            after Brighton, follow t1-order above. Tier 2's and Tier
+NEXT-UP:         San Francisco (Tier 1) — second draw of ten #2, per
+                 t1-order after Brighton took the first on 2026-09-04.
+                 Note SF is also still owed a cycle-2 turn from the old
+                 regime, and its queue carries the Dolphin Club pin that
+                 was written but never finished (committed at draft, 2 of
+                 6 locales) — finishing that is the obvious draw.
+then:            after San Francisco, follow t1-order above. Tier 2's and Tier
                  3's bursts (Rome, Curitiba) get drawn within this ten as
                  their shares come up — they are not queued behind all
                  six Tier 1 slots.
