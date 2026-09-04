@@ -1,0 +1,78 @@
+{
+  "slug": "bangkok-art-biennale-2026",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 13.7466,
+    "lng": 100.5303
+  },
+  "place": {
+    "city": "Bangkok",
+    "neighborhood": "Pathum Wan",
+    "region": "Bangkok",
+    "country": "Thailand"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "Bangkok Art Biennale — official site (BAB2026)",
+      "url": "https://www.bkkartbiennale.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-26T00:00:00Z"
+    },
+    {
+      "name": "ArtReview — 'Bangkok Art Biennale announces theme and artists for 2026 edition'",
+      "url": "https://artreview.com/bangkok-art-biennale-announces-theme-and-artists-for-2026-edition/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-26T00:00:00Z"
+    },
+    {
+      "name": "ArtAsiaPacific — 'Bangkok Art Biennale 2026 Announces Further Artists and Venues'",
+      "url": "https://www.artasiapacific.com/news/bangkok-art-biennale-2026-announces-further-artists-and-venues/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "The Beat (Bangkok) — 'Bangkok Art Biennale Returns in 2026 with Angels and Mara'",
+      "url": "https://thebeat.asia/bangkok/the-list/whats-on/art-biennale-2026",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-30T00:00:00Z"
+    },
+    {
+      "name": "Bangkok Art Biennale — official Instagram (@bkkartbiennale)",
+      "url": "https://www.instagram.com/bkkartbiennale/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/BKK_Art_and_Culture_Centre_%28IV%29.jpg",
+    "attribution": "Supanut Arunoprayote, CC BY 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:BKK_Art_and_Culture_Centre_(IV).jpg",
+    "licenseNote": "CC BY 4.0, attribution required. Bangkok Art and Culture Centre (BACC), Rama I Road — one of BAB 2026's ten confirmed venues and the biennale's usual institutional anchor. 5476x3697, clears the Discover card floor comfortably. Photo dates to 2018; BACC's building is unchanged and this is the venue as it stands, not an artwork claimed to be in the 2026 show."
+  },
+  "eventStartsAt": "2026-10-29T00:00:00Z",
+  "eventEndsAt": "2027-02-28T23:59:59Z",
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-04T13:02:47Z",
+      "note": "Drafted off content/opportunities.md's Bangkok seeding pass (2026-09-03), which flagged this as the strongest far-out dated hook in the queue. Bangkok is content-rotation's NEXT-UP Tier 1 city; this is its first pin. DEDUPE CHECKED: `node scripts/check-duplicates.mjs` returned no Bangkok/BAB match against any existing place, including drafts; no prior Bangkok pin exists. CURRENCY RE-VERIFIED THIS SESSION (queue was seeded 2026-09-03, this pass is 2026-09-04): dates 29 Oct 2026 - 28 Feb 2027 and the 'Angels and Mara' theme are unchanged and corroborated independently across the biennale's own site/Instagram, ArtReview, ArtAsiaPacific and The Beat (Bangkok) - four non-aggregator sources, well past the trust-gate's 2+ threshold, so this ships trust:auto/active rather than held for review. VENUE LIST (10, per ArtAsiaPacific, most complete of the sources checked): Wat Arun, Wat Pho, Wat Prayoon, Bangkok Art and Culture Centre (BACC), Museum Siam, National Museum Bangkok, National Gallery of Thailand, One Bangkok, CentralWorld, Siam Paragon, Art Centre at Silpakorn University - note this lists 11 by name across the two venue-list sources fetched (ArtAsiaPacific vs ArtReview differ slightly on the non-temple venues), consistent with the seeding pass's own flagged risk that 'the venue count... shifts between editions and which aggregators copy forward from BAB 2024' - the ten temple/museum/institutional anchors (Wat Arun, Wat Pho, Wat Prayoon, BACC, Museum Siam, National Museum Bangkok, One Bangkok) are the load-bearing, cross-confirmed set; the shopping-mall satellite venues (CentralWorld, Siam Paragon) and Silpakorn's art centre are named by only one source each and are flagged in-body as needing the official site's final venue map rather than asserted as certain. GEOCODE: pinned to BACC (Bangkok Art and Culture Centre, Pathum Wan) as the biennale's customary institutional hub and the one venue every source agrees is participating - not a claim that BACC is the 'main' venue, since this is a city-wide, multi-venue event exactly like Sitges Film Festival 2026 (event-belongs-to-venue considered and not applied, same reasoning as that piece). RESEARCH FLOOR: near-deep-researcher multi-source cross-check done (5 sources above plus Instagram). Reddit and Google/venue reviews (step 4-0 legs 2-3) were attempted via search index and returned nothing usable - r/Bangkok has no dated BAB2026 discussion thread yet, which is unsurprising and not a red flag: the event has not opened (first day is 29 Oct 2026) so there is no visitor testimony to mine yet, unlike a standing venue. This is logged as the reason the leg came back empty rather than glossed as met. BK Magazine, art4d, The MATTER and The Momentum (Bangkok's four Tier 2 sources) were checked directly and NONE has published on BAB 2026 yet as of this session - logged as an open gap for near-caretaker/near-refresh to catch when they do. New preferred-sources.md candidates logged from this research: ArtReview, ArtAsiaPacific, The Beat (Bangkok), My Modern Met. Admission/ticketing was not disclosed by any source checked and is not asserted in the body."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.7,
+    "query": "Bangkok Art and Culture Centre, 939 Rama I Rd, Wang Mai, Pathum Wan, Bangkok 10330 (one of BAB 2026's ten venues; the biennale itself is city-wide across all ten)"
+  },
+  "publishedAt": "2026-09-04T13:02:47Z",
+  "updatedAt": "2026-09-04T13:02:47Z"
+}
