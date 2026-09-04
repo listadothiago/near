@@ -636,3 +636,60 @@ true now (four Sitges pins, one collection). That row deserves a re-score
 rather than being left resting on a claim that has only just become
 accurate.
 
+
+## Trend-feed pass — 2026-09-04
+
+Ran per the standing directive that `content/trends-feeds.md` is checked
+every run. Operator asked for it explicitly this session.
+
+**Method caveat, important for whoever runs this next:** the BR feeds
+for category 19 (Travel) and category 5 (Food & Drink) returned an
+**identical** list. Google Trends renders client-side and the `category`
+parameter did not survive `WebFetch` — so that was one unfiltered
+Brazil read, not two category reads. Do not report per-category BR
+findings from a `WebFetch` of these URLs; either find a mechanism that
+applies the filter or say plainly that it is unfiltered.
+
+**Result: this week's feeds are close to content-empty for Near.**
+Brazil was football fixtures (Grêmio x Internacional, Flamengo x
+Mirassol), a bank-fraud story (Vorcaro), politics and obituaries. Per
+the file's own rule these are discarded without comment — a trending
+query is an opportunity to check against the beat, never a mandate.
+
+Two entries survived the filter, both weak-to-moderate:
+
+- **"My Vintage Dress" (BR, 50K+)** — vintage/thrift is adjacent to the
+  beat and Brazil is the operator's home market. Not yet a piece; a
+  thread worth pulling if a São Paulo or Santos vintage cluster has
+  enough verified venues behind it. Unverified.
+- **"Setembro Amarelo" (BR, 50K+)** — national suicide-prevention
+  month. Deliberately NOT pursued. Real demand, but Near has no
+  standing or sourcing to cover mental-health campaigning, and reaching
+  for it from a nightlife guide would be the exact trend-chasing the
+  feeds rule exists to prevent.
+
+### The one real find: Bayeux Tapestry, British Museum (London, Tier 1)
+
+**Dated, verified, and it opens 10 September 2026** — first UK display
+in roughly 1,000 years, running to 11 July 2027 in the Sainsbury
+Gallery. Surfaced from the GB Entertainment/Travel feed at 50K+.
+
+The angle that makes it a Near piece rather than a press-release
+rewrite: **10 Sept – 31 Dec 2026 is already sold out.** No walk-ins,
+advance booking only, £25–33. The next release — **1 Jan – 31 Mar 2027,
+on sale 21 October 2026** — is the actionable date, and it satisfies
+the standing preference for further-out dates over near-term ones.
+Nobody else leads with "you can't get in yet, here's the drop."
+
+**Unresolved editorial objection, recorded rather than settled:** the
+chief editor's position is that the British Museum blockbuster is the
+tour bus, not the counterculture, and Near covering it straight would
+be off-beat. The version that survives that objection is a
+what-to-do-instead piece — the October ticket drop plus the free and
+genuinely alternative things within walking distance of Great Russell
+Street — not a review of the tapestry. **Decision owed by near-seo +
+near-trendsetter before this is drafted.**
+
+Timing note: if it is written at all, the useful window is *before*
+21 October, and it needs a `near-refresh` pass the moment that release
+opens or it becomes stale advice.

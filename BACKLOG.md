@@ -4097,7 +4097,23 @@ Decisions taken:
 
 thiago adds:
 
-the hero image is broken here https://near.tips/en/place/mobel-olfe-berlin
+~~the hero image is broken here https://near.tips/en/place/mobel-olfe-berlin~~
+✅ **FIXED 2026-09-04, `b8848af`.** Not a bad link. It was the only hero
+of the site's 75 pointing at a `/thumb/.../1024px-` URL, and **Wikimedia
+now rejects non-standard thumbnail widths** (w.wiki/GHai). The wrong
+hash path in the stored URL (`e/ef`, actual `7/78`) was a red herring —
+correcting it still 400'd. Swapped to a 0.8MB JPEG original of the same
+building. All 75 heroes swept; no other pin uses a thumb URL.
+
+**→ STANDING RULE for `near-illustrator`, from the above: never store a
+`/thumb/` URL. Point at the Commons original, and check its filesize —
+the Möbel Olfe original is a 98MB 5102x3833 PNG, which is not a usable
+hero even when it resolves.** Prefer a JPEG original in the 0.5–3MB
+range. Also: **Wikimedia throttles bare/browser-spoofed User-Agents**
+(429s that look like breakage). A descriptive UA naming the project and
+a contact — `NearTips/1.0 (https://near.tips; …)` — clears it. This is
+the Wikimedia analogue of the Brazilian-sources UA rule and belongs
+with it in `preferred-sources.md`.
 
 ~~Add Florianopolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador to Tier 3. This is a new tier. It runs once after tier 2 has ran twice in the rotation.~~ ✅ **DONE 2026-09-03** — Tier 3 exists with all six cities, but the *cadence* was changed rather than implemented as specified; see below.
 
@@ -4163,7 +4179,17 @@ everybody and agent know that  our main goal now is to grow SEO traffic inbound 
 
 the about page https://near.tips/en/about could explain that we fight stale content and we use both simple programming (like the front end hiding) and AI to keep our content fresh. also it is not just for cities, surroundings, day trips from cities are also possible, so don't say that.do play up the classic alternative weekly paper inspiration. Highlight the curation of sources in this vein around the world. SEO skill, chief editor and Parser should have a look at this about page and see how to make it more interesting and positively impactful. Parser is invited because the about page should explain our methods at a high level and why they are worth the while.
 
-Recommendation: fix the "you are here" map marker (components/map/WorldMap.tsx:48-55, rendered at :273-279).
+~~Recommendation: fix the "you are here" map marker (components/map/WorldMap.tsx:48-55, rendered at :273-279).~~
+✅ **DONE 2026-09-04, `b8848af`** — but **the diagnosis below was wrong
+and should not be re-derived.** `--color-accent` is **#ccff00** (acid
+lime), not sage. The `#5c7a6c` quoted below was a **stale hardcoded
+fallback** from a retired palette, live only when the CSS var fails to
+read. The actual defect: a flat 12px dot with no outline, beside 26x34
+drop-shadowed teardrop pins — it lost on size *and* on having no
+light/dark boundary against arbitrary OSM raster. Now a ringed 18px
+circle in a 44px box (a shape nothing else on the map uses, so it can't
+read as a PlaceMarker), surface ring + ink hairline, pulse gated on
+`prefers-reduced-motion`. Stale fallback literal corrected.
 
 Why it wins the panel call:
 

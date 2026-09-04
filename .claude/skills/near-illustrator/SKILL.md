@@ -115,6 +115,33 @@ https://commons.wikimedia.org/w/api.php?action=query&generator=search
 Read `extmetadata` for `LicenseShortName` and `Artist` before choosing,
 and **look at the image** before wiring it in.
 
+**Three Wikimedia rules, all learned from live breakage (2026-09-04,
+`b8848af`, the Möbel Olfe hero):**
+
+1. **Never store a `/thumb/.../NNNpx-` URL. Point at the original
+   file.** Wikimedia now rejects non-standard thumbnail widths with a
+   400 (`w.wiki/GHai`), so a hardcoded width is a hero that breaks on
+   someone else's schedule. All 74 other heroes on the site already
+   point at originals; the one that didn't is the one that broke.
+2. **Check `size` in the same API call, not just dimensions.** The
+   Möbel Olfe original is a 98MB 5102x3833 PNG — unusable as a hero
+   even when it resolves. Prefer a **JPEG original in the 0.5–3MB
+   range**. A giant PNG is a red flag that the uploader dumped a raw
+   scan, and Commons has no obligation to thumbnail it for you.
+3. **Use a descriptive User-Agent when fetching from Wikimedia.** Bare
+   curl and spoofed browser UAs get throttled with 429s that look
+   exactly like dead images and will send you chasing a phantom
+   outage. `NearTips/1.0 (https://near.tips; baraldi@gmail.com)`
+   clears it. Same shape as the Brazilian-sources UA rule in
+   `content/preferred-sources.md` — a fetch failure is not evidence an
+   image is gone until you have retried with a proper UA.
+
+**And verify location by looking, not by reading metadata.** The Möbel
+Olfe replacement's EXIF description reads "Dresdenerstraße" while the
+venue is on Reichenberger Straße — the metadata was naming the *vantage
+point*, not the address. Had that been trusted either way, the result
+would have been a wrong rejection or a wrong building.
+
 What makes a generic image *suitable* rather than lazy filler:
 
 - **Honestly related to the subject** — a rainbow flag for a queer venue,
