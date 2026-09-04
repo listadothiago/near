@@ -1,7 +1,7 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
 
-Execute skill and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute all quick wins first. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
+Execute skill, logic, process and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute all quick wins first. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
 ## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
 
 The operator delivered a large batch of directives and then asked for a
@@ -12,14 +12,16 @@ that should process it.
 
 - Working tree clean apart from one untracked draft (below); `main` is
   level with `origin/main`.
-- **`content/places/bar-italia-soho-london/en.mdx` is an unfinished draft.**
+- ~~**`content/places/bar-italia-soho-london/en.mdx` is an unfinished draft.**
   A background agent researching it hit the session limit mid-pipeline.
   The English body is written and sourced (hours corrected against the
   bar's own Instagram, the Outernet second site, the Baird plaque), but it
   has **no `meta.json`, no hero image, no illustrator/TOV/legal pass and
   no locales**. Not publishable. Left untracked deliberately. Next session:
   resume it through `near-write-article` from the illustrator step, or
-  delete it — do not commit it as-is.
+  delete it — do not commit it as-is.~~ **Stale as of 2026-09-03** — Bar
+  Italia is fully built and published: `meta.json` present, all six
+  locales, hero image. Nothing to resume.
 
 ### ✅ P0 — done, shipped `1c5f6fa`
 
@@ -276,6 +278,67 @@ itself immediately.
   earlier today — this is at full desktop width. → `near-tech-lead`.
 - **Favorites should be a heart**, labelled *liked / gostei*, not a star.
   → `near-lead-ux`.
+
+#### Map sidebar, three separate defects (2026-09-03, operator-reported)
+
+Operator, verbatim: *"the tool tip doesnt fit, the south america cluster is
+crazy, the ad box is crazy."* One screenshot, three distinct causes — do
+not treat them as one "sidebar is wonky" ticket. → `near-tech-lead` +
+`near-lead-ux`. **Captured only; deliberately NOT fixed** (operator
+directive same session: *"just capture in backlog dont fix yet"*).
+
+- **The map house-ad overflows its box and is silently clipped.**
+  **Measured in a running dev server, so this one is diagnosed, not
+  suspected:** in the map column the unit's content lays out **654px wide
+  inside a 262px box**, and `Placement.tsx`'s wrapper `overflow-hidden`
+  cuts the remainder off.
+  - The headline renders as **one 491px line** — the format's
+    `line-clamp-2` never engages because nothing constrains the width.
+  - The `Read this →` CTA lands at **x=1412**, entirely outside the box.
+    It is on screen in the DOM sense and invisible to the reader.
+  - The thumbnail collapses to **3px wide** — `h-full` on a `flex-none`
+    item under `items-center` has no height to derive `aspect-square`
+    from. That 3px sliver is the thin bar visible in the screenshot.
+  - **Cause:** `app/[locale]/page.tsx:73-88` sells `mobile-banner`
+    (320x100) into the map column, and `Placement.tsx`'s `HORIZONTAL`
+    branch (`:178-181`) strings thumb + kicker + headline + teaser + CTA
+    into a single row with every item `flex-none`. Fine at 320px,
+    impossible at 262. Note the page comment already worried about
+    exactly this for `leaderboard` and picked `mobile-banner` as the safe
+    option — it isn't; **`stretch` lets a unit render narrower than its
+    nominal format**, and nothing in `Placement` handles that case.
+  - **Two candidate fixes, and this is a product call, not just a CSS
+    one:** (a) make the horizontal format shrink-safe — stack kicker +
+    headline + CTA beside a fixed-width thumb, `min-w-0` throughout so
+    `line-clamp` can actually bite; or (b) stop selling a 320px unit into
+    a 262px slot and use `mrec`, which fits the column honestly. (b)
+    costs ~150px of the sticky column's height budget, which is what
+    `Board.tsx:256-265` was protecting. → `near-lead-product` to pick,
+    since it decides what inventory the slot represents to a future buyer.
+- **The tooltip doesn't fit the map frame.** `WorldMap.tsx:248-258`.
+  The card is `w-[min(13rem,calc(100vw-3rem))]` — **clamped to the
+  viewport, but the real constraint is the map container**, which measures
+  **282px wide**. A 208px card anchored at a pin's centre therefore
+  overflows whenever the pin sits within ~104px of either edge, i.e. for
+  most of the map, and the frame's load-bearing `overflow-hidden` slices
+  it. Vertically it's the same story: hero image + type ≈ 170px of card
+  anchored *above* the pin, inside 340px of map.
+  - The existing comment at `:249-254` says this was already fixed once
+    for the "image leaks" report. It wasn't — `100vw` is 1152px on
+    desktop, so the clamp is inert exactly where the column is narrow.
+  - The fix has to clamp against the **map element**, not the viewport,
+    and probably needs to flip the tooltip's `direction` near the top
+    edge. Worth re-checking whether a `Popup` (which has `autoPan` /
+    `keepInView`, unlike `Tooltip`) is the right primitive after all.
+- **The South America cluster is wrong.** Operator-reported from the
+  screenshot; **not yet reproduced** — the board state I loaded had
+  filters applied and rendered only two markers, so this one still needs
+  diagnosis before anyone estimates it. Start at the `Supercluster` setup
+  (`WorldMap.tsx:296-400`) and the `clusterIcon` size ramp (`:57-75`).
+  Likely suspects given the Baixada Santista concentration: Santos, São
+  Vicente and São Paulo sit within ~70km, so at world zoom they collapse
+  into one badge whose count and radius stop matching what clicking it
+  does. Reproduce **at world zoom with filters cleared** first.
 - **The filter set is a promise we're not keeping.** If the board offers
   Vira-noite, Sober Curious, Lenda Local, Flagra de Famoso, Querido dos
   Influencers, Pet-Friendly, Achado Escondido, etc., **those filters must
@@ -4030,3 +4093,135 @@ Decisions taken:
   (target under 1.5 MB), a poster frame, `preload="none"`, lazy mount
   below the fold, muted, and a reduced-motion opt-out. That is a Product
   Trio item, not a content one.
+
+
+thiago adds:
+
+the hero image is broken here https://near.tips/en/place/mobel-olfe-berlin
+
+Add Florianopolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador to Tier 3. This is a new tier. It runs once after tier 2 has ran twice in the rotation.
+
+Product Trio who are all smart agents (lead product, lead ux and tech lead) please examine, critique and even alter this rotation logic. for me it is easy to communicate in terms of tiers, and eventually it will be easy to see tiers in dashboards. Consult with SEO for priorities, since our main goal is to grow SEO traffic inbound and retention.
+
+everybody and agent know that  our main goal now is to grow SEO traffic inbound and retention, right???
+
+the about page https://near.tips/en/about could explain that we fight stale content and we use both simple programming (like the front end hiding) and AI to keep our content fresh. also it is not just for cities, surroundings, day trips from cities are also possible, so don't say that.do play up the classic alternative weekly paper inspiration. Highlight the curation of sources in this vein around the world. SEO skill, chief editor and Parser should have a look at this about page and see how to make it more interesting and positively impactful. Parser is invited because the about page should explain our methods at a high level and why they are worth the while.
+
+Recommendation: fix the "you are here" map marker (components/map/WorldMap.tsx:48-55, rendered at :273-279).
+
+Why it wins the panel call:
+
+- MoSCoW: Must. Operator-reported defect on live UI. Under the codified rule, an explicit operator ask outranks any Could regardless of RICE score.
+- RICE: high, cheap. Reach = every board visitor on every session. Effort ≈ one small component change: bigger dot, a colour deliberately outside the map palette (it's currently --color-accent #5c7a6c sage-on-sage — near camouflage), a white/paper outer ring, and a slow pulse gated on prefers-reduced-motion. Cause is already located, so this is execution, not investigation.
+- The standing rule says quick wins first, and this is the cleanest one on the board — the diagnosis work is already banked, so the value is sitting there unclaimed.
+- Constraints already recorded: legible in both themes, and must not read as a PlaceMarker — it's the reader, not a tip.
+
+Runner-up, for context: the London East End day collection (near-blogger). Its gate just cleared quietly — V&A East Storehouse and Bar Italia are both complete with meta.json and all six locales, so five of the seven route pins are published. It's the strongest content item, and it runs under the LONDON-ONLY override so it doesn't spend a rotation turn. But E. Pellicci and La Camionera are still queued, and it's a full war-room-scale piece — wrong to start ahead of a diagnosed one-file fix.
+
+Two notes on tree state:
+- BACKLOG.md has 14 uncommitted lines — worth committing before starting anything.
+- The handoff's claim that Bar Italia is "an unfinished draft, no meta.json, no locales" is stale — it's fully built now. That line should be struck when the backlog is next updated.
+last interrupted run:
+
+[Image #1]
+
+❯ everything wonky and funky in the sidebar
+
+The photo's rotated 90°, so let me get my bearings on the actual sidebar code before guessing.
+
+  Searched for 2 patterns, read 4 files, listed 3 directories, ran 2 shell commands
+
+The layout math already explains the photo, but let me confirm against a real render rather than a rotated photo.
+
+  Listed 1 directory, ran 3 shell commands
+
+Server's up. Let me look at the actual sidebar.
+
+  Called claude-in-chrome 3 times
+
+Confirmed the bug precisely: inside the 262px map column, the promo's content lays out 654px wide and gets clipped by overflow-hidden.
+
+- title The Strokes and Gorillaz… renders as one 491px line (line-clamp-2 never engages — nothing constrains its width)
+- Read this → sits at x=1412, entirely outside the box
+- the thumbnail collapses to 3px wide (h-full + items-center = no height to derive aspect-square from) — the sliver visible in your photo
+
+It's the mobile-banner format: it strings image + kicker + title + teaser + CTA into a single row with every item flex-none. That's fine at 320px, hopeless at 262. Let me fix the format so it can't overflow.
+
+⏺ Update(components/ads/Placement.tsx)
+Added 18 lines, removed 1 line
+ */
+const TYPE: Record<
+  PlacementSize,
+  { kicker: string; title: string; teaser: str
+  { kicker: string; title: string; teaser: string; cta: string; thumb: string }
+> = {
+  mrec: {
+    kicker: "text-[0.6rem]",
+    title: "text-[1.7rem] leading-[0.95] line-clamp-3 text-balance",
+    teaser: "text-[0.78rem] leading-snug line-
+    cta: "text-[0.66rem]",
+    thumb: "",
+  },
+  "half-page": {
+    kicker: "text-[0.68rem]",
+    title: "text-[2.6rem] leading-[0.92] line-
+    teaser: "text-[0.95rem] leading-snug line-clamp-6",
+    cta: "text-[0.78rem]",
+    thumb: "",
+  },
+  leaderboard: {
+    kicker: "text-[0.6rem]",
+    title: "text-[1.5rem] leading-[1] line-clamp-2 max-w-[24ch]",
+    teaser: "text-[0.8rem] leading-snug line-c-w-0",
+    cta: "text-[0.7rem]",
+    thumb: "w-[86px]",
+  },
+  "mobile-banner": {
+    kicker: "text-[0.55rem]",
+    title: "text-[1.05rem] leading-[1] line-cl
+    teaser: "hidden",
+    cta: "text-[0.62rem]",
+    thumb: "w-[72px]",
+  },
+};
+
+/** Wide, short formats lay the same parts out on one line. */
+const HORIZONTAL: PlacementSize[] = ["leaderbo
+
+/**
+ * Horizontal formats that can't afford a single row of parts.
+ *
+ * `stretch` lets a unit render narrower than its nominal format — the map
+ * column is 300px of grid minus padding and b
+ * around 260. Strung out on one line (thumb, kicker, headline, CTA) that
+ * content measured 654px and was silently cli
+ * overflow-hidden: headline cut mid-word, CTA
+ * Stacking the type beside the thumbnail is wve
+ * a container narrower than itself.
+ */
+const STACKED: PlacementSize[] = ["mobile-bann
+
+export default function Placement({
+  slot,
+  size,
+You've hit your monthly spend limit.
+/usage-credits to adjust your monthly spend limit.
+
+✻ Worked for 3m 29s · 5 background tasks still running
+
+❯ just capture in backlog dont fix yet
+
+  the tool tip doesnt fit, the south america cluster is crazy, the ad box is crazy
+You've hit your monthly spend limit.
+/usage-credits to adjust your monthly spend limit.
+
+the tagline The alternative guide to everywhere. could change to
+The *always fresh* guide to anywhere. 
+
+the font could be bold in always fresh
+
+the alternativeness remains in DNA but we dont have to overtly announce this sort of thing, if you know you know. freshness has much better appeal
+
+We can continue to be alternative without mentioning in the tag line to make space for the concept of guaranteed freshness. get a group together to revise this tagline for the best one across all languages, with chief editor, all language editor translators, CMO, TOV. get a group together (product trio and all skills they choose to invite) to figure out how to enforce this promise of being always fresh even further. Last Revised date of articles should be prominent for the reader for example. last update of site content as a whole could be in header, linking to the latest article published or revised at that timestamp
+
+Also I feel the fonts in general on desktop are a bit too tiny, kinda too hard to read the secondary ones even. I like everything in look and feel though, it's really a great look
