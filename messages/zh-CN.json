@@ -130,7 +130,8 @@
     }
   },
   "board": {
-    "searchPlaceholder": "搜索任何内容…",
+    "searchPlaceholder": "搜索任何地方的任何内容…",
+    "searchPlaceholderShort": "搜索任何内容…",
     "map": "地图",
     "showMap": "显示地图",
     "hideMap": "隐藏地图",
