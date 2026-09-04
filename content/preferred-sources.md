@@ -278,15 +278,35 @@ waiting for a second hit.
   "Evolution of Pride in Kemptown" paper. Use as a verification source
   for anything about council policy — this is how the Pride Village Party
   piece avoids being he-said-she-said.
-- `quartersbrighton.co.uk` — Quarters' own site and listings; the primary
-  source for Polyglamorous dates now that the party has moved there from
-  Chalk.
+- `quartersbrighton.co.uk` — Quarters' own site; `/whatson` is a genuinely
+  deep forward listing (34 events spanning Sept 2026 → April 2027 when
+  checked 2026-09-04), which makes it strong both for dates and as
+  negative evidence about what is *not* running. **Trap:** the per-event
+  subpages are orphaned and not date-stamped by year —
+  `/whatson/polyglamorous` still serves a **17 October 2025** event as if
+  live, and that stale page is what produced the false "running Oct 2026"
+  seed in `post-plan.md`. Always cross-check a subpage against `/whatson`.
+  The party's move to Quarters is real; the claim it moved *from Chalk* is
+  **not** verified — ticketing records point to Concorde 2 instead.
+- `visitbrighton.com/whats-on` — the city's official visitor listings.
+  Carried the Polyglamorous: Pucker Up Pride (Quarters, 31 July 2026)
+  entry with price and door detail when the venue's own site had dropped
+  it. Useful as a second listing source for Brighton events, though it
+  404s once an event has passed, so capture detail on first read. Found
+  researching the held Polyglamorous piece, 2026-09-04.
+- `instagram.com/polyglamorousbrighton` — Polyglamorous' own feed (13.1K
+  followers). Bio carries the current venue address, which is the fastest
+  currency check on where a nomadic party actually lives now. Found
+  2026-09-04.
 - `thegreendoorstore.co.uk` — Green Door Store's own site, for listings.
 
 _Flagged for `near-caretaker`: Brighton listicles and directories are
 unusually stale — they still call The Actors "The Marlborough" and still
 place Polyglamorous at Chalk. Treat any Brighton aggregator as
-unverified until checked against the two outlets above._
+unverified until checked against the two outlets above. Note that
+"aggregators are stale" cuts both ways: it justifies distrusting the
+Chalk listing, but it is **not** evidence for whatever replaces it —
+that still needs its own source._
 
 ### Baixada Santista — found researching `barraca-da-dheia-guaruja` (2026-09-02)
 
