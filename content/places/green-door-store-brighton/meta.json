@@ -1,0 +1,107 @@
+{
+  "slug": "green-door-store-brighton",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night",
+    "lgbtq-friendly"
+  ],
+  "coordinates": {
+    "lat": 50.8295937,
+    "lng": -0.1401994
+  },
+  "place": {
+    "city": "Brighton",
+    "neighborhood": "Lower Goods Yard",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "review",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Green Door Store — official site, events listing",
+      "url": "https://thegreendoorstore.co.uk/events/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Green Door Store — access information",
+      "url": "https://thegreendoorstore.co.uk/venue-info/access/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Green Door Store — venue history",
+      "url": "https://thegreendoorstore.co.uk/venue-info/venue-history/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Green Door Store — Music Venue Alliance membership",
+      "url": "https://thegreendoorstore.co.uk/venue-info/mva/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Music Venue Trust — Annual Report 2025",
+      "url": "https://www.musicvenuetrust.com/2026/01/music-venue-trust-annual-report-2025/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-21T00:00:00Z"
+    },
+    {
+      "name": "NME — Marshall team up with Music Venue Trust to champion 60+ local artists in grassroots venues",
+      "url": "https://www.nme.com/news/music/marshall-team-up-with-music-venue-trust-to-champion-60-local-artists-in-grassroots-venues-3904976",
+      "feedId": null,
+      "originalPublishedAt": "2025-11-03T00:00:00Z"
+    },
+    {
+      "name": "DICE — Green Door Store venue listing (forward ticketing, years explicit)",
+      "url": "https://dice.fm/venue/green-door-store-zg92",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Carousel — The Rock House",
+      "url": "https://carousel.org.uk/whats-on/the-rock-house",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-04T00:00:00Z"
+    },
+    {
+      "name": "Brighton and Hove News — Green Door Store announce their 1st ever Pride charity concert",
+      "url": "https://www.brightonandhovenews.org/2026/07/19/green-door-store-announce-their-1st-ever-pride-charity-concert/",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-19T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://thegreendoorstore.co.uk/wp-content/uploads/2021/06/Wheelchair-pic-scaled.jpg",
+    "attribution": "via Green Door Store — the venue's own access documentation",
+    "attributionLink": "https://thegreendoorstore.co.uk/venue-info/access/",
+    "licenseNote": "A real photograph of the venue itself, from the venue's own site — tier 1 in near-illustrator's preference order, reached properly: photo inbox empty, and Wikimedia Commons has NO image of the Green Door Store, Trafalgar Arches or Brighton's Lower Goods Yard (both searches returned zero results, 2026-09-04), so the usual Commons fallback was genuinely unavailable rather than skipped. Chosen over two alternatives from the same source: a historic black-and-white goods-yard photo (used in-body instead — it shows the setting but not the venue as it is now, and the piece is about the venue now) and a merch-table shot (weak, tells the reader nothing). This frame does four jobs at once and is why it wins: it shows the arch's whitewashed brick, the stage and PA, the marked wheelchair viewing space with its barriers, AND the original goods-yard cobblestone floor that the body reports reviewers calling uneven — so the hero and the honest negative are the same photograph. 2560x1920, 4.9MP: clears Discover's 1200px-wide and 300,000-pixel thresholds comfortably. Aspect is 4:3 rather than the ideal ~16:9 — noted as a partial miss on the Discover card spec, not a fail, since both hard thresholds pass. No identifiable faces (the room is empty)."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-04T18:00:00Z",
+      "note": "Brighton's Tier 1 draw for ten #2, drafted from the queue entry seeded 2026-09-02. Written at status draft under the trust-gate rule (trust: review — queue-seeded, and seeded by the same pass that produced the failed Polyglamorous entry).\n\nTHREE DEFECTS FOUND IN THE QUEUE ENTRY ITSELF, all corrected rather than carried:\n(1) The Pride hook is PAST. The GDS Pride Party ran Sat 1 Aug 2026 (£10, profits to MindOut) — Brighton and Hove News reported it 2026-07-19 as an announcement, not a future event. It cannot satisfy the dated-event requirement and is used only as background; nothing in the piece hangs on Pride, per the standing Brighton dating note.\n(2) 'Named an iconic grassroots venue by the Music Venue Trust' is NOT INDEPENDENTLY VERIFIABLE. The circulating phrasing ('1 of the top 11 most iconic music venues in the Country') traces to VisitBrighton's venue profile, which is venue-supplied copy, and appears NOWHERE on musicvenuetrust.com. Tellingly, the venue's own Instagram bio does not claim it either — it cites an NME shortlist and a 2024 Music Week grassroots nomination. This is the same laundered-claim failure mode as the Polyglamorous seed. REPLACED with what IS verifiable at source: Music Venue Alliance membership (the venue's own MVA page) and Green Door Store being the launch venue for Marshall Nights, the Marshall/MVT series of 20+ gigs and 60+ artists (corroborated by NME AND musicvenuetrust.com, two independent hits).\n(3) 'Free entry, late bar nightly' is WRONG as stated. The venue's own listings show a mix: some genuinely FREE gigs, club nights ~£5, touring shows £8-£19. The piece states the real range and explicitly corrects the free-nightly claim.\n\nDATED EVENTS — YEARS CONFIRMED, AND CROSS-CHECKED, which is exactly what the Polyglamorous run failed to do. The venue's own site paginates only ~1 month ahead (out to 3 Oct 2026), so far-out dates could not be confirmed there. They were confirmed instead on DICE — a LIVE TICKETING record with tickets actually on sale at stated prices, not an orphaned subpage — and independently corroborated on Songkick, with both agreeing: TV Priest Thu 28 Jan 2027 (£16.23), Rowena Wise Sat 13 Mar 2027 (£15.87), ATLAS Thu 27 Jan 2028 (£14.73). Years are explicit on both, not inferred from a bare date string. Per the standing further-out-is-better preference, the 2027/2028 dates carry the piece rather than the September 2026 shows.\n\nRESEARCH FLOOR — MET IN FULL, all four legs run, including the two the previous run skipped:\n- near-deep-researcher: multi-source, conflicts reconciled (see below).\n- REDDIT: RAN. Blocked at the search backend (site:reddit.com returned no Reddit results), so escalated to claude-in-chrome per the fallback ladder and read r/brighton search directly. Corroborated the Carousel relationship as CURRENT: an r/brighton post ~July 2026 documents Carousel's all-day festival at the venue on Sat 4 July 2026, £6.50, carers free. This matters because carousel.org.uk's own Rock House page still lists only 2025 dates, so the venue's own listings and the charity's listings were BOTH stale in different directions and Reddit is what resolved it.\n- GOOGLE REVIEWS: RAN, via browser after WebFetch/Yelp/Ents24 all returned empty or blocked. 4.3 across 907 reviews. Mined for specifics, not the average. Recurring: uneven cobbled floor (multiple, incl. a review 4 months old), slow unmarshalled queue with no barriers (~June 2026), and mixed accounts of door staff specifically, in contrast to warm reviews of bar staff. All reported as testimony, dated, framed as reviewer accounts.\n- FIVE+ PREFERRED SOURCES consulted: brightonandhovenews.org, thegreendoorstore.co.uk, visitbrighton.com, plus new ones logged below.\n\nLEGAL NOTE (near-legal-counsel): one Google review alleges refusal of entry involving an autistic patron, and another alleges rudeness at a Pride event. These are NOT republished as specific allegations — repeating a discrimination allegation is republication and the claims are unverifiable from outside. The piece instead reports the narrower, safely-sourced pattern (door-staff accounts are mixed; queueing is criticised) without carrying the underlying allegations. The 'abysmal' queue quote is a service complaint, not defamation-adjacent.\n\nUNRESOLVED CONFLICT, deliberately not stated as fact: capacity. DICE says 200; the copy circulating via VisitBrighton says 300 overall with 170 for live performance. No authoritative source reconciles them, so NO capacity figure appears in the body at all rather than picking one.\n\nCLAIMED-NOT-SOURCED: the horse-hospital origin is the venue's own account (its history page) and is attributed as such in the body, per the venue-self-claim rule.\n\nIMAGES: hero + 3 in-body = 4, meeting ceil(806/250)=4. All four are real photographs from the venue's own site; no generation needed. Commons genuinely has nothing for this venue (verified, both searches empty).\n\nANGLE — and this is the chief editor's standing 'it exists and is old' objection answered directly. The piece is NOT 'grassroots venue is grassroots'. Its spine is MVT's Annual Report 2025 (21 Jan 2026): 30 GMVs closed in a year, 53% made no profit, 2.5% average margins, 6000 jobs lost, and 175 UK towns and cities (25m people) no longer receiving regular touring shows. Against that, this venue has tickets on sale into January 2028. The forward booking calendar is treated as EVIDENCE about a national collapse, which is a claim about the present and is checkable by the reader on the ticket link. The Carousel/Rock House strand and the cobbles-vs-step-free access tension are the two supporting specifics. LOCALES: pending."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-04T19:58:03Z",
+      "note": "Flipped to active after chief-editor sign-off, which the standing operator directive of 2026-09-01 treats as operator approval for a trust: review piece. Sign-off turned specifically on the 'it exists and is old' test: the piece's central claim is about the present (this venue still functions as a touring stop while 175 UK towns no longer have one) and the reader can check it in one click on the DICE link, so it is not a profile of an old room.\n\nAll six locales written as genuine editions, not literal translations. Market-specific additions rather than uniform copies: pt-BR and es-419 both add the practical day-trip-from-London note and the advance-online-ticketing warning that a Latin American traveller needs and the English source has no reason to carry; zh-CN adds the same plus a card-payment note. es-ES and it keep the source's shape, since a Spanish or Italian reader needs no such orientation. Every locale carries all four images, both external links and the internal NearLink.\n\nSelf-caught defect, fixed before build: the zh-CN draft's opening sentence contained an untranslated English word ('judge') where 判断 belonged.\n\nMECHANICAL GATES, checked rather than assumed: tagline 84/90 chars; shortTitle 16/48; seoDescription 236/320; 5 bullets (min 3); English body 806 words (min 150); geocode confidence 0.9 from Google Maps' own coordinates for the venue; hero resolved to a real venue photograph; publishedAt/updatedAt are real timestamps to the second, not the T00:00:00Z placeholder. Image floor ceil(806/250)=4 met with hero + 3 in-body. Link density: multiple real in-text external links (MVT, NME, DICE, Carousel, venue access page) plus an internal NearLink to legends-hotel-brighton — a genuine link, being Brighton's only other pin and a real editorial contrast (seafront cabaret institution vs railway-arch touring room), not a forced one.\n\nDEDUPE: scripts/check-duplicates.mjs run before creation and again before commit. Output unchanged at the documented baseline of six pairs — this place triggered NO new pair. Checked explicitly against legends-hotel-brighton, Brighton's only other pin, which is ~1.6km away on Marine Parade and a different venue entirely.\n\nRED TEAM / shelf-life: every price was verified this session from live ticketing, and the headline ('Booked into 2028') deliberately survives any price change because it rests on a date, not a figure. No internal production concepts (tiers, rotation, coverage gaps, queue position) appear in any locale — checked in all six."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.9,
+    "query": "Green Door Store, Units 2-4 Trafalgar Arches, Lower Goods Yard, Brighton Railway Station, Brighton BN1 4FQ"
+  },
+  "publishedAt": "2026-09-04T19:58:03Z",
+  "updatedAt": "2026-09-04T19:58:03Z"
+}
