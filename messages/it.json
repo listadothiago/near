@@ -186,6 +186,12 @@
     "thePassEmpty": "Nessun numero pubblicato ancora. Ognuno parte da qualcosa di davvero attuale nel cibo e nelle bevande — il primo sta arrivando.",
     "whyGo": "Perché dovresti andarci"
   },
+  "freshness": {
+    "published": "Pubblicato",
+    "revised": "Revisionato",
+    "revisedShort": "Rev.",
+    "siteUpdated": "Sito aggiornato"
+  },
   "inbox": {
     "title": "Scrivi a Near",
     "intro": "Suggerisci un luogo, segnala che ha chiuso, o dì semplicemente ciao. Ogni segnalazione viene letta da una persona.",

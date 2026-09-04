@@ -6,6 +6,7 @@ import FavoriteButton from "./FavoriteButton";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
+import { formatContentDate, isRevised } from "@/lib/content/freshness";
 
 /**
  * Distance the way a person would say it: metres up close, kilometres
@@ -35,6 +36,7 @@ export default function PlaceCard({
 }) {
   const t = useTranslations("categories");
   const tp = useTranslations("place");
+  const tf = useTranslations("freshness");
   const locale = useLocale();
   const categoryColor = `var(${CATEGORY_COLOR_VAR[place.meta.categories[0]]})`;
   const headline = place.frontmatter.shortTitle ?? place.frontmatter.name;
@@ -48,11 +50,18 @@ export default function PlaceCard({
   // Absolute date rather than "3 days ago" on purpose. This card renders
   // on the server and again on the client, and any relative time is a
   // hydration mismatch waiting for a slow build or a stale ISR page.
-  const postedOn = new Date(place.meta.publishedAt).toLocaleDateString(locale, {
-    day: "numeric",
-    month: "short",
-    year: "2-digit",
-  });
+  //
+  // The card is where staleness actually reads: a piece corrected last
+  // week but stamped with its June publish date is the exact defect this
+  // whole change exists to fix, and it is far more visible in a grid of
+  // fifty cards than on any one page. So when a piece has a revision
+  // date of its own the card shows that instead, with a
+  // label so it can't be mistaken for a publish date. Sorting is
+  // untouched — "latest" still orders by publishedAt; only the stamp
+  // changed, not the shelf.
+  const revised = isRevised(place.meta.publishedAt, place.meta.updatedAt);
+  const stampIso = revised ? place.meta.updatedAt : place.meta.publishedAt;
+  const postedOn = formatContentDate(stampIso, locale);
 
   const sources = place.meta.sources;
   const leadSource = sources[0];
@@ -119,7 +128,12 @@ export default function PlaceCard({
             {formatDistance(distanceKm)} {tp("away")}
           </span>
         ) : (
-          <span className="font-bold whitespace-nowrap">{postedOn}</span>
+          <span className="font-bold whitespace-nowrap">
+            {revised && (
+              <span className="mr-1 text-accent-ink">{tf("revisedShort")}</span>
+            )}
+            <time dateTime={stampIso}>{postedOn}</time>
+          </span>
         )}
         {leadSource && (
           <span

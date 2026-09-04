@@ -17,6 +17,7 @@ import { getBaseUrl } from "@/lib/seo/site";
 import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import PlaceHero from "@/components/place/PlaceHero";
+import Dateline from "@/components/layout/Dateline";
 import PlaceMap from "@/components/place/PlaceMap";
 import ReasonsList from "@/components/place/ReasonsList";
 import LongFormBody from "@/components/place/LongFormBody";
@@ -121,6 +122,13 @@ export default async function PlacePage({
           meta={content.meta}
           frontmatter={content.frontmatter}
           parentName={parentName}
+        />
+        {/* Directly under the hero block: above the fold, before the
+            reasons list, so the freshness claim is read before the pitch
+            rather than discovered in a footer nobody scrolls to. */}
+        <Dateline
+          publishedAt={content.meta.publishedAt}
+          updatedAt={content.meta.updatedAt}
         />
         <ReasonsList bullets={content.frontmatter.bullets} />
         <UpcomingEvents events={upcoming} />

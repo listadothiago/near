@@ -16,6 +16,7 @@ import { getBaseUrl } from "@/lib/seo/site";
 import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import CollectionHero from "@/components/collection/CollectionHero";
+import Dateline from "@/components/layout/Dateline";
 import CollectionPlaces from "@/components/collection/CollectionPlaces";
 import LongFormBody from "@/components/place/LongFormBody";
 import ReasonsList from "@/components/place/ReasonsList";
@@ -117,6 +118,10 @@ export default async function CollectionPage({
           frontmatter={content.frontmatter}
           placeCount={places.length}
           isColumn={editorialColumnIndex.slugs.includes(slug)}
+        />
+        <Dateline
+          publishedAt={content.meta.publishedAt}
+          updatedAt={content.meta.updatedAt}
         />
         {/* Above the body on purpose: the box exists to be read at a
             glance before committing to the piece. */}

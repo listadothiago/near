@@ -186,6 +186,12 @@
     "thePassEmpty": "Todavía no hay ediciones publicadas. Cada una arranca con algo genuinamente actual en comida y bebida — la primera está en camino.",
     "whyGo": "Por qué deberías ir"
   },
+  "freshness": {
+    "published": "Publicado",
+    "revised": "Revisado",
+    "revisedShort": "Rev.",
+    "siteUpdated": "Sitio actualizado"
+  },
   "inbox": {
     "title": "Cuéntale algo a Near",
     "intro": "Sugiere un lugar, avisa que cerró, o simplemente saluda. Una persona lee cada envío.",

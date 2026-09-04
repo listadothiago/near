@@ -186,6 +186,12 @@
     "thePassEmpty": "No issues published yet. Each one starts with something genuinely current in food and drink — the first is on the way.",
     "whyGo": "Why you should go"
   },
+  "freshness": {
+    "published": "Published",
+    "revised": "Revised",
+    "revisedShort": "Rev.",
+    "siteUpdated": "Site updated"
+  },
   "inbox": {
     "title": "Tell Near something",
     "intro": "Suggest a place, flag one that's closed, or just say hello. A human reads every submission.",
