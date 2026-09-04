@@ -2,6 +2,41 @@
 
 
 Execute skill, logic, process and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter and seo to prioritize next action using RICE and MoSCoW and own skill judgement. Execute all quick wins first. Execute action with any skill needed and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session. (keep this rule here)
+
+## 🆕 NEW SKILL REQUEST (2026-09-04, operator directive — NOT STARTED, do not action yet)
+
+Operator asked for a new skill: a recurring **website QA check** —
+persistent/weekly cadence, not a one-off — that crawls/checks near.tips
+for defects and writes findings as bugs into the backlog (this file or
+wherever the Product Trio decides bugs should land — near-lead-product
+to decide the exact target: `BACKLOG.md` bug section vs. a dedicated
+`content/bugs.md`).
+
+**Explicitly deferred — operator said add to backlog, do not action
+right away.** Do not build this until the operator asks for it to start.
+
+Scope, for whoever picks this up (Product Trio call — near-lead-product
++ near-tech-lead + near-lead-ux, per the standing rule that infra/product
+asks are their call, not a content one):
+- Needs to be genuinely recurring/persistent — likely a scheduled cloud
+  agent (see the `schedule` skill: cron-based recurring agent runs) or a
+  `/loop`-style interval, not something that only fires when a human
+  remembers to run it. Weekly cadence stated explicitly by the operator.
+- Distinct from `productnaut-qa`-style QA (that's the ProductNaut
+  plugin's own Jira-ticket QA flow, a different product) — this is
+  near.tips's own live-site health check: broken links, dead images,
+  build/console errors, obvious layout/regression issues, maybe a
+  lightweight Lighthouse/Core Web Vitals pass.
+- Output: bugs filed into the backlog in a format near-lead-product can
+  triage alongside everything else (RICE/MoSCoW like any other item),
+  not just a chat report that evaporates at session end.
+- Consider reusing/adapting `claude-in-chrome` browser automation or a
+  headless crawl script for the actual site walk, plus `run`/build-verify
+  patterns already established in this repo for detecting build errors.
+
+Route to **near-lead-product** to scope for real once the operator says
+go.
+
 ## 🎯 SESSION HANDOFF (2026-09-02, late — READ THIS FIRST)
 
 The operator delivered a large batch of directives and then asked for a
