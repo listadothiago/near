@@ -59,7 +59,7 @@ prose + fenced YAML/lists, read the prose too.
    nothing but a lightweight internal checked-at note if useful) or logs
    the first of the two required closure confirmations — never flip
    `status` to `closed` off one check. Also apply `age-decay-archive`
-   (270 days) and `event-expiry` (past `eventEndsAt`) here — these are
+   (365 days — one year, changed by operator 2026-09-04) and `event-expiry` (past `eventEndsAt`) here — these are
    plain date comparisons, no browser check needed. Also check locale
    coverage per `rules.md`'s `full-locale-coverage` rule:
    any `status: active`, `trust: auto` place missing one or more of the
@@ -213,7 +213,7 @@ quietly rot outside the chosen scope.
   `rules.md`'s `trust-gate`, based on the source's own trust tier in
   `sources.md`.
 - If a check-open sweep finds a place near/past `age-decay-archive`'s
-  270-day threshold but still clearly open (confirmed via the sweep
+  365-day (one year) threshold but still clearly open (confirmed via the sweep
   itself), that's a good signal to prioritize it for a supplemental
   research pass (near-editor's fourth entry point) rather than letting it
   archive on staleness alone.

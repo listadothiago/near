@@ -206,7 +206,7 @@ intent the YAML doesn't). Then, per candidate item:
   (`confirmed-closed`) are rules.md-governed housekeeping, not just
   ingestion-time logic — a full run should also sweep existing places for
   rules that now apply (an event whose date passed, a place untouched for
-  270+ days), not only process new candidates.
+  365+ days — one year, per the operator change of 2026-09-04), not only process new candidates.
 - Never invent a fact. If a source doesn't say something, the long-form
   body shouldn't either — "worth checking out" claims need to trace back to
   something the source (or direct observation via `claude-in-chrome`)

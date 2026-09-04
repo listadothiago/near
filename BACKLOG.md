@@ -7907,4 +7907,124 @@ Note from thiago: I've read all of that feedback and I quite like it, I endorse 
 
 new idea for a new bot agent skill editor character: Pri Cizada, budget editor, invited to all relevant content groups and refreshes and pushes. Broke agent with expensive taste
 
+interesting thread for the team to analyze https://www.reddit.com/r/travel/comments/1f82sli/what_do_people_think_about_atlas_obscura/
+
+in the spirit of freshness as authority, and of proximity being in the name of the site, both last update and distance should be prominently visible in an article listing card as well as the article page
+
+skills must be careful with upcoming event dates like the ones shown in this post https://near.tips/pt-BR/place/caos-bar-cidade-baixa-porto-alegre we dont want the text to go stale because of dates mentioned. avoid this. events need event articles that are related to the place and shown in their own event list for the place not in the copy or the copy will get stale, events expire and are hidden when past. lets manage this better our prime directive is freshness, up to date - also very boring to use just the name of the place as article title, jooj it up
+
+remember dont delete expired articles just archive, they stay live visible to readers and search engines, linked in archive page, clearly marked as archived. posts can resurface from archive to active again when properly updated and relevant again. when archived/inactive they disappear from card views, maps if expired, front end has rules to auto hide them from there as well
+
+
+[![PageSpeed Insights logo](https://www.gstatic.com/pagespeed/insights/ui/logo/favicon_48.png)
+
+PageSpeed Insights
+
+](https://pagespeed.web.dev/)
+
+Este site usa cookies do Google para fornecer serviços e analisar o tráfego.
+
+Digite um URL válido
+
+![](https://www.gstatic.com/pagespeed/insights/ui/img/error-graphic.svg)
+
+Não foi possível resolver o URL https://near.tips/. Verifique se ele é válido.
+
+é muito ambicioso a gente tentar criar um feed recomendado/personalizado/for you tab as the main default tab? que misture perto e latest, considere se vc esta num lugar novo, articles new for you? eu to sentindo que o sort latest funciona como inspiracional o que o chief editor acha disso? talvez seja ousadissimo, CMO e Product Trio acham o que? apresentem a sua avaliacao para o C-Level recomendar decisao. dont rush it just because i suggested, let me know if bad idea or bad timing. or great for retention if done right?
+
+add hindi as locale candidate
+
+make sure mexico city is in some priority tier, it should be
+
+maybe our active limit should be exactly one year, after that it gets archived. it makes for a simple marketing message imho. C-levels, discuss and educate skills and guidelines and front end filter rules accordingly to enforce
+
+we need a new Technology editor public character with his own monthly column, their name is Zero Day
+
+we need a new Science editor public character with their own monthly column, their name is  (suggest a name in line with the others)
+
+we need a new Fashion editor public character with their own monthly column, their name is  (suggest a name in line with the others)
+
+we need a new Community Action editor public character with their own monthly column, their name is  (suggest a name in line with the others)
+
+we need a new Cannabis editor public character with their own monthly column, their name is  (suggest a name in line with the others)
+
+ok to give the column assignment to an existing persona if it can handle it and it makes sense, thus skipping the need to create a new persona. create names for the columns too, i didn't
+
+named can make for fun puns (in any language we offer, but same name must be used in all languages even if the pun is only funny in one, several of our existing names are puns or references to famous people actually, eg. Pri Cizada for budget,only funny in pt br but used in all languages)
+
+sera que uma nova tab for you nao pode dar um efeito de personalizacao sem nenhuma ML complicada, apenas considerando o que o usuario ja visitou antes, o que favoritou, freshness, e current location? uma mistura de latest e nearest weighted pela info que temos de visitas e interacoes do usuario (favorito, shared, visited, scrolled, essas coisas). um MVP assim sem ia sofisticada mas ja considerando essas coisas?
+
+
+
+
+
+
+---
+
+## TRIAGE of the 2026-09-04 directive batch (by near-backlog step 0-A)
+
+These directives were found **uncommitted** mid-session, after the
+session's opening 0-A check had already passed clean — i.e. they were
+written while work was in flight, which is exactly the case step 0-A
+exists to catch. Green Door Store had already shipped by the time they
+were read; it satisfies the jooj-up-titles directive (`shortTitle` is
+"Booked into 2028", not the venue name) but predates and violates the
+dates-in-copy directive. Operator was shown the conflict and chose to
+ship it and patch forward rather than rework it.
+
+**WIRED IN THIS SESSION** (directives that now bind, because a directive
+quoted in chat dies with the session — only a SKILL.md/rules.md edit
+sticks):
+
+- `dated-events-out-of-evergreen-copy` — NEW rule in `content/rules.md`.
+  Specific future dates are banned from place body/bullets/tagline/
+  seoDescription; dated happenings go in event pages hung off the venue
+  via `meta.parentPlace`, where `event-expiry` retires them. Place copy
+  states only the durable claim ("on sale ~three years out"). Resolves
+  the apparent conflict with near-events' further-out-is-better rule:
+  that preference governs which events to BUILD, not permission to
+  inline dates.
+- Bare-name headlines banned — added to the headline block in
+  `content/rules.md`, alongside the existing formula check.
+- `age-decay-archive` 270 → **365 days**, per the operator decision this
+  session. Six references updated (`rules.md`, `near-editor`,
+  `near-refresh`). Rationale AND the accepted cost (one year is a looser
+  backstop) recorded in the rule itself.
+- Mexico City — **no change needed**, already Tier 2. Confirmed and
+  annotated in `content-rotation/SKILL.md` so it is not re-raised.
+- Archive-not-delete — **already existed** (`age-decay-archive`,
+  `event-expiry`, near-caretaker's "never delete a page"). The archive
+  index / clearly-marked-as-archived / resurface-to-active language was
+  folded into the rule text.
+
+**ROUTED, NOT DONE** — each needs a real owner and a session:
+
+- **"For You" tab (Product Trio + CMO + chief editor → C-level rec).**
+  Operator explicitly asked for an evaluation and said *"dont rush it
+  just because i suggested, let me know if bad idea or bad timing."*
+  Proposed MVP is deliberately non-ML: weight latest + nearest by
+  visited / favourited / shared / scrolled + freshness + current
+  location. Do NOT build before the recommendation is written.
+- **Freshness + distance on listing cards AND article pages** — "in the
+  spirit of freshness as authority, and of proximity being in the name
+  of the site." Product Trio. Note this is in tension with nothing; it
+  looks cheap and high-value, and it directly serves the freshness prime
+  directive that the 365-day loosening above weakens.
+- **New personas + monthly columns.** Zero Day (Technology) is named by
+  the operator. Community Action and Cannabis editors need names
+  suggested in line with the existing roster. Pri Cizada (budget editor,
+  "broke agent with expensive taste") is a separate named idea. Column
+  names needed too — none were supplied. Operator guidance: it is fine
+  to give a column to an EXISTING persona instead of creating one, and
+  names may be puns in any single language but must be used identically
+  across all six locales (precedent: Pri Cizada only scans in pt-BR).
+- **Hindi as a locale candidate** — would be a 7th locale. Non-trivial:
+  `full-locale-coverage` currently means six, so this touches every
+  active page. Product Trio + near-translator.
+- **PageSpeed Insights cannot resolve https://near.tips/** — the
+  operator pasted the failure. This is potentially serious (if a real
+  crawler-facing resolution problem rather than a PSI quirk) and should
+  be diagnosed by near-tech-lead BEFORE the cosmetic items above.
+- **Atlas Obscura thread** (r/travel) for the team to analyse —
+  positioning research, near-cmo + chief editor.
 

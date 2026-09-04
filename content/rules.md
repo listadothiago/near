@@ -215,6 +215,19 @@ rules:
       formula is invisible from inside one piece and only visible against
       the catalogue.
 
+      BARE-NAME HEADLINES ARE BANNED (operator, 2026-09-04: "very boring
+      to use just the name of the place as article title, jooj it up").
+      A `shortTitle` that is only the venue's name, or its name plus a
+      category or locality tag ("Green Door Store", "Green Door Store,
+      Brighton", "Green Door Store — music venue"), does not ship. The
+      `name` field already carries the name; the headline is the one
+      chance to say why a reader should care, so it must make a claim,
+      pose a tension, or name the specific detail the piece turns on.
+      "Booked into 2028" passes; "Green Door Store" would not have.
+      This does not license clickbait — the claim must be one the body
+      actually substantiates, and it is still subject to the headline
+      formula check above.
+
       HERO IMAGE TIERS, in preference order: (1) a real source photo with
       attribution, (2) licensed stock, (3) an original illustration from
       near-illustrator. Tier 3 reverses this rule's earlier "no
@@ -294,13 +307,50 @@ rules:
     trigger: "creating a place that is a time-bound happening at a venue Near already publishes"
     action: "set meta.parentPlace to the venue slug and meta.eventStartsAt where known; do not create a standalone board listing"
 
+  - id: dated-events-out-of-evergreen-copy
+    description: >
+      Operator directive, 2026-09-04, prompted by a live miss on
+      caos-bar-cidade-baixa-porto-alegre: "we dont want the text to go
+      stale because of dates mentioned. avoid this. events need event
+      articles that are related to the place and shown in their own event
+      list for the place not in the copy or the copy will get stale."
+
+      A place page for a persistent venue is EVERGREEN copy and must read
+      correctly at any future date. Specific dated happenings therefore do
+      not belong in its body, bullets, tagline, or seoDescription. A named
+      gig with a date ("TV Priest on 28 January 2027") reads as current
+      until someone edits it, and nothing expires it, because the place
+      itself has no eventEndsAt — the venue is not over just because the
+      gig is.
+
+      Dated happenings belong in their own event pages hung off the venue
+      via meta.parentPlace (see event-belongs-to-venue), where event-expiry
+      retires them automatically and the front end renders them as the
+      venue's own event list. The place copy links to that list; it does
+      not inline the dates.
+
+      What evergreen copy MAY say is the durable claim the dates evidence,
+      phrased so it survives them: "tickets are on sale roughly three years
+      out" is durable and checkable through an outbound ticketing link;
+      "tickets are on sale for 27 January 2028" is not. Prefer the standing
+      further-out-is-better preference (near-events) when CHOOSING which
+      events to build pages for — that preference governs event selection,
+      not permission to inline dates into place copy. The two are not in
+      conflict once the dates live in event pages.
+
+      Known exception, narrow: a date that is itself a permanent historical
+      fact ("opened in 1974", "closed for refurbishment in 2019") is not a
+      dated event and is unaffected.
+    trigger: "writing or refreshing a place page for a persistent venue"
+    action: "keep specific future dates out of body/bullets/tagline/seoDescription; create event pages with meta.parentPlace for the dated happenings and state only the durable claim in the place copy"
+
   - id: event-expiry
     description: >
       A place that represents a one-off or time-bound happening (a concert,
       festival, exhibition run, pop-up) rather than a persistent venue must
       have meta.eventEndsAt set to that happening's end date/time. Once
       eventEndsAt has passed, it drops off the map and nearest/latest lists
-      immediately — independent of the 270-day age-decay-archive threshold,
+      immediately — independent of the 365-day (one year) age-decay-archive threshold,
       which is for evergreen places (restaurants, districts, permanent
       venues) and much too slow for something that's simply over. The page
       itself stays live (same no-delete rationale as age-decay-archive) in
@@ -315,12 +365,27 @@ rules:
 
   - id: age-decay-archive
     description: >
-      A place with no update in 270 days is archived: removed from the
-      board (map + nearest/latest lists) and excluded from sitemap
-      priority, marked noindex. The page itself stays live — no delete,
-      no 404 — to preserve any link equity from social shares and avoid
-      broken links.
-    trigger: "now - meta.updatedAt > 270 days AND status == active"
+      A place with no update in 365 days — exactly one year — is archived:
+      removed from the board (map + nearest/latest lists) and excluded from
+      sitemap priority, marked noindex. The page itself stays live — no
+      delete, no 404 — to preserve any link equity from social shares and
+      avoid broken links. Archived pages remain visible to readers and
+      search engines and are reachable from the archive index, clearly
+      marked as archived; they can resurface to active when properly
+      updated and relevant again (operator, 2026-09-04).
+
+      THE NUMBER IS ONE YEAR, changed from 270 days by operator decision
+      2026-09-04, on the marketing argument that "nothing on Near is older
+      than a year" is a claim a reader can hold in their head while
+      "270 days" is not. No rationale for the original 270 was ever
+      recorded, so this replaces an inherited number rather than overruling
+      a considered one. The known cost, accepted knowingly: one year is a
+      LOOSER backstop than 270 days, giving a stale page three extra months
+      before anything forces attention to it. Freshness therefore has to be
+      carried by near-refresh's proactive sweeps rather than by this
+      threshold, which is a backstop of last resort, not the freshness
+      mechanism.
+    trigger: "now - meta.updatedAt > 365 days AND status == active"
     action: "set status = archived; add statusHistory entry"
 
   - id: currency-maintenance
