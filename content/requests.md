@@ -293,3 +293,19 @@ why: >
 status: open
 ```
 
+
+```yaml
+request: bangkok-art-biennale-2026-internal-link-gap
+type: internal-link-gap
+place: bangkok-art-biennale-2026
+why: >
+  Bangkok's first published pin (content-rotation NEXT-UP, queue seeded
+  2026-09-03). No other Bangkok place exists yet to link internally, so
+  the piece ships with external links only (BAB official site,
+  ArtAsiaPacific, ArtReview, Wikimedia Commons) and a genuine, logged
+  internal-link gap rather than a forced weak link. Resolve once
+  WTF Gallery & Café, Benjakitti Forest Park, or Mischa Cheap/Song Wat
+  draft from the same queue (content/post-plan.md's Bangkok section) —
+  link both ways at that point.
+status: open
+```

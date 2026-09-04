@@ -515,6 +515,26 @@ Srinakarin has **not** closed (the Ratchada site closed, then reopened
 2026-03-27), and the "G-Star reopened" thread conflicts with a closure
 reading. Both marked do-not-use without a primary source.
 
+**New candidates, found drafting `bangkok-art-biennale-2026` (2026-09-04):**
+none of Bangkok's four Tier 2 sources above (BK Magazine, art4d, The
+MATTER, The Momentum) has covered BAB 2026 yet, so the piece leaned on
+international art press instead. Logging these as candidates for the
+`world-culture-news`/city-culture beat, not yet added to `sources.md`:
+
+- **ArtReview** (`artreview.com`, English) — established international
+  art-press title; ran a full BAB 2026 announcement piece with curator
+  and artist detail 2026-06-26. No access quirk.
+- **ArtAsiaPacific** (`artasiapacific.com`, English) — the most complete
+  BAB 2026 venue list found this session; established regional art-press
+  title. No access quirk.
+- **The Beat (Bangkok)** (`thebeat.asia`, English) — appears to be a
+  BK Magazine-adjacent city title; carried its own BAB 2026 writeup.
+  Worth confirming its relationship to BK Magazine before treating as a
+  fully independent second English source.
+- **My Modern Met** (`mymodernmet.com`, English) — international art/
+  design blog; ran a BAB 2026 preview. Aggregator-adjacent — useful for
+  a second opinion, not a primary.
+
 ### Tier 3 Brazil — seeding pass, 2026-09-03
 
 Ran to clear the hold on the six Tier 3 cities (Florianópolis, Porto

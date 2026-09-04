@@ -141,20 +141,29 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #1 under share-of-output (opened 2026-09-03)
-spent:           T1 4 of 6   T2 3 of 3 (SPENT)   T3 0 of 1
+spent:           T1 5 of 6   T2 3 of 3 (SPENT)   T3 0 of 1
 t1-order:        London → Brighton → San Francisco → Oakland → Bangkok
 t1-spent:        Brighton (Legends, 2026-09-02)
                  London — SATISFIED, see note
                  San Francisco (dolphin-club-san-francisco, 2026-09-03)
                  Oakland (1234-go-records-temescal-oakland, 2026-09-03)
+                 Bangkok (bangkok-art-biennale-2026, 2026-09-04 — first
+                 Bangkok pin; queue has five more candidates left in
+                 post-plan.md, but the rotation slot itself is spent)
 t2-spent:        Barcelona & Region — Sitges burst, 4 pins + collection,
                  2026-09-03. Exactly the burst shape the new rule wants,
                  and it landed before the rule existed. See note.
 t3-spent:        nothing yet, but the share is now SPENDABLE — the
                  sources pass ran 2026-09-03 and cleared Porto Alegre,
                  Curitiba and Salvador. Draw Porto Alegre.
-NEXT-UP:         Bangkok (Tier 1) — queue SEEDED 2026-09-03, live
-then:            London, to close Tier 1's six
+NEXT-UP:         London (Tier 1) — closes Tier 1's six for this ten;
+                 queue is no longer fully blocked (E. Pellicci, La
+                 Camionera, The Divine, Hausu, TOAD all open and
+                 verified; Sister Midnight and Hampstead Heath still
+                 blocked, per the 2026-09-03 note below)
+then:            Tier 1 six will be SPENT once London ships — reset
+                 t1-order and open the next ten per this block's own
+                 "Writing the pointer" instructions
 t3-draw:         Porto Alegre (first cleared, deepest candidate list),
                  then Curitiba, then Salvador
 held:            Seattle (T2, no queue) · Florianópolis, Recife, Belo

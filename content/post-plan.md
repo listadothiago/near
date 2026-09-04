@@ -81,12 +81,16 @@ push-to-live per post for operator QA.
 **Tier 1 order:** London → Brighton → San Francisco → Oakland → Bangkok.
 
 **Ten #1 under the new share rule, opened 2026-09-03.** Tier 1 has spent
-4 of its 6 (Brighton, London, San Francisco, Oakland). **Tier 2 is fully
-spent** — the Sitges burst on 2026-09-03 was four pins plus a
-collection for Barcelona & Region, which is exactly the burst shape the
-new rule asks for and landed the day before the rule existed. **Tier 3
-has spent nothing and its share does not carry**: all six cities are
-held pending sources.
+5 of its 6 (Brighton, London, San Francisco, Oakland, Bangkok — BAB 2026,
+2026-09-04). **Tier 2 is fully spent** — the Sitges burst on 2026-09-03
+was four pins plus a collection for Barcelona & Region, which is exactly
+the burst shape the new rule asks for and landed the day before the rule
+existed. **Tier 3 has spent nothing and its share does not carry**: all
+six cities are held pending sources.
+
+`NEXT-UP` is now **London**, closing Tier 1's six for this ten. Once
+London ships, Tier 1's six is fully spent and the next ten opens per
+`content-rotation/SKILL.md`'s own instructions.
 
 *Everything below this line describes the old nested-cycle regime and is
 kept as history, not as live mechanics.*
@@ -288,7 +292,7 @@ listicle still carries Studio Lam — **our best Bangkok source is itself
 part of the correction**, which is exactly the Möbel Olfe / The Stud
 shape.
 
-- [ ] **BAB 2026 "Angels and Mara"** — CUBIC-V. Bangkok Art Biennale, **29 Oct 2026 – 28 Feb 2027**, across ten venues including Wat Arun and Wat Pho. **The best far-out dated hook found in the city** — a four-month window that stays live well past publication, per the standing further-out-dates preference.
+- [x] **BAB 2026 "Angels and Mara"** — CUBIC-V. Shipped 2026-09-04, six locales, `trust: auto`/`active`. Dates re-verified independently across four non-aggregator sources at draft time (BAB's own site/Instagram, ArtReview, ArtAsiaPacific, The Beat Bangkok) — unchanged since seeding. Venue count still soft past a core seven (Wat Arun, Wat Pho, Wat Prayoon, BACC, Museum Siam, National Museum Bangkok, One Bangkok); the mall/university venues are named by only one source each and flagged in-body rather than asserted. Bangkok's four Tier 2 sources (BK Magazine, art4d, The MATTER, The Momentum) had not covered BAB 2026 as of this draft — logged as an open gap.
 - [ ] **Mischa Cheap / Song Wat** — FOODIE-9000 or RADAR-X. **THE CORRECTION: guides still say the street dies at sunset.** It doesn't. Dated hook: Song Wat Week, Nov 2026.
 - [ ] **The live-music obituary collection** — STEFAN, near-blogger format. Built on the Studio Lam + Noise House closures above; a collection, not a pin, because the story is the pattern. **Verify both closure dates against primaries at draft** and check nothing else on the list has closed since.
 - [ ] **WTF Gallery & Café, Thonglor** — CUBIC-V. Gallery/bar hybrid, long-running independent.
