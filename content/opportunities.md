@@ -692,18 +692,53 @@ on sale 21 October 2026** — is the actionable date, and it satisfies
 the standing preference for further-out dates over near-term ones.
 Nobody else leads with "you can't get in yet, here's the drop."
 
-**Unresolved editorial objection, recorded rather than settled:** the
-chief editor's position is that the British Museum blockbuster is the
+**Editorial objection — RESOLVED 2026-09-04 by operator input.** The
+chief editor's position was that the British Museum blockbuster is the
 tour bus, not the counterculture, and Near covering it straight would
-be off-beat. The version that survives that objection is a
-what-to-do-instead piece — the October ticket drop plus the free and
-genuinely alternative things within walking distance of Great Russell
-Street — not a review of the tapestry. **Decision owed by near-seo +
-near-trendsetter before this is drafted.**
+be off-beat. The recorded escape hatch was a what-to-do-instead piece
+(October ticket drop plus the free and genuinely alternative things
+within walking distance of Great Russell Street). The operator supplied
+a better one: *"bayeux tapestry is a fun topic very meme."*
 
-Timing note: if it is written at all, the useful window is *before*
-21 October, and it needs a `near-refresh` pass the moment that release
-opens or it becomes stale advice.
+**The agreed angle is meme-first.** The Bayeux Tapestry is internet-
+native in a way the objection missed — one of the oldest and most
+durable reaction-image formats online, with a participatory generator
+tradition (Historic Tale Construction Kit) that predates normal meme
+tooling by years. That engages the tapestry head-on instead of dodging
+it into a neighbourhood piece, and it is not tour-bus material. The
+sold-out / 21 October ticket-drop mechanic stays as the **service
+layer** under the meme lede, since it is still the one useful fact
+nobody else leads with.
+
+⚠️ Verify before drafting: the specific meme-history claims above are
+scoping-level recall, not research. Confirm the Historic Tale
+Construction Kit's actual dates/status and any specific meme-format
+claims against real sources per the anti-fabrication rule.
+
+**Timing — DECIDED 2026-09-04, operator: "hold london for its turn."**
+No out-of-turn draw. London is Tier 1 and its turn is SPENT for ten #1;
+this piece waits for London's normal turn in **ten #2** and draws from
+the London queue like any other item. The 21 October window was a
+legitimate reason to draw early (same shape as the Sitges draw) and was
+declined — rotation discipline wins over the window here.
+
+⏳ **Window risk, accepted knowingly:** the useful window is *before*
+**21 October 2026** (when the 1 Jan – 31 Mar 2027 release goes on sale).
+If London's ten #2 turn has not come up by roughly the first week of
+October, flag it to the operator rather than letting it lapse silently —
+after 21 October the "you can't get in yet, here's the drop" lede is
+dead and the piece needs a `near-refresh` rewrite around whatever the
+next release is. The meme angle survives the window; only the service
+layer expires.
+
+A column-issue format (RADAR-X or CUBIC-V on the tapestry's meme
+afterlife, no venue rec at all) remains available as a fallback — it
+sidesteps both the tour-bus objection and the ticket window, since it
+never depended on the drop.
+
+ACTION when the Caos Bar run releases `post-plan.md`: add this to the
+**London** queue as a seeded, angle-resolved item so London's ten #2
+turn draws it without re-litigating any of the above.
 
 ## Trend-feed pass — 2026-09-04 (second read, for this backlog-selection run)
 
