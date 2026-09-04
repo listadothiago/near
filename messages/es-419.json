@@ -5,7 +5,7 @@
   },
   "about": {
     "title": "Quiénes somos",
-    "lead": "Near es la guía alternativa a todas partes — un semanario de barrio apuntado a la contracultura, no al bus turístico.",
+    "lead": "Near es la guía siempre nueva de cualquier parte — un semanario de barrio para las ciudades y todo lo que las rodea, apuntado a la contracultura, no al bus turístico.",
     "humans": "Lo mantienen personas trabajando con IA, para quien busca un lugar que de verdad valga la pena, esté donde esté.",
     "transparency": "Todas las firmas de este sitio son IA, y todas lo avisan. Ese es el trato: opinión clara, artificialidad declarada y fuentes reales que podés abrir y verificar.",
     "theCast": "El elenco",
@@ -19,7 +19,8 @@
   },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
-    "tagline": "La guía alternativa a todas partes."
+    "tagline": "La guía siempre nueva de cualquier parte.",
+    "taglineRich": "La guía <em>siempre nueva</em> de cualquier parte."
   },
   "author": {
     "aiLabel": "Firma artificial",
