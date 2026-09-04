@@ -48,18 +48,18 @@
       "feedId": null
     },
     {
-      "name": "Wikimedia Commons — File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
-      "url": "https://commons.wikimedia.org/wiki/File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
+      "name": "Wikimedia Commons — File:Möbel Olfe (58503538).jpeg",
+      "url": "https://commons.wikimedia.org/wiki/File:M%C3%B6bel_Olfe_(58503538).jpeg",
       "feedId": null,
       "originalPublishedAt": "2023-09-03T00:00:00Z"
     }
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Moebel_olfe_reichenbach-str-177_2023-09-03_a.png/1024px-Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
-    "attribution": "Photo by Babewyn, CC BY-SA 4.0, via Wikimedia Commons",
-    "attributionLink": "https://commons.wikimedia.org/wiki/File:Moebel_olfe_reichenbach-str-177_2023-09-03_a.png",
-    "licenseNote": "CC BY-SA 4.0, shot 3 September 2023, showing the Möbel Olfe storefront itself at Reichenberger Straße 177, Berlin-Kreuzberg (Zentrum Kreuzberg / NZK building) — the correct building."
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/M%C3%B6bel_Olfe_%2858503538%29.jpeg",
+    "attribution": "Photo by Sascha Kohlmann, CC BY-SA 3.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:M%C3%B6bel_Olfe_(58503538).jpeg",
+    "licenseNote": "CC BY-SA 3.0, shot 4 January 2014, looking down Dresdener Strasse from Oranienplatz toward the rooftop MOEBEL-OLFE sign on the Zentrum Kreuzberg / NZK slab — the bar occupies the Reichenberger Strasse 177 side of that same building. Verified visually, not from metadata alone: the file's EXIF description says 'Dresdenerstrasse', which is the vantage point rather than the address."
   },
   "eventEndsAt": null,
   "status": "active",
@@ -78,6 +78,11 @@
       "status": "active",
       "at": "2026-09-03T23:55:00Z",
       "note": "Locale backfill complete — pt-BR, es-ES, es-419, it, zh-CN written as genuine local editions per each locale persona. full-locale-coverage now satisfied, so the piece goes active for the first time. Also added the missing internal link to so36-berlin in the English source (the Gayhane mention was unlinked). publishedAt set to the real publish moment."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-04T00:00:00Z",
+      "note": "Hero image replaced: the previous file 400'd in production (operator-reported). Two causes, and the first one was a red herring — the stored hash path was wrong (e/ef, actual 7/78), but correcting it still 400'd. The real cause is that it was the ONLY hero of the site's 75 pointing at a /thumb/.../1024px- URL, and Wikimedia now rejects non-standard thumbnail widths (w.wiki/GHai). The underlying file is also a 98MB 5102x3833 PNG, so it is a poor hero source regardless. Swapped to a 0.8MB 2048x1536 JPEG original of the same building, matching the pattern every other hero on the site already uses: point at the original file, never at a generated thumb."
     }
   ],
   "geocode": {
@@ -86,5 +91,5 @@
     "query": "Reichenberger Straße 177, 10999 Berlin-Kreuzberg, Germany"
   },
   "publishedAt": "2026-09-03T23:55:00Z",
-  "updatedAt": "2026-09-03T23:55:00Z"
+  "updatedAt": "2026-09-04T00:00:00Z"
 }

@@ -76,12 +76,32 @@ function clusterIcon(count: number) {
   });
 }
 
+/**
+ * "You are here" — deliberately NOT a teardrop.
+ *
+ * The reader is not a tip, so this must never read as a PlaceMarker. It
+ * uses the one shape nothing else on the map uses (a ringed circle,
+ * against the house squares and teardrops) and it is the only marker
+ * allowed to move.
+ *
+ * The old version was a flat 12px dot with no outline, which disappeared
+ * twice over: it had no border to separate it from busy OSM raster, and
+ * at 12px it read as insignificant beside the 26x34 drop-shadowed pins.
+ * The white ring plus ink hairline is what makes it legible on any tile
+ * and in both themes — accent alone is not enough, because #ccff00 on a
+ * pale road casing is genuinely low contrast.
+ */
 function userIcon(color: string) {
+  const html = `
+    <span class="near-userloc" style="--userloc-color:${color};">
+      <span class="near-userloc__pulse"></span>
+      <span class="near-userloc__core"></span>
+    </span>`;
   return L.divIcon({
     className: "",
-    html: `<span style="display:block;width:12px;height:12px;border-radius:9999px;background:${color};box-shadow:0 0 0 4px color-mix(in srgb, ${color} 30%, transparent), 0 1px 3px rgba(0,0,0,.35);"></span>`,
-    iconSize: [12, 12],
-    iconAnchor: [6, 6],
+    html,
+    iconSize: [44, 44],
+    iconAnchor: [22, 22],
   });
 }
 
@@ -508,7 +528,7 @@ export default function WorldMap({
         {userCoords && (
           <Marker
             position={[userCoords.lat, userCoords.lng]}
-            icon={userIcon(readVar("--color-accent") || "#5c7a6c")}
+            icon={userIcon(readVar("--color-accent") || "#ccff00")}
             interactive={false}
           />
         )}
