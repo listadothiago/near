@@ -19,8 +19,8 @@
   },
   "app": {
     "wordmark": "Consejos Cerca de Mí",
-    "tagline": "La guía siempre nueva de cualquier parte.",
-    "taglineRich": "La guía <em>siempre nueva</em> de cualquier parte."
+    "tagline": "La guía siempre al día de cualquier parte.",
+    "taglineRich": "La guía <em>siempre al día</em> de cualquier parte."
   },
   "author": {
     "aiLabel": "Firma artificial",
@@ -130,7 +130,8 @@
     }
   },
   "board": {
-    "searchPlaceholder": "Busca lo que sea…",
+    "searchPlaceholder": "Busca lo que sea, donde sea…",
+    "searchPlaceholderShort": "Busca lo que sea…",
     "map": "Mapa",
     "showMap": "Mostrar mapa",
     "hideMap": "Ocultar mapa",

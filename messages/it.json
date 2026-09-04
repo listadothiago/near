@@ -130,7 +130,8 @@
     }
   },
   "board": {
-    "searchPlaceholder": "Cerca qualsiasi cosa…",
+    "searchPlaceholder": "Cerca qualsiasi cosa, ovunque…",
+    "searchPlaceholderShort": "Cerca qualsiasi cosa…",
     "map": "Mappa",
     "showMap": "Mostra mappa",
     "hideMap": "Nascondi mappa",
