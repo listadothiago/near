@@ -59,6 +59,55 @@ ones instead of trusting they were followed:
    Same rule as everywhere else in the pipeline — a clause that can't be
    replaced with a concrete fact means the sentence was never carrying
    information, and gets deleted rather than rewritten.
+2c. **The "this isn't X. It's Y" antithesis — BANNED OUTRIGHT (operator
+   directive, 2026-09-04).** The single most recognisable AI cadence in
+   the catalogue: a short negation sentence followed by a short
+   reframing sentence, usually both fragments, usually saying nothing
+   the previous paragraph didn't. Caught live in
+   `praia-do-bonete-ilhabela`:
+
+   > *"This isn't a detour you stumble into. It's a destination that
+   > costs you time."*
+
+   Operator's words: *"its not this is that, this is horrible."* There
+   is no acceptable version of this construction — it is not a matter
+   of doing it well. **Delete both halves and state the fact instead.**
+   The Bonete sentence carried exactly one real fact (the trip stacks
+   ferry → island → trail/boat) and that fact should simply be the
+   sentence.
+
+   Shapes to catch, any locale: `This isn't X. It's Y.` · `Not X — Y.` ·
+   `X? No. Y.` · `Isso não é X. É Y.` · `No es X. Es Y.` · `Non è X. È
+   Y.` · `这不是X，而是Y。` Also catch the softened variants that keep
+   the rhythm: `less X than Y`, `X, or rather Y`, `call it X if you
+   want, but it's Y`.
+
+   **Test:** if a sentence's job is to tell the reader what the subject
+   is *not*, it is doing rhetoric, not reporting. Cut it. A negation
+   earns its place only when correcting a specific claim someone else
+   actually made — a stale listing, a guide that says the street dies at
+   sunset — and then it must name what it's correcting.
+
+2d. **No self-positioning against "everyone else" (operator directive,
+   2026-09-04).** A byline may not open by advertising its own beat or
+   claiming other outlets bury the good part. Caught live in the same
+   piece:
+
+   > *"I write about the places that are actually hard to get to, so
+   > let's start with the part everyone else buries in paragraph four."*
+
+   Operator: *"this is all fluff."* Two failures stacked — a persona
+   narrating its own remit (already banned at item 7) and a
+   crowd-comparison brag that names no actual competing claim. **The
+   piece earns its authority by having the information, not by
+   announcing that it has it.** Open on the fact: *"There are exactly
+   two ways into Praia do Bonete, and neither is a road."*
+
+   Shapes: `I write about X, so…` · `what everyone else buries/skips/
+   won't tell you` · `most guides start with X; I'll start with Y` ·
+   `let's start with the part that…`. Note the overlap with the
+   faux-candor ban at item 1 — same instinct, different costume.
+
 3. **Voice register** (`style-guide.md`'s "Voice register" section):
    reads like the alt-weekly tradition — opinionated, plain-spoken,
    comfortable saying a hyped place is overrated — not like a

@@ -450,7 +450,15 @@ rather than rubber-stamping:
   licensing, AI-disclosure compliance, and trademark/brand-name
   accuracy. Checks *legal exposure*, not tone or substance — most
   pieces should sail through this with no findings.
-- **The chief editor** (`near-editor`'s own editorial judgment, or the
+- **The chief editor** — the internal sign-off role, distinct from
+  **EDDIE TOR**, the chief editor's *public byline*
+  (`.claude/skills/eddie-tor/SKILL.md`, operator directive 2026-09-04).
+  This step is the unbylined judgment; EDDIE TOR is for when the chief
+  editor writes and signs a piece himself instead of commissioning one.
+  **A piece bylined EDDIE TOR cannot take its sign-off from EDDIE TOR**
+  — route it to the standing column's editor (RADAR-X by default), or
+  `near-ceo` if RADAR-X was party to the dispute.
+  (`near-editor`'s own editorial judgment, or the
   standing column's named editor persona) gives final go-ahead on
   substance and framing. Checks *whether it's the right call at all*.
   **Also owns the second headline-formula pass** (operator, 2026-09-02):

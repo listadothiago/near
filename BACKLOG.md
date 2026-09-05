@@ -1,7 +1,7 @@
 # Near.tips — Master Backlog & AI Agent Directives
 
 
-(NEVER skip this rule) Execute skill, logic, process and persona changes first, as they affect other actions, and then always invoke  product trio, chief editor, trendsetter (who must prepare by scanning AAN best sources for trends that could go global) and seo (who must prepare by checking ALL of his rss feeds, adjusting their hours parameter as he sees fit, for search trends we can effectively target, and also looking at other geographies or categories if relevant) to prioritize next action using RICE and MoSCoW and own skill judgement. Execute all quick wins first. Execute action with any skill needed /invoke any agent skill that is relevant, and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, and wrapping up by recommending that the operator clear or compact session, aim to wrap up asap for maximum efficiency and token saving. (keep this rule here)
+(NEVER skip this rule. DO THIS in addition to whatever instructions you already have, ask if you encounter irreconciliable instructions) Consume the backlog below. rewrite the entire backlog to minimize word count without losing any information. always invoke  product trio, chief editor, trendsetter (who must prepare by scanning AAN best sources for trends that could go global) and seo (who must prepare by checking ALL of his rss feeds, adjusting their hours parameter as he sees fit, for search trends we can effectively target, and also looking at other geographies or categories if relevant) to prioritize next action using RICE and MoSCoW and own skill judgement, consider dependencies and do not underestimate the impact of foundational work.  Execute skill, logic, process and persona changes first, as they affect other actions. Execute all quick wins first. Execute action with any skill needed /invoke any agent skill that is relevant, and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, do the same in completed items in related files such as request files and opportunities files and so on and finish wrapping up by recommending that the operator clear or compact session, aim to wrap up asap for maximum efficiency and token saving. (keep this rule here)
 
 ## 🆕 NEW SKILL REQUEST (2026-09-04, operator directive — NOT STARTED, do not action yet)
 
@@ -7953,6 +7953,12 @@ ok to give the column assignment to an existing persona if it can handle it and 
 named can make for fun puns (in any language we offer, but same name must be used in all languages even if the pun is only funny in one, several of our existing names are puns or references to famous people actually, eg. Pri Cizada for budget,only funny in pt br but used in all languages)
 
 sera que uma nova tab for you nao pode dar um efeito de personalizacao sem nenhuma ML complicada, apenas considerando o que o usuario ja visitou antes, o que favoritou, freshness, e current location? uma mistura de latest e nearest weighted pela info que temos de visitas e interacoes do usuario (favorito, shared, visited, scrolled, essas coisas). um MVP assim sem ia sofisticada mas ja considerando essas coisas?
+420 should be one of the vibes/tags available in filters. 
+
+btw the filter tags are perfect to use as the #hashtags i mentioned, linked in text too whenever possible
+
+more content here https://near.tips/pt-BR?cat=accommodation&tag=hidden-gem
+
 
 
 
@@ -8027,4 +8033,1315 @@ sticks):
   be diagnosed by near-tech-lead BEFORE the cosmetic items above.
 - **Atlas Obscura thread** (r/travel) for the team to analyse —
   positioning research, near-cmo + chief editor.
+
+https://near.tips/pt-BR/the-setlist - o nome dele mudou pra somente rucio
+
+the still wonky map widget with ad under it should be a much much smaller post ad, in fact remove it and make the map a liitle bit taller and the map yes should be sticky but more in the middle of the page or it interferes with the sticky header, avoid that. this is all desktop btw, mobile looks great as is
+
+i like the ads in the middle of post tiles we can have more of those and repopulate new ads as the user scrolls . this is working great, in theory we could already sell sponsored posts. 
+
+it's really hard to reach map on mobile. more reason to have a dedicated full view map page that can be always linked in the header, easy to access on mobile.
+
+The PR and marketing skills: Affiliates, Backlinks, Ad Sales should have a target to guide the site to achieve 1000 places (not counting events or other articles) so they can launch an awareness campaign to get mentions in reputable sources (backlinks with high SEO value), and generate revenue via affiliates and advertisers, especially using existing minimalist sponsored ad infrastructure and leveraging high value content like hotels . not that any sponsored content must be clearly marked as such as per regulations.
+
+Parser should always maintain his knowledge base. He will be invoked not only to write articles, but also to review and improve ALL of our skills for maximum quality and efficiency. Every time he is invoked he should aim to acquire learnings and best practices, and to improve processes and even skills and agents on the fly if he can. Any larger effort in content generation should always invoke Parser to help.
+
+Btw parser should have a look at all the skills and suggest improvements 
+
+page insights is now working https://pagespeed.web.dev/analysis/https-near-tips/5a8qdxwjrg?utm_source=search_console&form_factor=mobile&hl=pt_BR
+
+this bit looks bad:
+0/2
+
+Navegação agêntica
+
+Essas verificações garantem [sites navegáveis e de alta qualidade para agentes de IA](https://goo.gle/lighthouse-agentic-web), além de validarem a exatidão das integrações do WebMCP. Esta categoria ainda está em desenvolvimento e sujeita a mudanças.
+  
+Cumulative Layout Shift 0.52
+
+"Cumulative Layout Shift" mede o movimento de elementos visíveis na janela de visualização. [Saiba mais sobre a métrica "Cumulative Layout Shift"](https://web.dev/articles/cls?utm_source=lighthouse&utm_medium=lr).
+
+Acessibilidade do agente
+
+A árvore de acessibilidade não está bem estruturada
+
+Uma [árvore de acessibilidade](http://goo.gle/lighthouse-agentic-a11y) bem estruturada ajuda os agentes de IA a navegar e interagir com a página.
+
+Auditorias reprovadas
+
+|Descrição|Elemento com falha|
+|---|---|
+|ARIA commands must have an accessible name|div.w-full > div.leaflet-pane > div.leaflet-pane > div.leaflet-marker-icon<br><br><div class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" role="button" style="margin-left: -13px; margin-top: -34px; width: 26px; height: 34px;">|
+
+Essas auditorias destacam as práticas recomendadas para melhorar a acessibilidade do site para agentes de IA.
+
+Não aplicável (4)
+
+Mostrar
+
+Detecção de formulários por WebMCP
+
+Considere adicionar anotações [WebMCP](http://goo.gle/webmcp-docs) aos formulários listados abaixo. Isso ajuda os agentes de IA a identificar e interagir com esses formulários de maneira mais confiável.Fora da pontuação
+
+Ferramentas registradas do WebMCP
+
+Lista as [ferramentas do WebMCP](http://goo.gle/webmcp-docs) registradas no momento da análise.Fora da pontuação
+
+Os esquemas do WebMCP são válidos
+
+Os [esquemas do WebMCP](http://goo.gle/webmcp-docs) válidos são necessários para que os agentes de IA entendam e interajam com as ferramentas corretamente. Corrija os erros ou avisos informados pelo navegador.Fora da pontuação
+
+O arquivo llms.txt segue as recomendações
+
+Se o arquivo llms.txt não seguir as recomendações, talvez os modelos de linguagem grandes não entendam como você quer que seu site seja rastreado ou usado para treinamento. O [llms.txt](https://llmstxt.org/) precisa ser um arquivo Markdown que contenha pelo menos um cabeçalho H1.Fora da pontuação
+
+Mais informações sobre o PageSpeed Insights[Novidades](https://developers.google.com/speed/docs/insights/release_notes)[Documentação](https://developers.google.com/speed/docs/insights/v5/about)[Saiba mais sobre desempenho na Web](https://developers.google.com/speed)[Fazer perguntas no Stack Overflow](https://stackoverflow.com/questions/tagged/pagespeed-insights)[Lista de e-mails](https://groups.google.com/g/pagespeed-insights-discuss)
+
+Conteúdo relacionado[Atualizações](https://developer.chrome.com/blog)[Fundamentos da Web](https://developers.google.com/focus/web-development)[Estudos de caso](https://web.dev/case-studies)[Podcasts](https://web.dev/shows)
+
+Conectar[Twitter](https://twitter.com/ChromiumDev)[YouTube](https://www.youtube.com/user/ChromeDevelopers)
+
+[![Google Developers Logo](https://gstatic.com/webvitalsdashboard/img/google_developers.svg)](https://developers.google.com/)[Chrome](https://developer.chrome.com/)[Firebase](https://firebase.google.com/)[Todos os produtos](https://developers.google.com/products/)
+
+[Termos e Política de Privacidade](https://policies.google.com/)
+
+Para acessar mais detalhes, consulte as [Políticas do site Google Developers](https://developers.google.com/terms/site-policies).
+
+the map pin for quiosque da cris is SUPER incorrect, we cannot allow this to happen. create a geolocation-police skill invited to every content work such as article writer as well as caretaker where there are map pins. googlemaps has correct location https://maps.app.goo.gl/WF1Xht62uCXjGyAS9 ,  -23.9738270477492, -46.370170028835815 , mistakes like that are unacceptable due to focus of the app make sure all skills amended about this . always check google maps for the geolocation
+
+ad-sales skill, once we have traffic, can also consider Google adsense and any revenue source
+
+if events are coming up, its ok to update the place article to help keep it fresh. but make sure to come back and edit when the date is passed, as I said we must be careful with date mentions in more evergreen posts, not necessary to forbid them but we must come back and clean up. upcoming events are a great way to keep the place article fresh.
+
+
+❯ this is all fluff: I write about the places that are actually hard to get to, so let's start with the part everyone else buries in paragraph four
+You've hit your weekly limit · resets Sep 7 at 8am (America/Sao_Paulo)
+/upgrade to increase your usage limit.
+
+✻ Worked for 0s · 2 background tasks still running
+
+❯ found in praia do bonete article
+You've hit your weekly limit · resets Sep 7 at 8am (America/Sao_Paulo)
+/upgrade to increase your usage limit.
+
+✻ Worked for 0s · 2 background tasks still running
+
+❯ please by all means TOV do not allow this ai structure like "São Sebastião, on São Paulo's north coast. This isn't a detour you stumble into. It's a destination that costs you time" its not this is that, this is horrible structure sounds like AI slop. Avoid this type of contrasting argument all together. This is another variation of that structure, it sucks: O jeito fácil de fazer um bar sem álcool soar virtuoso é falar de bem-estar. O Ocean Beach Cafe é mais interessante que isso, e o motivo é quem o construiu.
+When we say FOLLOW F SHAPE in overaching guidelines we must have, we mean frontload up in the text and closer to the left the gist of the reasons to check that article out. Never waste the beginning of an article, which is the most prominent part, on empty sentences, it's fine to have a cliffhanger or click bait if it really fits but the priority is to inform the user. Make it easy for users to get the gist across the board, use bold font for that purpose too. We may want to review all existing content to these guidelines, subject to priority.
+
+You've hit your weekly limit · resets Sep 7 at 8am (America/Sao_Paulo)
+/upgrade to increase your usage limit.
+
+this shit is appearing everywhere, multiple times in same article, here it is again in that same article: Isso não é marca de estilo de vida descobrindo que sobriedade virou mercado. É alguém com entendimento profissional do que faz um bom drinque aplicando isso a uma restrição que assumiu na própria vida - this is forbidden. We need a dedicated, always invited to content writing in reviews, ai-tic-police skill. this skill when invoked uses deep research to catch up on best practices and update the banned tic list. always invoked by other polices when other polices run as well. 
+Also TOV police can all writing process dial the cranky down a little? This: Também funciona como adega, que é a parte de fato útil e o que separa o lugar de um café com uma listinha simbólica: this sounds a little too cranky. TOV should avoid that across the board. Our tone must be friendly and welcoming.
+
+please make sure the writing and TOV skills no not allow excessive negative parallelism like "it's not this it's that", it's happening all over the site and it's not cool
+
+before writing anymore content, make C-level agents meet to decide (after each c level skill has a chance to prepare by summoning any relevant skills and do research, do not simply hallucinate their perspective, do due research and consult with skills): should we focus on tier 1 destinations for a while in order to achieve depth of content? or even fewer destinations of focus for that while? Or should we rather maintain the approach of building a footprint in all tiers + surprise locations? Operator is undecided. Deep focus in one location makes for a better experience in that location, larger footprint may get wider exposure and still serve enough curated content to be useful. I am enjoying the variety of destinations from an inspirational and cultural pov
+
+Please note in relevant skills and guidelines, snippets (beginning of articles) really need to be more informative and to the point. However, they should not repeat what is already in the tagline that is also shown in cards. Those tag lines are great right now and can even be made more prominent in the cards. Skills must use their judgement to keep that momentum in writing the snippet without being repetitive. Quiosque da cris is actually a pretty good example of everything working together in a great way: [
+
+A seguirA Parada Que Fecha a Temporada do Itararé22 de nov.
+
+1.2 km de distânciaSanta Portal — "Orgulho: Cris do Quiosque e seus 35 anos de luta pela causa LGBTQIA+"+7
+
+Quiosque da Cris
+
+### O Quiosque Que Ergueu a Bandeira Primeiro
+
+O quiosque LGBTQIA+ mais antigo do Itararé — Cris ergueu a bandeira antes de todos.
+
+Quem é da Baixada sabe: tem point que nasce em boate e tem point que nasce em barraca de praia. O Quiosque da Cris, na Praia do Itararé, é do segundo…
+
+PLINIOSão Vicente
+
+
+
+](https://near.tips/pt-BR/place/quiosque-da-cris-sao-vicente)
+
+this is bad one, the title should be about the most interesting thing about this place, not about how it is listed elsewhere [
+
+### O Bar Que as Listas Insistem em Agendar Errado
+
+Bar queer pé-sujo do Kotti — terça a sábado, a partir das 18h. Terça é noite FLINTA*.
+
+Pergunte no Kotti qual é o bar que nunca se deu ao trabalho de se produzir e você acaba no Möbel Olfe — uma antiga loja de móveis com pilar de…
+
+FOODIE-9000Berlin
+
+
+
+](https://near.tips/pt-BR/place/mobel-olfe-berlin)
+
+Backlinks-pr skill take note of this: Para divulgar o site ou projeto de um ex-aluno (egresso), a [UFSCar](https://www.ufscar.br/) conta com canais específicos voltados ao relacionamento e ao networking da sua comunidade de ex-estudantes. Como blogs de laboratórios costumam ser muito fechados a temas internos de pesquisa, as melhores opções para conseguir essa divulgação são as seguintes:
+
+## 1. Plataforma Alumni UFSCar (O Canal Principal)
+
+A universidade possui a [Plataforma Alumni UFSCar](https://alumni.ufscar.br/), que funciona como uma rede social oficial e exclusiva para ex-alunos, docentes e técnicos. [1, 2]
+
+- Como funciona: Dentro da plataforma, existe um feed e seções de notícias e oportunidades onde a própria comunidade compartilha trajetórias profissionais, projetos e portfólios.
+- Vantagem: É o local exato para fazer o networking direto com outros milhares de egressos. [1, 2, 3]
+
+## 2. Páginas de Egressos de Departamentos Específicos
+
+Muitos departamentos e programas de pós-graduação mantêm abas de "Alumni" em seus próprios portais institucionais para divulgar o que seus ex-alunos estão produzindo no mercado. [4, 5]
+
+- Exemplos: O Departamento de Engenharia Civil possui o [Alumni DECiv](https://www.deciv.ufscar.br/exalunos/), e a pós-graduação em Engenharia de Produção utiliza o [PPGEP Alumni](https://www.ppgep.ufscar.br/pt-br/sociedade/alumni).
+- O que fazer: Vale a pena o ex-aluno procurar a secretaria ou a coordenação do seu curso específico de formação para saber se eles têm um espaço de depoimentos ou notícias de egressos no site do departamento. [4, 5, 6, 7]
+
+## 3. Comunidades "Alumni" no LinkedIn
+
+Se o objetivo é dar visibilidade profissional ao link do site, o grupo de [UFSCar - Alumni no LinkedIn](https://br.linkedin.com/school/ufscar-alumini/people) é um espaço autogerido muito ativo. É ideal para publicações orgânicas onde o ex-aluno pode contextualizar sua trajetória na universidade e apresentar seu novo site ou startup para milhares de conexões da comunidade. [8]
+
+## 4. Agência de Inovação (AIn-UFSCar)
+
+Se o site do ex-aluno for uma plataforma comercial, startup ou empresa-filha nascida de ideias geradas na universidade, a Agência de Inovação da UFSCar frequentemente realiza mapeamentos e divulga o sucesso de novos empreendimentos criados por egressos. [9]
+
+Dica prática: O melhor caminho inicial é se cadastrar no Portal Alumni. Se o site tiver relevância científica ou apelo de inovação regional, também vale tentar contato com o e-mail da assessoria de comunicação do campus correspondente para tentar cavar uma nota no portal de notícias geral da UFSCar. [1, 10]
+
+  
+
+[1] [https://www.ppgl.ufscar.br](https://www.ppgl.ufscar.br/pt-br/news/alumni-ufscar-egressos-alunos-docentes-e-tecnicos-podem-interagir-em-uma-rede-exclusiva)
+
+[2] [https://alumni.ufscar.br](https://alumni.ufscar.br/)
+
+[3] [https://www.dee.ufscar.br](https://www.dee.ufscar.br/news/plataforma-alumni-ufscar-ja-reune-quase-3-mil-usuarios)
+
+[4] [https://www.instagram.com](https://www.instagram.com/p/DWQ44jSjhfd/)
+
+[5] [https://www.deciv.ufscar.br](https://www.deciv.ufscar.br/exalunos/)
+
+[6] [https://www.icc.ufscar.br](https://www.icc.ufscar.br/pt-br/noticias/news/ufscar-recebe-inscricoes-de-escolas-do-fundamental-ii-e-ensino-medio)
+
+[7] [https://www.ppgep.ufscar.br](https://www.ppgep.ufscar.br/pt-br/sociedade/alumni)
+
+[8] [https://br.linkedin.com](https://br.linkedin.com/school/ufscar-alumini/people)
+
+[9] [https://www.instagram.com](https://www.instagram.com/p/Dc3cPBrkfXP/)
+
+[10] [https://www.instagram.com](https://www.instagram.com/p/DWEcjg0gAjO/)
+
+To promote a website or venture as an alumnus of CSU Hayward (now [California State University, East Bay](https://www.csueastbay.edu/paa/contact.html)), your most effective route is leveraging the university’s Alumni Class Notes, digital channels, and professional alumni network. [1, 2]
+
+Because the university officially transitioned from _CSU Hayward_ to _Cal State East Bay (CSUEB)_ in 2005, your outreach connects directly with the modern CSUEB alumni ecosystem. [3, 4]
+
+## 1. Submit a "Class Note" (Official Features & Magazine)
+
+CSUEB has an open submission process specifically designed for Pioneers to share new ventures, career milestones, and projects. [1]
+
+- Where it goes: Submissions are considered for spotlights on the official [CSUEB Alumni Instagram](https://www.instagram.com/csuebalumni/) & Facebook pages, as well as the printed/digital _Cal State East Bay Magazine_. _“Your story could be featured on our social media channels or in Cal State East Bay Magazine's 'Class Notes' section, where we celebrate the diverse and impactful journeys of our alumni.”_ -- [[Cal State East Bay](https://www.csueastbay.edu/alumni/class-notes-forms.html)]. [1, 5, 6]
+- How to submit: Fill out the CSUEB Submit a Class Note Form. Include the link to your website, mention your certificate program in multimedia from the early 2000s (CSU Hayward era), and explain how that background led to the creation of your site. [1]
+- General contact: You can reach the Alumni Engagement team directly at `alumni@csueastbay.edu`. [7]
+
+## 2. Department of Art & Design / School of Arts and Media
+
+Certificate programs in multimedia typically ran under or in coordination with the [CSUEB Department of Art & Design](https://www.csueastbay.edu/art/) (now part of the [School of Arts and Media](https://www.csueastbay.edu/sam/)). [8]
+
+- These departments maintain sections highlighting alumni achievements, portfolio work, and digital media projects.
+- Action: Reach out to the department office (`artdept@csueastbay.edu`) to introduce your website, referencing that you studied multimedia there in the early 2000s and would like to share your work with current faculty and design students. [8, 9]
+
+## 3. Continuing Education (CSUEB CE)
+
+If your certificate was completed through the university’s extended/continuing education division, you can also connect directly with [CSUEB Continuing Education](https://ce.csueastbay.edu/about/contact.html). [10, 11]
+
+- Continuing education programs frequently seek alumni success stories and career outcomes to showcase how certificate credentials translate into real-world applications.
+- Action: Contact the department at `ce@csueastbay.edu` or engage with them via the [CSUEB Continuing Education LinkedIn Page](https://www.linkedin.com/school/csueb-continuing-education/). [10, 11]
+
+## 4. The LinkedIn Pioneer Alumni Network
+
+CSUEB has nearly 90,000 alumni on LinkedIn. [2]
+
+- Use the Alumni tool on the California State University, East Bay LinkedIn Page to filter Pioneers by field (e.g., Graphic Design, Web Development, Media) or graduation window. [2]
+- Publishing an update on LinkedIn tagged with `#CalStateEastBayAlumni` or `#CSUHayward` and tagging the university page often catches the attention of the university social media team for reposts. [12, 13]
+
+If you share the focus or niche of your website (such as a portfolio, tech startup, creative agency, or educational project), I can provide a ready-to-send pitch draft tailored for the CSUEB Class Notes editor or the Art & Design department.
+
+  
+
+[1] [https://www.csueastbay.edu](https://www.csueastbay.edu/alumni/class-notes-forms.html)
+
+[2] [https://www.csueastbay.edu](https://www.csueastbay.edu/alumni/networking/index.html)
+
+[3] [https://www.csueastbay.edu](https://www.csueastbay.edu/alumni/)
+
+[4] [https://www.calstateeastbaynews.com](https://www.calstateeastbaynews.com/)
+
+[5] [https://www.facebook.com](https://www.facebook.com/CSUEBalumni/posts/pioneers-your-stories-matter-your-journey-beyond-cal-state-east-bay-is-filled-wi/1594520226011036/)
+
+[6] [https://www.instagram.com](https://www.instagram.com/csuebalumni/)
+
+[7] [https://www.csueastbay.edu](https://www.csueastbay.edu/alumni/about-us/alumni-association.html)
+
+[8] [https://www.csueastbay.edu](https://www.csueastbay.edu/sam/)
+
+[9] [https://www.csueastbay.edu](https://www.csueastbay.edu/art/)
+
+[10] [https://ce.csueastbay.edu](https://ce.csueastbay.edu/about/contact.html)
+
+[11] [https://www.linkedin.com](https://www.linkedin.com/school/csueb-continuing-education/)
+
+[12] [https://www.instagram.com](https://www.instagram.com/p/DXpWLTLmXhp/)
+
+[13] [https://www.csueastbay.edu](https://www.csueastbay.edu/universitycommunications/social-media-guidelines.html)
+
+my first website lol https://web.archive.org/web/19971024125850/http://www.ufscar.br/~zine/
+they didnt credit me or anyone for creating the actual zine and website (classy), the only credit I found online was - BARALDI, T. ; OLIVIERI, T. L. P. . E-zine: mídia eletrônica e criação artística. In: 4. Congresso de Iniciação Científica da UFSCar, 1996, São Carlos. resumo das comunicações do 5. Congresso de Iniciação Científica da UFSCar. São Carlos, 1996. in https://www.escavador.com/sobre/3328528/telma-luzia-pegorelli-olivieri that baraldi is me lol
+
+
+# Epic: Google Discover + Apple/iPhone Recommendation Surfaces
+
+## Objective
+
+Make Near systematically eligible for, and increasingly competitive within, **Google Discover, Apple News, Siri/Safari recommendation surfaces, and other editorial/personalised content-discovery surfaces on iPhone and the web**.
+
+The strategic premise is Near's core positioning:
+
+> **The always fresh guide to everywhere.**
+
+Near should not try to become a conventional news publisher. Instead, exploit the combination of:
+
+- constantly refreshed local knowledge
+    
+- real places and events
+    
+- geographic specificity
+    
+- strong editorial point of view
+    
+- independent/alternative sources
+    
+- timely cultural signals
+    
+- excellent imagery
+    
+- structured place/event data
+    
+- human curation + transparent AI-assisted production
+    
+
+The goal is to make Near's content useful not only when someone explicitly searches for it, but when Google/Apple believe it is something that a particular person may want to discover.
+
+---
+
+## 1. Google Discover readiness
+
+Audit and implement everything required for strong Google Discover eligibility.
+
+### Requirements
+
+- Ensure all indexable editorial pages are technically eligible for Discover.
+    
+- Ensure canonical URLs are correctly configured.
+    
+- Ensure pages are crawlable and indexable.
+    
+- Ensure every editorial article has a strong representative hero image.
+    
+- **All Near-generated hero images must be at least 1200px wide**, preferably 1600–2000px where practical.
+    
+- Ensure images meet Google's Discover requirements for sufficiently high resolution.
+    
+- Add/verify `max-image-preview:large`.
+    
+- Ensure hero images are actually available to Googlebot and not blocked by robots/CDN configuration.
+    
+- Ensure the image associated with an article is semantically appropriate to the article rather than merely decorative.
+    
+- Avoid generic/repetitive AI-generated imagery where a real place/event image is available and legally usable.
+    
+- Prefer distinctive photography, venue imagery, artwork, event imagery, maps/visualizations or editorially meaningful generated imagery.
+    
+
+Google explicitly recommends large, high-resolution images for Discover, with images at least 1200px wide.
+
+---
+
+## 2. Build a Discover-native editorial format
+
+Do not simply publish normal SEO articles and hope Discover picks them up.
+
+Create content that has a reason to be recommended **today**.
+
+Prioritize:
+
+### Fresh local developments
+
+- newly opened places
+    
+- newly announced exhibitions
+    
+- new venues
+    
+- reopening of interesting venues
+    
+- significant closures
+    
+- new neighborhoods/creative scenes
+    
+- newly announced festivals
+    
+- newly announced concerts
+    
+- cultural events
+    
+- local developments with a strong Near angle
+    
+
+### Upcoming events
+
+- exhibitions
+    
+- festivals
+    
+- concerts
+    
+- queer events
+    
+- independent cultural events
+    
+- unusual local events
+    
+- major events with strong local utility
+    
+
+### Timely editorial
+
+Examples:
+
+- “What's actually worth seeing at [event]”
+    
+- “Three things happening in East London this weekend”
+    
+- “A new reason to go to [neighborhood]”
+    
+- “The places around [major event] we'd actually visit”
+    
+- “What's changed around [neighborhood]”
+    
+- “The weirdest/greatest thing happening in [city] this week”
+    
+
+The editorial hook should be **freshness + Near's judgment**, not clickbait.
+
+---
+
+## 3. Create a Near “freshness signal” system
+
+Make Near's defining promise — **always fresh** — machine-readable and visible to users.
+
+For relevant pages expose:
+
+- Published date
+    
+- Last substantially updated date
+    
+- Last checked date
+    
+- Event date/time
+    
+- Opening/status information
+    
+- Source(s)
+    
+- Where appropriate, “Upcoming”, “Happening now”, “Ended”, “Closed”, etc.
+    
+
+Do not fabricate freshness through trivial edits.
+
+A page should only receive a meaningful updated timestamp when its underlying information or editorial content has actually changed.
+
+Create a standard internal freshness model:
+
+```text
+published_at
+updated_at
+last_checked_at
+event_start
+event_end
+source_published_at
+source_checked_at
+content_freshness_status
+```
+
+Use this consistently across places, events, guides and editorial pages.
+
+---
+
+## 4. Build an “always fresh” content engine
+
+Create a pipeline that identifies pages with a reason to be updated.
+
+Potential triggers:
+
+- new event associated with an existing place
+    
+- event approaching
+    
+- event ending
+    
+- venue opening
+    
+- venue closing
+    
+- source reports a material change
+    
+- new exhibition
+    
+- new restaurant/bar/shop
+    
+- significant trend signal
+    
+- seasonal change
+    
+- important local event
+    
+- source correction
+    
+- venue status change
+    
+
+The objective is to make existing Near URLs **living knowledge assets**, rather than publishing a new URL every time something changes.
+
+Prioritize updating a strong existing entity/page over creating disposable news URLs when the underlying subject is the same.
+
+---
+
+## 5. Google Discover content scoring
+
+Add a `discover_score` to the editorial/backlog prioritization system.
+
+Candidate content should be scored on:
+
+- freshness
+    
+- local relevance
+    
+- novelty
+    
+- visual potential
+    
+- cultural relevance
+    
+- strength of Near's editorial angle
+    
+- source quality
+    
+- geographic specificity
+    
+- likely audience interest
+    
+- event proximity
+    
+- existing Near authority
+    
+- uniqueness compared with existing web results
+    
+
+Example:
+
+```text
+Discover Score =
+freshness
++ novelty
++ visual_strength
++ local_relevance
++ editorial_distinctiveness
++ source_strength
++ event_relevance
++ audience_fit
+```
+
+Do not interpret this as a prediction of Google's ranking algorithm. It is an internal editorial prioritisation mechanism.
+
+---
+
+## 6. Google Discover analytics
+
+Add dedicated monitoring to `near-seo`.
+
+Track:
+
+- Discover impressions
+    
+- Discover clicks
+    
+- Discover CTR
+    
+- pages receiving Discover traffic
+    
+- cities
+    
+- countries
+    
+- languages
+    
+- content types
+    
+- article topics
+    
+- publication/update timing
+    
+- image used
+    
+- freshness at time of impression
+    
+- traffic longevity
+    
+- repeat Discover appearances
+    
+
+Identify:
+
+### Discover winners
+
+What types of Near content repeatedly receive distribution?
+
+### Discover losers
+
+What content is useful in Search but never receives recommendation traffic?
+
+### Discover patterns
+
+Look for correlations between:
+
+- image type
+    
+- headline style
+    
+- article length
+    
+- topic
+    
+- freshness
+    
+- event proximity
+    
+- city
+    
+- source type
+    
+- editorial persona
+    
+- content format
+    
+
+Do not optimize solely for CTR. Avoid clickbait headlines or misleading imagery.
+
+---
+
+# 7. Google Search Console integration
+
+Prioritize the existing Search Console integration as a dependency for this initiative.
+
+Use Search Console to distinguish:
+
+- Search demand
+    
+- Discover demand
+    
+- emerging queries
+    
+- pages gaining visibility
+    
+- pages losing visibility
+    
+- queries associated with fresh content
+    
+
+Create a weekly report:
+
+```text
+SEARCH
+What are people explicitly looking for?
+
+DISCOVER
+What is Google deciding people may want to see?
+
+TRENDS
+What is suddenly becoming interesting?
+
+NEAR SOURCES
+What has actually changed in the world?
+
+EDITORIAL
+What does Near have something worthwhile to say about?
+```
+
+The intersection is the highest-value content opportunity.
+
+---
+
+# 8. Google Discover image system
+
+Create a formal Near image specification.
+
+### Preferred
+
+- 1600–2000px wide
+    
+- strong landscape composition
+    
+- meaningful focal subject
+    
+- visually distinctive
+    
+- subject immediately understandable
+    
+- minimal/no text embedded in image
+    
+- legally usable
+    
+- relevant to the article
+    
+- high-quality source photography where available
+    
+
+### Avoid
+
+- tiny images
+    
+- generic stock photography
+    
+- unrelated hero images
+    
+- repetitive AI imagery
+    
+- screenshots as default heroes
+    
+- logos as default heroes
+    
+- overly text-heavy graphics
+    
+- images whose subject is impossible to identify
+    
+
+Create automated QA that checks:
+
+- dimensions
+    
+- aspect ratio
+    
+- file size
+    
+- MIME type
+    
+- crawlability
+    
+- alt text
+    
+- Open Graph image
+    
+- Twitter/X image
+    
+- canonical image
+    
+- structured-data image
+    
+
+---
+
+# 9. Open Graph / social preview system
+
+Ensure every editorial URL has excellent:
+
+- `og:title`
+    
+- `og:description`
+    
+- `og:image`
+    
+- `og:url`
+    
+- `og:type`
+    
+- `article:published_time`
+    
+- `article:modified_time`
+    
+
+Where appropriate include:
+
+- author
+    
+- section
+    
+- locale
+    
+
+Preview every article before publication.
+
+The same hero asset should be usable across:
+
+- Google Discover
+    
+- Google Images
+    
+- social sharing
+    
+- messaging apps
+    
+- Apple News
+    
+- Near itself
+    
+
+unless a platform-specific crop is demonstrably better.
+
+---
+
+# 10. Apple News / Apple ecosystem investigation
+
+Investigate Near becoming a legitimate **Apple News publisher**, rather than relying only on Safari/search discovery.
+
+Apple News is a separate distribution channel: Apple says publishers can create channels and publish articles through News Publisher/Apple News Format, with articles appearing in personalised feeds including Today.
+
+### Research and document:
+
+- Apple News Publisher eligibility
+    
+- publisher/account requirements
+    
+- geographic availability
+    
+- language limitations
+    
+- editorial requirements
+    
+- AI-generated content requirements
+    
+- RSS/CMS integration options
+    
+- Apple News Format
+    
+- Apple News API
+    
+- analytics
+    
+- advertising/revenue implications
+    
+
+Important: Apple currently documents News Publisher as supporting English and Canadian French content, so do not assume Near's multilingual site can simply be syndicated wholesale.
+
+---
+
+# 11. Apple News publishing experiment
+
+If eligible, launch an initial Near Apple News channel in English.
+
+Do NOT automatically syndicate everything.
+
+Create a deliberately selected Apple News feed containing:
+
+- high-quality local guides
+    
+- fresh cultural stories
+    
+- event previews
+    
+- city discoveries
+    
+- original Near editorial
+    
+- strong visual stories
+    
+- genuinely useful “what's on” content
+    
+
+Investigate using the Near CMS directly with Apple News Publisher/API.
+
+Apple documents both CMS integration and the Apple News API as supported publishing routes.
+
+---
+
+# 12. Apple News editorial structure
+
+Create a small number of coherent Apple News sections rather than mirroring every Near category.
+
+Potential initial sections:
+
+- Cities
+    
+- What's On
+    
+- Culture
+    
+- Food & Drink
+    
+- Nightlife
+    
+- Queer
+    
+- Weird & Wonderful
+    
+
+Apple recommends a relatively small number of sections; its publisher documentation says 6–8 is optimal even though more are technically possible.
+
+Validate these against Apple's current publisher guidance before implementation.
+
+---
+
+# 13. AI-generated content transparency for Apple News
+
+Because Near uses AI-assisted production, investigate and implement Apple's current AI-generated-content disclosure requirements before publishing to Apple News.
+
+Do not attempt to disguise AI-assisted articles as entirely human-produced work.
+
+Maintain provenance metadata internally:
+
+```text
+human_curator
+source_articles
+source_urls
+ai_assistance
+editorial_review
+publication_date
+last_reviewed
+```
+
+Apple's current publisher documentation explicitly includes mechanisms for marking AI-generated content and requires publishers to remain responsible for accuracy.
+
+---
+
+# 14. Apple News + Near freshness model
+
+Near's Apple News strategy should emphasize the same differentiator as the website:
+
+> **Always fresh local knowledge.**
+
+Prioritize:
+
+- new openings
+    
+- current exhibitions
+    
+- upcoming events
+    
+- weekend guides
+    
+- city-specific cultural developments
+    
+- changing neighborhoods
+    
+- current local recommendations
+    
+
+Do not turn Apple News into an archive of evergreen SEO pages.
+
+---
+
+# 15. iPhone/Siri/Safari discovery research
+
+Investigate Near's eligibility and technical opportunities across the broader Apple ecosystem, including:
+
+- Siri web results
+    
+- Safari search/discovery
+    
+- Apple News
+    
+- Apple Spotlight/web search integrations where applicable
+    
+- Apple Maps/place discovery where technically/legally possible
+    
+- Apple Intelligence/web-based information surfaces where applicable
+    
+
+For each surface document:
+
+```text
+Surface
+Eligibility
+Required markup/feed/API
+Content type
+Geographic availability
+Language availability
+Submission mechanism
+Ranking/recommendation mechanism
+Analytics available
+Near implementation cost
+Expected value
+```
+
+Do not assume that appearing in Apple News automatically means appearing in every Apple recommendation surface.
+
+---
+
+# 16. Entity consistency across platforms
+
+Ensure Near presents consistent entity information everywhere.
+
+For every place/event:
+
+- canonical name
+    
+- alternate name
+    
+- address
+    
+- latitude/longitude
+    
+- neighborhood
+    
+- city
+    
+- country
+    
+- website
+    
+- opening status
+    
+- event dates
+    
+- category
+    
+- image
+    
+- source
+    
+- last checked
+    
+
+Avoid conflicting versions of the same entity across Near pages.
+
+This is particularly important because recommendation/search systems need to understand that:
+
+```text
+Place A
+=
+the same real-world entity
+```
+
+across different pages and platforms.
+
+---
+
+# 17. Build an “event proximity” publishing strategy
+
+Events are especially promising for recommendation surfaces because they naturally combine:
+
+- freshness
+    
+- geographic relevance
+    
+- visual assets
+    
+- time sensitivity
+    
+- user intent
+    
+
+Create automated editorial windows:
+
+### 30–90 days before
+
+Discovery / announcement
+
+### 14–30 days before
+
+Planning
+
+### 7 days before
+
+Weekend / near-term intent
+
+### 1–3 days before
+
+Immediate local discovery
+
+### During
+
+Live/current relevance where editorially justified
+
+### After
+
+Only if there is a worthwhile editorial reason
+
+Do not create five thin URLs for every event.
+
+Prefer updating the strongest relevant page where possible.
+
+---
+
+# 18. “What's on” should become a first-class Near content format
+
+Develop a reusable format such as:
+
+> **What's on in London this weekend**
+
+with genuinely current content.
+
+The page should dynamically connect:
+
+- events
+    
+- places
+    
+- neighborhoods
+    
+- editorial picks
+    
+- opening information
+    
+- maps
+    
+- sources
+    
+
+This should eventually exist at appropriate geographic levels:
+
+```text
+What's on
+→ London
+→ East London
+→ Dalston
+```
+
+but only create crawlable geographic versions when sufficient inventory exists.
+
+---
+
+# 19. Discover-specific editorial headlines
+
+Test headline patterns that communicate:
+
+**place + novelty + current relevance**
+
+Examples:
+
+- “Five things worth doing in East London this weekend”
+    
+- “A new reason to spend Saturday in Hackney”
+    
+- “What’s actually happening around V&A East this month”
+    
+- “The London exhibition everyone should know about right now”
+    
+- “Three queer things happening in Berlin this week”
+    
+
+Avoid:
+
+- clickbait
+    
+- fake urgency
+    
+- exaggerated superlatives
+    
+- generic “10 Best…” constructions
+    
+- headlines that don't match the article
+    
+
+The objective is **recommendation-worthy curiosity**, not cheap clicks.
+
+---
+
+# 20. Build a “Discover candidate” agent
+
+Create/extend `near-seo` or a dedicated agent to run daily.
+
+Input:
+
+- Google Trends
+    
+- source feeds
+    
+- Near events
+    
+- upcoming events
+    
+- new places
+    
+- Search Console
+    
+- current editorial backlog
+    
+
+Output:
+
+```text
+DISCOVER CANDIDATES
+
+1. Topic
+2. Why now
+3. Near angle
+4. Target city
+5. Target audience
+6. Supporting sources
+7. Existing Near entities
+8. Suggested format
+9. Image opportunity
+10. Freshness window
+11. Search opportunity
+12. Discover opportunity
+13. Apple News opportunity
+14. Recommended action
+```
+
+The agent must be conservative.
+
+A trend alone is NOT sufficient justification.
+
+---
+
+# 21. Create a cross-platform distribution score
+
+For every major editorial candidate calculate:
+
+```text
+SEO score
+Discover score
+Apple News score
+Social score
+Trend score
+Evergreen value
+Freshness value
+Near brand fit
+```
+
+This allows the editorial team to choose content with multiple acquisition/distribution opportunities.
+
+Example:
+
+|Content|SEO|Discover|Apple|Trend|Evergreen|
+|---|--:|--:|--:|--:|--:|
+|Generic London guide|High|Low|Low|Low|High|
+|New London exhibition|Medium|High|High|High|Medium|
+|Weird East London opening|Medium|High|High|Medium|Medium|
+|Restaurant entity page|High|Low|Low|Low|High|
+|London weekend guide|High|High|High|High|Low|
+
+---
+
+# 22. Success metrics
+
+Do NOT define success as “get into Discover.”
+
+Track:
+
+### Google Discover
+
+- impressions/month
+    
+- clicks/month
+    
+- CTR
+    
+- number of URLs receiving Discover impressions
+    
+- repeat appearances
+    
+- median traffic lifespan
+    
+- traffic per article
+    
+
+### Apple News
+
+- impressions
+    
+- article opens
+    
+- follows
+    
+- engagement
+    
+- returning readers
+    
+- referral traffic to Near
+    
+- revenue where applicable
+    
+
+### Search
+
+- organic impressions
+    
+- non-brand impressions
+    
+- indexed URLs
+    
+- queries
+    
+- Search CTR
+    
+- AI Search visibility
+    
+
+### Editorial
+
+- percentage of content with verified freshness
+    
+- percentage with strong hero image
+    
+- percentage tied to an entity/event
+    
+- percentage with primary/authoritative source
+    
+- update frequency of high-value entities
+    
+
+---
+
+# Definition of Done
+
+This epic is considered operational when:
+
+-  Google Discover eligibility has been technically audited.
+    
+-  `max-image-preview:large` is implemented and verified.
+    
+-  All Near-generated Discover candidates have ≥1200px hero images.
+    
+-  Image/crawlability QA is automated.
+    
+-  Search Console is integrated.
+    
+-  Discover performance is monitored separately from Search.
+    
+-  Near has a documented Discover editorial format.
+    
+-  Near has an automated freshness/update model.
+    
+-  Event proximity is incorporated into editorial prioritisation.
+    
+-  A Discover candidate agent exists.
+    
+-  Apple News eligibility has been researched.
+    
+-  Apple News AI-content requirements have been documented.
+    
+-  Apple News publishing has been evaluated with a concrete go/no-go decision.
+    
+-  If approved, an initial English-language Apple News channel is launched.
+    
+-  Apple News analytics are integrated into the reporting loop.
+    
+-  Broader Apple/iPhone discovery surfaces have been mapped and evaluated.
+    
+-  Cross-platform content scoring exists.
+    
+-  The system learns from actual Discover/Apple/Search performance rather than generic “best practices.”
+    
+
+## Guiding principle
+
+**Do not create content for algorithms.**
+
+Create genuinely useful, current, visually compelling local knowledge.
+
+Then make sure Google, Apple and other recommendation systems can understand:
+
+**what it is, where it is, why it matters, who it is for, what changed, when it changed, and why someone might want to discover it now.**
+
+That is exactly where Near's **“always fresh”** proposition should become a distribution advantage.
+
+Please deprecate Djaga bot entirely
+
+dont let the user map marker appear on top of cluster location markers in zoomed out views like it's happening
+
+absolutely deprioritize that For You feed. Even the simple MVP one. In fact, park it entirely 
+
+use the white space to the right in the desktop view of articles to show the map, ad placements, there is too much white space right now. text could be in the middle of 2 bars of ad placements and promoted posts maybe? UX team have a look
+
 
