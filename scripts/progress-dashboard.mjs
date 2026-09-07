@@ -122,34 +122,6 @@ console.log(
 );
 console.log("=".repeat(64));
 
-// --- Directional SEO/AEO order-of-magnitude, NOT a real forecast ---
-// Anchored to content/seo-forecast-3month.md's own explicit "no invented
-// numbers" discipline: a brand-new domain realistically sees dozens to
-// low hundreds of monthly sessions per ~50-150 pages by month 3, driven
-// almost entirely by long-tail queries, not head terms. Scaled linearly
-// here by current page count purely as a rough proxy — this is NOT a
-// real projection model (no backlink/authority/CTR data feeds it).
-const localePages = grandTotal * 6; // six locales per place, roughly
-const seoLow = Math.round((localePages / 100) * 12); // dozens end of the range
-const seoHigh = Math.round((localePages / 100) * 100); // low-hundreds end
-console.log("\n" + "-".repeat(64));
-console.log("  DIRECTIONAL SEO/AEO ORDER-OF-MAGNITUDE (NOT a real forecast)");
-console.log("-".repeat(64));
-console.log(
-  `  ~${localePages.toLocaleString()} locale pages live -> order-of-magnitude\n` +
-    `  ${seoLow}-${seoHigh} organic sessions/month by month 3, per the same\n` +
-    `  new-domain heuristic in content/seo-forecast-3month.md (dozens to\n` +
-    `  low-hundreds per 50-150 pages, long-tail-driven). This has NO real\n` +
-    `  backlink/authority/CTR data behind it — it is a linear scale-up of\n` +
-    `  a stated heuristic, nothing more. Treat as "shape of the curve."`,
-);
-console.log(
-  "  AEO (citation in AI answer engines) has no numeric proxy at all —\n" +
-    "  track it qualitatively via aeo/SKILL.md's citability checklist and\n" +
-    "  actual citation sightings, not a projected count.",
-);
-console.log("-".repeat(64));
-
 console.log("\n" + "=".repeat(64));
 console.log("  GOAL: 1,000 places in each Tier 1 city (London / NYC / SF Bay)");
 console.log("=".repeat(64));

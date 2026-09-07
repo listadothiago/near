@@ -1,0 +1,73 @@
+{
+  "slug": "the-pilgrm-paddington-london",
+  "categories": ["city-culture"],
+  "tags": ["lgbtq-friendly"],
+  "coordinates": {
+    "lat": 51.5157968,
+    "lng": -0.1744204
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Paddington",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Yatzer — The Pilgrm hotel, Paddington",
+      "url": "https://www.yatzer.com/pilgrm-hotel-paddington-london",
+      "feedId": null
+    },
+    {
+      "name": "The Pilgrm — official site, Rooms",
+      "url": "https://thepilgrm.com/rooms/",
+      "feedId": null
+    },
+    {
+      "name": "momondo — The Pilgrm price aggregator",
+      "url": "https://www.momondo.co.uk/hotels/london/The-Pilgrm.mhd36551.ksp",
+      "feedId": null
+    },
+    {
+      "name": "Tripadvisor — The Pilgrm reviews",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g186338-d12848800-Reviews-The_Pilgrm-London_England.html",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — The Pilgrm Hotel Paddington listing",
+      "url": "https://www.google.com/maps/place/The+Pilgrm+Hotel+Paddington/@51.5157968,-0.1744204,17z/data=!4m9!3m8!1s0x48761ab2c44c1001:0xcc4f2bfcc16ca8f9!5m2!4m1!1i2!8m2!3d51.5157968!4d-0.1744204!16s%2Fg%2F11gbkw686y",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnISf_MfNeyf7CSG0xXLRX698nrHwGpHk5keau7ojIFKH1W2HDQuxwZKYcYX4FUXoRbbj7lDSrNisEtoZn6lY3hg14iIjBqZruW21gJ6HNdkDyB-TGEzhu_pkB8waSNgMUelvfK",
+    "attribution": "Photo: The Pilgrm, owner-submitted via Google Maps",
+    "attributionLink": "https://www.google.com/maps/place/The+Pilgrm+Hotel+Paddington/@51.5157968,-0.1744204,17z",
+    "licenseNote": "Real source photo (tier 1)."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T23:32:11.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, article 6/30: accommodation attempt per BACKLOG P3.4 (every rotation round). Researched English draft, sourced beyond Time Out: Yatzer (design press, restoration detail), official site, momondo (price aggregation), Tripadvisor (mixed reviews). Google Maps confirmed current and open: 4.1/1,327 reviews, LGBTQ+-friendly-tagged, photos as recent as 7 days ago, a live owner-submitted sample quote for 1-2 Oct 2026 stay. Deliberately stripped-back concept (no A/C, electric fans, no minibar/robes per sustainability pledge) directly explains the recurring small-room/noise complaints in reviews — framed as the flip side of a real design choice, not a hidden flaw. Reddit yielded little beyond a reposted Guardian review and a passing itinerary mention; UGC floor otherwise met via Tripadvisor's specific, dated complaint threads. No internal-link target exists in this part of London yet — logged to content/requests.md per link-density rule rather than forcing one. Pending: five locale editions, full sign-offs, publish gates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:45:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, owner-submitted Google Business photo). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: negative UGC (tiny rooms, street noise, no A/C) attributed to named review platforms and framed as trade-offs of a stated design choice, not unsupported allegations. price-police pass: momondo range (£42-171, average ~£117-171) plus a dated, occupancy-specific sampled quote (1 night, 1-2 Oct 2026, via Google Maps price comparison) both included, phrased as a liftable answer, never generalized into a year-round rate per sourced-price-ranges' hotel-quote rule. Link-density: external passes (Yatzer/momondo/Tripadvisor in-text); internal gap logged to content/requests.md rather than forced. Red team: sampled price explicitly dated and occupancy-noted; no internal jargon leaked. Discover audit clean. Revenue pass: affiliate-pr flagged as a natural fit (hotel booking) but no approved program exists yet under the outreach freeze — logged as a lead, no link added. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words with its own publishNote."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "The Pilgrm Hotel Paddington, 25 London Street, W2 1HH — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T23:40:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Pilgrm+Hotel+Paddington/@51.5157968,-0.1744204,17z/data=!4m9!3m8!1s0x48761ab2c44c1001:0xcc4f2bfcc16ca8f9!5m2!4m1!1i2!8m2!3d51.5157968!4d-0.1744204!16s%2Fg%2F11gbkw686y"
+  },
+  "publishedAt": "2026-09-07T23:32:11.000000+00:00",
+  "updatedAt": "2026-09-07T23:45:00.000000+00:00"
+}
