@@ -1,0 +1,83 @@
+{
+  "slug": "the-jago-dalston-london",
+  "categories": ["nightlife-sound"],
+  "tags": ["local-legend", "late-night"],
+  "coordinates": {
+    "lat": 51.5423141,
+    "lng": -0.0755863
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Dalston",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Time Out — The Jago (Haggerston bars/pubs guide)",
+      "url": "https://www.timeout.com/london/bars-pubs/haggerston",
+      "feedId": "timeout-london"
+    },
+    {
+      "name": "The Arts Desk — Akugbo, Harper, The Jago, Dalston review",
+      "url": "https://www.theartsdesk.com/classical-music/akugbo-harper-jago-dalston-review-revelatory-pairing-trumpet-and-harp",
+      "feedId": null
+    },
+    {
+      "name": "The Ground Up (Substack) — Founding The Jago with Kwame Otiende",
+      "url": "https://groundupmusic.substack.com/p/founding-the-jago-with-kwame-otiende",
+      "feedId": null
+    },
+    {
+      "name": "Hackney Gazette — Call for 'more collaboration' after venue served noise abatement notice",
+      "url": "https://www.hackneygazette.co.uk/news/local-council/the-jago-noise-abatement-9227600",
+      "feedId": null
+    },
+    {
+      "name": "The Jago — official site, About",
+      "url": "https://www.thejagodalston.com/about/",
+      "feedId": null
+    },
+    {
+      "name": "The Jago — official site, What's On",
+      "url": "https://www.thejagodalston.com/whats-on/",
+      "feedId": null
+    },
+    {
+      "name": "r/ukhiphopheads — Full Clip Issue #40 at The Jago Dalston",
+      "url": "https://www.reddit.com/search/?q=%22The+Jago%22+Dalston",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkPFRp1nS9GRqm-5jHFzc1oRpy-rw895Koi83Wjx6_Z4gnYn5GQo-IjVY4iTzd7fKvuyAF7sPvtySJfiYbYfoLE_QWQYUYHqKxFwvZ3lm68cLV5xUyIbS-X93jmPikGklDA3oh-",
+    "attribution": "Photo: The Jago, owner-submitted via Google Maps",
+    "attributionLink": "https://www.google.com/maps/place/The+Jago/@51.5423141,-0.0755863,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d62a5f49d47:0x5c6840f7209e7afc!8m2!3d51.5423141!4d-0.0755863!16s%2Fg%2F11fj6mg4fv",
+    "licenseNote": "Real source photo (tier 1). Official site imagery was all event posters/flyers, not venue photography."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T23:14:03.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, article 5/30: researched English draft. Sourced beyond Time Out per standing rule: The Arts Desk (indie classical-music press), The Ground Up substack (founder interview), Hackney Gazette, official site, Reddit. Current-status confirmed via Google Maps (4.5/529 reviews, dense Sept-Dec 2026 events listed, ticketed via Resident Advisor/Shotgun) and official What's On page. History: founded by Kwame Otiende and Aaron Edwards ~2.5 years after Passing Clouds (2006-2016, ~10,000 events) was forced to close by developers; building is the former Hackney Gazette printworks; Passing Clouds was an Asset of Community Value, which is why the developer entertained a speculative community bid at all. Noise-abatement dispute (2022-2023 era per multiple outlets, not current-2026) resolved via appeal/acoustics spend, mentioned as durable historical fact (survived a real threat), not framed as an ongoing crisis. Monday food bank (11am-4pm) is current per official site. No dated events used in body copy. Pending: five locale editions, full sign-offs, publish gates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:35:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, owner-submitted Google Business photo). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: noise-abatement/complaint history stated as resolved historical fact with named source (Hackney Gazette), not an ongoing allegation; Kwame Otiende quoted from his own public interview, attributed. Link-density passes (Arts Desk/Ground Up/Hackney Gazette in-text, internal NearLink to The Divine). price-police pass: ticket price range noted (from £6 door entry up through ticketed gigs) as a qualitative low-to-mid tier per the new rule, sourced from FIXR/RA listings and Google Maps price signal — no single invented current figure. Red team: no internal jargon leaked; historical noise dispute correctly dated as non-current. Discover audit clean. Revenue pass: no natural affiliate/ad-sales opportunity beyond existing coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words with its own publishNote."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "The Jago, 440 Kingsland Road, London E8 4AA — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T23:20:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Jago/@51.5423141,-0.0755863,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d62a5f49d47:0x5c6840f7209e7afc!8m2!3d51.5423141!4d-0.0755863!16s%2Fg%2F11fj6mg4fv"
+  },
+  "publishedAt": "2026-09-07T23:14:03.000000+00:00",
+  "updatedAt": "2026-09-07T23:35:00.000000+00:00"
+}

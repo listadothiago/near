@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 4,
+  "publishedCount": 5,
   "candidates": [
     {
       "name": "Hausu",
@@ -191,11 +191,44 @@
       "name": "The Jago",
       "city": "London",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/bars-pubs/haggerston",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-jago-dalston-london",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "The Pilgrm",
