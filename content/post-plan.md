@@ -422,9 +422,40 @@ specific dated events with further-out dates. The Agendão (Porto
 Alegre) and Curitiba Cult feeds are the two places to mine for them
 before drafting._
 
-### Barcelona (city) — queue empty, needs seeding
-### Rome — queue empty, needs seeding (che.famo.stasera / vernissagerome IG sources queued in EPIC 5)
-### Portland — queue empty, needs seeding
+## Unseeded queues — seed these ON THEIR TURN, don't skip them
+
+**Operator directive, 2026-09-07: *"seed those stuck destinations when
+their turn comes."*** The rule now lives in
+`.claude/skills/content-rotation/SKILL.md` under "Seed on turn": an empty
+queue is a **trigger to run a `near-sources-war-room` seeding pass**, not
+grounds to pass the tier's share to the next city. A city is only held
+after a seeding pass has been tried and honestly failed the bar (≥1
+watchable local feed, ≥3 candidate pins with addresses and current
+local-press corroboration).
+
+This matters at Tier 2 more than anywhere: **nine of its twelve cities
+are unseeded**, so the tier's three-post burst had in practice been
+circling Berlin, Amsterdam and Barcelona while the rest were skipped
+every ten, silently and forever.
+
+- **Rome** — che.famo.stasera / vernissagerome IG sources already queued
+  in EPIC 5; start there. Was Tier 2's designated burst target for ten
+  #2 and was passed over on 2026-09-07 for an empty queue — under the
+  new rule that is exactly the case that should have triggered a seed.
+- **Portland**
+- **Mexico City** — in-tier confirmed 2026-09-04, never seeded.
+- **Las Vegas**
+- **Orlando**
+- **Chengdu**
+- **Tokyo** — added to Tier 2 2026-09-03.
+- **Melbourne** — added to Tier 2 2026-09-03.
+- **Seattle** — added 2026-09-03 on the operator's *"make sure seattle is
+  at least tier 2"*; its hold was always explicitly pending seeding.
+- **Barcelona (city)** — the Catalonia queue carries the Sitges-push
+  leftovers, but Barcelona proper has nothing of its own.
+
+Do **not** batch-seed these speculatively. Seeding is real research and
+it goes stale; it happens when the turn comes.
 
 ---
 

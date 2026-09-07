@@ -117,12 +117,60 @@ The share needs a counter and it is **not** derivable from
 it belonged to. Track `posts-this-ten` and the per-tier spend in the
 ROTATION-STATE block below.
 
-A **held** city (empty or fully-blocked queue) does not consume its
-tier's share — the share passes to the next city in that tier's order,
-and the hold is recorded with its reason. This reverses the old
-empty-queue rule, which charged a city for a turn it could not take and
-so pushed unseeded cities permanently out of reach. A city skipped in
-**error**, rather than held, is owed its post before the ten closes.
+### Seed on turn — the first response to an empty queue is to fill it
+
+**Operator directive, 2026-09-07, verbatim: *"seed those stuck
+destinations when their turn comes."*** Prompted by the finding that
+nine of Tier 2's twelve cities — Rome, Portland, Mexico City, Las Vegas,
+Orlando, Chengdu, Tokyo, Melbourne, Seattle — had empty queues, so the
+tier's burst was in practice circling two or three cities while the
+other nine were skipped in perpetuity by a rule that was only ever meant
+to stop a *single* turn being padded with unverified work.
+
+So: **when a city's turn comes up and its queue is empty or fully
+blocked, the turn's work is a seeding pass on that city.** Run
+`near-sources-war-room` against it — the same pass that seeded Bangkok
+on 2026-09-03 and the six Tier 3 cities the same day. Do not silently
+move the pointer on.
+
+- **The bar is unchanged and is not negotiable to make a seed "work":**
+  ≥1 watchable local feed logged in `sources.md` /
+  `preferred-sources.md`, and ≥3 candidate pins with addresses and
+  current local-press corroboration.
+- **Seed clears → the city draws its turn**, from the queue just seeded,
+  in the same session if there is room and in the next one if not. The
+  share is spent by that city, not passed on.
+- **Seed fails the bar → *now* the city is genuinely held**, the share
+  passes to the next city in the tier's order, and the `held:` line
+  records the reason as a failed seeding attempt with its date — not
+  just "no queue". A city that yields no watchable independent source
+  stays held rather than being covered from trade press and listings;
+  that judgment predates this directive and survives it.
+- **A seeding pass alone is a legitimate outcome for a turn** if the
+  research runs long. Record it on the `tN-spent:` line as seeded-not-
+  yet-drawn so the next session picks up the draft rather than
+  re-seeding.
+- Don't batch-seed the whole tier speculatively. Seeding is real research
+  and it goes stale; it happens **when the turn comes**, which is what
+  the operator asked for.
+
+Prior seeding passes are the model to copy: Bangkok's (`post-plan.md`
+Bangkok section, full analysis in `content/opportunities.md`) and the
+Tier 3 six, which cleared three cities and honestly failed three.
+
+### The hold rule
+
+A **held** city — one whose queue is empty or fully blocked **and whose
+seeding pass has failed the bar above** — does not consume its tier's
+share. The share passes to the next city in that tier's order, and the
+hold is recorded with its reason. This reverses the older empty-queue
+rule, which charged a city for a turn it could not take and so pushed
+unseeded cities permanently out of reach. A city skipped in **error**,
+rather than held, is owed its post before the ten closes.
+
+Note the ordering, because it is the whole point of the 2026-09-07
+directive: **an empty queue is a trigger to seed, not a reason to skip.**
+A hold is what's left after seeding has been tried and honestly failed.
 
 If a tier cannot spend its share at all — every member held — the
 remainder falls to the tier above it, and the shortfall is recorded on
@@ -254,11 +302,16 @@ into a new ten, since a reset per "Writing the pointer" requires all
 three shares spent, and T3 hasn't gone yet this ten.
 
 **Reading the pointer:** `NEXT-UP` is the city whose post is next, full
-stop. Before drafting for it, check its queue in `post-plan.md`: if the
-queue is empty or every remaining item is blocked, the city is **held —
-it does not consume its tier's share**. Move `NEXT-UP` to the next city
-in that tier's order and record the hold and its reason on the `held:`
-line. Never pad a share with an unverified post.
+stop. Before drafting for it, check its queue in `post-plan.md`. If the
+queue is empty or every remaining item is blocked, **that turn becomes a
+seeding pass on that city** — see "Seed on turn" above; run
+`near-sources-war-room`, and draw from the queue it produces. Only if
+the seed fails the bar (≥1 watchable feed, ≥3 corroborated candidate
+pins) is the city **held**, not consuming its tier's share: then move
+`NEXT-UP` to the next city in that tier's order and record the hold, its
+reason and the failed-seed date on the `held:` line. Never pad a share
+with an unverified post — but never skip a city just because nobody has
+seeded it yet either.
 
 **Writing the pointer:** whoever ships a post edits this block — move
 `NEXT-UP` on, increment the right counter on `spent:`, and append to the
