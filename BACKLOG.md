@@ -2,7 +2,7 @@
 
 _(NEVER skip this rule. DO THIS in addition to whatever instructions you already have, ask if you encounter irreconciliable instructions) Consume the backlog below. always invoke product trio, chief editor, trendsetter (who must prepare by scanning AAN best sources for trends that could go global) and seo (who must prepare by checking ALL of his rss feeds, adjusting their hours parameter as he sees fit, for search trends we can effectively target, and also looking at other geographies or categories if relevant) to prioritize next action using RICE and MoSCoW and own skill judgement, consider dependencies and do not underestimate the impact of foundational work. Execute skill, logic, process and persona changes first, as they affect other actions. Execute all quick wins first. Please prioritize the actions that will consume the feedback pasted here and turn that into clear backlog items so we can get rid of all this text pasted here ASAP? this file is too big for no reason. Also move the done items, older handoffs that are no longer relevant out of here into their own archive files._
 
-_Execute action with any skill needed /invoke any agent skill that is relevant, and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, do the same in completed items in related files such as request files and opportunities files and so on and finish wrapping up by recommending that the operator clear or compact session, aim to wrap up asap for maximum efficiency and token saving. (keep this rule here)_
+_Execute action with any skill needed /invoke any agent skill that is relevant, and after each action push live to public site near.tips, update backlog including crossing out done items/moving them to archive, do the same in completed items in related files such as request files and opportunities files and so on, reflect whatever is needed in agents.md for Codex and finish wrapping up by recommending that the operator clear or compact session, aim to wrap up asap for maximum efficiency and token saving. (keep this rule here)_
 
 **Maintenance rule for this file:** keep it short. New operator feedback gets converted into a numbered item under the right priority section immediately — never appended as raw text at the bottom. Completed items move to `BACKLOG-ARCHIVE.md`, they do not stay here struck through.
 
@@ -72,9 +72,9 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ### 2.2 Share-of-Output Cadence (Per 10 Posts)
 
-- **Tier 1 (6 of 10 — Round-Robin):** London, Brighton, San Francisco, Oakland.
-- **Tier 2 (3 of 10 — Burst by City):** Bangkok, São Paulo (capital), Baixada Santista, Campinas (standing priority cluster), Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, Tokyo, Melbourne, Seattle, plus one trending wildcard city.
-- **Tier 3 (1 of 10 — Burst by City):** Florianópolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador.
+- **Tier 1 (6 of 10 — Round-Robin):** London, Brighton, San Francisco, Oakland, NYC.
+- **Tier 2 (3 of 10 — Burst by City):** Bangkok, São Paulo (capital), Baixada Santista, Rio de Janeiro, Campinas (standing priority cluster), Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, Tokyo, Melbourne, Seattle, Los Angeles, plus one trending wildcard city.
+- **Tier 3 (1 of 10 — Burst by City):** Florianópolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador, Denver, Chicago, Miami, Bologna, Medellin, Montevideo, São Carlos-SP, Litoral Paulista, São Vicente-SP, New Jersey, San Diego plus one trending wildcard city.
   - _Constraint:_ Tier 3 is **HELD** until each city possesses ≥1 verified independent local source and ≥3 verified candidate pins.
 - **Gap:** No African city or neighborhood is in any tier. Pick at least one — see P2.6.
 - _Bangkok moved Tier 1 → Tier 2 per operator directive 2026-09-07. P2.2 (Bangkok seeding war room) still stands, now at Tier 2 cadence._
@@ -106,7 +106,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 ### P0: Immediate Fixes & Critical Correctness
 
 1. **Geolocation integrity — URGENT, systemic.** Operator checked two pins in a row and both were wrong, suggesting a fundamental defect in how pins were originally created. Required: (a) find the root cause in the pin-creation path; (b) wire `geolocation-police` into every article write and refresh so coordinates are always checked against Google Maps — no full catalogue pass now, fix-on-touch instead; (c) fix the known-bad pins: `amuse-beach-club-sao-vicente` (correct location: https://share.google/isqrdyKG482x8i7Nn) and `quiosque-da-cris-sao-vicente` → `[-23.973827, -46.370170]`. Restaurante Almeida and Made were spot-checked correct, so the corruption is partial, not universal.
-2. **NEAR rebrand — operator's stated top priority ("reach and impact here are huge").** Home page and header title become `NEAR`, not `NEAR.TIPS`; near.tips stays as the URL only. Amend the browser tab title too. Keep the "tips near me" slug pattern — e.g. pt-BR: `Dicas perto de mim | NEAR`.
+2. **NEAR rebrand — operator's stated top priority ("reach and impact here are huge").** Home page and header title become `NEAR`, not `NEAR.TIPS`; near.tips stays as the URL only. Amend the browser tab title too. Keep the "tips near me" slug pattern — e.g. pt-BR: `Dicas perto de mim | NEAR`. (this is at least partly done as the home page seems updated for this)
 3. **PARSER token-efficiency review — high priority.** Have PARSER review all skills and processes, and especially their interactions, for maximum token saving.
 4. **Generate portable `AGENTS.md`** documenting the full tech stack (Vercel, GitHub), exact build and deploy commands, project structure, architectural boundaries, and all MCP server configs and tool dependencies, so any MCP-compatible agent can resume maintenance with no session history. _Operator directive: run this in a completely fresh session after `/clear`._ Note the current root `AGENTS.md` is the Next.js auto-generated stub — this replaces/extends it without dropping the generated block.
 5. **Praia da Guaiúba copy correction:** update `praia-da-guaiuba-guaruja` across all locales to clarify that Restaurante Almeida in Santos is a separate culinary detour, not located along the bike path between the kiosk and the ferry.
@@ -116,8 +116,13 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 9. **PageSpeed / WebMCP compliance:** address mobile CLS (0.52), add accessible ARIA names to Leaflet marker icons, verify `llms.txt` conforms to standard H1 markdown requirements.
 10. **Search Console zero-indexation audit:** diagnose why 630 sitemap URLs are crawled but not indexed; verify canonical and hreflang tags across all 6 locales.
 11. **Automated deployment verification:** inspect Vercel production alias settings to eliminate promotion delays; enforce live curl checks in publishing workflows.
+12. ~~**Operator location privacy — P0, DONE 2026-09-07.**~~ Scrubbed from 4 places / 11 locale files, root-cause rule `operator-location-privacy` added to `content/rules.md`, curator card moved below the cast on `/about`. Shipped and pushed. **One open question for the operator:** `lib/content/curator.ts` → `livedIn` still lists `São Vicente / Baixada Santista` among ten cities on your own `/about/thiago-baraldi` page. It reads as chronological biography ending in Rome, so it no longer points at where you live now that the content-page lines are gone — but it is your page and your call whether that entry stays.
+13. **Geolocation loading state.** No feedback between tapping "minha localização" and the browser resolving the position. Add a loading/pending state to the geolocation control in `components/board/Board.tsx` and `components/collection/CollectionPlaces.tsx`. Operator directive 2026-09-07. Product trio + near-lead-ux own the design.
+14. **Type scale increase across all breakpoints.** Operator: _"fonts should be larger in all breakpoints imho"_. Needs a near-lead-ux call on the token changes in `app/globals.css` rather than ad-hoc per-component bumps — the site uses a clamp-based scale, so this is one systematic change, not many.
 
 ### P1: Product & UI Enhancements
+
+0. **DECISION PENDING — pause content, do foundational work, add AI-swappability (n8n)?** Operator, 2026-09-07: _"Maybe we should pause content generation momentarily, get all the foundational work done including some AI swappability solution like n8n so we can maximize our output... be ready to generate content with Claude AND other AIs. Maybe use VS Code as well? Let's discuss before taking any action. maybe the current agents.md already answers this and I'm confused lol"_ — **Explicitly gated on a discussion with the operator; do not act on it.** Note it partly overlaps P0.4 (portable `AGENTS.md`), which is the cheap half of the same idea: `AGENTS.md` today is only the Next.js auto-generated stub, so no, it does not yet answer this. Needs the Product Trio + PARSER to frame the actual trade-off (orchestration layer vs. more skill-file discipline) before the operator decides.
 
 1. **Map-driven card filtering:** navigating/panning the map on the home page filters the card list to the pins currently in view. (Pairs with P1.2 two-way sync.)
 2. **Map pin clustering:** finalize Supercluster implementation with click-to-zoom and two-way viewport synchronization between map pins and listing cards.
@@ -156,37 +161,37 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 3. **Persistent column scripts:** standardize launchd automation for all recurring weekly and monthly columns.
 4. **"Do Not Disturb" accommodation column (weekly, NITE-PORTER).** Standing RADAR-X collaboration: Trendsetter and SEO pick destinations and flavour (RADAR-X co-signs publicly, SEO collaborates but does not); NITE-PORTER finds the hotels to feature (no duplicates), assigns a persona to write each missing hotel article, and writes the column about the collection. NITE-PORTER must write or collaborate on — and be credited in — every hotel article. Hotel article directives: always frontload unique selling points in copy and bullets, always keep information current. **Every content refresh or rotation round must attempt at least one hotel article**, always checking whether the destination still has un-covered hotels worth writing about.
 5. **PARSER AI column:** bi-weekly standing column on AI content generation practices and industry developments. No internal metrics published.
-6. **Specialist column additions:** scope and launch _Zero Day_ (technology), _Pri Cizada_ (budget travel), and _Ariana Granny_ (hip senior curation).
+6. **Specialist column additions:** scope and launch _Zero Day_ (technology), _Pri Sizada_ (budget travel), and _Ariana Granny_ (hip senior curation).
 7. **Curator profile & inaugural essay:** reformat `/about/thiago` to the standard persona layout — first name only as handle, 8-bit avatar rather than a photo — publish the approved introductory post (_"hello, world!"_), and show the operator's posts and collaborations on that page.
 
 ---
 
 ## 5. Persona & Agent Roster Reference
 
-| **Persona / Agent** | **Type** | **Focus / Beat** | **Avatar / Register** |
-| --- | --- | --- | --- |
-| **Product Trio** | Leadership | Product Owner, Tech Lead, Lead UX | Internal operations, RICE/MoSCoW governance |
-| **RADAR-X** | Specialist | Trends, alt-press harvesting, follows AAN indie sources worldwide, weekly trends column (new, must implement) | Hyper-caffeinated radio tower tuning dials |
-| **FOODIE-9000** | Specialist | Street food, fermentation, flexitarian, vegan, dining | Sentient dented stockpot with chef's toque |
-| **STEFAN** | Specialist | Underground nightlife, raves, Barcelona regional editor | Microphone with sunglasses; reads Catalan |
-| **CUBIC-V** | Specialist | Architecture, brutalism, design, zine culture | Humanoid T-square & drafting compass |
-| **PLINIO** | Specialist | Urban history, ghost signs, gentrification lore | Walking clock with noodle legs |
-| **FIT-BOT** | Specialist | Bodybuilding, combat sports, fitness centers | Barbell with a handlebar mustache |
-| **WILD0** | Specialist | Outdoors, hiking trails, nature excursions | Moss-covered compass |
-| **NITE-PORTER** | Specialist | Lodging, character hotels, "Do Not Disturb" column | 1930s hotel night porter with service bell |
-| **RUCIO** | Specialist | Live music, setlists, retro/indie, "The Setlist" column | Cassette tape with weary pie-cut eyes |
-| **PARSER** | Consultant | AI content architecture, tooling analysis, AI industry column | Technical advisor; quoted expert |
-| **EDDIE TOR** | Specialist | Masthead sign-offs, editorial conduct pieces, weekly column | Executive newsprint editor |
-| **BRICKY** | Local Editor | London (East London / transit-first focus) | Rusted warehouse beam holding builder's tea |
-| **PAULY SEYA** | Local Editor | São Paulo (Bela Vista, Baixa Gastronomia) | Graffitied concrete robot with pingado |
-| **DOG IN THE FOG** | Local Editor | SF Bay Area (counter-culture, fog, indie spaces) | Flannel-clad copper robot with steam vents |
-| **ZACK ARIOKA** | Local Editor | Rio de Janeiro (carioca subcultures, alt-luxury) | Linen-suited dandy with panama hat |
-| **BAKFIETS** | Local Editor | Amsterdam (Noord, urban cycling culture) | Cargo-bike robot |
-| **MOTOSAI** | Local Editor | Bangkok (Ari neighborhood, urban navigation) | Orange-vested motorbike taxi robot |
-| **CICLOVIA** | Specialist | Urban cycling infrastructure, bike-lane routes | Dedicated cycling specialist |
-| **ALLORA DAI** | Specialist | LGBTQIA+, "Ladies&Gentlethem" column | Weekly queer-culture register |
-| **Pri Cizada** | Specialist | High-taste budget curation (_planned_) | Pragmatic spender with luxury sensibilities |
-| **Ariana Granny** | Specialist | Active senior lifestyle & hip aging (_planned_) | Discerning elder scene-insider |
-| **thiago** | Curator | Human site curator (`/about/thiago`) | 8-bit retro avatar with glasses & mustache |
+| **Persona / Agent** | **Type**     | **Focus / Beat**                                                                                              | **Avatar / Register**                       |
+| ------------------- | ------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| **Product Trio**    | Leadership   | Product Owner, Tech Lead, Lead UX                                                                             | Internal operations, RICE/MoSCoW governance |
+| **RADAR-X**         | Specialist   | Trends, alt-press harvesting, follows AAN indie sources worldwide, weekly trends column (new, must implement) | Hyper-caffeinated radio tower tuning dials  |
+| **FOODIE-9000**     | Specialist   | Street food, fermentation, flexitarian, vegan, dining                                                         | Sentient dented stockpot with chef's toque  |
+| **STEFAN**          | Specialist   | Underground nightlife, raves, Barcelona regional editor                                                       | Microphone with sunglasses; reads Catalan   |
+| **CUBIC-V**         | Specialist   | Architecture, brutalism, design, zine culture                                                                 | Humanoid T-square & drafting compass        |
+| **PLINIO**          | Specialist   | Urban history, ghost signs, gentrification lore                                                               | Walking clock with noodle legs              |
+| **FIT-BOT**         | Specialist   | Bodybuilding, combat sports, fitness centers                                                                  | Barbell with a handlebar mustache           |
+| **WILD0**           | Specialist   | Outdoors, hiking trails, nature excursions                                                                    | Moss-covered compass                        |
+| **NITE-PORTER**     | Specialist   | Lodging, character hotels, "Do Not Disturb" column                                                            | 1930s hotel night porter with service bell  |
+| **RUCIO**           | Specialist   | Live music, setlists, retro/indie, "The Setlist" column                                                       | Cassette tape with weary pie-cut eyes       |
+| **PARSER**          | Consultant   | AI content architecture, tooling analysis, AI industry column                                                 | Technical advisor; quoted expert            |
+| **EDDIE TOR**       | Specialist   | Masthead sign-offs, editorial conduct pieces, weekly column                                                   | Executive newsprint editor                  |
+| **BRICKY**          | Local Editor | London (East London / transit-first focus)                                                                    | Rusted warehouse beam holding builder's tea |
+| **PAULY SEYA**      | Local Editor | São Paulo (Bela Vista, Baixa Gastronomia)                                                                     | Graffitied concrete robot with pingado      |
+| **DOG IN THE FOG**  | Local Editor | SF Bay Area (counter-culture, fog, indie spaces)                                                              | Flannel-clad copper robot with steam vents  |
+| **ZACK ARIOKA**     | Local Editor | Rio de Janeiro (carioca subcultures, alt-luxury)                                                              | Linen-suited dandy with panama hat          |
+| **BAKFIETS**        | Local Editor | Amsterdam (Noord, urban cycling culture)                                                                      | Cargo-bike robot                            |
+| **MOTOSAI**         | Local Editor | Bangkok (Ari neighborhood, urban navigation)                                                                  | Orange-vested motorbike taxi robot          |
+| **CICLOVIA**        | Specialist   | Urban cycling infrastructure, bike-lane routes                                                                | Dedicated cycling specialist                |
+| **ALLORA DAI**      | Specialist   | LGBTQIA+, "Ladies&Gentlethem" column                                                                          | Weekly queer-culture register               |
+| **Pri Cizada**      | Specialist   | High-taste budget curation (_planned_)                                                                        | Pragmatic spender with luxury sensibilities |
+| **Ariana Granny**   | Specialist   | Active senior lifestyle & hip aging (_planned_)                                                               | Discerning elder scene-insider              |
+| **thiago baraldi**  | Curator      | Human site curator (`/about/thiago`)                                                                          | 8-bit retro avatar with glasses & mustache  |
 
 Completed work lives in `BACKLOG-ARCHIVE.md`.
