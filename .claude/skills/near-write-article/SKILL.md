@@ -487,7 +487,11 @@ rather than rubber-stamping:
   compare the `shortTitle` against the byline's own recent pins and the
   wider catalogue, because a repeated shape is invisible from inside a
   single piece. `near-tov-police`'s Job 1b is the first pass; this is the
-  one that catches what it missed.
+  one that catches what it missed. Keeps its own running log at
+  `content/chief-editor-knowledge-base.md` — recurring judgment calls,
+  persona-fit patterns, headline-formula catches worth remembering
+  across runs — separate from the per-piece sign-off note that already
+  lives in each piece's own `statusHistory`.
 
 Findings from any of the three get fixed by the writing persona/
 `near-editor`, not waved through — none of the three skips the others.
