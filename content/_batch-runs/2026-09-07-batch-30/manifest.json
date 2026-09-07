@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 2,
+  "publishedCount": 3,
   "candidates": [
     {
       "name": "Hausu",
@@ -108,11 +108,41 @@
       "name": "The Divine",
       "city": "London",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/things-to-do/the-divine",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-divine-dalston-london",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "E. Pellicci",

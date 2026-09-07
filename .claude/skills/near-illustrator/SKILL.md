@@ -321,6 +321,16 @@ Generate when:
 - No stably-hostable image exists (a flyer that lives only on an
   Instagram CDN, say) and the alternative is holding a good place as a
   draft indefinitely.
+- **A genuinely good photo exists but can't be used as-is** (operator
+  directive, 2026-09-07) — a signed/expiring CDN link, unclear licensing,
+  a crop or resolution that fails the hero spec. Don't default straight
+  to a generic illustration or a hold: consider a vector-derived
+  illustration that recreates what's actually distinctive in that
+  specific photo (the composition, the object, the framing), not a
+  stock substitute unrelated to it. This still ships as `strategy:
+  "illustration"` with the stylization rule below in full force — the
+  source photo informs the drawing, it is never traced into a disguised
+  photoreal copy.
 
 Don't generate when a real photo of the actual place exists and is
 decent. Near is a guide to real addresses; seeing the real room is worth
