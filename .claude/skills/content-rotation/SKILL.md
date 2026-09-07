@@ -189,8 +189,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 2 of 6 shipped + Oakland's 3rd slot CLAIMED (seeded
-                 2026-09-07, draft owed)   T2 0 of 3   T3 0 of 1
+spent:           T1 3 of 6 shipped   T2 0 of 3   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → Bangkok → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -211,18 +210,34 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  past and became a durable "runs each June, free" claim
                  with no date; and the geography is Linda Mar OR the
                  Princeton Jetty, Half Moon Bay, not Pacifica alone.
-                 Oakland — SEEDED 2026-09-07, NOT YET DRAWN. Its turn
-                 came up with a fully blocked queue; per the "seed on
-                 turn" directive the turn's work was a
-                 near-sources-war-room pass and Oakland spends its own
-                 share on it. The seed CLEARED both halves of the bar:
-                 one new verified-live feed (Oakland Voices, publishing
-                 2026-09-07) plus the Nosh vertical and the Lakeshore
-                 LGBTQ district channels logged in preferred-sources.md,
-                 and six candidate pins with addresses, four with 2026
-                 Oaklandside corroboration. Oakland is NOT held. The
-                 draft is OWED: next session draws STARLINE (2236 MLK Jr
-                 Way) from the seeded queue rather than re-seeding.
+                 Oakland — SEEDED then SERVED 2026-09-07, both in the
+                 same slot. The seeding pass cleared the bar (new
+                 verified-live feed Oakland Voices, plus the Nosh
+                 vertical and the Lakeshore LGBTQ district channels; six
+                 candidate pins with addresses). The draw it owed then
+                 SHIPPED the same day:
+                 starline-san-pablo-gateway-oakland, STEFAN, all six
+                 locales, trust auto/active. THREE CORRECTIONS shipped
+                 with it: (1) the name chain has FOUR links, not three —
+                 the room was briefly A CAPELLA between Starline Social
+                 Club and Bad Decision, which the seeding pass missed;
+                 (2) the NEIGHBOURHOOD was wrong in both available
+                 sources — post-plan said Uptown, Oaklandside said West
+                 Oakland, and OpenStreetMap puts 2236 MLK Jr Way in San
+                 Pablo Gateway, which is what shipped; (3) the HOURS had
+                 already moved since the relaunch (5pm start then, 3pm
+                 now), so the copy refuses to treat the numbers as
+                 durable and points the reader at the venue's bio. The
+                 Yelp-still-says-CLOSED correction that was the whole
+                 angle held up and is the headline. Also confirmed: the
+                 blocked-source browser retry worked a THIRD time this
+                 week (oaklandside.org and berkeleyside.org both 429 the
+                 fetch backend, both read fine via claude-in-chrome).
+                 OAKLAND'S QUEUE SURVIVES for its next turn — Lakeshore
+                 LGBTQ district, the henry j., The Lodge, Sable Lounge,
+                 and Egg Palace still PENDING. The intended NEXT OAKLAND
+                 DRAW is the Oakland reopenings collection, once the
+                 henry j. is live.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -230,36 +245,25 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         Oakland (Tier 1) — DRAW, third slot of ten #2. The
-                 seeding turn RAN on 2026-09-07 and CLEARED the bar, so
-                 the pointer stays on Oakland for the draft it is owed;
-                 it does NOT move to Bangkok, and Oakland is NOT held.
-                 Draw the strongest seeded candidate — STARLINE, 2236
-                 Martin Luther King Jr Way — through near-write-article.
-                 Do NOT re-seed and do NOT draft Lakeshore Lavender
-                 Lounge, still PENDING. Bangkok follows once Oakland's
-                 draft ships. Everything below this line is the
-                 pre-seeding instruction, kept for provenance:
-                 ---
-                 Oakland (Tier 1) — SEEDING TURN, third draw of ten #2,
-                 per t1-order after San Francisco took the second on
-                 2026-09-07. Oakland's post-plan.md queue is FULLY
-                 BLOCKED: its one remaining item, Lakeshore Lavender
-                 Lounge, is PENDING/do-not-draft until doors are
-                 confirmed, and everything else there has shipped.
-                 Under the 2026-09-07 "seed on turn" directive that is
-                 NOT a skip — the next session's work on this slot is a
-                 near-sources-war-room seeding pass on Oakland, and the
-                 city spends its own share doing it. Oakland is
-                 deliberately NOT on the held: line: it is awaiting a
-                 seed, not held. It becomes held only if that seeding
-                 pass fails the bar (>=1 watchable local feed, >=3
-                 candidate pins with addresses and current local-press
-                 corroboration), and only then does the share pass on to
-                 Bangkok. The earlier instruction to skip straight to
-                 Bangkok predates the directive and is superseded.
-                 Do not draft Lakeshore Lavender Lounge to fill this.
-then:            after Oakland, follow t1-order above. Tier 2's and Tier
+NEXT-UP:         Bangkok (Tier 1) — DRAW, fourth slot of ten #2, next
+                 in t1-order after Oakland. Oakland's third slot is
+                 CLOSED: it both seeded and shipped on 2026-09-07
+                 (starline-san-pablo-gateway-oakland), so the pointer
+                 moves on. Bangkok's queue is already seeded and
+                 research-verified (post-plan.md Bangkok section, full
+                 analysis in opportunities.md) with BAB 2026 already
+                 shipped, so this is a DRAW, not a seeding turn — the
+                 strongest open candidates are Mischa Cheap / Song Wat
+                 and the live-music obituary collection. Re-verify the
+                 Studio Lam and Noise House closure dates against
+                 primaries at draft. Do NOT draft the Thailand Coffee
+                 Fest item without first resolving that it is not
+                 actually in Bangkok. Note the standing Bangkok Tier 1
+                 sustainability reassessment: after three shipped
+                 pieces, if no second English-language independent feed
+                 has been found, the honest call is Tier 2 — operator
+                 decision.
+then:            after Bangkok, follow t1-order above. Tier 2's and Tier
                  3's bursts (Rome, Curitiba) get drawn within this ten as
                  their shares come up — they are not queued behind all
                  six Tier 1 slots.

@@ -78,15 +78,21 @@ push-to-live per post for operator QA.
 
 ## Rotation position
 
-**Oakland's third slot in ten #2 is CLAIMED but not shipped
-(2026-09-07).** Its turn came up with a fully blocked queue, so under the
-"seed on turn" directive the turn's work was a `near-sources-war-room`
-pass. The seed **cleared** — one new verified-live feed (Oakland Voices)
-plus the East Bay Nosh vertical and the Lakeshore LGBTQ district
-channels, and six candidate pins with addresses (see the Oakland section
-below, analysis in `opportunities.md`). Oakland is **not held** and
-`NEXT-UP` stays on it: the next session **draws STARLINE** rather than
-re-seeding or moving to Bangkok.
+**Oakland's third slot in ten #2 is SPENT and SHIPPED (2026-09-07).** Its
+turn came up with a fully blocked queue, so under the "seed on turn"
+directive the turn's work was a `near-sources-war-room` pass — and the
+draw that seed owed shipped the same day. The seed **cleared** (one new
+verified-live feed, Oakland Voices, plus the East Bay Nosh vertical and
+the Lakeshore LGBTQ district channels, and six candidate pins with
+addresses; analysis in `opportunities.md`), and **STARLINE** went live as
+`starline-san-pablo-gateway-oakland`, STEFAN, all six locales. Oakland's
+remaining queue — the Lakeshore LGBTQ district, the henry j., The Lodge,
+Sable Lounge, and the PENDING Egg Palace — **survives for Oakland's next
+turn**, and the intended next Oakland draw is the **Oakland reopenings
+collection**, once the henry j. is live.
+
+**Tier 1 now moves to Bangkok**, next in `t1-order` after Oakland, for
+the fourth slot of ten #2.
 
 **Tier 1 order (ten #2):** Brighton → San Francisco → Oakland → Bangkok
 → London, wrapping back to Brighton for the sixth slot.
@@ -99,8 +105,9 @@ Region, four pins plus a collection), and finally Tier 3's single share
 first Tier 3 post ever drawn.
 
 **Ten #2 opened 2026-09-04.** Brighton took the first Tier 1 slot the
-same day with **Green Door Store** (STEFAN, all six locales), so
-`NEXT-UP` is now **San Francisco**. Tier 2's burst
+same day with **Green Door Store** (STEFAN, all six locales). San
+Francisco took the second slot (Queer Surf, 2026-09-07) and Oakland the
+third (STARLINE, same day), so `NEXT-UP` is now **Bangkok**. Tier 2's burst
 this ten goes to **Rome** (next after Barcelona; check its queue before
 drafting — an empty queue means it is held and the burst passes on), and
 Tier 3's to **Curitiba**. The machine-legible pointer in
@@ -301,7 +308,31 @@ everything else shipped). Per the 2026-09-07 "seed on turn" directive
 that was a seeding turn, not a skip. Full analysis in
 `content/opportunities.md`; new sources in `preferred-sources.md`.
 
-- [ ] **STARLINE, 2236 Martin Luther King Jr Way, Uptown** — STEFAN or
+- [x] **STARLINE, 2236 Martin Luther King Jr Way, San Pablo Gateway** —
+  STEFAN. **SHIPPED 2026-09-07**, `starline-san-pablo-gateway-oakland`,
+  all six locales, `trust: auto` / `active`. The Yelp-says-CLOSED
+  correction held up and became the headline. THREE CORRECTIONS to the
+  queue entry below, all caught at draft: (1) **the name chain has four
+  links, not three** — Oaklandside's 7 Apr 2026 piece is headlined "Bad
+  Decision takes over **A Capella**", so the room was briefly A Capella
+  between the old club and Bad Decision; (2) **the neighbourhood was
+  wrong in every source** — this entry said Uptown, Oaklandside says
+  "the West Oakland bar", and OpenStreetMap places 2236 MLK Jr Way in
+  **San Pablo Gateway, Downtown Oakland**, which is what shipped; (3)
+  **the hours had already moved** — the relaunch ran Wed–Sat from 5pm,
+  the bio now says 3pm–2am, so the copy points at the bio rather than
+  asserting durable numbers. Also deliberately NOT published: the
+  "architect A.W. Smith" claim (search-summary only, absent from the
+  venue's own About page, and localwiki sits behind a bot wall), and any
+  reopening date (a "29 April 2026" figure appears to be bleed from an
+  adjacent headline and is not in the Oaklandside text). EVENT LEADS
+  logged, not inlined, per `event-belongs-to-venue` and the dates-out-of-
+  evergreen-copy directive: the Instagram carries **HERE & NOW
+  Collective** ("SKIN IS IN, LESS IS MORE", 29 Aug 2026, already past)
+  and a recurring party called **STICKY**, both promoted by
+  **@urbanprodigyentertainment** — a real forward date from either is
+  its own piece. Original entry follows for provenance:
+- [ ] ~~**STARLINE, 2236 Martin Luther King Jr Way, Uptown**~~ — STEFAN or
   RADAR-X. **The strongest candidate and the one to draw first.** The
   Starline Social Club building — a three-storey Victorian that was
   Oakland's defining Black-and-queer live-music room — came back in 2026

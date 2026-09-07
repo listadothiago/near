@@ -55,6 +55,36 @@ Found while researching specific places, worth formal onboarding once a
 second or third genuinely good item from them shows up (don't add a
 source to the permanent catalog off a single lucky find):
 
+
+- `instagram.com/starlinecomplex` (STARLINE, Oakland — first-party) —
+  the venue's own feed, 21.6K followers, and the ONLY source anywhere
+  that carries STARLINE's current hours and programming. Its bio was
+  the deciding evidence that the room is open at all. Found researching
+  `starline-san-pablo-gateway-oakland`, 2026-09-07. **Access quirk:**
+  the bio truncates at "…more" in the logged-out view and the expand
+  button does not fire, so the tail of the bio (a possible Sunday
+  session, and the `@urbanprodigyentertainment` booking handle) is
+  visible only via a search engine's index of the profile. Treat the
+  visible head of the bio as verified and anything past the truncation
+  as unconfirmed. Also the live index of the venue's recurring party
+  series (HERE & NOW Collective, STICKY).
+- `nominatim.openstreetmap.org` (OpenStreetMap geocoding) — not an
+  editorial feed but worth naming as a verification utility: on the
+  STARLINE pass it independently corroborated the venue's CURRENT name
+  and settled a neighbourhood that two press sources got differently
+  (post-plan.md said Uptown, Oaklandside said West Oakland, OSM says
+  San Pablo Gateway). Because OSM is community-edited it often carries
+  a rename months before aggregators do, which makes it a cheap
+  second opinion on exactly the "is this place still called that /
+  still open" question. ODbL, needs a User-Agent header.
+- `starlinesocialclub.com` (Oakland — PREVIOUS operator's site,
+  **stale, cite with care**) — logged as a trap as much as a source.
+  The site is still live and still reads as current: it advertises
+  "4-2AM Daily", which are the pre-2023 operation's hours and are
+  wrong for the business trading at that address today. Its
+  floor-by-floor building description (1893 Odd Fellows hall, 400-cap
+  second-floor ballroom, ground-floor speakeasy sideroom) is still
+  good and is what it was used for. Never take hours or status from it.
 - `caospoa.com.br` + `instagram.com/caospoa` (Caos Bar, Porto Alegre —
   first-party) — the venue's own WordPress site carries a real forward
   agenda with dated lineups and start times, and its uploads folder is
