@@ -16,7 +16,7 @@ export const revalidate = 3600;
 
 // The Setlist, Near's monthly live-music column, has no dedicated content
 // type of its own — each entry is a regular collection (see
-// content/the-setlist.md for the standing decision). RUCIO LIBERO
+// content/the-setlist.md for the standing decision). RUCIO
 // orchestrates the column but the byline rotates; this page is the
 // archive: every published entry, newest first, per
 // content/the-setlist-index.json's slugs array (kept in sync by

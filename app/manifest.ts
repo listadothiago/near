@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     id: "/",
-    name: "Tips Near Me | near.tips",
+    name: "Tips Near Me | NEAR",
     short_name: "Near",
     description: "The always fresh guide to anywhere.",
     start_url: "/",

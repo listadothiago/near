@@ -6,7 +6,7 @@ import theSetlistIndex from "@/content/the-setlist-index.json";
 export const revalidate = 3600;
 
 // Dedicated feed for The Setlist, Near's monthly live-music column (see
-// content/the-setlist.md), orchestrated by RUCIO LIBERO — separate from
+// content/the-setlist.md), orchestrated by RUCIO — separate from
 // the site-wide /feed.xml and the other columns' feeds, same reasoning:
 // a reader who wants just the live-music beat can subscribe to just
 // this feed. Mirrors app/column/feed.xml/route.ts and
@@ -31,7 +31,7 @@ export async function GET() {
   const xml = buildRssFeed({
     title: "Near's The Setlist",
     description:
-      "Near's monthly live-music column, orchestrated by RUCIO LIBERO — real, dated shows, written by whichever Near byline fits that month's material.",
+      "Near's monthly live-music column, orchestrated by RUCIO — real, dated shows, written by whichever Near byline fits that month's material.",
     path: "/the-setlist/feed.xml",
     items,
   });

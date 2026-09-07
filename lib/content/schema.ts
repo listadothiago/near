@@ -170,7 +170,7 @@ export const collectionMetaSchema = z.object({
   // writer, same as an unsigned place page.
   author: z.string().optional(),
   // The standing column's editor persona (e.g. RADAR-X on the editorial
-  // column, RUCIO LIBERO on the music column, ALLORA DAI on
+  // column, RUCIO on the music column, ALLORA DAI on
   // Ladies&Gentlethem) — a slug from lib/content/authors.ts. Optional,
   // and only ever set on column entries. Site-wide credit rule
   // (2026-09-01, operator directive): when set and different from

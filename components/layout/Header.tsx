@@ -93,7 +93,7 @@ export default function Header({
         <Link href="/" className="inline-flex items-center gap-1.5 group flex-none mr-auto sm:mr-0">
           <NearMark className="w-4 h-4 text-ink flex-none" />
           <span className="font-display font-bold uppercase tracking-[-1px] text-[1.25rem] leading-none whitespace-nowrap group-hover:bg-accent transition-colors">
-            NEAR.TIPS
+            NEAR
           </span>
         </Link>
 

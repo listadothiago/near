@@ -40,9 +40,9 @@ export const AUTHORS: Author[] = [
   // Orchestrating voice of the monthly live-music column (BACKLOG EPIC 4
   // roster). Actual writing rotates to whichever persona fits a given
   // month's real material — see content/the-setlist.md.
-  { slug: "rucio-libero", handle: "RUCIO LIBERO", beats: ["nightlife-sound"] },
+  { slug: "rucio-libero", handle: "RUCIO", beats: ["nightlife-sound"] },
   // Editor of Ladies&Gentlethem (BACKLOG EPIC 4 roster, added 2026-09-01,
-  // operator directive). Same orchestrator model as RUCIO LIBERO on The
+  // operator directive). Same orchestrator model as RUCIO on The
   // Setlist and RADAR-X on the weekly editorial column — see
   // content/ladies-and-gentlethem.md for the column's editor framing.
   { slug: "allora-dai", handle: "ALLORA DAI", beats: ["food-drink", "nightlife-sound"] },
