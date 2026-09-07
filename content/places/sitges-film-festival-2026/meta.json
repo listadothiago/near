@@ -8,8 +8,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": 41.2368,
-    "lng": 1.8239
+    "lat": 41.23674,
+    "lng": 1.823818
   },
   "place": {
     "city": "Sitges",
@@ -71,13 +71,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:31:57Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.23674, 1.823818). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.85,
-    "query": "Auditori, Melia Sitges, Carrer de la Bufera, Aiguadolc, 08870 Sitges (festival base; the festival itself is town-wide)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Meliá Sitges (Auditori — festival base venue), Aiguadolç, Sitges — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:31:57Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Meli%C3%A1+Sitges/@41.23674,1.823818,17z/data=!4m9!3m8!1s0x12a3802ff4c6b573:0xfad52adc10337b6c!5m2!4m1!1i2!8m2!3d41.23674!4d1.823818!16s%2Fg%2F1td2phxm"
   },
   "publishedAt": "2026-09-03T22:09:14Z",
-  "updatedAt": "2026-09-03T00:00:00Z"
+  "updatedAt": "2026-09-07T18:31:57Z"
 }
