@@ -148,6 +148,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 10. **Search query logging:** privacy-safe search event logging to identify uncovered queries for the SEO pipeline.
 11. **Shareable URL filters:** full query-parameter state sync plus a native "Share" button for filtered/sorted views.
 12. **Date display offset:** resolve timezone discrepancies causing midnight UTC timestamps to display previous-day dates in western timezones.
+13. **Longer snippets.** Operator directive 2026-09-07: _"could we make snippets longer too"_ — raised in the same breath as the type-scale ask (P0.14), so treat the two as one readability pass rather than separate tickets. **Needs one clarification before work starts:** "snippets" reads two ways and they are different jobs — (a) the card teaser/excerpt truncation in the listing and map cards, a front-end clamp change owned by the Product Trio + near-lead-ux; or (b) the SEO meta description / search-result snippet, a content-length call owned by near-seo across all six locales. Possibly both. Do not guess — the front-end change is cheap and reversible, the SEO one touches every locale of every page and interacts with how Google truncates. Ask, then scope.
 
 ### P2: Content Sprints & Editorial Pipeline
 

@@ -258,33 +258,52 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         Bangkok (Tier 1) — DRAW, fourth slot of ten #2, next
-                 in t1-order after Oakland. Oakland's third slot is
-                 CLOSED: it both seeded and shipped on 2026-09-07
-                 (starline-san-pablo-gateway-oakland), so the pointer
-                 moves on. Bangkok's queue is already seeded and
+NEXT-UP:         NYC (Tier 1) — HELD, no post-plan.md queue. This slot
+                 needs a SEEDING pass (near-sources-war-room), not a
+                 draw. Fourth slot of ten #2, next in t1-order after
+                 Oakland, whose third slot is CLOSED: it both seeded and
+                 shipped on 2026-09-07
+                 (starline-san-pablo-gateway-oakland).
+
+                 CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
+                 1) — DRAW" while the tier roster above, updated the same
+                 day by operator directive, had already moved Bangkok to
+                 Tier 2 and put NYC in Tier 1 in its place. The pointer
+                 named a city in a tier it no longer belonged to. The
+                 operator confirmed the directive is authoritative and
+                 the pointer was stale. Lesson: a tier change must
+                 rewrite NEXT-UP in the same edit, or the file
+                 contradicts itself and the next session draws the wrong
+                 city.
+
+                 Bangkok's queue is NOT lost — it is seeded and
                  research-verified (post-plan.md Bangkok section, full
-                 analysis in opportunities.md) with BAB 2026 already
-                 shipped, so this is a DRAW, not a seeding turn — the
-                 strongest open candidates are Mischa Cheap / Song Wat
-                 and the live-music obituary collection. Re-verify the
-                 Studio Lam and Noise House closure dates against
-                 primaries at draft. Do NOT draft the Thailand Coffee
-                 Fest item without first resolving that it is not
-                 actually in Bangkok. Note the standing Bangkok Tier 1
-                 sustainability reassessment: after three shipped
-                 pieces, if no second English-language independent feed
-                 has been found, the honest call is Tier 2 — operator
-                 decision.
-then:            after Bangkok, follow t1-order above. Tier 2's and Tier
+                 analysis in opportunities.md), with BAB 2026 already
+                 shipped. It now waits for a Tier 2 burst rather than a
+                 Tier 1 slot. Its strongest open candidates remain
+                 Mischa Cheap / Song Wat and the live-music obituary
+                 collection. Re-verify the Studio Lam and Noise House
+                 closure dates against primaries at draft. Do NOT draft
+                 the Thailand Coffee Fest item without first resolving
+                 that it is not actually in Bangkok. The standing Tier 1
+                 sustainability reassessment is now MOOT — the demotion
+                 to Tier 2 is the call that question was asking for.
+then:            after NYC, follow t1-order above. Tier 2's and Tier
                  3's bursts (Rome, Curitiba) get drawn within this ten as
                  their shares come up — they are not queued behind all
                  six Tier 1 slots.
 t3-draw:         Curitiba (next cleared), then Salvador. Porto Alegre
                  SERVED 2026-09-04 — its post-plan.md queue still has
                  unspent candidates, but the rotation slot is spent.
-held:            Seattle (T2, no queue) · Florianópolis, Recife, Belo
-                 Horizonte (T3 — feeds verified, pins not)
+held:            NYC (T1, no queue — added to Tier 1 by the 2026-09-07
+                 directive and never seeded; it is NEXT-UP and held, so
+                 the next rotation action is a seeding pass, not a
+                 draw) · Seattle (T2, no queue) · Florianópolis, Recife,
+                 Belo Horizonte (T3 — feeds verified, pins not) · the
+                 eleven Tier 3 cities added 2026-09-07 (Denver, Chicago,
+                 Miami, Bologna, Medellín, Montevideo, São Carlos-SP,
+                 Litoral Paulista, São Vicente-SP, New Jersey, San
+                 Diego — none through a sources pass)
 ```
 <!-- CORRECTION, 2026-09-03: San Francisco's turn was briefly marked
 UNSERVED here on the belief that its Dolphin Club pin had never shipped.
