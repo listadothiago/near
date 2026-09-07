@@ -13,6 +13,7 @@ import editorialColumnIndex from "@/content/editorial-column-index.json";
 import type { ContentLocale, PlaceSummary } from "@/lib/content/schema";
 import { buildCollectionJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
+import { buildOgImages } from "@/lib/seo/ogImage";
 import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import CollectionHero from "@/components/collection/CollectionHero";
@@ -51,7 +52,7 @@ export async function generateMetadata({
       title: content.frontmatter.title,
       description: content.frontmatter.seoDescription,
       type: "article",
-      images: content.meta.coverImage ? [content.meta.coverImage.url] : [],
+      images: buildOgImages(content.meta.coverImage, content.frontmatter.title),
     },
     twitter: {
       card: "summary_large_image",

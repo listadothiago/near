@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { getBaseUrl } from "@/lib/seo/site";
+import { buildOgImages } from "@/lib/seo/ogImage";
 import { ROBOTS_PREVIEW_DIRECTIVES } from "@/app/robots";
 import ThemeScript from "@/components/layout/ThemeScript";
 import ThemeKeeper from "@/components/layout/ThemeKeeper";
@@ -86,6 +87,24 @@ export async function generateMetadata({
       capable: true,
       title: "Near",
       statusBarStyle: "default",
+    },
+    // Only the place and collection routes set their own openGraph, so
+    // without this the home page, the column indexes and search unfurled
+    // as bare text on WhatsApp and every social by construction. Routes
+    // that define openGraph replace this wholesale rather than merging
+    // into it, so their own hero still wins.
+    openGraph: {
+      type: "website",
+      siteName: "NEAR",
+      title: `${t("wordmark")} | NEAR`,
+      description: t("tagline"),
+      locale,
+      images: buildOgImages({ url: "/branding/near-oauth-logo.jpg" }, "NEAR"),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${t("wordmark")} | NEAR`,
+      description: t("tagline"),
     },
     verification: process.env.GOOGLE_SITE_VERIFICATION
       ? { google: process.env.GOOGLE_SITE_VERIFICATION }
