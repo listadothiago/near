@@ -7,8 +7,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": 51.5464368,
-    "lng": -0.0211827
+    "lat": 51.5464187,
+    "lng": -0.0211958
   },
   "place": {
     "city": "London",
@@ -111,13 +111,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T13:10:36Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:39:32Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5464187, -0.0211958). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.95,
-    "query": "V&A East Storehouse, Parkes Street, London E20 3AX"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "V&A East Storehouse, Queen Elizabeth Olympic Park, Parkes St, London E20 3AX, Hackney Wick — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:39:32Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/V%26A+East+Storehouse/@51.5464187,-0.0211958,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d0cfd5f0b0f:0x53144db615c00145!8m2!3d51.5464187!4d-0.0211958!16s%2Fg%2F11vjmvgp4j"
   },
   "publishedAt": "2026-09-03T13:10:36Z",
-  "updatedAt": "2026-09-03T00:00:00Z"
+  "updatedAt": "2026-09-07T18:39:32Z"
 }

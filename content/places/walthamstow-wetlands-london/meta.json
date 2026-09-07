@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 51.5857,
-    "lng": -0.053
+    "lat": 51.5848032,
+    "lng": -0.0511725
   },
   "place": {
     "city": "London",
@@ -47,13 +47,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "London rotation, cycle 2 — WILD0's second byline and the first under the WILD0-owns-outdoors decision. Single authoritative source: the London Wildlife Trust's own reserve page, fetched twice today (managing org, free entry, seasonal hours, assistance-dogs-only, no-swimming rule, path closure). TIMING FACT: the Trust's live copy says the pylon-works path closures (paths 1-2-3 and 4-5) are 'expected to be completed by the end of August' — i.e. the closure is ending the week of publication, so the article says exactly that and tells readers heading for those specific paths to check first. Reserve rules stated plainly and without moralising, per the outdoors lens discipline: the no-swimming rule is a working-reservoir safety rule, not decoration. Deliberately NOT tagged dog-first: assistance dogs only. Second source added after verification: Wikipedia confirms the October 2017 public opening (first time in 150 years), the ten named reservoirs, and SSSI designation. NOTE a size discrepancy between sources: the Trust's own page says 160 hectares, Wikipedia says 211 — the article carries the Trust's figure since the Trust runs the site; don't 'fix' one to the other without resolving which boundary each measures."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:39:32Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5848032, -0.0511725). Old pin was ~160m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Walthamstow Wetlands, 2 Forest Road, London N17 9NH"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Walthamstow Wetlands, London Wildlife Trust, 2 Forest Rd, London N17 9NH — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:39:32Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Walthamstow+Wetlands,+London+Wildlife+Trust/@51.5848032,-0.0511725,17z/data=!3m1!4b1!4m6!3m5!1s0x48761c31724e4b81:0x145c34872ccd8fe9!8m2!3d51.5848032!4d-0.0511725!16s%2Fg%2F11bxdrdlzp"
   },
   "publishedAt": "2026-08-31T22:52:20Z",
-  "updatedAt": "2026-08-31T22:52:20Z"
+  "updatedAt": "2026-09-07T18:39:32Z"
 }
