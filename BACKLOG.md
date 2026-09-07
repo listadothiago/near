@@ -107,7 +107,42 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ### P0: Immediate Fixes & Critical Correctness
 
-**Active handoff — 2026-09-07, Codex (GPT-5):** P0.1 has been expanded from fix-on-touch to a full active-catalogue Google Maps audit at the operator's request. Root cause confirmed: the renderer preserves latitude/longitude; the old content gate accepted explicitly approximate manual coordinates at confidence `0.6`. AMUSE has been corrected to its Google Maps listing pin and the new per-slug verifier plus Google-Mapping metadata/workflow changes are live in commit `c08d9bb` (Vercel production deployment Ready; public manifest checked). **Webpack production build passed.** 81 remaining active legacy pins require listing-by-listing verification before this P0 item can be closed; do not treat their current coordinates as verified.
+**P0.1 CLOSED — 2026-09-07, Claude.** All 83 active places now pass
+`node scripts/check-geocodes.mjs --all --strict` (exit 0), every one against
+its real Google Maps listing pin: `provider: "google-maps"`, confidence ≥ 0.9,
+7-decimal coordinates taken from the `!3d/!4d` pin pair, a listing URL and a
+`verifiedAt` stamp. Run as a 10-pin pilot first, then the remaining 71.
+Nothing was fabricated and nothing was left unresolved.
+
+**28 pins were materially wrong (>100m).** The defect was real and worse
+than the two spot-checks suggested — roughly a third of the catalogue was
+sending readers somewhere else. Worst cases: `praia-do-bonete-ilhabela`
+**4.8 km** off, on the wrong side of the peninsula; `london-otters-rowing`
+and `made-cozinha-autoral-santos` **1.3 km**; `dollywood-pigeon-forge`
+**1.2 km**; `lita-pinheiros-sao-paulo` **1.1 km**, pinned to an unrelated
+Butantã building rather than its Ferreira de Araújo address.
+
+**The method failure worth remembering:** searching Google Maps by venue
+*name* is not safe. `stray-dog-mission-san-francisco` resolved to Trick Dog,
+an unrelated bar, and `berry-bros-and-rudd-london` resolved to two split
+listings at two addresses. Both were only caught by searching the address
+from Near's own copy and cross-checking storefront signage. Any future
+audit must confirm name *and* address against the listing before reading a
+coordinate.
+
+**Two pins a human may still want to eyeball**, both honestly recorded in
+their `geocode.query`: `ishigaki-jujitsu-london` has no fixed premises and
+is pinned to Finsbury Leisure Centre, its Tuesday training venue — named in
+the page's own copy, so the pin matches what the piece tells the reader
+(operator reviewed 2026-09-07, accepted). `queer-surf-pacifica` and
+`starline-oakland` are no-clubhouse organisations anchored to their primary
+listed address.
+
+The standing rule in the header above — run `geolocation-police` on every
+piece written or refreshed — is what keeps this closed. The audit fixed the
+backlog; only the per-write gate stops it recurring.
+
+**Superseded handoff — 2026-09-07, Codex (GPT-5):** P0.1 has been expanded from fix-on-touch to a full active-catalogue Google Maps audit at the operator's request. Root cause confirmed: the renderer preserves latitude/longitude; the old content gate accepted explicitly approximate manual coordinates at confidence `0.6`. AMUSE has been corrected to its Google Maps listing pin and the new per-slug verifier plus Google-Mapping metadata/workflow changes are live in commit `c08d9bb` (Vercel production deployment Ready; public manifest checked). **Webpack production build passed.** 81 remaining active legacy pins require listing-by-listing verification before this P0 item can be closed; do not treat their current coordinates as verified.
 
 1. **Geolocation integrity — URGENT, systemic.** Operator checked two pins in a row and both were wrong, suggesting a fundamental defect in how pins were originally created. Required: (a) find the root cause in the pin-creation path; (b) wire `geolocation-police` into every article write and refresh so coordinates are always checked against Google Maps — no full catalogue pass now, fix-on-touch instead; (c) fix the known-bad pins: `amuse-beach-club-sao-vicente` (correct location: https://share.google/isqrdyKG482x8i7Nn) and `quiosque-da-cris-sao-vicente` → `[-23.973827, -46.370170]`. Restaurante Almeida and Made were spot-checked correct, so the corruption is partial, not universal.
 2. **NEAR rebrand — operator's stated top priority ("reach and impact here are huge").** Home page and header title become `NEAR`, not `NEAR.TIPS`; near.tips stays as the URL only. Amend the browser tab title too. Keep the "tips near me" slug pattern — e.g. pt-BR: `Dicas perto de mim | NEAR`. (this is at least partly done as the home page seems updated for this)
@@ -149,6 +184,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 11. **Shareable URL filters:** full query-parameter state sync plus a native "Share" button for filtered/sorted views.
 12. **Date display offset:** resolve timezone discrepancies causing midnight UTC timestamps to display previous-day dates in western timezones.
 13. **Longer snippets.** Operator directive 2026-09-07: _"could we make snippets longer too"_ — raised in the same breath as the type-scale ask (P0.14), so treat the two as one readability pass rather than separate tickets. **Clarified 2026-09-07 — operator answered BOTH**, so this is two pieces of work under one ask, and they ship separately: (a) **card teaser/excerpt truncation** in the listing and map cards — a front-end clamp change owned by the Product Trio + near-lead-ux, cheap and reversible, and it should ride along with the P0.14 type-scale pass as a single readability change rather than a second pass over the same components; (b) **SEO meta descriptions / search-result snippets** — a content-length call owned by near-seo, touching every one of six locales on every page and interacting with how Google truncates, so it needs its own scoping pass and must not be bundled into the front-end change. Do (a) with P0.14; scope (b) with near-seo before touching any locale file.
+14. **zh-CN latin-wedged-in-CJK copy defects — 8 pages.** `node scripts/validate-content.mjs` has been reporting these for a while and they are still open: Latin words left embedded mid-sentence in Chinese copy, e.g. `作speakeasy的` (starline-oakland), `工pinsa薄` (sipeos-east-bay), and eight separate instances in rush-hour-amsterdam (`丹house与`, `牌logo文`, …). Also affects hazlitts, jumbi, la-camionera, marineterrein, pracinha. These are the only failures `validate-content.mjs` reports, so they are also **masking any new content defect** — the script's output is currently noise that gets scrolled past, which is exactly how the next real problem gets missed. Not a mechanical find-and-replace: a translator has to decide per instance whether the term is a genuine loanword Chinese readers expect in Latin script (`speakeasy`, `logo`) or a translation gap. Owner: near-translator. Surfaced 2026-09-07 during the P0.1 audit; untouched there deliberately, since silently editing copy inside a geolocation push is how unrelated changes get lost.
 
 ### P2: Content Sprints & Editorial Pipeline
 
