@@ -52,9 +52,19 @@ export default async function AboutPage({
           <p>{t("transparency")}</p>
         </div>
 
+        <section className="mt-10">
+          <h2 className="text-[1.3rem] mb-4">{t("theCast")}</h2>
+          <div className="grid gap-3 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
+            {AUTHORS.map((author) => (
+              <AuthorCard key={author.slug} author={author} />
+            ))}
+          </div>
+        </section>
+
         {/* The cast is the AI bylines; this is the one human accountable
-            for them. It sits above the cast deliberately — the page reads
-            as "a person, and the machines they run", not the reverse. */}
+            for them. It sits below the cast per operator directive
+            2026-09-07 — the bylines are the product, the curator is the
+            accountability line under them. */}
         <section className="mt-10">
           <h2 className="text-[1.3rem] mb-4">{t("curatorHeading")}</h2>
           <Link
@@ -75,15 +85,6 @@ export default async function AboutPage({
               </p>
             </div>
           </Link>
-        </section>
-
-        <section className="mt-10">
-          <h2 className="text-[1.3rem] mb-4">{t("theCast")}</h2>
-          <div className="grid gap-3 [grid-template-columns:repeat(auto-fill,minmax(240px,1fr))]">
-            {AUTHORS.map((author) => (
-              <AuthorCard key={author.slug} author={author} />
-            ))}
-          </div>
         </section>
       </article>
       <Footer stats={stats} />

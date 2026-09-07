@@ -8,13 +8,26 @@ A tier is a **share of output**, not a position in a nested cycle — see
 [The rule](#the-rule). Membership below; cadence there.
 
 **Tier 1 — 6 of every 10 posts, round-robin:** London, Brighton, San
-Francisco, Oakland, **Bangkok**.
+Francisco, Oakland, **NYC**.
 
-**Tier 2 — 3 of every 10 posts, burst to one city:** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Tokyo, Melbourne, Seattle** (Tokyo/Melbourne added by operator directive 2026-09-03; **Seattle** same day — *"make sure seattle is at least tier 2"*, so it is a Tier 2 member outright rather than waiting on its queue being seeded as the `post-plan.md` note previously had it. Its queue is empty, so it is **held** until seeded — see the hold rule), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row. **Mexico City: confirmed in-tier 2026-09-04** against the operator directive *"make sure mexico city is in some priority tier, it should be"* — it was already a Tier 2 member, so no change was needed. Recorded here so the directive is not re-raised; if the intent was Tier 1 rather than "some priority tier", that is an escalation the operator should state explicitly, since Tier 1 is a five-city round-robin and adding a sixth changes every city's share.
+_Operator directive 2026-09-07: **Bangkok moved Tier 1 → Tier 2**, and
+**NYC added to Tier 1** in its place. Tier 1 remains a five-city
+round-robin. P2.2 (Bangkok seeding war room) still stands, now at Tier 2
+cadence. NYC has no `post-plan.md` queue yet — it is **held** under the
+hold rule below until seeded._
+
+**Tier 2 — 3 of every 10 posts, burst to one city:** Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, **Bangkok, São Paulo (capital), Baixada Santista, Rio de Janeiro, Campinas, Los Angeles** (all six added by operator directive 2026-09-07 — Bangkok demoted from Tier 1; São Paulo/Baixada Santista/Campinas are the standing priority cluster; Rio and LA are new), **Tokyo, Melbourne, Seattle** (Tokyo/Melbourne added by operator directive 2026-09-03; **Seattle** same day — *"make sure seattle is at least tier 2"*, so it is a Tier 2 member outright rather than waiting on its queue being seeded as the `post-plan.md` note previously had it. Its queue is empty, so it is **held** until seeded — see the hold rule), plus **one rotating surprise-city slot** — near-seo picks a new surprise city each time this slot comes up in rotation, never repeating the same pick twice in a row. **Mexico City: confirmed in-tier 2026-09-04** against the operator directive *"make sure mexico city is in some priority tier, it should be"* — it was already a Tier 2 member, so no change was needed. Recorded here so the directive is not re-raised; if the intent was Tier 1 rather than "some priority tier", that is an escalation the operator should state explicitly, since Tier 1 is a five-city round-robin and adding a sixth changes every city's share.
 
 **Tier 3 — 1 of every 10 posts, burst to one city.** Operator directive,
 2026-09-03: Florianópolis, Porto Alegre, Curitiba, Belo Horizonte,
-Recife, Salvador.
+Recife, Salvador. **Expanded by operator directive 2026-09-07:** Denver,
+Chicago, Miami, Bologna, Medellín, Montevideo, São Carlos-SP, Litoral
+Paulista, São Vicente-SP, New Jersey, San Diego, plus **one rotating
+surprise-city slot** (same never-repeat-consecutively rule as Tier 2's).
+
+**All eleven 2026-09-07 additions are HELD** under the Tier 3 gate below
+(≥1 verified independent local source AND ≥3 verified candidate pins) —
+none has been through a sources pass yet. Do not draw them until seeded.
 
 **Sources pass RAN 2026-09-03 — three cities cleared, three still
 held.** All six now have at least one verified live local feed in
