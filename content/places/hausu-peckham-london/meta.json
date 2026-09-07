@@ -1,0 +1,81 @@
+{
+  "slug": "hausu-peckham-london",
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": 51.4700651,
+    "lng": -0.0694246
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Peckham",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Time Out — Hausu",
+      "url": "https://www.timeout.com/london/restaurants/hausu",
+      "feedId": "timeout-london"
+    },
+    {
+      "name": "Hausu — official site",
+      "url": "https://www.hausulondon.co.uk/",
+      "feedId": null
+    },
+    {
+      "name": "Hausu — sample menu",
+      "url": "https://www.hausulondon.co.uk/_files/ugd/0da428_a79a91e939184e09815b20e2dc28b390.pdf",
+      "feedId": null
+    },
+    {
+      "name": "The Picky Glutton — Hausu review, 6 July 2026",
+      "url": "https://pickyglutton.com/2026/07/06/hausu-review/",
+      "feedId": null
+    },
+    {
+      "name": "Hausu — September kitchen and early-set announcement",
+      "url": "https://www.instagram.com/hausu_london/p/Dc50-Ksoqs6/",
+      "feedId": null
+    },
+    {
+      "name": "Wallpaper — Upstairs at Hausu",
+      "url": "https://www.wallpaper.com/travel/bars/upstairs-at-hausu-listening-bar-peckham",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://static.wixstatic.com/media/0da428_e676db72260f402297a379c1894f5fec~mv2.jpg",
+    "attribution": "Photo: Teo Della Torre, via Hausu's official site",
+    "attributionLink": "https://www.hausulondon.co.uk/",
+    "licenseNote": "Real source photo (tier 1), scallop-and-prawn toast on the kitchen counter, the dish both independent reviews single out."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T22:19:38.683423+00:00",
+      "note": "Batch 2026-09-07-batch-30: researched English draft. Exact Maps listing verified. Recent and lowest Google reviews and Reddit checked. Official events listing only contains past 2025 events. Pending: Instagram feed, preferred-source floor completion, art direction/hero, full editorial sign-offs, five locale editions and publication gates. Not approved for activation."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:05:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, real source photo, Teo Della Torre, attributed). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses): no opening-line bans, no headline-formula repeat against foodie-9000's recent pins, no process-as-copy, no rank-pulling, no defamation-adjacent claims (uneven-cooking note attributed to the named review, not stated as fact); link-density passes (Time Out + Wallpaper + Picky Glutton in-text, one internal NearLink to Jumbi). Red team: price/date-sensitive claims (early-set price, kitchen-start time) sourced this session from Instagram 7 Sep 2026 and flagged in-body as contradicting the official site rather than stated as settled; no internal jargon leaked. Discover audit: hero clears 1200px/16:9 spec via Wix's original asset, shortTitle makes a claim the body supports. Revenue pass: no natural affiliate/ad-sales opportunity beyond existing food-drink coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each a genuine local edition at/above the 150-word floor. Geocode, link-density and structural gates re-checked across all six locales before flip to active."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Hausu Peckham; 11a Station Way, London SE15 4RX",
+    "verifiedAt": "2026-09-07T22:18:23.824979+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Hausu/@51.4700651,-0.0694246,17z/data=!3m1!4b1!4m6!3m5!1s0x487603a1cbf6a283:0xf0f99b4b0bbf2bae!8m2!3d51.4700651!4d-0.0694246!16s%2Fg%2F11wfk6rjcv"
+  },
+  "publishedAt": "2026-09-07T22:19:38.683423+00:00",
+  "updatedAt": "2026-09-07T22:19:38.683423+00:00"
+}
