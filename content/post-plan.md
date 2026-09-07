@@ -272,7 +272,7 @@ _Brighton dating note: **Brighton Pride 2026 already happened (1–2 August 2026
 - [ ] Schwules Museum — CUBIC-V (Susan Sontag + rural-queer shows dated to Nov 2, 2026)
 - [x] Eisenherz Buchladen, Schöneberg — RADAR-X (shipped 2026-09-01; Germany's first gay bookshop, 1978; cross-city queer-bookshop thread with Gay's the Word, reciprocal links added both ways)
 - [ ] Südblock, Kotti — CUBIC-V (daytime queer living room; counselling, Disability Pride Sep 19 2026, sober-ish counterweight)
-- [x] Michelberger Hotel — NITE-PORTER. SHIPPED 2026-09-07, all six locales. Google Maps pin verified; current official programme, Time Out, Condé Nast Traveler, The Berliner, Reddit and Maps review summary consulted. The honest caveat is an active Friedrichshain base rather than a quiet stay. Original NEAR vector-derived abstract illustration used as a clearly disclosed, non-documentary hero.
+- [x] Michelberger Hotel — NITE-PORTER. SHIPPED 2026-09-07, all six locales. Google Maps pin verified; current official programme, Time Out, Condé Nast Traveler, The Berliner, Reddit and Maps review summary consulted. The honest caveat is an active Friedrichshain base rather than a quiet stay. Original NEAR vector-derived abstract illustration used as a clearly disclosed, non-documentary hero. **Caretaker due 2026-10-12:** recheck/amend the PEOPLE Festival (10–11 Oct) mention; durable task record is in `content/caretaker-dates.md`.
 
 _Berlin corrections bank (all sourced): visitBerlin still lists SchwuZ as open (closed Nov 1 2025); Möbel Olfe's "Thursday gay night" lore is stale; Timeout still carries Watergate (closed 2024); "Berghain = queer Berlin" — the actual infrastructure is Kotti + Schöneberg + a lake in a forest._
 

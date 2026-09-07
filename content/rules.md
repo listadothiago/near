@@ -336,6 +336,13 @@ rules:
       venue's own event list. The place copy links to that list; it does
       not inline the dates.
 
+      If a dated event is editorially necessary inside evergreen copy but
+      cannot yet be made into a properly sourced child event page, log it
+      in `content/caretaker-dates.md` *before* publishing. The entry must
+      name the article, source, last event date and a post-event check due
+      date. `near-caretaker` reads that queue on every cleanup and may
+      invoke any needed specialist to verify, amend or remove the claim.
+
       What evergreen copy MAY say is the durable claim the dates evidence,
       phrased so it survives them: "tickets are on sale roughly three years
       out" is durable and checkable through an outbound ticketing link;
@@ -349,7 +356,7 @@ rules:
       fact ("opened in 1974", "closed for refurbishment in 2019") is not a
       dated event and is unaffected.
     trigger: "writing or refreshing a place page for a persistent venue"
-    action: "keep specific future dates out of body/bullets/tagline/seoDescription; create event pages with meta.parentPlace for the dated happenings and state only the durable claim in the place copy"
+    action: "keep specific future dates out of body/bullets/tagline/seoDescription; create event pages with meta.parentPlace for the dated happenings and state only the durable claim in the place copy; if the narrow editorial-necessity exception applies, add a dated, source-linked caretaker queue entry before publish"
 
   - id: event-expiry
     description: >

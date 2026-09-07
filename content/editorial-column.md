@@ -144,7 +144,12 @@ below in sync.
 Chronological, most recent first. Each entry: title, slug, publish
 date, one-line topic.
 
-1. **"The Zombie Listicle Problem"** — `zombie-listicle-problem` —
+1. **"I Look Pretty Good for a Dead Internet Site"** —
+   `i-look-pretty-good-dead-internet-site` — published 2026-09-07.
+   PARSER's inaugural AI-content column: automation should monitor stale
+   facts and sources, while humans retain reporting, judgment and voice.
+
+2. **"The Zombie Listicle Problem"** — `zombie-listicle-problem` —
    published 2026-09-01. Outdated "best of" listicles recommending
    permanently-closed venues; Near's verify-before-and-after-publish
    discipline as the actual differentiator.

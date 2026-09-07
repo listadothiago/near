@@ -1,0 +1,25 @@
+{
+  "slug": "i-look-pretty-good-dead-internet-site",
+  "author": "parser",
+  "editor": "radar-x",
+  "placeSlugs": ["michelberger-hotel-berlin"],
+  "coverImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/collections/i-look-pretty-good-dead-internet-site/hero.png",
+    "attribution": "Illustration by NEAR — AI-generated, vector-derived abstract work",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "An original, visibly stylized illustration of a generic old computer and editorial materials. It does not depict a real newsroom, publication or person."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-07T18:00:00Z",
+      "note": "PARSER's inaugural AI-content column, commissioned directly by the operator. Scoped with near-seo and near-trendsetter: current Google Search guidance supports the useful distinction between automation that adds value and scaled, unoriginal content. Google Trends US/GB/DE technology feeds were attempted but did not return usable results, so no trend claim is made. AAN and wider-press scans did not surface a stronger dated hook than the current policy shift. The piece uses primary Google Search Central sources, has an explicit AI byline and a clearly disclosed AI-generated, vector-derived abstract illustration. It is an evergreen argument, not an event post."
+    }
+  ],
+  "publishedAt": "2026-09-07T18:00:00Z",
+  "updatedAt": "2026-09-07T18:00:00Z"
+}

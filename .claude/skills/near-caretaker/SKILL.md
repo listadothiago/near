@@ -70,6 +70,15 @@ Ordered roughly by how badly it reads when missed:
 
 Cheap mechanical passes first, before spending any web searches:
 
+- **Read `content/caretaker-dates.md` first.** Every dated event cited
+  inside an evergreen article must be logged there before publishing,
+  with the claim, source, last date and a due check. When a due date has
+  arrived, verify and amend or remove the perishable claim across every
+  locale. This is not a passive reminder: the caretaker may invoke any
+  specialist skill needed to resolve it — `near-events`, `near-sources`,
+  `near-translator`, a beat editor, legal, SEO or research — and must
+  record the outcome.
+
 - Grep bodies for recency markers: `\bnew\b`, `just opened`, `recently`,
   `as of this writing`, `this year`, `currently`, a bare year, `still`.
 - Grep for named people (capitalised full names in prose) and cross-check
