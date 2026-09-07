@@ -258,12 +258,15 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         NYC (Tier 1) — HELD, no post-plan.md queue. This slot
-                 needs a SEEDING pass (near-sources-war-room), not a
-                 draw. Fourth slot of ten #2, next in t1-order after
-                 Oakland, whose third slot is CLOSED: it both seeded and
-                 shipped on 2026-09-07
-                 (starline-san-pablo-gateway-oakland).
+NEXT-UP:         NYC (Tier 1) — SEEDED 2026-09-07, drawable now. A
+                 near-sources-war-room pass landed 10 candidates (4
+                 auto-trust, 6 review-trust) in post-plan.md's NYC
+                 section, plus 3 new onboarded sources (Hell Gate, THE
+                 CITY, Greenpointers) in sources.md. The empty-queue hold
+                 no longer applies — draw from this queue next. Fourth
+                 slot of ten #2, next in t1-order after Oakland, whose
+                 third slot is CLOSED: it both seeded and shipped on
+                 2026-09-07 (starline-san-pablo-gateway-oakland).
 
                  CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
                  1) — DRAW" while the tier roster above, updated the same
@@ -295,10 +298,7 @@ then:            after NYC, follow t1-order above. Tier 2's and Tier
 t3-draw:         Curitiba (next cleared), then Salvador. Porto Alegre
                  SERVED 2026-09-04 — its post-plan.md queue still has
                  unspent candidates, but the rotation slot is spent.
-held:            NYC (T1, no queue — added to Tier 1 by the 2026-09-07
-                 directive and never seeded; it is NEXT-UP and held, so
-                 the next rotation action is a seeding pass, not a
-                 draw) · Seattle (T2, no queue) · Florianópolis, Recife,
+held:            Seattle (T2, no queue) · Florianópolis, Recife,
                  Belo Horizonte (T3 — feeds verified, pins not) · the
                  eleven Tier 3 cities added 2026-09-07 (Denver, Chicago,
                  Miami, Bologna, Medellín, Montevideo, São Carlos-SP,
