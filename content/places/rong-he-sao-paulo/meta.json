@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.5583,
-    "lng": -46.635
+    "lat": -23.558835,
+    "lng": -46.6341575
   },
   "place": {
     "city": "São Paulo",
@@ -55,13 +55,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "content/requests.md's sp-liberdade-market-or-grocery closed this session (near-war-room SP/Baixada push) by publishing towa-liberdade-sao-paulo -- this page was in that request's wantedBy list, so per rules.md link-density the English body now links Towa directly. Only English updated this pass; the other five locale files still need the same link -- logged as a residual gap for the next near-refresh/near-translator pass."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:28:58Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.558835, -46.6341575). Old pin was ~104m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Rua da Glória 622, Liberdade, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Rong He, R. da Glória, 622, Liberdade, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:28:58Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Rong+He/@-23.558835,-46.6341575,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59a7b6120f03:0x1e22e46aec799606!8m2!3d-23.558835!4d-46.6341575!16s%2Fg%2F1tf_jjw8"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "updatedAt": "2026-09-07T18:28:58Z"
 }

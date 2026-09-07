@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 37.5945,
-    "lng": -122.5031
+    "lat": 37.5988889,
+    "lng": -122.5019444
   },
   "place": {
     "city": "Pacifica",
@@ -106,13 +106,20 @@
       "status": "active",
       "at": "2026-09-07T11:55:00Z",
       "note": "Flipped to active after all six locales were written as genuine local editions and quality-gate-before-publish was checked explicitly in each: shortTitle 43 chars (<=48), tagline <=90, seoDescription <=320, 6 bullets (>=3), body over the 150-word floor everywhere, geocode 0.8 (>=0.6), hero resolved. Structural rules re-measured per locale, not assumed from English: no paragraph over 100 words, a sub-header at least every 250 words, and 3 images against a ceil(665/250)=3 floor. Link density passes in every locale — six in-text external links all present in meta.sources, two <NearLink>s to dolphin-club-san-francisco and ocean-beach-cafe-san-francisco, both genuine San Francisco connections rather than gate-clearing filler. Opener bans checked in all six: no crowd-consensus first word, no faux-candor framing. Headline formula checked against the catalogue (grep of all en.mdx shortTitles) and against FIT-BOT's own two prior pins, 'Learn to Row With the Otters' and \"London's Biggest LGBT+ Jujitsu Club\" — the shape here is a bare noun-phrase claim, matching neither, and it is not a bare name. Legal: the negative claims about surf culture are quoted and attributed to named people speaking on the record to the Bay Area Reporter, not asserted in house voice; the in-body poster is Queer Surf's own promotional artwork used in editorial coverage of Queer Surf; no identifiable participant faces run anywhere on the page."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:28:58Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.5988889, -122.5019444). Old pin was ~498m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.8,
-    "query": "Pacifica State Beach (Linda Mar), 5000 CA-1, Pacifica, CA 94044 — the anchor break for Queer Surf's Bay Area lessons and its SWITCH exhibition; the organisation has no fixed premises"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Pacifica State Beach (Linda Mar), 5000 CA-1, Pacifica, CA 94044 — Queer Surf has no clubhouse; lessons run at this beach — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:28:58Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Pacifica+State+Beach/@37.5969759,-122.5023787,17z/data=!4m10!1m2!2m1!1sQueer+Surf+Pacifica+Linda+Mar+California!3m6!1s0x808f7a84fd8f6945:0x80eded7cc04844c0!8m2!3d37.5988889!4d-122.5019444"
   },
   "publishedAt": "2026-09-07T11:55:00Z",
-  "updatedAt": "2026-09-07T11:55:00Z"
+  "updatedAt": "2026-09-07T18:28:58Z"
 }

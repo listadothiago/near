@@ -7,8 +7,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": 40.7288,
-    "lng": -73.9818
+    "lat": 40.7282564,
+    "lng": -73.9816488
   },
   "place": {
     "city": "New York",
@@ -52,13 +52,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "FOODIE-9000 byline. Verified via EV Grieve (local East Village blog, two posts tracking the buildout and grand opening) and Shelf Awareness (book-trade press): mother-daughter owners Marianna Vaidman Stone and Emily Samara Stone, 170 Avenue A (former 7-Eleven corner space), opened Saturday August 15, 2026. Café by day, bar by night; international-literature focus; Parisian book-cafe / Irish pub-snug inspiration per owner quote in coverage."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:28:58Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (40.7282564, -73.9816488). Old pin was ~61m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "170 Avenue A, New York, NY 10009"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Rabbit Books and Bar, 170 Avenue A, New York, NY 10009, East Village — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:28:58Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Rabbit+Books+and+Bar/@40.7282564,-73.9816488,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259007a7f1f17:0xd83e3c09aff2fedd!8m2!3d40.7282564!4d-73.9816488!16s%2Fg%2F11nk7sckv0"
   },
   "publishedAt": "2026-09-01T21:54:54Z",
-  "updatedAt": "2026-09-01T21:54:54Z"
+  "updatedAt": "2026-09-07T18:28:58Z"
 }

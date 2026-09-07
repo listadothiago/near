@@ -9,8 +9,8 @@
     "see-and-be-seen"
   ],
   "coordinates": {
-    "lat": 41.2357,
-    "lng": 1.8072
+    "lat": 41.2356921,
+    "lng": 1.8070324
   },
   "place": {
     "city": "Sitges",
@@ -71,13 +71,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:26:59Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.2356921, 1.8070324). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.95,
-    "query": "Parrots, 16 Carrer de Joan Tarrida / Plaça de la Indústria, 08870 Sitges"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Parrots Pub & Terrace, Plaça de la Indústria, 2, 08870 Sitges — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:26:59Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Parrots+Pub+%26+Terrace/@41.2356921,1.8070324,17z/data=!3m1!4b1!4m6!3m5!1s0x12a3804f467ab78d:0x97fb7c415868cdaf!8m2!3d41.2356921!4d1.8070324!16s%2Fg%2F11by_dqr3y"
   },
   "publishedAt": "2026-09-03T22:09:14Z",
-  "updatedAt": "2026-09-03T00:00:00Z"
+  "updatedAt": "2026-09-07T18:26:59Z"
 }

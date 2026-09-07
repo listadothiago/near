@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": -24.0176,
-    "lng": -46.2924
+    "lat": -24.0177062,
+    "lng": -46.2920379
   },
   "place": {
     "city": "Guarujá",
@@ -87,13 +87,20 @@
       "status": "active",
       "at": "2026-09-07T11:12:00Z",
       "note": "P0 factual correction, all six locales: the closing paragraph placed Restaurante Almeida somewhere in the middle of the Santos-to-Guaruja ciclovia-and-ferry route, which read as a waypoint on the bike path between the kiosks and the balsa. It is not on that route. Almeida is in Santos, inland of the waterfront lane, and the passage now frames it as an optional detour in Santos rather than a stop on the crossing. Surrounding voice and paragraph structure left intact."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:26:59Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-24.0177062, -46.2920379). Old pin was ~38m off."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.9,
-    "query": "Guaiuba Guaruja — matched OSM natural=beach 'Praia do Guaiúba, Guarujá, São Paulo, Brasil'"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Praia do Guaiúba, Jardim Guaiuba, Guarujá - SP — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:26:59Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Praia+do+Guai%C3%BAba/@-24.017711,-46.2925804,17z/data=!3m1!4b1!4m6!3m5!1s0x94d1fde764916543:0x267945b2c2568200!8m2!3d-24.0177062!4d-46.2920379!16s%2Fg%2F11bxfz0drd"
   },
   "publishedAt": "2026-09-03T00:46:07Z",
-  "updatedAt": "2026-09-07T11:12:00Z"
+  "updatedAt": "2026-09-07T18:26:59Z"
 }

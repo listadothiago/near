@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.8756,
-    "lng": -45.3564
+    "lat": -23.9174961,
+    "lng": -45.3454597
   },
   "place": {
     "city": "Ilhabela",
@@ -62,13 +62,20 @@
       "status": "active",
       "at": "2026-08-31T23:59:00Z",
       "note": "All six locales complete via near-translator (en, pt-BR — the natural home-market voice for this persona — plus it, es-ES, es-419, zh-CN) — full-locale-coverage gate cleared. LUGARDO KARAI's author bio also backfilled into it.json/es-ES.json/es-419.json/zh-CN.json (previously only en/pt-BR existed) so the byline reads correctly in every locale this piece now ships in. Moved to active as part of the September 2026 content push. Geocode confidence remains 0.4 (manual approximation, no single street address exists for this beach/community) — a real trailhead/community-center coordinate is still owed as follow-up, tracked in BACKLOG.md, but does not block publish per rules.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:26:59Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9174961, -45.3454597). Old pin was ~4789m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.4,
-    "query": "Praia do Bonete, Ilhabela, SP — approximate placement for a beach/caiçara community with no single street address; should be refined against a real trailhead or community-center point"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Praia do Bonete, Ilhabela, SP — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:26:59Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Praia+do+Bonete/@-23.9178715,-45.3450218,17z/data=!3m1!4b1!4m6!3m5!1s0x94d294574a2528d9:0x44570d8f0c758a9!8m2!3d-23.9174961!4d-45.3454597!16s%2Fg%2F12360f6x"
   },
   "publishedAt": "2026-09-01T02:33:00Z",
-  "updatedAt": "2026-09-01T02:33:00Z"
+  "updatedAt": "2026-09-07T18:26:59Z"
 }

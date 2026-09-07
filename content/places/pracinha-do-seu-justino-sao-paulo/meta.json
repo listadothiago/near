@@ -8,8 +8,8 @@
     "dog-first"
   ],
   "coordinates": {
-    "lat": -23.5551,
-    "lng": -46.6903
+    "lat": -23.556885,
+    "lng": -46.687129
   },
   "place": {
     "city": "São Paulo",
@@ -69,13 +69,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "near-translator: added it, es-ES, es-419, zh-CN local editions. All six locales now complete; full-locale-coverage gate (content/rules.md) is satisfied."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:26:59Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.556885, -46.687129). Old pin was ~379m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Pracinha do Seu Justino, Rua Harmonia 117, Vila Madalena, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Pracinha do Seu Justino, Rua Harmonia, 117, Vila Madalena, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:26:59Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Pracinha+do+Seu+Justino/@-23.556885,-46.687129,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce571ca58e6a9f:0x494139ef642b3e23!8m2!3d-23.556885!4d-46.687129!16s%2Fg%2F11j7hmvqpb"
   },
   "publishedAt": "2026-09-02T00:09:37Z",
-  "updatedAt": "2026-09-02T00:09:37Z"
+  "updatedAt": "2026-09-07T18:26:59Z"
 }

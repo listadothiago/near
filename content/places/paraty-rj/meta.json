@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.2178,
-    "lng": -44.7131
+    "lat": -23.2194982,
+    "lng": -44.7129314
   },
   "place": {
     "city": "Paraty",
@@ -81,13 +81,20 @@
       "status": "active",
       "at": "2026-09-01T02:00:00Z",
       "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:26:59Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.2194982, -44.7129314). Old pin was ~189m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Paraty, Centro Histórico, Rio de Janeiro — approximate placement for the colonial historic center; should be refined against a specific landmark (e.g. Igreja de Santa Rita or the main pier) before going active"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Centro Histórico, Paraty - RJ — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:26:59Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Centro+Hist%C3%B3rico,+Paraty+-+RJ/@-23.2192865,-44.7122205,17z/data=!3m1!4b1!4m6!3m5!1s0x9d6d1f66cfa627:0x8599c16a8fd44eb1!8m2!3d-23.2194982!4d-44.7129314!16s%2Fg%2F1ymtgkmxx"
   },
   "publishedAt": "2026-09-01T11:45:56Z",
-  "updatedAt": "2026-09-01T11:45:56Z"
+  "updatedAt": "2026-09-07T18:26:59Z"
 }
