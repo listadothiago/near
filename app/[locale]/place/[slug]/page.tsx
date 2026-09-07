@@ -21,6 +21,7 @@ import PlaceHero from "@/components/place/PlaceHero";
 import Dateline from "@/components/layout/Dateline";
 import PlaceMap from "@/components/place/PlaceMap";
 import ReasonsList from "@/components/place/ReasonsList";
+import PublishNote from "@/components/place/PublishNote";
 import LongFormBody from "@/components/place/LongFormBody";
 import RelatedPlaces from "@/components/place/RelatedPlaces";
 import UpcomingEvents from "@/components/place/UpcomingEvents";
@@ -132,6 +133,12 @@ export default async function PlacePage({
           updatedAt={content.meta.updatedAt}
         />
         <ReasonsList bullets={content.frontmatter.bullets} />
+        {content.frontmatter.publishNote && (
+          <PublishNote
+            quote={content.frontmatter.publishNote.quote}
+            attributedTo={content.frontmatter.publishNote.attributedTo}
+          />
+        )}
         <UpcomingEvents events={upcoming} />
         {/* Aligned to the reading column, not the page — a unit that
             floats away from the text reads as chrome rather than content. */}
