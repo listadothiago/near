@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5225,
-    "lng": -0.0716
+    "lat": 51.5203723,
+    "lng": -0.0733297
   },
   "place": {
     "city": "London",
@@ -47,13 +47,20 @@
       "status": "active",
       "at": "2026-08-27T00:00:00Z",
       "note": "near-editor: added via neighborhood research (Shoreditch)"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:25:00Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5203723, -0.0733297). Old pin was ~265m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "Old Truman Brewery, 91 Brick Lane, London E1 6QL"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Truman Brewery, Number 1, Ely's Yard, 15 Hanbury St, London E1 6QR, Shoreditch — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:25:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Truman+Brewery/@51.5203723,-0.0733297,17z/data=!3m1!4b1!4m6!3m5!1s0x48761cb681c09d1b:0xffb3966176941f91!8m2!3d51.5203723!4d-0.0733297!16zL20vMDd4cTEx"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-08-27T23:13:27Z"
+  "updatedAt": "2026-09-07T18:25:00Z"
 }

@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": -23.5455,
-    "lng": -46.643
+    "lat": -23.5461863,
+    "lng": -46.6439588
   },
   "place": {
     "city": "São Paulo",
@@ -55,13 +55,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "near-caretaker link-rot sweep: the /sobre-a-livraria/ deep link 404s; the shop's site root is live, so the source now points there."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:23:30Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5461863, -46.6439588). Old pin was ~124m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Livraria Megafauna - Copan, Av. Ipiranga, 200, Lj 53, Centro, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:23:30Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Livraria+Megafauna+-+Copan/@-23.5461863,-46.6439588,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59c70ee46be3:0x1042abf309576f40!8m2!3d-23.5461863!4d-46.6439588!16s%2Fg%2F11rffpmw85"
   },
   "publishedAt": "2026-08-28T18:43:40Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-07T18:23:30Z"
 }

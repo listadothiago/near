@@ -8,8 +8,8 @@
     "see-and-be-seen"
   ],
   "coordinates": {
-    "lat": -23.9765,
-    "lng": -46.302
+    "lat": -23.9877901,
+    "lng": -46.3058193
   },
   "place": {
     "city": "Santos",
@@ -58,13 +58,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Operator dropped a Revista Nove photo (Dário Costa at the restaurant entrance/dining room, from their 7th-anniversary coverage) into content/photo-inbox/ along with its source URL. Replaces the generic Santos-bay fallback that the previous entry's licenseNote had explicitly flagged for replacement. Hosted at Revista Nove's own URL rather than re-hosted locally, matching how every other sourced photo in this repo works. Added the source article to meta.sources as well, per operator instruction."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:23:30Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9877901, -46.3058193). Old pin was ~1314m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Madê Cozinha Autoral, Av. Dr. Epitácio Pessoa 716, Ponta da Praia, Santos SP"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Madê Cozinha Autoral, Av. Dr. Epitácio Pessoa, 716, Ponta da Praia, Santos — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:23:30Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Mad%C3%AA+Cozinha+Autoral/@-23.9877901,-46.3058193,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce0306b86f0757:0x82b83c40d44d5fbc!8m2!3d-23.9877901!4d-46.3058193!16s%2Fg%2F11df818j5z"
   },
   "publishedAt": "2026-08-31T22:23:33Z",
-  "updatedAt": "2026-08-31T22:23:33Z"
+  "updatedAt": "2026-09-07T18:23:30Z"
 }

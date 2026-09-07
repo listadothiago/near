@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 37.7723,
-    "lng": -122.5098
+    "lat": 37.7745416,
+    "lng": -122.5099581
   },
   "place": {
     "city": "San Francisco",
@@ -59,13 +59,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "First entry from content/opportunities.md's top-ranked gap (sf-bay-sober-curious). Opens wellness-fitness, which had zero places, and doubles SF Bay coverage from two. First use of the new sober-curious tag, which BACKLOG EPIC 1 specified but the schema never had. Verified currently trading: own site live and describing active catering and events. Byline is FOODIE-9000 rather than FIT-BOT or WILD0 — the opportunity note hoped this would give an unused persona its first piece, but the piece is about what's in the glass and whether the craft justifies the price, which is squarely gastronomy. Correct beat over tidy roster."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:25:00Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.7745416, -122.5099581). Old pin was ~249m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Ocean Beach Cafe, Outer Richmond, San Francisco"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Ocean Beach Cafe, 734 La Playa St, San Francisco, CA 94121, Outer Richmond — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:25:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Ocean+Beach+Cafe/@37.7745416,-122.5099581,17z/data=!3m1!4b1!4m6!3m5!1s0x808587a718b08a83:0xcb3ada8f14458da3!8m2!3d37.7745416!4d-122.5099581!16s%2Fg%2F11n0l9b_ny"
   },
   "publishedAt": "2026-08-31T18:56:08Z",
-  "updatedAt": "2026-08-31T18:56:08Z"
+  "updatedAt": "2026-09-07T18:25:00Z"
 }

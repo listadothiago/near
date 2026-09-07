@@ -10,8 +10,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 52.4989,
-    "lng": 13.4207
+    "lat": 52.499985,
+    "lng": 13.417456
   },
   "place": {
     "city": "Berlin",
@@ -83,13 +83,20 @@
       "status": "active",
       "at": "2026-09-04T00:00:00Z",
       "note": "Hero image replaced: the previous file 400'd in production (operator-reported). Two causes, and the first one was a red herring — the stored hash path was wrong (e/ef, actual 7/78), but correcting it still 400'd. The real cause is that it was the ONLY hero of the site's 75 pointing at a /thumb/.../1024px- URL, and Wikimedia now rejects non-standard thumbnail widths (w.wiki/GHai). The underlying file is also a 98MB 5102x3833 PNG, so it is a poor hero source regardless. Swapped to a 0.8MB 2048x1536 JPEG original of the same building, matching the pattern every other hero on the site already uses: point at the original file, never at a generated thumb."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:23:30Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.499985, 13.417456). Old pin was ~250m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "Reichenberger Straße 177, 10999 Berlin-Kreuzberg, Germany"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Möbel Olfe, Reichenberger Str. 177, 10999 Berlin-Kreuzberg — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:23:30Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/M%C3%B6bel+Olfe/@52.499985,13.417456,17z/data=!3m1!4b1!4m6!3m5!1s0x47a84e3312558653:0xe4dc7c9790475c22!8m2!3d52.499985!4d13.417456!16s%2Fg%2F1td52gg5"
   },
   "publishedAt": "2026-09-03T23:55:00Z",
-  "updatedAt": "2026-09-04T00:00:00Z"
+  "updatedAt": "2026-09-07T18:23:30Z"
 }
