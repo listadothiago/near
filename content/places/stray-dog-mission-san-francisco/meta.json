@@ -8,8 +8,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": 37.7530125,
-    "lng": -122.404806
+    "lat": 37.7529189,
+    "lng": -122.4051627
   },
   "place": {
     "city": "San Francisco",
@@ -46,13 +46,20 @@
       "status": "active",
       "at": "2026-08-27T00:00:00Z",
       "note": "near-editor: added via chat request (SF Bay Area research pass)"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:34:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.7529189, -122.4051627). Old pin was ~33m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "2545 24th St, San Francisco, CA 94110"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Stray Dog Coffee & Bar, 2545 24th St, San Francisco, CA 94110, Mission District — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:34:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Stray+Dog+Coffee+%26+Bar/@37.7529189,-122.4051627,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7f42505b538f:0x5d7226f1c2ea4e2d!8m2!3d37.7529189!4d-122.4051627!16s%2Fg%2F11npsn211_"
   },
   "publishedAt": "2026-08-28T12:56:25Z",
-  "updatedAt": "2026-08-28T12:56:25Z"
+  "updatedAt": "2026-09-07T18:34:08Z"
 }

@@ -9,8 +9,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": -23.9328,
-    "lng": -46.3268
+    "lat": -23.9330773,
+    "lng": -46.3281664
   },
   "place": {
     "city": "Santos",
@@ -52,13 +52,20 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "hero image resolved from the place's own source article; quality gate now passes"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:34:19Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9330773, -46.3281664). Old pin was ~142m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Rua D. Pedro II, 19, Centro, Santos - SP"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Teatro Clube da Eskyna, R. Pedro II, 19, Centro Histórico, Santos — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:34:19Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Teatro+Clube+da+Eskyna/@-23.9330773,-46.3281664,17z/data=!3m6!1s0x94ce0597250f33e3:0x344670362501b7cd!8m2!3d-23.9330773!4d-46.3281664!16s%2Fg%2F11x_fshg2z"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-09-07T18:34:19Z"
 }
