@@ -69,7 +69,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 ### 2.1 Neighborhood-First Deepening
 
 - **Thresholds:** ≥2 places generates an addressable location page (`/[locale]/in/[location]`); ≥4 places unlocks category grouping and exits the thin-coverage UI state.
-- **Saturation Disqualification:** Do not create landing pages or push new pins to oversaturated, globally documented hubs (e.g., London Soho/Shoreditch, NYC East Village, SF Mission, São Paulo Vila Madalena). Unless WOW extremely relevant and SEO and trendsetter agree it's an exception. There can be plenty of exception if they say so. TBH Beco do Batman looks silly all alone. There's a hip coffee place in largo that batata isn't there? One with an extremely old timey ambiance. 
+- **Saturation Disqualification:** Do not create landing pages or push new pins to oversaturated, globally documented hubs (e.g., London Soho/Shoreditch, NYC East Village, SF Mission, São Paulo Vila Madalena). Exceptions are allowed when SEO and trendsetter jointly judge a venue exceptionally relevant. Pinheiros companion coverage is tracked in P2.16.
 - **No Geographic Polygons:** Neighborhoods are flat categorical labels, not spatial GeoJSON boundaries.
 
 ### 2.2 Share-of-Output Cadence (Per 10 Posts)
@@ -83,7 +83,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ### 2.3 Locale Expansion Architecture
 
-i think we need greek to have athens? any other locale missing for a city in our tiers? en-gb?
+Locale-to-destination gaps, including Greek for Athens and British English, are tracked in P1.17. A city can be covered in existing locales while expansion is evaluated.
 
 - **Current Core:** 6 uniform, fully synchronized locales (`en`, `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`).
 - **Expansion Wishlist (Ranked by RICE):** 1. `pt-PT` (2.4 — lowest effort, forks `pt-BR`) · 2. `de` (1.6 — high demand, supports Berlin) · 3. `nl` (1.0 — supports Amsterdam) · 4. `ca`, `ar`, `hi`, `ja`, `fr`, `da` (under review, subject to full 6-locale backfill feasibility).
@@ -96,7 +96,7 @@ i think we need greek to have athens? any other locale missing for a city in our
 
 `backlink-pr`, `affiliate-pr`, and `ad-sales` may conduct market research, build media lists, map affiliate programs, and prepare pitch templates, but **no outbound contact** (email, messaging, forms) may be executed without explicit human permission.
 
-**Exit Milestone:** 1,000 published places, comprehensive 6-locale coverage, verified Search Console indexation, and explicit operator authorization. Thiago says: What do you mean by exit milestone? I meant at this point it could be a good point to launch PR campaigns for backlinks especially
+**Campaign readiness checkpoint:** 1,000 published places, six-locale coverage and verified Search Console indexation are a point to consider launching backlink PR, not automatic permission to contact anyone. Operator feedback requests reassessing campaign timing now (P3.8). Outbound contact still requires explicit authorization.
 
 ### 3.2 Lead Capture & Security
 
@@ -107,107 +107,17 @@ i think we need greek to have athens? any other locale missing for a city in our
 
 ## 4. Prioritized Active Backlog
 
-### SESSION HANDOFF — 2026-09-07, Claude (Opus 5)
+### Current handoff — 2026-09-07, Codex (GPT-6)
 
-**Shipped this session** (all pushed, `99bbe20..6a2bf14`):
-
-- **P0.1 closed.** 83/83 active places verified against real Google Maps
-  listings; 28 pins were materially wrong and are corrected; nothing
-  fabricated, nothing left unresolved. Details in the P0.1 block below.
-- **The Failure Mode launched** — PARSER's standing column at
-  `/collection/…` with archive page, RSS feed, nav entry, sitemap and six
-  locales. Issue #1 (`i-look-pretty-good-dead-internet-site`) was retitled
-  **"Automate the Alarm, Not the Answer"**, copy-edited by the TOV/editor
-  pass, and reassigned out of the editorial column (the move is logged in
-  `content/editorial-column.md`, not silently deleted). **Slug deliberately
-  unchanged** — the page is live and indexed; no rename, no redirect.
-- **`<FlowDiagram>`** — first new MDX component since `Figure`. Live markup,
-  not a raster, because Near ships six locales and the illustrator skill
-  bans garbled baked-in text. `near-illustrator/SKILL.md` gained a Diagrams
-  section so the 2026-09-07 operator directive survives past this session.
-
-**IN FLIGHT — read this before doing anything else.** A
-`near-sources-war-room` **NYC seeding pass** was dispatched as a background
-agent near the end of this session and **had not written any files when the
-session ended** (working tree was clean at `6a2bf14`). Next session must
-first check whether `content/post-plan.md` and `content/opportunities.md`
-gained an NYC section. If they did, verify and commit it. If they did not,
-**the run was lost and must be re-dispatched** — it was scoped as seeding
-only (sources map + 8–12 candidates with per-candidate `auto`/`review`
-trust ratings + full analysis to `opportunities.md`), explicitly no
-drafting, no pages, no commits. Exactly one NYC pin is already live
-(`rabbit-books-and-bar-east-village-nyc`); dedupe on venue name +
-coordinates, not slug similarity.
-
-**Rotation state:** `NEXT-UP` is still **NYC (Tier 1), HELD** — it has no
-queue, so the next rotation action remains a seeding pass, not a draw. The
-pointer does not advance until an NYC piece actually ships.
-
-**Open, unstarted, in RICE order:** P1.14 (zh-CN latin-in-CJK, 8 pages —
-these are the *only* `validate-content.mjs` failures, so they currently mask
-any new defect; needs near-translator judgment per instance, not
-find-and-replace) · P0.14 type scale + P1.13(a) card teaser clamp (one
-`app/globals.css` pass, blocked on a near-lead-ux call on the scale) ·
-P1.13(b) SEO meta description lengths (wants its own near-seo scoping pass
-first).
-
-**Two notes the next agent should not have to rediscover:**
-
-1. `app/[locale]/collection/[slug]/page.tsx` now renders MDX with
-   `options={{ blockJS: false }}`. `next-mdx-remote` v6 defaults this to
-   `true`, which silently strips every `{...}` expression attribute, so
-   array/object props arrive `undefined` and `<FlowDiagram>` crashed the
-   prerender. Safe as scoped: bodies are first-party MDX committed to this
-   repo, never user submissions, and `blockDangerousJS` stays at its secure
-   default. **Place pages were deliberately left strict.** If Near ever
-   accepts outside-authored MDX, revisit that line.
-2. **RESOLVED — 2026-09-07, operator.** `lib/content/curator.ts` →
-   `livedIn` keeps `São Vicente / Baixada Santista` on the
-   `/about/thiago-baraldi` page. Operator's call: it's a past-lived city
-   listed among ten others, not a disclosure of current residence, so it
-   does not fall under the never-publish-current-residence rule. No
-   change needed.
+- NYC seeding and four places already shipped (`afe5454`, `99582fa`); rotation advanced to **London** in `299469c`. Do not restart the NYC seeding run. Pending candidates remain in `content/post-plan.md` and `content/opportunities.md`.
+- P0.1 geocode audit and P0.12 privacy correction are complete; evidence and historical handoffs are in `BACKLOG-ARCHIVE.md`. Keep the per-write Google Maps gate.
+- Preserve the indexed Failure Mode slug `i-look-pretty-good-dead-internet-site`. Collection MDX uses `blockJS: false` for first-party diagram props; revisit before accepting outside-authored MDX.
+- Operator approved keeping `São Vicente / Baixada Santista` in curator `livedIn`; it is past residence, not current-location disclosure.
+- This pass: capture feedback and update sourced-pricing/AEO workflow first. RICE: process rules (broad reach, high confidence, low effort) precede readability (sitewide reach, medium effort), then individual copy repairs. **MoSCoW, this pass:** Must consume raw feedback and remove stale handoffs; Should deliver pricing/AEO rules and scope readability; Could fix further independent UI defects; Won't implement n8n or pause content without the requested discussion. P0.4 remains reserved for a fresh session.
+- Inbox checked: only `near.png`, explicitly rejected as a logo for now; preserve that decision. This is a foundation/backlog pass, not a content rotation round.
 
 ### P0: Immediate Fixes & Critical Correctness
 
-**P0.1 CLOSED — 2026-09-07, Claude.** All 83 active places now pass
-`node scripts/check-geocodes.mjs --all --strict` (exit 0), every one against
-its real Google Maps listing pin: `provider: "google-maps"`, confidence ≥ 0.9,
-7-decimal coordinates taken from the `!3d/!4d` pin pair, a listing URL and a
-`verifiedAt` stamp. Run as a 10-pin pilot first, then the remaining 71.
-Nothing was fabricated and nothing was left unresolved.
-
-**28 pins were materially wrong (>100m).** The defect was real and worse
-than the two spot-checks suggested — roughly a third of the catalogue was
-sending readers somewhere else. Worst cases: `praia-do-bonete-ilhabela`
-**4.8 km** off, on the wrong side of the peninsula; `london-otters-rowing`
-and `made-cozinha-autoral-santos` **1.3 km**; `dollywood-pigeon-forge`
-**1.2 km**; `lita-pinheiros-sao-paulo` **1.1 km**, pinned to an unrelated
-Butantã building rather than its Ferreira de Araújo address.
-
-**The method failure worth remembering:** searching Google Maps by venue
-*name* is not safe. `stray-dog-mission-san-francisco` resolved to Trick Dog,
-an unrelated bar, and `berry-bros-and-rudd-london` resolved to two split
-listings at two addresses. Both were only caught by searching the address
-from Near's own copy and cross-checking storefront signage. Any future
-audit must confirm name *and* address against the listing before reading a
-coordinate.
-
-**Two pins a human may still want to eyeball**, both honestly recorded in
-their `geocode.query`: `ishigaki-jujitsu-london` has no fixed premises and
-is pinned to Finsbury Leisure Centre, its Tuesday training venue — named in
-the page's own copy, so the pin matches what the piece tells the reader
-(operator reviewed 2026-09-07, accepted). `queer-surf-pacifica` and
-`starline-oakland` are no-clubhouse organisations anchored to their primary
-listed address.
-
-The standing rule in the header above — run `geolocation-police` on every
-piece written or refreshed — is what keeps this closed. The audit fixed the
-backlog; only the per-write gate stops it recurring.
-
-**Superseded handoff — 2026-09-07, Codex (GPT-5):** P0.1 has been expanded from fix-on-touch to a full active-catalogue Google Maps audit at the operator's request. Root cause confirmed: the renderer preserves latitude/longitude; the old content gate accepted explicitly approximate manual coordinates at confidence `0.6`. AMUSE has been corrected to its Google Maps listing pin and the new per-slug verifier plus Google-Mapping metadata/workflow changes are live in commit `c08d9bb` (Vercel production deployment Ready; public manifest checked). **Webpack production build passed.** 81 remaining active legacy pins require listing-by-listing verification before this P0 item can be closed; do not treat their current coordinates as verified.
-
-1. **Geolocation integrity — URGENT, systemic.** Operator checked two pins in a row and both were wrong, suggesting a fundamental defect in how pins were originally created. Required: (a) find the root cause in the pin-creation path; (b) wire `geolocation-police` into every article write and refresh so coordinates are always checked against Google Maps — no full catalogue pass now, fix-on-touch instead; (c) fix the known-bad pins: `amuse-beach-club-sao-vicente` (correct location: https://share.google/isqrdyKG482x8i7Nn) and `quiosque-da-cris-sao-vicente` → `[-23.973827, -46.370170]`. Restaurante Almeida and Made were spot-checked correct, so the corruption is partial, not universal.
 2. **NEAR rebrand — operator's stated top priority ("reach and impact here are huge").** Home page and header title become `NEAR`, not `NEAR.TIPS`; near.tips stays as the URL only. Amend the browser tab title too. Keep the "tips near me" slug pattern — e.g. pt-BR: `Dicas perto de mim | NEAR`. (this is at least partly done as the home page seems updated for this)
 3. **PARSER token-efficiency review — high priority.** Have PARSER review all skills and processes, and especially their interactions, for maximum token saving.
 4. **Generate portable `AGENTS.md`** documenting the full tech stack (Vercel, GitHub), exact build and deploy commands, project structure, architectural boundaries, and all MCP server configs and tool dependencies, so any MCP-compatible agent can resume maintenance with no session history. _Operator directive: run this in a completely fresh session after `/clear`._ Note the current root `AGENTS.md` is the Next.js auto-generated stub — this replaces/extends it without dropping the generated block.
@@ -218,26 +128,17 @@ backlog; only the per-write gate stops it recurring.
 9. **PageSpeed / WebMCP compliance:** address mobile CLS (0.52), add accessible ARIA names to Leaflet marker icons, verify `llms.txt` conforms to standard H1 markdown requirements.
 10. **Search Console zero-indexation audit:** diagnose why 630 sitemap URLs are crawled but not indexed; verify canonical and hreflang tags across all 6 locales.
 11. **Automated deployment verification:** inspect Vercel production alias settings to eliminate promotion delays; enforce live curl checks in publishing workflows.
-12. ~~**Operator location privacy — P0, DONE 2026-09-07.**~~ Scrubbed from 4 places / 11 locale files, root-cause rule `operator-location-privacy` added to `content/rules.md`, curator card moved below the cast on `/about`. Shipped and pushed. **One open question for the operator:** `lib/content/curator.ts` → `livedIn` still lists `São Vicente / Baixada Santista` among ten cities on your own `/about/thiago-baraldi` page. It reads as chronological biography ending in Rome, so it no longer points at where you live now that the content-page lines are gone — but it is your page and your call whether that entry stays.
 13. **Geolocation loading state.** No feedback between tapping "minha localização" and the browser resolving the position. Add a loading/pending state to the geolocation control in `components/board/Board.tsx` and `components/collection/CollectionPlaces.tsx`. Operator directive 2026-09-07. Product trio + near-lead-ux own the design.
-14. **Type scale increase across all breakpoints.** Operator: _"fonts should be larger in all breakpoints imho"_. Needs a near-lead-ux call on the token changes in `app/globals.css` rather than ad-hoc per-component bumps — the site uses a clamp-based scale, so this is one systematic change, not many.
+14. **Type scale increase across all breakpoints.** Operator: _"fonts should be larger in all breakpoints imho"_. UX research/design consulted 2026-09-07: the current CSS has no shared type-size scale; retain Space Grotesk/Courier Prime. Proposed shared root size 17–18px, larger card excerpts, five lines on normal cards and five/six on featured cards, plus expanded map taglines. Lead UX requires checking 320/390/768/1440px and 200% zoom because root sizing also affects sidebar/ad dimensions. Implement with P1.13(a), separately from SEO descriptions.
 
 ### P1: Product & UI Enhancements
-
-**Active handoff — 2026-09-07, Codex (GPT-5):** simplified the PWA source mark to a single acid-green `N` on charcoal, rendered it for app, Apple, standard, and maskable icons, and updated the manifest to use a dedicated maskable asset. Added restrained acid-green-on-dark treatment to the header freshness stamp and card revision badge. `near-illustrator` now explicitly allows precise vector-derived abstract work as an art-direction option. **Live in commit `c08d9bb`; Vercel production deployment Ready and public manifest checked. Webpack production build passed.**
-
-**Active handoff — 2026-09-07, Codex (GPT-5):** Operator authorized a related-article publishing run when the research supports it; every additional article still needs its own sourcing, Google Maps pin, image and six locales. Michelberger Hotel, Berlin was researched and added as the first hotel post in that run, including Google Maps verification and a clearly disclosed NEAR vector-derived abstract hero. It contains PEOPLE Festival on 10–11 October; `content/caretaker-dates.md` now gives `near-caretaker` a 2026-10-12 mandatory verification/amendment task. This applies going forward: every dated event cited in evergreen copy must create a due, source-linked caretaker record, and caretaker may invoke any specialist needed to resolve it.
-
-**Active handoff — 2026-09-07, Codex (GPT-5):** PARSER is now Near's standing automation consultant and named byline for its recurring AI-content column (never for place pages). Its first issue, _I Look Pretty Good for a Dead Internet Site_, was scoped with SEO + trend research, written and localized into six editions, with an original disclosed vector-derived abstract hero. It argues for automation as maintenance and escalation, while protecting human reporting and judgment. **Shipped in `8b451f8`; Vercel production was Ready and `https://near.tips/en/collection/i-look-pretty-good-dead-internet-site` returned the expected title and byline.** Local build cleared compilation and TypeScript, with static generation still running when the local tool time limit was reached; Vercel completed the production build successfully.
-
-**Operator request — 2026-09-07:** PWA push notifications for places added or refreshed within a user-set radius, plus changes to saved favorites. Scope the first release city-level (chosen city/cities, opt-in, quiet delivery) before radius matching: it avoids background-location permissions and geofence infrastructure while proving the utility for the operator. Favorites should follow as the second trigger. Requires product/UX + privacy review, a durable subscription store, service-worker delivery, unsubscribe controls and real-device tests; do not start it during a content-publishing run.
 
 0. **DECISION PENDING — pause content, do foundational work, add AI-swappability (n8n)?** Operator, 2026-09-07: _"Maybe we should pause content generation momentarily, get all the foundational work done including some AI swappability solution like n8n so we can maximize our output... be ready to generate content with Claude AND other AIs. Maybe use VS Code as well? Let's discuss before taking any action. maybe the current agents.md already answers this and I'm confused lol"_ — **Explicitly gated on a discussion with the operator; do not act on it.** Note it partly overlaps P0.4 (portable `AGENTS.md`), which is the cheap half of the same idea: `AGENTS.md` today is only the Next.js auto-generated stub, so no, it does not yet answer this. Needs the Product Trio + PARSER to frame the actual trade-off (orchestration layer vs. more skill-file discipline) before the operator decides.
 
 1. **Map-driven card filtering:** navigating/panning the map on the home page filters the card list to the pins currently in view. (Pairs with P1.2 two-way sync.)
 2. **Map pin clustering:** finalize Supercluster implementation with click-to-zoom and two-way viewport synchronization between map pins and listing cards.
 3. **Card freshness & distance badges:** replace the bold "52km de distância" with a prominent neon badge (`a 52km`), and surface freshness ("a week ago", "10 months ago") prominently in the gray horizontal badge, bold all-caps. Apply to article pages too. Get the UX team to advise. Must not conflict with the existing events badge, which is good and stays prominent.
-4. **Larger base font:** operator finds Gumroad's larger type far more readable and wants that scale — while keeping the current design, which they love.
+4. **Readability reference:** consolidated into P0.14 + P1.13(a); use Gumroad’s readable scale while retaining Near’s design.
 5. **Columns index page:** aggregate all column posts in one place, most recent first.
 6. **Dedicated full-screen map page:** implement a `/map` route linked prominently in header navigation.
 7. **Desktop article rail optimization:** use desktop right-hand whitespace on article pages for sticky map widgets and secondary house-ad units.
@@ -247,7 +148,14 @@ backlog; only the per-write gate stops it recurring.
 11. **Shareable URL filters:** full query-parameter state sync plus a native "Share" button for filtered/sorted views.
 12. **Date display offset:** resolve timezone discrepancies causing midnight UTC timestamps to display previous-day dates in western timezones.
 13. **Longer snippets.** Operator directive 2026-09-07: _"could we make snippets longer too"_ — raised in the same breath as the type-scale ask (P0.14), so treat the two as one readability pass rather than separate tickets. **Clarified 2026-09-07 — operator answered BOTH**, so this is two pieces of work under one ask, and they ship separately: (a) **card teaser/excerpt truncation** in the listing and map cards — a front-end clamp change owned by the Product Trio + near-lead-ux, cheap and reversible, and it should ride along with the P0.14 type-scale pass as a single readability change rather than a second pass over the same components; (b) **SEO meta descriptions / search-result snippets** — a content-length call owned by near-seo, touching every one of six locales on every page and interacting with how Google truncates, so it needs its own scoping pass and must not be bundled into the front-end change. Do (a) with P0.14; scope (b) with near-seo before touching any locale file.
-14. **zh-CN latin-wedged-in-CJK copy defects — 8 pages.** `node scripts/validate-content.mjs` has been reporting these for a while and they are still open: Latin words left embedded mid-sentence in Chinese copy, e.g. `作speakeasy的` (starline-oakland), `工pinsa薄` (sipeos-east-bay), and eight separate instances in rush-hour-amsterdam (`丹house与`, `牌logo文`, …). Also affects hazlitts, jumbi, la-camionera, marineterrein, pracinha. These are the only failures `validate-content.mjs` reports, so they are also **masking any new content defect** — the script's output is currently noise that gets scrolled past, which is exactly how the next real problem gets missed. Not a mechanical find-and-replace: a translator has to decide per instance whether the term is a genuine loanword Chinese readers expect in Latin script (`speakeasy`, `logo`) or a translation gap. Owner: near-translator. Surfaced 2026-09-07 during the P0.1 audit; untouched there deliberately, since silently editing copy inside a geolocation push is how unrelated changes get lost.
+14. **zh-CN latin-wedged-in-CJK copy defects — 10 pages.** `node scripts/validate-content.mjs` has been reporting these for a while and they are still open: Latin words left embedded mid-sentence in Chinese copy, e.g. `作speakeasy的` (starline-oakland), `工pinsa薄` (sipeos-east-bay), and eight separate instances in rush-hour-amsterdam (`丹house与`, `牌logo文`, …). Also affects hazlitts, jumbi, la-camionera, marineterrein, pracinha. Rechecked 2026-09-07 by Codex (GPT-6): the newly shipped elder and kween add two affected pages, bringing the total to ten. These are the only failures `validate-content.mjs` reports, so they are also **masking any new content defect** — the script's output is currently noise that gets scrolled past, which is exactly how the next real problem gets missed. Not a mechanical find-and-replace: a translator has to decide per instance whether the term is a genuine loanword Chinese readers expect in Latin script (`speakeasy`, `logo`) or a translation gap. Owner: near-translator. Surfaced 2026-09-07 during the P0.1 audit; untouched there deliberately, since silently editing copy inside a geolocation push is how unrelated changes get lost.
+
+15. **Searchable geographic hierarchy:** add San Francisco Bay Area and Baixada Santista as searchable, addressable regions; retain constituent city and neighborhood pages. Define aliases, membership and coverage thresholds with the Product Trio + SEO; reuse flat location labels, not polygons. Verify regional results include the right cities without duplicate pins.
+16. **Header brand mark:** use the approved acid-green N PWA icon in the header alongside NEAR, with accessible labeling and mobile sizing. Do not use inbox `near.png`.
+17. **Locale coverage audit:** map tier destinations to current locales; evaluate `el` for Athens, `en-GB`, and other gaps with SEO + translators. Rank demand against complete catalogue/UI backfill cost before adding a locale.
+18. **Agent usability audit:** AEO + Product Trio audit public content, search/filter URLs, map alternatives, navigation, accessible controls, canonical links, feeds and structured data. Record reproducible failures and prioritize repairs; the new AEO skill checklist applies to every future touched surface.
+
+19. **Opt-in PWA notifications:** first release follows selected cities for added/refreshed places with quiet delivery; favorites updates are the second trigger, user-set radius matching follows later. Product/UX + privacy review, durable subscriptions, service-worker delivery, unsubscribe and real-device tests required. Do not start during a content-publishing run.
 
 ### P2: Content Sprints & Editorial Pipeline
 
@@ -265,6 +173,10 @@ backlog; only the per-write gate stops it recurring.
 13. **Alumni anchor content:** clusters covering São Carlos (UFSCar) and Hayward/Bay Area (CSU East Bay), in preparation for future educational outreach.
 14. **Discover image compliance sweep:** replace undersized hero images (<1200px wide) across the 17 identified catalogue assets.
 
+15. **Legends Brighton hero and event sourcing:** near-illustrator reviews the rejected hero against https://share.google/9aPPSEXDAVqMJyf9m and venue-owned alternatives. near-events reads https://www.instagram.com/legendsbrighton/?hl=en for current dated events; verify each date and use event expiry, not dates embedded in evergreen copy.
+16. **Pinheiros companion coverage:** identify the operator-recalled old-fashioned café near Largo da Batata; confirm identity before drafting. Consider useful companion coverage for the isolated Beco do Batman pin under the SEO/trendsetter exception rule.
+17. **NYC residual source audit:** verify whether `aan-the-daily-catch` is misclassified as Brooklyn instead of Hudson Valley, then correct its region if confirmed. Preserve useful stopped-run leads from the archive, dedupe against the now-shipped NYC queue, and reverify before promoting. No need to repeat the completed seeding pass.
+
 ### P3: New Skills, Personas & Infrastructure
 
 1. **n8n / swappable content factory — OPEN QUESTION, needs a recommendation, not an implementation.** Operator asks: (1) should I work in VS Code? (2) is n8n a good idea for Near? (3) can we make the content system have more swappable parts? (4) can you connect directly to n8n via MCP? Blueprint is extracted to `docs/n8n-blueprint.md` — read it there. Answer the four questions and stop; do not build anything until the operator picks a direction.
@@ -273,6 +185,10 @@ backlog; only the per-write gate stops it recurring.
 4. **"Do Not Disturb" accommodation column (weekly, NITE-PORTER).** Standing RADAR-X collaboration: Trendsetter and SEO pick destinations and flavour (RADAR-X co-signs publicly, SEO collaborates but does not); NITE-PORTER finds the hotels to feature (no duplicates), assigns a persona to write each missing hotel article, and writes the column about the collection. NITE-PORTER must write or collaborate on — and be credited in — every hotel article. Hotel article directives: always frontload unique selling points in copy and bullets, always keep information current. **Every content refresh or rotation round must attempt at least one hotel article**, always checking whether the destination still has un-covered hotels worth writing about.
 6. **Specialist column additions:** scope and launch _Zero Day_ (technology), _Pri Sizada_ (budget travel), and _Ariana Granny_ (hip senior curation).
 7. **Curator profile & inaugural essay:** reformat `/about/thiago` to the standard persona layout — first name only as handle, 8-bit avatar rather than a photo — publish the approved introductory post (_"hello, world!"_), and show the operator's posts and collaborations on that page.
+
+8. **Backlink PR readiness:** backlink-pr + SEO assess whether a focused campaign is worthwhile now and prepare concrete targets/pitches for review. Treat 1,000 places as a readiness checkpoint; sending still needs explicit operator permission.
+9. **Image sourcing and art direction:** near-illustrator + design review photo-first heroes, varied vector styles and a colorful/brutalist palette. near-legal-counsel evaluates a practical sourcing policy for Google Images/Photos and venue assets, with recorded provenance and usage basis; a takedown plan alone does not establish permission. Legends hero is P2.15.
+10. **CUBIC-V naming proposal:** consult the CUBIC-V persona on “Neondrian” and give a recommendation before changing bylines, biography keys or indexed URLs.
 
 ---
 
@@ -305,49 +221,3 @@ backlog; only the per-write gate stops it recurring.
 | **thiago baraldi**  | Curator      | Human site curator (`/about/thiago`)                                                                          | 8-bit retro avatar with glasses & mustache  |
 
 Completed work lives in `BACKLOG-ARCHIVE.md`.
-
-Stopping now. No files were edited — the seeding pass was still in its research phase, so nothing was written to post-plan.md, opportunities.md, or preferred-sources.md, and no place pages were created.
-
-Here's what I had verified before halting, so it isn't lost:
-
-Sources map (all fetched live, 2026-09-07)
-
-Verified live and publishing:
-- Hell Gate (hellgatenyc.com) — subscriber-funded, worker-owned NYC news co-op. RSS at /all-posts/rss. Publishing daily (latest 2026-09-04). The strongest NYC find; genuinely the alt-weekly successor and Near-shaped.
-- EV Grieve (evgrieve.com) — East Village blog, already a preferred-sources.md candidate. Atom feed at /feeds/posts/default. Posting multiple times daily (latest 2026-09-07). Earned its second good hit this pass, so it clears the bar for formal onboarding.
-- Gay City News (gaycitynews.com) — LGBTQ+ NYC, Schneps Media. Publishing currently. No RSS link surfaced on the homepage.
-- The Lo-Down (thelodownny.com) — Lower East Side/Chinatown. Live but slower (latest 2026-08-26). No RSS visible.
-- Village Voice (villagevoice.com) — still publishing but thin and slow; latest piece 2026-08-07. Tier 3 at best; it is not the outlet its name implies anymore.
-
-Bot-blocked to WebFetch (403, would need claude-in-chrome): Gothamist, BrooklynVegan, Bushwick Daily, Greenpointers.
-
-Two real audit findings:
-1. aan-the-daily-catch in sources.md is mis-regioned. It is filed region: us-brooklyn-ny, but the live site is a Hudson Valley papercovering Red Hook, Rhinebeck and Clinton (Dutchess County). The AAN bulk-ingest on 2026-09-01 evidently collided on "Red Hook", which is both a Brooklyn neighborhood and a Dutchess town. It should be re-regioned, not retired — it is live and publishing (latest 2026-09-04).
-2. There is no AAN member in New York City. The AAN directory search for New York returns only Chronogram (Hudson). So NYC's alt-weekly slot has to be filled by Hell Gate and Gay City News rather than by the standing AAN route.
-
-Candidates verified before the stop
-
-- Saint Vitus, 428 Troutman St, Bushwick — the Greenpoint metal/punk bar the DOB shut mid-hardcore-show in Feb 2024 over live-musicpermits, reopening fall 2026 in the former Brooklyn Made space. Announced via the venue's own Instagram 2026-07-03 (the mascot mannequin "Günther" revealing the address). Trust review for now, and note a live conflict: Time Out says 250 capacity, other coverage says ~500 —do not assert either. The venue's own site is a template with no address and no dates on it, so the reopening date is not yet confirmable from a primary.
-- Ninth Ward, 180 Second Ave, East Village — New Orleans bar that closed 2016-02-14 for an "18-month" renovation and reopened 2026-07-10 after nearly ten years. Owners Nic Ratner, Robert Morgan, chef Lena Geskin. Source: EV Grieve, 2026-07-06. Trust auto. ⚠️ Dedupe flag:East Village, same neighborhood as the live rabbit-books-and-bar-east-village-nyc — different venue and different address, but check coordinates at draft.
-- Pan in Motion panyard, Prospect Heights International School lot, Crown Heights — the last steel panyard in Crown Heights, under threat from a neighbor's noise complaints; DOE practice permit 27 Jul–5 Sep. Founder Kendall Williams. Hell Gate, Katie Way, 2026-09-04. Reads as a column/collection, not a pin.
-- The Exley + the "LGBTBQE" plaza, Jackson St between Meeker and Union, Williamsburg — gay bar (opened 2011) that got a BQE slip laneconverted to a car-free plaza, ribbon-cut 2026-08-20. Streetsblog NYC, Sophia Lebowitz. Trust review — single outlet so far.
-- Queer Nightlife Community Center, 100 Hinsdale St, East New York — 28,000 sq ft warehouse, nonprofit for queer nightlife workers,day/night dual shift. ⚠️ The Time Out source is dated 2025-06-09, not 2026 — this one needs current-status re-verification before it goes anywhere near a queue.
-
-What did not verify
-
-- No new 2026 Queens independent-bookshop opening turned up; the search returned only existing shops. Queens/Bronx coverage was the gap Ihad not closed when I stopped, so the queue as it stands would have been Brooklyn/Manhattan-heavy.
-
-If you want this resumed later, the remaining work is: the borough spread (Queens, Bronx, upper Manhattan), a claude-in-chrome retry on the four 403 sources, the Instagram feed reads, and then the three file writes.
-
-san francisco bay area should be a searchable place like any city have a landing page. same for baixada santista and contained individual cities and so on in comparable configurations of cities, regions, neighborhood level too
-
-near-illustrator is free to vary the styles of vector derived images, use its skill specialist judgement to decide on best fit and color palette for our experience and that particular article it will illustrate. We can be a bit brutalist but colorful perhaps. Our layout is a bit mondrian-esque already lol... neondrian dare I say? and that is not a bad thing. Photos are still generally better for a hero image. UX and Design team discuss and execute as they decide
-
-Maybe CUBIC-V could be called neondrian? What does Cubic-V/neondrian think?
-
-PWA app icon looks good, it should be used in the header for consistency
-
-near-illustrator cool photos that fit our vibe are always best so please as a rule fearlessly source them from google photos, crop if you must, legal skill please throw a dog a bone here, if we get notified we take them down. also from google image search in general. place's own site is an obvious one as they usually do not mind. review the hero for legends brighton post, the current one is bad https://share.google/9aPPSEXDAVqMJyf9m btw source their events these are great https://www.instagram.com/legendsbrighton/?hl=en
-
-
-

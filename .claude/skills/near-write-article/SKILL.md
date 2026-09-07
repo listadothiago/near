@@ -530,7 +530,10 @@ ways) instead of a bare, unlinked mention. Also run `near-seo`'s QA pass
 (Mode 2) and `.claude/skills/aeo/SKILL.md`'s citability/structured-data
 checks together here — `near-seo` confirms the baseline `llm-seo.md`
 discipline was followed, `aeo` confirms the JSON-LD actually matches the
-page and the most-liftable sentences survive being quoted alone. For a
+page and the most-liftable sentences survive being quoted alone. Apply
+`content/rules.md` → `sourced-price-ranges` and AEO’s agent-usability
+checklist to the touched public surface; record any unavailable price
+source or untested UI behavior honestly. For a
 standing-column entry specifically: also prepend
 the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed

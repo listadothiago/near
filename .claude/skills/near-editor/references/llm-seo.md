@@ -89,3 +89,16 @@ specificity rules (`references/style-guide.md`) are already the fix for
 this — there's no separate "SEO voice" to layer on top that would make
 a page rank or get cited better than just being genuinely specific and
 honest already does.
+
+
+## Sourced prices that readers and agents can compare
+
+Apply `content/rules.md` → `sourced-price-ranges` on new writing and
+refreshes. Actively seek a current primary price source. Give a useful
+amount or range in one self-contained sentence: entity, currency, unit,
+inclusions/fees, conditions, verification date and direct citation.
+Preserve these facts across locales. A menu's lowest and highest items
+are not automatically the cost of a meal; a sample room quote is not an
+annual hotel range. Label the actual basis. If a reliable price is not
+available, record the gap instead of estimating. Keep supported JSON-LD
+consistent with visible copy; request schema work separately when needed.

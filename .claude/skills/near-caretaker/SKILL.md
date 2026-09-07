@@ -26,6 +26,14 @@ skill is how that debt gets paid. A caretaker pass is never an excuse to
 strip specificity out of a piece — if a fact has aged, correct the fact,
 don't delete the kind of detail that made the piece worth reading.
 
+## Pricing and agent usability on refresh
+
+Apply `content/rules.md` → `sourced-price-ranges` and the shared
+`near-editor/references/llm-seo.md` pricing guidance on each refresh.
+Actively seek useful current costs, preserve units/conditions across
+locales, and consult `aeo` on the touched page’s agent-usability checks.
+Record missing sources; do not turn a stale quote into an unsourced range.
+
 ## What goes stale
 
 Ordered roughly by how badly it reads when missed:

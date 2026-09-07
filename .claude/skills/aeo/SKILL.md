@@ -89,6 +89,35 @@ duplicate effort — if `aeo` notices a piece is genuinely strong and
 under-cited externally, flag it to `backlink-pr` as a pitch candidate
 rather than silently noting it.
 
+## Agent usability — every touched public surface
+
+Operator directive, 2026-09-07: assess agent friendliness across the
+experience, including content, search, navigation and controls. On each
+piece or UI change, inspect the relevant public surface and record actual
+passes, reproducible failures and checks that could not run. A periodic
+site audit covers the remaining surfaces; do not claim a whole-site pass
+from one article.
+
+- Can a reader or browsing agent retrieve the entity, address, hours,
+  sourced price range and booking constraints from rendered text without
+  interpreting an image, a map-only pin or a hover-only tooltip?
+- Apply `content/rules.md` → `sourced-price-ranges`: verify source links,
+  currency, unit, conditions and check date. Check semantic agreement
+  across locales and supported JSON-LD. Never invent prices or offers.
+- Can the relevant pages be reached through descriptive links, with
+  working canonical/locale URLs and readable headings? Check applicable
+  feeds, sitemap and `llms.txt` entry points against actual routes.
+- Are search/filter states understandable and shareable where supported?
+  Do buttons, inputs and map markers expose useful accessible names,
+  keyboard operation and visible loading/error/empty states? Is there a
+  readable list alternative to map navigation?
+- Confirm public information remains accessible without unnecessary
+  sign-in. Respect privacy, consent and authentication for personal actions;
+  agent usability never grants permission to bypass those controls.
+- Flag infrastructure gaps to the Product Trio with the URL, reproduction,
+  expected behavior and user impact. Do not add a WebMCP endpoint, schema
+  field or other protocol merely because an agent could use it.
+
 ## When this runs
 
 Consulted in `near-write-article`'s pipeline alongside `near-seo`'s QA
