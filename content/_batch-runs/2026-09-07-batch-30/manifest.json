@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 6,
+  "publishedCount": 7,
   "candidates": [
     {
       "name": "Hausu",
@@ -280,11 +280,44 @@
       "name": "Kirbee’s",
       "city": "New York City",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "CultureMap Fort Worth profile; https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
+        }
+      },
+      "retryCount": 0,
+      "slug": "kirbees-greenpoint-brooklyn",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "Monkey Thief",
