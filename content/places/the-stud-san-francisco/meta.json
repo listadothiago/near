@@ -8,8 +8,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 37.7766,
-    "lng": -122.4093
+    "lat": 37.7761825,
+    "lng": -122.4083567
   },
   "place": {
     "city": "San Francisco",
@@ -99,13 +99,20 @@
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
       "note": "Factual correction to shortTitle in en, pt-BR and zh-CN, which read 'Worker-Owned Since 1966' and conflated two different dates. The Stud was founded in 1966; it became a worker-owned cooperative on 30 December 2016. The body copy, bullets and tagline had both dates right throughout — only the card title was wrong, which is the one field that travels furthest from its own context (listing cards, share previews). it/es-ES/es-419 omitted the date entirely and needed no change. Found while deduping 'the-stud-soma-san-francisco', a draft second slug for this same venue, now deleted."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:36:10Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.7761825, -122.4083567). Old pin was ~95m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "1123 Folsom St, San Francisco, CA 94103"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Stud, 1123 Folsom St, San Francisco, CA 94103, SoMa — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:36:10Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Stud/@37.7761825,-122.4083567,17z/data=!3m1!4b1!4m6!3m5!1s0x808f7e28ff9a6805:0x2b18910d46d33573!8m2!3d37.7761825!4d-122.4083567!16s%2Fg%2F11dymtlmdv"
   },
   "publishedAt": "2026-09-02T18:00:00Z",
-  "updatedAt": "2026-09-02T18:00:00Z"
+  "updatedAt": "2026-09-07T18:36:10Z"
 }
