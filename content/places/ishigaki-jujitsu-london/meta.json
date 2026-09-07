@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5285,
-    "lng": -0.0939
+    "lat": 51.5259571,
+    "lng": -0.0952848
   },
   "place": {
     "city": "London",
@@ -63,13 +63,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "near-translator wrote genuine local editions for pt-BR, it, es-ES, es-419, and zh-CN (not literal translations, per each locale persona). All six locales now present, satisfying rules.md's full-locale-coverage rule for this trust:auto place. shortTitle/tagline/seoDescription character limits checked and confirmed under schema max for every locale before this flip. Status moved from draft to active."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:19:24Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5259571, -0.0952848). Old pin was ~298m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Finsbury Leisure Centre, Norman Street, London EC1V 3AR"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Ishigaki Jujitsu Club — meets at Finsbury Leisure Centre, Norman St, London EC1V 3PU (Tuesday sessions) — Google Maps listing pin for the training venue; the club has no fixed HQ",
+    "verifiedAt": "2026-09-07T18:19:24Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Finsbury+Leisure+Centre/@51.5259571,-0.0952848,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b583d7b5b33:0x8a0f395809589fbc!8m2!3d51.5259571!4d-0.0952848!16s%2Fg%2F1thx_8rp"
   },
   "publishedAt": "2026-09-01T17:38:45Z",
-  "updatedAt": "2026-09-01T17:38:45Z"
+  "updatedAt": "2026-09-07T18:19:24Z"
 }

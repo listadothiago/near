@@ -8,8 +8,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": -23.567,
-    "lng": -46.689
+    "lat": -23.5605965,
+    "lng": -46.6978596
   },
   "place": {
     "city": "São Paulo",
@@ -53,13 +53,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "São Paulo/Baixada Santista content push (near-war-room), fulfilling open request sp-pinheiros-anchor -- Near's first Pinheiros pin. Operator-directed research pass (chat request) -> trust: auto per rules.md trust-gate. Verified via CNN Brasil and Taste & Fly editorial coverage plus the venue's own Espaces listing (address, hours, menu concept) -- all corroborate Rua Ferreira de Araújo, 333, chef Tássia Magalhães (Best Chef of Latin America 2025 per Taste & Fly) and sommelier Danyel Steinle, a sister project to their restaurant Nelita. Coverage reads as recent ('novo bar de vinhos'), Espaces listing shows current hours (Tue-Sun, closed Mon), no closure signal found -- satisfies verify-still-open-before-create. Coordinates approximate for the Rua Ferreira de Araújo block, not an independently verified geocode pin -- confidence 0.6. Hero image is a general Pinheiros street scene (Wikimedia Commons, CC BY-SA 4.0), not venue-specific -- logged as an acceptable compromise pending a real interior/exterior photo of Lita itself."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:21:37Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5605965, -46.6978596). Old pin was ~1149m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Rua Ferreira de Araújo, 333, Pinheiros, São Paulo, SP — approximate placement from published street address, not independently pin-verified"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "LITA Wine Bar, R. Ferreira de Araújo, 333, Pinheiros, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:21:37Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/LITA+Wine+Bar/@-23.5605965,-46.6978596,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5779909ca227:0x2fe261625e20b0d4!8m2!3d-23.5605965!4d-46.6978596!16s%2Fg%2F11x_xk3pkf"
   },
   "publishedAt": "2026-09-01T20:04:29Z",
-  "updatedAt": "2026-09-01T20:04:29Z"
+  "updatedAt": "2026-09-07T18:21:37Z"
 }

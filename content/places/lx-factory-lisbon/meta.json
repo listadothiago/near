@@ -8,8 +8,8 @@
     "hipster"
   ],
   "coordinates": {
-    "lat": 38.7042,
-    "lng": -9.1786
+    "lat": 38.7034602,
+    "lng": -9.1787831
   },
   "place": {
     "city": "Lisbon",
@@ -46,13 +46,20 @@
       "status": "active",
       "at": "2026-08-20T10:00:00Z",
       "note": "seed content"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:21:37Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (38.7034602, -9.1787831). Old pin was ~83m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
+    "provider": "google-maps",
     "confidence": 1,
-    "query": "LX Factory, Lisbon"
+    "query": "LX Factory, R. Rodrigues de Faria 103, 1300-501 Lisboa, Alcântara — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:21:37Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/LX+Factory/@38.7034602,-9.1787831,17z/data=!3m1!4b1!4m6!3m5!1s0xd1934af61dedbe5:0x33ebaaaa14f543ac!8m2!3d38.7034602!4d-9.1787831!16s%2Fg%2F1q63cnck4"
   },
   "publishedAt": "2026-08-27T19:15:10Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-09-07T18:21:37Z"
 }

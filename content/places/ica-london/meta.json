@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 51.5068,
-    "lng": -0.1299
+    "lat": 51.5060461,
+    "lng": -0.1311716
   },
   "place": {
     "city": "London",
@@ -57,15 +57,22 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-02T18:41:38Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:19:24Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5060461, -0.1311716). Old pin was ~121m off."
     }
   ],
   "eventStartsAt": null,
   "eventEndsAt": null,
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.8,
-    "query": "Institute of Contemporary Arts, Nash House, The Mall, London SW1Y 5AH"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Institute of Contemporary Arts, The Mall, London — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:19:24Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Institute+of+Contemporary+Arts/@51.5060461,-0.1311716,17z/data=!3m1!4b1!4m6!3m5!1s0x487604d048c70aa7:0x7c61e53746b583d5!8m2!3d51.5060461!4d-0.1311716!16zL20vMDJrOXZr"
   },
   "publishedAt": "2026-09-02T18:41:38Z",
-  "updatedAt": "2026-09-02T00:00:00Z"
+  "updatedAt": "2026-09-07T18:19:24Z"
 }

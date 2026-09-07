@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 51.5444500,
-    "lng": -0.0468899
+    "lat": 51.54448,
+    "lng": -0.0469812
   },
   "place": {
     "city": "London",
@@ -94,13 +94,20 @@
       "status": "active",
       "at": "2026-09-04T13:52:00Z",
       "note": "publishedAt corrected from an interim placeholder to 2026-09-04T13:51:55Z, the author timestamp of the commit that first added this piece's English source — the true publish moment, per the currency-maintenance/publishedAt rule (never T00:00:00Z) and the va-east-storehouse precedent. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:21:37Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.54448, -0.0469812). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.95,
-    "query": "243 Well Street, Hackney, London E9 6RG"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "La Camionera, 243 Well St, London E9 6RG — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:21:37Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/La+Camionera/@51.54448,-0.0469812,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d5737616cc9:0x5f9fc9ed50893b37!8m2!3d51.54448!4d-0.0469812!16s%2Fg%2F11vry4lkvc"
   },
   "publishedAt": "2026-09-04T13:51:55Z",
-  "updatedAt": "2026-09-04T00:00:00Z"
+  "updatedAt": "2026-09-07T18:21:37Z"
 }
