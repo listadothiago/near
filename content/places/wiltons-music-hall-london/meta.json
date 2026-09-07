@@ -9,8 +9,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 51.5106,
-    "lng": -0.067
+    "lat": 51.5107013,
+    "lng": -0.0668967
   },
   "place": {
     "city": "London",
@@ -48,13 +48,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "War-room slate pin #2, PLINIO byline. Verified operating: official site lists September 2026 productions by name and date (Wiesenthal 1-5 Sep, The Elixir of Love 8-19 Sep, Private Peaceful 21-23 Sep) and states ~300 performances/yr. History from Wikipedia, which is well-cited on this building: 1859 Jacob Maggs hall built BEHIND the Graces Alley houses (frontage was expensive), 1877 fire and rebuild, Methodist East End Mission ownership 1878-1956 incl. the 1889 Great Dock Strike soup kitchen at the Mahogany Bar, near-demolition in slum clearance, saved by the Betjeman/Sellers/Milligan campaign, Grade II* April 1971, GLC purchase, Trust ownership 2004, £3.6M restoration completed September 2015. 'Oldest grand music hall in the world' is the venue's own claim, attributed as such in the article rather than asserted independently."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:39:32Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5107013, -0.0668967). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Wilton's Music Hall, Graces Alley, London E1 8JB"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Wilton's Music Hall, 1 Graces Alley, London E1 8JB, Whitechapel — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:39:32Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Wilton's+Music+Hall/@51.5107013,-0.0668967,17z/data=!3m1!4b1!4m6!3m5!1s0x48760334311bc46d:0xf0c0741b5edf781a!8m2!3d51.5107013!4d-0.0668967!16s%2Fm%2F01xmh55"
   },
   "publishedAt": "2026-08-31T22:13:20Z",
-  "updatedAt": "2026-08-31T22:13:20Z"
+  "updatedAt": "2026-09-07T18:39:32Z"
 }

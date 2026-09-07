@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 44.4945,
-    "lng": 11.3639
+    "lat": 44.5002391,
+    "lng": 11.3615998
   },
   "place": {
     "city": "Bologna",
@@ -95,13 +95,20 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Ad-hoc chat request (BACKLOG.md Bologna priority bump). This is Near's first Bologna pin. Chose Vag61 over the more famous Làbas: Làbas's original Via Orfeo squat was evicted in August 2017 and the building has since passed to the Comune di Bologna (per Gazzetta di Bologna), and current search results turned up no live 2026 event listing at its relocated Vicolo Bolognetti site, so its present-day operating status/programming couldn't be verified to the standard this piece needed. Vag61, by contrast, is documented as continuously self-managed since 2003 (originally Via Azzo Gardino 61, relocated to Via Paolo Fabbri 110 in the Cirenaica/San Donato district after that site was cleared) and has a verifiable, dated, recurring activity: a weekly Tuesday-evening organic farmers' market (Mercatino di Campi Aperti, confirmed via vag61.info and zero.eu) paired with a free reggae/hip-hop 'aperitivo musicale' (per zic.it coverage), alongside a documentation center (CentroDoc), an archive (Fondo Roversi), solidarity after-school programs (Doposcuola), a video collective (SMK Videofactory), and self-described antifascist/antisexist/antimilitarist politics per its own 'Chi siamo' page. This is real, concrete, currently-operating programming rather than a vague 'occupied building' — described factually and neutrally here, without editorializing beyond what the space's own materials and secondary press state. Could not independently verify the Instagram accounts named in BACKLOG.md (@redbologna, @kibo_bologna, @vernissagerome) — no browser/Instagram access in this pass; flagged as a gap. Address (Via Paolo Fabbri 110, Bologna) is geocoded manually (confidence 0.5, approximate coordinates for the Cirenaica/San Donato area) and should be tightened with a real lookup before this leaves draft. No rights-clear photo of Vag61's own building was found on Wikimedia Commons; used a correctly-located, honestly-disclosed photo of nearby Porta San Donato instead, per the operator's photo policy. Left in draft per this task's explicit instruction — not committed, other locales not written."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:39:32Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (44.5002391, 11.3615998). Old pin was ~663m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Via Paolo Fabbri 110, Cirenaica, Bologna, Italy"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Vag61 Spazio Libero autogestito, Via Paolo Fabbri, 110, 40138 Bologna, Cirenaica — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:39:32Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Vag61+Spazio+Libero+autogestito/@44.5002391,11.3615998,17z/data=!3m1!4b1!4m6!3m5!1s0x477fd4ae5c5ea33b:0xb3c06a55688c635b!8m2!3d44.5002391!4d11.3615998!16s%2Fg%2F1pp2tgy1d"
   },
   "publishedAt": "2026-09-01T12:42:17Z",
-  "updatedAt": "2026-09-01T12:42:17Z"
+  "updatedAt": "2026-09-07T18:39:32Z"
 }
