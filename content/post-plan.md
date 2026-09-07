@@ -404,23 +404,23 @@ that seeding pass — full source and candidate analysis in
 already lives: `rabbit-books-and-bar-east-village-nyc`. None of the
 candidates below collide with it or with each other on name or address.
 
-- [ ] **El Califa de León, 20 W. 23rd St, Flatiron** — FOODIE-9000 or
+- [x] **El Califa de León, 20 W. 23rd St, Flatiron** — FOODIE-9000 or
   DARCY. First US location of the Mexico City taquería that briefly held
   the world's first Michelin star for a taco stand (lost 2026, still
   Michelin-recommended); opened 2026-08-24. Corroborated by Time Out,
   Cititour, OpenTable Blog, and Eater NY's own Substack — the strongest
   candidate this pass, draw first.
-- [ ] **Elder, 517 W. 38th St (Henry Hall, ground floor), Hudson Yards**
+- [x] **Elder, 517 W. 38th St (Henry Hall, ground floor), Hudson Yards**
   — FOODIE-9000. British-Indian chophouse from Michelin-starred chef
   Sujan Sarkar, opened 2026-08-06. Corroborated by Time Out, Resy, The
   Infatuation, Cititour.
-- [ ] **The Little Bookshop, 239 Bushwick Ave, East Williamsburg,
+- [x] **The Little Bookshop, 239 Bushwick Ave, East Williamsburg,
   Brooklyn** — near-editor or ALLORA DAI. Mother-daughter-run bookstore/
   café with reading nooks, soups, and a small event stage; opened
   2025-05, still being written up in 2026. Corroborated independently by
   Greenpointers, Shelf Awareness, and North Brooklyn Dispatch — same
   shape as the existing Rabbit Books pin, different borough.
-- [ ] **Kween, 34-10 30th Ave, Astoria, Queens** — STEFAN. Queer
+- [x] **Kween, 34-10 30th Ave, Astoria, Queens** — STEFAN. Queer
   cocktail lounge, open since 2022 in the former Viva Viva space;
   corroborated by Yelp (106 reviews), GayCities, thegaypassport, Travel
   Gay. Not a new opening, but closes two gaps at once: zero Queens

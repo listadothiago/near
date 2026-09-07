@@ -833,3 +833,34 @@ directly fetched this pass — corroboration came via Time Out, Resy,
 Cititour, and Eater's own Substack instead, all of which agree, so the
 facts are solid even though the canonical heatmap page is still
 unverified as a feed).
+
+**New candidates surfaced drafting the four `trust: auto` pins
+(2026-09-07, `near-write-article` pass on El Califa de León, Elder, The
+Little Bookshop, Kween):**
+- `cititour.com` (Cititour) — NYC restaurant-opening trade press, used
+  to corroborate both El Califa de León and Elder; consistently
+  first-on-the-scene with interior photos on new openings.
+- `opentable.com/blog` (OpenTable Blog) — booking platform's own
+  editorial, used for El Califa de León's opening confirmation and
+  hours; fine for opening-date/hours facts, not a substitute for
+  independent review coverage.
+- `hoodline.com` (Hoodline) — hyperlocal news network (NYC bureau used
+  here for El Califa de León); useful for opening writeups, unverified
+  as a standing feed.
+- `joinpearl.co` (Pearl) — restaurant-industry blog, corroborated
+  Elder's opening and the Henry Hall/Sarkar takeover context.
+- `northbrooklyndispatch.com` (North Brooklyn Dispatch) — hyperlocal
+  North Brooklyn outlet, corroborated The Little Bookshop's opening
+  independently of Greenpointers.
+- `newyork.gaycities.com` (GayCities New York City) and `travelgay.com`
+  (Travel Gay) — queer-travel/nightlife review sites, both corroborated
+  Kween; useful recurring source for future Queens/NYC nightlife-sound
+  leads given the borough's coverage gap.
+- `seethequeens.com` (See The Queens) — Queens-focused local blog,
+  corroborated Kween's current operations and drag-brunch programming.
+- `astoriapost.com` (Astoria Post) — Astoria hyperlocal news site,
+  source for Kween's original 2022 opening.
+- `thegaypassport.com` — queer-travel guide site, already flagged above
+  as `thegaypassport.com` in the Sitges section; reused here for Kween,
+  worth folding into a standing NYC/queer-nightlife shortlist rather
+  than treating each use as a one-off.
