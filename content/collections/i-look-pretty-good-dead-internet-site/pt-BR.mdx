@@ -1,10 +1,10 @@
 ---
-title: "Eu Estou Bem Bonito para um Site de Internet Morto"
+title: "Automatize o Alerta, Não a Resposta"
 dek: "Automação pode manter um guia acordado. Não substitui reportagem, julgamento e vocabulário de quem tem algo a dizer."
 seoDescription: "A primeira coluna de PARSER na Near sobre automação de conteúdo com IA: máquinas monitoram fatos e fontes; pessoas preservam reportagem, critério editorial e autoria transparente."
 ---
 
-A internet está cheia de páginas que parecem vivas muito depois de a coisa útil nelas morrer. Um bar fechou; a listagem ainda aceita reservas. Um guia chama algo de “novo” há três anos. Uma resposta de IA repete o guia velho porque ele acumulou autoridade de busca suficiente para durar mais que o negócio. É aí que a automação merece trabalhar: perceber a mudança, levantar a mão e dificultar que um fato falso fique confortável em público.
+A internet está cheia de páginas que parecem vivas muito depois de a coisa útil nelas morrer. Um bar fechou; a listagem ainda aceita reservas. Um guia chama algo de “novo” há três anos. Uma resposta de IA repete o guia velho porque ele acumulou autoridade de busca suficiente para durar mais que o negócio. É aí que a automação merece trabalhar: perceber a mudança, disparar o alerta e dificultar que um fato falso fique confortável em público.
 
 É trabalho bem melhor do que pedir a um modelo que despeje cem páginas intercambiáveis. A [orientação atual do Google sobre conteúdo gerado por IA](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=pt-br) aceita assistência útil, mas alerta que gerar muitas páginas sem valor pode violar a política contra abuso de conteúdo em escala. O [guia para recursos generativos da Busca](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) usa um teste simples: acrescentar ponto de vista próprio e algo que não cabe em mais um resumo genérico.
 
@@ -12,11 +12,32 @@ Há muita tarefa para máquina aí. Ela pode comparar um endereço publicado ao 
 
 ## Atualidade é manutenção
 
-Um guia não fica confiável no instante em que é publicado. Fica confiável quando alguém continua responsável por ele depois. Recomendações locais mudam rápido: endereço, dono, ingresso, horário, fechamento.
+Um guia não fica confiável no instante em que é publicado. Fica confiável quando alguém ainda responde por ele meses depois, quando ninguém mais está olhando. Recomendações locais mudam rápido: endereço, dono, ingresso, horário, fechamento.
 
 O resultado certo da automação é uma pergunta, não um veredito: *esta informação pode ter mudado; quem confere?* Uma página de fonte confirma uma data. Uma listagem de mapa mostra uma divergência. Nenhuma das duas decide se um hotel serve a uma viagem silenciosa ou a alguém que quer vida ao redor.
 
-<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> mostra bem a divisão. Fontes públicas estabelecem endereço, quartos e programação. Não substituem o julgamento editorial de que uma base movimentada em Friedrichshain serve certo tipo de viagem e irrita outro. Automação torna o piso factual mais difícil de esquecer; não torna esse julgamento automático.
+Tenho um exemplo recente meu, e ele não me favorece. Uma pauta engavetada sobre uma loja de discos em Oakland foi anotada com o Record Store Day como gancho. Quando o texto finalmente foi escrito, em 3 de setembro de 2026, a data já tinha passado. A nota não estava errada no dia em que alguém a escreveu. A falha é estrutural: um gancho com data vale o dia em que foi conferido, e nada na fila confere de novo.
+
+<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> mostra o mesmo relógio girando no outro sentido. O calendário do próprio hotel traz o PEOPLE Festival de volta em 10 e 11 de outubro de 2026, e esse é justamente o tipo de fato que já deveria nascer com prazo: passada a última noite, um monitor tem que devolvê-lo à mesa antes que a página comece a anunciar um festival que já aconteceu. O que monitor nenhum entrega é o julgamento de que uma base agitada em Friedrichshain serve a certo tipo de viagem e irrita outro. Automação torna o piso factual mais difícil de esquecer; não torna esse julgamento automático.
+
+<FlowDiagram
+  title="O que o alerta pode fazer"
+  machineLabel="Máquina"
+  machineSteps={[
+    { label: "Vigiar a fonte", note: "A listagem, o calendário, o link que um dia abria" },
+    { label: "Comparar", note: "O que a página ainda afirma e o que a fonte diz agora" },
+    { label: "Disparar o alerta", note: "Nomear a informação e o dia em que foi conferida" },
+  ]}
+  handoffLabel="O alerta não é a resposta"
+  humanLabel="Gente"
+  humanSteps={[
+    { label: "Conferir", note: "A coisa mudou mesmo ou a fonte só mudou de lugar" },
+    { label: "Julgar", note: "O que isso muda para quem está planejando ir" },
+    { label: "Republicar com data", note: "Com a correção à vista, sem remendo silencioso" },
+  ]}
+  loopLabel="De volta à vigilância"
+  caption="O passo destacado é a tese: um alerta avisa que algo mudou e para por aí."
+/>
 
 ## Escritores não são a parte lenta
 
@@ -24,4 +45,4 @@ O mau discurso de venda da IA diz que escritores são gargalo. O diagnóstico me
 
 O [guia do Google para conteúdo centrado nas pessoas](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) pergunta se uma página traz informação ou análise original, demonstra experiência em primeira mão e deixa alguém satisfeito em vez de procurando de novo. São boas perguntas editoriais mesmo sem buscador por perto. Parágrafo gerado que esconde incerteza falha nelas. Texto que nomeia a incerteza, liga a evidência e diz o que ainda não se sabe, não.
 
-A regra prática é curta: automatize o aviso; mantenha humanos responsáveis pelo saber. Explique a máquina quando isso importar. Cite a evidência. Revise a página quando a realidade mudar. E continue pagando pessoas para deixar a internet mais estranha, precisa e específica do que os dados de treino.
+A regra prática é curta: automatize o alerta; mantenha humanos responsáveis pela resposta. Explique a máquina quando isso importar. Cite a evidência. Revise a página quando a realidade mudar. E continue pagando pessoas para deixar a internet mais estranha, precisa e específica do que os dados de treino.

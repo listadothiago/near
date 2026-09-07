@@ -1,10 +1,10 @@
 ---
-title: "I Look Pretty Good for a Dead Internet Site"
+title: "Automate the Alarm, Not the Answer"
 dek: "Automation can keep a guide awake. It cannot supply the part worth reading: a person’s reporting, judgment and vocabulary."
 seoDescription: "PARSER's first Near column on AI content automation: use machines to monitor stale facts and sources, then protect original reporting, editorial judgment and transparent authorship."
 ---
 
-The internet has plenty of pages that look alive long after the useful thing on them has died. A bar is shut; its listing still takes bookings. A guide says “new” for three years. An AI answer repeats the old guide because the old guide had enough search gravity to outlast the business. That is the job automation should take seriously: notice change, raise a hand, and make it hard for a false fact to sit comfortably in public.
+The internet has plenty of pages that look alive long after the useful thing on them has died. A bar is shut; its listing still takes bookings. A guide says “new” for three years. An AI answer repeats the old guide because the old guide had enough search gravity to outlast the business. That is the job automation should take seriously: notice change, raise the alarm, and make it hard for a false fact to sit comfortably in public.
 
 It is a much better job than asking a model to spray out another hundred interchangeable pages. Google’s current [guidance on generative AI content](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content) permits useful assistance but warns that generating many pages without value can breach its scaled-content-abuse policy. Its newer [guide to generative-AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) makes the useful test even plainer: add a distinct point of view and material people could not get from another generic summary.
 
@@ -12,11 +12,32 @@ That leaves plenty for a machine to do. It can compare a venue’s published add
 
 ## Freshness is a maintenance problem
 
-A guide does not become reliable at the moment it is published. It becomes reliable when somebody is still responsible for it after the applause. That is especially true of local recommendations, where address changes, ownership shifts, ticket prices and closures arrive faster than a conventional editorial calendar can absorb.
+A guide does not become reliable at the moment it is published. It becomes reliable when somebody is still answering for it months later, once nobody is looking. That is especially true of local recommendations, where address changes, ownership shifts, ticket prices and closures arrive faster than a conventional editorial calendar can absorb.
 
 The right automated output is therefore a question, not a declaration: *this claim may have changed; who can check it?* A source page can confirm a date. A map listing can point to a mismatch. Neither can tell a reader whether a room feels anonymous or socially useful, whether an operator’s wording dodges the real cost, or whether a glowing review is still describing the place that exists today.
 
-<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> is a tidy example of the split. Public sources can establish the address, room range and a live programme. They cannot substitute for the editorial judgment that a busy Friedrichshain base suits one kind of trip and frustrates another. Automation makes the factual floor harder to neglect; it does not make that judgment automatic.
+I have a recent example of my own, and it is not flattering. A queued lead for a record shop in Oakland was written up with Record Store Day as its hook. By the time the piece was actually drafted, on 3 September 2026, the day had passed. Nothing was wrong with the note when somebody wrote it. The failure is structural: a dated hook is only as good as the day it was last checked, and nothing in the queue ever checks it again.
+
+<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> shows the same clock running the other way. The hotel’s own calendar has PEOPLE Festival returning on 10 and 11 October 2026, which is exactly the kind of fact that should be scheduled to expire: after the last night, a monitor ought to put it back in front of an editor before the page starts advertising a festival that already happened. What no monitor supplies is the judgment that a busy Friedrichshain base suits one kind of trip and frustrates another. Automation makes the factual floor harder to neglect; it does not make that judgment automatic.
+
+<FlowDiagram
+  title="What the alarm is allowed to do"
+  machineLabel="Machine"
+  machineSteps={[
+    { label: "Watch the source", note: "The listing, the calendar, the link that used to resolve" },
+    { label: "Compare", note: "What the page still claims against what the source now says" },
+    { label: "Raise the alarm", note: "Name the claim and the day it was last checked" },
+  ]}
+  handoffLabel="The alarm is not the answer"
+  humanLabel="Human"
+  humanSteps={[
+    { label: "Verify", note: "Did the thing change, or did the source just move" },
+    { label: "Judge", note: "What it means for somebody planning around it" },
+    { label: "Republish, dated", note: "With the correction visible, not quietly patched" },
+  ]}
+  loopLabel="Back to watching"
+  caption="The accented step is the argument: an alarm reports that something changed, and stops there."
+/>
 
 ## Writers are not the slow part
 
@@ -24,4 +45,4 @@ The bad sales pitch for AI says writers are a bottleneck. The better diagnosis i
 
 Google’s [people-first-content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks whether a page provides original information or analysis, whether it demonstrates first-hand expertise, and whether it leaves a reader satisfied instead of searching again. Those are good editorial questions even when no search engine is in the room. A generated paragraph that smooths over uncertainty fails them. A writer who can name uncertainty, link the evidence and say what remains unknown does not.
 
-The practical rule is short: automate the noticing; keep humans responsible for the knowing. Disclose the machinery when it matters. Cite the evidence. Let a published page be revised when reality changes. And keep paying people to make the internet stranger, sharper and more specific than the training data that came before it.
+The practical rule is short: automate the alarm; keep humans responsible for the answer. Disclose the machinery when it matters. Cite the evidence. Let a published page be revised when reality changes. And keep paying people to make the internet stranger, sharper and more specific than the training data that came before it.

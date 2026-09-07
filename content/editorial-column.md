@@ -144,12 +144,23 @@ below in sync.
 Chronological, most recent first. Each entry: title, slug, publish
 date, one-line topic.
 
-1. **"I Look Pretty Good for a Dead Internet Site"** —
-   `i-look-pretty-good-dead-internet-site` — published 2026-09-07.
-   PARSER's inaugural AI-content column: automation should monitor stale
-   facts and sources, while humans retain reporting, judgment and voice.
-
-2. **"The Zombie Listicle Problem"** — `zombie-listicle-problem` —
+1. **"The Zombie Listicle Problem"** — `zombie-listicle-problem` —
    published 2026-09-01. Outdated "best of" listicles recommending
    permanently-closed venues; Near's verify-before-and-after-publish
    discipline as the actual differentiator.
+
+## Reassignments out of this column
+
+- **2026-09-07 (operator directive) — "Automate the Alarm, Not the
+  Answer"**, which ran here under its original title "I Look Pretty
+  Good for a Dead Internet Site"
+  (`i-look-pretty-good-dead-internet-site`, PARSER,
+  edited by RADAR-X, published 2026-09-07) briefly ran as an entry in
+  this column and was reassigned the same day. The operator's read:
+  *"is not a guide, this is a first installment of PARSER column."* It
+  is now **issue #1 of The Failure Mode**, PARSER's own standing column
+  on AI content practice — see `content/the-failure-mode.md`. Its slug
+  was removed from `content/editorial-column-index.json` and added to
+  `content/the-failure-mode-index.json`. Recorded here rather than
+  deleted, so this column's history stays honest about what ran under
+  it and why it moved.
