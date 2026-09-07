@@ -1,0 +1,95 @@
+{
+  "slug": "starline-san-pablo-gateway-oakland",
+  "categories": [
+    "nightlife-sound",
+    "food-drink"
+  ],
+  "tags": [
+    "trending",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 37.8122821,
+    "lng": -122.2725458
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "San Pablo Gateway",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "STARLINE — Instagram (@starlinecomplex), read 2026-09-07 for current name, hours and programming",
+      "url": "https://www.instagram.com/starlinecomplex/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "The Oaklandside (Nosh) — Starline renamed, Sistas Wings takes the kitchen (Momo Chang, 6 May 2026)",
+      "url": "https://oaklandside.org/2026/05/06/starline-sable-lounge-lodge-sanaa-shake-shack-open/",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-06T00:00:00Z"
+    },
+    {
+      "name": "The Oaklandside (Nosh) — Bad Decision takes over A Capella; opened late February 2026, Wed-Sat to 2am (Momo Chang, 7 April 2026)",
+      "url": "https://oaklandside.org/2026/04/07/nudi-blue-cheese-board-sodo-quebrada-opening/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-07T00:00:00Z"
+    },
+    {
+      "name": "KQED — Starline Social Club to Close at the End of the Year (Kristie Song and Gabe Meline, 17 Dec 2022; closure date, Los Rakas final show, Sam White quote)",
+      "url": "https://www.kqed.org/arts/13922825/starline-social-club-to-close-at-the-end-of-the-year",
+      "feedId": null,
+      "originalPublishedAt": "2022-12-17T00:00:00Z"
+    },
+    {
+      "name": "KQED — End of an Era: Oakland Venue Starline Social Club is On the Market (Oct 2020 listing, building history, 2015 opening, 2018 purchase)",
+      "url": "https://www.kqed.org/arts/13887215/end-of-an-era-oakland-venue-starline-social-club-is-on-the-market",
+      "feedId": null,
+      "originalPublishedAt": "2020-10-01T00:00:00Z"
+    },
+    {
+      "name": "Starline Social Club — the previous operation's own About page (building description: 1893 Odd Fellows hall, floor-by-floor capacities, speakeasy sideroom). STALE for hours and status; used only for the building.",
+      "url": "https://starlinesocialclub.com/about/",
+      "feedId": null,
+      "originalPublishedAt": "2022-01-01T00:00:00Z"
+    },
+    {
+      "name": "Yelp — Starline Social Club, still listed CLOSED as of 2026-09-07 (cited as the error the piece corrects, not as a fact source)",
+      "url": "https://www.yelp.com/biz/starline-social-club-oakland",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://ww2.kqed.org/app/uploads/sites/2/2021/05/Image-from-iOS-3.jpg",
+    "attribution": "Gabe Meline/KQED",
+    "attributionLink": "https://www.kqed.org/arts/13922825/starline-social-club-to-close-at-the-end-of-the-year",
+    "licenseNote": "KQED's photograph of the shuttered building, 4032x3024, comfortably over the Discover hero-card floor. Chosen deliberately over the venue's own Instagram photography, which is all crowd and dancefloor material: this is a Black-and-queer-adjacent nightlife room, and the canto-dos-ursos / queer-surf precedent says do not publish identifiable people where being pictured at this kind of venue could out them. That ruled out the strongest-looking images available. It also ruled out KQED's own 'Partygoers at Starline Social Club in 2019' frame. This exterior contains no people at all. Pairing a photo of the CLOSED building with the headline 'Yelp Says Closed. It Isn't.' is coherent rather than misleading — the image is the stale picture the piece is correcting, and the in-body caption says so."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T14:05:00Z",
+      "note": "Oakland Tier 1 queue (content/post-plan.md), ten #2 draw 3, drafted via near-write-article, byline STEFAN with the near-editor-party lens. DEDUPE: ran scripts/check-duplicates.mjs before writing — the same six known-distinct baseline pairs, no Starline pair. Matched on venue name + coordinates per the standing lesson, not slug similarity; nearest Oakland pins are bar-skula-oakland (Adams Point, ~2km) and 1234-go-records-temescal-oakland, both plainly distinct venues. TRUST 'auto': the venue's own live Instagram bio ('OPEN NOW', Wed-Sat 3-2am) plus TWO dated 2026 Oaklandside/Nosh reports plus an independent OpenStreetMap record that already carries the current name. THREE STALE FACTS CAUGHT AGAINST THE QUEUE ENTRY: (1) THE NAME CHAIN HAS FOUR LINKS, NOT THREE. The queue said Starline Social Club -> Bad Decision -> Starline. Oaklandside's 7 April 2026 piece is headlined 'Bad Decision takes over A Capella' — the room was briefly A CAPELLA in between, which the seeding pass missed entirely. (2) NEIGHBOURHOOD WAS WRONG IN BOTH DIRECTIONS. The queue filed it as Uptown; Oaklandside's April piece calls it 'the West Oakland bar'. OpenStreetMap places 2236 MLK Jr Way in SAN PABLO GATEWAY, Downtown Oakland, which is what is published here — neither of the two labels in the sources. (3) HOURS HAVE ALREADY MOVED SINCE THE RELAUNCH. A Starline relaunch post indexed at ~4 months old states 'Wednesday through Saturday 5PM to 2AM'; the bio now reads 3pm-2am. The copy therefore refuses to treat the numbers as durable and tells the reader to read the bio, which is the honest form. ALSO DROPPED, deliberately: the 'architect A.W. Smith' claim appears only in search-engine summaries and is absent from the venue's own About page, and localwiki.org (the apparent origin) sits behind a bot-verification wall I did not bypass — so no architect is asserted. Likewise no reopening date is asserted: a search summary offered '29 April 2026' but that date is not in the Oaklandside piece and appears to be bleed from an adjacent headline. RESEARCH FLOOR: near-deep-researcher multi-source pass. Five-plus preferred sources consulted — The Oaklandside/Nosh, Berkeleyside and Richmondside (which syndicate the same Nosh column), KQED x2, and the venue's own channels. THE BLOCKED-SOURCE RETRY WORKED A THIRD TIME THIS WEEK: oaklandside.org and berkeleyside.org both returned HTTP 429 to the plain fetch backend and both read cleanly through claude-in-chrome, matching the ebar and East Bay Nosh precedents. REDDIT LEG RAN AND CAME BACK EMPTY, which is itself the story: the newest r/oakland thread mentioning Starline Social Club is two years old and there is no Reddit discussion of the 2026 reopening at all. Recorded rather than glossed. GOOGLE REVIEWS: the Maps/Yelp surface is precisely what is broken here — Yelp still shows CLOSED with the previous operation's 4pm hours — so it was read as evidence of the error, not as a source of fact. That is LESS live customer corroboration than a normal venue piece; the first-party Instagram plus two dated alt-press reports plus the OSM record carry it. OPERATOR GROUND-TRUTH: not applicable, outside the Baixada Santista/SP/Rio scope. INSTAGRAM read as a first-class source per the 2026-09-04 directive, not merely cited: the feed carried a HERE & NOW Collective night ('SKIN IS IN, LESS IS MORE', 29 August 2026, 9pm-1.30am, DJs Sabaw / Jassy.Spins / Rell) and a recurring party called STICKY, both promoted by @urbanprodigyentertainment. The August date is already past and no dated event is inlined, per the 2026-09-04 dates-out-of-evergreen-copy directive; the recurring series are described without dates and logged as event leads in post-plan.md per event-belongs-to-venue."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T14:30:00Z",
+      "note": "Flipped to active after all six locales were written as genuine local editions and quality-gate-before-publish was checked explicitly in each. English source: shortTitle 27 chars (<=48), tagline 64 (<=90, caught and fixed at 94 on the first pass), seoDescription 257 (<=320), 6 bullets (>=3), body 421 words (>=150), geocode 0.9 (>=0.6), hero resolved. Structural rules re-measured per locale rather than assumed from English: longest paragraph 58 words (<=100), three sub-headers against a 421-word body, and 2 images against a ceil(421/250)=2 floor. IMAGE FLOOR MET HONESTLY WITH TWO REAL PHOTOGRAPHS, both KQED's, and the body was deliberately kept under 500 words so the floor stayed at two rather than padding toward a third image that does not exist — no press photograph of the REOPENED Starline exists anywhere: Oaklandside ran the rename as text only, its sole image being the Sana'a cafe, and Wikimedia Commons and Openverse have nothing on the building. Headline formula checked against a grep of every en.mdx shortTitle in the catalogue: the near-miss is 'The Bar the Listicles Keep Scheduling Wrong', the same correction CONCEPT, so the heavily-used 'The X That Y' shape was avoided entirely in favour of a two-sentence declarative. Opener bans checked in all six locales: no crowd-consensus first word, no faux-candor framing. Legal: the Yelp claim is verifiable and stated as a listing error rather than an accusation; the Sam White quote is reported speech from a public Instagram announcement as quoted by KQED; no identifiable private individuals appear in any image on the page."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.9,
+    "query": "2236 Martin Luther King Jr Way, Oakland, CA 94612 — resolved via OpenStreetMap, which records the venue at this address under the current name 'Starline' (and 'Starline Ballroom'), in San Pablo Gateway, Downtown Oakland"
+  },
+  "publishedAt": "2026-09-07T14:30:00Z",
+  "updatedAt": "2026-09-07T14:30:00Z"
+}
