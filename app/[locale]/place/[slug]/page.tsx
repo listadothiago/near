@@ -107,7 +107,8 @@ export default async function PlacePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <article className="mt-6">
+      <div className="lg:flex lg:items-start lg:gap-10">
+      <article className="mt-6 lg:flex-1 lg:min-w-0">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <BackLink />
           <ShareButton
@@ -178,6 +179,19 @@ export default async function PlacePage({
         <PlaceMap meta={content.meta} frontmatter={content.frontmatter} />
         <RelatedPlaces places={related} />
       </article>
+      {/* Desktop-only rail: fills the whitespace next to the 65ch reading
+          column on wide viewports rather than leaving it empty. Sticky so
+          it stays in view as the article scrolls; hidden below lg since
+          there's no spare width to give it on narrower screens. */}
+      <aside className="hidden lg:block lg:w-[300px] lg:shrink-0 lg:sticky lg:top-6 lg:mt-6">
+        <HousePromo
+          locale={locale as ContentLocale}
+          slot="place-rail-1"
+          size="half-page"
+          excludeSlug={slug}
+        />
+      </aside>
+      </div>
       <Footer stats={stats} />
     </>
   );

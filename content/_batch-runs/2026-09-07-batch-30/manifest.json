@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 3,
+  "publishedCount": 4,
   "candidates": [
     {
       "name": "Hausu",
@@ -148,11 +148,44 @@
       "name": "E. Pellicci",
       "city": "London",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+        }
+      },
+      "retryCount": 0,
+      "slug": "e-pellicci-bethnal-green-london",
+      "author": "plinio",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "The Jago",

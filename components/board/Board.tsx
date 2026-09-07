@@ -263,7 +263,11 @@ export default function Board({
             banner (2026-09-02), which buys back 150px of this height
             budget — but this guard stays, because the map itself is the
             variable part and can still overflow on short viewports. */}
-        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-4 md:max-h-[calc(100vh-2rem)] md:overflow-y-auto md:overflow-x-hidden">
+        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:overflow-x-hidden">
+          {/* top-20 (not top-4): the sticky header collapses but never
+              disappears, so a small offset let the map ride up under it —
+              this clears even the compact header's height (operator,
+              2026-09-07). max-h shrinks by the same amount to match. */}
           <div className="flex justify-between items-center gap-2 px-2.5 py-2 border-b-[3px] border-ink">
             {isWideViewport ? (
               <h2 className="text-[0.9rem] m-0">{t("map")}</h2>

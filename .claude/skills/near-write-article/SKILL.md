@@ -557,7 +557,13 @@ discipline was followed, `aeo` confirms the JSON-LD actually matches the
 page and the most-liftable sentences survive being quoted alone. Apply
 `content/rules.md` → `sourced-price-ranges` and AEO’s agent-usability
 checklist to the touched public surface; record any unavailable price
-source or untested UI behavior honestly. For a
+source or untested UI behavior honestly. Run `price-police`'s pass here
+too, same footing as `link-police`: it checks that a price signal actually
+sourced in research made it into the drafted body (not just the evidence
+packet), that it's at least a qualitative tier when no fresh precise
+figure exists, and that it reads as a standalone AEO-liftable answer to
+"how much does X cost" — added after TOAD Bakery's first draft shipped
+with sourced pricing sitting unused. For a
 standing-column entry specifically: also prepend
 the new slug to that column's `content/<column>-index.json` `slugs`
 array and its own doc's Series Index — the archive page and RSS feed

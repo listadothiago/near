@@ -1,0 +1,83 @@
+{
+  "slug": "e-pellicci-bethnal-green-london",
+  "categories": ["food-drink", "city-culture"],
+  "tags": ["local-legend"],
+  "coordinates": {
+    "lat": 51.5264757,
+    "lng": -0.0634292
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Bethnal Green",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Wikipedia — E. Pellicci",
+      "url": "https://en.wikipedia.org/wiki/E._Pellicci",
+      "feedId": null
+    },
+    {
+      "name": "Time Out — The King of All London Caffs: an oral history of E. Pellicci",
+      "url": "https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
+      "feedId": "timeout-london"
+    },
+    {
+      "name": "Love Bethnal Green — E Pellicci's",
+      "url": "https://www.lovebethnalgreen.com/e-pelliccis-the-classic-east-end-cafe-serving-bethnal-green-for-over-a-century/",
+      "feedId": null
+    },
+    {
+      "name": "British Listed Buildings — E. Pellicci Cafe listing record",
+      "url": "https://britishlistedbuildings.co.uk/101391332-e-pellicci-cafe-st-peters-ward",
+      "feedId": null
+    },
+    {
+      "name": "E. Pellicci — official site",
+      "url": "https://epellicci.co.uk/",
+      "feedId": null
+    },
+    {
+      "name": "r/london — We are Nev and Anna from E. Pellicci cafe. AMA!",
+      "url": "https://www.reddit.com/r/london/",
+      "feedId": null
+    },
+    {
+      "name": "r/fryup — E Pellicci, Bethnal Green, London price threads",
+      "url": "https://www.reddit.com/r/fryup/comments/1qhj93q/e_pellicci_bethnal_green_london_1420/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/London_Borough_of_Tower_Hamlets_-_E._Pellicci_Cafe_-_20230330173314.jpg",
+    "attribution": "Hjamesberglen, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:London_Borough_of_Tower_Hamlets_-_E._Pellicci_Cafe_-_20230330173314.jpg",
+    "licenseNote": "CC BY-SA 4.0, Wiki Loves Monuments 2022 submission. Exterior of the Grade II-listed vitrolite-glass frontage, 2023."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T22:54:04.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, article 4/30: researched English draft. Sourced beyond Time Out per standing rule: Wikipedia, Love Bethnal Green, British Listed Buildings record, official site, Reddit (AMA + r/fryup price-tracking threads). Current-status confirmed via Google Maps: open, 4.8/3,140 reviews, price band £10-20pp (995 reports), photos as recent as 4 days ago, an owner post about a June 2026 fridge-breakdown closure and a since-lapsed 'closed until 1 Sept' visitor note both show an actively maintained listing, not a stale one. Google price band cross-checked against three dated r/fryup posts (a la carte full-English at £13.40, £14.20, £17 across roughly a year) — used only to state the durable trend (prices have risen as its profile grew) and the sourced Google band, never a single invented current figure. Grade II listing (2005) verified via British Listed Buildings. Maria Pellicci's 2025 Order of the Star of Italy and the 2024 'Down the Caff' podcast are the freshness hooks distinguishing this from a purely historical piece. Pending: hero image resolution, five locale editions, full sign-offs, publish gates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:20:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved — tier 1, CC BY-SA 4.0 Wikimedia Commons photo of the actual listed frontage (Wiki Loves Monuments 2022 submission), better than the generic Google Business photo option used on the two prior batch articles. Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: Kray-twins association framed as widely reported/attributed ('widely said to have'), not asserted as fact about real deceased/living persons in a way that risks defamation; Maria/Nev/Anna Pellicci covered via their own public business role, not a private fact; the negative UGC price complaint attributed and dated. Link-density passes (Wikipedia/Listed Buildings/Reddit in-text, internal NearLink to Wilton's Music Hall). Sourced-price-ranges gate: Google £10-20pp band plus three dated Reddit price points, phrased as a liftable AEO-friendly answer per the 2026-09-07 rule addition. Red team: no stale price stated as current-only-fact; no internal jargon leaked. Discover audit clean. Revenue pass: no natural affiliate/ad-sales opportunity beyond existing coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words with its own publishNote and price paragraph."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "E Pellicci, 332 Bethnal Green Road, London E2 0AG — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T22:53:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/E+Pellicci/@51.5264757,-0.0634292,17z/data=!3m1!4b1!4m6!3m5!1s0x48761cc5ebe9ec3d:0x9e5d80938bd1e5ef!8m2!3d51.5264757!4d-0.0634292!16s%2Fg%2F1t_hygsm"
+  },
+  "publishedAt": "2026-09-07T22:54:04.000000+00:00",
+  "updatedAt": "2026-09-07T22:54:04.000000+00:00"
+}
