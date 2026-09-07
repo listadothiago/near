@@ -130,7 +130,7 @@ export default function PlaceCard({
         ) : (
           <span className="font-bold whitespace-nowrap">
             {revised && (
-              <span className="mr-1 text-accent-ink">{tf("revisedShort")}</span>
+              <span className="mr-1 bg-ink px-1 text-accent">{tf("revisedShort")}</span>
             )}
             <time dateTime={stampIso}>{postedOn}</time>
           </span>

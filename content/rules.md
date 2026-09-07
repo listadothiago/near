@@ -111,9 +111,16 @@ rules:
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,
       >= 3 bullets, long-form body >= 150 words in at least English,
-      geocode confidence >= 0.6, a hero image was resolved, and the
-      link-density rule below passes. If hero image resolution fails
-      entirely, the place is skipped, not published without an image.
+      a Google Maps pin check has recorded the exact coordinates,
+      verification timestamp, and Maps URL in `meta.geocode` (provider
+      `google-maps`, confidence >= 0.9), a hero image was resolved, and
+      the link-density rule below passes. Run
+      `node scripts/check-geocodes.mjs <slug>` for every new or touched
+      active place before it is committed. This is fix-on-touch: legacy
+      pins are not a reason to block an unrelated build, but an edited
+      legacy pin must clear the current gate. If hero image resolution
+      fails entirely, the place is skipped, not published without an
+      image.
 
       The 150-word floor (lowered from 600 on 2026-09-01, operator
       directive) is a floor, not a target — write as tight as the piece

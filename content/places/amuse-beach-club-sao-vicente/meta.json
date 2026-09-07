@@ -8,8 +8,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": -23.9799,
-    "lng": -46.3931
+    "lat": -23.9805185,
+    "lng": -46.3699319
   },
   "place": {
     "city": "São Vicente",
@@ -43,6 +43,12 @@
       "url": "https://vamosgay.com/latin-america/brazil/sao-paulo/gay-sao-vicente-santos-guaruja-praia-grande-gls-litoral/",
       "feedId": null,
       "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Google Maps — AMUSE Beach Club (pin verification)",
+      "url": "https://share.google/isqrdyKG482x8i7Nn",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T16:49:21Z"
     }
   ],
   "heroImage": {
@@ -59,13 +65,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Baixada Santista content push (near-war-room), acting on BACKLOG.md's São Vicente leads paragraph -- Amuse Club, flagged there as needing verification before drafting, not assumed from the backlog note alone. Operator-directed research pass (chat request) -> trust: auto per rules.md trust-gate. Verified current via its own Instagram (@amuseclub), which shows live September 2026 programming -- a 5th-anniversary party on Sept 5, recurring 'Baile da AMUSE' nights, and cross-promoted dates with House of Mamba Negra (a ballroom/voguing collective) and Festa Pandora -- plus a live Facebook page and third-party QLIST listing, all corroborating the Al. Paulo Gonçalves, 680, Ilha Porchat address and sea-view rooftop/indoor-outdoor dance floor setup. No boat-party programming was found this pass despite the backlog note flagging it as a possibility -- not included in the copy since it can't be substantiated. The House of Mamba Negra connection is real and current per the venue's own Instagram, but a standalone Near piece on São Vicente's ballroom scene was not written this pass since House of Mamba Negra's own base/schedule could not be independently verified beyond this cross-promotion -- logged to content/requests.md instead of forced. Coordinates approximate for the Ilha Porchat address, not an independently verified geocode pin -- confidence 0.6. Hero image is the public Ilha Porchat overlook (Wikimedia Commons, CC BY-SA 3.0) the venue itself sits on top of, not a venue-interior photo -- logged as a compromise pending a real photo."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T16:49:21Z",
+      "note": "P0 geolocation correction: verified AMUSE Beach Club's own Google Maps listing and replaced the previously documented approximate Ilha Porchat coordinate with its listing pin (-23.9805185, -46.3699319)."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Al. Paulo Gonçalves, 680, Ilha Porchat, São Vicente, SP — approximate placement from published venue address, not independently pin-verified"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "AMUSE Beach Club, Al. Paulo Gonçalves, 680, Ilha Porchat, São Vicente, SP — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T16:49:21Z",
+    "googleMapsUrl": "https://share.google/isqrdyKG482x8i7Nn"
   },
   "publishedAt": "2026-09-01T20:04:29Z",
-  "updatedAt": "2026-09-01T20:04:29Z"
+  "updatedAt": "2026-09-07T16:49:21Z"
 }

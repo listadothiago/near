@@ -120,6 +120,11 @@ export const placeMetaSchema = z.object({
     provider: z.string(),
     confidence: z.number().min(0).max(1),
     query: z.string(),
+    // New and corrected pins record the Google Maps check that established
+    // their public coordinates. Optional so legacy catalogue entries can be
+    // corrected on touch rather than failing the whole production build.
+    verifiedAt: z.iso.datetime({ offset: true }).optional(),
+    googleMapsUrl: z.url().optional(),
   }),
   publishedAt: z.iso.datetime({ offset: true }),
   updatedAt: z.iso.datetime({ offset: true }),
