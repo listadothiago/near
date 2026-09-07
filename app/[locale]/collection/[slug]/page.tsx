@@ -21,6 +21,7 @@ import Dateline from "@/components/layout/Dateline";
 import CollectionPlaces from "@/components/collection/CollectionPlaces";
 import LongFormBody from "@/components/place/LongFormBody";
 import ReasonsList from "@/components/place/ReasonsList";
+import PublishNote from "@/components/place/PublishNote";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -130,6 +131,12 @@ export default async function CollectionPage({
           <ReasonsList
             bullets={content.frontmatter.bullets}
             title={tCollection("whyGo")}
+          />
+        )}
+        {content.frontmatter.publishNote && (
+          <PublishNote
+            quote={content.frontmatter.publishNote.quote}
+            attributedTo={content.frontmatter.publishNote.attributedTo}
           />
         )}
         <LongFormBody>

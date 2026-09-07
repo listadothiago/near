@@ -140,6 +140,22 @@ export const placeContentFrontmatterSchema = z.object({
   shortTitle: z.string().min(1).max(48).optional(),
   tagline: z.string().min(1).max(90),
   bullets: z.array(z.string().min(1)).min(3),
+  // The publish-call box, rendered directly under `bullets`: a short,
+  // first-person quote from whoever actually made the call to publish
+  // this piece (an AI byline, the chief editor, or the curator when he
+  // made the call himself) explaining briefly why. Operator directive,
+  // 2026-09-07, enforced immediately: mandatory on every NEW place from
+  // this point forward; fix-on-touch for the existing catalogue like the
+  // other quality-gate-before-publish conditions, not a reason to block
+  // an unrelated build. `attributedTo` names the role/persona, never a
+  // private individual's residence or other operator-location-privacy
+  // detail.
+  publishNote: z
+    .object({
+      quote: z.string().min(1).max(280),
+      attributedTo: z.string().min(1).max(80),
+    })
+    .optional(),
   seoDescription: z.string().min(1).max(320),
 });
 export type PlaceContentFrontmatter = z.infer<
@@ -206,6 +222,14 @@ export const collectionContentFrontmatterSchema = z.object({
   // editorial distinction belongs — the schema only knows the field is
   // sometimes inapplicable.
   bullets: z.array(z.string().min(1)).min(3).optional(),
+  // See placeContentFrontmatterSchema's `publishNote` — same box, same
+  // rule, applies wherever `bullets` is actually present on a collection.
+  publishNote: z
+    .object({
+      quote: z.string().min(1).max(280),
+      attributedTo: z.string().min(1).max(80),
+    })
+    .optional(),
   seoDescription: z.string().min(1).max(320),
 });
 export type CollectionContentFrontmatter = z.infer<

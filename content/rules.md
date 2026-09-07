@@ -255,6 +255,30 @@ rules:
       actually substantiates, and it is still subject to the headline
       formula check above.
 
+      PUBLISH-NOTE BOX (operator, 2026-09-07, enforced immediately). Every
+      NEW place or collection carrying a `bullets` box must also carry a
+      `publishNote` — a short first-person quote (<=280 chars) from whoever
+      actually made the call to publish, with `attributedTo` naming the role
+      or persona (an AI byline, "chief editor", or the curator when he made
+      the call himself), rendered in its own box directly below the bullets.
+      This is fix-on-touch like the rest of this gate: mandatory going
+      forward, not a reason to block an unrelated build on the existing
+      catalogue. `attributedTo` names a role, never a private residence or
+      other operator-location-privacy detail (see that rule below). The
+      quote must be genuine editorial reasoning, not a restatement of the
+      bullets or a marketing line.
+
+      DEFAULT CREDIT: the AI persona/role that actually made the publish
+      call. Operator clarification, 2026-09-07: crediting the curator
+      (Thiago) as `attributedTo` is reserved for a choice he personally made
+      from his own knowledge — not merely being present in the session, not
+      merely supplying a source, and not the default for anything an AI
+      skill selected off a candidate list, a source article, or a war-room
+      slate. When a piece offers the reader a menu-style choice (which dish,
+      which room, which itinerary stop) and an AI persona is the one who
+      actually chose it, credit that persona, never the curator, even if he
+      was in the room.
+
       HERO IMAGE TIERS, in preference order: (1) a real source photo with
       attribution, (2) licensed stock, (3) an original illustration from
       near-illustrator. Tier 3 reverses this rule's earlier "no
@@ -625,7 +649,10 @@ rules:
     description: >
       A single near-editor run creates or updates at most 5 places, to
       bound cost and keep quality high while the pipeline is being
-      validated. Adjust upward once Stage 1 output quality is proven.
+      validated. An explicit near-batch-30 invocation instead permits up to
+      30 successful new articles across the entire batch, with every existing
+      per-article gate intact. Updates and locale files do not count as new
+      articles. The ordinary five-place cap remains in force outside that mode.
     trigger: "per skill invocation"
-    action: "stop processing after 5 successful publishes; log remainder as deferred"
+    action: "stop after 5 successful publishes ordinarily, or 30 successful new articles for explicit near-batch-30 mode; log remainder as deferred"
 ```

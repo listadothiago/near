@@ -21,6 +21,12 @@ writes → Chief Editor, TOV, SEO, Legal revise → Editor/Translators
 localize to all locales."* This skill is that flow, made concrete and
 complete.
 
+## Batch invocation
+
+For an explicit 30-article run, use `../near-batch-30/SKILL.md` to share
+research and schedule these same gates with per-article verdicts and resumable
+checkpoints. It does not replace or waive this pipeline.
+
 ## The pipeline
 
 ### 1. Confirm topic and terms — `near-seo` + `near-trendsetter`
@@ -508,7 +514,9 @@ for whitespace-only changes. Never backfill it to look fresher. Full
 rule: `currency-maintenance` in `content/rules.md`.
 
 All of `content/rules.md`'s `quality-gate-before-publish` conditions,
-checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
+checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets, a
+`publishNote` (short quote + `attributedTo`, from whoever actually made the
+publish call, rendered directly under the bullets box on every new piece),
 long-form body ≥ 150 words in at least English (a floor, not a target —
 write tight, don't pad; see `rules.md` for the 2026-09-01 directive and
 its Featured Article/blog/column exceptions), for every new or touched
