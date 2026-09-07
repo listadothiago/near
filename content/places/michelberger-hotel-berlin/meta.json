@@ -1,0 +1,29 @@
+{
+  "slug": "michelberger-hotel-berlin",
+  "categories": ["accommodation", "city-culture"],
+  "tags": ["hipster", "late-night"],
+  "coordinates": {"lat": 52.5045667, "lng": 13.4478541},
+  "place": {"city": "Berlin", "neighborhood": "Friedrichshain", "region": "Berlin", "country": "Germany"},
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {"name": "Michelberger Hotel — rooms", "url": "https://www.michelbergerhotel.com/en/rooms/", "feedId": null, "originalPublishedAt": "2026-09-07T17:22:45Z"},
+    {"name": "Michelberger Hotel — What's On", "url": "https://whatson.michelbergerhotel.com/category/events/", "feedId": null, "originalPublishedAt": "2026-09-07T17:22:45Z"},
+    {"name": "Time Out Berlin — Michelberger Hotel review", "url": "https://www.timeout.com/berlin/hotels/michelberger-hotel-1", "feedId": "timeout-london", "originalPublishedAt": "2026-04-14T00:00:00Z"},
+    {"name": "Condé Nast Traveler — Michelberger Hotel review", "url": "https://www.cntraveler.com/hotels/berlin/michelberger-hotel", "feedId": null, "originalPublishedAt": "2026-09-07T17:22:45Z"},
+    {"name": "The Berliner — RAW-Gelände venues", "url": "https://www.the-berliner.com/english-news-berlin/raw-gelande-venues-can-stay-open/", "feedId": "the-berliner", "originalPublishedAt": "2026-08-11T17:49:00Z"}
+  ],
+  "heroImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/places/michelberger-hotel-berlin/hero.png",
+    "attribution": "Illustration by NEAR — AI-generated, vector-derived abstract work",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "A stylized editorial illustration of a generic former-factory courtyard with outdoor cinema. It is not a depiction of the Michelberger Hotel."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [{"status": "active", "at": "2026-09-07T17:22:45Z", "note": "NITE-PORTER accommodation and city-culture page. Google Maps listing verified at the time of publication: Michelberger Hotel, Warschauer Str. 39-40, 10243 Berlin; listing pin copied exactly. Research floor: official hotel rooms and current calendar, Time Out, Condé Nast Traveler, The Berliner, recent Reddit discussion, and Google Maps listing/review summary checked. Google Trends DE/GB/TH travel feeds were attempted but returned fetch errors, so no trend claims were made. PEOPLE Festival is confirmed at the hotel for 10–11 October 2026; it is noted as a live calendar item, not treated as a separate event page because the available source does not yet substantiate a standalone editorial entry. Hero is clearly disclosed as an AI-generated, non-documentary illustration."}],
+  "geocode": {"provider": "google-maps", "confidence": 0.95, "query": "Michelberger Hotel, Warschauer Str. 39-40, 10243 Berlin", "googleMapsUrl": "https://www.google.com/maps/place/Michelberger+Hotel/@52.5045667,13.4478541,17z", "verifiedAt": "2026-09-07T17:22:45Z"},
+  "publishedAt": "2026-09-07T17:22:45Z",
+  "updatedAt": "2026-09-07T17:22:45Z"
+}
