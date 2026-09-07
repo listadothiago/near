@@ -107,6 +107,26 @@ rules:
     trigger: "about to create a place that does not already exist in content/places/"
     action: "do a basic current-status check before writing; skip and log if the place appears closed/gone rather than publishing stale content"
 
+  - id: sourced-price-ranges
+    description: >
+      On every new article and refresh, actively look for useful prices or
+      ranges in a current menu, tariff, ticket page or booking source. When
+      available, state the amount/range, unambiguous currency, unit (per
+      person, dish, ticket or room/night), what it includes, material fees
+      and conditions, and verification date in visible text with a direct
+      source link. Verify during this session before claiming a current
+      price. A sampled hotel quote must include stay dates, occupancy and
+      room/rate basis; never generalize it into a year-round rate. Free
+      admission needs sourcing too. Do not infer a numeric range from
+      dollar-sign badges, fabricate endpoints, or convert currency without
+      a dated exchange-rate source. If unavailable, say so plainly only
+      where pricing is useful to the reader and log the gap for refresh.
+      Keep currency, units and conditions consistent across all six locales
+      and any supported structured-data fields; never add unsupported
+      metadata fields merely to satisfy this rule.
+    trigger: "creating or refreshing any article with reader-relevant costs"
+    action: "verify and link useful price information; have SEO/AEO check standalone clarity and locale consistency; log unavailable prices without inventing them"
+
   - id: quality-gate-before-publish
     description: >
       A place is only written/committed if all of: tagline <= 90 chars,
