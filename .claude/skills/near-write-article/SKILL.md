@@ -511,8 +511,10 @@ All of `content/rules.md`'s `quality-gate-before-publish` conditions,
 checked explicitly, not assumed: tagline ≤ 90 chars, ≥ 3 bullets,
 long-form body ≥ 150 words in at least English (a floor, not a target —
 write tight, don't pad; see `rules.md` for the 2026-09-01 directive and
-its Featured Article/blog/column exceptions), geocode confidence ≥
-0.6, hero image resolved, the step 5/6 structural rules hold in **every
+its Featured Article/blog/column exceptions), for every new or touched
+place pin Google Maps has verified the exact coordinates and
+`node scripts/check-geocodes.mjs <slug>` passes, hero image resolved, the
+step 5/6 structural rules hold in **every
 locale, not just English** (no paragraph over 100 words; a sub-header at
 250 words and each 250 after; at least `ceil(words / 250)` images
 counting the hero) — a locale edition is a real edition, so a

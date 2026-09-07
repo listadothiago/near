@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="NEAR">
+  <rect width="512" height="512" fill="#10100f"/>
+  <!-- A deliberately spare N: it survives home-screen masking and 16px use. -->
+  <path fill="#ccff00" d="M126 118h66l128 188V118h66v276h-66L192 206v188h-66z"/>
+</svg>

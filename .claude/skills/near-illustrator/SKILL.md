@@ -301,7 +301,8 @@ order:
 2. **Licensed stock.** Acceptable, frequently mediocre. A generic stock
    shot of "cocktails" for a specific bar tells the reader nothing and is
    often *worse* than an illustration.
-3. **Original illustration** from this skill.
+3. **Original illustration** from this skill, including vector-derived
+   abstract work where its deliberate reduction is the stronger answer.
 
 Preference order is not fallback-only. A drawn hero that captures what's
 actually distinctive about a place can beat a technically-real photo
@@ -350,6 +351,10 @@ piece, vary across pieces:
 - Halftone and duotone print treatments
 - Cut-paper collage
 - Zine photocopy: heavy grain, blown-out contrast, xerox degradation
+- Precise vector-derived abstraction: a small vocabulary of deliberate
+  geometric forms, hard edges, and the existing Near palette, composed in
+  SVG/code and then rasterized at the required card size. This is a real
+  art-direction option, not a fallback-quality placeholder.
 
 The site's own aesthetic — newsprint, hard black strokes, acid green
 `#ccff00` — is a strong anchor, and pulling the accent into artwork ties
@@ -377,6 +382,27 @@ literal image or make every hero look identical.
 
 Avoid: photoreal rendering, 3D/octane render looks, generic "AI art"
 airbrushed gloss, anything with garbled text baked into it.
+
+## Vector-derived abstract work
+
+Use this route when a clean, graphic reduction expresses a piece's idea
+better than a scene — especially for a route, a column, a category-wide
+argument, a recurring series, or an identity asset. It is also appropriate
+when exact optical simplicity matters at a tiny size, such as a PWA icon.
+
+Build the image from intentional vector geometry (SVG/CSS/canvas), not a
+text-to-image approximation, then rasterize the final at the required
+dimensions. Keep the form count low enough to read at thumbnail size;
+one decisive mark can be better than a literal illustration. Use Near's
+existing newsprint, charcoal, black, and acid-green system rather than
+introducing a new palette. Do not imitate a venue photograph or imply an
+unverified physical detail.
+
+Record it as `heroImage.strategy: "illustration"`, with an attribution
+such as `"Illustration by NEAR — vector-derived abstract work"`. It is
+not AI-generated merely because it was created programmatically, so do
+not apply the AI-generated label unless a generative model actually made
+the artwork. It still needs the normal resolution, crop, and card checks.
 
 ## Disclosure
 

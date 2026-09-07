@@ -82,10 +82,16 @@ intent the YAML doesn't). Then, per candidate item:
    the place looks closed, moved, or rebranded, skip it and log why —
    don't publish a pin for somewhere that's no longer there. See
    `verify-still-open-before-create` in rules.md.
-6. **Geocode.** Resolve coordinates for the place (Nominatim/OpenStreetMap —
-   no API key, but respect its usage policy: identify with a real
-   `User-Agent`, stay under 1 req/sec, cache results). If confidence is
-   below the `quality-gate-before-publish` threshold, skip.
+6. **Geolocation police — Google Maps is the publish authority.** Resolve
+   the venue in Google Maps and copy the pin's latitude/longitude into
+   `meta.coordinates`; do not infer a street centre, neighbourhood, or
+   reuse a nearby venue's pin. Record `provider: "google-maps"`,
+   `confidence` of at least `0.9`, the exact lookup in `query`, the direct
+   Maps/share URL in `googleMapsUrl`, and the real check time in
+   `verifiedAt`. Nominatim/OpenStreetMap may help discover a candidate, but
+   it cannot clear the publish gate. Run
+   `node scripts/check-geocodes.mjs <slug>` after writing the metadata; a
+   failure means keep the place as a draft and resolve the disagreement.
 7. **Classify event vs. evergreen place.** If the source item describes a
    one-off or time-bound happening (concert, festival run, pop-up,
    exhibition with an end date) rather than a persistent venue, set
@@ -180,7 +186,9 @@ intent the YAML doesn't). Then, per candidate item:
    later run rather than left indefinitely.
 11. **Validate.** Every field must satisfy `lib/content/schema.ts`
     (`placeMetaSchema`, `placeContentFrontmatterSchema`) and the
-    `quality-gate-before-publish` rule. A schema violation should fail
+    `quality-gate-before-publish` rule. Run
+    `node scripts/check-geocodes.mjs <slug>` as part of this step for each
+    new or corrected active pin. A schema or geocode violation should fail
     loudly, not get silently patched around — see how `npm run build`
     already throws on invalid frontmatter.
 12. **Apply `trust-gate`.**

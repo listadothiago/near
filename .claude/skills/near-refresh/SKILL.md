@@ -157,6 +157,15 @@ prose + fenced YAML/lists, read the prose too.
    the candidate and context (which source, why it's relevant, which
    preferred destination if any); `near-editor` still independently
    verifies and writes.
+
+7b. **Geolocation police on every touched place.** Before a refreshed place
+   is committed, open its Google Maps listing and verify that
+   `meta.coordinates` matches its pin. Record the Maps URL and real check
+   time in `meta.geocode`, run `node scripts/check-geocodes.mjs <slug>`,
+   and correct any disagreement in every rendered locale's factual copy if
+   an address is mentioned. Do not turn this into a catalogue-wide audit:
+   untouched legacy pins are corrected when a refresh otherwise reaches
+   them.
 7a. **Dispatch `near-translator` for locale gaps found in step 1.** For
    each place flagged missing one or more locales, invoke
    `.claude/skills/near-translator/SKILL.md` once per missing locale —

@@ -61,7 +61,7 @@ export default function manifest(): MetadataRoute.Manifest {
       // clipping the mark. Same asset for now; a dedicated maskable
       // version with more padding around the pin would be better.
       {
-        src: "/icons/icon-512.png",
+        src: "/icons/icon-maskable.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",
