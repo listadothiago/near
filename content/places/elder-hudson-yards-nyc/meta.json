@@ -1,7 +1,11 @@
 {
   "slug": "elder-hudson-yards-nyc",
-  "categories": ["food-drink"],
-  "tags": ["trending"],
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "trending"
+  ],
   "coordinates": {
     "lat": 40.7575809,
     "lng": -73.9981332
@@ -48,15 +52,20 @@
       "status": "active",
       "at": "2026-09-07T21:40:00Z",
       "note": "FOODIE-9000 byline. Sourced from near-sources-war-room's 2026-09-07 NYC seeding pass (trust: auto, corroborated by Time Out, Cititour, Pearl, The Infatuation, Resy). Google Maps confirms the pin as open and operating (4.7 stars, 25 reviews, wheelchair accessible), no closure flags. Research floor: near-deep-researcher reconciled three press write-ups on the menu and Henry Hall build-out context; Reddit (r/FoodNYC) has limited chatter this early but what exists confirms the opening date and the Indienne/Elder/Apas sequence at Henry Hall; Google reviews (25, recent, 4.7 average) single out the lamb chops and the bone-marrow nihari gravy, with no operational complaints logged yet. Five preferred-sources context check: Time Out, Cititour, Pearl, The Infatuation, Resy all carried it."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "Elder, 517 W 38th St, New York, NY 10018 (Henry Hall) — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T21:15:00Z",
+    "query": "elder-hudson-yards-nyc: 517 W 38th St, New York, NY 10018 — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:02:41.044Z",
     "googleMapsUrl": "https://www.google.com/maps/place/Elder/@40.7575809,-73.9981332,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259001f71d2cf:0x5e7bd239052516e9!8m2!3d40.7575809!4d-73.9981332!16s%2Fg%2F11ntpfsghb"
   },
   "publishedAt": "2026-09-07T21:45:00Z",
-  "updatedAt": "2026-09-07T21:45:00Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }

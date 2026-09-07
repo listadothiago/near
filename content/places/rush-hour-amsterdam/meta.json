@@ -75,15 +75,20 @@
       "status": "active",
       "at": "2026-09-07T18:30:29Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.3747911, 4.8904468). Old pin was ~261m off."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "Rush Hour Records, Spuistraat 110, 1012 VA Amsterdam — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:30:29Z",
+    "query": "rush-hour-amsterdam: Spuistraat 110, 1012 VA Amsterdam — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:05:54.367Z",
     "googleMapsUrl": "https://www.google.com/maps/place/Rush+Hour+Records+%F0%9F%92%BF/@52.3747911,4.8904468,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609c660dcaa73:0xdc57a2f10a562693!8m2!3d52.3747911!4d4.8904468!16s%2Fg%2F11cmr0prj_"
   },
   "publishedAt": "2026-09-01T16:35:01Z",
-  "updatedAt": "2026-09-07T18:30:29Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }

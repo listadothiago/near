@@ -619,3 +619,14 @@ AEO skill should check for agent friendliness of everything too
 - Research preparation: AAN directory, The Stranger and 48 Hills fetched; no sufficiently corroborated global trend established in this limited scan. All 27 saved Google Trends URLs attempted, all returned access errors. No demand figures inferred. Inbox contains only the already-rejected logo candidate.
 
 Validation: rules YAML parsed with 19 unique rule IDs; `git diff --check` passed; `npm run build -- --webpack` passed all 945 pages. Default Turbopack failed on a local port-binding restriction, including the escalated retry. Content validator reports 10 existing zh-CN mixed-script failures (P1.14 updated); this documentation/workflow batch edits no published locale content.
+
+
+## 2026-09-07 — Chinese copy repair and SEO feedback, Codex (GPT-6)
+
+14. **zh-CN latin-wedged-in-CJK copy defects — 10 pages.** `node scripts/validate-content.mjs` has been reporting these for a while and they are still open: Latin words left embedded mid-sentence in Chinese copy, e.g. `作speakeasy的` (starline-oakland), `工pinsa薄` (sipeos-east-bay), and eight separate instances in rush-hour-amsterdam (`丹house与`, `牌logo文`, …). Also affects hazlitts, jumbi, la-camionera, marineterrein, pracinha. Rechecked 2026-09-07 by Codex (GPT-6): the newly shipped elder and kween add two affected pages, bringing the total to ten. These are the only failures `validate-content.mjs` reports, so they are also **masking any new content defect** — the script's output is currently noise that gets scrolled past, which is exactly how the next real problem gets missed. Not a mechanical find-and-replace: a translator has to decide per instance whether the term is a genuine loanword Chinese readers expect in Latin script (`speakeasy`, `logo`) or a translation gap. Owner: near-translator. Surfaced 2026-09-07 during the P0.1 audit; untouched there deliberately, since silently editing copy inside a geolocation push is how unrelated changes get lost.
+
+**Completed:** ten zh-CN pages repaired with individual terminology choices; content validator passes. All ten Google Maps listings checked live in Chrome, names/addresses matched and pin coordinates unchanged. Jumbi and STARLINE had malformed saved listing URLs; replaced with working observed listing URLs. Verification times and translation edit times recorded in each metadata file. This was a language correction, not a complete factual refresh; remaining legacy concerns are P2.18.
+
+**SEO feedback:** fact-checked Noel Ceta and Dan Hinckley claims against primary Google guidance; findings and action mapping in `docs/multi-city-seo-fact-check.md`, original feedback preserved separately. No page-count traffic promise or speculative URL migration adopted.
+
+Validation: `node scripts/validate-content.mjs` passes; ten-slug geocode gate passes; `npm run build -- --webpack` builds all 945 pages.

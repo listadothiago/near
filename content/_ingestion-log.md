@@ -1180,3 +1180,8 @@ links and two `<NearLink>`s per locale. Opener bans clear in all six.
 Headline checked against the full `shortTitle` catalogue and against
 FIT-BOT's own two prior pins; the shape matches neither and is not a bare
 name.
+
+
+## 2026-09-07 — Codex (GPT-6), zh-CN correction
+
+P1.14: repaired mixed-script terms in elder, hazlitts, jumbi, kween, la-camionera, marineterrein, pracinha, rush-hour, sipeos and starline-san-pablo-gateway. Ordinary terms translated; genre/menu terms retained with readable boundaries. English facts and other locales unchanged. Ten live Maps identity/address checks passed with existing coordinates; metadata stamps updated, malformed Jumbi/STARLINE listing links replaced. Content validator passes. Legacy factual/embodiment concerns recorded as BACKLOG P2.18 for a proper multilingual refresh. No content rotation slot consumed.

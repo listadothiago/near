@@ -99,15 +99,20 @@
       "status": "active",
       "at": "2026-09-07T18:21:37Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.54448, -0.0469812). Old pin was materially accurate."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "La Camionera, 243 Well St, London E9 6RG — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:21:37Z",
+    "query": "la-camionera-hackney-london: 243 Well St, London E9 6RG — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:05:53.911Z",
     "googleMapsUrl": "https://www.google.com/maps/place/La+Camionera/@51.54448,-0.0469812,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d5737616cc9:0x5f9fc9ed50893b37!8m2!3d51.54448!4d-0.0469812!16s%2Fg%2F11vry4lkvc"
   },
   "publishedAt": "2026-09-04T13:51:55Z",
-  "updatedAt": "2026-09-07T18:21:37Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }

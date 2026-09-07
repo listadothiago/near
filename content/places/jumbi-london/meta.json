@@ -107,15 +107,20 @@
       "status": "active",
       "at": "2026-09-07T18:19:24Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.469883, -0.065583). Old pin was ~611m off."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "Jumbi, Unit 4.1, Copeland Park, 133 Copeland Rd, London SE15 3SN — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:19:24Z",
-    "googleMapsUrl": "https://www.google.com/maps/place/Jumbi/@51.469883,-0.0751102,16z/data=!4m10!1m2!2m1!1sJumbi+Peckham+London!3m6!1s0x48760332378a3441:0x5738130246f1218e!8m2!3d51.469883!4d-0.065583"
+    "query": "jumbi-london: Unit 4.1, Copeland Park, 133 Copeland Rd, London SE15 3SN — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:04:35.712Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Jumbi/@51.469883,-0.0681579,17z/data=!3m1!4b1!4m6!3m5!1s0x48760332378a3441:0x5738130246f1218e!8m2!3d51.469883!4d-0.065583!16s%2Fg%2F11t2z3ps4r"
   },
   "publishedAt": "2026-09-01T12:06:11Z",
-  "updatedAt": "2026-09-07T18:19:24Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }

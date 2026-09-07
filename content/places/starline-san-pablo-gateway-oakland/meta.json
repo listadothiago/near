@@ -88,15 +88,20 @@
       "status": "active",
       "at": "2026-09-07T18:34:08Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.8123089, -122.2725819). Old pin was materially accurate."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "STARLINE, 2236 Martin Luther King Jr Way, Oakland, CA 94612, San Pablo Gateway — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:34:08Z",
-    "googleMapsUrl": "https://www.google.com/maps/place/STARLINE/@37.8123089,-122.2773455,17z/data=!4m10!1m2!2m1!1sSTARLINE+San+Pablo+Gateway+Oakland!3m6!1s0x808f80aeca90efcf:0x6225f28966c933a7!8m2!3d37.8123089!4d-122.2725819"
+    "query": "starline-san-pablo-gateway-oakland: 2236 Martin Luther King Jr Way, Oakland, CA 94612 — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:07:33.474Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/STARLINE/data=!4m7!3m6!1s0x808f80aeca90efcf:0x6225f28966c933a7!8m2!3d37.8123089!4d-122.2725819!16s%2Fg%2F11b7q4m5jv!19sChIJz--Qyq6Aj4ARpzPJZonyJWI"
   },
   "publishedAt": "2026-09-07T14:30:00Z",
-  "updatedAt": "2026-09-07T18:34:08Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }
