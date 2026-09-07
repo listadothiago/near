@@ -202,8 +202,8 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 3 of 6 shipped   T2 0 of 3   T3 0 of 1
-t1-order:        Brighton → San Francisco → Oakland → Bangkok → London
+spent:           T1 4 of 6 shipped   T2 0 of 3   T3 0 of 1
+t1-order:        Brighton → San Francisco → Oakland → NYC → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
                  Brighton. Five cities over six slots means one city draws
@@ -251,6 +251,25 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  and Egg Palace still PENDING. The intended NEXT OAKLAND
                  DRAW is the Oakland reopenings collection, once the
                  henry j. is live.
+                 NYC — SEEDED then SERVED 2026-09-07, both in the same
+                 slot. Seeding pass (committed afe5454) landed Hell
+                 Gate, THE CITY, and Greenpointers as new sources plus
+                 10 candidates (4 auto-trust, 6 review-trust). All four
+                 auto-trust candidates shipped the same day: El Califa
+                 de León (Flatiron), Elder (Hudson Yards), The Little
+                 Bookshop (East Williamsburg), and Kween (Astoria) —
+                 Near's first Queens pin and first NYC nightlife-sound
+                 pin. All six locales, `npx next build` verified,
+                 pushed at 99582fa. One open discrepancy: El Califa de
+                 León's Google listing shows "temporarily closed" with
+                 no corroborating press or site notice — logged in its
+                 `statusHistory` as unresolved rather than treated as a
+                 real closure; recheck on NYC's next turn. NYC'S QUEUE
+                 SURVIVES for its next turn — the six review-trust
+                 candidates (Bar Etienne, Herbie's Burgers, Kirbee's,
+                 Monkey Thief, Cospa Ramen, and the time-limited Plaza
+                 pop-up, which is flagged do-not-draft-as-pin) are
+                 PENDING operator approval before drafting.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -258,15 +277,14 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         NYC (Tier 1) — SEEDED 2026-09-07, drawable now. A
-                 near-sources-war-room pass landed 10 candidates (4
-                 auto-trust, 6 review-trust) in post-plan.md's NYC
-                 section, plus 3 new onboarded sources (Hell Gate, THE
-                 CITY, Greenpointers) in sources.md. The empty-queue hold
-                 no longer applies — draw from this queue next. Fourth
-                 slot of ten #2, next in t1-order after Oakland, whose
-                 third slot is CLOSED: it both seeded and shipped on
-                 2026-09-07 (starline-san-pablo-gateway-oakland).
+NEXT-UP:         London (Tier 1) — fifth slot of ten #2, next in
+                 t1-order after NYC, whose fourth slot is CLOSED: it
+                 both seeded and shipped four pins on 2026-09-07 (El
+                 Califa de León, Elder, The Little Bookshop, Kween).
+                 London's queue is not fully blocked — Sister Midnight
+                 and Hampstead Heath still are, but E. Pellicci, La
+                 Camionera, The Divine, Hausu and TOAD are open and
+                 verified per the note below.
 
                  CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
                  1) — DRAW" while the tier roster above, updated the same
