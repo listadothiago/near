@@ -42,7 +42,7 @@ export default async function OgImage({
       >
         <div style={{ width: 64, height: 8, background: accent, marginBottom: 40 }} />
         <div style={{ fontSize: 28, color: "#6C766F", marginBottom: 16, display: "flex" }}>
-          near.tips
+          NEAR
         </div>
         <div
           style={{

@@ -78,6 +78,11 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Ad-hoc chat request per BACKLOG.md's Porto priority bump (ahead of Berlin) — Near's first Porto pin. Deliberately avoided Livraria Lello (the famous/touristy pick) in favor of Gato Vadio, a self-described 'Livraria · Café-Bar · Associação Cultural' at Rua da Maternidade 124, 4050-369 Porto. Verified via the shop's own blog (gatovadiolivraria.blogspot.com): founded 2007 as a poetry/politics/anarchist-leaning independent bookshop and space of 'resistance, culture and social intervention'; survived a near-closure by converting into a non-profit cultural association in 2011 (per ReLI and Radical Guide); evicted from its original address in 2019 amid Porto gentrification and relocated ~50m away to the current Rua da Maternidade address, reopening after renovation in March 2020 (Time Out Porto). Current hours per the blog: Tuesday-Saturday 3pm-7pm, plus evenings when there's a scheduled event. The blog's own event log shows an active, ongoing program through mid/late 2026 (an AI-and-society discussion 30 July 2026; an ecosocialist network debate 22 July 2026; a meeting with Filipino-Canadian writer Paulina Constancia 15 July 2026; an Amazonia-queer documentary screening 26 June 2026; a 'Reencantar o Mundo' presentation/debate 23 August 2026) — all now in the past relative to today, so no single forward-dated event is used as the hook; the pattern of frequent programming is described honestly as ongoing rather than invented as a specific future date. No September/October 2026 listing could be confirmed via Facebook or web search at time of writing — flagged as a gap for a follow-up pass once the shop posts its autumn calendar. Hero image: no rights-clear photo of the actual Gato Vadio shopfront turned up on Wikimedia Commons; used a CC BY-SA 4.0 photo of Rua da Maternidade itself (the same street, showing the Palacete Pinto Leite portico) instead of leaving the piece imageless or generating an illustration, per the operator's 2026-09-01 real-photo-over-limbo policy — disclosed honestly in licenseNote. Coordinates are a manual approximation for the Cedofeita/central-Porto area around Rua da Maternidade (confidence 0.5); an exact geocode of no. 124 is still owed as follow-up. Filed as trust: auto and status: draft per the operator's explicit direction for this piece; holding as draft pending the operator's own review before it goes live, since this is Near's very first Porto page and worth a human look before publishing to a brand-new city."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T11:12:00Z",
+      "note": "Editorial call by the operator, not a factual correction: all J.K. Rowling / Harry Potter framing removed from the opening paragraph in all six locales. The opener had contrasted Gato Vadio against the Harry Potter merchandise at Porto most famous bookshop. Replaced rather than deleted, so the piece keeps a hook: the contrast now runs on the timed-entry ticketing and slot-based visitor flow at that same famous shop, set against Gato Vadio physical reality on Rua da Maternidade -- one living-room-sized room, Bakunin and bell hooks over bestseller tables, and roughly thirty-something opening hours a week. Every fact in the replacement was already present elsewhere in the piece or in meta.json; nothing new was sourced or invented. The existing Livraria Lello comparison later in the piece carries no Harry Potter framing and was left as written."
     }
   ],
   "geocode": {
@@ -86,5 +91,5 @@
     "query": "Rua da Maternidade 124, Cedofeita, Porto, Portugal"
   },
   "publishedAt": "2026-09-01T12:42:17Z",
-  "updatedAt": "2026-09-01T12:42:17Z"
+  "updatedAt": "2026-09-07T11:12:00Z"
 }

@@ -24,6 +24,12 @@ piece the failure lives**:
 | Method | Judgement against `style-guide.md` | Counting, against the catalogue |
 | Owns | Opening-line bans, `shortTitle` formulas, process-as-copy, rank-pulling, persona drift | Recurring words, constructions, rhythms and transitions inside the body |
 
+The 2026-09-06 anti-slop ruleset is split on the same line: the eight
+rules are stated once, in `near-tov-police` Job 1c, which runs them on
+the piece in hand at status-flip time. This skill owns their
+**catalogue baseline** — how often the house is reaching for `showcase`
+or an em dash, not whether this one sentence may.
+
 If a finding is about the first sentence or the headline, it is
 `near-tov-police`'s and this skill does not duplicate it. If it is about
 the same construction appearing in paragraph three of eleven different
@@ -50,16 +56,22 @@ finding.
 
 - **The em-dash gloss** — a clause set off to restate the previous
   clause in different words. Near's house voice earns some of these;
-  it does not earn one per paragraph. Count them. If a body has more
-  em-dashes than paragraphs, that is a finding on its own.
-- **The two-part correction**: *"not X, but Y"* / *"X isn't the point;
-  Y is"* / *"não é X, é Y"*. Devastating once, a mannerism twice.
+  it does not earn one per paragraph. **Hard cap since 2026-09-06:
+  roughly one em dash per 1000 words** (`near-tov-police` Job 1c rule 1
+  carries the count command). Clustering — more em-dashes than
+  paragraphs — remains a finding on its own even under the cap.
+- **The two-part correction**: *"not X, but Y"* / *"not just X, it's
+  Y"* / *"X isn't the point; Y is"* / *"não é X, é Y"*. Banned outright,
+  not rationed (BACKLOG.md 1.2; `near-tov-police` items 2c and Job 1c
+  rule 2). Devastating once, a mannerism twice.
 - **The withheld noun**: *"and that is the thing"* / *"which is the
   detail that matters"* / *"and that's what you're actually buying."*
 - **The scale reversal**: *"a small room doing a large thing"*,
   *"an unremarkable door and a remarkable everything else."*
 - **The rule-of-three list** closing a paragraph, especially three
-  bare nouns. One per piece.
+  bare nouns. One per piece — and **zero** when the three words are
+  synonyms ("elegant, refined, and sophisticated"), which is a finding
+  on first instance (`near-tov-police` Job 1c rule 3).
 - **The false concession**: *"which sounds like a complaint; it isn't."*
 - **The rhetorical question answered in the next sentence.** Near's
   register is declarative. This is almost never the right move.
@@ -96,6 +108,33 @@ Spanish: `en realidad` · `sin pretensiones` · `vale la pena` ·
 
 Italian: `in realtà` · `senza pretese` · `vale la pena` ·
 `detto questo`.
+
+### 2b. The hard blocklists (2026-09-06 — banned, not rationed)
+
+Unlike the watchlist above, these are zero-tolerance. They are defined
+in `near-tov-police` Job 1c (rules 4, 5 and 8); this skill counts them
+across the catalogue rather than restating the reasoning.
+
+- **AI-vocabulary blocklist:** `delve` · `intricate` · `pivotal` ·
+  `underscore` · `tapestry` · `showcase` · `garner` · `crucial` ·
+  `enhance` · `silhouette` (last one only when decorative).
+- **Press-release enthusiasm:** `vibrant` · `nestled` · `stunning` ·
+  `renowned` — plus `vibrante` · `deslumbrante` · `renomado` ·
+  `aninhado` and their Spanish/Italian cognates.
+- **Transition scaffolding, capped at one per piece:** `Furthermore` ·
+  `Additionally` · `Moreover` · `However` · `In contrast` · `Notably` ·
+  `Indeed` — and `Além disso` · `No entanto` · `Ademais` · `Sin
+  embargo` · `Inoltre` · `Tuttavia`.
+- **Vague attribution, always a finding:** `experts say/contend` ·
+  `critics maintain` · `sources indicate` · `studies show` ·
+  `it is widely believed` · `especialistas afirmam`. Replace with a
+  named person, study or organization plus a link, or delete the claim.
+
+```
+for w in delve intricate pivotal underscore tapestry showcase garner crucial enhance vibrant nestled stunning renowned "experts say" "studies show"; do
+  printf '%s: ' "$w"; grep -ril "$w" content/places/*/*.mdx | wc -l
+done
+```
 
 **`quietly` and `tucked away` are the two worst offenders in the
 travel-writing tradition** and should be treated as banned rather than

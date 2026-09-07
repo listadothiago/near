@@ -270,3 +270,87 @@ _MANDATORY: Shift from a map-heavy "real estate" look to an "Alt-Weekly Newspape
 
 - **Staleness is a maintenance job, not a writing constraint (operator, 2026-08-31).** Near keeps writing with real specifics — names, prices, opening years, "just opened" — because that's what makes the content good, and accepts that it ages. New `near-caretaker` skill owns the upkeep: seven staleness classes (people, open/closed, ownership, numbers, recency claims, events, link rot), verify-before-changing, correct-in-place across all six locales including frontmatter, never flatten voice to make a piece age better. Codified as `currency-maintenance` in `rules.md` and wired into `near-refresh` step 1.
 - **Dolly Parton died 2026-08-25.** The Dollywood page asserted present-tense ownership across all six locales and has been corrected (verified against NPR/CNN/Variety; park stays open per its president). Worth remembering as a category of risk: evergreen copy about a living person goes stale silently. A `near-refresh` check for this would be reasonable.
+
+## 🧽 Anti-AI-slop ruleset absorbed into the skill files — DONE (2026-09-06)
+
+Operator directive from BACKLOG.md ("absorb AI best practices below into skills, agents,
+guidelines, processes"). All eight rules now live as mechanical, grep-able checks in
+`.claude/skills/near-tov-police/SKILL.md` (Job 1c) with the catalogue-wide baselines in
+`.claude/skills/language-tic-police/SKILL.md` (word census 2b). The n8n/`editor_persona.md`
+item in the source block was dropped: Near has no n8n pipeline and that filename came from a
+generic template. Original pasted text, verbatim, below.
+
+<details>
+<summary>Original pasted block — derived from the transcript "AI Slop is Obvious.txt"</summary>
+
+# Content Generation Backlog: AI Best Practices
+
+Based on the transcript "AI Slop is Obvious.txt," here are the extracted backlog items for improving the AI content generation process, specifically aimed at making the output less identifiable as generic AI text.
+
+## Avoid Formulaic Punctuation and Structures
+
+- **Reduce MDASH Usage:** Instruct the AI agent (e.g., in `.claude/skills/writer_persona.md` or equivalent) to significantly reduce the use of em dashes (—). The AI currently uses them excessively where commas, colons, or parentheses would be more appropriate, creating artificial drama.
+    
+    - _Action:_ Add a rule: "Limit em dash usage to one per 1000 words. Prefer commas for dependent clauses and colons for lists or elaborations."
+        
+- **Eliminate Negative Parallelism:** Ban the structure "It's not just [X], it's [Y]" (e.g., "It's not just a job, it's a calling"). The AI uses this to create forced contrast and artificially inflate the word count.
+    
+    - _Action:_ Add a rule: "Avoid negative parallelism structures like 'not just [X], but [Y]'. State facts directly instead of correcting presumed misconceptions."
+        
+- **Limit the 'Rule of Three':** The AI obsessively lists items in threes (adjective, adjective, adjective or noun, noun, noun), often using synonyms unnecessarily (e.g., "elegant, refined, and sophisticated").
+    
+    - _Action:_ Add a rule: "Do not use forced lists of three adjectives or nouns. Use one precise word instead of three synonymous ones. Lists should only be used when conveying distinct, necessary information."
+        
+
+## Refine Vocabulary and Tone
+
+- **Ban Cliché AI Vocabulary:** Create a blocklist for overused, "fancy" words that are hallmarks of AI writing.
+    
+    - _Action:_ Add the following words to a strict "Do Not Use" list:
+        
+        - Delve
+            
+        - Intricate
+            
+        - Pivotal
+            
+        - Underscore
+            
+        - Tapestry
+            
+        - Showcase
+            
+        - Garner
+            
+        - Crucial
+            
+        - Enhance
+            
+        - Silhouette (when used inappropriately)
+            
+- **Avoid Forced Enthusiasm/Corporate Speak:** The AI tends to write like a press release, using words like "vibrant," "nestled," "stunning," and "renowned" to sell the subject rather than describe it.
+    
+    - _Action:_ Add a rule: "Adopt a neutral, descriptive tone. Avoid hyperbolic marketing language (e.g., vibrant, nestled, stunning). Let the facts speak for themselves."
+        
+- **Ground Claims in Specifics (No "Expert Contends"):** The AI uses vague authorities ("experts contend," "critics maintain," "sources indicate") to sound authoritative without providing actual citations.
+    
+    - _Action:_ Add a rule: "Never use vague attribution. If stating a claim, name the specific person, study, or organization. If a specific source cannot be named, rephrase or remove the claim."
+        
+
+## Improve Flow and Structure
+
+- **Eliminate Nonsensical Similes:** The AI sometimes creates comparisons that sound poetic but mean nothing (e.g., "Like I was prepping a mannequin for something it wouldn't remember").
+    
+    - _Action:_ Add a rule: "Do not use similes or metaphors unless they make the subject immediately easier to understand for a general audience. Avoid abstract or surreal comparisons."
+        
+- **Reduce Transition Words:** The AI relies heavily on transition words (Furthermore, Additionally, Moreover, However, In contrast) to link every single sentence, often when the logical connection doesn't make sense.
+    
+    - _Action:_ Add a rule: "Use transition words sparingly. Sentences should flow logically without needing explicit connective tissue at the start of every clause."
+        
+
+## Project-Specific Implementation (NEAR)
+
+- **Update n8n Editor Sub-Workflow:** Inject these new rules into the `editor_persona.md` skill file used by the n8n Formatting Editor agent. The Editor's primary goal should be to scan the Writer's draft for these specific "AI slop" markers and rewrite them to fit the required brutalist, direct tone.
+
+
+</details>

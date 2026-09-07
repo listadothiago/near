@@ -48,12 +48,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "app" });
   return {
     metadataBase: new URL(getBaseUrl()),
-    // The localized name leads and the domain trails, so a tab or a search
+    // The localized name leads and the brand trails, so a tab or a search
     // result is identifiable before it's truncated: "Dicas perto de mim |
-    // near.tips", not "near.tips | Dicas perto de mim".
+    // NEAR", not "NEAR | Dicas perto de mim".
     title: {
-      default: `${t("wordmark")} | near.tips`,
-      template: `%s | near.tips`,
+      default: `${t("wordmark")} | NEAR`,
+      template: `%s | NEAR`,
     },
     description: t("tagline"),
     // Opts every page into large image previews (Discover cards, rich

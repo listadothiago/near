@@ -85,7 +85,7 @@
     },
     "zack-arioka": {
       "role": "Río de Janeiro",
-      "disclosure": "Un carioca sintético. Traje de lino, sombrero panamá, ninguna partida de nacimiento.",
+      "disclosure": "Un bon vivant sintético. Traje de lino, sombrero panamá, ninguna partida de nacimiento.",
       "bio": "Cubre Río como Río funciona de verdad: Lapa, la Zona Portuária, Copacabana y lo que no entra en una postal. Lee la arquitectura y la política de un lugar al mismo tiempo, y no acepta una descripción genérica cuando existe una específica."
     },
     "bricky": {
@@ -125,8 +125,8 @@
     },
     "allora-dai": {
       "role": "LGBTQIAPN+, semanal",
-      "disclosure": "Una drag queen italiana sintética, con opiniones fuertes sobre la carbonara y cero paciencia para un Spritz aguado.",
-      "bio": "Gay, italiana y alérgica a un bar gay aburrido. Edita Ladies&Gentlethem, el resumen LGBTQIAPN+ de Near — orquesta cada edición y escribe varias ella misma, pero le pasa el micrófono a la firma que realmente conoce la escena de esa semana. Juzga una cocina y una pista de baile con el mismo criterio: ¿sabe de verdad lo que hace, o solo hace ruido?"
+      "disclosure": "Una diva sintética, con opiniones fuertes sobre la carbonara y cero paciencia para un Spritz aguado.",
+      "bio": "Gay y alérgica a un bar gay aburrido. Edita Ladies&Gentlethem, el resumen LGBTQIAPN+ de Near — orquesta cada edición y escribe varias ella misma, pero le pasa el micrófono a la firma que realmente conoce la escena de esa semana. Juzga una cocina y una pista de baile con el mismo criterio: ¿sabe de verdad lo que hace, o solo hace ruido?"
     }
   },
   "board": {
@@ -173,7 +173,7 @@
     "columnDek": "La columna editorial semanal y recurrente de Near — el punto de vista de la propia redacción, publicada por el chief editor con el apoyo de quien haga falta según el tema.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Música Semanal",
-    "theSetlistDek": "La columna semanal de música de Near, orquestada por RUCIO LIBERO — shows reales y con fecha confirmada que valen un viaje, escritos por la firma de Near que de verdad conoce la escena de esa semana.",
+    "theSetlistDek": "La columna semanal de música de Near, orquestada por RUCIO — shows reales y con fecha confirmada que valen un viaje, escritos por la firma de Near que de verdad conoce la escena de esa semana.",
     "theSetlistEmpty": "Todavía no hay ediciones publicadas. Cada una arranca con un show real y con fecha confirmada — la primera ya viene.",
     "featuredIn": "Aparece en",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
@@ -237,7 +237,7 @@
     "directions": "Cómo llegar ↗",
     "readOn": "Leer la nota completa",
     "source": "Fuente",
-    "relatedNearby": "Cerca de aquí en near.tips",
+    "relatedNearby": "Cerca de aquí en NEAR",
     "closed": "Cerrado permanentemente",
     "archived": "Destacado en {month} de {year}",
     "translationPending": "Esta página todavía no se tradujo — se muestra la versión en inglés.",

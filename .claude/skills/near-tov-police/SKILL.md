@@ -247,6 +247,138 @@ sign-off item at step 7, not only an audit item here. Two passes,
 because a formula is invisible from inside a single piece and only
 visible against the catalogue.
 
+## Job 1c — The anti-slop ruleset (operator directive, 2026-09-06)
+
+Eight rules extracted from the "AI Slop is Obvious" transcript (original
+pasted text archived in `BACKLOG-ARCHIVE.md`, "AI best practices"
+section) and landed here as mechanical checks. Each has a countable or
+grep-able form — run the command, report the number. Rules 1, 3, 4, 5
+and 8 are word/construction counts inside the body, so
+`language-tic-police` owns the catalogue-wide baseline for them (its
+word census and construction census carry the same lists); this skill
+runs them on **the piece in hand** at status-flip time. Do not
+duplicate the counting — read the number, cite the rule.
+
+1. **Em dash cap — roughly one per 1000 words.** Prefer commas for
+   dependent clauses and colons for lists or elaborations. The house has
+   been using em dashes for artificial drama. Countable:
+
+   ```
+   f=content/places/<slug>/en.mdx
+   echo "em dashes: $(grep -o '—' "$f" | wc -l) / words: $(wc -w < "$f")"
+   ```
+
+   More than one per 1000 words is a finding, and the fix is
+   punctuation, not deletion of the clause. Supersedes the softer
+   "more em-dashes than paragraphs" heuristic in
+   `language-tic-police`'s construction census — that one still catches
+   clustering, this one caps the rate.
+
+2. **Negative parallelism — banned, no exceptions.** Already banned at
+   item 2c above and in BACKLOG.md 1.2; this adds the "It's not just
+   [X], it's [Y]" shape explicitly, which 2c's `This isn't X. It's Y.`
+   pattern list did not literally name. Grep, any locale:
+
+   ```
+   grep -inE "not just [^.]{1,40}, (it|its|it's|but)" content/places/<slug>/*.mdx
+   grep -inE "n[ãa]o (é|e) (só|apenas)|no (es|solo) |non (è|e) solo" content/places/<slug>/*.mdx
+   ```
+
+   State the fact directly rather than correcting a misconception nobody
+   raised. Before: *"It's not just a bakery, it's a neighbourhood
+   institution."* After: *"The bakery has supplied the two bars on the
+   same block since 1994."*
+
+3. **Rule of three — no forced triplets.** Three adjectives or three
+   nouns in series, especially synonymous ones, is a finding on first
+   instance when the words overlap in meaning. Before: *"elegant,
+   refined, and sophisticated."* After: *"elegant."* One precise word
+   beats three synonyms. A list of three is allowed only when each item
+   carries distinct information the reader needs (three different
+   dishes, three different rooms). Grep for the shape:
+
+   ```
+   grep -inE "\b[a-z]+, [a-z]+,? and [a-z]+\b" content/places/<slug>/en.mdx
+   ```
+
+   Tightens `language-tic-police`'s "one per piece" ration: synonymous
+   triplets are now zero per piece.
+
+4. **Banned vocabulary blocklist.** These words do not appear in Near
+   copy, in any locale's English-derived register:
+
+   `delve` · `intricate` · `pivotal` · `underscore` · `tapestry` ·
+   `showcase` · `garner` · `crucial` · `enhance` · `silhouette`
+   (`silhouette` only when decorative — a literal silhouette in an art
+   or architecture description is fine).
+
+   ```
+   grep -inE "delve|intricate|pivotal|underscore|tapestry|showcase|garner|crucial|enhance|silhouette" content/places/<slug>/*.mdx
+   ```
+
+   Any hit is a finding. Replace with the plain word (`showcase` → shows;
+   `crucial` → matters, or cut; `enhance` → improves, or cut).
+
+5. **No forced enthusiasm / press-release register.** Describe, do not
+   sell. Banned: `vibrant` · `nestled` · `stunning` · `renowned`, plus
+   their locale equivalents (`vibrante`, `deslumbrante`, `renomado`,
+   `aninhado`).
+
+   ```
+   grep -inE "vibrant|nestled|stunning|renowned|vibrante|deslumbrante|renomad|aninhad" content/places/<slug>/*.mdx
+   ```
+
+   Before: *"a vibrant bar nestled in a stunning colonial building."*
+   After: *"a bar on the ground floor of an 1890s townhouse; the back
+   room holds about thirty people."* Note the overlap with
+   `language-tic-police`'s `quietly` / `tucked away` bans — same failure
+   (adjective doing a concrete detail's job), opposite temperature.
+
+6. **No vague attribution.** Never "experts contend", "critics
+   maintain", "sources indicate", "studies show", "it is widely
+   believed". Name the specific person, study, publication or
+   organization — with a link, per BACKLOG.md 1.4's Deep Research Floor
+   and `link-police`'s external-link requirement — or cut the claim.
+
+   ```
+   grep -inE "experts? (say|contend|agree)|critics (say|maintain)|sources indicate|studies show|it is (widely )?believed|many (say|believe)|especialistas" content/places/<slug>/*.mdx
+   ```
+
+   Before: *"Experts contend the neighbourhood is gentrifying fast."*
+   After: *"The city's 2025 housing survey put rents in the district up
+   31% in three years."* If no nameable source exists, the claim was
+   never reportable — delete it.
+
+7. **No nonsensical similes.** A simile or metaphor must make the
+   subject **easier to understand for a general reader**. Abstract or
+   surreal comparisons are out. Test: name the property being compared.
+   If you cannot, cut it. Before: *"like prepping a mannequin for
+   something it wouldn't remember."* After: nothing — the sentence was
+   carrying no information. Mechanically: grep `like ` / `as if` and
+   judge each hit.
+
+   ```
+   grep -inE "\b(like|as if|as though) " content/places/<slug>/en.mdx
+   ```
+
+8. **Sparse transitions.** Do not open clauses with
+   `Furthermore` / `Additionally` / `Moreover` / `However` /
+   `In contrast` / `Notably` / `Indeed` as connective scaffolding.
+   Sentences should follow each other without being told to. Cap: one
+   such opener per piece.
+
+   ```
+   grep -icE "^(Furthermore|Additionally|Moreover|However|In contrast|Notably|Indeed)\b" content/places/<slug>/en.mdx
+   ```
+
+   `However` mid-sentence after a comma is usually also removable. The
+   fix is deletion, not substitution with a different connective.
+
+Report these the same way as everything else in Job 1 — quote the line,
+name the rule number, give the count. A piece cannot flip to `active`
+with an outstanding rule-4 or rule-6 hit; rules 1, 3, 5, 7 and 8 are
+rate limits and report as numbers.
+
 ## Job 2 — Persona drift management
 
 On any long or multi-piece generation session — a `near-war-room` push,

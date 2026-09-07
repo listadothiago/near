@@ -85,7 +85,7 @@
     },
     "zack-arioka": {
       "role": "里约热内卢",
-      "disclosure": "一个合成的卡里奥卡。亚麻西装，巴拿马草帽，没有出生证明。",
+      "disclosure": "一个合成的花花公子。亚麻西装，巴拿马草帽，没有出生证明。",
       "bio": "按里约真实的运转方式写里约——拉帕、港区、科帕卡巴纳，以及明信片装不下的部分。同时读一个地方的建筑和政治，有具体说法时绝不用笼统的描述。"
     },
     "bricky": {
@@ -125,8 +125,8 @@
     },
     "allora-dai": {
       "role": "LGBTQIAPN+，每周一期",
-      "disclosure": "一位合成的意大利变装皇后，对卡邦纳拉意面有强烈主见，对兑水的Spritz零容忍。",
-      "bio": "同志，意大利人，见不得无聊的同志酒吧。主编 Ladies&Gentlethem，Near 的 LGBTQIAPN+ 综述专栏——统筹每一期并亲自撰写不少内容，但会把话筒交给真正了解当周现场的那个署名。评判一间厨房和一片舞池用的是同一把尺子：是真懂行，还是只是吵。"
+      "disclosure": "一位合成的天后，对卡邦纳拉意面有强烈主见，对兑水的Spritz零容忍。",
+      "bio": "同志，见不得无聊的同志酒吧。主编 Ladies&Gentlethem，Near 的 LGBTQIAPN+ 综述专栏——统筹每一期并亲自撰写不少内容，但会把话筒交给真正了解当周现场的那个署名。评判一间厨房和一片舞池用的是同一把尺子：是真懂行，还是只是吵。"
     }
   },
   "board": {
@@ -173,7 +173,7 @@
     "columnDek": "Near 的每周固定专栏——编辑部自己的观点，由主编根据每期主题邀请所需的专家共同完成。",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "每周音乐",
-    "theSetlistDek": "Near 每周的音乐专栏，由 RUCIO LIBERO 策划——真实、有明确日期、值得为之专程出行的演出，由当周真正了解那个音乐现场的 Near 署名撰写。",
+    "theSetlistDek": "Near 每周的音乐专栏，由 RUCIO 策划——真实、有明确日期、值得为之专程出行的演出，由当周真正了解那个音乐现场的 Near 署名撰写。",
     "theSetlistEmpty": "尚未发布任何一期。每一期都从一场真实、有明确日期的演出开始——第一期即将上线。",
     "featuredIn": "收录于",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
@@ -237,7 +237,7 @@
     "directions": "路线 ↗",
     "readOn": "阅读完整报道",
     "source": "信源",
-    "relatedNearby": "near.tips 上的附近推荐",
+    "relatedNearby": "NEAR 上的附近推荐",
     "closed": "已永久停业",
     "archived": "{year} 年 {month} 月曾推荐",
     "translationPending": "此页面尚未翻译，目前显示英文版本。",

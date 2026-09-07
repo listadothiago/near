@@ -174,7 +174,7 @@ export default function Board({
   useEffect(() => {
     if (!location) return;
     const original = document.title;
-    document.title = `${location.label} · near.tips`;
+    document.title = `${location.label} · NEAR`;
     return () => {
       document.title = original;
     };

@@ -82,6 +82,11 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-03T00:46:07Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T11:12:00Z",
+      "note": "P0 factual correction, all six locales: the closing paragraph placed Restaurante Almeida somewhere in the middle of the Santos-to-Guaruja ciclovia-and-ferry route, which read as a waypoint on the bike path between the kiosks and the balsa. It is not on that route. Almeida is in Santos, inland of the waterfront lane, and the passage now frames it as an optional detour in Santos rather than a stop on the crossing. Surrounding voice and paragraph structure left intact."
     }
   ],
   "geocode": {
@@ -90,5 +95,5 @@
     "query": "Guaiuba Guaruja — matched OSM natural=beach 'Praia do Guaiúba, Guarujá, São Paulo, Brasil'"
   },
   "publishedAt": "2026-09-03T00:46:07Z",
-  "updatedAt": "2026-09-02T00:00:00Z"
+  "updatedAt": "2026-09-07T11:12:00Z"
 }

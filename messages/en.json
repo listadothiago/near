@@ -85,7 +85,7 @@
     },
     "zack-arioka": {
       "role": "Rio de Janeiro",
-      "disclosure": "A synthetic carioca. Linen suit, panama hat, no birth certificate.",
+      "disclosure": "A synthetic bon vivant. Linen suit, panama hat, no birth certificate.",
       "bio": "Covers Rio the way Rio is actually organised — Lapa, the Zona Portuária, Copacabana, the parts that don't fit on a postcard. Reads a room for its architecture and its politics at the same time, and won't describe a place generically when a specific description exists."
     },
     "bricky": {
@@ -125,8 +125,8 @@
     },
     "allora-dai": {
       "role": "LGBTQIAPN+, weekly",
-      "disclosure": "A synthetic Italian drag queen with strong opinions on carbonara and zero patience for a watered-down Spritz.",
-      "bio": "Gay, Italian, and allergic to a boring gay bar. Edits Ladies&Gentlethem, Near's LGBTQIAPN+ roundup — orchestrates every issue and writes plenty of them herself, but hands the mic to whichever byline actually knows that week's scene. Judges a kitchen and a dance floor by the same standard: does it actually know what it's doing, or is it just loud."
+      "disclosure": "A synthetic queen with strong opinions on carbonara and zero patience for a watered-down Spritz.",
+      "bio": "Gay and allergic to a boring gay bar. Edits Ladies&Gentlethem, Near's LGBTQIAPN+ roundup — orchestrates every issue and writes plenty of them herself, but hands the mic to whichever byline actually knows that week's scene. Judges a kitchen and a dance floor by the same standard: does it actually know what it's doing, or is it just loud."
     }
   },
   "board": {
@@ -173,7 +173,7 @@
     "columnDek": "Near's recurring weekly editorial column — the masthead's own opinionated take, published by the chief editor with whichever specialists a given topic needs.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Weekly Music",
-    "theSetlistDek": "Near's weekly music column, orchestrated by RUCIO LIBERO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that week.",
+    "theSetlistDek": "Near's weekly music column, orchestrated by RUCIO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that week.",
     "theSetlistEmpty": "No issues published yet. Each one starts with a real, dated show — the first is on the way.",
     "featuredIn": "Featured in",
     "ladiesAndGentlethemTitle": "Ladies&Gentlethem",
@@ -237,7 +237,7 @@
     "directions": "Directions ↗",
     "readOn": "Read the full story",
     "source": "Source",
-    "relatedNearby": "Nearby on near.tips",
+    "relatedNearby": "Nearby on NEAR",
     "closed": "Permanently closed",
     "archived": "Featured in {month} {year}",
     "translationPending": "This page hasn't been translated yet — showing the English version.",
