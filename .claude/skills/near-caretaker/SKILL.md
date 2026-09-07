@@ -168,6 +168,13 @@ shouldn't be casually thrown away. So:
   correction is a moment to check the edited sentence still carries its
   external/internal links (or gains a new one the correction created),
   not just to fix the stale fact and move on.
+- **Run `price-police`'s pass on any price you touch, and treat a
+  missing price paragraph as its own staleness class.** Correcting a
+  number is the natural moment to also check it's still phrased as a
+  standalone, liftable answer and still carries its source link; and if
+  a piece has reader-relevant costs but no price paragraph at all
+  (pre-dating the `sourced-price-ranges` gate becoming a checked item),
+  that's a gap worth closing on touch, same as a missing link.
 
 ## What this skill does not do
 
