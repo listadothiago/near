@@ -14,14 +14,27 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ## 1. Operating Policies & Core Architecture
 
-### 1.0 North Star — Chief Editor's Mandate (operator, 2026-09-07)
+### 1.0 North Star — Chief Editor & CEO Mandate (operator, 2026-09-07)
 
-The chief editor's standing goal directive, which every prioritization
-decision (RICE/MoSCoW, rotation cadence, batch scoping) should be read
-against: grow London, the SF Bay Area, and NYC to **1,000 places each**,
-with every other Tier 2/3 city growing in proportion to its existing
-share-of-output cadence (section 2.2) rather than being left behind while
-the Tier 1 trio scales. Volume is never the tradeoff against the
+Shared standing goal directive for **both** the chief editor (editorial
+substance) and `near-ceo` (cross-functional/business coordination) — every
+prioritization decision (RICE/MoSCoW, rotation cadence, batch scoping)
+should be read against it, and it's a joint goal rather than one role's
+alone precisely because hitting it touches both editorial judgment and
+resourcing/coordination calls. Grow London, the SF Bay Area, and NYC to
+**1,000 places each**, with every other Tier 2/3 city growing in
+proportion to its existing share-of-output cadence (section 2.2) rather
+than being left behind while the Tier 1 trio scales.
+
+**"1,000 places" names the pin count, not the ceiling on scope.** The
+same growth-and-quality mandate applies to *everything else* Near
+covers for those cities in corresponding proportion — dated events
+(`near-events`'s own coverage, not just place pages that happen to host
+one), collections/guides, standing-column presence, accommodation
+(P3.4's every-round hotel attempt) — scaled the same way a city's place
+count scales, not left as an afterthought once pins hit a number.
+
+Volume is never the tradeoff against the
 following, all of which must hold at the same time, not sequenced after:
 
 - **Maximum quality** — no thin pins, no padding to hit a count (see
@@ -37,20 +50,26 @@ following, all of which must hold at the same time, not sequenced after:
   generic listings tone. Every persona's own character sheet is the
   specific instrument; this is the register the whole roster tunes to.
 
-**Token efficiency is part of the mandate, not a side concern.** 1,000
-places per Tier 1 city, at full six-locale coverage and the full
-`near-write-article` gate sequence, does not work as a linear
-per-article cost — the chief editor is responsible for actively driving
-that cost down, not just accepting it. Standing instruction: invoke
-`parser`, `near-cto`, and `near-tech-lead` (plus any other relevant
-skill) specifically to find and ship token-saving changes to how content
-gets researched, drafted, and reviewed at this scale — shared-research
-patterns like `near-batch-30` generalized further, skill/prompt
-consolidation, smarter reuse of already-verified facts across a
-neighbourhood cluster, agent/skill redesign where the current shape is
-the bottleneck. This is real scope, not a footnote: creating or changing
-skills and agents to make the 1,000-place goal affordable is itself
-backlog-worthy work, to be RICE/MoSCoW-prioritized like anything else.
+**Token efficiency is part of the mandate, not a side concern — and both
+roles enforce it, alongside their own editorial/business guidance.** 1,000
+places per Tier 1 city, at full six-locale coverage, full event/
+accommodation/collection coverage and the full `near-write-article` gate
+sequence, does not work as a linear per-article cost. The chief editor
+enforces this from the editorial side (scoping, batching, reuse across a
+research pass); `near-ceo` enforces it from the business/coordination side
+(resourcing calls, resolving deadlock between roles that would otherwise
+each optimize their own function's cost independently) — neither treats it
+as the other's job. Standing instruction: invoke `parser`, `near-cto`, and
+`near-tech-lead` (plus any other relevant skill) specifically to find and
+ship token-saving changes to how content gets researched, drafted, and
+reviewed at this scale — shared-research patterns like `near-batch-30`
+generalized further, skill/prompt consolidation, smarter reuse of
+already-verified facts across a neighbourhood cluster, agent/skill
+redesign where the current shape is the bottleneck. This is real scope,
+not a footnote: creating or changing skills and agents to make the
+1,000-place goal (and its event/accommodation/collection counterpart)
+affordable is itself backlog-worthy work, to be RICE/MoSCoW-prioritized
+like anything else.
 
 ### 1.1 Brand Identity & Freshness Invariant
 
