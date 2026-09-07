@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5055,
-    "lng": -0.091
+    "lat": 51.5055826,
+    "lng": -0.0904808
   },
   "place": {
     "city": "London",
@@ -51,13 +51,20 @@
       "status": "active",
       "at": "2026-08-20T10:00:00Z",
       "note": "seed content"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5055826, -0.0904808). Old pin was ~37m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
+    "provider": "google-maps",
     "confidence": 1,
-    "query": "Borough Market, London"
+    "query": "Borough Market, Southwark, London — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Borough+Market/@51.5055826,-0.0904808,17z/data=!3m1!4b1!4m6!3m5!1s0x4876035775cf660f:0x3128e7e59ca044b9!8m2!3d51.5055826!4d-0.0904808!16zL20vMDF6cDZ2"
   },
   "publishedAt": "2026-08-27T19:15:10Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

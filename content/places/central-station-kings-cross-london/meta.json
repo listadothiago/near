@@ -10,8 +10,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 51.5352,
-    "lng": -0.1206
+    "lat": 51.533441,
+    "lng": -0.12095
   },
   "place": {
     "city": "London",
@@ -48,13 +48,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "First place in the accommodation category (previously empty) and NITE-PORTER's first byline. Opens the London refresh, which is first in the revised audience-seeded geographic priority. Verified currently trading: own site lists live opening hours and confirms bar, kitchen and hotel rooms. IMPORTANT CORRECTION CAUGHT PRE-PUBLISH: a search summary stated the venue 'opened December 1991'; the LGBT History Project page it was summarising says no such thing — the pub was previously The Prince Albert and changed name in 1992, with documented queer use of the address back to April 1974. Publishing the search summary's date would have been wrong. The Vox Pop recollection on that page (an anonymous account of a death in the basement in 1996) is explicitly flagged there as a personal recollection, is unverified, and concerns a real person's death — deliberately not used."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.533441, -0.12095). Old pin was ~197m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Central Station, 37 Wharfdale Road, King's Cross, London N1"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Central Station, Wharfdale Road, King's Cross, London — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Central+Station/@51.533441,-0.12095,17z/data=!4m9!3m8!1s0x48761b3e56344ebd:0xabacc7425db8dd4d!5m2!4m1!1i2!8m2!3d51.533441!4d-0.12095!16s%2Fg%2F1tp1y8_l"
   },
   "publishedAt": "2026-08-31T21:01:46Z",
-  "updatedAt": "2026-08-31T21:01:46Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

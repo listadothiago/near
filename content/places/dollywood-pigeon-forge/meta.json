@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 35.805702,
-    "lng": -83.528838
+    "lat": 35.7951026,
+    "lng": -83.5311862
   },
   "place": {
     "city": "Pigeon Forge",
@@ -67,13 +67,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "Dolly Parton died 2026-08-25 (NPR, CNN, Variety). Page asserted present-tense ownership — tagline 'still genuinely hers', shortTitle 'Still Genuinely Dolly's' — so it was factually wrong and tonally bad. Corrected across all six locales rather than rewritten: tense fixed, co-ownership with Herschend stated accurately (the old 'owns the park' was imprecise even before), and a sourced note added that the park stays open per its president. Status stays active; the park is open."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (35.7951026, -83.5311862). Old pin was ~1197m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.95,
-    "query": "2700 Dollywood Parks Blvd, Pigeon Forge, TN 37863"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Dollywood, Pigeon Forge, Tennessee — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Dollywood/@35.7951026,-83.5311862,17z/data=!3m1!4b1!4m6!3m5!1s0x885bfee9c33434cb:0x5578b76022d4eac9!8m2!3d35.7951026!4d-83.5311862!16zL20vMDFsMV8x"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

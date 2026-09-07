@@ -9,8 +9,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 51.5477,
-    "lng": -0.0755
+    "lat": 51.5500979,
+    "lng": -0.0753984
   },
   "place": {
     "city": "London",
@@ -60,13 +60,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "London coverage was three places, two of them Shoreditch, and nothing in the queer/nightlife space BACKLOG.md repeatedly flags (Sober Gay London, queer pet-friendly London, Alternative London today). Verified currently open: own site live, listed in Resident Advisor's 2026 London clubs guide. All four sources checked reachable before citing — a UCL News URL surfaced by search turned out to be a genuine 404, so the citation points at the UCL Urban Laboratory project page instead, reached via its canonical URL. Hero is CC BY-SA 2.0 from Wikimedia Commons; it is a 2010 exterior and the licenceNote says so rather than implying it is current."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5500979, -0.0753984). Old pin was ~266m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Dalston Superstore, 117 Kingsland High Street, London E8"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Dalston Superstore, 117 Kingsland High St, London E8 2PB — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Dalston+Superstore/@51.5500979,-0.0753984,17z/data=!3m1!4b1!4m6!3m5!1s0x48761c8c31920aab:0xa2a9809490bf83a3!8m2!3d51.5500979!4d-0.0753984!16s%2Fg%2F11lyx82xqx"
   },
   "publishedAt": "2026-08-31T18:33:58Z",
-  "updatedAt": "2026-08-31T18:33:58Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

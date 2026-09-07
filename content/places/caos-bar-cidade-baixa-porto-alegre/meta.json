@@ -8,8 +8,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": -30.0429,
-    "lng": -51.2241
+    "lat": -30.0430343,
+    "lng": -51.2242563
   },
   "place": {
     "city": "Porto Alegre",
@@ -78,13 +78,20 @@
       "status": "active",
       "at": "2026-09-04T17:22:38Z",
       "note": "Queue entry was a single-pass lead, so re-verified from scratch before drafting. Currently open in 2026, confirmed independently: first-party site caospoa.com.br is live and its WordPress uploads are dated 2026/08 and 2026/09, with a forward agenda of six dated shows; Instagram @caospoa active at 21.2K followers; Bandsintown lists five upcoming concerts plus a 27 Jul 2026 attendee note; Restaurant Guru shows 4.6/126 with a mid-2026 review. Corroborated by Sul 21 (Feb 2025, one of the two watched Porto Alegre independent feeds) and Cogumelo Media (Oct 2025), plus Econodata for the company registration (Caos Arte Ltda, 28 Oct 2022) — which corrected an assumption the lead invited: this is a 2022 room that invokes the 1990s/2000s POA circuit as lineage, not a survivor of it, and the body says so. Trust upgraded from review to auto on that corroboration. Research floor: near-deep-researcher run multi-source. Reddit leg did not run — site:reddit.com returned nothing for this venue in either Portuguese or English, so no cached threads existed to read; recorded rather than glossed. Google reviews leg ran via Restaurant Guru's mirror of the Google listing (direct Google/Tripadvisor fetches 403 as usual) and a quoted mid-2026 review is in the body. Matinal checked and does NOT list Caos in its current Agendão week (31 Aug-6 Sep) — a real negative, so the dated events come from the venue's own agenda instead. Six preferred/consulted sources logged above. Images: photo inbox empty; hero and both in-body images are tier-1 first-party photos and the venue's own wordmark from caospoa.com.br, no stock and no generation needed. The Metal/Hardcore Contra a Fome wordmark was rejected as an image — it is black artwork on a transparent background and would vanish on the dark theme. 626-word body carries 3 images against a floor of 3, two sub-headers, longest paragraph 98 words. Equipment theft disclosed as the venue's own posted statement, not asserted as fact."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-30.0430343, -51.2242563). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.9,
-    "query": "Rua João Alfredo 701, Cidade Baixa, Porto Alegre, RS, Brazil"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Caos, R. João Alfredo, 701, Cidade Baixa, Porto Alegre — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Caos/@-30.0430343,-51.2242563,17z/data=!3m1!4b1!4m6!3m5!1s0x951979cd675e9055:0xee2fe1f25b7ff34d!8m2!3d-30.0430343!4d-51.2242563!16s%2Fg%2F11s5v59k9j"
   },
   "publishedAt": "2026-09-04T17:22:38Z",
-  "updatedAt": "2026-09-04T17:22:38Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

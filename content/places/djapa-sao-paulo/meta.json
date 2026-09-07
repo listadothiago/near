@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.6013,
-    "lng": -46.6613
+    "lat": -23.5985177,
+    "lng": -46.6630871
   },
   "place": {
     "city": "São Paulo",
@@ -50,13 +50,20 @@
       "status": "active",
       "at": "2026-08-28T00:00:00Z",
       "note": "hero image resolved from the place's own source article; quality gate now passes"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5985177, -46.6630871). Old pin was ~358m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Djapa, Moema, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Djapa, R. Gaivota, 168, Moema, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Djapa/@-23.5985177,-46.6630871,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5a03022fa299:0xa6a5418562323dd3!8m2!3d-23.5985177!4d-46.6630871!16s%2Fg%2F11b6v52drb"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-08-28T00:00:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 52.4979,
-    "lng": 13.3495
+    "lat": 52.4978464,
+    "lng": 13.3488087
   },
   "place": {
     "city": "Berlin",
@@ -63,13 +63,20 @@
       "status": "active",
       "at": "2026-09-03T23:55:00Z",
       "note": "Locale backfill complete — pt-BR, es-ES, es-419, it, zh-CN written as genuine local editions per each locale persona, not literal translations. full-locale-coverage now satisfied, so the piece goes active for the first time. publishedAt set to the real publish moment rather than the midnight placeholder the earlier draft carried."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.4978464, 13.3488087). Old pin was ~47m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Eisenherz Buchladen, Motzstraße 23, 10777 Berlin-Schöneberg"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Prinz Eisenherz (Buchladen Eisenherz), Motzstraße 23, 10777 Berlin-Schöneberg — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Prinz+Eisenherz/@52.4978464,13.3488087,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8505138584915:0x7a7b6d190b92cb70!8m2!3d52.4978464!4d13.3488087!16s%2Fg%2F122pk7sw"
   },
   "publishedAt": "2026-09-03T23:55:00Z",
-  "updatedAt": "2026-09-03T23:55:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

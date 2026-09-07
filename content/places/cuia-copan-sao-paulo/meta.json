@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.5455,
-    "lng": -46.6431
+    "lat": -23.5462205,
+    "lng": -46.6439429
   },
   "place": {
     "city": "São Paulo",
@@ -55,13 +55,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "near-caretaker sweep #1, class 3 (ownership/venture changes): copy said Bel Coelho's Clandestino 'closed in 2020' and stopped there. She reopened it as Clandestina in Vila Madalena in 2024 — confirmed by the CNN Brasil piece this page already cited, whose headline names her as 'do Cuia e da Clandestina'. The page was contradicted by its own source. Corrected in en and pt-BR. Bel Coelho verified active as of this sweep; Cuia's Pinheiros second location was already covered."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5462205, -46.6439429). Old pin was ~117m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Cuia, Livraria Megafauna, Edifício Copan, Av. Ipiranga 200, Centro, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Cuia Restaurante, Av. Ipiranga, 200, Lj 48, Copan building, República, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Cuia+Restaurante/@-23.5462205,-46.6439429,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5930bc424a7f:0x3e61ea119ec0a23!8m2!3d-23.5462205!4d-46.6439429!16s%2Fg%2F11qpq30bs4"
   },
   "publishedAt": "2026-08-28T18:43:40Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 41.2381,
-    "lng": 1.8106
+    "lat": 41.2378226,
+    "lng": 1.810676
   },
   "place": {
     "city": "Sitges",
@@ -64,13 +64,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.2378226, 1.810676). Old pin was ~31m off."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.9,
-    "query": "Casino Prado, Carrer de Sant Isidre / Carrer de Francesc Gumà 6-14, 08870 Sitges"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Casino Prado Suburense, Carrer de Francesc Gumà, 6-14, 08870 Sitges — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Casino+Prado+Suburense/@41.2378226,1.810676,17z/data=!3m1!4b1!4m6!3m5!1s0x12a381b8efc40cdf:0xc526f95be443edaf!8m2!3d41.2378226!4d1.810676!16s%2Fg%2F12bfg3x6j"
   },
   "publishedAt": "2026-09-03T22:09:14Z",
-  "updatedAt": "2026-09-03T00:00:00Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

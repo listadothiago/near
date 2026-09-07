@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5254,
-    "lng": -0.1262
+    "lat": 51.525429,
+    "lng": -0.125237
   },
   "place": {
     "city": "London",
@@ -52,13 +52,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Added a genuine reciprocal internal link to Eisenherz Buchladen (Berlin), drafted the same day — both are pre-1980, still-independent queer bookshops founded within three months of each other. Content-only edit, no status/trust change."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.525429, -0.125237). Old pin was ~66m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Gay's the Word, 66 Marchmont Street, Bloomsbury, London WC1N 1AB"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Gay's The Word, 66 Marchmont St, London WC1N 1AB — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Gay's+The+Word/@51.525429,-0.125237,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b309dd9e403:0x76cb42c5c3c84570!8m2!3d51.525429!4d-0.125237!16s%2Fg%2F1tt0qm0l"
   },
   "publishedAt": "2026-08-31T22:06:20Z",
-  "updatedAt": "2026-09-03T22:30:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }
