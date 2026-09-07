@@ -161,11 +161,12 @@ first).
    repo, never user submissions, and `blockDangerousJS` stays at its secure
    default. **Place pages were deliberately left strict.** If Near ever
    accepts outside-authored MDX, revisit that line.
-2. **Open operator question, still unanswered:** `lib/content/curator.ts`
-   → `livedIn` still reads `São Vicente / Baixada Santista` on the
-   `/about/thiago-baraldi` page. Given the P0 rule that the operator's
-   residence must never be published, this needs the operator's explicit
-   call on whether it stays. Do not change it unilaterally either way.
+2. **RESOLVED — 2026-09-07, operator.** `lib/content/curator.ts` →
+   `livedIn` keeps `São Vicente / Baixada Santista` on the
+   `/about/thiago-baraldi` page. Operator's call: it's a past-lived city
+   listed among ten others, not a disclosure of current residence, so it
+   does not fall under the never-publish-current-residence rule. No
+   change needed.
 
 ### P0: Immediate Fixes & Critical Correctness
 

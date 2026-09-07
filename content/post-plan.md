@@ -394,6 +394,68 @@ that was a seeding turn, not a skip. Full analysis in
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
 
 _Amsterdam note: no coffeeshop cleared the two-source bar this pass — the honest-coffeeshop-culture piece reads better as a near-blogger collection; operator decision pending._
+
+### New York City (Tier 1) — SEEDED 2026-09-07 by `near-sources-war-room`, not yet drafted
+
+NYC was added to Tier 1 in Bangkok's place (operator directive
+2026-09-07) but held under the hold rule: no queue existed. This is
+that seeding pass — full source and candidate analysis in
+`content/opportunities.md`'s matching 2026-09-07 section. One NYC pin
+already lives: `rabbit-books-and-bar-east-village-nyc`. None of the
+candidates below collide with it or with each other on name or address.
+
+- [ ] **El Califa de León, 20 W. 23rd St, Flatiron** — FOODIE-9000 or
+  DARCY. First US location of the Mexico City taquería that briefly held
+  the world's first Michelin star for a taco stand (lost 2026, still
+  Michelin-recommended); opened 2026-08-24. Corroborated by Time Out,
+  Cititour, OpenTable Blog, and Eater NY's own Substack — the strongest
+  candidate this pass, draw first.
+- [ ] **Elder, 517 W. 38th St (Henry Hall, ground floor), Hudson Yards**
+  — FOODIE-9000. British-Indian chophouse from Michelin-starred chef
+  Sujan Sarkar, opened 2026-08-06. Corroborated by Time Out, Resy, The
+  Infatuation, Cititour.
+- [ ] **The Little Bookshop, 239 Bushwick Ave, East Williamsburg,
+  Brooklyn** — near-editor or ALLORA DAI. Mother-daughter-run bookstore/
+  café with reading nooks, soups, and a small event stage; opened
+  2025-05, still being written up in 2026. Corroborated independently by
+  Greenpointers, Shelf Awareness, and North Brooklyn Dispatch — same
+  shape as the existing Rabbit Books pin, different borough.
+- [ ] **Kween, 34-10 30th Ave, Astoria, Queens** — STEFAN. Queer
+  cocktail lounge, open since 2022 in the former Viva Viva space;
+  corroborated by Yelp (106 reviews), GayCities, thegaypassport, Travel
+  Gay. Not a new opening, but closes two gaps at once: zero Queens
+  coverage and zero NYC nightlife-sound coverage.
+- [ ] **Bar Etienne, 44 Bedford St, West Village** — PENDING, verify
+  first. French-influenced cocktail bar, opened 2026-08-31. Single-source
+  lead (diningout.com aggregator only) — get a second source or the
+  venue's own channel before drafting.
+- [ ] **Herbie's Burgers, 109 1st Ave, East Village** — PENDING, verify
+  first. Fast-casual smash-burger spot, opened late August 2026.
+  Single-source (diningout.com); also two blocks from the existing
+  Rabbit Books pin — check it isn't redundant coverage of the same strip.
+- [ ] **Kirbee's, 55 McGuinness Blvd S, Greenpoint, Brooklyn** —
+  PENDING, verify first. Texas barbecue, soft-opened late August 2026,
+  full launch Labor Day weekend. Single-source (diningout.com) — check
+  Greenpointers, which covers this exact neighborhood, before drafting.
+- [ ] **Monkey Thief, 754 9th Ave, Hell's Kitchen** — PENDING, verify
+  first. Pan-Asian cocktail-and-food venue reopening mid-August 2026
+  after a 2024 closure. Thin corroboration — confirm the reopening is
+  real and current before drafting.
+- [ ] **Cospa Ramen, Flatiron (address unverified)** — PENDING, do not
+  draft. Named in Eater NY's September 2026 heatmap alongside Elder and
+  El Califa de León; no address or second source confirmed this pass.
+- [ ] ~~Cafe Lacoste at The Plaza, 768 Fifth Ave, Midtown~~ — DO NOT
+  DRAFT as a place page. Tennis-themed afternoon-tea pop-up running only
+  through 2026-09-15, single-sourced (diningout.com); a hard-dated
+  short-lived activation, not a standing venue. If used at all it
+  belongs to `near-events`, and the window will likely have closed by
+  the time a queue slot reaches it.
+
+New sources onboarded this pass (`trust: auto`, detail in
+`preferred-sources.md`): Hell Gate, THE CITY, Greenpointers.
+`bushwickdaily.com` explicitly rejected — see `preferred-sources.md` for
+the reason (AI-slop drift, documented by Hell Gate itself).
+
 ### Bangkok (Tier 1) — SEEDED 2026-09-03, research-verified, not yet drafted
 
 _Seeded by a `near-sources-war-room` pass on the day Bangkok became

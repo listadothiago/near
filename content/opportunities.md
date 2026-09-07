@@ -830,3 +830,114 @@ about Oakland that the listicles don't."
 
 *Not drawn this session.* Research ran long; recorded as
 seeded-not-yet-drawn per the directive rather than rushing a draft.
+
+## New York City — seeding pass, near-sources-war-room, 2026-09-07 (SEEDED)
+
+**Scope.** NYC moved into the Tier 1 round-robin by operator directive
+2026-09-07 (replacing Bangkok) but was held under the hold rule: no
+`post-plan.md` queue existed. A prior background-agent attempt at this
+exact seeding task died last session without writing anything — verified
+clean before this run started. This pass is a cold open in the sourcing
+sense even though one pin already exists: `rabbit-books-and-bar-east-
+village-nyc` (2026-09-01), sourced entirely off `evgrieve.com` with no
+formal NYC alt-press outlet in `sources.md` at the time.
+
+**Sources.** Three new `trust: auto` entries added to `sources.md`,
+detail and rationale in `content/preferred-sources.md`'s matching
+2026-09-07 section:
+- **Hell Gate** (`hellgatenyc.com`) — worker-owned successor to the
+  Village Voice's alt-weekly register, publishing daily; closes the gap
+  the Rabbit Books pass explicitly flagged.
+- **THE CITY** (`thecity.nyc`) — nonprofit five-borough accountability
+  newsroom; weak on venue leads, strong for city-context/legal-risk
+  checks.
+- **Greenpointers** (`greenpointers.com`) — North Brooklyn hyperlocal
+  blog since 2007, no paywall; the one outlet this pass that actually
+  produced a corroborated pin lead (Little Bookshop).
+
+One already-trusted cross-city source doubled as a hit again:
+`evgrieve.com` (East Village), still worth the formal `sources.md`
+onboarding its own 2026-09-01 note flagged and never completed.
+
+**Rejected:** `bushwickdaily.com` — Hell Gate's own reporting and an
+independent write-up both document it going AI-slop under its sole
+owner in 2026 (27 articles all of 2025 → 700+ by August 2026), including
+lifting Greenpointers' own hyperlocal coverage without credit. Do not
+onboard; Greenpointers covers the same beat honestly.
+
+**Candidates — 10, ranked, deduped against `rabbit-books-and-bar-east-
+village-nyc` and every other `content/places/` entry by venue name and
+address (no other NYC-proper pin exists to collide with):**
+
+1. **El Califa de León**, 20 W. 23rd St, Flatiron — `trust: auto`. First
+   US location of the Mexico City taquería that was briefly the world's
+   first Michelin-starred taco stand (star lost in 2026, still Michelin-
+   recommended); opened 2026-08-24. Independently corroborated: Time
+   Out, Cititour, OpenTable Blog, Eater NY's own Substack. Strongest
+   food-drink candidate this pass — real story (a Michelin-adjacent
+   taquería doing a US debut), not a listicle entry.
+2. **Elder**, 517 W. 38th St (ground floor, Henry Hall), Hudson Yards —
+   `trust: auto`. British-Indian chophouse from Michelin-starred chef
+   Sujan Sarkar, opened 2026-08-06. Corroborated: Time Out, Resy, The
+   Infatuation, Cititour. Genuine chef-driven opening, not aggregator
+   filler.
+3. **The Little Bookshop**, 239 Bushwick Ave, East Williamsburg,
+   Brooklyn — `trust: auto`. Mother-daughter-run bookstore/café with
+   reading nooks and a small stage; opened 2025-05 and still being
+   written up through 2026. Corroborated independently by Greenpointers,
+   Shelf Awareness, and North Brooklyn Dispatch — the same shape of find
+   as Rabbit Books and Bar (bookshop + food, hyperlocal-blog sourced),
+   and a genuinely different borough/neighborhood from the existing pin.
+4. **Kween**, 34-10 30th Ave, Astoria, Queens — `trust: auto`. Queer
+   cocktail lounge (open since 2022, in the former Viva Viva space);
+   corroborated by Yelp (106 reviews), GayCities, thegaypassport, and
+   Travel Gay. Not a new opening but Near has zero Queens coverage and
+   zero NYC nightlife-sound coverage — this is the queer-nightlife
+   candidate the borough gap needs, well-established rather than
+   unverified-new.
+5. **Bar Etienne**, 44 Bedford St, West Village — `trust: review`.
+   French-influenced cocktail bar with desserts from neighboring Claude
+   Bakery, opened 2026-08-31. Single-source lead (diningout.com
+   aggregator only) — verify against the venue's own channels or a
+   second outlet before drafting.
+6. **Herbie's Burgers**, 109 1st Ave, East Village — `trust: review`.
+   Fast-casual smash-burger spot, opened late August 2026. Single-source
+   (diningout.com); also two blocks from the existing Rabbit Books pin —
+   double-check it isn't redundant coverage of the same strip before
+   drawing.
+7. **Kirbee's**, 55 McGuinness Blvd S, Greenpoint, Brooklyn — `trust:
+   review`. Texas barbecue (brisket, green spaghetti), soft-opened late
+   August 2026 with a full Labor Day-weekend launch. Single-source
+   (diningout.com) — worth a second check against Greenpointers, which
+   covers this exact neighborhood and wasn't checked for this specific
+   venue yet.
+8. **Monkey Thief**, 754 9th Ave, Hell's Kitchen — `trust: review`.
+   Pan-Asian cocktail-and-food venue reopening mid-August 2026 after a
+   2024 closure, three distinct spaces. Thin corroboration (diningout.com
+   plus one general search hit) — verify reopening is real and current
+   before drafting.
+9. **Cospa Ramen**, Flatiron (exact address unverified) — `trust:
+   review`. Named in Eater NY's September 2026 heatmap update alongside
+   Elder and El Califa de León; address and further detail not
+   independently confirmed this pass — thinnest lead of the ten, do not
+   draft until an address and a second source are in hand.
+10. **Cafe Lacoste at The Plaza**, 768 Fifth Ave, Midtown — `trust:
+    review`, and PENDING regardless of trust. Tennis-themed afternoon-tea
+    pop-up running only through 2026-09-15 — a hard-dated, short-lived
+    activation rather than a standing venue. Single-source
+    (diningout.com). Do not draft as an evergreen place page; if used at
+    all it belongs to `near-events`, not a pin, and it will already be
+    over by the time any queue slot reaches it.
+
+**Verdict: bar cleared for a seed, not for a draft.** Four of ten
+candidates (#1–4) are independently corroborated and immediately
+draftable; the other six are single-aggregator leads needing a second
+check, and #10 is a pop-up that shouldn't become a pin at all. That
+mix — a handful of solid leads plus a longer review tail — is the same
+shape Bangkok and Oakland cleared with. No candidate collides with the
+one live NYC pin or any other `content/places/` entry on name or
+address.
+
+*Not drawn this session, per the SEEDING ONLY dispatch scope.* No place
+pages, no `content/places/` files, nothing committed — see
+`content/post-plan.md`'s new NYC queue for the drafting order.

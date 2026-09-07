@@ -781,3 +781,55 @@ independent local outlet. **Belo Horizonte — the largest of the six —
 has the thinnest independent layer of any of them**, and BHAZ is a
 provisional stand-in rather than a real find. If the tier is ordered by
 readiness rather than by population, BH goes last.
+
+## NYC seeding pass — near-sources-war-room, 2026-09-07
+
+NYC was moved to Tier 1 (operator directive 2026-09-07, `content-rotation/SKILL.md`)
+but held with no `post-plan.md` queue. This pass builds the watched-sources
+map so the hold can lift. Full candidate list and analysis in
+`content/opportunities.md`.
+
+**Onboarded to `sources.md` (all `trust: auto`), corroborated live 2026-09-07:**
+- `hell-gate-nyc` (Hell Gate) — worker-owned alt-weekly successor, the
+  gap flagged when `evgrieve.com` was onboarded off the Rabbit Books
+  pass (2026-09-01: "no NYC alt-weekly is in `sources.md` yet"). This
+  closes that gap.
+- `the-city-nyc` (THE CITY) — nonprofit five-borough accountability
+  newsroom; complements Hell Gate's voice with harder local-news
+  coverage, weak on venue/opening leads specifically.
+- `greenpointers` (Greenpointers) — North Brooklyn hyperlocal blog,
+  publishing since 2007, no paywall; the actual find that produced a
+  pin-worthy lead this pass (The Little Bookshop).
+
+**Already in `sources.md`, unchanged:** the four AAN member outlets
+tagged `us-*-ny` (Jersey Vindicator is NJ not NYC proper; The Daily
+Catch, `region: us-brooklyn-ny`, is the one genuine NYC-area AAN member —
+still unverified RSS, still worth a first-use check per its existing
+note).
+
+**Already-trusted, cross-city sources that apply directly to NYC leads:**
+`evgrieve.com` (East Village hyperlocal — primary source for the one
+live NYC pin, `rabbit-books-and-bar-east-village-nyc`; worth the formal
+onboarding into `sources.md` its 2026-09-01 note already flagged, still
+pending), `shelf-awareness.com` (book-trade press, corroborated both
+Rabbit Books and this pass's Little Bookshop lead), `theinfatuation.com`
+(NYC is its home city; used to corroborate Elder and general
+review-crowd signal).
+
+**REJECTED, with reason:** `bushwickdaily.com` — do not onboard. Hell
+Gate's own reporting (`hellgatenyc.com/whats-going-on-with-bushwick-daily/`)
+and an independent write-up (`grime-square.com`, 2026-08-02) both
+document the outlet going from 27 articles in all of 2025 to 700+ by
+August 2026 under sole owner Alec Meeker, publishing AI-generated
+off-beat filler and lifting hyperlocal coverage from Greenpointers
+without credit. Greenpointers is the trustworthy outlet for the same
+North Brooklyn beat — use that instead.
+
+**Not yet verified, worth a second look:** `thotyssey.com` (NYC gay
+nightlife blog, surfaced searching for queer-venue leads; only one hit
+so far, not independently corroborated this pass); Eater NY's own
+heatmap page (the underlying eaterny.com heatmap URL itself wasn't
+directly fetched this pass — corroboration came via Time Out, Resy,
+Cititour, and Eater's own Substack instead, all of which agree, so the
+facts are solid even though the canonical heatmap page is still
+unverified as a feed).
