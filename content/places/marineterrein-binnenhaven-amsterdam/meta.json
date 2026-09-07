@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 52.3723,
-    "lng": 4.9155
+    "lat": 52.3728574,
+    "lng": 4.9152115
   },
   "place": {
     "city": "Amsterdam",
@@ -82,13 +82,20 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "WILD0 piece from the verified Amsterdam war-room slate (BACKLOG.md/content/post-plan.md): the Binnenhaven at Marineterrein became Amsterdam Centrum's first officially designated open-water swim spot, announced by Waternet/Waterschap AGV on 2025-02-20 with the province of Noord-Holland approving the location, taking effect 'from April' 2025 at the start of the swim season — this checks out against multiple independent sources (Waternet, AGV, IamExpat, NL Times) and is stated plainly in the body rather than oversold. No lifeguard, no changing rooms/showers found in any source — swimming is explicitly 'at your own risk,' and the floating dock/vlonder closes for 72 hours after heavy rain when sewage overflow risk is high. Could NOT verify an exact opening address/entrance point beyond 'the Marineterrein site, reachable from Kattenburgerstraat' — geocode below is an approximate placement of the inner harbor (Binnenhaven), not a pinned entrance, and needs refinement. heroImage left null: searched Wikimedia Commons for a rights-clear photo of Marineterrein/Binnenhaven and found nothing usably licensed and specific to the swim spot itself (most Marineterrein-tagged Commons files are of unrelated naval-base buildings or the Scheepvaartmuseum next door). Illustration brief for near-illustrator: an inner-harbor dock scene, people swimming off a low composite boardwalk/pontoon between old naval-base brick facades, overcast Amsterdam light, no lifeguard tower, small digital info-screen showing water quality — should read as a real urban swim spot, not a beach resort. categories set to wellness-fitness (matches wild0's registered beat and the practitioner/access-focused lens); travel was considered but wellness-fitness fits an outdoor-swim-access piece better per categories.ts guidance. Status kept as draft pending geocode refinement and hero image resolution."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:23:30Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.3728574, 4.9152115). Old pin was ~65m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Marineterrein Binnenhaven (inner harbor), near Kattenburgerstraat 5, 1018 JA Amsterdam — approximate placement of the harbor basin used for swimming, not a confirmed entrance/access point; needs refinement against the actual vlonder/swim-pontoon location"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Binnenhaven Marineterrein, Kattenburgerstraat 5, 1018 JA Amsterdam — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:23:30Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Buitenzwembad+Marineterrein+-+Outdoor+canal+swimming/@52.3728574,4.9152115,17z/data=!3m1!4b1!4m6!3m5!1s0x47c6090dd75b1543:0x2fbff7523010be3c!8m2!3d52.3728574!4d4.9152115!16s%2Fg%2F11gjj2tvsg"
   },
   "publishedAt": "2026-09-01T12:06:11Z",
-  "updatedAt": "2026-09-01T12:06:11Z"
+  "updatedAt": "2026-09-07T18:23:30Z"
 }

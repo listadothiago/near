@@ -8,8 +8,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": -23.969,
-    "lng": -46.3612
+    "lat": -23.9702685,
+    "lng": -46.3619567
   },
   "place": {
     "city": "São Vicente",
@@ -83,13 +83,20 @@
       "status": "active",
       "at": "2026-09-04T16:40:00Z",
       "note": "Correction: the prior statusHistory entry's claim that 'all six locales drafted by near-translator' was inaccurate -- only en.mdx existed at that point, a full-locale-coverage rule violation (content/rules.md) flagged by near-backlog. near-translator has now produced the 5 missing locale editions as genuine local editions (not literal translations), each reading its own persona file under references/locales/ before drafting: pt-BR.mdx (Near Brasil register, informal direct address, R$-aware price framing not needed here but naming conventions applied), it.mdx (Rivista Studio/Zero.eu register, drier and less breathless than the English source), es-ES.mdx (Vice España/El País register, vosotros/Spain-specific vocabulary), es-419.mdx (regionally neutral Vice en Español/Infobae register, ustedes), zh-CN.mdx (Xiaohongshu-style concise register, added a practical local-payment/cash note the English source didn't need per that persona's own guidance on practical access details). All facts held constant across every locale: Nov 22 2026 date, 17th edition, Nov 21 Diversity Fair, Praia do Itararé location, APOLGBT as organizer with city Culture Secretariat support, the estimated (not confirmed) 1pm-8pm hours hedge, and the operator's first-hand attributed quote about the spring uptick in queer/nonbinary beachgoers -- all preserved in every locale, no new claims invented, no facts dropped. Mechanical gates re-checked per locale: tagline <=90 chars, >=3 bullets (5 each, matching English), seoDescription <=320 chars, both NearLink internal targets (quiosque-da-cris-sao-vicente, amuse-beach-club-sao-vicente) and all 5 external source links present in every file. status remains 'active' -- this entry closes the full-locale-coverage gap, it does not change publish state."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:25:00Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9702685, -46.3619567). Old pin was ~160m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.55,
-    "query": "Praia do Itararé, São Vicente, SP — reused from parent pin; 2026 parade's specific route/stage not yet published"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Praia do Itararé, São Vicente, SP — Google Maps listing pin (parade route beach)",
+    "verifiedAt": "2026-09-07T18:25:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Praia+do+Itarar%C3%A9/@-23.972814,-46.3586896,15z/data=!3m1!4b1!4m6!3m5!1s0x94ce1cc911131f45:0x40dcba33cb0b916d!8m2!3d-23.9702685!4d-46.3619567!16s%2Fg%2F1219mrl1"
   },
   "publishedAt": "2026-09-04T15:00:00Z",
-  "updatedAt": "2026-09-04T15:00:00Z"
+  "updatedAt": "2026-09-07T18:25:00Z"
 }

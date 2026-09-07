@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 41.232766,
-    "lng": 1.801865
+    "lat": 41.2327859,
+    "lng": 1.801844
   },
   "place": {
     "city": "Sitges",
@@ -58,13 +58,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-03T00:00:00Z to 2026-09-03T22:09:14Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:25:00Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.2327859, 1.801844). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "wikimedia-commons-geotag",
-    "confidence": 0.8,
-    "query": "Monument contra l'homofòbia, Passeig Marítim, 08870 Sitges"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Sitges Contra la Homofòbia monument, Passeig Marítim, 10-16, 08870 Sitges — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:25:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/SITGES+CONTRA+LA+HOMOF%C3%92BIA/@41.2327859,1.801844,17z/data=!3m1!4b1!4m6!3m5!1s0x12a38051e8367fb1:0x49aec1288ef0e458!8m2!3d41.2327859!4d1.801844!16s%2Fg%2F11fx7tw9yf"
   },
   "publishedAt": "2026-09-03T22:09:14Z",
-  "updatedAt": "2026-09-03T00:00:00Z"
+  "updatedAt": "2026-09-07T18:25:00Z"
 }

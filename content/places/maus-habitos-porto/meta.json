@@ -10,8 +10,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 41.1467,
-    "lng": -8.6055
+    "lat": 41.146703,
+    "lng": -8.605738
   },
   "place": {
     "city": "Porto",
@@ -85,13 +85,20 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "Ad-hoc chat request per BACKLOG.md's Porto priority bump (operator has an influencer contact there for distribution). Porto has zero existing Near coverage; this is the first pin for the city. Chose Maus Hábitos over generic Ribeira/port-wine-cellar/francesinha coverage specifically because it has real alt-culture credibility: an artist-founded (1998) 'espaço de intervenção cultural' run by the Saco Azul cultural association, occupying the 4th floor of the 1939 Art Deco Garagem Passos Manuel (architect Mário Abreu) since around 2000 — restaurant, cocktail bar, concert hall that becomes a clubbing dance floor after midnight, and a gallery (MUPI + Exhibition Room) with monthly rotating shows, plus artist residencies. Verified via the official site (maushabitos.com/en/about) and the Portuguese Wikipedia article on the venue, which lists artists associated with its programming (Miguel Januário/+Maismenos, Rute Rosas, Pedro Maia, Miguel Duarte) and notes 2021 expansions to Lisbon and Vila Real under the same brand — confirming it's a going concern, not a one-off. Address (Rua de Passos Manuel 178, 4th floor, 4000-382 Porto) corroborated by a third-party directory listing (nossatelha.pt) since the official site's own contact page wasn't fetched directly. Coordinates are a manual approximation for that stretch of Rua de Passos Manuel in central Porto/Baixa (confidence 0.5) and should be refined against the exact street number before this leaves draft. No verifiably current, specifically-dated 2026 event was found — the official 'music-events' page returned only stale March 2023 listings on fetch, so eventEndsAt is left null (evergreen place) rather than inventing or guessing a date; a follow-up check of the venue's Instagram (@maushabitos) or a direct visit to a live-rendered events page is owed before publish if a dated hook is wanted. Hero image: a rights-clear CC BY 2.0 Wikimedia Commons photo of the actual Garagem Passos Manuel building exterior was found and used (Winniepix, 2023) — it's the real building at the real address, though not an interior shot of the club itself, which is disclosed honestly in licenseNote. The only interior/venue-tagged Commons photos found were 2012 graffiti-on-the-stairs shots explicitly noted as depicting art since painted over, so those were rejected as no longer representative rather than used. Trust is 'auto' per operator instruction for this task, but written to status: draft and left uncommitted per this task's explicit instruction not to commit; operator review still needed before this goes active, and full-locale-coverage (pt-BR, it, es-ES, es-419, zh-CN via near-translator) has not yet run."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:23:30Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.146703, -8.605738). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Rua de Passos Manuel 178, Porto, Portugal"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Maus Hábitos, R. de Passos Manuel 178, 4000-382 Porto — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:23:30Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Maus+H%C3%A1bitos/@41.146703,-8.605738,17z/data=!3m1!4b1!4m6!3m5!1s0xd2464e584ca423d:0xc127aff6c19a3781!8m2!3d41.146703!4d-8.605738!16s%2Fg%2F1tczrmsn"
   },
   "publishedAt": "2026-09-01T12:42:17Z",
-  "updatedAt": "2026-09-01T12:42:17Z"
+  "updatedAt": "2026-09-07T18:23:30Z"
 }
