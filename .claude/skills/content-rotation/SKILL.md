@@ -189,7 +189,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 1 of 6   T2 0 of 3   T3 0 of 1
+spent:           T1 2 of 6   T2 0 of 3   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → Bangkok → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -201,6 +201,15 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  Club Revenge plus the held Polyglamorous entry and the
                  Pride Village Party collection, but the rotation slot is
                  spent.
+                 San Francisco — SERVED 2026-09-07 (queer-surf-pacifica,
+                 FIT-BOT, all six locales). SF's queue is now FULLY
+                 DRAINED — this was its last open item. Three corrections
+                 shipped with it: current sliding-scale rates taken from
+                 the org's own live registration form rather than the
+                 widely-repeated KQED figure; the SWITCH hook was already
+                 past and became a durable "runs each June, free" claim
+                 with no date; and the geography is Linda Mar OR the
+                 Princeton Jetty, Half Moon Bay, not Pacifica alone.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -208,13 +217,25 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         San Francisco (Tier 1) — second draw of ten #2, per
-                 t1-order after Brighton took the first on 2026-09-04.
-                 SF's queue has ONE open item: Queer Surf, Pacifica.
-                 The Dolphin Club pin is NOT an open draw — it is live,
-                 active, all six locales (verified 2026-09-04); the
-                 "2 of 6 locales" note here was wrong and is removed.
-then:            after San Francisco, follow t1-order above. Tier 2's and Tier
+NEXT-UP:         Oakland (Tier 1) — SEEDING TURN, third draw of ten #2,
+                 per t1-order after San Francisco took the second on
+                 2026-09-07. Oakland's post-plan.md queue is FULLY
+                 BLOCKED: its one remaining item, Lakeshore Lavender
+                 Lounge, is PENDING/do-not-draft until doors are
+                 confirmed, and everything else there has shipped.
+                 Under the 2026-09-07 "seed on turn" directive that is
+                 NOT a skip — the next session's work on this slot is a
+                 near-sources-war-room seeding pass on Oakland, and the
+                 city spends its own share doing it. Oakland is
+                 deliberately NOT on the held: line: it is awaiting a
+                 seed, not held. It becomes held only if that seeding
+                 pass fails the bar (>=1 watchable local feed, >=3
+                 candidate pins with addresses and current local-press
+                 corroboration), and only then does the share pass on to
+                 Bangkok. The earlier instruction to skip straight to
+                 Bangkok predates the directive and is superseded.
+                 Do not draft Lakeshore Lavender Lounge to fill this.
+then:            after Oakland, follow t1-order above. Tier 2's and Tier
                  3's bursts (Rome, Curitiba) get drawn within this ten as
                  their shares come up — they are not queued behind all
                  six Tier 1 slots.

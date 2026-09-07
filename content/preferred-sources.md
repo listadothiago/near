@@ -69,6 +69,43 @@ source to the permanent catalog off a single lucky find):
   bigger outlets had only listings. Found on the same pass, 2026-09-04.
   Fetches fine; single-author-ish, so treat as a good interview source
   rather than a currency check.
+- `ebar.com` (Bay Area Reporter) — California's largest LGBTQ newsroom
+  and an AAN-tier alt-press source, which puts it at the top of the
+  shortlist for any San Francisco / Bay Area queer piece. Real reported
+  features with named, on-the-record participants, not listings.
+  **ACCESS QUIRK, and this is the whole reason it is logged:** a prior
+  pass recorded ebar as blocked and gave up on it. It is not blocked —
+  it refuses the plain fetch backend and reads perfectly through
+  `claude-in-chrome`. Reach for the browser first here. Note also that
+  ebar carries two URL shapes for the same archive
+  (`ebar.com/story/<id>` and the older `ebar.com/story.php?ch=…&id=…`);
+  the short form is the one to store. Found — or rather recovered —
+  researching `queer-surf-pacifica`, 2026-09-07.
+- `queersurf.org` + `instagram.com/queersurf` + `linktr.ee/queersurf`
+  (Queer Surf — first-party) — the Linktree is the live index and the
+  most useful of the three: it points at the org's current jotform
+  registration forms, which are far more current and far more specific
+  than the Squarespace site's own pages (the site says only "sliding
+  scale, NOTAFLOF"; the form states the actual bands, the gear included,
+  the student:instructor ratio, the two Bay Area breaks and the refund
+  terms). Instagram (16.6K) is where dated programming actually lands.
+  **General lesson worth carrying to other nonprofits: when an org's own
+  site is vague about price, check whether its booking form is not.**
+  Found researching `queer-surf-pacifica`, 2026-09-07.
+- `kalw.org` and `kqed.org` (Bay Area public radio) — both ran real
+  reported pieces on Queer Surf, KALW with founder interviews and KQED
+  with a practical Bay Area learn-to-surf guide that also covers Linda
+  Mar conditions and wetsuit requirements. Useful for SF outdoors and
+  culture beats generally. **Caveat found live:** KQED's Queer Surf
+  pricing ("$80 to $250") conflates the org's two current sliding-scale
+  bands and does not match the org's own form — good for context, not
+  for numbers. Found 2026-09-07.
+- `surfrider.org/news` (Surfrider Foundation) — chapter-level news and
+  participant-written event recaps; its San Francisco chapter co-sponsors
+  Queer Surf's SWITCH. Useful as independent, dated confirmation that a
+  coastal event actually happened. Caveat: the recap read here miscounted
+  the exhibition's edition against the organiser's own count, so treat it
+  as evidence of occurrence rather than of ordinals. Found 2026-09-07.
 - `bandsintown.com` venue pages — per-venue upcoming-concert lists with
   dates and times, plus attendee notes that are datable. Useful as a
   second, non-first-party confirmation that a music venue is live and

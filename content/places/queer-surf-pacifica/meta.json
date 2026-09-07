@@ -1,0 +1,118 @@
+{
+  "slug": "queer-surf-pacifica",
+  "categories": [
+    "wellness-fitness"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 37.5945,
+    "lng": -122.5031
+  },
+  "place": {
+    "city": "Pacifica",
+    "neighborhood": "Linda Mar",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "fit-bot",
+  "sources": [
+    {
+      "name": "Queer Surf — official site",
+      "url": "https://www.queersurf.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "Queer Surf — Lessons page (official)",
+      "url": "https://www.queersurf.org/lessons",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "Queer Surf — SWITCH page (official)",
+      "url": "https://www.queersurf.org/switch",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "Queer Surf — 2026 beginner lesson registration form (official; current sliding-scale rates, gear, ratio, locations, cancellation policy)",
+      "url": "https://pci.jotform.com/form/250994688513168",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "Bay Area Reporter — California group fosters community among LGBTQ surfers (Matthew S. Bajko, 4 June 2025)",
+      "url": "https://www.ebar.com/story/155051",
+      "feedId": null,
+      "originalPublishedAt": "2025-06-04T00:00:00Z"
+    },
+    {
+      "name": "Bay Area Reporter — Surfers SWITCH it up in Pacifica (19 June 2024)",
+      "url": "https://www.ebar.com/story/75729",
+      "feedId": null,
+      "originalPublishedAt": "2024-06-19T00:00:00Z"
+    },
+    {
+      "name": "KALW — Queer Surf: From the bars to the beach",
+      "url": "https://www.kalw.org/2024-01-31/queer-surf-from-the-bars-to-the-beach",
+      "feedId": null,
+      "originalPublishedAt": "2024-01-31T00:00:00Z"
+    },
+    {
+      "name": "KQED — How to start surfing in the Bay Area (Queer Surf pricing, Linda Mar conditions, wetsuit guidance)",
+      "url": "https://www.kqed.org/arts/13961982/learn-to-surf-bay-area-where-to-find-surfing-lessons-best-beaches-rentals",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "name": "Surfrider Foundation — Cultivating Joy and Resilience on the Coast: Switch 2026 (participant recap, 24 June 2026)",
+      "url": "https://www.surfrider.org/news/switch-2026",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-24T00:00:00Z"
+    },
+    {
+      "name": "Queer Surf — Instagram (@queersurf), read 2026-09-07 for current programming",
+      "url": "https://www.instagram.com/queersurf/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    },
+    {
+      "name": "Queer Surf — Linktree (live index of open registrations and lesson-date docs)",
+      "url": "https://linktr.ee/queersurf",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-07T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Linda_Mar_Beach%2C_Pacifica.jpg",
+    "attribution": "Lee & Chantelle McArthur, Wikimedia Commons, CC BY 2.0",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Linda_Mar_Beach%2C_Pacifica.jpg",
+    "licenseNote": "NOT a photograph of a Queer Surf session. It is Linda Mar Beach in Pacifica, the break Queer Surf's Bay Area lessons and its SWITCH exhibition are anchored at — a lone silhouetted surfer at sunset, no identifiable face, clean at thumbnail. Chosen over Queer Surf's own event photography because those frames show identifiable queer and trans participants, which carries a real outing risk (the canto-dos-ursos precedent), and over the SWITCH poster because a poster carrying a hard date is a bad evergreen thumbnail. The poster runs in-body instead, where a caption can place it."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T11:40:00Z",
+      "note": "San Francisco Tier 1 queue (content/post-plan.md), ten #2 draw 2, drafted via near-write-article, byline FIT-BOT with the near-editor-sports lens. DEDUPE: ran scripts/check-duplicates.mjs before writing — the same six known-distinct baseline pairs, no Queer Surf pair; matched on venue name + coordinates per the standing lesson, not slug similarity. Nearest existing pin is ocean-beach-cafe-san-francisco, ~15km north, unrelated. TRUST 'auto': the lead verifies independently — the org's own site and its live 2026 registration form, corroborated by TWO Bay Area Reporter pieces (2025 feature, 2024 photo story), KALW, KQED and a Surfrider Foundation recap. THE EBAR RETRY WORKED: the queue flagged ebar as previously blocked; both stories read cleanly through claude-in-chrome (they refuse the plain fetch backend), which is now logged in preferred-sources.md as the access quirk. CORRECTIONS AGAINST THE QUEUE, three: (1) PRICES — the queue said only 'sliding-scale'. The org's own current 2026 registration form states $100-$250 suggested donation for Foundations and Practice lessons, $80-$150 for QTIBIPOC facing financial barriers, and $669-$2,000 for the Summer Surf Series. KQED's widely-repeated '$80 to $250' conflates the two bands and is not what the org currently asks; the form's figures are what is published here, flagged in-body as a number to re-check. (2) THE SWITCH HOOK IS PAST, NOT FORTHCOMING — SWITCH ran Saturday 13 June 2026 at Linda Mar and is over; the Surfrider Foundation published a participant recap on 24 June 2026. It was never usable as a forward hook from a 2026-09-07 draft. Per the 2026-09-04 dated-events-out-of-evergreen-copy directive it stays out of the copy as a date regardless; the durable claim published instead is that the exhibition runs each June at Linda Mar and is free. NOTE ALSO an unresolved ordinal conflict left out of the copy on purpose: queersurf.org/switch calls the 2026 edition the 4th annual, the Surfrider recap calls it the third, and ebar called the 2025 edition the third. No ordinal is asserted. (3) GEOGRAPHY — filing it as 'Pacifica' is right but incomplete, and the copy says so. Per the registration form, Bay Area lessons are held at EITHER Linda Mar, Pacifica OR the Princeton Jetty, Half Moon Bay; the org also runs LA lessons (Venice, Will Rogers), camps (Catalina, San Onofre) and beach-and-art days at Surfers Beach, El Granada. There is no clubhouse. Coordinates are Linda Mar, the anchor break and the SWITCH site, not an office. RESEARCH FLOOR: near-deep-researcher multi-source pass across the org's own site, its live jotform registration, Instagram, Linktree, ebar x2, KALW, KQED, Surfrider and coastsidenews. INSTAGRAM read as a first-class source per the 2026-09-04 directive, not just noted: the feed carried the currently-open Art Splash programme (Surfers Beach, El Granada, free, drag show at sunset) and a season-schedule post whose comment thread is the best available community testimony. REDDIT LEG DID NOT RUN — a site:reddit.com search for the org plus Linda Mar returned nothing about Queer Surf at all, and there is no threads-based account to quote; recorded here rather than glossed, per the fallback-ladder rule. GOOGLE REVIEWS not applicable in the usual sense: this is an organisation with no fixed premises and no Maps listing to review. In place of both, the Instagram comment threads and the ebar participant interview (Bibi Benitez, named and on the record to a newspaper) carry the first-person testimony. That is LESS corroboration than a normal venue piece, not the same amount — but the first-party registration form plus two independent alt-press features clear the bar comfortably on the facts that matter. OPERATOR GROUND-TRUTH: not applicable, outside the Baixada Santista/SP/Rio scope. OPEN LEAD, logged not drafted: Queer Surf's Art Splash at Surfers Beach, El Granada is a real dated event at a venue Near does not cover — per event-belongs-to-venue that is a separate piece, not an inline date here."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T11:55:00Z",
+      "note": "Flipped to active after all six locales were written as genuine local editions and quality-gate-before-publish was checked explicitly in each: shortTitle 43 chars (<=48), tagline <=90, seoDescription <=320, 6 bullets (>=3), body over the 150-word floor everywhere, geocode 0.8 (>=0.6), hero resolved. Structural rules re-measured per locale, not assumed from English: no paragraph over 100 words, a sub-header at least every 250 words, and 3 images against a ceil(665/250)=3 floor. Link density passes in every locale — six in-text external links all present in meta.sources, two <NearLink>s to dolphin-club-san-francisco and ocean-beach-cafe-san-francisco, both genuine San Francisco connections rather than gate-clearing filler. Opener bans checked in all six: no crowd-consensus first word, no faux-candor framing. Headline formula checked against the catalogue (grep of all en.mdx shortTitles) and against FIT-BOT's own two prior pins, 'Learn to Row With the Otters' and \"London's Biggest LGBT+ Jujitsu Club\" — the shape here is a bare noun-phrase claim, matching neither, and it is not a bare name. Legal: the negative claims about surf culture are quoted and attributed to named people speaking on the record to the Bay Area Reporter, not asserted in house voice; the in-body poster is Queer Surf's own promotional artwork used in editorial coverage of Queer Surf; no identifiable participant faces run anywhere on the page."
+    }
+  ],
+  "geocode": {
+    "provider": "manual",
+    "confidence": 0.8,
+    "query": "Pacifica State Beach (Linda Mar), 5000 CA-1, Pacifica, CA 94044 — the anchor break for Queer Surf's Bay Area lessons and its SWITCH exhibition; the organisation has no fixed premises"
+  },
+  "publishedAt": "2026-09-07T11:55:00Z",
+  "updatedAt": "2026-09-07T11:55:00Z"
+}

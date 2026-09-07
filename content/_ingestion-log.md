@@ -1110,3 +1110,73 @@ equiv. words, not raw character count, which had produced a false
 failure). Six external links and two internal per locale, all resolving.
 Dedupe clean — still the same six known-distinct baseline pairs, no Caos
 pair flagged. Build passes, all six locale pages generated.
+
+## 2026-09-07 — `queer-surf-pacifica` (FIT-BOT, San Francisco Tier 1)
+
+Ten #2, Tier 1 draw 2. Last open item in San Francisco's queue; the queue
+is now drained.
+
+**Dedupe.** `scripts/check-duplicates.mjs` before write and again before
+commit: the same six known-distinct baseline pairs both times, no Queer
+Surf pair. Matched on venue name + coordinates per the standing lesson,
+not slug similarity. Nearest existing pin is `ocean-beach-cafe-san-
+francisco`, ~15km north and unrelated.
+
+**The ebar retry, which was the queue's explicit instruction.** It
+worked. Both Bay Area Reporter stories refuse the plain fetch backend and
+read cleanly through `claude-in-chrome`. The earlier "blocked" note was a
+tooling artefact, not a dead source. Logged to `preferred-sources.md`
+with the access quirk and the two URL shapes.
+
+**Three corrections against the queue.** Rates come from the org's own
+live 2026 registration form ($100–$250; $80–$150 QTIBIPOC with financial
+barriers; $669–$2,000 for the Summer Surf Series), not from KQED's
+widely-repeated "$80 to $250", which conflates the two bands. The SWITCH
+hook was already past — it ran 13 June 2026 and Surfrider published a
+recap on 24 June — so it became a durable "runs each June at Linda Mar,
+free" claim with no date and no ordinal (the organiser and Surfrider
+disagree on the count; neither is asserted). And the geography is Linda
+Mar *or* the Princeton Jetty in Half Moon Bay, with LA lessons and camps
+besides — the org has no clubhouse, and the copy says so rather than
+picking a beach.
+
+**Research floor, honestly reported.** Two ebar features, KALW, KQED,
+Surfrider, plus first-party site/Instagram/Linktree/registration form.
+Instagram read as a first-class source, not noted in passing: it carried
+the currently-open Art Splash programme and the season-schedule comment
+thread. **The Reddit leg did not run** — nothing about this org is
+indexed — and there is no Maps listing to review, because it is an
+organisation without premises. That is less corroboration than a normal
+venue piece, not the same amount; the first-party booking form plus two
+independent alt-press features carry it.
+
+**Image call.** Photo inbox checked: only `near.png`, which is a settled
+branding no-for-now and irrelevant here. Queer Surf's own site checked
+next, per the mandatory tier order.
+
+- **Hero:** Linda Mar Beach at sunset, Commons, CC BY 2.0 —
+  `strategy: "stock"`, with a `licenseNote` stating plainly that it is
+  the break and not a Queer Surf session. A lone silhouette, no
+  identifiable face, clean at thumbnail.
+- **Rejected as hero, deliberately:** Queer Surf's own event photography,
+  which is tier-1 and better-looking, but shows identifiable queer and
+  trans participants — the outing risk the `canto-dos-ursos` precedent
+  is about. Also rejected the SWITCH poster as hero: a poster with a hard
+  date baked into the artwork is a bad evergreen thumbnail.
+- **In-body 1:** the crowded Pacifica lineup (Commons, CC BY-SA 2.0) —
+  the thing a beginner lesson is actually teaching you to enter.
+- **In-body 2:** the SWITCH poster after all, but in-body, where a
+  caption can place it as the org's own artwork for the most recent
+  edition. This is what delivers the queer-beat directive's "reads as
+  queer" requirement on the page without staking the card on a date.
+- No gallery. No illustration — real imagery existed at every slot.
+
+**Gates.** 665-word English body, 3 images against a `ceil(665/250)=3`
+floor, four sub-headers, longest paragraph 63 words. Every locale
+re-measured independently rather than inherited from English; four
+taglines came in over the 90-char limit on first draft and were rewritten,
+which is exactly what the per-locale check is for. Six in-text external
+links and two `<NearLink>`s per locale. Opener bans clear in all six.
+Headline checked against the full `shortTitle` catalogue and against
+FIT-BOT's own two prior pins; the shape matches neither and is not a bare
+name.
