@@ -1,0 +1,78 @@
+{
+  "slug": "kirbees-greenpoint-brooklyn",
+  "categories": ["food-drink"],
+  "tags": ["local-legend", "trending"],
+  "coordinates": {
+    "lat": 40.7214102,
+    "lng": -73.9458662
+  },
+  "place": {
+    "city": "New York City",
+    "neighborhood": "Greenpoint",
+    "region": "Brooklyn",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "CultureMap Fort Worth — Goldee's & Kirbee's pitmasters fire up BBQ joint in NYC",
+      "url": "https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
+      "feedId": null
+    },
+    {
+      "name": "Greenpointers — Kirbee's to bring award-winning Texan BBQ to Greenpoint",
+      "url": "https://greenpointers.com/2026/03/05/kirbees-to-bring-award-winning-texan-bbq-to-greenpoint-this-summer/",
+      "feedId": null
+    },
+    {
+      "name": "Brooklyn Eagle — Two of Texas' top Bar-B-Q joints combining forces in Greenpoint",
+      "url": "https://brooklyneagle.com/370289/two-of-texas-top-bar-b-q-joints-combining-forces-in-greenpoint/",
+      "feedId": null
+    },
+    {
+      "name": "r/FoodNYC — Move over Ceres, Kirbee's beef rib plate is $90",
+      "url": "https://www.reddit.com/r/FoodNYC/comments/1w7l25q/move_over_ceres_kirbees_beef_rib_plate_is_90/",
+      "feedId": null
+    },
+    {
+      "name": "r/FoodNYC — Kirbee's, From Two Acclaimed Texas Pitmasters, Opens This Week in Brooklyn",
+      "url": "https://www.reddit.com/r/FoodNYC/comments/1vxigbr/kirbees_from_two_acclaimed_texas_pitmasters_opens/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — Kirbee's listing",
+      "url": "https://www.google.com/maps/place/Kirbee's/@40.7214102,-73.9458662,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25900244c7c5f:0xdadc04dbb2da8ce7!8m2!3d40.7214102!4d-73.9458662!16s%2Fg%2F11y_gfv9rn",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkYOMzPT9j-YMIvNDrjeQJwbEs0787EVLcE_a7QVGOfZC8bGDmP06wK3lOigsePJA9XQOYIzO8mctWcnUl-4FIF7ppi3Mwh2X9tB4BHvexvLs3cEQGDpwd6p9XsAaQ3Q4pv0XN_ISzH1Tae",
+    "attribution": "Photo: Kirbee's, owner-submitted via Google Maps",
+    "attributionLink": "https://www.google.com/maps/place/Kirbee's/@40.7214102,-73.9458662,17z",
+    "licenseNote": "Real source photo (tier 1). Very new business, official site not yet found with a stable photo asset."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T23:44:48.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, article 7/30 (NYC cluster starts): researched English draft. Sourced beyond mainstream press: Greenpointers (local indie blog), Brooklyn Eagle (local paper), two live r/FoodNYC threads read directly (opening announcement, and the genuinely contentious $90 beef-rib-plate pricing thread with real counter-argument about Creekstone/Greater Omaha beef cost and NYC smoker regulations preventing traditional wood pits). Current-status confirmed via Google Maps: open, 4.3/33 reviews, photos as recent as 1 day old, reviews from hours/a day ago praising the brisket and turkey. Founders Chuck Charnichart (Barbs B Q, Lockhart) and Jonny White (Goldee's, Fort Worth — No.1 on Texas Monthly's 2021 top-50 list) verified via CultureMap Fort Worth with direct quotes. Pending: hero image resolution, five locale editions, full sign-offs, publish gates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:55:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, owner-submitted Google Business photo). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: pricing controversy attributed to named Reddit threads and framed as a live community debate with both sides represented (not just the sticker-shock complaint), no unsupported allegation. price-police pass: exact sourced prices ($45/platter, $90 beef rib plate for two) included directly, phrased as a liftable answer, both the number and the pushback included honestly. Link-density passes (CultureMap/Greenpointers/Brooklyn Eagle/Reddit in-text); no internal-link target exists yet in this NYC cluster — first NYC pin, logged as expected per content-rotation precedent, not a gap requiring content/requests.md since the cluster is being seeded in this same run. Red team: price stated as sourced this session with dates on the citing threads; NYC smoker-regulation claim attributed to UGC, framed as testimony not fact. Discover audit clean. Revenue pass: no natural affiliate/ad-sales opportunity beyond existing coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words with its own publishNote."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "Kirbee's, 55 McGuinness Blvd South, Brooklyn, NY 11222 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T23:50:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Kirbee's/@40.7214102,-73.9458662,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25900244c7c5f:0xdadc04dbb2da8ce7!8m2!3d40.7214102!4d-73.9458662!16s%2Fg%2F11y_gfv9rn"
+  },
+  "publishedAt": "2026-09-07T23:44:48.000000+00:00",
+  "updatedAt": "2026-09-07T23:55:00.000000+00:00"
+}
