@@ -1,9 +1,11 @@
 import NearLink from "./NearLink";
 import Figure from "./Figure";
+import FlowDiagram from "./FlowDiagram";
 
 export const mdxComponents = {
   NearLink,
   Figure,
+  FlowDiagram,
   p: (props: React.ComponentPropsWithoutRef<"p">) => (
     <p className="mb-6 last:mb-0" {...props} />
   ),

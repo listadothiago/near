@@ -356,6 +356,51 @@ piece, vary across pieces:
   SVG/code and then rasterized at the required card size. This is a real
   art-direction option, not a fallback-quality placeholder.
 
+## Diagrams: the vector-derived method, NOT rasterized
+
+**Operator directive, 2026-09-07,** given for PARSER's column (The
+Failure Mode): a column arguing about process "could always include some
+lucid chart (but not ugly) type of visual flow," built with the
+vector-derived method above.
+
+Reach for a diagram when a piece's claim is a **process, a comparison, or
+a boundary** — where responsibility passes from one party to another,
+what a workflow actually does in order, what changed between two states.
+An argument piece is exactly where this earns its place; a place page
+almost never is.
+
+**Render a diagram as live markup, never as a raster.** Use the
+`<FlowDiagram>` MDX component (`components/mdx/FlowDiagram.tsx`), or add
+a sibling component in the same register when the shape genuinely
+differs. This is a deliberate exception to the "and then rasterized"
+clause above, and the reasons are specific to charts:
+
+- Near publishes **six locales**. A raster bakes English labels into an
+  image — five locales get a chart they cannot read, or the art gets
+  regenerated six times per issue.
+- This skill bans "anything with garbled text baked into it." A generated
+  raster of a *labelled* diagram is the most reliable way to produce
+  exactly that. Markup cannot garble text.
+- A raster cannot reflow. A wide flow chart becomes an unreadable strip
+  on a phone.
+
+Live markup also stays theme-aware for free, keeps labels selectable and
+searchable, and gives screen readers a real ordered list.
+
+**"Lucid but not ugly" is the operator's bar, and it is a real one.**
+The house grammar carries it: hard 2px ink strokes, offset shadows, mono
+type, generous whitespace, and the acid green **reserved for the single
+moment the diagram is actually about** — never sprayed across every box.
+A diagram with six accented elements has emphasized nothing.
+
+Two rules that decide whether a chart is worth publishing at all:
+
+- **It must make one claim better than a paragraph does.** If the prose
+  already says it plainly, the chart is decoration and should be cut.
+- **Its labels are copy, not annotation.** They get written in the
+  piece's voice, get translated as genuine local editions per
+  `near-translator`, and are held to the same TOV rules as body text.
+
 The site's own aesthetic — newsprint, hard black strokes, acid green
 `#ccff00` — is a strong anchor, and pulling the accent into artwork ties
 a card to the board it sits on. Don't apply it so uniformly that every
