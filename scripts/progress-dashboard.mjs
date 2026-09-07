@@ -39,6 +39,7 @@ function tierOf(city) {
 }
 
 const byCity = new Map();
+let eventCount = 0; // dated happenings (meta.eventStartsAt set), not evergreen venues
 for (const slug of readdirSync(PLACES_DIR)) {
   let meta;
   try {
@@ -49,11 +50,17 @@ for (const slug of readdirSync(PLACES_DIR)) {
   const city = meta.place?.city ?? "?";
   if (!byCity.has(city)) byCity.set(city, []);
   if (meta.publishedAt) byCity.get(city).push(meta.publishedAt);
+  if (meta.eventStartsAt) eventCount++;
 }
 
-function bar(pct, width = 40) {
+function bar(pct, width = 40, markAt = null) {
   const filled = Math.round((pct / 100) * width);
-  return "█".repeat(filled) + "░".repeat(width - filled);
+  const chars = Array.from({ length: width }, (_, i) => (i < filled ? "█" : "░"));
+  if (markAt != null) {
+    const markPos = Math.min(width - 1, Math.round((markAt / 100) * width));
+    if (chars[markPos] === "░") chars[markPos] = "▏"; // milestone tick on unfilled track
+  }
+  return chars.join("");
 }
 
 function rateAndEta(dates, target) {
@@ -79,7 +86,71 @@ const BANNER = String.raw`
         N O R T H   S T A R   T R A C K E R
 `;
 console.log(BANNER);
+
+// --- Worldwide projected total (always shown, top of the dashboard) ---
+let grandTotal = 0;
+for (const [, dates] of byCity) grandTotal += dates.length;
+let allDates = [];
+for (const [, dates] of byCity) allDates = allDates.concat(dates);
+
+const tier1Cities = 3;
+const tier2Cities = TIER2.length;
+const tier3Cities = TIER3.length;
+const shareUnit = 1000 / (6 / 10 / tier1Cities); // places implied per full 1/10 share
+const tier2Target = Math.round(shareUnit * (3 / 10 / tier2Cities));
+const tier3Target = Math.round(shareUnit * (1 / 10 / tier3Cities));
+const impliedTotal = tier1Cities * 1000 + tier2Cities * tier2Target + tier3Cities * tier3Target;
+
+const worldPct = (grandTotal / impliedTotal) * 100;
+const { rate: worldRate, eta: worldEta } = rateAndEta(allDates, impliedTotal);
+
 console.log("=".repeat(64));
+console.log("  WORLDWIDE PROJECTED TOTAL (illustrative, see NOTE below)");
+console.log("=".repeat(64));
+console.log(`  [${bar(worldPct, 50)}]`);
+console.log(
+  `  ${String(grandTotal).padStart(5)} / ~${impliedTotal.toLocaleString()} places  (${worldPct.toFixed(2)}%)` +
+    (worldRate ? `   rate: ~${worldRate.toFixed(2)}/day` : ""),
+);
+if (worldEta && worldEta !== "REACHED") {
+  console.log(`  naive ETA to full catalogue target: ${worldEta}`);
+}
+console.log(
+  `  of which dated events (meta.eventStartsAt set): ${eventCount}` +
+    "  — per BACKLOG 1.0, event/accommodation/collection\n" +
+    "  coverage scales in proportion too, not just place-page pins.",
+);
+console.log("=".repeat(64));
+
+// --- Directional SEO/AEO order-of-magnitude, NOT a real forecast ---
+// Anchored to content/seo-forecast-3month.md's own explicit "no invented
+// numbers" discipline: a brand-new domain realistically sees dozens to
+// low hundreds of monthly sessions per ~50-150 pages by month 3, driven
+// almost entirely by long-tail queries, not head terms. Scaled linearly
+// here by current page count purely as a rough proxy — this is NOT a
+// real projection model (no backlink/authority/CTR data feeds it).
+const localePages = grandTotal * 6; // six locales per place, roughly
+const seoLow = Math.round((localePages / 100) * 12); // dozens end of the range
+const seoHigh = Math.round((localePages / 100) * 100); // low-hundreds end
+console.log("\n" + "-".repeat(64));
+console.log("  DIRECTIONAL SEO/AEO ORDER-OF-MAGNITUDE (NOT a real forecast)");
+console.log("-".repeat(64));
+console.log(
+  `  ~${localePages.toLocaleString()} locale pages live -> order-of-magnitude\n` +
+    `  ${seoLow}-${seoHigh} organic sessions/month by month 3, per the same\n` +
+    `  new-domain heuristic in content/seo-forecast-3month.md (dozens to\n` +
+    `  low-hundreds per 50-150 pages, long-tail-driven). This has NO real\n` +
+    `  backlink/authority/CTR data behind it — it is a linear scale-up of\n` +
+    `  a stated heuristic, nothing more. Treat as "shape of the curve."`,
+);
+console.log(
+  "  AEO (citation in AI answer engines) has no numeric proxy at all —\n" +
+    "  track it qualitatively via aeo/SKILL.md's citability checklist and\n" +
+    "  actual citation sightings, not a projected count.",
+);
+console.log("-".repeat(64));
+
+console.log("\n" + "=".repeat(64));
 console.log("  GOAL: 1,000 places in each Tier 1 city (London / NYC / SF Bay)");
 console.log("=".repeat(64));
 
@@ -94,17 +165,31 @@ for (const city of ["London", "New York", "San Francisco Bay Area"]) {
   const count = dates.length;
   tier1Total += count;
   const pct = (count / 1000) * 100;
+  // London carries a 100-place milestone marker (operator, 2026-09-07) —
+  // a nearer, checkable waypoint before the full 1,000.
+  const milestone = city === "London" ? 100 : null;
   const { rate, eta } = rateAndEta(dates, 1000);
   const yearsOut = eta && eta !== "REACHED"
     ? ((new Date(eta) - new Date()) / (365.25 * 86400000)).toFixed(1)
     : null;
 
   console.log(`\n  >> ${city.toUpperCase()}`);
-  console.log(`     [${bar(pct, 50)}]`);
+  console.log(`     [${bar(pct, 50, milestone ? (milestone / 1000) * 100 : null)}]`);
   console.log(
     `     ${String(count).padStart(4)} / 1000 pins  (${pct.toFixed(1)}%)` +
       (rate ? `   rate: ~${rate.toFixed(2)}/day` : "   rate: n/a (too little data)"),
   );
+  if (milestone) {
+    if (count >= milestone) {
+      console.log(`     >>> ${milestone}-PLACE MILESTONE ALREADY PASSED <<<`);
+    } else {
+      const { eta: milestoneEta } = rateAndEta(dates, milestone);
+      console.log(
+        `     next milestone: ${milestone} places` +
+          (milestoneEta ? ` — naive ETA ${milestoneEta}` : ""),
+      );
+    }
+  }
   if (eta === "REACHED") {
     console.log("     >>> TARGET REACHED <<<");
   } else if (eta) {
@@ -113,23 +198,11 @@ for (const city of ["London", "New York", "San Francisco Bay Area"]) {
 }
 
 console.log("\n--- Catalogue totals (all cities) ---\n");
-let grandTotal = 0;
-const rows = [...byCity.entries()].sort((a, b) => b[1].length - a[1].length);
-for (const [city, dates] of rows) {
-  grandTotal += dates.length;
-}
 console.log(`Total places published: ${grandTotal}`);
 console.log(`Tier 1 cities combined: ${tier1Total}`);
 
 console.log("\n--- Illustrative full-catalogue target, IF today's Tier 1/2/3 ---");
 console.log("--- output cadence (6:3:1 per BACKLOG 2.2) held as final targets ---\n");
-const tier1Cities = 3;
-const tier2Cities = TIER2.length;
-const tier3Cities = TIER3.length;
-const shareUnit = 1000 / (6 / 10 / tier1Cities); // places implied per full 1/10 share
-const tier2Target = Math.round(shareUnit * (3 / 10 / tier2Cities));
-const tier3Target = Math.round(shareUnit * (1 / 10 / tier3Cities));
-const impliedTotal = tier1Cities * 1000 + tier2Cities * tier2Target + tier3Cities * tier3Target;
 console.log(`Tier 1: ${tier1Cities} cities x 1,000 = ${tier1Cities * 1000}`);
 console.log(`Tier 2: ${tier2Cities} cities x ~${tier2Target} = ~${tier2Cities * tier2Target}`);
 console.log(`Tier 3: ${tier3Cities} cities x ~${tier3Target} = ~${tier3Cities * tier3Target}`);

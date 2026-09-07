@@ -64,6 +64,22 @@ function checkDir(root, kind) {
       if (kind === "places" && bullets > 0 && bullets < 3) {
         problems.push(`${kind}/${slug}/${f}  only ${bullets} bullets (min 3)`);
       }
+
+      // publishNote: quote <=280, attributedTo <=80 — nested under its
+      // own key, so it needs its own multi-line-aware match rather than
+      // the flat single-line regex the LIMITS loop uses.
+      const noteMatch = fm.match(
+        /publishNote:\s*\n\s*quote:\s*"([\s\S]*?)"\s*\n\s*attributedTo:\s*"([\s\S]*?)"/,
+      );
+      if (noteMatch) {
+        const [, quote, attributedTo] = noteMatch;
+        if ([...quote].length > 280) {
+          problems.push(`${kind}/${slug}/${f}  publishNote.quote ${[...quote].length}>280`);
+        }
+        if ([...attributedTo].length > 80) {
+          problems.push(`${kind}/${slug}/${f}  publishNote.attributedTo ${[...attributedTo].length}>80`);
+        }
+      }
     }
   }
 }
