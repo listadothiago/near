@@ -124,6 +124,27 @@ rules:
       Keep currency, units and conditions consistent across all six locales
       and any supported structured-data fields; never add unsupported
       metadata fields merely to satisfy this rule.
+
+      NEVER SKIP THIS SILENTLY (operator, 2026-09-07, caught live on TOAD
+      Bakery's first draft — a sourced price band existed in the research
+      but never made it into the body). Every reader-relevant piece states
+      SOME price signal, even when a precise current figure isn't in hand:
+      at minimum a qualitative tier (cheap / mid-range / expensive) grounded
+      in whatever was actually sourced (a Google Maps price band, a menu
+      glance, a UGC price mention), never invented from vibes. Useful
+      phrasing patterns: "budget-wise, this is cheap" paired with the
+      sourced band: "expect to spend at least £X" reads as a durable,
+      checkable claim (it survives a modest price rise) better than a
+      precise point figure asserted as gospel — prefer that framing over a
+      bare number when the exact current price is not freshly verified.
+
+      AEO REASON THIS MATTERS: "how much does X cost" is one of the most
+      common query/prompt shapes there is, in search and in AI-answer
+      surfaces alike. Phrase the price sentence so it stands alone as a
+      complete, liftable answer to that exact question — subject, price
+      signal, unit, source — rather than a clause buried mid-paragraph
+      that needs the surrounding sentences to make sense. See `aeo/
+      SKILL.md`'s citability checklist, which this satisfies directly.
     trigger: "creating or refreshing any article with reader-relevant costs"
     action: "verify and link useful price information; have SEO/AEO check standalone clarity and locale consistency; log unavailable prices without inventing them"
 

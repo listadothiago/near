@@ -131,6 +131,14 @@ body {
   padding: 0;
 }
 
+html {
+  /* Operator directive, 2026-09-07: bump base type size site-wide.
+     Every component uses rem-based Tailwind arbitrary values, so this
+     one change scales the whole system proportionally instead of
+     hand-editing each component's font-size utility. */
+  font-size: 112.5%;
+}
+
 body {
   background: var(--paper);
   color: var(--ink);

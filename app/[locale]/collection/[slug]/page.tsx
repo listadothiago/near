@@ -22,6 +22,7 @@ import CollectionPlaces from "@/components/collection/CollectionPlaces";
 import LongFormBody from "@/components/place/LongFormBody";
 import ReasonsList from "@/components/place/ReasonsList";
 import PublishNote from "@/components/place/PublishNote";
+import HousePromo from "@/components/ads/HousePromo";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
@@ -102,7 +103,8 @@ export default async function CollectionPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Header />
-      <article className="mt-6">
+      <div className="lg:flex lg:items-start lg:gap-10">
+      <article className="mt-6 lg:flex-1 lg:min-w-0">
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <BackLink />
           <ShareButton
@@ -162,6 +164,15 @@ export default async function CollectionPage({
         </LongFormBody>
         <CollectionPlaces places={places} />
       </article>
+      <aside className="hidden lg:block lg:w-[300px] lg:shrink-0 lg:sticky lg:top-6 lg:mt-6">
+        <HousePromo
+          locale={locale as ContentLocale}
+          slot="collection-rail-1"
+          size="half-page"
+          excludeSlug={slug}
+        />
+      </aside>
+      </div>
       <Footer stats={stats} />
     </>
   );
