@@ -9,8 +9,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 37.793678,
-    "lng": -122.274558
+    "lat": 37.793749,
+    "lng": -122.2745719
   },
   "place": {
     "city": "Oakland",
@@ -52,13 +52,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "near-write-article: finished orphaned draft from prior session (pt-BR only), added English source + remaining locales, sourced hero image, published per content-rotation Tier 1/Oakland turn"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:19:24Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.793749, -122.2745719). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "48 Webster St, Oakland, CA 94607 (Jack London Square)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Heinold's First and Last Chance Saloon, Jack London Square, 48 Webster St, Oakland, CA 94607 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:19:24Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Heinold's+First+and+Last+Chance+Saloon/@37.793749,-122.2745719,17z/data=!3m1!4b1!4m6!3m5!1s0x808f80c8ee85636f:0x4de606c4829a777e!8m2!3d37.793749!4d-122.2745719!16s%2Fg%2F1tdcglq8"
   },
   "publishedAt": "2026-09-02T01:48:49Z",
-  "updatedAt": "2026-09-02T01:48:49Z"
+  "updatedAt": "2026-09-07T18:19:24Z"
 }

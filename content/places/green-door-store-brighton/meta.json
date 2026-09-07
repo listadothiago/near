@@ -95,13 +95,20 @@
       "status": "active",
       "at": "2026-09-04T19:58:03Z",
       "note": "Flipped to active after chief-editor sign-off, which the standing operator directive of 2026-09-01 treats as operator approval for a trust: review piece. Sign-off turned specifically on the 'it exists and is old' test: the piece's central claim is about the present (this venue still functions as a touring stop while 175 UK towns no longer have one) and the reader can check it in one click on the DICE link, so it is not a profile of an old room.\n\nAll six locales written as genuine editions, not literal translations. Market-specific additions rather than uniform copies: pt-BR and es-419 both add the practical day-trip-from-London note and the advance-online-ticketing warning that a Latin American traveller needs and the English source has no reason to carry; zh-CN adds the same plus a card-payment note. es-ES and it keep the source's shape, since a Spanish or Italian reader needs no such orientation. Every locale carries all four images, both external links and the internal NearLink.\n\nSelf-caught defect, fixed before build: the zh-CN draft's opening sentence contained an untranslated English word ('judge') where 判断 belonged.\n\nMECHANICAL GATES, checked rather than assumed: tagline 84/90 chars; shortTitle 16/48; seoDescription 236/320; 5 bullets (min 3); English body 806 words (min 150); geocode confidence 0.9 from Google Maps' own coordinates for the venue; hero resolved to a real venue photograph; publishedAt/updatedAt are real timestamps to the second, not the T00:00:00Z placeholder. Image floor ceil(806/250)=4 met with hero + 3 in-body. Link density: multiple real in-text external links (MVT, NME, DICE, Carousel, venue access page) plus an internal NearLink to legends-hotel-brighton — a genuine link, being Brighton's only other pin and a real editorial contrast (seafront cabaret institution vs railway-arch touring room), not a forced one.\n\nDEDUPE: scripts/check-duplicates.mjs run before creation and again before commit. Output unchanged at the documented baseline of six pairs — this place triggered NO new pair. Checked explicitly against legends-hotel-brighton, Brighton's only other pin, which is ~1.6km away on Marine Parade and a different venue entirely.\n\nRED TEAM / shelf-life: every price was verified this session from live ticketing, and the headline ('Booked into 2028') deliberately survives any price change because it rests on a date, not a figure. No internal production concepts (tiers, rotation, coverage gaps, queue position) appear in any locale — checked in all six."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:19:24Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (50.8295937, -0.1401994). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "Green Door Store, Units 2-4 Trafalgar Arches, Lower Goods Yard, Brighton Railway Station, Brighton BN1 4FQ"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Green Door Store, Brighton — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:19:24Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Green+Door+Store/@50.8295937,-0.1401994,17z/data=!3m1!4b1!4m6!3m5!1s0x48758575d283a78b:0x1b01cd0b7bebedba!8m2!3d50.8295937!4d-0.1401994!16s%2Fg%2F1td1cws1"
   },
   "publishedAt": "2026-09-04T19:58:03Z",
-  "updatedAt": "2026-09-04T19:58:03Z"
+  "updatedAt": "2026-09-07T18:19:24Z"
 }

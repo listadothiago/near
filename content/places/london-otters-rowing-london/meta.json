@@ -7,8 +7,8 @@
     "lgbtq-friendly"
   ],
   "coordinates": {
-    "lat": 51.5077,
-    "lng": 0.06
+    "lat": 51.5076594,
+    "lng": 0.0416366
   },
   "place": {
     "city": "London",
@@ -40,13 +40,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "War-room slate pin #3, FIT-BOT byline, and the direct answer to the operator's standing ask for joinable queer-inclusive sport. Verified active via the club's own site: 39th Otterpups beginner cohort graduated 29 November 2025, and the club lists 2026 race entries (Women's Head of the River 14 March, Head of the River Race 28 March). Single-source pin by necessity — the club's site is the authoritative record for its own join process — flagged for a second-source enrichment pass when press coverage is found. 'UK's only LGBTQ-inclusive rowing club' is the club's own description, attributed as such. Coordinates are the Royal Docks Watersports Centre address (1012 Dockside Road, E16 2QT) at geocode confidence 0.5 — sharpen when drafting the /london page."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:21:37Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5076594, 0.0416366). Old pin was ~1270m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Royal Docks Watersports Centre, 1012 Dockside Road, London E16 2QT"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "London Otters Rowing Club, 1012 Dockside Rd, London E16 2QT, Royal Docks — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:21:37Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/London+Otters+Rowing+Club/@51.5076594,0.0416366,17z/data=!3m1!4b1!4m6!3m5!1s0x47d8a87c79cbc4c7:0x123944dc2b65fd4b!8m2!3d51.5076594!4d0.0416366!16s%2Fg%2F11fzfdn3pg"
   },
   "publishedAt": "2026-08-31T22:17:05Z",
-  "updatedAt": "2026-08-31T22:17:05Z"
+  "updatedAt": "2026-09-07T18:21:37Z"
 }

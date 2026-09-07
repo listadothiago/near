@@ -8,8 +8,8 @@
     "dog-first"
   ],
   "coordinates": {
-    "lat": 51.5199,
-    "lng": -0.1467
+    "lat": 51.5222292,
+    "lng": -0.144209
   },
   "place": {
     "city": "London",
@@ -57,13 +57,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "near-translator wrote genuine local editions for pt-BR, it, es-ES, es-419, and zh-CN (not literal translations, per each locale persona). All six locales now present, satisfying rules.md's full-locale-coverage rule for this trust:auto place. shortTitle/tagline/seoDescription character limits checked and confirmed under schema max for every locale before this flip. Status moved from draft to active."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:21:37Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5222292, -0.144209). Old pin was ~311m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "58 Devonshire Street, Fitzrovia, London W1W 5EA"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Lucky Saint, 58 Devonshire St, London W1W 5EA, Fitzrovia — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:21:37Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Lucky+Saint/@51.5222292,-0.144209,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b2faa8ad275:0x5cef1ae0f00aa5a5!8m2!3d51.5222292!4d-0.144209!16s%2Fg%2F11shgdfybl"
   },
   "publishedAt": "2026-09-01T17:38:45Z",
-  "updatedAt": "2026-09-01T17:38:45Z"
+  "updatedAt": "2026-09-07T18:21:37Z"
 }

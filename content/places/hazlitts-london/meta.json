@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5136,
-    "lng": -0.1319
+    "lat": 51.5143631,
+    "lng": -0.1318387
   },
   "place": {
     "city": "London",
@@ -68,13 +68,20 @@
       "status": "active",
       "at": "2026-09-01T01:00:00Z",
       "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active. Geocode confidence remains 0.5 (manual approximation) — a real address lookup is still owed as follow-up, tracked in BACKLOG.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:19:24Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5143631, -0.1318387). Old pin was ~84m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "6 Frith Street, Soho Square, London W1D 3JA"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Hazlitt's, Soho, London — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:19:24Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Hazlitt's/@51.5143631,-0.1318387,17z/data=!4m9!3m8!1s0x487604d2a8c19c13:0x945c1f2f03bac995!5m2!4m1!1i2!8m2!3d51.5143631!4d-0.1318387!16s%2Fm%2F0g9t45t"
   },
   "publishedAt": "2026-09-01T03:25:12Z",
-  "updatedAt": "2026-09-01T03:25:12Z"
+  "updatedAt": "2026-09-07T18:19:24Z"
 }
