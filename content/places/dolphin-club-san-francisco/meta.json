@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 37.808433,
-    "lng": -122.421055
+    "lat": 37.8076518,
+    "lng": -122.421374
   },
   "place": {
     "city": "San Francisco",
@@ -88,13 +88,20 @@
       "status": "active",
       "at": "2026-09-03T00:30:00Z",
       "note": "Flipped to active after all six locales written and quality-gate-before-publish conditions checked: shortTitle <=48, tagline <=90, seoDescription <=320, >=3 bullets, in-text external + internal links present, opener bans checked in every locale, paragraph/sub-header density rules held, >=2 images (hero + in-body) against a ~700-word en body. Internal links: the-stud-san-francisco and ocean-beach-cafe-san-francisco, both genuine SF connections."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.8076518, -122.421374). Old pin was ~91m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "502 Jefferson St, San Francisco, CA 94109 (coordinates cross-checked against Commons photo EXIF geotag)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Dolphin Swimming & Boating Club, 502 Jefferson St, San Francisco, CA 94109 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Dolphin+Swimming+%26+Boating+Club/@37.8076518,-122.421374,17z/data=!3m1!4b1!4m6!3m5!1s0x808580e053a7d0f3:0xbc23fc3b8b456de3!8m2!3d37.8076518!4d-122.421374!16s%2Fg%2F1td4kbn0"
   },
   "publishedAt": "2026-09-03T00:30:00Z",
-  "updatedAt": "2026-09-03T00:30:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

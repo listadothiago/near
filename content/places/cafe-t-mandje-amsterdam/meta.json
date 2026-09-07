@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 52.3745,
-    "lng": 4.8994
+    "lat": 52.3748109,
+    "lng": 4.9009753
   },
   "place": {
     "city": "Amsterdam",
@@ -70,13 +70,20 @@
       "status": "active",
       "at": "2026-08-31T23:59:00Z",
       "note": "All six locales complete via near-translator (pt-BR, it, es-ES, es-419, zh-CN, alongside the English source) — full-locale-coverage gate cleared. Hero image and sourcing already resolved. Moved to active as part of the September 2026 content push. Geocode confidence remains 0.5 (manual approximation) — a real address lookup is still owed as follow-up, tracked in BACKLOG.md, but does not block publish per rules.md (only the hero-image and locale gates are hard blockers)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.3748109, 4.9009753). Old pin was ~112m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Zeedijk 63, Amsterdam, Netherlands — approximate placement, needs refining against a real address lookup"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Café 't Mandje, Zeedijk 63, 1012 AS Amsterdam — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Caf%C3%A9+'t+Mandje/@52.3748109,4.9009753,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609b998a89e03:0x268c2fdcfe8fd910!8m2!3d52.3748109!4d4.9009753!16s%2Fm%2F05c2y69"
   },
   "publishedAt": "2026-09-01T02:33:00Z",
-  "updatedAt": "2026-09-01T02:33:00Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

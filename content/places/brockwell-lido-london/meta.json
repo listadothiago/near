@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.453,
-    "lng": -0.108
+    "lat": 51.4533398,
+    "lng": -0.1062076
   },
   "place": {
     "city": "London",
@@ -53,13 +53,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "WILD0's first byline and the first wellness-fitness place in London. Chosen after rejecting Bartitsu: BACKLOG names it as a wanted London topic, but the only London listing on bartitsu.club is a Battersea study group with no address or schedule, on a page marked unfinished — an article topic, not a visitable pin, so no place was created. Brockwell Lido verifies properly and is genuinely current: Fusion Lifestyle entered administration 2026-04-01 and Lambeth took over management on 2026-07-01, with swimmers holding public meetings about the future. Hero is CC BY 2.0 from Commons; attribution required and the record names only an uploader, recorded honestly in licenseNote."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.4533398, -0.1062076). Old pin was ~129m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Brockwell Lido, Dulwich Road, Herne Hill, London SE24"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Brockwell Lido, Dulwich Rd, London SE24 0PA — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Brockwell+Lido/@51.4533398,-0.1062076,17z/data=!3m1!4b1!4m6!3m5!1s0x48760472dbb07381:0xa5d0cc09ad2c59a1!8m2!3d51.4533398!4d-0.1062076!16zL20vMDI0aDQz"
   },
   "publishedAt": "2026-08-31T21:17:50Z",
-  "updatedAt": "2026-08-31T21:17:50Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

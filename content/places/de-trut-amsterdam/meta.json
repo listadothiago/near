@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 52.3679,
-    "lng": 4.8768
+    "lat": 52.367801,
+    "lng": 4.872094
   },
   "place": {
     "city": "Amsterdam",
@@ -76,13 +76,20 @@
       "status": "active",
       "at": "2026-09-01T01:00:00Z",
       "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. Moved to active. Geocode confidence remains 0.5 (manual approximation for Bilderdijkstraat) — a real address lookup to house number 165E is still owed as follow-up, tracked in BACKLOG.md."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.367801, 4.872094). Old pin was ~319m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Bilderdijkstraat 165E, Amsterdam-West, Netherlands"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Vereniging De Trut, Bilderdijkstraat 165-E, 1053 KP Amsterdam — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Vereniging+De+Trut/@52.367801,4.872094,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609de29a38759:0xf7f11c91c0e40956!8m2!3d52.367801!4d4.872094!16s%2Fg%2F12fgshg2v"
   },
   "publishedAt": "2026-09-01T03:25:12Z",
-  "updatedAt": "2026-09-01T03:25:12Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

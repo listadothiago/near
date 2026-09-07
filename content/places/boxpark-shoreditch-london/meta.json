@@ -8,8 +8,8 @@
     "hipster"
   ],
   "coordinates": {
-    "lat": 51.5252,
-    "lng": -0.0779
+    "lat": 51.5234723,
+    "lng": -0.0757539
   },
   "place": {
     "city": "London",
@@ -40,13 +40,20 @@
       "status": "active",
       "at": "2026-08-27T00:00:00Z",
       "note": "near-editor: added via neighborhood research (Shoreditch)"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5234723, -0.0757539). Old pin was ~242m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "Boxpark Shoreditch, 2-10 Bethnal Green Road, London E1 6GY"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "BOXPARK Shoreditch, 2-10 Bethnal Grn Rd, London E1 6GY — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/BOXPARK+Shoreditch/@51.5234723,-0.0757539,17z/data=!3m1!4b1!4m6!3m5!1s0x48761cb0d19ba99b:0x2c0c4950b950119e!8m2!3d51.5234723!4d-0.0757539!16s%2Fg%2F1260lzs19"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-08-27T23:13:27Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

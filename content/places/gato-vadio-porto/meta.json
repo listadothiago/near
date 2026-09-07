@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 41.1519,
-    "lng": -8.6104
+    "lat": 41.1515449,
+    "lng": -8.6214045
   },
   "place": {
     "city": "Porto",
@@ -83,13 +83,20 @@
       "status": "active",
       "at": "2026-09-07T11:12:00Z",
       "note": "Editorial call by the operator, not a factual correction: all J.K. Rowling / Harry Potter framing removed from the opening paragraph in all six locales. The opener had contrasted Gato Vadio against the Harry Potter merchandise at Porto most famous bookshop. Replaced rather than deleted, so the piece keeps a hook: the contrast now runs on the timed-entry ticketing and slot-based visitor flow at that same famous shop, set against Gato Vadio physical reality on Rua da Maternidade -- one living-room-sized room, Bakunin and bell hooks over bestseller tables, and roughly thirty-something opening hours a week. Every fact in the replacement was already present elsewhere in the piece or in meta.json; nothing new was sourced or invented. The existing Livraria Lello comparison later in the piece carries no Harry Potter framing and was left as written."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:17:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (41.1515449, -8.6214045). Old pin was ~922m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Rua da Maternidade 124, Cedofeita, Porto, Portugal"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Gato Vadio, R. da Maternidade 124, 4050-369 Porto — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:17:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Gato+Vadio/@41.1515449,-8.6214045,17z/data=!3m1!4b1!4m6!3m5!1s0xd246503821e8f05:0xb15217c40e301790!8m2!3d41.1515449!4d-8.6214045!16s%2Fg%2F11c3j92020"
   },
   "publishedAt": "2026-09-01T12:42:17Z",
-  "updatedAt": "2026-09-07T11:12:00Z"
+  "updatedAt": "2026-09-07T18:17:08Z"
 }

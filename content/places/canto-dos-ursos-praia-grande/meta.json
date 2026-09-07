@@ -8,8 +8,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": -24.0027,
-    "lng": -46.4172
+    "lat": -24.0024494,
+    "lng": -46.4158235
   },
   "place": {
     "city": "Praia Grande",
@@ -74,13 +74,20 @@
       "status": "active",
       "at": "2026-09-01T00:15:00Z",
       "note": "Sign-off complete. near-tov-police: no opening-line bans, AI-tell sludge, or age-coding found in the English source; voice register reads as STEFAN's established plain-spoken nightlife beat. near-legal-counsel: hero image consent risk resolved per the crop above; no defamation-adjacent claims (the 'other Praia Grande leads had gone quiet since 2023' line is a neutral factual observation, no venue named or disparaged); AI-disclosure and byline compliance confirmed via lib/content/authors.ts's stefan entry; image attribution/licenseNote honestly describes provenance and the crop rationale. Chief editor (near-editor): approved — a real, current, well-sourced first pin for a genuine coverage gap (Praia Grande), honest about the one claim (alvará/licensing dispute) it couldn't verify and deliberately left out rather than publishing an unsourced assertion. All six locales (en, pt-BR, es-419, es-ES, it, zh-CN) written this pass by near-write-article, each a genuine local edition per near-translator, not a literal translation. trust: auto (operator directly commissioned and supplied sourcing/images this session) — flipping to active and publishing."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-24.0024494, -46.4158235). Old pin was ~142m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.65,
-    "query": "Av. Presidente Kennedy 549, Boqueirão, Praia Grande, SP — street-level placement, corrected to 549 per the venue's own photographed street number"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Canto dos Ursos Club, Av. Pres. Kennedy, 575, Boqueirão, Praia Grande — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Canto+dos+Ursos+Club/@-24.0024494,-46.4158235,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1d25ec25101f:0x2f254af967f00069!8m2!3d-24.0024494!4d-46.4158235!16s%2Fg%2F11txdr7z4h"
   },
   "publishedAt": "2026-09-01T21:42:08Z",
-  "updatedAt": "2026-09-01T21:42:08Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }

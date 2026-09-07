@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.9318,
-    "lng": -46.3295
+    "lat": -23.9320115,
+    "lng": -46.332233
   },
   "place": {
     "city": "Santos",
@@ -58,13 +58,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "Created to close content/requests.md's santos-centro-historico-second, which Teatro Clube da Eskyna had logged: the Eskyna was Near's only Centro Histórico address and had no genuine neighbour to bridge to. Baixada Santista is a Tier 1 hub in BACKLOG.md. 296m from the Eskyna, clear of dedupe-by-place's 150m threshold. Hero image is CC BY-SA 4.0 from Wikimedia Commons rather than a source photo — openly licensed and stably hostable, attribution and licence recorded. All four sources verified reachable before citing."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:13:51Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9320115, -46.332233). Old pin was ~278m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Rua do Comércio 92, Centro Histórico, Santos, SP"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Casa da Frontaria Azulejada, Rua do Comércio, 92, Centro, Santos — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:13:51Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Casa+da+Frontaria+Azulejada/@-23.9320115,-46.332233,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce04849ddab919:0xdb09d207341c1b80!8m2!3d-23.9320115!4d-46.332233!16s%2Fg%2F11b5v5cs5h"
   },
   "publishedAt": "2026-08-31T18:17:09Z",
-  "updatedAt": "2026-08-31T18:17:09Z"
+  "updatedAt": "2026-09-07T18:13:51Z"
 }
