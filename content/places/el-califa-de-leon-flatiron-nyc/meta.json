@@ -1,0 +1,68 @@
+{
+  "slug": "el-califa-de-leon-flatiron-nyc",
+  "categories": ["food-drink"],
+  "tags": ["trending"],
+  "coordinates": {
+    "lat": 40.7416945,
+    "lng": -73.9905769
+  },
+  "place": {
+    "city": "New York",
+    "neighborhood": "Flatiron",
+    "region": "New York",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Eater NY (Substack) — One of Mexico City's Most Famous Taquerias Is Opening in Flatiron Next Month",
+      "url": "https://eaterny.substack.com/p/one-of-mexico-citys-most-famous-taquerias",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-01T00:00:00Z"
+    },
+    {
+      "name": "Cititour — First Look Inside El Califa de Leon in NYC's Flatiron",
+      "url": "https://cititour.com/NYC_News/First-Look-Inside-Michelin-Starred-El-Califa-de-Leon-in-NYC/10964",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-25T00:00:00Z"
+    },
+    {
+      "name": "OpenTable Blog — El Califa de León in NYC: Now open",
+      "url": "https://www.opentable.com/blog/el-califa-de-leon-nyc/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-24T00:00:00Z"
+    },
+    {
+      "name": "Hoodline — El Califa de León Opens First U.S. Restaurant in Flatiron NYC",
+      "url": "https://hoodline.com/2026/09/mexico-city-s-legendary-taco-stand-finally-opens-full-restaurant-in-flatiron/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+    "attribution": "Photo by Chad Montano on Unsplash",
+    "attributionLink": "https://unsplash.com/photos/cooked-tacos-lP5MCM6nZ5A",
+    "licenseNote": "Unsplash license (free to use). No licensable real interior/exterior photo of this Flatiron location was available at pin time; generic taco stock stands in per near-illustrator's licensed-stock fallback tier."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-07T21:30:00Z",
+      "note": "FOODIE-9000 byline. Sourced from near-sources-war-room's 2026-09-07 NYC seeding pass (trust: auto, independently corroborated by Eater NY, Cititour, OpenTable Blog, Hoodline). Verified via Google Maps (exact pin) that the address and business are correctly plotted; site's own hours page (califadeleon.com) and press confirm daily 11am-11pm operation. Note: Google's listing currently shows a 'temporarily closed' flag with no supporting detail — checked against the venue's own site (states regular daily hours, no closure notice) and against press coverage through September 1, 2026 (no closure reported); treated as a stale/unverified Maps flag rather than a real closure, but logged here for the next editor to re-check on touch. Research floor: near-deep-researcher cross-referenced four press sources; Reddit (r/FoodNYC, r/AskNYC) returned mixed early reviews on price and portion size; Google/Yelp reviews (83 reviews, 3.4 stars) read for recency — the pattern is real: multiple 2026-08/09 reviews call the $19 four-ounce taco a poor value next to the CDMX original's ~$5 price, while praising the tortilla and Pat LaFrieda meat quality itself. Five preferred-sources context check: Eater NY, Cititour, OpenTable Blog, Hoodline, Time Out all carried the opening."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "El Califa de León, 20 W 23rd St, New York, NY 10010 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T21:10:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/El+Califa+de+Le%C3%B3n/@40.7416945,-73.9905769,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259001dfafdd5:0x8fecdd30e58fe9fa!8m2!3d40.7416945!4d-73.9905769!16s%2Fg%2F11ntfmr517"
+  },
+  "publishedAt": "2026-09-07T21:35:00Z",
+  "updatedAt": "2026-09-07T21:35:00Z"
+}

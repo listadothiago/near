@@ -1,0 +1,62 @@
+{
+  "slug": "kween-astoria-queens",
+  "categories": ["nightlife-sound"],
+  "tags": ["lgbtq-friendly"],
+  "coordinates": {
+    "lat": 40.7654724,
+    "lng": -73.9187591
+  },
+  "place": {
+    "city": "New York",
+    "neighborhood": "Astoria",
+    "region": "New York",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "GayCities New York City — Kween reviews, photos",
+      "url": "https://newyork.gaycities.com/bars/311113-kween",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Astoria Post — New Queer Lounge To Open in Astoria This Month",
+      "url": "https://astoriapost.com/new-queer-lounge-to-open-in-astoria-this-month",
+      "feedId": null,
+      "originalPublishedAt": "2022-05-01T00:00:00Z"
+    },
+    {
+      "name": "See The Queens — Kween",
+      "url": "https://seethequeens.com/kween/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://images.unsplash.com/photo-1550218585-5a4e6bc59ebb",
+    "attribution": "Photo by Aleksandr Popov on Unsplash",
+    "attributionLink": "https://unsplash.com/photos/pink-and-blue-bar-neon-lights-qMn96a29lUc",
+    "licenseNote": "Unsplash license (free to use). No licensable real interior photo of the venue was available at pin time; generic neon-lit bar stock stands in per near-illustrator's licensed-stock fallback tier, chosen to echo Kween's own bright-pink decor documented in press and reviews."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-07T22:00:00Z",
+      "note": "STEFAN byline. Sourced from near-sources-war-room's 2026-09-07 NYC seeding pass (trust: auto, corroborated by Yelp — 106+ reviews at seeding time, now higher — GayCities, thegaypassport, Travel Gay, and Astoria Post's original 2022 opening coverage). Google Maps confirms open and operating, 4.9 stars across 1,377 reviews, wheelchair accessible. This is Near's first Queens pin and first NYC nightlife-sound pin. Research floor: near-deep-researcher reconciled opening history (May 16, 2022, in the former Viva Viva space, owner Pedro Alvarado) against current-day coverage; Reddit (r/asktransgender, r/lgbt, r/Astoria) surfaces it repeatedly as a recommended safe queer space in Queens; Google/Yelp reviews (huge recent sample) consistently praise the drag brunch and the welcoming door policy, with occasional notes that weekend nights get loud and packed — noted here rather than smoothed over. Five preferred-sources context check: GayCities, Travel Gay, thegaypassport, Astoria Post, See The Queens."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Kween, 34-10 30th Ave, Astoria, NY 11103 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T21:25:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Kween/@40.7654724,-73.9187591,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25f1f1e097d7f:0x1cdf64d26f64b57e!8m2!3d40.7654724!4d-73.9187591!16s%2Fg%2F11sx5skkbq"
+  },
+  "publishedAt": "2026-09-07T22:05:00Z",
+  "updatedAt": "2026-09-07T22:05:00Z"
+}

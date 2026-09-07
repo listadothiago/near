@@ -1,0 +1,62 @@
+{
+  "slug": "the-little-bookshop-east-williamsburg-brooklyn",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem"],
+  "coordinates": {
+    "lat": 40.7079288,
+    "lng": -73.9397327
+  },
+  "place": {
+    "city": "New York",
+    "neighborhood": "East Williamsburg",
+    "region": "New York",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Greenpointers — With Reading Nooks and Homemade Soups, The Little Bookshop Is East Williamsburg's Coziest Spot",
+      "url": "https://greenpointers.com/2025/12/18/with-reading-nooks-and-homemade-soups-the-little-bookshop-is-east-williamsburgs-coziest-spot/",
+      "feedId": null,
+      "originalPublishedAt": "2025-12-18T00:00:00Z"
+    },
+    {
+      "name": "Shelf Awareness — The Little Bookshop Opens in East Williamsburg, Brooklyn",
+      "url": "https://www.shelf-awareness.com/theshelf/2025-06-27/the_little_bookshop_opens_in_east_williamsburg_brooklyn.html",
+      "feedId": null,
+      "originalPublishedAt": "2025-06-27T00:00:00Z"
+    },
+    {
+      "name": "North Brooklyn Dispatch — The Little Bookshop Opens",
+      "url": "https://www.northbrooklyndispatch.com/2025/05/18/the-little-bookshop-opens/",
+      "feedId": null,
+      "originalPublishedAt": "2025-05-18T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://images.unsplash.com/photo-1750300521899-d7a6a847a211",
+    "attribution": "Photo by Anton Kotlovskii on Unsplash",
+    "attributionLink": "https://unsplash.com/photos/inside-of-a-cozy-bookstore-cafe-with-a-view-ONgCAgmqNR4",
+    "licenseNote": "Unsplash license (free to use). No licensable real interior photo of the venue was available at pin time; generic cozy-bookstore-cafe stock stands in per near-illustrator's licensed-stock fallback tier."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-07T21:50:00Z",
+      "note": "FOODIE-9000 byline. Sourced from near-sources-war-room's 2026-09-07 NYC seeding pass (trust: auto, independently corroborated by Greenpointers, Shelf Awareness, North Brooklyn Dispatch). Google Maps confirms open and operating (4.8 stars, 140 reviews, wheelchair accessible), owners identified on the listing as Black-owned, woman-owned, Latinx-owned, family-owned. Research floor: near-deep-researcher cross-referenced the three press sources plus the venue's own site and Instagram; Reddit (r/nycbookstores, r/AskNYC) mentions are sparse but positive, mostly directing people to the soup; Google reviews (140, recent, 4.8 average) repeatedly cite the reading nooks, the pull-out stage in back, and the Edgar Allan Poetry Corner as the specific draws, with no negative pattern found. Five preferred-sources context check: Greenpointers, Shelf Awareness, North Brooklyn Dispatch, and general NYC bookstore coverage from TikTok/secretnyc and Yelp all corroborate."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Little Bookshop, 239 Bushwick Ave, Brooklyn, NY 11206 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T21:20:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Little+Bookshop/@40.7079288,-73.9397327,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25b688042cb81:0xbb9d40689f651d61!8m2!3d40.7079288!4d-73.9397327!16s%2Fg%2F11mcwzh3c3"
+  },
+  "publishedAt": "2026-09-07T21:55:00Z",
+  "updatedAt": "2026-09-07T21:55:00Z"
+}

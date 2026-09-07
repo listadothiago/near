@@ -1,0 +1,62 @@
+{
+  "slug": "elder-hudson-yards-nyc",
+  "categories": ["food-drink"],
+  "tags": ["trending"],
+  "coordinates": {
+    "lat": 40.7575809,
+    "lng": -73.9981332
+  },
+  "place": {
+    "city": "New York",
+    "neighborhood": "Hudson Yards",
+    "region": "New York",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Time Out New York — This new British-Indian chophouse is the latest in Michelin chef Sujan Sarkar's big Hudson Yards takeover",
+      "url": "https://www.timeout.com/newyork/news/this-new-british-indian-chophouse-is-the-latest-in-michelin-chef-sujan-sarkars-big-hudson-yards-takeover-080426",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-04T00:00:00Z"
+    },
+    {
+      "name": "Cititour — Chef Sujan Sarkar Opens Elder, a British-Indian Steakhouse in NYC",
+      "url": "https://cititour.com/NYC_News/Chef-Sujan-Sarkar-Opens-Elder-a-British-Indian-Steakhouse-in-NYC/10918",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-06T00:00:00Z"
+    },
+    {
+      "name": "Pearl — Elder Hudson Yards: Sujan Sarkar's New Chophouse",
+      "url": "https://joinpearl.co/blogs/elder-hudson-yards-sujan-sarkars-chophouse-opens",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-06T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "attribution": "Photo by Jay Wennington on Unsplash",
+    "attributionLink": "https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA",
+    "licenseNote": "Unsplash license (free to use). No licensable real interior/plating photo of Elder was available at pin time; generic fine-dining stock stands in per near-illustrator's licensed-stock fallback tier."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-07T21:40:00Z",
+      "note": "FOODIE-9000 byline. Sourced from near-sources-war-room's 2026-09-07 NYC seeding pass (trust: auto, corroborated by Time Out, Cititour, Pearl, The Infatuation, Resy). Google Maps confirms the pin as open and operating (4.7 stars, 25 reviews, wheelchair accessible), no closure flags. Research floor: near-deep-researcher reconciled three press write-ups on the menu and Henry Hall build-out context; Reddit (r/FoodNYC) has limited chatter this early but what exists confirms the opening date and the Indienne/Elder/Apas sequence at Henry Hall; Google reviews (25, recent, 4.7 average) single out the lamb chops and the bone-marrow nihari gravy, with no operational complaints logged yet. Five preferred-sources context check: Time Out, Cititour, Pearl, The Infatuation, Resy all carried it."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Elder, 517 W 38th St, New York, NY 10018 (Henry Hall) — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T21:15:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Elder/@40.7575809,-73.9981332,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259001f71d2cf:0x5e7bd239052516e9!8m2!3d40.7575809!4d-73.9981332!16s%2Fg%2F11ntpfsghb"
+  },
+  "publishedAt": "2026-09-07T21:45:00Z",
+  "updatedAt": "2026-09-07T21:45:00Z"
+}
