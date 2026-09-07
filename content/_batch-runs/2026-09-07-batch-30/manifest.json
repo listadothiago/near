@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 5,
+  "publishedCount": 6,
   "candidates": [
     {
       "name": "Hausu",
@@ -234,11 +234,47 @@
       "name": "The Pilgrm",
       "city": "London",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "yatzer design-press profile; https://www.yatzer.com/pilgrm-hotel-paddington-london",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
+        },
+        "accommodationAttempt": {
+          "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-pilgrm-paddington-london",
+      "author": "nite-porter",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "Kirbee’s",

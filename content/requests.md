@@ -309,3 +309,18 @@ why: >
   link both ways at that point.
 status: open
 ```
+
+```yaml
+request: the-pilgrm-paddington-london-internal-link-gap
+type: internal-link-gap
+place: the-pilgrm-paddington-london
+why: >
+  Batch 2026-09-07-batch-30 accommodation attempt (BACKLOG P3.4). No
+  other Near pin sits close enough to Paddington/Tyburnia to link
+  honestly — the existing London cluster (Peckham, Camberwell, Bethnal
+  Green, Dalston) is all east/south-east London. Ships with external
+  links only rather than a forced weak internal link. Resolve once a
+  genuinely nearby west/central London pin (Notting Hill, Bayswater,
+  Marylebone) exists — link both ways at that point.
+status: open
+```
