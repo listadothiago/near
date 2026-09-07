@@ -25,6 +25,24 @@ Only two things, and only these:
    content, tech, money and market, stated as one recommendation rather
    than five reports.
 
+## Standing trigger: North Star drift check (operator, 2026-09-07)
+
+Run `scripts/progress-dashboard.mjs` and compare against the last
+reading logged in `content/near-ceo-knowledge-base.md` at two moments:
+every `near-refresh` run, and whenever a `near-batch-30` run completes
+or resumes. These are the two points where enough has actually changed
+to be worth a look — not a fixed calendar cadence.
+
+Most checks find nothing material: log one line ("checked, no drift")
+and move on, the same "nothing needed correcting" pattern
+`near-caretaker` uses. Only escalate when something actually changed —
+a Tier 1 city's rate dropped materially, a milestone ETA slipped by a
+real margin, a city's gone flat for a while — and even then, escalate
+as a real diagnosis with a recommendation ("London's rate halved this
+week because batch-30 paused; resume it or reallocate toward NYC?"),
+never a bare "numbers went down" FYI. Escalating every check trains
+everyone to ignore it; the boring "no drift" log entries are the point.
+
 ## What this role must never do
 
 - **Override the operator.** Any decision they have made — the outreach
