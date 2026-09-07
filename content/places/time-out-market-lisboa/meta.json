@@ -7,8 +7,8 @@
     "see-and-be-seen"
   ],
   "coordinates": {
-    "lat": 38.7069,
-    "lng": -9.1456
+    "lat": 38.7070608,
+    "lng": -9.1456691
   },
   "place": {
     "city": "Lisbon",
@@ -51,13 +51,20 @@
       "status": "active",
       "at": "2026-08-20T10:00:00Z",
       "note": "seed content"
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:36:10Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (38.7070608, -9.1456691). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
+    "provider": "google-maps",
     "confidence": 1,
-    "query": "Time Out Market Lisboa, Mercado da Ribeira"
+    "query": "Time Out Market Lisboa, Cais do Sodré, Lisboa — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:36:10Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Time+Out+Market+Lisboa/@38.7070608,-9.1456691,17z/data=!3m1!4b1!4m6!3m5!1s0xd193487595e6075:0x138fe14e4972dc92!8m2!3d38.7070608!4d-9.1456691!16s%2Fg%2F11c2pm29hf"
   },
   "publishedAt": "2026-08-27T19:15:10Z",
-  "updatedAt": "2026-08-27T00:00:00Z"
+  "updatedAt": "2026-09-07T18:36:10Z"
 }

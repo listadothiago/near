@@ -9,8 +9,8 @@
     "see-and-be-seen"
   ],
   "coordinates": {
-    "lat": -16.5893,
-    "lng": -39.1018
+    "lat": -16.5892858,
+    "lng": -39.0937573
   },
   "place": {
     "city": "Trancoso",
@@ -84,13 +84,20 @@
       "status": "draft",
       "at": "2026-09-01T00:00:00Z",
       "note": "LUGARDO KARAI piece for the coastal-alt-luxury beat, explicitly commissioned to 'name the hype' on the Quadrado. Left as status: draft pending explicit operator review before publish, per task brief. Geocode is a manual approximate placement for the Quadrado (confidence 0.5) — should be refined against the São João Batista church or a specific pousada before going active. heroImage set via a CC BY-SA 4.0 Wikimedia Commons photo of the Quadrado predating the current tourism wave (2007), chosen deliberately over a more recent styled shot to keep the honest angle. Population and founding-date facts sourced from Wikipedia; jet-set/celebrity claims (Beyoncé, Naomi Campbell, Anderson Cooper, Leonardo DiCaprio, Calvin Klein, Valentino, the Gores) are repeated across multiple travel-press sources but none give first-hand sourcing or exact visit dates — flagged in the body as reported rather than independently verified. Real estate price figures (USD 700k-5M+) are from realty-marketing sources (exclusiverealtybrasil.com, brazilbeachhouse.com) which have an incentive to talk the market up — used cautiously, framed as what sellers are asking rather than verified transaction data. Used NearLink to paraty-rj: both are colonial-era Brazilian coastal towns whose reputation (UNESCO postcard town / boho-chic jet-set square) has visibly diverged from a plainer, older reality, a genuine comparison point for this beat rather than a forced link. Other five locales not yet written — English source draft only, per task scope."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:37:09Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-16.5892858, -39.0937573). Old pin was ~857m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Quadrado, Trancoso, Porto Seguro, Bahia, Brazil — approximate placement for the main square; should be refined against the São João Batista church before going active"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Quadrado, Trancoso, Porto Seguro - BA — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:37:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Quadrado+Trancoso+Porto+Seguro-BA/@-16.5892858,-39.1032845,16z/data=!4m10!1m2!2m1!1sQuadrado+Trancoso+Bahia!3m6!1s0x7369d6405883bd7:0x1858688a21740168!8m2!3d-16.5892858!4d-39.0937573"
   },
   "publishedAt": "2026-09-01T12:06:11Z",
-  "updatedAt": "2026-09-01T12:06:11Z"
+  "updatedAt": "2026-09-07T18:37:09Z"
 }

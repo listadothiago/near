@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.5583,
-    "lng": -46.6339
+    "lat": -23.5547545,
+    "lng": -46.6352482
   },
   "place": {
     "city": "São Paulo",
@@ -53,13 +53,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "São Paulo/Baixada Santista content push (near-war-room), fulfilling open request sp-liberdade-market-or-grocery. Operator-directed research pass (chat request, not a review-tier source) -> trust: auto per rules.md trust-gate. Verified via multiple independent local guides (A Vida no Centro, Revista Fórum, Guia Viajar Melhor) all corroborating address (Praça da Liberdade, 113) and stock (fresh ingredients, prepared Japanese dishes, sauces/seasonings, grains) -- current-status check via these 2026-dated write-ups plus consistent cross-listing, no closure signal found. Coordinates are an approximate placement for the Praça da Liberdade block, not a verified geocode pin-drop -- confidence set conservatively at 0.6. Hero image is the public Feira da Liberdade market scene on the same square (Wikimedia Commons, CC BY-SA 2.0) rather than a Towa-specific photo, since no rights-clear venue photo could be sourced this pass -- logged as an acceptable tier-1/tier-2 compromise, not ideal; flag for near-caretaker/near-illustrator follow-up if a better venue-specific photo turns up."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:37:09Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5547545, -46.6352482). Old pin was ~417m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Praça da Liberdade, 113, Liberdade, São Paulo, SP — approximate placement from published street address, not independently pin-verified"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "TOWA - Empório Oriental, Praça da Liberdade, 113, Liberdade, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:37:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/TOWA+-+Emp%C3%B3rio+Oriental/@-23.5547545,-46.6352482,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59a96e5e78c1:0x6f11622c9ec6fc83!8m2!3d-23.5547545!4d-46.6352482!16s%2Fg%2F1tdh9kqx"
   },
   "publishedAt": "2026-09-01T20:04:29Z",
-  "updatedAt": "2026-09-01T20:04:29Z"
+  "updatedAt": "2026-09-07T18:37:09Z"
 }

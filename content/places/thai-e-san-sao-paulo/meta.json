@@ -7,8 +7,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": -23.562,
-    "lng": -46.6395
+    "lat": -23.5581627,
+    "lng": -46.6333084
   },
   "place": {
     "city": "São Paulo",
@@ -55,13 +55,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "content/requests.md's sp-pinheiros-anchor and sp-liberdade-market-or-grocery closed this session (near-war-room SP/Baixada push) by publishing lita-pinheiros-sao-paulo and towa-liberdade-sao-paulo -- this page was in both requests' wantedBy list, so per rules.md dedupe-everywhere/link-density the English body now links both new places. Only English updated this pass; the other five locale files still need the same two links added to close the wantedBy commitment fully -- logged as a residual gap for the next near-refresh/near-translator pass rather than left silently undone."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:36:10Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.5581627, -46.6333084). Old pin was ~761m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Rua Barão de Iguape, Liberdade, São Paulo"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Thai E-San Restaurante Tailandês, Rua Barão de Iguape, 373, Liberdade, São Paulo — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:36:10Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Thai+E-San+Restaurante+Tailand%C3%AAs/@-23.5581627,-46.6333084,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5925bc28cef1:0x6681f3ef3e86716b!8m2!3d-23.5581627!4d-46.6333084!16s%2Fg%2F11glhq4gcj"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "updatedAt": "2026-09-07T18:36:10Z"
 }
