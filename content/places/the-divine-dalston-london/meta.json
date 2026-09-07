@@ -1,0 +1,83 @@
+{
+  "slug": "the-divine-dalston-london",
+  "categories": ["nightlife-sound"],
+  "tags": ["lgbtq-friendly", "late-night", "local-legend"],
+  "coordinates": {
+    "lat": 51.5517897,
+    "lng": -0.0753553
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Dalston",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Time Out — The Divine",
+      "url": "https://www.timeout.com/london/things-to-do/the-divine",
+      "feedId": "timeout-london"
+    },
+    {
+      "name": "Attitude — The Glory team announce The Divine",
+      "url": "https://www.attitude.co.uk/culture/scene/the-divine-announcer-457055/",
+      "feedId": null
+    },
+    {
+      "name": "London the Inside — The Divine",
+      "url": "https://londontheinside.com/location/the-divine/",
+      "feedId": null
+    },
+    {
+      "name": "The Divine — official site, About",
+      "url": "https://thedivine.co.uk/about/",
+      "feedId": null
+    },
+    {
+      "name": "The Divine — official site, What's On",
+      "url": "https://thedivine.co.uk/events/",
+      "feedId": null
+    },
+    {
+      "name": "The Divine — Instagram",
+      "url": "https://www.instagram.com/thedivineldn/",
+      "feedId": null
+    },
+    {
+      "name": "r/downloadfestival — DRAGLOAD at The Divine",
+      "url": "https://www.reddit.com/r/downloadfestival/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfp-r1T7z4tjWUc7JlbnmQOTQcc4IegwW1jUidrXWDuUhj5YZ6VXcRD4Kj6sTeoA-p8Zyzy_uhzl-XcJKiUip4weh-SU_JPKaOKlOl6UDKjDzC3TMMd6KX02uMInsNOZn95FSylkwVDrEH",
+    "attribution": "Photo: The Divine, owner-submitted via Google Maps",
+    "attributionLink": "https://www.google.com/maps/place/The+Divine/@51.5517897,-0.0753553,17z/data=!3m1!4b1!4m6!3m5!1s0x48761db0dbbf2053:0xd8387bc5f04f136c!8m2!3d51.5517897!4d-0.0753553!16s%2Fg%2F11vrtrzz9g",
+    "licenseNote": "Real source photo (tier 1); the official site's own imagery was event-poster art rather than venue photography, and Instagram/Facebook CDN links for this venue are signed/expiring, so the venue's own Google Business photo is the stable option."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-07T22:46:04.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, article 3/30: researched English draft. Sourced beyond Time Out per standing rule: Attitude (LGBTQ+ press), London the Inside, official site, Instagram, Reddit. Google Maps confirmed current, open, LGBTQ+-friendly-tagged, 4.0/129 reviews read (recent and lowest) — mixed testimony including 'more sterile than the former Glory' and queue/smoking-area complaints, alongside praise for friendly staff. Reddit: r/downloadfestival DRAGLOAD event post and r/londonlgbt community context read directly. Official events calendar checked for September-November 2026 — genuinely dense, ongoing programme (LIPSYNC1000 Season 10, weekly cabaret/club nights); no specific dates used in body copy per dated-events-out-of-evergreen-copy. Direct successor to The Glory (Haggerston), same founders (Jonny Woo, John Sizzle, Colin Rothbart); internal link to the existing Dalston Superstore pin, its real neighbour in the same 'pink triangle' cluster. Pending: hero image resolution, five locale editions, full sign-offs, publish gates."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T23:05:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, owner-submitted Google Business photo — official site imagery was posters, Instagram/Facebook CDN links expire). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, chief editor mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: negative UGC (sterile vs. former Glory, queue/re-entry complaints) attributed to platform/reviewer and dated, no defamation-adjacent business allegation; no real-person likeness issue (public figures Jonny Woo/John Sizzle covered via their own public promotion of the venue, not a private fact). Link-density passes (Attitude/official site/Reddit in-text, internal NearLink to Dalston Superstore). Red team: no unverified prices stated as current (the one £10 entry figure appears only inside an attributed, dated UGC quote, not asserted as current fact); no internal jargon leaked. Discover audit clean. Revenue pass: no natural affiliate/ad-sales opportunity for a door-charge nightlife venue beyond existing coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words, each with its own publishNote."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "The Divine, 33-35 Stoke Newington Rd, London N16 8BJ — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T22:45:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Divine/@51.5517897,-0.0753553,17z/data=!3m1!4b1!4m6!3m5!1s0x48761db0dbbf2053:0xd8387bc5f04f136c!8m2!3d51.5517897!4d-0.0753553!16s%2Fg%2F11vrtrzz9g"
+  },
+  "publishedAt": "2026-09-07T22:46:04.000000+00:00",
+  "updatedAt": "2026-09-07T22:46:04.000000+00:00"
+}
