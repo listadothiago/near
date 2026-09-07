@@ -354,3 +354,40 @@ Based on the transcript "AI Slop is Obvious.txt," here are the extracted backlog
 
 
 </details>
+
+---
+
+## Archived 2026-09-07
+
+Moved out of `BACKLOG.md` during a structural cleanup (dump drained into the
+prioritized sections, completed work archived here).
+
+### Consolidated Milestones — completed infrastructure & editorial work
+
+- **Core SEO Infrastructure:** Built canonical and `hreflang` alternates generator (`lib/seo/alternates.ts`) covering all 6 locales with `x-default`. Cleaned sitemap generation with real content `lastmod` dates and eliminated arbitrary priority tags. Configured `max-image-preview:large`.
+- **Dynamic Location Routing:** Deployed static location landing routes (`/[locale]/in/[...location]`) gated at ≥2 places with disambiguated city scoping.
+- **Freshness & Provenance Infrastructure:** Implemented `lib/content/freshness.ts` and `components/layout/Dateline.tsx` for client-safe revision display. Built the site curator profile node (`/about/thiago-baraldi`).
+- **Editorial Standards & Skill Engines:** Codified the 10-step publishing pipeline in `near-write-article`. Built `link-police`, `near-tov-police`, `near-sources-war-room`, and `near-legal-counsel`. Enforced strict anti-slop rules against negative parallelism and crowd-consensus openers.
+- **Authentication & User State:** Installed Clerk OAuth supporting Google sign-in. Integrated server-side favorites synchronization via `user.unsafeMetadata` with clean local migration.
+- **Sources Catalogue Expansion:** Expanded monitored directory from 11 to 107 outlets, onboarding the verified AAN member network and leading international cultural publications.
+- **Initial Editorial Columns:** Launched weekly editorial column (`/column`), monthly live-music column (_The Setlist_ at `/the-setlist`), and LGBTQIA+ column (_Ladies&Gentlethem_ at `/ladies-and-gentlethem`).
+- **UI Bug Resolutions:** Fixed desktop map marker visibility with high-contrast dual-ring pulsating pin. Fixed search input breakpoint truncation. Corrected board pagination and layout boundary spillage between 768px and 910px. Purged broken Wikimedia thumbnail URLs in favor of verified direct assets.
+
+### AI slop best practices absorbed — DONE 2026-09-06
+
+All eight rules (em-dash cap, negative parallelism, rule of three, AI-vocabulary
+blocklist, press-release enthusiasm, vague attribution, nonsensical similes,
+transition scaffolding) landed as mechanical checks in
+`.claude/skills/near-tov-police/SKILL.md` (Job 1c) with catalogue baselines in
+`.claude/skills/language-tic-police/SKILL.md` (word census 2b). Original pasted
+text archived above under "Archived 2026-09-02".
+
+### Italian tagline — DONE, already shipped
+
+Verified 2026-09-06: `messages/it.json` `tagline` = "La guida sempre fresca di
+stampa, ovunque." and `taglineRich` = "La guida <em>sempre fresca di stampa</em>,
+ovunque." No code change needed.
+
+### Deprecated persona
+
+`djaga` — deprecated, removed from the roster table.
