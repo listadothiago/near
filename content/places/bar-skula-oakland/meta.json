@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 37.8089594,
-    "lng": -122.2506123
+    "lat": 37.808999,
+    "lng": -122.2507026
   },
   "place": {
     "city": "Oakland",
@@ -50,9 +50,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "542 Grand Ave, Oakland, CA 94610"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Bar Skula, 542-544 Grand Ave, Oakland, CA 94610 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bar+Skula/@37.808999,-122.2507026,17z/data=!3m1!4b1!4m6!3m5!1s0x808f8700152900f3:0xe13a5c906943c302!8m2!3d37.808999!4d-122.2507026!16s%2Fg%2F11z8kqkc0q"
   },
   "publishedAt": "2026-08-28T12:56:25Z",
   "updatedAt": "2026-08-28T12:56:25Z"

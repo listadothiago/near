@@ -7,8 +7,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": -22.9884,
-    "lng": -43.1913
+    "lat": -22.9868172,
+    "lng": -43.1910029
   },
   "place": {
     "city": "Rio de Janeiro",
@@ -60,9 +60,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "R. Francisco Otaviano, 52, Arpoador, Rio de Janeiro, RJ, 22080-040"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Balcão-Comida de rua, R. Francisco Otaviano, 52 - Lj D, Arpoador, Rio de Janeiro, RJ, 22080-040 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Balc%C3%A3o-Comida+de+rua/@-22.9868172,-43.1910029,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd5ae426f185d:0xf609554c29e2f9d6!8m2!3d-22.9868172!4d-43.1910029!16s%2Fg%2F11s8hqmjq9"
   },
   "publishedAt": "2026-09-02T22:21:40Z",
   "updatedAt": "2026-09-02T00:00:00Z"
