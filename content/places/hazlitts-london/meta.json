@@ -73,15 +73,20 @@
       "status": "active",
       "at": "2026-09-07T18:19:24Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.5143631, -0.1318387). Old pin was ~84m off."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "Hazlitt's, Soho, London — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:19:24Z",
+    "query": "hazlitts-london: 6 Frith St, London W1D 3JA — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:03:27.880Z",
     "googleMapsUrl": "https://www.google.com/maps/place/Hazlitt's/@51.5143631,-0.1318387,17z/data=!4m9!3m8!1s0x487604d2a8c19c13:0x945c1f2f03bac995!5m2!4m1!1i2!8m2!3d51.5143631!4d-0.1318387!16s%2Fm%2F0g9t45t"
   },
   "publishedAt": "2026-09-01T03:25:12Z",
-  "updatedAt": "2026-09-07T18:19:24Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }

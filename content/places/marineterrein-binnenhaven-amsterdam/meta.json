@@ -87,15 +87,20 @@
       "status": "active",
       "at": "2026-09-07T18:23:30Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.3728574, 4.9152115). Old pin was ~65m off."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:08:07Z",
+      "note": "Codex (GPT-6): corrected zh-CN mixed-script wording; verified Google Maps listing identity, address and existing pin. Coordinates unchanged. Language correction, not a full factual refresh."
     }
   ],
   "geocode": {
     "provider": "google-maps",
     "confidence": 1,
-    "query": "Binnenhaven Marineterrein, Kattenburgerstraat 5, 1018 JA Amsterdam — Google Maps listing pin",
-    "verifiedAt": "2026-09-07T18:23:30Z",
+    "query": "marineterrein-binnenhaven-amsterdam: Kattenburgerstraat 5, 1018 JA Amsterdam — Google Maps listing name and address checked in Chrome",
+    "verifiedAt": "2026-09-07T22:05:54.041Z",
     "googleMapsUrl": "https://www.google.com/maps/place/Buitenzwembad+Marineterrein+-+Outdoor+canal+swimming/@52.3728574,4.9152115,17z/data=!3m1!4b1!4m6!3m5!1s0x47c6090dd75b1543:0x2fbff7523010be3c!8m2!3d52.3728574!4d4.9152115!16s%2Fg%2F11gjj2tvsg"
   },
   "publishedAt": "2026-09-01T12:06:11Z",
-  "updatedAt": "2026-09-07T18:23:30Z"
+  "updatedAt": "2026-09-07T22:08:07Z"
 }
