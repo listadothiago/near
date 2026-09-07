@@ -105,6 +105,66 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ## 4. Prioritized Active Backlog
 
+### SESSION HANDOFF — 2026-09-07, Claude (Opus 5)
+
+**Shipped this session** (all pushed, `99bbe20..6a2bf14`):
+
+- **P0.1 closed.** 83/83 active places verified against real Google Maps
+  listings; 28 pins were materially wrong and are corrected; nothing
+  fabricated, nothing left unresolved. Details in the P0.1 block below.
+- **The Failure Mode launched** — PARSER's standing column at
+  `/collection/…` with archive page, RSS feed, nav entry, sitemap and six
+  locales. Issue #1 (`i-look-pretty-good-dead-internet-site`) was retitled
+  **"Automate the Alarm, Not the Answer"**, copy-edited by the TOV/editor
+  pass, and reassigned out of the editorial column (the move is logged in
+  `content/editorial-column.md`, not silently deleted). **Slug deliberately
+  unchanged** — the page is live and indexed; no rename, no redirect.
+- **`<FlowDiagram>`** — first new MDX component since `Figure`. Live markup,
+  not a raster, because Near ships six locales and the illustrator skill
+  bans garbled baked-in text. `near-illustrator/SKILL.md` gained a Diagrams
+  section so the 2026-09-07 operator directive survives past this session.
+
+**IN FLIGHT — read this before doing anything else.** A
+`near-sources-war-room` **NYC seeding pass** was dispatched as a background
+agent near the end of this session and **had not written any files when the
+session ended** (working tree was clean at `6a2bf14`). Next session must
+first check whether `content/post-plan.md` and `content/opportunities.md`
+gained an NYC section. If they did, verify and commit it. If they did not,
+**the run was lost and must be re-dispatched** — it was scoped as seeding
+only (sources map + 8–12 candidates with per-candidate `auto`/`review`
+trust ratings + full analysis to `opportunities.md`), explicitly no
+drafting, no pages, no commits. Exactly one NYC pin is already live
+(`rabbit-books-and-bar-east-village-nyc`); dedupe on venue name +
+coordinates, not slug similarity.
+
+**Rotation state:** `NEXT-UP` is still **NYC (Tier 1), HELD** — it has no
+queue, so the next rotation action remains a seeding pass, not a draw. The
+pointer does not advance until an NYC piece actually ships.
+
+**Open, unstarted, in RICE order:** P1.14 (zh-CN latin-in-CJK, 8 pages —
+these are the *only* `validate-content.mjs` failures, so they currently mask
+any new defect; needs near-translator judgment per instance, not
+find-and-replace) · P0.14 type scale + P1.13(a) card teaser clamp (one
+`app/globals.css` pass, blocked on a near-lead-ux call on the scale) ·
+P1.13(b) SEO meta description lengths (wants its own near-seo scoping pass
+first).
+
+**Two notes the next agent should not have to rediscover:**
+
+1. `app/[locale]/collection/[slug]/page.tsx` now renders MDX with
+   `options={{ blockJS: false }}`. `next-mdx-remote` v6 defaults this to
+   `true`, which silently strips every `{...}` expression attribute, so
+   array/object props arrive `undefined` and `<FlowDiagram>` crashed the
+   prerender. Safe as scoped: bodies are first-party MDX committed to this
+   repo, never user submissions, and `blockDangerousJS` stays at its secure
+   default. **Place pages were deliberately left strict.** If Near ever
+   accepts outside-authored MDX, revisit that line.
+2. **Open operator question, still unanswered:** `lib/content/curator.ts`
+   → `livedIn` still reads `São Vicente / Baixada Santista` on the
+   `/about/thiago-baraldi` page. Given the P0 rule that the operator's
+   residence must never be published, this needs the operator's explicit
+   call on whether it stays. Do not change it unilaterally either way.
+
 ### P0: Immediate Fixes & Critical Correctness
 
 **P0.1 CLOSED — 2026-09-07, Claude.** All 83 active places now pass
