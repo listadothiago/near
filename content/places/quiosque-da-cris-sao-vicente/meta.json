@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.973827,
-    "lng": -46.37017
+    "lat": -23.9739839,
+    "lng": -46.3701593
   },
   "place": {
     "city": "São Vicente",
@@ -109,13 +109,20 @@
       "status": "active",
       "at": "2026-09-07T11:12:00Z",
       "note": "P0 geolocation correction. Coordinates were lat -23.969 / lng -46.3612, an approximate placement that sat off the kiosk's actual position on the São Vicente waterfront. Corrected to lat -23.973827 / lng -46.370170 per the operator's supplied pin. No copy changed in any locale; this pass touched meta.json only."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:28:58Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9739839, -46.3701593). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "Av. Ayrton Senna da Silva, 1B, Praia dos Milionários, São Vicente, SP — confirmed via Google Business listing and operator-supplied map link"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Quiosque da Cris, Av. Ayrton Senna da Silva, 1B, Itararé, São Vicente — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:28:58Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Quiosque+da+cris/@-23.9739839,-46.3701593,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1ccf4a5d921d:0x91df6131737c787a!8m2!3d-23.9739839!4d-46.3701593!16s%2Fg%2F11b6hnnls6"
   },
   "publishedAt": "2026-09-01T16:35:01Z",
-  "updatedAt": "2026-09-07T11:12:00Z"
+  "updatedAt": "2026-09-07T18:28:58Z"
 }

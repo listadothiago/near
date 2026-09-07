@@ -9,8 +9,8 @@
     "celebrity-spotted"
   ],
   "coordinates": {
-    "lat": -23.9427,
-    "lng": -46.335
+    "lat": -23.9432029,
+    "lng": -46.3296601
   },
   "place": {
     "city": "Santos",
@@ -48,13 +48,20 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "SP/Baixada rotation cycle 2, operator-requested by name ('o almeida em santos'). Identified as Restaurante Almeida, Av. Ana Costa 1, Vila Mathias — founded 1932, the city's oldest per its own site, which also names the patron lineage (Pagu, Plínio Marcos, Roldão Mendes Rosa, Jamelão, Alcione, Antônio Fagundes, every Santos mayor), the Muniz family ownership since 2016, and the 2018 renovation. Verified trading via the live official site with current hours (Mon-Sat 11-23, Sun 11-22). The Plínio Marcos thread verified against Wikipedia: born Santos 1935, pulled into theatre in 1958 under Pagu's influence, Barrela banned for 21 years, ashes scattered in the Santos ocean in 1999. Dish names taken only from the restaurant's own site (Filé à Almeida, bacalhau, camarão) — an aggregator's dish list was deliberately not used. A Tribuna's 90th-anniversary piece exists but is paywalled and therefore not cited. NOTE: byline PLINIO writing about Plínio Marcos is a happy coincidence of naming, not a claim of connection."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:28:58Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9432029, -46.3296601). Old pin was ~545m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Restaurante Almeida, Av. Ana Costa 1, Vila Mathias, Santos SP"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Restaurante Almeida, Av. Anna Costa, 1, Vila Mathias, Santos — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:28:58Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Restaurante+Almeida/@-23.9432029,-46.3296601,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce037bcb835f75:0x69fc7f3865f4bb88!8m2!3d-23.9432029!4d-46.3296601!16s%2Fg%2F1tc_s3nd"
   },
   "publishedAt": "2026-08-31T23:10:29Z",
-  "updatedAt": "2026-08-31T23:10:29Z"
+  "updatedAt": "2026-09-07T18:28:58Z"
 }
