@@ -474,6 +474,42 @@ rules:
       standing content-decision process. Operator decision, 2026-09-01,
       after the inaugural piece ("The Zombie Listicle Problem").
 
+  - id: operator-location-privacy
+    description: >
+      NEVER publish the operator's place of residence, or any phrasing a
+      reader could resolve into it, in body copy, bullets, taglines,
+      seoDescription, image captions, or attribution text. This includes
+      the explicit forms ("Near's operator lives in Baixada Santista",
+      "Thiago Baraldi, Near's operator, lives in São Vicente") and the
+      implicit ones ("because the operator lives here", "our operator's
+      home beach", "the neighbourhood I write this from").
+
+      This fired for real. Operator directive, 2026-09-07, after finding
+      it live on canto-dos-ursos-praia-grande: four published places
+      across eleven locale files carried it, one naming him in full plus
+      his city. The pattern got in because "why this region" paragraphs
+      reached for the operator's biography as the justification — an
+      easy, plausible-sounding move that leaks a home address by
+      degrees.
+
+      What to write instead: justify regional focus editorially, never
+      biographically. "Near covers Baixada Santista closely" carries the
+      same local-authority/E-E-A-T signal at zero privacy cost.
+
+      First-hand curator testimony is still allowed and still valuable —
+      attribute it to the ROLE on site, not to a resident. "Near's
+      curator was on Itararé this week and reported it directly" keeps
+      the claim honest and sourced without stating where anyone sleeps.
+      Do NOT reassign such an observation to an AI byline instead: a
+      persona cannot have witnessed a beach in person, and doing so
+      fabricates a source (near-legal-counsel).
+
+      The curator's own /about page is the ONE place biographical
+      location detail belongs, because he authors and controls it there.
+      Content pages never restate it.
+    trigger: "any locale file, meta.json note, or caption about to be published"
+    action: "rewrite to the editorial framing; never publish operator residence"
+
   - id: full-locale-coverage
     description: >
       Every place with trust: auto and status: active carries content in
