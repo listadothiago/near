@@ -78,6 +78,16 @@ push-to-live per post for operator QA.
 
 ## Rotation position
 
+**Oakland's third slot in ten #2 is CLAIMED but not shipped
+(2026-09-07).** Its turn came up with a fully blocked queue, so under the
+"seed on turn" directive the turn's work was a `near-sources-war-room`
+pass. The seed **cleared** — one new verified-live feed (Oakland Voices)
+plus the East Bay Nosh vertical and the Lakeshore LGBTQ district
+channels, and six candidate pins with addresses (see the Oakland section
+below, analysis in `opportunities.md`). Oakland is **not held** and
+`NEXT-UP` stays on it: the next session **draws STARLINE** rather than
+re-seeding or moving to Bangkok.
+
 **Tier 1 order (ten #2):** Brighton → San Francisco → Oakland → Bangkok
 → London, wrapping back to Brighton for the sixth slot.
 
@@ -283,6 +293,72 @@ _Open lead from this pass, not drafted:_ Queer Surf's **Art Splash** at Surfers 
 - [x] Heinold's First & Last Chance — PLINIO (shipped 2026-09-01; finished an orphaned partial draft from a prior session, all six locales, sourced hero image)
 - [x] 1-2-3-4 Go! Records, Temescal — CUBIC-V (shipped 2026-09-03, all six locales; shop + working punk label, independently verified against 5+ sources — shop's own site, East Bay Express, Discogs, Yelp, Goldmine, VisitOakland. Queue's RSD date, Apr 18 2026, was already past; replaced with the next real one, **Apr 17 2027**. Ships with hero only — the ceil(words/250) in-body image floor was **explicitly waived by the operator**, recorded in `statusHistory`; open lead for near-illustrator to add two in-body images if better imagery surfaces.)
 - [ ] Lakeshore Lavender Lounge — PENDING, do not draft (alcohol-free LGBTQ third space, opening Aug–fall 2026; hold until doors confirmed)
+
+**RE-SEEDED 2026-09-07 by a `near-sources-war-room` pass — CLEARED the
+bar, not yet drawn.** Oakland's turn came up as the third draw of ten #2
+with the queue above fully blocked (Lakeshore Lavender still PENDING,
+everything else shipped). Per the 2026-09-07 "seed on turn" directive
+that was a seeding turn, not a skip. Full analysis in
+`content/opportunities.md`; new sources in `preferred-sources.md`.
+
+- [ ] **STARLINE, 2236 Martin Luther King Jr Way, Uptown** — STEFAN or
+  RADAR-X. **The strongest candidate and the one to draw first.** The
+  Starline Social Club building — a three-storey Victorian that was
+  Oakland's defining Black-and-queer live-music room — came back in 2026
+  under new owners, briefly as *Bad Decision*, then reworked and renamed
+  back to **Starline** in May 2026 with **Sistas Wings** running the
+  kitchen (wings, oxtail, pork chops, lamb chops). Corroborated by
+  Oaklandside/Nosh (2026-05-05, and the 2026-04-07 piece under the Bad
+  Decision name) and confirmed live on the venue's own Instagram
+  **@starlinecomplex** (21.6K followers, bio reads "OPEN NOW‼️", Wed–Sat
+  3pm–2am/last call). **THE CORRECTION, and it is the angle:** Yelp still
+  lists Starline Social Club as **CLOSED** and most guides never noticed
+  the reopening or the rename. Draw hours and menu from the Instagram at
+  draft, not from any aggregator.
+- [ ] **Lakeshore LGBTQ Cultural District + the Oakland Gayborhood
+  Walking Tour** — near-blogger collection, or a pin on the **Oakland
+  LGBTQ Community Center, 3207 Lakeshore Ave**. Oakland's first official
+  LGBTQ cultural district, designated by the city in November 2023, at
+  the northwest corner of Lake Merritt where Grand and Lakeshore pass
+  under I-580; the Center runs a self-guided Gayborhood walking tour of
+  it. As of Feb 2026 the Center also **absorbed Oakland Pride outright**
+  — the organising nonprofit dissolved and the festival is now a Center
+  program (Oaklandside, 2026-02-24). Reads better as a collection than a
+  single pin: the district holds the Center, the Town LGBTQ Youth Club,
+  the Queer Arts Center and the historic Grand Lake Theatre.
+  **Dedupe note:** this is NOT the pending Lakeshore Lavender Lounge —
+  different venue, different address, same street. Check coordinates.
+- [ ] **the henry j. (Henry J. Kaiser Center for the Arts), south shore
+  of Lake Merritt** — CUBIC-V or PLINIO. The 1915 Beaux-Arts municipal
+  auditorium, shuttered for the better part of two decades, grand-
+  reopened **24 January 2026** under a nonprofit led by CEO Terri Trotter
+  (Orton Development holds the 99-year lease): a 7,000-capacity hall, the
+  1,500-seat Calvin Simmons Theatre and three ballrooms. **STALE FACT
+  CAUGHT: the official domain moved.** `hjkarts.org` now 301s to
+  **thehenryj.org** and the venue brands itself lowercase "the henry j."
+  — the Oaklandside launch piece's URL is already out of date. **Verify
+  the street address at draft** (the historic Kaiser Convention Center
+  address is 10 Tenth St, but the site itself does not publish it on the
+  pages read) and take programming from the venue's own events page; the
+  hall rents from ~$25k a night, which is itself the local controversy.
+- [ ] **The Lodge, 3758 Piedmont Ave** — a cherished Oakland dive that
+  closed for about two and a half months and **reopened late April
+  2026**, now serving lunch and still hosting chef pop-ups (Oaklandside
+  Nosh, 2026-04-28). Second-tier: verify it is still open and get an
+  Instagram before drafting.
+- [ ] **Sable Lounge, 3332 Grand Ave** — LOW CONFIDENCE, verify first.
+  New bar in the former **Barbary** tiki-lounge space (Barbary closed
+  Feb 2026); soft-opened in staggered weekends April–May 2026
+  (Oaklandside Nosh, 2026-04-28). No Instagram handle resolved on this
+  pass — `@sableloungeoakland` is not a live account. Do not draft until
+  a real venue channel confirms regular hours. Note it is on Grand Ave
+  like the already-live `bar-skula-oakland`; different venue, different
+  address.
+- [ ] **Egg Palace, 4101 Broadway, Temescal** — PENDING, do not draft.
+  The Egg Pals breakfast pop-up going permanent in the former Trueburger
+  space, **opening November 2026** — breakfast in the morning, full bar
+  and dinner service in the evening (Oaklandside, 2026-08-24). Same
+  treatment as Lakeshore Lavender Lounge: hold until doors are confirmed.
 
 _SF note (sourced): dedicated sober-curious venues are dying in real time — The New Bar closed Jul 2025, Bizzy's Dry Bar closed by Apr 2026; Ocean Beach Cafe (already covered) is the survivor. The sober story may be a collection, not a pin._
 

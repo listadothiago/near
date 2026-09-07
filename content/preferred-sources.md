@@ -485,6 +485,44 @@ All used on the four Sitges pins shipped that day; none was previously in
   `heinolds-first-last-chance-oakland`; not yet trust-tested across
   multiple hits.
 
+### Oakland / East Bay — added by the seeding pass, 2026-09-07
+
+- `oaklandvoices.us` — **Oakland Voices**, a community-journalism outlet
+  and training program of the Robert C. Maynard Institute for Journalism
+  Education. **Verified publishing the day it was checked** (most recent
+  story dated 2026-09-07). Covers news, health, education, arts &
+  culture and opinion, written by residents rather than staff reporters,
+  which makes it the closest thing Oakland has to a neighbourhood-level
+  feed. Reads fine through plain fetch. Tier 2 — check when working
+  Oakland; promote if it produces two or three usable place leads.
+- `oaklandside.org/nosh` — **East Bay Nosh**, The Oaklandside's food
+  vertical. Distinct enough from the parent to list separately for
+  routing purposes: it publishes **one openings article and one closings
+  article every week**, then a monthly round-up, with a **street address
+  printed for every venue** — which is precisely the shape Near's pin
+  research needs and the reason four of the six Oakland candidates seeded
+  on 2026-09-07 came from it. Newsletter goes out Tuesdays and Fridays.
+  Same organisation as The Oaklandside and Berkeleyside; do not count it
+  as independent corroboration of them. **Rate-limits hard** — it
+  returned HTTP 429 to plain fetch during this pass and read fine through
+  `claude-in-chrome`, the same recovery that worked for ebar.
+- `lakeshorelgbtqculturaldistrict.org` — the Lakeshore LGBTQ Cultural
+  District's own site, plus `@lakeshorelgbtq` on Instagram and
+  `oaklandlgbtqcenter.org` for the Oakland LGBTQ Community Center (3207
+  Lakeshore Ave), which now runs Oakland Pride. Useful for district
+  geography, member businesses and the Gayborhood walking tour.
+  **CAVEAT, recorded so nobody trusts it blind: the events calendars on
+  both sites print weekday-and-date without a YEAR**, and both were
+  listing long-past events alongside upcoming ones when read on
+  2026-09-07. Treat every date there as unverified until confirmed
+  against a second source. Not a dated-hook feed.
+- **Stale-fact watchlist from this pass** — `yelp.com` still carried
+  Starline Social Club as **CLOSED** while the venue was open and posting
+  under a new name; `hjkarts.org` 301s to `thehenryj.org` after a rebrand
+  the local-press coverage predates. Both are the standing lesson: an
+  aggregator's status field and a press article's outbound URL are the
+  two things that rot first.
+
 ## Notes for `near-refresh`
 
 - Work Tier 1 first, every run, regardless of what else is planned.

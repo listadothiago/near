@@ -781,3 +781,52 @@ base/schedule before a standalone piece can be drafted. Secondary,
 lower-urgency action still open: resolve the chief editor's Bayeux
 Tapestry objection (what-to-do-instead angle vs. straight coverage)
 before London's next turn comes up.
+
+## Oakland — seeding pass, 2026-09-07 (CLEARED)
+
+Ran under the 2026-09-07 "seed on turn" directive when Oakland came up as
+the third Tier 1 draw of ten #2 with a fully blocked queue. This was a
+top-up of a proven city, not a cold open: Oakland already has three live
+pins (`heinolds-first-last-chance-oakland`,
+`1234-go-records-temescal-oakland`, `bar-skula-oakland`) and three logged
+feeds (The Oaklandside, East Bay Express, Oakland North). None of the six
+candidates seeded duplicates a live pin, on name or address.
+
+**Both halves of the bar are met.**
+
+*Feeds.* The existing catalogue holds up — The Oaklandside is publishing
+daily and its Nosh vertical turned out to be the single most productive
+research surface available in any Near city, because it prints a street
+address for every opening, weekly, all year. One genuinely new watchable
+feed was added and verified live the same day: **Oakland Voices**
+(Maynard Institute), most recent story 2026-09-07. The Lakeshore LGBTQ
+Cultural District's own channels were logged as venue-level sources with
+an explicit warning attached rather than as a feed.
+
+*Pins.* Six candidates, all with addresses, four of them corroborated by
+2026 Oaklandside reporting plus a second check. Ranked by drawability:
+
+1. **STARLINE**, 2236 MLK Jr Way — draw this one. A resurrection story
+   with a live correction attached, confirmed on the venue's own
+   Instagram rather than inferred from press.
+2. **Lakeshore LGBTQ Cultural District** — the biggest piece available in
+   Oakland and probably a collection rather than a pin. It also answers a
+   structural gap: Near covers queer nightlife in three cities and has
+   never covered a designated queer *district*.
+3. **the henry j.** — a 1915 hall reopened after twenty dark years, with
+   a rental-price controversy that keeps it from being a puff piece.
+4. **The Lodge**, 5. **Sable Lounge**, 6. **Egg Palace** (pending, opens
+   November 2026).
+
+**The theme, and it is worth writing up on its own:** every Oakland lead
+this pass is a *reopening*. Starline, the Henry J., The Lodge and Mosswood
+Rec Center all came back in 2026 after closures ranging from ten weeks to
+two decades, and the Barbary→Sable and Trueburger→Egg Palace handovers are
+the same shape one rung down. Where Bangkok's city-wide correction was a
+closure the guides hadn't noticed, Oakland's is the mirror image: **a
+reopening the guides haven't noticed.** Yelp still says Starline is closed.
+That is a collection, and it is the answer to "what does Near have to say
+about Oakland that the listicles don't."
+
+*Not drawn this session.* Research ran long; recorded as
+seeded-not-yet-drawn per the directive rather than rushing a draft.
