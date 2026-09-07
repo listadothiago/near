@@ -328,9 +328,16 @@ function ColumnsMenu() {
           <Link
             href="/the-pass"
             onClick={() => setOpen(false)}
-            className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
+            className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"
           >
             {t("nav.thePass")}
+          </Link>
+          <Link
+            href="/the-failure-mode"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.theFailureMode")}
           </Link>
         </div>
       )}

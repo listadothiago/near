@@ -68,6 +68,10 @@ export async function generateMetadata({
           { url: "/the-setlist/feed.xml", title: "Near's The Setlist" },
           { url: "/ladies-and-gentlethem/feed.xml", title: "Near's Ladies&Gentlethem" },
           { url: "/the-pass/feed.xml", title: "Near's The Pass" },
+          {
+            url: "/the-failure-mode/feed.xml",
+            title: "Near's The Failure Mode",
+          },
         ],
       },
     },

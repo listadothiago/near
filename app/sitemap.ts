@@ -86,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "/the-setlist",
       "/the-pass",
       "/ladies-and-gentlethem",
+      "/the-failure-mode",
     ]) {
       push(locale, col, newestCollection);
     }

@@ -18,8 +18,18 @@
       "status": "active",
       "at": "2026-09-07T18:00:00Z",
       "note": "PARSER's inaugural AI-content column, commissioned directly by the operator. Scoped with near-seo and near-trendsetter: current Google Search guidance supports the useful distinction between automation that adds value and scaled, unoriginal content. Google Trends US/GB/DE technology feeds were attempted but did not return usable results, so no trend claim is made. AAN and wider-press scans did not surface a stronger dated hook than the current policy shift. The piece uses primary Google Search Central sources, has an explicit AI byline and a clearly disclosed AI-generated, vector-derived abstract illustration. It is an evergreen argument, not an event post."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T21:30:00Z",
+      "note": "Reassigned by operator directive: 'is not a guide, this is a first installment of PARSER column.' The piece moves out of the weekly editorial column (content/editorial-column.md, edited by RADAR-X) and becomes issue #1 of The Failure Mode, PARSER's own standing column on AI content practice (content/the-failure-mode.md, route /the-failure-mode). Slug removed from content/editorial-column-index.json and added to content/the-failure-mode-index.json; the reassignment is logged in the editorial column's own history rather than deleted from it. The editor field stays radar-x: RADAR-X genuinely edited this issue, a standing byline cannot edit itself, and near-trendsetter/RADAR-X consultation is mandatory on every issue of every Near column regardless. Copy-edit in the same pass, all six locales: cut the stock 'after the applause' register from the freshness paragraph; rebuilt the Michelberger Hotel link around a verifiable dated fact (PEOPLE Festival confirmed at the hotel 10-11 October 2026, per content/places/michelberger-hotel-berlin) so the link carries argumentative weight instead of a generic hotel claim; added PARSER's own logged 2026-09-03 failure (1-2-3-4 Go! Records, Oakland: a queue note's dated hook gone stale because nothing re-checks a queue note after it is written) in place of a hypothetical. No recap-of-the-scene thread added: that requirement belongs to the editorial column's second-entry-onward structure, which this piece is leaving. A FlowDiagram was added in all six locales per the same-day operator directive making a lucid, vector-derived process chart a standing format element of this column; its labels are written per locale, not translated from English."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T22:15:00Z",
+      "note": "Retitled by operator directive, from 'I Look Pretty Good for a Dead Internet Site' to 'Automate the Alarm, Not the Answer' (and the equivalent local edition in each of the six locales). Reason: the old title was written in the first person as the website, a joke in a voice the piece never uses; the byline is PARSER, a dry synthetic analyst, and the new title states the thesis in PARSER's own register. Slug deliberately unchanged at i-look-pretty-good-dead-internet-site: the page is live and indexed, retitling is free and re-slugging would break the URL, so no redirect and no directory rename. The alarm metaphor was made consistent across title, body and diagram in every locale (the opening paragraph's 'raise a hand', the diagram's handoff label, and the closing practical rule now all use one vocabulary). Deks and seoDescriptions were checked against the new title and still cohere unchanged."
     }
   ],
   "publishedAt": "2026-09-07T18:00:00Z",
-  "updatedAt": "2026-09-07T18:00:00Z"
+  "updatedAt": "2026-09-07T22:15:00Z"
 }

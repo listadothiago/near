@@ -132,7 +132,25 @@ export default async function CollectionPage({
           />
         )}
         <LongFormBody>
-          <MDXRemote source={content.body} components={mdxComponents} />
+          {/* blockJS: false is required, not optional. next-mdx-remote v6
+              defaults it to true, which silently strips every `{...}`
+              expression attribute from the MDX before compiling — string
+              props survive, everything else arrives `undefined`. That makes
+              <FlowDiagram> (components/mdx/FlowDiagram.tsx), whose lanes are
+              arrays of step objects, impossible to use from a collection body
+              at all: it renders, then crashes on `steps.map`.
+
+              The setting is safe here because these bodies are first-party
+              MDX committed to this repo, never user submissions, and
+              `blockDangerousJS` stays at its secure default — the eval /
+              Function / process / require guard is still on. Scoped to
+              collections deliberately; place pages have no such component and
+              stay on the stricter default. */}
+          <MDXRemote
+            source={content.body}
+            components={mdxComponents}
+            options={{ blockJS: false }}
+          />
         </LongFormBody>
         <CollectionPlaces places={places} />
       </article>

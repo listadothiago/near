@@ -1,10 +1,10 @@
 ---
-title: "Sembro Piuttosto Bene per un Sito Internet Morto"
+title: "Automatizza l’Allerta, Non la Risposta"
 dek: "L’automazione può tenere sveglia una guida. Non può sostituire il reportage, il giudizio e il lessico di chi ha qualcosa da dire."
 seoDescription: "La prima rubrica di PARSER per Near sull’automazione dei contenuti con IA: macchine per controllare fatti e fonti, persone per proteggere reportage, giudizio editoriale e attribuzione trasparente."
 ---
 
-Internet è piena di pagine che sembrano vive molto dopo la morte della cosa utile che contenevano. Un bar ha chiuso; la scheda accetta ancora prenotazioni. Una guida chiama “nuovo” qualcosa da tre anni. Una risposta IA ripete la guida vecchia perché ha accumulato abbastanza peso sui motori di ricerca da sopravvivere all’attività. Qui l’automazione merita di lavorare: notare il cambiamento, alzare la mano e rendere difficile che un fatto falso resti comodo in pubblico.
+Internet è piena di pagine che sembrano vive molto dopo la morte della cosa utile che contenevano. Un bar ha chiuso; la scheda accetta ancora prenotazioni. Una guida chiama “nuovo” qualcosa da tre anni. Una risposta IA ripete la guida vecchia perché ha accumulato abbastanza peso sui motori di ricerca da sopravvivere all’attività. Qui l’automazione merita di lavorare: notare il cambiamento, far scattare l’allerta e rendere difficile che un fatto falso resti comodo in pubblico.
 
 È un lavoro migliore che chiedere a un modello cento pagine intercambiabili. La [guida attuale di Google sui contenuti generativi](https://developers.google.com/search/docs/fundamentals/using-gen-ai-content?hl=it) ammette un aiuto utile, ma avverte che creare molte pagine senza valore può violare la politica contro l’abuso di contenuti su larga scala. La sua [guida alle funzioni generative](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) propone un test semplice: aggiungere un punto di vista distinto e materiale che non si trova in un altro riassunto generico.
 
@@ -12,11 +12,32 @@ Una macchina può confrontare un indirizzo pubblicato con un pin, segnalare una 
 
 ## L’attualità è manutenzione
 
-Una guida non diventa affidabile quando viene pubblicata. Lo diventa quando qualcuno continua a risponderne. Le raccomandazioni locali cambiano in fretta: indirizzo, proprietà, prezzo, orari e chiusure.
+Una guida non diventa affidabile quando viene pubblicata. Lo diventa quando qualcuno continua a risponderne mesi dopo, quando non guarda più nessuno. Le raccomandazioni locali cambiano in fretta: indirizzo, proprietà, prezzo, orari e chiusure.
 
 L’output giusto dell’automazione è una domanda: *questa informazione può essere cambiata; chi la controlla?* Una fonte conferma una data. Una mappa mostra una discrepanza. Nessuna delle due decide se un hotel serve chi cerca silenzio o chi vuole una base sociale.
 
-<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> chiarisce la divisione. Le fonti pubbliche stabiliscono indirizzo, camere e programma. Non sostituiscono il giudizio editoriale che una base vivace a Friedrichshain funziona per un viaggio e ne rovina un altro. L’automazione rende più difficile trascurare i fatti; non rende automatico quel giudizio.
+Ho un esempio mio, recente, e non mi fa una bella figura. Una segnalazione in coda su un negozio di dischi a Oakland era stata annotata con il Record Store Day come aggancio. Quando il pezzo è stato finalmente scritto, il 3 settembre 2026, quel giorno era passato. La nota non era sbagliata il giorno in cui qualcuno l’ha scritta. Il guasto è strutturale: un aggancio con una data vale quanto il giorno in cui è stato verificato, e in coda nessuno lo verifica di nuovo.
+
+<NearLink slug="michelberger-hotel-berlin">Michelberger Hotel</NearLink> mostra lo stesso orologio che gira al contrario. Il calendario dell’hotel riporta il PEOPLE Festival il 10 e l’11 ottobre 2026, ed è esattamente il tipo di fatto che dovrebbe nascere con una scadenza: passata l’ultima serata, un monitor deve riportarlo a un editor prima che la pagina pubblicizzi un festival già finito. Quello che nessun monitor fornisce è il giudizio che una base vivace a Friedrichshain funziona per un viaggio e ne rovina un altro. L’automazione rende più difficile trascurare i fatti; non rende automatico quel giudizio.
+
+<FlowDiagram
+  title="Che cosa può fare l’allerta"
+  machineLabel="Macchina"
+  machineSteps={[
+    { label: "Sorvegliare la fonte", note: "La scheda, il calendario, il link che una volta apriva" },
+    { label: "Confrontare", note: "Quello che la pagina dichiara ancora e quello che dice la fonte" },
+    { label: "Far scattare l’allerta", note: "Nominare il dato e il giorno in cui è stato verificato" },
+  ]}
+  handoffLabel="L’allerta non è la risposta"
+  humanLabel="Persone"
+  humanSteps={[
+    { label: "Verificare", note: "È cambiata la cosa o si è solo spostata la fonte" },
+    { label: "Giudicare", note: "Cosa significa per chi ci sta organizzando un viaggio" },
+    { label: "Ripubblicare con la data", note: "Con la correzione in vista, senza rattoppi silenziosi" },
+  ]}
+  loopLabel="Di nuovo a sorvegliare"
+  caption="Il passaggio evidenziato è la tesi: un’allerta segnala che qualcosa è cambiato e si ferma lì."
+/>
 
 ## Gli scrittori non sono la parte lenta
 
@@ -24,4 +45,4 @@ La cattiva vendita dell’IA dice che gli scrittori sono un collo di bottiglia. 
 
 La [guida di Google ai contenuti pensati per le persone](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) chiede se una pagina offre informazione o analisi originale, dimostra esperienza diretta e lascia soddisfatto chi legge. Sono ottime domande editoriali anche senza un motore di ricerca nella stanza. Un paragrafo generato che nasconde l’incertezza fallisce. Un testo che la nomina, collega le prove e dice ciò che resta ignoto, no.
 
-La regola pratica è breve: automatizza l’avviso; lascia agli umani la responsabilità di sapere. Spiega la macchina quando conta. Cita le prove. Correggi la pagina quando cambia la realtà. E continua a pagare persone perché rendano Internet più strana, precisa e specifica dei dati di addestramento.
+La regola pratica è breve: automatizza l’allerta; lascia agli umani la responsabilità della risposta. Spiega la macchina quando conta. Cita le prove. Correggi la pagina quando cambia la realtà. E continua a pagare persone perché rendano Internet più strana, precisa e specifica dei dati di addestramento.
