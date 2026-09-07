@@ -1946,6 +1946,62 @@ sources:
       Plural, Marco Zero and Correio Nagô are, and BH's ownership
       picture was not established this pass. Treat as provisional and
       re-examine before BH's first turn.
+
+  - id: hell-gate-nyc
+    name: "Hell Gate"
+    category: city-culture
+    region: us-newyork-ny
+    language: en
+    feedUrl: "https://hellgatenyc.com/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Worker-owned NYC news/culture site, founded 2022 by ex-Gothamist/
+      Village Voice/Jezebel staff; explicitly the alt-weekly-voice
+      successor to the Voice. Publishing multiple pieces daily as of
+      2026-09-07 (confirmed live via search). Deeply reported, not an
+      aggregator — good for nightlife/queer-scene and food angles as
+      well as city politics. Near's first NYC-proper alt-press source,
+      closing the gap noted at `evgrieve.com`'s onboarding
+      (2026-09-01, `rabbit-books-and-bar-east-village-nyc`).
+
+  - id: the-city-nyc
+    name: "THE CITY"
+    category: city-culture
+    region: us-newyork-ny
+    language: en
+    feedUrl: "https://www.thecity.nyc/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Nonprofit NYC newsroom (est. 2019), five-borough coverage,
+      confirmed publishing through 2026-09-03 on this pass. Strong on
+      neighborhood/city-hall accountability stories rather than a
+      listings/openings feed — pair with Hell Gate (voice/culture) and
+      the borough-level hyperlocal blogs below (openings/venues) rather
+      than relying on it alone for place leads.
+
+  - id: greenpointers
+    name: "Greenpointers"
+    category: city-culture
+    region: us-brooklyn-ny
+    language: en
+    feedUrl: "https://greenpointers.com/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Independently owned North Brooklyn (Greenpoint/Williamsburg)
+      hyperlocal blog, publishing since 2007, no paywall, no corporate
+      backing; confirmed still active 2026-09-07 with a live news
+      archive. Genuinely local in the `evgrieve.com` mold, not an
+      aggregator — was the primary source that surfaced The Little
+      Bookshop opening (2025-12-18 piece), corroborated independently
+      by Shelf Awareness and North Brooklyn Dispatch. NOTE: neighboring
+      outlet **Bushwick Daily is explicitly REJECTED**, see below —
+      Greenpointers is the trustworthy alternative for that beat.
 ```
 
 ## Categories
