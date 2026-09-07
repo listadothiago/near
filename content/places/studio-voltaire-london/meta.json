@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.4633,
-    "lng": -0.1391
+    "lat": 51.4621188,
+    "lng": -0.1346111
   },
   "place": {
     "city": "London",
@@ -68,13 +68,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "near-caretaker currency re-check (2026-09-01, requested as part of a stray post-plan.md queue item — page was already published/committed in ba888d8, not a new piece). Re-verified studiovoltaire.org/whats-on/ directly: the two shows the body previously called out as closed (Scollard, Venkanna) are indeed closed, but the body had gone stale on what's actually on now. Confirmed via WebFetch of the live whats-on page plus corroborating WebSearch results (newexhibitions.com, e-flux, Secession Vienna's own programme, katherinehubbard.com): Christine Hazell's 'Different Faces' is currently running (15 Jul-18 Oct 2026), and Katherine Hubbard's 'The Great Room' opens 7 Oct 2026 through 10 Jan 2027 (developed alongside an extended chapter at Secession, Vienna, 12 Jun-30 Aug 2026). Corrected the 'What's actually on' section in all six locales to name these two shows instead of just pointing at closed ones, while keeping the Scollard/Venkanna closures for record and the standing pointer to the live whats-on page. No other facts in the piece needed correction; heroImage/status/trust untouched."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:34:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (51.4621188, -0.1346111). Old pin was ~337m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "1A Nelsons Row, London SW4 7JR"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Studio Voltaire, 1A Nelsons Row, London SW4 7JR, Clapham — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:34:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Studio+Voltaire/@51.4621188,-0.1346111,17z/data=!3m1!4b1!4m6!3m5!1s0x4876044e043977c5:0xdea842aca506468a!8m2!3d51.4621188!4d-0.1346111!16s%2Fm%2F0wzs1vp"
   },
   "publishedAt": "2026-09-01T12:06:11Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "updatedAt": "2026-09-07T18:34:08Z"
 }

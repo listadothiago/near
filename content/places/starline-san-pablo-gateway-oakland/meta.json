@@ -9,8 +9,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 37.8122821,
-    "lng": -122.2725458
+    "lat": 37.8123089,
+    "lng": -122.2725819
   },
   "place": {
     "city": "Oakland",
@@ -83,13 +83,20 @@
       "status": "active",
       "at": "2026-09-07T14:30:00Z",
       "note": "Flipped to active after all six locales were written as genuine local editions and quality-gate-before-publish was checked explicitly in each. English source: shortTitle 27 chars (<=48), tagline 64 (<=90, caught and fixed at 94 on the first pass), seoDescription 257 (<=320), 6 bullets (>=3), body 421 words (>=150), geocode 0.9 (>=0.6), hero resolved. Structural rules re-measured per locale rather than assumed from English: longest paragraph 58 words (<=100), three sub-headers against a 421-word body, and 2 images against a ceil(421/250)=2 floor. IMAGE FLOOR MET HONESTLY WITH TWO REAL PHOTOGRAPHS, both KQED's, and the body was deliberately kept under 500 words so the floor stayed at two rather than padding toward a third image that does not exist — no press photograph of the REOPENED Starline exists anywhere: Oaklandside ran the rename as text only, its sole image being the Sana'a cafe, and Wikimedia Commons and Openverse have nothing on the building. Headline formula checked against a grep of every en.mdx shortTitle in the catalogue: the near-miss is 'The Bar the Listicles Keep Scheduling Wrong', the same correction CONCEPT, so the heavily-used 'The X That Y' shape was avoided entirely in favour of a two-sentence declarative. Opener bans checked in all six locales: no crowd-consensus first word, no faux-candor framing. Legal: the Yelp claim is verifiable and stated as a listing error rather than an accusation; the Sam White quote is reported speech from a public Instagram announcement as quoted by KQED; no identifiable private individuals appear in any image on the page."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:34:08Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.8123089, -122.2725819). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.9,
-    "query": "2236 Martin Luther King Jr Way, Oakland, CA 94612 — resolved via OpenStreetMap, which records the venue at this address under the current name 'Starline' (and 'Starline Ballroom'), in San Pablo Gateway, Downtown Oakland"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "STARLINE, 2236 Martin Luther King Jr Way, Oakland, CA 94612, San Pablo Gateway — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:34:08Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/STARLINE/@37.8123089,-122.2773455,17z/data=!4m10!1m2!2m1!1sSTARLINE+San+Pablo+Gateway+Oakland!3m6!1s0x808f80aeca90efcf:0x6225f28966c933a7!8m2!3d37.8123089!4d-122.2725819"
   },
   "publishedAt": "2026-09-07T14:30:00Z",
-  "updatedAt": "2026-09-07T14:30:00Z"
+  "updatedAt": "2026-09-07T18:34:08Z"
 }
