@@ -9,8 +9,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": 52.5043,
-    "lng": 13.3582
+    "lat": 52.5042961,
+    "lng": 13.3582175
   },
   "place": {
     "city": "Berlin",
@@ -75,13 +75,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-01T00:00:00Z to 2026-09-03T22:18:51Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:30:29Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.5042961, 13.3582175). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "nominatim",
-    "confidence": 0.9,
-    "query": "Lützowstraße 73, 10785 Berlin, Germany"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Schwules Museum Berlin, Lützowstraße, Berlin — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:30:29Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Museu+da+Homossexualidade/@52.5042961,13.3582175,17z/data=!3m1!4b1!4m6!3m5!1s0x47a8502627c84535:0xcd736ce22edb7533!8m2!3d52.5042961!4d13.3582175!16s%2Fm%2F04lj4h3"
   },
   "publishedAt": "2026-09-03T22:18:51Z",
-  "updatedAt": "2026-09-01T00:00:00Z"
+  "updatedAt": "2026-09-07T18:30:29Z"
 }

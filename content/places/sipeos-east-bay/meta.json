@@ -8,8 +8,8 @@
     "sober-curious"
   ],
   "coordinates": {
-    "lat": 37.9006,
-    "lng": -122.0644
+    "lat": 37.8952021,
+    "lng": -122.0571034
   },
   "place": {
     "city": "Walnut Creek",
@@ -59,13 +59,20 @@
       "status": "active",
       "at": "2026-09-01T00:00:00Z",
       "note": "Second pin in the sf-bay-sober-curious set from content/opportunities.md, after the other two candidates on that list (The New Bar, Better Sunday) both turned out to be permanently closed when checked 2026-09-01. Verified Sipeos still trading before drafting: Yelp shows 238 reviews and an August 2026 update with no closed badge, official site is live, and it appears in current 2026 'best restaurants in Walnut Creek' listings. No rights-clear Commons or source photo found — heroImage left null. Illustration brief for near-illustrator: a warm, sunlit Mediterranean cafe patio scene, mezze spread and a non-alcoholic cocktail glass on a marble table, goddess-inspired decor accents (arches, terracotta), Broadway Plaza pedestrian setting in the background — stylized/painterly, not photoreal."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:30:29Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (37.8952021, -122.0571034). Old pin was ~877m off."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "126 Broadway Lane, Broadway Plaza, Walnut Creek, CA 94596"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Sipeos Restaurant & Bar, 126 S Broadway Bld #4, Broadway Plaza, Walnut Creek, CA 94596 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:30:29Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Sipeos+Restaurant+%26+Bar/@37.8952021,-122.0571034,17z/data=!3m1!4b1!4m6!3m5!1s0x80856103b99a7163:0x1e1de1e491c18f55!8m2!3d37.8952021!4d-122.0571034!16s%2Fg%2F11lnt3mtbm"
   },
   "publishedAt": "2026-09-01T16:35:01Z",
-  "updatedAt": "2026-09-01T16:35:01Z"
+  "updatedAt": "2026-09-07T18:30:29Z"
 }

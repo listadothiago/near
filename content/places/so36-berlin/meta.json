@@ -10,8 +10,8 @@
     "late-night"
   ],
   "coordinates": {
-    "lat": 52.5004,
-    "lng": 13.4222
+    "lat": 52.5003921,
+    "lng": 13.4221018
   },
   "place": {
     "city": "Berlin",
@@ -80,13 +80,20 @@
       "status": "active",
       "at": "2026-09-03T23:10:00Z",
       "note": "publishedAt corrected from the midnight placeholder 2026-09-02T00:00:00Z to 2026-09-03T22:18:51Z, the author timestamp of the commit that first added this piece's English source — the true publish moment. Midnight placeholders had produced an eight-way tie on 2026-09-03 that made the board's Latest tab fall back to alphabetical order. Content unchanged."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-07T18:31:57Z",
+      "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (52.5003921, 13.4221018). Old pin was materially accurate."
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "Oranienstraße 190, 10999 Berlin-Kreuzberg, Germany"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "SO36, Oranienstraße 190, 10999 Berlin-Kreuzberg — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:31:57Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/SO36/@52.5003921,13.4221018,17z/data=!3m1!4b1!4m6!3m5!1s0x47a84e345f157c27:0x3e57a93e13cd2a78!8m2!3d52.5003921!4d13.4221018!16s%2Fm%2F04gvm7g"
   },
   "publishedAt": "2026-09-03T22:18:51Z",
-  "updatedAt": "2026-09-02T00:00:00Z"
+  "updatedAt": "2026-09-07T18:31:57Z"
 }
