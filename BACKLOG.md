@@ -14,6 +14,44 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 ## 1. Operating Policies & Core Architecture
 
+### 1.0 North Star — Chief Editor's Mandate (operator, 2026-09-07)
+
+The chief editor's standing goal directive, which every prioritization
+decision (RICE/MoSCoW, rotation cadence, batch scoping) should be read
+against: grow London, the SF Bay Area, and NYC to **1,000 places each**,
+with every other Tier 2/3 city growing in proportion to its existing
+share-of-output cadence (section 2.2) rather than being left behind while
+the Tier 1 trio scales. Volume is never the tradeoff against the
+following, all of which must hold at the same time, not sequenced after:
+
+- **Maximum quality** — no thin pins, no padding to hit a count (see
+  `quality-gate-before-publish` in `content/rules.md`).
+- **Freshness** — the currency-maintenance and age-decay-archive
+  discipline scales with the catalogue, not despite it.
+- **Cleanup and caretaking, as often as possible** — `near-caretaker`'s
+  sweep is not a tax on growth; a catalogue this size only stays honest
+  if maintenance keeps pace with new pins.
+- **The voice**: alternative, hipster, queer, countercultural, cannabic
+  yet sophisticated, occasionally luxurious, borderline snobbish but
+  still streetwise — the classic alt-weekly's credibility, not a
+  generic listings tone. Every persona's own character sheet is the
+  specific instrument; this is the register the whole roster tunes to.
+
+**Token efficiency is part of the mandate, not a side concern.** 1,000
+places per Tier 1 city, at full six-locale coverage and the full
+`near-write-article` gate sequence, does not work as a linear
+per-article cost — the chief editor is responsible for actively driving
+that cost down, not just accepting it. Standing instruction: invoke
+`parser`, `near-cto`, and `near-tech-lead` (plus any other relevant
+skill) specifically to find and ship token-saving changes to how content
+gets researched, drafted, and reviewed at this scale — shared-research
+patterns like `near-batch-30` generalized further, skill/prompt
+consolidation, smarter reuse of already-verified facts across a
+neighbourhood cluster, agent/skill redesign where the current shape is
+the bottleneck. This is real scope, not a footnote: creating or changing
+skills and agents to make the 1,000-place goal affordable is itself
+backlog-worthy work, to be RICE/MoSCoW-prioritized like anything else.
+
 ### 1.1 Brand Identity & Freshness Invariant
 
 - **Brand Tagline:** _"The **always fresh** guide to anywhere."_ (Bold on "always fresh").
@@ -88,9 +126,10 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 - **Current Core:** 6 uniform, fully synchronized locales (`en`, `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`).
 - **Expansion Wishlist (Ranked by RICE):** 1. `pt-PT` (2.4 — lowest effort, forks `pt-BR`) · 2. `de` (1.6 — high demand, supports Berlin) · 3. `nl` (1.0 — supports Amsterdam) · 4. `ca`, `ar`, `hi`, `ja`, `fr`, `da` (under review, subject to full 6-locale backfill feasibility).
 
----
+### 2.4 `near-batch-30` continuity (fixed rule, operator 2026-09-07)
 
-## 3. Commercial, Monetization & Marketing Guardrails
+- **Always check first** whether `content/_batch-runs/` holds a run with `state` other than fully published/held-out (i.e. an unfinished `near-batch-30`), before starting anything else that would compete with it for a session's attention. If one exists, add "finish `near-batch-30` run `<run-id>`" to the active backlog (P0/P1 as volume warrants) rather than leaving it to be rediscovered by accident.
+- **If no `near-batch-30` run is unfinished or in progress**, `near-seo` and `near-trendsetter` must jointly choose the focus of the *next* batch before one is opened — checking RSS feeds and Google Trends (`content/trends-feeds.md`, plus whatever live Google Trends check `near-seo` can run at batch-scoping time), AAN indie-paper sources first, and the rest of `content/preferred-sources.md` — the same standing joint-scoping step every other piece already requires (see `near-write-article/SKILL.md` step 1), applied at batch scope rather than per-article.
 
 ### 3.1 Hard Outreach Freeze — IN FORCE
 

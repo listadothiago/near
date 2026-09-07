@@ -1,0 +1,394 @@
+{
+  "runId": "2026-09-07-batch-30",
+  "target": 30,
+  "mode": "publish",
+  "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
+  "startedAt": "2026-09-07T22:14:53.702829+00:00",
+  "instructionHashes": {
+    "content/rules.md": "f2b1eef32386e04407a26e781e2789d0f63c4ab2549a87b87bec7f64fa87cdc9",
+    ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
+    ".claude/skills/near-write-article/SKILL.md": "5f5afd12339904f4885805949b416437f029286faf9c07be11efd659e624a4ed"
+  },
+  "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
+  "state": "researching",
+  "tokenUsage": "unavailable",
+  "publishedCount": 2,
+  "candidates": [
+    {
+      "name": "Hausu",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/hausu",
+      "evidence": "hausu-evidence.json",
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police",
+          "checkedAt": "2026-09-07T22:18:23.824450+00:00"
+        },
+        "googleReviews": {
+          "verdict": "checked recent and lowest",
+          "reviewer": "near-deep-researcher"
+        },
+        "events": {
+          "verdict": "official events page checked; only past 2025 events; Instagram pending"
+        },
+        "price": {
+          "verdict": "official SAMPLE menu retrieved; do not assert undated sample as guaranteed current price"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        }
+      },
+      "retryCount": 0,
+      "slug": "hausu-peckham-london",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "6dcfe9a",
+      "liveUrl": "https://near.tips/en/place/hausu-peckham-london"
+    },
+    {
+      "name": "TOAD Bakery",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/toad-bakery",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+        }
+      },
+      "retryCount": 0,
+      "slug": "toad-bakery-camberwell-london",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
+    },
+    {
+      "name": "The Divine",
+      "city": "London",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "E. Pellicci",
+      "city": "London",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The Jago",
+      "city": "London",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The Pilgrm",
+      "city": "London",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Kirbee’s",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Monkey Thief",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Bar Etienne",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Cospa Ramen",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Nowadays",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The Bush",
+      "city": "New York City",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The Independent",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The Lodge Oakland",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Henry J. Kaiser Center for the Arts",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Roxie Theater",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Black Bird Bookstore",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "The New Parkway Theater",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Südblock",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "about blank",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Teufelssee",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Sexyland World",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Skatecafé",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "OT301",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "WTF Gallery and Café",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Benjakitti Forest Park",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Mischa Cheap",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "92 Graus",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Changes",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Harvest Folk Bar",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    }
+  ],
+  "setupDecisions": {
+    "parser": "Reuse source packets only with per-article provenance; source approval before localization",
+    "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
+    "cto": "Existing flat files and tools; no new service",
+    "techLead": "Incremental checks, saved states, final build and verification"
+  }
+}

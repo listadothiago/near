@@ -127,6 +127,16 @@ shortlist of sources relevant to *this* piece, in this order:
    exists.
 2. **Then the rest of `preferred-sources.md`**, by beat and city fit.
 
+**Standing rule, operator 2026-09-07: always look well beyond Time Out.**
+A mainstream listings feed like `timeout-<city>` is a fine starting point
+(it is verified, it is fast, and it is already in `sources.md`), but it is
+never sufficient on its own and never the majority of a piece's sourcing.
+Every article routes through independent zines/blogs, the venue's own
+channels, and UGC (the 4-0 floor below) specifically so it does not read
+like a repackaged listings blurb. If a piece's source list is Time Out plus
+the official site and nothing else, that is a sourcing gap, not a finished
+research pass — go find the indie/local voice before drafting.
+
 Run that shortlist past `near-trendsetter`, `near-seo`, the Product
 Trio and the PR team (`backlink-pr`) before research proper begins —
 they may know a source is stale, bot-blocked, or the wrong lens for
@@ -435,6 +445,12 @@ AI-generated in `attribution`. If image resolution fails entirely, the
 piece is held, not published without one.
 
 ### 7. Sign-off — `near-tov-police`, `language-tic-police`, `near-legal-counsel`, then the chief editor
+
+**The chief editor is invoked on every article, with no exception**
+(operator directive, 2026-09-07). This is not one option among several
+sign-off paths and not something a batch run or a busy cluster can drop
+to save a step — every piece gets the same unbylined go-ahead described
+below before it ships, place page, blog post, or column issue alike.
 
 Four distinct checks, in order, each fixing what's actually theirs
 rather than rubber-stamping:
