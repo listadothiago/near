@@ -69,19 +69,21 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 ### 2.1 Neighborhood-First Deepening
 
 - **Thresholds:** ≥2 places generates an addressable location page (`/[locale]/in/[location]`); ≥4 places unlocks category grouping and exits the thin-coverage UI state.
-- **Saturation Disqualification:** Do not create landing pages or push new pins to oversaturated, globally documented hubs (e.g., London Soho/Shoreditch, NYC East Village, SF Mission, São Paulo Vila Madalena).
+- **Saturation Disqualification:** Do not create landing pages or push new pins to oversaturated, globally documented hubs (e.g., London Soho/Shoreditch, NYC East Village, SF Mission, São Paulo Vila Madalena). Unless WOW extremely relevant and SEO and trendsetter agree it's an exception. There can be plenty of exception if they say so. TBH Beco do Batman looks silly all alone. There's a hip coffee place in largo that batata isn't there? One with an extremely old timey ambiance. 
 - **No Geographic Polygons:** Neighborhoods are flat categorical labels, not spatial GeoJSON boundaries.
 
 ### 2.2 Share-of-Output Cadence (Per 10 Posts)
 
-- **Tier 1 (6 of 10 — Round-Robin):** London, Brighton, San Francisco, Oakland, NYC.
-- **Tier 2 (3 of 10 — Burst by City):** Bangkok, São Paulo (capital), Baixada Santista, Rio de Janeiro, Campinas (standing priority cluster), Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu, Tokyo, Melbourne, Seattle, Los Angeles, plus one trending wildcard city.
-- **Tier 3 (1 of 10 — Burst by City):** Florianópolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador, Denver, Chicago, Miami, Bologna, Medellin, Montevideo, São Carlos-SP, Litoral Paulista, São Vicente-SP, New Jersey, San Diego plus one trending wildcard city.
+- **Tier 1 (6 of 10 — Round-Robin):** London, NYC, San Francisco Bay Area. We must be oh so in the new in these destinations, they are super competitive.
+- **Tier 2 (3 of 10 — Burst by City):** Brighton, San Francisco, Berkeley/Oakland/East Bay, Brooklyn NY, Manhattan NY, Bangkok, São Paulo (capital), Baixada Santista, Rio de Janeiro, Berlin, Amsterdam, Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Fort Lauderdale, Chengdu, Tokyo, Melbourne, Seattle, Los Angeles, Paris, Lisbon, Madrid plus one trending wildcard city.
+- **Tier 3 (1 of 10 — Burst by City):** Florianópolis, Porto Alegre, Curitiba, Belo Horizonte, Recife, Salvador, Denver, Chicago, Miami, Bologna, Medellin, Montevideo, São Carlos/Rio Claro-SP(college age audience), Baixada Santista/Litoral Paulista, São Vicente-SP, New Jersey, San Diego, Buenos Aires, Palermo, Lugano/Italian Switzerland, Puerto Vallarta, Milan, Valencia, Porto, Campinas (standing priority cluster), Jaú/Bauru/Araraquara region(college age audience), Edinburgh, Glasgow, Dublin, Carcavelos (college age audience), Athens, plus one trending wildcard adventure or beach classic "revista trip" destination deep dive.
   - _Constraint:_ Tier 3 is **HELD** until each city possesses ≥1 verified independent local source and ≥3 verified candidate pins.
-- **Gap:** No African city or neighborhood is in any tier. Pick at least one — see P2.6.
+- **Gap:** No African city or neighborhood is in any tier. Pick at least one in north africa and another anywhere in Africa, SEO and trendsetter please choose — see P2.6. Progressive as possible, if possible, due to our various lenses. No currently politically problematic or sensitive cities please. 
 - _Bangkok moved Tier 1 → Tier 2 per operator directive 2026-09-07. P2.2 (Bangkok seeding war room) still stands, now at Tier 2 cadence._
 
 ### 2.3 Locale Expansion Architecture
+
+i think we need greek to have athens? any other locale missing for a city in our tiers? en-gb?
 
 - **Current Core:** 6 uniform, fully synchronized locales (`en`, `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`).
 - **Expansion Wishlist (Ranked by RICE):** 1. `pt-PT` (2.4 — lowest effort, forks `pt-BR`) · 2. `de` (1.6 — high demand, supports Berlin) · 3. `nl` (1.0 — supports Amsterdam) · 4. `ca`, `ar`, `hi`, `ja`, `fr`, `da` (under review, subject to full 6-locale backfill feasibility).
@@ -94,7 +96,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 `backlink-pr`, `affiliate-pr`, and `ad-sales` may conduct market research, build media lists, map affiliate programs, and prepare pitch templates, but **no outbound contact** (email, messaging, forms) may be executed without explicit human permission.
 
-**Exit Milestone:** 1,000 published places, comprehensive 6-locale coverage, verified Search Console indexation, and explicit operator authorization.
+**Exit Milestone:** 1,000 published places, comprehensive 6-locale coverage, verified Search Console indexation, and explicit operator authorization. Thiago says: What do you mean by exit milestone? I meant at this point it could be a good point to launch PR campaigns for backlinks especially
 
 ### 3.2 Lead Capture & Security
 
@@ -302,3 +304,49 @@ backlog; only the per-write gate stops it recurring.
 | **thiago baraldi**  | Curator      | Human site curator (`/about/thiago`)                                                                          | 8-bit retro avatar with glasses & mustache  |
 
 Completed work lives in `BACKLOG-ARCHIVE.md`.
+
+Stopping now. No files were edited — the seeding pass was still in its research phase, so nothing was written to post-plan.md, opportunities.md, or preferred-sources.md, and no place pages were created.
+
+Here's what I had verified before halting, so it isn't lost:
+
+Sources map (all fetched live, 2026-09-07)
+
+Verified live and publishing:
+- Hell Gate (hellgatenyc.com) — subscriber-funded, worker-owned NYC news co-op. RSS at /all-posts/rss. Publishing daily (latest 2026-09-04). The strongest NYC find; genuinely the alt-weekly successor and Near-shaped.
+- EV Grieve (evgrieve.com) — East Village blog, already a preferred-sources.md candidate. Atom feed at /feeds/posts/default. Posting multiple times daily (latest 2026-09-07). Earned its second good hit this pass, so it clears the bar for formal onboarding.
+- Gay City News (gaycitynews.com) — LGBTQ+ NYC, Schneps Media. Publishing currently. No RSS link surfaced on the homepage.
+- The Lo-Down (thelodownny.com) — Lower East Side/Chinatown. Live but slower (latest 2026-08-26). No RSS visible.
+- Village Voice (villagevoice.com) — still publishing but thin and slow; latest piece 2026-08-07. Tier 3 at best; it is not the outlet its name implies anymore.
+
+Bot-blocked to WebFetch (403, would need claude-in-chrome): Gothamist, BrooklynVegan, Bushwick Daily, Greenpointers.
+
+Two real audit findings:
+1. aan-the-daily-catch in sources.md is mis-regioned. It is filed region: us-brooklyn-ny, but the live site is a Hudson Valley papercovering Red Hook, Rhinebeck and Clinton (Dutchess County). The AAN bulk-ingest on 2026-09-01 evidently collided on "Red Hook", which is both a Brooklyn neighborhood and a Dutchess town. It should be re-regioned, not retired — it is live and publishing (latest 2026-09-04).
+2. There is no AAN member in New York City. The AAN directory search for New York returns only Chronogram (Hudson). So NYC's alt-weekly slot has to be filled by Hell Gate and Gay City News rather than by the standing AAN route.
+
+Candidates verified before the stop
+
+- Saint Vitus, 428 Troutman St, Bushwick — the Greenpoint metal/punk bar the DOB shut mid-hardcore-show in Feb 2024 over live-musicpermits, reopening fall 2026 in the former Brooklyn Made space. Announced via the venue's own Instagram 2026-07-03 (the mascot mannequin "Günther" revealing the address). Trust review for now, and note a live conflict: Time Out says 250 capacity, other coverage says ~500 —do not assert either. The venue's own site is a template with no address and no dates on it, so the reopening date is not yet confirmable from a primary.
+- Ninth Ward, 180 Second Ave, East Village — New Orleans bar that closed 2016-02-14 for an "18-month" renovation and reopened 2026-07-10 after nearly ten years. Owners Nic Ratner, Robert Morgan, chef Lena Geskin. Source: EV Grieve, 2026-07-06. Trust auto. ⚠️ Dedupe flag:East Village, same neighborhood as the live rabbit-books-and-bar-east-village-nyc — different venue and different address, but check coordinates at draft.
+- Pan in Motion panyard, Prospect Heights International School lot, Crown Heights — the last steel panyard in Crown Heights, under threat from a neighbor's noise complaints; DOE practice permit 27 Jul–5 Sep. Founder Kendall Williams. Hell Gate, Katie Way, 2026-09-04. Reads as a column/collection, not a pin.
+- The Exley + the "LGBTBQE" plaza, Jackson St between Meeker and Union, Williamsburg — gay bar (opened 2011) that got a BQE slip laneconverted to a car-free plaza, ribbon-cut 2026-08-20. Streetsblog NYC, Sophia Lebowitz. Trust review — single outlet so far.
+- Queer Nightlife Community Center, 100 Hinsdale St, East New York — 28,000 sq ft warehouse, nonprofit for queer nightlife workers,day/night dual shift. ⚠️ The Time Out source is dated 2025-06-09, not 2026 — this one needs current-status re-verification before it goes anywhere near a queue.
+
+What did not verify
+
+- No new 2026 Queens independent-bookshop opening turned up; the search returned only existing shops. Queens/Bronx coverage was the gap Ihad not closed when I stopped, so the queue as it stands would have been Brooklyn/Manhattan-heavy.
+
+If you want this resumed later, the remaining work is: the borough spread (Queens, Bronx, upper Manhattan), a claude-in-chrome retry on the four 403 sources, the Instagram feed reads, and then the three file writes.
+
+san francisco bay area should be a searchable place like any city have a landing page. same for baixada santista and contained individual cities and so on in comparable configurations of cities, regions, neighborhood level too
+
+near-illustrator is free to vary the styles of vector derived images, use its skill specialist judgement to decide on best fit and color palette for our experience and that particular article it will illustrate. We can be a bit brutalist but colorful perhaps. Our layout is a bit mondrian-esque already lol... neondrian dare I say? and that is not a bad thing. Photos are still generally better for a hero image. UX and Design team discuss and execute as they decide
+
+Maybe CUBIC-V could be called neondrian? What does Cubic-V/neondrian think?
+
+PWA app icon looks good, it should be used in the header for consistency
+
+near-illustrator cool photos that fit our vibe are always best so please as a rule fearlessly source them from google photos, crop if you must, legal skill please throw a dog a bone here, if we get notified we take them down. also from google image search in general. place's own site is an obvious one as they usually do not mind. review the hero for legends brighton post, the current one is bad https://share.google/9aPPSEXDAVqMJyf9m btw source their events these are great https://www.instagram.com/legendsbrighton/?hl=en
+
+
+

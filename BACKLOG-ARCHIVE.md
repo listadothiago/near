@@ -391,3 +391,50 @@ ovunque." No code change needed.
 ### Deprecated persona
 
 `djaga` — deprecated, removed from the roster table.
+
+### Shared links showed no hero image on WhatsApp/socials — DONE 2026-09-07, Claude (Opus 5)
+
+Operator report: pasting a near.tips link into WhatsApp, or posting it to a
+social, unfurled as a bare text card with no image.
+
+**Root cause: image weight, not missing tags.** The og:image tags were
+present and already absolute. WhatsApp's scraper silently drops a preview
+image over roughly 600KB, and Near was serving full-size originals —
+`amuse-beach-club-sao-vicente/hero.jpg` at **3.6MB**,
+`lita-pinheiros-sao-paulo` at **11.2MB**, plus 468 mostly-remote hero URLs
+on Wikimedia and venue sites at original resolution. Nothing errored; the
+image just never rendered.
+
+**Fix:** new `lib/seo/ogImage.ts` → `buildOgImages()`, used by the place
+route, the collection route, and now the locale layout. It points og:image
+at Next's own image optimizer (`/_next/image?url=…&w=1200&q=75`), which
+downscales on demand and returns JPEG to scrapers, which send no
+`image/webp` in Accept. The 3.6MB AMUSE hero comes back at **113KB**. This
+covers all 468 hero URLs without re-encoding a single source file, and any
+future hero is covered automatically.
+
+Also added a site-level `openGraph` default in `app/[locale]/layout.tsx`:
+only the place and collection routes declared one, so home, the column
+indexes and search unfurled bare by construction. They now inherit a
+branded card; routes with their own openGraph still replace it wholesale.
+
+**Two corrections to the original ticket's diagnosis, both wrong on
+inspection:** (a) hero URLs were never site-relative, and `metadataBase` is
+set in the layout regardless; (b) the `twitter` block declaring no `images`
+was harmless — Next derives `twitter:image` from `openGraph.images`, and the
+live HTML always carried it.
+
+**Gotcha worth keeping:** Next 16 restricts the optimizer's `q` to the
+configured `qualities` list, which defaults to `[75]`. `q=70` returns 400
+`INVALID_IMAGE_OPTIMIZE_REQUEST`. Don't change `OG_IMAGE_QUALITY` without
+adding a matching entry to `next.config.ts`.
+
+`og:image:height` is deliberately omitted — the optimizer preserves each
+source's aspect ratio and `heroImageSchema` records no dimensions, so any
+height here would be invented.
+
+**Verified:** `npx next build` passed; tags confirmed on a local production
+server for both a place page and the home page. **Still needs a human
+check** the agent cannot do: paste a link into a real WhatsApp chat, and
+re-scrape in the Facebook Sharing Debugger to clear its cache. Both cache
+aggressively, so old bare cards may persist for previously-shared URLs.

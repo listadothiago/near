@@ -14,6 +14,7 @@ import {
 import type { ContentLocale } from "@/lib/content/schema";
 import { buildPlaceJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
+import { buildOgImages } from "@/lib/seo/ogImage";
 import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import PlaceHero from "@/components/place/PlaceHero";
@@ -57,7 +58,7 @@ export async function generateMetadata({
       title: content.frontmatter.name,
       description: content.frontmatter.seoDescription,
       type: "article",
-      images: content.meta.heroImage ? [content.meta.heroImage.url] : [],
+      images: buildOgImages(content.meta.heroImage, content.frontmatter.name),
     },
     twitter: {
       card: "summary_large_image",
