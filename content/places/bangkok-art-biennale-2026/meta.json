@@ -8,8 +8,8 @@
     "trending"
   ],
   "coordinates": {
-    "lat": 13.7466,
-    "lng": 100.5303
+    "lat": 13.7467339,
+    "lng": 100.5302168
   },
   "place": {
     "city": "Bangkok",
@@ -69,9 +69,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.7,
-    "query": "Bangkok Art and Culture Centre, 939 Rama I Rd, Wang Mai, Pathum Wan, Bangkok 10330 (one of BAB 2026's ten venues; the biennale itself is city-wide across all ten)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Bangkok Art and Culture Centre, 939 Rama I Rd, Wang Mai, Pathum Wan, Bangkok 10330 — Google Maps listing pin (one of BAB 2026's ten venues; the biennale itself is city-wide across all ten)",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bangkok+Art+%26+Culture+Centre/@13.7467339,100.5302168,17z/data=!3m1!4b1!4m6!3m5!1s0x30e29ecd506f6c7d:0x1ed0028ba796150b!8m2!3d13.7467339!4d100.5302168!16s%2Fm%2F043rs1m"
   },
   "publishedAt": "2026-09-04T13:02:47Z",
   "updatedAt": "2026-09-04T13:02:47Z"

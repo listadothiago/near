@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": -23.9945,
-    "lng": -46.2555
+    "lat": -24.0000692,
+    "lng": -46.2626391
   },
   "place": {
     "city": "Guarujá",
@@ -73,9 +73,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.6,
-    "query": "Av. Marechal Deodoro da Fonseca 1522, Pitangueiras, Guarujá - SP, 11410-223"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Barraca da Dhéia - LGBT, Av. Mal. Deodoro da Fonseca, 1522 - Centro, Guarujá - SP, 11410-223 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Barraca+da+Dh%C3%A9ia+-+LGBT/@-24.0000692,-46.2626391,17z/data=!3m1!4b1!4m6!3m5!1s0x94d1ff4370c2b4df:0x28a42b18b93730f5!8m2!3d-24.0000692!4d-46.2626391!16s%2Fg%2F11smg00cc2"
   },
   "publishedAt": "2026-09-02T19:00:00Z",
   "updatedAt": "2026-09-02T19:00:00Z"

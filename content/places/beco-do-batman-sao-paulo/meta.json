@@ -7,8 +7,8 @@
     "hipster"
   ],
   "coordinates": {
-    "lat": -23.5558,
-    "lng": -46.6919
+    "lat": -23.5566009,
+    "lng": -46.686579
   },
   "place": {
     "city": "São Paulo",
@@ -53,9 +53,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "Beco do Batman, Rua Gonçalo Afonso, Vila Madalena, São Paulo"
+    "provider": "google-maps",
+    "confidence": 0.9,
+    "query": "Beco do Batman, R. Medeiros de Albuquerque, 82-154, Jardim das Bandeiras, São Paulo - SP, 05436-060 — Google Maps listing pin (open-air alley landmark, not a single storefront)",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Beco+do+Batman/@-23.5566009,-46.686579,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce575858b6a5b9:0xc5b1a9636043ff22!8m2!3d-23.5566009!4d-46.686579!16s%2Fg%2F11b6pwftrw"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
   "updatedAt": "2026-08-31T00:00:00Z"

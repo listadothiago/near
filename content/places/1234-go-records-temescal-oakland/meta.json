@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 37.828623,
-    "lng": -122.260472
+    "lat": 37.8286487,
+    "lng": -122.2603008
   },
   "place": {
     "city": "Oakland",
@@ -87,9 +87,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.85,
-    "query": "420 40th St #5, Oakland, CA 94609 (Temescal)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "1-2-3-4 Go! Records, 420 40th St #5, Oakland, CA 94609 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/1-2-3-4+Go!+Records/@37.8286487,-122.2603008,17z/data=!3m1!4b1!4m6!3m5!1s0x80857dfc92126331:0x3fd6487dbc2c261e!8m2!3d37.8286487!4d-122.2603008!16s%2Fg%2F1td1vn_d"
   },
   "publishedAt": "2026-09-03T16:58:34Z",
   "updatedAt": "2026-09-03T00:00:00Z"

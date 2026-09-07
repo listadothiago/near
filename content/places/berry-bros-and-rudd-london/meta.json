@@ -7,8 +7,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5057,
-    "lng": -0.1394
+    "lat": 51.5054865,
+    "lng": -0.1377456
   },
   "place": {
     "city": "London",
@@ -47,9 +47,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
+    "provider": "google-maps",
     "confidence": 1,
-    "query": "3 St James's St, London SW1A 1EG"
+    "query": "Berry Bros. & Rudd Wine Shop, 3 St James's St, London SW1A 1EG — Google Maps listing pin (historic flagship storefront; listing surfaces address as 63 Pall Mall/corner entrance but signage and photo confirm the 3 St James's St building)",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Berry+Bros.+%26+Rudd+Wine+Shop/@51.5054865,-0.1377456,17z/data=!4m6!3m5!1s0x487604d7715d1d97:0xa76d50970f32f611!8m2!3d51.5054865!4d-0.1377456!16s%2Fg%2F11dzt5qjx3"
   },
   "publishedAt": "2026-08-31T23:56:24Z",
   "updatedAt": "2026-09-01T00:00:00Z"

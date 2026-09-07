@@ -8,8 +8,8 @@
     "local-legend"
   ],
   "coordinates": {
-    "lat": 51.5136,
-    "lng": -0.1316
+    "lat": 51.5134134,
+    "lng": -0.1312402
   },
   "place": {
     "city": "London",
@@ -89,9 +89,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "22 Frith Street, Soho, London W1D 4RF"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Bar Italia, 22 Frith St, London W1D 4RF — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bar+Italia/@51.5134134,-0.1312402,17z/data=!3m1!4b1!4m6!3m5!1s0x487604d2e894b205:0x564f31980dc82f90!8m2!3d51.5134134!4d-0.1312402!16s%2Fm%2F07sbnh6"
   },
   "publishedAt": "2026-09-02T21:51:29Z",
   "updatedAt": "2026-09-02T00:00:00Z"

@@ -8,8 +8,8 @@
     "hidden-gem"
   ],
   "coordinates": {
-    "lat": -23.5378,
-    "lng": -46.6558
+    "lat": -23.5401426,
+    "lng": -46.6515701
   },
   "place": {
     "city": "São Paulo",
@@ -54,9 +54,11 @@
     }
   ],
   "geocode": {
-    "provider": "manual",
-    "confidence": 0.5,
-    "query": "Rua Fortunato 133, Santa Cecília, São Paulo (approximate neighborhood center, street-level not confirmed)"
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "bar Das, R. Fortunato, 133 - Vila Buarque, São Paulo - SP, 01224-030 — Google Maps listing pin",
+    "verifiedAt": "2026-09-07T18:08:09Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Das/@-23.5401426,-46.6515701,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5914e82df9dd:0xad29d6dd51412cac!8m2!3d-23.5401426!4d-46.6515701!16s%2Fg%2F11h07kg7_l"
   },
   "publishedAt": "2026-08-27T23:13:27Z",
   "updatedAt": "2026-08-28T00:00:00Z"
