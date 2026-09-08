@@ -28,9 +28,38 @@ export default function InstallPrompt() {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
       if (process.env.NODE_ENV === "production") {
-        navigator.serviceWorker.register("/sw.js").catch(() => {
-          // A failed registration costs offline support and the install
-          // prompt, not the site. Nothing to do but carry on.
+        const hadController = !!navigator.serviceWorker.controller;
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((reg) => {
+            // A PWA window can stay open for days without navigating, and
+            // browsers only check /sw.js for a new version on navigation —
+            // so an installed app can silently miss every deploy until the
+            // user force-quits it. Force a check whenever the app regains
+            // focus, which is the closest thing a standalone window has to
+            // "the user just opened it."
+            const check = () => reg.update().catch(() => {});
+            document.addEventListener("visibilitychange", () => {
+              if (document.visibilityState === "visible") check();
+            });
+            window.addEventListener("focus", check);
+          })
+          .catch(() => {
+            // A failed registration costs offline support and the install
+            // prompt, not the site. Nothing to do but carry on.
+          });
+
+        // Once a newly-installed worker takes control, the page it's
+        // controlling is still running the old JS/HTML in memory — reload
+        // once so the update is actually visible instead of just cached
+        // for next time. Only do this when a controller is being replaced
+        // (hadController), not on the very first registration, which also
+        // fires this event but has nothing stale to refresh away.
+        let refreshed = false;
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (refreshed || !hadController) return;
+          refreshed = true;
+          window.location.reload();
         });
       } else {
         // Never run the SW in development. Its /_next/static/ rule is
