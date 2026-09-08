@@ -109,6 +109,15 @@ Logged 2026-09-08. Nothing sent; outreach frozen.
   potential future partner for community-focused coverage; noted for
   the record, not for a sales pitch.
 
+### Attilio, Trieste-Salario, Rome (2026-09-08)
+
+- **Attilio itself** — new venue (opened March 2026), no promotional
+  history with Near, first Rome pin makes it a plausible advertiser
+  lead once Rome coverage has more depth to sell against.
+- **Touches:** none. Logged as prospect 2026-09-08.
+- **State:** `prospect`
+
+
 ## Closed / declined
 
 _None yet._

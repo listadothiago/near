@@ -90,6 +90,14 @@ Logged 2026-09-08.
   correction, not a purchase moment; forcing one in would be the exact
   cynical insert the wall prohibits.
 
+### Attilio, Trieste-Salario, Rome (2026-09-08)
+
+- A bar/wine-list pin, not a ticketed event or accommodation — no
+  natural purchase moment (no bookable reservation product, no approved
+  program covering Italian récoltant-manipulant retailers).
+- **Verdict:** no affiliate link.
+
+
 ## Closed / declined
 
 _None yet._

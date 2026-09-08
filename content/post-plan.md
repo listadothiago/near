@@ -140,16 +140,20 @@ Tier 3's to **Curitiba**. The machine-legible pointer in
 `content-rotation/SKILL.md` is authoritative if this narrative and that
 block ever disagree.
 
-**Rome's turn, 2026-09-08: seeded, not yet drawn.** Rome's queue was
-unseeded, so per "Seed on turn" this turn ran a
-`near-sources-war-room`-equivalent pass instead of a draft — see the
-Rome section above under Queues. The bar cleared (vernissagerome IG feed
-verified live; 4 candidate pins with addresses and 2026 corroboration,
-one — Attilio — with two independent sources already). No posts shipped
-this session; drafting the burst is deferred to the next session that
-picks up Rome. `NEXT-UP` stays on **Rome (Tier 2 burst, seeded)** rather
-than moving to Curitiba, since Tier 2's 3-post share has not actually
-been spent yet.
+**Rome's turn, 2026-09-08: DRAWN.** Attilio shipped
+(`attilio-trieste-salario-rome`, FOODIE-9000, all six locales, `trust:
+auto`) — full pipeline, sourcing, gates and revenue-pass record in the
+Rome section above. The other three seeded candidates (Terrazza Hey
+Güey, Monk Garden, Kalavrì) each picked up a genuine second source this
+session but did not get the full per-piece pipeline run, so they were
+logged as upgraded leads rather than padded into drafts. **Tier 2's
+burst for ten #2 closes at 1 of 3** rather than holding open — see the
+Rome section's note for the reasoning (matches how Oakland's and NYC's
+partially-drawable-queue turns were handled). With Tier 1 (6 of 6) and
+Tier 2 now both spent this ten, only Tier 3 (0 of 1) remains — `NEXT-UP`
+moves to **Curitiba**, Tier 3's burst, confirmed still CLEARED per the
+Tier 3 section below (funded independent outlets, 3+ verified candidate
+pins, next in `t3-draw` order after Porto Alegre).
 
 *Everything below this line describes the old nested-cycle regime and is
 kept as history, not as live mechanics.*
@@ -493,7 +497,7 @@ New sources onboarded this pass (`trust: auto`, detail in
 `bushwickdaily.com` explicitly rejected — see `preferred-sources.md` for
 the reason (AI-slop drift, documented by Hell Gate itself).
 
-### Rome (Tier 2 burst) — SEEDED 2026-09-08, research-verified, not yet drafted
+### Rome (Tier 2 burst) — DRAWN 2026-09-08: Attilio SHIPPED, three leads upgraded, burst closed at 1 of 3
 
 _This was Tier 2's designated burst target for ten #2 and was passed
 over on 2026-09-07 for an empty queue. Under the "Seed on turn" rule
@@ -522,31 +526,75 @@ primary candidate-pin source this pass; each candidate below still
 needs a second corroborating source confirmed before drafting, per
 standing research-floor rules (one is already secured, for Attilio).
 
-- [ ] **Attilio, Via di Villa Chigi 68, Trieste-Salario** — DARCY or
-  FOODIE-9000. New lounge/wine bar (opened late March 2026) built around
-  small-producer récoltant-manipulant champagnes and a compact
-  drink-forward menu (babaganoush, parmigiana, picchiapò, club
-  sandwich); named for a painting of a 19th-century local figure found
-  during the renovation. Corroborated independently by Puntarella Rossa
-  and Lieviti Digitali (an independent food blog with its own
-  reported piece on the opening) — the strongest-sourced candidate this
-  pass, draw first.
+- [x] **Attilio, Via di Villa Chigi 68, Trieste-Salario** — SHIPPED
+  2026-09-08 as `attilio-trieste-salario-rome`, FOODIE-9000, all six
+  locales, `trust: auto`. New lounge/wine bar (opened late March 2026)
+  built around small-producer récoltant-manipulant champagnes and a
+  compact drink-forward menu (babaganoush, parmigiana, picchiapò,
+  pastrami club sandwich); named for a 19th-century portrait (Attilio
+  Rendano, possibly a relative of composer Alfonso Rendano, never
+  confirmed) found during the renovation. **Sourcing:** two-source
+  corroboration confirmed (Puntarella Rossa's own opening coverage +
+  Lieviti Digitali's independently reported piece), plus the venue's own
+  Instagram (@attilio_bar, 4,522 followers) and site (attiliobar.it),
+  Google Maps listing (address, coordinates, hours, phone), and current
+  Google reviews (4.6/31, read via claude-in-chrome — specific reviewer
+  detail on the parmigiana and the wine/sparkling/beer selection, no
+  negative pattern found, sample still thin given the venue's age).
+  Reddit r/rome and r/italy searched directly and via
+  `site:reddit.com`: no threads exist yet — a met-but-empty result, not
+  a blocked leg, and expected for a five-month-old venue. **Corrections
+  found:** none against the seeding pass's original read; the "possibly
+  related to Alfonso Rendano" detail was confirmed as still-unconfirmed
+  in both sources, so the piece states it as an open question rather
+  than fact. **Geocode:** Google Maps listing verified via
+  claude-in-chrome, confidence 1.0 (41.935142, 12.5143848).
+  **Dedupe:** `node scripts/check-duplicates.mjs` run clean, no Rome
+  conflicts (Near's first Rome pin). **Build:** `npx next build` passed
+  after trimming all-locale taglines to the 90-char schema limit (all
+  six locales had shipped over on first draft). **Images:** hero and two
+  in-body images are all real, attributed editorial photos of the actual
+  venue (Puntarella Rossa's own opening photo as hero; two from Lieviti
+  Digitali's piece in-body) — no stock or generated imagery needed.
+  **Revenue pass:** backlink-pr logged Puntarella Rossa and Lieviti
+  Digitali as prospect relationships (both already covered the venue
+  independently); ad-sales logged Attilio itself as a prospect
+  advertiser lead; affiliate-pr found no natural purchase moment. No
+  outreach sent — operator freeze in effect. **New preferred-sources.md
+  candidates logged:** Lieviti Digitali, Romeing, Cibotoday (see
+  `preferred-sources.md`'s Rome section). Internal-link gap logged to
+  `content/requests.md` — Near's first Rome pin has no sibling place to
+  link to yet; Rome's next draw should link back to Attilio.
 - [ ] **Terrazza Hey Güey @ Chapter Roma, Via di S. Maria de' Calderari
   47, Jewish Quarter** — near-editor or DARCY. Rooftop bar/terrace atop
   the Chapter Roma hotel in the historic Jewish Quarter; listed among
-  Romeing's verified 2026 summer-venue roundup. Get a second source
-  (hotel's own site/Instagram, or a review outlet) before drafting —
-  currently single-sourced to the Romeing roundup.
-- [ ] **Monk Garden, Via Giuseppe Mirri 35, Portonaccio** — PENDING,
-  verify first. Outdoor garden bar/venue in the less-covered Portonaccio
-  neighborhood; same Romeing roundup. Worth prioritizing over the
-  Trastevere/Centro entries below precisely because Portonaccio has
-  near-zero existing coverage — check for a second source and current
-  operating status before drafting.
-- [ ] **Kalavrì – Calabria in Pala, Via Libia 159** — PENDING, verify
-  first. Calabria-focused pizza-by-the-slice concept from Puntarella
-  Rossa's April 2026 openings column; single-sourced so far, needs a
-  second outlet or the venue's own Instagram before drafting.
+  Romeing's verified 2026 summer-venue roundup. **UPGRADED 2026-09-08:
+  second source now found** — winemag.it, iconmagazine.it,
+  reportergourmet.com and le-strade.com all independently covered the
+  reopening/relaunch, well beyond the single Romeing mention this queue
+  entry originally rested on. Substantiated enough to draft; held back
+  from this session's burst only because the 3-post cap was reserved for
+  what the research floor could fully carry in one sitting (Reddit/
+  Google-reviews/six-locale passes not run for this candidate this
+  session) — **next up for Rome's following turn.**
+- [ ] **Monk Garden, Via Giuseppe Mirri 35, Portonaccio** — PENDING.
+  Outdoor garden bar/venue in the less-covered Portonaccio neighborhood;
+  same Romeing roundup. **UPGRADED 2026-09-08: second source now found**
+  — theparallelvision.com's 2026-05-01 piece on the season's reopening,
+  plus the venue's own site (monkroma.it) and Instagram, all
+  independently corroborating current 2026 operation (Wed–Sun,
+  18:30–01:00, happy hour through 20:30). Substantiated enough to draft;
+  not drawn this session for the same reason as Terrazza Hey Güey above
+  — worth prioritizing over Trastevere/Centro candidates given
+  Portonaccio's near-zero existing coverage.
+- [ ] **Kalavrì – Calabria in Pala, Via Libia 159** — PENDING. Calabria-
+  focused pizza-by-the-slice concept from Puntarella Rossa's April 2026
+  openings column. **UPGRADED 2026-09-08: second source now found** —
+  cibotoday.it and mangiaebevi.it both independently covered the Rome
+  opening (distinct rituals: the "giro d'olio" oil selection, "l'ultimo
+  morso" chili-cream giveaway), plus theparallelvision.com. Substantiated
+  enough to draft; the 3-post Tier 2 cap for this session went to
+  Attilio only — logged for Rome's next turn alongside the two above.
 - [ ] Additional Puntarella Rossa April 2026 leads not yet vetted for a
   second source: Piccolo Forno (Via degli Olivi 53A), Bassa Pizza
   Popolare (Largo Santa Maria Stella dell'Evangelizzazione 3), Tullia
@@ -554,14 +602,25 @@ standing research-floor rules (one is already secured, for Attilio).
   not drafted — do not pad the burst with unverified single-source
   pins.
 
-**Drafting deferred this session.** The seed clears the bar, but the
-full `near-write-article` pipeline for up to 3 posts (research floor,
-Reddit r/rome + r/italy checks, Google reviews via claude-in-chrome,
-≥5 preferred-sources.md entries per piece, six-locale translation,
-mechanical gates, sign-off chain) was not run in this same pass — ship
-what's honestly supportable rather than padding. T2's burst stays open
-against this seeded queue rather than being marked spent; the next
-session drafting from Rome should start with Attilio.
+**Drawn 2026-09-08.** The full `near-write-article` pipeline (research
+floor, Reddit r/rome + r/italy checks, Google reviews via
+claude-in-chrome, ≥5 preferred-sources.md-relevant entries, six-locale
+translation, mechanical gates, sign-off chain) ran for **Attilio only**
+— see its ticked entry above for the full record. The other three
+candidates (Terrazza Hey Güey, Monk Garden, Kalavrì) all picked up a
+genuine second corroborating source this pass, clearing the sourcing bar
+this queue note originally required before drafting — but the full
+per-piece pipeline (Reddit/reviews/six-locale/gates) was not run for any
+of them in this same session, so drafting them now would be the padding
+this rule exists to prevent. **Tier 2's burst closes at 1 of 3 posts for
+this ten** rather than holding the share open indefinitely — per how
+prior turns handled a partially-drawable queue (Oakland's cycle-2 turn,
+NYC's seeding-and-partial-draw), a burst turn concludes once drafting is
+genuinely attempted and the queue's currently-ready candidates are
+either drawn or explicitly deferred, not once exactly 3 posts ship. The
+2-post shortfall is not silently absorbed: it is recorded here, and
+Rome's *next* Tier 2 turn should start from these three
+now-second-sourced leads rather than re-seeding.
 
 ### Bangkok (Tier 1) — SEEDED 2026-09-03, research-verified, not yet drafted
 

@@ -918,3 +918,31 @@ Tier 2 burst turn, queue was previously unseeded:**
   beat, closer to alt-press-first sourcing than a generic aggregator,
   though still single-sourced per venue below and should get a second
   corroborating source at actual draft time.
+
+**New candidates logged from Rome's first drawn turn (Attilio,
+2026-09-08) — not yet promoted to `sources.md`, but confirmed useful and
+monitorable:**
+- `lievitidigitali.com` (Lieviti Digitali) — independent Rome food blog,
+  runs its own reported pieces on openings rather than reprinting press
+  releases (its Attilio piece was shot and written independently, not
+  a rewrite of the Puntarella Rossa item). Good second-source candidate
+  for future Rome food/drink pieces; found this pass, used as Attilio's
+  corroborating source.
+- `romeing.it` (Romeing) — English-language Rome culture/lifestyle
+  outlet running seasonal venue roundups (its 2026 summer-hangouts piece
+  is what surfaced Terrazza Hey Güey, Monk Garden and Kalavrì as leads).
+  Useful as a starting point but its roundups are typically
+  single-source per venue — always get a second outlet before drafting
+  from a Romeing mention alone, per this pass's own finding.
+- `cibotoday.it` (CiboToday) — Italian food-opening listings site,
+  runs monthly "nuove aperture" roundups similar in structure to
+  Puntarella Rossa's; useful as a second corroborating source for the
+  same venues Puntarella Rossa covers (used this way for Kalavrì).
+- `theparallelvision.com` (The Parallel Vision) — Rome culture/
+  nightlife blog, covered both Monk Garden's 2026 season reopening and
+  Kalavrì's opening independently; a useful second-source outlet for
+  Rome nightlife/food leads going forward.
+- `instagram.com/attilio_bar` — venue's own Instagram (4,522 followers,
+  active); bio and post cadence corroborated the found-portrait origin
+  story and current hours. Logged per the standing rule that a venue's
+  own account is a first-class source, not just a fallback.

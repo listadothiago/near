@@ -337,3 +337,16 @@ why: >
   Manhattan west-side pin exists — link both ways at that point.
 status: open
 ```
+
+```yaml
+request: attilio-trieste-salario-rome-internal-link-gap
+type: internal-link-gap
+place: attilio-trieste-salario-rome
+why: >
+  Near's first Rome pin — no other Near place exists in Rome yet, so
+  there is no sibling to link to internally. Ships with external links
+  only (Puntarella Rossa, Lieviti Digitali). Resolve on Rome's next
+  drawn turn: link Attilio to whichever of Terrazza Hey Güey, Monk
+  Garden or Kalavrì gets drafted next, both ways.
+status: open
+```

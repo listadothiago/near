@@ -202,7 +202,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 6 of 6 shipped   T2 0 of 3 (Rome seeded, not drawn)   T3 0 of 1
+spent:           T1 6 of 6 shipped   T2 1 of 3 (Rome drawn, burst closed short)   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → NYC → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -317,34 +317,42 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  verified. Brighton's remaining queue (Club Revenge, the
                  held Polyglamorous entry, the Pride Village Party
                  collection lead) SURVIVES for Brighton's next turn.
-t2-spent:        0 of 3 shipped this ten — Rome (next city in Tier 2's
-                 order after Barcelona) was SEEDED 2026-09-08 by a
-                 `near-sources-war-room`-equivalent pass (full detail:
-                 post-plan.md Rome section, preferred-sources.md Rome
-                 entry). Bar CLEARED: vernissagerome Instagram verified
-                 live/active as the watchable feed; 4 candidate pins
-                 with addresses and 2026 corroboration (Attilio,
-                 Via di Villa Chigi 68; Terrazza Hey Güey @ Chapter
-                 Roma; Monk Garden; Kalavrì), one (Attilio) already with
-                 two independent sources. Correction logged: the
-                 originally-cited `che.famo.stasera` IG handle does not
-                 resolve under that name — do not cite it as verified.
-                 No posts drafted this session (seeding-only turn per
-                 "a seeding pass alone is a legitimate outcome"); the
-                 share stays OPEN, not spent, so it does not pass to
-                 Curitiba yet.
+t2-spent:        1 of 3 shipped this ten — Rome's burst was DRAWN
+                 2026-09-08. Attilio (Via di Villa Chigi 68,
+                 Trieste-Salario) shipped as `attilio-trieste-salario-
+                 rome`, FOODIE-9000, all six locales, `trust: auto` —
+                 full pipeline run (research floor incl. Reddit/Google
+                 reviews via claude-in-chrome, ≥5 preferred-sources.md-
+                 relevant entries, sign-off chain, mechanical gates,
+                 revenue pass). Full detail: post-plan.md Rome section.
+                 The other three seeded candidates (Terrazza Hey Güey @
+                 Chapter Roma, Monk Garden, Kalavrì) each picked up a
+                 genuine second corroborating source this session
+                 (winemag.it/iconmagazine.it/reportergourmet.com for
+                 Terrazza Hey Güey; theparallelvision.com for Monk
+                 Garden; cibotoday.it/mangiaebevi.it for Kalavrì) but did
+                 NOT get the full per-piece pipeline run in this same
+                 session — drafting them now would be padding the burst,
+                 which the rule explicitly bars. **Tier 2's burst for
+                 ten #2 closes at 1 of 3, not held open** — matches how
+                 Oakland's and NYC's partially-drawable-queue turns were
+                 closed once drafting was genuinely attempted and the
+                 ready candidates were drawn or explicitly deferred,
+                 rather than waiting indefinitely for a full 3-post
+                 quota. The 2-post shortfall is recorded, not silently
+                 absorbed: Rome's next Tier 2 turn should start from
+                 these three now-second-sourced leads.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
-                 t3-draw after Porto Alegre.
-NEXT-UP:         Rome (Tier 2 burst, SEEDED 2026-09-08 — draw from the
-                 queue directly, no further seeding needed). Updated
-                 2026-09-08: Rome's turn this session was a seeding pass
-                 (post-plan.md Rome section), which cleared the bar but
-                 did not draft. Per "a seeding pass alone is a
-                 legitimate outcome for a turn," NEXT-UP stays on Rome
-                 rather than advancing to Curitiba — the next session
-                 should draft Attilio first (strongest-sourced
-                 candidate), then Terrazza Hey Güey / Monk Garden /
-                 Kalavrì once each has a second corroborating source.
+                 t3-draw after Porto Alegre. Curitiba re-confirmed
+                 CLEARED 2026-09-08 (post-plan.md Tier 3 section: funded
+                 independent outlets Matinal + Sul 21 equivalents, 3+
+                 verified candidate pins) before pointing NEXT-UP at it.
+NEXT-UP:         Curitiba (Tier 3 burst). With Tier 1 (6 of 6) and now
+                 Tier 2 (1 of 3, closed short — see t2-spent above) both
+                 spent for ten #2, only Tier 3 (0 of 1) remains before
+                 this ten closes. Curitiba is next in `t3-draw` order
+                 after Porto Alegre and is CLEARED, not held — draw
+                 directly from its post-plan.md queue.
 
                  Prior reasoning (2026-09-08, before this session's
                  seeding pass) — Tier 1 is now FULLY SPENT for

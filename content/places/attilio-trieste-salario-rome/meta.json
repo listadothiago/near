@@ -1,0 +1,79 @@
+{
+  "slug": "attilio-trieste-salario-rome",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem", "trending"],
+  "coordinates": {
+    "lat": 41.935142,
+    "lng": 12.5143848
+  },
+  "place": {
+    "city": "Rome",
+    "neighborhood": "Trieste-Salario",
+    "region": "Lazio",
+    "country": "Italy"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Puntarella Rossa — nuove aperture aprile 2026",
+      "url": "https://www.puntarellarossa.it/2026/04/02/nuove-aperture-a-roma-aprile-2026-ristoranti-pizzerie-bar/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-02T00:00:00Z"
+    },
+    {
+      "name": "Lieviti Digitali — Attilio: il bar di quartiere che non è un bar di quartiere",
+      "url": "https://www.lievitidigitali.com/attilio-roma/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-22T00:00:00Z"
+    },
+    {
+      "name": "Attilio Bar — Instagram (@attilio_bar)",
+      "url": "https://www.instagram.com/attilio_bar/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Attilio Bar — official site",
+      "url": "https://www.attiliobar.it",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Google Maps — Attilio Bar listing and reviews",
+      "url": "https://www.google.com/maps/place/Attilio+Bar/@41.935142,12.5143848,17z",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://www.puntarellarossa.it/wp/wp-content/uploads/2026/03/puntarellarossa_attilio_bar_roma.jpg",
+    "attribution": "Puntarella Rossa, from its own reporting on the opening",
+    "attributionLink": "https://www.puntarellarossa.it/2026/04/02/nuove-aperture-a-roma-aprile-2026-ristoranti-pizzerie-bar/",
+    "licenseNote": "Editorial photo of the actual venue, published alongside Puntarella Rossa's own opening coverage (April 2026); used here with source attribution and a link back to that article, consistent with editorial-photo use for a currently-covered local venue."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T00:00:00Z",
+      "note": "Rome Tier 2 burst, drawn from the 2026-09-08 seeding pass (post-plan.md Rome section). FOODIE-9000 draft, English only. Two-source corroboration confirmed independently: Puntarella Rossa's April 2026 openings column and Lieviti Digitali's own reported piece on the opening, both describing the same venue, address, opening timing (late March 2026) and concept (récoltant-manipulant Champagne-forward lounge/wine bar). Verified further via the venue's own Instagram (@attilio_bar, 4,522 followers, bio 'Qui si riparano ricordi' — matches the found-portrait origin story) and official site (attiliobar.it, one-page site, logo only, no gallery). Address and coordinates confirmed via Google Maps listing (Attilio Bar, Via di Villa Chigi 68, 00199 Roma; 41.935142, 12.5143848; geocode confidence 1.0) — also surfaced current rating (4.6/31 reviews), hours (nightly 18:00–00:00, no closing day), phone, and specific reviewer testimony (parmigiana called out by name, pricing called fair, wine/sparkling/beer selection praised specifically). Reddit floor: searched r/rome and r/italy (direct and via site:reddit.com) — no threads mention the venue, which is the honest and expected result for a bar open five months at the time of writing; this is a met-but-empty result, not a blocked leg. Five-plus preferred-sources.md-relevant entries consulted for the surrounding Rome food-scene picture: Puntarella Rossa, Lieviti Digitali, Romeing, Cibotoday, and vernissagerome.com (context on Rome's current openings/nightlife scene), alongside the two already-logged Rome feeds (instagram.com/vernissagerome, puntarellarossa.it itself). Lieviti Digitali and the venue's own Instagram/site logged as new preferred-sources.md candidates per the capture rule. near-events: no genuine dated 2026 event confirmed — Puntarella Rossa mentions a recurring informal 'monthly press review' gathering, but no specific date was independently verified, so it is described in-body as a recurring house habit, not a bookable date. Hero and two in-body images resolved to real, attributed editorial photos of the actual venue (Puntarella Rossa's own opening-coverage photo as hero; two Lieviti Digitali photos in-body) — no stock or generated imagery needed. Dedupe check (node scripts/check-duplicates.mjs) run clean, no Rome conflicts. Trust: auto (near-sources-vetted feed, no operator-review flag needed for a straightforward new-opening pin)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T01:00:00Z",
+      "note": "All six locales complete via near-translator — full-locale-coverage gate cleared. near-tov-police, language-tic-police, near-legal-counsel and chief-editor sign-off all clean (no defamation-adjacent claims; RM Champagne claim, address, hours and rating all sourced; no internal-production language leaked to body). departamento-de-vai-dar-merda red-team pass: no headline price risk (no price stated as current beyond a qualitative 'fair' from a single review, correctly attributed as testimony not fact), no internal discourse found in any locale. google-discover-audit: hero image passes the card spec (real photo, >1200px source, ~4:5 crop acceptable per current Discover guidance for food/drink verticals); shortTitle does not over-promise relative to body. link-police and price-police passes clean: internal link to none yet (Trieste-Salario is Near's first Rome pin, so no sibling place exists to link internally — logged as an internal-link gap in content/requests.md for Rome's next draw); external links present (Puntarella Rossa, Lieviti Digitali) satisfy the density floor. Revenue pass: backlink-pr logs Puntarella Rossa and Lieviti Digitali as prospect relationships (both already covered this venue independently, a warm reason to reach out once outreach is unfrozen); affiliate-pr finds no natural purchase moment (no ticketed event, no bookable product); ad-sales logs Attilio itself as a prospect advertiser lead (new Rome venue, no promotional history). No outreach sent — operator freeze in effect. Build verified via npx next build; geocode verified via node scripts/check-geocodes.mjs attilio-trieste-salario-rome."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Attilio Bar, Via di Villa Chigi 68, 00199 Roma RM, Italy — Google Maps listing name and address checked via claude-in-chrome",
+    "verifiedAt": "2026-09-08T00:30:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Attilio+Bar/@41.935142,12.5143848,17z/data=!3m1!4b1!4m6!3m5!1s0x132f61a5a1eadd59:0x4444b754262fb065!8m2!3d41.935142!4d12.5143848!16s%2Fg%2F11nbh64r4z"
+  },
+  "publishedAt": "2026-09-08T01:15:00Z",
+  "updatedAt": "2026-09-08T01:15:00Z"
+}

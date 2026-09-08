@@ -170,6 +170,16 @@ Logged 2026-09-08 off `the-actors-kemptown-brighton`. Nothing sent.
 - **Touches:** none. Logged as prospects 2026-09-08.
 - **State:** `prospect`
 
+### Attilio, Trieste-Salario, Rome (2026-09-08)
+
+- **Puntarella Rossa** and **Lieviti Digitali** — both already covered
+  this venue independently before Near did; a warm, non-cynical reason
+  to reach out once outreach is unfrozen (correcting/crediting nothing,
+  just noting Near's piece exists and citing them both as sources).
+- **Touches:** none. Logged as prospects 2026-09-08.
+- **State:** `prospect`
+
+
 ## Closed / declined
 
 _None yet._
