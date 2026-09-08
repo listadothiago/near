@@ -42,6 +42,27 @@ export function buildOgImages(
   if (!image?.url) return [];
 
   const isAbsolute = /^https?:\/\//.test(image.url);
+  // Google's lh3.googleusercontent.com CDN already gets the `=w1200-h675-c`
+  // crop suffix applied at authoring time (see the comment above), and
+  // weserv 400s fetching these specific URLs back-to-back — its own
+  // request to Google for this host comes back 400, turned into a
+  // weserv-side 404 (confirmed directly: the same URL fetches 200 on its
+  // own but 404 through weserv). Serve it as-is instead of double-proxying.
+  const isPreCroppedGoogleHost =
+    isAbsolute && /^https?:\/\/lh3\.googleusercontent\.com\//.test(image.url);
+
+  if (isPreCroppedGoogleHost) {
+    return [
+      {
+        url: image.url,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
+        type: "image/jpeg",
+        ...(alt ? { alt } : {}),
+      },
+    ];
+  }
+
   const optimized = isAbsolute
     ? new URL("https://images.weserv.nl/")
     : new URL("/_next/image", getBaseUrl());

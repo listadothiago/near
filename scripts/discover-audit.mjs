@@ -56,13 +56,28 @@ const slugsIdx = args.indexOf("--slugs");
 const onlySlugs = slugsIdx >= 0 ? args[slugsIdx + 1].split(",") : null;
 
 function ogImageUrlFor(heroUrl) {
-  // Mirrors lib/seo/ogImage.ts's buildOgImages: width capped/targeted at
-  // 1200 via Next's optimizer, which preserves source aspect ratio. We
-  // replicate the *result* by reading the source's real dimensions
-  // directly (fetching through the live optimizer would require a
-  // deployed URL and adds deploy-lag as a variable this check doesn't
-  // need) — same verdict, no deploy dependency.
-  return heroUrl;
+  // Mirrors lib/seo/ogImage.ts's buildOgImages. Absolute (external) hero
+  // URLs are routed through images.weserv.nl at request time, which
+  // crops-to-fill 1200x675 regardless of the source's own aspect ratio —
+  // checking the raw source URL directly (the old behavior here) stopped
+  // reflecting what Discover actually sees the moment that proxy fix
+  // shipped (BACKLOG P2.14), and produced a wall of false-positive FAILs
+  // across the whole catalogue. Local relative URLs still go through
+  // Next's own optimizer, which only resizes width and never crops, so
+  // the raw source's aspect ratio is still the real verdict there.
+  if (!/^https?:\/\//.test(heroUrl)) return heroUrl;
+  // lh3.googleusercontent.com is pre-cropped at authoring time and served
+  // as-is (see lib/seo/ogImage.ts) — weserv 400s fetching this host.
+  if (/^https?:\/\/lh3\.googleusercontent\.com\//.test(heroUrl)) return heroUrl;
+  const proxied = new URL("https://images.weserv.nl/");
+  proxied.searchParams.set("url", heroUrl.replace(/^https?:\/\//, ""));
+  proxied.searchParams.set("w", "1200");
+  proxied.searchParams.set("h", "675");
+  proxied.searchParams.set("fit", "cover");
+  proxied.searchParams.set("a", "attention");
+  proxied.searchParams.set("output", "jpg");
+  proxied.searchParams.set("q", "75");
+  return proxied.toString();
 }
 
 async function checkImage(url) {
