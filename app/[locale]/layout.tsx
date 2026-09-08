@@ -99,7 +99,7 @@ export async function generateMetadata({
       title: `${t("wordmark")} | NEAR`,
       description: t("tagline"),
       locale,
-      images: buildOgImages({ url: "/branding/near-oauth-logo.jpg" }, "NEAR"),
+      images: buildOgImages({ url: "/icons/icon-maskable.png" }, "NEAR"),
     },
     twitter: {
       card: "summary_large_image",
