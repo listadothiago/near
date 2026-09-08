@@ -1,7 +1,12 @@
 {
   "slug": "the-jago-dalston-london",
-  "categories": ["nightlife-sound"],
-  "tags": ["local-legend", "late-night"],
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night"
+  ],
   "coordinates": {
     "lat": 51.5423141,
     "lng": -0.0755863
@@ -53,7 +58,7 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkPFRp1nS9GRqm-5jHFzc1oRpy-rw895Koi83Wjx6_Z4gnYn5GQo-IjVY4iTzd7fKvuyAF7sPvtySJfiYbYfoLE_QWQYUYHqKxFwvZ3lm68cLV5xUyIbS-X93jmPikGklDA3oh-",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkPFRp1nS9GRqm-5jHFzc1oRpy-rw895Koi83Wjx6_Z4gnYn5GQo-IjVY4iTzd7fKvuyAF7sPvtySJfiYbYfoLE_QWQYUYHqKxFwvZ3lm68cLV5xUyIbS-X93jmPikGklDA3oh-=w1200-h675-c",
     "attribution": "Photo: The Jago, owner-submitted via Google Maps",
     "attributionLink": "https://www.google.com/maps/place/The+Jago/@51.5423141,-0.0755863,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d62a5f49d47:0x5c6840f7209e7afc!8m2!3d51.5423141!4d-0.0755863!16s%2Fg%2F11fj6mg4fv",
     "licenseNote": "Real source photo (tier 1). Official site imagery was all event posters/flyers, not venue photography."
