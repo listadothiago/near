@@ -203,7 +203,16 @@ export default function Header({
           <Show when="signed-in">
             <UserButton
               appearance={{
-                elements: { avatarBox: "w-8 h-8 border-[3px] border-ink" },
+                elements: {
+                  // Clerk's default placeholder is a circular purple-gradient
+                  // person icon, which clashes with the site's square
+                  // black/white/acid-green brutalist controls (see
+                  // ThemeToggle, LocaleSwitcher). Square it off, grayscale
+                  // it so any real avatar photo still fits the monochrome
+                  // chrome, and match the other header buttons' border.
+                  avatarBox:
+                    "w-9 h-9 rounded-none border-[3px] border-ink grayscale contrast-125",
+                },
               }}
             />
           </Show>
