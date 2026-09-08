@@ -72,14 +72,15 @@ scoped each issue, not just who signed it, so the alternation is
 actually trackable over time.
 
 Rotation candidates for the byline itself, given the roster's beats:
-STEFAN (nightlife-sound, for club/venue-adjacent shows), CUBIC-V or
-PLINIO (city-culture, for a festival with a strong civic/neighborhood
-angle), BUDDY (when a show has a genuine 420-adjacent angle worth
-naming) — the issue's scoping editor (RUCIO or FERAL) writes personally
-by default when nothing else fits better. Every entry uses
-`collectionMetaSchema`'s `author` field, same mechanism as the other
-two columns, and is written first-person in that issue's byline's
-established voice.
+STEFAN (nightlife-sound, for club/venue-adjacent shows), 808
+(hip hop and house specifically — added 2026-09-08, operator directive;
+see `.claude/skills/808/SKILL.md`), CUBIC-V or PLINIO (city-culture, for
+a festival with a strong civic/neighborhood angle), BUDDY (when a show
+has a genuine 420-adjacent angle worth naming) — the issue's scoping
+editor (RUCIO or FERAL) writes personally by default when nothing else
+fits better. Every entry uses `collectionMetaSchema`'s `author` field,
+same mechanism as the other two columns, and is written first-person in
+that issue's byline's established voice.
 
 ## What makes a good entry
 
