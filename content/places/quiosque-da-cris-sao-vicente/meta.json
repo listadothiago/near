@@ -114,6 +114,11 @@
       "status": "active",
       "at": "2026-09-07T18:28:58Z",
       "note": "P0 geolocation correction: verified Google Maps listing and replaced previous coordinate with listing pin (-23.9739839, -46.3701593). Old pin was materially accurate."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T00:00:00Z",
+      "note": "near-illustrator pass, operator ask (\"get better hero images for quiosque da cris and amuse club in sv too\"). Re-checked the existing hero against the card spec: hero-kiosk-flag.jpeg is 1200x1600 -- clears the >300,000-pixel and >=1200px-wide floors but is portrait, not the 16:9-leaning landscape the spec wants (a real, pre-existing limitation of the operator's on-site phone photo, not new). Checked @crisdoquiosque's Instagram directly (16K followers, 1,563 posts, active through this week) looking for a better, current, landscape shot of the actual kiosk. Found none usable: the visible grid is almost entirely close-up patron/family portraits with identifiable faces (an outing risk per this skill's face rule) and product shots for the venue's own apparel shop (Loja da Cris) -- no clean, wide, face-free shot of the kiosk/flag/seating that would beat the current photo. Kept the existing hero as-is: it is still a real, correctly-attributed, venue-specific tier-1 photo of the actual pride flag and seating, which outranks anything found on Instagram this pass despite the aspect-ratio softness. No official website exists for this venue to check per the skill's second-stop order."
     }
   ],
   "geocode": {

@@ -53,10 +53,10 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://near.tips/places/amuse-beach-club-sao-vicente/hero.jpg",
-    "attribution": "Photo by Jacinto Alves de Souza, CC BY-SA 3.0, via Wikimedia Commons",
-    "attributionLink": "https://commons.wikimedia.org/wiki/File:S%C3%A3o_Vicente_-_Santos_-_SP_brasil-_vista_mirante_ilha_Porchat_24-01-2011_-_panoramio.jpg",
-    "licenseNote": "The Ilha Porchat overlook AMUSE Beach Club sits on top of, standing in for a venue-specific shot since no rights-clear interior/rooftop photo could be sourced this pass. Unedited crop from the original."
+    "url": "https://near.tips/places/amuse-beach-club-sao-vicente/hero-rooftop-pool.jpg",
+    "attribution": "Photo courtesy of AMUSE Beach Club (official site)",
+    "attributionLink": "https://www.amuse.com.br/",
+    "licenseNote": "Daytime shot of the venue's own rooftop pool and sea-view deck at Ilha Porchat, sourced from the FOTOS gallery on AMUSE's own official site (amuse.com.br) -- this is the actual venue, not a generic overlook. No identifiable faces in frame. Used as venue promotional material with the same implied consent this skill extends to a venue's own official site; unedited, full-resolution original (4032x3024). Replaces the earlier Wikimedia Commons Ilha Porchat overlook shot, which was explicitly not venue-specific."
   },
   "eventEndsAt": null,
   "status": "active",
@@ -70,6 +70,11 @@
       "status": "active",
       "at": "2026-09-07T16:49:21Z",
       "note": "P0 geolocation correction: verified AMUSE Beach Club's own Google Maps listing and replaced the previously documented approximate Ilha Porchat coordinate with its listing pin (-23.9805185, -46.3699319)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T00:00:00Z",
+      "note": "near-illustrator pass, operator ask (\"get better hero images for quiosque da cris and amuse club in sv too\"). Checked photo inbox (nothing for this slug), then AMUSE's own official site (amuse.com.br, found via its Instagram bio link) per the skill's mandatory second-stop order -- its FOTOS gallery page hosts real, unwatermarked, venue-specific photography. Selected the daytime rooftop-pool/sea-view shot (source filename IMG_0622.jpg, iPhone 12 Pro EXIF, 4032x3024) over several nighttime interior/dance-floor shots on the same page: it's the strongest, most legible landscape frame, has no identifiable faces (the interior shots are otherwise clean too but this one reads best at thumbnail size and clearly shows the Ilha Porchat perch that's the venue's whole pitch). Also checked @amuseclub's Instagram grid directly per the queer-beat-hero directive (this piece is the directive's origin case) looking for a pride-flag-forward shot -- found none; the grid is entirely close-up patron portraits (identifiable faces, unusable) and event flyers, no flag imagery. Downloaded original, hosted at public/places/amuse-beach-club-sao-vicente/hero-rooftop-pool.jpg, replacing the generic Wikimedia Ilha Porchat overlook that was explicitly flagged as not venue-specific. Verified pixel dimensions (4032x3024, well clear of the 1200px/300,000px/16:9 card spec) before committing. Quiosque da Cris's existing hero (hero-kiosk-flag.jpeg) was also reviewed this pass and left unchanged -- see that piece's own statusHistory."
     }
   ],
   "geocode": {
@@ -80,5 +85,5 @@
     "googleMapsUrl": "https://share.google/isqrdyKG482x8i7Nn"
   },
   "publishedAt": "2026-09-01T20:04:29Z",
-  "updatedAt": "2026-09-07T16:49:21Z"
+  "updatedAt": "2026-09-08T00:00:00Z"
 }
