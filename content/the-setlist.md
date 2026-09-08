@@ -11,7 +11,7 @@ weekly, they're great") — see the Cadence section below. It's a
 **RUCIO**, the "Gen Xer. Walking music encyclopedia (retro/indie).
 Complains about the volume but knows the setlist" persona scoped in
 `BACKLOG.md`'s EPIC 4 roster, and, as of 2026-09-08 (operator
-directive), **FERAL** — an invented hyperpop/club-maximalist character,
+directive), **FERAL** — an invented indie-sleaze/electro character,
 NOT an alter ego of any real musician (see
 `.claude/skills/feral/SKILL.md`'s guardrail section). The column
 carries a neutral name of its own — The Setlist — rather than either
