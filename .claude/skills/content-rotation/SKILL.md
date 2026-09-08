@@ -272,6 +272,18 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  Monkey Thief, Cospa Ramen, and the time-limited Plaza
                  pop-up, which is flagged do-not-draft-as-pin) are
                  PENDING operator approval before drafting.
+                 APPROVAL UPDATE 2026-09-08: the operator explicitly approved
+                 Bar Etienne and Cospa Ramen for publication once research and
+                 quality checks pass, and reaffirmed that approval. Do not ask
+                 again for these two. Consult the batch manifest for current
+                 publication state; the older queue above is historical.
+                 PUBLISHED 2026-09-08: Cospa Ramen shipped — all six locales,
+                 mechanical gates and `npx next build` pass, real venue-supplied
+                 hero photo plus an original in-body kaedama illustration
+                 (near-illustrator), pushed at commit 2060609. Do not
+                 re-research or re-draft it; remaining NYC review-trust queue
+                 is Bar Etienne (also approved), Herbie's Burgers, Kirbee's,
+                 Monkey Thief, and the time-limited Plaza pop-up.
                  London — SERVED 2026-09-07 (The Divine, Dalston,
                  `the-divine-dalston-london`, STEFAN, all six locales,
                  trust auto/active). THE CORRECTION held up: The Glory
