@@ -892,3 +892,29 @@ Little Bookshop, Kween):**
 - `blog.resy.com` (Resy Blog) — booking platform's own editorial,
   useful for cocktail-menu specifics on new openings; same caveat as
   OpenTable Blog, not a substitute for independent review coverage.
+
+**Rome seeding pass (near-sources-war-room equivalent, 2026-09-08) —
+Tier 2 burst turn, queue was previously unseeded:**
+- `instagram.com/vernissagerome` (Vernissage Rome, ~5.9k followers) —
+  **watchable/live local feed, verified active.** Itinerant art
+  "social salon" — temporary exhibitions with live music/DJ sets,
+  curated by Agostino Maranò, hosted at rotating venues including
+  Palazzo Velli Expo (Trastevere). Confirmed live via its own site
+  (`vernissagerome.com/events/`) and Facebook page in addition to
+  Instagram. This clears the seed's watchable-feed requirement.
+- **`che.famo.stasera` (the exact handle named in `post-plan.md`'s
+  unseeded-queue note) did NOT resolve on search** — the closest
+  matches are a Facebook page "Che Famo Stasera?" (generic Rome-area
+  events aggregator, unverified currency) and an unrelated Instagram
+  account, `chejefamofa` (~12k followers), which covers kids'/family
+  events, not nightlife or culture generally. Flagging this as a
+  correction to the original EPIC 5 note rather than silently dropping
+  it — do not cite `che.famo.stasera` as a verified source until someone
+  actually opens the account and confirms it exists under that handle.
+- `puntarellarossa.it` (Puntarella Rossa) — Rome's own dedicated
+  food/culture outlet, running a recurring monthly "nuove aperture"
+  (new openings) column with addresses; used here as the primary
+  candidate-pin source. Not a one-off listicle site — an ongoing local
+  beat, closer to alt-press-first sourcing than a generic aggregator,
+  though still single-sourced per venue below and should get a second
+  corroborating source at actual draft time.

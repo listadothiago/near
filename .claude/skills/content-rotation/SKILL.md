@@ -202,7 +202,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 6 of 6 shipped   T2 0 of 3   T3 0 of 1
+spent:           T1 6 of 6 shipped   T2 0 of 3 (Rome seeded, not drawn)   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → NYC → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -317,14 +317,37 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  verified. Brighton's remaining queue (Club Revenge, the
                  held Polyglamorous entry, the Pride Village Party
                  collection lead) SURVIVES for Brighton's next turn.
-t2-spent:        nothing yet this ten — burst goes to Rome, the next city
-                 in Tier 2's order after Barcelona (which took ten #1's
-                 burst via Sitges). Check Rome's queue in post-plan.md
-                 before drafting; if empty it is HELD and the burst
-                 passes on, per the hold rule.
+t2-spent:        0 of 3 shipped this ten — Rome (next city in Tier 2's
+                 order after Barcelona) was SEEDED 2026-09-08 by a
+                 `near-sources-war-room`-equivalent pass (full detail:
+                 post-plan.md Rome section, preferred-sources.md Rome
+                 entry). Bar CLEARED: vernissagerome Instagram verified
+                 live/active as the watchable feed; 4 candidate pins
+                 with addresses and 2026 corroboration (Attilio,
+                 Via di Villa Chigi 68; Terrazza Hey Güey @ Chapter
+                 Roma; Monk Garden; Kalavrì), one (Attilio) already with
+                 two independent sources. Correction logged: the
+                 originally-cited `che.famo.stasera` IG handle does not
+                 resolve under that name — do not cite it as verified.
+                 No posts drafted this session (seeding-only turn per
+                 "a seeding pass alone is a legitimate outcome"); the
+                 share stays OPEN, not spent, so it does not pass to
+                 Curitiba yet.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         Rome (Tier 2 burst) — Tier 1 is now FULLY SPENT for
+NEXT-UP:         Rome (Tier 2 burst, SEEDED 2026-09-08 — draw from the
+                 queue directly, no further seeding needed). Updated
+                 2026-09-08: Rome's turn this session was a seeding pass
+                 (post-plan.md Rome section), which cleared the bar but
+                 did not draft. Per "a seeding pass alone is a
+                 legitimate outcome for a turn," NEXT-UP stays on Rome
+                 rather than advancing to Curitiba — the next session
+                 should draft Attilio first (strongest-sourced
+                 candidate), then Terrazza Hey Güey / Monk Garden /
+                 Kalavrì once each has a second corroborating source.
+
+                 Prior reasoning (2026-09-08, before this session's
+                 seeding pass) — Tier 1 is now FULLY SPENT for
                  ten #2 (Brighton's sixth and final T1 slot shipped
                  2026-09-08: The Actors, Kemptown, PLINIO with a
                  CUBIC-V consult, all six locales — see t1-spent below).

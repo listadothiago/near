@@ -140,6 +140,17 @@ Tier 3's to **Curitiba**. The machine-legible pointer in
 `content-rotation/SKILL.md` is authoritative if this narrative and that
 block ever disagree.
 
+**Rome's turn, 2026-09-08: seeded, not yet drawn.** Rome's queue was
+unseeded, so per "Seed on turn" this turn ran a
+`near-sources-war-room`-equivalent pass instead of a draft — see the
+Rome section above under Queues. The bar cleared (vernissagerome IG feed
+verified live; 4 candidate pins with addresses and 2026 corroboration,
+one — Attilio — with two independent sources already). No posts shipped
+this session; drafting the burst is deferred to the next session that
+picks up Rome. `NEXT-UP` stays on **Rome (Tier 2 burst, seeded)** rather
+than moving to Curitiba, since Tier 2's 3-post share has not actually
+been spent yet.
+
 *Everything below this line describes the old nested-cycle regime and is
 kept as history, not as live mechanics.*
 
@@ -482,6 +493,76 @@ New sources onboarded this pass (`trust: auto`, detail in
 `bushwickdaily.com` explicitly rejected — see `preferred-sources.md` for
 the reason (AI-slop drift, documented by Hell Gate itself).
 
+### Rome (Tier 2 burst) — SEEDED 2026-09-08, research-verified, not yet drafted
+
+_This was Tier 2's designated burst target for ten #2 and was passed
+over on 2026-09-07 for an empty queue. Under the "Seed on turn" rule
+this turn's work is a `near-sources-war-room`-equivalent seeding pass,
+not a draft. **Bar cleared:** 1 watchable local feed + 4 candidate pins
+with addresses and current (2026) corroboration._
+
+**Feed:** `instagram.com/vernissagerome` (Vernissage Rome) — verified
+live and active, itinerant art/social-salon events with live music/DJ
+sets, curated by Agostino Maranò; corroborated independently by its own
+site (`vernissagerome.com/events/`) and Facebook page. Logged in
+`preferred-sources.md`.
+
+**Correction to the original EPIC 5 note:** the second named handle,
+`che.famo.stasera`, did not resolve on search under that exact name —
+the closest matches are a generic "Che Famo Stasera?" Facebook events
+page and an unrelated kids'-events Instagram account (`chejefamofa`).
+Do not treat `che.famo.stasera` as verified; someone needs to actually
+open Instagram and confirm the handle before it's cited again.
+
+**New source onboarded:** `puntarellarossa.it` (Puntarella Rossa) — a
+dedicated, ongoing Rome food/culture outlet running a recurring monthly
+"nuove aperture" (new openings) column with addresses, closer to
+alt-press-first sourcing than a generic listicle site. Used as the
+primary candidate-pin source this pass; each candidate below still
+needs a second corroborating source confirmed before drafting, per
+standing research-floor rules (one is already secured, for Attilio).
+
+- [ ] **Attilio, Via di Villa Chigi 68, Trieste-Salario** — DARCY or
+  FOODIE-9000. New lounge/wine bar (opened late March 2026) built around
+  small-producer récoltant-manipulant champagnes and a compact
+  drink-forward menu (babaganoush, parmigiana, picchiapò, club
+  sandwich); named for a painting of a 19th-century local figure found
+  during the renovation. Corroborated independently by Puntarella Rossa
+  and Lieviti Digitali (an independent food blog with its own
+  reported piece on the opening) — the strongest-sourced candidate this
+  pass, draw first.
+- [ ] **Terrazza Hey Güey @ Chapter Roma, Via di S. Maria de' Calderari
+  47, Jewish Quarter** — near-editor or DARCY. Rooftop bar/terrace atop
+  the Chapter Roma hotel in the historic Jewish Quarter; listed among
+  Romeing's verified 2026 summer-venue roundup. Get a second source
+  (hotel's own site/Instagram, or a review outlet) before drafting —
+  currently single-sourced to the Romeing roundup.
+- [ ] **Monk Garden, Via Giuseppe Mirri 35, Portonaccio** — PENDING,
+  verify first. Outdoor garden bar/venue in the less-covered Portonaccio
+  neighborhood; same Romeing roundup. Worth prioritizing over the
+  Trastevere/Centro entries below precisely because Portonaccio has
+  near-zero existing coverage — check for a second source and current
+  operating status before drafting.
+- [ ] **Kalavrì – Calabria in Pala, Via Libia 159** — PENDING, verify
+  first. Calabria-focused pizza-by-the-slice concept from Puntarella
+  Rossa's April 2026 openings column; single-sourced so far, needs a
+  second outlet or the venue's own Instagram before drafting.
+- [ ] Additional Puntarella Rossa April 2026 leads not yet vetted for a
+  second source: Piccolo Forno (Via degli Olivi 53A), Bassa Pizza
+  Popolare (Largo Santa Maria Stella dell'Evangelizzazione 3), Tullia
+  (Via Cicerone 55A), NŌNA Bistrot (Via dei Sediari 5). Logged as leads,
+  not drafted — do not pad the burst with unverified single-source
+  pins.
+
+**Drafting deferred this session.** The seed clears the bar, but the
+full `near-write-article` pipeline for up to 3 posts (research floor,
+Reddit r/rome + r/italy checks, Google reviews via claude-in-chrome,
+≥5 preferred-sources.md entries per piece, six-locale translation,
+mechanical gates, sign-off chain) was not run in this same pass — ship
+what's honestly supportable rather than padding. T2's burst stays open
+against this seeded queue rather than being marked spent; the next
+session drafting from Rome should start with Attilio.
+
 ### Bangkok (Tier 1) — SEEDED 2026-09-03, research-verified, not yet drafted
 
 _Seeded by a `near-sources-war-room` pass on the day Bangkok became
@@ -635,10 +716,6 @@ are unseeded**, so the tier's three-post burst had in practice been
 circling Berlin, Amsterdam and Barcelona while the rest were skipped
 every ten, silently and forever.
 
-- **Rome** — che.famo.stasera / vernissagerome IG sources already queued
-  in EPIC 5; start there. Was Tier 2's designated burst target for ten
-  #2 and was passed over on 2026-09-07 for an empty queue — under the
-  new rule that is exactly the case that should have triggered a seed.
 - **Portland**
 - **Mexico City** — in-tier confirmed 2026-09-04, never seeded.
 - **Las Vegas**
