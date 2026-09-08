@@ -81,7 +81,12 @@ export function getPlaceContent(
  * frontmatter field: a hand-written summary is one more thing to keep in
  * sync across six locales, and it would drift.
  */
-function extractSnippet(body: string, max = 150): string {
+// Longer excerpts (BACKLOG P0.14 + P1.13a, operator directive
+// 2026-09-07: "could we make snippets longer too"): 150 chars barely
+// filled the old 3-line card clamp. 320 fills PlaceCard's new 5-line
+// (6 on a featured card) clamp on both mobile and desktop without
+// regularly hitting the cap and getting cut mid-thought.
+function extractSnippet(body: string, max = 320): string {
   const firstPara = body
     .split(/\n\s*\n/)
     .map((block) => block.trim())
