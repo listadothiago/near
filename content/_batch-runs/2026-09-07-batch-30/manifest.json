@@ -555,5 +555,6 @@
     "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
     "cto": "Existing flat files and tools; no new service",
     "techLead": "Incremental checks, saved states, final build and verification"
-  }
+  },
+  "handoffNote": "Session ended 2026-09-07 ~23:59 UTC, low on tokens. 7 of 30 published (all London + Kirbee's/NYC start), all six locales each, all live and committed/pushed through 3fd37bb. 23 candidates remain: 5 more NYC (Monkey Thief, Bar Etienne, Cospa Ramen, Nowadays, The Bush), 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba. To resume: $near-batch-30 resume 2026-09-07-batch-30. Next candidate is Monkey Thief (NYC). New standing rules/tools this session: publishNote box, price-police, discover-view (real Discover image QA — found and fixed a real crop bug on 4 pieces, and a likely catalogue-wide image-aspect problem logged as BACKLOG item 14), North Star dashboard (scripts/progress-dashboard.mjs), near-ceo/parser/chief-editor knowledge-base files."
 }
