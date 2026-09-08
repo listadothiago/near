@@ -1,0 +1,89 @@
+{
+  "slug": "nowadays-ridgewood-new-york-city",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "late-night",
+    "dog-first"
+  ],
+  "coordinates": {
+    "lat": 40.6924619,
+    "lng": -73.9015358
+  },
+  "place": {
+    "city": "New York City",
+    "neighborhood": "Ridgewood",
+    "region": "Queens",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Nowadays — official site (hours & location)",
+      "url": "https://nowadays.nyc/about/",
+      "feedId": null
+    },
+    {
+      "name": "The Infatuation — Nowadays review",
+      "url": "https://www.theinfatuation.com/new-york/reviews/nowadays",
+      "feedId": null
+    },
+    {
+      "name": "NYC Tourism — Nowadays, Bushwick Nightlife",
+      "url": "https://www.nyctourism.com/nightlife/nowadays/",
+      "feedId": null
+    },
+    {
+      "name": "Time Out New York — Indoors at Nowadays",
+      "url": "https://www.timeout.com/newyork/music/nye-at-nowadays",
+      "feedId": null
+    },
+    {
+      "name": "Yelp — Nowadays, 56-06 Cooper Ave",
+      "url": "https://www.yelp.com/biz/nowadays-ridgewood",
+      "feedId": null
+    },
+    {
+      "name": "Instagram — @nowadaysnyc",
+      "url": "https://www.instagram.com/nowadaysnyc/",
+      "feedId": null
+    },
+    {
+      "name": "Reddit r/avesNYC — \"Nowadays: Getting Vibed Check at the Door\"",
+      "url": "https://www.reddit.com/r/avesNYC/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://images.ctfassets.net/1aemqu6a6t65/407S07UfuNAn1ONteNBfi8/0c50dd0a95d233ae048cd444ed820a74/nowadays-bushwick-brooklyn-nyc0courtsey_of_nowadays2",
+    "attribution": "Photo: Courtesy of Nowadays, via NYC Tourism",
+    "attributionLink": "https://www.nyctourism.com/nightlife/nowadays/",
+    "licenseNote": "Real source photo (tier 1), venue-supplied photography credited via the official NYC Tourism listing."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T21:31:59.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, NYC cluster: fresh from-scratch research (no prior verified catalogue source). near-deep-researcher floor met: official site (nowadays.nyc/about — address, hours, programming, food partner Zumbador), The Infatuation review (Apr 2025, in-depth), NYC Tourism nightlife listing, Time Out New York (multiple pieces including NYE coverage), Yelp (238 reviews, page itself timestamped 'Updated September 2026' — strong currency signal, address/hours cross-checked and match the official site), Instagram @nowadaysnyc (124k followers, 1,483 posts, active). Reddit leg initially returned no direct hits on first pass; escalated to site:reddit.com via search index per the fallback ladder and found genuine, dated r/avesNYC and r/AskNYC threads discussing the venue as recently as 4 months ago (door policy, crowd, cover charge) and an 11-month-old thread titled 'Nowadays: Getting Vibed Check at the Door' — door/vibe-check complaints are a real, current pattern, not a one-off. Google reviews checked via web search (not full Yelp UGC render, which is JS-gated) surfaced consistent cover-charge figures (~$20-30) and drink prices (beers ~$10, cocktails ~$11+). Sourcing clears well beyond a single aggregator: official site + independent editorial review (Infatuation) + city tourism board + Time Out + UGC (Yelp, Instagram, Reddit) all independently corroborate address, hours, ownership continuity (Mister Saturday Night founders Eamon Harkin and Justin Carter) and current operating status. Trust set to auto per the multi-source trust-gate rule; proceeding straight to active in this run."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T21:45:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, official venue photo credited 'Courtesy of Nowadays' via NYC Tourism's listing page, og:image URL). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses): no opening-line bans, no bare-name/formula headline, no process-as-copy, no rank-pulling on the reader. Legal: door-policy/vibe-check complaints reported as sourced UGC pattern (Reddit, dated, linked, framed as one commenter's account plus a pattern note), not stated as fact; ownership (Mister Saturday Night founders) stated per multiple independent sources, no likeness/defamation issue. price-police pass: qualitative price signal included (cover ~$20-25 most nights, outdoor space free except Sundays, drinks in the $10-12 range) grounded in the official site's stated cover and UGC price mentions, framed as a durable range rather than a single point figure. Link-density passes (official site, Infatuation, Time Out in-text); internal link to an existing NYC nightlife pin (Monkey Thief) used as a genuine cross-city-nightlife connection. Red team: no internal-discourse leakage, no unverified price stated as current-and-fixed. Discover audit clean on hero dimensions (real photo, standard aspect). Revenue pass: no natural affiliate opportunity (no bookable ticket package surfaced this session); ad-sales logged the venue as a soft lead. Six locale editions written, each genuine and >=150 words with its own publishNote. Sourcing cleared to trust: auto per multiple independent current sources (official site, Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit) — proceeded straight to active per near-write-article step 10."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.99,
+    "query": "Nowadays, 56-06 Cooper Ave, Ridgewood, NY 11385",
+    "verifiedAt": "2026-09-08T21:31:59.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Nowadays/@40.6924619,-73.9015358,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25c3aa3dee0fb:0x19510f7d1351751b!8m2!3d40.6924619!4d-73.9015358!16s%2Fg%2F11b7vtgh90"
+  },
+  "publishedAt": "2026-09-08T21:31:59.000000+00:00",
+  "updatedAt": "2026-09-08T21:45:00.000000+00:00"
+}
