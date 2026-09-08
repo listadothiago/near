@@ -37,11 +37,11 @@ function isTouchDevice() {
   return "ontouchstart" in window || navigator.maxTouchPoints > 0;
 }
 
-function dotIcon(color: string) {
+function dotIcon(color: string, label: string) {
   // An actual pin/teardrop shape — a plain colored dot reads as "just a
   // dot," not "a pin," at map scale.
   const html = `
-    <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg" style="display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));">
+    <svg width="26" height="34" viewBox="0 0 26 34" xmlns="http://www.w3.org/2000/svg" style="display:block;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));" role="img" aria-label="${escapeHtmlAttr(label)}">
       <path d="M13 0C5.82 0 0 5.82 0 13c0 9.75 13 21 13 21s13-11.25 13-21C26 5.82 20.18 0 13 0z" fill="${color}" stroke="var(--color-surface)" stroke-width="1.5"/>
       <circle cx="13" cy="13" r="4.5" fill="var(--color-surface)"/>
     </svg>`;
@@ -54,7 +54,16 @@ function dotIcon(color: string) {
   });
 }
 
-function clusterIcon(count: number) {
+/** Leaflet drops raw HTML straight into the DOM — escape any text that flows into an aria-label. */
+function escapeHtmlAttr(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+function clusterIcon(count: number, label: string) {
   // A square, not a circle: the global no-radius rule is the house visual
   // language, and it's also why leaflet.markercluster's CSS was never an
   // option (see content/design-events-map-views-2026-09-03.md §5.1). Size
@@ -62,7 +71,7 @@ function clusterIcon(count: number) {
   // one without having to read the number.
   const size = count < 10 ? 30 : count < 50 ? 36 : 42;
   const html = `
-    <div style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;
+    <div role="img" aria-label="${escapeHtmlAttr(label)}" style="display:flex;align-items:center;justify-content:center;width:${size}px;height:${size}px;
       background:var(--color-accent);color:var(--color-black,#000);
       border:3px solid var(--color-ink);box-shadow:0 2px 3px rgba(0,0,0,.35);
       font-family:var(--font-mono,monospace);font-weight:700;font-size:${count > 99 ? 11 : 13}px;
@@ -91,9 +100,9 @@ function clusterIcon(count: number) {
  * and in both themes — accent alone is not enough, because #ccff00 on a
  * pale road casing is genuinely low contrast.
  */
-function userIcon(color: string) {
+function userIcon(color: string, label: string) {
   const html = `
-    <span class="near-userloc" style="--userloc-color:${color};">
+    <span class="near-userloc" role="img" aria-label="${escapeHtmlAttr(label)}" style="--userloc-color:${color};">
       <span class="near-userloc__pulse"></span>
       <span class="near-userloc__core"></span>
     </span>`;
@@ -246,14 +255,15 @@ function PlaceMarker({ point, placeHref }: { point: MapPoint; placeHref: (slug: 
 
   const icon = useMemo(() => {
     const color = readVar(CATEGORY_COLOR_VAR[point.category]) || readVar("--color-accent");
-    return dotIcon(color);
+    return dotIcon(color, point.name);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [point.category, colorTick]);
+  }, [point.category, point.name, colorTick]);
 
   return (
     <Marker
       position={[point.lat, point.lng]}
       icon={icon}
+      alt={point.name}
       ref={markerRef}
       eventHandlers={{
         click: () => {
@@ -453,9 +463,10 @@ function ClusterMarker({
   placeHref: (slug: string) => string;
   onClick: () => void;
 }) {
-  const icon = useMemo(() => clusterIcon(count), [count]);
+  const clusterLabel = `${count} places clustered here`;
+  const icon = useMemo(() => clusterIcon(count, clusterLabel), [count, clusterLabel]);
   return (
-    <Marker position={[lat, lng]} icon={icon} eventHandlers={{ click: onClick }}>
+    <Marker position={[lat, lng]} icon={icon} alt={clusterLabel} eventHandlers={{ click: onClick }}>
       {/* The stacked-list fallback. Zooming breaks most clusters apart, but
           two venues at the same address never separate however far you zoom
           — without this, those pins would be unreachable from the map. The
@@ -528,7 +539,8 @@ export default function WorldMap({
         {userCoords && (
           <Marker
             position={[userCoords.lat, userCoords.lng]}
-            icon={userIcon(readVar("--color-accent") || "#ccff00")}
+            icon={userIcon(readVar("--color-accent") || "#ccff00", "Your location")}
+            alt="Your location"
             interactive={false}
           />
         )}
