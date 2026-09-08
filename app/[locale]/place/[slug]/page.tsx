@@ -19,6 +19,7 @@ import { buildAlternates } from "@/lib/seo/alternates";
 import { mdxComponents } from "@/components/mdx/mdxComponents";
 import PlaceHero from "@/components/place/PlaceHero";
 import Dateline from "@/components/layout/Dateline";
+import DistanceBadge from "@/components/place/DistanceBadge";
 import PlaceMap from "@/components/place/PlaceMap";
 import ReasonsList from "@/components/place/ReasonsList";
 import PublishNote from "@/components/place/PublishNote";
@@ -131,11 +132,20 @@ export default async function PlacePage({
         />
         {/* Directly under the hero block: above the fold, before the
             reasons list, so the freshness claim is read before the pitch
-            rather than discovered in a footer nobody scrolls to. */}
-        <Dateline
-          publishedAt={content.meta.publishedAt}
-          updatedAt={content.meta.updatedAt}
-        />
+            rather than discovered in a footer nobody scrolls to.
+            DistanceBadge sits beside it — distance and recency are
+            "our bread and butter" (operator, 2026-09-08) and now get
+            the same badge treatment here as on the board card. */}
+        <div className="flex flex-wrap items-center gap-2">
+          <Dateline
+            publishedAt={content.meta.publishedAt}
+            updatedAt={content.meta.updatedAt}
+          />
+          <DistanceBadge
+            lat={content.meta.coordinates.lat}
+            lng={content.meta.coordinates.lng}
+          />
+        </div>
         <ReasonsList bullets={content.frontmatter.bullets} />
         {content.frontmatter.publishNote && (
           <PublishNote

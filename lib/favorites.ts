@@ -104,7 +104,17 @@ export function useFavorites() {
         const i = current.indexOf(slug);
         const next =
           i === -1 ? [...current, slug] : current.filter((s) => s !== slug);
-        user.update({ unsafeMetadata: { ...user.unsafeMetadata, favorites: next } });
+        // A failed write here used to be silent: no error, no retry, no
+        // signal to the reader — the star just doesn't move and the
+        // whole feature reads as "broken" with nothing to debug from.
+        // Logging at least makes a real failure (rate limit, network,
+        // an expired session) visible in the console instead of
+        // indistinguishable from a stale cache serving an old build.
+        user
+          .update({ unsafeMetadata: { ...user.unsafeMetadata, favorites: next } })
+          .catch((err) => {
+            console.error("[favorites] failed to sync to account", err);
+          });
         return;
       }
       const next = read();

@@ -69,11 +69,7 @@ export default function CollectionPlaces({
 
   return (
     <div className="mt-8 grid grid-cols-1 md:grid-cols-[1fr_300px] gap-5 items-start">
-      <PlaceCards
-        places={sortedPlaces}
-        distances={distances}
-        tab={distances ? "nearest" : undefined}
-      />
+      <PlaceCards places={sortedPlaces} distances={distances} />
       <section className="border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden">
         <WorldMap
           points={sortedPlaces.map((p) => ({

@@ -266,7 +266,7 @@ export default function Header({
           {freshness && (
             <Link
               href={freshness.href}
-              className="whitespace-nowrap bg-ink px-1.5 py-0.5 text-accent underline decoration-2 underline-offset-[3px] decoration-accent/50 hover:bg-accent hover:text-black transition-colors"
+              className="whitespace-nowrap bg-ink px-1.5 py-0.5 font-bold text-accent underline decoration-2 underline-offset-[3px] decoration-accent/50 hover:bg-accent hover:text-black transition-colors"
             >
               {t("freshness.siteUpdated")}{" "}
               <time dateTime={freshness.at}>

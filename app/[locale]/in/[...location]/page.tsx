@@ -182,7 +182,7 @@ export default async function LocationPage({
         />
 
         {isThin ? (
-          <PlaceCards places={page.places} tab="latest" />
+          <PlaceCards places={page.places} />
         ) : (
           grouped.map(([category, places]) => (
             <section key={category} className="mb-8">
@@ -193,7 +193,7 @@ export default async function LocationPage({
                 {tc(category)}{" "}
                 <span className="opacity-80">{places.length}</span>
               </h2>
-              <PlaceCards places={places} tab="latest" />
+              <PlaceCards places={places} />
             </section>
           ))
         )}
