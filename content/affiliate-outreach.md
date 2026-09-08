@@ -79,6 +79,17 @@ Logged 2026-09-04.
   purchase moment the copy does not have, which is the case the wall
   explicitly forbids.
 
+### The Actors, Kemptown / Brighton — no opportunity
+Logged 2026-09-08.
+- **Tickets:** theatre programming (Brighton Fringe shows, open mics,
+  club nights) sells through the venue's own site and Fatsoma; Near has
+  no approved affiliate program covering either.
+- **Accommodation:** a pub/theatre pin, not a stay — no natural lodging
+  moment, and Brighton already has its accommodation pin (Legends).
+- **Verdict:** no affiliate link. The piece's spine is a legal-protection
+  correction, not a purchase moment; forcing one in would be the exact
+  cynical insert the wall prohibits.
+
 ## Closed / declined
 
 _None yet._

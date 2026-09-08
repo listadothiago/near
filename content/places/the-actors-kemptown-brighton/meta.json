@@ -1,0 +1,110 @@
+{
+  "slug": "the-actors-kemptown-brighton",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 50.8222621,
+    "lng": -0.135953
+  },
+  "place": {
+    "city": "Brighton",
+    "neighborhood": "Kemptown",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "review",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Scene Magazine — 'Queer the Marly' campaign succeeds in keeping the Marlborough pub in the hands of the queer community",
+      "url": "https://www.scenemag.co.uk/queer-the-marly-campaign-succeeds-in-keeping-the-marlborough-pub-in-the-hands-of-the-queer-community/",
+      "feedId": null,
+      "originalPublishedAt": "2022-01-01T00:00:00Z"
+    },
+    {
+      "name": "Gscene — Queer the Marly: 'a venue run by and for the Brighton queer community'",
+      "url": "https://www.gscene.com/news/community-news/queer-the-marly-a-venue-run-by-and-for-the-brighton-queer-community/",
+      "feedId": null,
+      "originalPublishedAt": "2021-09-01T00:00:00Z"
+    },
+    {
+      "name": "Brighton & Hove City Council — List of Assets of Community Value, 18 May 2022 (official PDF; The Marlborough Pub and Theatre listed, decision date 04/01/2022)",
+      "url": "https://www.brighton-hove.gov.uk/sites/default/files/2022-05/List%20of%20Assets%20of%20Community%20Value%2018%20May%202022_(1).pdf",
+      "feedId": null,
+      "originalPublishedAt": "2022-05-18T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Marlborough Pub and Theatre (1787 Golden Cross origin, 1974 Sussex Gay Liberation Front, Marlborough Productions 2008-2020, reopened as The Actors October 2021 under Laine PubCo)",
+      "url": "https://en.wikipedia.org/wiki/Marlborough_Pub_and_Theatre",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "The Actors — official site, theatre events / current programming",
+      "url": "https://www.actors.pub/theatre-events-1",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "The Actors — official site homepage (Brighton Fringe Best Venue Audience Choice Award 2023 & 2026, Pub of the Year 2025)",
+      "url": "https://www.actors.pub/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "The Actors — Instagram (theactorsbrighton; Pub of the Year 2025, Best Small Venue 2026, active posting through Pride 2026)",
+      "url": "https://www.instagram.com/theactorsbrighton/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Reddit r/brighton — '27 June trans friendly night out recommendations?' (The Actors named, trans flags in the windows noted)",
+      "url": "https://www.reddit.com/r/brighton/comments/1u9dt5n/27_june_trans_friendly_night_out_recommendations/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-27T00:00:00Z"
+    },
+    {
+      "name": "Google reviews / search aggregation — The Actors, Kemptown (4.4-5.0 across multiple listing sources, consistently trans/LGBTQ+-inclusive testimony)",
+      "url": "https://www.google.com/search?q=The+Actors+Kemptown+Brighton+reviews",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-31T00:00:00Z"
+    },
+    {
+      "name": "Crowdfunder — '10 Years of Queer: Support The Marlborough' (Marlborough Productions community fundraiser, campaign history)",
+      "url": "https://www.crowdfunder.co.uk/p/10-years-of-queer",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://images.squarespace-cdn.com/content/v1/5f034d4322ba8172ef8defa5/58a5e5f9-9909-4fd4-afb5-8cf27c250a4b/IMG_0518+-+19+Nov+2024+-+Canon+-+Canon+EOS+77D-Enhanced-NR.jpg?format=1500w",
+    "attribution": "via The Actors, official site",
+    "attributionLink": "https://www.actors.pub/",
+    "licenseNote": "Real photograph of the pub's own bar from the venue's official site (tier 1 in near-illustrator's preference order). 1500x1000px, 1.5MP: clears Discover's 1200px-wide and 300,000-pixel thresholds; aspect ratio 3:2, a partial miss against the ideal ~16:9 but not a hard-threshold fail (same call GDS's hero made). No identifiable faces. A second candidate from the same source — a crowded outdoor Pride/festival tent shot with many identifiable faces close-up, and of uncertain relation to this specific venue — was rejected on both the face-privacy and the venue-identity grounds."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T20:10:00Z",
+      "note": "Brighton's sixth and final Tier 1 draw for ten #2, closing that tier. PLINIO byline with a CUBIC-V consult on the theatre-programming angle (see body's 'What actually runs there now' section). Written at trust: review — queue-seeded (content/post-plan.md, seeded 2026-09-02) with an explicit re-verification flag: the queue entry's only cited source, Scene Magazine (Jan 2022), was old, and the ACV status plus current operators/programming had to be freshly re-verified before draft, not assumed current.\n\nRE-VERIFICATION RESULT: THE CLAIM HOLDS, with one added precision. Brighton & Hove City Council's own official Assets of Community Value list (PDF, dated 18 May 2022) independently confirms the ACV decision date as 04/01/2022 for 'The Marlborough Pub and Theatre' at 4 Princes Street — a primary-source hit, not just a press report repeating the campaign's own claim. Gscene (independent of Scene Magazine) corroborates the Queer the Marly campaign and Michelle Steele's role. Current operation confirmed live and thriving as of this session: official site shows active weekly programming (Dyke Night, Queer Midweek Munch, Women of Colour Meet Up, Dykes Who Dance, Black Brighton Market), Instagram is active through Pride 2026 with 7,360 followers, and the venue has ADDED an award since the queue entry was written (Brighton Fringe Best Small Venue Award 2026, on top of the 2023 award and Brighton's own Pub of the Year 2025). Operator: Laine Pub Co, per Wikipedia's sourced account of the 2021 reopening — noted plainly rather than glossed, since ACV status protects against a forced freehold sale, it does not itself mean full community ownership; the two facts sit together honestly in the body.\n\nTHE CORRECTION ITSELF RE-VERIFIED: still live. welovebrighton.com's own directory carries a page titled 'The Actors' at a URL path still reading /the-marlborough-theatre/ — a direct, checkable instance of the stale-name problem the queue entry flagged, cited in the body.\n\nRESEARCH FLOOR — MET IN FULL:\n- near-deep-researcher: multi-source, ACV claim cross-checked against the council's own primary-source PDF rather than resting on press coverage alone.\n- REDDIT: RAN, via claude-in-chrome per the fallback ladder after a site:reddit.com web search returned only snippet text with no fetchable permalinks for the first result. Read r/brighton directly: multiple threads spanning 2 months to 3 years old consistently name The Actors as Brighton's default trans/queer-friendly recommendation. Quoted one, dated June 2026, with its real permalink (fetched via in-page link-finding, not paraphrased from a snippet).\n- GOOGLE REVIEWS: RAN. WebFetch to Tripadvisor returned 403; escalated to claude-in-chrome and read Google's own aggregated review search results directly. Consistent theme across Tripadvisor, DesignMyNight, WhereIs.Gay and Facebook: strong inclusivity/trans-friendliness testimony, most recent dated July 2026. No negative pattern worth reporting emerged (unlike the Green Door Store precedent) — a genuinely positive finding, reported as such rather than manufactured tension.\n- FIVE-PLUS PREFERRED SOURCES consulted: Scene Magazine, Gscene, Brighton & Hove City Council's own PDF, Wikipedia, the venue's own site, Instagram, Reddit, Google-aggregated reviews, and Crowdfunder — nine total, listed above.\n- INSTAGRAM: checked per the standing directive — theactorsbrighton is active, current, and independently corroborates both 2026 awards.\n- OPERATOR CONSULT: not applicable — Brighton is outside the Baixada Santista/São Paulo/Rio ground-truth set this rule targets, and the operator was not asked.\n\nDEDUPE: scripts/check-duplicates.mjs run before creation, no output (no near-duplicate flagged) — first place at this slug. Manually checked distance against Brighton's two existing pins: 868m from Green Door Store (different venue, different neighbourhood), 359m from Legends Hotel (different venue, different building type — hotel vs. pub-theatre) — both comfortably clear of any identity concern.\n\nIMAGES: hero + 2 in-body = 3, meeting ceil(~660 words / 250) = 3. All three are real photographs/graphics from the venue's own official site; Wikimedia Commons was not separately re-checked given the venue's own site had ample real imagery. One candidate hero image (an outdoor festival crowd shot) was rejected for identifiable faces and uncertain venue-match; the interior bar photo and two theatre-programming visuals (stairwell of Fringe posters, weekly schedule poster) were chosen instead, the latter two directly supporting CUBIC-V's structural point about the building's room plan.\n\nLEGAL NOTE (near-legal-counsel pass): no defamation-adjacent claims in this piece — all sourced facts are positive or neutral (award wins, a council record, a community campaign). Michelle Steele is named as a real person only in her public role as a named campaign co-chair, reported identically to how the independent press (Scene, Gscene) already names her — no new claim about her beyond that public record.\n\nRED TEAM CHECK: the ACV-status claim and the 'still called the Marlborough' correction are both dated to primary or directly-checkable sources (the council PDF; the live welovebrighton.com URL), so the headline survives scrutiny rather than resting on a single 2022 magazine piece. No internal production language (tiers, rotation, queue status) appears anywhere in the body — checked."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Actors, 4 Princes Street, Brighton BN2 1RD — Google Maps listing pin",
+    "verifiedAt": "2026-09-08T20:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Actors/@50.8222621,-0.135953,17z/data=!3m1!4b1!4m6!3m5!1s0x487585a05fbb0b97:0x606be2825d6b3718!8m2!3d50.8222621!4d-0.135953!16s%2Fm%2F012m60sg"
+  },
+  "publishedAt": "2026-09-08T20:10:00Z",
+  "updatedAt": "2026-09-08T20:10:00Z"
+}

@@ -98,6 +98,17 @@ Logged 2026-09-04. Nothing sent; outreach frozen.
   dated Sept/Oct bills — Dominium Prod, and the Coiote 16 Oct date.
   Dated-event promoters are the high-intent profile `ad-sales` ranks top.
 
+### Kemptown leads from The Actors research — `prospect`
+Logged 2026-09-08. Nothing sent; outreach frozen.
+- **The Actors itself** — a pub with a theatre and a full weekly events
+  calendar (open mics, drag, comedy, tarot, markets) is a plausible
+  advertiser once the freeze lifts, though a community-protected venue
+  fresh off an ACV fight is a sensitive first pitch — flag for a careful,
+  non-transactional approach rather than a standard media kit.
+- **Queer the Marly CIC** — not an advertiser lead (non-profit), but a
+  potential future partner for community-focused coverage; noted for
+  the record, not for a sales pitch.
+
 ## Closed / declined
 
 _None yet._

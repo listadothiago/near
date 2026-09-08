@@ -202,7 +202,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 5 of 6 shipped   T2 0 of 3   T3 0 of 1
+spent:           T1 6 of 6 shipped   T2 0 of 3   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → NYC → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -293,6 +293,30 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  Bayeux Tapestry/British Museum entry (window closes
                  21 Oct 2026) is the strongest open candidate for
                  London's next draw.
+                 Brighton — SERVED AGAIN 2026-09-08 (The Actors,
+                 Kemptown, `the-actors-kemptown-brighton`, PLINIO with a
+                 CUBIC-V consult on the theatre programming, all six
+                 locales, trust review/active). THIS CLOSES TIER 1'S SIX
+                 SLOTS FOR TEN #2. Re-verification (the queue's own
+                 currency-risk flag, since its only source was a Jan
+                 2022 magazine piece) confirmed the claim rather than
+                 finding it stale: Brighton & Hove City Council's own
+                 official ACV list PDF (18 May 2022) independently
+                 confirms the 04/01/2022 decision date; Gscene
+                 independently corroborates the Queer the Marly campaign
+                 and Michelle Steele's role; current programming and two
+                 additional awards (Brighton Fringe Best Small Venue
+                 2026, Brighton Pub of the Year 2025) confirmed live via
+                 the venue's own site, Instagram, and Reddit r/brighton
+                 (read via claude-in-chrome after reddit.com fetch-
+                 blocked the search backend). THE CORRECTION itself
+                 re-verified live: welovebrighton.com's own directory
+                 still serves a page titled "The Actors" at a URL path
+                 reading `/the-marlborough-theatre/`. `check-geocodes.mjs`
+                 and `check-duplicates.mjs` both clean; `npx next build`
+                 verified. Brighton's remaining queue (Club Revenge, the
+                 held Polyglamorous entry, the Pride Village Party
+                 collection lead) SURVIVES for Brighton's next turn.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -300,17 +324,26 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         Brighton (Tier 1) — sixth and final Tier 1 slot of
-                 ten #2, next in `t1-order` after London, whose fifth
-                 slot is CLOSED: The Divine, Dalston shipped 2026-09-07
-                 (STEFAN, all six locales). Per `t1-order` (Brighton →
-                 San Francisco → Oakland → NYC → London), five cities
-                 over six slots means one draws twice — the wrap lands
-                 the sixth slot back on Brighton. Brighton's queue in
-                 post-plan.md still holds The Actors and Club Revenge,
-                 plus the held Polyglamorous entry and the Pride Village
-                 Party collection — check freshness/currency before
-                 drafting since Brighton's last turn was 2026-09-04.
+NEXT-UP:         Rome (Tier 2 burst) — Tier 1 is now FULLY SPENT for
+                 ten #2 (Brighton's sixth and final T1 slot shipped
+                 2026-09-08: The Actors, Kemptown, PLINIO with a
+                 CUBIC-V consult, all six locales — see t1-spent below).
+                 With T1 done and both T2 (0 of 3) and T3 (0 of 1) still
+                 unspent, the pointer moves to whichever tier's burst is
+                 more overdue rather than opening a new ten (a reset per
+                 "Writing the pointer" requires ALL three shares spent).
+                 REASONING: T2's burst (Rome) is the larger share (3 of
+                 every 10 posts vs. T3's 1) and, unlike ten #1 — where
+                 T2's Sitges burst was drawn early, mid-way through T1's
+                 six slots — it was never drawn at all this ten despite
+                 the standing rule that T2/T3 bursts are "drawn within
+                 this ten as their shares come up... not queued behind
+                 all six Tier 1 slots." That makes Rome the more overdue
+                 of the two remaining shares, so it draws next; Curitiba
+                 (T3) follows once Rome's turn is spent. Check Rome's
+                 queue in post-plan.md before drafting — if empty or
+                 blocked, that turn becomes a seeding pass per "Seed on
+                 turn," not an automatic hold.
 
                  CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
                  1) — DRAW" while the tier roster above, updated the same

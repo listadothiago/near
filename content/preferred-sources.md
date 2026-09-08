@@ -56,6 +56,19 @@ second or third genuinely good item from them shows up (don't add a
 source to the permanent catalog off a single lucky find):
 
 
+- `scenemag.co.uk` (Scene Magazine, Brighton — LGBTQ+ beat) — covered the
+  Queer the Marly campaign's win in depth (Jan 2022); found researching
+  `the-actors-kemptown-brighton`. Worth onboarding for Brighton LGBTQ+
+  coverage generally.
+- `gscene.com` (Gscene, Brighton & Sussex — LGBTQ+ community news) —
+  independent corroboration of the Queer the Marly campaign and Michelle
+  Steele's role, distinct from Scene Magazine; found researching
+  `the-actors-kemptown-brighton`. A genuine second independent LGBTQ+
+  outlet for the Brighton beat, not a duplicate of Scene Magazine.
+- `brighton-hove.gov.uk` (Brighton & Hove City Council — official records,
+  e.g. the Assets of Community Value list) — primary-source verification
+  for the ACV claim on `the-actors-kemptown-brighton`; worth keeping in
+  mind for any future civic/council-decision claim about Brighton venues.
 - `instagram.com/starlinecomplex` (STARLINE, Oakland — first-party) —
   the venue's own feed, 21.6K followers, and the ONLY source anywhere
   that carries STARLINE's current hours and programming. Its bio was

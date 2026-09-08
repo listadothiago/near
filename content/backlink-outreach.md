@@ -155,6 +155,21 @@ Logged 2026-09-04 off `caos-bar-cidade-baixa-porto-alegre`. Nothing sent.
   venue is usually happy to share coverage of itself. Highest-probability
   touch of the three, and the one to make first when the freeze lifts.
 
+### The Actors, Kemptown / Brighton — `prospect` (OUTREACH FROZEN)
+Logged 2026-09-08 off `the-actors-kemptown-brighton`. Nothing sent.
+- **Gscene** — independent Brighton/Sussex LGBTQ+ news outlet, already
+  ran the deepest coverage of the Queer the Marly campaign; a natural
+  outreach fit once the freeze lifts.
+- **The Actors itself** — first-party, active Instagram (7,360 followers)
+  and a genuine correction to offer (outdated directories still list it
+  as "The Marlborough"); a venue is generally glad to see that fixed in
+  a linked piece.
+- **Queer the Marly CIC** — the campaign organization itself; a piece
+  documenting the ACV win is relevant to their own record-keeping and a
+  plausible link/share target.
+- **Touches:** none. Logged as prospects 2026-09-08.
+- **State:** `prospect`
+
 ## Closed / declined
 
 _None yet._

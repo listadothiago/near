@@ -107,6 +107,22 @@ ten #2, closing the tier-1 share of this ten — per `t1-order`
 (Brighton → San Francisco → Oakland → NYC → London), the wrap returns
 to Brighton.
 
+**Brighton's sixth and final Tier 1 slot of ten #2 is SPENT and SHIPPED
+(2026-09-08).** The Actors, Kemptown went live under PLINIO (CUBIC-V
+consult on the theatre programming) — see the ticked queue entry in the
+Brighton section for the full re-verification/sourcing record. This
+**closes Tier 1's six slots for ten #2** (spent: T1 6 of 6). Brighton's
+remaining queue (Club Revenge, the held Polyglamorous entry, and the
+Pride Village Party collection lead) survives for Brighton's next turn.
+With Tier 1 now fully spent and Tier 2 (0 of 3) and Tier 3 (0 of 1) both
+still unspent this ten, **the rotation moves to Tier 2's burst: Rome**
+— the next city in Tier 2's order after Barcelona (which took ten #1's
+burst via Sitges), and the larger, longer-overdue share of the two
+remaining (3 posts vs. Tier 3's 1), per the skill's own note that Tier
+2/3 bursts are drawn "within this ten as their shares come up," not
+queued behind Tier 1. Tier 3's burst (Curitiba) follows once Rome's
+turn is spent.
+
 **TEN #1 CLOSED 2026-09-04.** All three shares spent: Tier 1's six
 (Brighton, London, San Francisco, Oakland, Bangkok, then London again
 with La Camionera), Tier 2's burst (the Sitges run for Barcelona &
@@ -242,14 +258,14 @@ Mon/Tue), which is exactly the kind of detail a listicle gets wrong and a
 tester on the ground can settle._
 - [ ] Hampstead Heath ponds — WILD0 (source bot-blocked; verify at draft)
 
-### Brighton (Tier 1) — SEEDED 2026-09-02, research-verified, not yet drafted
+### Brighton (Tier 1) — third pin shipped 2026-09-08, closes T1's six for ten #2
 
 Was empty and skipped every cycle since the tier list existed. Seeded by
 a single-city research pass on 2026-09-02. Candidates below are
 **research-verified** (real, currently-operating, multi-sourced) but each
 still needs a fresh at-draft currency check per `verify-still-open`.
 
-- [ ] **The Actors, Kemptown (ex-The Marlborough)** — PLINIO, with a CUBIC-V consult on the theatre programming. A pub the queer community fought to keep: the "Queer the Marly" campaign (co-chair Michelle Steele) won it **Asset of Community Value** status from Brighton & Hove City Council, and it reopened in 2021 as The Actors — 60-seat theatre above an LGBTQ+ and BIPOC-friendly pub, queer since the 1970s, specifically named as where the trans and disabled communities gather. THE CORRECTION: listicles and directories still call it The Marlborough. Best source is Scene Magazine (Jan 2022) — **old, so the ACV status and current operators must be re-verified at draft.**
+- [x] **The Actors, Kemptown (ex-The Marlborough)** — PLINIO, with a CUBIC-V consult on the theatre programming. SHIPPED 2026-09-08, all six locales, `the-actors-kemptown-brighton` — Brighton's Tier 1 draw for ten #2 and the city's third pin, **closing Tier 1's six for ten #2** (Brighton drew both the 1st and 6th slots this ten, per `t1-order`'s five-city wrap). RE-VERIFICATION RESULT: the queue's currency-risk flag was checked and the claim holds. Brighton & Hove City Council's own official Assets of Community Value PDF (18 May 2022) independently confirms the ACV decision date as 04/01/2022 for "The Marlborough Pub and Theatre," 4 Princes Street — a primary-source hit, not just the campaign's own account. Gscene independently corroborates Queer the Marly and Michelle Steele's role (a second outlet beyond Scene Magazine). Current operation confirmed thriving: active weekly programming (Dyke Night, Queer Midweek Munch, a Women of Colour Meet Up, Black Brighton Market), an active Instagram, and the venue has picked up an ADDITIONAL award since this entry was seeded — Brighton Fringe Best Small Venue 2026, on top of 2023's award and Brighton's own Pub of the Year 2025. Operator is Laine Pub Co (per Wikipedia's sourced account of the 2021 reopening), noted plainly — ACV status protects against a forced freehold sale, it does not by itself mean full community ownership. THE CORRECTION held up and is checkable: welovebrighton.com's own directory still carries a page titled "The Actors" at a URL path reading `/the-marlborough-theatre/`, cited directly in the body. Sourced beyond Scene Magazine: Gscene, the council's own PDF, Wikipedia, the venue's own site and Instagram, Reddit r/brighton (multiple threads, most recent June 2026, read via claude-in-chrome after a reddit.com fetch block), and Google-aggregated reviews (also via claude-in-chrome after a Tripadvisor 403) — nine sources total, no negative pattern worth reporting emerged. Images: hero (real photo of the bar interior) plus two in-body real photos/graphics from the venue's own site (a stairwell of Brighton Fringe posters; a weekly programming poster), the latter two tying directly to CUBIC-V's theatre-programming angle. `npx next build` passed; `check-geocodes.mjs` and `check-duplicates.mjs` both clean (nearest existing Brighton pins are 868m and 359m away, no identity concern). Revenue pass logged no opportunity for affiliate; backlink and ad-sales prospects logged (Gscene, the venue itself, Queer the Marly CIC) — outreach frozen, nothing sent.
 - [ ] **Polyglamorous @ Quarters** — ALLORA DAI. **HELD, NOT DRAFTED — verification failed 2026-09-04.** Attempted at draft; stopped under the anti-fabrication rule. What checked out: the Quarters venue lineage is solid and independently pressed (DJ Mag, Mixmag, Resident Advisor, Record of the Day all report Quarters opened in the former Zap/The Arch arches, 187-193 Kings Rd — this is NOT mere venue self-claim); and Polyglamorous really is at Quarters now — its Instagram bio carries the Quarters address, and **Polyglamorous: Pucker Up Pride ran at Quarters on Fri 31 July 2026**. What did NOT check out, and kills the piece as scoped:
   - **"Confirmed running Oct 2026" is WRONG.** The date on `quartersbrighton.co.uk/whatson/polyglamorous` is **17 October 2025**, tied to Quarters' autumn-2025 opening season. It was misread as 2026 when this entry was seeded.
   - **No future dated event exists.** The Quarters what's-on listing carries 34 events spanning Sept 2026 → April 2027 and contains **zero** Polyglamorous. Fails the mandatory dated-event requirement outright.
