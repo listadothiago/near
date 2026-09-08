@@ -27,6 +27,15 @@
     "reason": "pass"
   },
   {
+    "slug": "monkey-thief-hells-kitchen-new-york-city",
+    "url": "https://images.getbento.com/accounts/276a77e21f675bd051d6c3fa4854da93/media/images/68515MonkeyThief_AlexStaniloff_072826-100.jpg",
+    "ok": false,
+    "width": 7893,
+    "height": 5265,
+    "aspect": "1.499",
+    "reason": "aspect 1.50:1, not ~16:9 (1.78:1)"
+  },
+  {
     "slug": "the-divine-dalston-london",
     "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfp-r1T7z4tjWUc7JlbnmQOTQcc4IegwW1jUidrXWDuUhj5YZ6VXcRD4Kj6sTeoA-p8Zyzy_uhzl-XcJKiUip4weh-SU_JPKaOKlOl6UDKjDzC3TMMd6KX02uMInsNOZn95FSylkwVDrEH=w1200-h675-c",
     "ok": true,

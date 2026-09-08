@@ -69,6 +69,11 @@
       "status": "active",
       "at": "2026-09-07T23:40:00.000000+00:00",
       "note": "Batch 2026-09-07-batch-30: hero resolved (tier 1, real photo from the bakery's own site, dated asset Nov 2025). Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses): no opening-line bans, headline avoids the bare-name and 'The ___ that' formulas, no process-as-copy (queue/hype framed as reader-facing, not backlog language), no rank-pulling. Legal: the negative UGC quote (raw chocolatine, gelatinous topping) is attributed to a named platform/thread and dated, not stated as fact, and carries no defamation-adjacent business allegation. Link-density passes (SLOP/Hot Dinners/Nudge/Reddit in-text, one internal NearLink to Borough Market). Red team: no price claims made (menu prices not independently verified this session, correctly omitted rather than guessed); Deptford opening date sourced and dated; no internal jargon leaked. Discover audit: hero clears spec, headline doesn't over-promise past the body. Revenue pass: no natural affiliate/ad-sales opportunity for a walk-in bakery; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each a genuine local edition at/above the 150-word floor, each with its own publishNote."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T00:00:00.000000+00:00",
+      "note": "Correction (near-caretaker, per BACKLOG P2.20): the 2026-09-07T23:40 sign-off's \"Discover audit: hero clears spec\" claim was false. A real fetch+dimension check of the live editmysite.com asset (BACKLOG P0.9/P1.21 item 14) found aspect 2.27:1, not ~16:9 — fails Discover's image requirement. Root cause: Next's `/_next/image` optimizer preserves source aspect ratio rather than cropping, and this host has no equivalent to Google's crop-via-URL syntax, so this needs a real 16:9-cropped replacement image or an image-proxy fix (near-tech-lead to pick the mechanism) before it can be marked clean again."
     }
   ],
   "geocode": {
@@ -79,5 +84,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/TOAD+Bakery/@51.4735143,-0.0810946,17z/data=!3m1!4b1!4m6!3m5!1s0x487603f076b66cf1:0xfdb311f5922287af!8m2!3d51.4735143!4d-0.0810946!16s%2Fg%2F11rklz6b5l"
   },
   "publishedAt": "2026-09-07T22:35:26.000000+00:00",
-  "updatedAt": "2026-09-07T22:35:26.000000+00:00"
+  "updatedAt": "2026-09-08T00:00:00.000000+00:00"
 }

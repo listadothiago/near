@@ -69,6 +69,11 @@
       "status": "active",
       "at": "2026-09-07T23:20:00.000000+00:00",
       "note": "Batch 2026-09-07-batch-30: hero resolved — tier 1, CC BY-SA 4.0 Wikimedia Commons photo of the actual listed frontage (Wiki Loves Monuments 2022 submission), better than the generic Google Business photo option used on the two prior batch articles. Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses, mandatory per 2026-09-07 directive): no opening-line bans, headline avoids bare-name/formula, no process-as-copy, no rank-pulling. Legal: Kray-twins association framed as widely reported/attributed ('widely said to have'), not asserted as fact about real deceased/living persons in a way that risks defamation; Maria/Nev/Anna Pellicci covered via their own public business role, not a private fact; the negative UGC price complaint attributed and dated. Link-density passes (Wikipedia/Listed Buildings/Reddit in-text, internal NearLink to Wilton's Music Hall). Sourced-price-ranges gate: Google £10-20pp band plus three dated Reddit price points, phrased as a liftable AEO-friendly answer per the 2026-09-07 rule addition. Red team: no stale price stated as current-only-fact; no internal jargon leaked. Discover audit clean. Revenue pass: no natural affiliate/ad-sales opportunity beyond existing coverage; logged none. Five locale editions written (pt-BR, it, es-ES, es-419, zh-CN), each genuine and >=150 words with its own publishNote and price paragraph."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T00:00:00.000000+00:00",
+      "note": "Correction (near-caretaker, per BACKLOG P2.20): the 2026-09-07T23:20 sign-off's \"Discover audit clean\" claim was false. A real fetch+dimension check of the live Wikimedia asset (BACKLOG P0.9/P1.21 item 14) found 747px wide (below the 1200px minimum) and aspect 0.56:1, not ~16:9 — fails Discover's image requirement on both width and aspect ratio. Root cause: Next's `/_next/image` optimizer preserves source aspect ratio rather than cropping, and Wikimedia has no equivalent to Google's crop-via-URL syntax, so this needs a real 16:9-cropped replacement image or an image-proxy fix (near-tech-lead to pick the mechanism) before it can be marked clean again."
     }
   ],
   "geocode": {
@@ -79,5 +84,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/E+Pellicci/@51.5264757,-0.0634292,17z/data=!3m1!4b1!4m6!3m5!1s0x48761cc5ebe9ec3d:0x9e5d80938bd1e5ef!8m2!3d51.5264757!4d-0.0634292!16s%2Fg%2F1t_hygsm"
   },
   "publishedAt": "2026-09-07T22:54:04.000000+00:00",
-  "updatedAt": "2026-09-07T22:54:04.000000+00:00"
+  "updatedAt": "2026-09-08T00:00:00.000000+00:00"
 }
