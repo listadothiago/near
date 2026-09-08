@@ -107,33 +107,41 @@ export default function Header({
           </div>
         )}
 
+        {/* text/padding step down below sm: five pills at the full size
+            don't fit a phone's width and wrap, and the wrapped item loses
+            its collapsed left border (border-l-0) since it's no longer
+            adjacent to the item before it — it reads as a broken/cut-off
+            button, worst on standalone PWA where there's no browser chrome
+            trimming the viewport further. Smaller type/padding keeps all
+            five on one line down to phone widths instead. Operator report,
+            2026-09-08. */}
         <nav
-          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-mono text-[0.72rem] uppercase tracking-wide ${
+          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-mono text-[0.6rem] sm:text-[0.72rem] uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
             <Link
               href="/"
-              className="border-[2px] border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("nav.tips")}
             </Link>
             <Link
               href="/guides"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("collection.navLabel")}
             </Link>
             <ColumnsMenu />
             <Link
               href="/sources"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("sources.navLabel")}
             </Link>
             <Link
               href="/about"
-              className="border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("nav.about")}
             </Link>
@@ -291,7 +299,7 @@ function ColumnsMenu() {
         onClick={() => setOpen((was) => !was)}
         aria-expanded={open}
         aria-haspopup="true"
-        className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-2 py-1 hover:bg-accent hover:text-black transition-colors"
+        className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
       >
         {t("nav.columns")}
         <span

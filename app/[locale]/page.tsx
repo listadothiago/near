@@ -70,11 +70,20 @@ export default async function HomePage({
             stretch
           />
         }
-        // mapPromo removed (operator, 2026-09-07): the unit rendered badly
-        // inside the sticky map column at several heights. Board.tsx
-        // already guards on this prop being falsy, so omitting it just
-        // drops the slot rather than needing a separate feature flag.
-        // Re-add once the map-column layout issue is actually fixed.
+        // Fixed (non-stretch) mobile-banner: the earlier attempt used
+        // `stretch`, which puts `h-full` on a box with no bounded-height
+        // ancestor inside the sticky sidebar, so it grew to match the
+        // section's scrollable content instead of the 100px banner and
+        // overflowed (P0.7). A fixed-size banner with `max-w-full` (set
+        // in Placement's SIZES) shrinks safely at narrower sidebar widths
+        // without that failure mode.
+        mapPromo={
+          <HousePromo
+            locale={locale as ContentLocale}
+            slot="map-sidebar"
+            size="mobile-banner"
+          />
+        }
       />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />
