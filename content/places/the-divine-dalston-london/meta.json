@@ -1,7 +1,13 @@
 {
   "slug": "the-divine-dalston-london",
-  "categories": ["nightlife-sound"],
-  "tags": ["lgbtq-friendly", "late-night", "local-legend"],
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "late-night",
+    "local-legend"
+  ],
   "coordinates": {
     "lat": 51.5517897,
     "lng": -0.0753553
@@ -53,7 +59,7 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfp-r1T7z4tjWUc7JlbnmQOTQcc4IegwW1jUidrXWDuUhj5YZ6VXcRD4Kj6sTeoA-p8Zyzy_uhzl-XcJKiUip4weh-SU_JPKaOKlOl6UDKjDzC3TMMd6KX02uMInsNOZn95FSylkwVDrEH",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfp-r1T7z4tjWUc7JlbnmQOTQcc4IegwW1jUidrXWDuUhj5YZ6VXcRD4Kj6sTeoA-p8Zyzy_uhzl-XcJKiUip4weh-SU_JPKaOKlOl6UDKjDzC3TMMd6KX02uMInsNOZn95FSylkwVDrEH=w1200-h675-c",
     "attribution": "Photo: The Divine, owner-submitted via Google Maps",
     "attributionLink": "https://www.google.com/maps/place/The+Divine/@51.5517897,-0.0753553,17z/data=!3m1!4b1!4m6!3m5!1s0x48761db0dbbf2053:0xd8387bc5f04f136c!8m2!3d51.5517897!4d-0.0753553!16s%2Fg%2F11vrtrzz9g",
     "licenseNote": "Real source photo (tier 1); the official site's own imagery was event-poster art rather than venue photography, and Instagram/Facebook CDN links for this venue are signed/expiring, so the venue's own Google Business photo is the stable option."

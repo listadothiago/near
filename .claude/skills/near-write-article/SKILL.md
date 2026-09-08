@@ -491,7 +491,10 @@ rather than rubber-stamping:
   `content/chief-editor-knowledge-base.md` — recurring judgment calls,
   persona-fit patterns, headline-formula catches worth remembering
   across runs — separate from the per-piece sign-off note that already
-  lives in each piece's own `statusHistory`.
+  lives in each piece's own `statusHistory`. Uses `discover-view`
+  (`scripts/discover-audit.mjs`) as a standing metrics source alongside
+  the per-piece Discover check: a piece whose hero fails the real image
+  spec isn't fully signed off, even if every other gate passed.
 
 Findings from any of the three get fixed by the writing persona/
 `near-editor`, not waved through — none of the three skips the others.

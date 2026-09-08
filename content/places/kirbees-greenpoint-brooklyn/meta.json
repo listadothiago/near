@@ -1,7 +1,12 @@
 {
   "slug": "kirbees-greenpoint-brooklyn",
-  "categories": ["food-drink"],
-  "tags": ["local-legend", "trending"],
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend",
+    "trending"
+  ],
   "coordinates": {
     "lat": 40.7214102,
     "lng": -73.9458662
@@ -48,7 +53,7 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkYOMzPT9j-YMIvNDrjeQJwbEs0787EVLcE_a7QVGOfZC8bGDmP06wK3lOigsePJA9XQOYIzO8mctWcnUl-4FIF7ppi3Mwh2X9tB4BHvexvLs3cEQGDpwd6p9XsAaQ3Q4pv0XN_ISzH1Tae",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkYOMzPT9j-YMIvNDrjeQJwbEs0787EVLcE_a7QVGOfZC8bGDmP06wK3lOigsePJA9XQOYIzO8mctWcnUl-4FIF7ppi3Mwh2X9tB4BHvexvLs3cEQGDpwd6p9XsAaQ3Q4pv0XN_ISzH1Tae=w1200-h675-c",
     "attribution": "Photo: Kirbee's, owner-submitted via Google Maps",
     "attributionLink": "https://www.google.com/maps/place/Kirbee's/@40.7214102,-73.9458662,17z",
     "licenseNote": "Real source photo (tier 1). Very new business, official site not yet found with a stable photo asset."

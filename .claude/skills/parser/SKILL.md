@@ -51,6 +51,13 @@ mandate in `BACKLOG.md` section 1.0 — where research reuse and
 freshness checking can be made cheaper without getting worse. Voice/
 tell-spotting commentary is the other half, not the whole job.
 
+**Uses `discover-view` (`scripts/discover-audit.mjs`) as a standing
+metrics source**, not a one-off check: Discover pass/fail is a concrete,
+measurable proxy for whether the pipeline is actually producing
+feed-eligible work, directly relevant to this role's research-automation
+mandate. Run it periodically and note the trend, the same way the
+North Star dashboard tracks place counts.
+
 **Keeps its own trusted-source knowledge base** (operator directive,
 2026-09-07): `content/parser-knowledge-base.md`, separate from
 `content/sources.md`/`preferred-sources.md` (which `near-sources` owns

@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "e-pellicci-bethnal-green-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/London_Borough_of_Tower_Hamlets_-_E._Pellicci_Cafe_-_20230330173314.jpg",
+    "ok": false,
+    "width": 747,
+    "height": 1328,
+    "aspect": "0.563",
+    "reason": "width 747px < 1200px; aspect 0.56:1, not ~16:9 (1.78:1)"
+  },
+  {
+    "slug": "hausu-peckham-london",
+    "url": "https://static.wixstatic.com/media/0da428_e676db72260f402297a379c1894f5fec~mv2.jpg",
+    "ok": false,
+    "width": 4419,
+    "height": 5719,
+    "aspect": "0.773",
+    "reason": "aspect 0.77:1, not ~16:9 (1.78:1)"
+  },
+  {
+    "slug": "kirbees-greenpoint-brooklyn",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkYOMzPT9j-YMIvNDrjeQJwbEs0787EVLcE_a7QVGOfZC8bGDmP06wK3lOigsePJA9XQOYIzO8mctWcnUl-4FIF7ppi3Mwh2X9tB4BHvexvLs3cEQGDpwd6p9XsAaQ3Q4pv0XN_ISzH1Tae=w1200-h675-c",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "the-divine-dalston-london",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmfp-r1T7z4tjWUc7JlbnmQOTQcc4IegwW1jUidrXWDuUhj5YZ6VXcRD4Kj6sTeoA-p8Zyzy_uhzl-XcJKiUip4weh-SU_JPKaOKlOl6UDKjDzC3TMMd6KX02uMInsNOZn95FSylkwVDrEH=w1200-h675-c",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "the-jago-dalston-london",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkPFRp1nS9GRqm-5jHFzc1oRpy-rw895Koi83Wjx6_Z4gnYn5GQo-IjVY4iTzd7fKvuyAF7sPvtySJfiYbYfoLE_QWQYUYHqKxFwvZ3lm68cLV5xUyIbS-X93jmPikGklDA3oh-=w1200-h675-c",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "the-pilgrm-paddington-london",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnISf_MfNeyf7CSG0xXLRX698nrHwGpHk5keau7ojIFKH1W2HDQuxwZKYcYX4FUXoRbbj7lDSrNisEtoZn6lY3hg14iIjBqZruW21gJ6HNdkDyB-TGEzhu_pkB8waSNgMUelvfK=w1200-h675-c",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "toad-bakery-camberwell-london",
+    "url": "https://7db676643636e8f8bbf7.cdn6.editmysite.com/uploads/b/7db676643636e8f8bbf704738210486bce8edd84262e769812515a35ff4e0963/2025-11-13_11-32-10_1763033540.jpg",
+    "ok": false,
+    "width": 3500,
+    "height": 1543,
+    "aspect": "2.268",
+    "reason": "aspect 2.27:1, not ~16:9 (1.78:1)"
+  }
+]

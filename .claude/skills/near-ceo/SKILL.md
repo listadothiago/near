@@ -27,11 +27,15 @@ Only two things, and only these:
 
 ## Standing trigger: North Star drift check (operator, 2026-09-07)
 
-Run `scripts/progress-dashboard.mjs` and compare against the last
+Run `scripts/progress-dashboard.mjs` **and** `discover-view`
+(`scripts/discover-audit.mjs`) and compare both against the last
 reading logged in `content/near-ceo-knowledge-base.md` at two moments:
 every `near-refresh` run, and whenever a `near-batch-30` run completes
 or resumes. These are the two points where enough has actually changed
-to be worth a look — not a fixed calendar cadence.
+to be worth a look — not a fixed calendar cadence. Discover pass rate
+is a real health metric alongside place counts, not a one-off audit —
+a dropping pass rate is exactly the kind of drift this check exists to
+catch.
 
 Most checks find nothing material: log one line ("checked, no drift")
 and move on, the same "nothing needed correcting" pattern

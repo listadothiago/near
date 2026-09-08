@@ -1,7 +1,11 @@
 {
   "slug": "the-pilgrm-paddington-london",
-  "categories": ["city-culture"],
-  "tags": ["lgbtq-friendly"],
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly"
+  ],
   "coordinates": {
     "lat": 51.5157968,
     "lng": -0.1744204
@@ -43,7 +47,7 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnISf_MfNeyf7CSG0xXLRX698nrHwGpHk5keau7ojIFKH1W2HDQuxwZKYcYX4FUXoRbbj7lDSrNisEtoZn6lY3hg14iIjBqZruW21gJ6HNdkDyB-TGEzhu_pkB8waSNgMUelvfK",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnISf_MfNeyf7CSG0xXLRX698nrHwGpHk5keau7ojIFKH1W2HDQuxwZKYcYX4FUXoRbbj7lDSrNisEtoZn6lY3hg14iIjBqZruW21gJ6HNdkDyB-TGEzhu_pkB8waSNgMUelvfK=w1200-h675-c",
     "attribution": "Photo: The Pilgrm, owner-submitted via Google Maps",
     "attributionLink": "https://www.google.com/maps/place/The+Pilgrm+Hotel+Paddington/@51.5157968,-0.1744204,17z",
     "licenseNote": "Real source photo (tier 1)."
