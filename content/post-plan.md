@@ -477,10 +477,12 @@ candidates below collide with it or with each other on name or address.
   corroborated by Yelp (106 reviews), GayCities, thegaypassport, Travel
   Gay. Not a new opening, but closes two gaps at once: zero Queens
   coverage and zero NYC nightlife-sound coverage.
-- [ ] **Bar Etienne, 44 Bedford St, West Village** — PENDING, verify
-  first. French-influenced cocktail bar, opened 2026-08-31. Single-source
-  lead (diningout.com aggregator only) — get a second source or the
-  venue's own channel before drafting.
+- [x] **Bar Etienne, 44 Bedford St, West Village** — PUBLISHED, STEFAN.
+  French-influenced cocktail bar in the former Bandits space; verified
+  beyond the single diningout.com lead with Eater NY, The Infatuation,
+  a primary Google Maps listing and the venue's own Instagram
+  (@baretienne). Exact opening date stayed contested across sources, so
+  the piece hedges "opened this past summer" rather than asserting one.
 - [ ] **Herbie's Burgers, 109 1st Ave, East Village** — PENDING, verify
   first. Fast-casual smash-burger spot, opened late August 2026.
   Single-source (diningout.com); also two blocks from the existing
