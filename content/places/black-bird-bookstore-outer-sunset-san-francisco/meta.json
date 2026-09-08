@@ -1,0 +1,86 @@
+{
+  "slug": "black-bird-bookstore-outer-sunset-san-francisco",
+  "categories": ["city-culture"],
+  "tags": ["hidden-gem"],
+  "coordinates": {
+    "lat": 37.7636,
+    "lng": -122.5085
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Outer Sunset",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Black Bird Bookstore — official site",
+      "url": "https://blackbirdsf.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "San Francisco Public Library — Black Bird Bookstore community listing",
+      "url": "https://sfpl.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-01T00:00:00Z"
+    },
+    {
+      "name": "Hoodline — Black Bird Bookstore founding profile",
+      "url": "https://hoodline.com/",
+      "feedId": null,
+      "originalPublishedAt": "2017-06-01T00:00:00Z"
+    },
+    {
+      "name": "goop — Black Bird Bookstore feature",
+      "url": "https://goop.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-03-01T00:00:00Z"
+    },
+    {
+      "name": "Time Out San Francisco — Black Bird Bookstore listing",
+      "url": "https://www.timeout.com/san-francisco",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    },
+    {
+      "name": "SF Station — Black Bird Bookstore profile",
+      "url": "https://www.sfstation.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    },
+    {
+      "name": "Yelp — Black Bird Bookstore",
+      "url": "https://www.yelp.com/biz/black-bird-bookstore-san-francisco",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/N_Judah_train_at_9th_Ave_and_Irving_January_2026.jpg",
+    "attribution": "4300streetcar, Wikimedia Commons (CC BY 4.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:N_Judah_train_at_9th_Ave_and_Irving_January_2026.jpg",
+    "licenseNote": "This is NOT a photograph of Black Bird Bookstore — it's a January 2026 street-level photo at 9th Ave and Irving St, the Outer Sunset commercial corridor the bookstore sits on a few blocks from, used as an honest generic placeholder because no rights-clear photo of the venue itself could be resolved this session. No identifiable faces of individuals, no legible text beyond ordinary street signage."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:34:00.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30. IDENTITY CORRECTION carried over from prior session: this is a San Francisco venue, not Oakland — 4541 Irving St, Outer Sunset, San Francisco (est. 2017 by Kathryn Grantham, founder of NYC's Bluestockings). No Oakland location exists. Sourcing confirmed previously: official site blackbirdsf.com, SF Public Library community listing, Hoodline founding profile, goop, Time Out SF, SF Station, Yelp. No dedupe conflict per check-duplicates.mjs. Previously blocked because the only fetchable og:image was a small icon/logo, not a real storefront or interior photo. This session resolved the hero-image gate via near-illustrator's 'easy generic image' tier: a landscape, very recent (January 2026) street photo at 9th Ave and Irving St — the Outer Sunset corridor the bookstore is on, a few blocks east of its 4541 Irving St address — CC BY 4.0 via Wikimedia Commons, honestly captioned as not a venue photo. Coordinates are the venue's published street address geocoded against Google Maps' public listing for 4541 Irving St, San Francisco, CA 94122."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.91,
+    "query": "Black Bird Bookstore, 4541 Irving St, San Francisco, CA 94122 — Outer Sunset",
+    "verifiedAt": "2026-09-08T22:34:00.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.7636,-122.5085"
+  },
+  "publishedAt": "2026-09-08T22:34:00.000Z",
+  "updatedAt": "2026-09-08T22:34:00.000Z"
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "roxie-theater-mission-san-francisco",
+  "categories": ["city-culture"],
+  "tags": ["local-legend"],
+  "coordinates": {
+    "lat": 37.7648,
+    "lng": -122.4204
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "Mission District",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Roxie Theater — official site",
+      "url": "https://roxie.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Roxie Theater",
+      "url": "https://en.wikipedia.org/wiki/Roxie_Theater",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "SF Examiner — Roxie nonprofit fundraising campaign to buy its building",
+      "url": "https://www.sfexaminer.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-01T00:00:00Z"
+    },
+    {
+      "name": "Screen Slate — Roxie Theater programming",
+      "url": "https://www.screenslate.com/venues/roxie-theater",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "SF Station — Roxie Theater venue profile",
+      "url": "https://www.sfstation.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    }
+  ],
+  "heroImage": null,
+  "eventEndsAt": null,
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T22:28:00.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30. Sourcing and identity confirmed in a prior session (3117 16th St, Mission District, San Francisco — SF's oldest continuously operating cinema, 501(c)(3) nonprofit, active programming into December 2026): roxie.com, Wikipedia, SF Examiner (nonprofit fundraising to buy the building), Screen Slate, SF Station. No dedupe conflict with the existing Mission pin (Stray Dog) per check-duplicates.mjs. Previously blocked: roxie.com returned no fetchable og:image/hero. This session found real Wikimedia Commons photos of the actual venue (RoxieSF.jpg and 'Little Roxie theater, San Francisco' — both CC BY-SA 4.0) but both are portrait orientation (2448x3264 and 3024x4032) and fail near-illustrator's hard ~16:9 hero/card spec; no landscape Commons photo of this specific venue exists (confirmed no Commons category for it, and a same-named Roxie Theater in Los Angeles was ruled out as a different building on a different coast). Per near-illustrator's 'genuinely good photo exists but can't be used as-is' clause, called for a vector-derived illustration informed by the real marquee/signage rather than a generic substitute or a hold. heroImage set to null (schema requires either null or a valid URL, and no file exists yet) and a full ready-to-run generation prompt was written to content/photo-requests.md ('Roxie Theater — Mission District, San Francisco') for a follow-up pass to produce the actual illustration, wire in heroImage, and flip status to active with a real publishedAt. Flagging explicitly rather than silently holding indefinitely."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.93,
+    "query": "Roxie Theater, 3117 16th St, San Francisco, CA 94103",
+    "verifiedAt": "2026-09-08T22:28:00.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.7648,-122.4204"
+  },
+  "publishedAt": "2026-09-08T22:28:00.000Z",
+  "updatedAt": "2026-09-08T22:28:00.000Z"
+}
