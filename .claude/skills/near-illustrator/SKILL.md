@@ -5,6 +5,11 @@ description: Near's art director. Makes the image call on EVERY published place 
 
 # near-illustrator
 
+Read `content/illustrator-knowledge-base.md` when choosing an illustration
+direction. It stores compact artist/reference traits and run learnings. Reuse
+it instead of starting a new visual-reference hunt for each article; add only
+useful distinctions learned from actual work.
+
 Near's art director. Not an optional garnish on long posts — **every
 published place and collection gets an image call from this skill before
 it ships.**
@@ -157,6 +162,37 @@ What makes a generic image *suitable* rather than lazy filler:
 
 Set `strategy: "stock"` for these, not `"source"` — `"source"` claims the
 image shows the actual place.
+
+## Keep image resolution bounded
+
+Operator directive, 2026-09-08: do not go on wild goose chases. Check the
+photo inbox and strongest official photo source, then move promptly through
+the existing fallback tiers if no usable asset emerges. Do not repeatedly
+search equivalent sites for a perfect venue photo. Save the chosen asset,
+attribution, rights basis and crop checks so the next run can reuse the decision.
+
+### Editorial freedom: illustration need not depict the venue
+
+Operator clarification, 2026-09-08: Near is editorial. An original illustration
+may be abstract, artistic, conceptual or humorous; it can express the article's
+idea without showing the venue at all. Vector-derived artwork is an available
+option, not a forgotten last resort. A visual joke or a graphic interpretation
+of a dish, ritual or tension can earn the image slot on its own merits.
+
+Do not spend more research trying to reproduce the building when a strong
+editorial concept would serve the piece. Judge the image by its connection to
+the article and how it reads on the card, not by literal resemblance. Keep the
+caption/attribution honest about illustration and AI generation where applicable;
+never imply an invented scene is documentary evidence. Humor must not invent
+damaging claims about a venue or identifiable person. These options retain the
+existing crop, resolution, rights and disclosure checks.
+
+The same freedom applies to in-body visuals, not only heroes. Operator example:
+a playful vector ramen bowl could illustrate a ramen article without portraying
+the restaurant. Translate references to living artists into broad visual traits
+(expressive cartoon lines, flat colors, visual humor), not exact imitation or
+false artist attribution. An original graphic can explain kaedama or another
+specific idea; it need not repeat the hero photograph.
 
 ## If generation isn't working this session
 
@@ -415,6 +451,19 @@ The site's own aesthetic — newsprint, hard black strokes, acid green
 `#ccff00` — is a strong anchor, and pulling the accent into artwork ties
 a card to the board it sits on. Don't apply it so uniformly that every
 piece looks identical.
+
+**Proactively raise charts, flows and infographics — don't wait to be
+asked.** Operator directive, 2026-09-08: this skill is encouraged to
+suggest a chart/flow/infographic whenever a piece's structure supports
+one, not just accept one if the writer requests it. Blog posts and
+long-form guides (`near-blogger`, standing columns) are where this comes
+up most — an itinerary's stops, a comparison of neighborhoods, a
+before/after, a timeline of a scene changing. Raise it with the piece's
+writer while the body is still being drafted, since the two rules above
+(makes one claim better than the prose, labels are real copy) are easier
+to satisfy when the chart's shape is chosen alongside the argument
+rather than bolted onto a finished draft. Place pages will rarely earn
+one; that's still the default there.
 
 **Default/fallback pick: bold flat-colour riso-style, when nothing more
 specific is called for.** Operator singled out the

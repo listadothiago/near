@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-09-08T22:26:40.862571+00:00",
+  "slug": "cospa-ramen-nomad-new-york-city",
+  "englishHash": "8d5b383e62167708f8d668aae94f0431f6cf54f50b9004b6ede0649d28db758d",
+  "sources": [
+    {
+      "url": "https://www.handhospitality.com/handhistory",
+      "claims": "Operator identifies Nagahama worker-stall inspiration"
+    },
+    {
+      "url": "https://yomitime.com/cospa-ramen-nyc-open/",
+      "claims": "Aug13/19 Japanese indie reporting: Fukuoka market origin, counter/table seating, address"
+    },
+    {
+      "url": "https://order.online/store/towa-new-york-28072523",
+      "claims": "Fresh menu: original9.99 spicy10.99 noodles2 egg1.50 USD; pork both. Legacy Towa name and unavailable online ordering explicitly disclosed"
+    },
+    {
+      "url": "https://www.theinfatuation.com/new-york/reviews/cospa-ramen",
+      "claims": "Aug21 firsthand review, selfservice, QR, sellouts. Photos by Willa Moore rejected"
+    },
+    {
+      "url": "https://www.instagram.com/cosparamen/",
+      "claims": "Public grid read: Sept8 hiring, Sept4 food reel, Aug28 fullyopen10:30-2 announcement; individual post login-limited. No future dated event visible"
+    },
+    {
+      "url": "https://www.reddit.com/r/ramen/comments/1w2prk2/cospa_ramen_nyc/",
+      "claims": "Recent spicy-bowl praise/value conversation, traditional-style disagreement. Not asserting consensus"
+    }
+  ],
+  "googleReviews": "Signed-out actual Maps listing 40.7442476,-73.9906333. Low sort read: one Sep8 long-wait complaint; older earlyclosures with owner apologies; Sep7 TORI-KICHI salty/light critique, vegetarian-option complaint. Recent overview reviews Sep8/7 praise speed/value and show contrary slow report. No universal speed claim. Fresh recent-sort verification pending.",
+  "sourceCatalogueGap": "AAN context read in prior batch setup; targeted Village Voice/Gothamist search gave no Cospa coverage. Eater and Infatuation relevant; Yomitime and official Cospa Instagram are new candidates. Do not claim five preferred sources covered the venue.",
+  "events": "No future dated Cospa event found; opening announcements expired, hiring not a public event.",
+  "consultations": {
+    "seo": "Approved existing user-approved NYC queue: Cospa Ramen NYC / Nagahama ramen NoMad / inexpensive ramen Manhattan. Qualitative query intent, no invented volumes.",
+    "trendsetter": "Fresh Eater September heatmap plus official Aug28 fully-open announcement support currency. Google Trends US food page unavailable; no trend claim.",
+    "parser": "Reuse saved NYC packet; reverified menu/Maps/IG; omit contested former tenant/opening day; source approvals precede translations.",
+    "gastronomic": "Kaedama concrete pick; pork disclosed; no AI tasting claim.",
+    "social": "Kaedama provides visual/social hook; no claim of personal visit or social posting."
+  },
+  "gates": {
+    "near-tov-police": {
+      "verdict": "pass",
+      "checkedAt": "2026-09-08T22:26:40.862571+00:00",
+      "inputHash": "8d5b383e62167708f8d668aae94f0431f6cf54f50b9004b6ede0649d28db758d",
+      "findings": "Agent review repairs applied: vague sentence removed; fresh attributed wait caveat added; no formula drift."
+    },
+    "language-tic-police": {
+      "verdict": "pass",
+      "checkedAt": "2026-09-08T22:26:40.862571+00:00",
+      "inputHash": "8d5b383e62167708f8d668aae94f0431f6cf54f50b9004b6ede0649d28db758d",
+      "findings": "Agent catalogue census111 English pieces; draft0 watchlist/banned constructions, no emdash, varied paragraphs."
+    },
+    "near-legal-counsel": {
+      "verdict": "pass",
+      "checkedAt": "2026-09-08T22:26:40.862571+00:00",
+      "inputHash": "8d5b383e62167708f8d668aae94f0431f6cf54f50b9004b6ede0649d28db758d",
+      "findings": "Metadata now reviewed locally: FOODIE existing AI byline, actual photo courtesyCospa viaDiningOut with honest source-tier basis, no open-license assertion. Negative attributed."
+    },
+    "chief-editor": {
+      "verdict": "pass",
+      "checkedAt": "2026-09-08T22:26:40.862571+00:00",
+      "inputHash": "8d5b383e62167708f8d668aae94f0431f6cf54f50b9004b6ede0649d28db758d",
+      "findings": "English repairs examined in order; approve kaedama focus, price conditions and diet limitation. Full activation still requires final locales/image/mechanics."
+    }
+  }
+}

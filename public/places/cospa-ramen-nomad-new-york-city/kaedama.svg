@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<title>Another helping</title><desc>Original editorial cartoon: an extravagant looping bundle of noodles drops into a bowl of broth. A conceptual illustration of kaedama, not a picture of Cospa Ramen.</desc>
+<rect width="1600" height="900" fill="#f5ebd7"/>
+<circle cx="1230" cy="235" r="130" fill="#ed5841"/>
+<path d="M0 774 Q650 730 1600 784 V900 H0Z" fill="#274cab"/>
+<ellipse cx="812" cy="779" rx="406" ry="32" fill="#12203a" opacity=".3"/>
+<g stroke="#172336" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+<path d="M395 526 Q435 785 804 792 Q1165 780 1205 526" fill="#e74f3b"/>
+<path d="M440 660 Q798 815 1155 656" fill="none" stroke="#f5ebd7" stroke-width="22"/>
+<ellipse cx="800" cy="524" rx="411" ry="137" fill="#f5ebd7"/>
+<ellipse cx="800" cy="533" rx="353" ry="99" fill="#cc893f" stroke-width="7"/>
+<path d="M572 556 Q711 611 926 568 M531 512 Q712 584 1094 518" fill="none" stroke="#f6d079" stroke-width="13"/>
+<path d="M1070 104 L771 322 M1110 118 L801 344" fill="none" stroke-width="20"/>
+<path d="M782 329 C637 211 456 89 374 155 C277 234 439 333 565 285 C740 219 1059 265 1082 381 C1107 496 860 471 820 554" fill="none" stroke="#172336" stroke-width="30"/>
+<path d="M782 329 C637 211 456 89 374 155 C277 234 439 333 565 285 C740 219 1059 265 1082 381 C1107 496 860 471 820 554" fill="none" stroke="#f6cf6c" stroke-width="17"/>
+<path d="M790 340 C624 249 418 365 458 412 C504 466 665 340 747 381 C829 422 694 467 728 550" fill="none" stroke="#172336" stroke-width="29"/>
+<path d="M790 340 C624 249 418 365 458 412 C504 466 665 340 747 381 C829 422 694 467 728 550" fill="none" stroke="#f6cf6c" stroke-width="16"/>
+<path d="M795 344 C882 332 953 348 928 391 C900 439 802 412 783 537" fill="none" stroke="#172336" stroke-width="29"/>
+<path d="M795 344 C882 332 953 348 928 391 C900 439 802 412 783 537" fill="none" stroke="#f6cf6c" stroke-width="16"/>
+<path d="M289 397 L252 367 M285 448 L231 447 M332 346 L315 305 M1242 412 L1288 384 M1280 479 L1333 471" fill="none" stroke-width="9"/>
+<path d="M1200 309 Q1167 280 1200 248 M335 595 Q290 568 320 542" fill="none" stroke-width="7"/>
+<ellipse cx="960" cy="542" rx="39" ry="17" fill="#55804e" stroke-width="5" transform="rotate(-22 960 542)"/>
+<ellipse cx="1018" cy="512" rx="26" ry="13" fill="#55804e" stroke-width="5" transform="rotate(24 1018 512)"/>
+</g>
+<g fill="#172336"><circle cx="684" cy="687" r="9"/><circle cx="936" cy="687" r="9"/></g>
+<path d="M786 706 Q810 729 836 703" fill="none" stroke="#172336" stroke-width="8" stroke-linecap="round"/>
+</svg>

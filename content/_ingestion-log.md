@@ -1229,3 +1229,24 @@ official website exists for this venue. Kept the existing hero: still a
 real, correctly-attributed, venue-specific tier-1 photo, which outranks
 anything found this pass despite the aspect-ratio softness. This is a
 legitimate "nothing better found" outcome, not a skipped check.
+
+## 2026-09-08 — near-illustrator, Cospa in-body illustration test (operator ask)
+
+Operator asked to test the new editorial-illustration guidelines (abstract/
+humorous/non-venue illustration is a legitimate editorial choice; artist-
+reference library in `content/illustrator-knowledge-base.md`) by actually
+adding one to a live post. Used `cospa-ramen-nomad-new-york-city` (hero
+already resolved with a real venue-supplied photo, so this is purely an
+in-body addition, not a hero swap). Added an original vector cartoon
+illustrating **kaedama** — a looping extra portion of noodles dropping into
+the bowl — in an expressive-line, flat-color, visually humorous register
+(the operator's Miguel Paiva reference). Files: `kaedama.svg` (source) and
+`kaedama.png` (1600x900 raster) under
+`public/places/cospa-ramen-nomad-new-york-city/`. Wired into `en.mdx` via
+`<Figure>` with attribution `"Illustration by NEAR — vector-derived original
+artwork"`; no AI-disclosure needed since it's vector-derived, not
+generative. Body is 197 words, under the 250-word in-body floor, so this
+image is above the floor by explicit editorial judgement (kaedama is a term
+the photo hero can't explain) rather than a floor requirement. Propagated to all five other locale editions (pt-BR, es-419, es-ES, it,
+zh-CN) with locally written captions/attributions, not machine translation.
+Build verified clean with `npx next build` across all six locales.
