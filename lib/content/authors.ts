@@ -41,6 +41,18 @@ export const AUTHORS: Author[] = [
   // roster). Actual writing rotates to whichever persona fits a given
   // month's real material — see content/the-setlist.md.
   { slug: "rucio-libero", handle: "RUCIO", beats: ["nightlife-sound"] },
+  // Co-orchestrator of The Setlist alongside RUCIO, added 2026-09-08
+  // (operator directive) — the two alternate as scoping editor issue by
+  // issue, a real trade-off rather than one delegating to the other. An
+  // invented hyperpop/club-maximalist character, NOT an alter ego of any
+  // real musician — see .claude/skills/feral/SKILL.md's guardrail
+  // section before writing in this voice.
+  { slug: "feral", handle: "FERAL", beats: ["nightlife-sound"] },
+  // Cross-city cannabis-culture/420 specialist (BACKLOG EPIC 4 roster,
+  // added 2026-09-08, operator directive) — same cross-cutting-mode
+  // model as CICLOVIA rather than a regional editor. See
+  // .claude/skills/buddy/SKILL.md, especially its legality-check rule.
+  { slug: "buddy", handle: "BUDDY", beats: ["nightlife-sound", "wellness-fitness", "city-culture"] },
   // Editor of Ladies&Gentlethem (BACKLOG EPIC 4 roster, added 2026-09-01,
   // operator directive). Same orchestrator model as RUCIO on The
   // Setlist and RADAR-X on the weekly editorial column — see

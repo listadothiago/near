@@ -7,18 +7,21 @@ column (`content/editorial-column.md`) and the LGBTQIAPN+ roundup
 structures. **Update (2026-09-01, later same day):** all standing
 columns moved to weekly cadence, operator directive ("make all columns
 weekly, they're great") — see the Cadence section below. It's a
-**weekly** live-music column, orchestrated by
-**RUCIO LIBERO**, the "Gen Xer. Walking music encyclopedia
-(retro/indie). Complains about the volume but knows the setlist"
-persona scoped in `BACKLOG.md`'s EPIC 4 roster. The column carries a
-neutral name of its own — The Setlist — rather than the orchestrator's
-name, so that whichever Near byline actually writes a given issue can
-sign it without it looking odd under someone else's name-branded
-column. Route slug is `the-setlist`.
+**weekly** live-music column, co-orchestrated by
+**RUCIO**, the "Gen Xer. Walking music encyclopedia (retro/indie).
+Complains about the volume but knows the setlist" persona scoped in
+`BACKLOG.md`'s EPIC 4 roster, and, as of 2026-09-08 (operator
+directive), **FERAL** — an invented hyperpop/club-maximalist character,
+NOT an alter ego of any real musician (see
+`.claude/skills/feral/SKILL.md`'s guardrail section). The column
+carries a neutral name of its own — The Setlist — rather than either
+orchestrator's name, so that whichever Near byline actually writes a
+given issue can sign it without it looking odd under someone else's
+name-branded column. Route slug is `the-setlist`.
 
 ## Mandatory guidance step — near-seo + near-trendsetter (RADAR-X), every issue, no exceptions
 
-**Standing rule for every Near column editor (2026-09-01, operator directive):** before scoping any issue, the column editor consults `near-seo` (which market/query gap this fills) and `near-trendsetter`/RADAR-X (what's actually current in the alt-press) together — same joint process that governs every other Near content decision, per the "content decisions route through near-seo + near-trendsetter + the chief editor together" rule (see `BACKLOG.md`'s process note and `feedback_content-decisions-seo-trendsetter.md`). This applies to RUCIO LIBERO here exactly as it applies to RADAR-X on the weekly editorial column and to Ladies&Gentlethem's rotating writers — no column editor scopes an issue solo. This step runs alongside, not instead of, the `near-events` step below (which supplies the actual dated event once near-seo/RADAR-X have framed what's worth covering).
+**Standing rule for every Near column editor (2026-09-01, operator directive):** before scoping any issue, the column editor consults `near-seo` (which market/query gap this fills) and `near-trendsetter`/RADAR-X (what's actually current in the alt-press) together — same joint process that governs every other Near content decision, per the "content decisions route through near-seo + near-trendsetter + the chief editor together" rule (see `BACKLOG.md`'s process note and `feedback_content-decisions-seo-trendsetter.md`). This applies to RUCIO and FERAL here exactly as it applies to RADAR-X on the weekly editorial column and to Ladies&Gentlethem's rotating writers — no column editor scopes an issue solo. This step runs alongside, not instead of, the `near-events` step below (which supplies the actual dated event once near-seo/RADAR-X have framed what's worth covering).
 
 ## Mandatory first research step — `near-events`, every issue, no exceptions
 
@@ -48,23 +51,35 @@ issue if `near-events` doesn't turn up enough genuine material that
 week — hold at `draft` and say so, per the mandatory-first-research-step
 rule above.
 
-## Rotating writers, RUCIO LIBERO orchestrating
+## Co-editors, RUCIO and FERAL alternating
 
-RUCIO LIBERO is the column's permanent orchestrator — every issue is
-scoped and signed off by RUCIO LIBERO's editorial judgment — but the
-actual byline **rotates to whichever existing Near persona
-(`lib/content/authors.ts`) fits that month's real material best**, per
-the operator's own framing (2026-09-01): "RUCIO LIBERO doesn't have to
-write every single issue personally... if the column is called rucio
-libero he would have to sign it and i want him to just orchestrate."
-Likely rotation candidates given the roster's beats: STEFAN
-(nightlife-sound, for club/venue-adjacent shows), FER VIDA
-(underground/queer scenes, once built), CUBIC-V or PLINIO
-(city-culture, for a festival with a strong civic/neighborhood angle)
-— RUCIO LIBERO writes personally by default when nothing else fits
-better. Every entry uses `collectionMetaSchema`'s `author` field, same
-mechanism as the other two columns, and is written first-person in
-that issue's byline's established voice.
+**Added 2026-09-08 (operator directive):** RUCIO and FERAL
+**alternate as the column's scoping/orchestrating editor, issue by
+issue** — a real trade-off, not one delegating bylines to the other.
+Whichever of the two is "up" for a given issue runs the mandatory
+near-seo/near-trendsetter guidance step and the `near-events`
+first-research step above, picks the real show the issue builds
+around, and either writes it personally or hands the byline to
+whichever existing Near persona (`lib/content/authors.ts`) fits that
+week's real material best — same delegation model RUCIO used solo
+before FERAL joined. The two editors' picks should read as genuinely
+different: RUCIO's issues skew retro/indie/"knows the catalogue";
+FERAL's skew toward whatever's loud, current, and slightly unhinged on
+a dance floor right now (see `.claude/skills/feral/SKILL.md`'s Voice
+section) — a real difference in editorial taste, not a coin flip on the
+same kind of show. Note in the Series index below which of the two
+scoped each issue, not just who signed it, so the alternation is
+actually trackable over time.
+
+Rotation candidates for the byline itself, given the roster's beats:
+STEFAN (nightlife-sound, for club/venue-adjacent shows), CUBIC-V or
+PLINIO (city-culture, for a festival with a strong civic/neighborhood
+angle), BUDDY (when a show has a genuine 420-adjacent angle worth
+naming) — the issue's scoping editor (RUCIO or FERAL) writes personally
+by default when nothing else fits better. Every entry uses
+`collectionMetaSchema`'s `author` field, same mechanism as the other
+two columns, and is written first-person in that issue's byline's
+established voice.
 
 ## What makes a good entry
 

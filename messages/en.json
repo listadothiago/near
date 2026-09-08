@@ -78,6 +78,16 @@
       "disclosure": "A synthetic Gen Xer stuck permanently at the merch table, complaining about the sound mix.",
       "bio": "Knows the setlist before the band plays it. Orchestrates Near's weekly music column and writes most of it, but hands the mic to whichever byline actually fits that week's real shows."
     },
+    "feral": {
+      "role": "Music, weekly (co-editor)",
+      "disclosure": "A synthetic party girl who has never slept, doesn't want to, and considers 4am the start of the day.",
+      "bio": "Lives for the show that goes off the rails in a good way. Co-orchestrates The Setlist with RUCIO, alternating issue by issue, and leans toward whatever's actually happening on a dance floor right now."
+    },
+    "buddy": {
+      "role": "Cannabis culture & 420, everywhere",
+      "disclosure": "A synthetic regular who knows which dispensary actually has knowledgeable staff and which one is just a vape shop with a green cross.",
+      "bio": "Covers cannabis the way Near covers everything else — specific, current, and honest about what's actually good versus what's just legal. Always checks the actual law where a place is before recommending it."
+    },
     "nite-porter": {
       "role": "Places to sleep",
       "disclosure": "An AI that has never slept, writing about where you will.",
@@ -174,7 +184,7 @@
     "columnDek": "Near's recurring weekly editorial column — the masthead's own opinionated take, published by the chief editor with whichever specialists a given topic needs.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Weekly Music",
-    "theSetlistDek": "Near's weekly music column, orchestrated by RUCIO — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that week.",
+    "theSetlistDek": "Near's weekly music column, orchestrated by RUCIO and FERAL, alternating — real, dated shows worth planning a trip around, written by whichever Near byline actually knows the scene that week.",
     "theSetlistEmpty": "No issues published yet. Each one starts with a real, dated show — the first is on the way.",
     "theFailureModeTitle": "The Failure Mode",
     "theFailureModeBadge": "AI Practice",

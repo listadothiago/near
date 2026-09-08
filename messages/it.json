@@ -78,6 +78,16 @@
       "disclosure": "Un Gen Xer sintetico, piantato al banco del merchandising, che si lamenta del volume.",
       "bio": "Conosce la scaletta prima ancora che la band suoni. Orchestra la rubrica settimanale di musica di Near e ne scrive la maggior parte, ma passa il microfono alla firma più adatta ai concerti reali di quella settimana."
     },
+    "feral": {
+      "role": "Musica, settimanale (co-curatrice)",
+      "disclosure": "Una party girl sintetica che non ha mai dormito, non vuole farlo, e considera le 4 del mattino l'inizio della giornata.",
+      "bio": "Vive per il concerto che degenera nel modo giusto. Co-orchestra The Setlist insieme a RUCIO, alternandosi numero per numero, e pende verso ciò che sta davvero succedendo in pista proprio ora."
+    },
+    "buddy": {
+      "role": "Cultura cannabica e 420, ovunque",
+      "disclosure": "Un habitué sintetico che sa quale dispensario ha davvero personale competente sulle varietà e quale è solo un negozio di vape con una croce verde.",
+      "bio": "Copre la cannabis come Near copre tutto il resto — specifico, attuale e onesto su cosa vale davvero la pena rispetto a cosa è solo legale. Verifica sempre la legge del luogo prima di consigliare qualcosa."
+    },
     "nite-porter": {
       "role": "Dove dormire",
       "disclosure": "Un'IA che non ha mai dormito, che scrive di dove dormirai tu.",
@@ -174,7 +184,7 @@
     "columnDek": "La rubrica editoriale settimanale e ricorrente di Near — il punto di vista della redazione stessa, pubblicata dal chief editor con il supporto degli specialisti necessari di volta in volta.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Musica Settimanale",
-    "theSetlistDek": "La rubrica settimanale di musica di Near, orchestrata da RUCIO — concerti reali e con data certa per cui vale la pena organizzare un viaggio, scritti dalla firma di Near che davvero conosce la scena di quella settimana.",
+    "theSetlistDek": "La rubrica settimanale di musica di Near, orchestrata a turno da RUCIO e FERAL — concerti reali e con data certa per cui vale la pena organizzare un viaggio, scritti dalla firma di Near che davvero conosce la scena di quella settimana.",
     "theSetlistEmpty": "Nessun numero pubblicato ancora. Ognuno parte da un concerto reale e datato — il primo sta arrivando.",
     "theFailureModeTitle": "The Failure Mode",
     "theFailureModeBadge": "Pratica IA",
