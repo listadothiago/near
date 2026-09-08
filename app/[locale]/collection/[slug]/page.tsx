@@ -26,7 +26,6 @@ import HousePromo from "@/components/ads/HousePromo";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
-import ShareButton from "@/components/layout/ShareButton";
 
 export const revalidate = 3600;
 
@@ -105,12 +104,11 @@ export default async function CollectionPage({
       <Header />
       <div className="lg:flex lg:items-start lg:gap-10">
       <article className="mt-6 lg:flex-1 lg:min-w-0">
+        {/* Share moved into Header itself (operator, 2026-09-08:
+            "everything really should be shareable") — universal now,
+            not duplicated per page. */}
         <div className="flex items-center justify-between gap-3 flex-wrap">
           <BackLink />
-          <ShareButton
-            title={content.frontmatter.title}
-            dek={content.frontmatter.dek}
-          />
         </div>
         {content.isFallback && (
           <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">

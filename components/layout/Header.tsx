@@ -9,7 +9,7 @@ import ThemeToggle from "./ThemeToggle";
 import SearchBox from "@/components/board/SearchBox";
 import CategoryFilters from "@/components/board/CategoryFilters";
 import TagFilters from "@/components/board/TagFilters";
-import ShareViewButton from "@/components/board/ShareViewButton";
+import ShareViewButton from "@/components/layout/ShareViewButton";
 import { useBoardControls } from "@/lib/board/controls";
 import { useSiteFreshness } from "./SiteFreshnessProvider";
 import { formatContentDate } from "@/lib/content/freshness";
@@ -153,7 +153,10 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-1.5 flex-none">
-          {showFilters && <ShareViewButton />}
+          {/* Universal — every page is shareable, not just the board
+              (operator, 2026-09-08), so this is unconditional rather than
+              gated behind showFilters like the Filters button below it. */}
+          <ShareViewButton />
           {showFilters && (
             <button
               type="button"
@@ -331,7 +334,7 @@ function ColumnsMenu() {
             onClick={() => setOpen(false)}
             className="px-2 py-1.5 border-b-[2px] border-ink font-bold hover:bg-accent hover:text-black transition-colors"
           >
-            {t("nav.columns")}
+            {t("nav.columnsAll")}
           </Link>
           <Link
             href="/column"

@@ -5,6 +5,59 @@ import type {
   PlaceMeta,
 } from "@/lib/content/schema";
 
+/**
+ * The home page's `WebSite` + `Organization` nodes — the one piece of
+ * site-wide structured data Near was missing entirely (BACKLOG P1.18,
+ * agent-usability audit). `WebSite`'s `SearchAction` is what makes a
+ * Google sitelinks search box (and any agent reading schema.org to find
+ * "how do I search this site") possible; without it there is no
+ * machine-readable statement that the board's `?q=` param is a search
+ * interface at all. `Organization` is Near-the-publisher, distinct from
+ * `buildCuratorJsonLd`'s human-founder `Person` node.
+ */
+export function buildWebsiteJsonLd({
+  baseUrl,
+  locale,
+  name,
+  description,
+}: {
+  baseUrl: string;
+  locale: string;
+  name: string;
+  description: string;
+}) {
+  const siteUrl = `${baseUrl}/${locale}`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${baseUrl}/#website`,
+        name,
+        description,
+        url: siteUrl,
+        inLanguage: locale,
+        potentialAction: {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: `${siteUrl}?q={search_term_string}`,
+          },
+          "query-input": "required name=search_term_string",
+        },
+        publisher: { "@id": `${baseUrl}/#organization` },
+      },
+      {
+        "@type": "Organization",
+        "@id": `${baseUrl}/#organization`,
+        name,
+        url: baseUrl,
+        logo: `${baseUrl}/icons/icon-maskable.png`,
+      },
+    ],
+  };
+}
+
 export function buildPlaceJsonLd({
   meta,
   frontmatter,

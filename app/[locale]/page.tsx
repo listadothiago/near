@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { buildAlternates } from "@/lib/seo/alternates";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
@@ -16,6 +16,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Board from "@/components/board/Board";
 import GuidesStrip from "@/components/collection/GuidesStrip";
+import { buildWebsiteJsonLd } from "@/lib/seo/jsonld";
+import { getBaseUrl } from "@/lib/seo/site";
 
 // Revalidate periodically so the board picks up newly published places
 // without a deploy. This is NOT what makes expired events disappear —
@@ -52,9 +54,21 @@ export default async function HomePage({
   const eventsByParent = getUpcomingEventsByParent(locale as ContentLocale);
   const stats = getStats();
   const collections = getAllCollections(locale as ContentLocale);
+  const t = await getTranslations({ locale, namespace: "app" });
+  const jsonLd = buildWebsiteJsonLd({
+    baseUrl: getBaseUrl(),
+    locale,
+    name: "Near",
+    description: t("tagline"),
+  });
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Header
         availableCats={[...new Set(places.flatMap((p) => p.meta.categories))]}
         availableTags={[...new Set(places.flatMap((p) => p.meta.tags))]}

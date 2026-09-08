@@ -232,6 +232,7 @@
   "nav": {
     "tips": "Dritte",
     "columns": "Rubriche",
+    "columnsAll": "Tutte le rubriche",
     "column": "Editoriale",
     "theSetlist": "Musica",
     "theFailureMode": "IA",
