@@ -12,7 +12,7 @@
  "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
  "state": "researching",
  "tokenUsage": "unavailable",
- "publishedCount": 11,
+ "publishedCount": 12,
  "candidates": [
   {
    "name": "Hausu",
@@ -89,7 +89,7 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+     "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
     }
    },
    "retryCount": 0,
@@ -129,7 +129,7 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 Attitude, London the Inside, official site, Instagram, Reddit"
+     "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
     }
    },
    "retryCount": 0,
@@ -169,10 +169,10 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+     "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
     },
     "sourcedPriceRange": {
-     "verdict": "pass \u2014 Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+     "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
     }
    },
    "retryCount": 0,
@@ -212,10 +212,10 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+     "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
     },
     "sourcedPriceRange": {
-     "verdict": "pass \u2014 cheap-to-mid tier from FIXR/RA/Google Maps signals"
+     "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
     }
    },
    "retryCount": 0,
@@ -255,10 +255,10 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 Yatzer, momondo, Tripadvisor, official site"
+     "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
     },
     "sourcedPriceRange": {
-     "verdict": "pass \u2014 momondo aggregate range + dated/occupancy-noted sample quote"
+     "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
     },
     "accommodationAttempt": {
      "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
@@ -277,7 +277,7 @@
    }
   },
   {
-   "name": "Kirbee\u2019s",
+   "name": "Kirbee’s",
    "city": "New York City",
    "tier": 1,
    "state": "published",
@@ -301,10 +301,10 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+     "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
     },
     "sourcedPriceRange": {
-     "verdict": "pass \u2014 exact sourced prices ($45/$90), both sides of the pricing debate included"
+     "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
     }
    },
    "retryCount": 0,
@@ -348,7 +348,7 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondTimeOut": {
-     "verdict": "pass \u2014 w42st, Cititour, Resy, What Now New York, official site, Yelp"
+     "verdict": "pass — w42st, Cititour, Resy, What Now New York, official site, Yelp"
     }
    },
    "retryCount": 0,
@@ -368,7 +368,7 @@
    "city": "New York City",
    "tier": 1,
    "state": "published",
-   "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing \u2014 sourcing floor met for draft, not yet cleared for publish",
+   "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing — sourcing floor met for draft, not yet cleared for publish",
    "evidence": null,
    "gates": {
     "duplicates": {
@@ -388,22 +388,22 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondSingleAggregator": {
-     "verdict": "pass \u2014 Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
+     "verdict": "pass — Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
     },
     "instagramCheck": {
-     "verdict": "checked \u2014 @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
+     "verdict": "checked — @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
     },
     "redditFallback": {
-     "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new \u2014 not a blocked leg"
+     "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new — not a blocked leg"
     },
     "events": {
      "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
     },
     "heroImage": {
-     "verdict": "pass \u2014 near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
+     "verdict": "pass — near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
     },
     "tovLegalChiefEditor": {
-     "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
+     "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
     }
    },
    "retryCount": 0,
@@ -437,7 +437,7 @@
    "city": "New York City",
    "tier": 1,
    "state": "published",
-   "trustBasis": "trust: auto; multiple independent current sources \u2014 official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
+   "trustBasis": "trust: auto; multiple independent current sources — official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
    "evidence": null,
    "gates": {
     "duplicates": {
@@ -458,7 +458,7 @@
      "reviewer": "npx next build"
     },
     "sourcingBeyondSingleAggregator": {
-     "verdict": "pass \u2014 official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
+     "verdict": "pass — official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
     },
     "redditCheck": {
      "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
@@ -467,16 +467,16 @@
      "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
     },
     "instagramCheck": {
-     "verdict": "checked \u2014 @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
+     "verdict": "checked — @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
     },
     "events": {
      "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
     },
     "heroImage": {
-     "verdict": "pass \u2014 tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
+     "verdict": "pass — tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
     },
     "tovLegalChiefEditor": {
-     "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
+     "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
     }
    },
    "retryCount": 0,
@@ -498,11 +498,11 @@
    "city": "New York City",
    "tier": 1,
    "state": "published",
-   "trustBasis": "auto \u2014 Time Out New York, Wine Enthusiast, The Infatuation, EveryQueer, official site (bushbk.com), corroborated by Yelp/Apple Maps/GO Magazine/Instagram",
+   "trustBasis": "auto — Time Out New York, Wine Enthusiast, The Infatuation, EveryQueer, official site (bushbk.com), corroborated by Yelp/Apple Maps/GO Magazine/Instagram",
    "evidence": null,
    "gates": {
     "identityConfirmation": {
-     "verdict": "pass \u2014 confirmed real, currently operating lesbian bar at 333 Troutman St, Bushwick; not assumed nightlife by default",
+     "verdict": "pass — confirmed real, currently operating lesbian bar at 333 Troutman St, Bushwick; not assumed nightlife by default",
      "reviewer": "near-deep-researcher"
     },
     "geocode": {
@@ -510,7 +510,7 @@
      "reviewer": "check-geocodes.mjs"
     },
     "duplicates": {
-     "verdict": "pass \u2014 no conflicting NYC pin",
+     "verdict": "pass — no conflicting NYC pin",
      "reviewer": "check-duplicates.mjs"
     },
     "validateContent": {
@@ -525,7 +525,7 @@
      "verdict": "no genuine far-out one-off dated event found; recurring weekly programming only, not nested"
     },
     "images": {
-     "verdict": "hero resolved (tier 1, official site photo); in-body images not sourced this session (Instagram feed not browsed live) \u2014 flagged as open follow-up, not blocking"
+     "verdict": "hero resolved (tier 1, official site photo); in-body images not sourced this session (Instagram feed not browsed live) — flagged as open follow-up, not blocking"
     }
    },
    "retryCount": 0,
@@ -547,63 +547,164 @@
    "city": "San Francisco Bay Area",
    "tier": 1,
    "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating venue confirmed",
+     "reviewer": "near-deep-researcher"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting existing SF/Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "heroImage": {
+     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+    }
+   },
+   "retryCount": 0,
+   "decisionPoint": "Confirmed real, currently operating: 628 Divisadero St, NOPA, San Francisco (not Oakland/elsewhere despite the cluster label). Sourcing: official site theindependentsf.com, Live Nation venue schedule, Songkick, SF Station, Yelp — multiple independent, current, credible sources; trust: auto. No dedupe conflict with existing SF pins (Dolphin Club, Ocean Beach Cafe, Stray Dog, The Stud). BLOCKED THIS SESSION: could not resolve a rights-clear real hero photo (official site had no fetchable og:image; did not attempt press-photo substitution given licensing risk). Held as an un-drafted, sourced lead rather than publish without an image or force a weak substitute."
   },
   {
    "name": "The Lodge Oakland",
    "city": "San Francisco Bay Area",
    "tier": 1,
    "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating venue confirmed",
+     "reviewer": "near-deep-researcher"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting existing SF/Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "heroImage": {
+     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+    }
+   },
+   "retryCount": 0,
+   "decisionPoint": "Confirmed real, currently operating: 3758 Piedmont Ave, Piedmont Ave corridor, Oakland (reopened April 2026 under new owners Chris Cashin/Kris Gordon after a Jan 2026 closure). Sourcing: SF Chronicle (two pieces), Oaklandside, KRON4, Yahoo/whatnow — strong, current, independent corroboration; trust: auto. No dedupe conflict with existing Oakland pins. BLOCKED THIS SESSION: a real photo exists (Oaklandside og:image, TheLodge-TheBar.jpg) but is press editorial photography without a confirmed reuse license, and no venue-owned photo was resolved in the session budget — near-legal-counsel's image-licensing check would not clear it, so held rather than risk it."
   },
   {
    "name": "Henry J. Kaiser Center for the Arts",
    "city": "San Francisco Bay Area",
    "tier": 1,
    "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating venue confirmed",
+     "reviewer": "near-deep-researcher"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting existing SF/Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "heroImage": {
+     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+    }
+   },
+   "retryCount": 0,
+   "decisionPoint": "Confirmed real, currently operating: 10 10th St, Oakland (reopened Jan 24 2026 after 20-year closure and $100M renovation; five distinct venues inside — arena, 1,500-seat Calvin Simmons Theatre, speakeasy lounge, two ballrooms). Sourcing: CBS News, ABC7, Oaklandside (x2, including a live IATSE Local 107 stagehand-union contract dispute — noted for balanced, carefully-sourced coverage, not omission), Wikipedia, Visit Oakland; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: same as Independent/Lodge — no venue-owned hero photo resolved cleanly (official site og:image was a wordmark, not a photo); held rather than publish on a logo or an unlicensed press photo."
   },
   {
    "name": "Roxie Theater",
    "city": "San Francisco Bay Area",
    "tier": 1,
    "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating venue confirmed",
+     "reviewer": "near-deep-researcher"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting existing SF/Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "heroImage": {
+     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+    }
+   },
+   "retryCount": 0,
+   "decisionPoint": "Confirmed real, currently operating: 3117 16th St, Mission District, San Francisco — SF's oldest continuously operating cinema, 501(c)(3) nonprofit, active programming into December 2026 (Bleak Week, Floating Features, D.E.B.S., etc.). Sourcing: roxie.com, Wikipedia, SF Examiner (nonprofit fundraising to buy the building), Screen Slate, SF Station; trust: auto. No dedupe conflict with existing Mission pin (Stray Dog). BLOCKED THIS SESSION: roxie.com returned no fetchable og:image/hero (403 on one fetch path); a Wikimedia Commons category exists for the venue but individual file rights were not verified this session. Held rather than guess at licensing."
   },
   {
    "name": "Black Bird Bookstore",
    "city": "San Francisco Bay Area",
    "tier": 1,
    "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating venue confirmed",
+     "reviewer": "near-deep-researcher"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting existing SF/Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "heroImage": {
+     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+    }
+   },
+   "retryCount": 0,
+   "decisionPoint": "IDENTITY CORRECTION FOR THE MANIFEST: this is a San Francisco venue, not Oakland — 4541 Irving St, Outer Sunset, San Francisco (est. 2017 by Kathryn Grantham, founder of NYC's Bluestockings). No Oakland location exists per this session's research; the 'San Francisco Bay Area' cluster label should not be read as implying an Oakland pin. Sourcing: official site blackbirdsf.com, SF Public Library community listing, Hoodline founding profile, goop, Time Out SF, SF Station, Yelp; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: the only fetchable og:image was a small icon/logo, not a real storefront or interior photo — held rather than publish on a logo, per hero-tier rules (logo is not a valid 'real source photo')."
   },
   {
    "name": "The New Parkway Theater",
    "city": "San Francisco Bay Area",
    "tier": 1,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
+   "state": "published",
+   "trustBasis": "trust: auto; multiple independent current sources — official site, Wikipedia (Speakeasy Theaters), Visit Oakland, Yelp (Sept 2026), CBS News (PETA vegan ranking), Art House Theaters",
    "evidence": null,
-   "gates": {},
-   "retryCount": 0
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass — real, currently operating cinema, 474 24th St, Uptown Oakland",
+     "reviewer": "near-deep-researcher"
+    },
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "check-geocodes.mjs"
+    },
+    "duplicates": {
+     "verdict": "pass — no conflicting Oakland pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "heroImage": {
+     "verdict": "pass — real venue photo from own site (imgix CDN), no faces"
+    }
+   },
+   "retryCount": 0,
+   "slug": "the-new-parkway-theater-oakland",
+   "author": "plinio",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   },
+   "publicationCommit": "999aa0e",
+   "liveUrl": "https://near.tips/en/place/the-new-parkway-theater-oakland"
   },
   {
-   "name": "S\u00fcdblock",
+   "name": "Südblock",
    "city": "Berlin",
    "tier": 2,
    "state": "candidate",
@@ -643,7 +744,7 @@
    "retryCount": 0
   },
   {
-   "name": "Skatecaf\u00e9",
+   "name": "Skatecafé",
    "city": "Amsterdam",
    "tier": 2,
    "state": "candidate",
@@ -663,7 +764,7 @@
    "retryCount": 0
   },
   {
-   "name": "WTF Gallery and Caf\u00e9",
+   "name": "WTF Gallery and Café",
    "city": "Bangkok",
    "tier": 2,
    "state": "candidate",
@@ -729,5 +830,5 @@
   "cto": "Existing flat files and tools; no new service",
   "techLead": "Incremental checks, saved states, final build and verification"
  },
- "handoffNote": "2026-09-08 (session 2): Bar Etienne (NYC) worked per dispatch scope \u2014 re-verified beyond the single diningout.com aggregator lead against Eater NY and The Infatuation plus a primary Google Maps listing, drafted content/places/bar-etienne-west-village-new-york-city/ (en.mdx + meta.json, status: draft), passed check-duplicates.mjs and validate-content.mjs. Held at draft/uncommitted per the mandatory trust:review gate \u2014 NOT committed, NOT pushed, NOT flipped to active. See that candidate's decisionPoint field for the explicit approve/reject ask and outstanding gates (hero image, Instagram/Reddit checks, full sign-off chain, six-locale translation). Dispatch was scoped to only this one item plus this manifest update \u2014 do not proceed into Cospa Ramen/Nowadays/The Bush without a fresh dispatch. 8/30 published; Bar Etienne now held (draft, pending operator decision); 21 candidates remain untouched this session: Cospa Ramen, Nowadays and The Bush next in the NYC cluster, then San Francisco Bay Area, Berlin, Amsterdam, Bangkok, Curitiba clusters. Prior note (Codex/GPT-6) on the Monkey Thief geocode correction (BACKLOG.md P0.15) preserved below for history: '2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet.' Resume near-batch-30 run 2026-09-07-batch-30."
+ "handoffNote": "2026-09-08 (session 3): SF Bay Area Tier 1 cluster dispatched. All six candidates identity-confirmed and re-verified as real, currently operating venues (The Independent 628 Divisadero NOPA/SF; The Lodge 3758 Piedmont Ave Oakland, reopened April 2026 new ownership; Henry J. Kaiser Center for the Arts 10 10th St Oakland, reopened Jan 2026 after $100M/20yr renovation; Roxie Theater 3117 16th St Mission/SF, nonprofit cinema; Black Bird Bookstore 4541 Irving St Outer Sunset/SF — NOTE: SF not Oakland, cluster label corrected; The New Parkway Theater 474 24th St Uptown Oakland). All six cleared sourcing to trust: auto (multiple independent, current, credible sources each). Only The New Parkway Theater was carried through the full pipeline and published (all six locales, mechanical gates, build, commit 999aa0e, pushed) — it had a real, rights-clear venue-owned hero photo confirmed live. The other five (Independent, Lodge, Kaiser, Roxie, Black Bird) are held at candidate/un-drafted status: sourcing is solid, but this session could not responsibly clear the mandatory hero-image/licensing gate for any of them (official sites returned no usable photo, or only a logo, or only unlicensed press editorial photography) within the session's time budget — publishing without a resolved image, or on a press photo whose reuse rights weren't checked, would violate near-write-article step 6/near-legal-counsel's licensing check. Each candidate's decisionPoint field records what was confirmed and exactly what's still needed (operator has real photos on file for some SF venues per The Stud precedent — worth checking before the next pass; otherwise this is an official-outreach or Instagram-photo-download task for the next session). publishedCount now 12/30. Do not re-research these five from scratch — identity, address, and multi-source corroboration are already logged in their decisionPoint notes; the next session should go straight to image resolution and drafting. Next: Berlin, Amsterdam, Bangkok, Curitiba clusters remain fully untouched. Resume run 2026-09-07-batch-30."
 }
