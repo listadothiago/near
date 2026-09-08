@@ -364,27 +364,42 @@ opens fresh below** — `spent`, `t1-spent`, `t2-spent`, `t3-spent` reset
 to blank/zero for the new ten; the history above stays as the record of
 what ten #2 actually shipped, not deleted.
 
-t1-spent (ten #3): nothing shipped yet.
+t1-spent (ten #3): San Francisco — SEEDED 2026-09-08, not yet drawn.
+                 Queue was fully drained (last item, queer-surf-pacifica,
+                 shipped 2026-09-07). Bar cleared cleanly: SF Standard
+                 was already `active` in sources.md; Mission Local
+                 graduated from preferred-sources.md to sources.md this
+                 pass after supplying 3 of 4 new candidates. Four
+                 candidate pins logged in post-plan.md's San Francisco
+                 section, all with real addresses and September 2026
+                 Mission Local corroboration: Bruno's Nightclub (2389
+                 Mission St, reopening after 6-year closure — the
+                 recommended first draw), Sin Miedo Art Gallery (2831
+                 Mission St), Cinderella Bakery (2937 24th St), The
+                 Portal Cinema (3293 Mission St). Not drawn this session
+                 — seeding-pass-only is a legitimate turn outcome per
+                 "Seed on turn." NEXT-UP moves to Brighton per t1-order;
+                 SF's freshly seeded queue is ready whenever SF's next
+                 Tier 1 turn comes up.
 t2-spent (ten #3): nothing shipped yet. Rome's queue still holds its
                  three now-second-sourced leads (Terrazza Hey Güey @
                  Chapter Roma, Monk Garden, Kalavrì) for whenever Rome's
                  burst comes up again.
 t3-spent (ten #3): nothing shipped yet.
-NEXT-UP:         San Francisco (Tier 1 round-robin, first slot of ten
-                 #3). Per "share of output," Tier 1's six slots open
-                 each ten by default; Tier 2/Tier 3 bursts (Rome next
-                 for T2, then whichever Tier 3 city is next in t3-draw
-                 order) get slotted in whenever convenient within the
-                 ten, per the ledger-not-queue rule, rather than being
-                 forced to go first. San Francisco is next in t1-order
-                 after ten #2 ended its T1 round-robin on Brighton.
-                 **Flag: San Francisco's queue is FULLY DRAINED** (see
-                 ten #2's own t1-spent note — its last open item shipped
-                 2026-09-07) — per "Seed on turn," SF's ten #3 turn is a
-                 `near-sources-war-room` seeding pass, not a direct
-                 draw, unless a fresh queue item is added before then.
-                 Do not skip SF preemptively; run the seed when its turn
-                 actually comes.
+NEXT-UP:         Brighton (Tier 1 round-robin, second slot of ten #3,
+                 next in t1-order after San Francisco). San Francisco's
+                 turn CONCLUDED 2026-09-08 as a seeding-pass-only outcome
+                 — see t1-spent (ten #3) above for the full seed detail
+                 (Mission Local graduated to sources.md, four candidate
+                 pins logged in post-plan.md, Bruno's Nightclub flagged
+                 as the strongest next draw). Per "Seed on turn," a
+                 seeding pass alone is a legitimate turn outcome when
+                 research runs long enough that drafting isn't
+                 responsible in the same session; SF's `spent`/T1 count
+                 does NOT increment for this turn (it consumed the
+                 session but not the tier's share — see spent: line),
+                 and SF's next turn draws from the fresh queue rather
+                 than re-seeding.
 
                  Historical pointer reasoning, kept for the record of
                  how ten #2 actually played out (no longer governs

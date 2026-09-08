@@ -171,9 +171,13 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Claude Sonnet 5 (San Francisco seed)
+### Current handoff — 2026-09-08, Claude Sonnet 5 (cont'd)
 
-- **Content rotation — IN PROGRESS (Claude Sonnet 5, 2026-09-08).** Ten #3's first slot: San Francisco, Tier 1. SF's `post-plan.md` queue is fully drained (its last open item shipped 2026-09-07), so per the content-rotation skill's "seed on turn" rule this turn's work is a `near-sources-war-room` seeding pass, not a direct draw. Will flip to DONE with the seed outcome (cleared + drawn, seeded-only, or held/passed to Brighton) and confirmation of tracking-file updates on completion.
+- **Content rotation — idle, awaiting next session.** Ten #3's first Tier 1 slot (San Francisco) concluded as a seed-only turn — see the "Prior handoff — San Francisco seed" entry below for full detail. `NEXT-UP` is now **Brighton** (Tier 1, second slot of ten #3). No draft is in flight; the next session should check Brighton's `post-plan.md` queue (Club Revenge, the held Polyglamorous entry, the Pride Village Party collection lead all survive from Brighton's prior turn) and draw from it, or seed further if it's blocked.
+
+### Prior handoff — 2026-09-08, Claude Sonnet 5 (San Francisco seed)
+
+- **Content rotation — DONE (Claude Sonnet 5, 2026-09-08).** Ten #3's first slot: San Francisco, Tier 1. SF's `post-plan.md` queue was fully drained (its last open item shipped 2026-09-07), so per the content-rotation skill's "seed on turn" rule this turn's work was a `near-sources-war-room`-equivalent seeding pass, not a direct draw. **Outcome: seed CLEARED the bar cleanly**, as expected for a mature Tier 1 media market. The feed half was already met going in — `sf-standard` has been `active` in `sources.md` since 2026-08-27 — and this pass graduated **Mission Local** from `preferred-sources.md` to `sources.md` (`active`/`auto`) after it supplied 3 of 4 new candidate pins in a single week of its own coverage. Four candidates logged in `post-plan.md`'s San Francisco section, all with real addresses and September 2026 Mission Local corroboration (not listicle-sourced): **Bruno's Nightclub** (2389 Mission St, reopening after a 6-year COVID closure — flagged as the strongest next draw, same reopening-correction shape that worked for Oakland's Starline and Curitiba's Changes), **Sin Miedo Art Gallery** (2831 Mission St), **Cinderella Bakery** (2937 24th St), **The Portal Cinema** (3293 Mission St). No piece was drafted this session — a seeding pass alone is a legitimate turn outcome per the skill, and research/verification for four candidates plus the source graduation was the full scope of this run. Updated `content/post-plan.md` (new San Francisco seed section), `content/sources.md` (Mission Local entry), and `.claude/skills/content-rotation/SKILL.md` ROTATION-STATE (`t1-spent` note for the seed, `spent:` stays T1 0 of 6 since SF didn't draw, `NEXT-UP` moved to **Brighton**). Nothing touches outreach — freeze respected.
 
 ### Prior handoff — 2026-09-08, Claude Sonnet 5 (ten #2 closed)
 

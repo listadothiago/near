@@ -178,6 +178,27 @@ sources:
       roundup pages. Article og:image tags are usable as source-tier hero
       images with attribution back to the specific article.
 
+  - id: mission-local
+    name: "Mission Local"
+    category: city-culture
+    region: us
+    language: en
+    feedUrl: null
+    feedType: html-extract
+    trust: auto
+    status: active
+    notes: >
+      Nonprofit local newsroom, Mission/SoMa focus, named bylines and
+      neighbourhood-level reporting — covers venue reopenings, closures
+      and small-business openings as civic news rather than listings.
+      Graduated from preferred-sources.md 2026-09-08 (San Francisco
+      seeding pass, ten #3): it was the source behind three of the
+      pass's four candidate pins (Bruno's Nightclub, Sin Miedo Art
+      Gallery, Cinderella Bakery) inside a single week of coverage,
+      confirming it as SF's highest-value graduation candidate per the
+      2026-09-02 note that first flagged it. No discoverable public RSS
+      feed; use the Chrome-automation fallback against missionlocal.org.
+
   - id: the-oaklandside
     name: "The Oaklandside"
     category: city-culture
