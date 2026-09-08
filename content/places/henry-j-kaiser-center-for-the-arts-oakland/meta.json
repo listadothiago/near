@@ -1,0 +1,80 @@
+{
+  "slug": "henry-j-kaiser-center-for-the-arts-oakland",
+  "categories": ["city-culture"],
+  "tags": ["local-legend"],
+  "coordinates": {
+    "lat": 37.798294,
+    "lng": -122.262282
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Lake Merritt",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "CBS News — Henry J. Kaiser Center for the Arts reopening",
+      "url": "https://www.cbsnews.com/sanfrancisco/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-24T00:00:00Z"
+    },
+    {
+      "name": "ABC7 News — Kaiser Center for the Arts grand reopening",
+      "url": "https://abc7news.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-24T00:00:00Z"
+    },
+    {
+      "name": "Oaklandside — Kaiser Center for the Arts reopening coverage",
+      "url": "https://oaklandside.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-20T00:00:00Z"
+    },
+    {
+      "name": "Oaklandside — IATSE Local 107 stagehand contract dispute at the Kaiser Center for the Arts",
+      "url": "https://oaklandside.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Kaiser Convention Center / Henry J. Kaiser Center for the Arts",
+      "url": "https://en.wikipedia.org/wiki/Kaiser_Convention_Center",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Visit Oakland — Henry J. Kaiser Center for the Arts listing",
+      "url": "https://www.visitoakland.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Kaiser_Convention_Center_from_the_northwest%2C_April_2021.jpg",
+    "attribution": "Pi.1415926535, Wikimedia Commons (CC BY-SA 4.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Kaiser_Convention_Center_from_the_northwest,_April_2021.jpg",
+    "licenseNote": "A real exterior photo of the building (then Kaiser Convention Center, renamed Henry J. Kaiser Center for the Arts after its January 2026 reopening), used under its CC BY-SA 4.0 license with attribution. No identifiable faces; the building's exterior form is unchanged by the interior renovation."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:20:00.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30. Sourcing and identity confirmed in a prior session (10 10th St, Oakland — reopened January 24, 2026 after a 20-year closure and $100M renovation; five distinct venues inside: an arena, the 1,500-seat Calvin Simmons Theatre, a speakeasy lounge, and two ballrooms): CBS News, ABC7, Oaklandside (two pieces, including balanced coverage of a live IATSE Local 107 stagehand-union contract dispute, not omitted), Wikipedia, Visit Oakland. No dedupe conflict per check-duplicates.mjs. Previously blocked because the official site's og:image was a wordmark rather than a photo. This session resolved the hero-image gate with a tier-1 real photo: a landscape (4032x3024) exterior shot of the building — then still called Kaiser Convention Center — on Wikimedia Commons, CC BY-SA 4.0, credited to Pi.1415926535. The building's exterior is unchanged by the interior-focused 2026 renovation, confirmed by comparing the photo's facade/signage against current news coverage of the reopened venue. Coordinates are the Wikimedia photo's own recorded GPS location for the building, cross-checked against the venue's published 10 10th St address."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "Henry J. Kaiser Center for the Arts, 10 10th St, Oakland, CA 94607",
+    "verifiedAt": "2026-09-08T22:20:00.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.798294,-122.262282"
+  },
+  "publishedAt": "2026-09-08T22:20:00.000Z",
+  "updatedAt": "2026-09-08T22:20:00.000Z"
+}

@@ -139,3 +139,47 @@ Drop the result in `content/photo-inbox/` with a filename containing
 `santos-guaiuba`. Wire it in with `strategy: "illustration"`,
 `attribution: "Illustration by NEAR — AI-generated"`, `attributionLink`
 pointing at `/about`, then remove this entry.
+
+## Roxie Theater — Mission District, San Francisco (roxie-theater-mission-san-francisco)
+
+Landscape (~16:9, at least 1200px wide, well over 300,000 total pixels)
+vector-derived illustration of the Roxie Theater's marquee at 3117 16th
+St, San Francisco's Mission District — the city's oldest continuously
+operating cinema.
+
+Reference for the actual marquee/signage (do not copy photographically —
+this informs the shapes and composition only): a real, recent (2025)
+photo exists at
+`https://upload.wikimedia.org/wikipedia/commons/2/29/Little_Roxie_theater%2C_San_Francisco%2C_California%2C_US.jpg`
+(CC BY-SA 4.0) and the older
+`https://upload.wikimedia.org/wikipedia/commons/0/03/RoxieSF.jpg`. Both
+show a narrow storefront cinema facade with a red-and-cream vertical
+"ROXIE" blade sign and a marquee box below it listing showtimes, on a
+dense mixed-use Mission District street.
+
+Composition: the Roxie's blade sign and marquee as the central vertical
+element, storefront cinema doors below, generic Mission-District street
+context either side (parked cars as simple flat shapes, adjacent
+storefronts suggested rather than detailed) to fill a wide landscape
+frame around the tall central sign.
+
+Style: bold flat-colour riso/screenprint reduction (the site's default
+fallback style) — limited palette anchored on the Roxie's own real red
+and cream/off-white, plus Near's charcoal/black ink line and a single
+acid-green (#ccff00) accent reserved for one small detail (e.g. a ticket
+booth light or a sliver of marquee glow), hard black outlines, visible
+print misregistration. Flat, graphic, immediately legible as an
+illustration — never photoreal, never a synthetic photograph.
+
+Absolutely no legible showtimes, film titles, or readable text anywhere
+in the image — the real marquee has text on it; render it as blocky
+color/shape suggestion only, no actual letters. No identifiable faces on
+any pedestrian silhouettes.
+
+Drop the result in `content/photo-inbox/` with a filename containing
+`roxie-theater-sf`. Wire it into
+`content/places/roxie-theater-mission-san-francisco/meta.json`'s
+`heroImage.url`, set `status: "active"` and a real `publishedAt`, then
+remove this entry. This is a vector-derived illustration, not
+AI-generated art — `attribution` should read "Illustration by NEAR —
+vector-derived abstract work", not "AI-generated".

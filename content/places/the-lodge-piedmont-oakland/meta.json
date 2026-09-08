@@ -1,0 +1,74 @@
+{
+  "slug": "the-lodge-piedmont-oakland",
+  "categories": ["nightlife-sound"],
+  "tags": ["hidden-gem"],
+  "coordinates": {
+    "lat": 37.8262,
+    "lng": -122.2517
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Piedmont Avenue",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "SF Chronicle — The Lodge reopening under new owners",
+      "url": "https://www.sfchronicle.com/eastbay/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-01T00:00:00Z"
+    },
+    {
+      "name": "SF Chronicle — follow-up on The Lodge, Piedmont Avenue",
+      "url": "https://www.sfchronicle.com/eastbay/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-15T00:00:00Z"
+    },
+    {
+      "name": "Oaklandside — The Lodge Piedmont Avenue reopening",
+      "url": "https://oaklandside.org/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-01T00:00:00Z"
+    },
+    {
+      "name": "KRON4 — The Lodge Oakland new owners",
+      "url": "https://www.kron4.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-01T00:00:00Z"
+    },
+    {
+      "name": "Yahoo News (whatnow) — The Lodge Oakland reopening",
+      "url": "https://www.yahoo.com/news/",
+      "feedId": null,
+      "originalPublishedAt": "2026-04-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Piedmont_Avenue%2C_Oakland.jpg",
+    "attribution": "Daniel Olsen, Wikimedia Commons (CC BY 2.5)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Piedmont_Avenue,_Oakland.jpg",
+    "licenseNote": "This is NOT a photograph of The Lodge — it's a general Piedmont Avenue streetscape used as an honest generic placeholder because no rights-clear photo of the venue itself could be resolved this session. No identifiable faces, no legible text."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:12:00.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30. Sourcing and identity confirmed in a prior session (3758 Piedmont Ave, Piedmont Ave corridor, Oakland — reopened April 2026 under new owners Chris Cashin and Kris Gordon after a January 2026 closure): SF Chronicle (two pieces), Oaklandside, KRON4, Yahoo/whatnow. No dedupe conflict with existing Oakland pins per check-duplicates.mjs. Previously blocked because the only real photo found (Oaklandside's og:image, TheLodge-TheBar.jpg) is press editorial photography without confirmed reuse license — near-legal-counsel would not clear it. This session resolved the hero-image gate via near-illustrator's 'easy generic image' tier: a landscape Piedmont Avenue streetscape (CC BY 2.5, Daniel Olsen via Wikimedia Commons), honestly captioned as not a venue photo, in preference over the unlicensed press photo. Coordinates are the venue's published street address geocoded against Google Maps' public listing for 3758 Piedmont Ave, Oakland, CA 94611."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.91,
+    "query": "The Lodge, 3758 Piedmont Ave, Oakland, CA 94611",
+    "verifiedAt": "2026-09-08T22:12:00.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.8262,-122.2517"
+  },
+  "publishedAt": "2026-09-08T22:12:00.000Z",
+  "updatedAt": "2026-09-08T22:12:00.000Z"
+}

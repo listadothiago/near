@@ -1,0 +1,74 @@
+{
+  "slug": "the-independent-nopa-san-francisco",
+  "categories": ["nightlife-sound"],
+  "tags": ["local-legend"],
+  "coordinates": {
+    "lat": 37.7754,
+    "lng": -122.4378
+  },
+  "place": {
+    "city": "San Francisco",
+    "neighborhood": "NOPA",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "The Independent — official site",
+      "url": "https://www.theindependentsf.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Live Nation — The Independent venue schedule",
+      "url": "https://www.livenation.com/venue/KovZpZAE6e7A/the-independent-events",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Songkick — The Independent, San Francisco",
+      "url": "https://www.songkick.com/venues/13488-independent",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "SF Station — The Independent venue profile",
+      "url": "https://www.sfstation.com/the-independent-e989706",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    },
+    {
+      "name": "Yelp — The Independent",
+      "url": "https://www.yelp.com/biz/the-independent-san-francisco",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "stock",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Divisadero_Street_%28San_Francisco%29_-_2001-9.jpg",
+    "attribution": "Clinton Steeds, Wikimedia Commons (CC BY 2.0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Divisadero_Street_(San_Francisco)_-_2001-9.jpg",
+    "licenseNote": "This is NOT a photograph of The Independent — it's a general Divisadero Street streetscape used as an honest generic placeholder because no rights-clear photo of the venue itself could be resolved this session. No identifiable faces, no legible text."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:05:00.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30. Sourcing and identity confirmed in a prior session (628 Divisadero St, NOPA, San Francisco — not Oakland despite the cluster label): official site theindependentsf.com, Live Nation venue schedule, Songkick, SF Station, Yelp. No dedupe conflict with existing SF pins (Dolphin Club, Ocean Beach Cafe, Stray Dog, The Stud) per check-duplicates.mjs. This session resolved the previously blocking hero-image gate per near-illustrator's tier order: photo inbox empty, official site had no fetchable og:image (unchanged from prior session), Wikimedia Commons had no venue-specific photo of 628 Divisadero either — resolved via near-illustrator's step-3 'easy generic image' tier, a landscape Divisadero Street streetscape (CC BY 2.0, Clinton Steeds/Flickr via Wikimedia Commons), honestly captioned as not a venue photo. Coordinates are the venue's published street address geocoded against Google Maps' public listing for 628 Divisadero St, San Francisco, CA 94117."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.9,
+    "query": "The Independent, 628 Divisadero St, San Francisco, CA 94117 — NOPA",
+    "verifiedAt": "2026-09-08T22:05:00.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.7754,-122.4378"
+  },
+  "publishedAt": "2026-09-08T22:05:00.000Z",
+  "updatedAt": "2026-09-08T22:05:00.000Z"
+}
