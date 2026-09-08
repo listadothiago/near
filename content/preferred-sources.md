@@ -55,6 +55,26 @@ Found while researching specific places, worth formal onboarding once a
 second or third genuinely good item from them shows up (don't add a
 source to the permanent catalog off a single lucky find):
 
+- `bandab.com.br` (Band A, Curitiba — mainstream broadcaster/portal) —
+  deep original opening-weekend reporting on Changes with direct quotes
+  from both co-owners; not indie-press but genuinely reported rather
+  than a listing. Found researching `changes-sao-francisco-curitiba`,
+  2026-09-08.
+- `boracuritiba.wordpress.com` (Bora Curitiba — independent local blog) —
+  the only outlet with original photography of the venue's June 2026
+  second reopening; both in-body images in the piece above come from
+  here. Found researching `changes-sao-francisco-curitiba`, 2026-09-08.
+- `tribunapr.com.br` (Tribuna do Paraná — mainstream Curitiba daily) —
+  the only outlet that named the actual cause of the venue's winter 2026
+  closure (structural water damage), resolving a contradiction visible
+  on Reddit. Found researching `changes-sao-francisco-curitiba`,
+  2026-09-08.
+- `instagram.com/changes.cwb` (Changes, Curitiba — first-party) — the
+  bio carries the venue's current address and hours; used to resolve an
+  address discrepancy (1122 vs. 1138) between it/Google's live listing
+  and several 2025 press pieces. Found researching
+  `changes-sao-francisco-curitiba`, 2026-09-08.
+
 
 - `scenemag.co.uk` (Scene Magazine, Brighton — LGBTQ+ beat) — covered the
   Queer the Marly campaign's win in depth (Jan 2022); found researching

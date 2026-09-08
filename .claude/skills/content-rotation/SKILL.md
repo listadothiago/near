@@ -201,9 +201,11 @@ two ever disagree.
 
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
-ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 6 of 6 shipped   T2 1 of 3 (Rome drawn, burst closed short)   T3 0 of 1
-t1-order:        Brighton → San Francisco → Oakland → NYC → London
+ten:             #3 under share-of-output (opened 2026-09-08, after ten #2
+                 closed with T1 6 of 6, T2 1 of 3 closed short, T3 1 of 1
+                 — see "ten #2 CLOSED" note below for full history)
+spent:           T1 0 of 6   T2 0 of 3   T3 0 of 1
+t1-order:        San Francisco → Oakland → NYC → London → Brighton
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
                  Brighton. Five cities over six slots means one city draws
@@ -342,39 +344,51 @@ t2-spent:        1 of 3 shipped this ten — Rome's burst was DRAWN
                  quota. The 2-post shortfall is recorded, not silently
                  absorbed: Rome's next Tier 2 turn should start from
                  these three now-second-sourced leads.
-t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
-                 t3-draw after Porto Alegre. Curitiba re-confirmed
-                 CLEARED 2026-09-08 (post-plan.md Tier 3 section: funded
-                 independent outlets Matinal + Sul 21 equivalents, 3+
-                 verified candidate pins) before pointing NEXT-UP at it.
-NEXT-UP:         Curitiba (Tier 3 burst). With Tier 1 (6 of 6) and now
-                 Tier 2 (1 of 3, closed short — see t2-spent above) both
-                 spent for ten #2, only Tier 3 (0 of 1) remains before
-                 this ten closes. Curitiba is next in `t3-draw` order
-                 after Porto Alegre and is CLEARED, not held — draw
-                 directly from its post-plan.md queue.
+t3-spent (ten #2, CLOSED): 1 of 1 — Curitiba's burst SHIPPED 2026-09-08
+                 as `changes-sao-francisco-curitiba` (Changes, São
+                 Francisco), STEFAN, all six locales, `trust: auto`.
+                 Full pipeline detail in post-plan.md's Curitiba section:
+                 research floor met across 7 outlets including a live
+                 Reddit thread that supplied the actual angle (the venue
+                 went dark for months in early 2026, resolved by
+                 Tribuna do Paraná as storm water damage rather than a
+                 failed concept — this is Changes' SECOND reopening, not
+                 its first). Address corrected from the queue's 1138 to
+                 the venue's own live 1122. Geocode, dedupe and build all
+                 verified. This closes Tier 3's share for ten #2.
 
-                 Prior reasoning (2026-09-08, before this session's
-                 seeding pass) — Tier 1 is now FULLY SPENT for
-                 ten #2 (Brighton's sixth and final T1 slot shipped
-                 2026-09-08: The Actors, Kemptown, PLINIO with a
-                 CUBIC-V consult, all six locales — see t1-spent below).
-                 With T1 done and both T2 (0 of 3) and T3 (0 of 1) still
-                 unspent, the pointer moves to whichever tier's burst is
-                 more overdue rather than opening a new ten (a reset per
-                 "Writing the pointer" requires ALL three shares spent).
-                 REASONING: T2's burst (Rome) is the larger share (3 of
-                 every 10 posts vs. T3's 1) and, unlike ten #1 — where
-                 T2's Sitges burst was drawn early, mid-way through T1's
-                 six slots — it was never drawn at all this ten despite
-                 the standing rule that T2/T3 bursts are "drawn within
-                 this ten as their shares come up... not queued behind
-                 all six Tier 1 slots." That makes Rome the more overdue
-                 of the two remaining shares, so it draws next; Curitiba
-                 (T3) follows once Rome's turn is spent. Check Rome's
-                 queue in post-plan.md before drafting — if empty or
-                 blocked, that turn becomes a seeding pass per "Seed on
-                 turn," not an automatic hold.
+**TEN #2 CLOSED, 2026-09-08 — all three tiers spent: T1 6 of 6, T2 1 of
+3 (closed short, see t2-spent above), T3 1 of 1 (Curitiba/Changes, see
+above). Per "Writing the pointer," all three shares spent means ten #3
+opens fresh below** — `spent`, `t1-spent`, `t2-spent`, `t3-spent` reset
+to blank/zero for the new ten; the history above stays as the record of
+what ten #2 actually shipped, not deleted.
+
+t1-spent (ten #3): nothing shipped yet.
+t2-spent (ten #3): nothing shipped yet. Rome's queue still holds its
+                 three now-second-sourced leads (Terrazza Hey Güey @
+                 Chapter Roma, Monk Garden, Kalavrì) for whenever Rome's
+                 burst comes up again.
+t3-spent (ten #3): nothing shipped yet.
+NEXT-UP:         San Francisco (Tier 1 round-robin, first slot of ten
+                 #3). Per "share of output," Tier 1's six slots open
+                 each ten by default; Tier 2/Tier 3 bursts (Rome next
+                 for T2, then whichever Tier 3 city is next in t3-draw
+                 order) get slotted in whenever convenient within the
+                 ten, per the ledger-not-queue rule, rather than being
+                 forced to go first. San Francisco is next in t1-order
+                 after ten #2 ended its T1 round-robin on Brighton.
+                 **Flag: San Francisco's queue is FULLY DRAINED** (see
+                 ten #2's own t1-spent note — its last open item shipped
+                 2026-09-07) — per "Seed on turn," SF's ten #3 turn is a
+                 `near-sources-war-room` seeding pass, not a direct
+                 draw, unless a fresh queue item is added before then.
+                 Do not skip SF preemptively; run the seed when its turn
+                 actually comes.
+
+                 Historical pointer reasoning, kept for the record of
+                 how ten #2 actually played out (no longer governs
+                 ten #3's NEXT-UP, set fresh above):
 
                  CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
                  1) — DRAW" while the tier roster above, updated the same
@@ -399,11 +413,18 @@ NEXT-UP:         Curitiba (Tier 3 burst). With Tier 1 (6 of 6) and now
                  that it is not actually in Bangkok. The standing Tier 1
                  sustainability reassessment is now MOOT — the demotion
                  to Tier 2 is the call that question was asking for.
-then:            after NYC, follow t1-order above. Tier 2's and Tier
-                 3's bursts (Rome, Curitiba) get drawn within this ten as
-                 their shares come up — they are not queued behind all
-                 six Tier 1 slots.
-t3-draw:         Curitiba (next cleared), then Salvador. Porto Alegre
+then:            after San Francisco, follow t1-order above (Oakland →
+                 NYC → London → Brighton → wraps to San Francisco).
+                 Tier 2's burst (Rome) and Tier 3's burst (Salvador, next
+                 in t3-draw order after Curitiba) get drawn within ten
+                 #3 as their shares come up — they are not queued behind
+                 all six Tier 1 slots.
+t3-draw:         Salvador (next cleared after Curitiba), then
+                 Florianópolis/Recife/Belo Horizonte once one of them
+                 clears its held status. Curitiba SERVED 2026-09-08
+                 (Changes) — its post-plan.md queue still has 92 Graus
+                 and Harvest Folk Bar unspent, but the rotation slot is
+                 spent. Porto Alegre
                  SERVED 2026-09-04 — its post-plan.md queue still has
                  unspent candidates, but the rotation slot is spent.
 held:            Seattle (T2, no queue) · Florianópolis, Recife,

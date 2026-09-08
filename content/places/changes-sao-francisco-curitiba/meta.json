@@ -1,0 +1,98 @@
+{
+  "slug": "changes-sao-francisco-curitiba",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": -25.4247919,
+    "lng": -49.276236
+  },
+  "place": {
+    "city": "Curitiba",
+    "neighborhood": "São Francisco",
+    "region": "Paraná",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Changes (@changes.cwb) on Instagram",
+      "url": "https://www.instagram.com/changes.cwb/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Tribuna do Paraná — Antigo Empório São Francisco vai reabrir, de novo, em nova proposta",
+      "url": "https://www.tribunapr.com.br/viva/antigo-emporio-sao-francisco-vai-reabrir-de-novo-em-nova-proposta/",
+      "feedId": null,
+      "originalPublishedAt": "2026-05-20T00:00:00Z"
+    },
+    {
+      "name": "Band A — O rock voltou à esquina! Veja como ficou o Changes",
+      "url": "https://www.bandab.com.br/cultura/geral/changes-bar-sao-francisco-curitiba-fotos/",
+      "feedId": null,
+      "originalPublishedAt": "2025-10-09T00:00:00Z"
+    },
+    {
+      "name": "Bora Curitiba — Changes reabre neste sábado com shows de Relespública e Anacrônica",
+      "url": "https://boracuritiba.wordpress.com/2026/06/04/bar-changes-reabre-curitiba-rock-2026/",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-04T00:00:00Z"
+    },
+    {
+      "name": "Jornal A Cena — Quatro nomes centrais da cena curitibana se apresentam juntos no Changes",
+      "url": "https://jornalacena.com.br/quatro-nomes-centrais-da-cena-curitibana-se-apresentam-juntos-no-changes/",
+      "feedId": null,
+      "originalPublishedAt": "2025-12-10T00:00:00Z"
+    },
+    {
+      "name": "Comer & Curtir — Changes inaugura nova fase da cena rock em Curitiba",
+      "url": "https://comerecurtir.com.br/changes-inaugura-nova-fase-da-cena-rock-com-shows-historicos/",
+      "feedId": null,
+      "originalPublishedAt": "2025-10-08T00:00:00Z"
+    },
+    {
+      "name": "Google Maps listing — Changes, R. Presidente Carlos Cavalcanti 1122",
+      "url": "https://www.google.com/maps/place/Changes/@-25.4247919,-49.276236,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce5e21db55f7f:0xfda4a03bf751350d!8m2!3d-25.4247919!4d-49.276236!16s%2Fg%2F11yk2sb0r7",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "r/curitiba — \"Alguém sabe se o bar Changes ... está funcionando?\" (Jan 2026 thread)",
+      "url": "https://www.reddit.com/r/curitiba/comments/1ql9506/algu%C3%A9m_sabe_se_o_bar_changes_aquele_que_abriu_no/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-24T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://boracuritiba.wordpress.com/wp-content/uploads/2026/06/changes.jpg",
+    "attribution": "Photo via Bora Curitiba's coverage of the June 2026 reopening",
+    "attributionLink": "https://boracuritiba.wordpress.com/2026/06/04/bar-changes-reabre-curitiba-rock-2026/",
+    "licenseNote": "Press photo run alongside Bora Curitiba's own reporting on the venue's June 2026 reopening, used here in editorial coverage of that same reopening. Used editorially with attribution and a link back to the source article; no separate photographer credit given in the original piece."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T18:40:54Z",
+      "note": "Curitiba's Tier 3 burst for ten #2 (content-rotation). Queue lead was a single-pass entry naming the address as Rua Presidente Carlos Cavalcanti 1138 — re-verified from scratch rather than trusted: the venue's own Instagram (@changes.cwb, 11.9K followers) and its live Google Business listing both give 1122, not 1138 (several 2025 press pieces, including Band A and Tribuna do Paraná, printed 1138; Jornal A Cena printed 1122). Went with the two first-party sources over the majority of press. Full history assembled across six outlets: the room occupies the same 19th-century corner as Empório São Francisco (until 2018) then Peppers (2019-May 2024); Changes opened under new owners (Bruno Dvorak, Inys Tavares Dvorak, Felipe Alves, who also run The Bowie in Alto da XV) on 10-11 October 2025 with Faichecleres/Dissonantes and Syd Vinicius/Candyman Club, in partnership with Swamp brewery. THE ACTUAL FRESHNESS ANGLE, found via r/curitiba rather than any press outlet: a 24 Jan 2026 thread ('Alguém sabe se o bar Changes ... está funcionando?') shows the community noticing the venue go dark after a Dec 2025 show got moved to The Bowie, with a top-voted reply flatly stating 'Não vingou o lugar. Está fechado mesmo' (it didn't work out, it's genuinely closed) against a second commenter who'd been there on a Monday and found it open — real, dated, contradictory testimony from exactly the gap window. Tribuna do Paraná (May 2026) resolves the contradiction with the actual cause: structural water-infiltration damage from heavy late-2025 rains, not a failed concept, prompting a second reopening on 6 June 2026 (Relespública, Anacrônica) with capacity deliberately cut from 480 to 380, a new beer partner (Bastards, swapping out Swamp), an expanded burger/shareables menu, and an explicit target audience of 35+. Research floor: near-deep-researcher multi-source (7 outlets); Reddit leg RAN (r/curitiba thread above, read via claude-in-chrome after reddit.com direct-fetch attempts returned tool errors — the .json endpoint worked through the browser); Google reviews leg RAN via the live Google Business listing (4.4/61, R$40-100/pessoa) read via claude-in-chrome, including a low-scored ~Jan 2026 review (Murillo Carlesso) describing a frustrating Christmas-night ticketing experience, paraphrased rather than fully quoted since the visible text was truncated by the UI. Curitiba Cult (dated-listings feed) was checked specifically for Changes per near-events and returned nothing — a real negative, logged rather than glossed; Plural (crowdfunded indie outlet) was checked and has substantial venue reporting on 92 Graus (a sister queue candidate) but nothing on Changes specifically, also logged. No genuine forward-dated public event beyond the 6 June 2026 reopening bill was found as of this research pass, so no near-events hook beyond that date is claimed. Five-plus preferred-sources.md-adjacent entries consulted: Instagram, Tribuna do Paraná, Google Business listing, r/curitiba, Band A/Jornal A Cena/Comer & Curtir press cluster. Operator ground-truth check considered and skipped: Curitiba is outside the Baixada Santista/São Paulo/Rio zone the operator has direct knowledge of, so this was not held for his input; noted here per the research floor's own instruction rather than silently omitted. Dedupe: node scripts/check-duplicates.mjs run clean, no Curitiba conflicts (Curitiba has no other pins yet, so this is the city's first). Geocode: initial pass decoded coordinates from the Google Maps plus-code shown against the venue's listing (HPGF+3G, Curitiba); check-geocodes.mjs correctly rejected that as under the 0.9 confidence floor, so it was replaced with the actual listing-pin coordinates read via claude-in-chrome's Share-link URL on the live Google Maps place card (-25.4247919, -49.276236), confidence 1, ~50m from the plus-code estimate. check-geocodes.mjs passed on the corrected pin. Build: npx next build verified. Revenue pass: no affiliate or ad-sales opportunity logged (no ticketed event with a live sales link at time of writing, no advertiser relationship); backlink-pr candidate logged for Band A given its detailed original photography and reporting on the venue twice over. Trust: auto (verified independent local press cluster plus first-party channels, no operator/review-trust flag on the queue entry)."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Changes, R. Presidente Carlos Cavalcanti, 1122, São Francisco, Curitiba — Google Maps listing pin",
+    "verifiedAt": "2026-09-08T18:40:54Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Changes/@-25.4247919,-49.276236,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce5e21db55f7f:0xfda4a03bf751350d!8m2!3d-25.4247919!4d-49.276236!16s%2Fg%2F11yk2sb0r7"
+  },
+  "publishedAt": "2026-09-08T18:40:54Z",
+  "updatedAt": "2026-09-08T18:40:54Z"
+}

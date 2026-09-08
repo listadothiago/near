@@ -180,6 +180,17 @@ Logged 2026-09-08 off `the-actors-kemptown-brighton`. Nothing sent.
 - **State:** `prospect`
 
 
+### Changes, São Francisco, Curitiba (2026-09-08)
+
+- **Bora Curitiba** — the source of both Figure images in the piece, an
+  independent local blog with genuine original reporting on the venue's
+  June 2026 reopening; a natural warm link once outreach unfreezes.
+- **Band A** — deep original opening-weekend coverage with quotes from
+  both co-owners; a plausible link/share target on the strength of that
+  reporting.
+- **Touches:** none. Logged as prospects 2026-09-08.
+- **State:** `prospect`
+
 ## Closed / declined
 
 _None yet._

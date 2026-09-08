@@ -98,6 +98,13 @@ Logged 2026-09-08.
 - **Verdict:** no affiliate link.
 
 
+### Changes, São Francisco, Curitiba (2026-09-08)
+
+- A live-music bar pin, not a ticketed event or accommodation — no
+  natural purchase moment found (no live Sympla/ticketed-event link at
+  time of writing, no approved program).
+- **Verdict:** no affiliate link.
+
 ## Closed / declined
 
 _None yet._

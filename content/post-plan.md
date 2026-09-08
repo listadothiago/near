@@ -706,15 +706,54 @@ still open; needs a pt-BR editor call.
 ### Curitiba (Tier 3) — SEEDED 2026-09-03, CLEARED
 
 Plural (crowdfunded 2019, takes no public advertising money) plus
-Curitiba Cult for dated listings. Same caveat: leads, not verified.
+Curitiba Cult for dated listings. Both re-verified live 2026-09-08:
+Plural (plural.jor.br) resolves and has substantial current reporting on
+the Curitiba underground scene (a 92 Graus fundraiser story ran there,
+see below), though nothing on Changes specifically — logged, not
+glossed. Curitiba Cult (curitibacult.com.br) resolves but is a
+listings-grade feed and returned nothing for Changes either. Same
+caveat as before for anything not yet drafted: leads, not verified.
 
+- [x] **Changes**, R. Presidente Carlos Cavalcanti — SHIPPED
+  2026-09-08 as `changes-sao-francisco-curitiba`, STEFAN, all six
+  locales, `trust: auto`. This spent Tier 3's burst for ten #2 and is
+  Curitiba's (and Curitiba's own) first Near pin. Full pipeline run:
+  research floor met via near-deep-researcher across 7 outlets (Band A,
+  Tribuna do Paraná, Bora Curitiba, Jornal A Cena, Comer & Curtir, the
+  venue's own Instagram, Google's live Business listing); Reddit leg
+  RAN and was the actual angle — a 24 Jan 2026 r/curitiba thread caught
+  the community noticing the venue go dark, with contradictory
+  first-hand replies ("está fechado mesmo" vs. "tava funcionando"),
+  read via claude-in-chrome after reddit.com direct-fetch attempts
+  errored; Google reviews leg RAN (4.4/61, R$40-100/pessoa, one
+  paraphrased low-rated Christmas-night complaint). CORRECTIONS found:
+  (1) the address is 1122, not the 1138 the queue entry and most 2025
+  press printed — resolved in favor of the venue's own live Instagram
+  bio and Google Business listing over the press majority; (2) the
+  queue's "reopened 2026" undersold it — this is a SECOND reopening
+  (first: 10-11 Oct 2025, went dark by Dec 2025; second: 6 Jun 2026,
+  after fixing storm water-infiltration damage, capacity cut 480→380).
+  Dedupe: `check-duplicates.mjs` clean, no Curitiba conflicts (city's
+  first pin). Geocode: `check-geocodes.mjs` passed on the actual
+  Google Maps listing pin (confidence 1), after an initial plus-code
+  decode attempt correctly failed the 0.9 floor and was replaced.
+  Build: `npx next build` verified. Revenue pass: no affiliate link (no
+  ticketed-event purchase moment); backlink-pr prospects logged for
+  Band A and Bora Curitiba; ad-sales prospects logged for Changes
+  itself and its sister venue The Bowie. New preferred-sources.md
+  candidates logged: bandab.com.br, boracuritiba.wordpress.com,
+  tribunapr.com.br, instagram.com/changes.cwb.
 - [ ] **92 Graus The Underground Pub**, São Francisco — staging original
   bands since 1991, described locally as the city's most traditional
-  alternative music house.
-- [ ] **Changes**, R. Presidente Carlos Cavalcanti 1138, São Francisco —
-  reopened 2026 on a historic corner, with ticketed curation. A
-  reopening in the current year is exactly the freshness angle Near
-  wants; get the date from Plural.
+  alternative music house. **Note found 2026-09-08 while sourcing
+  Changes:** a Plural piece ("Uma guitarra pode salvar o 92") shows the
+  venue running a fundraiser raffle to cover bills, and a separate 2025
+  press piece reported it "vai fechar as portas depois de 30 anos"
+  (closing after 30 years) while a Dec 2025 piece instead celebrated
+  "34 anos" with two weekends of shows — a genuine, unresolved
+  contradiction that needs verification before drafting, not more
+  discovery. Strongest remaining Curitiba candidate for the city's next
+  turn.
 - [ ] **Harvest Folk Bar**, São Francisco — small room, folk and
   acoustic.
 

@@ -118,6 +118,16 @@ Logged 2026-09-08. Nothing sent; outreach frozen.
 - **State:** `prospect`
 
 
+### Changes, São Francisco, Curitiba (2026-09-08)
+
+- **Changes itself** — Curitiba's first Near pin, a two-time-reopened
+  venue with an active booking calendar; plausible advertiser lead once
+  Curitiba coverage has more depth to sell against.
+- **The Bowie** (Alto da XV) — the same ownership group's sister venue,
+  surfaced by this research; a related lead for the same reason.
+- **Touches:** none. Logged as prospects 2026-09-08.
+- **State:** `prospect`
+
 ## Closed / declined
 
 _None yet._
