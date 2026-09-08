@@ -301,7 +301,10 @@ export default function Board({
             banner (2026-09-02), which buys back 150px of this height
             budget — but this guard stays, because the map itself is the
             variable part and can still overflow on short viewports. */}
-        <section className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:overflow-x-hidden">
+        <section
+          id="board-map"
+          className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:overflow-x-hidden scroll-mt-20"
+        >
           {/* top-20 (not top-4): the sticky header collapses but never
               disappears, so a small offset let the map ride up under it —
               this clears even the compact header's height (operator,
