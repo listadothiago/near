@@ -311,3 +311,10 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 | **thiago baraldi**  | Curator      | Human site curator (`/about/thiago`)                                                                          | 8-bit retro avatar with glasses & mustache  |
 
 Completed work lives in `BACKLOG-ARCHIVE.md`.
+
+**map-sidebar ad below the home page map: pulled, not fixed (2026-09-08).** Third round of this same overflow bug (P0.7 stretch/h-full fix, then a flex-row/flex-col wrapper fix that checked out clean on localhost via computed-layout inspection — no element overflowing its box — but the operator still saw it broken live). Rather than burn more tokens chasing a repro gap between localhost and live, removed the `mapPromo`/`map-sidebar` `HousePromo` call entirely from `app/[locale]/page.tsx`; `Board.tsx`'s `mapPromo` prop is optional so the slot and its wrapper `<div>` just don't render. The `board-inline` mrec promo (the other `HousePromo` usage, same page) was left alone — this note only covers `map-sidebar`. If this placement comes back: verify against the actual deployed/live URL, not just `next dev`, before calling it fixed — whatever's different between those two environments is what broke this twice.
+
+discover view headlines are still boring https://claude.ai/code/artifact/42d66fd6-2f43-478d-9103-17110d90dd49 apply discover police to capture issues. I love this tool btw, are you capable of creating a similar artifact that shows the site and issues like this but in the Augmented Reality/Virtual Reality view or is that huge effort? i did install a little chrome plugin that renders ar meta view. our ar view is currently quite shit
+
+
+

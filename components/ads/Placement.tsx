@@ -227,43 +227,58 @@ export default function Placement({
             </span>
           )}
 
+          {/* Horizontal formats (leaderboard, mobile-banner) put the image
+              beside the type, not behind it — this wrapper stacks kicker/
+              title/CTA into a column that shares the row with the image
+              instead of running them inline as flex-row siblings, which is
+              what let the headline overflow the box (P0). Vertical/poster
+              formats use `contents` so the wrapper stays invisible and the
+              existing column layout on the Link itself still applies. */}
           <span
-            className={`relative font-mono uppercase tracking-wide ${type.kicker} ${
-              horizontal ? "flex-none" : ""
-            } ${posterImage ? "text-white/80" : ""}`}
+            className={
+              horizontal
+                ? "relative flex min-w-0 flex-1 flex-col justify-center gap-0.5"
+                : "contents"
+            }
           >
-            {promoKicker}
-          </span>
-
-          <span
-            className={`relative font-display font-bold uppercase tracking-[-1px] ${type.title} ${
-              horizontal ? "flex-none" : ""
-            } ${posterImage ? "text-white" : ""}`}
-          >
-            {promoTitle}
-          </span>
-
-          {/* The teaser is the article's own dek or tagline — never a
-              line written to sell it. A house ad that overpromises is
-              still a broken promise when the reader arrives. */}
-          {promoTeaser && (
             <span
-              className={`relative italic ${type.teaser} ${
-                posterImage
-                  ? "text-white/85"
-                  : "text-muted group-hover/ad:text-black/70"
+              className={`relative font-mono uppercase tracking-wide ${type.kicker} ${
+                posterImage ? "text-white/80" : ""
               }`}
             >
-              {promoTeaser}
+              {promoKicker}
             </span>
-          )}
 
-          <span
-            className={`relative font-mono uppercase tracking-wide underline underline-offset-4 decoration-2 ${type.cta} ${
-              horizontal ? "ml-auto flex-none" : ""
-            } ${posterImage ? "text-accent" : ""}`}
-          >
-            {t("readOn")}
+            <span
+              className={`relative font-display font-bold uppercase tracking-[-1px] ${type.title} ${
+                posterImage ? "text-white" : ""
+              }`}
+            >
+              {promoTitle}
+            </span>
+
+            {/* The teaser is the article's own dek or tagline — never a
+                line written to sell it. A house ad that overpromises is
+                still a broken promise when the reader arrives. */}
+            {promoTeaser && (
+              <span
+                className={`relative italic ${type.teaser} ${
+                  posterImage
+                    ? "text-white/85"
+                    : "text-muted group-hover/ad:text-black/70"
+                }`}
+              >
+                {promoTeaser}
+              </span>
+            )}
+
+            <span
+              className={`relative font-mono uppercase tracking-wide underline underline-offset-4 decoration-2 ${type.cta} ${
+                posterImage ? "text-accent" : ""
+              }`}
+            >
+              {t("readOn")}
+            </span>
           </span>
         </Link>
       </div>

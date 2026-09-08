@@ -70,20 +70,8 @@ export default async function HomePage({
             stretch
           />
         }
-        // Fixed (non-stretch) mobile-banner: the earlier attempt used
-        // `stretch`, which puts `h-full` on a box with no bounded-height
-        // ancestor inside the sticky sidebar, so it grew to match the
-        // section's scrollable content instead of the 100px banner and
-        // overflowed (P0.7). A fixed-size banner with `max-w-full` (set
-        // in Placement's SIZES) shrinks safely at narrower sidebar widths
-        // without that failure mode.
-        mapPromo={
-          <HousePromo
-            locale={locale as ContentLocale}
-            slot="map-sidebar"
-            size="mobile-banner"
-          />
-        }
+        // map-sidebar promo pulled entirely — see BACKLOG.md (P0, 2026-09-08)
+        // for why. Do not re-add without a live (not just localhost) check.
       />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />
