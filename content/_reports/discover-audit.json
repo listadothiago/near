@@ -1,21 +1,372 @@
 [
   {
+    "slug": "1234-go-records-temescal-oakland",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/1-2-3-4_Go%21_Records.jpg",
+    "ok": false,
+    "width": 675,
+    "height": 1200,
+    "aspect": "0.563",
+    "reason": "width 675px < 1200px; aspect 0.56:1, not ~16:9 (1.78:1)"
+  },
+  {
+    "slug": "amuse-beach-club-sao-vicente",
+    "url": "https://near.tips/places/amuse-beach-club-sao-vicente/hero.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "balcao-arpoador-rio",
+    "url": "https://static.wixstatic.com/media/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg/v1/fill/w_1600,h_900/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "bangkok-art-biennale-2026",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/BKK_Art_and_Culture_Centre_%28IV%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "bar-das-sao-paulo",
+    "url": "https://catracalivre.com.br/i/RuDvTDKqGupaxw695Zgx_jBelqmLz82fGfosK5gUzzQ/rs:fill:1200:630:1/g:sm/q:80/bG9jYWw6Ly8vMjAyMC8xMC9kYXMtYWNoYWRvcy1lbG8tMS5qcGc",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "bar-fel-copan-sao-paulo",
+    "url": "https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2021/05/20044118/fel-bar.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "bar-italia-soho-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Bar_Italia_2025-01-27.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "bar-skula-oakland",
+    "url": "https://oaklandside.org/wp-content/uploads/2026/07/large-NATERA_NOSH_BAR-SKULA_023.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "barraca-da-dheia-guaruja",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Rainbow_flag_and_blue_skies.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "beco-do-batman-sao-paulo",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Beco_do_Batman_-_Vila-Madalena%2C_S%C3%A3o_Paulo_-_SP_07.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "berry-bros-and-rudd-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/London_Shopping_0020_%286222742033%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "borough-market-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/London_-_Borough_Market_%281%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "boxpark-shoreditch-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/London_-_BOXPARK_Shoreditch_%282%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "brockwell-lido-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brockwell_Lido.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "cabaret-latino-teatro-eskyna-santos",
+    "url": "https://www.atribuna.com.br/image/policy:1.518544:1781781569/image.jpg?f=3x2",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "cafe-t-mandje-amsterdam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Tmandje-interior-2022a.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "canto-dos-ursos-praia-grande",
+    "url": "https://near.tips/places/canto-dos-ursos-praia-grande/hero-interior.jpeg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "caos-bar-cidade-baixa-porto-alegre",
+    "url": "https://caospoa.com.br/wp-content/uploads/2025/09/DSC_9426-redimensionado-para-grande-1.jpeg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "casa-frontaria-azulejada-santos",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/38/CasaAzulejada1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "casino-prado-sitges",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Casino_Prado_%28Sitges%29_-_1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "central-station-kings-cross-london",
+    "url": "https://centralstation.co.uk/wp-content/uploads/2024/05/187025545_221202523103361_8392861923650386644_n-1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "cuia-copan-sao-paulo",
+    "url": "https://www.vaisefood.com/wp-content/uploads/2021/01/cuia6.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "dalston-superstore-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Dalston_Superstore%2C_Dalston%2C_E8_%285273182679%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "de-trut-amsterdam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Trut-amsterdam.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "djapa-sao-paulo",
+    "url": "https://www.baressp.com.br/bares/fotos/Djapa_fachada_26012015111422.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "dollywood-pigeon-forge",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Thunderhead_%28Dollywood%29_01.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "dolphin-club-san-francisco",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Dolphin_club_front.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
     "slug": "e-pellicci-bethnal-green-london",
     "url": "https://upload.wikimedia.org/wikipedia/commons/d/de/London_Borough_of_Tower_Hamlets_-_E._Pellicci_Cafe_-_20230330173314.jpg",
-    "ok": false,
-    "width": 747,
-    "height": 1328,
-    "aspect": "0.563",
-    "reason": "width 747px < 1200px; aspect 0.56:1, not ~16:9 (1.78:1)"
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "eisenherz-buchladen-berlin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/EisenherzMotz2014.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "el-califa-de-leon-flatiron-nyc",
+    "url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "elder-hudson-yards-nyc",
+    "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "gato-vadio-porto",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/POR_Porto_Rua_da_Maternidade_03.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "gays-the-word-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gays_the_Word_Storefront.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "gilbert-and-george-centre-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Heneage_Street%2C_Spitalfields_-_geograph.org.uk_-_4340578.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "green-door-store-brighton",
+    "url": "https://thegreendoorstore.co.uk/wp-content/uploads/2021/06/Wheelchair-pic-scaled.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
   },
   {
     "slug": "hausu-peckham-london",
     "url": "https://static.wixstatic.com/media/0da428_e676db72260f402297a379c1894f5fec~mv2.jpg",
-    "ok": false,
-    "width": 4419,
-    "height": 5719,
-    "aspect": "0.773",
-    "reason": "aspect 0.77:1, not ~16:9 (1.78:1)"
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "hazlitts-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Hazlitt%27s_Hotel%2C_Frith_Street%2C_Soho.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "heinolds-first-last-chance-oakland",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Heinold%E2%80%99s_First_and_Last_Chance%2C_Exterior_%282024%29-L1004644.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "ica-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Institute_of_Contemporary_Arts_-_17_May_2026.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "ishigaki-jujitsu-london",
+    "url": "https://near.tips/places/ishigaki-jujitsu-london/hero-illustration.jpeg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "jumbi-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Copeland_Road%2C_Peckham.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
   },
   {
     "slug": "kirbees-greenpoint-brooklyn",
@@ -27,13 +378,355 @@
     "reason": "pass"
   },
   {
+    "slug": "kween-astoria-queens",
+    "url": "https://images.unsplash.com/photo-1550218585-5a4e6bc59ebb",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "la-camionera-hackney-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/LesbianPrideFlag2010London.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "legends-hotel-brighton",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Marine_Parade%2C_Brighton_-_geograph.org.uk_-_4388744.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "lita-pinheiros-sao-paulo",
+    "url": "https://near.tips/places/lita-pinheiros-sao-paulo/hero.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "london-otters-rowing-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Royal_Victoria_Dock_at_dusk.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "lucky-saint-fitzrovia-london",
+    "url": "https://near.tips/places/lucky-saint-fitzrovia-london/hero-illustration.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "lx-factory-lisbon",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lisboa_LX_Factory_1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "made-cozinha-autoral-santos",
+    "url": "https://revistanove.com.br/wp-content/uploads/2026/05/Novo-Made-12-1089x650.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "marineterrein-binnenhaven-amsterdam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Amsterdam-MarineEtablissement-OpslagScheepvaartmuseum.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "maus-habitos-porto",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Garagem_Passos_Manuel_-_an_art_deco_multi-storey_garage_%2853276206093%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "megafauna-copan-sao-paulo",
+    "url": "https://offloadmedia.feverup.com/saopaulosecreto.com/wp-content/uploads/2020/12/22052932/127765046_221937402685546_1834884270949327248_n.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "michelberger-hotel-berlin",
+    "url": "https://near.tips/places/michelberger-hotel-berlin/hero.png",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "mobel-olfe-berlin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/M%C3%B6bel_Olfe_%2858503538%29.jpeg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
     "slug": "monkey-thief-hells-kitchen-new-york-city",
     "url": "https://images.getbento.com/accounts/276a77e21f675bd051d6c3fa4854da93/media/images/68515MonkeyThief_AlexStaniloff_072826-100.jpg",
-    "ok": false,
-    "width": 7893,
-    "height": 5265,
-    "aspect": "1.499",
-    "reason": "aspect 1.50:1, not ~16:9 (1.78:1)"
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "monument-contra-homofobia-sitges",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Sitges_gay-memorial.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "ocean-beach-cafe-san-francisco",
+    "url": "https://static.wixstatic.com/media/be4fb2_94a4517e4f304e2196c9718aed5b966b~mv2.png/v1/fit/w_2500,h_1330,al_c/be4fb2_94a4517e4f304e2196c9718aed5b966b~mv2.png",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "old-truman-brewery-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/London_-_The_Old_Truman_Brewery_%284%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "parada-lgbtqiapn-sao-vicente-2026",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Praia_do_Itarar%C3%A9%2C_Itarar%C3%A9_Beach_in_S%C3%A3o_Vicente.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "paraty-rj",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Paraty_-_Rio_de_Janeiro_%2822282343219%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "parrots-pub-sitges",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Sitges._Pla%C3%A7a_de_la_Ind%C3%BAstria.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "pracinha-do-seu-justino-sao-paulo",
+    "url": "https://www.baressp.com.br/bares/fotos2/pracinha-do-seu-justino-baressp-1-min_120220191738.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "praia-da-guaiuba-guaruja",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Praia_do_Tombo_e_Praia_do_Guaiuba_em_Guaruj%C3%A1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "praia-do-bonete-ilhabela",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Praia_do_Bonete_vista_de_cima.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "queer-surf-pacifica",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Linda_Mar_Beach%2C_Pacifica.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "quiosque-da-cris-sao-vicente",
+    "url": "https://near.tips/places/quiosque-da-cris-sao-vicente/hero-kiosk-flag.jpeg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "rabbit-books-and-bar-east-village-nyc",
+    "url": "https://www.therabbitbooksandbar.com/wp-content/uploads/2025/12/steven-hastings-rj4MHc5cmkQ-unsplash-1024x683.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "restaurante-almeida-santos",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Restaurante_Almeida_-_panoramio.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "rong-he-sao-paulo",
+    "url": "https://diariosgastronomicos.com.br/wp-content/uploads/2014/10/Rong-He-Liberdade-restaurante-chines-comida-chinesa-5.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "rush-hour-amsterdam",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Amsterdam_Rijksmonument_5641_Spuistraat_98.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "schwules-museum-berlin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Schwules_Museum%2A_Berlin.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "sipeos-east-bay",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Downtown_Walnut_Creek_02_BW.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "sitges-film-festival-2026",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Guillermo_del_Toro%2C_Festival_de_Sitges_2017.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "slimelight-electrowerkz-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Vile_Creature_at_Electrowerkz_%282022%29_01.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "so36-berlin",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/SO36_Oranienstrasse_Berlin.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "starline-san-pablo-gateway-oakland",
+    "url": "https://ww2.kqed.org/app/uploads/sites/2/2021/05/Image-from-iOS-3.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "stray-dog-mission-san-francisco",
+    "url": "https://assets.sfstandard.com/image/994911177489/image_g0e9vn54nl5j98v93evoqlv71h/-S1200x630-FPNG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "studio-voltaire-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Voltaire_Road_-_Clapham_Manor_Street_-_geograph.org.uk_-_4349859.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "teatro-clube-da-eskyna-santos",
+    "url": "https://www.atribuna.com.br/image/policy:1.518544:1781781569/image.jpg?f=3x2",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "thai-e-san-sao-paulo",
+    "url": "https://quegostoso.tur.br/wp-content/uploads/2021/02/thaiesanrestaurantetailandes_liberdadesp_1_foto_claudioschapochnik_quegostoso.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
   },
   {
     "slug": "the-divine-dalston-london",
@@ -54,6 +747,15 @@
     "reason": "pass"
   },
   {
+    "slug": "the-little-bookshop-east-williamsburg-brooklyn",
+    "url": "https://images.unsplash.com/photo-1750300521899-d7a6a847a211",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
     "slug": "the-pilgrm-paddington-london",
     "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnISf_MfNeyf7CSG0xXLRX698nrHwGpHk5keau7ojIFKH1W2HDQuxwZKYcYX4FUXoRbbj7lDSrNisEtoZn6lY3hg14iIjBqZruW21gJ6HNdkDyB-TGEzhu_pkB8waSNgMUelvfK=w1200-h675-c",
     "ok": true,
@@ -63,12 +765,93 @@
     "reason": "pass"
   },
   {
+    "slug": "the-stud-san-francisco",
+    "url": "https://images.squarespace-cdn.com/content/v1/5899708ee3df288fed2979ab/a89e55de-d3a0-46f4-9b50-441d66006ef0/low+res+gem+stud+sign.jpg?format=2500w",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "time-out-market-lisboa",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/TimeOut_Market_in_Lisbon.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
     "slug": "toad-bakery-camberwell-london",
     "url": "https://7db676643636e8f8bbf7.cdn6.editmysite.com/uploads/b/7db676643636e8f8bbf704738210486bce8edd84262e769812515a35ff4e0963/2025-11-13_11-32-10_1763033540.jpg",
-    "ok": false,
-    "width": 3500,
-    "height": 1543,
-    "aspect": "2.268",
-    "reason": "aspect 2.27:1, not ~16:9 (1.78:1)"
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "towa-liberdade-sao-paulo",
+    "url": "https://near.tips/places/towa-liberdade-sao-paulo/hero.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "trancoso-ba",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Quadrado_de_Trancoso%2C_Bahia.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "va-east-museum-stratford-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/V%26A_East_-_2025-08-24.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "va-east-storehouse-hackney-wick-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/View_from_the_second_floor%2C_V%26A_East_Storehouse_01.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "vag61-bologna",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Porta_San_Donato_-_Bologna.JPG",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "walthamstow-wetlands-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Reservoir_1%2C_Walthamstow_Wetlands_-_2022-10-08.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "wiltons-music-hall-london",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Wilton%27s_Music_Hall_-_Auditorium_%282013%29.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
   }
 ]
