@@ -1,0 +1,91 @@
+{
+  "slug": "the-new-parkway-theater-oakland",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": 37.813855,
+    "lng": -122.267477
+  },
+  "place": {
+    "city": "Oakland",
+    "neighborhood": "Uptown",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "The New Parkway — official site",
+      "url": "https://www.thenewparkway.com/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-08T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Speakeasy Theaters (New Parkway founding, 2012 reopening, 56 investors)",
+      "url": "https://en.wikipedia.org/wiki/Speakeasy_Theaters",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Visit Oakland — The New Parkway Theater listing",
+      "url": "https://www.visitoakland.com/listing/the-new-parkway-theater/1347/",
+      "feedId": null,
+      "originalPublishedAt": "2026-08-01T00:00:00Z"
+    },
+    {
+      "name": "Yelp — The New Parkway (Updated September 2026, 613 photos, 817 reviews)",
+      "url": "https://www.yelp.com/biz/the-new-parkway-oakland",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "CBS News San Francisco — Oakland Theater Named Among Nation's Best For Vegans (PETA ranking)",
+      "url": "https://www.cbsnews.com/amp/sanfrancisco/news/new-parkway-theater-oakland-vegan-peta",
+      "feedId": null,
+      "originalPublishedAt": "2026-02-01T00:00:00Z"
+    },
+    {
+      "name": "Art House Theaters — The New Parkway Theater",
+      "url": "https://www.arthousetheaters.com/theater/the-new-parkway-theater-oakland",
+      "feedId": null,
+      "originalPublishedAt": "2026-06-01T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — Parkway Theatre (original 1925 venue history)",
+      "url": "https://en.wikipedia.org/wiki/Parkway_Theatre",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://indy-systems.imgix.net/b3b7fy6vdp9t60yhh8s1ukzxdvtr?w=1200&auto=format,compress",
+    "attribution": "Courtesy The New Parkway Theater / thenewparkway.com",
+    "attributionLink": "https://www.thenewparkway.com/",
+    "licenseNote": "The venue's own promotional/hero photo, served from its own site (imgix CDN), used with attribution in editorial coverage of that venue. No identifiable faces; venue-specific and distinctive at thumbnail size."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T21:54:07.000Z",
+      "note": "San Francisco Bay Area Tier 1 cluster, near-batch-30 run 2026-09-07-batch-30, candidate 'The New Parkway Theater'. Confirmed as a real, currently operating second-run/independent cinema at 474 24th St, Oakland's Uptown district — distinct from the original Parkway Theatre (1925, Fruitvale, closed March 2009) and from the Fox Oakland Theatre. Trust: auto — multiple independent, current, credible sources corroborate identity, address and operating status: official site, Wikipedia (Speakeasy Theaters, the operating company), Visit Oakland, Yelp (updated September 2026, 613 photos/817 reviews), CBS News (PETA vegan-theater ranking coverage), Art House Theaters directory. Research floor: near-deep-researcher pass across the above; Reddit direct search returned no venue-specific r/oakland threads this session (search-index retry also came up empty for a venue this broadly reviewed on Yelp instead — logged, not treated as a silent skip); Google/Yelp reviews checked via web search for recent hours/food/seating signals (couches, bean bags, full food menu, dog-friendly resident husky Moksha) rather than a bare star average. Instagram not separately browsed live this session — logged as an open follow-up, not blocking, per the-bush precedent. No genuine far-out dated one-off event found for nesting; recurring weekly programming only (Open Mic 1st/3rd Mondays, Bingo & Beer Tuesdays, Drink & Draw Wednesdays, Team Trivia Thursdays), not nested. Dedupe: no existing Near pin at this address or in Uptown Oakland (existing Oakland pins are Temescal/downtown/Lake Merritt-adjacent — 1234 Go Records, Bar Skula, Heinold's First and Last Chance, Starline). Geocode is Google Maps-corroborated coordinates surfaced via search (Citymapper direct-link corroboration); confidence recorded at 0.92, not 1.0, since this session did not do a live interactive Maps pin-drop. Hero image: real venue photo from the theater's own site (imgix CDN), no faces, tier 1. Sign-off: near-tov-police voice pass, language-tic-police, near-legal-counsel (no defamation/likeness/licensing issues — copy is descriptive, not accusatory) and chief editor sign-off all clean this session; full findings not separately filed as an evidence packet given batch time constraints, recorded here instead."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.92,
+    "query": "The New Parkway Theater, 474 24th St, Oakland, CA 94612 — Uptown",
+    "verifiedAt": "2026-09-08T21:54:07.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=37.813855,-122.267477"
+  },
+  "publishedAt": "2026-09-08T21:54:07.000Z",
+  "updatedAt": "2026-09-08T21:54:07.000Z"
+}
