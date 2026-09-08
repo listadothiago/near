@@ -167,6 +167,20 @@ Logged 2026-09-08 off `the-actors-kemptown-brighton`. Nothing sent.
 - **Queer the Marly CIC** — the campaign organization itself; a piece
   documenting the ACV win is relevant to their own record-keeping and a
   plausible link/share target.
+
+### Bar Etienne, West Village / New York City — `prospect` (OUTREACH FROZEN)
+Logged 2026-09-08 off `bar-etienne-west-village-new-york-city`, batch-30.
+Nothing sent.
+- **Bar Etienne itself (@baretienne on Instagram)** — first-party, small
+  but engaged following (1,181) for a month-old bar; hero image on the
+  piece is sourced from their own feed with attribution, which is itself
+  a natural opener for a share/link ask once the freeze lifts.
+- **Thirst Behavior (Substack)** — independent drinks newsletter that ran
+  the earliest, most specific coverage (soft-opening date, wine program
+  detail); a genuinely relevant small outlet, not just an aggregator.
+- **The Infatuation** — already the piece's second independent source;
+  a relationship-maintenance touch (crediting their reporting) rather
+  than a cold ask, lower priority than the two above but worth a note.
 - **Touches:** none. Logged as prospects 2026-09-08.
 - **State:** `prospect`
 

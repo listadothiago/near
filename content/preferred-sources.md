@@ -69,6 +69,11 @@ source to the permanent catalog off a single lucky find):
   closure (structural water damage), resolving a contradiction visible
   on Reddit. Found researching `changes-sao-francisco-curitiba`,
   2026-09-08.
+- `thirstbehavior.substack.com` (Thirst Behavior — independent NYC drinks
+  newsletter) — earliest and most specific coverage of Bar Etienne found
+  this session (exact soft-opening date, wine-program detail, owner
+  lineage) ahead of the mainstream aggregators. Found researching
+  `bar-etienne-west-village-new-york-city`, 2026-09-08.
 - `instagram.com/changes.cwb` (Changes, Curitiba — first-party) — the
   bio carries the venue's current address and hours; used to resolve an
   address discrepancy (1122 vs. 1138) between it/Google's live listing
