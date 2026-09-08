@@ -8,17 +8,28 @@
     "michelberger-hotel-berlin",
     "hazlitts-london"
   ],
-  "coverImage": null,
+  "coverImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/collections/do-not-disturb-01-below-the-room/hero-illustration.png",
+    "attribution": "Illustration by NEAR — vector-derived abstract work",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "An original, conceptual hero for Do Not Disturb's launch issue: a hotel door-hanger sign, a brass luggage bell, a room key and muffled sound-wave lines, built from intentional vector geometry (SVG) and rasterized, not text-to-image generation. No legible text, no real people, does not depict any of the four featured hotels."
+  },
   "trust": "auto",
   "sponsored": false,
-  "status": "draft",
+  "status": "active",
   "statusHistory": [
     {
       "status": "draft",
       "at": "2026-09-08T19:41:00Z",
       "note": "First issue of Do Not Disturb, NITE-PORTER's new accommodation column (content/do-not-disturb.md, created this session). Operator-commissioned directly in chat ('can Nite Porter write his first Do Not Disturb column'), so trust: auto per rules.md's trust-gate. Scoped jointly with near-seo (query gap: comparison-shaped searches like 'hotel with a club downstairs' / 'will I be able to sleep' that no single place page targets) and near-trendsetter (real cross-piece pattern: three of Near's four published hotel pages are each explicitly honest about noise/activity below or around the room; Hazlitt's is the genuine outlier that actually sells and delivers silence). All four facts and NearLink targets drawn from already-published, already-sourced Near place pages (central-station-kings-cross-london, legends-hotel-brighton, michelberger-hotel-berlin, hazlitts-london) -- no new venue research needed, per the durable operator preference against re-researching settled facts. The-pilgrm-paddington-london considered and held for a future issue (its 'stripped-back' angle is a sustainability argument, not a noise one, and would have muddied this issue's thread). Visual package scoped with near-illustrator: gallery built from all four places' own already-attributed hero images (Figure components, one per hotel, no new sourcing/generation), a FlowDiagram spectrum ('sells the noise' to 'sells the silence') as live markup per near-illustrator's diagram rules, and an original hero illustration -- a visual pun on Do Not Disturb signage/a night-porter's bell/room key, riso/vector-derived style, not depicting any single venue. Held at status: draft solely because heroImage is still null pending near-illustrator generation tooling -- see content/photo-requests.md's do-not-disturb-01-below-the-room entry, same pattern as zombie-listicle-problem's own launch. English copy, sourcing (all facts traceable to the four cited place pages), link density (four internal NearLinks, plus the gallery's own external attributions) and the structural rules (sub-headers under 250 words, paragraphs under 100) are otherwise complete. Flip to active + dispatch near-translator's locale passes once the hero lands; content/do-not-disturb.md's Series Index and a new content/do-not-disturb-index.json get the slug prepended at that point, alongside near-tov-police, near-legal-counsel, chief editor sign-off and the google-discover-audit feed check."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T20:22:00Z",
+      "note": "Hero resolved without external generation tooling: operator asked whether a vector-derived illustration could substitute, per near-illustrator's own standing preference that vector-derived work beats an LLM-generated image when it can do the job. Built as intentional SVG geometry (door-hanger sign on a doorknob, brass bell, room key, muffled sound-wave lines bleeding from one edge, Near's charcoal/acid-green/red riso palette, no legible text, no real people), rasterized via headless Chrome (sharp's local libvips binary was broken in this environment) to 1600x900 (16:9, >300,000px, clears the Discover/OG card spec). Filed at public/collections/do-not-disturb-01-below-the-room/hero-illustration.png; content/photo-requests.md's queued LLM-generation entry for this hero removed as superseded. Sign-off pass run inline this session: near-tov-police (no banned openers, no internal-discourse leakage -- checked specifically for backlog/tier/rotation language per the red-team rule, none found), near-legal-counsel (no defamation-adjacent claims; every noise/venue characterization traces to the four already-published, already-fact-checked place pages; AI-disclosure present on the hero), chief editor (headline/shortTitle checked against catalogue for repeated formula, no collision found). google-discover-audit hero-card spec verified directly (1600x900px, JPEG-equivalent flat PNG well under the giant-scan-PNG red flag). All five other locales (es-ES, es-419, pt-BR, it, zh-CN) written as genuine local editions by near-translator's personas, not literal translations, before this flip -- full-locale-coverage gate satisfied. Slug prepended to content/do-not-disturb-index.json (new) and content/do-not-disturb.md's Series Index."
     }
   ],
   "publishedAt": "2026-09-08T19:41:00Z",
-  "updatedAt": "2026-09-08T19:41:00Z"
+  "updatedAt": "2026-09-08T20:22:00Z"
 }

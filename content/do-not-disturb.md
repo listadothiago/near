@@ -78,11 +78,34 @@ issue, tying to the real place pages it discusses via `placeSlugs`.
 
 ## Issue log
 
-- **Issue 1 (scoped 2026-09-08, not yet published):** "hotels honest, or
-  not, about what's below the room." Core: Central Station (King's
-  Cross), Legends Hotel (Brighton Kemptown), Michelberger Hotel (Berlin
-  Friedrichshain). Closing foil: Hazlitt's (Soho) — the one place that
-  actually sells silence. The Pilgrm (Paddington) considered and held for
-  a future issue about hotels that removed something on principle — a
-  different axis (sustainability, not noise) that would have muddied
-  this issue's thread.
+- **Issue 1 (published 2026-09-08):** "What's Actually Below the Room" —
+  `content/collections/do-not-disturb-01-below-the-room`. Core: Central
+  Station (King's Cross), Legends Hotel (Brighton Kemptown), Michelberger
+  Hotel (Berlin Friedrichshain). Closing foil: Hazlitt's (Soho) — the one
+  place that actually sells silence. The Pilgrm (Paddington) considered
+  and held for a future issue about hotels that removed something on
+  principle — a different axis (sustainability, not noise) that would
+  have muddied this issue's thread. Hero and one in-body gag illustration
+  are both original vector-derived work (built as SVG, rasterized via
+  headless Chrome — no LLM image generation used or needed), per the
+  operator's standing preference that a genuine vector-derived piece
+  beats an LLM-generated one whenever it can do the job just as well.
+  All six locales are genuine local editions, not literal translations.
+  Open follow-up, not blocking this issue: this column doesn't yet have
+  its own landing route + RSS feed the way the-setlist/editorial-column/
+  ladies-and-gentlethem/gastronomic-column each do — `content/do-not-
+  disturb-index.json` is created and ready, but the `app/[locale]/do-
+  not-disturb/` route + `content/do-not-disturb/feed.xml` still need
+  building (same shape as the other columns' routes) before the header
+  nav can link to it.
+
+## Format note
+
+**Operator directive, 2026-09-08:** NITE-PORTER may occasionally write
+LinkedIn-friendly hotel-industry issues — the same register shift the
+weekly editorial column already uses (see this doc's own reference to
+`content/editorial-column.md`'s audience note) — when a genuine industry-
+facing angle earns it (an ownership change, a labour story, a real
+hospitality-trade argument). This is an occasional option, not a new
+default register for the column; the normal night-porter voice stays
+the default for every issue that isn't specifically industry-facing.
