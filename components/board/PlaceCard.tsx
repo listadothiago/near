@@ -170,7 +170,12 @@ export default function PlaceCard({
         {place.snippet && (
           <p
             className={`text-[0.78rem] leading-snug ${
-              featured ? "line-clamp-3 md:line-clamp-4 md:text-[0.86rem]" : "line-clamp-3"
+              // Longer excerpts (BACKLOG P0.14 + P1.13a, operator directive
+              // 2026-09-07): five lines on a normal card, five on mobile
+              // rising to six on a featured card at desktop width, up from
+              // three/four — a card should read as an actual preview, not
+              // a teaser fragment.
+              featured ? "line-clamp-5 md:line-clamp-6 md:text-[0.86rem]" : "line-clamp-5"
             }`}
           >
             {place.snippet}
