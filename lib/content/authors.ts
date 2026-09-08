@@ -53,6 +53,11 @@ export const AUTHORS: Author[] = [
   // model as CICLOVIA rather than a regional editor. See
   // .claude/skills/buddy/SKILL.md, especially its legality-check rule.
   { slug: "buddy", handle: "BUDDY", beats: ["nightlife-sound", "wellness-fitness", "city-culture"] },
+  // Hip hop & house specialist, rotating writer on The Setlist (BACKLOG
+  // EPIC 4 roster, added 2026-09-08, operator directive) — joins the
+  // existing byline-rotation pool RUCIO/FERAL hand issues to, not a
+  // third orchestrator. See .claude/skills/808/SKILL.md.
+  { slug: "808", handle: "808", beats: ["nightlife-sound"] },
   // Editor of Ladies&Gentlethem (BACKLOG EPIC 4 roster, added 2026-09-01,
   // operator directive). Same orchestrator model as RUCIO on The
   // Setlist and RADAR-X on the weekly editorial column — see
