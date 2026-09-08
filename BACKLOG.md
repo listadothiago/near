@@ -171,9 +171,13 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Claude Sonnet 5 (cont'd)
+### Current handoff — 2026-09-08, Claude Sonnet 5 (Rome draft)
 
-- **Content rotation — IDLE, awaiting next session.** Rome's seeding pass (below) cleared the bar but the burst was not drafted this session. `NEXT-UP` is **Rome (Tier 2 burst, seeded 2026-09-08)** — the next session should draft directly from the queue in `content/post-plan.md`'s Rome section, starting with Attilio (Via di Villa Chigi 68, Trieste-Salario; already two-source corroborated), then Terrazza Hey Güey / Monk Garden / Kalavrì once each gets a second corroborating source per the standing research-floor rule. No `near-sources-war-room` work is needed again for Rome — only drafting via the full `near-write-article` pipeline (research floor, Reddit checks, six locales, mechanical gates, sign-off).
+- **Content rotation — IN PROGRESS (Claude Sonnet 5, 2026-09-08).** `NEXT-UP` is **Rome (Tier 2 burst, seeded 2026-09-08)**. Drafting directly from `content/post-plan.md`'s Rome queue, starting with Attilio (Via di Villa Chigi 68, Trieste-Salario; already two-source corroborated) via the full `near-write-article` pipeline, then as many of Terrazza Hey Güey / Monk Garden / Kalavrì as the research floor honestly substantiates (each needs a second corroborating source beyond `puntarellarossa.it` per the standing floor rule) — up to Tier 2's 3-post burst. No further `near-sources-war-room` work needed for Rome. Will flip to DONE with what shipped, locale/build/push confirmation, and the new NEXT-UP (Curitiba/Tier 3, once Tier 2's share is spent) on completion.
+
+### Prior handoff — 2026-09-08, Claude Sonnet 5 (cont'd)
+
+- **Content rotation — DONE (Claude Sonnet 5, 2026-09-08).** Rome's seeding pass cleared the bar (`instagram.com/vernissagerome` verified live; `puntarellarossa.it` onboarded as a new source, yielding 4 candidate pins: Attilio, Terrazza Hey Güey @ Chapter Roma, Monk Garden, Kalavrì) but the burst was not drafted in that session — a legitimate seed-only turn outcome per the content-rotation skill. `che.famo.stasera` was checked and does not resolve under that handle; not carried forward as verified. `NEXT-UP` stayed on Rome (seeded, burst not yet drawn) rather than advancing to Curitiba, since Tier 2's 3-post share hasn't actually been spent. Updated `content/post-plan.md`, `content/preferred-sources.md`, and `.claude/skills/content-rotation/SKILL.md`; committed and pushed at `19d9902`.
 
 ### Prior handoff — 2026-09-08, Claude Sonnet 5 (Rome burst)
 
