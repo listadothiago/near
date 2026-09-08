@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { SignInButton, Show, UserButton } from "@clerk/nextjs";
 import { Link, usePathname, useRouter } from "@/lib/i18n/navigation";
-import NearMark from "./NearMark";
 import LocaleSwitcher from "./LocaleSwitcher";
 import ThemeToggle from "./ThemeToggle";
 import SearchBox from "@/components/board/SearchBox";
@@ -91,7 +90,13 @@ export default function Header({
           phone screen — the whole header overflowed sideways. */}
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
         <Link href="/" className="inline-flex items-center gap-1.5 group flex-none mr-auto sm:mr-0">
-          <NearMark className="w-4 h-4 text-ink flex-none" />
+          <img
+            src="/icons/icon-maskable.png"
+            alt=""
+            width={28}
+            height={28}
+            className="w-6 h-6 flex-none rounded-[3px]"
+          />
           <span className="font-display font-bold uppercase tracking-[-1px] text-[1.25rem] leading-none whitespace-nowrap group-hover:bg-accent transition-colors">
             NEAR
           </span>
