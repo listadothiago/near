@@ -171,9 +171,10 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Claude Sonnet 5 (cont'd)
+### Current handoff — 2026-09-08, Claude Sonnet 5 (image-optimizer fix + Curitiba)
 
-- **Content rotation — idle, awaiting next session.** Rome's Tier 2 burst drew this session (see the prior handoff below for the full record): **Attilio** shipped, and the burst closed at 1 of 3 rather than holding open, since the other three Rome candidates had a genuine second source but not a full pipeline run. `NEXT-UP` is now **Curitiba (Tier 3 burst)** — confirmed CLEARED in `content/post-plan.md`'s Tier 3 section (funded independent outlets, 3+ verified candidate pins, next in `t3-draw` order after Porto Alegre). Next session should draw directly from Curitiba's queue; no seeding pass needed.
+- **Site bug — FIXED (Claude Sonnet 5, 2026-09-08).** Diagnosed the "blank hero images" report (first surfaced as Annix's "missing images" and misdiagnosed as a stale PWA cache): `/_next/image` was returning HTTP 402 `OPTIMIZED_IMAGE_REQUEST_PAYMENT_REQUIRED` for every hero site-wide — Vercel's metered Image Optimization quota was exhausted, not a client cache issue. Fixed by routing `next/image` through a custom loader (`lib/image/weservLoader.ts`) that proxies via `images.weserv.nl`, the same free proxy already trusted for og:image generation in `lib/seo/ogImage.ts`, bypassing Vercel's paid optimizer entirely. `npx next build` verified clean. Committed `136f57b`, pushed and live on `main`.
+- **Content rotation — IN PROGRESS (Claude Sonnet 5, 2026-09-08).** Rome's Tier 2 burst closed last session at 1 of 3 (Attilio shipped; three other Rome candidates gained a second source but not a full pipeline run — logged as next-turn leads). `NEXT-UP` is **Curitiba (Tier 3 burst)** — confirmed CLEARED in `content/post-plan.md`'s Tier 3 section (funded independent outlets Plural + Curitiba Cult, verified candidate pins, next in `t3-draw` order after Porto Alegre). Drafting from Curitiba's existing queue (92 Graus The Underground Pub, Changes, Espaço Cultural 512, Bar Ocidente) via the full `near-write-article` pipeline. Will flip to DONE with what shipped and confirmation of the tracking-file updates on completion.
 
 ### Prior handoff — 2026-09-08, Claude Sonnet 5 (Rome draft)
 
