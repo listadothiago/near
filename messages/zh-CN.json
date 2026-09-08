@@ -137,6 +137,7 @@
     "hideMap": "隐藏地图",
     "filters": "筛选",
     "useMyLocation": "我的位置",
+    "locatingLabel": "正在定位…",
     "mapCaption": "已定位 {count} 个地点",
     "nearest": "最近",
     "latest": "最新",

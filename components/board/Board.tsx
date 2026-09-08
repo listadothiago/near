@@ -300,9 +300,10 @@ export default function Board({
               type="button"
               onClick={locateMe}
               disabled={locating}
+              aria-busy={locating}
               className="font-mono text-[0.68rem] uppercase tracking-wide bg-accent text-black border-[2px] border-ink px-1.5 py-0.5 hover:bg-surface hover:text-ink transition-colors disabled:opacity-50"
             >
-              {t("useMyLocation")}
+              {locating ? t("locatingLabel") : t("useMyLocation")}
             </button>
           </div>
           {mapVisible && (
