@@ -188,9 +188,8 @@ export default function NearestLatestTabs({
           <>
           <PlaceCards
             places={pageItems}
-            distances={tab === "nearest" ? distances : undefined}
+            distances={distances}
             eventsByParent={eventsByParent}
-            tab={tab}
             promo={promo}
           />
           <InfiniteLoad

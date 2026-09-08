@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
@@ -6,7 +8,8 @@ import FavoriteButton from "./FavoriteButton";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
-import { formatContentDate, isRevised } from "@/lib/content/freshness";
+import { isRevised } from "@/lib/content/freshness";
+import { useContentDateText } from "@/lib/content/useContentDateText";
 
 /**
  * Distance the way a person would say it: metres up close, kilometres
@@ -23,14 +26,12 @@ export default function PlaceCard({
   place,
   distanceKm,
   upcomingEvent,
-  tab,
   featured = false,
 }: {
   place: PlaceSummary;
+  /** Shown as its own badge whenever known, regardless of the active tab. */
   distanceKm?: number;
   upcomingEvent?: UpcomingEvent;
-  /** Decides which stat leads the card — see the stat bar below. */
-  tab?: "nearest" | "latest";
   /** Wide treatment on desktop/tablet. Rhythm, not ranking — see PlaceCards. */
   featured?: boolean;
 }) {
@@ -61,7 +62,7 @@ export default function PlaceCard({
   // changed, not the shelf.
   const revised = isRevised(place.meta.publishedAt, place.meta.updatedAt);
   const stampIso = revised ? place.meta.updatedAt : place.meta.publishedAt;
-  const postedOn = formatContentDate(stampIso, locale);
+  const postedOn = useContentDateText(stampIso, locale);
 
   const sources = place.meta.sources;
   const leadSource = sources[0];
@@ -113,34 +114,43 @@ export default function PlaceCard({
           <span className="font-mono text-[0.62rem] truncate">
             {upcomingEvent.shortTitle ?? upcomingEvent.name}
           </span>
-          <span className="font-mono text-[0.58rem] ml-auto flex-none">
+          {/* Own badge, lime-on-black, a little bolder (operator,
+              2026-09-08) — was plain small text and easy to miss next
+              to the title it's competing with for space. */}
+          <span className="inline-flex items-center border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-mono text-[0.58rem] font-black ml-auto flex-none">
             {eventDate}
           </span>
         </div>
       )}
 
-      {/* The two things a reader judges a card by before reading it:
-          how far away it is (or how fresh it is), and who says so.
-          Both used to be a grey afterthought in the footer. */}
-      <div className="flex items-center justify-between gap-2 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
-        {tab === "nearest" && distanceKm !== undefined ? (
-          // Neon badge, not just bold text (BACKLOG P1.3) — distance is
-          // the reason this card is even in the Nearest tab, and used to
-          // read as a grey afterthought next to the source credit.
-          <span className="inline-flex items-center bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
+      {/* Distance and recency are the two things a reader judges a card
+          by before reading it — operator, 2026-09-08: both should
+          "ALWAYS appear as clear and prominent and easy to read as
+          possible," as their own badges, regardless of which tab is
+          active. Previously only one of the two showed, gated on `tab`.
+          Distance is never server-rendered (it only exists once
+          geolocation resolves client-side), which is also the safer
+          default for a crawler: nothing personalized/stale gets baked
+          into the HTML a bot sees. Recency uses a real `<time
+          dateTime>` so it stays a genuine, crawlable date rather than
+          just styled text. */}
+      <div className="flex flex-wrap items-center gap-1.5 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
+        {distanceKm !== undefined && (
+          <span className="inline-flex items-center border-[2px] border-ink bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
             {formatDistance(distanceKm)} {tp("away")}
           </span>
-        ) : (
-          <span className="font-bold whitespace-nowrap">
-            {revised && (
-              <span className="mr-1 bg-ink px-1 text-accent">{tf("revisedShort")}</span>
-            )}
-            <time dateTime={stampIso}>{postedOn}</time>
-          </span>
         )}
+        {/* Lime-on-black, a little bolder where this pairing already
+            existed (operator, 2026-09-08) — now the recency badge's
+            default look, not just its revised state, so it reads as a
+            distinct signal from the distance badge's black-on-lime. */}
+        <span className="inline-flex items-center border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-black whitespace-nowrap">
+          {revised && <span className="mr-1">{tf("revisedShort")}</span>}
+          <time dateTime={stampIso}>{postedOn}</time>
+        </span>
         {leadSource && (
           <span
-            className="flex items-baseline gap-1 min-w-0 text-muted"
+            className="flex items-baseline gap-1 min-w-0 text-muted ml-auto"
             title={sources.map((s) => s.name).join(", ")}
           >
             <span className="truncate">{leadSource.name}</span>

@@ -1,5 +1,8 @@
+"use client";
+
 import { useTranslations, useLocale } from "next-intl";
-import { formatContentDate, isRevised } from "@/lib/content/freshness";
+import { isRevised } from "@/lib/content/freshness";
+import { useContentDateText } from "@/lib/content/useContentDateText";
 
 /**
  * The reader-facing evidence for the tagline's freshness claim, at the
@@ -21,29 +24,24 @@ export default function Dateline({
   const t = useTranslations("freshness");
   const locale = useLocale();
   const revised = isRevised(publishedAt, updatedAt);
+  const publishedText = useContentDateText(publishedAt, locale);
+  const updatedText = useContentDateText(updatedAt, locale);
 
   return (
-    <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-[0.72rem] uppercase tracking-wide text-muted">
-      <span>
-        {t("published")}{" "}
-        <time dateTime={publishedAt}>
-          {formatContentDate(publishedAt, locale)}
-        </time>
+    <p className="mt-3 flex flex-wrap items-center gap-2 font-mono text-[0.72rem] uppercase tracking-wide">
+      {/* Own badge, not plain text (operator, 2026-09-08: recency should
+          read as a badge on the card AND the article page) — lime-on-
+          black, matching the board card's recency badge. */}
+      <span className="inline-flex items-center gap-1 border-[2px] border-ink bg-ink px-2 py-0.5 font-black text-accent">
+        {t("published")} <time dateTime={publishedAt}>{publishedText}</time>
       </span>
       {revised && (
-        <>
-          <span aria-hidden="true" className="opacity-50">
-            ·
-          </span>
-          {/* The revision is the claim being made, so it gets the accent
-              box and the publish date stays plain text beside it. */}
-          <span className="inline-flex items-center gap-1 border-[3px] border-ink bg-accent px-2 py-0.5 font-bold text-black">
-            {t("revised")}{" "}
-            <time dateTime={updatedAt}>
-              {formatContentDate(updatedAt, locale)}
-            </time>
-          </span>
-        </>
+        // The revision is the newer claim, so it gets the brighter
+        // black-on-lime treatment and sits beside the (still true)
+        // publish badge rather than replacing it.
+        <span className="inline-flex items-center gap-1 border-[2px] border-ink bg-accent px-2 py-0.5 font-black text-black">
+          {t("revised")} <time dateTime={updatedAt}>{updatedText}</time>
+        </span>
       )}
     </p>
   );

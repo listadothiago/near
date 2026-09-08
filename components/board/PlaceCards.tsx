@@ -29,14 +29,12 @@ export default function PlaceCards({
   places,
   distances,
   eventsByParent,
-  tab,
   promo,
 }: {
   places: PlaceSummary[];
   distances?: Map<string, number>;
   /** Venue slug -> its upcoming hosted events, soonest first. */
   eventsByParent?: Record<string, UpcomingEvent[]>;
-  tab?: "nearest" | "latest";
   /**
    * A house placement rendered as one cell of the grid. Passed in as a
    * node because it's a server component and this board is a client one.
@@ -63,7 +61,6 @@ export default function PlaceCards({
                 place={place}
                 distanceKm={distances?.get(place.meta.slug)}
                 upcomingEvent={eventsByParent?.[place.meta.slug]?.[0]}
-                tab={tab}
                 featured={featured}
               />
             </div>
