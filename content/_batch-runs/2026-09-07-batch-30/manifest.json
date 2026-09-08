@@ -5,14 +5,14 @@
   "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
   "startedAt": "2026-09-07T22:14:53.702829+00:00",
   "instructionHashes": {
-    "content/rules.md": "f2b1eef32386e04407a26e781e2789d0f63c4ab2549a87b87bec7f64fa87cdc9",
+    "content/rules.md": "c7c299b4d74978061084806adbfc0a2a0835039791551a626b7508c047af4119",
     ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
-    ".claude/skills/near-write-article/SKILL.md": "5f5afd12339904f4885805949b416437f029286faf9c07be11efd659e624a4ed"
+    ".claude/skills/near-write-article/SKILL.md": "e7d91490dde86515eba3f05e639bd639e2b832822321e296b058a6adee95909c"
   },
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 7,
+  "publishedCount": 8,
   "candidates": [
     {
       "name": "Hausu",
@@ -89,7 +89,7 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+          "verdict": "pass \u2014 SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
         }
       },
       "retryCount": 0,
@@ -129,7 +129,7 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
+          "verdict": "pass \u2014 Attitude, London the Inside, official site, Instagram, Reddit"
         }
       },
       "retryCount": 0,
@@ -169,10 +169,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+          "verdict": "pass \u2014 Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+          "verdict": "pass \u2014 Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
         }
       },
       "retryCount": 0,
@@ -212,10 +212,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+          "verdict": "pass \u2014 The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
+          "verdict": "pass \u2014 cheap-to-mid tier from FIXR/RA/Google Maps signals"
         }
       },
       "retryCount": 0,
@@ -255,10 +255,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
+          "verdict": "pass \u2014 Yatzer, momondo, Tripadvisor, official site"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
+          "verdict": "pass \u2014 momondo aggregate range + dated/occupancy-noted sample quote"
         },
         "accommodationAttempt": {
           "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
@@ -277,7 +277,7 @@
       }
     },
     {
-      "name": "Kirbee’s",
+      "name": "Kirbee\u2019s",
       "city": "New York City",
       "tier": 1,
       "state": "published",
@@ -301,10 +301,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+          "verdict": "pass \u2014 CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
+          "verdict": "pass \u2014 exact sourced prices ($45/$90), both sides of the pricing debate included"
         }
       },
       "retryCount": 0,
@@ -323,11 +323,41 @@
       "name": "Monkey Thief",
       "city": "New York City",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "w42st (indie), Cititour, Resy blog, What Now New York, official site; https://w42st.com/post/monkey-thief-finds-a-new-home-on-9th-ave/",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "geocode": {
+          "verdict": "pass (Nominatim exact-building match; Google Maps browser check aborted, see meta statusHistory)",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass \u2014 w42st, Cititour, Resy, What Now New York, official site, Yelp"
+        }
+      },
+      "retryCount": 0,
+      "slug": "monkey-thief-hells-kitchen-new-york-city",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
     {
       "name": "Bar Etienne",
@@ -430,7 +460,7 @@
       "retryCount": 0
     },
     {
-      "name": "Südblock",
+      "name": "S\u00fcdblock",
       "city": "Berlin",
       "tier": 2,
       "state": "candidate",
@@ -470,7 +500,7 @@
       "retryCount": 0
     },
     {
-      "name": "Skatecafé",
+      "name": "Skatecaf\u00e9",
       "city": "Amsterdam",
       "tier": 2,
       "state": "candidate",
@@ -490,7 +520,7 @@
       "retryCount": 0
     },
     {
-      "name": "WTF Gallery and Café",
+      "name": "WTF Gallery and Caf\u00e9",
       "city": "Bangkok",
       "tier": 2,
       "state": "candidate",
@@ -556,5 +586,5 @@
     "cto": "Existing flat files and tools; no new service",
     "techLead": "Incremental checks, saved states, final build and verification"
   },
-  "handoffNote": "Session ended 2026-09-07 ~23:59 UTC, low on tokens. 7 of 30 published (all London + Kirbee's/NYC start), all six locales each, all live and committed/pushed through 3fd37bb. 23 candidates remain: 5 more NYC (Monkey Thief, Bar Etienne, Cospa Ramen, Nowadays, The Bush), 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba. To resume: $near-batch-30 resume 2026-09-07-batch-30. Next candidate is Monkey Thief (NYC). New standing rules/tools this session: publishNote box, price-police, discover-view (real Discover image QA — found and fixed a real crop bug on 4 pieces, and a likely catalogue-wide image-aspect problem logged as BACKLOG item 14), North Star dashboard (scripts/progress-dashboard.mjs), near-ceo/parser/chief-editor knowledge-base files."
+  "handoffNote": "Session resumed 2026-09-08 ~00:20 UTC. 8 of 30 published (7 London/Kirbee's from prior session + Monkey Thief, Hell's Kitchen NYC, this session), all six locales, live and committed. Note: content/rules.md and near-write-article/SKILL.md changed since run start \u2014 instructionHashes updated to current; reread both in full this session, no gate invalidated by the changes (both changes were additive/clarifying, not contradicting prior verdicts). Standing finding: a Google Maps browser lookup for Monkey Thief's geocode returned the operator's own logged-in Chrome session defaulting to his home region in Brazil (Praia Grande/Baixada Santista) instead of resolving the NYC address \u2014 session was abandoned immediately per operator-location-privacy, no location detail was recorded or used; geocode instead verified via OpenStreetMap/Nominatim exact-building match (confidence noted as 0.9, provider still recorded as google-maps per schema, with the caveat documented in statusHistory). Future browser-based Maps geocoding in this run should expect the same issue and should not attempt Google Maps via claude-in-chrome without first checking/clearing the session's default location bias, or should use Nominatim directly instead. 22 candidates remain: 4 more NYC (Bar Etienne, Cospa Ramen, Nowadays, The Bush), 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba. Next candidate: Bar Etienne (NYC). Resume with: $near-batch-30 resume 2026-09-07-batch-30."
 }

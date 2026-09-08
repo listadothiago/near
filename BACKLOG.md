@@ -169,9 +169,9 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-07, Claude (Sonnet 5)
+### Current handoff — 2026-09-08, Claude (Sonnet 5)
 
-Writing-only cleanup pass, no execution: converted the raw operator feedback pasted at the bottom of this file into proper numbered backlog items (P1.21–23, P2.19, P3.12–13) per this file's own maintenance rule (line 7) instead of leaving it as unstructured text — including the ad-placement/heading-overlap note (P1.23) added at session start. Committed this cleanup plus the untracked `near-editor` SKILL.md trust-gate/word-count sync and the `near-batch-30` skill file that were sitting uncommitted. Per `near-batch-30` continuity rule (§2.4), the unfinished `2026-09-07-batch-30` run (7/30 published, Hausu mid-verification) takes this session's attention next rather than a fresh pick.
+Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and `near-write-article/SKILL.md` in full (both had changed since the run started; hashes updated in the manifest — neither change invalidated an already-passed gate). Published one more candidate this session: **Monkey Thief** (Pan-Asian cocktail bar, Hell's Kitchen, NYC — reopened bigger in three rooms after a 2026 licensing shutdown), all six locales, sourced beyond Time Out (w42st, Cititour, Resy, What Now New York, official site, Yelp), build-verified and pushed. Batch now 8/30 published. Standing finding worth keeping: a `claude-in-chrome` Google Maps lookup for this piece returned the operator's own logged-in session defaulting to his home region in Brazil instead of the NYC address being searched — aborted immediately per the operator-location-privacy rule (no location detail recorded or used anywhere), geocode instead sourced via OpenStreetMap/Nominatim exact-building match. Future sessions doing browser-based Maps geocoding should expect this and either clear the session's default location first or use Nominatim directly. 22 candidates remain in the batch (4 more NYC, 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba) — next is Bar Etienne (NYC). Resume with `$near-batch-30 resume 2026-09-07-batch-30`.
 
 ### Previous handoff — 2026-09-07, Codex (GPT-6)
 

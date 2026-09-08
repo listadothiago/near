@@ -864,3 +864,16 @@ Little Bookshop, Kween):**
   as `thegaypassport.com` in the Sitges section; reused here for Kween,
   worth folding into a standing NYC/queer-nightlife shortlist rather
   than treating each use as a one-off.
+
+**New candidates surfaced drafting Monkey Thief (2026-09-07-batch-30, NYC cluster continues):**
+- `w42st.com` (W42ST) — Hell's Kitchen/Clinton indie neighborhood
+  outlet; broke the Monkey Thief reopening story in real time. Strong
+  standing source for that specific Manhattan west-side neighborhood.
+- `cititour.com` (Cititour) — already logged 2026-09-07; reused here
+  for Monkey Thief's reopening walkthrough, reinforcing it as a
+  reliable NYC opening-coverage source.
+- `whatnow.com` (What Now New York) — NYC restaurant/bar opening
+  coverage, used for Monkey Thief's original 2024 debut.
+- `blog.resy.com` (Resy Blog) — booking platform's own editorial,
+  useful for cocktail-menu specifics on new openings; same caveat as
+  OpenTable Blog, not a substitute for independent review coverage.

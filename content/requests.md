@@ -324,3 +324,16 @@ why: >
   Marylebone) exists — link both ways at that point.
 status: open
 ```
+
+```yaml
+request: monkey-thief-hells-kitchen-new-york-city-internal-link-gap
+type: internal-link-gap
+place: monkey-thief-hells-kitchen-new-york-city
+why: >
+  Batch 2026-09-07-batch-30 NYC cluster continues. No other Near pin
+  sits in or near Hell's Kitchen/Clinton yet (existing NYC coverage is
+  Greenpoint/Kirbee's, further NYC candidates in the same batch queue).
+  Ships with external links only. Resolve once a genuinely nearby
+  Manhattan west-side pin exists — link both ways at that point.
+status: open
+```
