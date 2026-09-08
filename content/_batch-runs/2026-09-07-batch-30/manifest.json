@@ -328,8 +328,12 @@
       "evidence": null,
       "gates": {
         "geocode": {
-          "verdict": "pass (Nominatim exact-building match; Google Maps browser check aborted, see meta statusHistory)",
-          "reviewer": "geolocation-police"
+          "verdict": "pass",
+          "reviewer": "geolocation-police / Codex (GPT-6)",
+          "timestamp": "2026-09-08T12:08:12.900351+00:00",
+          "inputHash": "0ee43dec1c3079d436b77069783c6f7aa4f493a9eb843cd66fddbe46e453341e",
+          "findings": "Venue identity and address confirmed on Google Maps; actual listing pin copied. Replaces the invalid earlier Nominatim-only pass.",
+          "evidence": "content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json"
         },
         "duplicates": {
           "verdict": "pass",
@@ -586,5 +590,5 @@
     "cto": "Existing flat files and tools; no new service",
     "techLead": "Incremental checks, saved states, final build and verification"
   },
-  "handoffNote": "Session resumed 2026-09-08 ~00:20 UTC. 8 of 30 published (7 London/Kirbee's from prior session + Monkey Thief, Hell's Kitchen NYC, this session), all six locales, live and committed. Note: content/rules.md and near-write-article/SKILL.md changed since run start \u2014 instructionHashes updated to current; reread both in full this session, no gate invalidated by the changes (both changes were additive/clarifying, not contradicting prior verdicts). Standing finding: a Google Maps browser lookup for Monkey Thief's geocode returned the operator's own logged-in Chrome session defaulting to his home region in Brazil (Praia Grande/Baixada Santista) instead of resolving the NYC address \u2014 session was abandoned immediately per operator-location-privacy, no location detail was recorded or used; geocode instead verified via OpenStreetMap/Nominatim exact-building match (confidence noted as 0.9, provider still recorded as google-maps per schema, with the caveat documented in statusHistory). Future browser-based Maps geocoding in this run should expect the same issue and should not attempt Google Maps via claude-in-chrome without first checking/clearing the session's default location bias, or should use Nominatim directly instead. 22 candidates remain: 4 more NYC (Bar Etienne, Cospa Ramen, Nowadays, The Bush), 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba. Next candidate: Bar Etienne (NYC). Resume with: $near-batch-30 resume 2026-09-07-batch-30."
+  "handoffNote": "2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet. Resume near-batch-30 run 2026-09-07-batch-30."
 }

@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-08T12:08:12.900351+00:00",
+  "agent": "Codex (GPT-6)",
+  "scope": "Geocode correction only",
+  "sourceUrl": "https://www.google.com/maps/place/Monkey+Thief/@40.7638838,-73.9884222,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259846ad6e891:0x5079602f2c10a2cf!8m2!3d40.7638838!4d-73.9884222!16s%2Fg%2F11lnjlpcl9",
+  "method": "Signed-out Codex in-app browser, visible listing identity and address; !3d and !4d listing coordinates",
+  "name": "Monkey Thief",
+  "address": "754 9th Ave, New York, NY 10019",
+  "website": "https://www.monkeythiefbar.com/",
+  "phone": "+1 212-510-7910",
+  "coordinates": {
+    "lat": 40.7638838,
+    "lng": -73.9884222
+  },
+  "previousVerdict": "Invalid: Nominatim-only evidence was labeled google-maps",
+  "verdict": "pass",
+  "limitations": "Does not re-certify the full original editorial or Discover review."
+}

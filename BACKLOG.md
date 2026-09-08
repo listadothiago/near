@@ -8,7 +8,7 @@ _Execute action with any skill needed /invoke any agent skill that is relevant, 
 
 **Cross-AI handoff:** use this file as the shared working memory between models whenever useful. Keep active notes concise, identify the agent and model, state what changed and what remains, and preserve decisions or verification evidence that the next agent needs to continue safely.
 
-**Every rotation round must also:** check the local inbox folder (photos, documents, submissions) for anything actionable; attempt at least one hotel/accommodation article (see P3.4); run `geolocation-police` against Google Maps on every piece written or refreshed (see P0.1).
+**Every rotation round must also:** check the local inbox folder (photos, documents, submissions) for anything actionable; attempt at least one hotel/accommodation article (see P3.4); run `geolocation-police` against Google Maps on every piece written or refreshed (see §1.4).
 
 ---
 
@@ -114,7 +114,7 @@ backlog-worthy work, to be RICE/MoSCoW-prioritized like anything else.
 
 - **Deep Research Floor:** Every article requires consultation of Reddit (authentic failure modes, practical friction) and Google Reviews (sorted by recent and lowest-rated to detect operational regressions).
 - **Source Diversity:** At least 5 preferred sources per piece, prioritizing the AAN directory and verified independent local outlets.
-- **Geolocation Grounding:** All coordinates must be verified against Google Maps before publishing. Non-negotiable — this is the core offering. See P0.1.
+- **Geolocation Grounding:** All coordinates must be verified against Google Maps before publishing. Non-negotiable — this is the core offering. See `geolocation-police/SKILL.md`.
 - **Research Shelf-Life:** Verification stamps expire after 7 days; older research must be verified again before drafting.
 - **Inline Information Density:** Addresses, prices, hours, transit notes, and booking constraints must appear directly in body text so readers do not have to click outbound links for essentials.
 
@@ -169,18 +169,15 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Claude (Sonnet 5)
+### Current handoff — 2026-09-08, Codex (GPT-6)
 
-Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and `near-write-article/SKILL.md` in full (both had changed since the run started; hashes updated in the manifest — neither change invalidated an already-passed gate). Published one more candidate this session: **Monkey Thief** (Pan-Asian cocktail bar, Hell's Kitchen, NYC — reopened bigger in three rooms after a 2026 licensing shutdown), all six locales, sourced beyond Time Out (w42st, Cititour, Resy, What Now New York, official site, Yelp), build-verified and pushed. Batch now 8/30 published. Standing finding worth keeping: a `claude-in-chrome` Google Maps lookup for this piece returned the operator's own logged-in session defaulting to his home region in Brazil instead of the NYC address being searched — aborted immediately per the operator-location-privacy rule (no location detail recorded or used anywhere), geocode instead sourced via OpenStreetMap/Nominatim exact-building match. Future sessions doing browser-based Maps geocoding should expect this and either clear the session's default location first or use Nominatim directly. 22 candidates remain in the batch (4 more NYC, 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba) — next is Bar Etienne (NYC). Resume with `$near-batch-30 resume 2026-09-07-batch-30`.
-
-### Previous handoff — 2026-09-07, Codex (GPT-6)
-
-- NYC seeding and four places already shipped (`afe5454`, `99582fa`); rotation advanced to **London** in `299469c`. Do not restart the NYC seeding run. Pending candidates remain in `content/post-plan.md` and `content/opportunities.md`.
-- P0.1 geocode audit and P0.12 privacy correction are complete; evidence and historical handoffs are in `BACKLOG-ARCHIVE.md`. Keep the per-write Google Maps gate.
-- Preserve the indexed Failure Mode slug `i-look-pretty-good-dead-internet-site`. Collection MDX uses `blockJS: false` for first-party diagram props; revisit before accepting outside-authored MDX.
-- Operator approved keeping `São Vicente / Baixada Santista` in curator `livedIn`; it is past residence, not current-location disclosure.
-- Previous batch (`f48ce92`): captured feedback and updated sourced-pricing/AEO workflow. Current batch: resolve P1.14 and fact-check new SEO feedback first (Must); readability remains next (Should). RICE: process rules (broad reach, high confidence, low effort) precede readability (sitewide reach, medium effort), then individual copy repairs. **MoSCoW, this pass:** Must consume raw feedback and remove stale handoffs; Should deliver pricing/AEO rules and scope readability; Could fix further independent UI defects; Won't implement n8n or pause content without the requested discussion. P0.4 remains reserved for a fresh session.
-- Inbox checked: only `near.png`, explicitly rejected as a logo for now; preserve that decision. This is a foundation/backlog pass, not a content rotation round.
+- **Batch continuity:** `2026-09-07-batch-30` remains 8/30 published, 22 candidates pending; next **Bar Etienne (NYC)**. See P0.15. This pass repaired a published pin and the handoff; it did not start another rotation or publish a new article.
+- **Monkey Thief:** actual Google Maps listing verified in the signed-out Codex in-app browser; coordinates and geocode verdict corrected. OpenStreetMap/Nominatim cannot substitute for the Maps gate. Evidence: `content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json`.
+- **Priority decision, this pass:** Product Trio + chief editor: Must fix the known verification defect and restore batch continuity; Should shorten stale handoffs; Could collect fresh source leads; Won't start n8n, new persona brains or unrelated UI work. RICE: correctness has narrow reach but high trust impact, high confidence and low effort; it precedes new articles as an obligation.
+- **SEO/trendsetter:** attempted all 27 saved Trends URLs (network resolution failed; two web fallbacks also failed); no current search-demand claim. AAN directory, East Bay Express and Portland Mercury scanned; bakery pop-ups and fall arts are research leads, not a verified global trend or grounds to replace the saved batch. 48 Hills fetch failed.
+- **Validation:** geocode and content checks passed; production build passed via `npm run build -- --webpack` (1,011 pages). Default Turbopack hit a local worker port restriction.
+- **Carry forward:** NYC seeding is complete, rotation is London; preserve `i-look-pretty-good-dead-internet-site` and first-party collection MDX handling. Curator `livedIn` decision and prior evidence are archived. P0.4 still requires a fresh session; P1.0 still requires the operator discussion.
+- **Inbox:** `near.png` remains rejected as a logo. Video inbox also contains unreviewed creative direction; see P1.24.
 
 ### P0: Immediate Fixes & Critical Correctness
 
@@ -197,6 +194,8 @@ Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and
 11. **Automated deployment verification:** inspect Vercel production alias settings to eliminate promotion delays; enforce live curl checks in publishing workflows.
 13. **Geolocation loading state.** No feedback between tapping "minha localização" and the browser resolving the position. Add a loading/pending state to the geolocation control in `components/board/Board.tsx` and `components/collection/CollectionPlaces.tsx`. Operator directive 2026-09-07. Product trio + near-lead-ux own the design.
 14. **Type scale increase across all breakpoints.** Operator: _"fonts should be larger in all breakpoints imho"_. UX research/design consulted 2026-09-07: the current CSS has no shared type-size scale; retain Space Grotesk/Courier Prime. Proposed shared root size 17–18px, larger card excerpts, five lines on normal cards and five/six on featured cards, plus expanded map taglines. Lead UX requires checking 320/390/768/1440px and 200% zoom because root sizing also affects sidebar/ad dimensions. Implement with P1.13(a), separately from SEO descriptions.
+
+15. **Finish `near-batch-30` run `2026-09-07-batch-30` (Must, active).** Resume the existing manifest: 8/30 published, 22 candidates pending (4 NYC, 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba), next Bar Etienne. Preserve scope, per-piece evidence and all six locales. Resolve the recorded Discover defects (P2.14/P2.15b/P2.20) before counting affected pieces as fully signed off. Do not open a competing batch.
 
 ### P1: Product & UI Enhancements
 
@@ -228,6 +227,8 @@ Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and
 22. **"Discover police" gate (operator, 2026-09-07):** run a Discover-focused check (`discover-view` mode) at every article write and every review pass, not just periodic audits, logging fixes to the backlog as found. Also check rendering in available AR/preview simulators (Meta and other popular ones), watching image quality, headline attractiveness, snippet quality, and markup adequacy. Wire into `near-write-article`'s gate sequence alongside `near-tov-police`/`near-seo` sign-off.
 23. **Ad placement must not touch the article heading (operator, 2026-09-07):** on `https://near.tips/pt-BR/place/praia-do-bonete-ilhabela` the sticky ad placement overlaps the heading — sticky behavior is fine, but it must never cover the header. Also evaluate fitting two of the smaller square ad units side by side on desktop, since there is enough white space to the right of the current single unit. Product Trio + near-lead-ux own the fix; `components/ads/Placement.tsx` is the likely surface (see P0.7's related overflow issue in the same component).
 
+24. **Review the video inbox creative direction:** inspect `content/video-inbox/ADDITIONAL_CREATIVE_DIRECTION_.mp4`, extract actionable operator feedback into numbered items, and retain the original until processed. Discovered during inbox inventory, 2026-09-08; contents not yet reviewed.
+
 ### P2: Content Sprints & Editorial Pipeline
 
 1. **Santos → Guaiúba cycling cluster:** draft the 6-piece cluster covering the 7.8km beach bike lane, the Santos–Guarujá ferry crossing, and stopovers (CICLOVIA debut, Praia da Guaiúba, CPE Embaré, Zé do Coco).
@@ -247,7 +248,6 @@ Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and
     - **Other hosts** (Wix, editmysite, Wikimedia, and presumably most of the other 460 catalogue photos): no equivalent crop-via-URL syntax. These need either a real 16:9-cropped replacement image, or a proper image proxy in front of Next's optimizer that supports `fit=cover` to a fixed aspect (e.g. wsrv.nl, imgproxy, or a Vercel Image/Sharp step). Two batch-30 pieces (Hausu, E. Pellicci) still fail for this reason.
     Needs `near-tech-lead` to pick the proxy/cropping mechanism for the non-Google-hosted majority; needs a full-catalogue re-run of `discover-view` once that mechanism exists — this sample-of-40 number will very likely hold roughly steady across the other 428 pages.
 15b. **`discover-view` rate-limits (429) against several image hosts when checked back-to-back.** Add a longer/backoff delay or a small per-host concurrency cap before trusting a "FAIL: fetch failed (429)" result as a real image problem rather than a rate-limit artifact.
-15. **Correct false "Discover audit: clean" claims in batch-30's first 4 published `statusHistory` entries.** Hausu, TOAD Bakery, The Divine and E. Pellicci's sign-off notes state the Discover audit passed; the actual live check (done after those signoffs, item 14 above) found image failures on all of them. `near-caretaker` should correct the `statusHistory` record once item 14's fix status is known per-piece, rather than leaving a false "clean" claim standing.
 
 15. **Legends Brighton hero and event sourcing:** near-illustrator reviews the rejected hero against https://share.google/9aPPSEXDAVqMJyf9m and venue-owned alternatives. near-events reads https://www.instagram.com/legendsbrighton/?hl=en for current dated events; verify each date and use event expiry, not dates embedded in evergreen copy.
 16. **Pinheiros companion coverage:** identify the operator-recalled old-fashioned café near Largo da Batata; confirm identity before drafting. Consider useful companion coverage for the isolated Beco do Batman pin under the SEO/trendsetter exception rule.
@@ -255,6 +255,8 @@ Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and
 
 18. **Legacy factual/voice refresh after copy repair:** Hazlitt’s still contains fictional first-person hotel-work claims in its English baseline and Chinese edition; Rush Hour still promotes a 2026-09-03 event in its SEO description. Caretaker + TOV review across six locales, verify dated claims and prices, and remove embodiment. This wording-only repair did not certify all historical article facts.
 19. **Formalize a unified content-rotation model (operator, 2026-09-07):** rotation should jointly account for writer/editor persona rotation, not just destination — decided each round by `near-trendsetter`, `near-seo`, `near-cmo` and the chief editor together, setting proportions per topic/editor/destination/filter. `parser` + `near-tech-lead` figure out how this integrates with the existing destination-tier rotation (§2.2). Filters need their own rotation too. Over a full rotation round, all writer personas, all filters, and all tiered destinations should get touched; each round should also publish any column post due per its stated frequency, publish at least one full guide/blog piece, and re-check `content/sources.md` for additions/removals. Depends on `near-trendsetter` and `near-cmo` having their own brain files (see P3.12). Scoping only — not yet built.
+
+20. **Correct false "Discover audit: clean" claims in batch-30's first 4 published `statusHistory` entries.** Hausu, TOAD Bakery, The Divine and E. Pellicci's sign-off notes state the Discover audit passed; the actual live check (done after those signoffs, item 14 above) found image failures on all of them. `near-caretaker` should correct the `statusHistory` record once item 14's fix status is known per-piece, rather than leaving a false "clean" claim standing.
 
 ### P3: New Skills, Personas & Infrastructure
 

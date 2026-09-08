@@ -1185,3 +1185,8 @@ name.
 ## 2026-09-07 — Codex (GPT-6), zh-CN correction
 
 P1.14: repaired mixed-script terms in elder, hazlitts, jumbi, kween, la-camionera, marineterrein, pracinha, rush-hour, sipeos and starline-san-pablo-gateway. Ordinary terms translated; genre/menu terms retained with readable boundaries. English facts and other locales unchanged. Ten live Maps identity/address checks passed with existing coordinates; metadata stamps updated, malformed Jumbi/STARLINE listing links replaced. Content validator passes. Legacy factual/embodiment concerns recorded as BACKLOG P2.18 for a proper multilingual refresh. No content rotation slot consumed.
+
+
+## 2026-09-08T12:08:12.900351+00:00 — Codex (GPT-6), Monkey Thief geocode correction
+
+Targeted `geolocation-police` repair, not a content rotation: verified the venue listing and 754 9th Ave address in the signed-out Codex in-app browser. Corrected the shared six-locale map coordinates and `updatedAt`; replaced the invalid Nominatim-only batch gate verdict with actual Google Maps evidence. No new places added; published batch count remains 8/30. Full editorial/Discover gates were not re-certified by this location-only correction.

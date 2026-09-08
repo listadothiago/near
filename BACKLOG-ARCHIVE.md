@@ -630,3 +630,27 @@ Validation: rules YAML parsed with 19 unique rule IDs; `git diff --check` passed
 **SEO feedback:** fact-checked Noel Ceta and Dan Hinckley claims against primary Google guidance; findings and action mapping in `docs/multi-city-seo-fact-check.md`, original feedback preserved separately. No page-count traffic promise or speculative URL migration adopted.
 
 Validation: `node scripts/validate-content.mjs` passes; ten-slug geocode gate passes; `npm run build -- --webpack` builds all 945 pages.
+
+
+## Handoffs archived 2026-09-08 — Codex (GPT-6)
+
+Historical status only; current work is tracked in BACKLOG.md. The old Nominatim-only verification claim was invalid and has been corrected from Google Maps.
+
+### Current handoff — 2026-09-08, Claude (Sonnet 5)
+
+Resumed `near-batch-30` run `2026-09-07-batch-30`. Reread `content/rules.md` and `near-write-article/SKILL.md` in full (both had changed since the run started; hashes updated in the manifest — neither change invalidated an already-passed gate). Published one more candidate this session: **Monkey Thief** (Pan-Asian cocktail bar, Hell's Kitchen, NYC — reopened bigger in three rooms after a 2026 licensing shutdown), all six locales, sourced beyond Time Out (w42st, Cititour, Resy, What Now New York, official site, Yelp), build-verified and pushed. Batch now 8/30 published. Standing finding worth keeping: a `claude-in-chrome` Google Maps lookup for this piece returned the operator's own logged-in session defaulting to a saved personal location instead of the NYC address being searched — aborted immediately per the operator-location-privacy rule (no location detail recorded or used anywhere), geocode instead sourced via OpenStreetMap/Nominatim exact-building match. Superseded on 2026-09-08: the signed-out Codex in-app browser resolved the venue; Nominatim does not clear the Google Maps gate. 22 candidates remain in the batch (4 more NYC, 6 SF Bay Area, 3 Berlin, 3 Amsterdam, 3 Bangkok, 3 Curitiba) — next is Bar Etienne (NYC). Resume with `$near-batch-30 resume 2026-09-07-batch-30`.
+
+### Previous handoff — 2026-09-07, Codex (GPT-6)
+
+- NYC seeding and four places already shipped (`afe5454`, `99582fa`); rotation advanced to **London** in `299469c`. Do not restart the NYC seeding run. Pending candidates remain in `content/post-plan.md` and `content/opportunities.md`.
+- P0.1 geocode audit and P0.12 privacy correction are complete; evidence and historical handoffs are in `BACKLOG-ARCHIVE.md`. Keep the per-write Google Maps gate.
+- Preserve the indexed Failure Mode slug `i-look-pretty-good-dead-internet-site`. Collection MDX uses `blockJS: false` for first-party diagram props; revisit before accepting outside-authored MDX.
+- Operator approved keeping `São Vicente / Baixada Santista` in curator `livedIn`; it is past residence, not current-location disclosure.
+- Previous batch (`f48ce92`): captured feedback and updated sourced-pricing/AEO workflow. Current batch: resolve P1.14 and fact-check new SEO feedback first (Must); readability remains next (Should). RICE: process rules (broad reach, high confidence, low effort) precede readability (sitewide reach, medium effort), then individual copy repairs. **MoSCoW, this pass:** Must consume raw feedback and remove stale handoffs; Should deliver pricing/AEO rules and scope readability; Could fix further independent UI defects; Won't implement n8n or pause content without the requested discussion. P0.4 remains reserved for a fresh session.
+- Inbox checked: only `near.png`, explicitly rejected as a logo for now; preserve that decision. This is a foundation/backlog pass, not a content rotation round.
+
+## Monkey Thief geocode correction — 2026-09-08, Codex (GPT-6)
+
+Verified the actual Google Maps venue listing and corrected its shared map pin and verification metadata. Replaced the batch manifest's unsupported Nominatim-only pass with a timestamped evidence packet. Preserved the existing privacy redactions, archived superseded handoffs, restored the explicit P0 batch-continuation item, repaired stale geolocation references and the duplicate P2.15 identifier, and captured the unreviewed video inbox item as P1.24.
+
+Validation: geocode gate and content validation passed; `npm run build -- --webpack` passed (TypeScript and 1,011 generated pages). Default Turbopack failed because its worker could not bind a local port; the supported Webpack fallback required network access for the existing Google Fonts. This correction does not certify the outstanding Discover issues or complete the 30-article batch.
