@@ -1,0 +1,82 @@
+{
+  "slug": "sudblock-kreuzberg-berlin",
+  "categories": [
+    "food-drink",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 52.4986616,
+    "lng": 13.4165924
+  },
+  "place": {
+    "city": "Berlin",
+    "neighborhood": "Kreuzberg",
+    "region": "Berlin",
+    "country": "Germany"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Südblock — official site, events calendar",
+      "url": "https://www.suedblock.org/wp/category/termine/",
+      "feedId": null
+    },
+    {
+      "name": "visitBerlin.de — Südblock listing",
+      "url": "https://www.visitberlin.de/en/sudblock",
+      "feedId": null
+    },
+    {
+      "name": "Berlin.de — Südblock venue/ticket listing",
+      "url": "https://www.berlin.de/en/tickets/search/venues/suedblock-9913529f-0e62-4ce3-a1f5-72347336d730/",
+      "feedId": null
+    },
+    {
+      "name": "Time Out Berlin — Südblock, LGBT listing",
+      "url": "https://www.timeout.com/berlin/lgbt/suedblock",
+      "feedId": null
+    },
+    {
+      "name": "Yelp — Südblock (39 reviews, hours, recent photos)",
+      "url": "https://www.yelp.com/biz/s%C3%BCdblock-berlin",
+      "feedId": null
+    },
+    {
+      "name": "Wikimedia Commons — File:Suedblock admiralstr-1-2 2022-09-25.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Suedblock_admiralstr-1-2_2022-09-25.png",
+      "feedId": null,
+      "originalPublishedAt": "2022-09-25T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Suedblock_admiralstr-1-2_2022-09-25.png",
+    "attribution": "Photo by Babewyn, CC BY-SA 4.0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Suedblock_admiralstr-1-2_2022-09-25.png",
+    "licenseNote": "CC BY-SA 4.0, shot 25 September 2022, showing the Südblock building at Admiralstraße 1-2 on the south side of Kottbusser Tor. Verified against the official site's own address and the Google Maps pin."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:03:31.000Z",
+      "note": "Batch 30, Berlin Tier 2 cluster, from-scratch candidate (no prior watched-feed source). Dedupe check: ran content/places/ grep for kotti/kottbusser/sudblock/suedblock — zero prior hits. so36-berlin and mobel-olfe-berlin are both nearby (same Kotti queer-nightlife corridor, within a few hundred metres) but are distinct venues at distinct addresses; no conflict, noted as neighbourhood context in-body instead. Current-status check: venue's own site (suedblock.org) confirms an active, currently-updated events calendar; independently corroborated by visitBerlin.de (queer party/event space description, Sunday brunch, beer garden), Berlin.de's own ticketing listing (live venue page), and Time Out Berlin's LGBT guide. Hours corroborated via multiple aggregators (Yelp, oeffnungszeitenbuch.de) as daily 10:00-02:00, food/drink service afternoon into evening, Sunday brunch buffet. UGC: Yelp's 39 reviews (Berlin.de/Yelp both dated 2026) describe a vibrant, inclusive queer bar/beer garden with mixed reception on service consistency and pricing drift — noted honestly rather than smoothed to pure positive. Reddit leg: search backend could not retrieve r/berlin thread content directly for this venue (fallback ladder step 1 retried, still blocked); substituted Yelp/Tripadvisor-style UGC per the ladder's step 3, and this is recorded as the substitution rather than treated as an equivalent leg. Five preferred-sources context check: suedblock.org, visitBerlin.de, Berlin.de tickets, Time Out Berlin LGBT guide, Yelp — five sources with something to say about the venue and neighbourhood. Multiple independent, current, credible sources corroborate identity and operating status, so trust: auto, status: active, all six locales. Hero image: real, correctly-located CC BY-SA 4.0 photo of the actual building from Wikimedia Commons, first tier of the sourcing hierarchy. External links used: suedblock.org, visitBerlin.de, berlin.de tickets, timeout.com. Internal links: mobel-olfe-berlin and so36-berlin (same Kotti queer corridor). New sources logged as preferred-sources.md candidates: suedblock.org, visitBerlin.de Südblock page."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Südblock, Admiralstraße 1-2, 10999 Berlin — Google Maps listing pin",
+    "verifiedAt": "2026-09-08T22:03:31.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/S%C3%BCdblock/@52.4986616,13.4144037,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84fccca98a509:0x2bce392bc6d8270c!8m2!3d52.4986616!4d13.4165924"
+  },
+  "publishedAt": "2026-09-08T22:03:31.000Z",
+  "updatedAt": "2026-09-08T22:03:31.000Z"
+}

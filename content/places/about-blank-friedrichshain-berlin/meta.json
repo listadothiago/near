@@ -1,0 +1,81 @@
+{
+  "slug": "about-blank-friedrichshain-berlin",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend",
+    "late-night"
+  ],
+  "coordinates": {
+    "lat": 52.502488,
+    "lng": 13.466379
+  },
+  "place": {
+    "city": "Berlin",
+    "neighborhood": "Friedrichshain",
+    "region": "Berlin",
+    "country": "Germany"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Berlin.de — ://about blank club listing",
+      "url": "https://www.berlin.de/en/clubs/8870883-4469452-about-blank.en.html",
+      "feedId": null
+    },
+    {
+      "name": "Resident Advisor — ://about blank, Berlin, upcoming events",
+      "url": "https://ra.co/clubs/28354",
+      "feedId": null
+    },
+    {
+      "name": "Time Out Berlin — ://about blank, Clubs",
+      "url": "https://www.timeout.com/berlin/clubs/about-blank",
+      "feedId": null
+    },
+    {
+      "name": "Gästeliste030 — about blank Berlin, events & guest list",
+      "url": "https://www.gaesteliste030.de/en/berlin/locations/about-blank",
+      "feedId": null
+    },
+    {
+      "name": "Tripadvisor — About Blank reviews (queue, door policy, garden)",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g187323-d8869714-Reviews-About_Blank-Berlin.html",
+      "feedId": null
+    },
+    {
+      "name": "Wikimedia Commons — File:Techno-Club About Blank Markgrafendamm Berlin.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Techno-Club_About_Blank_Markgrafendamm_Berlin.jpg",
+      "feedId": null,
+      "originalPublishedAt": "2022-07-30T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Techno-Club_About_Blank_Markgrafendamm_Berlin.jpg",
+    "attribution": "Photo by Singlespeedfahrer, CC0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Techno-Club_About_Blank_Markgrafendamm_Berlin.jpg",
+    "licenseNote": "CC0 (public domain dedication), shot 30 July 2022, exterior of the club on Markgrafendamm behind Ostkreuz station. Verified against the venue's own address and Berlin.de's listing."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:03:31.000Z",
+      "note": "Batch 30, Berlin Tier 2 cluster, from-scratch candidate (no prior watched-feed source). Dedupe check: grepped content/places/ for blank/ostkreuz/markgrafendamm/friedrichshain — zero prior hits; no existing Near pin in this part of Friedrichshain, no conflict. Current-status check: Berlin.de's own club directory lists it as an active, currently-operating club; independently corroborated by Resident Advisor's live upcoming-events listing (RA club page id 28354, events through 2026-2027), Time Out Berlin's clubs guide, and Gästeliste030's active guest-list/events page. This is exactly the class of Berlin nightlife venue that closes without warning, so multiple currently-updated event calendars (not just a static directory blurb) were required before treating it as open — got them. UGC: Tripadvisor reviews (polarized but current, spanning both 'phenomenal' and 'awful/rude bouncer' accounts) corroborate the queue/door-policy reputation and late opening (doesn't open until ~1am, queues reported past midnight) — reported honestly as testimony, not verdict, with the negative door-policy complaints framed as reported allegations rather than stated fact. Reddit leg: search backend could not retrieve r/berlin thread content for this venue after a retry (fallback ladder step 1); substituted Tripadvisor's dated, attributed user reviews per ladder step 3, recorded as substitution not equivalent. Five preferred-sources context check: berlin.de, RA, Time Out Berlin, Gästeliste030, Tripadvisor — five sources with current information. Multiple independent, current, credible sources on identity and operating status clear this to trust: auto, status: active, all six locales. Hero image: real CC0 photo of the actual building from Wikimedia Commons, first tier of the sourcing hierarchy — no illustration needed. External links used: berlin.de, ra.co, timeout.com. No internal link candidate found within walking distance in Friedrichshain among existing Berlin pins (all four are in Kreuzberg); logged as a neighbourhood coverage note rather than forcing a weak internal link. New sources logged as preferred-sources.md candidates: ra.co Berlin club pages, gaesteliste030.de."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "://about blank, Markgrafendamm 24c, 10245 Berlin — Google Maps listing pin",
+    "verifiedAt": "2026-09-08T22:03:31.000Z",
+    "googleMapsUrl": "https://www.google.com/maps?cid=11215015185442059950"
+  },
+  "publishedAt": "2026-09-08T22:03:31.000Z",
+  "updatedAt": "2026-09-08T22:03:31.000Z"
+}
