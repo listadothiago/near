@@ -12,7 +12,7 @@
   "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
   "state": "researching",
   "tokenUsage": "unavailable",
-  "publishedCount": 9,
+  "publishedCount": 10,
   "candidates": [
     {
       "name": "Hausu",
@@ -89,7 +89,7 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+          "verdict": "pass \u2014 SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
         }
       },
       "retryCount": 0,
@@ -129,7 +129,7 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
+          "verdict": "pass \u2014 Attitude, London the Inside, official site, Instagram, Reddit"
         }
       },
       "retryCount": 0,
@@ -169,10 +169,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+          "verdict": "pass \u2014 Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+          "verdict": "pass \u2014 Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
         }
       },
       "retryCount": 0,
@@ -212,10 +212,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+          "verdict": "pass \u2014 The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
+          "verdict": "pass \u2014 cheap-to-mid tier from FIXR/RA/Google Maps signals"
         }
       },
       "retryCount": 0,
@@ -255,10 +255,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
+          "verdict": "pass \u2014 Yatzer, momondo, Tripadvisor, official site"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
+          "verdict": "pass \u2014 momondo aggregate range + dated/occupancy-noted sample quote"
         },
         "accommodationAttempt": {
           "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
@@ -277,7 +277,7 @@
       }
     },
     {
-      "name": "Kirbee’s",
+      "name": "Kirbee\u2019s",
       "city": "New York City",
       "tier": 1,
       "state": "published",
@@ -301,10 +301,10 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+          "verdict": "pass \u2014 CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
         },
         "sourcedPriceRange": {
-          "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
+          "verdict": "pass \u2014 exact sourced prices ($45/$90), both sides of the pricing debate included"
         }
       },
       "retryCount": 0,
@@ -348,7 +348,7 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondTimeOut": {
-          "verdict": "pass — w42st, Cititour, Resy, What Now New York, official site, Yelp"
+          "verdict": "pass \u2014 w42st, Cititour, Resy, What Now New York, official site, Yelp"
         }
       },
       "retryCount": 0,
@@ -368,7 +368,7 @@
       "city": "New York City",
       "tier": 1,
       "state": "published",
-      "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing — sourcing floor met for draft, not yet cleared for publish",
+      "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing \u2014 sourcing floor met for draft, not yet cleared for publish",
       "evidence": null,
       "gates": {
         "duplicates": {
@@ -388,22 +388,22 @@
           "reviewer": "npx next build"
         },
         "sourcingBeyondSingleAggregator": {
-          "verdict": "pass — Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
+          "verdict": "pass \u2014 Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
         },
         "instagramCheck": {
-          "verdict": "checked — @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
+          "verdict": "checked \u2014 @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
         },
         "redditFallback": {
-          "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new — not a blocked leg"
+          "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new \u2014 not a blocked leg"
         },
         "events": {
           "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
         },
         "heroImage": {
-          "verdict": "pass — near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
+          "verdict": "pass \u2014 near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
         },
         "tovLegalChiefEditor": {
-          "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
+          "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
         }
       },
       "retryCount": 0,
@@ -436,11 +436,62 @@
       "name": "Nowadays",
       "city": "New York City",
       "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
+      "state": "published",
+      "trustBasis": "trust: auto; multiple independent current sources \u2014 official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
       "evidence": null,
-      "gates": {},
-      "retryCount": 0
+      "gates": {
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs",
+          "findings": "Google Maps listing match, 56-06 Cooper Ave, Ridgewood NY 11385, confidence 0.99"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondSingleAggregator": {
+          "verdict": "pass \u2014 official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
+        },
+        "redditCheck": {
+          "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
+        },
+        "googleReviews": {
+          "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
+        },
+        "instagramCheck": {
+          "verdict": "checked \u2014 @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
+        },
+        "events": {
+          "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
+        },
+        "heroImage": {
+          "verdict": "pass \u2014 tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
+        },
+        "tovLegalChiefEditor": {
+          "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
+        }
+      },
+      "retryCount": 0,
+      "slug": "nowadays-ridgewood-new-york-city",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "e333f4c",
+      "liveUrl": "https://near.tips/en/place/nowadays-ridgewood-new-york-city"
     },
     {
       "name": "The Bush",
@@ -513,7 +564,7 @@
       "retryCount": 0
     },
     {
-      "name": "Südblock",
+      "name": "S\u00fcdblock",
       "city": "Berlin",
       "tier": 2,
       "state": "candidate",
@@ -553,7 +604,7 @@
       "retryCount": 0
     },
     {
-      "name": "Skatecafé",
+      "name": "Skatecaf\u00e9",
       "city": "Amsterdam",
       "tier": 2,
       "state": "candidate",
@@ -573,7 +624,7 @@
       "retryCount": 0
     },
     {
-      "name": "WTF Gallery and Café",
+      "name": "WTF Gallery and Caf\u00e9",
       "city": "Bangkok",
       "tier": 2,
       "state": "candidate",
@@ -639,5 +690,5 @@
     "cto": "Existing flat files and tools; no new service",
     "techLead": "Incremental checks, saved states, final build and verification"
   },
-  "handoffNote": "2026-09-08 (session 2): Bar Etienne (NYC) worked per dispatch scope — re-verified beyond the single diningout.com aggregator lead against Eater NY and The Infatuation plus a primary Google Maps listing, drafted content/places/bar-etienne-west-village-new-york-city/ (en.mdx + meta.json, status: draft), passed check-duplicates.mjs and validate-content.mjs. Held at draft/uncommitted per the mandatory trust:review gate — NOT committed, NOT pushed, NOT flipped to active. See that candidate's decisionPoint field for the explicit approve/reject ask and outstanding gates (hero image, Instagram/Reddit checks, full sign-off chain, six-locale translation). Dispatch was scoped to only this one item plus this manifest update — do not proceed into Cospa Ramen/Nowadays/The Bush without a fresh dispatch. 8/30 published; Bar Etienne now held (draft, pending operator decision); 21 candidates remain untouched this session: Cospa Ramen, Nowadays and The Bush next in the NYC cluster, then San Francisco Bay Area, Berlin, Amsterdam, Bangkok, Curitiba clusters. Prior note (Codex/GPT-6) on the Monkey Thief geocode correction (BACKLOG.md P0.15) preserved below for history: '2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet.' Resume near-batch-30 run 2026-09-07-batch-30."
+  "handoffNote": "2026-09-08 (session 2): Bar Etienne (NYC) worked per dispatch scope \u2014 re-verified beyond the single diningout.com aggregator lead against Eater NY and The Infatuation plus a primary Google Maps listing, drafted content/places/bar-etienne-west-village-new-york-city/ (en.mdx + meta.json, status: draft), passed check-duplicates.mjs and validate-content.mjs. Held at draft/uncommitted per the mandatory trust:review gate \u2014 NOT committed, NOT pushed, NOT flipped to active. See that candidate's decisionPoint field for the explicit approve/reject ask and outstanding gates (hero image, Instagram/Reddit checks, full sign-off chain, six-locale translation). Dispatch was scoped to only this one item plus this manifest update \u2014 do not proceed into Cospa Ramen/Nowadays/The Bush without a fresh dispatch. 8/30 published; Bar Etienne now held (draft, pending operator decision); 21 candidates remain untouched this session: Cospa Ramen, Nowadays and The Bush next in the NYC cluster, then San Francisco Bay Area, Berlin, Amsterdam, Bangkok, Curitiba clusters. Prior note (Codex/GPT-6) on the Monkey Thief geocode correction (BACKLOG.md P0.15) preserved below for history: '2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet.' Resume near-batch-30 run 2026-09-07-batch-30."
 }
