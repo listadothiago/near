@@ -1,694 +1,733 @@
 {
-  "runId": "2026-09-07-batch-30",
-  "target": 30,
-  "mode": "publish",
-  "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
-  "startedAt": "2026-09-07T22:14:53.702829+00:00",
-  "instructionHashes": {
-    "content/rules.md": "c7c299b4d74978061084806adbfc0a2a0835039791551a626b7508c047af4119",
-    ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
-    ".claude/skills/near-write-article/SKILL.md": "e7d91490dde86515eba3f05e639bd639e2b832822321e296b058a6adee95909c"
-  },
-  "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
-  "state": "researching",
-  "tokenUsage": "unavailable",
-  "publishedCount": 10,
-  "candidates": [
-    {
-      "name": "Hausu",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/hausu",
-      "evidence": "hausu-evidence.json",
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police",
-          "checkedAt": "2026-09-07T22:18:23.824450+00:00"
-        },
-        "googleReviews": {
-          "verdict": "checked recent and lowest",
-          "reviewer": "near-deep-researcher"
-        },
-        "events": {
-          "verdict": "official events page checked; only past 2025 events; Instagram pending"
-        },
-        "price": {
-          "verdict": "official SAMPLE menu retrieved; do not assert undated sample as guaranteed current price"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        }
-      },
-      "retryCount": 0,
-      "slug": "hausu-peckham-london",
-      "author": "foodie-9000",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      },
-      "publicationCommit": "6dcfe9a",
-      "liveUrl": "https://near.tips/en/place/hausu-peckham-london"
+ "runId": "2026-09-07-batch-30",
+ "target": 30,
+ "mode": "publish",
+ "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
+ "startedAt": "2026-09-07T22:14:53.702829+00:00",
+ "instructionHashes": {
+  "content/rules.md": "c7c299b4d74978061084806adbfc0a2a0835039791551a626b7508c047af4119",
+  ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
+  ".claude/skills/near-write-article/SKILL.md": "e7d91490dde86515eba3f05e639bd639e2b832822321e296b058a6adee95909c"
+ },
+ "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
+ "state": "researching",
+ "tokenUsage": "unavailable",
+ "publishedCount": 11,
+ "candidates": [
+  {
+   "name": "Hausu",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/hausu",
+   "evidence": "hausu-evidence.json",
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police",
+     "checkedAt": "2026-09-07T22:18:23.824450+00:00"
     },
-    {
-      "name": "TOAD Bakery",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/toad-bakery",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
-        }
-      },
-      "retryCount": 0,
-      "slug": "toad-bakery-camberwell-london",
-      "author": "foodie-9000",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
+    "googleReviews": {
+     "verdict": "checked recent and lowest",
+     "reviewer": "near-deep-researcher"
     },
-    {
-      "name": "The Divine",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/things-to-do/the-divine",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 Attitude, London the Inside, official site, Instagram, Reddit"
-        }
-      },
-      "retryCount": 0,
-      "slug": "the-divine-dalston-london",
-      "author": "stefan",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
+    "events": {
+     "verdict": "official events page checked; only past 2025 events; Instagram pending"
     },
-    {
-      "name": "E. Pellicci",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
-        },
-        "sourcedPriceRange": {
-          "verdict": "pass \u2014 Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
-        }
-      },
-      "retryCount": 0,
-      "slug": "e-pellicci-bethnal-green-london",
-      "author": "plinio",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
+    "price": {
+     "verdict": "official SAMPLE menu retrieved; do not assert undated sample as guaranteed current price"
     },
-    {
-      "name": "The Jago",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/bars-pubs/haggerston",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
-        },
-        "sourcedPriceRange": {
-          "verdict": "pass \u2014 cheap-to-mid tier from FIXR/RA/Google Maps signals"
-        }
-      },
-      "retryCount": 0,
-      "slug": "the-jago-dalston-london",
-      "author": "stefan",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
     },
-    {
-      "name": "The Pilgrm",
-      "city": "London",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "yatzer design-press profile; https://www.yatzer.com/pilgrm-hotel-paddington-london",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 Yatzer, momondo, Tripadvisor, official site"
-        },
-        "sourcedPriceRange": {
-          "verdict": "pass \u2014 momondo aggregate range + dated/occupancy-noted sample quote"
-        },
-        "accommodationAttempt": {
-          "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
-        }
-      },
-      "retryCount": 0,
-      "slug": "the-pilgrm-paddington-london",
-      "author": "nite-porter",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
     },
-    {
-      "name": "Kirbee\u2019s",
-      "city": "New York City",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "CultureMap Fort Worth profile; https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
-        },
-        "sourcedPriceRange": {
-          "verdict": "pass \u2014 exact sourced prices ($45/$90), both sides of the pricing debate included"
-        }
-      },
-      "retryCount": 0,
-      "slug": "kirbees-greenpoint-brooklyn",
-      "author": "foodie-9000",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
-    },
-    {
-      "name": "Monkey Thief",
-      "city": "New York City",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "w42st (indie), Cititour, Resy blog, What Now New York, official site; https://w42st.com/post/monkey-thief-finds-a-new-home-on-9th-ave/",
-      "evidence": null,
-      "gates": {
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "geolocation-police / Codex (GPT-6)",
-          "timestamp": "2026-09-08T12:08:12.900351+00:00",
-          "inputHash": "0ee43dec1c3079d436b77069783c6f7aa4f493a9eb843cd66fddbe46e453341e",
-          "findings": "Venue identity and address confirmed on Google Maps; actual listing pin copied. Replaces the invalid earlier Nominatim-only pass.",
-          "evidence": "content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json"
-        },
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondTimeOut": {
-          "verdict": "pass \u2014 w42st, Cititour, Resy, What Now New York, official site, Yelp"
-        }
-      },
-      "retryCount": 0,
-      "slug": "monkey-thief-hells-kitchen-new-york-city",
-      "author": "stefan",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      }
-    },
-    {
-      "name": "Bar Etienne",
-      "city": "New York City",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing \u2014 sourcing floor met for draft, not yet cleared for publish",
-      "evidence": null,
-      "gates": {
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "check-geocodes.mjs"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondSingleAggregator": {
-          "verdict": "pass \u2014 Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
-        },
-        "instagramCheck": {
-          "verdict": "checked \u2014 @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
-        },
-        "redditFallback": {
-          "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new \u2014 not a blocked leg"
-        },
-        "events": {
-          "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
-        },
-        "heroImage": {
-          "verdict": "pass \u2014 near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
-        },
-        "tovLegalChiefEditor": {
-          "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
-        }
-      },
-      "retryCount": 0,
-      "slug": "bar-etienne-west-village-new-york-city",
-      "author": "stefan",
-      "status": "draft",
-      "decisionPoint": "PUBLISHED. Operator approved the trust:review decision point; full sign-off chain (Instagram, Reddit fallback, hero image, near-illustrator, near-events, near-tov-police, language-tic-police, near-legal-counsel, chief editor) completed and all six locales written. Mechanical gates pass. See piece statusHistory for full detail.",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      },
-      "publicationCommit": "73afcb0",
-      "liveUrl": "https://near.tips/en/place/bar-etienne-west-village-new-york-city"
-    },
-    {
-      "name": "Cospa Ramen",
-      "city": "New York City",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Nowadays",
-      "city": "New York City",
-      "tier": 1,
-      "state": "published",
-      "trustBasis": "trust: auto; multiple independent current sources \u2014 official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
-      "evidence": null,
-      "gates": {
-        "duplicates": {
-          "verdict": "pass",
-          "reviewer": "check-duplicates.mjs"
-        },
-        "validateContent": {
-          "verdict": "pass",
-          "reviewer": "validate-content.mjs"
-        },
-        "geocode": {
-          "verdict": "pass",
-          "reviewer": "check-geocodes.mjs",
-          "findings": "Google Maps listing match, 56-06 Cooper Ave, Ridgewood NY 11385, confidence 0.99"
-        },
-        "build": {
-          "verdict": "pass",
-          "reviewer": "npx next build"
-        },
-        "sourcingBeyondSingleAggregator": {
-          "verdict": "pass \u2014 official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
-        },
-        "redditCheck": {
-          "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
-        },
-        "googleReviews": {
-          "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
-        },
-        "instagramCheck": {
-          "verdict": "checked \u2014 @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
-        },
-        "events": {
-          "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
-        },
-        "heroImage": {
-          "verdict": "pass \u2014 tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
-        },
-        "tovLegalChiefEditor": {
-          "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
-        }
-      },
-      "retryCount": 0,
-      "slug": "nowadays-ridgewood-new-york-city",
-      "author": "stefan",
-      "locales": {
-        "en": "ready",
-        "pt-BR": "ready",
-        "it": "ready",
-        "es-ES": "ready",
-        "es-419": "ready",
-        "zh-CN": "ready"
-      },
-      "publicationCommit": "e333f4c",
-      "liveUrl": "https://near.tips/en/place/nowadays-ridgewood-new-york-city"
-    },
-    {
-      "name": "The Bush",
-      "city": "New York City",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "The Independent",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "The Lodge Oakland",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Henry J. Kaiser Center for the Arts",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Roxie Theater",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Black Bird Bookstore",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "The New Parkway Theater",
-      "city": "San Francisco Bay Area",
-      "tier": 1,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "S\u00fcdblock",
-      "city": "Berlin",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "about blank",
-      "city": "Berlin",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Teufelssee",
-      "city": "Berlin",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Sexyland World",
-      "city": "Amsterdam",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Skatecaf\u00e9",
-      "city": "Amsterdam",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "OT301",
-      "city": "Amsterdam",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "WTF Gallery and Caf\u00e9",
-      "city": "Bangkok",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Benjakitti Forest Park",
-      "city": "Bangkok",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Mischa Cheap",
-      "city": "Bangkok",
-      "tier": 2,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "92 Graus",
-      "city": "Curitiba",
-      "tier": 3,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Changes",
-      "city": "Curitiba",
-      "tier": 3,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
-    },
-    {
-      "name": "Harvest Folk Bar",
-      "city": "Curitiba",
-      "tier": 3,
-      "state": "candidate",
-      "trustBasis": "pending verified catalogue source",
-      "evidence": null,
-      "gates": {},
-      "retryCount": 0
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
     }
-  ],
-  "setupDecisions": {
-    "parser": "Reuse source packets only with per-article provenance; source approval before localization",
-    "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
-    "cto": "Existing flat files and tools; no new service",
-    "techLead": "Incremental checks, saved states, final build and verification"
+   },
+   "retryCount": 0,
+   "slug": "hausu-peckham-london",
+   "author": "foodie-9000",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   },
+   "publicationCommit": "6dcfe9a",
+   "liveUrl": "https://near.tips/en/place/hausu-peckham-london"
   },
-  "handoffNote": "2026-09-08 (session 2): Bar Etienne (NYC) worked per dispatch scope \u2014 re-verified beyond the single diningout.com aggregator lead against Eater NY and The Infatuation plus a primary Google Maps listing, drafted content/places/bar-etienne-west-village-new-york-city/ (en.mdx + meta.json, status: draft), passed check-duplicates.mjs and validate-content.mjs. Held at draft/uncommitted per the mandatory trust:review gate \u2014 NOT committed, NOT pushed, NOT flipped to active. See that candidate's decisionPoint field for the explicit approve/reject ask and outstanding gates (hero image, Instagram/Reddit checks, full sign-off chain, six-locale translation). Dispatch was scoped to only this one item plus this manifest update \u2014 do not proceed into Cospa Ramen/Nowadays/The Bush without a fresh dispatch. 8/30 published; Bar Etienne now held (draft, pending operator decision); 21 candidates remain untouched this session: Cospa Ramen, Nowadays and The Bush next in the NYC cluster, then San Francisco Bay Area, Berlin, Amsterdam, Bangkok, Curitiba clusters. Prior note (Codex/GPT-6) on the Monkey Thief geocode correction (BACKLOG.md P0.15) preserved below for history: '2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet.' Resume near-batch-30 run 2026-09-07-batch-30."
+  {
+   "name": "TOAD Bakery",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/toad-bakery",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+    }
+   },
+   "retryCount": 0,
+   "slug": "toad-bakery-camberwell-london",
+   "author": "foodie-9000",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "The Divine",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/things-to-do/the-divine",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 Attitude, London the Inside, official site, Instagram, Reddit"
+    }
+   },
+   "retryCount": 0,
+   "slug": "the-divine-dalston-london",
+   "author": "stefan",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "E. Pellicci",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+    },
+    "sourcedPriceRange": {
+     "verdict": "pass \u2014 Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+    }
+   },
+   "retryCount": 0,
+   "slug": "e-pellicci-bethnal-green-london",
+   "author": "plinio",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "The Jago",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/bars-pubs/haggerston",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+    },
+    "sourcedPriceRange": {
+     "verdict": "pass \u2014 cheap-to-mid tier from FIXR/RA/Google Maps signals"
+    }
+   },
+   "retryCount": 0,
+   "slug": "the-jago-dalston-london",
+   "author": "stefan",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "The Pilgrm",
+   "city": "London",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "yatzer design-press profile; https://www.yatzer.com/pilgrm-hotel-paddington-london",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 Yatzer, momondo, Tripadvisor, official site"
+    },
+    "sourcedPriceRange": {
+     "verdict": "pass \u2014 momondo aggregate range + dated/occupancy-noted sample quote"
+    },
+    "accommodationAttempt": {
+     "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
+    }
+   },
+   "retryCount": 0,
+   "slug": "the-pilgrm-paddington-london",
+   "author": "nite-porter",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "Kirbee\u2019s",
+   "city": "New York City",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "CultureMap Fort Worth profile; https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+    },
+    "sourcedPriceRange": {
+     "verdict": "pass \u2014 exact sourced prices ($45/$90), both sides of the pricing debate included"
+    }
+   },
+   "retryCount": 0,
+   "slug": "kirbees-greenpoint-brooklyn",
+   "author": "foodie-9000",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "Monkey Thief",
+   "city": "New York City",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "w42st (indie), Cititour, Resy blog, What Now New York, official site; https://w42st.com/post/monkey-thief-finds-a-new-home-on-9th-ave/",
+   "evidence": null,
+   "gates": {
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "geolocation-police / Codex (GPT-6)",
+     "timestamp": "2026-09-08T12:08:12.900351+00:00",
+     "inputHash": "0ee43dec1c3079d436b77069783c6f7aa4f493a9eb843cd66fddbe46e453341e",
+     "findings": "Venue identity and address confirmed on Google Maps; actual listing pin copied. Replaces the invalid earlier Nominatim-only pass.",
+     "evidence": "content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json"
+    },
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondTimeOut": {
+     "verdict": "pass \u2014 w42st, Cititour, Resy, What Now New York, official site, Yelp"
+    }
+   },
+   "retryCount": 0,
+   "slug": "monkey-thief-hells-kitchen-new-york-city",
+   "author": "stefan",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   }
+  },
+  {
+   "name": "Bar Etienne",
+   "city": "New York City",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing \u2014 sourcing floor met for draft, not yet cleared for publish",
+   "evidence": null,
+   "gates": {
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "check-geocodes.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondSingleAggregator": {
+     "verdict": "pass \u2014 Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
+    },
+    "instagramCheck": {
+     "verdict": "checked \u2014 @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
+    },
+    "redditFallback": {
+     "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new \u2014 not a blocked leg"
+    },
+    "events": {
+     "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
+    },
+    "heroImage": {
+     "verdict": "pass \u2014 near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
+    },
+    "tovLegalChiefEditor": {
+     "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
+    }
+   },
+   "retryCount": 0,
+   "slug": "bar-etienne-west-village-new-york-city",
+   "author": "stefan",
+   "status": "draft",
+   "decisionPoint": "PUBLISHED. Operator approved the trust:review decision point; full sign-off chain (Instagram, Reddit fallback, hero image, near-illustrator, near-events, near-tov-police, language-tic-police, near-legal-counsel, chief editor) completed and all six locales written. Mechanical gates pass. See piece statusHistory for full detail.",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   },
+   "publicationCommit": "73afcb0",
+   "liveUrl": "https://near.tips/en/place/bar-etienne-west-village-new-york-city"
+  },
+  {
+   "name": "Cospa Ramen",
+   "city": "New York City",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Nowadays",
+   "city": "New York City",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "trust: auto; multiple independent current sources \u2014 official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
+   "evidence": null,
+   "gates": {
+    "duplicates": {
+     "verdict": "pass",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "check-geocodes.mjs",
+     "findings": "Google Maps listing match, 56-06 Cooper Ave, Ridgewood NY 11385, confidence 0.99"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "sourcingBeyondSingleAggregator": {
+     "verdict": "pass \u2014 official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
+    },
+    "redditCheck": {
+     "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
+    },
+    "googleReviews": {
+     "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
+    },
+    "instagramCheck": {
+     "verdict": "checked \u2014 @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
+    },
+    "events": {
+     "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
+    },
+    "heroImage": {
+     "verdict": "pass \u2014 tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
+    },
+    "tovLegalChiefEditor": {
+     "verdict": "pass \u2014 near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
+    }
+   },
+   "retryCount": 0,
+   "slug": "nowadays-ridgewood-new-york-city",
+   "author": "stefan",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   },
+   "publicationCommit": "e333f4c",
+   "liveUrl": "https://near.tips/en/place/nowadays-ridgewood-new-york-city"
+  },
+  {
+   "name": "The Bush",
+   "city": "New York City",
+   "tier": 1,
+   "state": "published",
+   "trustBasis": "auto \u2014 Time Out New York, Wine Enthusiast, The Infatuation, EveryQueer, official site (bushbk.com), corroborated by Yelp/Apple Maps/GO Magazine/Instagram",
+   "evidence": null,
+   "gates": {
+    "identityConfirmation": {
+     "verdict": "pass \u2014 confirmed real, currently operating lesbian bar at 333 Troutman St, Bushwick; not assumed nightlife by default",
+     "reviewer": "near-deep-researcher"
+    },
+    "geocode": {
+     "verdict": "pass",
+     "reviewer": "check-geocodes.mjs"
+    },
+    "duplicates": {
+     "verdict": "pass \u2014 no conflicting NYC pin",
+     "reviewer": "check-duplicates.mjs"
+    },
+    "validateContent": {
+     "verdict": "pass",
+     "reviewer": "validate-content.mjs"
+    },
+    "build": {
+     "verdict": "pass",
+     "reviewer": "npx next build"
+    },
+    "events": {
+     "verdict": "no genuine far-out one-off dated event found; recurring weekly programming only, not nested"
+    },
+    "images": {
+     "verdict": "hero resolved (tier 1, official site photo); in-body images not sourced this session (Instagram feed not browsed live) \u2014 flagged as open follow-up, not blocking"
+    }
+   },
+   "retryCount": 0,
+   "slug": "the-bush-bushwick-new-york-city",
+   "author": "allora-dai",
+   "locales": {
+    "en": "ready",
+    "pt-BR": "ready",
+    "it": "ready",
+    "es-ES": "ready",
+    "es-419": "ready",
+    "zh-CN": "ready"
+   },
+   "publicationCommit": null,
+   "liveUrl": "https://near.tips/en/place/the-bush-bushwick-new-york-city"
+  },
+  {
+   "name": "The Independent",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "The Lodge Oakland",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Henry J. Kaiser Center for the Arts",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Roxie Theater",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Black Bird Bookstore",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "The New Parkway Theater",
+   "city": "San Francisco Bay Area",
+   "tier": 1,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "S\u00fcdblock",
+   "city": "Berlin",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "about blank",
+   "city": "Berlin",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Teufelssee",
+   "city": "Berlin",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Sexyland World",
+   "city": "Amsterdam",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Skatecaf\u00e9",
+   "city": "Amsterdam",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "OT301",
+   "city": "Amsterdam",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "WTF Gallery and Caf\u00e9",
+   "city": "Bangkok",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Benjakitti Forest Park",
+   "city": "Bangkok",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Mischa Cheap",
+   "city": "Bangkok",
+   "tier": 2,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "92 Graus",
+   "city": "Curitiba",
+   "tier": 3,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Changes",
+   "city": "Curitiba",
+   "tier": 3,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  },
+  {
+   "name": "Harvest Folk Bar",
+   "city": "Curitiba",
+   "tier": 3,
+   "state": "candidate",
+   "trustBasis": "pending verified catalogue source",
+   "evidence": null,
+   "gates": {},
+   "retryCount": 0
+  }
+ ],
+ "setupDecisions": {
+  "parser": "Reuse source packets only with per-article provenance; source approval before localization",
+  "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
+  "cto": "Existing flat files and tools; no new service",
+  "techLead": "Incremental checks, saved states, final build and verification"
+ },
+ "handoffNote": "2026-09-08 (session 2): Bar Etienne (NYC) worked per dispatch scope \u2014 re-verified beyond the single diningout.com aggregator lead against Eater NY and The Infatuation plus a primary Google Maps listing, drafted content/places/bar-etienne-west-village-new-york-city/ (en.mdx + meta.json, status: draft), passed check-duplicates.mjs and validate-content.mjs. Held at draft/uncommitted per the mandatory trust:review gate \u2014 NOT committed, NOT pushed, NOT flipped to active. See that candidate's decisionPoint field for the explicit approve/reject ask and outstanding gates (hero image, Instagram/Reddit checks, full sign-off chain, six-locale translation). Dispatch was scoped to only this one item plus this manifest update \u2014 do not proceed into Cospa Ramen/Nowadays/The Bush without a fresh dispatch. 8/30 published; Bar Etienne now held (draft, pending operator decision); 21 candidates remain untouched this session: Cospa Ramen, Nowadays and The Bush next in the NYC cluster, then San Francisco Bay Area, Berlin, Amsterdam, Bangkok, Curitiba clusters. Prior note (Codex/GPT-6) on the Monkey Thief geocode correction (BACKLOG.md P0.15) preserved below for history: '2026-09-08, Codex (GPT-6): 8/30 previously published; 22 candidates remain, next Bar Etienne (NYC). Corrected Monkey Thief coordinates from the actual Google Maps listing using the signed-out Codex in-app browser and replaced the invalid Nominatim-only geocode verdict. Nominatim never substitutes for the Maps publication gate. This was a targeted correction and backlog cleanup, not a new content round; other article gates remain as previously recorded. See BACKLOG.md P0.15 and the correction evidence packet.' Resume near-batch-30 run 2026-09-07-batch-30."
 }
