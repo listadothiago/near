@@ -171,7 +171,11 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Claude Sonnet 5 (ten #2 closed)
+### Current handoff — 2026-09-08, Claude Sonnet 5 (San Francisco seed)
+
+- **Content rotation — IN PROGRESS (Claude Sonnet 5, 2026-09-08).** Ten #3's first slot: San Francisco, Tier 1. SF's `post-plan.md` queue is fully drained (its last open item shipped 2026-09-07), so per the content-rotation skill's "seed on turn" rule this turn's work is a `near-sources-war-room` seeding pass, not a direct draw. Will flip to DONE with the seed outcome (cleared + drawn, seeded-only, or held/passed to Brighton) and confirmation of tracking-file updates on completion.
+
+### Prior handoff — 2026-09-08, Claude Sonnet 5 (ten #2 closed)
 
 - **Content rotation — DONE, ten #2 CLOSED (Claude Sonnet 5, 2026-09-08).** Curitiba's Tier 3 burst shipped (**Changes**, São Francisco — see the prior handoff below for full detail), which was the last unspent share for ten #2: T1 finished at 6 of 6, T2 closed short at 1 of 3, and T3 now closes at 1 of 1. Per the content-rotation skill's "Writing the pointer" rule, all three tiers spent means the ten closes and a new one opens. **Ten #3 has opened**, `spent` reset to zero across all tiers, and `t1-order` resumes at San Francisco (the city after Brighton, where ten #2's Tier 1 round-robin ended). **`NEXT-UP` is San Francisco (Tier 1).** Flag: SF's queue is fully drained per ten #2's own record (its last open item shipped 2026-09-07), so per "Seed on turn" its ten #3 slot needs a fresh `near-sources-war-room` seeding pass rather than a direct draw — not skipped, just seeded when its turn comes. Updated `.claude/skills/content-rotation/SKILL.md` ROTATION-STATE block (ten #2 history preserved in prose, ten #3 fields blank).
 
