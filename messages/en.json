@@ -137,6 +137,7 @@
     "hideMap": "Hide map",
     "filters": "Filters",
     "useMyLocation": "My location",
+    "locatingLabel": "Locating…",
     "mapCaption": "{count} located places",
     "nearest": "Nearest",
     "latest": "Latest",

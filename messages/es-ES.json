@@ -137,6 +137,7 @@
     "hideMap": "Ocultar mapa",
     "filters": "Filtros",
     "useMyLocation": "Mi ubicación",
+    "locatingLabel": "Localizando…",
     "mapCaption": "{count} lugares localizados",
     "nearest": "Más cercanos",
     "latest": "Más recientes",
