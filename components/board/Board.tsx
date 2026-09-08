@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import NearestLatestTabs from "./NearestLatestTabs";
@@ -110,6 +110,44 @@ export default function Board({
     mq.addEventListener("change", sync);
     return () => mq.removeEventListener("change", sync);
   }, []);
+
+  // Sort tab and favorites-only scope join query/cat/tag (lib/board/
+  // controls.tsx) as shareable URL state — operator directive, 2026-09-03:
+  // "any location, filtered, sorted etc view should have a share link and
+  // share button". Read once after mount, same pattern as controls.tsx:
+  // seeding from the URL during render would mismatch the server's
+  // Latest-tab HTML. Runs before the geolocation effect below in source
+  // order, so an explicit ?sort= in a shared link sets `tabPinned` before
+  // locateMe's callback can ever check it and silently override it.
+  const hydratedTabFromUrl = useRef(false);
+  useEffect(() => {
+    const sp = new URLSearchParams(window.location.search);
+    const sort = sp.get("sort");
+    if (sort === "nearest" || sort === "latest") {
+      setTab(sort);
+      setTabPinned(true);
+    }
+    if (sp.get("fav") === "1") setOnlyFavorites(true);
+    hydratedTabFromUrl.current = true;
+  }, []);
+
+  useEffect(() => {
+    if (!hydratedTabFromUrl.current) return;
+    const sp = new URLSearchParams(window.location.search);
+    const set = (key: string, value: string) =>
+      value ? sp.set(key, value) : sp.delete(key);
+    // Only written once the reader has actually chosen — an un-pinned tab
+    // is just the fallback-while-loading state, not a real preference
+    // worth cluttering every board URL with.
+    set("sort", tabPinned ? tab : "");
+    set("fav", onlyFavorites ? "1" : "");
+    const qs = sp.toString();
+    window.history.replaceState(
+      null,
+      "",
+      qs ? `${window.location.pathname}?${qs}` : window.location.pathname,
+    );
+  }, [tab, tabPinned, onlyFavorites]);
 
 
   const parsed = useMemo(() => parseQuery(query), [query]);
