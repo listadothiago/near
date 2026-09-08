@@ -183,3 +183,46 @@ Drop the result in `content/photo-inbox/` with a filename containing
 remove this entry. This is a vector-derived illustration, not
 AI-generated art — `attribution` should read "Illustration by NEAR —
 vector-derived abstract work", not "AI-generated".
+
+## do-not-disturb-01-below-the-room (hero)
+
+An original, conceptual hero illustration for the first issue of Do Not
+Disturb, NITE-PORTER's accommodation column. Do not depict any of the
+four featured hotels — this is the column's own visual identity, not a
+venue illustration.
+
+Composition: a hotel "Do Not Disturb" door-hanger sign, hung on an
+old-fashioned brass doorknob, filling the frame at an angle. Behind/
+around it, suggested rather than detailed: a small brass luggage-cart
+bell and a single old-style room key on a numbered fob, arranged like
+still-life props on a hotel-corridor carpet. Optionally, a faint hint of
+sound — a few simple flat-shape "sound wave" lines or a muffled speaker
+glyph — bleeding in from one edge of the frame, to suggest noise the
+sign is failing to block.
+
+Style: bold flat-colour riso/screenprint reduction (house default
+fallback), limited palette anchored on Near's charcoal/black ink line
+plus a single acid-green (#ccff00) accent reserved for one small detail
+(e.g. the bell's ring, or the sound-wave lines) — never sprayed across
+the whole image. Hard black outlines, visible print misregistration.
+Flat, graphic, immediately legible as an illustration at thumbnail size;
+never photoreal, never a synthetic photograph of a real hotel corridor.
+
+No legible text anywhere in the image, including on the door-hanger
+itself — render "DO NOT DISTURB" as blocky shape/line suggestion only,
+never as actual readable letters (the card's own real headline carries
+the words). No identifiable faces.
+
+Card spec: landscape, ≥1200px wide, >300,000 total pixels, close to
+16:9.
+
+Drop the result in `content/photo-inbox/` with a filename containing
+`do-not-disturb-01`. Wire it into
+`content/collections/do-not-disturb-01-below-the-room/meta.json`'s
+`coverImage` (strategy: "illustration", attribution "Illustration by
+NEAR — AI-generated" or "— vector-derived abstract work" depending on
+how it was actually made), set `status: "active"` with a real
+`publishedAt`, then remove this entry. Once live, prepend the slug to
+`content/do-not-disturb-index.json` and `content/do-not-disturb.md`'s
+Series Index, and dispatch `near-translator` for all five other
+locales.
