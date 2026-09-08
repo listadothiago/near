@@ -16,6 +16,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Board from "@/components/board/Board";
 import GuidesStrip from "@/components/collection/GuidesStrip";
+import ColumnsStrip from "@/components/collection/ColumnsStrip";
 import { buildWebsiteJsonLd } from "@/lib/seo/jsonld";
 import { getBaseUrl } from "@/lib/seo/site";
 
@@ -87,6 +88,7 @@ export default async function HomePage({
         // map-sidebar promo pulled entirely — see BACKLOG.md (P0, 2026-09-08)
         // for why. Do not re-add without a live (not just localhost) check.
       />
+      <ColumnsStrip locale={locale as ContentLocale} />
       <GuidesStrip collections={collections} />
       <Footer stats={stats} />
     </>
