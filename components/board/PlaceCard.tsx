@@ -10,6 +10,8 @@ import type { PlaceSummary } from "@/lib/content/schema";
 import type { UpcomingEvent } from "@/lib/content/loader";
 import { isRevised } from "@/lib/content/freshness";
 import { useContentDateText } from "@/lib/content/useContentDateText";
+import { useUserCoords } from "@/lib/geo/useUserCoords";
+import { haversineKm } from "@/lib/geo/haversine";
 
 /**
  * Distance the way a person would say it: metres up close, kilometres
@@ -29,7 +31,13 @@ export default function PlaceCard({
   featured = false,
 }: {
   place: PlaceSummary;
-  /** Shown as its own badge whenever known, regardless of the active tab. */
+  /** Optional pre-computed override — the board already has `userCoords`
+      from its own explicit "My location" flow, so it passes distance in
+      directly rather than doubling up on a geolocation request. Every
+      other caller (RelatedPlaces, author pages, location hubs) omits
+      this and the card falls back to `useUserCoords()` itself, so
+      distance shows up as its own badge in every view a card appears
+      in, not just the board (BACKLOG P1.3). */
   distanceKm?: number;
   upcomingEvent?: UpcomingEvent;
   /** Wide treatment on desktop/tablet. Rhythm, not ranking — see PlaceCards. */
@@ -39,6 +47,17 @@ export default function PlaceCard({
   const tp = useTranslations("place");
   const tf = useTranslations("freshness");
   const locale = useLocale();
+  const userCoords = useUserCoords();
+  const resolvedDistanceKm =
+    distanceKm ??
+    (userCoords
+      ? haversineKm(
+          userCoords.lat,
+          userCoords.lng,
+          place.meta.coordinates.lat,
+          place.meta.coordinates.lng,
+        )
+      : undefined);
   const categoryColor = `var(${CATEGORY_COLOR_VAR[place.meta.categories[0]]})`;
   const headline = place.frontmatter.shortTitle ?? place.frontmatter.name;
   const eventDate = upcomingEvent
@@ -135,9 +154,9 @@ export default function PlaceCard({
           dateTime>` so it stays a genuine, crawlable date rather than
           just styled text. */}
       <div className="flex flex-wrap items-center gap-1.5 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
-        {distanceKm !== undefined && (
+        {resolvedDistanceKm !== undefined && (
           <span className="inline-flex items-center border-[2px] border-ink bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
-            {formatDistance(distanceKm)} {tp("away")}
+            {formatDistance(resolvedDistanceKm)} {tp("away")}
           </span>
         )}
         {/* Lime-on-black, a little bolder where this pairing already
