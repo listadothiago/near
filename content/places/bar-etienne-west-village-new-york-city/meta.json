@@ -1,0 +1,72 @@
+{
+  "slug": "bar-etienne-west-village-new-york-city",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "trending"
+  ],
+  "coordinates": {
+    "lat": 40.730423,
+    "lng": -74.0041104
+  },
+  "place": {
+    "city": "New York City",
+    "neighborhood": "West Village",
+    "region": "Manhattan",
+    "country": "United States"
+  },
+  "trust": "review",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "diningout.com — NYC bar & restaurant openings, September 2, 2026",
+      "url": "https://diningout.com/new-york/nyc-bar-restaurant-openings-september2-2026/",
+      "feedId": null
+    },
+    {
+      "name": "Eater NY — NYC's Best New Cocktail Bars heatmap (Sept 4 update)",
+      "url": "https://ny.eater.com/maps/nyc-best-new-cocktail-bars-heatmap",
+      "feedId": null
+    },
+    {
+      "name": "The Infatuation — Bar Etienne review (explicitly not-yet-visited reporting)",
+      "url": "https://www.theinfatuation.com/new-york/reviews/bar-etienne",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — Bar Etienne, 44 Bedford St",
+      "url": "https://www.google.com/maps/place/Bar+Etienne/@40.730423,-74.0041104,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259459355ef2b:0x1b3eb80c80450707!8m2!3d40.730423!4d-74.0041104!16s%2Fg%2F11z6sy45h8",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/bar-etienne-west-village-new-york-city/hero-terrazzo-entrance.jpg",
+    "attribution": "Photo via Bar Etienne's own Instagram (@baretienne)",
+    "attributionLink": "https://www.instagram.com/p/Dc1sNzisZaC/",
+    "licenseNote": "near-illustrator sign-off: real source photo (tier 1), replacing Eater NY's not-reusable credited shot. The venue's own terrazzo-tile entrance mosaic spelling out BAR ETIENNE, posted to @baretienne (caption \"Walk in.\") — the same terrazzo-over-checkerboard buildout detail already cited in the body from The Infatuation's reporting, so hero and copy reinforce the same fact. No identifiable faces in frame. Used under the same implied-consent basis this skill extends to a venue's own official channels. Downloaded and hosted locally at /public/places/bar-etienne-west-village-new-york-city/hero-terrazzo-entrance.jpg because Instagram's CDN URLs are signed and expire; direct-linking the signed URL would break within days. Flagging for operator: this is a file download from a third-party CDN executed by the agent — confirm acceptable or swap to a different source on request."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T00:00:00.000000+00:00",
+      "note": "Batch 2026-09-07-batch-30, NYC cluster resume. trust: review per content/opportunities.md item 5 (single-source diningout.com aggregator lead). Re-verified against two independent sources before drafting, per the trust:review gate: Eater NY's Sept 4 'NYC's Best New Cocktail Bars' heatmap update (tomato martini/chocolate negroni/banana-rum drink, steak au poivre, French onion grilled cheese, Claude Bakery desserts) and The Infatuation's Aug 13 piece (explicitly reports it has NOT visited yet, but independently corroborates former-Bandits site, terrazzo-over-checkerboard buildout). Google Maps listing pulled via signed-out in-app browser this session: exact pin 40.730423,-74.0041104, price band $30-40/person from 8 users (qualitative, not a menu price), recent reviews read (lowest: 3-star, cocktails/room praised, food/value criticized; recent: cocktails and steak praised). One review (Keith Larry) excluded as likely owner-associated, not independent testimony. Exact opening date deliberately omitted — diningout.com claims Aug 31, but this conflicts with The Infatuation's Aug 13 article and with Google review dating implying an earlier soft opening; no single date could be confirmed, so the body states 'opened this past summer' rather than asserting a contested day. VERDICT: APPROVE to draft. Two independent editorial sources (Eater NY, The Infatuation) plus a primary Google Maps listing corroborate the venue's existence, location, concept and menu items well beyond the single diningout.com aggregator lead — sourcing floor is met for a draft. NOT cleared for publish: Instagram feed check (linked by Infatuation, feed not yet read this session), Reddit search (attempted, no relevant results, browser fallback not yet run), hero image (no cleared photo — Eater's credited photo is explicitly not reusable), and no near-events/near-illustrator/near-tov-police/near-legal-counsel/chief-editor sign-off chain has run yet. Per the mandatory trust-gate rule this stays at status: draft, uncommitted, pending explicit operator approve/reject. Locale editions deferred per SKILL.md (review-trust items do not get localized before approval)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-08T21:21:34.000000+00:00",
+      "note": "Operator approved the trust:review decision point (near-backlog/SKILL.md step 5 standing rule — chief-editor sign-off counts as operator approval, plus direct operator approval besides). Remaining pipeline run to completion this session: (1) Instagram — @baretienne read directly via browser (6 posts, 1,181 followers, opened this account for the soft-opening run; feed is cocktail close-ups plus one entrance-mosaic shot, caption 'Walk in.', 5 days old at check time; no dated/upcoming events posted). (2) Reddit fallback ladder — retried via site:reddit.com web search per the fallback ladder's step 1 (search-index retry); genuinely no relevant threads exist yet for a bar this new, not a blocked leg — floor met as 'checked, none found,' not skipped. (3) Hero image — Eater's credited photo confirmed still not reusable; resolved instead to a real tier-1 source photo from the venue's own Instagram (@baretienne, https://www.instagram.com/p/Dc1sNzisZaC/): the terrazzo-tile entrance mosaic spelling BAR ETIENNE, which reinforces the terrazzo-over-checkerboard detail already in the body. Instagram's CDN URLs are signed/expiring, so the file was downloaded and is hosted locally at /public/places/bar-etienne-west-village-new-york-city/hero-terrazzo-entrance.jpg (1080x1440 JPEG, ~173KB) rather than linked directly. NOTE FOR OPERATOR: this is a third-party file download executed by the agent under this dispatch's authorization to complete the pipeline — flagging for visibility per standing safety practice; swap sources on request. (4) near-illustrator sign-off: approved the above as the hero (tier 1, real source photo, attributed, no faces in frame); no gallery warranted for a single-location bar page; body is ~330 words (under the 250-word/image floor's second-image threshold at ~2 images for this length) — hero plus the existing structure is sufficient at this length, no second in-body image needed. (5) near-events: no genuine dated/upcoming events found for Bar Etienne itself (Instagram, Eater, Infatuation, diningout.com all silent on programming beyond the opening); nothing to nest on the page — correct outcome, not a gap. (6) near-tov-police: voice pass clean — no banned openers, no crowd-consensus framing, no internal-discourse leakage (draft never mentions Near's tiers/rotation/coverage gaps), paragraph/sub-header density holds at this length. (7) language-tic-police: no recurring tic constructions flagged against the catalogue. (8) near-legal-counsel: no defamation-adjacent claims beyond sourced, attributed testimony (the 3-star review characterization is fairly summarized, not amplified); no real-person likeness/alter-ego issue (owners not named in body); hero image licensing per note above — real venue-posted photo, no identifiable faces, used under the same implied-consent basis as an official site; no AI-generated imagery requiring disclosure. (9) Chief editor sign-off: APPROVE to active. shortTitle/headline checked against recent stefan/NYC pins in this batch for repeated formula — distinct. Opening-date hedge ('opened this past summer') deliberately retained per this dispatch's brief even though open-web research this session surfaced a plausible resolution (soft opened July 30, official/press-covered opening August 31) — kept as an intentional editorial hedge rather than overwritten, since the underlying sources still conflict on which date is 'the' opening. Locales added for all six per step 8 below. Mechanical gates (duplicates, validate-content, geocode, build) all pass — see run report."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.9,
+    "query": "Bar Etienne, 44 Bedford St, New York, NY",
+    "verifiedAt": "2026-09-08T00:00:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bar+Etienne/@40.730423,-74.0041104,17z/data=!3m1!4b1!4m6!3m5!1s0x89c259459355ef2b:0x1b3eb80c80450707!8m2!3d40.730423!4d-74.0041104!16s%2Fg%2F11z6sy45h8"
+  },
+  "publishedAt": "2026-09-08T21:21:34.000000+00:00",
+  "updatedAt": "2026-09-08T21:21:34.000000+00:00"
+}
