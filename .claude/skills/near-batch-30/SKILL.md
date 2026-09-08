@@ -83,6 +83,18 @@ prices and dated events. Do not treat cached source text as a fresh verification
 
 ## Produce and review in bounded groups
 
+Default to one article in progress through the required pipeline before opening
+the next. Shared cluster research remains useful, but must not become a reason
+to leave every article unfinished. This is the operator's explicit 2026-09-08
+lesson after repeated parallel-agent setup and usage-limit failures yielded no
+new publications in a session. Existing permission for parallel agents does not
+make parallelism the default: use only narrow, independent assignments whose
+benefit justifies duplicated context. Do not repeatedly restart agents against
+the same usage-limit failure; checkpoint and proceed locally where possible.
+On resume, reconcile other workers' publications and reuse saved evidence before
+starting work. Preserve approvals; repeat only checks affected by changed inputs
+or facts requiring fresh verification. All mandatory quality gates still apply.
+
 1. Complete research before drafting. Write naturally concise place articles
    of at least 150 words under the current rule: enough specific substance to serve the
    reader, no padding, no forced shortness to avoid image requirements. Guides,

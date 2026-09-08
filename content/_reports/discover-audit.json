@@ -18,6 +18,15 @@
     "reason": "pass"
   },
   {
+    "slug": "attilio-trieste-salario-rome",
+    "url": "https://www.puntarellarossa.it/wp/wp-content/uploads/2026/03/puntarellarossa_attilio_bar_roma.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
     "slug": "balcao-arpoador-rio",
     "url": "https://static.wixstatic.com/media/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg/v1/fill/w_1600,h_900/58cc27_d6f34bb1d7974a87bffad174cd0b6422~mv2.jpg",
     "ok": true,
@@ -182,6 +191,15 @@
   {
     "slug": "central-station-kings-cross-london",
     "url": "https://centralstation.co.uk/wp-content/uploads/2024/05/187025545_221202523103361_8392861923650386644_n-1.jpg",
+    "ok": true,
+    "width": 1200,
+    "height": 675,
+    "aspect": "1.778",
+    "reason": "pass"
+  },
+  {
+    "slug": "changes-sao-francisco-curitiba",
+    "url": "https://boracuritiba.wordpress.com/wp-content/uploads/2026/06/changes.jpg",
     "ok": true,
     "width": 1200,
     "height": 675,
