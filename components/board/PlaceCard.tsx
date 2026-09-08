@@ -124,7 +124,10 @@ export default function PlaceCard({
           Both used to be a grey afterthought in the footer. */}
       <div className="flex items-center justify-between gap-2 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
         {tab === "nearest" && distanceKm !== undefined ? (
-          <span className="font-bold whitespace-nowrap">
+          // Neon badge, not just bold text (BACKLOG P1.3) — distance is
+          // the reason this card is even in the Nearest tab, and used to
+          // read as a grey afterthought next to the source credit.
+          <span className="inline-flex items-center bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
             {formatDistance(distanceKm)} {tp("away")}
           </span>
         ) : (
