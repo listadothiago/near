@@ -1190,3 +1190,42 @@ P1.14: repaired mixed-script terms in elder, hazlitts, jumbi, kween, la-camioner
 ## 2026-09-08T12:08:12.900351+00:00 — Codex (GPT-6), Monkey Thief geocode correction
 
 Targeted `geolocation-police` repair, not a content rotation: verified the venue listing and 754 9th Ave address in the signed-out Codex in-app browser. Corrected the shared six-locale map coordinates and `updatedAt`; replaced the invalid Nominatim-only batch gate verdict with actual Google Maps evidence. No new places added; published batch count remains 8/30. Full editorial/Discover gates were not re-certified by this location-only correction.
+
+
+## 2026-09-08 — near-illustrator, São Vicente hero image pass (operator ask)
+
+Operator asked to get better hero images for `quiosque-da-cris-sao-vicente`
+and `amuse-beach-club-sao-vicente`.
+
+**AMUSE Beach Club — hero replaced.** Checked photo inbox (nothing for this
+slug), then the venue's own official site — found via its Instagram bio
+link, `amuse.com.br`, which has a dedicated FOTOS gallery of real,
+unwatermarked venue photography (rooftop pool, dance floor, bar, exterior
+at night). Chose the daytime rooftop-pool/sea-view shot over several
+nighttime interior shots on the same page: strongest landscape frame,
+no identifiable faces, and it shows exactly what the venue's pitch is
+(perched over Ilha Porchat). Source file `IMG_0622.jpg`, iPhone 12 Pro
+EXIF, 4032x3024 — well clear of the card spec. Also checked @amuseclub's
+Instagram grid directly per the queer-beat-hero directive (this is that
+directive's origin venue) for a pride-flag-forward shot; found none — the
+grid is entirely close-up patron portraits (identifiable faces, unusable)
+and event flyers. Downloaded the original and hosted it at
+`public/places/amuse-beach-club-sao-vicente/hero-rooftop-pool.jpg`,
+replacing the generic Wikimedia Commons Ilha Porchat overlook that its own
+`licenseNote` already flagged as not venue-specific. Attributed to AMUSE's
+own official site, treated as venue promotional material per this skill's
+implied-consent treatment of a venue's own channels.
+
+**Quiosque da Cris — hero kept as-is.** Re-checked the existing operator
+photo (`hero-kiosk-flag.jpeg`) against the card spec: 1200x1600, clears
+the ≥1200px-wide and >300,000-pixel floors but is portrait, not
+16:9-leaning — a real, pre-existing softness in the operator's phone
+photo. Checked @crisdoquiosque's Instagram directly (16K followers,
+active through this week); its grid is almost entirely close-up
+patron/family portraits with identifiable faces (an outing risk) and
+product shots for the venue's own apparel shop, with no clean, wide,
+face-free shot of the kiosk that would beat the current photo. No
+official website exists for this venue. Kept the existing hero: still a
+real, correctly-attributed, venue-specific tier-1 photo, which outranks
+anything found this pass despite the aspect-ratio softness. This is a
+legitimate "nothing better found" outcome, not a skipped check.
