@@ -139,7 +139,16 @@ export default async function LocaleLayout({
         <ThemeScript />
       </head>
       <body className="min-h-screen flex flex-col">
-        <ClerkProvider>
+        <ClerkProvider
+          localization={{
+            signIn: {
+              start: { title: "Sign in to Near", titleCombined: "Sign in to Near" },
+            },
+            signUp: {
+              start: { title: "Create your Near account", titleCombined: "Create your Near account" },
+            },
+          }}
+        >
           <NextIntlClientProvider>
             <ThemeKeeper />
             <SiteFreshnessProvider value={freshness}>
