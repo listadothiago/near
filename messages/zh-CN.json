@@ -232,6 +232,7 @@
   "nav": {
     "tips": "推荐",
     "columns": "专栏合集",
+    "columnsAll": "全部专栏",
     "column": "编辑专栏",
     "theSetlist": "音乐",
     "theFailureMode": "AI",

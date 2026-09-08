@@ -232,6 +232,7 @@
   "nav": {
     "tips": "Recomendaciones",
     "columns": "Columnas",
+    "columnsAll": "Todas las columnas",
     "column": "Editorial",
     "theSetlist": "Música",
     "theFailureMode": "IA",

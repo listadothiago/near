@@ -30,7 +30,6 @@ import EngagedRead from "@/components/layout/EngagedRead";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
-import ShareButton from "@/components/layout/ShareButton";
 import PlaceFavoriteButton from "@/components/layout/PlaceFavoriteButton";
 import { getStats } from "@/lib/content/loader";
 
@@ -113,16 +112,12 @@ export default async function PlacePage({
         {/* Sticky so the favorite control stays reachable through a long
             article (BACKLOG P1.8) instead of only being available at the
             very top; top-[3.25rem] clears Header's own sticky bar rather
-            than sitting under it. */}
+            than sitting under it. Share moved into Header itself
+            (operator, 2026-09-08: "everything really should be
+            shareable") — it's universal now, not duplicated per page. */}
         <div className="sticky top-[3.25rem] z-[1100] -mx-[22px] px-[22px] py-1.5 bg-surface flex items-center justify-between gap-3 flex-wrap">
           <BackLink />
-          <div className="flex items-center gap-2">
-            <PlaceFavoriteButton slug={slug} />
-            <ShareButton
-              title={content.frontmatter.name}
-              dek={content.frontmatter.tagline}
-            />
-          </div>
+          <PlaceFavoriteButton slug={slug} />
         </div>
         {content.isFallback && (
           <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">
