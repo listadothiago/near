@@ -1643,19 +1643,23 @@ sources:
   - id: aan-the-daily-catch
     name: "The Daily Catch"
     category: city-culture
-    region: us-brooklyn-ny
+    region: us-hudson-valley-ny
     language: en
     feedUrl: null
     feedType: html-extract
     trust: auto
     status: active
     notes: >
-      AAN (Association of Alternative Newsmedia) member, Brooklyn NY. Added from
-      the live aan.org/member-directory fetch on 2026-09-01. Homepage:
-      http://thedailycatch.org/ — no RSS feed verified yet; near-editor should confirm a
-      working feed or use the Chrome-automation fallback against the
-      site's own listing pages before first use, and near-sources should
-      pause this entry if the site turns out dead or squatted.
+      AAN (Association of Alternative Newsmedia) member. Added from the live
+      aan.org/member-directory fetch on 2026-09-01 with a Brooklyn NY region
+      guess that didn't hold up — corrected 2026-09-08 (Claude Sonnet 5,
+      P2.17) after fetching the masthead directly: covers Red Hook,
+      Rhinebeck, and Clinton in Dutchess County, Hudson Valley, not
+      Brooklyn. Homepage: http://thedailycatch.org/ — no RSS feed verified
+      yet; near-editor should confirm a working feed or use the
+      Chrome-automation fallback against the site's own listing pages
+      before first use, and near-sources should pause this entry if the
+      site turns out dead or squatted.
 
   - id: aan-georgia-voice
     name: "Georgia Voice"
