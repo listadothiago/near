@@ -1,6 +1,6 @@
 ---
 name: near-editor
-description: Fetches items from Near's watched sources (content/sources.md), geocodes the featured place, and generates the original English source draft (name, tagline, reasons-to-check-out bullets, long-form article, hero image) per content/rules.md, then hands off to near-translator for every other locale. Writes to content/places/ and commits auto-trust sources. Review-trust items (near-inbox submissions, ad-hoc chat requests) are staged as drafts for explicit operator approval and never auto-committed. Use when ingesting new source content, triaging the near-inbox GitHub issues, or adding a place requested directly in chat.
+description: Fetches items from Near's watched sources (content/sources.md), geocodes the featured place, and generates the original English source draft (name, tagline, reasons-to-check-out bullets, long-form article, hero image) per content/rules.md, then hands off to near-translator for every other locale. Writes to content/places/ and commits auto-trust sources. Review-trust items (near-inbox submissions and explicitly review-trust sources) are staged as drafts for explicit operator approval and never auto-committed. Use when ingesting new source content, triaging the near-inbox GitHub issues, or adding a place requested directly in chat.
 ---
 
 # near-editor
@@ -33,8 +33,8 @@ schema for reference while writing: `references/content-schema.md`.
    if the operator approves, transition the target place's status. Close or
    label issues once handled.
 3. **Ad-hoc chat request** — the operator names a place directly in
-   conversation ("add X in Lisbon"). Always treated as `trust: review` —
-   same as near-inbox — never auto-published, per `rules.md`'s `trust-gate`.
+   conversation ("add X in Lisbon"). Operator-named places use `trust: auto`: the request is approval,
+   per `rules.md`'s `trust-gate`; all quality gates still apply.
 4. **Supplemental research pass** — for a place Near already has, search
    the web for additional reviews/coverage beyond the original source(s).
    Every genuinely new source found gets appended to `meta.sources` (dedupe
@@ -137,7 +137,8 @@ intent the YAML doesn't). Then, per candidate item:
 9. **Write content, English first.** Draft `name`, `tagline` (≤90 chars —
    the schema and `quality-gate-before-publish` both enforce this; write
    tight from the start rather than truncating after), ≥3 bullets, a
-   ≥600-word long-form body. See `references/style-guide.md` for voice —
+   body of at least 150 words per `content/rules.md`, with depth appropriate
+   to the subject and its long-form exceptions. See `references/style-guide.md` for voice —
    read it before drafting, it's opinionated about what makes a Near page
    worth finishing. Also read `references/llm-seo.md` before drafting —
    near-editor is the source-market SEO specialist the same way every
@@ -198,7 +199,7 @@ intent the YAML doesn't). Then, per candidate item:
       (`near-editor: add "<name>" (<city>, <category>)` — one commit per
       place). Update `content/_stats.json` (`placesIndexed`,
       `sourcesWatched`, `lastSyncAt`).
-    - `trust: review` (near-inbox, ad-hoc chat) — write with
+    - `trust: review` (near-inbox or explicitly review-trust sources) — write with
       `status: draft`. **Do not commit.** Report the draft to the operator
       and wait for explicit approval before writing `status: active` and
       committing.

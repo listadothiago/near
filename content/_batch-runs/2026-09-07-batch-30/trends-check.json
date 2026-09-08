@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-09-07T22:15:11.937339+00:00",
+  "results": [
+    {
+      "url": "https://trends.google.com/trending?geo=US&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=IT&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=ES&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=MX&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=PT&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-CA&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=IT&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=ES&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=MX&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-CA&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=4&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=4&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=5",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=19",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=20",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-NY&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=NL&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=TH&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=FR&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=JP&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ]
+}

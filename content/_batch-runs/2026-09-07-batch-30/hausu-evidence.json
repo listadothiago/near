@@ -1,0 +1,56 @@
+{
+  "name": "Hausu",
+  "coordinates": {
+    "lat": 51.4700651,
+    "lng": -0.0694246
+  },
+  "address": "11a Station Way, London SE15 4RX",
+  "googleMapsUrl": "https://www.google.com/maps/place/Hausu/@51.4700651,-0.0694246,17z/data=!3m1!4b1!4m6!3m5!1s0x487603a1cbf6a283:0xf0f99b4b0bbf2bae!8m2!3d51.4700651!4d-0.0694246!16s%2Fg%2F11wfk6rjcv",
+  "checkedAt": "2026-09-07T22:18:23.824979+00:00",
+  "claims": [
+    {
+      "claim": "Restaurant and hi-fi bar at Peckham Rye station",
+      "sources": [
+        "https://www.hausulondon.co.uk/",
+        "https://www.timeout.com/london/restaurants/hausu"
+      ]
+    },
+    {
+      "claim": "Official site kitchen hours Tue-Fri 18-22, Sat 12-22, Sun-Mon closed; Maps appears to cover cafe hours",
+      "sources": [
+        "https://www.hausulondon.co.uk/menu"
+      ]
+    },
+    {
+      "claim": "Sample menu lists scallop/prawn toast 9 and rice ice cream 6; discretionary 12.5% service. Sample status means not guaranteed current menu.",
+      "sources": [
+        "https://www.hausulondon.co.uk/_files/ugd/0da428_a79a91e939184e09815b20e2dc28b390.pdf"
+      ]
+    },
+    {
+      "claim": "2026-07-06 independent review found cooking uneven; praised rice ice cream, preferred quieter foyer",
+      "sources": [
+        "https://pickyglutton.com/2026/07/06/hausu-review/"
+      ]
+    }
+  ],
+  "ugc": {
+    "reddit": "Read https://www.reddit.com/r/LondonFood/comments/1tp0c6h/peckham_food_recommendations/ and https://www.reddit.com/r/LondonFood/comments/1vrpo7e/recommendations_for_dinner_in_peckham/; recommendations are individual testimony, not consensus",
+    "googleRecent": "Read ten newest visible reviews: recent praise of service and dishes, including visits one day/five days earlier",
+    "googleLowest": "Read lowest reviews: older complaints about service/value, some three-month-old low ratings. Do not repeat food safety allegations; unsupported by corroboration."
+  },
+  "events": "https://www.hausulondon.co.uk/events only 2025 dates; none used as future hooks",
+  "image": "Official homepage inspected. Prawn/scallop portrait image; restaurant photo filename credits Teo Della Torre. No hero approved yet.",
+  "remaining": [
+    "Instagram feed browser read",
+    "Five preferred-source relevance check",
+    "image resolution",
+    "draft/review/localization/final gates"
+  ],
+  "instagram": {
+    "url": "https://www.instagram.com/hausu_london/p/Dc50-Ksoqs6/",
+    "readVia": "Chrome logged-in visible public post",
+    "displayedAge": "2 d on 2026-09-07",
+    "finding": "September announcement: from next week kitchen 17:00, early set 17:00-18:30, £30 for 3 courses. Wine tasting and reading next week but exact dates not in caption; do not create dated event without dates. Website hours stale."
+  }
+}
