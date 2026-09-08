@@ -31,6 +31,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BackLink from "@/components/layout/BackLink";
 import ShareButton from "@/components/layout/ShareButton";
+import PlaceFavoriteButton from "@/components/layout/PlaceFavoriteButton";
 import { getStats } from "@/lib/content/loader";
 
 export const revalidate = 3600;
@@ -109,12 +110,19 @@ export default async function PlacePage({
       <Header />
       <div className="lg:flex lg:items-start lg:gap-10">
       <article className="mt-6 lg:flex-1 lg:min-w-0">
-        <div className="flex items-center justify-between gap-3 flex-wrap">
+        {/* Sticky so the favorite control stays reachable through a long
+            article (BACKLOG P1.8) instead of only being available at the
+            very top; top-[3.25rem] clears Header's own sticky bar rather
+            than sitting under it. */}
+        <div className="sticky top-[3.25rem] z-[1100] -mx-[22px] px-[22px] py-1.5 bg-surface flex items-center justify-between gap-3 flex-wrap">
           <BackLink />
-          <ShareButton
-            title={content.frontmatter.name}
-            dek={content.frontmatter.tagline}
-          />
+          <div className="flex items-center gap-2">
+            <PlaceFavoriteButton slug={slug} />
+            <ShareButton
+              title={content.frontmatter.name}
+              dek={content.frontmatter.tagline}
+            />
+          </div>
         </div>
         {content.isFallback && (
           <p className="mb-4 font-mono text-[0.78rem] text-ink bg-accent border-[3px] border-ink px-3 py-1.5 inline-block">
