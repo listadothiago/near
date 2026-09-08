@@ -499,6 +499,7 @@ export default function WorldMap({
   userCoords,
   focusUserSignal = 0,
   locationKey = null,
+  heightClassName = "h-[340px]",
 }: {
   points: MapPoint[];
   userCoords: { lat: number; lng: number } | null;
@@ -506,6 +507,9 @@ export default function WorldMap({
   focusUserSignal?: number;
   /** Identity of the active location search — see MapView's own doc. */
   locationKey?: string | null;
+  /** Overridable so a full-screen map page isn't stuck at the board
+      sidebar's fixed height. Default matches every existing caller. */
+  heightClassName?: string;
 }) {
   const locale = useLocale();
   const [mounted, setMounted] = useState(false);
@@ -516,7 +520,9 @@ export default function WorldMap({
   }
 
   if (!mounted) {
-    return <div className="w-full h-[340px] bg-chart-bg" aria-hidden="true" />;
+    return (
+      <div className={`w-full bg-chart-bg ${heightClassName}`} aria-hidden="true" />
+    );
   }
 
   return (
@@ -526,7 +532,7 @@ export default function WorldMap({
         zoom={2}
         zoomControl={false}
         scrollWheelZoom
-        className="w-full h-[340px]"
+        className={`w-full ${heightClassName}`}
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

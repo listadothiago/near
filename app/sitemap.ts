@@ -76,6 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // The board changes whenever any place or collection on it changes.
     push(locale, "", newestAny);
     push(locale, "/guides", newestCollection);
+    push(locale, "/map", newestAny);
     push(locale, "/sources", newestAny);
     push(locale, "/about", newestAny);
     push(locale, `/about/${CURATOR.slug}`, newestAny);
