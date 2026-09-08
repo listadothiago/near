@@ -202,7 +202,7 @@ two ever disagree.
 <!-- ROTATION-STATE: keep machine-legible, one fact per line -->
 ```
 ten:             #2 under share-of-output (opened 2026-09-04)
-spent:           T1 4 of 6 shipped   T2 0 of 3   T3 0 of 1
+spent:           T1 5 of 6 shipped   T2 0 of 3   T3 0 of 1
 t1-order:        Brighton → San Francisco → Oakland → NYC → London
                  (advanced to where ten #1's round-robin left off: ten #1
                  ended on London as its 6th draw, so ten #2 resumes at
@@ -270,6 +270,29 @@ t1-spent:        Brighton — SERVED 2026-09-04 (Green Door Store,
                  Monkey Thief, Cospa Ramen, and the time-limited Plaza
                  pop-up, which is flagged do-not-draft-as-pin) are
                  PENDING operator approval before drafting.
+                 London — SERVED 2026-09-07 (The Divine, Dalston,
+                 `the-divine-dalston-london`, STEFAN, all six locales,
+                 trust auto/active). THE CORRECTION held up: The Glory
+                 closed 31 Jan 2024 after ten years in Haggerston; The
+                 Divine (opened Feb 2024, same three founders — Jonny
+                 Woo, John Sizzle, Colin Rothbart) is its direct
+                 successor, not a separate venue some guides still list
+                 The Glory as if it were open. Address/coordinates
+                 confirmed via Google Maps (33-35 Stoke Newington Rd,
+                 N16 8BJ; geocode confidence 0.95). Sourced beyond Time
+                 Out — Attitude, London the Inside, official site,
+                 Instagram, Reddit (r/downloadfestival, r/londonlgbt);
+                 Google reviews read recent+lowest (4.0/129), mixed
+                 testimony ("more sterile than the former Glory",
+                 queue/re-entry complaints) attributed and dated as
+                 UGC. Hero: tier-1 real source photo (owner-submitted
+                 Google Business photo). `npx next build` verified;
+                 committed `ad91c73`, hero fix `3fd37bb`, pushed.
+                 LONDON'S QUEUE SURVIVES for its next turn — Sister
+                 Midnight and Hampstead Heath still HELD; the time-boxed
+                 Bayeux Tapestry/British Museum entry (window closes
+                 21 Oct 2026) is the strongest open candidate for
+                 London's next draw.
 t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  in Tier 2's order after Barcelona (which took ten #1's
                  burst via Sitges). Check Rome's queue in post-plan.md
@@ -277,14 +300,17 @@ t2-spent:        nothing yet this ten — burst goes to Rome, the next city
                  passes on, per the hold rule.
 t3-spent:        nothing yet this ten — burst goes to Curitiba, next on
                  t3-draw after Porto Alegre.
-NEXT-UP:         London (Tier 1) — fifth slot of ten #2, next in
-                 t1-order after NYC, whose fourth slot is CLOSED: it
-                 both seeded and shipped four pins on 2026-09-07 (El
-                 Califa de León, Elder, The Little Bookshop, Kween).
-                 London's queue is not fully blocked — Sister Midnight
-                 and Hampstead Heath still are, but E. Pellicci, La
-                 Camionera, The Divine, Hausu and TOAD are open and
-                 verified per the note below.
+NEXT-UP:         Brighton (Tier 1) — sixth and final Tier 1 slot of
+                 ten #2, next in `t1-order` after London, whose fifth
+                 slot is CLOSED: The Divine, Dalston shipped 2026-09-07
+                 (STEFAN, all six locales). Per `t1-order` (Brighton →
+                 San Francisco → Oakland → NYC → London), five cities
+                 over six slots means one draws twice — the wrap lands
+                 the sixth slot back on Brighton. Brighton's queue in
+                 post-plan.md still holds The Actors and Club Revenge,
+                 plus the held Polyglamorous entry and the Pride Village
+                 Party collection — check freshness/currency before
+                 drafting since Brighton's last turn was 2026-09-04.
 
                  CORRECTED 2026-09-07: this pointer read "Bangkok (Tier
                  1) — DRAW" while the tier roster above, updated the same

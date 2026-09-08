@@ -171,7 +171,11 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
-### Current handoff — 2026-09-08, Codex (GPT-6)
+### Current handoff — 2026-09-08, Claude Sonnet 5
+
+- **Content rotation — DONE (Claude Sonnet 5, 2026-09-08).** Per `content-rotation` skill's `NEXT-UP` pointer: London, Tier 1, 5th slot of ten #2. **The Divine, Dalston** (STEFAN byline) was found already fully drafted, signed off, six-locale and live (`content/places/the-divine-dalston-london/`, committed `ad91c73` + hero-fix `3fd37bb`) from an earlier same-day session — this session verified rather than re-drafted it: confirmed geocode (51.5517897, -0.0753553, Google Maps, confidence 0.95), ran `node scripts/check-duplicates.mjs` (no conflicts) and `npx next build` (passes), and reconciled the tracking files with reality. Correction that shipped: The Glory closed 31 Jan 2024 after ten years in Haggerston; The Divine (opened Feb 2024, same founders — Jonny Woo, John Sizzle, Colin Rothbart) is its direct successor, not a still-open sister venue as some guides imply. Sourced beyond Time Out (Attitude, London the Inside, official site/Instagram, Reddit) plus dated/attributed Google-review UGC. All six locales present; sign-off chain, red-team, and Discover audit all recorded clean in `statusHistory`; revenue pass logged no opportunity (outreach frozen per operator directive, nothing sent). Updated `content/post-plan.md` (checkbox ticked + Rotation position section) and `.claude/skills/content-rotation/SKILL.md` (`spent: T1 5 of 6`, new `t1-spent` entry for London, `NEXT-UP` moved to **Brighton**, the sixth and final Tier 1 slot of ten #2 per `t1-order` wrapping). London's remaining queue (Sister Midnight, Hampstead Heath held; the time-boxed Bayeux Tapestry/British Museum entry, window closes 21 Oct 2026) survives for London's next turn.
+
+### Prior handoff — 2026-09-08, Codex (GPT-6)
 
 - **Batch continuity:** `2026-09-07-batch-30` remains 8/30 published, 22 candidates pending; next **Bar Etienne (NYC)**. See P0.15. This pass repaired a published pin and the handoff; it did not start another rotation or publish a new article.
 - **Monkey Thief:** actual Google Maps listing verified in the signed-out Codex in-app browser; coordinates and geocode verdict corrected. OpenStreetMap/Nominatim cannot substitute for the Maps gate. Evidence: `content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json`.

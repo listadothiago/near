@@ -97,6 +97,16 @@ the fourth slot of ten #2.
 **Tier 1 order (ten #2):** Brighton → San Francisco → Oakland → Bangkok
 → London, wrapping back to Brighton for the sixth slot.
 
+**London's fifth slot in ten #2 is SPENT and SHIPPED (2026-09-07).**
+The Divine, Dalston went live under STEFAN — see the ticked queue entry
+above for the full correction/sourcing record. London's remaining
+queue (Sister Midnight, Hampstead Heath, and the still-held Bayeux
+Tapestry/British Museum time-boxed entry) survives for London's next
+turn. **Tier 1 now moves to Brighton** for the sixth and final slot of
+ten #2, closing the tier-1 share of this ten — per `t1-order`
+(Brighton → San Francisco → Oakland → NYC → London), the wrap returns
+to Brighton.
+
 **TEN #1 CLOSED 2026-09-04.** All three shares spent: Tier 1's six
 (Brighton, London, San Francisco, Oakland, Bangkok, then London again
 with La Camionera), Tier 2's burst (the Sitges run for Barcelona &
@@ -185,7 +195,7 @@ pin plus two new ones within walking distance._
 _Cluster B — Hackney / Dalston. Dalston Superstore is already published._
 
 - [x] **La Camionera, 243 Well Street, Hackney E9 6RG** — SHIPPED 2026-09-04 via near-write-article, CUBIC-V byline (design/art angle, not ALLORA DAI/STEFAN — the tiles/architecture story was the strongest hook once drafted; see `content/places/la-camionera-hackney-london/`). Verified: Alex Loveless/Clara Solis/body2body founder story (PinkNews, Wallpaper*, Dazed, i-D all corroborate independently); current hours per the venue's own site (Mon-Tue 16:00-23:00, Wed & Sun 11:00-23:00, Thu-Sat 11:00-23:30 — the queue entry's "Wed-Sun 10:00-late" is superseded, now walk-ins only, no bookings); THE CORRECTION shipped as the piece's lead: Hackney/Well Street E9, not Dalston, 25-minute walk from Dalston Superstore. "The Face" press mention searched for and NOT found/confirmed — not cited. Trust: auto (operator-commissioned + strong independent multi-outlet corroboration). All six locales shipped.
-- [ ] **The Divine, Dalston** — STEFAN. 200-capacity café, show-bar and nightclub, opened Feb 2024 by Jonny Woo, John Sizzle and Colin Rothbart as The Glory's "naughty little sister". **THE CORRECTION, and it is a good one: The Glory closed on 31 January 2024 after ten years in Haggerston, and guides still list it as open — one carries a "New 2025 Review" of a venue that had already been shut for a year.** Confirm The Divine's address and current hours at draft.
+- [x] **The Divine, Dalston, 33-35 Stoke Newington Rd, London N16 8BJ** — SHIPPED 2026-09-07 (`content/places/the-divine-dalston-london/`), STEFAN byline, London's 5th-slot Tier 1 draw in ten #2. Address and coordinates confirmed against Google Maps (51.5517897, -0.0753553, geocode confidence 0.95). THE CORRECTION held up: The Glory closed 31 January 2024 after ten years in Haggerston; The Divine is its direct successor, same three founders (Jonny Woo, John Sizzle, Colin Rothbart), opened Feb 2024. Sourced beyond Time Out per standing rule — Attitude (LGBTQ+ press), London the Inside, the venue's own site and Instagram, and Reddit (r/downloadfestival DRAGLOAD post, r/londonlgbt context). Google Maps reviews read (recent + lowest, 4.0/129): mixed testimony including "more sterile than the former Glory" and queue/re-entry complaints, both attributed and dated as UGC, alongside praise for staff. Official events calendar checked Sep-Nov 2026 (dense ongoing programme, e.g. LIPSYNC1000 Season 10) but no specific dates used in evergreen body copy, per the dated-events rule. Internal link to the existing Dalston Superstore pin, its real "pink triangle" neighbour. Hero: tier-1 real source photo (owner-submitted Google Business photo; official site imagery was posters, IG/FB CDN links expire). All six locales shipped, sign-off chain (tov/language-tic/legal/chief-editor lenses) and red-team/Discover-audit both clean, revenue pass logged no opportunity. `npx next build` verified. Committed at `ad91c73`, hero-image follow-up fix at `3fd37bb`, both pushed to `origin/main`.
 
 _SCOPE CORRECTION, operator 2026-09-02: **the London food focus does NOT
 have to be queer-only.** The four above were all queer-owned/led, which
