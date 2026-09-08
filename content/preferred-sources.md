@@ -803,9 +803,11 @@ map so the hold can lift. Full candidate list and analysis in
 
 **Already in `sources.md`, unchanged:** the four AAN member outlets
 tagged `us-*-ny` (Jersey Vindicator is NJ not NYC proper; The Daily
-Catch, `region: us-brooklyn-ny`, is the one genuine NYC-area AAN member —
-still unverified RSS, still worth a first-use check per its existing
-note).
+Catch was corrected 2026-09-08 (P2.17) from a Brooklyn misclassification
+to `region: us-hudson-valley-ny` — it covers Red Hook/Rhinebeck/Clinton,
+not the city, so it is not the NYC-area AAN member this note originally
+took it for — still unverified RSS, still worth a first-use check per
+its existing note).
 
 **Already-trusted, cross-city sources that apply directly to NYC leads:**
 `evgrieve.com` (East Village hyperlocal — primary source for the one
