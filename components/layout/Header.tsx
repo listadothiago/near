@@ -137,6 +137,12 @@ export default function Header({
             >
               {t("collection.navLabel")}
             </Link>
+            <Link
+              href="/map"
+              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+            >
+              {t("board.map")}
+            </Link>
             <ColumnsMenu />
             <Link
               href="/sources"
