@@ -122,8 +122,12 @@ export default function PlaceHero({
           {t("archived", {
             month: new Date(meta.publishedAt).toLocaleString("en", {
               month: "long",
+              timeZone: "UTC",
             }),
-            year: new Date(meta.publishedAt).getFullYear(),
+            year: new Date(meta.publishedAt).toLocaleString("en", {
+              year: "numeric",
+              timeZone: "UTC",
+            }),
           })}
         </p>
       )}

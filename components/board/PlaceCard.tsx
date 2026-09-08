@@ -43,7 +43,7 @@ export default function PlaceCard({
   const eventDate = upcomingEvent
     ? new Date(upcomingEvent.startsAt ?? upcomingEvent.endsAt).toLocaleDateString(
         locale,
-        { day: "numeric", month: "short" },
+        { day: "numeric", month: "short", timeZone: "UTC" },
       )
     : null;
 

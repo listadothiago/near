@@ -33,11 +33,13 @@ export default function UpcomingEvents({
                   {when.toLocaleDateString(locale, {
                     day: "numeric",
                     month: "long",
+                    timeZone: "UTC",
                   })}
                   {e.startsAt &&
                     ` · ${when.toLocaleTimeString(locale, {
                       hour: "2-digit",
                       minute: "2-digit",
+                      timeZone: "UTC",
                     })}`}
                 </span>
               </Link>
