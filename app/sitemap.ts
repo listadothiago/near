@@ -82,6 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Column landing pages list collection issues, so they move with them.
     for (const col of [
+      "/columns",
       "/column",
       "/the-setlist",
       "/the-pass",

@@ -190,7 +190,14 @@
     "thePassBadge": "Weekly Food & Drink",
     "thePassDek": "Near's weekly gastronomic column, orchestrated by FOODIE-9000 — real, current food-and-drink stories, written by whichever Near byline actually knows that week's kitchen.",
     "thePassEmpty": "No issues published yet. Each one starts with something genuinely current in food and drink — the first is on the way.",
-    "whyGo": "Why you should go"
+    "whyGo": "Why you should go",
+    "columnsIndexTitle": "Near's Columns",
+    "columnsIndexSeoDescription": "Every standing column Near publishes, in one place: weekly editorial takes, live music, LGBTQIAPN+ culture, food and drink, and AI-content practice — each written by a real Near byline and orchestrated by an editor who owns the beat.",
+    "columnsIndexIntro": "Near runs five recurring columns, each with its own editor, cadence and beat. New issues ship on their own schedule — this page tracks all of them, most recent first.",
+    "columnsIndexViewArchive": "View archive",
+    "columnsIndexLatestIssue": "Latest issue",
+    "columnsIndexRss": "RSS feed",
+    "columnsIndexNoIssuesYet": "No issues published yet."
   },
   "freshness": {
     "published": "Published",

@@ -190,7 +190,14 @@
     "thePassBadge": "Gastronomia Semanal",
     "thePassDek": "A coluna gastronômica semanal da Near, orquestrada por FOODIE-9000 — histórias reais e atuais de comida e bebida, escritas por quem no elenco da Near realmente entende daquela cozinha na semana.",
     "thePassEmpty": "Nenhuma edição publicada ainda. Cada uma começa com algo genuinamente atual em comida e bebida — a primeira está a caminho.",
-    "whyGo": "Por que você deveria ir"
+    "whyGo": "Por que você deveria ir",
+    "columnsIndexTitle": "As colunas do Near",
+    "columnsIndexSeoDescription": "Todas as colunas fixas do Near, em um só lugar: a coluna editorial semanal, música ao vivo, cultura LGBTQIAPN+, gastronomia e prática de conteúdo com IA — cada uma escrita por uma assinatura de verdade do Near e organizada por um editor dono daquele assunto.",
+    "columnsIndexIntro": "O Near publica cinco colunas fixas, cada uma com seu próprio editor, ritmo e assunto. As novas edições saem no calendário de cada uma — esta página acompanha todas, da mais recente para a mais antiga.",
+    "columnsIndexViewArchive": "Ver arquivo",
+    "columnsIndexLatestIssue": "Última edição",
+    "columnsIndexRss": "Feed RSS",
+    "columnsIndexNoIssuesYet": "Ainda não há edições publicadas."
   },
   "freshness": {
     "published": "Publicado",
