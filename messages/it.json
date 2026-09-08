@@ -190,7 +190,14 @@
     "thePassBadge": "Gastronomia Settimanale",
     "thePassDek": "La rubrica gastronomica settimanale di Near, orchestrata da FOODIE-9000 — storie vere e attuali su cibo e bevande, scritte dalla firma di Near che davvero conosce quella cucina quella settimana.",
     "thePassEmpty": "Nessun numero pubblicato ancora. Ognuno parte da qualcosa di davvero attuale nel cibo e nelle bevande — il primo sta arrivando.",
-    "whyGo": "Perché dovresti andarci"
+    "whyGo": "Perché dovresti andarci",
+    "columnsIndexTitle": "Le rubriche di Near",
+    "columnsIndexSeoDescription": "Tutte le rubriche fisse di Near, in un unico posto: l'editoriale settimanale, la musica dal vivo, la cultura LGBTQIAPN+, il cibo e le bevande, e la pratica dei contenuti con l'IA — ognuna scritta da una vera firma di Near e curata da un editor che segue quel tema.",
+    "columnsIndexIntro": "Near pubblica cinque rubriche fisse, ognuna con un proprio editor, cadenza e tema. I nuovi numeri escono secondo il proprio calendario — questa pagina le segue tutte, dalla più recente alla più vecchia.",
+    "columnsIndexViewArchive": "Vedi l'archivio",
+    "columnsIndexLatestIssue": "Ultimo numero",
+    "columnsIndexRss": "Feed RSS",
+    "columnsIndexNoIssuesYet": "Ancora nessun numero pubblicato."
   },
   "freshness": {
     "published": "Pubblicato",

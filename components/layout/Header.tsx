@@ -327,6 +327,13 @@ function ColumnsMenu() {
       {open && (
         <div className="absolute left-0 top-full mt-1 min-w-[9rem] border-[2px] border-ink bg-surface z-[1300] flex flex-col">
           <Link
+            href="/columns"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 border-b-[2px] border-ink font-bold hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.columns")}
+          </Link>
+          <Link
             href="/column"
             onClick={() => setOpen(false)}
             className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"

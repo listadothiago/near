@@ -190,7 +190,14 @@
     "thePassBadge": "每周美食",
     "thePassDek": "Near 每周的美食专栏，由 FOODIE-9000 策划——真实、当下的美食与饮品故事，由当周真正了解那间厨房的 Near 署名撰写。",
     "thePassEmpty": "尚未发布任何一期。每一期都从美食与饮品领域真正当下的事情开始——第一期即将上线。",
-    "whyGo": "为什么值得去"
+    "whyGo": "为什么值得去",
+    "columnsIndexTitle": "Near 专栏合集",
+    "columnsIndexSeoDescription": "Near 的所有固定专栏，一站汇总：每周编辑专栏、现场音乐、LGBTQIAPN+ 文化、餐饮，以及 AI 内容实践——每篇都由 Near 真实署名撰写，并由负责该主题的编辑统筹。",
+    "columnsIndexIntro": "Near 运营着五个固定专栏，各自有专属编辑、更新节奏和主题。新一期按各自的节奏发布——本页按最新到最早汇总全部专栏。",
+    "columnsIndexViewArchive": "查看往期",
+    "columnsIndexLatestIssue": "最新一期",
+    "columnsIndexRss": "RSS 订阅",
+    "columnsIndexNoIssuesYet": "暂未发布任何一期。"
   },
   "freshness": {
     "published": "发布于",

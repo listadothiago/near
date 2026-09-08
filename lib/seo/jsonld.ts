@@ -98,6 +98,57 @@ export function buildCollectionJsonLd({
 }
 
 /**
+ * The `/columns` landing page: a `CollectionPage` whose `ItemList` links
+ * each standing column's own archive, plus a `PeriodicalSeries` node per
+ * column so search engines can tell these are recurring publications with
+ * their own cadence, not five unrelated one-off pages.
+ */
+export function buildColumnsIndexJsonLd({
+  url,
+  title,
+  description,
+  columns,
+}: {
+  url: string;
+  title: string;
+  description: string;
+  columns: { name: string; description: string; url: string; feedUrl: string }[];
+}) {
+  const itemListNode = {
+    "@type": "ItemList",
+    "@id": `${url}#itemlist`,
+    itemListElement: columns.map((c, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: c.name,
+      url: c.url,
+    })),
+  };
+
+  const collectionPageNode = {
+    "@type": "CollectionPage",
+    "@id": `${url}#page`,
+    name: title,
+    description,
+    url,
+    mainEntity: { "@id": `${url}#itemlist` },
+  };
+
+  const seriesNodes = columns.map((c) => ({
+    "@type": "PeriodicalSeries",
+    "@id": `${c.url}#series`,
+    name: c.name,
+    description: c.description,
+    url: c.url,
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [collectionPageNode, itemListNode, ...seriesNodes],
+  };
+}
+
+/**
  * The curator's `Person` node — the only one on the site.
  *
  * Near's bylines are AI personas and are marked `Organization` wherever
