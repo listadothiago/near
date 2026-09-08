@@ -1,0 +1,85 @@
+{
+  "slug": "cospa-ramen-nomad-new-york-city",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": 40.7442476,
+    "lng": -73.9906333
+  },
+  "place": {
+    "city": "New York City",
+    "neighborhood": "NoMad",
+    "region": "Manhattan",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "HAND Hospitality",
+      "url": "https://www.handhospitality.com/handhistory",
+      "feedId": null
+    },
+    {
+      "name": "Yomitime",
+      "url": "https://yomitime.com/cospa-ramen-nyc-open/",
+      "feedId": null
+    },
+    {
+      "name": "Cospa menu (legacy Towa page)",
+      "url": "https://order.online/store/towa-new-york-28072523",
+      "feedId": null
+    },
+    {
+      "name": "The Infatuation",
+      "url": "https://www.theinfatuation.com/new-york/reviews/cospa-ramen",
+      "feedId": null
+    },
+    {
+      "name": "Cospa Ramen Instagram",
+      "url": "https://www.instagram.com/cosparamen/",
+      "feedId": null
+    },
+    {
+      "name": "Eater NY",
+      "url": "https://ny.eater.com/maps/best-new-nyc-restaurants-heatmap",
+      "feedId": null
+    },
+    {
+      "name": "Reddit r/ramen",
+      "url": "https://www.reddit.com/r/ramen/comments/1w2prk2/cospa_ramen_nyc/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps",
+      "url": "https://www.google.com/maps/place/Cospa+Ramen/@40.7442476,-73.9906333,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2590020d5fcfd:0xb5c23225aed0d71a!8m2!3d40.7442476!4d-73.9906333!16s%2Fg%2F11zhbb2x6h",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://diningout.com/wp-content/uploads/2026/08/NYC_Cospa-Ramen-Spicy2-1.jpeg",
+    "attribution": "Photo courtesy of Cospa Ramen",
+    "attributionLink": "https://diningout.com/new-york/new-nyc-bar-restaurant-openings-august19-2026/",
+    "licenseNote": "Venue-supplied promotional source photo credited expressly to Cospa Ramen by DiningOut. No named third-party photographer or watermark. Source-tier editorial use under Near illustrator guidance, not an open-license claim. Actual spicy ramen; inspected at 1200x803."
+  },
+  "status": "draft",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-08T22:25:51.619072+00:00",
+      "note": "Operator explicitly approved publication of Cospa Ramen after quality checks. Fresh signed-out Maps exact pin, open listing and lowest reviews read; current ordering menu retains Towa name, so no claim that online ordering is available. Instagram public post grid and bio read through September 8: hiring and August 28 full-opening hours; individual post login-limited. No future dated event found. English draft awaiting ordered reviews and localization."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "Cospa Ramen, 36 W 26th St, New York",
+    "verifiedAt": "2026-09-08T22:25:51.619072+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Cospa+Ramen/@40.7442476,-73.9906333,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2590020d5fcfd:0xb5c23225aed0d71a!8m2!3d40.7442476!4d-73.9906333!16s%2Fg%2F11zhbb2x6h"
+  },
+  "publishedAt": "2026-09-08T22:25:51.619072+00:00",
+  "updatedAt": "2026-09-08T22:25:51.619072+00:00"
+}
