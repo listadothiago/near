@@ -260,6 +260,7 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 8. **Backlink PR readiness:** backlink-pr + SEO assess whether a focused campaign is worthwhile now and prepare concrete targets/pitches for review. Treat 1,000 places as a readiness checkpoint; sending still needs explicit operator permission.
 9. **Image sourcing and art direction:** near-illustrator + design review photo-first heroes, varied vector styles and a colorful/brutalist palette. near-legal-counsel evaluates a practical sourcing policy for Google Images/Photos and venue assets, with recorded provenance and usage basis; a takedown plan alone does not establish permission. Legends hero is P2.15.
 10. **CUBIC-V naming proposal:** consult the CUBIC-V persona on “Neondrian” and give a recommendation before changing bylines, biography keys or indexed URLs.
+11. **Give near-seo, backlink-pr and ad-sales their own running knowledge-base .md files** (operator, 2026-09-08), same pattern as `content/parser-knowledge-base.md`, `content/near-ceo-knowledge-base.md` and `content/chief-editor-knowledge-base.md`: a place for each role's own cross-session judgment calls, source/prospect notes and patterns worth remembering, separate from the per-piece logs (`content/backlink-outreach.md`, `content/ad-sales-outreach.md`, etc.) that already exist. Wire each into its own skill file's "how it works" section the same way the three existing ones were. Do not implement until picked up as its own task — this is a backlog entry, not a green light to build it now.
 
 ---
 
