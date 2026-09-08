@@ -30,6 +30,14 @@ export default function weservLoader({
     return `${src}${src.includes("?") ? "&" : "?"}w=${width}&q=${quality ?? 75}`;
   }
 
+  // Wikimedia rate-limits weserv's shared fetching IPs hard enough that
+  // proxied requests come back 429 → weserv turns that into a 404 (found
+  // 2026-09-08 on the-setlist-2026-10's hero). Wikimedia's own CDN is
+  // built for direct hotlinking, so skip the proxy for it entirely.
+  if (/^https?:\/\/upload\.wikimedia\.org\//.test(src)) {
+    return src;
+  }
+
   const url = new URL("https://images.weserv.nl/");
   url.searchParams.set("url", src.replace(/^https?:\/\//, ""));
   url.searchParams.set("w", String(width));
