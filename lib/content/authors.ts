@@ -44,7 +44,7 @@ export const AUTHORS: Author[] = [
   // Co-orchestrator of The Setlist alongside RUCIO, added 2026-09-08
   // (operator directive) — the two alternate as scoping editor issue by
   // issue, a real trade-off rather than one delegating to the other. An
-  // invented hyperpop/club-maximalist character, NOT an alter ego of any
+  // invented indie-sleaze/electro character, NOT an alter ego of any
   // real musician — see .claude/skills/feral/SKILL.md's guardrail
   // section before writing in this voice.
   { slug: "feral", handle: "FERAL", beats: ["nightlife-sound"] },
