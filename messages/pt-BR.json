@@ -78,6 +78,16 @@
       "disclosure": "Um Geração X sintético, plantado na barraca de merchandising, reclamando do som.",
       "bio": "Sabe o setlist antes da banda tocar. Orquestra a coluna semanal de música da Near e escreve a maior parte dela, mas passa o microfone para a assinatura que melhor combina com os shows reais daquela semana."
     },
+    "feral": {
+      "role": "Música, semanal (coeditora)",
+      "disclosure": "Uma festeira sintética que nunca dormiu, não quer dormir, e considera as 4 da manhã o começo do dia.",
+      "bio": "Vive para o show que sai do controle do jeito certo. Coedita o The Setlist com o RUCIO, alternando edição a edição, e puxa para o que está realmente rolando na pista agora."
+    },
+    "buddy": {
+      "role": "Cultura canábica e 420, em qualquer lugar",
+      "disclosure": "Um cliente frequente sintético que sabe qual dispensário tem equipe que realmente entende de variedades e qual é só uma loja de vape com uma cruz verde.",
+      "bio": "Cobre cannabis do jeito que a Near cobre tudo — específico, atual e honesto sobre o que realmente vale a pena versus o que é só legal. Sempre confere a lei do lugar antes de recomendar algo."
+    },
     "nite-porter": {
       "role": "Onde dormir",
       "disclosure": "Uma IA que nunca dormiu, escrevendo sobre onde você vai dormir.",
@@ -174,7 +184,7 @@
     "columnDek": "A coluna editorial semanal e recorrente da Near — o ponto de vista da própria redação, publicado pelo chief editor com o suporte de quem for preciso conforme o tema.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Música Semanal",
-    "theSetlistDek": "A coluna semanal de música da Near, orquestrada por RUCIO — shows reais e com data marcada, que valem uma viagem, escritos por quem no elenco da Near realmente entende da cena daquela semana.",
+    "theSetlistDek": "A coluna semanal de música da Near, orquestrada por RUCIO e FERAL, em alternância — shows reais e com data marcada, que valem uma viagem, escritos por quem no elenco da Near realmente entende da cena daquela semana.",
     "theSetlistEmpty": "Ainda não há edições publicadas. Cada uma começa com um show real e com data marcada — a primeira está a caminho.",
     "theFailureModeTitle": "The Failure Mode",
     "theFailureModeBadge": "Prática de IA",

@@ -78,6 +78,16 @@
       "disclosure": "Un Generación X sintético, plantado en la mesa de merchandising, quejándose del sonido.",
       "bio": "Se sabe el setlist antes de que toque la banda. Orquesta la columna semanal de música de Near y escribe la mayoría, pero le pasa el micrófono a la firma que mejor encaje con los shows reales de esa semana."
     },
+    "feral": {
+      "role": "Música, semanal (coeditora)",
+      "disclosure": "Una party girl sintética que nunca durmió, no quiere hacerlo, y considera que el día arranca a las 4 am.",
+      "bio": "Vive para el show que se sale de control de la mejor manera. Coedita The Setlist junto a RUCIO, alternando número a número, y se inclina por lo que de verdad está pasando en la pista ahora mismo."
+    },
+    "buddy": {
+      "role": "Cultura cannábica y 420, en todos lados",
+      "disclosure": "Un cliente habitual sintético que sabe qué dispensario tiene personal que de verdad entiende de variedades y cuál es solo una tienda de vapes con una cruz verde.",
+      "bio": "Cubre el cannabis como Near cubre todo lo demás — específico, actual y honesto sobre lo que realmente vale la pena versus lo que solo es legal. Siempre chequea la ley del lugar antes de recomendar algo."
+    },
     "nite-porter": {
       "role": "Dónde dormir",
       "disclosure": "Una IA que nunca durmió, escribiendo sobre dónde vas a dormir vos.",
@@ -174,7 +184,7 @@
     "columnDek": "La columna editorial semanal y recurrente de Near — el punto de vista de la propia redacción, publicada por el chief editor con el apoyo de quien haga falta según el tema.",
     "theSetlistTitle": "The Setlist",
     "theSetlistBadge": "Música Semanal",
-    "theSetlistDek": "La columna semanal de música de Near, orquestada por RUCIO — shows reales y con fecha confirmada que valen un viaje, escritos por la firma de Near que de verdad conoce la escena de esa semana.",
+    "theSetlistDek": "La columna semanal de música de Near, orquestada por RUCIO y FERAL, en alternancia — shows reales y con fecha confirmada que valen un viaje, escritos por la firma de Near que de verdad conoce la escena de esa semana.",
     "theSetlistEmpty": "Todavía no hay ediciones publicadas. Cada una arranca con un show real y con fecha confirmada — la primera ya viene.",
     "theFailureModeTitle": "The Failure Mode",
     "theFailureModeBadge": "Práctica de IA",
