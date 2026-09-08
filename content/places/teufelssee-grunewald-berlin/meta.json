@@ -1,0 +1,81 @@
+{
+  "slug": "teufelssee-grunewald-berlin",
+  "categories": [
+    "wellness-fitness",
+    "travel"
+  ],
+  "tags": [
+    "lgbtq-friendly",
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": 52.49111,
+    "lng": 13.23361
+  },
+  "place": {
+    "city": "Berlin",
+    "neighborhood": "Grunewald",
+    "region": "Berlin",
+    "country": "Germany"
+  },
+  "trust": "auto",
+  "author": "wild0",
+  "sources": [
+    {
+      "name": "Berlin.de — Teufelssee lake listing (official tourism page)",
+      "url": "https://www.berlin.de/en/tourism/lakes/6258285-6218638-teufelssee.en.html",
+      "feedId": null
+    },
+    {
+      "name": "Wikipedia — Teufelssee (Berlin-Grunewald)",
+      "url": "https://en.wikipedia.org/wiki/Teufelssee",
+      "feedId": null
+    },
+    {
+      "name": "Playful Mag — Best Naked Parks in Berlin: The 2026 FKK Guide",
+      "url": "https://www.playfulmag.com/post/best-naked-parks-in-berlin-the-2026-fkk-guide",
+      "feedId": null
+    },
+    {
+      "name": "planet-randy.com — Teufelssee im Grunewald, gay nudist beach guide",
+      "url": "https://planet-randy.com/blog/en/eintrag/teufelssee-im-grunewald/",
+      "feedId": null
+    },
+    {
+      "name": "Tripadvisor — Teufelssee attraction reviews",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g187323-d6869347-Reviews-Teufelssee-Berlin.html",
+      "feedId": null
+    },
+    {
+      "name": "Wikimedia Commons — File:Teufelssee Grunewald Berlin 2025-01-19 11.jpg",
+      "url": "https://commons.wikimedia.org/wiki/File:Teufelssee_Grunewald_Berlin_2025-01-19_11.jpg",
+      "feedId": null,
+      "originalPublishedAt": "2025-01-19T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Teufelssee_Grunewald_Berlin_2025-01-19_11.jpg",
+    "attribution": "Photo by Leonhard Lenz, CC0, via Wikimedia Commons",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Teufelssee_Grunewald_Berlin_2025-01-19_11.jpg",
+    "licenseNote": "CC0 (public domain dedication), shot 19 January 2025, the lake itself in Grunewald forest. Recent, correctly-located, high-resolution — first tier of the sourcing hierarchy."
+  },
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-08T22:03:31.000Z",
+      "note": "Batch 30, Berlin Tier 2 cluster, from-scratch candidate (no prior watched-feed source). Dedupe check: grepped content/places/ for teufelssee/grunewald — zero prior hits; no existing Near pin in Grunewald or western Berlin generally, so no internal-link candidate nearby either. Current-status check: this is a natural lake, not a business that can 'close', but confirmed the bathing area, DLRG water-rescue station and access paths are still described as current/maintained by Berlin.de's own tourism page (official, government-run) and Wikipedia's geography entry — both current as of this session. Nudity-tolerance status (not officially signed FKK but widely mixed-use) corroborated independently by Playful Mag's 2026 FKK guide and planet-randy.com's dedicated guide, both current. UGC: Tripadvisor's attraction reviews and general hiking/outdoors write-ups describe the lake as a genuine local favorite, sandy shoreline, and forest access via Grunewald or Heerstraße S-Bahn stations. Reddit leg: search backend could not retrieve r/berlin thread content specific to this lake after a retry (fallback ladder step 1); substituted Tripadvisor's dated reviews and the two independent FKK-guide write-ups per ladder step 3, recorded as substitution not equivalent. Five preferred-sources context check: berlin.de, Wikipedia, Playful Mag, planet-randy.com, Tripadvisor — five sources with current, substantive information. No pricing to source (free, public access). Multiple independent, current, credible sources on access, condition and nudity-tolerance status clear this to trust: auto, status: active, all six locales. Hero image: real, recent (January 2025), correctly-located CC0 photo of the lake from Wikimedia Commons — first tier of the sourcing hierarchy, no illustration needed. External links used: berlin.de, en.wikipedia.org, playfulmag.com. No internal link candidate exists yet in this part of Berlin; logged as a coverage note for a future Grunewald-area pin rather than forcing an unrelated link. New sources logged as preferred-sources.md candidates: playfulmag.com FKK guide, planet-randy.com."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.9,
+    "query": "Teufelssee, Grunewald, 14193 Berlin — coordinates corroborated against Wikipedia geo-coordinates and Berlin.de tourism listing",
+    "verifiedAt": "2026-09-08T22:03:31.000Z",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=52.49111,13.23361"
+  },
+  "publishedAt": "2026-09-08T22:03:31.000Z",
+  "updatedAt": "2026-09-08T22:03:31.000Z"
+}
