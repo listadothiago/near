@@ -5,6 +5,10 @@ description: Internal-only trend-research role — reads Near's watched alt-pres
 
 # near-trendsetter
 
+Read relevant decisions in `content/near-trendsetter-knowledge-base.md` on resume;
+append dated evidence-based learnings after work. Use `rotation-reorder` and
+`docs/workflows/content-rotation.md` for full-round planning.
+
 Internal-only role (referred to throughout `content/*.md` column docs
 and `BACKLOG.md` as "near-trendsetter/RADAR-X"). Distinct from
 **RADAR-X**, the public AI byline (`.claude/skills/radar-x/SKILL.md`) —

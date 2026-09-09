@@ -5,6 +5,9 @@ description: The one shared pipeline every Near skill uses to actually write and
 
 # near-write-article
 
+Execution and checkpoint rules: read `docs/workflows/content-execution.md`
+once per run. All mandatory per-piece gates remain in force.
+
 Near has one real "write and publish a piece" pipeline. Every skill
 that produces a published piece — `near-editor` (place pages),
 `near-blogger` (long-form guides), `near-adiciona`, `near-war-room`,
@@ -66,6 +69,11 @@ step (see `near-seo/SKILL.md`) — off-page outreach targets get scoped
 alongside the on-page topic, not as an afterthought once the piece is
 live.
 
+For accommodation, also read `docs/workflows/content-rotation.md`: NITE-PORTER
+orchestrates and is credited for real participation even when another persona
+writes. SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER prepare their
+advice before hotel selection; the pipeline's commercial-independence rule holds.
+
 ### 2. Time-bound content: `near-events` first, no exceptions
 
 **Operator directive, 2026-09-03: `near-events` is invited to EVERY
@@ -94,6 +102,14 @@ Events expire: a dated event whose date has passed must not keep
 surfacing in the main views. That filtering is a **front-end**
 responsibility, not a `near-refresh` one — see `BACKLOG.md`'s events-view
 directive.
+
+### 2a. Event completeness — `events-police`
+
+Every article and editorial refresh must consult `events-police`, even an evergreen
+venue. Start its source check here; after drafting, complete the child-page/link/
+expiry checks before final sign-off. `near-events` research does not replace its
+explicit verdict. Confirmed relevant events ship as fully gated children; blocked
+children remain named outstanding work, never an omitted success.
 
 ### 3. Check for an existing place first — `dedupe-by-place`
 
@@ -444,6 +460,13 @@ correctness rule, not taste). Generated images disclose themselves as
 AI-generated in `attribution`. If image resolution fails entirely, the
 piece is held, not published without one.
 
+### 6a. Finished-image review — `image-police`
+
+Run `image-police` after the illustrator resolves assets and before editorial
+sign-off. View actual images and card/page crops, including in-body art. Record
+quality, factual fit and rights separately from dimensions. Repair or hold failures.
+Repeat the affected checks after an asset, crop, caption or locale changes.
+
 ### 7. Sign-off — `near-tov-police`, `language-tic-police`, `near-legal-counsel`, then the chief editor
 
 **The chief editor is invoked on every article, with no exception**
@@ -629,8 +652,19 @@ The two that most often fail here: the **hero card spec** (≥1200px wide,
 **headline-over-promise**, read as a card with no body attached, which is
 a documented misleading-preview violation and the failure mode Near's
 punchy house style produces most easily. Record the verdict, including a
-clean pass. The skill also covers Apple News (closed to new publishers —
-a watch item, not a task) and the AR card surfaces.
+clean pass. The skill also covers Apple News and available AR preview surfaces; verify current platform guidance before platform-specific claims.
+
+#### Discover police on every write and review (P1.22)
+
+Use `discover-view` on the exact touched slugs, including drafts, with a run-specific
+report directory; do not activate a draft to make the checker see it. View the
+finished headline, snippet and image together in the real rendered card as well as
+the technical image report. Check available AR/preview simulators and record the
+actual device/tool; unavailable simulators are `not tested`, never a simulated pass.
+Record findings directly as deduplicated backlog entries with URL/locale/evidence,
+including weak hooks, absent snippets, bad crops and broken markup. Repair content
+faults before sign-off; route UI defects to the Product Trio. A clean dimensional
+report is not evidence of editorial appeal, Google indexation or feed admission.
 
 ### 9b. Revenue pass — `backlink-pr` + `affiliate-pr` + `ad-sales`
 

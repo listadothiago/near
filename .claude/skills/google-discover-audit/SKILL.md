@@ -99,11 +99,10 @@ resolved hero, and the final `shortTitle`.
    portrait-orientation crop fails the card even if it's a fine
    illustration. Hand a failure back to `near-illustrator`; don't
    downgrade the check.
-   - **Known gap:** `heroImageSchema` in `lib/content/schema.ts` stores
-     no width/height, so this cannot currently be verified
-     mechanically — check the actual asset. Adding dimensions to the
-     schema is a `near-tech-lead` item, logged, not something this skill
-     fixes inline.
+   - Run `discover-view` on the exact slug with `--include-drafts` before
+     activation (`--type collections` for a collection). Check the actual served
+     asset and visual crop; a dimensions-only pass cannot establish image quality.
+     Google's dimensions are recommendations; Near enforces this house gate.
 2. **Headline delivers what it promises.** Read the `shortTitle` and the
    `dek` as a card, with the hero, without the body — the only thing a
    Discover user ever sees before tapping. Does the body pay off every
@@ -130,8 +129,10 @@ resolved hero, and the final `shortTitle`.
    introduce a heavy unoptimised image. Static-rendered Next pages with
    `next/image` normally pass — flag a regression, don't re-derive it.
 
-Record the verdict with the piece's other pipeline logs, **including a
-clean pass**, so the next run doesn't re-litigate it.
+Run this on every write and editorial review. Record verdict, time, exact inputs
+and viewed-card evidence, including headline appeal and snippet usefulness in
+each locale. Log actionable defects directly in BACKLOG.md. Reuse unchanged
+evidence through the execution contract; never reuse a pass after its inputs change.
 
 ## Site-level, occasional
 

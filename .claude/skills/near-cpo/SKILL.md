@@ -1,6 +1,6 @@
 ---
 name: near-cpo
-description: Internal-only product-leadership role for near.tips — owns the north star, what Near refuses to become, and the portfolio balance between content, product surfaces and infrastructure. Never carries a public byline. Distinct from near-lead-product and near-product-owner by altitude: those own the backlog and the spec; this one owns what the product is for.
+description: "Internal-only product-leadership role for near.tips — owns the north star, what Near refuses to become, and the portfolio balance between content, product surfaces and infrastructure. Never carries a public byline. Distinct from near-lead-product and near-product-owner by altitude: those own the backlog and the spec; this one owns what the product is for."
 ---
 
 # near-cpo

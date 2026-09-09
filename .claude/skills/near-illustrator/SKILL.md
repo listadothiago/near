@@ -5,6 +5,9 @@ description: Near's art director. Makes the image call on EVERY published place 
 
 # near-illustrator
 
+After asset selection, `image-police` must view the finished assets and crops
+and give a distinct verdict; dimensions alone cannot clear image quality.
+
 Read `content/illustrator-knowledge-base.md` when choosing an illustration
 direction. It stores compact artist/reference traits and run learnings. Reuse
 it instead of starting a new visual-reference hunt for each article; add only

@@ -1,6 +1,6 @@
 ---
 name: departamento-de-vai-dar-merda
-description: Near's pre-publish red team — the "it's going to go wrong" department. Runs on EVERY near-write-article piece before the status flip, asking one question about the draft: what in here goes wrong later? Catches claims that rot (prices, hours, "new", "still open"), legal and disclosure exposure, technical and accessibility failures, and the ways a piece can land badly on readers it wasn't written for. Convenes near-legal-counsel, near-tech-lead, near-lead-product, near-lead-ux, the DEI lens and the neurodiversity lens. Invoke standalone when auditing already-published content for the same failures.
+description: "Near's pre-publish red team — the \"it's going to go wrong\" department. Runs on EVERY near-write-article piece before the status flip, asking one question about the draft: what in here goes wrong later? Catches claims that rot (prices, hours, \"new\", \"still open\"), legal and disclosure exposure, technical and accessibility failures, and the ways a piece can land badly on readers it wasn't written for. Convenes near-legal-counsel, near-tech-lead, near-lead-product, near-lead-ux, the DEI lens and the neurodiversity lens. Invoke standalone when auditing already-published content for the same failures."
 ---
 
 # departamento-de-vai-dar-merda

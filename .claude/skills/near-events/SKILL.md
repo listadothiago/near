@@ -5,6 +5,9 @@ description: Finds specific, dated, far-out events (concerts, festivals, pride p
 
 # near-events
 
+Every article and review also runs `events-police`: hand it checked source
+evidence and child-event outcomes; a research note alone is not a published event.
+
 Near's content ages better when it points at something specific and
 checkable in the future, not just a vibe. This skill exists because
 that's a distinct research job from "what place should we write about"

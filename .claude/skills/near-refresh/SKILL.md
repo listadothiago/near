@@ -5,6 +5,13 @@ description: Orchestrates a full refresh pass over Near's content — starts wit
 
 # near-refresh
 
+Read `docs/workflows/content-rotation.md` when planning hotels or a full round:
+five new hotels per full round/batch, NITE-PORTER credit, prepared specialist
+consultation, nearby food/events, and explicit coverage/exception accounting.
+
+Execution and checkpoint rules: read `docs/workflows/content-execution.md`
+once per run. All mandatory per-piece gates remain in force.
+
 The periodic growth-and-maintenance pass for Near. `near-refresh` is an
 **orchestrator, not a writer** — it decides what needs attention and in
 what order, then hands each concrete piece of work to `near-editor` (new

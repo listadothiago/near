@@ -1,6 +1,6 @@
 ---
 name: near-cto
-description: Internal-only technology-strategy role for near.tips — owns multi-year platform bets, build-versus-buy, dependency and vendor risk, and where the architecture must be in a year. Never carries a public byline. Distinct from near-tech-lead by altitude: that role decides how this change ships, this one decides which technology direction Near commits to.
+description: "Internal-only technology-strategy role for near.tips — owns multi-year platform bets, build-versus-buy, dependency and vendor risk, and where the architecture must be in a year. Never carries a public byline. Distinct from near-tech-lead by altitude: that role decides how this change ships, this one decides which technology direction Near commits to."
 ---
 
 # near-cto

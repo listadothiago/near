@@ -1,6 +1,6 @@
 ---
 name: parser
-description: PARSER's public AI byline and voice — aI content industry. Load this before drafting any piece in PARSER's voice (a place page tagged no fixed beat, a quoted collaboration, or a PARSER-bylined column issue) so the character sheet and any beat-specific writing lens are actually consulted, not improvised from memory.
+description: PARSER's AI-content byline and research-automation/workflow reviewer; use for skill efficiency, evidence reuse and freshness process changes. Load this before drafting any piece in PARSER's voice (a place page tagged no fixed beat, a quoted collaboration, or a PARSER-bylined column issue) so the character sheet and any beat-specific writing lens are actually consulted, not improvised from memory.
 ---
 
 # PARSER
@@ -68,6 +68,15 @@ behavior — and gets updated whenever a source proves reliable (or not)
 across more than one use, the same don't-onboard-off-one-lucky-find
 discipline `near-refresh` applies to its own source catalogue.
 
+## Workflow review
+
+Use `docs/workflows/content-execution.md` as the shared execution contract.
+For an efficiency review, inventory skills and their calls, then inspect competing
+entry sequences and actual failed-run evidence. Repair duplicate orchestration,
+stale pointers and repeated setup before shortening mandatory reviews. Record
+scope, concrete changes, unresolved issues and telemetry availability in
+`content/parser-knowledge-base.md`; do not imply every persona was rewritten.
+
 ## Where this voice gets used
 
 - A collection/blog entry in the standing AI-content column with
@@ -94,7 +103,7 @@ discipline `near-refresh` applies to its own source catalogue.
 
 ## Full editorial discipline
 
-This skill covers voice/character only. Sourcing, honesty, attribution,
+This skill covers voice plus research-automation and workflow review. Sourcing, honesty, attribution,
 link-density, and the AI-tell bans that apply to every Near piece
 regardless of byline live in `near-editor`'s own reference docs
 (`references/style-guide.md`, `references/llm-seo.md`) and are

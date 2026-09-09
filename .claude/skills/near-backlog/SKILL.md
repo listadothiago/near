@@ -1,4 +1,12 @@
+---
+name: near-backlog
+description: Triage and execute Near backlog items within operator scope using RICE, MoSCoW, current evidence and the shared publishing workflow.
+---
+
 # near-backlog
+
+Execution and checkpoint rules: read `docs/workflows/content-execution.md`
+once per run. All mandatory per-piece gates remain in force.
 
 The operating method for working through `BACKLOG.md`,
 `content/post-plan.md`, and `content/opportunities.md` in a session —
@@ -137,34 +145,16 @@ session.
    line of defense when a cheap grep here catches it before any agent
    time is spent.
 
-3. **Always present a menu, never just proceed** on anything with more
-   than one reasonable next step — `AskUserQuestion` with 2-4 options,
-   the top one visibly marked `(Recommended)` and backed by its RICE
-   score in the description/preview, not just asserted. This applies to
-   picking the next piece, picking a market, and picking how granularly
-   to commit. Skip the menu only for the single obvious next mechanical
-   step inside an already-approved decision (e.g. which locale to
-   translate next once the piece itself is approved).
+3. **Choose within the operator's authorized scope.** Use RICE/MoSCoW and
+   the panel's judgment to proceed. Ask only when a material decision lacks
+   authorization or needed information; do not ask again for an already-approved
+   task. Any options offered must first pass the already-shipped check.
 
-   **Every option offered in that menu must already have passed step 2's
-   already-shipped check.** Don't RICE-score or present a queue item the
-   operator would have to discover mid-task is already done — do the
-   grep first, silently drop anything already live, and only surface
-   genuinely open items. If a whole queue turns out stale, say so and
-   run the cleanup (tick the real checkboxes, commit) before presenting
-   the menu, not after.
-
-4. **Dispatch execution to a background agent**, not inline tool calls,
-   once a specific next item is chosen and the work is substantial
-   (drafting a piece end-to-end, a multi-file code change, a research
-   pass). The dispatch prompt must be self-contained: cite the exact
-   `BACKLOG.md`/`post-plan.md`/`opportunities.md` entry driving the
-   work, name the persona/skill files to load, state the trust-gate
-   rule explicitly (see below), and list the concrete pipeline steps
-   from `near-write-article/SKILL.md` rather than assuming the agent
-   will infer them. This keeps the coordinating session's own context
-   small enough to keep running the loop across many items in one
-   sitting.
+4. **Execute with one coordinator by default.** Substantial work is not itself
+   a reason to spawn a background agent. Use the shared execution contract;
+   delegate only an authorized, narrow independent deliverable with a concrete
+   benefit. Supply the exact backlog entry, relevant skills, evidence and trust
+   constraints, rather than the whole history. Keep mandatory verdicts distinct.
 
 5. **Trust-gate every publish decision** — this is the one step that
    never gets skipped to move faster:

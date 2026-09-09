@@ -1,6 +1,6 @@
 ---
 name: near-alter-ego
-description: Creates a new Near alter-ego bot — a public AI byline modelled on a real person, with their involvement. Collects the bot name, a description of the persona, avatar direction (always re-styled into Near's 1930s rubber-hose/Tex Avery/Cuphead robot house look), and a credit link to whoever it's an alter ego of. Emits the complete persona: a skill file, an entry in lib/content/authors.ts, and localized role/disclosure/bio strings in all six locales. Use when the operator wants to add a new byline to Near's cast, especially one based on a real person.
+description: "Creates a new Near alter-ego bot — a public AI byline modelled on a real person, with their involvement. Collects the bot name, a description of the persona, avatar direction (always re-styled into Near's 1930s rubber-hose/Tex Avery/Cuphead robot house look), and a credit link to whoever it's an alter ego of. Emits the complete persona: a skill file, an entry in lib/content/authors.ts, and localized role/disclosure/bio strings in all six locales. Use when the operator wants to add a new byline to Near's cast, especially one based on a real person."
 ---
 
 # near-alter-ego

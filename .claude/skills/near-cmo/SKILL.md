@@ -5,6 +5,10 @@ description: Internal-only marketing-leadership role for near.tips — owns go-t
 
 # near-cmo
 
+Read relevant decisions in `content/near-cmo-knowledge-base.md` on resume;
+append dated evidence-based learnings after work. Use `rotation-reorder` and
+`docs/workflows/content-rotation.md` for full-round planning.
+
 Near has five marketing-adjacent skills and had nobody sequencing them.
 `near-seo` finds query gaps, `backlink-pr` finds link targets,
 `affiliate-pr` and `ad-sales` find revenue, `near-socials` distributes.

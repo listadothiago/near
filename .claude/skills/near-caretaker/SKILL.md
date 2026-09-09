@@ -5,6 +5,10 @@ description: Keeps already-published Near content true as the world changes — 
 
 # near-caretaker
 
+Every editorial review runs `events-police`, `image-police` and the per-piece
+Discover check in `near-write-article` step 9a. Reuse unchanged evidence, inspect
+current rendering, and log unavailable previews honestly.
+
 Near's maintenance editor. Every other content skill writes; this one
 keeps what's already written from quietly becoming false.
 

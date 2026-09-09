@@ -47,165 +47,35 @@ schema for reference while writing: `references/content-schema.md`.
    `auto`) and follows the same commit/quality-gate rules as any other
    update.
 
-## Pipeline
+## Intake and publishing
 
-Read `content/sources.md` and `content/rules.md` first (both are prose +
-fenced YAML — parse the YAML block, but read the prose too, it carries
-intent the YAML doesn't). Then, per candidate item:
+Read `content/rules.md` and the relevant entries in `content/sources.md`,
+including their prose and trust values. For ingestion, fetch active RSS/Atom;
+for HTML sources or failed feeds, inspect the source's actual listing page
+with available browser tools. Extract title, URL, date and useful source facts.
+Only location-grounded items become place/event candidates. Preserve generic
+news leads for the appropriate column rather than inventing a pin.
 
-1. **Fetch.** `WebFetch` the source's `feedUrl` and parse RSS/Atom. If
-   `feedType: html-extract`, `feedUrl: null`, or the RSS fetch fails/returns
-   malformed XML, fall back to `claude-in-chrome`: navigate to the source's
-   own listing page and extract items via `get_page_text`/`read_page`
-   (title, link, date, blurb, image if present).
-2. **Filter to places.** Discard items that aren't about an actual
-   place — a venue, a trail, an event location. Generic news, opinion, and
-   listicles-about-nothing-specific don't become Near pages.
-3. **Apply `run-volume-cap`.** Stop after the configured number of
-   successful publishes for this run; log the remainder as deferred in
-   `content/_ingestion-log.md`.
-4. **Dedupe.** Check every candidate against existing `meta.json` files —
-   haversine distance < 150m or a fuzzy name match means "this place
-   already exists," not "create a new slug." Append the new item to that
-   place's `meta.sources` array (dedupe by `url`) and refresh `updatedAt`;
-   leave `meta.trust` as it already is. One map pin, one article, however
-   many outlets have covered the place — every distinct mention stays
-   linked from the same page. See `dedupe-by-place` in rules.md.
-5. **Verify the candidate is still actually there.** For anything that
-   didn't clear the dedupe check (i.e. this would be a brand-new
-   place), do a basic current-status check before going any further —
-   a fresh web search for the name + city, or a quick `claude-in-chrome`
-   glance at its Google Maps listing. This matters most for candidates
-   that aren't coming from a source article published this session: an
-   operator-recalled name, an old research list, a war-room candidate
-   pulled from general knowledge rather than a just-checked source. If
-   the place looks closed, moved, or rebranded, skip it and log why —
-   don't publish a pin for somewhere that's no longer there. See
-   `verify-still-open-before-create` in rules.md.
-6. **Geolocation police — Google Maps is the publish authority.** Resolve
-   the venue in Google Maps and copy the pin's latitude/longitude into
-   `meta.coordinates`; do not infer a street centre, neighbourhood, or
-   reuse a nearby venue's pin. Record `provider: "google-maps"`,
-   `confidence` of at least `0.9`, the exact lookup in `query`, the direct
-   Maps/share URL in `googleMapsUrl`, and the real check time in
-   `verifiedAt`. Nominatim/OpenStreetMap may help discover a candidate, but
-   it cannot clear the publish gate. Run
-   `node scripts/check-geocodes.mjs <slug>` after writing the metadata; a
-   failure means keep the place as a draft and resolve the disagreement.
-7. **Classify event vs. evergreen place.** If the source item describes a
-   one-off or time-bound happening (concert, festival run, pop-up,
-   exhibition with an end date) rather than a persistent venue, set
-   `meta.eventEndsAt` to that happening's end date/time. Most places are
-   evergreen — leave `eventEndsAt: null` unless there's a real end date.
-   See the `event-expiry` rule.
-8. **Resolve the hero image — always via `near-illustrator`.** Invoke
-   `.claude/skills/near-illustrator/SKILL.md` on every piece, without
-   exception. It is Near's art director, not a garnish for long posts:
-   it makes the call on which hero/thumbnail runs, whether a gallery is
-   warranted (usually not — it holds a deliberately high bar), and
-   whether an original illustration would earn more clicks than the best
-   available photograph. On the board the hero *is* the ad for the
-   piece, so this call is worth making deliberately every time rather
-   than defaulting to whatever image the source happened to publish.
+Then execute `.claude/skills/near-write-article/SKILL.md` in its full order.
+It owns dedupe, current-status and Google Maps verification, events, research,
+persona choice, drafting, imagery, distinct sign-offs, all six locales,
+mechanical/red-team/feed/revenue checks and the trust/build/push gates.
+The same route applies to supplemental research and edits of existing pieces;
+`near-caretaker` supplies freshness expertise. This skill is an entry point,
+not an alternative pipeline. Follow `docs/workflows/content-execution.md` for
+resuming, evidence reuse and changed-input checks.
 
-   The tiers it chooses between, per `rules.md`:
-   1. The source article's own image — record `attribution` (credit the
-      original outlet) and `attributionLink` (back to the source article).
-      Be conservative about outlets known to be rights-sensitive or
-      paywalled; when in doubt, skip to the next tier rather than assume
-      fair use.
-   2. A licensed stock photo (Unsplash API / Pexels API — keys come from
-      `UNSPLASH_ACCESS_KEY` / `PEXELS_API_KEY` env vars) searched by
-      place name + category keywords.
-   3. An original illustration generated by `near-illustrator` —
-      visibly stylized and never photoreal, disclosed as AI-generated in
-      `attribution`, `strategy: "illustration"`. This tier exists as of
-      2026-08-31 (operator decision); the earlier "no AI-generated tier
-      by design" position is gone. A drawn hero routinely beats a generic
-      stock photo, and beats holding a genuinely good place as a draft
-      forever for want of a photograph.
+Intake-specific obligations after that pipeline:
 
-      Preference order is not fallback-only: if the real photo is dark,
-      cluttered, or indistinguishable from ten other venues, an
-      illustration is the better call. What is never acceptable is a
-      generated image that could be mistaken for a photograph of the
-      actual place — that's a violation of `quality-gate-before-publish`,
-      not a success.
-
-   Only if all three fail is the place **skipped** rather than published
-   imageless — log why in `_ingestion-log.md`.
-9. **Write content, English first.** Draft `name`, `tagline` (≤90 chars —
-   the schema and `quality-gate-before-publish` both enforce this; write
-   tight from the start rather than truncating after), ≥3 bullets, a
-   body of at least 150 words per `content/rules.md`, with depth appropriate
-   to the subject and its long-form exceptions. See `references/style-guide.md` for voice —
-   read it before drafting, it's opinionated about what makes a Near page
-   worth finishing. Also read `references/llm-seo.md` before drafting —
-   near-editor is the source-market SEO specialist the same way every
-   `near-translator` locale is for theirs, and the English draft is what
-   every locale's facts get checked against, so it needs to be as
-   citation-ready as any locale version. When a place's category matches a specialist advisor
-   lens, consult that skill while drafting rather than relying on the
-   generic register alone: `food-drink` places →
-   `.claude/skills/near-editor-gastronomic/SKILL.md`; the rare, genuinely
-   eclectic `nightlife-sound` place → `.claude/skills/near-editor-stefon/SKILL.md`
-   (narrow, sparing use only — see that skill's own guidance on when it
-   applies). Both are lenses on Near's one voice, not separate voices —
-   see "Categories, tags, and 'advisor lenses'" in the style guide. Weave
-   in 2–4 `<NearLink slug="...">` cross-links to
-   related existing places (same city/neighborhood/category) — check
-   `lib/content/loader.ts`'s `getRelatedPlaces` logic for how relatedness
-   is computed, and only link slugs that actually exist
-   (`getAllPlaceSlugs()`); an invalid `<NearLink>` fails the Next.js build.
-10. **Hand off to `near-translator` for every other locale.** Localizing
-   is not near-editor's own job past the English source — for each of
-   `pt-BR`, `it`, `es-ES`, `es-419`, `zh-CN`, consult
-   `.claude/skills/near-translator/SKILL.md` for that specific locale.
-   Each locale is its own local-editor persona (its own
-   `references/locales/<locale>.md`) empowered to diverge from the
-   English draft — different emphasis, added or cut bullets, a different
-   local name — as long as the underlying facts (coordinates, what
-   happened, prices) stay consistent across every locale version; see
-   "Consistent facts across locales" in
-   `.claude/skills/near-editor/references/llm-seo.md`. Same
-   `<NearLink slug="...">` handling either way: visible text localized,
-   `slug` prop unchanged.
-
-   **All five are required to publish.** As of 2026-08-31 this is part
-   of `quality-gate-before-publish`, not a tail step to get to later —
-   being genuinely multilingual is a core property of the app rather
-   than a nice-to-have, and "we'll translate it later" had left half the
-   catalogue in English fallback across four markets. A place ships
-   complete or it doesn't ship. `run-volume-cap` bounds how many
-   *places* a run creates, not how many locales each gets: if the cap
-   binds, publish fewer places fully rather than more places partially.
-
-   The English fallback in `lib/content/loader.ts` stays as a safety net
-   so a missing file degrades instead of 404ing, but it is now a bug
-   indicator rather than an expected state. See `rules.md`'s
-   `full-locale-coverage` rule for how a gap should get closed on a
-   later run rather than left indefinitely.
-11. **Validate.** Every field must satisfy `lib/content/schema.ts`
-    (`placeMetaSchema`, `placeContentFrontmatterSchema`) and the
-    `quality-gate-before-publish` rule. Run
-    `node scripts/check-geocodes.mjs <slug>` as part of this step for each
-    new or corrected active pin. A schema or geocode violation should fail
-    loudly, not get silently patched around — see how `npm run build`
-    already throws on invalid frontmatter.
-12. **Apply `trust-gate`.**
-    - `trust: auto` (curated `sources.md` entries) and everything passes:
-      write `content/places/<slug>/meta.json` + locale `.mdx` files with
-      `status: active`, then `git add` + commit
-      (`near-editor: add "<name>" (<city>, <category>)` — one commit per
-      place). Update `content/_stats.json` (`placesIndexed`,
-      `sourcesWatched`, `lastSyncAt`).
-    - `trust: review` (near-inbox or explicitly review-trust sources) — write with
-      `status: draft`. **Do not commit.** Report the draft to the operator
-      and wait for explicit approval before writing `status: active` and
-      committing.
-13. **Log.** Append a run summary to `content/_ingestion-log.md`: sources
-    checked, places added/updated/skipped (name the specific failed rule
-    for skips), near-inbox issues triaged.
+- Apply `run-volume-cap`: normally at most five successful places per invocation;
+  explicit batch mode follows its own limit. Log deferred candidates.
+- Validate against `lib/content/schema.ts`; use `references/content-schema.md`
+  as a writing aid, not permission to ignore the current schema.
+- Update `content/_stats.json` (`placesIndexed`, `sourcesWatched`, `lastSyncAt`)
+  from actual results on a committed run. Follow the pipeline's per-place commit
+  and review-trust rules; a draft awaiting approval stays uncommitted.
+- Append a compact result to `content/_ingestion-log.md`: sources checked,
+  added/updated/held items and exact failed rules, inbox issues handled.
 
 ## Notes
 

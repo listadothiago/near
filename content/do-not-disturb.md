@@ -1,5 +1,8 @@
 # Do Not Disturb — Near's accommodation column
 
+Hotel strategy and rotation obligations: `docs/workflows/content-rotation.md`.
+Every issue also clears `image-police` and `events-police` through the shared pipeline.
+
 **Byline: NITE-PORTER.** House column for the accommodation beat
 (`near-editor-accommodation`), same model as Near's other standing
 columns — one editor owns continuity and the quality bar, but defers to

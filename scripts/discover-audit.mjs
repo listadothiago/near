@@ -4,9 +4,10 @@
 // Checks the actual documented Discover image requirement (>=1200px wide,
 // 16:9 aspect ratio, >300,000 total pixels) against each active place's
 // real heroImage source, by fetching the image and reading its true
-// dimensions with sharp — no invented pass/fail, no simulation.
+// dimensions from image headers — no invented pass/fail, no simulation.
 //
-// Usage: node scripts/discover-audit.mjs [--limit N] [--json out.json]
+// Usage: node scripts/discover-audit.mjs [--limit N] [--slugs a,b] [--include-drafts]
+//        [--type places|collections] [--report-dir path]
 //
 // Also (re)writes a self-contained HTML report with the real images
 // embedded as data URIs, at content/_reports/discover-audit.html, and
@@ -47,13 +48,22 @@ function readDimensions(buf) {
   return { width: null, height: null };
 }
 
-const PLACES_DIR = "content/places";
-const REPORT_DIR = "content/_reports";
 const args = process.argv.slice(2);
-const limitIdx = args.indexOf("--limit");
-const limit = limitIdx >= 0 ? parseInt(args[limitIdx + 1], 10) : Infinity;
+function option(name, fallback) {
+  const idx = args.indexOf(name);
+  if (idx < 0) return fallback;
+  if (!args[idx + 1] || args[idx + 1].startsWith("--")) throw new Error(`Missing value for ${name}`);
+  return args[idx + 1];
+}
+const contentType = option("--type", "places");
+if (!["places", "collections"].includes(contentType)) throw new Error("--type must be places or collections");
+const PLACES_DIR = `content/${contentType}`;
+const REPORT_DIR = option("--report-dir", "content/_reports");
+const includeDrafts = args.includes("--include-drafts");
+const limit = Number(option("--limit", Infinity));
+if (limit !== Infinity && (!Number.isInteger(limit) || limit < 1)) throw new Error("--limit must be a positive integer");
 const slugsIdx = args.indexOf("--slugs");
-const onlySlugs = slugsIdx >= 0 ? args[slugsIdx + 1].split(",") : null;
+const onlySlugs = slugsIdx >= 0 ? option("--slugs").split(",").filter(Boolean) : null;
 
 function ogImageUrlFor(heroUrl) {
   // Mirrors lib/seo/ogImage.ts's buildOgImages. Absolute (external) hero
@@ -83,6 +93,7 @@ function ogImageUrlFor(heroUrl) {
 async function checkImage(url) {
   const res = await fetch(url, {
     redirect: "follow",
+    signal: AbortSignal.timeout(20000),
     headers: { "User-Agent": "Mozilla/5.0 (compatible; NearDiscoverAudit/1.0; +https://near.tips)" },
   });
   if (!res.ok) return { ok: false, reason: `fetch failed (${res.status})` };
@@ -117,19 +128,27 @@ async function checkImage(url) {
 
 async function main() {
   let slugs = readdirSync(PLACES_DIR);
-  if (onlySlugs) slugs = slugs.filter((s) => onlySlugs.includes(s));
-  slugs = slugs.slice(0, limit === Infinity ? undefined : limit);
+  if (onlySlugs) {
+    const missing = onlySlugs.filter((s) => !slugs.includes(s));
+    if (missing.length) throw new Error(`Unknown requested slugs: ${missing.join(", ")}`);
+    slugs = slugs.filter((s) => onlySlugs.includes(s));
+  }
   const results = [];
 
   for (const slug of slugs) {
     let meta;
     try {
       meta = JSON.parse(readFileSync(join(PLACES_DIR, slug, "meta.json"), "utf8"));
-    } catch {
+    } catch (error) {
+      results.push({ slug, ok: false, reason: `metadata unreadable: ${error.message}` });
       continue;
     }
-    if (meta.status !== "active") continue;
-    const hero = meta.heroImage;
+    if (meta.status !== "active" && !(includeDrafts && meta.status === "draft")) {
+      if (onlySlugs) results.push({ slug, ok: false, reason: `status ${meta.status} excluded; use --include-drafts for drafts` });
+      continue;
+    }
+    if (results.length >= limit) break;
+    const hero = contentType === "collections" ? meta.coverImage : meta.heroImage;
     if (!hero?.url) {
       results.push({ slug, name: meta.slug, ok: false, reason: "no hero image" });
       continue;
@@ -146,7 +165,7 @@ async function main() {
   const passing = results.filter((r) => r.ok);
   const failing = results.filter((r) => !r.ok);
 
-  console.log(`\nDiscover image audit — ${results.length} active places checked`);
+  console.log(`\nDiscover image audit — ${results.length} ${contentType} checked`);
   console.log(`  PASS: ${passing.length}   FAIL: ${failing.length}\n`);
   for (const r of failing) {
     console.log(`  FAIL  ${r.slug.padEnd(45)} ${r.reason}`);
@@ -211,6 +230,7 @@ async function main() {
   writeFileSync(join(REPORT_DIR, "discover-audit.html"), html);
   writeFileSync(join(REPORT_DIR, "discover-audit.json"), JSON.stringify(results.map(({ buf, ...r }) => r), null, 2));
   console.log(`\nReport written: ${join(REPORT_DIR, "discover-audit.html")}`);
+  if (!results.length || failing.length) process.exitCode = 1;
 }
 
-main();
+main().catch((error) => { console.error(error.message); process.exitCode = 1; });

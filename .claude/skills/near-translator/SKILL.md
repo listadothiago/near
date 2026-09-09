@@ -141,7 +141,8 @@ When invoked by `near-refresh` (or directly) to close a locale gap on an
 already-published place rather than as part of a fresh `near-editor`
 draft, the process is the same — read the English source (or, if English
 itself is missing for some reason, the best available locale as
-fallback), read the persona file, write a genuine local edition, commit
+fallback), read the persona file, write a genuine local edition, complete the
+affected sign-offs and final review gates in `near-write-article` before committing
 alongside a normal `near-editor`-style commit message
 (`near-translator (<locale>): add "<name>"`). See `content/rules.md`'s
 `full-locale-coverage` rule for how this gets prioritized.

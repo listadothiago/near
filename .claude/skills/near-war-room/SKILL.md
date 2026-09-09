@@ -1,9 +1,12 @@
 ---
 name: near-war-room
-description: The full-roster orchestrator for a themed content push — invokes near-blogger, near-editor, every near-translator locale, the relevant specialist advisor lenses (stefon/party, gastronomic, wellness, historian, art, sports, outdoors, luxury, shopping), near-seo, and near-deep-researcher together to produce real, long-form, engaging content on a topic or destination: itineraries, guides, "best of" selections, routes, blog posts, collections, and pins, all at once rather than one place at a time. Use for any "war room" request — a themed or destination-focused content push bigger than a single near-editor or near-adiciona call.
+description: "The full-roster orchestrator for a themed content push — invokes near-blogger, near-editor, every near-translator locale, the relevant specialist advisor lenses (stefon/party, gastronomic, wellness, historian, art, sports, outdoors, luxury, shopping), near-seo, and near-deep-researcher together to produce real, long-form, engaging content on a topic or destination: itineraries, guides, \"best of\" selections, routes, blog posts, collections, and pins, all at once rather than one place at a time. Use for any \"war room\" request — a themed or destination-focused content push bigger than a single near-editor or near-adiciona call."
 ---
 
 # near-war-room
+
+Execution and checkpoint rules: read `docs/workflows/content-execution.md`
+once per run. All mandatory per-piece gates remain in force.
 
 Near's biggest orchestrator. Where `near-refresh` is the periodic
 maintenance-and-steady-growth pass, `near-war-room` is a deliberate,
@@ -157,7 +160,7 @@ coherent topic per run rather than silently trying to clear multiple
 unrelated `BACKLOG.md` entries at once — if a request is really several
 distinct war rooms (as many of the `BACKLOG.md` entries are, listed
 individually on purpose), run them as separate invocations, sequentially
-or in parallel background agents, not smashed into one giant pass that's
+with one coordinator by default, not combined into one giant pass that's
 hard to review or that runs out of budget mid-way (see `BACKLOG.md`'s
 "Failed background runs" section for what that failure mode looks like
 in practice, and plan run size accordingly).

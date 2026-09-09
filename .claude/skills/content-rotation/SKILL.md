@@ -1,4 +1,15 @@
+---
+name: content-rotation
+description: Maintain Near geographic tiers and publication accounting; execute the shared full-round coverage contract and preserve saved queue progress.
+---
+
 # content-rotation
+
+Read `docs/workflows/content-rotation.md` for the current full-round contract
+and run `rotation-reorder` at the beginning of a new round. That contract supersedes
+older seed-only completion and wildcard rules below. The saved tiers/NEXT-UP remain
+historical run state until a checked reorder reconciles them with BACKLOG §2.2;
+do not discard either list's cities or reset spent counters during a skill edit.
 
 Owns the geographic tier list and rotation cadence for `content/post-plan.md`. Operator directive, 2026-09-01 — supersedes any prior tier list in post-plan.md.
 

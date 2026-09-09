@@ -14,6 +14,10 @@ opportunity research** (what's actually worth writing, based on real
 demand signal) and **a QA pass** (does this specific draft actually
 deliver on the discipline, or does it just gesture at it).
 
+For full-round queue planning, use `rotation-reorder` and
+`docs/workflows/content-rotation.md`; preserve coverage debt and record the
+evidence basis for any multilingual demand weights.
+
 ## Mode 1 — Opportunity finding
 
 Consulted by `near-war-room` at the start of a content push, or by

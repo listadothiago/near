@@ -5,6 +5,13 @@ description: Create a repeatable batch of 30 new Near articles with shared resea
 
 # Near batch of 30
 
+Read `docs/workflows/content-rotation.md` when planning hotels or a full round:
+five new hotels per full round/batch, NITE-PORTER credit, prepared specialist
+consultation, nearby food/events, and explicit coverage/exception accounting.
+
+Execution and checkpoint rules: read `docs/workflows/content-execution.md`
+once per run. All mandatory per-piece gates remain in force.
+
 Invoke with `$near-batch-30`, optionally adding cities, beats, source leads,
 `draft only`, or `resume <run-id>`. A bare invocation requests creation and
 publication through the existing trust gate. A request to design or edit this

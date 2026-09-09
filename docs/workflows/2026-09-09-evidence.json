@@ -1,0 +1,528 @@
+{
+  "date": "2026-09-09",
+  "agent": "Codex GPT-6",
+  "scope": "structural inventory of all local skills; detailed review of publishing/rotation entrypoints and gates",
+  "inventory": [
+    {
+      "skill": "808",
+      "lines": 65,
+      "words": 601
+    },
+    {
+      "skill": "ad-sales",
+      "lines": 126,
+      "words": 978
+    },
+    {
+      "skill": "aeo",
+      "lines": 153,
+      "words": 1273
+    },
+    {
+      "skill": "affiliate-pr",
+      "lines": 141,
+      "words": 1110
+    },
+    {
+      "skill": "allora-dai",
+      "lines": 60,
+      "words": 521
+    },
+    {
+      "skill": "backlink-pr",
+      "lines": 151,
+      "words": 1269
+    },
+    {
+      "skill": "bakfiets",
+      "lines": 67,
+      "words": 504
+    },
+    {
+      "skill": "bricky",
+      "lines": 72,
+      "words": 538
+    },
+    {
+      "skill": "buddy",
+      "lines": 88,
+      "words": 806
+    },
+    {
+      "skill": "ciclovia",
+      "lines": 80,
+      "words": 647
+    },
+    {
+      "skill": "content-rotation",
+      "lines": 621,
+      "words": 5611
+    },
+    {
+      "skill": "cubic-v",
+      "lines": 55,
+      "words": 378
+    },
+    {
+      "skill": "darcy",
+      "lines": 56,
+      "words": 372
+    },
+    {
+      "skill": "departamento-de-vai-dar-merda",
+      "lines": 200,
+      "words": 1648
+    },
+    {
+      "skill": "discover-view",
+      "lines": 110,
+      "words": 897
+    },
+    {
+      "skill": "dog-in-the-fog",
+      "lines": 60,
+      "words": 446
+    },
+    {
+      "skill": "eddie-tor",
+      "lines": 85,
+      "words": 651
+    },
+    {
+      "skill": "events-police",
+      "lines": 39,
+      "words": 342
+    },
+    {
+      "skill": "feral",
+      "lines": 86,
+      "words": 786
+    },
+    {
+      "skill": "fit-bot",
+      "lines": 54,
+      "words": 357
+    },
+    {
+      "skill": "foodie-9000",
+      "lines": 62,
+      "words": 412
+    },
+    {
+      "skill": "geolocation-police",
+      "lines": 40,
+      "words": 265
+    },
+    {
+      "skill": "google-discover-audit",
+      "lines": 202,
+      "words": 1630
+    },
+    {
+      "skill": "image-police",
+      "lines": 37,
+      "words": 327
+    },
+    {
+      "skill": "language-tic-police",
+      "lines": 202,
+      "words": 1550
+    },
+    {
+      "skill": "link-police",
+      "lines": 129,
+      "words": 1047
+    },
+    {
+      "skill": "lugardo-karai",
+      "lines": 57,
+      "words": 396
+    },
+    {
+      "skill": "motosai",
+      "lines": 68,
+      "words": 541
+    },
+    {
+      "skill": "near-adiciona",
+      "lines": 68,
+      "words": 580
+    },
+    {
+      "skill": "near-alter-ego",
+      "lines": 112,
+      "words": 942
+    },
+    {
+      "skill": "near-backlog",
+      "lines": 229,
+      "words": 1832
+    },
+    {
+      "skill": "near-batch-30",
+      "lines": 160,
+      "words": 1398
+    },
+    {
+      "skill": "near-blogger",
+      "lines": 124,
+      "words": 976
+    },
+    {
+      "skill": "near-caretaker",
+      "lines": 210,
+      "words": 1802
+    },
+    {
+      "skill": "near-ceo",
+      "lines": 85,
+      "words": 624
+    },
+    {
+      "skill": "near-cfo",
+      "lines": 50,
+      "words": 416
+    },
+    {
+      "skill": "near-cmo",
+      "lines": 60,
+      "words": 460
+    },
+    {
+      "skill": "near-cpo",
+      "lines": 51,
+      "words": 396
+    },
+    {
+      "skill": "near-cto",
+      "lines": 50,
+      "words": 409
+    },
+    {
+      "skill": "near-deep-researcher",
+      "lines": 81,
+      "words": 719
+    },
+    {
+      "skill": "near-editor",
+      "lines": 93,
+      "words": 758
+    },
+    {
+      "skill": "near-editor-accommodation",
+      "lines": 128,
+      "words": 1056
+    },
+    {
+      "skill": "near-editor-art",
+      "lines": 60,
+      "words": 458
+    },
+    {
+      "skill": "near-editor-gastronomic",
+      "lines": 82,
+      "words": 693
+    },
+    {
+      "skill": "near-editor-historian",
+      "lines": 65,
+      "words": 528
+    },
+    {
+      "skill": "near-editor-luxury",
+      "lines": 53,
+      "words": 411
+    },
+    {
+      "skill": "near-editor-outdoors",
+      "lines": 64,
+      "words": 490
+    },
+    {
+      "skill": "near-editor-party",
+      "lines": 59,
+      "words": 499
+    },
+    {
+      "skill": "near-editor-shopping",
+      "lines": 69,
+      "words": 512
+    },
+    {
+      "skill": "near-editor-sports",
+      "lines": 61,
+      "words": 455
+    },
+    {
+      "skill": "near-editor-stefon",
+      "lines": 80,
+      "words": 705
+    },
+    {
+      "skill": "near-editor-wellness",
+      "lines": 67,
+      "words": 541
+    },
+    {
+      "skill": "near-events",
+      "lines": 84,
+      "words": 704
+    },
+    {
+      "skill": "near-illustrator",
+      "lines": 569,
+      "words": 4708
+    },
+    {
+      "skill": "near-lead-product",
+      "lines": 108,
+      "words": 895
+    },
+    {
+      "skill": "near-lead-ux",
+      "lines": 59,
+      "words": 438
+    },
+    {
+      "skill": "near-legal-counsel",
+      "lines": 75,
+      "words": 592
+    },
+    {
+      "skill": "near-north-star-dashboard",
+      "lines": 46,
+      "words": 329
+    },
+    {
+      "skill": "near-product-owner",
+      "lines": 176,
+      "words": 1429
+    },
+    {
+      "skill": "near-refresh",
+      "lines": 239,
+      "words": 2112
+    },
+    {
+      "skill": "near-seo",
+      "lines": 112,
+      "words": 953
+    },
+    {
+      "skill": "near-socials",
+      "lines": 78,
+      "words": 559
+    },
+    {
+      "skill": "near-sources",
+      "lines": 130,
+      "words": 1092
+    },
+    {
+      "skill": "near-sources-war-room",
+      "lines": 111,
+      "words": 948
+    },
+    {
+      "skill": "near-tech-lead",
+      "lines": 61,
+      "words": 473
+    },
+    {
+      "skill": "near-tov-police",
+      "lines": 475,
+      "words": 3660
+    },
+    {
+      "skill": "near-translator",
+      "lines": 149,
+      "words": 1275
+    },
+    {
+      "skill": "near-trendsetter",
+      "lines": 83,
+      "words": 636
+    },
+    {
+      "skill": "near-ux-designer",
+      "lines": 56,
+      "words": 382
+    },
+    {
+      "skill": "near-ux-researcher",
+      "lines": 47,
+      "words": 349
+    },
+    {
+      "skill": "near-war-room",
+      "lines": 177,
+      "words": 1344
+    },
+    {
+      "skill": "near-write-article",
+      "lines": 740,
+      "words": 6432
+    },
+    {
+      "skill": "parser",
+      "lines": 113,
+      "words": 905
+    },
+    {
+      "skill": "pauly-seya",
+      "lines": 61,
+      "words": 441
+    },
+    {
+      "skill": "plinio",
+      "lines": 55,
+      "words": 368
+    },
+    {
+      "skill": "price-police",
+      "lines": 82,
+      "words": 720
+    },
+    {
+      "skill": "radar-x",
+      "lines": 69,
+      "words": 477
+    },
+    {
+      "skill": "rotation-reorder",
+      "lines": 39,
+      "words": 345
+    },
+    {
+      "skill": "rucio-libero",
+      "lines": 108,
+      "words": 886
+    },
+    {
+      "skill": "stefan",
+      "lines": 56,
+      "words": 381
+    },
+    {
+      "skill": "wild0",
+      "lines": 54,
+      "words": 356
+    },
+    {
+      "skill": "zack-arioka",
+      "lines": 106,
+      "words": 965
+    }
+  ],
+  "trendsFetches": [
+    {
+      "url": "https://trends.google.com/trending?geo=US&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=IT&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=ES&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=MX&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=PT&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-CA&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=IT&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=ES&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=MX&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-CA&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=DE&category=4&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=GB&category=4&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=5",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=19",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=BR&category=20",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=US-NY&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=NL&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=TH&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=FR&category=5&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://trends.google.com/trending?geo=JP&category=19&hours=168",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ],
+  "tokenUsage": "unavailable"
+}
