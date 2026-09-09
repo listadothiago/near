@@ -666,6 +666,19 @@ rules:
     trigger: "an AI skill edits a place/collection not originally created by that skill or another AI skill"
     action: "append rather than overwrite; flag questionable content with a linked note rather than silently editing; escalate to admin review if warranted; immediate takedown only for criminal/extreme content"
 
+  - id: image-event-feed-review
+    description: >
+      Every article write and editorial refresh runs image-police after
+      near-illustrator, events-police for researched dated occurrences and
+      child-page completion, and google-discover-audit plus discover-view on
+      the touched slugs. Inspect real rendered images/headlines/snippets;
+      no dimension-only artistic pass, no blocked calendar called no events,
+      no untested AR simulator called passed. Store distinct verdicts and
+      evidence; repair required content failures before publication and log
+      reproducible UI failures in BACKLOG.md. near-write-article owns sequencing.
+    trigger: "creating or editorially reviewing a place, event, collection or column"
+    action: "record image, event and feed verdicts; repair or hold unresolved required checks"
+
   - id: run-volume-cap
     description: >
       A single near-editor run creates or updates at most 5 places, to
