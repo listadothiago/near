@@ -16,8 +16,13 @@
       "status": "active",
       "at": "2026-09-10T21:05:00Z",
       "note": "Operator directive, immediate: 'remove my photo from hello world immediately.' coverImage set to null -- his real /about photo (public/branding/thiago-baraldi.jpg) is no longer used as this piece's hero. No replacement image chosen yet; the piece runs without a hero image until the operator specifies a replacement (illustration vs. a different photo vs. staying textual)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-10T21:15:00Z",
+      "note": "Operator directive: 'I hate the post, never write in my name again lol. Change the body to \"hi there, I'll be actually writing here myself... eventually lol\".' Body replaced in all six locales with that exact line (translated per locale) plus the single existing NearLink (quiosque-da-cris-sao-vicente) kept so collectionMetaSchema's placeSlugs.min(1) requirement and the link-density gate still hold. This deliberately runs under rules.md's 150-word quality-gate floor -- explicit operator override of his own placeholder post, not an oversight. dek/seoDescription shortened to match. Near-write-article's standing rule that the curator's byline is never auto-generated without him personally asking stands reaffirmed by this correction."
     }
   ],
   "publishedAt": "2026-09-10T20:20:00Z",
-  "updatedAt": "2026-09-10T21:05:00Z"
+  "updatedAt": "2026-09-10T21:15:00Z"
 }
