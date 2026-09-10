@@ -136,37 +136,37 @@ export default function Header({
           </div>
         )}
 
-        {/* Below md: wraps onto as many lines as it needs instead of
-            side-scrolling. An earlier version used overflow-x-auto here,
-            which hid ABOUT/SOURCES off the right edge with no affordance
-            that more nav existed — reads as a cut-off/broken header, and
-            the operator flagged the side-scroll itself as awkward
-            regardless (2026-09-10). Each pill now carries its own full
-            border and a small gap instead of a shared border-l-0 chain,
-            so a wrapped pill never loses its left edge. md+: all inline,
-            no wrap needed. */}
+        {/* Below sm: smaller type/padding keeps all five pills (six
+            counting Columns) on one line even for longer-word locales
+            like pt-BR (DICAS/GUIAS/MAPA/Colunas/FONTES/SOBRE) — wrapping
+            onto extra lines ate too much header height (operator,
+            2026-09-10: "terrible solution... just make that font
+            smaller"). Each pill keeps its own full border and a small
+            gap (not a shared border-l-0 chain), so nothing looks
+            cut-off if it ever does wrap on an even narrower device.
+            sm+: normal size. md+: all inline in the desktop masthead. */}
         <nav
-          className={`order-3 basis-full min-w-0 md:order-none md:basis-auto flex-wrap items-center gap-1 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
+          className={`order-3 basis-full min-w-0 md:order-none md:basis-auto flex-wrap items-center gap-0.5 sm:gap-1 font-sans text-[0.56rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
             <Link
               href="/"
-              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
             >
               {t("nav.tips")}
             </Link>
             <Link
               href="/guides"
-              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
             >
               {t("collection.navLabel")}
             </Link>
             <Link
               href="/map"
-              className="inline-flex items-center gap-1 border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="inline-flex items-center gap-1 border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
             >
-              <svg viewBox="0 0 24 24" className="w-3 h-3 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
                 <circle cx="12" cy="9" r="2.5" />
               </svg>
@@ -175,13 +175,13 @@ export default function Header({
             <ColumnsMenu />
             <Link
               href="/sources"
-              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
             >
               {t("sources.navLabel")}
             </Link>
             <Link
               href="/about"
-              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
             >
               {t("nav.about")}
             </Link>
@@ -267,52 +267,65 @@ export default function Header({
       {/* Mobile uses a bounded sheet outside the sticky header's layout so
           the full category/tag inventory can never consume the results
           viewport. Desktop keeps the compact inline panel. Shared filtered
-          URLs start collapsed; the count badge carries their state. */}
+          URLs start collapsed; the count badge carries their state.
+
+          The outer wrapper is `fixed inset-0` (full viewport, all four
+          edges) rather than just `bottom-3` anchored — Android Chrome's
+          dynamic address bar means a `bottom: 0`-only fixed element is
+          positioned against the *large* viewport (toolbar hidden), which
+          sits below what's actually visible when the toolbar is shown.
+          That rendered the sheet below the fold, requiring a scroll to
+          reach it — reported directly by the operator with a screenshot,
+          2026-09-10. Anchoring all four sides to the *current* viewport
+          and using flex to bottom-align the actual panel inside it keeps
+          the panel reliably in view regardless of toolbar state. */}
       {showFilters && filtersOpen && (
-        <div className="fixed inset-x-3 bottom-3 z-[1300] max-h-[min(70dvh,36rem)] overflow-y-auto rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow)] md:static md:inset-auto md:z-auto md:mt-2 md:max-h-[45vh] md:rounded-none md:border-x-0 md:border-b-0 md:bg-transparent md:px-0 md:pb-0 md:pt-2 md:shadow-none">
-          <div
-            className="mb-2 flex touch-pan-y flex-col gap-1 md:hidden"
-            onTouchStart={(event) => {
-              filterSheetTouchStartY.current = event.touches[0]?.clientY ?? null;
-            }}
-            onTouchEnd={(event) => {
-              const startY = filterSheetTouchStartY.current;
-              const endY = event.changedTouches[0]?.clientY;
-              filterSheetTouchStartY.current = null;
-              if (startY !== null && endY !== undefined && startY - endY >= 48) {
-                setFiltersOpen(false);
-              }
-            }}
-          >
+        <div className="fixed inset-0 z-[1300] flex items-end justify-center p-3 md:static md:inset-auto md:z-auto md:block md:p-0">
+          <div className="w-full max-h-[min(70dvh,36rem)] overflow-y-auto rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow)] md:mt-2 md:max-h-[45vh] md:rounded-none md:border-x-0 md:border-b-0 md:bg-transparent md:px-0 md:pb-0 md:pt-2 md:shadow-none">
             <div
-              aria-hidden="true"
-              className="mx-auto h-1.5 w-12 rounded-full bg-ink/35"
-            />
-            <div className="flex items-center justify-between gap-3">
-              <strong className="font-display text-[0.9rem] uppercase">
-                {t("board.filters")}
-              </strong>
-              <button
-                type="button"
-                onClick={() => setFiltersOpen(false)}
-                aria-label={t("board.filters")}
-                className="inline-flex h-9 w-9 items-center justify-center border-[2px] border-ink bg-surface font-sans text-xl leading-none hover:bg-accent hover:text-black"
-              >
-                ×
-              </button>
+              className="mb-2 flex touch-pan-y flex-col gap-1 md:hidden"
+              onTouchStart={(event) => {
+                filterSheetTouchStartY.current = event.touches[0]?.clientY ?? null;
+              }}
+              onTouchEnd={(event) => {
+                const startY = filterSheetTouchStartY.current;
+                const endY = event.changedTouches[0]?.clientY;
+                filterSheetTouchStartY.current = null;
+                if (startY !== null && endY !== undefined && startY - endY >= 48) {
+                  setFiltersOpen(false);
+                }
+              }}
+            >
+              <div
+                aria-hidden="true"
+                className="mx-auto h-1.5 w-12 rounded-full bg-ink/35"
+              />
+              <div className="flex items-center justify-between gap-3">
+                <strong className="font-display text-[0.9rem] uppercase">
+                  {t("board.filters")}
+                </strong>
+                <button
+                  type="button"
+                  onClick={() => setFiltersOpen(false)}
+                  aria-label={t("board.filters")}
+                  className="inline-flex h-9 w-9 items-center justify-center border-[2px] border-ink bg-surface font-sans text-xl leading-none hover:bg-accent hover:text-black"
+                >
+                  ×
+                </button>
+              </div>
             </div>
+            <CategoryFilters
+              activeCats={activeCats}
+              allSelected={activeCats.size === 0 && activeTags.size === 0}
+              onToggle={toggleCat}
+              available={new Set(availableCats)}
+            />
+            <TagFilters
+              activeTags={activeTags}
+              onToggle={toggleTag}
+              available={new Set(availableTags)}
+            />
           </div>
-          <CategoryFilters
-            activeCats={activeCats}
-            allSelected={activeCats.size === 0 && activeTags.size === 0}
-            onToggle={toggleCat}
-            available={new Set(availableCats)}
-          />
-          <TagFilters
-            activeTags={activeTags}
-            onToggle={toggleTag}
-            available={new Set(availableTags)}
-          />
         </div>
       )}
 
@@ -391,7 +404,7 @@ function ColumnsMenu() {
         onClick={() => setOpen((was) => !was)}
         aria-expanded={open}
         aria-haspopup="true"
-        className="inline-flex items-center gap-1 border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+        className="inline-flex items-center gap-1 border-[2px] border-ink px-1 py-0.5 sm:px-2 sm:py-1 hover:bg-accent hover:text-black transition-colors"
       >
         {t("nav.columns")}
         <span
