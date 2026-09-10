@@ -136,16 +136,17 @@ export default function Header({
           </div>
         )}
 
-        {/* text/padding step down below sm: five pills at the full size
-            don't fit a phone's width and wrap, and the wrapped item loses
-            its collapsed left border (border-l-0) since it's no longer
-            adjacent to the item before it — it reads as a broken/cut-off
-            button, worst on standalone PWA where there's no browser chrome
-            trimming the viewport further. Smaller type/padding keeps all
-            five on one line down to phone widths instead. Operator report,
-            2026-09-08. */}
+        {/* Below md: wraps onto as many lines as it needs instead of
+            side-scrolling. An earlier version used overflow-x-auto here,
+            which hid ABOUT/SOURCES off the right edge with no affordance
+            that more nav existed — reads as a cut-off/broken header, and
+            the operator flagged the side-scroll itself as awkward
+            regardless (2026-09-10). Each pill now carries its own full
+            border and a small gap instead of a shared border-l-0 chain,
+            so a wrapped pill never loses its left edge. md+: all inline,
+            no wrap needed. */}
         <nav
-          className={`order-3 basis-full min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:order-none md:basis-auto md:overflow-visible flex-nowrap items-center gap-0 pr-[22px] md:pr-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
+          className={`order-3 basis-full min-w-0 md:order-none md:basis-auto flex-wrap items-center gap-1 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
@@ -157,13 +158,13 @@ export default function Header({
             </Link>
             <Link
               href="/guides"
-              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("collection.navLabel")}
             </Link>
             <Link
               href="/map"
-              className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="inline-flex items-center gap-1 border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               <svg viewBox="0 0 24 24" className="w-3 h-3 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
@@ -174,13 +175,13 @@ export default function Header({
             <ColumnsMenu />
             <Link
               href="/sources"
-              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("sources.navLabel")}
             </Link>
             <Link
               href="/about"
-              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
               {t("nav.about")}
             </Link>
@@ -390,7 +391,7 @@ function ColumnsMenu() {
         onClick={() => setOpen((was) => !was)}
         aria-expanded={open}
         aria-haspopup="true"
-        className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+        className="inline-flex items-center gap-1 border-[2px] border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
       >
         {t("nav.columns")}
         <span
@@ -402,7 +403,7 @@ function ColumnsMenu() {
       </button>
 
       {open && (
-        <div className="absolute left-0 top-full mt-1 min-w-[9rem] border-[2px] border-ink bg-surface z-[1300] flex flex-col">
+        <div className="absolute right-0 top-full mt-1 min-w-[9rem] max-w-[calc(100vw-2rem)] border-[2px] border-ink bg-surface z-[1300] flex flex-col">
           <Link
             href="/columns"
             onClick={() => setOpen(false)}
