@@ -55,6 +55,7 @@ export default function Header({
     setFiltersOpen,
   } = useBoardControls();
   const [compact, setCompact] = useState(false);
+  const filterSheetTouchStartY = useRef<number | null>(null);
 
   // The field is available everywhere now — off the board, submitting
   // (Enter) takes the reader to the board, where the query (shared via
@@ -73,14 +74,16 @@ export default function Header({
   const additionalFilterCount = Math.max(0, appliedFilterLabels.length - 1);
 
   useEffect(() => {
-    // Hysteresis, and the gap must exceed the header's own height change:
-    // collapsing removes ~70px of masthead, which shifts the page and can
-    // push scrollY back under a narrow expand threshold — the header then
-    // reopens, shifts the page down, re-collapses, and oscillates. Seen
-    // live on mobile. Collapse at 120, expand only near the actual top.
+    // Collapse almost immediately on phones: 120px left the full masthead
+    // occupying too much of a small viewport during the first scroll. Keep
+    // the wider-screen threshold calmer, and only expand again at the top
+    // so the header-height change cannot make it oscillate.
     function onScroll() {
       const y = window.scrollY;
-      setCompact((was) => (was ? y > 12 : y > 120));
+      const collapseAt = window.matchMedia("(max-width: 767px)").matches
+        ? 32
+        : 120;
+      setCompact((was) => (was ? y > 4 : y > collapseAt));
     }
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -265,21 +268,41 @@ export default function Header({
           URLs start collapsed; the count badge carries their state. */}
       {showFilters && filtersOpen && (
         <div className="fixed inset-x-3 bottom-3 z-[1300] max-h-[min(70dvh,36rem)] overflow-y-auto rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow)] md:static md:inset-auto md:z-auto md:mt-2 md:max-h-[45vh] md:rounded-none md:border-x-0 md:border-b-0 md:bg-transparent md:px-0 md:pb-0 md:pt-2 md:shadow-none">
-          <div className="mb-2 flex items-center justify-between gap-3 md:hidden">
-            <strong className="font-display text-[0.9rem] uppercase">
-              {t("board.filters")}
-            </strong>
-            <button
-              type="button"
-              onClick={() => setFiltersOpen(false)}
-              aria-label={t("board.filters")}
-              className="inline-flex h-9 w-9 items-center justify-center border-[2px] border-ink bg-surface font-sans text-xl leading-none hover:bg-accent hover:text-black"
-            >
-              ×
-            </button>
+          <div
+            className="mb-2 flex touch-pan-y flex-col gap-1 md:hidden"
+            onTouchStart={(event) => {
+              filterSheetTouchStartY.current = event.touches[0]?.clientY ?? null;
+            }}
+            onTouchEnd={(event) => {
+              const startY = filterSheetTouchStartY.current;
+              const endY = event.changedTouches[0]?.clientY;
+              filterSheetTouchStartY.current = null;
+              if (startY !== null && endY !== undefined && startY - endY >= 48) {
+                setFiltersOpen(false);
+              }
+            }}
+          >
+            <div
+              aria-hidden="true"
+              className="mx-auto h-1.5 w-12 rounded-full bg-ink/35"
+            />
+            <div className="flex items-center justify-between gap-3">
+              <strong className="font-display text-[0.9rem] uppercase">
+                {t("board.filters")}
+              </strong>
+              <button
+                type="button"
+                onClick={() => setFiltersOpen(false)}
+                aria-label={t("board.filters")}
+                className="inline-flex h-9 w-9 items-center justify-center border-[2px] border-ink bg-surface font-sans text-xl leading-none hover:bg-accent hover:text-black"
+              >
+                ×
+              </button>
+            </div>
           </div>
           <CategoryFilters
             activeCats={activeCats}
+            allSelected={activeCats.size === 0 && activeTags.size === 0}
             onToggle={toggleCat}
             available={new Set(availableCats)}
           />

@@ -129,7 +129,12 @@ export function BoardControlsProvider({ children }: { children: ReactNode }) {
       activeCats,
       toggleCat(cat) {
         if (cat === "all") {
+          // "All beats" is the reset state for the whole filter sheet,
+          // not a category that can remain selected beside a vibe. Keeping
+          // a tag active while this button stayed highlighted made the UI
+          // contradict the actual filtered results.
           setActiveCats(new Set());
+          setActiveTags(new Set());
           return;
         }
         setActiveCats((prev) => {
