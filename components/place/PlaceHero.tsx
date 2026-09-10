@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import Byline from "@/components/layout/Byline";
+import ReportImageLink from "@/components/layout/ReportImageLink";
 import { CATEGORY_COLOR_VAR } from "@/lib/content/categories";
 import { TAG_GLYPH } from "@/lib/content/tags";
 import type { PlaceMeta, PlaceContentFrontmatter } from "@/lib/content/schema";
@@ -47,6 +48,8 @@ export default function PlaceHero({
           >
             {meta.heroImage.attribution}
           </a>
+          {" · "}
+          <ReportImageLink imageUrl={meta.heroImage.url} />
         </p>
       )}
 

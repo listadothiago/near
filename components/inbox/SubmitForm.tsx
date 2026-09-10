@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 
 type SubmitState = "idle" | "sending" | "success" | "error";
@@ -8,6 +9,7 @@ type SubmitState = "idle" | "sending" | "success" | "error";
 export default function SubmitForm() {
   const t = useTranslations("inbox");
   const locale = useLocale();
+  const searchParams = useSearchParams();
   const [type, setType] = useState<
     "suggestion" | "request" | "removal" | "message"
   >("suggestion");
@@ -16,6 +18,17 @@ export default function SubmitForm() {
   const [body, setBody] = useState("");
   const [website, setWebsite] = useState("");
   const [state, setState] = useState<SubmitState>("idle");
+
+  // Prefill for the hero-image "report this image" link
+  // (ReportImageLink.tsx) — a removal report with the URL already
+  // filled in, not a generic empty form the reader has to reconstruct.
+  useEffect(() => {
+    const reportImage = searchParams.get("reportImage");
+    if (reportImage) {
+      setType("removal");
+      setUrl(reportImage);
+    }
+  }, [searchParams]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -37,7 +50,10 @@ export default function SubmitForm() {
   }
 
   return (
-    <section className="mt-10 max-w-[65ch] border-t-[4px] border-ink pt-6">
+    <section
+      id="submit-form"
+      className="mt-10 max-w-[65ch] scroll-mt-20 border-t-[4px] border-ink pt-6"
+    >
       <h2 className="text-[1.15rem] mb-1">
         {t("title")}
       </h2>

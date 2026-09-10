@@ -256,7 +256,8 @@
     "terms": "Termos",
     "ladiesAndGentlethem": "Queer",
     "thePass": "Gastronomia",
-    "rss": "Feeds RSS"
+    "rss": "Feeds RSS",
+    "blogDoThiago": "blog do thiago"
   },
   "account": {
     "signIn": "Entrar"
@@ -360,5 +361,8 @@
     "origin": "Nada disso é abstração. O formato vem dos alt-weeklies gratuitos tirados de uma caixa de rua em Chicago no fim dos anos 1990, e depois lidos toda semana na Bay Area no início dos anos 2000 — em Hayward, depois no Tendernob — enquanto esses mesmos jornais descobriam o que seriam na internet. Jornais que diziam o que de fato ia acontecer naquela semana, tomavam posição e não tinham nenhum interesse em agradar ninguém. O Near é uma tentativa disso em seis idiomas, com máquinas fazendo a digitação.",
     "bias": "Viés declarado, já que o Near não finge ser neutro: praia, e estar na água — caiaque e stand-up paddle. Isso aparece em quanta costa da Baixada Santista está coberta aqui em relação ao tamanho dela, e vai continuar aparecendo.",
     "navLabel": "Curadoria"
+  },
+  "image": {
+    "report": "Denunciar esta imagem"
   }
 }

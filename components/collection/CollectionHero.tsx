@@ -5,6 +5,7 @@ import type {
   CollectionContentFrontmatter,
 } from "@/lib/content/schema";
 import Byline from "@/components/layout/Byline";
+import ReportImageLink from "@/components/layout/ReportImageLink";
 import { Link } from "@/lib/i18n/navigation";
 import { CURATOR } from "@/lib/content/curator";
 
@@ -49,6 +50,8 @@ export default function CollectionHero({
           >
             {meta.coverImage.attribution}
           </a>
+          {" · "}
+          <ReportImageLink imageUrl={meta.coverImage.url} />
         </p>
       )}
 
