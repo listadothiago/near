@@ -5,10 +5,12 @@ import { CATEGORIES, CATEGORY_COLOR_VAR, type Category } from "@/lib/content/cat
 
 export default function CategoryFilters({
   activeCats,
+  allSelected,
   onToggle,
   available,
 }: {
   activeCats: Set<Category>;
+  allSelected: boolean;
   onToggle: (cat: Category | "all") => void;
   available: Set<Category>;
 }) {
@@ -23,7 +25,7 @@ export default function CategoryFilters({
         type="button"
         onClick={() => onToggle("all")}
         className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[2px] border-ink px-2 py-0.5 font-sans text-[0.74rem] font-semibold uppercase tracking-wide transition-colors ${
-          activeCats.size === 0
+          allSelected
             ? "bg-accent text-black"
             : "bg-surface text-muted hover:bg-surface-2"
         }`}
