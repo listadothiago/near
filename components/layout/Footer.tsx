@@ -65,6 +65,20 @@ export default function Footer({ stats }: { stats: NearStats }) {
           <Link href="/terms" className="hover:bg-accent hover:text-black">
             {t("nav.terms")}
           </Link>
+          {/* Feeds already existed as invisible <link rel="alternate"> head
+              tags (app/[locale]/layout.tsx) and as visible links on /columns
+              -- neither reaches a reader who isn't already on that one page.
+              Site-wide, visible link to the main feed so every page has one.
+              Per-column feeds stay discoverable via /columns. Operator,
+              2026-09-10: "our pages should have visible rss feed links
+              somewhere." */}
+          <a
+            href="/feed.xml"
+            className="hover:bg-accent hover:text-black"
+            title="RSS"
+          >
+            {t("nav.rss")}
+          </a>
         </span>
       </div>
     </footer>

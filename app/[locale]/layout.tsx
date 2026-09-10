@@ -73,6 +73,7 @@ export async function generateMetadata({
             url: "/the-failure-mode/feed.xml",
             title: "Near's The Failure Mode",
           },
+          { url: "/blog-do-thiago/feed.xml", title: "blog do thiago" },
         ],
       },
     },
