@@ -2,7 +2,13 @@
   "slug": "hello-world",
   "author": "thiago-baraldi",
   "placeSlugs": ["quiosque-da-cris-sao-vicente"],
-  "coverImage": null,
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Composition%2C_1921_-_Piet_Mondrian%2C_MET_DT4479.jpg",
+    "attribution": "Piet Mondrian, \"Composition\" (1921) — The Met, public domain (CC0)",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Composition,_1921_-_Piet_Mondrian,_MET_DT4479.jpg",
+    "licenseNote": "The Metropolitan Museum of Art's Open Access CC0 dedication, via Wikimedia Commons. Abstract, unfinished-grid composition fits a placeholder \"I'll actually write here eventually\" post without depicting the operator or any real venue. No AI generation involved."
+  },
   "trust": "auto",
   "sponsored": false,
   "status": "active",
@@ -21,8 +27,13 @@
       "status": "active",
       "at": "2026-09-10T21:15:00Z",
       "note": "Operator directive: 'I hate the post, never write in my name again lol. Change the body to \"hi there, I'll be actually writing here myself... eventually lol\".' Body replaced in all six locales with that exact line (translated per locale) plus the single existing NearLink (quiosque-da-cris-sao-vicente) kept so collectionMetaSchema's placeSlugs.min(1) requirement and the link-density gate still hold. This deliberately runs under rules.md's 150-word quality-gate floor -- explicit operator override of his own placeholder post, not an oversight. dek/seoDescription shortened to match. Near-write-article's standing rule that the curator's byline is never auto-generated without him personally asking stands reaffirmed by this correction."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-10T21:25:00Z",
+      "note": "Operator: \"just find one, any abstract or art that fits the spirit.\" Set hero to Piet Mondrian's \"Composition\" (1921), The Met's Open Access CC0 dedication via Wikimedia Commons -- genuinely public domain (verified via commons.wikimedia.org's imageinfo/extmetadata, License: CC0 1.0, Credit: Metropolitan Museum of Art Open Access), 3638x3660px (clears the Discover hero-card spec), hotlinks cleanly from upload.wikimedia.org. No real person or venue depicted; no AI generation involved."
     }
   ],
   "publishedAt": "2026-09-10T20:20:00Z",
-  "updatedAt": "2026-09-10T21:15:00Z"
+  "updatedAt": "2026-09-10T21:25:00Z"
 }
