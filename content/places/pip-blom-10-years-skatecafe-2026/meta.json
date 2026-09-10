@@ -1,0 +1,98 @@
+{
+  "slug": "pip-blom-10-years-skatecafe-2026",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": 52.3854027,
+    "lng": 4.9255934
+  },
+  "place": {
+    "city": "Amsterdam",
+    "neighborhood": "Noord",
+    "region": "North Holland",
+    "country": "Netherlands"
+  },
+  "trust": "auto",
+  "author": "bakfiets",
+  "sources": [
+    {
+      "name": "Skatecafé — Pip Blom 10 Years, official programme and ticket tiers",
+      "url": "https://skatecafe.weticket.io/pip-blom-10-years",
+      "feedId": null
+    },
+    {
+      "name": "Skatecafé restaurant",
+      "url": "https://www.skatecafe.nl/restaurant/",
+      "feedId": null
+    },
+    {
+      "name": "Skatecafé house rules",
+      "url": "https://www.skatecafe.nl/huisregels/",
+      "feedId": null
+    },
+    {
+      "name": "Skatecafé info",
+      "url": "https://www.skatecafe.nl/info/",
+      "feedId": null
+    },
+    {
+      "name": "Skatecafé official programme",
+      "url": "https://skatecafe.weticket.io/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps listing and dated visitor reviews",
+      "url": "https://www.google.com/maps/place/Skatecafe/@52.3854027,4.9255934,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609001349b0d7:0x63c7b4dfed439c36!8m2!3d52.3854027!4d4.9255934!16s%2Fg%2F11c2pchcvc",
+      "feedId": null
+    },
+    {
+      "name": "I amsterdam — Skatecafé",
+      "url": "https://www.iamsterdam.com/en/whats-on/calendar/eating-and-drinking/restaurants/skatecafe",
+      "feedId": null
+    },
+    {
+      "name": "Skatecafé Instagram",
+      "url": "https://www.instagram.com/skatecafeamsterdam/",
+      "feedId": null
+    },
+    {
+      "name": "r/amsterdam_rave — June 19–21 2026 discussion",
+      "url": "https://www.reddit.com/r/amsterdam_rave/comments/1u7o868/weekly_party_discussion_19_21_june_2026/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "illustration",
+    "url": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+    "attribution": "AI-generated editorial illustration by Near: dinner, skateboarding and music; not a depiction of the venue.",
+    "attributionLink": "https://near.tips/en/about",
+    "licenseNote": "Original generated artwork commissioned for this article. No venue photograph, artist likeness or third-party logo. Original asset retained with generation provenance."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-10T11:40:30+00:00",
+      "note": "Official WeTicket event, lineup, age policy and price panel checked in browser; linked venue evidence reused. All six locales drafted; remaining final gates recorded in parent report."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-10T11:47:28+00:00",
+      "note": "Prepared for release: six locales reviewed, original illustration approved and article crop viewed. Final card, build and live verification tracked in content/_reports/skatecafe-noord-amsterdam/release.json. Other named event leads remain held; package incomplete."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.99,
+    "query": "Skatecafe, Gedempt Hamerkanaal 42, 1021 KM Amsterdam",
+    "googleMapsUrl": "https://www.google.com/maps/place/Skatecafe/@52.3854027,4.9255934,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609001349b0d7:0x63c7b4dfed439c36!8m2!3d52.3854027!4d4.9255934!16s%2Fg%2F11c2pchcvc",
+    "verifiedAt": "2026-09-09T20:10:48+00:00"
+  },
+  "publishedAt": "2026-09-10T11:47:28+00:00",
+  "updatedAt": "2026-09-10T11:47:28+00:00",
+  "parentPlace": "skatecafe-noord-amsterdam",
+  "eventStartsAt": "2026-09-24T20:00:00+02:00",
+  "eventEndsAt": "2026-09-25T01:00:00+02:00"
+}
