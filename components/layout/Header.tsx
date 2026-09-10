@@ -81,7 +81,7 @@ export default function Header({
     function onScroll() {
       const y = window.scrollY;
       const collapseAt = window.matchMedia("(max-width: 767px)").matches
-        ? 32
+        ? 8
         : 120;
       setCompact((was) => (was ? y > 4 : y > collapseAt));
     }
@@ -91,7 +91,7 @@ export default function Header({
   }, []);
 
   return (
-    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink rounded-b-[var(--radius-panel)] pt-2 pb-2 mb-1">
+    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink rounded-b-[var(--radius-panel)] py-1 mb-1 md:pt-2 md:pb-2">
       {/* One wrapping row, four items. Phone: brand + controls share the
           first line, the nav wraps to its own full-width line, search takes
           another. Desktop: all inline. The old version nested the nav
@@ -130,7 +130,7 @@ export default function Header({
             five on one line down to phone widths instead. Operator report,
             2026-09-08. */}
         <nav
-          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
+          className={`order-3 basis-full min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:order-none md:basis-auto md:overflow-visible flex-nowrap items-center gap-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
@@ -330,7 +330,7 @@ export default function Header({
           widget. It links to whichever piece carries that timestamp, so
           the claim is one click from being checked. */}
       {!compact && !filtersOpen && (
-        <div className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-sans text-[0.8rem] text-muted">
+        <div className="mt-1.5 hidden flex-wrap items-baseline gap-x-3 gap-y-1 font-sans text-[0.8rem] text-muted md:flex">
           <p>
             {t.rich("app.taglineRich", {
               em: (chunks) => <strong className="font-bold text-ink">{chunks}</strong>,
