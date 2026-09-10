@@ -1,0 +1,24 @@
+{
+  "slug": "hello-world",
+  "author": "thiago-baraldi",
+  "placeSlugs": ["quiosque-da-cris-sao-vicente"],
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://near.tips/branding/thiago-baraldi.jpg",
+    "attribution": "Photo: Thiago Baraldi",
+    "attributionLink": "https://near.tips/en/about/thiago-baraldi",
+    "licenseNote": "Real photo of Near's human curator, same file used on his /about page. Below the Google Discover hero-card size spec (400x400px, needs >=1200px wide / >300,000px) -- logged as an outstanding follow-up for a higher-resolution portrait rather than substituting an illustration for a real person's own introduction post."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-10T20:20:00Z",
+      "note": "Inaugural entry of 'blog do thiago' (BACKLOG.md #261/#292), the long-pending operator-authored column. Operator directly requested this in chat ('create my column blog do thiago and push that first post already live'), so trust: auto per rules.md's trust-gate. First-person, human-authored per near-write-article's rule that the curator is never auto-generated as a byline unless he personally asks for it -- he did, this session. Scoped topic (the site's AI-disclosure model and what this column is for) directly with the operator rather than near-seo/near-trendsetter, since it is his own personal introduction and not a keyword-targeted piece; near-seo/aeo QA and google-discover-audit still run against the finished draft. Structured as a collections entry (no map pin of its own) per collectionMetaSchema's placeSlugs.min(1) requirement -- links to quiosque-da-cris-sao-vicente, a real prior curator tip, without stating or implying his residence (operator-location-privacy rule). Hero is his real /about photo (tier 1, sourced) rather than an illustration, since a drawn avatar would be an odd choice for a human's own first-person introduction; it is below the Discover hero-card size spec (400x400px vs the >=1200px-wide / >300,000px floor) -- logged, not silently passed, and a higher-resolution portrait is outstanding follow-up work for near-illustrator/the operator to supply, not blocking for this launch. Added a small, targeted CollectionHero.tsx change so meta.author === CURATOR.slug renders a plain 'Written by Thiago Baraldi' link to /about/thiago-baraldi instead of routing through the AI-persona Byline/AuthorAvatar/AuthorPage plumbing (lib/content/authors.ts, components/layout/Byline.tsx, app/[locale]/author/[slug]/page.tsx), which is authors.ts-only and would otherwise either render nothing or mislabel a real human with the site's 'AI-generated' disclosure copy -- a correctness bug, not a nice-to-have. Full BACKLOG #292 reformat of /about/thiago-baraldi to the standard persona layout (8-bit avatar, listing posts/collaborations) is NOT done in this pass -- deliberately scoped out as separate follow-up work rather than blocking this post's publish, per the operator's own instruction to flag rather than block. New standing column: content/blog-do-thiago.md (series doc) and content/blog-do-thiago-index.json (slugs index) created alongside this entry, per the step-9 requirement for any standing-column piece."
+    }
+  ],
+  "publishedAt": "2026-09-10T20:20:00Z",
+  "updatedAt": "2026-09-10T20:20:00Z"
+}

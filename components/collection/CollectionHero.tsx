@@ -5,6 +5,8 @@ import type {
   CollectionContentFrontmatter,
 } from "@/lib/content/schema";
 import Byline from "@/components/layout/Byline";
+import { Link } from "@/lib/i18n/navigation";
+import { CURATOR } from "@/lib/content/curator";
 
 export default function CollectionHero({
   meta,
@@ -69,7 +71,20 @@ export default function CollectionHero({
               <Byline slug={meta.editor} size="md" />
             </span>
           )}
-          {meta.author && (
+          {meta.author && meta.author === CURATOR.slug && (
+            <span className="inline-flex items-center gap-1.5">
+              <span className="font-mono text-[0.66rem] uppercase tracking-wide text-muted">
+                {t("writtenBy")}
+              </span>
+              <Link
+                href={`/about/${CURATOR.slug}`}
+                className="font-mono text-[0.76rem] uppercase tracking-wide hover:bg-accent hover:text-black transition-colors"
+              >
+                {CURATOR.name}
+              </Link>
+            </span>
+          )}
+          {meta.author && meta.author !== CURATOR.slug && (
             <span className="inline-flex items-center gap-1.5">
               {meta.editor && meta.editor !== meta.author && (
                 <span className="font-mono text-[0.66rem] uppercase tracking-wide text-muted">
