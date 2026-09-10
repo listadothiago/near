@@ -19,8 +19,13 @@
       "status": "active",
       "at": "2026-08-31T00:00:00Z",
       "note": "Near's first collection. Commissioned directly by the operator (BACKLOG EPIC 5 'Action Immediate'), so trust: auto per the operator-is-the-approver rule. Ties three already-published, already-sourced places; asserts no facts beyond what those pages establish. Cover image reuses Rong He's hero per the operator's instruction."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-10T21:45:00Z",
+      "note": "Operator: \"can this have a new title please. it bothers me to use that headline with so few restaurantes even if they are quite different.\" Title retitled in all six locales from the 'Asian Food Was Never One Thing' framing (which still put the lumping label front and center, even ironically) to one built on the piece's actual throughline instead -- three kitchens sharing nothing but a zip code. Body/dek untouched; the argument they make still holds regardless of headline wording."
     }
   ],
   "publishedAt": "2026-08-31T00:00:00Z",
-  "updatedAt": "2026-08-31T00:00:00Z"
+  "updatedAt": "2026-09-10T21:45:00Z"
 }
