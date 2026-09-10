@@ -53,7 +53,6 @@ export default function Header({
     toggleTag,
     filtersOpen,
     setFiltersOpen,
-    activeFilterCount,
   } = useBoardControls();
   const [compact, setCompact] = useState(false);
 
@@ -65,6 +64,13 @@ export default function Header({
   const isBoard = pathname === "/";
   const showSearch = true;
   const showFilters = isBoard && Boolean(availableCats?.length);
+  const appliedFilterLabels = [
+    query.trim(),
+    ...Array.from(activeCats, (cat) => t(`categories.${cat}`)),
+    ...Array.from(activeTags, (tag) => t(`tags.${tag}`)),
+  ].filter(Boolean);
+  const filterButtonLabel = appliedFilterLabels[0] ?? t("board.filters");
+  const additionalFilterCount = Math.max(0, appliedFilterLabels.length - 1);
 
   useEffect(() => {
     // Hysteresis, and the gap must exceed the header's own height change:
@@ -121,7 +127,7 @@ export default function Header({
             five on one line down to phone widths instead. Operator report,
             2026-09-08. */}
         <nav
-          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-mono text-[0.6rem] sm:text-[0.72rem] uppercase tracking-wide ${
+          className={`order-3 basis-full md:order-none md:basis-auto flex-wrap items-center gap-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
@@ -173,7 +179,7 @@ export default function Header({
               href="#board-map"
               aria-label={t("board.map")}
               title={t("board.map")}
-              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-sans text-[0.76rem] font-semibold uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
             >
               <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
@@ -191,12 +197,14 @@ export default function Header({
               type="button"
               onClick={() => setFiltersOpen(!filtersOpen)}
               aria-expanded={filtersOpen}
-              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-sans text-[0.76rem] font-semibold uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
             >
-              {t("board.filters")}
-              {activeFilterCount > 0 && (
+              <span className="max-w-[7rem] truncate sm:max-w-[11rem]">
+                {filterButtonLabel}
+              </span>
+              {additionalFilterCount > 0 && (
                 <span className="inline-flex items-center justify-center min-w-[1.1rem] h-[1.1rem] border border-ink bg-accent text-black text-[0.62rem] font-bold px-1">
-                  {activeFilterCount}
+                  +{additionalFilterCount}
                 </span>
               )}
               <span
@@ -222,7 +230,7 @@ export default function Header({
             <SignInButton mode="modal">
               <button
                 type="button"
-                className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-2 py-1 font-sans text-[0.76rem] font-semibold uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors whitespace-nowrap"
               >
                 <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                   <circle cx="12" cy="8" r="4" />
@@ -299,7 +307,7 @@ export default function Header({
           widget. It links to whichever piece carries that timestamp, so
           the claim is one click from being checked. */}
       {!compact && !filtersOpen && (
-        <div className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-mono text-[0.74rem] text-muted">
+        <div className="mt-1.5 flex flex-wrap items-baseline gap-x-3 gap-y-1 font-sans text-[0.8rem] text-muted">
           <p>
             {t.rich("app.taglineRich", {
               em: (chunks) => <strong className="font-bold text-ink">{chunks}</strong>,

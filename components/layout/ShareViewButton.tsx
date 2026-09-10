@@ -78,7 +78,11 @@ export default function ShareViewButton({
       onClick={share}
       aria-label={label}
       title={label}
-      className="inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+      className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[3px] border-ink px-2 py-1 font-sans text-[0.76rem] font-bold uppercase tracking-wide text-black transition-colors ${
+        alwaysShowLabel
+          ? "bg-surface hover:bg-ink hover:text-accent"
+          : "bg-accent hover:bg-ink hover:text-accent"
+      }`}
     >
       {/* Icon-only in the header's compact/mobile state — there isn't
           room for a labelled button once search and the section nav are
@@ -86,7 +90,20 @@ export default function ShareViewButton({
           returns from sm up, where every other header control is
           already text + icon. aria-label/title above carry the name for
           anyone who can't see the glyph, icon-only or not. */}
-      <span aria-hidden="true">↗</span>
+      <svg
+        viewBox="0 0 24 24"
+        className="h-[1.05rem] w-[1.05rem] flex-none"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2.4}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 15V3" />
+        <path d="m7.5 7.5 4.5-4.5 4.5 4.5" />
+        <path d="M5 11v8h14v-8" />
+      </svg>
       <span className={alwaysShowLabel ? "inline" : "hidden sm:inline"}>{label}</span>
     </button>
   );

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Space_Grotesk, Courier_Prime } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -28,11 +28,11 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-const courierPrime = Courier_Prime({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  style: ["italic", "normal"],
-  variable: "--font-courier-prime",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -132,7 +132,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${spaceGrotesk.variable} ${courierPrime.variable}`}
+      className={`${spaceGrotesk.variable} ${dmSans.variable}`}
       suppressHydrationWarning
     >
       <head>

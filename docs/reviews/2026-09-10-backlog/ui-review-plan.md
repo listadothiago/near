@@ -16,7 +16,7 @@ flip effect and no custom AR viewer in scope.
 The current interface communicates a strong point of view, but three system-level
 choices make it feel older and harder to read than the content deserves:
 
-1. Courier Prime is the global body face as well as the metadata face. At the
+1. Courier Prime was the global body face as well as the metadata face. At the
    small sizes used on cards and long-form pages, this makes prose slower to scan
    and visually collapses editorial copy into utility labels.
 2. A global `border-radius: 0 !important` rule prevents components from expressing
@@ -38,8 +38,10 @@ the card photography, category labels and hard shadows make Near recognizable.
   `next/font`, supports the six-locale UI strategy already in production, and
   avoids adding another font payload while this direction is validated.
 - Keep uppercase Space Grotesk display headings unchanged for brand continuity.
-- Keep Courier Prime only for labels, dates, sources, badges, locations and other
-  compact editorial metadata.
+- Live feedback superseded the selective-mono proposal: DM Sans now owns body,
+  navigation, controls, labels and metadata. Space Grotesk remains the display
+  face. Editorial character comes from case, weight, tracking, borders and color,
+  not terminal letterforms.
 - Set long-form copy around 19 px at the current root scale, 1.8 line-height and a
   65-character measure. Card excerpts move to a readable sans size and looser
   leading while retaining their current clamps.
@@ -86,8 +88,9 @@ For this first slice:
 
 ## Follow-up phases
 
-1. Complete a component inventory and migrate remaining legacy `font-mono` prose
-   to the body role without changing genuine metadata.
+1. Complete a component inventory for sizing and spacing. Legacy `font-mono`
+   classes resolve to DM Sans intentionally, so no terminal face can leak back
+   into public UI while components are migrated incrementally.
 2. Review article hero, ad rail and supporting modules together at 320, 390, 768
    and 1440 px plus 200% zoom.
 3. Simplify icon-led navigation only where labels remain clear to first-time
@@ -100,8 +103,7 @@ For this first slice:
 
 ## Acceptance checks
 
-- Body copy is sans and readable without zoom; mono is visibly reserved for
-  metadata.
+- Body, menus, controls and metadata are sans and readable without zoom.
 - Main cards and controls are modestly rounded while badges still feel like Near.
 - No palette or semantic-information regression in light or dark mode.
 - Header and board do not overflow at 320/390 px; long-form measure remains
@@ -111,7 +113,8 @@ For this first slice:
 ## First-slice result
 
 Implemented on 2026-09-10: Space Grotesk is now the default body and long-form
-face; Courier Prime is retained for editorial metadata. Long-form copy, card
+face. Live feedback removed Courier Prime from public labels and metadata too;
+DM Sans now supplies those roles. Long-form copy, card
 taglines/excerpts and common explanatory panels received larger sans sizing and
 looser leading. Core cards, search/filter controls, article imagery, map panels
 and common editorial panels now use the panel/control/badge radius scale while

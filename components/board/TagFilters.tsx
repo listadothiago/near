@@ -19,7 +19,7 @@ export default function TagFilters({
 
   return (
     <div className="mt-2 flex flex-wrap items-center gap-1.5">
-      <span className="text-[0.68rem] font-mono text-muted uppercase tracking-wide mr-0.5">
+      <span className="text-[0.72rem] font-sans font-semibold text-muted uppercase tracking-wide mr-0.5">
         {t("sectionLabel")}
       </span>
       {visibleTags.map((tag) => {
@@ -29,7 +29,7 @@ export default function TagFilters({
             key={tag}
             type="button"
             onClick={() => onToggle(tag)}
-            className={`inline-flex items-center gap-1 rounded-[var(--radius-control)] border-[2px] border-ink px-1.5 py-0.5 font-mono text-[0.66rem] uppercase tracking-wide transition-colors ${
+            className={`inline-flex items-center gap-1 rounded-[var(--radius-control)] border-[2px] border-ink px-1.5 py-0.5 font-sans text-[0.72rem] font-semibold uppercase tracking-wide transition-colors ${
               active
                 ? "bg-accent text-black"
                 : "bg-surface text-muted hover:bg-surface-2"

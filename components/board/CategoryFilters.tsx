@@ -22,7 +22,7 @@ export default function CategoryFilters({
       <button
         type="button"
         onClick={() => onToggle("all")}
-        className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[2px] border-ink px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide transition-colors ${
+        className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[2px] border-ink px-2 py-0.5 font-sans text-[0.74rem] font-semibold uppercase tracking-wide transition-colors ${
           activeCats.size === 0
             ? "bg-accent text-black"
             : "bg-surface text-muted hover:bg-surface-2"
@@ -38,7 +38,7 @@ export default function CategoryFilters({
             key={cat}
             type="button"
             onClick={() => onToggle(cat)}
-            className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[2px] border-ink px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide transition-colors ${
+            className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[2px] border-ink px-2 py-0.5 font-sans text-[0.74rem] font-semibold uppercase tracking-wide transition-colors ${
               active
                 ? "bg-accent text-black"
                 : "bg-surface text-muted hover:bg-surface-2"
