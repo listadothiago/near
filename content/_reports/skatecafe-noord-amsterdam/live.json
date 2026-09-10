@@ -1,0 +1,557 @@
+{
+  "checkedAt": "2026-09-10T11:53:49.748270+00:00",
+  "pages": [
+    {
+      "url": "https://near.tips/en/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/en/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/en/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé in Amsterdam-Noord combines a skate ramp, seasonal dining and ticketed music. Read the programme, dinner hours, price basis and admission rules before visiting.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/en/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/en/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom celebrates ten years at Skatecafé, Amsterdam, on 24 September 2026, 20:00–01:00, with Gini Cameron returning on drums. All-ages concert; ticket fees apply.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/pt-BR/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/pt-BR/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/pt-BR/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé, em Amsterdam-Noord: rampa de skate, jantar e shows com ingresso. Veja horários, referência de preços e regras de entrada antes de escolher a noite.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/pt-BR/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/pt-BR/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom comemora dez anos no Skatecafé, em Amsterdã, em 24 de setembro de 2026, das 20h à 1h, com Gini Cameron na bateria. Show para todas as idades, com ingresso.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/it/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/it/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/it/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé ad Amsterdam-Noord unisce una rampa da skate, cucina stagionale e concerti. Orari, riferimento di spesa e regole di ingresso per scegliere la serata.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/it/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/it/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/it/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/it/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/it/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom festeggia dieci anni allo Skatecafé di Amsterdam il 24 settembre 2026, dalle 20:00 all’01:00, con Gini Cameron alla batteria. Concerto aperto a tutte le età.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/it/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/it/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/es-ES/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/es-ES/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/es-ES/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé, en Amsterdam-Noord, reúne rampa de skate, restaurante y música con entrada. Horarios de cena, referencia de gasto y condiciones de acceso.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/es-ES/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/es-ES/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/es-ES/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/es-ES/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/es-ES/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom celebra diez años en Skatecafé, Ámsterdam, el 24 de septiembre de 2026, de 20:00 a 01:00, con Gini Cameron a la batería. Concierto para todas las edades.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/es-ES/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/es-ES/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/es-419/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/es-419/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/es-419/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé en Amsterdam-Noord combina una rampa, comida de temporada y eventos musicales. Consulta horarios, referencia de precios y reglas de acceso.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/es-419/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/es-419/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/es-419/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/es-419/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/es-419/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom celebra diez años en Skatecafé, Ámsterdam, el 24 de septiembre de 2026, de 20:00 a 01:00, con Gini Cameron en batería. Concierto para todas las edades.",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/es-419/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/es-419/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/zh-CN/place/skatecafe-noord-amsterdam",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/zh-CN/place/skatecafe-noord-amsterdam#place",
+              "name": "Skatecafé Karin & Yvonne",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/zh-CN/place/skatecafe-noord-amsterdam#article",
+              "headline": "Skatecafé Karin & Yvonne",
+              "description": "Skatecafé 位于阿姆斯特丹北区，同一空间设有滑板坡道、餐厅和音乐活动。查看晚餐时间、消费参考及入场规定，再决定前往哪一场。",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/zh-CN/place/skatecafe-noord-amsterdam#place"
+              },
+              "mainEntityOfPage": "https://near.tips/zh-CN/place/skatecafe-noord-amsterdam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "url": "https://near.tips/zh-CN/place/pip-blom-10-years-skatecafe-2026",
+      "status": 200,
+      "titlePresent": true,
+      "ogImage": "https://images.weserv.nl/?url=near.tips%2Fplaces%2Fskatecafe-noord-amsterdam%2Fhero.png&w=1200&h=675&fit=cover&a=attention&output=jpg&q=75",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Place",
+              "@id": "https://near.tips/zh-CN/place/pip-blom-10-years-skatecafe-2026#place",
+              "name": "Pip Blom 10 Years — Skatecafé",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Amsterdam",
+                "addressRegion": "North Holland",
+                "addressCountry": "Netherlands"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 52.3854027,
+                "longitude": 4.9255934
+              }
+            },
+            {
+              "@type": "Article",
+              "@id": "https://near.tips/zh-CN/place/pip-blom-10-years-skatecafe-2026#article",
+              "headline": "Pip Blom 10 Years — Skatecafé",
+              "description": "Pip Blom 将于2026年9月24日在阿姆斯特丹 Skatecafé 举行十周年演出，Gini Cameron 回归担任鼓手。活动20:00至次日01:00，不限年龄，需购票。",
+              "author": {
+                "@type": "Organization",
+                "name": "Near"
+              },
+              "datePublished": "2026-09-10T11:47:28+00:00",
+              "dateModified": "2026-09-10T11:47:28+00:00",
+              "image": "https://near.tips/places/skatecafe-noord-amsterdam/hero.png",
+              "about": {
+                "@id": "https://near.tips/zh-CN/place/pip-blom-10-years-skatecafe-2026#place"
+              },
+              "mainEntityOfPage": "https://near.tips/zh-CN/place/pip-blom-10-years-skatecafe-2026"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

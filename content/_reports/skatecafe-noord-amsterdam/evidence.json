@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-09-09T20:13:26+00:00",
-  "state": "draft-checkpoint-requested-by-operator",
+  "state": "published-cleared-set",
   "authorization": "User asked to proceed, liked the generated cover, then requested wrap up ASAP and save if publication could not finish. No outreach authorized.",
   "sourcePacket": "../../_rotation-runs/2026-09-09-round-01/skatecafe-intake.json",
   "googleMaps": {
@@ -70,8 +70,9 @@
         "Gini Cameron returns on drums; PB10 re-recorded older material",
         "Skatecafé: My Purse, Pip Blom, Fellatio; Dick & Dick: Scram C Baby, Djalan Djalan, Baby Berserk"
       ],
-      "ticketCheck": "Browser See Tickets: early €12.50+€1 unavailable, regular €15+€1 and late €17.50+€1 selectable; no ticket selected. Checked this session; recheck before publication.",
-      "state": "child-required; not drafted"
+      "ticketCheck": "Browser See Tickets: early €12.50+€1 unavailable, regular €15+€1 and late €17.50+€1 selectable; no ticket selected. Checked this session; recheck before publication. Rechecked10September2026 in browser; same tiers.",
+      "state": "published",
+      "slug": "pip-blom-10-years-skatecafe-2026"
     },
     {
       "name": "Sister Nancy extra show",
@@ -128,7 +129,7 @@
     "locales": "Six drafted, each reference read; final consistency/readability checks pending",
     "seoAeoDiscover": "pending",
     "build": "not run",
-    "publication": "not committed, not pushed, not live"
+    "publication": "Commit 64633497b8d05ce851254d063201dedbad94aed9; all12 live URLs verified200; see release.json for final decisions superseding checkpoint gate notes."
   },
   "roleAdvice": {
     "seo": "Reuse current round evidence; no volume ranking. Answer Skatecafé Amsterdam dinner vs concert visit.",
@@ -140,5 +141,6 @@
     "affiliatePr": "Ticket purchase moment exists; no approved programme established, use ordinary official links.",
     "adSales": "Venue/promoters potential only, no traffic claims or pitch sent.",
     "socials": "Wait for publication before platform drafts."
-  }
+  },
+  "releasePacket": "release.json"
 }

@@ -212,3 +212,5 @@ _None yet._
 ### Skatecafé / Amsterdam Alternative — 2026-09-10 — prospect
 
 Skatecafé venue and Pip Blom anniversary pages provide six-language visiting details. Potential link targets: official venue programme https://skatecafe.weticket.io/ and Amsterdam Alternative https://amsterdamalternative.nl/. Contact not verified; no outreach sent. Preserve door-review caveat and independent coverage. Handoff pending live verification in the release packet.
+
+Publication handoff completed: both Skatecafé and Pip Blom URLs verified live2026-09-10 (commit6463349). Prospects remain unsent under the outreach freeze.

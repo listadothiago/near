@@ -2,7 +2,7 @@
   "runId": "2026-09-09-round-01",
   "startedAt": "2026-09-09T19:55:49.401133+00:00",
   "state": "active",
-  "phase": "Skatecafé draft saved at operator request",
+  "phase": "Two cleared publications live; remaining Amsterdam events held; OT301 next scoped venue",
   "authorization": "Operator requested content-rotation beginning with SEO reorder, then acknowledged ok. No outreach authorization.",
   "snapshots": [
     "prior-rotation.md",
@@ -426,8 +426,11 @@
     {
       "destination": "Amsterdam",
       "tier": 2,
-      "state": "owed",
-      "slugs": []
+      "state": "covered-with-event-holds",
+      "slugs": [
+        "skatecafe-noord-amsterdam",
+        "pip-blom-10-years-skatecafe-2026"
+      ]
     },
     {
       "destination": "Barcelona",
@@ -948,8 +951,11 @@
     },
     {
       "slug": "bakfiets",
-      "state": "owed",
-      "slugs": []
+      "state": "covered",
+      "slugs": [
+        "skatecafe-noord-amsterdam",
+        "pip-blom-10-years-skatecafe-2026"
+      ]
     },
     {
       "slug": "motosai",
@@ -981,18 +987,25 @@
       },
       {
         "id": "city-culture",
-        "state": "owed",
-        "slugs": []
+        "state": "covered",
+        "slugs": [
+          "skatecafe-noord-amsterdam"
+        ]
       },
       {
         "id": "food-drink",
-        "state": "owed",
-        "slugs": []
+        "state": "covered",
+        "slugs": [
+          "skatecafe-noord-amsterdam"
+        ]
       },
       {
         "id": "nightlife-sound",
-        "state": "owed",
-        "slugs": []
+        "state": "covered",
+        "slugs": [
+          "skatecafe-noord-amsterdam",
+          "pip-blom-10-years-skatecafe-2026"
+        ]
       },
       {
         "id": "wellness-fitness",
@@ -1033,8 +1046,10 @@
       },
       {
         "id": "late-night",
-        "state": "owed",
-        "slugs": []
+        "state": "covered",
+        "slugs": [
+          "skatecafe-noord-amsterdam"
+        ]
       },
       {
         "id": "hidden-gem",
@@ -1189,7 +1204,7 @@
     "ten": 3,
     "spent": {
       "T1": 0,
-      "T2": 0,
+      "T2": 2,
       "T3": 0
     },
     "priorT1Order": [
@@ -1205,14 +1220,17 @@
     "manifest": "content/_batch-runs/2026-09-07-batch-30/manifest.json",
     "target": 30,
     "baselinePublishedCount": 20,
-    "newRoundCredit": 0,
+    "newRoundCredit": 1,
     "scopePolicy": "Keep candidate sequence and original tier allocation. Verify outputs before credit.",
     "hotelPolicyDebt": "Existing scope predates minimum-five requirement. Audit hotel count; attempts cannot count. Do not replace scoped candidates silently.",
     "baselineHotelSlugs": [
       "the-pilgrm-paddington-london"
     ],
     "minimumHotelShortfall": 4,
-    "hotelEvidenceNote": "The Pilgrm is a known hotel with NITE-PORTER byline but miscategorized city-culture. One prior hotel is recorded; live/gate verification pending. An accommodation-category-only count incorrectly yields zero. No new-round credit."
+    "hotelEvidenceNote": "The Pilgrm is a known hotel with NITE-PORTER byline but miscategorized city-culture. One prior hotel is recorded; live/gate verification pending. An accommodation-category-only count incorrectly yields zero. No new-round credit.",
+    "supplementalEventSlugs": [
+      "pip-blom-10-years-skatecafe-2026"
+    ]
   },
   "roleReviews": {
     "seo": {
@@ -1232,18 +1250,38 @@
       "finding": "Hold Sexyland as an open permanent venue. Check Skatecafé next in existing scope. No coverage completion or fabricated demand ranking."
     }
   },
-  "published": [],
-  "publishedCount": 0,
+  "published": [
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "tier": 2,
+      "city": "Amsterdam",
+      "author": "bakfiets",
+      "commit": "64633497b8d05ce851254d063201dedbad94aed9",
+      "liveUrl": "https://near.tips/en/place/skatecafe-noord-amsterdam",
+      "verifiedAt": "2026-09-10T11:55:14+00:00",
+      "gatePacket": "content/_reports/skatecafe-noord-amsterdam/release.json",
+      "kind": "venue"
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "tier": 2,
+      "city": "Amsterdam",
+      "author": "bakfiets",
+      "commit": "64633497b8d05ce851254d063201dedbad94aed9",
+      "liveUrl": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026",
+      "verifiedAt": "2026-09-10T11:55:14+00:00",
+      "gatePacket": "content/_reports/skatecafe-noord-amsterdam/release.json",
+      "kind": "hosted-event"
+    }
+  ],
+  "publishedCount": 2,
   "exceptions": [],
   "nextOwedWork": {
-    "candidate": "Skatecafé",
+    "candidate": "OT301",
     "city": "Amsterdam",
     "tier": 2,
-    "reason": "Next unchanged scoped batch candidate after Sexyland location/opening hold.",
-    "state": "draft-final-gates-and-child-events-pending",
-    "evidence": "content/_reports/skatecafe-noord-amsterdam/evidence.json",
-    "slug": "skatecafe-noord-amsterdam",
-    "checkpoint": "content/_reports/skatecafe-noord-amsterdam/checkpoint.md"
+    "state": "candidate",
+    "reason": "Next unchanged batch venue. Preserve Skatecafé event holds in evidence.json; do not recreate published pages."
   },
   "tokenUsage": "unavailable",
   "instructionHashes": {

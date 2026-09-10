@@ -177,14 +177,13 @@ Operator requested the new content-rotation process starting with SEO reorder.
 Run evidence: `content/_rotation-runs/2026-09-09-round-01/`. City lists and
 coverage debt reconciled; 27 Trends URLs attempted, comparable locale weights
 unavailable, so no demand promotion. Sexyland held on relocation/opening evidence;
-Changes already exists and must not be redrafted. Skatecafé now has six locale
-drafts and an operator-approved original cover. Operator requested checkpoint;
-resume `content/_reports/skatecafe-noord-amsterdam/checkpoint.md`. New
-publications: 0; full round and publication gates remain open.
+Changes already exists and must not be redrafted. Skatecafé and Pip Blom are now live in all six locales; commit `6463349`, verified12 URLs. Round2 outputs; batch21/30 plus1 supplemental event. Next scoped venue: OT301. Remaining event holds and final verification are saved in `content/_reports/skatecafe-noord-amsterdam/release.json`. Full round remains open.
 
 ### Event badge follow-up — 2026-09-10
 
 Product Trio: `/en` Skatecafé card shows “NEXT Pip Blom brings Gini back”, but the badge is part of the venue link rather than a direct event link. Reproduced in Codex browser on localhost; concert remains reachable through the venue body. Evidence: `content/_reports/skatecafe-noord-amsterdam/release.json`. Other calendar holds remain in `evidence.json`; package incomplete.
+
+Event structured-data follow-up: live `/en/place/pip-blom-10-years-skatecafe-2026` emits Place/Article JSON-LD but no Event node/start/end. Route to AEO/Product Trio; evidence `content/_reports/skatecafe-noord-amsterdam/live.json`. No Event rich-result validation claimed.
 
 ### Current handoff — 2026-09-09, Codex (GPT-6)
 

@@ -1,1013 +1,1030 @@
 {
- "runId": "2026-09-07-batch-30",
- "target": 30,
- "mode": "publish",
- "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
- "startedAt": "2026-09-07T22:14:53.702829+00:00",
- "instructionHashes": {
-  "content/rules.md": "c7c299b4d74978061084806adbfc0a2a0835039791551a626b7508c047af4119",
-  ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
-  ".claude/skills/near-write-article/SKILL.md": "e7d91490dde86515eba3f05e639bd639e2b832822321e296b058a6adee95909c"
- },
- "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
- "state": "researching",
- "tokenUsage": "unavailable",
- "publishedCount": 20,
- "candidates": [
-  {
-   "name": "Hausu",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/hausu",
-   "evidence": "hausu-evidence.json",
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police",
-     "checkedAt": "2026-09-07T22:18:23.824450+00:00"
+  "runId": "2026-09-07-batch-30",
+  "target": 30,
+  "mode": "publish",
+  "scope": "Current editorial priorities: 18 Tier 1, 9 Tier 2, 3 Tier 3; neighbourhood clusters; include accommodation attempt",
+  "startedAt": "2026-09-07T22:14:53.702829+00:00",
+  "instructionHashes": {
+    "content/rules.md": "c7c299b4d74978061084806adbfc0a2a0835039791551a626b7508c047af4119",
+    ".claude/skills/near-batch-30/SKILL.md": "cef999996dfc8647386e1506f1cc598543bd2f3537669f29c90a96df815f05b5",
+    ".claude/skills/near-write-article/SKILL.md": "e7d91490dde86515eba3f05e639bd639e2b832822321e296b058a6adee95909c"
+  },
+  "baselineWorkingTree": " M .claude/skills/near-editor/SKILL.md\n M .claude/skills/near-write-article/SKILL.md\n M content/rules.md\n?? .claude/skills/near-batch-30/\n",
+  "state": "researching",
+  "tokenUsage": "unavailable",
+  "publishedCount": 21,
+  "candidates": [
+    {
+      "name": "Hausu",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/hausu",
+      "evidence": "hausu-evidence.json",
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police",
+          "checkedAt": "2026-09-07T22:18:23.824450+00:00"
+        },
+        "googleReviews": {
+          "verdict": "checked recent and lowest",
+          "reviewer": "near-deep-researcher"
+        },
+        "events": {
+          "verdict": "official events page checked; only past 2025 events; Instagram pending"
+        },
+        "price": {
+          "verdict": "official SAMPLE menu retrieved; do not assert undated sample as guaranteed current price"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        }
+      },
+      "retryCount": 0,
+      "slug": "hausu-peckham-london",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "6dcfe9a",
+      "liveUrl": "https://near.tips/en/place/hausu-peckham-london"
     },
-    "googleReviews": {
-     "verdict": "checked recent and lowest",
-     "reviewer": "near-deep-researcher"
+    {
+      "name": "TOAD Bakery",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/toad-bakery",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+        }
+      },
+      "retryCount": 0,
+      "slug": "toad-bakery-camberwell-london",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
-    "events": {
-     "verdict": "official events page checked; only past 2025 events; Instagram pending"
+    {
+      "name": "The Divine",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/things-to-do/the-divine",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-divine-dalston-london",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
-    "price": {
-     "verdict": "official SAMPLE menu retrieved; do not assert undated sample as guaranteed current price"
+    {
+      "name": "E. Pellicci",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
+        }
+      },
+      "retryCount": 0,
+      "slug": "e-pellicci-bethnal-green-london",
+      "author": "plinio",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
+    {
+      "name": "The Jago",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "timeout-london auto source; https://www.timeout.com/london/bars-pubs/haggerston",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-jago-dalston-london",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
+    {
+      "name": "The Pilgrm",
+      "city": "London",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "yatzer design-press profile; https://www.yatzer.com/pilgrm-hotel-paddington-london",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
+        },
+        "accommodationAttempt": {
+          "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-pilgrm-paddington-london",
+      "author": "nite-porter",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
     },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
+    {
+      "name": "Kirbee’s",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "CultureMap Fort Worth profile; https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
+        },
+        "sourcedPriceRange": {
+          "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
+        }
+      },
+      "retryCount": 0,
+      "slug": "kirbees-greenpoint-brooklyn",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
+    },
+    {
+      "name": "Monkey Thief",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "w42st (indie), Cititour, Resy blog, What Now New York, official site; https://w42st.com/post/monkey-thief-finds-a-new-home-on-9th-ave/",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "geolocation-police / Codex (GPT-6)",
+          "timestamp": "2026-09-08T12:08:12.900351+00:00",
+          "inputHash": "0ee43dec1c3079d436b77069783c6f7aa4f493a9eb843cd66fddbe46e453341e",
+          "findings": "Venue identity and address confirmed on Google Maps; actual listing pin copied. Replaces the invalid earlier Nominatim-only pass.",
+          "evidence": "content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondTimeOut": {
+          "verdict": "pass — w42st, Cititour, Resy, What Now New York, official site, Yelp"
+        }
+      },
+      "retryCount": 0,
+      "slug": "monkey-thief-hells-kitchen-new-york-city",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      }
+    },
+    {
+      "name": "Bar Etienne",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing — sourcing floor met for draft, not yet cleared for publish",
+      "evidence": null,
+      "gates": {
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondSingleAggregator": {
+          "verdict": "pass — Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
+        },
+        "instagramCheck": {
+          "verdict": "checked — @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
+        },
+        "redditFallback": {
+          "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new — not a blocked leg"
+        },
+        "events": {
+          "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
+        },
+        "heroImage": {
+          "verdict": "pass — near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
+        },
+        "tovLegalChiefEditor": {
+          "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
+        }
+      },
+      "retryCount": 0,
+      "slug": "bar-etienne-west-village-new-york-city",
+      "author": "stefan",
+      "status": "draft",
+      "decisionPoint": "PUBLISHED. Operator approved the trust:review decision point; full sign-off chain (Instagram, Reddit fallback, hero image, near-illustrator, near-events, near-tov-police, language-tic-police, near-legal-counsel, chief editor) completed and all six locales written. Mechanical gates pass. See piece statusHistory for full detail.",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "73afcb0",
+      "liveUrl": "https://near.tips/en/place/bar-etienne-west-village-new-york-city",
+      "operatorApproval": {
+        "date": "2026-09-08",
+        "decision": "approved for publication after research and required quality checks pass",
+        "source": "Operator explicitly answered Approve both for publication and reaffirmed yes approved in this conversation",
+        "requiresReconfirmation": false
+      }
+    },
+    {
+      "name": "Cospa Ramen",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto; multiple independent current sources — HAND Hospitality (handhospitality.com/handhistory), Yomitime (Aug 2026 opening reporting), fresh order.online menu, The Infatuation review (Aug 2026), official Instagram @cosparamen, r/ramen thread, signed-out Google Maps listing",
+      "evidence": "content/_batch-runs/2026-09-07-batch-30/cospa-evidence.json",
+      "gates": {
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs",
+          "findings": "no proximity/name-overlap flag against this slug"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "signed-out Google Maps listing, per cospa-evidence.json",
+          "findings": "40.7442476,-73.9906333, 36 West 26th Street, Manhattan — matches HAND Hospitality/Yomitime address"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondSingleAggregator": {
+          "verdict": "pass — HAND Hospitality, Yomitime, order.online menu, The Infatuation, Instagram, Reddit, Google Maps all independently corroborate address/menu/hours/current status"
+        },
+        "redditCheck": {
+          "verdict": "checked — r/ramen thread on the spicy bowl, value/traditional-style debate; not treated as consensus"
+        },
+        "googleReviews": {
+          "verdict": "checked — signed-out Maps low-sort and recent-sort read; mixed wait-time and saltiness reports, both attributed rather than asserted as universal"
+        },
+        "instagramCheck": {
+          "verdict": "checked — @cosparamen; Aug 28 fully-open announcement (10:30am-2am) used for hours, no future dated event found"
+        },
+        "events": {
+          "verdict": "no genuine dated event found; opening announcement is expired, not a future event"
+        },
+        "heroImage": {
+          "verdict": "pass — tier 1 real venue-supplied photo, credited to Cospa Ramen via DiningOut, source-tier not open-license"
+        },
+        "inBodyImage": {
+          "verdict": "pass — original vector-derived kaedama illustration added in-body across all six locales, near-illustrator; not AI-generated, attributed as vector-derived original artwork"
+        },
+        "tovLegalChiefEditor": {
+          "verdict": "pass — near-tov-police, language-tic-police and near-legal-counsel clean per cospa-evidence.json gates; chief editor sign-off to active"
+        }
+      },
+      "retryCount": 0,
+      "slug": "cospa-ramen-nomad-new-york-city",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "2060609",
+      "liveUrl": "https://near.tips/en/place/cospa-ramen-nomad-new-york-city",
+      "operatorApproval": {
+        "date": "2026-09-08",
+        "decision": "approved for publication after research and required quality checks pass",
+        "source": "Operator explicitly answered Approve both for publication and reaffirmed yes approved in this conversation",
+        "requiresReconfirmation": false
+      }
+    },
+    {
+      "name": "Nowadays",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto; multiple independent current sources — official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
+      "evidence": null,
+      "gates": {
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs",
+          "findings": "Google Maps listing match, 56-06 Cooper Ave, Ridgewood NY 11385, confidence 0.99"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "sourcingBeyondSingleAggregator": {
+          "verdict": "pass — official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
+        },
+        "redditCheck": {
+          "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
+        },
+        "googleReviews": {
+          "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
+        },
+        "instagramCheck": {
+          "verdict": "checked — @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
+        },
+        "events": {
+          "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
+        },
+        "heroImage": {
+          "verdict": "pass — tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
+        },
+        "tovLegalChiefEditor": {
+          "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
+        }
+      },
+      "retryCount": 0,
+      "slug": "nowadays-ridgewood-new-york-city",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "e333f4c",
+      "liveUrl": "https://near.tips/en/place/nowadays-ridgewood-new-york-city"
+    },
+    {
+      "name": "The Bush",
+      "city": "New York City",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "auto — Time Out New York, Wine Enthusiast, The Infatuation, EveryQueer, official site (bushbk.com), corroborated by Yelp/Apple Maps/GO Magazine/Instagram",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — confirmed real, currently operating lesbian bar at 333 Troutman St, Bushwick; not assumed nightlife by default",
+          "reviewer": "near-deep-researcher"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting NYC pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "events": {
+          "verdict": "no genuine far-out one-off dated event found; recurring weekly programming only, not nested"
+        },
+        "images": {
+          "verdict": "hero resolved (tier 1, official site photo); in-body images not sourced this session (Instagram feed not browsed live) — flagged as open follow-up, not blocking"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-bush-bushwick-new-york-city",
+      "author": "allora-dai",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": null,
+      "liveUrl": "https://near.tips/en/place/the-bush-bushwick-new-york-city"
+    },
+    {
+      "name": "The Independent",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating venue confirmed",
+          "reviewer": "near-deep-researcher"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting existing SF/Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "heroImage": {
+          "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+        }
+      },
+      "retryCount": 0,
+      "decisionPoint": "Confirmed real, currently operating: 628 Divisadero St, NOPA, San Francisco (not Oakland/elsewhere despite the cluster label). Sourcing: official site theindependentsf.com, Live Nation venue schedule, Songkick, SF Station, Yelp — multiple independent, current, credible sources; trust: auto. No dedupe conflict with existing SF pins (Dolphin Club, Ocean Beach Cafe, Stray Dog, The Stud). BLOCKED THIS SESSION: could not resolve a rights-clear real hero photo (official site had no fetchable og:image; did not attempt press-photo substitution given licensing risk). Held as an un-drafted, sourced lead rather than publish without an image or force a weak substitute.",
+      "slug": "the-independent-nopa-san-francisco",
+      "status": "active"
+    },
+    {
+      "name": "The Lodge Oakland",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating venue confirmed",
+          "reviewer": "near-deep-researcher"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting existing SF/Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "heroImage": {
+          "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+        }
+      },
+      "retryCount": 0,
+      "decisionPoint": "Confirmed real, currently operating: 3758 Piedmont Ave, Piedmont Ave corridor, Oakland (reopened April 2026 under new owners Chris Cashin/Kris Gordon after a Jan 2026 closure). Sourcing: SF Chronicle (two pieces), Oaklandside, KRON4, Yahoo/whatnow — strong, current, independent corroboration; trust: auto. No dedupe conflict with existing Oakland pins. BLOCKED THIS SESSION: a real photo exists (Oaklandside og:image, TheLodge-TheBar.jpg) but is press editorial photography without a confirmed reuse license, and no venue-owned photo was resolved in the session budget — near-legal-counsel's image-licensing check would not clear it, so held rather than risk it.",
+      "slug": "the-lodge-piedmont-oakland",
+      "status": "active"
+    },
+    {
+      "name": "Henry J. Kaiser Center for the Arts",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating venue confirmed",
+          "reviewer": "near-deep-researcher"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting existing SF/Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "heroImage": {
+          "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+        }
+      },
+      "retryCount": 0,
+      "decisionPoint": "Confirmed real, currently operating: 10 10th St, Oakland (reopened Jan 24 2026 after 20-year closure and $100M renovation; five distinct venues inside — arena, 1,500-seat Calvin Simmons Theatre, speakeasy lounge, two ballrooms). Sourcing: CBS News, ABC7, Oaklandside (x2, including a live IATSE Local 107 stagehand-union contract dispute — noted for balanced, carefully-sourced coverage, not omission), Wikipedia, Visit Oakland; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: same as Independent/Lodge — no venue-owned hero photo resolved cleanly (official site og:image was a wordmark, not a photo); held rather than publish on a logo or an unlicensed press photo.",
+      "slug": "henry-j-kaiser-center-for-the-arts-oakland",
+      "status": "active"
+    },
+    {
+      "name": "Roxie Theater",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "held",
+      "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating venue confirmed",
+          "reviewer": "near-deep-researcher"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting existing SF/Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "heroImage": {
+          "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+        }
+      },
+      "retryCount": 0,
+      "decisionPoint": "Confirmed real, currently operating: 3117 16th St, Mission District, San Francisco — SF's oldest continuously operating cinema, 501(c)(3) nonprofit, active programming into December 2026 (Bleak Week, Floating Features, D.E.B.S., etc.). Sourcing: roxie.com, Wikipedia, SF Examiner (nonprofit fundraising to buy the building), Screen Slate, SF Station; trust: auto. No dedupe conflict with existing Mission pin (Stray Dog). BLOCKED THIS SESSION: roxie.com returned no fetchable og:image/hero (403 on one fetch path); a Wikimedia Commons category exists for the venue but individual file rights were not verified this session. Held rather than guess at licensing.",
+      "slug": "roxie-theater-mission-san-francisco",
+      "status": "draft"
+    },
+    {
+      "name": "Black Bird Bookstore",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating venue confirmed",
+          "reviewer": "near-deep-researcher"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting existing SF/Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "heroImage": {
+          "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
+        }
+      },
+      "retryCount": 0,
+      "decisionPoint": "IDENTITY CORRECTION FOR THE MANIFEST: this is a San Francisco venue, not Oakland — 4541 Irving St, Outer Sunset, San Francisco (est. 2017 by Kathryn Grantham, founder of NYC's Bluestockings). No Oakland location exists per this session's research; the 'San Francisco Bay Area' cluster label should not be read as implying an Oakland pin. Sourcing: official site blackbirdsf.com, SF Public Library community listing, Hoodline founding profile, goop, Time Out SF, SF Station, Yelp; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: the only fetchable og:image was a small icon/logo, not a real storefront or interior photo — held rather than publish on a logo, per hero-tier rules (logo is not a valid 'real source photo').",
+      "slug": "black-bird-bookstore-outer-sunset-san-francisco",
+      "status": "active"
+    },
+    {
+      "name": "The New Parkway Theater",
+      "city": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "published",
+      "trustBasis": "trust: auto; multiple independent current sources — official site, Wikipedia (Speakeasy Theaters), Visit Oakland, Yelp (Sept 2026), CBS News (PETA vegan ranking), Art House Theaters",
+      "evidence": null,
+      "gates": {
+        "identityConfirmation": {
+          "verdict": "pass — real, currently operating cinema, 474 24th St, Uptown Oakland",
+          "reviewer": "near-deep-researcher"
+        },
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "duplicates": {
+          "verdict": "pass — no conflicting Oakland pin",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        },
+        "heroImage": {
+          "verdict": "pass — real venue photo from own site (imgix CDN), no faces"
+        }
+      },
+      "retryCount": 0,
+      "slug": "the-new-parkway-theater-oakland",
+      "author": "plinio",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "publicationCommit": "999aa0e",
+      "liveUrl": "https://near.tips/en/place/the-new-parkway-theater-oakland"
+    },
+    {
+      "name": "Südblock",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "published",
+      "trustBasis": "multi-source verified (suedblock.org, visitBerlin.de, berlin.de tickets, Time Out Berlin, Yelp)",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        }
+      },
+      "retryCount": 0,
+      "slug": "sudblock-kreuzberg-berlin",
+      "author": "foodie-9000",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "liveUrl": "https://near.tips/en/place/sudblock-kreuzberg-berlin"
+    },
+    {
+      "name": "about blank",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "published",
+      "trustBasis": "multi-source verified (berlin.de, ra.co, Time Out Berlin, gaesteliste030, Tripadvisor)",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        }
+      },
+      "retryCount": 0,
+      "slug": "about-blank-friedrichshain-berlin",
+      "author": "stefan",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "liveUrl": "https://near.tips/en/place/about-blank-friedrichshain-berlin"
+    },
+    {
+      "name": "Teufelssee",
+      "city": "Berlin",
+      "tier": 2,
+      "state": "published",
+      "trustBasis": "multi-source verified (berlin.de, Wikipedia, Playful Mag 2026 FKK guide, planet-randy.com, Tripadvisor)",
+      "evidence": null,
+      "gates": {
+        "geocode": {
+          "verdict": "pass",
+          "reviewer": "check-geocodes.mjs"
+        },
+        "duplicates": {
+          "verdict": "pass",
+          "reviewer": "check-duplicates.mjs"
+        },
+        "validateContent": {
+          "verdict": "pass",
+          "reviewer": "validate-content.mjs"
+        },
+        "build": {
+          "verdict": "pass",
+          "reviewer": "npx next build"
+        }
+      },
+      "retryCount": 0,
+      "slug": "teufelssee-grunewald-berlin",
+      "author": "wild0",
+      "locales": {
+        "en": "ready",
+        "pt-BR": "ready",
+        "it": "ready",
+        "es-ES": "ready",
+        "es-419": "ready",
+        "zh-CN": "ready"
+      },
+      "liveUrl": "https://near.tips/en/place/teufelssee-grunewald-berlin"
+    },
+    {
+      "name": "Sexyland World",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "held",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": "content/_rotation-runs/2026-09-09-round-01/reorder-report.md",
+      "gates": {},
+      "retryCount": 0,
+      "decisionPoint": "2026-09-09: VPRO 3voor12 and Metropolis M report planned spring 2027 opening at NDSM Theater; former Noordwal home closed. Do not create an active permanent-venue recommendation from old location listings. Recheck official relocation/opening evidence; retain within scope."
+    },
+    {
+      "name": "Skatecafé",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "published",
+      "trustBasis": "Operator commissioned and authorized continuation; verified official/UGC evidence",
+      "evidence": "content/_reports/skatecafe-noord-amsterdam/evidence.json",
+      "gates": {
+        "packet": "content/_reports/skatecafe-noord-amsterdam/release.json"
+      },
+      "retryCount": 0,
+      "slug": "skatecafe-noord-amsterdam",
+      "author": "bakfiets",
+      "decisionPoint": "Venue and Pip Blom child live in six locales. Other named event holds remain; see release packet.",
+      "commit": "64633497b8d05ce851254d063201dedbad94aed9",
+      "liveUrl": "https://near.tips/en/place/skatecafe-noord-amsterdam"
+    },
+    {
+      "name": "OT301",
+      "city": "Amsterdam",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "WTF Gallery and Café",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Benjakitti Forest Park",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Mischa Cheap",
+      "city": "Bangkok",
+      "tier": 2,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "92 Graus",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
+    },
+    {
+      "name": "Changes",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0,
+      "reconciliation": {
+        "checkedAt": "2026-09-09T19:57:54.037279+00:00",
+        "existingSlug": "changes-sao-francisco-curitiba",
+        "localesPresent": [
+          "en",
+          "pt-BR",
+          "it",
+          "es-ES",
+          "es-419",
+          "zh-CN"
+        ],
+        "action": "Do not recreate. Existing local publication predates round. Verify live and batch attribution before changing publishedCount.",
+        "liveCheck": "Web fetch could not open live URL; no live success claimed."
+      }
+    },
+    {
+      "name": "Harvest Folk Bar",
+      "city": "Curitiba",
+      "tier": 3,
+      "state": "candidate",
+      "trustBasis": "pending verified catalogue source",
+      "evidence": null,
+      "gates": {},
+      "retryCount": 0
     }
-   },
-   "retryCount": 0,
-   "slug": "hausu-peckham-london",
-   "author": "foodie-9000",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": "6dcfe9a",
-   "liveUrl": "https://near.tips/en/place/hausu-peckham-london"
+  ],
+  "setupDecisions": {
+    "parser": "Reuse source packets only with per-article provenance; source approval before localization",
+    "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
+    "cto": "Existing flat files and tools; no new service",
+    "techLead": "Incremental checks, saved states, final build and verification"
   },
-  {
-   "name": "TOAD Bakery",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/toad-bakery",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — SLOP Magazine, Hot Dinners, The Nudge, official site, Instagram, r/LondonFood"
+  "handoffNote": "2026-09-10: Skatecafé published;21/30 scoped venue candidates. Pip Blom is supplemental event output, not a second batch venue slot. Next OT301. Other holds and hotel debt retained.",
+  "supplementalOutputs": [
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "tier": 2,
+      "city": "Amsterdam",
+      "author": "bakfiets",
+      "commit": "64633497b8d05ce851254d063201dedbad94aed9",
+      "liveUrl": "https://near.tips/en/place/pip-blom-10-years-skatecafe-2026",
+      "verifiedAt": "2026-09-10T11:55:14+00:00",
+      "gatePacket": "content/_reports/skatecafe-noord-amsterdam/release.json",
+      "kind": "hosted-event"
     }
-   },
-   "retryCount": 0,
-   "slug": "toad-bakery-camberwell-london",
-   "author": "foodie-9000",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "The Divine",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/things-to-do/the-divine",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — Attitude, London the Inside, official site, Instagram, Reddit"
-    }
-   },
-   "retryCount": 0,
-   "slug": "the-divine-dalston-london",
-   "author": "stefan",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "E. Pellicci",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/restaurants/the-king-of-all-london-caffs-an-oral-history-of-e-pellicci",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — Wikipedia, Love Bethnal Green, British Listed Buildings, official site, Reddit"
-    },
-    "sourcedPriceRange": {
-     "verdict": "pass — Google Maps band + three dated Reddit price points, AEO-liftable phrasing"
-    }
-   },
-   "retryCount": 0,
-   "slug": "e-pellicci-bethnal-green-london",
-   "author": "plinio",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "The Jago",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "timeout-london auto source; https://www.timeout.com/london/bars-pubs/haggerston",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — The Arts Desk, The Ground Up substack, Hackney Gazette, official site, Reddit"
-    },
-    "sourcedPriceRange": {
-     "verdict": "pass — cheap-to-mid tier from FIXR/RA/Google Maps signals"
-    }
-   },
-   "retryCount": 0,
-   "slug": "the-jago-dalston-london",
-   "author": "stefan",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "The Pilgrm",
-   "city": "London",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "yatzer design-press profile; https://www.yatzer.com/pilgrm-hotel-paddington-london",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — Yatzer, momondo, Tripadvisor, official site"
-    },
-    "sourcedPriceRange": {
-     "verdict": "pass — momondo aggregate range + dated/occupancy-noted sample quote"
-    },
-    "accommodationAttempt": {
-     "verdict": "satisfies BACKLOG P3.4 every-round hotel attempt"
-    }
-   },
-   "retryCount": 0,
-   "slug": "the-pilgrm-paddington-london",
-   "author": "nite-porter",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "Kirbee’s",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "CultureMap Fort Worth profile; https://fortworth.culturemap.com/news/restaurants-bars/goldees-bbq-barbs-kirbees-nyc/",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — CultureMap, Greenpointers, Brooklyn Eagle, two live Reddit threads"
-    },
-    "sourcedPriceRange": {
-     "verdict": "pass — exact sourced prices ($45/$90), both sides of the pricing debate included"
-    }
-   },
-   "retryCount": 0,
-   "slug": "kirbees-greenpoint-brooklyn",
-   "author": "foodie-9000",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "Monkey Thief",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "w42st (indie), Cititour, Resy blog, What Now New York, official site; https://w42st.com/post/monkey-thief-finds-a-new-home-on-9th-ave/",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "geolocation-police / Codex (GPT-6)",
-     "timestamp": "2026-09-08T12:08:12.900351+00:00",
-     "inputHash": "0ee43dec1c3079d436b77069783c6f7aa4f493a9eb843cd66fddbe46e453341e",
-     "findings": "Venue identity and address confirmed on Google Maps; actual listing pin copied. Replaces the invalid earlier Nominatim-only pass.",
-     "evidence": "content/_batch-runs/2026-09-07-batch-30/monkey-thief-geocode-correction.json"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondTimeOut": {
-     "verdict": "pass — w42st, Cititour, Resy, What Now New York, official site, Yelp"
-    }
-   },
-   "retryCount": 0,
-   "slug": "monkey-thief-hells-kitchen-new-york-city",
-   "author": "stefan",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   }
-  },
-  {
-   "name": "Bar Etienne",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: review (content/opportunities.md item 5, diningout.com aggregator lead); re-verified this session against Eater NY (Sept 4 cocktail-bars heatmap) and The Infatuation (Aug 13, explicitly not-visited reporting) plus a primary Google Maps listing — sourcing floor met for draft, not yet cleared for publish",
-   "evidence": null,
-   "gates": {
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondSingleAggregator": {
-     "verdict": "pass — Eater NY, The Infatuation, Google Maps listing/reviews, venue Instagram (@baretienne), beyond the original diningout.com lead"
-    },
-    "instagramCheck": {
-     "verdict": "checked — @baretienne, 6 posts, no dated/upcoming events posted; hero photo sourced from this feed"
-    },
-    "redditFallback": {
-     "verdict": "checked via search-index retry (site:reddit.com); genuinely no relevant threads found for a venue this new — not a blocked leg"
-    },
-    "events": {
-     "verdict": "no genuine dated events found for the venue; nothing to nest on the page"
-    },
-    "heroImage": {
-     "verdict": "pass — near-illustrator sign-off, tier 1 real source photo from venue's own Instagram (terrazzo entrance mosaic), downloaded and hosted locally since Instagram CDN URLs are signed/expiring; flagged to operator for visibility on the file download"
-    },
-    "tovLegalChiefEditor": {
-     "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel no defamation/likeness/licensing issues, chief editor sign-off to active"
-    }
-   },
-   "retryCount": 0,
-   "slug": "bar-etienne-west-village-new-york-city",
-   "author": "stefan",
-   "status": "draft",
-   "decisionPoint": "PUBLISHED. Operator approved the trust:review decision point; full sign-off chain (Instagram, Reddit fallback, hero image, near-illustrator, near-events, near-tov-police, language-tic-police, near-legal-counsel, chief editor) completed and all six locales written. Mechanical gates pass. See piece statusHistory for full detail.",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": "73afcb0",
-   "liveUrl": "https://near.tips/en/place/bar-etienne-west-village-new-york-city",
-   "operatorApproval": {
-    "date": "2026-09-08",
-    "decision": "approved for publication after research and required quality checks pass",
-    "source": "Operator explicitly answered Approve both for publication and reaffirmed yes approved in this conversation",
-    "requiresReconfirmation": false
-   }
-  },
-  {
-   "name": "Cospa Ramen",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto; multiple independent current sources — HAND Hospitality (handhospitality.com/handhistory), Yomitime (Aug 2026 opening reporting), fresh order.online menu, The Infatuation review (Aug 2026), official Instagram @cosparamen, r/ramen thread, signed-out Google Maps listing",
-   "evidence": "content/_batch-runs/2026-09-07-batch-30/cospa-evidence.json",
-   "gates": {
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs",
-     "findings": "no proximity/name-overlap flag against this slug"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "signed-out Google Maps listing, per cospa-evidence.json",
-     "findings": "40.7442476,-73.9906333, 36 West 26th Street, Manhattan — matches HAND Hospitality/Yomitime address"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondSingleAggregator": {
-     "verdict": "pass — HAND Hospitality, Yomitime, order.online menu, The Infatuation, Instagram, Reddit, Google Maps all independently corroborate address/menu/hours/current status"
-    },
-    "redditCheck": {
-     "verdict": "checked — r/ramen thread on the spicy bowl, value/traditional-style debate; not treated as consensus"
-    },
-    "googleReviews": {
-     "verdict": "checked — signed-out Maps low-sort and recent-sort read; mixed wait-time and saltiness reports, both attributed rather than asserted as universal"
-    },
-    "instagramCheck": {
-     "verdict": "checked — @cosparamen; Aug 28 fully-open announcement (10:30am-2am) used for hours, no future dated event found"
-    },
-    "events": {
-     "verdict": "no genuine dated event found; opening announcement is expired, not a future event"
-    },
-    "heroImage": {
-     "verdict": "pass — tier 1 real venue-supplied photo, credited to Cospa Ramen via DiningOut, source-tier not open-license"
-    },
-    "inBodyImage": {
-     "verdict": "pass — original vector-derived kaedama illustration added in-body across all six locales, near-illustrator; not AI-generated, attributed as vector-derived original artwork"
-    },
-    "tovLegalChiefEditor": {
-     "verdict": "pass — near-tov-police, language-tic-police and near-legal-counsel clean per cospa-evidence.json gates; chief editor sign-off to active"
-    }
-   },
-   "retryCount": 0,
-   "slug": "cospa-ramen-nomad-new-york-city",
-   "author": "foodie-9000",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": "2060609",
-   "liveUrl": "https://near.tips/en/place/cospa-ramen-nomad-new-york-city",
-   "operatorApproval": {
-    "date": "2026-09-08",
-    "decision": "approved for publication after research and required quality checks pass",
-    "source": "Operator explicitly answered Approve both for publication and reaffirmed yes approved in this conversation",
-    "requiresReconfirmation": false
-   }
-  },
-  {
-   "name": "Nowadays",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto; multiple independent current sources — official site (nowadays.nyc/about), The Infatuation review (Apr 2025), NYC Tourism listing, Time Out New York, Yelp (Sept 2026-updated page), Instagram @nowadaysnyc, Reddit r/avesNYC/r/AskNYC threads spanning ~1 year",
-   "evidence": null,
-   "gates": {
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs",
-     "findings": "Google Maps listing match, 56-06 Cooper Ave, Ridgewood NY 11385, confidence 0.99"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "sourcingBeyondSingleAggregator": {
-     "verdict": "pass — official site, The Infatuation, NYC Tourism, Time Out, Yelp, Instagram, Reddit all independently corroborate address/hours/ownership/current status"
-    },
-    "redditCheck": {
-     "verdict": "checked via site:reddit.com search-index fallback after direct search came up empty; genuine dated r/avesNYC threads found (door/vibe-check pattern, cover charge, crowd) spanning ~1 year"
-    },
-    "googleReviews": {
-     "verdict": "checked via web search (Yelp UGC render JS-gated); cover charge and drink price mentions corroborated"
-    },
-    "instagramCheck": {
-     "verdict": "checked — @nowadaysnyc, 124k followers, active; no genuine dated upcoming events surfaced for nesting"
-    },
-    "events": {
-     "verdict": "no genuine dated events found for nesting; Mister Sunday described as a standing weekly series, not a one-off dated event"
-    },
-    "heroImage": {
-     "verdict": "pass — tier 1 real venue photo, credited Courtesy of Nowadays via NYC Tourism og:image"
-    },
-    "tovLegalChiefEditor": {
-     "verdict": "pass — near-tov-police voice pass clean, near-legal-counsel found no defamation/likeness/licensing issue (door complaints framed as sourced UGC pattern, not fact), chief editor sign-off to active"
-    }
-   },
-   "retryCount": 0,
-   "slug": "nowadays-ridgewood-new-york-city",
-   "author": "stefan",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": "e333f4c",
-   "liveUrl": "https://near.tips/en/place/nowadays-ridgewood-new-york-city"
-  },
-  {
-   "name": "The Bush",
-   "city": "New York City",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "auto — Time Out New York, Wine Enthusiast, The Infatuation, EveryQueer, official site (bushbk.com), corroborated by Yelp/Apple Maps/GO Magazine/Instagram",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — confirmed real, currently operating lesbian bar at 333 Troutman St, Bushwick; not assumed nightlife by default",
-     "reviewer": "near-deep-researcher"
-    },
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting NYC pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "events": {
-     "verdict": "no genuine far-out one-off dated event found; recurring weekly programming only, not nested"
-    },
-    "images": {
-     "verdict": "hero resolved (tier 1, official site photo); in-body images not sourced this session (Instagram feed not browsed live) — flagged as open follow-up, not blocking"
-    }
-   },
-   "retryCount": 0,
-   "slug": "the-bush-bushwick-new-york-city",
-   "author": "allora-dai",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": null,
-   "liveUrl": "https://near.tips/en/place/the-bush-bushwick-new-york-city"
-  },
-  {
-   "name": "The Independent",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating venue confirmed",
-     "reviewer": "near-deep-researcher"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting existing SF/Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "heroImage": {
-     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
-    }
-   },
-   "retryCount": 0,
-   "decisionPoint": "Confirmed real, currently operating: 628 Divisadero St, NOPA, San Francisco (not Oakland/elsewhere despite the cluster label). Sourcing: official site theindependentsf.com, Live Nation venue schedule, Songkick, SF Station, Yelp — multiple independent, current, credible sources; trust: auto. No dedupe conflict with existing SF pins (Dolphin Club, Ocean Beach Cafe, Stray Dog, The Stud). BLOCKED THIS SESSION: could not resolve a rights-clear real hero photo (official site had no fetchable og:image; did not attempt press-photo substitution given licensing risk). Held as an un-drafted, sourced lead rather than publish without an image or force a weak substitute.",
-   "slug": "the-independent-nopa-san-francisco",
-   "status": "active"
-  },
-  {
-   "name": "The Lodge Oakland",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating venue confirmed",
-     "reviewer": "near-deep-researcher"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting existing SF/Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "heroImage": {
-     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
-    }
-   },
-   "retryCount": 0,
-   "decisionPoint": "Confirmed real, currently operating: 3758 Piedmont Ave, Piedmont Ave corridor, Oakland (reopened April 2026 under new owners Chris Cashin/Kris Gordon after a Jan 2026 closure). Sourcing: SF Chronicle (two pieces), Oaklandside, KRON4, Yahoo/whatnow — strong, current, independent corroboration; trust: auto. No dedupe conflict with existing Oakland pins. BLOCKED THIS SESSION: a real photo exists (Oaklandside og:image, TheLodge-TheBar.jpg) but is press editorial photography without a confirmed reuse license, and no venue-owned photo was resolved in the session budget — near-legal-counsel's image-licensing check would not clear it, so held rather than risk it.",
-   "slug": "the-lodge-piedmont-oakland",
-   "status": "active"
-  },
-  {
-   "name": "Henry J. Kaiser Center for the Arts",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating venue confirmed",
-     "reviewer": "near-deep-researcher"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting existing SF/Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "heroImage": {
-     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
-    }
-   },
-   "retryCount": 0,
-   "decisionPoint": "Confirmed real, currently operating: 10 10th St, Oakland (reopened Jan 24 2026 after 20-year closure and $100M renovation; five distinct venues inside — arena, 1,500-seat Calvin Simmons Theatre, speakeasy lounge, two ballrooms). Sourcing: CBS News, ABC7, Oaklandside (x2, including a live IATSE Local 107 stagehand-union contract dispute — noted for balanced, carefully-sourced coverage, not omission), Wikipedia, Visit Oakland; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: same as Independent/Lodge — no venue-owned hero photo resolved cleanly (official site og:image was a wordmark, not a photo); held rather than publish on a logo or an unlicensed press photo.",
-   "slug": "henry-j-kaiser-center-for-the-arts-oakland",
-   "status": "active"
-  },
-  {
-   "name": "Roxie Theater",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "held",
-   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating venue confirmed",
-     "reviewer": "near-deep-researcher"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting existing SF/Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "heroImage": {
-     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
-    }
-   },
-   "retryCount": 0,
-   "decisionPoint": "Confirmed real, currently operating: 3117 16th St, Mission District, San Francisco — SF's oldest continuously operating cinema, 501(c)(3) nonprofit, active programming into December 2026 (Bleak Week, Floating Features, D.E.B.S., etc.). Sourcing: roxie.com, Wikipedia, SF Examiner (nonprofit fundraising to buy the building), Screen Slate, SF Station; trust: auto. No dedupe conflict with existing Mission pin (Stray Dog). BLOCKED THIS SESSION: roxie.com returned no fetchable og:image/hero (403 on one fetch path); a Wikimedia Commons category exists for the venue but individual file rights were not verified this session. Held rather than guess at licensing.",
-   "slug": "roxie-theater-mission-san-francisco",
-   "status": "draft"
-  },
-  {
-   "name": "Black Bird Bookstore",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto — multiple independent, credible, current sources confirmed this session (see candidate note); publication held on the unresolved hero-image gate, not on sourcing",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating venue confirmed",
-     "reviewer": "near-deep-researcher"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting existing SF/Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "heroImage": {
-     "verdict": "BLOCKED — no rights-clear real venue photo resolved this session; piece held per near-write-article step 6 (image resolution failure holds, does not publish)"
-    }
-   },
-   "retryCount": 0,
-   "decisionPoint": "IDENTITY CORRECTION FOR THE MANIFEST: this is a San Francisco venue, not Oakland — 4541 Irving St, Outer Sunset, San Francisco (est. 2017 by Kathryn Grantham, founder of NYC's Bluestockings). No Oakland location exists per this session's research; the 'San Francisco Bay Area' cluster label should not be read as implying an Oakland pin. Sourcing: official site blackbirdsf.com, SF Public Library community listing, Hoodline founding profile, goop, Time Out SF, SF Station, Yelp; trust: auto. No dedupe conflict. BLOCKED THIS SESSION: the only fetchable og:image was a small icon/logo, not a real storefront or interior photo — held rather than publish on a logo, per hero-tier rules (logo is not a valid 'real source photo').",
-   "slug": "black-bird-bookstore-outer-sunset-san-francisco",
-   "status": "active"
-  },
-  {
-   "name": "The New Parkway Theater",
-   "city": "San Francisco Bay Area",
-   "tier": 1,
-   "state": "published",
-   "trustBasis": "trust: auto; multiple independent current sources — official site, Wikipedia (Speakeasy Theaters), Visit Oakland, Yelp (Sept 2026), CBS News (PETA vegan ranking), Art House Theaters",
-   "evidence": null,
-   "gates": {
-    "identityConfirmation": {
-     "verdict": "pass — real, currently operating cinema, 474 24th St, Uptown Oakland",
-     "reviewer": "near-deep-researcher"
-    },
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "duplicates": {
-     "verdict": "pass — no conflicting Oakland pin",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    },
-    "heroImage": {
-     "verdict": "pass — real venue photo from own site (imgix CDN), no faces"
-    }
-   },
-   "retryCount": 0,
-   "slug": "the-new-parkway-theater-oakland",
-   "author": "plinio",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "publicationCommit": "999aa0e",
-   "liveUrl": "https://near.tips/en/place/the-new-parkway-theater-oakland"
-  },
-  {
-   "name": "Südblock",
-   "city": "Berlin",
-   "tier": 2,
-   "state": "published",
-   "trustBasis": "multi-source verified (suedblock.org, visitBerlin.de, berlin.de tickets, Time Out Berlin, Yelp)",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    }
-   },
-   "retryCount": 0,
-   "slug": "sudblock-kreuzberg-berlin",
-   "author": "foodie-9000",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "liveUrl": "https://near.tips/en/place/sudblock-kreuzberg-berlin"
-  },
-  {
-   "name": "about blank",
-   "city": "Berlin",
-   "tier": 2,
-   "state": "published",
-   "trustBasis": "multi-source verified (berlin.de, ra.co, Time Out Berlin, gaesteliste030, Tripadvisor)",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    }
-   },
-   "retryCount": 0,
-   "slug": "about-blank-friedrichshain-berlin",
-   "author": "stefan",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "liveUrl": "https://near.tips/en/place/about-blank-friedrichshain-berlin"
-  },
-  {
-   "name": "Teufelssee",
-   "city": "Berlin",
-   "tier": 2,
-   "state": "published",
-   "trustBasis": "multi-source verified (berlin.de, Wikipedia, Playful Mag 2026 FKK guide, planet-randy.com, Tripadvisor)",
-   "evidence": null,
-   "gates": {
-    "geocode": {
-     "verdict": "pass",
-     "reviewer": "check-geocodes.mjs"
-    },
-    "duplicates": {
-     "verdict": "pass",
-     "reviewer": "check-duplicates.mjs"
-    },
-    "validateContent": {
-     "verdict": "pass",
-     "reviewer": "validate-content.mjs"
-    },
-    "build": {
-     "verdict": "pass",
-     "reviewer": "npx next build"
-    }
-   },
-   "retryCount": 0,
-   "slug": "teufelssee-grunewald-berlin",
-   "author": "wild0",
-   "locales": {
-    "en": "ready",
-    "pt-BR": "ready",
-    "it": "ready",
-    "es-ES": "ready",
-    "es-419": "ready",
-    "zh-CN": "ready"
-   },
-   "liveUrl": "https://near.tips/en/place/teufelssee-grunewald-berlin"
-  },
-  {
-   "name": "Sexyland World",
-   "city": "Amsterdam",
-   "tier": 2,
-   "state": "held",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": "content/_rotation-runs/2026-09-09-round-01/reorder-report.md",
-   "gates": {},
-   "retryCount": 0,
-   "decisionPoint": "2026-09-09: VPRO 3voor12 and Metropolis M report planned spring 2027 opening at NDSM Theater; former Noordwal home closed. Do not create an active permanent-venue recommendation from old location listings. Recheck official relocation/opening evidence; retain within scope."
-  },
-  {
-   "name": "Skatecafé",
-   "city": "Amsterdam",
-   "tier": 2,
-   "state": "draft",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": "content/_reports/skatecafe-noord-amsterdam/evidence.json",
-   "gates": {},
-   "retryCount": 0,
-   "slug": "skatecafe-noord-amsterdam",
-   "author": "bakfiets",
-   "decisionPoint": "Operator requested checkpoint before publication; six locale drafts and approved original cover saved. Resume final gates and linked events from checkpoint.md. No publication credit."
-  },
-  {
-   "name": "OT301",
-   "city": "Amsterdam",
-   "tier": 2,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  },
-  {
-   "name": "WTF Gallery and Café",
-   "city": "Bangkok",
-   "tier": 2,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  },
-  {
-   "name": "Benjakitti Forest Park",
-   "city": "Bangkok",
-   "tier": 2,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  },
-  {
-   "name": "Mischa Cheap",
-   "city": "Bangkok",
-   "tier": 2,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  },
-  {
-   "name": "92 Graus",
-   "city": "Curitiba",
-   "tier": 3,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  },
-  {
-   "name": "Changes",
-   "city": "Curitiba",
-   "tier": 3,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0,
-   "reconciliation": {
-    "checkedAt": "2026-09-09T19:57:54.037279+00:00",
-    "existingSlug": "changes-sao-francisco-curitiba",
-    "localesPresent": [
-     "en",
-     "pt-BR",
-     "it",
-     "es-ES",
-     "es-419",
-     "zh-CN"
-    ],
-    "action": "Do not recreate. Existing local publication predates round. Verify live and batch attribution before changing publishedCount.",
-    "liveCheck": "Web fetch could not open live URL; no live success claimed."
-   }
-  },
-  {
-   "name": "Harvest Folk Bar",
-   "city": "Curitiba",
-   "tier": 3,
-   "state": "candidate",
-   "trustBasis": "pending verified catalogue source",
-   "evidence": null,
-   "gates": {},
-   "retryCount": 0
-  }
- ],
- "setupDecisions": {
-  "parser": "Reuse source packets only with per-article provenance; source approval before localization",
-  "chiefEditor": "Distinct sourced new articles; all six editions; do not pad to 30",
-  "cto": "Existing flat files and tools; no new service",
-  "techLead": "Incremental checks, saved states, final build and verification"
- },
- "handoffNote": "2026-09-09 operator-requested checkpoint: Skatecafé six-locale draft and approved cover saved; remaining gates/events in content/_reports/skatecafe-noord-amsterdam/checkpoint.md. Twenty prior publications unchanged; no new publication. Sexyland/Sister Nancy holds retained, Changes existing-page reconciliation pending."
+  ]
 }

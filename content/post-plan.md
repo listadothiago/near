@@ -7,11 +7,7 @@ Current tiers and cadence: `.claude/skills/content-rotation/SKILL.md`.
 The superseded introduction and rotation history are preserved in the active
 run's `prior-post-plan.md`; older historical pointers within queues do not override this block.
 
-**Next: Skatecafé, Amsterdam (Tier 2), six-locale draft saved; final gates/events pending**, continuing the
-existing `2026-09-07-batch-30` scope. Sexyland World is held for its permanent
-location/opening conflict. Changes already exists and must be reconciled, never
-redrafted. Roxie's existing image-rights hold remains. No new round publication
-has been credited. Legacy ten #3 spent remains T1 0/6, T2 0/3, T3 0/1.
+**Next: OT301, Amsterdam (Tier 2)** in the unchanged batch scope. Skatecafé and its Pip Blom anniversary child are live in all six locales (commit `6463349`). Round:2 outputs; batch:21/30 venue candidates plus1 supplemental event. Legacy ten #3 spent: T1 0/6, T2 2/3, T3 0/1. Sister Nancy and Patta holds remain; the wider event package is incomplete. Sexyland/Roxie holds and Changes reconciliation remain owed.
 
 The SEO reorder attempt did not establish comparable demand across all six
 locale markets; saved operator priorities remain. Latest explicit BACKLOG tiers

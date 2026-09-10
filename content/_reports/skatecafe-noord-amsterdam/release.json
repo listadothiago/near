@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-09-10T11:49:11+00:00",
-  "state": "release-preparation",
+  "state": "published",
   "authorization": "User commissioned content, approved original image, and requested continuation/publication. No outreach.",
   "gates": [
     {
@@ -122,6 +122,14 @@
     "docs/workflows/content-execution.md": "b3260aa7195da7a043bdef9110fff7e3261574da8a3944322604dda29ce8f501"
   },
   "build": "pass: npm run build -- --webpack, exit0, 2026-09-10",
-  "liveVerification": "pending",
-  "tokenUsage": "unavailable"
+  "liveVerification": "All12 locale URLs HTTP200; live.json records actual metadata. Served OG1200x675 passed and crop viewed; live-audit/discover-audit.json.",
+  "tokenUsage": "unavailable",
+  "publicationCommit": "64633497b8d05ce851254d063201dedbad94aed9",
+  "publishedAt": "2026-09-10T11:55:14+00:00",
+  "limitations": [
+    "Other named events remain held; full venue calendar package incomplete.",
+    "AR plugin unavailable to automation; not tested.",
+    "Existing event page JSON-LD emits Place/Article rather than Event; logged Product Trio follow-up, no Event rich-result claim.",
+    "Board event badge links venue; body links concert directly."
+  ]
 }

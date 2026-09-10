@@ -58,11 +58,11 @@ and the required prep roles follow the hotel contract before selection.
 <!-- ROTATION-STATE: current pointer; detailed accounting in active manifest -->
 ```
 round: 2026-09-09-round-01
-new-publications: 0
+new-publications: 2
 legacy-ten: 3
-legacy-spent: T1 0 of 6; T2 0 of 3; T3 0 of 1
-active-batch: 2026-09-07-batch-30 (20 recorded published; live evidence reconciliation pending)
-NEXT-UP: Skatecafé, Amsterdam, Tier 2 — six-locale draft saved; final gates/events pending
+legacy-spent: T1 0 of 6; T2 2 of 3; T3 0 of 1
+active-batch: 2026-09-07-batch-30 (21 recorded published; live evidence reconciliation pending)
+NEXT-UP: OT301, Amsterdam, Tier 2 — next scoped venue; Skatecafé and Pip Blom live
 held: Sexyland World — permanent-location opening conflict; retain candidate
 held: Roxie Theater — prior image-rights hold preserved
 reconcile: Changes already exists locally; do not recreate or claim as new-round output

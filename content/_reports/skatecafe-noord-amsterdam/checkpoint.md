@@ -1,3 +1,3 @@
-# Skatecafé release — 2026-09-10
+# Published — 2026-09-10
 
-Skatecafé and Pip Blom are release-ready in all six locales; build passed. See release.json for distinct gate decisions. Approved artwork retained. Publication/live verification pending; counts stay unchanged until verified. Sister Nancy and Patta holds remain in evidence.json; full event package and broader rotation are incomplete.
+Skatecafé and Pip Blom are live in all six locales, commit `6463349`. Twelve URLs returned200; actual served OG image passed1200×675 and visual review. See release.json and live.json. Next scoped venue: OT301. Sister Nancy/Patta holds and other calendar work remain; do not redraft these two published pages.
