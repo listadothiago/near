@@ -108,3 +108,7 @@ Logged 2026-09-08.
 ## Closed / declined
 
 _None yet._
+
+### Pip Blom / WeTicket — 2026-09-10 — prospect
+
+Natural purchase moment: https://skatecafe.weticket.io/pip-blom-10-years. No approved affiliate programme established; ordinary official link retained, no monetized redirect or outreach. Admission and restaurant spending remain separate.

@@ -1,23 +1,198 @@
 # Near post plan — rotation + per-city queues
 
+Operator decision (2026-08-31): grow round-robin, one post per city per
+cycle, instead of finishing one city before starting the next. Every
+audience city gets fresh content every cycle, the Latest tab stays
+geographically alive, and no community waits weeks for its turn.
+
+**Tier rotation (operator directive, 2026-09-01 — see `.claude/skills/content-rotation/SKILL.md`, the source of truth for this rule):**
+
+**A tier is a share of every ten posts** — 6 Tier 1, 3 Tier 2, 1 Tier 3.
+Replaced the nested "Tier 1 ×4 then Tier 2 ×1" cycle on 2026-09-03.
+
+Tier 1 (6 of 10, round-robin) — London, Brighton, San Francisco,
+Oakland, **Bangkok** (promoted from Tier 2 by operator directive
+2026-09-02: most-visited city in the world; it is the only Tier 1 city
+with zero pins, so its queue had to be seeded before it could be drawn —
+done 2026-09-03). Tier 2 (3 of 10, burst) — Berlin, Amsterdam,
+Barcelona, Rome, Portland, Mexico City, Las Vegas, Orlando, Chengdu,
+Tokyo, Melbourne (both added by operator directive, 2026-09-03), plus
+one rotating surprise-city slot picked fresh by near-seo each time.
+São Paulo / Baixada Santista / Campinas's standing-override priority was
+revoked by the operator (2026-09-01 late night) — it's a normal Tier 2
+queue now, no bump. **Tier 3 (1 of 10, burst)** — Florianópolis, Porto
+Alegre, Curitiba, Belo Horizonte, Recife, Salvador (operator directive,
+2026-09-03). The sources pass ran the same day: **Porto Alegre, Curitiba
+and Salvador are CLEARED and drawable**; **Florianópolis, Recife and
+Belo Horizonte stay HELD** — all six have a verified live local feed
+now, but only the first three have three candidate pins good enough to
+draft from. Queues below. Draw order is by readiness, so Porto Alegre
+goes first and Belo Horizonte last.
+
+Paris/NYC/San Diego/Santos-specific/Bologna join Tier 2 when
+their queues first get seeded. **Seattle is a Tier 2 member outright**
+(operator directive, 2026-09-03 — *"make sure seattle is at least tier
+2"*), not queue-gated; its queue is still empty, so it is **held** until
+someone seeds it.
+
+**Posts per stop — REVERSED 2026-09-03, and this reverses an explicit
+operator directive, so the reasoning is on the record.** The 2026-09-01
+late-night rule was *1 post per stop, both tiers*, on the argument that
+a bigger batch for a lower tier works against the point of it being
+lower. Tier 1 still works that way. **Tier 2 and Tier 3 now spend their
+whole share as a burst on ONE city** — 3 consecutive posts for one Tier
+2 city, 1 for a Tier 3 city — rather than one post each across the
+membership.
+
+What changed is evidence, not preference. Ten cities are now sitting at
+exactly **one pin**. A one-pin city ranks for nothing, has no internal
+linking mass and no collection to hang it on; it is a thin orphan, which
+is a mild SEO negative rather than a down payment on future coverage.
+One-post-per-stop at the lower tiers is what produced them, and it would
+keep producing them. The burst preserves the original intent — a lower
+tier's city still comes around far less often — while making each
+appearance actually worth something. Frequency carries the priority
+signal; batch size carries the ranking.
+
+A city whose queue can't support its share drains what it has and is
+**held** for the rest, never padded.
+
+**How this works with research:** publishing rotates; research batches.
+A post's expensive half is verification, and that amortizes when a
+city's candidates are researched together (the London war room proved
+this). So each city keeps a queue of VERIFIED candidates below, drained
+top-down on the city's turn. When a queue is down to 1, near-war-room
+(mini, single-city) refills it. A city whose turn arrives with an empty
+queue is **held** rather than padded with an unverified post —
+rules.md's quality gate outranks the rotation. Note the change: a held
+city no longer *consumes* its tier's share, as the old empty-queue rule
+had it. Charging a city for a turn it couldn't take is what pushed
+unseeded cities permanently out of reach — Brighton was skipped every
+cycle from the tier list's creation until it was seeded on 2026-09-02.
+
+**Rules that still bind every post:** all six locales at publish,
+link-density, verify-still-open, real hero image or no publish,
+push-to-live per post for operator QA.
+
+---
+
 ## Rotation position
 
-Current accounting: `content/_rotation-runs/2026-09-09-round-01/manifest.json`.
-Current tiers and cadence: `.claude/skills/content-rotation/SKILL.md`.
-The superseded introduction and rotation history are preserved in the active
-run's `prior-post-plan.md`; older historical pointers within queues do not override this block.
+**Oakland's third slot in ten #2 is SPENT and SHIPPED (2026-09-07).** Its
+turn came up with a fully blocked queue, so under the "seed on turn"
+directive the turn's work was a `near-sources-war-room` pass — and the
+draw that seed owed shipped the same day. The seed **cleared** (one new
+verified-live feed, Oakland Voices, plus the East Bay Nosh vertical and
+the Lakeshore LGBTQ district channels, and six candidate pins with
+addresses; analysis in `opportunities.md`), and **STARLINE** went live as
+`starline-san-pablo-gateway-oakland`, STEFAN, all six locales. Oakland's
+remaining queue — the Lakeshore LGBTQ district, the henry j., The Lodge,
+Sable Lounge, and the PENDING Egg Palace — **survives for Oakland's next
+turn**, and the intended next Oakland draw is the **Oakland reopenings
+collection**, once the henry j. is live.
 
-**Next: Skatecafé, Amsterdam (Tier 2), six-locale draft saved; final gates/events pending**, continuing the
-existing `2026-09-07-batch-30` scope. Sexyland World is held for its permanent
-location/opening conflict. Changes already exists and must be reconciled, never
-redrafted. Roxie's existing image-rights hold remains. No new round publication
-has been credited. Legacy ten #3 spent remains T1 0/6, T2 0/3, T3 0/1.
+**Tier 1 now moves to Bangkok**, next in `t1-order` after Oakland, for
+the fourth slot of ten #2.
 
-The SEO reorder attempt did not establish comparable demand across all six
-locale markets; saved operator priorities remain. Latest explicit BACKLOG tiers
-resolve stale list conflicts; all preferred cities and neighborhoods remain owed.
-Five new hotels and all city/writer/filter/column/guide obligations are tracked
-in the round manifest. Hold/seed/maintenance progress is not a publication.
+**Tier 1 order (ten #2):** Brighton → San Francisco → Oakland → Bangkok
+→ London, wrapping back to Brighton for the sixth slot.
+
+**London's fifth slot in ten #2 is SPENT and SHIPPED (2026-09-07).**
+The Divine, Dalston went live under STEFAN — see the ticked queue entry
+above for the full correction/sourcing record. London's remaining
+queue (Sister Midnight, Hampstead Heath, and the still-held Bayeux
+Tapestry/British Museum time-boxed entry) survives for London's next
+turn. **Tier 1 now moves to Brighton** for the sixth and final slot of
+ten #2, closing the tier-1 share of this ten — per `t1-order`
+(Brighton → San Francisco → Oakland → NYC → London), the wrap returns
+to Brighton.
+
+**Brighton's sixth and final Tier 1 slot of ten #2 is SPENT and SHIPPED
+(2026-09-08).** The Actors, Kemptown went live under PLINIO (CUBIC-V
+consult on the theatre programming) — see the ticked queue entry in the
+Brighton section for the full re-verification/sourcing record. This
+**closes Tier 1's six slots for ten #2** (spent: T1 6 of 6). Brighton's
+remaining queue (Club Revenge, the held Polyglamorous entry, and the
+Pride Village Party collection lead) survives for Brighton's next turn.
+With Tier 1 now fully spent and Tier 2 (0 of 3) and Tier 3 (0 of 1) both
+still unspent this ten, **the rotation moves to Tier 2's burst: Rome**
+— the next city in Tier 2's order after Barcelona (which took ten #1's
+burst via Sitges), and the larger, longer-overdue share of the two
+remaining (3 posts vs. Tier 3's 1), per the skill's own note that Tier
+2/3 bursts are drawn "within this ten as their shares come up," not
+queued behind Tier 1. Tier 3's burst (Curitiba) follows once Rome's
+turn is spent.
+
+**TEN #1 CLOSED 2026-09-04.** All three shares spent: Tier 1's six
+(Brighton, London, San Francisco, Oakland, Bangkok, then London again
+with La Camionera), Tier 2's burst (the Sitges run for Barcelona &
+Region, four pins plus a collection), and finally Tier 3's single share
+— **Porto Alegre, Caos Bar, 2026-09-04**, the city's first pin and the
+first Tier 3 post ever drawn.
+
+**Ten #2 opened 2026-09-04.** Brighton took the first Tier 1 slot the
+same day with **Green Door Store** (STEFAN, all six locales). San
+Francisco took the second slot (Queer Surf, 2026-09-07) and Oakland the
+third (STARLINE, same day), so `NEXT-UP` is now **Bangkok**. Tier 2's burst
+this ten goes to **Rome** (next after Barcelona; check its queue before
+drafting — an empty queue means it is held and the burst passes on), and
+Tier 3's to **Curitiba**. The machine-legible pointer in
+`content-rotation/SKILL.md` is authoritative if this narrative and that
+block ever disagree.
+
+**Rome's turn, 2026-09-08: DRAWN.** Attilio shipped
+(`attilio-trieste-salario-rome`, FOODIE-9000, all six locales, `trust:
+auto`) — full pipeline, sourcing, gates and revenue-pass record in the
+Rome section above. The other three seeded candidates (Terrazza Hey
+Güey, Monk Garden, Kalavrì) each picked up a genuine second source this
+session but did not get the full per-piece pipeline run, so they were
+logged as upgraded leads rather than padded into drafts. **Tier 2's
+burst for ten #2 closes at 1 of 3** rather than holding open — see the
+Rome section's note for the reasoning (matches how Oakland's and NYC's
+partially-drawable-queue turns were handled). With Tier 1 (6 of 6) and
+Tier 2 now both spent this ten, only Tier 3 (0 of 1) remains — `NEXT-UP`
+moves to **Curitiba**, Tier 3's burst, confirmed still CLEARED per the
+Tier 3 section below (funded independent outlets, 3+ verified candidate
+pins, next in `t3-draw` order after Porto Alegre).
+
+*Everything below this line describes the old nested-cycle regime and is
+kept as history, not as live mechanics.*
+
+**Brighton took a turn 2026-09-02** (Legends) — out of strict cycle
+order, on the operator's call, because seeding its queue the same day
+made it finally drawable after being skipped every cycle since the tier
+list existed. Treat Brighton as served for cycle 2.
+
+**Cycle 1 of 4 — CLOSED 2026-09-02.** London took its turn
+(2026-08-31), Oakland took its turn (Heinold's, 2026-09-01), San
+Francisco took its owed turn (The Stud, 2026-09-02). Brighton was
+skipped in cycle 1 legitimately — its queue was empty and unseeded at
+the time. That is no longer true: it was seeded 2026-09-02 and has four
+verified candidates left plus a collection.
+
+**Next stop: see `NEXT-UP` in
+`.claude/skills/content-rotation/SKILL.md` — that block is now the
+source of truth for whose turn it is, and this narrative is secondary to
+it (operator directive, 2026-09-03: the rotation skill tracks what is
+next).** As of 2026-09-03 it reads **Bangkok**, after Oakland consumed
+its cycle-2 turn with 1-2-3-4 Go! Records. London's cycle-2 turn was
+marked satisfied by the three override pieces; Brighton and San
+Francisco are served. **Bangkok's queue is SEEDED as of 2026-09-03 and
+the empty-queue skip no longer applies** — the `near-sources-war-room`
+pass landed six research-verified candidates (below) and its four
+sources in `preferred-sources.md`. Bangkok's turn is live and drawable,
+so it takes it rather than being skipped; cycle 3 opens at London only
+once Bangkok has actually shipped.
+
+London is no longer queue-blocked, for whenever its next turn comes:
+Sister Midnight (needs an `'opening'` status value in the schema) and
+Hampstead Heath (bot-blocked source) are both still blocked, but E.
+Pellicci, La Camionera, The Divine, Hausu and TOAD are open and
+verified. Tier 2 gets its single turn after cycle 4 closes.
+
+Whoever ships a post updates **both** this block and `NEXT-UP` in the
+same commit — the cycle count is not derivable from the checkboxes
+alone, so it has to be written down.
 
 ## Queues
 

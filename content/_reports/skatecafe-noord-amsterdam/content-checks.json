@@ -1,0 +1,132 @@
+{
+  "checkedAt": "2026-09-10T11:49:12.667Z",
+  "stats": [
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "en",
+      "words": 198,
+      "maxParagraph": 43,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "pt-BR",
+      "words": 204,
+      "maxParagraph": 45,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "it",
+      "words": 194,
+      "maxParagraph": 44,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "es-ES",
+      "words": 201,
+      "maxParagraph": 47,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "es-419",
+      "words": 204,
+      "maxParagraph": 46,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "skatecafe-noord-amsterdam",
+      "locale": "zh-CN",
+      "words": 223,
+      "maxParagraph": 52,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "en",
+      "words": 167,
+      "maxParagraph": 49,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "pt-BR",
+      "words": 177,
+      "maxParagraph": 56,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "it",
+      "words": 171,
+      "maxParagraph": 50,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "es-ES",
+      "words": 183,
+      "maxParagraph": 56,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "es-419",
+      "words": 181,
+      "maxParagraph": 54,
+      "emDashes": 0,
+      "blockedWords": 0
+    },
+    {
+      "slug": "pip-blom-10-years-skatecafe-2026",
+      "locale": "zh-CN",
+      "words": 197,
+      "maxParagraph": 61,
+      "emDashes": 0,
+      "blockedWords": 0
+    }
+  ],
+  "findings": [],
+  "baseline": {
+    "recentBakfiets": [],
+    "catalogueSize": 113,
+    "localeWatchlistRates": {
+      "en": {
+        "files": 113,
+        "matching": 80
+      },
+      "pt-BR": {
+        "files": 112,
+        "matching": 29
+      },
+      "it": {
+        "files": 112,
+        "matching": 44
+      },
+      "es-ES": {
+        "files": 112,
+        "matching": 21
+      },
+      "es-419": {
+        "files": 112,
+        "matching": 47
+      },
+      "zh-CN": {
+        "files": 112,
+        "matching": 12
+      }
+    }
+  }
+}

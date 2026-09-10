@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-09-10T11:49:11+00:00",
+  "state": "release-preparation",
+  "authorization": "User commissioned content, approved original image, and requested continuation/publication. No outreach.",
+  "gates": [
+    {
+      "role": "near-tov-police",
+      "verdict": "pass: all twelve editions read; direct BAKFIETS register, distinct headline shapes, no invented personal visit or internal workflow copy.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "language-tic-police",
+      "verdict": "pass: catalogue baseline and all locale counts in content-checks.json; zero flagged words/em dashes; no prior BAKFIETS pieces available for byline comparison.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "near-legal-counsel",
+      "verdict": "pass: negative admission account explicitly individual testimony and Maps-linked; no serious allegations repeated. Original art has disclosure, no likeness or third-party logo.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "chief-editor",
+      "verdict": "pass for these two pieces: shared venue use and returning drummer are concrete hooks; do not declare broader event package complete.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "near-translator",
+      "verdict": "pass: all six editions read, local formats and vocabulary checked; es-419 botanas changed to aperitivos; dates, prices, restrictions consistent.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "price-police",
+      "verdict": "pass: venue €10–50 explicitly visitor-reported dated Sep9, not a current menu promise; Pip ticket panel rechecked Sep10 with €1 fees and unavailable early tier.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "link-police",
+      "verdict": "pass: twelve reciprocal body links have real locale targets; official programme/restaurant/rules and Maps linked at claims. Board event badge links venue only: UI follow-up, child accessible from venue body.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "near-seo/aeo",
+      "verdict": "pass editorial/schema: venue identity/address and event date/time standalone; no unsupported search-volume claim, two different intents; actual production JSON-LD pending live check.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "departamento-de-vai-dar-merda",
+      "verdict": "pass: ticket availability dated and qualified, all-ages concert distinguished from club21+, flashing lights and dog restrictions explicit; no universal safety/accessibility promise; event expiry configured.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "near-illustrator",
+      "verdict": "pass: approved original halfpipe/table/record metaphor fits the venue and concert setting; all editions under250 words so no mid-body image needed.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "image-police",
+      "verdict": "pass viewed local article crops for both and board card at localhost in Codex browser tabs11/13/14. Strong central ramp/vinyl focal point, legible at card scale, no clipping defect; factual fit editorial not documentary; original rights/disclosure retained.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "google-discover-audit",
+      "verdict": "preflight pass: exact asset1672x941 and both headlines inspected with snippet/real board. Served canonical OG verification pending deployment; no feed admission/indexation claim. AR plugin unavailable to automation: not tested.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "events-police",
+      "verdict": "verified-events: Pip child with parent, exact timezone/end and six locales; named Sister Nancy/Patta holds remain in evidence.json. Broader calendar package incomplete. Existing loader excludes expired hosted events and preserves direct archive access (lib/content/loader.ts:142,185). Future wall-clock expiry not simulated.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "geolocation-police",
+      "verdict": "pass: original Maps pin evidence reused; named checker passes2 active records.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "dedupe-by-place",
+      "verdict": "pass: seven unrelated baseline pairs unchanged; no new identity collision. Hosted concert intentionally shares venue pin.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    },
+    {
+      "role": "revenue",
+      "verdict": "prospects logged in all three outreach files; no approved affiliate programme and no contact sent.",
+      "checkedAt": "2026-09-10T11:49:11+00:00",
+      "evidence": "evidence.json, content-checks.json, preflight/discover-audit.json; browser review in task"
+    }
+  ],
+  "inputHashes": {
+    "content/places/skatecafe-noord-amsterdam/es-419.mdx": "ee13528eaf7f6814f6dc9b88a7179a34904ae94cc8e0e905a569f7ca6aca0636",
+    "content/places/skatecafe-noord-amsterdam/en.mdx": "c3a5b9db6e53990496fbfece226cd8fec4a0643ddeaf7a55cf380ec12b4d42a5",
+    "content/places/skatecafe-noord-amsterdam/es-ES.mdx": "7901c3a734b48d8f61b998ed43da80a0a2cc2af1b3791f73e2409197c1f3c359",
+    "content/places/skatecafe-noord-amsterdam/zh-CN.mdx": "17349fb635f9b7361c3543cec6ffce827fa3273ab39b93c954d01a6e5b4927f5",
+    "content/places/skatecafe-noord-amsterdam/pt-BR.mdx": "d591f028a92ae1aea58314657ba130faa109c6a54cf18b0aaed41253b32f8b8f",
+    "content/places/skatecafe-noord-amsterdam/it.mdx": "9c66cd2992a78006e23cee8b61039beedb42f27419bd4ea4de4d590f630ae4ca",
+    "content/places/skatecafe-noord-amsterdam/meta.json": "5e3c61ac1bafc6531efefff800f916ff7b56c771b1a7f7e248f3cecf54400263",
+    "content/places/pip-blom-10-years-skatecafe-2026/es-419.mdx": "bb28ed75f9141e832707f0b33e4fe5c69cc3a1417e18c624855d4b1df4840a05",
+    "content/places/pip-blom-10-years-skatecafe-2026/en.mdx": "15f0411fa821329714a96215547581256df28913c99e52a1785d7060b42cab0b",
+    "content/places/pip-blom-10-years-skatecafe-2026/es-ES.mdx": "f556306422cbf3c2bb5c3fce80fa40e157cbba6dcd80d23f5f551f298c773682",
+    "content/places/pip-blom-10-years-skatecafe-2026/zh-CN.mdx": "3ef81767c2768f2c823713ae8849dd63edba145b32b076421a4b4de96d88ee40",
+    "content/places/pip-blom-10-years-skatecafe-2026/pt-BR.mdx": "3caf39624c64fa18f79855d729bd2e3c5828740f9163982819075f017176b382",
+    "content/places/pip-blom-10-years-skatecafe-2026/it.mdx": "9f4fc302f184c9f7c5d4c21d772e0c1ceea6d855246d1cb8e63109639c4d28cc",
+    "content/places/pip-blom-10-years-skatecafe-2026/meta.json": "768d39a1c3281fc48b3f15ee2796cf85e93ebc702c5b17700c9d1d85efdb4871",
+    "public/places/skatecafe-noord-amsterdam/hero.png": "4a31d2c8fe78c9a2799d6a5a64532a3ddff5bcf3df9a7c5a67c4e3f745b718cc",
+    "content/_reports/skatecafe-noord-amsterdam/evidence.json": "61902f1ef94119eb2945ac57a99d14e83f12002d7cbbfdb06e7887ffd376cb2f",
+    "content/rules.md": "0dcec23cbde71cb93e5fabaf7411b581afc913530ae6677194f4fc48b5b1594a",
+    ".claude/skills/near-write-article/SKILL.md": "241d0d5bd228ba648aa02df0fb7e74c8ea29964e5904f42e80e2b09676b8c6f5",
+    "docs/workflows/content-execution.md": "b3260aa7195da7a043bdef9110fff7e3261574da8a3944322604dda29ce8f501"
+  },
+  "build": "pass: npm run build -- --webpack, exit0, 2026-09-10",
+  "liveVerification": "pending",
+  "tokenUsage": "unavailable"
+}

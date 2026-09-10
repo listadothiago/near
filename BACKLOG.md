@@ -171,6 +171,21 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
+### Active rotation — IN PROGRESS (Codex GPT-6, 2026-09-09)
+
+Operator requested the new content-rotation process starting with SEO reorder.
+Run evidence: `content/_rotation-runs/2026-09-09-round-01/`. City lists and
+coverage debt reconciled; 27 Trends URLs attempted, comparable locale weights
+unavailable, so no demand promotion. Sexyland held on relocation/opening evidence;
+Changes already exists and must not be redrafted. Skatecafé now has six locale
+drafts and an operator-approved original cover. Operator requested checkpoint;
+resume `content/_reports/skatecafe-noord-amsterdam/checkpoint.md`. New
+publications: 0; full round and publication gates remain open.
+
+### Event badge follow-up — 2026-09-10
+
+Product Trio: `/en` Skatecafé card shows “NEXT Pip Blom brings Gini back”, but the badge is part of the venue link rather than a direct event link. Reproduced in Codex browser on localhost; concert remains reachable through the venue body. Evidence: `content/_reports/skatecafe-noord-amsterdam/release.json`. Other calendar holds remain in `evidence.json`; package incomplete.
+
 ### Current handoff — 2026-09-09, Codex (GPT-6)
 
 - **Workflow changes:** P0.3, P1.22/29/30/31 and P2.19 instruction work completed; evidence and limits in `docs/workflows/2026-09-09-review.md`. New gates apply on the next write/review, not a retrospective certification of published pieces.

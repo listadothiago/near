@@ -898,21 +898,25 @@
    "name": "Sexyland World",
    "city": "Amsterdam",
    "tier": 2,
-   "state": "candidate",
+   "state": "held",
    "trustBasis": "pending verified catalogue source",
-   "evidence": null,
+   "evidence": "content/_rotation-runs/2026-09-09-round-01/reorder-report.md",
    "gates": {},
-   "retryCount": 0
+   "retryCount": 0,
+   "decisionPoint": "2026-09-09: VPRO 3voor12 and Metropolis M report planned spring 2027 opening at NDSM Theater; former Noordwal home closed. Do not create an active permanent-venue recommendation from old location listings. Recheck official relocation/opening evidence; retain within scope."
   },
   {
    "name": "Skatecafé",
    "city": "Amsterdam",
    "tier": 2,
-   "state": "candidate",
+   "state": "draft",
    "trustBasis": "pending verified catalogue source",
-   "evidence": null,
+   "evidence": "content/_reports/skatecafe-noord-amsterdam/evidence.json",
    "gates": {},
-   "retryCount": 0
+   "retryCount": 0,
+   "slug": "skatecafe-noord-amsterdam",
+   "author": "bakfiets",
+   "decisionPoint": "Operator requested checkpoint before publication; six locale drafts and approved original cover saved. Resume final gates and linked events from checkpoint.md. No publication credit."
   },
   {
    "name": "OT301",
@@ -972,7 +976,21 @@
    "trustBasis": "pending verified catalogue source",
    "evidence": null,
    "gates": {},
-   "retryCount": 0
+   "retryCount": 0,
+   "reconciliation": {
+    "checkedAt": "2026-09-09T19:57:54.037279+00:00",
+    "existingSlug": "changes-sao-francisco-curitiba",
+    "localesPresent": [
+     "en",
+     "pt-BR",
+     "it",
+     "es-ES",
+     "es-419",
+     "zh-CN"
+    ],
+    "action": "Do not recreate. Existing local publication predates round. Verify live and batch attribution before changing publishedCount.",
+    "liveCheck": "Web fetch could not open live URL; no live success claimed."
+   }
   },
   {
    "name": "Harvest Folk Bar",
@@ -991,5 +1009,5 @@
   "cto": "Existing flat files and tools; no new service",
   "techLead": "Incremental checks, saved states, final build and verification"
  },
- "handoffNote": "2026-09-08 (session 4): Cospa Ramen (NoMad, New York City) taken from candidate to published — do NOT re-research or re-draft it. Full pipeline complete: research/evidence saved at cospa-evidence.json, hero is a real venue-supplied photo (Cospa via DiningOut, source-tier), an original vector-derived in-body illustration of kaedama added across all six locales (near-illustrator's new editorial-illustration guidance, see content/illustrator-knowledge-base.md), all mechanical gates and npx next build pass, all six locales written as genuine local editions (not machine translation), pushed live at commit 2060609. publishedCount now 20/30. If resuming this run, treat Cospa as closed and move to the next untouched candidate/cluster (Berlin, Amsterdam, Bangkok, Curitiba per the prior session's note, plus SF Bay Area's five still-held candidates below). 2026-09-08 (session 3): SF Bay Area Tier 1 cluster dispatched. All six candidates identity-confirmed and re-verified as real, currently operating venues (The Independent 628 Divisadero NOPA/SF; The Lodge 3758 Piedmont Ave Oakland, reopened April 2026 new ownership; Henry J. Kaiser Center for the Arts 10 10th St Oakland, reopened Jan 2026 after $100M/20yr renovation; Roxie Theater 3117 16th St Mission/SF, nonprofit cinema; Black Bird Bookstore 4541 Irving St Outer Sunset/SF — NOTE: SF not Oakland, cluster label corrected; The New Parkway Theater 474 24th St Uptown Oakland). All six cleared sourcing to trust: auto (multiple independent, current, credible sources each). Only The New Parkway Theater was carried through the full pipeline and published (all six locales, mechanical gates, build, commit 999aa0e, pushed) — it had a real, rights-clear venue-owned hero photo confirmed live. The other five (Independent, Lodge, Kaiser, Roxie, Black Bird) are held at candidate/un-drafted status: sourcing is solid, but this session could not responsibly clear the mandatory hero-image/licensing gate for any of them (official sites returned no usable photo, or only a logo, or only unlicensed press editorial photography) within the session's time budget — publishing without a resolved image, or on a press photo whose reuse rights weren't checked, would violate near-write-article step 6/near-legal-counsel's licensing check. Each candidate's decisionPoint field records what was confirmed and exactly what's still needed (operator has real photos on file for some SF venues per The Stud precedent — worth checking before the next pass; otherwise this is an official-outreach or Instagram-photo-download task for the next session). publishedCount now 12/30. Do not re-research these five from scratch — identity, address, and multi-source corroboration are already logged in their decisionPoint notes; the next session should go straight to image resolution and drafting. Next: Berlin, Amsterdam, Bangkok, Curitiba clusters remain fully untouched. Resume run 2026-09-07-batch-30."
+ "handoffNote": "2026-09-09 operator-requested checkpoint: Skatecafé six-locale draft and approved cover saved; remaining gates/events in content/_reports/skatecafe-noord-amsterdam/checkpoint.md. Twenty prior publications unchanged; no new publication. Sexyland/Sister Nancy holds retained, Changes existing-page reconciliation pending."
 }

@@ -12,3 +12,7 @@ A turn/batch is not a full all-city round; queue changes preserve coverage debt.
 Five new hotels are required per full round/batch without overriding quality.
 Demand weights remain unknown where current comparable volumes are unavailable.
 No live reorder was performed during this instruction change.
+
+## 2026-09-09 — First live rotation reconciliation
+
+Latest explicit BACKLOG tier assignments supersede older lists; additional preferred cities retain prior broad Tier 2 placement. Preserve scoped batches and count each article once even when it covers a parent region. No comparable locale weights were established; no demand promotion claimed. Evidence: `content/_rotation-runs/2026-09-09-round-01/reorder-report.md`.

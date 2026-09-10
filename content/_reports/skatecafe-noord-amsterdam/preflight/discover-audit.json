@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "pip-blom-10-years-skatecafe-2026",
+    "url": "LOCAL_PREFLIGHT_ASSET:public/places/skatecafe-noord-amsterdam/hero.png",
+    "ok": true,
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "reason": "pass"
+  },
+  {
+    "slug": "skatecafe-noord-amsterdam",
+    "url": "LOCAL_PREFLIGHT_ASSET:public/places/skatecafe-noord-amsterdam/hero.png",
+    "ok": true,
+    "width": 1672,
+    "height": 941,
+    "aspect": "1.777",
+    "reason": "pass"
+  }
+]

@@ -971,3 +971,9 @@ monitorable:**
   active); bio and post cadence corroborated the found-portrait origin
   story and current hours. Logged per the standing rule that a venue's
   own account is a first-class source, not just a fallback.
+
+### Amsterdam music candidates — Skatecafé research, 2026-09-10
+
+- Skatecafé official site (https://www.skatecafe.nl/) and programme (https://skatecafe.weticket.io/): restaurant conditions and dated concerts; site fetch returned 429, real browser readable.
+- Skatecafé Instagram (https://www.instagram.com/skatecafeamsterdam/), plus Patta’s dated collaborator post (https://www.instagram.com/patta_nl/p/DdCEF5AOrJQ/): hours and event announcements; browser required for full caption.
+- Amsterdam Alternative (https://amsterdamalternative.nl/): independent local cultural context; current issue consulted in rotation intake. Catalogue gap: few directly relevant Amsterdam indie sources. Candidates only; no automatic trust promotion.

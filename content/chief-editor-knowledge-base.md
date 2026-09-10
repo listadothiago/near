@@ -23,3 +23,7 @@ runs should know about) — not every single sign-off.
   side specifically (scoping, batching, reuse across a research pass).
 - Mandatory sign-off on every article, no exceptions (operator directive,
   2026-09-07, `near-write-article/SKILL.md` step 7).
+
+### 2026-09-10 — Skatecafé and Pip Blom
+
+BAKFIETS fits the Amsterdam mixed-use venue; the concert earns its own page through Gini Cameron’s one-off return and the two-room lineup. Keep restaurant price testimony dated, event fees separate, and club ages distinct from all-ages concerts. Original metaphorical art is disclosed and does not claim a venue photograph. Other event holds remain visible; two cleared pages do not complete the venue’s calendar package.

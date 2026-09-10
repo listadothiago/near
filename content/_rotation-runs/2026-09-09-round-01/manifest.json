@@ -1,0 +1,1256 @@
+{
+  "runId": "2026-09-09-round-01",
+  "startedAt": "2026-09-09T19:55:49.401133+00:00",
+  "state": "active",
+  "phase": "Skatecafé draft saved at operator request",
+  "authorization": "Operator requested content-rotation beginning with SEO reorder, then acknowledged ok. No outreach authorization.",
+  "snapshots": [
+    "prior-rotation.md",
+    "prior-post-plan.md",
+    "prior-destinations.md"
+  ],
+  "demand": {
+    "evidence": "seo-trends.json",
+    "savedUrlsAttempted": 27,
+    "comparableLocaleWeights": "unknown",
+    "decision": "No demand-driven promotion or new ranking. Reconcile latest explicit BACKLOG tiers; preserve scoped batch order.",
+    "localeMarkets": {
+      "en": "US/GB RSS and manually filtered browser samples",
+      "pt-BR": "BR all-category RSS; category-specific comparison incomplete",
+      "it": "IT all-category RSS; category-specific comparison incomplete",
+      "es-ES": "ES all-category RSS; category-specific comparison incomplete",
+      "es-419": "MX RSS and manually filtered travel sample; not entire Latin America",
+      "zh-CN": "TW/HK RSS proxies only; mainland and locale audience volume unavailable"
+    }
+  },
+  "tiers": {
+    "1": {
+      "share": 0.6,
+      "destinations": [
+        "London",
+        "NYC",
+        "San Francisco Bay Area"
+      ]
+    },
+    "2": {
+      "share": 0.3,
+      "destinations": [
+        "Brighton",
+        "San Francisco",
+        "Berkeley/Oakland/East Bay",
+        "Brooklyn NY",
+        "Manhattan NY",
+        "Bangkok",
+        "São Paulo (capital)",
+        "Baixada Santista",
+        "Rio de Janeiro",
+        "Berlin",
+        "Amsterdam",
+        "Barcelona",
+        "Rome",
+        "Portland",
+        "Mexico City",
+        "Las Vegas",
+        "Orlando",
+        "Fort Lauderdale",
+        "Chengdu",
+        "Tokyo",
+        "Melbourne",
+        "Seattle",
+        "Los Angeles",
+        "Paris",
+        "Lisbon",
+        "Madrid",
+        "Fortaleza",
+        "Cuiabá",
+        "Joinville",
+        "Ribeirão Preto",
+        "São José dos Campos",
+        "Saquarema",
+        "Manaus",
+        "Petrópolis",
+        "Belém",
+        "Boulder (Colorado)",
+        "New Orleans",
+        "Philadelphia",
+        "Boston",
+        "Atlanta",
+        "Toronto",
+        "Vancouver",
+        "Bogotá",
+        "Santiago",
+        "Valparaíso",
+        "Manchester",
+        "Belfast",
+        "Zurich",
+        "Catania",
+        "Shenzhen"
+      ]
+    },
+    "3": {
+      "share": 0.1,
+      "destinations": [
+        "Florianópolis",
+        "Porto Alegre",
+        "Curitiba",
+        "Belo Horizonte",
+        "Recife",
+        "Salvador",
+        "Denver",
+        "Chicago",
+        "Miami",
+        "Bologna",
+        "Medellín",
+        "Montevideo",
+        "São Carlos/Rio Claro-SP",
+        "Baixada Santista/Litoral Paulista",
+        "São Vicente-SP",
+        "New Jersey",
+        "San Diego",
+        "Buenos Aires",
+        "Palermo",
+        "Lugano/Italian Switzerland",
+        "Puerto Vallarta",
+        "Milan",
+        "Valencia",
+        "Porto",
+        "Campinas",
+        "Jaú/Bauru/Araraquara region",
+        "Edinburgh",
+        "Glasgow",
+        "Dublin",
+        "Carcavelos",
+        "Athens"
+      ]
+    },
+    "4": {
+      "share": null,
+      "destinations": [],
+      "cadence": "No new outside-tier city selected. Each future addition requires explicit lower-frequency due round before use."
+    }
+  },
+  "legacyAdditionalDestinations": [
+    {
+      "destination": "Fortaleza",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Cuiabá",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Joinville",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Ribeirão Preto",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "São José dos Campos",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Saquarema",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Manaus",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Petrópolis",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Belém",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Boulder (Colorado)",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "New Orleans",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Philadelphia",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Boston",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Atlanta",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Toronto",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Vancouver",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Bogotá",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Santiago",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Valparaíso",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Manchester",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Belfast",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Zurich",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Catania",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    },
+    {
+      "destination": "Shenzhen",
+      "state": "owed",
+      "source": "prior-destinations.md",
+      "dueRound": "2026-09-09-round-01",
+      "note": "Inherited preferred-destinations broad Tier 2 designation; no search-demand promotion. Later explicit BACKLOG assignments take precedence.",
+      "tier": 2
+    }
+  ],
+  "geographyAliases": {
+    "New York": "NYC",
+    "Oakland": "Berkeley/Oakland/East Bay",
+    "Santos": "Baixada Santista",
+    "São Carlos": "São Carlos/Rio Claro-SP",
+    "Lugano": "Lugano/Italian Switzerland",
+    "Litoral Paulista": "Baixada Santista/Litoral Paulista"
+  },
+  "geographyAccounting": "One publication consumes one tier slot. It may satisfy a genuine parent-region obligation as well. Borough, city and coastal-region coverage remain distinct; Santos alone does not fulfil all Litoral Paulista coverage. Neighborhood queues in prior-destinations.md remain owed.",
+  "neighborhoodObligations": [
+    "Vila Madalena, São Paulo",
+    "Baixo Augusta / Santa Cecília, São Paulo",
+    "Moema, São Paulo",
+    "Selva Club, São Paulo (current identity verification)",
+    "Shoreditch, London",
+    "North London neighborhood",
+    "Pignetto, Rome",
+    "Brooklyn neighborhood depth",
+    "Copacabana, Rio de Janeiro",
+    "Ipanema, Rio de Janeiro"
+  ],
+  "cityCoverage": [
+    {
+      "destination": "London",
+      "tier": 1,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "NYC",
+      "tier": 1,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "San Francisco Bay Area",
+      "tier": 1,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Brighton",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "San Francisco",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Berkeley/Oakland/East Bay",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Brooklyn NY",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Manhattan NY",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Bangkok",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "São Paulo (capital)",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Baixada Santista",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Rio de Janeiro",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Berlin",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Amsterdam",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Barcelona",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Rome",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Portland",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Mexico City",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Las Vegas",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Orlando",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Fort Lauderdale",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Chengdu",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Tokyo",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Melbourne",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Seattle",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Los Angeles",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Paris",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Lisbon",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Madrid",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Florianópolis",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Porto Alegre",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Curitiba",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Belo Horizonte",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Recife",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Salvador",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Denver",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Chicago",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Miami",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Bologna",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Medellín",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Montevideo",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "São Carlos/Rio Claro-SP",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Baixada Santista/Litoral Paulista",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "São Vicente-SP",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "New Jersey",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "San Diego",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Buenos Aires",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Palermo",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Lugano/Italian Switzerland",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Puerto Vallarta",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Milan",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Valencia",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Porto",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Campinas",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Jaú/Bauru/Araraquara region",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Edinburgh",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Glasgow",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Dublin",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Carcavelos",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Athens",
+      "tier": 3,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Fortaleza",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Cuiabá",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Joinville",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Ribeirão Preto",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "São José dos Campos",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Saquarema",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Manaus",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Petrópolis",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Belém",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Boulder (Colorado)",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "New Orleans",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Philadelphia",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Boston",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Atlanta",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Toronto",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Vancouver",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Bogotá",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Santiago",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Valparaíso",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Manchester",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Belfast",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Zurich",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Catania",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "destination": "Shenzhen",
+      "tier": 2,
+      "state": "owed",
+      "slugs": []
+    }
+  ],
+  "writers": [
+    {
+      "slug": "radar-x",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "foodie-9000",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "stefan",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "cubic-v",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "plinio",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "wild0",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "darcy",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "nite-porter",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "fit-bot",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "lugardo-karai",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "rucio-libero",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "feral",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "buddy",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "808",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "allora-dai",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "zack-arioka",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "bricky",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "pauly-seya",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "dog-in-the-fog",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "bakfiets",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "motosai",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "ciclovia",
+      "state": "owed",
+      "slugs": []
+    },
+    {
+      "slug": "parser",
+      "state": "owed",
+      "slugs": []
+    }
+  ],
+  "filters": {
+    "categories": [
+      {
+        "id": "travel",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "world-culture-news",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "city-culture",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "food-drink",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "nightlife-sound",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "wellness-fitness",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "accommodation",
+        "state": "owed",
+        "slugs": []
+      }
+    ],
+    "tags": [
+      {
+        "id": "lgbtq-friendly",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "hipster",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "celebrity-spotted",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "influencer-favorite",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "local-legend",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "late-night",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "hidden-gem",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "see-and-be-seen",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "trending",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "sober-curious",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "420-friendly",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "dog-first",
+        "state": "owed",
+        "slugs": []
+      },
+      {
+        "id": "furry",
+        "state": "owed",
+        "slugs": []
+      }
+    ]
+  },
+  "columns": [
+    {
+      "name": "The Setlist",
+      "index": "content/the-setlist-index.json",
+      "baselineSlugs": [
+        "the-setlist-2026-10"
+      ],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    },
+    {
+      "name": "Editorial column",
+      "index": "content/editorial-column-index.json",
+      "baselineSlugs": [
+        "zombie-listicle-problem"
+      ],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    },
+    {
+      "name": "Ladies&Gentlethem",
+      "index": "content/ladies-and-gentlethem-index.json",
+      "baselineSlugs": [
+        "ladies-and-gentlethem-2026-09"
+      ],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    },
+    {
+      "name": "The Pass",
+      "index": "content/the-pass-index.json",
+      "baselineSlugs": [],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    },
+    {
+      "name": "Do Not Disturb",
+      "index": "content/do-not-disturb-index.json",
+      "baselineSlugs": [
+        "do-not-disturb-01-below-the-room"
+      ],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    },
+    {
+      "name": "The Failure Mode",
+      "index": "content/the-failure-mode-index.json",
+      "baselineSlugs": [
+        "i-look-pretty-good-dead-internet-site"
+      ],
+      "state": "owed",
+      "nextCadenceReview": "2026-09-09",
+      "note": "Check latest issue dates and authoritative column skill before scoping; existing issues do not credit this round."
+    }
+  ],
+  "guides": {
+    "state": "owed",
+    "slugs": []
+  },
+  "hotels": {
+    "minimumNew": 5,
+    "published": 0,
+    "slots": [
+      {
+        "slot": 1,
+        "state": "owed",
+        "hotel": null,
+        "prep": "SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER required before selection; NITE-PORTER coordinates"
+      },
+      {
+        "slot": 2,
+        "state": "owed",
+        "hotel": null,
+        "prep": "SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER required before selection; NITE-PORTER coordinates"
+      },
+      {
+        "slot": 3,
+        "state": "owed",
+        "hotel": null,
+        "prep": "SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER required before selection; NITE-PORTER coordinates"
+      },
+      {
+        "slot": 4,
+        "state": "owed",
+        "hotel": null,
+        "prep": "SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER required before selection; NITE-PORTER coordinates"
+      },
+      {
+        "slot": 5,
+        "state": "owed",
+        "hotel": null,
+        "prep": "SEO, trendsetter, affiliate-pr, backlink-pr, AEO and PARSER required before selection; NITE-PORTER coordinates"
+      }
+    ]
+  },
+  "dependencies": [
+    {
+      "name": "Africa selection",
+      "state": "owed",
+      "detail": "North African city and second African city require current source, editorial and safety context; neither picked without evidence."
+    },
+    {
+      "name": "New/planned columns and personas",
+      "state": "unlaunched-dependency",
+      "detail": "BACKLOG EPIC 4 remains authoritative. No credit from unlaunched items."
+    }
+  ],
+  "legacyCounter": {
+    "ten": 3,
+    "spent": {
+      "T1": 0,
+      "T2": 0,
+      "T3": 0
+    },
+    "priorT1Order": [
+      "San Francisco",
+      "Oakland",
+      "NYC",
+      "London",
+      "Brighton"
+    ],
+    "contradiction": "Old NEXT-UP says Brighton but SF seed is unspent. Preserve SF debt; do not fabricate consumed slot."
+  },
+  "batch": {
+    "manifest": "content/_batch-runs/2026-09-07-batch-30/manifest.json",
+    "target": 30,
+    "baselinePublishedCount": 20,
+    "newRoundCredit": 0,
+    "scopePolicy": "Keep candidate sequence and original tier allocation. Verify outputs before credit.",
+    "hotelPolicyDebt": "Existing scope predates minimum-five requirement. Audit hotel count; attempts cannot count. Do not replace scoped candidates silently.",
+    "baselineHotelSlugs": [
+      "the-pilgrm-paddington-london"
+    ],
+    "minimumHotelShortfall": 4,
+    "hotelEvidenceNote": "The Pilgrm is a known hotel with NITE-PORTER byline but miscategorized city-culture. One prior hotel is recorded; live/gate verification pending. An accommodation-category-only count incorrectly yields zero. No new-round credit."
+  },
+  "roleReviews": {
+    "seo": {
+      "verdict": "reorder-not-supported",
+      "finding": "27 URL attempts recorded, incomplete comparable category/locale evidence; preserve demand order."
+    },
+    "trendsetter": {
+      "verdict": "Amsterdam-beat-supported",
+      "finding": "Amsterdam Alternative current issue and Sept/Oct DIY programmes support free-space/nightlife lens; Sexyland first candidate has new-location conflict."
+    },
+    "cmo": {
+      "verdict": "conditional",
+      "finding": "Use 60/30/10 latest operator shares; five hotel slots and all coverage debts retained. Extra destinations inherit the older broad Tier 2 designation, without a demand-promotion claim."
+    },
+    "chiefEditor": {
+      "verdict": "approve-reconciliation-and-next-candidate-check; demand-reorder-deferred",
+      "finding": "Hold Sexyland as an open permanent venue. Check Skatecafé next in existing scope. No coverage completion or fabricated demand ranking."
+    }
+  },
+  "published": [],
+  "publishedCount": 0,
+  "exceptions": [],
+  "nextOwedWork": {
+    "candidate": "Skatecafé",
+    "city": "Amsterdam",
+    "tier": 2,
+    "reason": "Next unchanged scoped batch candidate after Sexyland location/opening hold.",
+    "state": "draft-final-gates-and-child-events-pending",
+    "evidence": "content/_reports/skatecafe-noord-amsterdam/evidence.json",
+    "slug": "skatecafe-noord-amsterdam",
+    "checkpoint": "content/_reports/skatecafe-noord-amsterdam/checkpoint.md"
+  },
+  "tokenUsage": "unavailable",
+  "instructionHashes": {
+    "docs/workflows/content-rotation.md": "d86ae1be5b544454d0cf26a86dc540c86bb1633fe5909cb6fb2a70d5b24bca38",
+    "docs/workflows/content-execution.md": "b3260aa7195da7a043bdef9110fff7e3261574da8a3944322604dda29ce8f501",
+    ".claude/skills/rotation-reorder/SKILL.md": "d054216e892fbadf04e20288c6b84c65d3b86d604f5ab98ea0542614e97cc337",
+    ".claude/skills/near-write-article/SKILL.md": "241d0d5bd228ba648aa02df0fb7e74c8ea29964e5904f42e80e2b09676b8c6f5",
+    "content/rules.md": "0dcec23cbde71cb93e5fabaf7411b581afc913530ae6677194f4fc48b5b1594a"
+  }
+}

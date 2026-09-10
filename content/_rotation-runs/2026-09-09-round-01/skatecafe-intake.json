@@ -1,0 +1,66 @@
+{
+  "candidate": "Skatecafé",
+  "checkedAt": "2026-09-09T19:59:39.762626+00:00",
+  "state": "research-in-progress",
+  "author": "bakfiets",
+  "topic": "Noord mixed restaurant/skating/music space; distinguish ordinary venue visit from ticketed nights",
+  "sources": [
+    {
+      "url": "https://www.skatecafe.nl/info/",
+      "kind": "official",
+      "finding": "Gedempt Hamerkanaal 42, 1021 KM Amsterdam. Listed Thursday 15:00–01:00; Friday/Saturday 15:00–03:00. Recheck before final draft."
+    },
+    {
+      "url": "https://www.skatecafe.nl/restaurant/",
+      "kind": "official",
+      "finding": "Dinner kitchen 18:00–22:00; Skatecafé drinks/snacks from15:00."
+    },
+    {
+      "url": "https://skatecafe.weticket.io/",
+      "kind": "official ticketing",
+      "finding": "Current upcoming September/October programme; distinguish venue events from BuitenLand offsite stage hosting."
+    },
+    {
+      "url": "https://in.patta.co/blogs/news/patta-x-keep-hush-skatecafe",
+      "kind": "promoter",
+      "finding": "8 September 2026 ADE announcement; exact event and tickets must be opened and verified."
+    },
+    {
+      "url": "https://www.reddit.com/r/amsterdam_rave/comments/1b5tf65",
+      "kind": "UGC lead, not fully read",
+      "finding": "2024 crowd-change discussion. Not current fact; inspect date and comments."
+    },
+    {
+      "url": "https://www.reddit.com/r/amsterdam_rave/comments/1u7o868/weekly_party_discussion_19_21_june_2026/",
+      "kind": "UGC lead, not fully read",
+      "finding": "2026 discussion lead; inspect relevant actual comments."
+    }
+  ],
+  "eventLeads": [
+    {
+      "name": "Pip Blom 10 Years",
+      "date": "2026-09-24",
+      "state": "needs-primary-detail-check"
+    },
+    {
+      "name": "Sister Nancy",
+      "date": "2026-09-25",
+      "state": "needs-primary-detail-check"
+    },
+    {
+      "name": "Patta x Keep Hush ADE",
+      "state": "needs-exact-date-location-ticket-check"
+    }
+  ],
+  "remainingGates": [
+    "Preferred-source shortlist and mandatory role consultation",
+    "Read current and low Google reviews; dated Reddit comments; Instagram",
+    "Geolocation, duplicate identity check",
+    "Confirm relevant events and gated children",
+    "Rights-cleared images and image-police",
+    "Draft and six locales",
+    "All editorial/legal/tone/language/SEO/AEO/Discover/chief-editor verdicts",
+    "Mechanical checks, commit, push, observed live URLs"
+  ],
+  "publicationCredit": 0
+}

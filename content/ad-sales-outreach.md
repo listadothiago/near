@@ -131,3 +131,7 @@ Logged 2026-09-08. Nothing sent; outreach frozen.
 ## Closed / declined
 
 _None yet._
+
+### Skatecafé — 2026-09-10 — prospect
+
+Venue/promoter at https://www.skatecafe.nl/ is a plausible Amsterdam music advertiser lead from existing editorial research. Audience/reach and commercial contact unverified; no performance claim, pitch or contact sent. Coverage and review caveat remain independent.

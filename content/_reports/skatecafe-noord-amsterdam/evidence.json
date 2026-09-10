@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-09-09T20:13:26+00:00",
+  "state": "draft-checkpoint-requested-by-operator",
+  "authorization": "User asked to proceed, liked the generated cover, then requested wrap up ASAP and save if publication could not finish. No outreach authorized.",
+  "sourcePacket": "../../_rotation-runs/2026-09-09-round-01/skatecafe-intake.json",
+  "googleMaps": {
+    "url": "https://www.google.com/maps/place/Skatecafe/@52.3854027,4.9255934,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609001349b0d7:0x63c7b4dfed439c36!8m2!3d52.3854027!4d4.9255934!16s%2Fg%2F11c2pchcvc",
+    "address": "Gedempt Hamerkanaal 42, 1021 KM Amsterdam",
+    "coordinates": {
+      "lat": 52.3854027,
+      "lng": 4.9255934
+    },
+    "method": "Codex in-app browser, venue identity and exact listing pin in Maps URL",
+    "recentReviews": "Sorted newest: 3-day-old positive reviews; recent entry/security complaints also present. No safety guarantee inferred.",
+    "lowReviews": "Sorted lowest: Olle de Laat (2 months, cocktails), Benjamin de (2 months, early bar service cutoff), David Lageveen (3 months, refused entry after DJ questions), N (1 month, admission-price complaint). Serious allegations not repeated as established facts.",
+    "price": "Visitor-reported €10–50 per person, 144 contributors displayed on 9 September 2026; restaurant range, not ticket cost."
+  },
+  "officialRestaurant": {
+    "url": "https://www.skatecafe.nl/restaurant/",
+    "method": "browser after web fetch429",
+    "facts": [
+      "Thursday–Saturday regular openings; drinks/snacks from15:00; dinner18:00–22:00",
+      "Seasonal sharing plates; Dick & Dick self-service pizza",
+      "Vegetarian/vegan options listed; no allergy-safety assurance",
+      "Groups larger than13: three courses including bread €42.50; not generalized to regular menu"
+    ]
+  },
+  "houseRules": {
+    "url": "https://www.skatecafe.nl/huisregels/",
+    "facts": [
+      "General club21+; individual event pages list event-specific age rules",
+      "Cash at entrance, cashless bars, €2 locker coins",
+      "Dogs allowed restaurant, not club",
+      "Large groups may be refused; flashing-light warning",
+      "Anti-harassment policy exists; do not label venue universally safe from policy alone"
+    ]
+  },
+  "instagram": {
+    "url": "https://www.instagram.com/skatecafeamsterdam/",
+    "status": "profile read; hours corroborate official info",
+    "recentPost": "https://www.instagram.com/patta_nl/p/DdCEF5AOrJQ/",
+    "postDate": "2026-09-08",
+    "postRead": "Full caption and visible comments in browser: October24 21:00, three rooms, clocks go back that night; tickets final tier. Artist credit on poster means no usage permission assumed."
+  },
+  "reddit": {
+    "url": "https://www.reddit.com/r/amsterdam_rave/comments/1u7o868/weekly_party_discussion_19_21_june_2026/",
+    "read": "June19–21 weekly body covers Latin Diaspora and King Shiloh Dubrising at Skatecafé; author bleepbloopbarbatruc describes spacious/raw room. Historical testimony, not future event evidence.",
+    "olderLead": "https://www.reddit.com/r/amsterdam_rave/comments/1b5tf65",
+    "olderLeadStatus": "web fetch cache miss; not used as established fact"
+  },
+  "preferredSources": {
+    "consulted": [
+      "AAN directory/East Bay Express/Portland Mercury (shared round context, no Amsterdam reporting claim)",
+      "Resident Advisor (event source lead; search returned mostly irrelevant tour results)",
+      "Time Out Amsterdam weekend guide (venue mention; historical visitor context)",
+      "Eater Amsterdam restaurant map and Stork listing (nearby food context only)",
+      "Atlas Obscura search (no usable venue result)",
+      "Dazed search (no usable venue result)"
+    ],
+    "finding": "Catalogue lacks enough strong directly relevant Amsterdam sources; Amsterdam Alternative current issue plus official venue/UGC fill local context. No source trust promotion."
+  },
+  "events": [
+    {
+      "name": "Pip Blom 10 Years",
+      "url": "https://skatecafe.weticket.io/pip-blom-10-years",
+      "start": "2026-09-24T20:00:00+02:00",
+      "end": "2026-09-25T01:00:00+02:00",
+      "facts": [
+        "All ages",
+        "Gini Cameron returns on drums; PB10 re-recorded older material",
+        "Skatecafé: My Purse, Pip Blom, Fellatio; Dick & Dick: Scram C Baby, Djalan Djalan, Baby Berserk"
+      ],
+      "ticketCheck": "Browser See Tickets: early €12.50+€1 unavailable, regular €15+€1 and late €17.50+€1 selectable; no ticket selected. Checked this session; recheck before publication.",
+      "state": "child-required; not drafted"
+    },
+    {
+      "name": "Sister Nancy extra show",
+      "url": "https://skatecafe.weticket.io/extra-show-skatecafe-order-territory-present-sister-nancy",
+      "start": "2026-09-23T17:00:00+02:00",
+      "end": "2026-09-23T23:45:00+02:00",
+      "facts": [
+        "Doors/support17:00; headline show21:00 expected22:00; full event window ends23:45",
+        "All ages, under18 adult accompaniment advised",
+        "Skankin Sweet support; BBQ option"
+      ],
+      "ticketCheck": "Regular €37.50+€1; BBQ bundle €50+€1, BBQ18:00–21:00. Both shown Sold out / remaining tickets in carts. Do not promise availability.",
+      "state": "held-ticket-availability; no child"
+    },
+    {
+      "name": "Sister Nancy September25",
+      "url": "https://skatecafe.weticket.io/sister-nancy",
+      "state": "held-conflicting-timing",
+      "finding": "Header16:00–20:00 but body show21:00/expectedend22:00; explicitly sold out. Needs resolution before timestamps."
+    },
+    {
+      "name": "Patta x Keep Hush ADE",
+      "url": "https://skatecafe.weticket.io/ade-patta-x-keep-hush-1",
+      "start": "2026-10-24T21:00:00+02:00",
+      "endCandidate": "2026-10-25T03:00:00+01:00",
+      "facts": [
+        "Europe/Amsterdam clock change; verify end offset before publication",
+        "Event-specific18+ versus generic club21+; attribute event restriction and flag discrepancy",
+        "Recorded and broadcast; privacy caveat required",
+        "Main restaurant closed; Dick & Dick pizza and Bodega food remain listed",
+        "Three hosts: Patta/Keep Hush, Sankofa Archives, Mosaiko/Studio Strip"
+      ],
+      "ticketCheck": "Details read; ticket price panel not yet opened",
+      "state": "child-required; not drafted"
+    }
+  ],
+  "otherCalendarItems": "Full official programme contains many further dated nights/children skate lessons and an offsite BuitenLand stage. Not all verified or cleared; package incomplete. Do not attach offsite event to this pin.",
+  "image": {
+    "asset": "public/places/skatecafe-noord-amsterdam/hero.png",
+    "original": "/Users/thiagobaraldi/.codex/generated_images/01a08614-c44f-7442-bb30-19cce1d0bff7/exec-7ac56c84-6a94-4321-a59a-306b295e78a6.png",
+    "sha256": "4a31d2c8fe78c9a2799d6a5a64532a3ddff5bcf3df9a7c5a67c4e3f745b718cc",
+    "userVerdict": "cool image i like it",
+    "visualReview": "Actual generated image viewed: central curved skate ramp/table/vinyl composition, no people or logos, strong contrast. Not a real venue scene. Rendered crops still pending.",
+    "sourcing": "Inbox only unrelated near.png; official site checked, no cleared photograph found; generic Commons indoor-skatepark search did not establish suitable venue-related licensed asset. Generated original editorial metaphor.",
+    "midBody": "Source body ~180 words after removal of nonexistent event link; hero-only within density rule, verify all locale counts at final gate."
+  },
+  "gates": {
+    "duplicates": "Initial checker seven unrelated baseline pairs; no Skatecafé existing match. Recheck with final content.",
+    "geolocation": "verified in Maps; mechanical checker pending",
+    "tone": "drafted to BAKFIETS direct voice; formal final pass and catalogue baseline pending",
+    "events": "verified leads; publication package incomplete",
+    "image": "user-approved art and original viewed; rendered crop/og:image checks pending",
+    "legal": "No third-party imagery used; serious review allegations not repeated as fact; final check pending",
+    "locales": "Six drafted, each reference read; final consistency/readability checks pending",
+    "seoAeoDiscover": "pending",
+    "build": "not run",
+    "publication": "not committed, not pushed, not live"
+  },
+  "roleAdvice": {
+    "seo": "Reuse current round evidence; no volume ranking. Answer Skatecafé Amsterdam dinner vs concert visit.",
+    "trendsetter": "Noord mixed venue with independently discussed music programme; do not claim unverified DIY ownership or newest trend.",
+    "gastronomic": "Sharing plates and self-service pizza supported; no invented signature dish.",
+    "party": "Admission/age/payment differences matter more than generic nightlife adjectives.",
+    "parser": "Browser reveals fresher programme and pricing than cached web pages; retain event-level source checks separately.",
+    "backlinkPr": "Venue or Amsterdam Alternative potential prospects; no outreach performed.",
+    "affiliatePr": "Ticket purchase moment exists; no approved programme established, use ordinary official links.",
+    "adSales": "Venue/promoters potential only, no traffic claims or pitch sent.",
+    "socials": "Wait for publication before platform drafts."
+  }
+}

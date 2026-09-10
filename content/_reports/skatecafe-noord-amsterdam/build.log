@@ -1,0 +1,139 @@
+
+> near@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.3.3 (webpack)
+- Environments: .env.local
+✓ Running next.config.ts took 155ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.3s
+  Running TypeScript ...
+  Finished TypeScript in 4.8s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/1185) ...
+  Generating static pages using 7 workers (296/1185)
+  Generating static pages using 7 workers (592/1185)
+  Generating static pages using 7 workers (888/1185)
+✓ Generating static pages using 7 workers (1185/1185) in 53s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)                                                 Revalidate  Expire
+┌ ○ /_not-found
+├   /[locale]
+│ ├ ● /en                                                           1h      1y
+│ ├ ● /pt-BR                                                        1h      1y
+│ ├ ● /it                                                           1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/about
+│ ├ ● /en/about                                                     1h      1y
+│ ├ ● /pt-BR/about                                                  1h      1y
+│ ├ ● /it/about                                                     1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/about/thiago-baraldi
+│ ├ ● /en/about/thiago-baraldi                                      1h      1y
+│ ├ ● /pt-BR/about/thiago-baraldi                                   1h      1y
+│ ├ ● /it/about/thiago-baraldi                                      1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/author/[slug]
+│ ├ ● /en/author/radar-x                                            1h      1y
+│ ├ ● /en/author/foodie-9000                                        1h      1y
+│ ├ ● /en/author/stefan                                             1h      1y
+│ └ ● [+135 more paths]
+├   /[locale]/collection/[slug]
+│ ├ ● /en/collection/asian-food-sao-paulo                           1h      1y
+│ ├ ● /en/collection/do-not-disturb-01-below-the-room               1h      1y
+│ ├ ● /en/collection/i-look-pretty-good-dead-internet-site          1h      1y
+│ └ ● [+45 more paths]
+├   /[locale]/column
+│ ├ ● /en/column                                                    1h      1y
+│ ├ ● /pt-BR/column                                                 1h      1y
+│ ├ ● /it/column                                                    1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/columns
+│ ├ ● /en/columns                                                   1h      1y
+│ ├ ● /pt-BR/columns                                                1h      1y
+│ ├ ● /it/columns                                                   1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/guides
+│ ├ ● /en/guides                                                    1h      1y
+│ ├ ● /pt-BR/guides                                                 1h      1y
+│ ├ ● /it/guides                                                    1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/in/[...location]
+│ ├ ● /en/in/england                                                1h      1y
+│ ├ ● /en/in/london                                                 1h      1y
+│ ├ ● /en/in/united-states                                          1h      1y
+│ └ ● [+219 more paths]
+├   /[locale]/ladies-and-gentlethem
+│ ├ ● /en/ladies-and-gentlethem                                     1h      1y
+│ ├ ● /pt-BR/ladies-and-gentlethem                                  1h      1y
+│ ├ ● /it/ladies-and-gentlethem                                     1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/map
+│ ├ ● /en/map                                                       1h      1y
+│ ├ ● /pt-BR/map                                                    1h      1y
+│ ├ ● /it/map                                                       1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/place/[slug]
+│ ├ ● /en/place/1234-go-records-temescal-oakland                    1h      1y
+│ ├ ● /en/place/about-blank-friedrichshain-berlin                   1h      1y
+│ ├ ● /en/place/amuse-beach-club-sao-vicente                        1h      1y
+│ └ ● [+675 more paths]
+├ ƒ /[locale]/place/[slug]/opengraph-image
+├   /[locale]/privacy
+│ ├ ● /en/privacy                                                   1h      1y
+│ ├ ● /pt-BR/privacy                                                1h      1y
+│ ├ ● /it/privacy                                                   1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/sources
+│ ├ ● /en/sources                                                   1h      1y
+│ ├ ● /pt-BR/sources                                                1h      1y
+│ ├ ● /it/sources                                                   1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/terms
+│ ├ ● /en/terms                                                     1h      1y
+│ ├ ● /pt-BR/terms                                                  1h      1y
+│ ├ ● /it/terms                                                     1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/the-failure-mode
+│ ├ ● /en/the-failure-mode                                          1h      1y
+│ ├ ● /pt-BR/the-failure-mode                                       1h      1y
+│ ├ ● /it/the-failure-mode                                          1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/the-pass
+│ ├ ● /en/the-pass                                                  1h      1y
+│ ├ ● /pt-BR/the-pass                                               1h      1y
+│ ├ ● /it/the-pass                                                  1h      1y
+│ └ ● [+3 more paths]
+├   /[locale]/the-setlist
+│ ├ ● /en/the-setlist                                               1h      1y
+│ ├ ● /pt-BR/the-setlist                                            1h      1y
+│ ├ ● /it/the-setlist                                               1h      1y
+│ └ ● [+3 more paths]
+├ ƒ /api/inbox
+├ ○ /apple-icon.png
+├ ○ /column/feed.xml                                                1h      1y
+├ ○ /feed.xml                                                       1h      1y
+├ ○ /icon.png
+├ ○ /ladies-and-gentlethem/feed.xml                                 1h      1y
+├ ○ /manifest.webmanifest
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ○ /the-failure-mode/feed.xml                                      1h      1y
+├ ○ /the-pass/feed.xml                                              1h      1y
+└ ○ /the-setlist/feed.xml                                           1h      1y
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+
+> near@0.1.0 postbuild
+> node scripts/indexnow-submit.mjs
+
+[indexnow] skipping — not a production build

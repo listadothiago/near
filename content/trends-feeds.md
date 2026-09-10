@@ -25,6 +25,15 @@ world-culture news, wellness/fitness, travel), or a dated event → carry
 those into scoping as candidates, alongside the alt-press read and the
 query-gap analysis. Discard the rest without comment.
 
+## Verified filter check — 2026-09-09
+
+A saved URL containing `category=19` returned an **All categories** UI during this
+run. HTTP 200 and a category query parameter do not prove category-filtered data.
+Read the actual filter label; select the intended category manually if necessary.
+RSS is an all-category short-window fallback, not equivalent to the saved weekly
+category view. Country counts are not locale audience weights; TW/HK do not stand
+in for mainland Chinese demand. Evidence: `_rotation-runs/2026-09-09-round-01/`.
+
 ## Reading them
 
 These are Google Trends "trending now" pages, not RSS. Fetch with

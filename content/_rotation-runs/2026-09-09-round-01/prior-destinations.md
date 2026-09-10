@@ -10,13 +10,17 @@ should be updated (add, reprioritize, mark done) as that happens.
 A destination with real coverage should note it inline; a bare entry means
 "not started yet."
 
-## Market tiers — reconciled 2026-09-09
+## Market tiers (operator-set, 2026-09-02 — read before the focus list)
 
-Read `.claude/skills/content-rotation/SKILL.md` and the active round manifest for
-current membership. Latest BACKLOG §2.2 assignments supersede the older London /
-New York / Berlin / Barcelona Tier 1 list. Additional cities keep the previous
-broad Tier 2 designation where no newer explicit assignment exists. Every city
-and neighborhood below remains an obligation; this is not a demand-ranking claim.
+Set from search-trend readings. `near-seo` should sanity-check and keep
+these current.
+
+- **Tier 1 — London, New York, Berlin, Barcelona.**
+- **Tier 2 — everything in the focus list below**, including Rio de
+  Janeiro (operator wants a deep dive on the "Copanema"
+  Copacabana/Ipanema corridor).
+- São Paulo and the Baixada Santista keep standing priority regardless of
+  tier — home turf.
 
 Near is now **neighborhood-first**: the unit of coverage is the
 neighborhood, not the city. The war-room target list lives in
