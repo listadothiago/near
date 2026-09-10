@@ -32,7 +32,7 @@ export default function Figure({
 }) {
   return (
     <figure className="my-8">
-      <div className="relative w-full aspect-[16/9] overflow-hidden bg-surface-2 border-[4px] border-ink">
+      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[var(--radius-panel)] bg-surface-2 border-[4px] border-ink">
         <Image
           src={src}
           alt={alt}

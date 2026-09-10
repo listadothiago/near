@@ -9,7 +9,7 @@ export default function AuthorCard({ author }: { author: Author }) {
   return (
     <Link
       href={`/author/${author.slug}`}
-      className="border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all"
+      className="rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all"
     >
       <div className="flex items-center gap-2">
         <AuthorAvatar author={author} size={40} />

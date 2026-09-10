@@ -46,7 +46,7 @@ export default async function AboutPage({
       <Header />
       <article className="mt-8">
         <h1 className="text-[clamp(2rem,5.5vw,3.2rem)]">{t("title")}</h1>
-        <div className="mt-5 max-w-[62ch] font-mono text-[0.95rem] leading-relaxed flex flex-col gap-4">
+        <div className="mt-5 max-w-[65ch] font-sans text-[1.05rem] leading-[1.75] flex flex-col gap-4">
           <p>{t("lead")}</p>
           <p>{t("humans")}</p>
           <p>{t("transparency")}</p>
@@ -69,7 +69,7 @@ export default async function AboutPage({
           <h2 className="text-[1.3rem] mb-4">{t("curatorHeading")}</h2>
           <Link
             href={`/about/${CURATOR.slug}`}
-            className="flex items-center gap-3 border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all max-w-[62ch]"
+            className="flex items-center gap-3 rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all max-w-[62ch]"
           >
             <Image
               src={CURATOR.photo}

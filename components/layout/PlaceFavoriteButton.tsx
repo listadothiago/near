@@ -26,7 +26,7 @@ export default function PlaceFavoriteButton({ slug }: { slug: string }) {
           window.dispatchEvent(new Event("near:favorite-added"));
         }
       }}
-      className={`inline-flex items-center gap-1.5 border-[3px] border-ink px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide transition-colors ${
+      className={`inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[3px] border-ink px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide transition-colors ${
         saved
           ? "bg-accent text-black"
           : "bg-surface hover:bg-accent hover:text-black"

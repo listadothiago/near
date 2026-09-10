@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import NearestLatestTabs from "./NearestLatestTabs";
+import ShareViewButton from "@/components/layout/ShareViewButton";
 import { parseQuery, normalizeText } from "@/lib/search/parseQuery";
 import {
   buildLocationIndex,
@@ -207,6 +208,9 @@ export default function Board({
         return textWords.every((word) => haystack.includes(word));
       });
   }, [places, activeCats, activeTags, parsed, location]);
+  const hasSearchScope = Boolean(
+    query.trim() || activeCats.size > 0 || activeTags.size > 0,
+  );
 
   // The browser tab should say where you are too — restored on clear.
   useEffect(() => {
@@ -261,14 +265,19 @@ export default function Board({
     <div>
       {/* Listings lead, map is secondary — it sits in the narrower
           column on desktop and collapses behind a disclosure on mobile. */}
-      {location && (
-        <div className="mt-5 border-[3px] border-ink bg-accent text-black px-3 py-2 shadow-[var(--shadow-sm)]">
-          <h2 className="m-0 font-display font-bold uppercase tracking-[-1px] text-[1.4rem] leading-none">
-            {location.label}
-          </h2>
-          <p className="m-0 mt-1 font-mono text-[0.68rem] uppercase tracking-wide">
-            {t("locationScope", { count: filtered.length })}
-          </p>
+      {hasSearchScope && (
+        <div className="mt-5 flex items-center justify-between gap-3 rounded-[var(--radius-panel)] border-[3px] border-ink bg-accent px-3 py-2 text-black shadow-[var(--shadow-sm)]">
+          <div className="min-w-0">
+            <h2 className="m-0 truncate font-display font-bold uppercase tracking-[-1px] text-[1.4rem] leading-none">
+              {location?.label ?? t("filters")}
+            </h2>
+            <p className="m-0 mt-1 font-mono text-[0.68rem] uppercase tracking-wide">
+              {t("locationScope", { count: filtered.length })}
+            </p>
+          </div>
+          <div className="shrink-0">
+            <ShareViewButton alwaysShowLabel />
+          </div>
         </div>
       )}
 
@@ -303,7 +312,7 @@ export default function Board({
             variable part and can still overflow on short viewports. */}
         <section
           id="board-map"
-          className="relative z-0 border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:overflow-x-hidden scroll-mt-20"
+          className="relative z-0 rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] overflow-hidden md:sticky md:top-20 md:max-h-[calc(100vh-6rem)] md:overflow-y-auto md:overflow-x-hidden scroll-mt-20"
         >
           {/* top-20 (not top-4): the sticky header collapses but never
               disappears, so a small offset let the map ride up under it —

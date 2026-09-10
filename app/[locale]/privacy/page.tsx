@@ -49,7 +49,7 @@ export default async function PrivacyPage({
           Last updated September 1, 2026.
         </p>
 
-        <div className="mt-6 font-mono text-[0.95rem] leading-relaxed flex flex-col gap-5">
+        <div className="mt-6 font-sans text-[1.05rem] leading-[1.75] flex flex-col gap-5">
           <p>
             near.tips ("Near," "we," "us") is a small, independently run city
             guide. This page describes what we collect about visitors, why,

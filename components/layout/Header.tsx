@@ -82,7 +82,7 @@ export default function Header({
   }, []);
 
   return (
-    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink pt-2 pb-2 mb-1">
+    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink rounded-b-[var(--radius-panel)] pt-2 pb-2 mb-1">
       {/* One wrapping row, four items. Phone: brand + controls share the
           first line, the nav wraps to its own full-width line, search takes
           another. Desktop: all inline. The old version nested the nav
@@ -251,12 +251,25 @@ export default function Header({
         </div>
       </div>
 
-      {/* The panel drops out of the sticky bar itself, so the filters
-          are reachable from anywhere in the listings rather than only
-          from the top of the page. Scrollable, because a tall panel on
-          a phone would otherwise push the results off screen entirely. */}
+      {/* Mobile uses a bounded sheet outside the sticky header's layout so
+          the full category/tag inventory can never consume the results
+          viewport. Desktop keeps the compact inline panel. Shared filtered
+          URLs start collapsed; the count badge carries their state. */}
       {showFilters && filtersOpen && (
-        <div className="mt-2 max-h-[45vh] overflow-y-auto border-t-[3px] border-ink pt-2">
+        <div className="fixed inset-x-3 bottom-3 z-[1300] max-h-[min(70dvh,36rem)] overflow-y-auto rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-3 shadow-[var(--shadow)] md:static md:inset-auto md:z-auto md:mt-2 md:max-h-[45vh] md:rounded-none md:border-x-0 md:border-b-0 md:bg-transparent md:px-0 md:pb-0 md:pt-2 md:shadow-none">
+          <div className="mb-2 flex items-center justify-between gap-3 md:hidden">
+            <strong className="font-display text-[0.9rem] uppercase">
+              {t("board.filters")}
+            </strong>
+            <button
+              type="button"
+              onClick={() => setFiltersOpen(false)}
+              aria-label={t("board.filters")}
+              className="inline-flex h-9 w-9 items-center justify-center border-[2px] border-ink bg-surface font-sans text-xl leading-none hover:bg-accent hover:text-black"
+            >
+              ×
+            </button>
+          </div>
           <CategoryFilters
             activeCats={activeCats}
             onToggle={toggleCat}

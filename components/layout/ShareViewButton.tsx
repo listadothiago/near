@@ -24,7 +24,13 @@ import { useTranslations } from "next-intl";
  * with neither, because a share button that silently does nothing is worse
  * than no share button.
  */
-export default function ShareViewButton() {
+export default function ShareViewButton({
+  alwaysShowLabel = false,
+}: {
+  /** Results pages keep an explicit label even on mobile so the action is
+      unmistakably attached to the active SRP, not generic header chrome. */
+  alwaysShowLabel?: boolean;
+} = {}) {
   const t = useTranslations("board");
   const [copied, setCopied] = useState(false);
   const [canShare, setCanShare] = useState(false);
@@ -72,7 +78,7 @@ export default function ShareViewButton() {
       onClick={share}
       aria-label={label}
       title={label}
-      className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
+      className="inline-flex items-center gap-1.5 rounded-[var(--radius-control)] border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-mono text-[0.72rem] uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
     >
       {/* Icon-only in the header's compact/mobile state — there isn't
           room for a labelled button once search and the section nav are
@@ -81,7 +87,7 @@ export default function ShareViewButton() {
           already text + icon. aria-label/title above carry the name for
           anyone who can't see the glyph, icon-only or not. */}
       <span aria-hidden="true">↗</span>
-      <span className="hidden sm:inline">{label}</span>
+      <span className={alwaysShowLabel ? "inline" : "hidden sm:inline"}>{label}</span>
     </button>
   );
 }

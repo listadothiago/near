@@ -89,7 +89,7 @@ export default function PlaceCard({
   return (
     <Link
       href={`/place/${place.meta.slug}`}
-      className="group flex h-full flex-col border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all"
+      className="group flex h-full flex-col overflow-hidden rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-accent"
     >
       <div
         className={`relative w-full bg-surface-2 border-b-[3px] border-ink overflow-hidden ${
@@ -136,7 +136,7 @@ export default function PlaceCard({
           {/* Own badge, lime-on-black, a little bolder (operator,
               2026-09-08) — was plain small text and easy to miss next
               to the title it's competing with for space. */}
-          <span className="inline-flex items-center border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-mono text-[0.58rem] font-black ml-auto flex-none">
+          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-mono text-[0.58rem] font-black ml-auto flex-none">
             {eventDate}
           </span>
         </div>
@@ -155,7 +155,7 @@ export default function PlaceCard({
           just styled text. */}
       <div className="flex flex-wrap items-center gap-1.5 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
         {resolvedDistanceKm !== undefined && (
-          <span className="inline-flex items-center border-[2px] border-ink bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
+          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
             {formatDistance(resolvedDistanceKm)} {tp("away")}
           </span>
         )}
@@ -163,7 +163,7 @@ export default function PlaceCard({
             existed (operator, 2026-09-08) — now the recency badge's
             default look, not just its revised state, so it reads as a
             distinct signal from the distance badge's black-on-lime. */}
-        <span className="inline-flex items-center border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-black whitespace-nowrap">
+        <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-black whitespace-nowrap">
           {revised && <span className="mr-1">{tf("revisedShort")}</span>}
           <time dateTime={stampIso}>{postedOn}</time>
         </span>
@@ -196,18 +196,18 @@ export default function PlaceCard({
         >
           {headline}
         </h3>
-        <p className="font-mono text-[0.66rem] leading-snug text-muted line-clamp-2">
+        <p className="font-sans text-[0.78rem] leading-[1.45] text-muted line-clamp-2">
           {place.frontmatter.tagline}
         </p>
         {place.snippet && (
           <p
-            className={`text-[0.78rem] leading-snug ${
+            className={`font-sans text-[0.88rem] leading-[1.55] ${
               // Longer excerpts (BACKLOG P0.14 + P1.13a, operator directive
               // 2026-09-07): five lines on a normal card, five on mobile
               // rising to six on a featured card at desktop width, up from
               // three/four — a card should read as an actual preview, not
               // a teaser fragment.
-              featured ? "line-clamp-5 md:line-clamp-6 md:text-[0.86rem]" : "line-clamp-5"
+              featured ? "line-clamp-5 md:line-clamp-6 md:text-[0.94rem]" : "line-clamp-5"
             }`}
           >
             {place.snippet}

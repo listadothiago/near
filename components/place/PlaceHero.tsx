@@ -26,7 +26,7 @@ export default function PlaceHero({
   return (
     <header>
       {meta.heroImage && (
-        <div className="relative w-full aspect-[16/9] overflow-hidden bg-surface-2 border-[4px] border-ink">
+        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-[var(--radius-panel)] bg-surface-2 border-[4px] border-ink">
           <Image
             src={meta.heroImage.url}
             alt={frontmatter.name}
@@ -88,7 +88,7 @@ export default function PlaceHero({
       <h1 className="mt-2 text-[clamp(2rem,5.5vw,3.2rem)]">
         {frontmatter.name}
       </h1>
-      <p className="mt-2 font-mono text-[0.95rem] text-muted max-w-[60ch]">
+      <p className="mt-2 font-sans text-[1.08rem] leading-[1.55] text-muted max-w-[60ch]">
         {frontmatter.tagline}
       </p>
 
@@ -103,7 +103,7 @@ export default function PlaceHero({
           {meta.tags.map((tag) => (
             <span
               key={tag}
-              className="inline-flex items-center gap-1 border-[2px] border-ink bg-surface px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide text-ink"
+              className="inline-flex items-center gap-1 rounded-[var(--radius-badge)] border-[2px] border-ink bg-surface px-2 py-0.5 font-mono text-[0.7rem] uppercase tracking-wide text-ink"
             >
               <span aria-hidden="true">{TAG_GLYPH[tag]}</span>
               {tTag(tag)}
