@@ -163,8 +163,12 @@ export default function Header({
             </Link>
             <Link
               href="/map"
-              className="border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
+              className="inline-flex items-center gap-1 border-[2px] border-l-0 border-ink px-1.5 py-1 sm:px-2 hover:bg-accent hover:text-black transition-colors"
             >
+              <svg viewBox="0 0 24 24" className="w-3 h-3 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
+                <circle cx="12" cy="9" r="2.5" />
+              </svg>
               {t("board.map")}
             </Link>
             <ColumnsMenu />
@@ -183,35 +187,11 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-1.5 flex-none">
-          {/* MVP: an in-page anchor, not a route change. The board's own
-              map section sits after the entire card list in DOM order on
-              mobile (it isn't sticky there — see that section's own
-              comment), so once a reader has scrolled down through cards
-              the map can be a long scroll away with no way back short of
-              scrolling to the very top past the collapsed nav. This stays
-              reachable through the compact/sticky header too, unlike the
-              full nav's "MAP" link to the separate /map page (BACKLOG
-              P1.6), which is hidden once compact. Operator, 2026-09-08. */}
-          {isBoard && (
-            // Distinct label from the nav's "MAP" link on purpose (operator
-            // report, 2026-09-10: reads as a redundant duplicate otherwise).
-            // The nav link routes to the separate /map page; this jumps to
-            // the board's own inline map further down the same page, and
-            // stays reachable once the nav hides in the compact/sticky
-            // header state (see the comment on this button below).
-            <a
-              href="#board-map"
-              aria-label={t("board.showMap")}
-              title={t("board.showMap")}
-              className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-sans text-[0.76rem] font-semibold uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
-            >
-              <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-                <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
-                <circle cx="12" cy="9" r="2.5" />
-              </svg>
-              <span className="hidden sm:inline">{t("board.showMap")}</span>
-            </a>
-          )}
+          {/* Removed (operator, 2026-09-10: "the one with the icon does not
+              work... just broken apparently, remove that entirely"). Was an
+              in-page #board-map anchor meant to stay reachable once the nav
+              hides in the compact/sticky header state — the pin icon now
+              lives on the nav's own MAP link below instead. */}
           {/* Universal — every page is shareable, not just the board
               (operator, 2026-09-08), so this is unconditional rather than
               gated behind showFilters like the Filters button below it. */}
