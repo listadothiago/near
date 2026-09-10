@@ -38,6 +38,19 @@ export default function weservLoader({
     return src;
   }
 
+  // Google's Maps/Photos CDN (lh3.googleusercontent.com — the domain
+  // every Google Maps contributor-photo heroImage.url uses per rules.md's
+  // HERO IMAGE TIERS policy) rejects weserv's shared fetching IPs with a
+  // 400, which weserv turns into a 404 — same failure shape as the
+  // Wikimedia case above, found 2026-09-10 on black-bird-bookstore's hero
+  // (blank/gray card; the same URL curls 200 directly, confirming it's
+  // weserv's fetch that's blocked, not a dead/expired link). Google's CDN
+  // is built for direct hotlinking (it's how Maps itself embeds these
+  // photos), so skip the proxy for it too.
+  if (/^https?:\/\/lh3\.googleusercontent\.com\//.test(src)) {
+    return src;
+  }
+
   const url = new URL("https://images.weserv.nl/");
   url.searchParams.set("url", src.replace(/^https?:\/\//, ""));
   url.searchParams.set("w", String(width));
