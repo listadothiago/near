@@ -198,6 +198,16 @@ or `rotation-reorder` directly — this is a different unit of work
 pass. Scope with `near-lead-product`/`near-tech-lead` before building;
 not yet consulted.
 
+**Plan captured, 2026-09-10 (near-seo, reviewed by near-editor + near-trendsetter):**
+full cluster plan at `content/columns-push-plan-2026-09-10.md`. **Update
+2026-09-10:** all three clusters now seeded and draft-ready — NYC
+(borough expansion), SF Bay (sober-curious/wellness), and London
+(Peckham autumn-culture: Palais reopening, Peckham Festival, South
+London Gallery — near-sources-war-room pass, social/UGC sources
+checked). Per operator's stated priority, draft London first, then SF
+Bay, then NYC. Scoping/seeding only — no articles drafted under this
+entry.
+
 ### Generic street-shot hero audit — NOT STARTED (operator, 2026-09-10)
 
 Operator: *"right now we have too many absolutely generic street shots
@@ -322,7 +332,7 @@ Event structured-data follow-up: live `/en/place/pip-blom-10-years-skatecafe-202
 18. **Legacy factual/voice refresh after copy repair:** Hazlitt’s still contains fictional first-person hotel-work claims in its English baseline and Chinese edition; Rush Hour still promotes a 2026-09-03 event in its SEO description. Caretaker + TOV review across six locales, verify dated claims and prices, and remove embodiment. This wording-only repair did not certify all historical article facts.
 21. **Rewrite bot bios around focus, beat and lens (operator, 2026-09-08):** use the roster’s direct descriptions as the model for short About-page bios across six locales; remove forced personality and fictional biography while preserving AI disclosure. Coordinate with P2.7’s specific persona corrections. Captured during batch resume; do not interrupt batch production to implement.
 
-22. **Black Bird Bookstore hero repair:** inspect the operator-rejected image at `https://near.tips/pt-BR/place/black-bird-bookstore-outer-sunset-san-francisco`, replace through illustrator + image-police and verify the live crop. Gate added; this image has not been repaired in the workflow pass.
+22. **DONE (2026-09-10, Claude Sonnet 5).** Black Bird Bookstore hero repair — root cause found and fixed, not just re-supplied. Commit `dfee414` (earlier 2026-09-10) had set `heroImage.url` to a real Google Maps contributor photo (`lh3.googleusercontent.com/gps-cs-s/...`), but the image still rendered as a blank/gray card live — the operator caught this directly ("img not even showing"). Root cause: `lib/image/weservLoader.ts` routes all `next/image` requests through `images.weserv.nl`, and weserv's shared fetching IPs get a `400` from Google's photo CDN (confirmed: the same URL curls `200` directly but 404s through weserv) — the same failure shape already patched for `upload.wikimedia.org`. Fixed by adding the same bypass for `lh3.googleusercontent.com` (skip the proxy, hotlink directly, per the Wikimedia precedent's own comment). Verified in-browser: hero now renders the real storefront photo; `naturalWidth` non-zero, no console errors beyond the same benign "loader doesn't implement width" warning Wikimedia already carries. This also fixes 4 other pins already using `lh3.googleusercontent.com` hero/photo URLs (`kirbees-greenpoint-brooklyn`, `the-divine-dalston-london`, `the-jago-dalston-london`, `the-pilgrm-paddington-london`) — same bug, same fix, not individually re-verified pixel-by-pixel this pass but same root cause resolved. `npx tsc --noEmit` and `npx next build` both clean. Commit pushed to `main`.
 
 ### P3: New Skills, Personas & Infrastructure
 
