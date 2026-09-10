@@ -441,9 +441,22 @@ function ColumnsMenu() {
           <Link
             href="/the-failure-mode"
             onClick={() => setOpen(false)}
-            className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
+            className="px-2 py-1.5 border-b-[2px] border-ink hover:bg-accent hover:text-black transition-colors"
           >
             {t("nav.theFailureMode")}
+          </Link>
+          {/* Operator-authored column, not an AI-persona byline — see
+              content/blog-do-thiago.md and .claude/skills/blog-do-thiago.
+              No dedicated archive page yet (only one entry exists so far),
+              so this links straight to its one published piece. Operator,
+              2026-09-10: "where is blog do thiago in the nav under
+              columns." */}
+          <Link
+            href="/collection/hello-world"
+            onClick={() => setOpen(false)}
+            className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
+          >
+            {t("nav.blogDoThiago")}
           </Link>
         </div>
       )}

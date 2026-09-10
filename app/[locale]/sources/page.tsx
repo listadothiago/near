@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { hasLocale } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -105,7 +106,9 @@ export default async function SourcesPage({
             );
           })}
         </div>
-        <SubmitForm />
+        <Suspense fallback={null}>
+          <SubmitForm />
+        </Suspense>
       </section>
       <Footer stats={stats} />
     </>

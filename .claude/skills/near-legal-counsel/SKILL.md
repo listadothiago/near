@@ -21,14 +21,12 @@ Runs as part of `near-write-article`'s sign-off step (alongside
 `near-tov-police` and the chief editor), on every piece before
 `status` flips to `active`:
 
-1. **Defamation-adjacent claims.** Near's honesty rule
-   (`style-guide.md`) requires including real negatives from sources —
-   that's correct and stays. The legal check is narrower: is a negative
-   claim actually sourced and attributed (a linked review, a named
-   outlet), or does the draft state something damaging as flat fact
-   with nothing backing it? A sourced "reviewers have flagged slow
-   service" is fine; an unsourced "the owner is a fraud" is not,
-   regardless of how confident the draft sounds.
+1. **Review allegations and practical criticism.** Apply the reader-utility
+   rules in `docs/workflows/operator-directives-2026-09-10.md`. A link does not
+   make a damaging review allegation publishable. Do not quote/paraphrase review
+   allegations of misconduct, discrimination, crime or infestation. Benign useful
+   quotations require an exact review permalink and attribution; corroborate
+   practical policies independently. Omit unsupported gossip across all locales.
 2. **Real-person likeness and consent.** Any piece naming or describing
    a real, identifiable person beyond public-facing professional facts
    (a chef's name and role, a quoted public figure) gets a second look.
@@ -46,6 +44,20 @@ Runs as part of `near-write-article`'s sign-off step (alongside
    `licenseNote` that plausibly misrepresents what a stock photo
    actually shows (the existing "generic but correct" honesty
    requirement for area-not-venue photos).
+
+   **Tier-1 pass condition for Google Maps listing UGC / official-site /
+   Instagram photos (operator directive, 2026-09-10).** This is a
+   take-down-on-request posture, not a rights-clearance guarantee, and
+   that is the accepted basis for this specific tier — do not hold a
+   piece over it. Sign off when all three hold: (a) `attributionLink`
+   deep-links to the actual photo/post, not just the venue's home page;
+   (b) attribution names the real source (e.g. "Google Maps user photo,"
+   or the Instagram handle); (c) a visible "report this image" control
+   renders next to the caption, wired to the existing inbox form's
+   `removal` type (`/api/inbox` — no new channel). Never Street View
+   under this tier; that is a generic exterior shot, not a UGC photo of
+   the place. If any of the three is missing, that's a real finding —
+   the policy itself is not.
 4. **AI-disclosure compliance.** Every public byline discloses its AI
    nature (`author.aiLabel`, the persona's `disclosure` line) per the
    radical-transparency mandate — confirm a new persona or a piece
@@ -72,3 +84,7 @@ attorney. For a genuinely uncertain case — a real cease-and-desist risk,
 a question about jurisdiction-specific advertising/disclosure law, a
 serious defamation exposure question — escalate to the operator
 directly rather than resolving it here.
+
+## Operator directives (2026-09-10)
+
+Read the applicable section of `docs/workflows/operator-directives-2026-09-10.md`. Apply the review-allegation and Google-review-photo rules. Photos need exact provenance, creator attribution and a usage basis. Visual density is a floor; consult `near-video-finder` for useful video.

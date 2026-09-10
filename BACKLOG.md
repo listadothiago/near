@@ -171,6 +171,53 @@ Locale-to-destination gaps, including Greek for Athens and British English, are 
 
 ## 4. Prioritized Active Backlog
 
+### NEW TOP PRIORITY — columns-driven content rotation (operator, 2026-09-10)
+
+**Not started. Captured for scoping, ahead of the rest of this section.**
+Operator's proposal: instead of (or alongside) place-by-place rotation,
+have a themed collection/column *originate* a cluster of new content in
+one pass — new places tied to that theme/event, their upcoming dated
+events, nearby accommodation, food options, and other things to do,
+fleshing out a whole "rolê" (outing/scene) around it rather than one pin
+at a time. Could run the other direction too: an existing cluster of new
+places surfaces the column/collection that ties them together (this
+direction already exists informally — see `near-write-article` step 4a,
+"a collection is often free").
+
+Operator: *"I would love to try this approach... in my difficult
+flesh-out town, São Vicente - SP. But it might be wiser to start with
+our Tier 1 priorities — let's do London. And then SF Bay Area. And then
+NYC."* So: **prioritize Tier 1 cities first (London → SF Bay Area →
+NYC)** to prove the approach before applying it to a genuinely thin
+market like São Vicente, where it's most tempting but hardest to
+validate against.
+
+Likely needs its own skill rather than folding into `content-rotation`
+or `rotation-reorder` directly — this is a different unit of work
+(theme-out first, place-second) from the existing per-city coverage
+pass. Scope with `near-lead-product`/`near-tech-lead` before building;
+not yet consulted.
+
+### Generic street-shot hero audit — NOT STARTED (operator, 2026-09-10)
+
+Operator: *"right now we have too many absolutely generic street shots
+on the site, there is no reason to use street shots in lieu of the
+actual place ever."* Per the new HERO IMAGE TIERS policy
+(`content/rules.md`, this same date), Google Maps listing UGC photos and
+Instagram are now checked *before* any generic fallback, and a generic
+street/transit shot standing in for the venue is no longer acceptable
+when a real photo exists in any tier-1 source. black-bird-bookstore-outer-sunset-san-francisco
+is the named first fix (operator has a real storefront photo ready to
+swap in; blocked this session only on getting the file into the repo,
+not on the decision) — not the only one. A real audit of every
+`heroImage.strategy: "stock"` place for a genuine tier-1 replacement is
+outstanding work, not yet scoped to a session.
+
+### Directive intake — IN PROGRESS (Codex GPT-6, 2026-09-10)
+
+Implement September 9–10 skill/process feedback before product work; normalize raw notes and reconcile completed entries. Then deliver an initial whole-UI review plan (no redesign implementation in this pass). Preserve the active rotation and batch evidence. P3.11 is picked up for the three requested role brains; broader persona launches remain separately scoped.
+
+
 ### Active rotation — IN PROGRESS (Codex GPT-6, 2026-09-09)
 
 Operator requested the new content-rotation process starting with SEO reorder.
@@ -199,7 +246,7 @@ Event structured-data follow-up: live `/en/place/pip-blom-10-years-skatecafe-202
 4. **Generate portable `AGENTS.md`** documenting the full tech stack (Vercel, GitHub), exact build and deploy commands, project structure, architectural boundaries, and all MCP server configs and tool dependencies, so any MCP-compatible agent can resume maintenance with no session history. _Operator directive: run this in a completely fresh session after `/clear`._ Note the current root `AGENTS.md` is the Next.js auto-generated stub — this replaces/extends it without dropping the generated block.
 9. **PageSpeed / WebMCP compliance — ARIA portion DONE (2026-09-08, Claude Sonnet 5).** `components/map/WorldMap.tsx`'s three Leaflet `divIcon` builders (`dotIcon`, `clusterIcon`, `userIcon`) rendered plain `<svg>`/`<div>`/`<span>` HTML with no accessible name — a screen reader landed on each marker with nothing to announce. Added `role="img" aria-label="…"` to each icon's HTML (place name, "`N` places clustered here", "Your location") plus an escaping helper since Leaflet injects the HTML string directly into the DOM, and set the matching `alt` prop on each `<Marker>` for the native fallback. Verified with `npx tsc --noEmit` and `npx next build` (both clean). Remaining, not done in this pass: mobile CLS (0.52) and `llms.txt` H1-markdown conformance — `llms.txt` does not exist in the codebase yet (`grep` found no route or reference), so that sub-item is actually "create it," not "verify it," and needs its own scoping pass with near-seo before implementation.
 10. **IN PROGRESS (Codex, 2026-09-10) — Search Console zero-indexation audit:** diagnose why 630 sitemap URLs are crawled but not indexed; verify canonical and hreflang tags across all 6 locales. Live Googlebot-style checks find no robots, status, canonical or hreflang block; Search Console's N/D samples appear discovered but not yet crawled. Next step after the active mobile UI hotfix is reducing crawl dilution from low-value sitemap URL families, then recording the exact before/after URL mix and resubmission instructions.
-12. **DONE (Codex, 2026-09-10) — mobile header/filter interaction hotfix:** the phone masthead now collapses after 32px instead of 120px of scrolling (desktop retains 120px, both expand only back at the top); the mobile filter sheet has a visible drag handle and closes after an upward swipe of 48px from its header, while retaining the close button; and “All beats” is now the mutually exclusive reset state for both categories and vibe tags. Selecting LGBTQ+ correctly removes the All highlight and changes the sticky-header label to LGBTQ+ friendly; tapping All clears it and restores the generic Filters label. Verified at a 390×844 viewport, with `tsc --noEmit`, and with the full webpack production build (1,185 static pages).
+12. **REOPENED — IN PROGRESS (Codex, 2026-09-10) — mobile header/filter interaction hotfix:** first pass made the phone masthead collapse after 32px, added an upward-swipe handle to the filter sheet, and made “All beats” the mutually exclusive reset for categories and vibes. Operator screenshot at 390px then showed the initial masthead still consumed too much of the viewport: controls, a two-line wrapping nav, search, tagline and freshness made five stacked bands, and the collapse still felt delayed. Active follow-up: collapse on the first real scroll, make mobile nav a single horizontally scrollable line, hide the desktop-style tagline/freshness block from the sticky phone header, and tighten its vertical padding. The filter reset was verified: LGBTQ+ removes the All highlight and updates the header label; All restores the generic state and URL.
 11. **Automated deployment verification:** inspect Vercel production alias settings to eliminate promotion delays; enforce live curl checks in publishing workflows. **Partial finding (2026-09-08, Claude Sonnet 5):** operator report of "not seeing latest updates live" traced to the installed PWA, not the deploy pipeline — `git log` confirmed local `main` matched `origin/main`, and `curl` confirmed `/sw.js`/`/manifest.webmanifest` serve with `cache-control: public, max-age=0, must-revalidate` (no server-side staleness). Root cause: `components/layout/InstallPrompt.tsx` registered the service worker but never called `registration.update()` or reacted to `controllerchange`, so a standalone PWA window — which rarely navigates and is the only trigger browsers use to recheck `/sw.js` — could sit on a stale worker indefinitely. Fixed: force an update check on `visibilitychange`/`focus`, and reload once when a new worker actually replaces an existing controller (guarded so first install doesn't reload). Verified with `tsc --noEmit` and `next build` (both clean). Vercel-side alias/promotion-delay audit itself remains open — **blocked 2026-09-08**: the Claude Vercel MCP connector 403s on team scope `eu-7e28` ("must re-authenticate to this scope") and `list_teams`/`list_projects` return empty even after the operator disconnected and reconnected the integration twice. Not a `vercel` CLI/website login issue — that's a separate credential from this connector. Needs the operator to check the connector's team-access grant specifically (some Vercel connectors require explicitly checking the target team at connect-time) before this can be retried. **Recurrence report, same day (2026-09-08):** Annix (second real human user, see P1.19) reported favoriting still only working "in home" (the exact pre-fix symptom) and missing images, on both the place-favorite fix and the og:image proxy — but neither the operator nor Claude could reproduce it fresh on the same URLs, which points at a stale client-side cache (PWA/browser) on her specific device rather than a live regression. Operator asked about forcing a PWA refresh; a visible "update available, tap to refresh" banner (replacing the current silent auto-reload-on-controllerchange) was scoped as a ready fix but deliberately not built yet — operator wants to confirm the caching theory first ("maybe check tomorrow") rather than build speculatively. Ask Annix directly: installed home-screen app or a browser tab, and has she fully closed/reopened it or hard-refreshed since the fix shipped. Separately hardened `lib/favorites.ts`'s signed-in toggle path, which had no error handling at all — a failed Clerk `user.update()` was completely silent (no console log, no retry, no signal), indistinguishable from "the feature doesn't work." Added a `.catch()` that logs the real error, which doesn't fix a caching issue but closes a genuine reliability gap either way.
 14. **Card-excerpt portion DONE (2026-09-08, Claude Sonnet 5); root type-scale bump predates this pass.** `app/globals.css`'s `html { font-size: 112.5% }` (shared root scale, ~18px) was already in place per its own operator-directive comment before this session touched anything. This pass did the remaining "larger card excerpts, five lines on normal cards and five/six on featured cards" half: `components/board/PlaceCard.tsx`'s snippet `line-clamp` went 3→5 (normal) and 3/4→5/6 mobile/desktop (featured), and `lib/content/loader.ts`'s `extractSnippet` cap went 150→320 chars so there's enough real text to fill the new clamp instead of getting cut mid-sentence. Verified in-browser at default and native widths: cards fill 5 lines cleanly, no overflow. **Not done in this pass:** the full 320/390/768/1440px + 200% zoom verification matrix lead UX asked for (the browser tool's resize didn't reliably change the rendered viewport this session), and "expanded map taglines" — tooltip taglines were left untouched. Map taglines and the full breakpoint/zoom check remain open.
 
@@ -207,7 +254,7 @@ Event structured-data follow-up: live `/en/place/pip-blom-10-years-skatecafe-202
 
 ### P1: Product & UI Enhancements
 
-**HIGHER PRIORITY, operator, 2026-09-08 — bumped above the rest of P1.** Explore a rounder, more legible body typeface. Operator reacted to a competitor site (Startupz) with a clean, airy rounded sans (large type scale, generous line-height, very readable long-form body text) and wants Near evaluated against it — not a swap decision yet, a design exploration, but one the operator wants prioritized over the rest of this list. Near's current system is Fraunces (display serif) + Manrope (body) + IBM Plex Mono (utility), set in `app/globals.css`; P1.13(a) already did a readability pass on card-snippet length/clamping but never revisited the typefaces themselves. **Reference screenshot noted (Startupz, a Brazilian startup-news site, pt-BR article "Convergência, não consolidação"):** a single rounded geometric grotesk sans used for both the headline and body copy (no serif anywhere, no separate display face) — visually reads close to Poppins, Quicksand, Cabinet Grotesk, or Articulat, all sharing very open, circular counters on letters like a/e/o/g and soft rounded terminals. Headline set bold/heavy at a large size with tight, balanced line wrapping; body copy in the same family at a notably lighter weight, generous font-size (reads roughly 20–24px equivalent) and very open line-height/leading — lines feel almost double-spaced, which is a big part of why it reads as effortless. Palette is minimal: warm off-white/cream background (not pure white), near-black text, no accent color visible in this crop, thin hairline rule under the header nav. Wordmark "Startupz" set in the same bold rounded face as the headline. Cross-cutting: touches every page across all six locales and is a real brand-identity call (Fraunces is fairly established as Near's editorial voice in type), not a quick CSS tweak — near-lead-ux + near-ux-designer to scope candidates (e.g. Cabinet Grotesk, General Sans, Articulat, Poppins, or a friendlier Inter-adjacent face) and mock up a comparison before any commitment.
+**FIRST SLICE DONE (2026-09-10). HIGHER PRIORITY, operator, 2026-09-08 — bumped above the rest of P1.** The actual pre-change system was Space Grotesk (display/sans) + Courier Prime (global body/mono), not the stale Fraunces/Manrope/IBM Plex description below. The whole-UI review chose the already-loaded Space Grotesk as the body and long-form face, retained Courier Prime selectively for labels/metadata, increased long-form and card-copy readability, and introduced modest panel/control/badge radii without changing the palette, headings, hard borders or shadows. Core board, article, map and collection surfaces are implemented; the full remaining component inventory and breakpoint/200% zoom matrix stay in `docs/reviews/2026-09-10-backlog/ui-review-plan.md`. TypeScript and the webpack production build pass (1,185 static pages). Original exploration context retained: operator reacted to a competitor site (Startupz) with a clean, airy rounded sans (large type scale, generous line-height, very readable long-form body text) and wanted Near evaluated against it. **Reference screenshot noted (Startupz, a Brazilian startup-news site, pt-BR article "Convergência, não consolidação"):** a single rounded geometric grotesk sans used for both the headline and body copy (no serif anywhere, no separate display face) — visually reads close to Poppins, Quicksand, Cabinet Grotesk, or Articulat, all sharing very open, circular counters on letters like a/e/o/g and soft rounded terminals. Headline set bold/heavy at a large size with tight, balanced line wrapping; body copy in the same family at a notably lighter weight, generous font-size (reads roughly 20–24px equivalent) and very open line-height/leading — lines feel almost double-spaced, which is a big part of why it reads as effortless. Palette is minimal: warm off-white/cream background (not pure white), near-black text, no accent color visible in this crop, thin hairline rule under the header nav. Wordmark "Startupz" set in the same bold rounded face as the headline. A later new-font comparison remains optional if Space Grotesk does not feel warm enough live.
 
 28. **Events filter in the home page's "Vibes" strip (operator, 2026-09-08).** The home page's `sectionLabel: "Vibes"` (`messages/en.json:296`, rendered via `components/board/TagFilters.tsx`) filters the board by the cross-cutting `TAGS` list (`lib/content/schema.ts`) — add a filter option there for places that currently carry an event badge / have an associated dated event (`meta.eventStartsAt`, the same field `PlaceCard.tsx`'s upcoming-event badge and `UpcomingEvents.tsx` already key off, per P1.12). Not yet scoped: whether this is a new pseudo-tag alongside the real `TAGS` values or a separate toggle in the same strip, and whether "currently has an event badge" means only upcoming (`eventStartsAt` in the future) or any place with an event attached at all. Product Trio to scope before build.
 
@@ -333,4 +380,89 @@ Completed work lives in `BACKLOG-ARCHIVE.md`.
 
 **map-sidebar ad below the home page map: pulled, not fixed (2026-09-08).** Third round of this same overflow bug (P0.7 stretch/h-full fix, then a flex-row/flex-col wrapper fix that checked out clean on localhost via computed-layout inspection — no element overflowing its box — but the operator still saw it broken live). Rather than burn more tokens chasing a repro gap between localhost and live, removed the `mapPromo`/`map-sidebar` `HousePromo` call entirely from `app/[locale]/page.tsx`; `Board.tsx`'s `mapPromo` prop is optional so the slot and its wrapper `<div>` just don't render. The `board-inline` mrec promo (the other `HousePromo` usage, same page) was left alone — this note only covers `map-sidebar`. If this placement comes back: verify against the actual deployed/live URL, not just `next dev`, before calling it fixed — whatever's different between those two environments is what broke this twice.
 
-**P1.21/P1.32 follow-up (operator, 2026-09-08; P1.22 gate now implemented):** Discover headlines are still boring per a `discover-view` artifact review (https://claude.ai/code/artifact/42d66fd6-2f43-478d-9103-17110d90dd49) — apply the "Discover police" gate (P1.22) to capture and log these. Operator also asked whether an AR/VR-view variant of the `discover-view` artifact (rendering the live site through an AR meta-view lens, similar to a Chrome AR-view plugin they installed) is feasible — scoping question for `discover-view` + near-tech-lead, not yet answered or built; current AR view quality was called out as poor.
+**P1.21/P1.32 follow-up (operator, 2026-09-08; P1.22 gate now implemented):** Discover headlines are still boring per a `discover-view` artifact review (https://claude.ai/code/artifact/42d66fd6-2f43-478d-9103-17110d90dd49) — apply the "Discover police" gate (P1.22) to capture and log these. Operator also asked whether an AR/VR-view variant of the `discover-view` artifact (rendering the live site through an AR meta-view lens, similar to a Chrome AR-view plugin they installed) is feasible — scoping question for `discover-view` + near-tech-lead, not yet answered or built; current AR view quality was called out as poor. you dont need to build a viewer for me, I can just use my plugin for me to view it in AR
+
+more from thiago:
+broken hero image at https://near.tips/en/place/the-pilgrm-paddington-london and several other london posts
+
+Design and UX team, I think we could go a bit softer with rounder corners in layout style actually... just so it looks like a proper app I suppose
+
+[09/09/26, 17:52:54] Rafael Pazetto: O que o Near acompanha
+119 fontes em seis temas, cada uma lida e geolocalizada — as próprias publicações não concordam sobre categorias ou coordenadas, então o Near define as duas coisas.
+[09/09/26, 17:52:58] Rafael Pazetto: this fucking text
+[09/09/26, 17:53:31] Thiago Baraldi: ta confuso mesmo vo avisar o editor rs... mas isso é selling point sim, desambiguador
+[09/09/26, 17:53:51] Thiago Baraldi: o bot TORRA os tokens do pai indo ver qual eh o real quando ta confuso na web
+[09/09/26, 17:54:10] Rafael Pazetto: sim mas o texto eh um horro
+[09/09/26, 17:54:16] Rafael Pazetto: eu entendi mas mtos nao entenderiam
+
+cleanup and caretaker should always be invoked with high priority. I love this https://near.tips/pt-BR/place/pip-blom-10-years-skatecafe-2026 but we have to make sure it is archived after the date, as an example of how this needs to work.
+
+
+this looks terrible:
+[  
+Detectada, mas não indexada no momento](https://search.google.com/search-console/index/drilldown?resource_id=sc-domain%3Anear.tips&item_key=CAMYFiAC "Detectada, mas não indexada no momento")Detalhes de validação
+
+
+
+Validação Iniciado
+
+Início: 08/09/2026
+
+Sitemap: Todas as páginas conhecidas
+
+# 
+
+Exemplos
+
+[](https://search.google.com/#)
+
+|URL|Último rastreamento|
+|---|---|
+|https://near.tips/en|N/D|
+|https://near.tips/en/about|N/D|
+|https://near.tips/en/about/thiago-baraldi|N/D|
+|https://near.tips/en/author/allora-dai|N/D|
+|https://near.tips/en/author/bakfiets|N/D|
+|https://near.tips/en/author/bricky|N/D|
+|https://near.tips/en/author/ciclovia|N/D|
+|https://near.tips/en/author/cubic-v|N/D|
+|https://near.tips/en/author/darcy|N/D|
+|https://near.tips/en/author/dog-in-the-fog|N/D|
+
+Linhas por página:
+
+1-10 de 726
+
+Our posts should also have video. Create a video-finder skills as part of the article writing process that finds videos to embed in the article (ok to skip if videos are not relevant to that article, but most cool places will have something on youtube) . Example the skatecafe post could have had video https://www.youtube.com/watch?v=smAMssyCtsw . The place is really cool, we could have had more photos too. Our photos per paragraphs rule is a minimum, not a ceiling, the more visuals/videos the better always.
+
+speaking of youtube let's follow radio like KEXP, tiny desk concert, morning becomes eclectic and similar around the world for source of artists and their upcoming events to actively research (make this a permanent behaviour of events agent. all music editor agents, rucio feral etc as well as trendsetter must follow sources like this as well). sources skill please help organize this and make these sources visible in our sources public page. find similar sources in UK, Europe, rest of our target destinations
+
+Oh of course let's note that the prime goal directive of the C-Level suit, the ad sales and affiliates agents is to make us good money and save where we can, all legally ffs.
+
+
+skatecafe: A portaria merece atenção: em junho de 2026, um [avaliador do Google](https://www.google.com/maps/place/Skatecafe/@52.3854027,4.9255934,17z/data=!3m1!4b1!4m6!3m5!1s0x47c609001349b0d7:0x63c7b4dfed439c36!8m2!3d52.3854027!4d4.9255934!16s%2Fg%2F11c2pchcvc) relatou ter a entrada recusada após perguntas sobre o DJ. É um relato individual, não um teste de entrada garantido.
+
+so our legal counsel is afraid to use images from google reviews but it thinks that making accusations based on single google reviews is a good idea? legal counselor editor? illustrator. Please fix this and our rules, we should not do accusations like this, ok to quote reviews but only with deep link to them and not ever accusing the place of actual questionable behaviour, discrimination, crimes, bugs, etc, it's actually illegal to quote reviews on stuff like this in many countries. Besides this was not even useful to the reader, the reader did not learn if there is a door policy or how getting in works, this was just gossip and drama. Let's not be drama driven please, reflect in skills and guidelines as needed. Deep reporting yes, but keep it classy and actually valuable to readers, humans or agents. You could have used in skatecafe example something like: "There may be a door policy in certain events", but based on a single review, nah, I would just skip mentioning this for now, maybe note somewhere in agents brains to keep an eye on evolving situations. 
+and yes we should use more images from Google reviews, that is a lot safer legally and ethically, use em, credit them with deep link too
+
+Can we for one time only bump up São Vicente followed by the rest of Baixada Santista in the content rotation queue? Just this once, then back to regular spot in rotation for the next round. Just because I live here and I want to see what comes up. Let's aim to get to a coverage of at least 10 articles in São Vicente in this run as well, and another 20 in Baixada Santista. (any type of article counts, including events, columns, guides, all of them). SEO please orchestrate this process (sao vicente and baixada santista push) in collab with sources skill and trendsetter. add juicy praia grande to sources btw. we need to find instagram sources around here, and watch news sites for the region as well. alternative events like the cosplay event in praia grande recently, for example, appeared in regular media like G1. bluesky accounts. let's not user twiiter/x but we should ALWAYS actively look for bluesky sources to follow. the smaller the destination, the more likely social media is to be a more prominent source of content.
+
+i would love to do that college age driven push for São carlos and region asap too. The queue says Rio Claro, any other short drive distance relevant destination here? Araraquara I suppose. Should we connect that all the way to Jau Bauru as one college megalopolis destination? Ribeirao Preto makes sense? Throw in Campinas? We don't have to give a public name for this region, just use the cities as per normal. Internally you can give it a name. Could make it easier to find content having more cities sharing this same spot in the rotation. And maybe it doesn't have to be college age oriented, tbh. We can have a college editor that can be used in some articles and places and to monitor college sources but the destination doesn't need to have that as a particular focus that we enforce by rules, let's scrap that part. 
+
+And then a push for Rio. I'm feeling Brazilian well I am lol
+
+UI wise, prioritize a review of our whole UI in the sense of waking those sharp edges a bit more modern not so sharp and proper app-like without losing our look and feel (the color palette right now is great do not change) and please also fix the fonts, modernize that, I gave you above an example of great font we can copy. The current header fonts are pretty ok, the text font needs to be completely modernized it's super small and hard to read right now, fix asap high prio please, all relevant skills must be engaged. is it CRAZY if we try to mimic a premium reading experience like Flipboard, with the flipping effect and all on a web PWA app? Well, I researched and flipboard themselves dont have the flipping effect on web, so forget that. We can, however, take lots of info from the modern look of Flipboard web app, but keeping our color palette. Flipboard has very minimalistic easy to understand at a glance icon driven UI, take some inspo from it Design team what do you think? Please consider and orchestrate UI review. Do keep our badgy, alt press look and feel even after modernization. The reason for this review is that the current look is so true to that era that it risks looking it doesn't have up to date information. It looks like a true geocities gem lol. But that may hurt user trust in freshness. It needs to look fresh as well, not just be fresh.
+
+Whenever the user visits the site and does not have installed web app, we must encourage to install app via install banner. Whenever the user opens PWA (from the very first time), show ask for consent to push notifications if the user has not accepted, customized or decline (do give them an option to customize). We will implement push later but must already collect consent. Non-installed users also must consent or decline (hopefully consent lol) to communications such as email.
+
+Tell Parser to write a column article that is an easy to read but thorough step guide for anyone to build their own geolocation-driven content web app using Claude and/or ChatGPT, mcp, vercel and github. Take the chance to quickly introduce Near, and what our curation lenses is (alt weekly inspired etc), but mostly focus on guiding the reader step by step to create a tool with their own lenses, maybe for their next trip, maybe for the guests of their hotel, idunno. Please collab before, during and after writing article with SEO, AEO, backlinks pr. Write as much as you can about our experience building Near so you have authority, but dont share anything sensitive or negative. This article will be shared on LinkedIn and other socials for professionals including whatsapp groups.
+
+the top organic results for onde comer em sao vicente SP is this horribly out of date source, wtf https://www1.folha.uol.com.br/folha/turismo/americadosul/brasil-sao_vicente-onde_comer.shtml some recommendations there have been closed for decades, Google messed up here lol...
+
+in installed PWA, external links should open in the app, easy to go back to normal Near app, without breaking the app or the link open
+
+alem das vibes os filtros de temas tambem precisam aparecer no header. alias nao vejo utilidade na diferenciacao de temas e vibes, so complica o layout. sao filtros e pronto
+
+
+
+

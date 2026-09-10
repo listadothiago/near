@@ -24,6 +24,16 @@ crops. A URL, metadata, generation prompt or dimensions alone cannot pass this g
   disclosure. Public accessibility, Google indexing, a venue hosting an asset,
   attribution alone, or a takedown plan does not establish permission. Unresolved
   usage basis goes to `near-legal-counsel`; use a cleared alternative or hold.
+  **Named exception (operator, 2026-09-10, `content/rules.md` HERO IMAGE
+  TIERS): a tier-1 photo from the venue's Google Maps listing UGC (never
+  Street View), its official site, or its Instagram passes on attribution
+  + a deep link back to the source + a working "report this image" link
+  to the existing inbox `removal` flow — that combination is the
+  established basis for this specific tier, not a gap to flag.** Confirm
+  all three are actually present (real deep link, not just the venue's
+  home page; the report control actually renders and points at
+  `/api/inbox`) rather than re-litigating whether the policy itself is
+  sound.
 - Check relevant privacy/likeness issues and all locale captions/alt text. Retain
   the 250-words-per-image floor and recorded mid-body-image decision.
 - Hand off the actual served `og:image` crop to `discover-view`; keep technical

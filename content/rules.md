@@ -300,9 +300,41 @@ rules:
       actually chose it, credit that persona, never the curator, even if he
       was in the room.
 
-      HERO IMAGE TIERS, in preference order: (1) a real source photo with
-      attribution, (2) licensed stock, (3) an original illustration from
-      near-illustrator. Tier 3 reverses this rule's earlier "no
+      HERO IMAGE TIERS, in preference order (operator directive,
+      2026-09-10, superseding the prior ordering below): (1) a real photo
+      of the actual place — Google Maps listing UGC photos, meaning the
+      customer/owner photos attached to the listing and its reviews
+      (usually the richest source; a popular venue often has hundreds),
+      the venue's own official website, or its own Instagram. **Never
+      Street View** — that is exactly the kind of generic exterior/street
+      shot this rule exists to stop, not a substitute for it, even though
+      it is also served through Google Maps; (2) licensed stock;
+      (3) an original illustration from near-illustrator. **A generic
+      street/transit/neighborhood shot standing in for the actual venue
+      is never acceptable when a real photo of the place itself exists in
+      any of the tier-1 sources — there is no reason to reach for a
+      street shot in lieu of the actual place.** This reverses the
+      caution near-illustrator and image-police had been applying to
+      Maps/Instagram photos, which had been producing worse heroes
+      (unrelated street photography, thin stock) for places that in fact
+      had good, directly-relevant photography sitting in their own Maps
+      listing the whole time — see BACKLOG's black-bird-bookstore
+      incident, 2026-09-10.
+
+      Every tier-1 image carries: attribution naming the source (Google
+      Maps / the venue's official site or Instagram handle) with a deep
+      link back to the original photo/page, and a visible "report this
+      image" control next to the attribution — reusing the existing
+      inbox form's `removal` type
+      (`components/inbox/SubmitForm.tsx` → `/api/inbox`), pre-filled with
+      the image URL, not a new inbox or contact channel. On a removal
+      report, take the image down; this is a take-down-on-request policy,
+      not a rights-clearance guarantee, and `near-legal-counsel` signs off
+      on that basis specifically (deep link to source + working removal
+      path present) rather than requiring the same licensing proof a
+      stock or illustration tier would need.
+
+      Tier 3 (illustration) reverses this rule's earlier "no
       AI-generated fallback tier by design" position — an operator
       decision on 2026-08-31, on the grounds that a drawn hero beats
       either a generic stock photo or skipping a genuinely good place for
@@ -678,6 +710,25 @@ rules:
       reproducible UI failures in BACKLOG.md. near-write-article owns sequencing.
     trigger: "creating or editorially reviewing a place, event, collection or column"
     action: "record image, event and feed verdicts; repair or hold unresolved required checks"
+
+  - id: review-reader-utility
+    description: >
+      Apply docs/workflows/operator-directives-2026-09-10.md. Review research is
+      mandatory but damaging allegations from reviews must not be quoted or
+      paraphrased. Benign useful quotations require exact review permalinks,
+      dates and attribution. Corroborate practical restrictions independently;
+      omit unsupported door-policy speculation and gossip across all locales.
+    trigger: "writing or refreshing copy based on user reviews"
+    action: "record chief-editor/legal verdict; remove unsupported claims"
+
+  - id: video-selection
+    description: >
+      Run near-video-finder after imagery and before sign-off on every write or
+      refresh. Record selected, not-relevant, none-found or blocked with checked
+      source evidence. Video supplements the image minimum; unsupported renderer
+      or disabled embedding remains a named dependency, not a successful embed.
+    trigger: "writing or editorially refreshing a place, event, guide or column"
+    action: "retain video decision and verify any selected embed in final rendering"
 
   - id: run-volume-cap
     description: >
