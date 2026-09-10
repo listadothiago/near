@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { DM_Sans, Space_Grotesk } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
@@ -39,6 +39,21 @@ const dmSans = DM_Sans({
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
+
+// viewportFit: "cover" is what actually populates env(safe-area-inset-*)
+// on iOS/Android — without it those variables resolve to 0 and the sticky
+// header's safe-area padding (see Header.tsx) is a no-op. Needed for the
+// installed PWA (app/manifest.ts's display: "standalone"), where content
+// can otherwise render directly under the system status bar with nothing
+// reserving space for it. Operator report, 2026-09-10: the header's
+// wordmark/home link was rendering clipped under the status bar on
+// Android.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#ccff00",
+};
 
 export async function generateMetadata({
   params,

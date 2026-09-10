@@ -91,14 +91,16 @@ export default function Header({
   }, []);
 
   return (
-    <header className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink rounded-b-[var(--radius-panel)] py-1 mb-1 md:pt-2 md:pb-2">
+    <header
+      className="sticky top-0 z-[1200] -mx-[22px] px-[22px] bg-surface border-b-[4px] border-ink rounded-b-[var(--radius-panel)] pt-[max(0.25rem,env(safe-area-inset-top))] pb-1 mb-1 md:pt-[max(0.5rem,env(safe-area-inset-top))] md:pb-2"
+    >
       {/* One wrapping row, four items. Phone: brand + controls share the
           first line, the nav wraps to its own full-width line, search takes
           another. Desktop: all inline. The old version nested the nav
           inside an unshrinkable controls block, which was wider than a
           phone screen — the whole header overflowed sideways. */}
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-        <Link href="/" className="inline-flex items-center gap-1.5 group flex-none mr-auto sm:mr-0">
+        <Link href="/" className="inline-flex items-center gap-1.5 group flex-none">
           <img
             src="/icons/icon-maskable.png"
             alt=""
@@ -110,6 +112,19 @@ export default function Header({
             NEAR
           </span>
         </Link>
+
+        {/* Fills the dead space the old mr-auto logo/mr-0 desktop split
+            left blank between the wordmark and the controls on phones (row 1
+            has room to spare there until the controls div claims the right
+            edge). Only needed below sm — sm+ has its own tagline line
+            further down. A bold badge, not plain text, per the operator:
+            "that white area next to title could show tagline... should be a
+            badge too so it's strong." Operator, 2026-09-10. */}
+        <p className="sm:hidden flex-1 min-w-0 flex justify-end">
+          <span className="inline-block max-w-full truncate bg-ink px-1.5 py-0.5 font-mono text-[0.62rem] font-bold uppercase tracking-wide text-accent">
+            {t("app.tagline")}
+          </span>
+        </p>
 
         {showSearch && (
           <div className="order-4 basis-full sm:order-none sm:basis-auto sm:flex-1 min-w-0 flex sm:max-w-96">
@@ -130,7 +145,7 @@ export default function Header({
             five on one line down to phone widths instead. Operator report,
             2026-09-08. */}
         <nav
-          className={`order-3 basis-full min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:order-none md:basis-auto md:overflow-visible flex-nowrap items-center gap-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
+          className={`order-3 basis-full min-w-0 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden md:order-none md:basis-auto md:overflow-visible flex-nowrap items-center gap-0 pr-[22px] md:pr-0 font-sans text-[0.68rem] sm:text-[0.76rem] font-semibold uppercase tracking-wide ${
             compact ? "hidden" : "flex"
           }`}
         >
@@ -178,17 +193,23 @@ export default function Header({
               full nav's "MAP" link to the separate /map page (BACKLOG
               P1.6), which is hidden once compact. Operator, 2026-09-08. */}
           {isBoard && (
+            // Distinct label from the nav's "MAP" link on purpose (operator
+            // report, 2026-09-10: reads as a redundant duplicate otherwise).
+            // The nav link routes to the separate /map page; this jumps to
+            // the board's own inline map further down the same page, and
+            // stays reachable once the nav hides in the compact/sticky
+            // header state (see the comment on this button below).
             <a
               href="#board-map"
-              aria-label={t("board.map")}
-              title={t("board.map")}
+              aria-label={t("board.showMap")}
+              title={t("board.showMap")}
               className="inline-flex items-center gap-1.5 border-[3px] border-ink bg-surface px-1.5 sm:px-2 py-1 font-sans text-[0.76rem] font-semibold uppercase tracking-wide text-ink hover:bg-accent hover:text-black transition-colors"
             >
               <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 flex-none" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" />
                 <circle cx="12" cy="9" r="2.5" />
               </svg>
-              <span className="hidden sm:inline">{t("board.map")}</span>
+              <span className="hidden sm:inline">{t("board.showMap")}</span>
             </a>
           )}
           {/* Universal — every page is shareable, not just the board
