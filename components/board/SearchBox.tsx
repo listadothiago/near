@@ -48,7 +48,7 @@ export default function SearchBox({
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         aria-label={t("searchPlaceholder")}
-        className="flex-1 min-w-0 sm:flex-none sm:w-72 md:w-96 bg-surface border-[3px] border-ink px-2.5 py-1 font-mono text-[0.78rem] placeholder:text-muted focus:outline-none focus:bg-accent focus:text-black focus:placeholder:text-black/60"
+        className="flex-1 min-w-0 sm:flex-none sm:w-72 md:w-96 rounded-[var(--radius-control)] bg-surface border-[3px] border-ink px-2.5 py-1 font-sans text-[0.82rem] placeholder:text-muted focus:outline-4 focus:outline-offset-2 focus:outline-accent focus:bg-surface focus:text-ink"
       />
     </form>
   );

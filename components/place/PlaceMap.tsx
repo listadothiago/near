@@ -16,7 +16,7 @@ export default function PlaceMap({
   frontmatter: PlaceContentFrontmatter;
 }) {
   return (
-    <div className="mt-6 border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden">
+    <div className="mt-6 rounded-[var(--radius-panel)] border-[3px] border-ink shadow-[var(--shadow-sm)] overflow-hidden">
       <WorldMap
         points={[
           {

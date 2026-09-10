@@ -50,7 +50,7 @@ export default function InfiniteLoad({
         <button
           type="button"
           onClick={onLoadMore}
-          className="border-[3px] border-ink bg-surface px-4 py-2 font-mono text-[0.72rem] uppercase tracking-wide transition-colors hover:bg-accent hover:text-black"
+          className="rounded-[var(--radius-control)] border-[3px] border-ink bg-surface px-4 py-2 font-mono text-[0.72rem] uppercase tracking-wide transition-colors hover:bg-accent hover:text-black"
         >
           {t("loadMore")}
         </button>

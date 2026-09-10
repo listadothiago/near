@@ -12,13 +12,13 @@ export default function ReasonsList({
   const t = useTranslations("place");
 
   return (
-    <section className="mt-8 max-w-[65ch] border-[3px] border-ink bg-surface p-4 shadow-[var(--shadow-sm)]">
+    <section className="mt-8 max-w-[65ch] rounded-[var(--radius-panel)] border-[3px] border-ink bg-surface p-4 shadow-[var(--shadow-sm)]">
       <h2 className="text-[1.05rem] mb-3">{title ?? t("reasonsToCheckOut")}</h2>
       <ul className="space-y-2">
         {bullets.map((bullet, i) => (
           <li
             key={i}
-            className="flex gap-2.5 font-mono text-[0.85rem] leading-relaxed"
+            className="flex gap-2.5 font-sans text-[0.95rem] leading-relaxed"
           >
             <span
               aria-hidden="true"

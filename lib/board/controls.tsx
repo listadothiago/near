@@ -90,10 +90,10 @@ export function BoardControlsProvider({ children }: { children: ReactNode }) {
     if (q) setQuery(q);
     if (cats.size) setActiveCats(cats);
     if (tags.size) setActiveTags(tags);
-    // Open the filter panel when a shared link arrives carrying filters,
-    // so the reader can see what has been applied rather than wondering
-    // why the board looks short.
-    if (cats.size || tags.size) setFiltersOpen(true);
+    // Keep the panel collapsed on shared/filtered URLs. The active-count
+    // badge and results-scope panel make the state visible; auto-opening
+    // every category and tag inside the sticky mobile header can cover the
+    // entire SRP before the reader sees a single result.
     hydratedFromUrl.current = true;
   }, []);
 

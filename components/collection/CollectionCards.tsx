@@ -33,7 +33,7 @@ export default function CollectionCards({
         <Link
           key={c.meta.slug}
           href={`/collection/${c.meta.slug}`}
-          className="block bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 overflow-hidden group transition-all"
+          className="block rounded-[var(--radius-panel)] bg-surface border-[3px] border-ink shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow)] hover:-translate-x-0.5 hover:-translate-y-0.5 overflow-hidden group transition-all"
         >
           {c.meta.coverImage && (
             <div className="relative w-full aspect-[16/9] bg-surface-2 border-b-[3px] border-ink">
@@ -55,7 +55,7 @@ export default function CollectionCards({
             <h2 className="mt-1.5 text-[1.1rem] leading-[1.1]">
               {c.frontmatter.title}
             </h2>
-            <p className="mt-1.5 font-mono text-[0.72rem] leading-snug text-muted">
+            <p className="mt-1.5 font-sans text-[0.82rem] leading-[1.5] text-muted">
               {c.frontmatter.dek}
             </p>
           </div>

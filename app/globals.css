@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Neo-brutalist alt-weekly zine system. Newsprint ground, solid black
-   strokes, acid green as the single accent. Geometry is deliberately
-   hard: no radii anywhere, thick borders, offset shadows with no blur. */
+/* Modern alt-weekly system. Newsprint ground, solid black strokes and acid
+   green stay load-bearing; modest radii and a readable sans body keep the
+   interface feeling like a current app rather than a period recreation. */
 :root {
   --paper: #f4f4f0;
   --surface: #ffffff;
@@ -31,6 +31,9 @@
   --stroke-thick: 4px;
   --shadow: 8px 8px 0 var(--ink);
   --shadow-sm: 4px 4px 0 var(--ink);
+  --radius-panel: 14px;
+  --radius-control: 8px;
+  --radius-badge: 4px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -112,9 +115,8 @@
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-courier-prime), ui-monospace, "SF Mono", monospace;
-  /* Long-form body copy stays monospace-adjacent per the zine brief;
-     --font-serif is kept as an alias so any remaining consumer resolves
-     to the display face rather than a browser default serif. */
+  /* Body and long-form copy use the readable sans. Mono remains available
+     for compact editorial labels, dates, sources and badges. */
   --font-serif: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 
   --shadow-hard: var(--shadow);
@@ -142,18 +144,16 @@ html {
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-mono);
-  line-height: 1.5;
+  font-family: var(--font-sans);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* NO ROUNDED CORNERS — the single most load-bearing rule of the
-   aesthetic. Enforced globally so a stray Tailwind rounded-* utility
-   can't quietly soften the system. */
-*,
-*::before,
-*::after {
-  border-radius: 0 !important;
+button,
+input,
+textarea,
+select {
+  border-radius: var(--radius-control);
 }
 
 h1,
