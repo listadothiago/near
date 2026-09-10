@@ -113,10 +113,11 @@
   --color-cat-accommodation: var(--cat-accommodation);
 
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-courier-prime), ui-monospace, "SF Mono", monospace;
-  /* Body and long-form copy use the readable sans. Mono remains available
-     for compact editorial labels, dates, sources and badges. */
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  /* Remove the terminal face from legacy consumers without a risky one-shot
+     component rewrite. Their hierarchy now comes from uppercase, weight,
+     tracking, colour and borders—not monospace letterforms. */
+  --font-mono: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
 
   --shadow-hard: var(--shadow);

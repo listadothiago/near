@@ -115,7 +115,7 @@ export default function PlaceCard({
           />
         )}
         <span
-          className="absolute top-0 left-0 px-1.5 py-0.5 font-mono text-[0.6rem] uppercase tracking-wide text-black border-r-[3px] border-b-[3px] border-ink"
+          className="absolute top-0 left-0 px-1.5 py-0.5 font-sans text-[0.68rem] font-semibold uppercase tracking-wide text-black border-r-[3px] border-b-[3px] border-ink"
           style={{ background: "var(--accent)" }}
         >
           {t(place.meta.categories[0])}
@@ -127,16 +127,16 @@ export default function PlaceCard({
           the event existing as a competing listing for the same address. */}
       {upcomingEvent && (
         <div className="flex items-baseline gap-1.5 px-2.5 py-1 bg-accent text-black border-b-[3px] border-ink">
-          <span className="font-mono text-[0.58rem] uppercase tracking-wide font-bold flex-none">
+          <span className="font-sans text-[0.65rem] uppercase tracking-wide font-bold flex-none">
             {tp("nextEvent")}
           </span>
-          <span className="font-mono text-[0.62rem] truncate">
+          <span className="font-sans text-[0.7rem] truncate">
             {upcomingEvent.shortTitle ?? upcomingEvent.name}
           </span>
           {/* Own badge, lime-on-black, a little bolder (operator,
               2026-09-08) — was plain small text and easy to miss next
               to the title it's competing with for space. */}
-          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-mono text-[0.58rem] font-black ml-auto flex-none">
+          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-sans text-[0.65rem] font-black ml-auto flex-none">
             {eventDate}
           </span>
         </div>
@@ -153,7 +153,7 @@ export default function PlaceCard({
           into the HTML a bot sees. Recency uses a real `<time
           dateTime>` so it stays a genuine, crawlable date rather than
           just styled text. */}
-      <div className="flex flex-wrap items-center gap-1.5 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-mono text-[0.62rem] uppercase tracking-wide">
+      <div className="flex flex-wrap items-center gap-1.5 px-2.5 py-1 bg-surface-2 border-b-[3px] border-ink font-sans text-[0.68rem] font-semibold uppercase tracking-wide">
         {resolvedDistanceKm !== undefined && (
           <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-accent text-black px-1.5 py-0.5 font-bold whitespace-nowrap">
             {formatDistance(resolvedDistanceKm)} {tp("away")}
@@ -185,7 +185,7 @@ export default function PlaceCard({
             First"), not necessarily a name a reader recognizes — without
             this, a card can read as unclear about what place it even is. */}
         {place.frontmatter.shortTitle && (
-          <span className="font-mono text-[0.62rem] uppercase tracking-wide text-muted truncate">
+          <span className="font-sans text-[0.68rem] font-semibold uppercase tracking-wide text-muted truncate">
             {place.frontmatter.name}
           </span>
         )}
@@ -216,7 +216,7 @@ export default function PlaceCard({
 
         <div className="mt-auto pt-1.5 flex items-center justify-between gap-2 border-t border-ink/25">
           <Byline slug={place.meta.author} asLink={false} />
-          <span className="font-mono text-[0.6rem] text-muted whitespace-nowrap">
+          <span className="font-sans text-[0.68rem] font-medium text-muted whitespace-nowrap">
             {place.meta.place.city}
           </span>
         </div>
