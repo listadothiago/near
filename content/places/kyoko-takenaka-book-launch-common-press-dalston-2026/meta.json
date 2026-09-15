@@ -1,0 +1,62 @@
+{
+  "slug": "kyoko-takenaka-book-launch-common-press-dalston-2026",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [
+    "lgbtq-friendly"
+  ],
+  "coordinates": {
+    "lat": 51.5544322,
+    "lng": -0.0749814
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Dalston",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "The Common Press — event listing",
+      "url": "https://www.commonpress.co.uk/event-details/kyoko-takenaka-im-here-i-love-you-book-launch-ft-tobi-adebajo",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    },
+    {
+      "name": "Outsavvy — ticket listing",
+      "url": "https://www.outsavvy.com/event/39670/kyoko-takenaka-im-here-i-love-you-book-launch-ft-tobi-adebajo",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-01T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://media.timeout.com/images/105812586/750/422/image.jpg",
+    "attribution": "Photograph: Common Press, via Time Out London's opening coverage",
+    "attributionLink": "https://www.timeout.com/london/news/beloved-queer-bookshop-the-common-press-has-opened-a-second-location-060826",
+    "licenseNote": "Depicts the host venue (The Common Press Dalston), not the performance itself — same pattern as the Teatro Clube da Eskyna event pages, since no rights-clear image of this specific event exists yet."
+  },
+  "parentPlace": "the-common-press-dalston-london",
+  "eventStartsAt": "2026-09-23T18:30:00+01:00",
+  "eventEndsAt": "2026-09-23T21:00:00+01:00",
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-15T23:01:34Z",
+      "note": "Child event page for the-common-press-dalston-london, per events-police's nest-in-parent rule. Date/time confirmed directly on the venue's own event-details page and cross-checked against the Outsavvy booking listing. No ticket price shown on either source at time of writing — noted honestly in-body rather than assumed free. Hero reuses the parent venue's Time Out photo (depicts the venue, not the event) since no event-specific image exists yet, same pattern as the Teatro Clube da Eskyna reference implementation."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Common Press Dalston, 97 Stoke Newington Rd, London N16 8BX — Google Maps listing pin (same venue as parent)",
+    "verifiedAt": "2026-09-15T00:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Common+Press+Dalston/@51.5544322,-0.0749814,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d2fa5701ae1:0xa7c7f1d3f5b0f1ea!8m2!3d51.5544322!4d-0.0749814!16s%2Fg%2F11z80qr8qx"
+  },
+  "publishedAt": "2026-09-15T23:01:34Z",
+  "updatedAt": "2026-09-15T23:01:34Z"
+}
