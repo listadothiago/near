@@ -49,3 +49,49 @@ next-env.d.ts
 /Agentic Action Plan*.md
 /Canna Passport Tours*.md
 /reference-images/
+
+# operator-only material (2026-09-15 split): lives in the private
+# near-ops repo, kept locally on disk but never tracked here
+/.claude/
+/docs/
+/BACKLOG.md
+/BACKLOG-ARCHIVE.md
+/BACKLOG.backup.*.md
+/content/_ingestion-log.md
+/content/ad-sales-knowledge-base.md
+/content/ad-sales-outreach.md
+/content/affiliate-outreach.md
+/content/backlink-outreach.md
+/content/backlink-pr-knowledge-base.md
+/content/caretaker-dates.md
+/content/chief-editor-knowledge-base.md
+/content/columns-push-plan-*.md
+/content/design-events-map-views-*.md
+/content/do-not-disturb.md
+/content/illustrator-knowledge-base.md
+/content/near-ceo-knowledge-base.md
+/content/near-cmo-knowledge-base.md
+/content/near-seo-knowledge-base.md
+/content/near-trendsetter-knowledge-base.md
+/content/opportunities.md
+/content/parser-knowledge-base.md
+/content/photo-requests.md
+/content/post-plan.md
+/content/preferred-destinations.md
+/content/preferred-sources.md
+/content/requests.md
+/content/seo-forecast-*.md
+/content/seo-indexing-audit-*.md
+/content/trends-feeds.md
+/content/editorial-column.md
+/content/blog-do-thiago.md
+/content/gastronomic-column.md
+/content/ladies-and-gentlethem.md
+/content/the-failure-mode.md
+/content/the-setlist.md
+/content/_rotation-runs/
+/content/_batch-runs/
+/content/photo-inbox/
+/content/video-inbox/
+/content/document-inbox/
+/content/_reports/
