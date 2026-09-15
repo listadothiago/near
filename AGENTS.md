@@ -43,3 +43,12 @@ For content execution, read `docs/workflows/content-execution.md` and follow
 and Discover reviews are required for writes and editorial refreshes. For full
 rotation/hotel planning, read `docs/workflows/content-rotation.md`; new rounds
 start with `rotation-reorder`. Preserve active batch evidence and accounting.
+
+## Backlog and product directives (2026-09-10)
+
+Consume uncommitted BACKLOG directives into skills before dependent work. Read
+`docs/workflows/operator-directives-2026-09-10.md` for maintenance priority,
+review/photo policy, video/music/social sourcing, commercial goals, geography
+adjustments and UI direction. `near-video-finder` is required by the shared
+article pipeline. The UI review plan is in
+`docs/reviews/2026-09-10-backlog/ui-review-plan.md`.
