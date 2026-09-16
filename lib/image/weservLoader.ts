@@ -55,5 +55,19 @@ export default function weservLoader({
   url.searchParams.set("url", src.replace(/^https?:\/\//, ""));
   url.searchParams.set("w", String(width));
   url.searchParams.set("q", String(quality ?? 75));
+  // weserv's own default is a 1-year Cache-Control, fronted by Cloudflare's
+  // edge — so once a given (url, width, quality) combo is cached, swapping
+  // the file at the same near.tips URL (e.g. a hero-image fix) can stay
+  // invisible at already-warmed edge PoPs for up to a year, with no purge
+  // API available to us. Found 2026-09-16: a corrected Restaurante Drina
+  // hero was live and byte-correct at the origin, and even a fresh
+  // large-width weserv request showed the fix, but the small width the
+  // feed card actually requests was still serving the old cached image.
+  // Cap same-origin (near.tips) images to a 1-hour edge TTL so a content
+  // fix propagates within the hour instead of silently waiting out a
+  // year-long cache — matches this content's own revalidate=3600 cadence.
+  if (/^https?:\/\/near\.tips\//.test(src)) {
+    url.searchParams.set("maxage", "1h");
+  }
   return url.toString();
 }

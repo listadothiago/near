@@ -31,11 +31,17 @@ export default function ConsentBanner() {
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-[1300] border-t-[4px] border-ink bg-surface px-4 py-3 shadow-[var(--shadow)]">
-      <div className="mx-auto flex max-w-[1180px] flex-wrap items-center gap-3">
+      <div className="mx-auto flex max-w-[1180px] flex-col sm:flex-row sm:items-center gap-3">
         <p className="m-0 flex-1 min-w-[220px] font-mono text-[0.78rem] leading-snug text-ink">
           {t("body")}
         </p>
-        <div className="flex gap-2 flex-none">
+        {/* Row can genuinely overflow the viewport width on narrow phone
+            screens (found 2026-09-16 on Samsung Internet: only "Recusar"
+            was visible, "Aceitar" pushed off-screen to the right with no
+            way to scroll to it) — flex-wrap plus min-w-0 lets the buttons
+            drop to their own row instead of overflowing when the banner
+            stacks vertically on mobile. */}
+        <div className="flex flex-wrap gap-2 flex-none min-w-0">
           <button
             type="button"
             onClick={() => choose("declined")}

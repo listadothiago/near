@@ -461,12 +461,13 @@ function ColumnsMenu() {
           </Link>
           {/* Operator-authored column, not an AI-persona byline — see
               content/blog-do-thiago.md and .claude/skills/blog-do-thiago.
-              No dedicated archive page yet (only one entry exists so far),
-              so this links straight to its one published piece. Operator,
-              2026-09-10: "where is blog do thiago in the nav under
-              columns." */}
+              Operator, 2026-09-10: "where is blog do thiago in the nav
+              under columns." Was a stopgap direct link to the single
+              hello-world entry; now that a second entry exists, fixed to
+              point at the real archive page (app/[locale]/blog-do-thiago)
+              instead of silently stranding every post after the first. */}
           <Link
-            href="/collection/hello-world"
+            href="/blog-do-thiago"
             onClick={() => setOpen(false)}
             className="px-2 py-1.5 hover:bg-accent hover:text-black transition-colors"
           >
