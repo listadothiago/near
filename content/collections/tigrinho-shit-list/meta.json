@@ -1,0 +1,29 @@
+{
+  "slug": "tigrinho-shit-list",
+  "author": "thiago-baraldi",
+  "placeSlugs": ["atomic-liquors-las-vegas"],
+  "coverImage": {
+    "strategy": "source",
+    "url": "https://near.tips/collections/tigrinho-shit-list/cover.jpg",
+    "attribution": "Caravaggio, \"The Cardsharps\" (c. 1594) — Kimbell Art Museum, public domain, via Wikimedia Commons / Google Art Project",
+    "attributionLink": "https://commons.wikimedia.org/wiki/File:Caravaggio_(Michelangelo_Merisi)_-_The_Cardsharps_-_Google_Art_Project.jpg",
+    "licenseNote": "Genuine public-domain fine art (Caravaggio died 1610; Google Art Project digitization, Wikimedia Commons confirms License: Public domain). A cheat signaling his accomplice while fleecing an oblivious young mark at cards -- fits the post's own 'you feed the machine and hope for the best' framing without depicting the operator, Near, or any AI company. Not AI-generated. Original 4501x3239; cropped to 2000x1125 (16:9), keeping both hands and both faces central to the con intact in-frame."
+  },
+  "trust": "auto",
+  "sponsored": false,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-16T23:40:00Z",
+      "note": "Operator's own draft, found in blog-do-thiago-posts/ready/'tigrinho shit list.md' (per Obsidian workspace.json lastOpenFiles) and confirmed by the operator in chat as his own post ready to publish. Per this column's standing skill (.claude/skills/blog-do-thiago/SKILL.md), his body copy is reproduced verbatim in pt-BR.mdx -- no sentence written, added, removed or rewritten, including the in-line editor asides ('editor, please don't link X', 'editor, you can link Y', the closing Las Vegas ask), which are part of his own voice/text and were kept exactly as written. Title kept as his own exact phrase ('Fazer web app com IA e TOTAL tigrinho aff'); only the dek and seoDescription (metadata, not body) were authored fresh, which the operator explicitly authorized ('SEO agent can change the title but not my post'). Operator directive mid-session: don't name/mention him in the title or metadata -- first seoDescription draft named him directly and was rewritten to drop his name entirely (kept generic: 'a note from Near's personal column'). placeSlugs set to atomic-liquors-las-vegas to satisfy collectionMetaSchema's placeSlugs.min(1) -- the operator had explicitly written that he had no restaurant/hotel of his own to recommend from his Vegas trip, so near-write-article sourced a genuinely original, non-hype off-Strip venue instead of inventing one; the connection is rendered structurally via the page's own places section (app/[locale]/collection/[slug]/page.tsx reads placeSlugs and renders PlaceSummary cards), not woven into his prose, precisely so his sentences stay untouched. Cover image: per operator's explicit mid-session instruction ('do not use AI to generate hero images... any public domain image that fits, preferably some kind of legit fine art'), sourced Caravaggio's The Cardsharps from Wikimedia Commons (public domain, verified via extmetadata) -- same real-public-domain-art approach as hello-world's Mondrian, not a generated image. Single pt-BR source draft in this pass (his native language); locale translations of his exact words (permitted per the skill -- translation is not rewriting) to follow."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-16T23:50:00Z",
+      "note": "Operator called the first dek/seoDescription weak with no real SEO value ('Uma nota rapida... sobre IA, dinheiro e sorte' -- generic). Rewrote both across all six locales to actually carry the piece's real argument and keywords (AI credits/microtransactions/slot-machine mechanic/enshittification) instead of a placeholder line, while staying metadata-only (title/dek/seoDescription), not touching his body copy. Wrote genuine translations of his exact body text into en, es-ES, es-419, it, zh-CN -- every in-line editor aside ('editor, please don't link X', 'you can link Y', the closing Las Vegas ask) kept verbatim in translation, nothing added or removed in any locale."
+    }
+  ],
+  "publishedAt": "2026-09-16T23:40:00Z",
+  "updatedAt": "2026-09-16T23:40:00Z"
+}
