@@ -77,6 +77,11 @@
       "status": "active",
       "at": "2026-09-15T23:01:34Z",
       "note": "New pin, operator-commissioned as a smoke test of the publishing pipeline (2026-09-15, same day as the public/private repo split). Fills two standing gaps at once: BACKLOG's outstanding 'North London — Dalston or Stoke Newington' ask, and near-events' mandatory dated-event check (Kyoko Takenaka book launch, 2026-09-23, filed as a child page). Research floor: near-deep-researcher pass across Time Out, London the Inside, The Infatuation, EastLondonLines, and the venue's own site; Reddit search returned no relevant threads (leg 2 of the UGC floor came up empty on this subject, not blocked — documented per the fallback-ladder honesty rule); Google Maps reviews checked directly via claude-in-chrome (leg 3) — 5.0/17, all positive, venue too new for a review pattern either way. Hero is a Time Out editorial photo of the actual Dalston venue from its opening coverage, attributed and linked. No operator-location-privacy conflict (this is London, not Baixada Santista)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-16T11:22:55Z",
+      "note": "Operator feedback: opening line read as internal process-narration (\"Start with X, because...\") and the shortTitle was flat. Rewrote the opener to state the fact directly, replaced a similar meta-commentary aside mid-body, and retitled to \"The Pub That Became A Bookshop\" across all six locales."
     }
   ],
   "geocode": {
@@ -87,5 +92,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/The+Common+Press+Dalston/@51.5544322,-0.0749814,17z/data=!3m1!4b1!4m6!3m5!1s0x48761d2fa5701ae1:0xa7c7f1d3f5b0f1ea!8m2!3d51.5544322!4d-0.0749814!16s%2Fg%2F11z80qr8qx"
   },
   "publishedAt": "2026-09-15T23:01:34Z",
-  "updatedAt": "2026-09-15T23:01:34Z"
+  "updatedAt": "2026-09-16T11:22:55Z"
 }
