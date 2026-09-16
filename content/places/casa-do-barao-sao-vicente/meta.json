@@ -1,0 +1,99 @@
+{
+  "slug": "casa-do-barao-sao-vicente",
+  "categories": ["city-culture"],
+  "tags": ["local-legend", "hidden-gem"],
+  "coordinates": {
+    "lat": -23.9673862,
+    "lng": -46.3822291
+  },
+  "place": {
+    "city": "São Vicente",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "plinio",
+  "sources": [
+    {
+      "name": "Prefeitura de São Vicente — official tourism page, \"Casa do Barão\"",
+      "url": "https://www.saovicente.sp.gov.br/visite-sao-vicente-1/o-que-fazer/casa-do-barao",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Casa do Barão / IHGSV — official institute site",
+      "url": "https://casadobarao.org.br/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Diário do Litoral — \"Casa do Barão, em São Vicente, pode ser tombada pelo IPHAN\" (Baixada Santista daily, preferred source)",
+      "url": "https://www.diariodolitoral.com.br/sao-vicente/casa-do-barao-em-sao-vicente-pode-ser-tombada-pelo-iphan/152054/",
+      "feedId": null,
+      "originalPublishedAt": "2021-12-16T11:52:00Z"
+    },
+    {
+      "name": "ipatrimonio.org — \"São Vicente – Casa do Barão e Cobertura Vegetal\" (Condephaat state heritage listing detail)",
+      "url": "https://www.ipatrimonio.org/sao-vicente-casa-do-barao-e-cobertura-vegetal/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Prefeitura de São Vicente — \"III Festival Indígena de São Vicente valoriza cultura, memória e ancestralidade dos povos originários\"",
+      "url": "https://www.saovicente.sp.gov.br/informacao/iii-festival-indigena-de-sao-vicente-valoriza-cultura-memoria-e-ancestralidade-dos-povos-originarios",
+      "feedId": null,
+      "originalPublishedAt": "2026-07-31T00:00:00Z"
+    },
+    {
+      "name": "Revista Nove — \"Casa do Barão, um remanescente da época áurea do café em São Vicente\"",
+      "url": "https://revistanove.com.br/nossa-historia/casa-do-barao-sao-vicente/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Cidade e Cultura — \"Casa do Barão em São Vicente: museu, memorial, biblioteca e muito mais\"",
+      "url": "https://www.cidadeecultura.com/casa-do-barao-sao-vicente/",
+      "feedId": null,
+      "originalPublishedAt": "2026-01-01T00:00:00Z"
+    },
+    {
+      "name": "Google Maps — Casa do Barão (pin verification + 22 recent reviews read for garden/animal/practical color)",
+      "url": "https://www.google.com/maps/place/Casa+do+Bar%C3%A3o/@-23.9673862,-46.3822291,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1d4172020a5b:0xbbb0d98340d0359e!8m2!3d-23.9673862!4d-46.3822291!16s%2Fg%2F11j4zgxr6m",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-16T00:00:00Z"
+    },
+    {
+      "name": "YouTube — IHGSV, \"História viva na Casa do Barão\" (institute-produced video, Dec 2025)",
+      "url": "https://www.youtube.com/watch?v=PG7jcDvXuWI",
+      "feedId": null,
+      "originalPublishedAt": "2025-12-09T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/casa-do-barao-sao-vicente/hero-facade.jpg",
+    "attribution": "Photo courtesy of the Prefeitura de São Vicente (official municipal tourism page)",
+    "attributionLink": "https://www.saovicente.sp.gov.br/visite-sao-vicente-1/o-que-fazer/casa-do-barao",
+    "licenseNote": "Sourced from the city government's own official tourism page for Casa do Barão (2499x1665 original, downloaded at 2048x1365), used as municipal promotional/informational material with the same implied consent this skill extends to an official government source. No identifiable faces in frame; shows the actual building facade, not a generic stand-in."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-16T12:00:00Z",
+      "note": "Operator-commissioned piece (chat request, named venue and address explicitly) -> trust: auto per rules.md trust-gate. near-write-article full pipeline run by PLINIO (historian byline, matches city-culture beat). Dedupe check (node scripts/check-duplicates.mjs) found no conflicting São Vicente entries. Research floor: near-deep-researcher-equivalent multi-source pass (8+ independent sources including the official IHGSV site, the city government's own tourism/news pages, Diário do Litoral -- an existing Tier-2 preferred source for the Baixada -- Revista Nove, Cidade e Cultura, ipatrimonio.org/Condephaat's state heritage listing, and a Dec-2025 IHGSV-produced YouTube video); Google reviews leg met directly (22 recent reviews read via Google Maps, browser tool, for garden/animal/practical detail -- no monkey mentions, confirmed volunteer-guide and on-site-cafe color); Reddit leg searched (site:reddit.com and general reddit queries) and returned no threads on this specific venue -- a niche municipal museum with no evident Reddit presence, logged as a null result rather than a blocked leg, substituted by the Google Maps UGC read. Operator's specific ask -- whether the garden currently has or used to have monkeys -- was checked explicitly against the institute's own materials, the Condephaat heritage listing (protects vegetation cover, describes it as a bird refuge, not primate habitat), regional press, and the 22 Google reviews: no source anywhere connects monkeys to this address. The one plausible explanation found: São Vicente has a separate municipal zoo-park, Parque Ecológico Voturuá, that turned up repeatedly in adjacent searches and may be what any such claim is conflating with this site. Verdict: UNCONFIRMED, not included in copy, stated explicitly in the body as checked-and-unconfirmed per the operator's instruction not to omit the check silently. III Festival Indigena de Sao Vicente (Aug 7-8 2026, this address) was verified current via the city's own July 2026 announcement, but was NOT nested as a dated child event page: the dates are already past relative to this piece's publish date (2026-09-16) and per the site's dates-out-of-evergreen-copy standing preference, no future edition date could be verified, so it's mentioned once in the body as a fact about what the venue hosts rather than pinned as an upcoming event. Video: near-video-finder equivalent selected the IHGSV's own Dec-2025 YouTube upload ('Historia viva na Casa do Barao') as the best available -- institute-produced, recent, on-topic; no embedded-player claim made, link only. Images: near-illustrator equivalent resolved two real, high-resolution official photos (no generated/stock fallback needed) -- the city government's own tourism-page facade shot (2048x1365) as hero, and the city's own III Festival Indigena announcement-page photo (1600x1066, taken at this address) as the in-body image, meeting the ceil(500/250)=2 image floor for a 500-word body. Both are official-source photos with implied-consent licensing per this skill's standing photo-provenance practice, downloaded and hosted locally. Sign-off (tov-police/language-tic-police/legal-counsel/chief-editor equivalent): no faux-candor opener, no crowd-consensus opener, no internal-discourse leakage (no mention of rotation/tiers/coverage-gap language in body copy -- confirmed on red-team re-read), unverified claims (monkeys, IPHAN federal listing finalization, mal-assombrado ghost-story nickname) explicitly hedged or omitted rather than stated as fact, no defamation-adjacent claims, real institute/government sources properly attributed and linked. Link density: 3 internal links (to amuse-beach-club-sao-vicente, quiosque-da-cris-sao-vicente, parada-lgbtqiapn-sao-vicente-2026) plus 5 external links to primary sources. Revenue pass (backlink-pr/affiliate-pr/ad-sales): no natural affiliate/purchase moment on a free municipal museum; backlink-pr candidate logged (IHGSV/Diário do Litoral relationship potential) to content/backlink-outreach.md as prospect only -- OUTREACH FROZEN, nothing sent. New preferred-source candidates (casadobarao.org.br, cidadeecultura.com, revistanove.com.br, ipatrimonio.org) logged to content/preferred-sources.md candidates section."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.97,
+    "query": "Casa do Barão, Rua Frei Gaspar, 280, Centro, São Vicente, SP — Google Maps place pin",
+    "verifiedAt": "2026-09-16T12:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Casa+do+Bar%C3%A3o/@-23.9673862,-46.3822291,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1d4172020a5b:0xbbb0d98340d0359e!8m2!3d-23.9673862!4d-46.3822291!16s%2Fg%2F11j4zgxr6m"
+  },
+  "publishedAt": "2026-09-16T12:00:00Z",
+  "updatedAt": "2026-09-16T12:00:00Z"
+}
