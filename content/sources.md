@@ -96,6 +96,48 @@ sources:
       returns malformed XML, near-editor should fall back to
       claude-in-chrome navigation against the site's listing pages.
 
+  - id: coifa
+    name: "Coifa"
+    category: food-drink
+    region: br
+    language: pt-BR
+    feedUrl: "https://coifa.substack.com/feed"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      near-sources-war-room, 2026-09-16. São Paulo's genuine indie
+      food-drink voice — the gap this run was scoped to close (the
+      catalogue previously had only catraca-livre for SP, a mainstream
+      city-culture aggregator, and no food-drink-specific source at
+      all). Independent, single-author (Cirilo Dias), reader-supported
+      Substack — "kitchen stories, shopping guides and places to eat
+      and drink well." Verified live RSS, weekly cadence (posts dated
+      2026-08-19 through 2026-09-16 at fetch time), covers São Paulo
+      restaurants/bars plus occasional coastal SP (Ubatuba) coverage.
+      Paid-subscription model for some posts but the RSS feed itself is
+      open. No login wall hit on the feed or archive.
+
+  - id: meus-discos-meus-drinks
+    name: "Meus Discos, Meus Drinks e Nada Mais"
+    category: nightlife-sound
+    region: br
+    language: pt-BR
+    feedUrl: "https://meusdiscosmeusdrinks.substack.com/feed"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      near-sources-war-room, 2026-09-16. Independent Substack by
+      journalist/bartender Bruno Capelas pairing an album with a
+      cocktail each issue; runs recurring city bar guides (São Paulo,
+      Rio, Curitiba, Santos among them — e.g. its "Espaço Zebra"
+      São Paulo bar-guide series). Verified live RSS, most recent post
+      2026-08-28 (within the 90-day freshness bar). Secondary voice —
+      lifestyle/music-forward rather than food-drink-first, filed under
+      nightlife-sound rather than food-drink for that reason. Genuinely
+      independent and specific, not a listicle aggregator.
+
   - id: resident-advisor
     name: "Resident Advisor — News"
     category: nightlife-sound
