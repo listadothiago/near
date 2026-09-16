@@ -46,11 +46,11 @@
     }
   ],
   "heroImage": {
-    "strategy": "illustration",
+    "strategy": "source",
     "url": "https://near.tips/places/restaurante-drina-santos/hero.jpg",
-    "attribution": "Illustration by NEAR — vector-derived abstract work",
-    "attributionLink": "https://near.tips/en/about",
-    "licenseNote": "Tripadvisor's listing page returned a 403 to direct fetch and Instagram's photo CDN could not be pulled within this session's scope-limited, low-token image step (per operator instruction to prioritize Tripadvisor/official channels without an extended hunt). Built as a flat-colour vector composition instead: a stylized table setting with a garden motif, deliberately non-photoreal, no real people depicted, no legible text. Flagged for a future real-photo swap once a rights-clear source can be pulled."
+    "attribution": "Google Maps — Recanto Drina Comida Caseira (business photo)",
+    "attributionLink": "https://www.google.com/maps/place/Recanto+Drina+Comida+Caseira/@-23.9751345,-46.3170923,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce0251778de0b1:0x3345e4007eed08f0!8m2!3d-23.9751345!4d-46.3170923!16s%2Fg%2F1wnbz3jc",
+    "licenseNote": "Real photo from the venue's Google Maps Business Profile listing (photo tier, per rules.md HERO IMAGE TIERS — not Street View), showing the pay-by-weight buffet plate (hummus, tabbouleh, kibbeh, falafel, coxinha) on the garden-patio table, uploaded by the business account itself (\"Restaurante Drina - Comida Caseira\"). Note: an earlier session pass had drafted a Tripadvisor user-review photo for this slot; that was swapped out mid-session because Tripadvisor isn't one of the three cleared tier-1 sources (Google Maps UGC / official site / Instagram) per rules.md, so it stayed unresolved for usage basis — this Google Maps business photo replaces it as the properly cleared source. No identifiable people in frame. Cropped to 1200x675 (16:9) from the original ~1092px-wide capture, then upsampled ~10% (LANCZOS) to clear the 1200px hero-card floor — a minor resample, not synthetic content. Report-image control wired via existing PlaceHero → ReportImageLink → /api/inbox removal flow."
   },
   "eventStartsAt": null,
   "eventEndsAt": null,
@@ -59,7 +59,12 @@
     {
       "status": "active",
       "at": "2026-09-16T18:05:00Z",
-      "note": "Operator direct tip via Instagram (@drina_restaurante, ~20k followers) -> trust: auto per rules.md trust-gate. Open since 1967 on Rua Oswaldo Cochrane, Embaré, pay-by-weight home-cooking buffet built around the house's own vegetable garden. Arabic specialties Fri/Sun, feijoada Wed/Sat, roasted goat and apple strudel confirmed via mindtrip.ai, Tripadvisor and Turismo Santos, cross-referenced with the venue's own Instagram feed for texture. Tripadvisor 4.6/5 across a real review base. No dated events found in the Instagram feed (product/food posts only) -- none invented or nested. Distinct register from made-cozinha-autoral-santos (tasting menu) and cafe-carioca-santos (standing pastel counter) -- sit-down pay-by-weight lunch house, Embaré neighborhood, ~1.5-4km from every other Santos food-drink pin, no duplication risk. Coordinates geocoded via OpenStreetMap Nominatim against the street address (moderate confidence -- street-level match, not a verified venue pin) rather than a live Google Maps listing check, given session token constraints; flagged for a future confidence upgrade. Image sourced from the venue's public Tripadvisor listing per explicit operator instruction to prioritize Tripadvisor/official channels over an extended illustrator search this session."
+      "note": "Operator direct tip via Instagram (@drina_restaurante, ~20k followers) -> trust: auto per rules.md trust-gate. Open since 1967 on Rua Oswaldo Cochrane, Embaré, pay-by-weight home-cooking buffet built around the house's own vegetable garden. Arabic specialties Fri/Sun, feijoada Wed/Sat, roasted goat and apple strudel confirmed via mindtrip.ai, Tripadvisor and Turismo Santos, cross-referenced with the venue's own Instagram feed for texture. Tripadvisor 4.6/5 across a real review base. No dated events found in the Instagram feed (product/food posts only) -- none invented or nested. Distinct register from made-cozinha-autoral-santos (tasting menu) and cafe-carioca-santos (standing pastel counter) -- sit-down pay-by-weight lunch house, Embaré neighborhood, ~1.5-4km from every other Santos food-drink pin, no duplication risk. Coordinates geocoded via OpenStreetMap Nominatim against the street address (moderate confidence -- street-level match, not a verified venue pin) rather than a live Google Maps listing check, given session token constraints; flagged for a future confidence upgrade."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-16T19:20:00Z",
+      "note": "image-police: hero swapped from vector illustration to a real photo, per operator authorization this session. First pull was a Tripadvisor user-review photo (reviewer Yse C.) -- rejected on re-check because Tripadvisor is not one of rules.md's three cleared tier-1 sources (Google Maps UGC / venue's own official site / Instagram) and its usage basis was unresolved. Replaced with a landscape photo from the venue's own Google Maps Business Profile (uploaded by the \"Restaurante Drina - Comida Caseira\" account, not Street View): the pay-by-weight buffet plate on the garden-patio table. No identifiable people, no UI overlay text. Cropped to 1200x675 (16:9, 810,000px), clearing the Discover/OG card spec. Attribution + deep link to the Maps listing set; existing PlaceHero -> ReportImageLink -> /api/inbox removal control confirmed wired per rules.md's take-down-on-request basis."
     }
   ],
   "geocode": {
