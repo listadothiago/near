@@ -55,19 +55,19 @@ export default function weservLoader({
   url.searchParams.set("url", src.replace(/^https?:\/\//, ""));
   url.searchParams.set("w", String(width));
   url.searchParams.set("q", String(quality ?? 75));
-  // weserv's own default is a 1-year Cache-Control, fronted by Cloudflare's
-  // edge — so once a given (url, width, quality) combo is cached, swapping
-  // the file at the same near.tips URL (e.g. a hero-image fix) can stay
-  // invisible at already-warmed edge PoPs for up to a year, with no purge
-  // API available to us. Found 2026-09-16: a corrected Restaurante Drina
-  // hero was live and byte-correct at the origin, and even a fresh
-  // large-width weserv request showed the fix, but the small width the
-  // feed card actually requests was still serving the old cached image.
-  // Cap same-origin (near.tips) images to a 1-hour edge TTL so a content
-  // fix propagates within the hour instead of silently waiting out a
-  // year-long cache — matches this content's own revalidate=3600 cadence.
-  if (/^https?:\/\/near\.tips\//.test(src)) {
-    url.searchParams.set("maxage", "1h");
-  }
+  // Reverted 2026-09-16: tried adding a "maxage" param here to force a
+  // shorter edge TTL on same-origin images after a stale-hero incident
+  // (Restaurante Drina's corrected photo wasn't showing at the small
+  // width the feed card requests, even though the origin file and a
+  // large-width request both already showed the fix). That param isn't
+  // real weserv API surface — weserv silently ignores it and still
+  // returns its own 1-year Cache-Control regardless. All it actually did
+  // was change every image URL on the entire site at once, which forced
+  // a simultaneous cold-cache stampede on weserv's free shared proxy and
+  // made images across unrelated pages load slowly or not at all. Reverted
+  // in full; the underlying staleness problem (no purge path for a
+  // swapped same-URL image on a long-lived free CDN) is still open and
+  // needs a real fix — e.g. versioning the URL in heroImage.url itself
+  // when an image is swapped, not a loader-level cache-control override.
   return url.toString();
 }
