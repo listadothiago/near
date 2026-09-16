@@ -1,0 +1,78 @@
+{
+  "slug": "uchi-bake-angel-camden-passage-london",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem"],
+  "coordinates": {
+    "lat": 51.534691,
+    "lng": -0.1040013
+  },
+  "place": {
+    "city": "London",
+    "neighborhood": "Angel / Islington",
+    "region": "England",
+    "country": "United Kingdom"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Hot Dinners — Japanese bakery Uchi Bake is opening on Islington's Camden Passage",
+      "url": "https://www.hot-dinners.com/2026072215242/Gastroblog/Latest-news/uchi-bake-japanese-bakery-camden-passage-angel-islington",
+      "feedId": null
+    },
+    {
+      "name": "The Infatuation — Uchi Bake Angel",
+      "url": "https://www.theinfatuation.com/london/reviews/uchi-bake-angel",
+      "feedId": null
+    },
+    {
+      "name": "London On The Inside — Uchi Bake (Clapton)",
+      "url": "https://londontheinside.com/location/uchi-bake/",
+      "feedId": null
+    },
+    {
+      "name": "JULIAXEATS — Uchi Bake: Japanese Sandos & Desserts in East London",
+      "url": "https://juliaxeats.com/uchi-bake-japanese-sandos-desserts-in-east-london/",
+      "feedId": null
+    },
+    {
+      "name": "Uchi Bake — Instagram (@uchibake)",
+      "url": "https://www.instagram.com/uchibake/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — Uchi Bake Angel listing and reviews",
+      "url": "https://www.google.com/maps/place/Uchi+Bake+Angel/@51.534691,-0.1040013,17z",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/uchi-bake-angel-camden-passage-london/hero-egg-sando.jpg",
+    "attribution": "Photo via Uchi Bake's own Instagram (@uchibake)",
+    "attributionLink": "https://www.instagram.com/p/DdEHQgdDTbv/",
+    "licenseNote": "near-illustrator sign-off: real source photo (tier 1), a tamago sando held at a window sill, posted to the venue's own @uchibake account (46 likes, caption 'We never short change you on filling'). No identifiable face in frame (hand/forearm only). Scope-limited image search per operator instruction: checked Tripadvisor first (no distinct listing exists yet for this 7-week-old second site) and the venue's own channels (no separate official website beyond Instagram; Instagram had usable, on-brand, face-free product photography). Instagram's CDN URLs are signed and expire, so the image was captured and is hosted locally at /public/places/uchi-bake-angel-camden-passage-london/hero-egg-sando.jpg rather than hotlinked directly (same third-party-file-capture pattern as bar-etienne-west-village-new-york-city; flagging for operator visibility, swap on request). KNOWN GAP: image is portrait (806x1074, ~3:4), not the ~16:9 Discover hero spec — logged as an open Discover-audit finding rather than expanding the search past the operator's stated scope limit (Tripadvisor/official site/Instagram only); a 16:9-cropped replacement or image-proxy fix is outstanding follow-up work, same category as TOAD Bakery's prior aspect-ratio gap."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-16T14:40:00.000000+00:00",
+      "note": "Operator-commissioned (trust: auto). Dedupe check (scripts/check-duplicates.mjs) clean — no pair involving this slug among the 8 flagged proximity pairs. near-events: no genuine dated/upcoming event found for either Uchi Bake site (Instagram feed is product/opening posts only, no programming); correct outcome for a bakery counter, nothing to nest. Research floor: near-deep-researcher equivalent run across Hot Dinners (opening announcement, address, opening-week menu), The Infatuation (discovery listing, acknowledges not yet reviewed in depth), London On The Inside and JULIAXEATS (both on the original Clapton site, menu/pricing detail carried over as the same concept). Reddit: searched r/london and site:reddit.com via web search; genuinely no thread exists yet for a venue this new (7 weeks old at Angel) — floor met as 'checked, none found,' not a blocked leg. Google reviews: read live via claude-in-chrome (Google Maps blocks nothing here, no escalation needed) — 3.7 stars/42 reviews, three most-recent reviews read directly and quoted/paraphrased in-body (tamago sando praise, 'drinks on the smaller side' critique), reported honestly rather than rounded up. Instagram (@uchibake, 15.6K followers, both Angel and Hackney locations run from one account) read directly for events (none) and images (two photos selected, see heroImage and in-body image notes). Five preferred-source-equivalent consultations: Hot Dinners, The Infatuation, London On The Inside, JULIAXEATS, Instagram — five sources beyond Google/Reddit, per the floor."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-16T15:50:00.000000+00:00",
+      "note": "Coordinator sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief-editor lenses): opening avoids bare-name and banned-formula openers; no crowd-consensus framing; no internal-discourse leakage (no mention of Near's tiers/rotation/coverage gaps in body copy); honest on the 3.7-star rating rather than cherry-picking only positive reviews; age-neutral framing throughout. Legal: the 'drinks on the smaller side' Google review critique is a fair, sourced, non-defamatory quality note, not a business-threatening allegation, and is attributed to 'a recent Google reviewer' per platform-attribution convention; no real-person likeness issues (no staff named); Instagram image use follows the same implied-consent basis this skill extends to a venue's own official channels, no identifiable faces. Structural rules: two paragraph breaks added to keep every paragraph under 100 words; two sub-headers at density (feeds 466-word body, floor is ceil(466/250)=2 images — hero plus one in-body drinks-counter image meets the floor exactly). Link-density: five in-text external links (Hot Dinners x2, London On The Inside, JULIAXEATS, Google Maps) plus one internal NearLink (Borough Market) — passes. Price signal: JULIAXEATS's itemized Clapton pricing (£3.20-£6.50) carried into body as the best available current price data (menu is shared across both sites); no Angel-specific price sheet found, disclosed as such rather than invented. Red team: no price stated as more current than sourced; no internal jargon; queue/Saturday framing reads reader-facing, matches operator's brief (weekday mornings easy, Saturday line 'keeps moving', explicitly avoiding a stunt-queue narrative). Discover audit: hero fails the ~16:9 aspect spec (portrait Instagram capture, see heroImage licenseNote) — logged as an open finding, not blocking publish, same category as a prior TOAD Bakery gap; headline/shortTitle do not over-promise past the body. Revenue pass (outreach FROZEN, logging only): backlink-pr — no existing relationship with hot-dinners.com or theinfatuation.com in content/backlink-outreach.md, logged as a prospect target for this slug, no send; affiliate-pr — no natural purchase moment (walk-in bakery, no bookable/ticketed element), logged none; ad-sales — Uchi Bake (both sites) and neighbouring Camden Passage tenants (Katsute 100) now sourced/contactable, logged as prospects, no outreach sent. Six locale editions written (pt-BR, es-ES, es-419, it, zh-CN, plus this en) each a genuine local edition at/above the 150-word floor with its own publishNote."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 0.95,
+    "query": "Uchi Bake Angel, Nineteen, Camden Passage, London N1 8EA — Google Maps listing pin",
+    "verifiedAt": "2026-09-16T14:20:00.000000+00:00",
+    "googleMapsUrl": "https://www.google.com/maps/place/Uchi+Bake+Angel/@51.534691,-0.1040013,17z/data=!3m1!4b1!4m6!3m5!1s0x48761b1112576519:0x42ed341d41056b79!8m2!3d51.534691!4d-0.1040013!16s%2Fg%2F11ntct33zg"
+  },
+  "publishedAt": "2026-09-16T14:40:00.000000+00:00",
+  "updatedAt": "2026-09-16T15:50:00.000000+00:00"
+}
