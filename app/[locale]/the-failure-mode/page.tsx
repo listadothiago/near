@@ -12,7 +12,7 @@ import CollectionCards from "@/components/collection/CollectionCards";
 import theFailureModeIndex from "@/content/the-failure-mode-index.json";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // The Failure Mode, Near's AI-content-practice column, has no dedicated
 // content type of its own — each issue is a regular collection (see

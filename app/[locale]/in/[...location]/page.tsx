@@ -22,7 +22,7 @@ import LocationLadder from "@/components/location/LocationLadder";
 import LocationFreshness from "@/components/location/LocationFreshness";
 import { Link } from "@/lib/i18n/navigation";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 /**
  * Addressable location pages — the crawlable half of "location-filtered

@@ -12,7 +12,7 @@ import CollectionCards from "@/components/collection/CollectionCards";
 import theSetlistIndex from "@/content/the-setlist-index.json";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // The Setlist, Near's monthly live-music column, has no dedicated content
 // type of its own — each entry is a regular collection (see

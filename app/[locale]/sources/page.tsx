@@ -12,7 +12,7 @@ import Footer from "@/components/layout/Footer";
 import SubmitForm from "@/components/inbox/SubmitForm";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

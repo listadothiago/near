@@ -7,7 +7,7 @@ import { getStats } from "@/lib/content/loader";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

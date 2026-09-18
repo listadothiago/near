@@ -27,7 +27,7 @@ import { getBaseUrl } from "@/lib/seo/site";
 // earlier comment here claimed revalidation handled expiry, which was
 // true only within the hour and not at all for a page served from cache
 // beyond it.
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // The six locale home pages are the most-crawled URLs on the site and were
 // shipping with neither a canonical nor an hreflang set — six near-identical

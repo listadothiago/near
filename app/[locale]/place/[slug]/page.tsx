@@ -34,7 +34,7 @@ import BackLink from "@/components/layout/BackLink";
 import PlaceFavoriteButton from "@/components/layout/PlaceFavoriteButton";
 import { getStats } from "@/lib/content/loader";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 export function generateStaticParams() {
   const slugs = getAllPlaceSlugs();

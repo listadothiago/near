@@ -15,7 +15,7 @@ import BackLink from "@/components/layout/BackLink";
 import AuthorAvatar from "@/components/layout/AuthorAvatar";
 import PlaceCards from "@/components/board/PlaceCards";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>

@@ -12,7 +12,7 @@ import CollectionCards from "@/components/collection/CollectionCards";
 import ladiesAndGentlethemIndex from "@/content/ladies-and-gentlethem-index.json";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // Ladies&Gentlethem, Near's monthly LGBTQIAPN+ roundup, has no dedicated
 // content type of its own — each entry is a regular collection (see

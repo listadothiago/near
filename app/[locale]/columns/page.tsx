@@ -19,7 +19,7 @@ import ladiesAndGentlethemIndex from "@/content/ladies-and-gentlethem-index.json
 import thePassIndex from "@/content/the-pass-index.json";
 import theFailureModeIndex from "@/content/the-failure-mode-index.json";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // The landing page one level above the five standing-column archives
 // (/column, /the-setlist, /ladies-and-gentlethem, /the-pass,

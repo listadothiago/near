@@ -12,7 +12,7 @@ import CollectionCards from "@/components/collection/CollectionCards";
 import blogDoThiagoIndex from "@/content/blog-do-thiago-index.json";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // "blog do thiago" (content/blog-do-thiago.md) is Near's one
 // operator-authored column -- credited to the real human curator, not a

@@ -12,7 +12,7 @@ import CollectionCards from "@/components/collection/CollectionCards";
 import editorialColumnIndex from "@/content/editorial-column-index.json";
 import { buildAlternates } from "@/lib/seo/alternates";
 
-export const revalidate = 3600;
+export const revalidate = 21600;
 
 // Near's recurring weekly editorial column has no dedicated content type
 // of its own — each entry is a regular collection (see
