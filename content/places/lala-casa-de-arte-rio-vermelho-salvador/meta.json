@@ -1,0 +1,74 @@
+{
+  "slug": "lala-casa-de-arte-rio-vermelho-salvador",
+  "categories": [
+    "city-culture",
+    "nightlife-sound"
+  ],
+  "tags": [
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -13.0109006,
+    "lng": -38.4938445
+  },
+  "place": {
+    "city": "Salvador",
+    "neighborhood": "Rio Vermelho",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "cubic-v",
+  "sources": [
+    {
+      "name": "Google Maps — Multiespaço Lalá listing and reviews",
+      "url": "https://www.google.com/maps/place/Multiespa%C3%A7o+Lal%C3%A1/@-13.0109006,-38.4938445,17z/data=!3m1!4b1!4m6!3m5!1s0x7160350ecbcbf29:0xbf5922d6e94a0723!8m2!3d-13.0109006!4d-38.4938445!16s%2Fg%2F11b6mqx8dz",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "The Summer Hunter — Salvador: Lalá Casa de Arte, Ricardo Dantas",
+      "url": "https://thesummerhunter.com/salvador-lala-casa-arte-ricardo-dantas/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Catraca Livre — Lálá Multiespaço: a casa dedicada às artes integradas de Salvador",
+      "url": "https://catracalivre.com.br/gira/lala-multiespaco-salvador/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "LÁLÁ — official Instagram (@lalacasadearte)",
+      "url": "https://www.instagram.com/lalacasadearte/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/lala-casa-de-arte-rio-vermelho-salvador/hero.jpg",
+    "attribution": "Photo from Lalá Casa de Arte's own official Instagram (@lalacasadearte)",
+    "attributionLink": "https://www.instagram.com/p/DUn8lmagPA9/",
+    "licenseNote": "Real, non-AI photo posted directly to the venue's own official Instagram (@lalacasadearte, 18.1K followers) — a candid shot of the space's interior with a person present, not an event poster. No AI generation."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T21:35:00Z",
+      "note": "Operator request (chat, 2026-09-21): fourth Salvador pin. Multiespaço Lalá / Lalá Casa de Arte is a four-story oceanfront cultural space in Rio Vermelho founded by Bahian entrepreneur Ricardo Dantas, five years running at the time of its most recent press coverage. Genuinely substantial: named artists across its history include Baco Exu do Blues, Larissa Luz, Alice Caymmi, Juçara Marçal, Márcia Castro and Letieres Leite, and it runs the Festival Oferendas (Yemanjá celebration, 9th edition referenced in coverage). Google Maps verified live via browser: 4.5 stars, 139 reviews, listed as a 'Centro cultural,' R. da Paciência 329, Rio Vermelho. IMPORTANT honesty note, flagged rather than glossed over: entry is largely invitation-based through personal networks ('friends inviting friends'), per The Summer Hunter's feature — this is disclosed plainly in the body rather than implied to be open, walk-in nightlife like SAN. The Festival Oferendas date (Feb 1-2) found in coverage did not specify a confirmed year, so it was deliberately NOT nested as a dated event (eventStartsAt/eventEndsAt left null) — mentioned only descriptively in the body as a recurring annual event, per the operator's anti-fabrication standard for dated events. A future pass should confirm the next edition's exact date before nesting it. Instagram (@lalacasadearte, 18.1K followers) supplied a real, non-AI candid interior photo for the hero. Single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Multiespaço Lalá, R. da Paciência 329, Rio Vermelho, Salvador - BA — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T21:20:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Multiespa%C3%A7o+Lal%C3%A1/@-13.0109006,-38.4938445,17z/data=!3m1!4b1!4m6!3m5!1s0x7160350ecbcbf29:0xbf5922d6e94a0723!8m2!3d-13.0109006!4d-38.4938445!16s%2Fg%2F11b6mqx8dz"
+  },
+  "publishedAt": "2026-09-21T21:35:00Z",
+  "updatedAt": "2026-09-21T21:35:00Z"
+}
