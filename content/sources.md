@@ -1997,6 +1997,40 @@ sources:
       among several — covering the city's culture from the commercial
       dailies alone would misrepresent it. Verified 2026-09-03.
 
+  - id: roda-cultural
+    name: "Roda Cultural"
+    category: city-culture
+    region: br
+    language: pt-BR
+    feedUrl: "https://rodacultural.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Salvador. Self-described "Agenda Alternativa de Salvador" —
+      reader-funded via Apoia.se, original reporting/interviews (byline
+      Rafaele Libório), covers music, gastronomy, cinema, theater,
+      exhibitions and "rolês." Operator-found and verified 2026-09-21;
+      corroborated the Festival da Primavera signal independently
+      surfaced via bahia.ba/aloalobahia.
+
+  - id: el-cabong
+    name: "el Cabong"
+    category: nightlife-sound
+    region: br
+    language: pt-BR
+    feedUrl: "https://elcabong.com.br/feed/"
+    feedType: rss
+    trust: auto
+    status: active
+    notes: >
+      Salvador. Independent Bahian/Brazilian music journalism, "para
+      quem gosta de música sem preconceito" — original interviews and
+      critical reviews across genres (samba, forró, rock, rap, jazz,
+      electronic). Also runs a dated events agenda at
+      https://elcabong.com.br/agenda/ (venue/time listings) useful
+      directly for near-events. Operator-found and verified 2026-09-21.
+
   - id: bhaz
     name: "BHAZ"
     category: city-culture
