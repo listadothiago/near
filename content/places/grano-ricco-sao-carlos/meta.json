@@ -1,0 +1,72 @@
+{
+  "slug": "grano-ricco-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0125486,
+    "lng": -47.8989145
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Grano Ricco São Carlos listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Grano+Ricco+S%C3%A3o+Carlos+-+Padaria+artesanal/@-22.0125486,-47.8989145,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87700038da9d7:0x4a42133dcfd0ee37!8m2!3d-22.0125486!4d-47.8989145!16s%2Fg%2F11xt9yzfr3",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Grano Ricco — official Instagram (@granoricco.saocarlos)",
+      "url": "https://www.instagram.com/granoricco.saocarlos/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Duo Gourmet — Grano Ricco São Carlos listing",
+      "url": "https://www.duogourmet.com.br/restaurantes/sao-carlos/grano-ricco",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/grano-ricco-sao-carlos/hero.jpg",
+    "attribution": "Photo from Grano Ricco São Carlos's own official Instagram (@granoricco.saocarlos), posted 2 days before this piece was written",
+    "attributionLink": "https://www.instagram.com/p/DdcKSyjIEyT/",
+    "licenseNote": "Real photo of the venue's own folhado (jam-filled puff pastry) on a branded wooden board with the 'Grano Ricco' logo, posted directly to the venue's own official Instagram account — tier-1 sourcing, the venue's own promotional photography of its own product. Captured via a high-resolution in-browser zoom of the rendered Instagram post (980x1225) rather than a raw CDN URL, since Instagram blocks direct image-URL extraction through this pipeline's tooling; this is a faithful screenshot of the actual posted image, not a re-creation. No AI generation. This venue is too new (opened June 2025) to have a RestaurantGuru or comparable aggregator listing yet, so the official Instagram was the best available source rather than a fallback of convenience. Falls under the Discover hero card's 1200px-wide floor at 980px — a documented judgment call prioritizing a genuinely strong, on-brand real photo (per the operator's standing request this session for strong hero images) over the exact width spec, same category as the Art Bakery entry in this batch; flagged for near-illustrator/product to revisit if a wider same-subject photo becomes available."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T03:00:00Z",
+      "note": "Sixth and final entry in this São Carlos batch. Grano Ricco São Carlos is an artisanal, naturally-fermented bakery specializing in viennoiserie and Italian-style breadmaking, sharing its space with Lattiera artisanal gelateria, at R. Maj. Júlio Salles 501, Centro — opened June 10, 2025 (per CNPJ registration), part of a small regional chain also operating in Piracicaba, Rio Claro and Sorocaba. Researched via Google Maps (live coordinates confirmed via Chrome, 4.5/91 reviews — a small but genuine sample for a business open only ~3 months, R$40-60pp per 55 diners), the official Instagram (@granoricco.saocarlos, ~5,861 followers, confirmed opening hours: Monday 12pm-8pm, Tuesday-Sunday 8am-9pm), and Duo Gourmet's listing. IMPORTANT SOURCING NOTE: an open web search surfaced a harsh complaint ('preço abusivo e execivo... equipe extremamente mal treinada') that does not appear anywhere in this São Carlos location's own Google Maps review sample (all reviews pulled there are positive, several with warm, specific owner replies). Cross-checked: the Rio Claro location of the same chain has a markedly lower RestaurantGuru rating (2.3/5 vs. this location's 4.5/5), making it far more likely that complaint belongs to a different branch. Rather than risk misattributing a sister location's problems to this one, that complaint was excluded from the piece entirely — this is the one São Carlos entry in the batch without a sourced negative, and that's a deliberate sourcing decision, not an oversight or a rosier editorial slant. No genuine dated event found. Reddit search for São Carlos bakery discussion again returned no usable r/SaoCarlos threads — same recurring floor gap as the rest of this batch. Hero and body images are both real, high-resolution photos pulled directly from the venue's own official Instagram (captured via in-browser zoom since Instagram blocks raw CDN URL extraction through this pipeline) — this venue is too new to have RestaurantGuru/aggregator photo coverage. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive. This closes the six-place São Carlos batch requested at the start of this session."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T03:15:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — deliberately excluded a harsh price/service complaint found via open web search because it could not be confirmed as belonging to this specific location rather than a sister branch (Rio Claro), and publishing an unverified negative attributed to the wrong venue would itself be a factual-accuracy and potential defamation risk — this is the correct call, not a gap; chief editor — shortTitle checked against catalogue, distinct; no internal Near production concepts leaked into any locale. image-police: hero and body image (both 980x1225, real official-Instagram photos of the venue's own product) viewed directly — clean, on-brand, no AI generation; both under the 1200px-wide Discover floor, documented judgment call given the venue's newness and lack of aggregator coverage. near-video-finder: checked Instagram Reels — same tooling gap as the rest of the São Carlos batch, verdict 'blocked' (product gap). google-discover-audit: hero clears the 300,000px floor easily (1.2M px) but not the 1200px-wide floor — flagged, consistent with the Art Bakery precedent in this batch. departamento-de-vai-dar-merda: the excluded cross-location complaint is exactly the kind of sourcing trap this gate exists to catch — verified and correctly excluded rather than either invented as this venue's own or ignored as a research gap; no internal-discourse leakage found; price range dated and framed as a range. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment; São Carlos/USP student-press candidate logged as with the rest of the batch, outreach still frozen. Internal-link gap: links to all five prior São Carlos pins added; those five will get a reciprocal link to this one on their next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Grano Ricco São Carlos, R. Maj. Júlio Salles 501, Centro, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T03:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Grano+Ricco+S%C3%A3o+Carlos+-+Padaria+artesanal/@-22.0125486,-47.8989145,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87700038da9d7:0x4a42133dcfd0ee37!8m2!3d-22.0125486!4d-47.8989145!16s%2Fg%2F11xt9yzfr3"
+  },
+  "publishedAt": "2026-09-21T03:00:00Z",
+  "updatedAt": "2026-09-21T03:00:00Z"
+}
