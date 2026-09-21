@@ -70,6 +70,11 @@
       "status": "active",
       "at": "2026-09-21T00:20:00Z",
       "note": "Single-coordinator self-checked sign-off pass (no subagents, per the operator's standing token-efficiency directive): near-tov-police (no bare-name/crowd-consensus opener, no AI-tell sludge, honest register, both positive and negative UGC represented) — clean; language-tic-police — checked English and all five translated locales for merged paragraphs/dropped sub-headers, none found, each locale keeps both sub-headers and both images; near-legal-counsel — the one negative review (slow delivery, cited rider shortage) is a sourced, fairly-attributed operational complaint, not a defamation-adjacent allegation, no real-person likeness issues, all photo attribution documented; chief editor — shortTitle checked against catalogue for repeated formula, distinct; no internal Near production concepts (tiers, rotation, coverage gaps) leaked into any locale body. image-police: viewed hero (1200x900, real storefront photo) and body image (1200x1600, real menu item photo) — both clear the Discover card floor, no AI generation, provenance documented above. near-video-finder: checked venue Instagram Reels for an embeddable video — Instagram does not offer a stable oEmbed/iframe path through this pipeline's current tooling, so verdict is 'blocked' (product gap, not a content failure) — logged rather than claimed as embedded. google-discover-audit: hero meets 1200px-wide/300,000px/~16:9 spec; shortTitle is a real claim the body supports (student queue framing is backed by the USP-proximity sourcing), not an over-promise. departamento-de-vai-dar-merda red team: price (R$40-60pp, itemized menu prices) is dated with a verification date and framed as a range that survives modest changes, not a single headline number; no internal-discourse leakage found in any locale. backlink-pr/affiliate-pr/ad-sales revenue pass: no natural affiliate/purchase moment (no bookable event/room), no obvious ad-sales lead beyond the venue itself; backlink-pr logged as a candidate outreach target in content/backlink-outreach.md for a future São Carlos/USP student-press pitch once outreach unfreezes. Internal-link gap logged in content/requests.md (first São Carlos pin, nothing to link to yet)."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T00:30:00Z",
+      "note": "Added a reciprocal internal link to the newly published Rock Burger House (São Carlos's second pin) in all six locales, closing the internal-link gap logged at first publish. No factual changes."
     }
   ],
   "geocode": {
@@ -80,5 +85,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Caverna+da+Gordura+-+S%C3%A3o+Carlos/@-22.0094306,-47.8980471,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87745d4576395:0x585e6b01b71667f2!8m2!3d-22.0094306!4d-47.8980471!16s%2Fg%2F11fjsw3vr1"
   },
   "publishedAt": "2026-09-21T00:00:00Z",
-  "updatedAt": "2026-09-21T00:00:00Z"
+  "updatedAt": "2026-09-21T00:30:00Z"
 }

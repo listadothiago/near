@@ -1,0 +1,84 @@
+{
+  "slug": "rock-burger-house-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.011468,
+    "lng": -47.8861803
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Rock Burger House listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Rock+Burger+House/@-22.011468,-47.8861803,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772db23b2d79:0x447c4d04890f693d!8m2!3d-22.011468!4d-47.8861803!16s%2Fg%2F11c31s04wz",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "RestaurantGuru — Rock Burger House menu, prices, reviews and photos",
+      "url": "https://restaurantguru.com/Rock-Dog-Sao-Carlos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Tripadvisor — Rock Burger House reviews",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g303627-d12007531-Reviews-Rock_Burger_House-Sao_Carlos_State_of_Sao_Paulo.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Rock Burger House — official iFood delivery menu",
+      "url": "https://www.ifood.com.br/delivery/sao-carlos-sp/rock-burger-house-hamburgueria-centro/cc27e119-0a9d-4e32-8a1b-fa9ca7282e2f",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Rock Burger House — official Instagram",
+      "url": "https://www.instagram.com/rockburgerhouse/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/rock-burger-house-sao-carlos/hero.jpg",
+    "attribution": "Photo of Rock Burger House's own rock-themed dining room, sourced via RestaurantGuru's mirrored Google Maps listing photos",
+    "attributionLink": "https://restaurantguru.com/Rock-Dog-Sao-Carlos",
+    "licenseNote": "Real interior photo of the venue's own dining room wall — a genuine Fender Stratocaster mounted alongside Beatles/Queen/Rolling Stones/Janis Joplin poster art over red vinyl diner booths, confirming the 'rock vibe' this place is picked for rather than an invented theme. Sourced from RestaurantGuru's photo gallery (which mirrors this listing's Google Maps photos). Original frame was 1200x900 with RestaurantGuru's own site-mascot sticker overlaid in the bottom-right corner (their UI element, not part of the venue); cropped to 1200x560 to remove that overlay entirely while keeping the full wall display — a deliberate crop, not a generative edit. No AI generation. RestaurantGuru is an aggregator rather than the original photographer, so per-photo individual creator credit isn't available beyond the listing itself."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T00:30:00Z",
+      "note": "Second entry in the São Carlos batch from the same personal recommendation list as Caverna da Gordura, picked next because it surfaced organically as a related/nearby place in that entry's own Google Maps research. Rock Burger House has been open since 2016 at Av. Dr. Carlos Botelho 2508, Centro — a burger bar with a genuinely rock-themed interior (mounted electric guitar, classic-rock poster wall, red diner-style booths), not just a name. Researched via Google Maps (live coordinates confirmed via Chrome, 4.7/912 reviews, R$40-60pp per 59 diners, Google's own business attributes flag it as LGBTQ+-friendly and women-owned), RestaurantGuru (4.8/5, 899 reviews), Tripadvisor (4.6/5, #79 of 301 São Carlos restaurants), the official iFood delivery menu, and the venue's own Instagram. UGC on Google Maps quoted directly and positively (fast table-side tablet ordering, good background music, well-chosen ingredients on the coxinha starter); no negative pattern found in the reviews sampled, unlike Caverna da Gordura's delivery complaint — noted honestly rather than manufacturing a contrarian angle. Reddit search for São Carlos dining/USP discussion again returned no usable r/SaoCarlos threads; logged as the same recurring floor gap as the first São Carlos piece. No genuine dated/upcoming event found — Instagram reads as a menu/atmosphere feed, closed Mondays, opens Tuesday 18:00, so no event is claimed. Hero image required extra care: RestaurantGuru's own site-mascot sticker overlay sat over the best available interior shot (the guitar/poster wall), so the frame was cropped to 1200x560 to remove the overlay entirely rather than publishing it with a third-party cartoon stuck in the corner — full crop rationale in heroImage.licenseNote. Full six-locale coverage, self-checked sign-off pass (near-tov-police/language-tic-police/near-legal-counsel/chief editor), image-police, near-video-finder, google-discover-audit and the red-team pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T00:45:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — no defamation-adjacent claims (no negative UGC this time, nothing to litigate), photo attribution documented, no real-person likeness issue (guests visible in the hero photo are incidental, out of focus, not identified or the subject of the shot); chief editor — shortTitle checked against catalogue, distinct, no repeated formula; no internal Near production concepts leaked into any locale. image-police: hero (1200x560, cropped to remove a third-party UI overlay, real venue interior) and body image (1260x1430, real burger-and-fries photo, similarly cropped to remove the same overlay) both viewed directly — clean, in spec, no AI generation. near-video-finder: checked Instagram Reels — same tooling gap as the first São Carlos piece, no stable embed path available, verdict 'blocked' (product gap). google-discover-audit: hero is 1200 wide and clears the 300,000px floor; at 1200x560 the ratio (~2.14:1) is wider than strict 16:9 (~1.78:1) because of the crop needed to remove the overlay — documented judgment call, prioritizing a clean, watermark-free real photo over an exact ratio match; flagged for near-illustrator/product to revisit if a cleaner same-subject photo turns up on a future refresh. departamento-de-vai-dar-merda: price range is dated and framed as a range; no internal-discourse leakage found. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment, no obvious ad lead beyond the venue; same São Carlos/USP student-press backlink candidate logged as for the first piece, outreach still frozen. Internal-link gap logged in content/requests.md; both São Carlos pins now exist so this entry links back to Caverna da Gordura and vice versa will be added on that entry's next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Rock Burger House, Av. Dr. Carlos Botelho 2508, Centro, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T00:30:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Rock+Burger+House/@-22.011468,-47.8861803,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772db23b2d79:0x447c4d04890f693d!8m2!3d-22.011468!4d-47.8861803!16s%2Fg%2F11c31s04wz"
+  },
+  "publishedAt": "2026-09-21T00:30:00Z",
+  "updatedAt": "2026-09-21T00:30:00Z"
+}
