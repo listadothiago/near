@@ -46,7 +46,7 @@ const LEADING_ARTICLES = {
   "pt-BR.mdx": /^(a|o|as|os|um|uma|uns|umas)\b/i,
   "es-419.mdx": /^(el|la|los|las|un|una|unos|unas)\b/i,
   "es-ES.mdx": /^(el|la|los|las|un|una|unos|unas)\b/i,
-  "it.mdx": /^(il|lo|la|i|gli|le|un|uno|una)\b/i,
+  "it.mdx": /^(il|lo|la|i|gli|le|un|uno|una|l')/i,
 };
 
 // The specific templated shape called out in the style guide, kept as
