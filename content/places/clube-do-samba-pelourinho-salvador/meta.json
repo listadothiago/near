@@ -1,0 +1,68 @@
+{
+  "slug": "clube-do-samba-pelourinho-salvador",
+  "categories": [
+    "nightlife-sound",
+    "city-culture"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -12.9731832,
+    "lng": -38.5102249
+  },
+  "place": {
+    "city": "Salvador",
+    "neighborhood": "Pelourinho",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Clube do Samba listing, reviews and menu",
+      "url": "https://www.google.com/maps/place/Clube+do+Samba/@-12.9731832,-38.5102249,17z/data=!3m1!4b1!4m6!3m5!1s0x71605a03438843f:0x41807063c13da0e8!8m2!3d-12.9731832!4d-38.5102249!16s%2Fg%2F11p61_7nkv",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Portal Soteropreta — Clube do Samba fortalece sua história após polêmica em rede social",
+      "url": "https://portalsoteropreta.com.br/2025/06/04/clube-do-samba-fortalece-sua-historia-apos-polemica-em-rede-social/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Clube do Samba — official Instagram (@clubedosamba1)",
+      "url": "https://www.instagram.com/clubedosamba1/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/clube-do-samba-pelourinho-salvador/hero.jpg",
+    "attribution": "Photo from Clube do Samba's own official Instagram (@clubedosamba1)",
+    "attributionLink": "https://www.instagram.com/p/DdeMbp7ESdS/",
+    "licenseNote": "Real, non-AI candid crowd photo posted directly to the venue's own official (Meta-verified) Instagram (@clubedosamba1, 54K followers), promoting a Saturday Rara Raiz night. No AI generation."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-22T00:00:00Z",
+      "note": "Operator request (chat, 2026-09-21/22): sixth Salvador pin, explicitly a non-LGBT nightlife pick to balance the earlier SAN (LGBTQIA+) pin. Clube do Samba is a root-samba house in Pelourinho founded December 2, 2007 by Wilson and Nelma ('afro-entrepreneurs,' per Portal Soteropreta) as the Associação dos Amigos do Samba Brasileiro, now on its current site (formerly Bar Fundo do Cravinho, literally next door to O Cravinho at Largo Terreiro de Jesus — same street, different numbers, a legitimate near-miss not a duplicate). Resident band Rara Raiz, led by Vagner Santana, has anchored the room for over a decade; the venue has hosted 5,000+ rodas de samba across nearly 19 years. Google Maps verified live via browser: 4.7 stars, 164 reviews, R$40-100/person, Largo Terreiro de Jesus 05. Deliberately included, in good faith and briefly, a real documented episode: a 2025 social-media dispute over the venue's racial inclusivity as white attendance grew, and owner Dona Nelma's on-record response reaffirming the space's commitment to diversity — handled factually and proportionately per near-legal-counsel's standard (reporting that the exchange happened, not amplifying the underlying allegation as settled fact). Instagram (@clubedosamba1, Meta-verified, 54K followers) confirmed the current address, the recurring Saturday 'Rara Raiz' night (20h start), and supplied a real, non-AI candid photo from a recent post for the hero. No single forward-dated event was nested — the Saturday night slot is a standing weekly fixture, not a one-off, so it's described in the body rather than claimed as a dated event with a specific date. Single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Clube do Samba, Largo Terreiro de Jesus 05, Centro Histórico, Salvador - BA — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-22T00:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Clube+do+Samba/@-12.9731832,-38.5102249,17z/data=!3m1!4b1!4m6!3m5!1s0x71605a03438843f:0x41807063c13da0e8!8m2!3d-12.9731832!4d-38.5102249!16s%2Fg%2F11p61_7nkv"
+  },
+  "publishedAt": "2026-09-22T00:00:00Z",
+  "updatedAt": "2026-09-22T00:00:00Z"
+}
