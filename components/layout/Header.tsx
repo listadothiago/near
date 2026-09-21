@@ -121,7 +121,7 @@ export default function Header({
             "that white area next to title could show tagline... should be a
             badge too so it's strong." Operator, 2026-09-10. */}
         <p className="sm:hidden flex-1 min-w-0 flex justify-end">
-          <span className="inline-block max-w-full truncate bg-ink px-1.5 py-0.5 font-mono text-[0.5rem] font-bold uppercase tracking-normal text-accent">
+          <span className="inline-block max-w-full truncate bg-chip-dark px-1.5 py-0.5 font-mono text-[0.5rem] font-bold uppercase tracking-normal text-accent">
             {t("app.tagline")}
           </span>
         </p>
@@ -354,7 +354,7 @@ export default function Header({
           {freshness && (
             <Link
               href={freshness.href}
-              className="whitespace-nowrap bg-ink px-1.5 py-0.5 font-bold text-accent underline decoration-2 underline-offset-[3px] decoration-accent/50 hover:bg-accent hover:text-black transition-colors"
+              className="whitespace-nowrap bg-chip-dark px-1.5 py-0.5 font-bold text-accent underline decoration-2 underline-offset-[3px] decoration-accent/50 hover:bg-accent hover:text-black transition-colors"
             >
               {t("freshness.siteUpdated")}{" "}
               <time dateTime={freshness.at}>

@@ -136,7 +136,7 @@ export default function PlaceCard({
           {/* Own badge, lime-on-black, a little bolder (operator,
               2026-09-08) — was plain small text and easy to miss next
               to the title it's competing with for space. */}
-          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-sans text-[0.65rem] font-black ml-auto flex-none">
+          <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-chip-dark text-accent px-1.5 py-0.5 font-sans text-[0.65rem] font-black ml-auto flex-none">
             {eventDate}
           </span>
         </div>
@@ -163,7 +163,7 @@ export default function PlaceCard({
             existed (operator, 2026-09-08) — now the recency badge's
             default look, not just its revised state, so it reads as a
             distinct signal from the distance badge's black-on-lime. */}
-        <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-ink text-accent px-1.5 py-0.5 font-black whitespace-nowrap">
+        <span className="inline-flex items-center rounded-[var(--radius-badge)] border-[2px] border-ink bg-chip-dark text-accent px-1.5 py-0.5 font-black whitespace-nowrap">
           {revised && <span className="mr-1">{tf("revisedShort")}</span>}
           <time dateTime={stampIso}>{postedOn}</time>
         </span>

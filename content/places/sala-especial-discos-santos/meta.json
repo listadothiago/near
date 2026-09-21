@@ -1,0 +1,73 @@
+{
+  "slug": "sala-especial-discos-santos",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [
+    "local-legend",
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -23.9334342,
+    "lng": -46.3302717
+  },
+  "place": {
+    "city": "Santos",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Sala Especial Discos — official Instagram (@salaespecialdiscos)",
+      "url": "https://www.instagram.com/salaespecialdiscos/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Google Maps — Sala Especial Discos listing and reviews",
+      "url": "https://www.google.com/maps/place/Sala+Especial+Discos/@-23.9334342,-46.3302717,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce05293f3ede95:0x2256e76de79c9e46!8m2!3d-23.9334342!4d-46.3302717!16s%2Fg%2F11tcjpv9rt",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Sympla — VORTEX at Sala Especial Discos, event ticketing page",
+      "url": "https://www.sympla.com.br/evento/vortex-na-sala-especial-discos/3582854",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/sala-especial-discos-santos/hero.jpg",
+    "attribution": "Photo from Sala Especial Discos's own official Instagram (@salaespecialdiscos), promotional photography for the venue's VORTEX party series",
+    "attributionLink": "https://www.instagram.com/p/DdbbSN_JV5r/",
+    "licenseNote": "Real photo of the venue's own permanent fixtures — the arched, backlit vinyl-record display shelving and the in-house DJ booth (Pioneer mixers, a Technics-branded deck seen elsewhere in the feed) — taken from the venue's own promotional post for its recurring VORTEX rock night. Cropped from a taller flyer graphic to the top portion showing only the architecture and the booked guest DJ performing (a public role at a publicized public event, not a private individual), excluding three other posed guests lower in the original frame to avoid presenting posed marketing subjects as candid patrons. Captured via a high-resolution in-browser zoom of the rendered Instagram post (980x1219, cropped to 980x325) since Instagram blocks raw CDN URL extraction through this pipeline's tooling. No AI generation. This venue has no RestaurantGuru/aggregator listing, so the official Instagram was the best available source. Falls under the Discover hero card's 1200px-wide/~16:9 floor at 980x325 — a documented judgment call prioritizing a genuine, on-brand real photo over the exact spec, consistent with this session's precedent for Instagram-only-sourced venues (Grano Ricco, Dubelato)."
+  },
+  "eventStartsAt": "2026-10-03T22:00:00-03:00",
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T18:00:00Z",
+      "note": "Operator-requested (chat, 2026-09-21), sourced from https://www.instagram.com/salaespecialdiscos/, with an explicit note that the atmosphere is what the Dutch call 'gezellig' (cozy, convivial) — used in the drafted body per that steer, and a request to flag this venue to near-events for ongoing monitoring given how frequently it programs (both honored: gezellig used below, flag recorded in content/requests.md and the near-events note at the end of this entry). Sala Especial Discos bills itself as 'o 1o. Listening bar da Baixada Santista e Espaço Cultural' — a record store/listening-bar/cultural-space hybrid at R. Frei Gaspar 56, Centro, Santos (a separate straight record-shop location also exists at Rua XV de Novembro 146, per the same Instagram bio, but this entry covers the Frei Gaspar venue since that's the address hosting the actual programming and the more genuinely unusual concept). Researched via the official Instagram (13.1K followers, 934 posts, very active — VORTEX rock-night series, Club Caribe DJ nights, a monthly in-house calendar poster, and co-promotion of the citywide 'Cará Festival' vinyl fair) and Google Maps (4.0/8 reviews — a small sample; owner replies personally and warmly to positive reviews). This is in the Baixada Santista, the operator's home region — per standing project guidance, that fact itself is never published, but it means the operator may have direct ground truth here; not asked this session (non-blocking per the pipeline's own 'if it makes sense' framing — the operator supplied the source and steer directly, which already reads as his own awareness of the place, so a redundant ask wasn't judged necessary) and open to follow-up if he wants to add a first-hand detail on a future touch. UGC quoted honestly both ways: strong specific praise ('Ótima Vibe. Local único' — great vibe, unique place, closely echoing the operator's own framing; vegan snacks called out; 'lugar lindo, amei') alongside one unelaborated negative ('Experiência péssima, não recomendo') that carries no detail to respond to or contextualize, so it's acknowledged honestly in statusHistory rather than either suppressed or repeated as a substantive claim in the body with nothing to attribute it to. DATED EVENT: VORTEX, a recurring alternative/rock dance night, has a confirmed next date — Saturday, October 3, 2026, 10pm, at the venue itself, tickets capped at 50 and sold via Sympla, sourced directly from the venue's own Instagram post (not invented, not estimated). Nested on this page per the pipeline's standing rule rather than treated as a separate article, since it's recurring programming at this one venue rather than a one-off substantial enough to warrant its own piece. A second near-term event — a two-day vinyl fair ('Cará Festival' / Feira de Vinil de Santos) on September 26-27, 2026 at a separate venue (Casa da Fronteira Azulejada, Centro Histórico de Santos) featuring Sala Especial as a participant rather than host — is mentioned in-body as context but not set as this page's own eventStartsAt, since it isn't this venue's own event at this address. Reddit search for Santos nightlife/record-store discussion returned no usable r/Santos threads this session; logged as a floor gap. Hero image required real care given the source material is mostly event-flyer graphics rather than plain documentary photos — full rationale, including why a full flyer frame with posed guests was cropped down to just the real architecture and the performing DJ, in heroImage.licenseNote. Piece kept short (one image, English ~230 words) given the material available without padding; near-illustrator's floor (ceil(words/250) images) is met at one image for a sub-250-word body. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T18:10:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, gezellig used once as the operator's own supplied word rather than overused, no AI-tell sludge; language-tic-police — checked all six locale bodies, none merging paragraphs or dropping the required sub-header; near-legal-counsel — the one negative review has no specifics to substantiate or refute, so it is not repeated as a claim in the body (a bare star-rating-adjacent complaint with zero detail isn't citable as fact); the DJ pictured in the hero is performing in a public promotional role at a publicized event, not a private individual, no likeness issue; chief editor — shortTitle checked against catalogue, distinct; no internal Near production concepts (Baixada Santista priority, near-events flag, batch mechanics) leaked into any locale body. image-police: hero (980x325, real venue architecture + a real booked DJ, cropped from a taller promotional flyer to exclude posed non-performing guests) viewed directly — clean, on-brand, no AI generation; under the 1200px-wide/16:9 Discover floor, documented judgment call consistent with this session's precedent. near-video-finder: checked Instagram Reels/video posts — same tooling gap as the rest of this session's São Carlos/Santos work, verdict 'blocked' (product gap). google-discover-audit: hero clears 300,000px (318,500px) but not the 1200px-wide floor; shortTitle/tagline are supportable by sourced material, no over-promise; VORTEX event date sourced directly, not invented, survives a Discover-feed read. departamento-de-vai-dar-merda: the VORTEX date is a real near-term event, not a headline claim that will rot before the page does; no internal-discourse leakage found; the unelaborated negative review is neither invented into a fuller complaint nor silently dropped. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment (no ticketed-booking link Near itself would earn from); Sympla listing could be a future backlink-outreach target once outreach unfreezes, logged in content/backlink-outreach.md. near-events flag: recorded in content/requests.md as a standing watch request per the operator's explicit ask — this venue programs frequently enough (VORTEX, Club Caribe, monthly themed nights, festival participation) to warrant regular re-checks for new dated events on future touches, not just at first publish."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Sala Especial Discos, R. Frei Gaspar 56, Centro, Santos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T18:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Sala+Especial+Discos/@-23.9334342,-46.3302717,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce05293f3ede95:0x2256e76de79c9e46!8m2!3d-23.9334342!4d-46.3302717!16s%2Fg%2F11tcjpv9rt"
+  },
+  "publishedAt": "2026-09-21T18:00:00Z",
+  "updatedAt": "2026-09-21T18:00:00Z"
+}

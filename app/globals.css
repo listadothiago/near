@@ -14,6 +14,11 @@
   /* Acid green is unreadable as text on newsprint, so links and other
      text-level accents use black and reserve --accent for fills. */
   --accent-ink: #000000;
+  /* Fixed lime-on-black chip background (recency/event-date badges,
+     header labels). Deliberately NOT --ink: --ink flips to near-white
+     in dark mode, which turned these into unreadable lime-on-near-white.
+     This token stays black in both themes so the chip stays legible. */
+  --chip-dark: #000000;
   --chart-bg: #e6e6e0;
   --land: #c9c9c0;
   --grid-line: #d5d5cc;
@@ -99,6 +104,7 @@
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-ink: var(--accent-ink);
+  --color-chip-dark: var(--chip-dark);
   --color-chart-bg: var(--chart-bg);
   --color-land: var(--land);
   --color-grid-line: var(--grid-line);

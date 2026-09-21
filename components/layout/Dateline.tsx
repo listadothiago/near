@@ -32,7 +32,7 @@ export default function Dateline({
       {/* Own badge, not plain text (operator, 2026-09-08: recency should
           read as a badge on the card AND the article page) — lime-on-
           black, matching the board card's recency badge. */}
-      <span className="inline-flex items-center gap-1 border-[2px] border-ink bg-ink px-2 py-0.5 font-black text-accent">
+      <span className="inline-flex items-center gap-1 border-[2px] border-ink bg-chip-dark px-2 py-0.5 font-black text-accent">
         {t("published")} <time dateTime={publishedAt}>{publishedText}</time>
       </span>
       {revised && (
