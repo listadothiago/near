@@ -70,6 +70,11 @@
       "status": "active",
       "at": "2026-09-21T00:45:00Z",
       "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — no defamation-adjacent claims (no negative UGC this time, nothing to litigate), photo attribution documented, no real-person likeness issue (guests visible in the hero photo are incidental, out of focus, not identified or the subject of the shot); chief editor — shortTitle checked against catalogue, distinct, no repeated formula; no internal Near production concepts leaked into any locale. image-police: hero (1200x560, cropped to remove a third-party UI overlay, real venue interior) and body image (1260x1430, real burger-and-fries photo, similarly cropped to remove the same overlay) both viewed directly — clean, in spec, no AI generation. near-video-finder: checked Instagram Reels — same tooling gap as the first São Carlos piece, no stable embed path available, verdict 'blocked' (product gap). google-discover-audit: hero is 1200 wide and clears the 300,000px floor; at 1200x560 the ratio (~2.14:1) is wider than strict 16:9 (~1.78:1) because of the crop needed to remove the overlay — documented judgment call, prioritizing a clean, watermark-free real photo over an exact ratio match; flagged for near-illustrator/product to revisit if a cleaner same-subject photo turns up on a future refresh. departamento-de-vai-dar-merda: price range is dated and framed as a range; no internal-discourse leakage found. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment, no obvious ad lead beyond the venue; same São Carlos/USP student-press backlink candidate logged as for the first piece, outreach still frozen. Internal-link gap logged in content/requests.md; both São Carlos pins now exist so this entry links back to Caverna da Gordura and vice versa will be added on that entry's next touch."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T02:00:00Z",
+      "note": "Added reciprocal internal links to Art Bakery and Holy Crust (São Carlos's third and fourth pins) in all six locales. No factual changes."
     }
   ],
   "geocode": {
@@ -80,5 +85,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Rock+Burger+House/@-22.011468,-47.8861803,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772db23b2d79:0x447c4d04890f693d!8m2!3d-22.011468!4d-47.8861803!16s%2Fg%2F11c31s04wz"
   },
   "publishedAt": "2026-09-21T00:30:00Z",
-  "updatedAt": "2026-09-21T01:15:00Z"
+  "updatedAt": "2026-09-21T02:00:00Z"
 }

@@ -1,0 +1,78 @@
+{
+  "slug": "holy-crust-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0121203,
+    "lng": -47.8974278
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Parque Santa Mônica",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Holy Crust Pizza and Beer listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Holy+Crust+Pizza+and+Beer/@-22.0121203,-47.8974278,17z/data=!3m1!4b1!4m6!3m5!1s0x94b877978ebb3f1f:0x4136c94d731d6864!8m2!3d-22.0121203!4d-47.8974278!16s%2Fg%2F11hj647g05",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "RestaurantGuru — Holy Crust Pizza and Beer menu, prices, reviews and photos",
+      "url": "https://restaurantguru.com/Holy-Crust-Pizza-and-Beer-Sao-Carlos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Holy Crust — official Instagram (@holy_crustt)",
+      "url": "https://www.instagram.com/holy_crustt/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Holy Crust — official Goomer delivery menu",
+      "url": "https://holy-crust-pizza-and-beer.goomer.app",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/holy-crust-sao-carlos/hero.jpg",
+    "attribution": "Photo of a pepperoni pizza at Holy Crust, sourced via RestaurantGuru's mirrored Google Maps listing photos, dated July 2025",
+    "attributionLink": "https://restaurantguru.com/Holy-Crust-Pizza-and-Beer-Sao-Carlos",
+    "licenseNote": "Real photo of the venue's own Neapolitan-style pepperoni pizza — visible leoparded, wood-fired crust and fresh basil, on the venue's own branded paper. Dated July 2025 in RestaurantGuru's filename metadata, which also independently helped confirm the venue was still actively serving well after any Google Maps 'temporarily closed' flag (see statusHistory). Cropped from the original 1200x1600 portrait frame to a 1200x675 (16:9) landscape crop centered on the pizza, removing a drinks glass at the top and RestaurantGuru's own site-mascot sticker at the bottom — a straightforward crop, not a generative edit. No AI generation. RestaurantGuru is an aggregator rather than the original photographer, so per-photo individual creator credit isn't available beyond the listing itself."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T02:00:00Z",
+      "note": "Fourth entry in the São Carlos batch. Holy Crust Pizza and Beer is a Neapolitan-style pizza spot at R. 15 de Novembro 1347, Parque Santa Mônica — 5stagioni flour, slow-fermentation dough, inflated leoparded crust, deliberately rustic foodtruck-style service (order at the counter, no cutlery, no ice, pick up when called). Researched via Google Maps (live coordinates confirmed via Chrome, 4.8/361 reviews, R$40-60pp per 38 diners), RestaurantGuru (photos dated as recently as July 2025), and the official Instagram (@holy_crustt, ~5,966 followers, bio still lists standing Wed-Sun 6-11pm hours). IMPORTANT CURRENCY FLAG: Google Maps currently shows this listing as 'Temporariamente fechado' (temporarily closed) with no hours listed. This is flagged honestly in the body rather than either publishing the place as unconditionally open or holding the piece entirely — the Instagram account shows continued activity and enthusiastic comments ('Sem dúvida a melhor pizza de São Carlos') as recently as May 2026 (4 months before this write), and the bio still lists standing operating hours, both of which point to the Google flag being stale or a short pause rather than a permanent closure, but this could not be fully resolved within this session (no phone verification attempted) — a reader-relevant open question, disclosed rather than guessed at. Reviews quoted honestly, all positive in the sample pulled (Neapolitan style specifically praised by someone who compared it to pizza eaten in Italy; pepperoni called out repeatedly as the standout); no negative pattern found this session, unlike some of the other São Carlos pieces. No genuine dated event found. Reddit search for São Carlos pizza discussion again returned no usable r/SaoCarlos threads — same recurring floor gap as the other São Carlos pieces. Hero image is a real July 2025 photo of the venue's own pepperoni pizza, chosen specifically for quality (charred crust, fresh basil, clearly the actual product) after the operator asked this session to prioritize strong hero images, not just spec-clearing ones. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T02:15:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, the currency/closure flag disclosed plainly rather than buried or omitted, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — no defamation-adjacent claims (no negative UGC to litigate); the 'temporarily closed' disclosure is a factual relay of the venue's own Google Maps status, not an allegation, and is framed as an open question rather than an assertion either way — reviewed as low-risk; chief editor — shortTitle checked against catalogue, distinct; no internal Near production concepts leaked into any locale; flagged to the chief editor's own knowledge base that a 'temporarily closed' Google Maps status should be a standing check on every future write, not just when it happens to surface. image-police: hero (1200x675, real July-2025 pizza photo, cropped from a portrait original to remove a drinks glass and a third-party overlay) and body image (1080x826, real foodtruck-counter interior shot) both viewed directly — clean, in spec, no AI generation. near-video-finder: checked Instagram Reels — same tooling gap as the rest of the São Carlos batch, verdict 'blocked' (product gap). google-discover-audit: hero clears 1200px-wide/300,000px/16:9 cleanly, no ratio deviation this time; shortTitle/tagline don't over-promise beyond what's sourced. departamento-de-vai-dar-merda: the closure-status question is exactly the kind of rot this gate exists to catch — flagged rather than glossed, and the piece does not lead with a claim ('come tonight') that would age badly if the closure turns out to be real; no internal-discourse leakage found. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment; São Carlos/USP student-press candidate logged as with the rest of the batch, outreach still frozen. Internal-link gap: links added to Caverna da Gordura, Rock Burger House and Art Bakery; those three will get a reciprocal link to this one on their next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Holy Crust Pizza and Beer, R. 15 de Novembro 1347, Parque Santa Mônica, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T02:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Holy+Crust+Pizza+and+Beer/@-22.0121203,-47.8974278,17z/data=!3m1!4b1!4m6!3m5!1s0x94b877978ebb3f1f:0x4136c94d731d6864!8m2!3d-22.0121203!4d-47.8974278!16s%2Fg%2F11hj647g05"
+  },
+  "publishedAt": "2026-09-21T02:00:00Z",
+  "updatedAt": "2026-09-21T02:00:00Z"
+}

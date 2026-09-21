@@ -75,6 +75,11 @@
       "status": "active",
       "at": "2026-09-21T00:30:00Z",
       "note": "Added a reciprocal internal link to the newly published Rock Burger House (São Carlos's second pin) in all six locales, closing the internal-link gap logged at first publish. No factual changes."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T02:00:00Z",
+      "note": "Added reciprocal internal links to Art Bakery and Holy Crust (São Carlos's third and fourth pins) in all six locales. No factual changes."
     }
   ],
   "geocode": {
@@ -85,5 +90,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Caverna+da+Gordura+-+S%C3%A3o+Carlos/@-22.0094306,-47.8980471,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87745d4576395:0x585e6b01b71667f2!8m2!3d-22.0094306!4d-47.8980471!16s%2Fg%2F11fjsw3vr1"
   },
   "publishedAt": "2026-09-21T00:00:00Z",
-  "updatedAt": "2026-09-21T01:15:00Z"
+  "updatedAt": "2026-09-21T02:00:00Z"
 }
