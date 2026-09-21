@@ -1,0 +1,84 @@
+{
+  "slug": "art-bakery-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0087868,
+    "lng": -47.888647
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Jardim Macarengo",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Art Bakery listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/ART+BAKERY+-+Padaria+e+Cafeteria+-+Fermenta%C3%A7%C3%A3o+Natural/@-22.0087868,-47.888647,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772e9bc16f11:0xde97d74d7e6b8982!8m2!3d-22.0087868!4d-47.888647!16s%2Fg%2F11c5xv_vmx",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "RestaurantGuru — Art Bakery menu, prices, reviews and photos",
+      "url": "https://restaurantguru.com/Ma-Petite-Boulangerie-Sao-Carlos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "São Carlos em Rede — feature on Art Bakery's natural-fermentation approach",
+      "url": "https://saocarlosemrede.com.br/art-bakery/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Art Bakery — official iFood delivery menu",
+      "url": "https://www.ifood.com.br/delivery/sao-carlos-sp/art-bakery-padaria-e-cafeteria-jardim-macarengo/89796886-de37-486f-9f63-09226471f3c8",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Art Bakery — official Instagram (@artbakery.sc)",
+      "url": "https://www.instagram.com/artbakery.sc/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/art-bakery-sao-carlos/hero.jpg",
+    "attribution": "Photo of an Art Bakery baker with a fresh bread basket, sourced via RestaurantGuru's mirrored Google Maps listing photos",
+    "attributionLink": "https://restaurantguru.com/Ma-Petite-Boulangerie-Sao-Carlos",
+    "licenseNote": "Real photo of an Art Bakery staff member holding a basket of the bakery's own fresh-baked bread, explicitly tagged with the venue's current name (ART BAKERY - Padaria e Cafeteria - Fermentação Natural) in RestaurantGuru's own filename metadata, not the venue's earlier 'Ma Petite Boulangerie' branding that appears on some older photos in the same gallery (same address, pre-rebrand — those were deliberately excluded to avoid publishing outdated signage under the current name). Original frame was 1200x900 with RestaurantGuru's own site-mascot sticker in the bottom-right corner; rather than crop across the subject (the bread basket extends into that same region) or patch/clone out the overlay (rejected — a test patch produced a visible ghosting artifact and would have crossed from a real photo into an edited one), the frame was cropped to 930x900, fully excluding the overlay while keeping the whole basket and the baker's full portrait intact. This falls under the Discover hero card's 1200px-wide floor — a documented judgment call prioritizing an authentic, unaltered, watermark-free photo over the exact width spec; flagged for near-illustrator/product to revisit if a cleaner same-subject photo at full width turns up on a future refresh. No AI generation. RestaurantGuru is an aggregator rather than the original photographer, so per-photo individual creator credit isn't available beyond the listing itself."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T01:15:00Z",
+      "note": "Third entry in the São Carlos batch from the same personal recommendation list as Caverna da Gordura and Rock Burger House. Art Bakery (formerly Ma Petite Boulangerie, same address, rebranded before current ownership under Fernanda Seridorio and Ravi Hummel) is a natural-fermentation bakery and café at Rua Dr. Orlando Damiano 2220, Jardim Macarengo — closed Mondays, open Tuesday-Friday 8am-7pm and Saturday 8am-2pm (café closes 30 minutes earlier than the bakery). Researched via Google Maps (live coordinates confirmed via Chrome, 4.6/728 reviews, R$40-60pp per 68 diners, flagged LGBTQ+-friendly, owner actively replies to reviews individually), RestaurantGuru, a dedicated feature piece on São Carlos em Rede covering the bakery's natural-fermentation approach and the founding couple, the official iFood menu (croissant R$28, 50%-whole-wheat loaf R$30.50), and the official Instagram (@artbakery.sc, ~25K followers — a large local following for a São Carlos business, feed reads as 'arte em forma de pão'). UGC on Google Maps quoted both ways: strong praise for bread variety and quality from a repeat 'best fermentation bakery I've tried' review, and a pointed negative — a cinnamon roll that reviewer Carolina Y. said looked nothing like its iFood photo, with the owner's own reply candidly agreeing the delivery-app photo was outdated. Both surfaced rather than only the positive average, per this pipeline's honesty rule. Matcha specifically (mentioned in the operator's original list) could not be independently confirmed as a current menu item across Google Maps, RestaurantGuru, iFood or Instagram search results in this session — not stated as fact in the body; logged as an open verification item rather than invented. No genuine dated event found; Instagram and the Google Maps owner post (a chocolate-cake plug, undated/evergreen) both read as product content, not programming. Hero image required real care: excluded all photos still showing the pre-rebrand 'Ma Petite Boulangerie' signage even though they were otherwise clean and higher-resolution, since publishing old branding under the current name would misrepresent the venue — full rationale in heroImage.licenseNote, including why a mascot-overlay patch attempt was rejected as an image edit rather than published. Reddit search for São Carlos bakery/café discussion again returned no usable r/SaoCarlos threads — same recurring floor gap as the first two São Carlos pieces. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T01:30:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, both positive and negative UGC represented, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — the cinnamon-roll complaint is a sourced, specifically-attributed consumer complaint with the business's own public reply attached (not an unanswered allegation), no defamation risk; the identifiable staff member in the hero photo is the venue's own publicly posted promotional image of its own employee doing their job, same tier as prior precedent, no likeness issue; chief editor — shortTitle checked against catalogue, distinct, no repeated formula; no internal Near production concepts leaked into any locale. image-police: hero (930x900, real bread-basket portrait, explicitly current-branding-only, no AI generation, documented width-spec gap) and body image (1080x900, real pão-de-mel-with-Nutella shot, cropped to remove an unrelated 'Welcome' graphic) both viewed directly — clean. near-video-finder: checked Instagram Reels — same tooling gap noted on the first two São Carlos pieces, verdict 'blocked' (product gap). google-discover-audit: hero clears the 300,000px floor (837,000px) and is close to a portrait/square framing rather than 1200-wide landscape — flagged, same judgment-call category as Rock Burger House's ratio deviation, prioritizing a real clean photo over exact spec; shortTitle is a supportable claim (basket/fermentation framing matches sourced material), not an over-promise. departamento-de-vai-dar-merda: no price stated as the headline (range only, dated); no internal-discourse leakage found; matcha claim specifically withheld from body copy given it couldn't be verified this session — the one piece of the operator's original description this entry does not assert as fact. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment; São Carlos/USP student-press candidate logged as with the first two pieces, outreach still frozen. Internal-link gap: links to Caverna da Gordura and Rock Burger House added; those two entries will get a reciprocal link to this one on their next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Art Bakery, R. Dr. Orlando Damiano 2220, Jardim Macarengo, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T01:15:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/ART+BAKERY+-+Padaria+e+Cafeteria+-+Fermenta%C3%A7%C3%A3o+Natural/@-22.0087868,-47.888647,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772e9bc16f11:0xde97d74d7e6b8982!8m2!3d-22.0087868!4d-47.888647!16s%2Fg%2F11c5xv_vmx"
+  },
+  "publishedAt": "2026-09-21T01:15:00Z",
+  "updatedAt": "2026-09-21T01:15:00Z"
+}
