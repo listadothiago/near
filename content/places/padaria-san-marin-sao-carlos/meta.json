@@ -1,0 +1,84 @@
+{
+  "slug": "padaria-san-marin-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0127633,
+    "lng": -47.8877564
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Vila Monteiro (Gleba I)",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — San Marin Padaria • Café listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/San+Marin+Padaria+%E2%80%A2+Caf%C3%A9/@-22.0127633,-47.8877564,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772745553d89:0x6ec912f043783c2!8m2!3d-22.0127633!4d-47.8877564!16s%2Fg%2F11t1sk1p7f",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "RestaurantGuru — San Marin Padaria • Café menu, prices, reviews and photos",
+      "url": "https://restaurantguru.com/San-Marin-Padaria-Cafe-Sao-Carlos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Tripadvisor — San Marin Padaria e Café reviews",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g303627-d25244328-Reviews-San_Marin_Padaria_E_Cafe-Sao_Carlos_State_of_Sao_Paulo.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "San Marin — official iFood delivery menu",
+      "url": "https://www.ifood.com.br/delivery/sao-carlos-sp/san-marin-cafe-vila-monteiro-gleba-i/3b3d6bba-ab8d-429f-9398-7d54ced7deb1",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "San Marin — official Instagram (@sanmarinsaocarlos)",
+      "url": "https://www.instagram.com/sanmarinsaocarlos/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/padaria-san-marin-sao-carlos/hero.jpg",
+    "attribution": "Photo of San Marin's own dining room and hand-painted signage, sourced via RestaurantGuru's mirrored Google Maps listing photos, dated March 2025",
+    "attributionLink": "https://restaurantguru.com/San-Marin-Padaria-Cafe-Sao-Carlos",
+    "licenseNote": "Real photo of the venue's own covered dining terrace, with its hand-painted leaf mural and 'San Marin' signage clearly legible, plus staff and diners genuinely at the venue. Cropped from a 1200x1600 portrait original to a 1200x675 (16:9) landscape frame keeping the branded signage and the room in view — a straightforward crop, not a generative edit; no watermark or third-party overlay was present in this particular photo, so none needed removing. No AI generation. RestaurantGuru is an aggregator rather than the original photographer, so per-photo individual creator credit isn't available beyond the listing itself."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T02:30:00Z",
+      "note": "Fifth entry in the São Carlos batch. San Marin Padaria • Café is a bakery/café/lunch spot at R. Dom Pedro II 1552, Vila Monteiro (Gleba I) — open Monday-Saturday 7am-7pm, Sunday 7am-1pm. Researched via Google Maps (live coordinates confirmed via Chrome, 4.6/433 reviews, R$40-60pp per 57 diners, owner replies personally to reviews), RestaurantGuru (4.6/5, 361 reviews, photos dated as recently as March 2025), Tripadvisor, and the official iFood menu. Google's own menu-highlights data names Bauru Clássico (a classic Brazilian pressed sandwich — roast beef, tomato, melted cheese) and Queijo Quente as the most-ordered items, which lines up with the operator's own 'pf bom' (good prato feito/lunch) framing better than pastry alone would. UGC quoted both ways: a Local Guide's praise calling it 'sem dúvidas, minha padaria favorita' for freshness and warm service, and a separately-sourced specific complaint about noise (a bell that rings constantly, staff talking loudly) and prices the reviewer found a little high for the product — both surfaced rather than only the positive average. No genuine dated event found; Google Maps and Instagram both read as standing-menu content. Reddit search for São Carlos café/padaria discussion again returned no usable r/SaoCarlos threads — same recurring floor gap as the rest of this batch. Hero image is a real March-2025 photo of the venue's own dining terrace and hand-painted 'San Marin' signage, chosen for being clean, on-brand and dynamic (real staff/diners in frame) rather than a generic empty-room shot — no watermark needed removing this time, unusual for this batch. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T02:45:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, both positive and negative UGC represented, no AI-tell sludge; language-tic-police — checked all six locale bodies for merged paragraphs or dropped sub-headers, none found; near-legal-counsel — the noise/price complaint is a sourced, specifically-attributed consumer observation, not a defamation risk; identifiable staff/diners in the hero photo are incidental to the venue's own promotional image of its own dining room, same tier as prior precedent, no likeness issue; chief editor — shortTitle checked against catalogue, distinct; no internal Near production concepts leaked into any locale. image-police: hero (1200x675, real March-2025 dining-room photo, no overlay to remove) and body image (1080x810, real covered-terrace exterior shot) both viewed directly — clean, in spec, no AI generation. near-video-finder: checked Instagram Reels — same tooling gap as the rest of the São Carlos batch, verdict 'blocked' (product gap). google-discover-audit: hero clears 1200px-wide/300,000px/16:9 cleanly; shortTitle/tagline supportable by sourced material, no over-promise. departamento-de-vai-dar-merda: price range dated and framed as a range, not a headline number; the 'a bit expensive' complaint is retained rather than smoothed over; no internal-discourse leakage found. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment; São Carlos/USP student-press candidate logged as with the rest of the batch, outreach still frozen. Internal-link gap: links to all four prior São Carlos pins added; those four will get a reciprocal link to this one on their next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "San Marin Padaria • Café, R. Dom Pedro II 1552, Vila Monteiro (Gleba I), São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T02:30:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/San+Marin+Padaria+%E2%80%A2+Caf%C3%A9/@-22.0127633,-47.8877564,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772745553d89:0x6ec912f043783c2!8m2!3d-22.0127633!4d-47.8877564!16s%2Fg%2F11t1sk1p7f"
+  },
+  "publishedAt": "2026-09-21T02:30:00Z",
+  "updatedAt": "2026-09-21T02:30:00Z"
+}

@@ -75,6 +75,11 @@
       "status": "active",
       "at": "2026-09-21T02:00:00Z",
       "note": "Added a reciprocal internal link to the newly published Holy Crust (São Carlos's fourth pin) in all six locales. No factual changes."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T02:30:00Z",
+      "note": "Added a reciprocal internal link to San Marin (São Carlos's fifth pin) in all six locales. No factual changes."
     }
   ],
   "geocode": {
@@ -85,5 +90,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/ART+BAKERY+-+Padaria+e+Cafeteria+-+Fermenta%C3%A7%C3%A3o+Natural/@-22.0087868,-47.888647,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772e9bc16f11:0xde97d74d7e6b8982!8m2!3d-22.0087868!4d-47.888647!16s%2Fg%2F11c5xv_vmx"
   },
   "publishedAt": "2026-09-21T01:15:00Z",
-  "updatedAt": "2026-09-21T02:00:00Z"
+  "updatedAt": "2026-09-21T02:30:00Z"
 }
