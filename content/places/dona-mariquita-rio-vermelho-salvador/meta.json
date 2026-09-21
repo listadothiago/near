@@ -1,0 +1,73 @@
+{
+  "slug": "dona-mariquita-rio-vermelho-salvador",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -13.013058,
+    "lng": -38.486602
+  },
+  "place": {
+    "city": "Salvador",
+    "neighborhood": "Rio Vermelho",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Dona Mariquita listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Dona+Mariquita+-+Cozinha+Patrimonial+da+Bahia/@-13.013058,-38.486602,17z/data=!3m1!4b1!4m6!3m5!1s0x71603531f4a0e77:0xe55d082891bb27ad!8m2!3d-13.013058!4d-38.486602!16s%2Fg%2F1td9w9n2",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "CNN Brasil Viagem e Gastronomia — Em Salvador, Dona Mariquita preserva a memória gastronômica da Bahia",
+      "url": "https://www.cnnbrasil.com.br/viagemegastronomia/gastronomia/em-salvador-dona-mariquita-preserva-a-memoria-gastronomica-da-bahia/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Dona Mariquita — official Instagram (@donamariquita)",
+      "url": "https://www.instagram.com/donamariquita/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Bahia Notícias — six Afrocentric-menu restaurants for Black Consciousness Day",
+      "url": "https://www.bahianoticias.com.br/bnhall/noticia/9009-conheca-seis-restaurantes-em-salvador-com-menus-afrocentrados-para-celebrar-o-dia-da-consciencia-negra",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/dona-mariquita-rio-vermelho-salvador/hero.jpg",
+    "attribution": "Photo of chef Leila Carreiro from Dona Mariquita's own official Instagram (@donamariquita)",
+    "attributionLink": "https://www.instagram.com/p/DdfVCeLtaZq/",
+    "licenseNote": "Real, non-AI photo posted directly to the restaurant's own official Instagram (@donamariquita, 70.3K followers) — the kitchen's own portrait of chef Leila Carreiro. No AI generation."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T20:45:00Z",
+      "note": "Operator request (chat, 2026-09-21): second Salvador pin, gastronomic. Dona Mariquita is a 15-year-old (opened ~2011) heritage-cuisine restaurant in Rio Vermelho run by chef Leila Carreiro, researching and reviving indigenous/African/sertanejo Bahian recipes largely erased from restaurant menus. Well-covered by real press — CNN Brasil V&G, an Alô Alô Bahia column, and named among Bahia Notícias's six Afrocentric-menu restaurants for Consciência Negra — a genuine editorial pattern, not a single lucky mention. Google Maps verified live (4.5 stars, 1,481 reviews, R$80-180/person, R. do Meio 178, Rio Vermelho — same street as SAN's original candidate pick Discodelia, but a different, unrelated address/venue, confirmed via check-duplicates.mjs with no proximity flag). Reviews read directly: consistently high praise for the moqueca/poqueca and Arroz de Hauçá, with practical notes (farofa isn't automatic with the moqueca, must be ordered separately). Instagram (@donamariquita, 70.3K followers) confirms address and hours (daily noon-5pm) and supplied the hero photo (a real portrait of chef Leila Carreiro, not AI-generated, per operator direction). No genuine standing dated event found for this piece; none forced. Single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Dona Mariquita - Cozinha Patrimonial da Bahia, R. do Meio 178, Rio Vermelho, Salvador - BA — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T20:30:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Dona+Mariquita+-+Cozinha+Patrimonial+da+Bahia/@-13.013058,-38.486602,17z/data=!3m1!4b1!4m6!3m5!1s0x71603531f4a0e77:0xe55d082891bb27ad!8m2!3d-13.013058!4d-38.486602!16s%2Fg%2F1td9w9n2"
+  },
+  "publishedAt": "2026-09-21T20:45:00Z",
+  "updatedAt": "2026-09-21T20:45:00Z"
+}
