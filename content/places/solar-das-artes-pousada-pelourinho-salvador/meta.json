@@ -1,0 +1,61 @@
+{
+  "slug": "solar-das-artes-pousada-pelourinho-salvador",
+  "categories": [
+    "accommodation"
+  ],
+  "tags": [
+    "hidden-gem"
+  ],
+  "coordinates": {
+    "lat": -12.9740578,
+    "lng": -38.50824
+  },
+  "place": {
+    "city": "Salvador",
+    "neighborhood": "Pelourinho",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "nite-porter",
+  "sources": [
+    {
+      "name": "Google Maps — Solar das Artes Pousada Boutique listing, prices and reviews",
+      "url": "https://www.google.com/maps/place/Solar+das+Artes+Pousada+Boutique/@-12.9740578,-38.50824,17z/data=!4m9!3m8!1s0x71604e87bc1ca3f:0xbf00c03a4791d038!5m2!4m1!1i2!8m2!3d-12.9740578!4d-38.50824!16s%2Fg%2F1td6mvwj",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Pelourinho Dia e Noite (Salvador city tourism portal) — Solar das Artes Pousada Boutique listing",
+      "url": "https://pelourinhodiaenoite.salvador.ba.gov.br/solar-das-artes-pousada-boutique/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/solar-das-artes-pousada-pelourinho-salvador/hero.jpg",
+    "attribution": "Photo from Solar das Artes Pousada Boutique's own Google Maps business listing",
+    "attributionLink": "https://www.google.com/maps/place/Solar+das+Artes+Pousada+Boutique/@-12.9740578,-38.50824,17z/data=!4m9!3m8!1s0x71604e87bc1ca3f:0xbf00c03a4791d038!5m2!4m1!1i2!8m2!3d-12.9740578!4d-38.50824!16s%2Fg%2F1td6mvwj",
+    "licenseNote": "Real, non-AI photo of the property's colonial-building courtyard, sourced from the venue's own Google Maps business listing photo set (the listing's official cover image). No AI generation. This small independent pousada has no verified official Instagram found in this pass; the Google Maps listing photo was judged the strongest available real image."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T21:10:00Z",
+      "note": "Operator request (chat, 2026-09-21): third Salvador pin, a hidden-gem hotel pick. Solar das Artes Pousada Boutique is a small (8-9 room), independently run boutique inn in a colonial mansion in Pelourinho, doubling as an art gallery/cultural space per Salvador's own city tourism portal (Pelourinho Dia e Noite). Deliberately picked over the area's bigger-name hotels (Villa Bahia, Fasano-tier options) as a genuinely smaller, less-marketed pick consistent with operator direction to avoid mainstream-hype venues. Google Maps verified live via browser: 4.4 stars, 158 reviews, 3-star hotel classification, R. das Laranjeiras 34, Centro Histórico/Pelourinho. Reviews (aggregated via Google's TripAdvisor cross-listing) consistently name a host, Cris, as warmly helpful; rooms described as spacious with good air conditioning, some top-floor rooms with a large private terrace; the surrounding street flagged as safe and well-lit. Official website (solardasartessalvador.com.br) is currently unreachable (DNS failure) — noted rather than silently worked around; no official Instagram account was confirmed in this pass, so a Google Maps listing photo was used for the hero image instead, per operator direction that hero images must be real (non-AI-generated) photos or venue-sourced art. No genuine dated event applicable to a lodging pin. Single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Solar das Artes Pousada Boutique, R. das Laranjeiras 34, Centro Histórico, Salvador - BA — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T21:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Solar+das+Artes+Pousada+Boutique/@-12.9740578,-38.50824,17z/data=!4m9!3m8!1s0x71604e87bc1ca3f:0xbf00c03a4791d038!5m2!4m1!1i2!8m2!3d-12.9740578!4d-38.50824!16s%2Fg%2F1td6mvwj"
+  },
+  "publishedAt": "2026-09-21T21:10:00Z",
+  "updatedAt": "2026-09-21T21:10:00Z"
+}
