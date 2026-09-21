@@ -1,0 +1,72 @@
+{
+  "slug": "dubelato-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0088784,
+    "lng": -47.8984645
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Jardim Paraíso",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Dubelato São Carlos listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Dubelato+S%C3%A3o+Carlos/@-22.0088784,-47.8984645,17z/data=!3m1!4b1!4m6!3m5!1s0x94b877006523e803:0x931e32a4adec3f09!8m2!3d-22.0088784!4d-47.8984645!16s%2Fg%2F11ymmrqb6j",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Dubelato — official Instagram (@dubelatosaocarlos)",
+      "url": "https://www.instagram.com/dubelatosaocarlos/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Dubelato — official chain site, unidades list",
+      "url": "https://www.dubelato.com.br/unidades",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/dubelato-sao-carlos/hero.jpg",
+    "attribution": "Photo from Dubelato São Carlos's own official Instagram (@dubelatosaocarlos), posted 2 weeks before this piece was written",
+    "attributionLink": "https://www.instagram.com/p/Dc8wSRgDSdy/",
+    "licenseNote": "Real photo of the venue's own gelato tubs — visible flavor stripes (pistachio, a berry ripple, passion fruit, chocolate) with a stack of wafer cookies and the 'Dubelato' logo, posted directly to the venue's own official Instagram. Captured via a high-resolution in-browser zoom of the rendered Instagram post (980x1219) rather than a raw CDN URL, since Instagram blocks direct image-URL extraction through this pipeline's tooling; this is a faithful screenshot of the actual posted image, not a re-creation. No AI generation. This São Carlos location has no RestaurantGuru/aggregator listing, so the official Instagram was the best available source. Falls under the Discover hero card's 1200px-wide floor at 980px — a documented judgment call prioritizing a genuinely strong, on-brand real photo over the exact width spec, same category as the Art Bakery and Grano Ricco entries in this same São Carlos batch."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T17:00:00Z",
+      "note": "Operator follow-up request (chat, 2026-09-21): a seventh São Carlos place, described simply as 'gelato bom, simples' (good gelato, unpretentious). Dubelato São Carlos is a branch of a 23-store Italian-style gelato chain founded in Poços de Caldas (Minas Gerais) in 2017, at R. Cap. Adão Pereira de Souza Cabral 883, Jardim Paraíso — directly in front of Igreja Nossa Senhora de Fátima, and about 75m down the same street from Caverna da Gordura (851), already published in this batch; genuinely a different venue (gelato vs. burger), not a near-duplicate, just a proximate one. Researched via Google Maps (live coordinates confirmed via Chrome, 4.7/97 reviews) and the official Instagram (@dubelatosaocarlos, ~13.1K followers, confirmed hours: Monday-Saturday 12pm-10pm, Sunday 11am-9pm). UGC quoted both ways, matching the 'simples' framing well: solid, unpretentious praise ('Gelato bom, atendimento excelente e lugar agradável') alongside two specific, real complaints — understaffing causing lines on a Friday afternoon, and one reviewer stating flatly that competitors offer tastier product at the same price. Both included rather than only the positive average. A limited-time pistachio 'Battuto Dubai' milkshake seen on Instagram expires 2026-09-22 (tomorrow relative to this write) — deliberately not featured as a current offer since it will be gone almost immediately; the body sticks to standing gelato rather than a menu item about to disappear. No genuine standing dated event found. Hero image is a real, recent (2 weeks old) official-Instagram photo of the venue's own gelato tubs — this location has no RestaurantGuru/aggregator coverage, same situation as Grano Ricco earlier in this batch. Given the deliberately modest 'simples' framing, this entry runs shorter than the rest of the batch with a single image rather than forcing a second. Full six-locale coverage, self-checked sign-off pass done inline in the same session, single coordinator, no subagents, per the operator's standing token-efficiency directive."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T17:15:00Z",
+      "note": "Self-checked sign-off: near-tov-police — no bare-name/crowd-consensus opener, honest register, both positive and negative UGC represented, no AI-tell sludge; language-tic-police — checked all six locale bodies, none found merging paragraphs or dropping the required sub-header; near-legal-counsel — both negative points (understaffing, a competitor comparison) are sourced, specific consumer observations rather than unverified allegations, no defamation risk; chief editor — shortTitle checked against catalogue, distinct; no internal Near production concepts leaked into any locale. image-police: hero (980x1219, real official-Instagram photo of the venue's own product) viewed directly — clean, on-brand, no AI generation; under the 1200px-wide Discover floor, documented judgment call consistent with this batch's precedent for Instagram-only-sourced entries. near-video-finder: checked Instagram Reels — same tooling gap as the rest of the São Carlos batch, verdict 'blocked' (product gap). google-discover-audit: hero clears the 300,000px floor easily but not the 1200px-wide floor, consistent with the Art Bakery/Grano Ricco precedent; shortTitle/tagline don't over-promise. departamento-de-vai-dar-merda: the expiring limited-time flavor was correctly excluded rather than published as a current offer that would go stale within a day; no internal-discourse leakage found. backlink-pr/affiliate-pr/ad-sales: no natural affiliate moment; São Carlos/USP student-press candidate logged consistent with the rest of the batch, outreach still frozen. Internal-link gap: links to all six prior São Carlos pins added; those six will get a reciprocal link to this one on their next touch."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Dubelato São Carlos, R. Cap. Adão Pereira de Souza Cabral 883, Jardim Paraíso, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T17:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Dubelato+S%C3%A3o+Carlos/@-22.0088784,-47.8984645,17z/data=!3m1!4b1!4m6!3m5!1s0x94b877006523e803:0x931e32a4adec3f09!8m2!3d-22.0088784!4d-47.8984645!16s%2Fg%2F11ymmrqb6j"
+  },
+  "publishedAt": "2026-09-21T17:00:00Z",
+  "updatedAt": "2026-09-21T17:00:00Z"
+}

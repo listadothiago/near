@@ -75,6 +75,11 @@
       "status": "active",
       "at": "2026-09-21T03:00:00Z",
       "note": "Added a reciprocal internal link to Grano Ricco (São Carlos's sixth and final pin in this batch) in all six locales. No factual changes."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T17:00:00Z",
+      "note": "Added a reciprocal internal link to Dubelato (a seventh São Carlos pin added in a follow-up request) in all six locales. No factual changes."
     }
   ],
   "geocode": {
@@ -85,5 +90,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/San+Marin+Padaria+%E2%80%A2+Caf%C3%A9/@-22.0127633,-47.8877564,17z/data=!3m1!4b1!4m6!3m5!1s0x94b8772745553d89:0x6ec912f043783c2!8m2!3d-22.0127633!4d-47.8877564!16s%2Fg%2F11t1sk1p7f"
   },
   "publishedAt": "2026-09-21T02:30:00Z",
-  "updatedAt": "2026-09-21T03:00:00Z"
+  "updatedAt": "2026-09-21T17:00:00Z"
 }

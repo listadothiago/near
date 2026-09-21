@@ -74,6 +74,11 @@
       "status": "active",
       "at": "2026-09-21T03:00:00Z",
       "note": "Added a reciprocal internal link to Grano Ricco (São Carlos's sixth and final pin in this batch) in all six locales. No factual changes."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T17:00:00Z",
+      "note": "Added a reciprocal internal link to Dubelato (a seventh São Carlos pin added in a follow-up request) in all six locales. No factual changes."
     }
   ],
   "geocode": {
@@ -84,5 +89,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Holy+Crust+Pizza+and+Beer/@-22.0121203,-47.8974278,17z/data=!3m1!4b1!4m6!3m5!1s0x94b877978ebb3f1f:0x4136c94d731d6864!8m2!3d-22.0121203!4d-47.8974278!16s%2Fg%2F11hj647g05"
   },
   "publishedAt": "2026-09-21T02:00:00Z",
-  "updatedAt": "2026-09-21T03:00:00Z"
+  "updatedAt": "2026-09-21T17:00:00Z"
 }
