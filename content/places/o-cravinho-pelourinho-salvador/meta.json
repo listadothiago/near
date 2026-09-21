@@ -1,0 +1,67 @@
+{
+  "slug": "o-cravinho-pelourinho-salvador",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -12.9731406,
+    "lng": -38.5103061
+  },
+  "place": {
+    "city": "Salvador",
+    "neighborhood": "Pelourinho",
+    "region": "Bahia",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — O Cravinho listing, reviews and menu",
+      "url": "https://www.google.com/maps/place/O+Cravinho/@-12.9731406,-38.5103061,17z/data=!3m1!4b1!4m6!3m5!1s0x71604e6195f707f:0x426cc7be77697931!8m2!3d-12.9731406!4d-38.5103061!16s%2Fg%2F1v7tlkz9",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "bahia.ba — Cachaça, cravo, limão e mel: como O Cravinho se tornou um dos sabores de Salvador",
+      "url": "https://bahia.ba/entretenimento/cachaca-cravo-limao-e-mel-como-o-cravinho-se-tornou-um-dos-sabores-de-salvador/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "O Cravinho — official Instagram (@cravinhobar)",
+      "url": "https://www.instagram.com/cravinhobar/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/o-cravinho-pelourinho-salvador/hero.jpg",
+    "attribution": "Photo of the bar's own signage from O Cravinho's official Instagram (@cravinhobar)",
+    "attributionLink": "https://www.instagram.com/p/DaTMKSUTVcv/",
+    "licenseNote": "Real, non-AI photo of the venue's own hanging sign, posted to the bar's official Instagram (@cravinhobar, 47.6K followers). No AI generation."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T22:00:00Z",
+      "note": "Operator request (chat, 2026-09-21): fifth and final pin in this Salvador push. O Cravinho is a Pelourinho institution founded by Julival Santos in the late 1980s (bahia.ba gives 1987; a separate outlet gives 1989 — genuine source disagreement, resolved in the body by saying 'late 1980s' rather than picking one to sound precise) as a bar for artisanal infused cachaça (clove, jatobá bark, cinnamon, honey, lime), reviving a recipe tradition rooted in Black and indigenous ancestry. Google Maps verified live via browser: 4.7 stars, 2,661 reviews, open now, Largo Terreiro de Jesus 3. Deliberately did not conflate with 'O Cravinho do Carlinhos,' a separate, lower-rated (4.3/196) competing venue that surfaces in the same searches. A 2026-dated food-safety raid story (A TARDE) was found and read but excluded from the body — the coverage shows it was resolved within a day via a UFBA lab clearance and federal re-certification, so citing the raid without that resolution would misrepresent current status; the piece instead reflects the bar's actual current standing (open, thriving, 2,661 recent reviews). Reviews read directly: consistently positive on the cachaça and the moela de frango, with one practical note (seating and bathroom access both cost extra). Instagram (@cravinhobar, 47.6K followers) supplied a real, non-AI photo of the bar's own hanging sign for the hero. No genuine dated event applicable. Single coordinator, no subagents, per the operator's standing token-efficiency directive. This closes out the operator's 5-post Salvador push for this session."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "O Cravinho, Largo Terreiro de Jesus 3, Centro Histórico, Salvador - BA — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T21:50:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/O+Cravinho/@-12.9731406,-38.5103061,17z/data=!3m1!4b1!4m6!3m5!1s0x71604e6195f707f:0x426cc7be77697931!8m2!3d-12.9731406!4d-38.5103061!16s%2Fg%2F1v7tlkz9"
+  },
+  "publishedAt": "2026-09-21T22:00:00Z",
+  "updatedAt": "2026-09-21T22:00:00Z"
+}
