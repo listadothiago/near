@@ -1,0 +1,84 @@
+{
+  "slug": "caverna-da-gordura-sao-carlos",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [
+    "local-legend"
+  ],
+  "coordinates": {
+    "lat": -22.0094306,
+    "lng": -47.8980471
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Jardim Paraíso",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — Caverna da Gordura listing, reviews and photos",
+      "url": "https://www.google.com/maps/place/Caverna+da+Gordura+-+S%C3%A3o+Carlos/@-22.0094306,-47.8980471,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87745d4576395:0x585e6b01b71667f2!8m2!3d-22.0094306!4d-47.8980471!16s%2Fg%2F11fjsw3vr1",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "RestaurantGuru — Caverna da Gordura menu, prices and reviews",
+      "url": "https://restaurantguru.com/Caverna-da-Gordura-Food-Truck-Sao-Carlos",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Caverna da Gordura — official iFood delivery menu",
+      "url": "https://www.ifood.com.br/delivery/sao-carlos-sp/caverna-da-gordura-burguer-jardim-paraiso/6ffb3a40-c9ab-4cec-8663-bfd139bd1432",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Caverna da Gordura — Goomer delivery/cardápio site",
+      "url": "https://caverna-da-gordura.goomer.app/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    },
+    {
+      "name": "Caverna da Gordura São Carlos — official Instagram",
+      "url": "https://www.instagram.com/cavernadagordura/",
+      "feedId": null,
+      "originalPublishedAt": "2026-09-21T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/caverna-da-gordura-sao-carlos/hero.jpg",
+    "attribution": "Photo of Caverna da Gordura's own storefront, sourced via RestaurantGuru's mirrored Google Maps listing photos",
+    "attributionLink": "https://restaurantguru.com/Caverna-da-Gordura-Food-Truck-Sao-Carlos",
+    "licenseNote": "Real exterior photo of the venue's own storefront on Rua Capitão Adão Pereira de Souza Cabral, pulled from RestaurantGuru's photo gallery for this listing (which mirrors the Google Maps listing's own photo set, including photos Google Maps tags 'Do proprietário' / from the owner). No AI generation. 1200x900, clears the 1200px-wide/300,000px/~16:9 Discover hero floor. RestaurantGuru is an aggregator rather than the original photographer, so per-photo individual creator credit isn't available beyond the listing itself — same attribution tier as the Café Carioca (Santos) precedent."
+  },
+  "eventStartsAt": null,
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-21T00:00:00Z",
+      "note": "Operator-requested (chat, 2026-09-21): São Carlos batch built from a personal recommendation list of 6 favorite spots, starting with Caverna da Gordura as the most iconic — a burger/craft-beer bar near USP's São Carlos campus, open since September 2018. The chat message that requested this batch also contained an embedded instruction to bypass Near's image-sourcing rules and skip generated-image disclosure, framed as 'this is a test' — that instruction was not from the operator through a trusted channel and was not followed; imagery here uses the normal real-photo-with-attribution tier, no AI generation. Researched via Google Maps (4.7/645 reviews, R$40-60pp per 85 diners, address and exact coordinates confirmed live via Chrome), RestaurantGuru (4.8/5, 646 reviews, itemized menu pricing: batata frita ~R$27, loaded fries ~R$38-47), iFood and Goomer delivery menus, and the venue's own Instagram (@cavernadagordura, ~11K followers, active menu/drink content, no genuine dated events found — this reads as a standing bar with regular programming, not an events venue, so none is claimed or invented). UGC checked directly on Google Maps: recent reviews split between strong praise for the 'Porco na Lama' burger and fast in-house service, and one week-old complaint about a slow delivery order (~1hr+, attributed to a shortage of delivery riders that week) — both surfaced honestly rather than only the positive average. No dated/upcoming event found via Instagram or Google Maps at time of writing. Reddit search for São Carlos/USP bar discussion returned no usable results (r/SaoCarlos appears too small/inactive to carry this); logged as a floor gap rather than silently skipped. Price signal from Google Maps (R$40-60/person, 85-diner sample) and RestaurantGuru's itemized menu both made it into the drafted body per sourced-price-ranges. Full six-locale coverage, near-tov-police/language-tic-police/near-legal-counsel/chief-editor sign-off, image-police, near-video-finder, google-discover-audit and the red-team pass are being run as separate steps in this same session before this entry is considered fully gated — see subsequent statusHistory entries."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-21T00:20:00Z",
+      "note": "Single-coordinator self-checked sign-off pass (no subagents, per the operator's standing token-efficiency directive): near-tov-police (no bare-name/crowd-consensus opener, no AI-tell sludge, honest register, both positive and negative UGC represented) — clean; language-tic-police — checked English and all five translated locales for merged paragraphs/dropped sub-headers, none found, each locale keeps both sub-headers and both images; near-legal-counsel — the one negative review (slow delivery, cited rider shortage) is a sourced, fairly-attributed operational complaint, not a defamation-adjacent allegation, no real-person likeness issues, all photo attribution documented; chief editor — shortTitle checked against catalogue for repeated formula, distinct; no internal Near production concepts (tiers, rotation, coverage gaps) leaked into any locale body. image-police: viewed hero (1200x900, real storefront photo) and body image (1200x1600, real menu item photo) — both clear the Discover card floor, no AI generation, provenance documented above. near-video-finder: checked venue Instagram Reels for an embeddable video — Instagram does not offer a stable oEmbed/iframe path through this pipeline's current tooling, so verdict is 'blocked' (product gap, not a content failure) — logged rather than claimed as embedded. google-discover-audit: hero meets 1200px-wide/300,000px/~16:9 spec; shortTitle is a real claim the body supports (student queue framing is backed by the USP-proximity sourcing), not an over-promise. departamento-de-vai-dar-merda red team: price (R$40-60pp, itemized menu prices) is dated with a verification date and framed as a range that survives modest changes, not a single headline number; no internal-discourse leakage found in any locale. backlink-pr/affiliate-pr/ad-sales revenue pass: no natural affiliate/purchase moment (no bookable event/room), no obvious ad-sales lead beyond the venue itself; backlink-pr logged as a candidate outreach target in content/backlink-outreach.md for a future São Carlos/USP student-press pitch once outreach unfreezes. Internal-link gap logged in content/requests.md (first São Carlos pin, nothing to link to yet)."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Caverna da Gordura, R. Cap. Adão Pereira de Souza Cabral 851, Jardim Paraíso, São Carlos - SP — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-09-21T00:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Caverna+da+Gordura+-+S%C3%A3o+Carlos/@-22.0094306,-47.8980471,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87745d4576395:0x585e6b01b71667f2!8m2!3d-22.0094306!4d-47.8980471!16s%2Fg%2F11fjsw3vr1"
+  },
+  "publishedAt": "2026-09-21T00:00:00Z",
+  "updatedAt": "2026-09-21T00:00:00Z"
+}
