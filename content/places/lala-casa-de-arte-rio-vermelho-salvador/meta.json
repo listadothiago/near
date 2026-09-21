@@ -48,9 +48,9 @@
   "heroImage": {
     "strategy": "source",
     "url": "https://near.tips/places/lala-casa-de-arte-rio-vermelho-salvador/hero.jpg",
-    "attribution": "Photo from Lalá Casa de Arte's own official Instagram (@lalacasadearte)",
+    "attribution": "Video still showing founder Ricardo Dantas at the venue, from Lalá Casa de Arte's own official Instagram (@lalacasadearte)",
     "attributionLink": "https://www.instagram.com/p/DUn8lmagPA9/",
-    "licenseNote": "Real, non-AI photo posted directly to the venue's own official Instagram (@lalacasadearte, 18.1K followers) — a candid shot of the space's interior with a person present, not an event poster. No AI generation."
+    "licenseNote": "Real, non-AI still frame from a video posted directly to the venue's own official Instagram (@lalacasadearte, 18.1K followers) — shows founder Ricardo Dantas on the property's terrace. Carries a small paused-video play-button overlay inherent to the source frame; this is a faithful capture of the actual posted content, not a re-creation. No AI generation."
   },
   "eventStartsAt": null,
   "eventEndsAt": null,
