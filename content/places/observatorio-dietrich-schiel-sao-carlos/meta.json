@@ -1,0 +1,90 @@
+{
+  "slug": "observatorio-dietrich-schiel-sao-carlos",
+  "categories": [
+    "city-culture"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": -22.0113056,
+    "lng": -47.8964809
+  },
+  "place": {
+    "city": "São Carlos",
+    "neighborhood": "Centro",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "radar-x",
+  "sources": [
+    {
+      "name": "CDCC/USP — visitor information and planetarium",
+      "url": "https://cdcc.usp.br/observatorio/planetario/",
+      "feedId": null
+    },
+    {
+      "name": "CDCC/USP — programme and visitor conditions, 17 September 2026",
+      "url": "https://cdcc.usp.br/planetario-do-observatorio-dietrich-schiel-do-cdcc-usp-convida-o-publico-para-uma-viagem-pelo-universo/",
+      "feedId": null
+    },
+    {
+      "name": "CDCC/USP — evening telescope viewing",
+      "url": "https://cdcc.usp.br/observatorio/observacao-do-ceu/",
+      "feedId": null
+    },
+    {
+      "name": "CDCC/USP — observatory history",
+      "url": "https://cdcc.usp.br/observatorio/",
+      "feedId": null
+    },
+    {
+      "name": "Portal da Cidade — planetarium opening, 23 February 2026",
+      "url": "https://saocarlos.portaldacidade.com/noticias/cidade/novo-planetario-e-inaugurado-na-usp-em-sao-carlos-com-sessoes-abertas-ao-publico-4521",
+      "feedId": null
+    },
+    {
+      "name": "Observatório Dietrich Schiel — official September announcement",
+      "url": "https://www.instagram.com/cdcc.ods/p/DdZyFZ_tGpu/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — verified pin and recent/low reviews",
+      "url": "https://www.google.com/maps/place/Observat%C3%B3rio+Dietrich+Schiel/@-22.0113056,-47.8964809,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87787e596e103:0x4baebbb83ca13202!8m2!3d-22.0113056!4d-47.8964809!16s%2Fg%2F11s9d45315",
+      "feedId": null
+    },
+    {
+      "name": "r/saocarlos — local cultural recommendations",
+      "url": "https://www.reddit.com/r/saocarlos/comments/1vco64x/visitando_s%C3%A3o_carlos/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlYbZ91SYWOfHaUj9AxcnOmoaI7_0ej4S8ggc51qaH63Yg2lThSKN94065EQtXB4euo7_iZXcsNtZ5fec5uma1vHTbpRzaFhP0IJTeWYq_4jb3pT7fPtJD85iN8n1uTO6MzGMgP=w1600-h900-k-no",
+    "attribution": "Fabio Pinto Jr (Fabio Jr) / Google Maps · 10/2022",
+    "attributionLink": "https://www.google.com/maps/place/Observat%C3%B3rio+Dietrich+Schiel/@-22.0111612,-47.8965728,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIDerYOjdg!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHRPTWlYbZ91SYWOfHaUj9AxcnOmoaI7_0ej4S8ggc51qaH63Yg2lThSKN94065EQtXB4euo7_iZXcsNtZ5fec5uma1vHTbpRzaFhP0IJTeWYq_4jb3pT7fPtJD85iN8n1uTO6MzGMgP%3Dw152-h86-k-no!7i4608!8i2592!4m6!3m5!1s0x94b87787e596e103:0x4baebbb83ca13202!8m2!3d-22.0113056!4d-47.8964809!16s%2Fg%2F11s9d45315",
+    "licenseNote": "Google Maps user photograph of the actual observatory exterior, October 2022, not Street View and not a photograph of the planetarium opened in 2026. Original 4608×2592; served at 1600×900 without changing its aspect ratio. Accepted under NEAR’s operator-authorized tier-1 attribution/deep-link/removal policy; not represented as a Creative Commons licence or individual permission. No identifiable visitors. The official institutional photograph was also considered; its available poster asset is only 940×788 and contains headline text."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "draft",
+      "at": "2026-09-21T16:18:54Z",
+      "note": "Explicit operator commission: exactly ONE new São Carlos article after deduplication. Six existing São Carlos venues and collections checked; this observatory is distinct from all of them and from the separate UFSCar observatory. Research, Google Maps pin and September official programme verified this session. Full evidence and distinct review findings retained in content/_reports/observatorio-dietrich-schiel-sao-carlos/."
+    },
+    {
+      "status": "active",
+      "at": "2026-09-24T22:02:35Z",
+      "note": "Resumed session 2026-09-24: verified all six locales complete, mechanical gates and Discover audit pass in content/_reports/observatorio-dietrich-schiel-sao-carlos/, hero sourced+attributed, dedupe re-run clean (only near-miss is Holy Crust bakery, 133m, distinct venue). trust: auto — publishing directly per pipeline step 10."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Observatório Dietrich Schiel, Av. Dr. Carlos Botelho 1465, Centro, São Carlos SP — listing pin, not photo vantage point",
+    "verifiedAt": "2026-09-21T16:18:54Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Observat%C3%B3rio+Dietrich+Schiel/@-22.0113056,-47.8964809,17z/data=!3m1!4b1!4m6!3m5!1s0x94b87787e596e103:0x4baebbb83ca13202!8m2!3d-22.0113056!4d-47.8964809!16s%2Fg%2F11s9d45315"
+  },
+  "publishedAt": "2026-09-21T16:18:54Z",
+  "updatedAt": "2026-09-24T22:02:35Z"
+}
