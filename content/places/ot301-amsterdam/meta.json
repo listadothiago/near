@@ -1,0 +1,85 @@
+{
+  "slug": "ot301-amsterdam",
+  "categories": [
+    "nightlife-sound"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": 52.3600834,
+    "lng": 4.8656877
+  },
+  "place": {
+    "city": "Amsterdam",
+    "neighborhood": "Oud-West",
+    "region": "North Holland",
+    "country": "Netherlands"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "OT301 official site — venue, programme areas, agenda",
+      "url": "https://www.ot301.nl/",
+      "feedId": null
+    },
+    {
+      "name": "OT301 official agenda — The Machine / Power vs Power benefit, 9 November 2026",
+      "url": "https://www.ot301.nl/agenda/16851",
+      "feedId": null
+    },
+    {
+      "name": "OT301 official online gallery — archival photos used in this piece",
+      "url": "https://www.ot301.nl/online-gallery",
+      "feedId": null
+    },
+    {
+      "name": "Amsterdam Alternative — \"First Aid in Case of Art: 20 Years of OT301 in Context\", 12 Nov 2019",
+      "url": "https://amsterdamalternative.nl/articles/8601",
+      "feedId": null
+    },
+    {
+      "name": "Wikipedia — OT301 (history, ownership, capacity)",
+      "url": "https://en.wikipedia.org/wiki/OT301",
+      "feedId": null
+    },
+    {
+      "name": "Vegan Amsterdam — De Peper closure, 2023",
+      "url": "https://www.veganamsterdam.org/de-peper/",
+      "feedId": null
+    },
+    {
+      "name": "Google Maps — verified pin, 4.6/580 reviews checked 24 September 2026",
+      "url": "https://www.google.com/maps/place/OT301/@52.3600834,4.8656877,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5e209cc5daaab:0x923b4ecb0428b455!8m2!3d52.3600834!4d4.8656877!16s%2Fm%2F0274s_q",
+      "feedId": null
+    },
+    {
+      "name": "OT301 official Instagram (@ot301adam, 22.7K followers)",
+      "url": "https://www.instagram.com/ot301adam/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://www.ot301.nl/media/content/1358_large.jpg",
+    "attribution": "George Knegtel, via OT301's official online gallery — \"Progress Bar\" series, November/December 2019",
+    "attributionLink": "https://www.ot301.nl/online-gallery",
+    "licenseNote": "Real photo hosted on OT301's own official website, credited to photographer George Knegtel in the site's own gallery caption. Native 1200x675 (verified by direct fetch), clears the Discover hero-card floor without cropping. Not Creative Commons; accepted under NEAR's operator-authorized tier-1 attribution/deep-link/removal policy for a venue's own official self-hosted photography, same tier as a business's own site or verified social account. Depicts a past club night inside the venue (2019), not a current-day storefront shot — building and programme areas confirmed unchanged via the current official site. Two in-body images (1363_large.jpg, 1373_large.jpg) drawn from the same official gallery under the same policy, credited to photographers Roel Determeijer (2011) and uncredited festival documentation (2012) respectively per the gallery's own captions."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-24T22:28:11Z",
+      "note": "Rotation item OT301 (manifest: content/_rotation-runs/2026-09-09-round-01/manifest.json, candidate OT301/Amsterdam/Tier 2, also batch-30 candidate). Full research session: history and ownership (Wikipedia, Amsterdam Alternative 20th-anniversary piece), current programme areas verified against the live official site (Ventilator Cinema/Bar, Studio 301, 4bid Gallery), De Peper's 2023 closure and replacement by Café Gilde caught and corrected against older sources that still describe De Peper as open — a currency check that mattered. Google Maps pin verified live via browser (52.3600834, 4.8656877), 4.6/580 reviews read for UGC (queue/phone-return/cheap-beer detail), practical entrance/accessibility notes (buzzer entry, no elevator) sourced from independent visitor commentary. Dated event: The Machine's Dutch debut, benefit night, Saturday 9 November 2026, confirmed directly on OT301's own agenda page (not just aggregator listings). Dedupe re-run clean against all 5 existing Amsterdam pins, nearest is Rush Hour at >1km. r/amsterdam search attempted twice (web search, then direct Reddit navigation) and blocked both times — substituted Google Maps reviews as the UGC leg per the fallback ladder; logged as a source-catalogue gap, not glossed. Preferred-sources.md has only one Amsterdam-relevant entry (Amsterdam Alternative); flagging the same catalogue thinness already noted there rather than forcing weak sources. Hero and two in-body images are real photos from OT301's own official online gallery, credited per licenseNote. All six locales, mechanical and Discover checks pass."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "OT301, Overtoom 301, Amsterdam — verified live via Google Maps browser session",
+    "verifiedAt": "2026-09-24T22:15:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/OT301/@52.3600834,4.8656877,17z/data=!3m1!4b1!4m6!3m5!1s0x47c5e209cc5daaab:0x923b4ecb0428b455!8m2!3d52.3600834!4d4.8656877!16s%2Fm%2F0274s_q"
+  },
+  "publishedAt": "2026-09-24T22:28:11Z",
+  "updatedAt": "2026-09-24T22:28:11Z"
+}
