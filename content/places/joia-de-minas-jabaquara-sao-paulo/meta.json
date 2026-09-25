@@ -1,0 +1,70 @@
+{
+  "slug": "joia-de-minas-jabaquara-sao-paulo",
+  "categories": [
+    "food-drink"
+  ],
+  "tags": [],
+  "coordinates": {
+    "lat": -23.6399273,
+    "lng": -46.6438144
+  },
+  "place": {
+    "city": "São Paulo",
+    "neighborhood": "Jabaquara",
+    "region": "São Paulo",
+    "country": "Brazil"
+  },
+  "trust": "auto",
+  "author": "foodie-9000",
+  "sources": [
+    {
+      "name": "Google Maps — verified pin, menu highlights, 4.5/3,273 reviews, checked 25 September 2026",
+      "url": "https://www.google.com/maps/place/Restaurante+J%C3%B3ia+de+Minas/@-23.6399273,-46.6438144,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5aef01211e87:0x36824e993ff71841!8m2!3d-23.6399273!4d-46.6438144!16s%2Fg%2F1ptzq7x28",
+      "feedId": null
+    },
+    {
+      "name": "cardapio.menu — delivery menu listing and prices",
+      "url": "https://cardapio.menu/restaurants/sao-paulo/joia-de-minas",
+      "feedId": null
+    },
+    {
+      "name": "Yoobite — venue description and signature dish",
+      "url": "https://www.yoobite.com/local/joia-de-minas/",
+      "feedId": null
+    },
+    {
+      "name": "Guia-se — venue listing",
+      "url": "https://www.guia-se.com.br/sp/sao-paulo/jabaquara/restaurante-joia-de-minas-comida-tipica-mineira",
+      "feedId": null
+    },
+    {
+      "name": "Facebook — Restaurante Jóia de Minas page",
+      "url": "https://www.facebook.com/p/Restaurante-J%C3%B3ia-de-Minas-100066437477645/",
+      "feedId": null
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://lh3.googleusercontent.com/grass-cs/ACvplmNh6tvVE2YoZwSXemogEfYwPgZOw1VuQ3-b2s77dFkHiSSWUX1M0X26DYLsaPGhgRWysnCXhsfmCd7KstX-zbKPMeI5zci4ZxzYUVEaCIK-wgygcEjJSVizoJK5-3-uYORD4SrQ=w1600-h900-c",
+    "attribution": "Google Maps venue-submitted photo — dining room, Restaurante Jóia de Minas",
+    "attributionLink": "https://www.google.com/maps/place/Restaurante+J%C3%B3ia+de+Minas/@-23.6399273,-46.6438144,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5aef01211e87:0x36824e993ff71841!8m2!3d-23.6399273!4d-46.6438144!16s%2Fg%2F1ptzq7x28",
+    "licenseNote": "Real photo of the restaurant's own dining room (wood paneling, ceiling fans, set tables), pulled from the venue's official Google Maps photo set rather than a customer check-in. Native resolution 4000x3000 (4:3); served via Google's own image-serving crop parameter (w1600-h900-c) to a true 1600x900 16:9, no local editing or content alteration — same crop mechanism as a standard responsive-image request, not a manual edit. No identifiable people in frame. Accepted under NEAR's operator-authorized tier-1 attribution/deep-link/removal policy. Two other Google-Maps-surfaced photos under this listing's grass-cs photo set were checked and rejected as mismatched to a different nearby venue (a house exterior, and a competitor's weekly menu board) — Google's proximity-based photo grouping is not reliable venue attribution on its own; each candidate was opened and visually confirmed before use."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-09-25T15:04:52Z",
+      "note": "Operator asked in chat (2026-09-25) for a genuinely good walking-distance food option near Jabaquara metro station — explicit operator commission, trust: auto. Checked several candidates by actual walking distance first: É do Pará (Saúde) is 3.2km/8min drive, not walking distance; Jaco (Michelin-listed) is in Pinheiros, unrelated; Osnir Hamburger is near Praça da Árvore station, not Jabaquara. Jóia de Minas confirmed at 800m/11-minute walk via Google Maps directions from the actual Jabaquara-Comitê Paralímpico station point. Sourced from Google Maps (verified pin, 4.5/3,273 reviews read for both praise and a genuine complaint — a thin vaca atolada portion — surfaced honestly rather than only the positive average), cardapio.menu for pricing, and directory listings for description/signature-dish confirmation. Restaurant's own official site (restaurantejoiademinas.com.br) is currently DNS-dead — noted in-body rather than cited. Instagram handle @joiademinas belongs to an unrelated frozen-pão-de-queijo wholesaler in Arcos, MG, not this restaurant; the Instagram location-tag page for this venue exists but only surfaces customer check-in photos with identifiable faces, so it was not used for imagery. No r/SaoPaulo or other Reddit coverage found for this small neighborhood spot — genuinely thin UGC catalogue for the area, logged rather than forced. No genuine dated event; this is an evergreen neighborhood restaurant, not an events venue. Internal-link gap logged to content/requests.md — no other published Near place is close enough or thematically matched (Minas Gerais home cooking) to earn a real in-text link. Dedupe clean — no existing São Paulo pin within kilometers. All six locales, mechanical gates pass."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Restaurante Jóia de Minas, Av. Gal. Valdomiro de Lima 241, Jabaquara, São Paulo — verified live via Google Maps",
+    "verifiedAt": "2026-09-25T15:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Restaurante+J%C3%B3ia+de+Minas/@-23.6399273,-46.6438144,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5aef01211e87:0x36824e993ff71841!8m2!3d-23.6399273!4d-46.6438144!16s%2Fg%2F1ptzq7x28"
+  },
+  "publishedAt": "2026-09-25T15:04:52Z",
+  "updatedAt": "2026-09-25T15:04:52Z"
+}
