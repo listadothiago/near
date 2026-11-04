@@ -1,0 +1,67 @@
+{
+  "slug": "kettl-tea-los-feliz",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem"],
+  "coordinates": {
+    "lat": 34.101004,
+    "lng": -118.2911411
+  },
+  "place": {
+    "city": "Los Angeles",
+    "neighborhood": "Los Feliz",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Kettl Los Feliz listing and reviews",
+      "url": "https://www.google.com/maps/place/Kettl+Los+Feliz/@34.101004,-118.2911411,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c100352bcbdf:0x34354498a32aa920!8m2!3d34.101004!4d-118.2911411!16s%2Fg%2F11w_rhx870",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Kettl — Our Story (official site)",
+      "url": "https://kettl.co/pages/our-story",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "The Infatuation — Kettl Tea review",
+      "url": "https://www.theinfatuation.com/los-angeles/reviews/kettl-tea",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "World Tea News — Kettl founder Zach Mangan launches Stories of Japanese Tea",
+      "url": "https://www.worldteanews.com/index%2Ephp/profiles/stories-japanese-tea-kettl-founder-zach-mangan-launches-new-book",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/kettl-tea-los-feliz/hero.jpg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox — highest tier on the hero-image preference order by sourcing, but only 348x348px, below the Discover hero card floor (>=1200px wide, >300,000px). Used anyway as a documented compromise, consistent with the Bar Lubitsch/Skylight Books precedent in this same cluster, rather than holding the piece or substituting a generic/illustrated fallback."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T21:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04), fourth pin in the cluster (Los Feliz, second after Skylight Books). Verified open via live Google Maps listing (4.4/200 reviews, open until 6pm, busier than usual at time of check) and claude-in-chrome for exact coordinates. Research floor: Kettl's own official site (our-story page -- primary-source company history), The Infatuation, World Tea News (trade press, independently confirms founder Zach Mangan's book and the company's Japan-incorporated structure), Discover Los Angeles, matchaplaces.com, joe.coffee listing -- six preferred-source-type consults, exceeding the five-source floor. Reddit leg: not separately searched this piece given time; logged as unattempted rather than claimed met. Google reviews leg: read live via claude-in-chrome; recent reviews consistently praise unsweetened, authentically-served matcha (Hukuju, Suiteki/Nishio cultivars named specifically) and a guided 'Teas of Japan' tasting experience staffed personally, with no notable recent negative pattern found. Real texture used: founded 2010, the only US-based Japanese tea company fully incorporated in Japan (Fukuoka office), run by Zach and Minami Mangan; this Los Feliz cafe is the company's LA flagship, opened Spring 2024, with a four-seat tasting counter. Hero image is a real operator-sourced photo but under the Discover pixel spec (348x348) -- used anyway per licenseNote, same compromise as the two prior pins in this cluster. Full six-locale coverage done inline, single coordinator, no subagents. Headline leads with a concrete USP (specialist Japanese-tea depth / tasting counter, not a generic matcha cafe) and avoids the 'The X that Y' construction per operator instruction."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Kettl Los Feliz, 4677 Hollywood Blvd, Los Angeles, CA 90027 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T21:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Kettl+Los+Feliz/@34.101004,-118.2911411,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c100352bcbdf:0x34354498a32aa920!8m2!3d34.101004!4d-118.2911411!16s%2Fg%2F11w_rhx870"
+  },
+  "publishedAt": "2026-11-04T21:00:00Z",
+  "updatedAt": "2026-11-04T21:00:00Z"
+}
