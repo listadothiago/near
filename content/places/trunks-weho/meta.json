@@ -1,0 +1,67 @@
+{
+  "slug": "trunks-weho",
+  "categories": ["nightlife-sound"],
+  "tags": ["lgbtq-friendly", "local-legend", "hidden-gem"],
+  "coordinates": {
+    "lat": 34.0858013,
+    "lng": -118.3833472
+  },
+  "place": {
+    "city": "West Hollywood",
+    "neighborhood": "Boystown",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Trunks listing and reviews",
+      "url": "https://www.google.com/maps/place/Trunks/@34.0858013,-118.3833472,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2bea570dc6597:0x44336346496347d5!8m2!3d34.0858013!4d-118.3833472!16s%2Fg%2F1tfmj289",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "WEHOonline — New Owners of WeHo's Trunks Plan No Changes",
+      "url": "https://wehoonline.com/new-owners-wehos-trunks-plan-changes/",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "WEHOonline — Bill Holland, Owner of WeHo's Trunks Bar, Dies at 77",
+      "url": "https://wehoonline.com/weho-trunks-bar-owner-bill-holland-dies-77/",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "WEHOonline — Best of WeHo Nightlife reader's poll",
+      "url": "https://wehoonline.com/68097/",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/trunks-weho/hero.jpg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox — highest tier on the hero-image preference order. 1568x1040, well above the Discover hero floor."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T18:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04). Verified open and operating via live Google Maps listing (4.4/469 reviews, open hours current as of this session) and claude-in-chrome browser check for exact coordinates. Research floor: near-deep-researcher-equivalent multi-source pass across WEHOonline (the strongest source here — local indie outlet, not a listicle aggregator; logged as a preferred-sources candidate below), TravelGay, Atly, Wanderlog, The Gay Passport, Gathry — six sources consulted, exceeding the five-source floor. Reddit leg: searched twice (site:reddit.com and unfiltered) via web search, no usable r/WeHo or r/WestHollywood threads surfaced on this venue specifically — logged as a floor gap, not fabricated. Google reviews leg: read live via claude-in-chrome rather than web search, since Google review text isn't fetchable through the search backend — recent reviews quoted honestly both ways (an electric-night account three months old; a bartender-upcharge complaint and a separate rudeness complaint about water/straws, both about one month and four months old respectively). No dated event found on this venue's channels this run; none invented. Owner history (Bill Holland's death, the Duarte brothers' 2021 takeover with no planned changes) is real texture from WEHOonline, not decoration. Internal-link gap logged to content/requests.md (first LA pin, no sibling published yet to link to honestly). Full six-locale coverage done inline, single coordinator, no subagents, per the operator's standing token-efficiency directive. Headline avoids the 'The X that Y' construction and leads with a concrete unique-selling-point (no cover/no dress code) per explicit operator instructions mid-session (2026-11-04) — applies to the rest of this war-room cluster too."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Trunks, 8809 Santa Monica Blvd, West Hollywood, CA 90069 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T18:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Trunks/@34.0858013,-118.3833472,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2bea570dc6597:0x44336346496347d5!8m2!3d34.0858013!4d-118.3833472!16s%2Fg%2F1tfmj289"
+  },
+  "publishedAt": "2026-11-04T18:00:00Z",
+  "updatedAt": "2026-11-04T18:00:00Z"
+}
