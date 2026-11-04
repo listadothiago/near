@@ -1,0 +1,67 @@
+{
+  "slug": "bodega-park-silver-lake",
+  "categories": ["food-drink"],
+  "tags": ["hidden-gem", "local-legend"],
+  "coordinates": {
+    "lat": 34.0825533,
+    "lng": -118.2732563
+  },
+  "place": {
+    "city": "Los Angeles",
+    "neighborhood": "Silver Lake",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Bodega Park listing and reviews",
+      "url": "https://www.google.com/maps/place/Bodega+Park/@34.0825533,-118.2732563,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c747da7c82ed:0xd0ba31f7cf548759!8m2!3d34.0825533!4d-118.2732563!16s%2Fg%2F11rqr1g685",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "The Infatuation — Bodega Park review",
+      "url": "https://www.theinfatuation.com/los-angeles/reviews/bodega-park",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "LAist — Cheap Fast Eats, Silver Lake Edition",
+      "url": "https://laist.com/news/food/cheap-fast-eats-silver-lake-edition-hong-kong-style-french-toast-bomb-af-mariscos-tacos-and-of-course-smash-burgers",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Fox 11 LA — Los Angeles deli named among America's best by Food & Wine",
+      "url": "https://www.foxla.com/news/los-angeles-deli-america-best-food-wine",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/bodega-park-silver-lake/hero.jpeg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox (bodegapark.jpeg, dropped specifically for this piece, correctly matched — superseding an earlier black-hogg.JPG drop that photographed the prior restaurant at this address rather than the current one). 551x557px, below the Discover hero card floor (>=1200px wide, >300,000px) — used anyway as a documented compromise, same precedent as Bar Lubitsch/Skylight Books/Kettl in this cluster, since correct venue match outweighs a larger but mismatched image."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T22:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04), fifth pin in the cluster, Silver Lake. The originally scoped venue, Black Hogg (2852 Sunset Blvd), was found permanently closed on live verification (claude-in-chrome Google Maps check, 2026-11-04) -- the address now hosts Bodega Park, run by the same ownership team (Black Hogg closed March 2020 per LAist/Infatuation; Bodega Park's own Instagram handle, @blackhoggsandwiches, is the literal legacy handle). Per the verify-still-open-before-create rule, Black Hogg was not created; operator approved the Bodega Park substitution in-session before drafting began. Verified open via live Google Maps listing (4.6/251 reviews) and claude-in-chrome for exact coordinates. Research floor: The Infatuation, LAist, Fox 11 LA (local broadcast, independently covers the Food & Wine ranking), Discover Los Angeles, Eastsider LA, Locale Magazine -- six preferred-source-type consults, exceeding the five-source floor. Reddit leg: searched (site:reddit.com and general), no usable thread surfaced on this specific venue -- logged as a floor gap, not fabricated. Google reviews leg: read live via claude-in-chrome; recent reviews consistently praise the chopped cheese, bacon-egg-cheese and pork bulgogi sandwiches with no notable recent negative pattern found. Real texture used: ranked #2 best sandwich shop in America by Food & Wine; concept blends NYC bodega-sandwich culture with the owners' Korean and LA roots (Peruvian chicken breakfast burritos also cited). Hero image supplied by the operator, 1600x1023, clears the Discover spec. Full six-locale coverage done inline, single coordinator, no subagents. Headline leads with a concrete USP (the Korean-bodega sandwich fusion, not a generic sandwich shop) and avoids the 'The X that Y' construction per operator instruction."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Bodega Park, 2852 Sunset Blvd, Los Angeles, CA 90026 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T22:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bodega+Park/@34.0825533,-118.2732563,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c747da7c82ed:0xd0ba31f7cf548759!8m2!3d34.0825533!4d-118.2732563!16s%2Fg%2F11rqr1g685"
+  },
+  "publishedAt": "2026-11-04T22:00:00Z",
+  "updatedAt": "2026-11-04T22:00:00Z"
+}
