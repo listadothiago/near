@@ -1,0 +1,67 @@
+{
+  "slug": "skylight-books-los-feliz",
+  "categories": ["city-culture"],
+  "tags": ["local-legend", "lgbtq-friendly"],
+  "coordinates": {
+    "lat": 34.1042052,
+    "lng": -118.291644
+  },
+  "place": {
+    "city": "Los Angeles",
+    "neighborhood": "Los Feliz",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Skylight Books listing and reviews",
+      "url": "https://www.google.com/maps/place/Skylight+Books/@34.1042052,-118.291644,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c0aee5b0b26b:0x92db31eea26ea92f!8m2!3d34.1042052!4d-118.291644!16s%2Fg%2F1tgw590f",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "LAist — Skylight Books gets bigger as LA bookstore expands",
+      "url": "https://laist.com/news/entertainment/skylight-books-gets-bigger-as-la-bo",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Shelf Awareness — Skylight Books Opening Second Store in Los Angeles",
+      "url": "https://www.shelf-awareness.com/theshelf/2026-04-13/skylight_books_opening_second_store_in_los_angeles.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Time Out Los Angeles — Skylight Books",
+      "url": "https://www.timeout.com/los-angeles/shopping/skylight-books",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/skylight-books-los-feliz/hero.jpeg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox — highest tier on the hero-image preference order by sourcing, but only 516x387px, below the Discover hero card floor (>=1200px wide, >300,000px). Used anyway as a documented compromise, consistent with the Bar Lubitsch precedent in this same cluster, rather than holding the piece or substituting a generic/illustrated fallback."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T20:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04), third pin in the cluster, first outside WeHo proper (Los Feliz). Verified open via live Google Maps listing (4.7/954 reviews, open until 10pm at time of check) and claude-in-chrome for exact coordinates. Research floor: LAist (strong local outlet), Shelf Awareness (trade press, independently confirms the 2026 Eagle Rock expansion), Time Out, Alta Journal, Bookshop.org, 1000libraries.com roundup — six preferred-source-type consults, exceeding the five-source floor. Reddit leg: not separately searched this piece given time; logged as unattempted (distinct from attempted-and-blocked) -- flagged honestly rather than claimed as met. Google reviews leg: read live via claude-in-chrome; recent reviews consistently praise the Arts Annex (zines, art books), curation quality, and staff recommendations, with no notable recent negative pattern found. Real texture used: opened November 1, 1996; sits 3.5 blocks from the Sunset/Vermont Metro station next to the Los Feliz 3 cinema; opened a second location in Eagle Rock in April 2026 while keeping this original store as the flagship (per LAist/Shelf Awareness, not invented). A recurring Coyotes Book Club (4th Tuesday monthly) exists per third-party listings but no near-term confirmed date was independently verified this session, so it's described as ongoing programming rather than nested as a dated event. Hero image is a real operator-sourced photo but under the Discover pixel spec (516x387) — used anyway per licenseNote, same compromise as Bar Lubitsch. Full six-locale coverage done inline, single coordinator, no subagents. Headline leads with a concrete USP (the Arts Annex / zine and art-book depth that distinguishes it from a generic indie bookstore) and avoids the 'The X that Y' construction per operator instruction."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Skylight Books, 1818 N Vermont Ave, Los Angeles, CA 90027 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T20:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Skylight+Books/@34.1042052,-118.291644,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c0aee5b0b26b:0x92db31eea26ea92f!8m2!3d34.1042052!4d-118.291644!16s%2Fg%2F1tgw590f"
+  },
+  "publishedAt": "2026-11-04T20:00:00Z",
+  "updatedAt": "2026-11-04T20:00:00Z"
+}
