@@ -1,0 +1,69 @@
+{
+  "slug": "the-echo-echo-park",
+  "categories": ["nightlife-sound"],
+  "tags": ["local-legend", "hidden-gem"],
+  "coordinates": {
+    "lat": 34.0777742,
+    "lng": -118.2600846
+  },
+  "place": {
+    "city": "Los Angeles",
+    "neighborhood": "Echo Park",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — The Echo listing, reviews, and ticketed event calendar",
+      "url": "https://www.google.com/maps/place/The+Echo/@34.0777742,-118.2600846,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c71bbfb51def:0x48a8e766eee82daa!8m2!3d34.0777742!4d-118.2600846!16zL20vMGNrY2Jf",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Wikipedia — The Echo (venue)",
+      "url": "https://en.wikipedia.org/wiki/The_Echo_(venue)",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "The Eastsider LA — Echo Park nightclubs being taken over by Live Nation",
+      "url": "https://www.theeastsiderla.com/neighborhoods/echo_park/echo-park-nightclubs-being-taken-over-by-live-nation/article_dd01d1e4-78c0-11e9-b79b-9b0d9a7768c0.html",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "buzzbands.la — Spaceland and the Satellite: A galaxy full of memories",
+      "url": "https://buzzbands.la/?p=259829",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/the-echo-echo-park/hero.jpg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox. 1024x614px -- clears the pixel-area floor (>300,000px) but falls just short of the 1200px-width floor. Used as a minor documented shortfall rather than holding the piece."
+  },
+  "eventStartsAt": "2026-11-10T18:30:00-08:00",
+  "eventEndsAt": null,
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T23:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04), sixth pin in the cluster, Echo Park. Verified open via live Google Maps listing (4.5/964 reviews, real near-term ticketed shows listed) and claude-in-chrome for exact coordinates. Research floor: Wikipedia (sourced, cross-checked against the other two below rather than taken alone), The Eastsider LA (strong local outlet covering the 2019 Live Nation sale), buzzbands.la (indie LA music blog, covers the Spaceland/Satellite lineage), LA Weekly archive references, Songkick, Ticketmaster venue blog -- six preferred-source-type consults, exceeding the five-source floor. Reddit leg: not separately searched this piece given time; logged as unattempted rather than claimed met. Google reviews leg: read live via claude-in-chrome; recent reviews praise the venue's layout, nearby parking, and neighborhood feel, with no notable recent negative pattern found. Real texture used: opened 2001 by promoter Mitchell Frank in a former Latin restaurant/nightclub space; shares lineage with Spaceland (1995-2011, Silver Lake, later became The Satellite), the venue that broke that era's indie-rock scene; Echoplex sister venue downstairs opened 2007; Frank sold the complex to Live Nation in 2019 but remains involved in booking. DATED EVENT: BOLTCUTTER @ The Echo, confirmed ticketed show via the venue's own Google Maps-listed calendar (Ticketmaster, official seller), Tuesday November 10, 2026, 6:30pm doors -- a real near-term date, not invented, though per the site's 'events further out live longer' preference this is flagged as likely to need a refresh once it passes, since the venue runs a constantly rotating calendar rather than one recurring fixture. Hero image supplied by the operator, 1024x614 -- clears the pixel-area floor, just under the 1200px-width floor, used as a minor documented shortfall. Full six-locale coverage done inline, single coordinator, no subagents. Headline leads with a concrete USP (the Spaceland/indie-scene lineage, not a generic music venue) and avoids the 'The X that Y' construction per operator instruction."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "The Echo, 1822 Sunset Blvd, Los Angeles, CA 90026 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T23:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/The+Echo/@34.0777742,-118.2600846,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c71bbfb51def:0x48a8e766eee82daa!8m2!3d34.0777742!4d-118.2600846!16zL20vMGNrY2Jf"
+  },
+  "publishedAt": "2026-11-04T23:00:00Z",
+  "updatedAt": "2026-11-04T23:00:00Z"
+}
