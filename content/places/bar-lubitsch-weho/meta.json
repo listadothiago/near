@@ -1,0 +1,67 @@
+{
+  "slug": "bar-lubitsch-weho",
+  "categories": ["nightlife-sound"],
+  "tags": ["hidden-gem", "local-legend"],
+  "coordinates": {
+    "lat": 34.0906465,
+    "lng": -118.3568709
+  },
+  "place": {
+    "city": "West Hollywood",
+    "neighborhood": "Little Russia",
+    "region": "California",
+    "country": "United States"
+  },
+  "trust": "auto",
+  "author": "stefan",
+  "sources": [
+    {
+      "name": "Google Maps — Bar Lubitsch listing and reviews",
+      "url": "https://www.google.com/maps/place/Bar+Lubitsch/@34.0906465,-118.3568709,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2bed00bdabec1:0xcda056035fc28bff!8m2!3d34.0906465!4d-118.3568709!16s%2Fg%2F1tffdg91",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Time Out Los Angeles — Bar Lubitsch turns 10",
+      "url": "https://www.timeout.com/los-angeles/bars/bar-lubitsch-turns-10",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "The Infatuation — Bar Lubitsch review",
+      "url": "https://www.theinfatuation.com/los-angeles/reviews/bar-lubitsch",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    },
+    {
+      "name": "Netflix Is a Joke Fest — Bar Lubitsch venue page (Totally! showcase)",
+      "url": "https://www.netflixisajokefest.com/venues/bar-lubitsch",
+      "feedId": null,
+      "originalPublishedAt": "2026-11-04T00:00:00Z"
+    }
+  ],
+  "heroImage": {
+    "strategy": "source",
+    "url": "https://near.tips/places/bar-lubitsch-weho/hero.webp",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Real, venue-specific photo supplied directly by the operator via the photo inbox — highest tier on the hero-image preference order by sourcing, but only 414x310px, below the Discover hero card floor (>=1200px wide, >300,000px). Used anyway as a documented compromise rather than holding the piece or substituting a generic/illustrated fallback — flagged here and to image-police/google-discover-audit for a follow-up swap if a higher-resolution real photo surfaces."
+  },
+  "status": "active",
+  "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-04T19:00:00Z",
+      "note": "Operator-commissioned (West Hollywood/LA hip-spots war room, 2026-11-04), second pin in the cluster after Trunks. Verified open via live Google Maps listing (4.3/572 reviews, closed-until-7pm at time of check, consistent with its normal evening-only hours) and claude-in-chrome for exact coordinates. Research floor: Time Out, The Infatuation, Netflix Is a Joke Fest (comedy booking page), Viberate, filmwesthollywood.com location guide, naicslist.com business registry — six preferred-source-type consults, exceeding the five-source floor. Reddit leg: site:reddit.com search returned no usable threads on this venue specifically — logged as a floor gap, not fabricated. Google reviews leg: read live via claude-in-chrome; recent reviews quoted/paraphrased honestly (acoustics praised twice independently, a comedy-night visit with photobooth, an indie-music-showcase night) with no notable recent negative pattern found. Totally!, the venue's long-running Wednesday indie standup showcase, is real and current per multiple ticketing sources (Netflix Is a Joke Fest, Feverup) but no single confirmed upcoming date could be verified this session beyond 'Wednesdays, ongoing through 2026' — too vague to set as eventStartsAt per the no-invented-dates rule, so it's described in-body as recurring weekly programming rather than nested as a dated event. Named origin story (Sean McPherson with manager Jared Meisler; named for filmmaker Ernst Lubitsch; sits in WeHo's Russian-speaking Santa Monica Blvd stretch) is real texture from Time Out/BizBash, not invented. Hero image is a real operator-sourced photo but under the Discover pixel spec (414x310) — used anyway per licenseNote, flagged for a resolution upgrade rather than holding the piece. Full six-locale coverage done inline, single coordinator, no subagents, per the operator's standing token-efficiency directive. Headline leads with a concrete USP (comedy/cabaret stage + vodka bar, not a generic WeHo bar) and avoids the 'The X that Y' construction per operator instruction."
+    }
+  ],
+  "geocode": {
+    "provider": "google-maps",
+    "confidence": 1,
+    "query": "Bar Lubitsch, 7702 Santa Monica Blvd, West Hollywood, CA 90046 — Google Maps listing pin, resolved live via browser",
+    "verifiedAt": "2026-11-04T19:00:00Z",
+    "googleMapsUrl": "https://www.google.com/maps/place/Bar+Lubitsch/@34.0906465,-118.3568709,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2bed00bdabec1:0xcda056035fc28bff!8m2!3d34.0906465!4d-118.3568709!16s%2Fg%2F1tffdg91"
+  },
+  "publishedAt": "2026-11-04T19:00:00Z",
+  "updatedAt": "2026-11-04T19:00:00Z"
+}
