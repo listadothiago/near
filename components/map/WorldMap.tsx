@@ -188,7 +188,25 @@ function MapView({
     if (locationKey !== lastAppliedLocationKey.current) {
       lastAppliedLocationKey.current = locationKey;
       if (locationKey !== null) {
-        if (points.length === 0) {
+        // `points` is every place on the board now, not just this
+        // location's own — a location search recenters Nearest rather
+        // than filtering it out (operator directive, 2026-11-05). So
+        // this frames the location's center together with its nearest
+        // pins, the same way "use my location" does, instead of fitting
+        // every point's bounds (which would zoom out to the whole map).
+        if (userCoords) {
+          const nearest = nearestPointsTo(userCoords, points);
+          if (nearest.length === 0) {
+            map.setView([userCoords.lat, userCoords.lng], NEIGHBORHOOD_ZOOM, VIEW_OPTS);
+          } else {
+            const bounds = L.latLngBounds([
+              [userCoords.lat, userCoords.lng],
+              ...nearest.map((p) => [p.lat, p.lng] as [number, number]),
+            ]);
+            map.fitBounds(bounds, { padding: [40, 40], maxZoom: NEIGHBORHOOD_ZOOM, ...VIEW_OPTS });
+          }
+          lastAppliedFocusSignal.current = focusUserSignal;
+        } else if (points.length === 0) {
           map.setView([20, 0], 2, VIEW_OPTS);
         } else if (points.length === 1) {
           map.setView([points[0].lat, points[0].lng], 12, VIEW_OPTS);

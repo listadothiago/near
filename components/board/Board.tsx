@@ -155,13 +155,35 @@ export default function Board({
 
   // Location SRP: if the query names a place Near actually covers — a
   // neighbourhood, city, region or country, in any of the site's
-  // languages — the board scopes to it and says so in a heading, instead
-  // of leaving the reader to guess whether the substring match worked.
+  // languages — the board recenters on it, the same way "use my
+  // location" recenters on a GPS fix, rather than hard-excluding every
+  // place outside it. Operator directive, 2026-11-05: typing "Los
+  // Angeles" should feel like changing your location to LA, not like a
+  // filter that hides everywhere else — a reader open to "somewhere
+  // nearest LA" still wants to see the next-closest pin, not nothing.
   const locationIndex = useMemo(() => buildLocationIndex(places), [places]);
   const location = useMemo(
     () => (query.trim() ? matchLocation(locationIndex, query) : null),
     [locationIndex, query],
   );
+
+  // The centroid of the matched location's own places — the synthetic
+  // "my location" a location query implies. Plain average, not a
+  // population-weighted center: good enough to sort the rest of the
+  // board by distance from it, which is all this is for.
+  const locationCenter = useMemo(() => {
+    if (!location) return null;
+    const matched = places.filter((p) => location.slugs.has(p.meta.slug));
+    if (!matched.length) return null;
+    const sum = matched.reduce(
+      (acc, p) => ({
+        lat: acc.lat + p.meta.coordinates.lat,
+        lng: acc.lng + p.meta.coordinates.lng,
+      }),
+      { lat: 0, lng: 0 },
+    );
+    return { lat: sum.lat / matched.length, lng: sum.lng / matched.length };
+  }, [places, location]);
 
   const filtered = useMemo(() => {
     // Words spent on the location shouldn't also have to appear in every
@@ -171,8 +193,10 @@ export default function Board({
       ? stripLocationWords(parsed.freeTextWords, location)
       : parsed.freeTextWords;
 
+    // No slug filter here any more — a matched location recenters the
+    // Nearest sort (via locationCenter, below) instead of hard-excluding
+    // every place outside it.
     return places
-      .filter((p) => !location || location.slugs.has(p.meta.slug))
       .filter(
         (p) =>
           activeCats.size === 0 ||
@@ -221,6 +245,20 @@ export default function Board({
       document.title = original;
     };
   }, [location]);
+
+  // A matched location recenters Nearest the same way locateMe does —
+  // promote to the Nearest tab now that there's something real to sort
+  // by, but only if the reader hasn't already picked a tab themselves.
+  useEffect(() => {
+    if (!locationCenter) return;
+    setTab((current) => (tabPinned ? current : "nearest"));
+  }, [locationCenter, tabPinned]);
+
+  // What actually drives the Nearest sort and the map's "you are here"
+  // marker: a matched location's centroid takes priority over a real GPS
+  // fix, since typing a location is a more deliberate signal than
+  // whatever the browser happened to resolve earlier in the session.
+  const effectiveCoords = locationCenter ?? userCoords;
 
   // Named locateMe, not useMyLocation: the `use` prefix made
   // react-hooks/rules-of-hooks treat a plain callback as a hook and error
@@ -272,7 +310,9 @@ export default function Board({
               {location?.label ?? t("filters")}
             </h2>
             <p className="m-0 mt-1 font-mono text-[0.68rem] uppercase tracking-wide">
-              {t("locationScope", { count: filtered.length })}
+              {location
+                ? t("locationCenter", { count: filtered.length })
+                : t("locationScope", { count: filtered.length })}
             </p>
           </div>
           <div className="shrink-0">
@@ -289,7 +329,7 @@ export default function Board({
             setTabPinned(true);
             setTab(next);
           }}
-          userCoords={userCoords}
+          userCoords={effectiveCoords}
           eventsByParent={liveEventsByParent}
           onlyFavorites={onlyFavorites}
           onOnlyFavoritesChange={setOnlyFavorites}
@@ -368,7 +408,7 @@ export default function Board({
                   tagline: p.frontmatter.tagline,
                   heroImageUrl: p.meta.heroImage?.url ?? null,
                 }))}
-                userCoords={userCoords}
+                userCoords={effectiveCoords}
                 focusUserSignal={focusUserSignal}
                 locationKey={location ? `${location.level}:${location.label}` : null}
               />

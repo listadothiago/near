@@ -166,6 +166,7 @@
     "favoriteToastSaved": "Guardado solo en este dispositivo.",
     "favoriteToastSignIn": "Iniciá sesión para tenerlo en todos tus dispositivos",
     "locationScope": "{count, plural, =1 {1 lugar acá} other {# lugares acá}} — borrá la búsqueda para salir",
+    "locationCenter": "{count, plural, =1 {1 lugar, ordenado desde aquí} other {# lugares, ordenados desde aquí}} — borrá la búsqueda para salir",
     "loadMore": "Cargar más",
     "share": "Compartir",
     "shareCopied": "Enlace copiado"
