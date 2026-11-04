@@ -167,6 +167,7 @@
     "favoriteToastSignIn": "Sign in to keep it on every device",
     "locationScope": "{count, plural, =1 {1 place here} other {# places here}} — clear the search to leave",
     "locationCenter": "{count, plural, =1 {1 place, sorted nearest to here first} other {# places, sorted nearest to here first}} — clear the search to leave",
+    "geocoding": "Looking up that place…",
     "loadMore": "Load more",
     "share": "Share",
     "shareCopied": "Link copied"

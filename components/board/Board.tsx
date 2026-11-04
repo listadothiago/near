@@ -185,13 +185,70 @@ export default function Board({
     return { lat: sum.lat / matched.length, lng: sum.lng / matched.length };
   }, [places, location]);
 
+  // A location Near has zero coverage of (no pins to build a centroid
+  // from) still shouldn't come up empty — operator directive, 2026-11-05.
+  // Falls back to geocoding the raw query via OpenStreetMap's Nominatim
+  // (app/api/geocode/route.ts) whenever the internal location index
+  // can't resolve it. Only runs when there's no internal match at all,
+  // so a place Near does cover never pays for a network round trip.
+  const [geocoded, setGeocoded] = useState<
+    { label: string; lat: number; lng: number } | null
+  >(null);
+  const [geocoding, setGeocoding] = useState(false);
+  useEffect(() => {
+    if (location || query.trim().length < 2) {
+      setGeocoded(null);
+      setGeocoding(false);
+      return;
+    }
+    let cancelled = false;
+    setGeocoding(true);
+    const id = setTimeout(async () => {
+      try {
+        const res = await fetch(
+          `/api/geocode?q=${encodeURIComponent(query.trim())}`,
+        );
+        const data = await res.json();
+        if (cancelled) return;
+        setGeocoded(
+          data.found
+            ? { label: data.label, lat: data.lat, lng: data.lng }
+            : null,
+        );
+      } catch {
+        if (!cancelled) setGeocoded(null);
+      } finally {
+        if (!cancelled) setGeocoding(false);
+      }
+      // Debounced well past typing speed — this hits a real network
+      // service with a shared rate limit, not an in-memory filter.
+    }, 500);
+    return () => {
+      cancelled = true;
+      clearTimeout(id);
+    };
+  }, [location, query]);
+
+  // What the rest of the component treats as "the matched location" —
+  // Near's own index first, a geocoded fallback second.
+  const effectiveLocationCenter = locationCenter ?? geocoded;
+  const effectiveLocationLabel = location?.label ?? geocoded?.label ?? null;
+
   const filtered = useMemo(() => {
     // Words spent on the location shouldn't also have to appear in every
     // result's text — "bares em londres" scopes to London and then
-    // applies "bares" as a category term, not as a substring.
+    // applies "bares" as a category term, not as a substring. A geocoded
+    // (Near-uncovered) location gets the same treatment against its own
+    // label, so "restaurants in Modesto" still filters on "restaurants"
+    // instead of trying to text-match "modesto" against places that were
+    // never going to mention it.
     const textWords = location
       ? stripLocationWords(parsed.freeTextWords, location)
-      : parsed.freeTextWords;
+      : geocoded
+        ? parsed.freeTextWords.filter(
+            (w) => !normalizeText(geocoded.label).split(/\s+/).includes(w),
+          )
+        : parsed.freeTextWords;
 
     // No slug filter here any more — a matched location recenters the
     // Nearest sort (via locationCenter, below) instead of hard-excluding
@@ -231,34 +288,35 @@ export default function Board({
         );
         return textWords.every((word) => haystack.includes(word));
       });
-  }, [places, activeCats, activeTags, parsed, location]);
+  }, [places, activeCats, activeTags, parsed, location, geocoded]);
   const hasSearchScope = Boolean(
     query.trim() || activeCats.size > 0 || activeTags.size > 0,
   );
 
   // The browser tab should say where you are too — restored on clear.
   useEffect(() => {
-    if (!location) return;
+    if (!effectiveLocationLabel) return;
     const original = document.title;
-    document.title = `${location.label} · NEAR`;
+    document.title = `${effectiveLocationLabel} · NEAR`;
     return () => {
       document.title = original;
     };
-  }, [location]);
+  }, [effectiveLocationLabel]);
 
   // A matched location recenters Nearest the same way locateMe does —
   // promote to the Nearest tab now that there's something real to sort
   // by, but only if the reader hasn't already picked a tab themselves.
   useEffect(() => {
-    if (!locationCenter) return;
+    if (!effectiveLocationCenter) return;
     setTab((current) => (tabPinned ? current : "nearest"));
-  }, [locationCenter, tabPinned]);
+  }, [effectiveLocationCenter, tabPinned]);
 
   // What actually drives the Nearest sort and the map's "you are here"
-  // marker: a matched location's centroid takes priority over a real GPS
-  // fix, since typing a location is a more deliberate signal than
-  // whatever the browser happened to resolve earlier in the session.
-  const effectiveCoords = locationCenter ?? userCoords;
+  // marker: a matched location's centroid (Near's own index, or a
+  // geocoded fallback) takes priority over a real GPS fix, since typing
+  // a location is a more deliberate signal than whatever the browser
+  // happened to resolve earlier in the session.
+  const effectiveCoords = effectiveLocationCenter ?? userCoords;
 
   // Named locateMe, not useMyLocation: the `use` prefix made
   // react-hooks/rules-of-hooks treat a plain callback as a hook and error
@@ -307,12 +365,14 @@ export default function Board({
         <div className="mt-5 flex items-center justify-between gap-3 rounded-[var(--radius-panel)] border-[3px] border-ink bg-accent px-3 py-2 text-black shadow-[var(--shadow-sm)]">
           <div className="min-w-0">
             <h2 className="m-0 truncate font-display font-bold uppercase tracking-[-1px] text-[1.4rem] leading-none">
-              {location?.label ?? t("filters")}
+              {effectiveLocationLabel ?? t("filters")}
             </h2>
             <p className="m-0 mt-1 font-mono text-[0.68rem] uppercase tracking-wide">
-              {location
+              {effectiveLocationLabel
                 ? t("locationCenter", { count: filtered.length })
-                : t("locationScope", { count: filtered.length })}
+                : geocoding
+                  ? t("geocoding")
+                  : t("locationScope", { count: filtered.length })}
             </p>
           </div>
           <div className="shrink-0">
@@ -410,7 +470,13 @@ export default function Board({
                 }))}
                 userCoords={effectiveCoords}
                 focusUserSignal={focusUserSignal}
-                locationKey={location ? `${location.level}:${location.label}` : null}
+                locationKey={
+                  location
+                    ? `${location.level}:${location.label}`
+                    : geocoded
+                      ? `geocoded:${geocoded.label}`
+                      : null
+                }
               />
               <p className="m-0 px-2.5 py-2 border-t-[3px] border-ink text-[0.66rem] text-muted font-mono">
                 {t("mapCaption", { count: filtered.length })}

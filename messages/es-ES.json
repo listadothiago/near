@@ -167,6 +167,7 @@
     "favoriteToastSignIn": "Inicia sesión para tenerlo en todos tus dispositivos",
     "locationScope": "{count, plural, =1 {1 sitio aquí} other {# sitios aquí}} — borra la búsqueda para salir",
     "locationCenter": "{count, plural, =1 {1 sitio, ordenado desde aquí} other {# sitios, ordenados desde aquí}} — borra la búsqueda para salir",
+    "geocoding": "Buscando ese sitio…",
     "loadMore": "Cargar más",
     "share": "Compartir",
     "shareCopied": "Enlace copiado"
