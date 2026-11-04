@@ -45,10 +45,10 @@
   ],
   "heroImage": {
     "strategy": "source",
-    "url": "https://lh3.googleusercontent.com/grass-cs/ACvplmNh6tvVE2YoZwSXemogEfYwPgZOw1VuQ3-b2s77dFkHiSSWUX1M0X26DYLsaPGhgRWysnCXhsfmCd7KstX-zbKPMeI5zci4ZxzYUVEaCIK-wgygcEjJSVizoJK5-3-uYORD4SrQ=w1600-h900-c",
-    "attribution": "Google Maps venue-submitted photo — dining room, Restaurante Jóia de Minas",
-    "attributionLink": "https://www.google.com/maps/place/Restaurante+J%C3%B3ia+de+Minas/@-23.6399273,-46.6438144,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5aef01211e87:0x36824e993ff71841!8m2!3d-23.6399273!4d-46.6438144!16s%2Fg%2F1ptzq7x28",
-    "licenseNote": "Real photo of the restaurant's own dining room (wood paneling, ceiling fans, set tables), pulled from the venue's official Google Maps photo set rather than a customer check-in. Native resolution 4000x3000 (4:3); served via Google's own image-serving crop parameter (w1600-h900-c) to a true 1600x900 16:9, no local editing or content alteration — same crop mechanism as a standard responsive-image request, not a manual edit. No identifiable people in frame. Accepted under NEAR's operator-authorized tier-1 attribution/deep-link/removal policy. Two other Google-Maps-surfaced photos under this listing's grass-cs photo set were checked and rejected as mismatched to a different nearby venue (a house exterior, and a competitor's weekly menu board) — Google's proximity-based photo grouping is not reliable venue attribution on its own; each candidate was opened and visually confirmed before use."
+    "url": "https://near.tips/places/joia-de-minas-jabaquara-sao-paulo/hero.jpg",
+    "attribution": "Photo courtesy of the operator",
+    "attributionLink": "https://near.tips/about",
+    "licenseNote": "Replaces a prior hero that pointed directly at a signed lh3.googleusercontent.com Google Maps photo URL — those links expire and the image broke in production. Now a real, venue-specific photo supplied directly by the operator via the photo inbox, hosted locally under public/. 500x375px, below the Discover hero card floor (>=1200px wide, >300,000px) — used anyway since a real, locally-hosted photo at any resolution beats a dead remote link; flagged for a resolution upgrade if a better photo surfaces."
   },
   "status": "active",
   "statusHistory": [
@@ -56,6 +56,11 @@
       "status": "active",
       "at": "2026-09-25T15:04:52Z",
       "note": "Operator asked in chat (2026-09-25) for a genuinely good walking-distance food option near Jabaquara metro station — explicit operator commission, trust: auto. Checked several candidates by actual walking distance first: É do Pará (Saúde) is 3.2km/8min drive, not walking distance; Jaco (Michelin-listed) is in Pinheiros, unrelated; Osnir Hamburger is near Praça da Árvore station, not Jabaquara. Jóia de Minas confirmed at 800m/11-minute walk via Google Maps directions from the actual Jabaquara-Comitê Paralímpico station point. Sourced from Google Maps (verified pin, 4.5/3,273 reviews read for both praise and a genuine complaint — a thin vaca atolada portion — surfaced honestly rather than only the positive average), cardapio.menu for pricing, and directory listings for description/signature-dish confirmation. Restaurant's own official site (restaurantejoiademinas.com.br) is currently DNS-dead — noted in-body rather than cited. Instagram handle @joiademinas belongs to an unrelated frozen-pão-de-queijo wholesaler in Arcos, MG, not this restaurant; the Instagram location-tag page for this venue exists but only surfaces customer check-in photos with identifiable faces, so it was not used for imagery. No r/SaoPaulo or other Reddit coverage found for this small neighborhood spot — genuinely thin UGC catalogue for the area, logged rather than forced. No genuine dated event; this is an evergreen neighborhood restaurant, not an events venue. Internal-link gap logged to content/requests.md — no other published Near place is close enough or thematically matched (Minas Gerais home cooking) to earn a real in-text link. Dedupe clean — no existing São Paulo pin within kilometers. All six locales, mechanical gates pass."
+    },
+    {
+      "status": "active",
+      "at": "2026-11-05T01:00:00Z",
+      "note": "Image fix (operator report, 2026-11-05): the hero was a raw lh3.googleusercontent.com signed URL, not a locally-hosted file -- those URLs expire, and it had broken on the live page. Replaced with a real, venue-specific photo the operator supplied via the photo inbox (joia_044.jpg), hosted locally under public/places/joia-de-minas-jabaquara-sao-paulo/hero.jpg. Standing lesson: no hero image should ever point directly at a Google-hosted signed URL -- always download/host locally even when the source photo comes from Google Maps."
     }
   ],
   "geocode": {
@@ -66,5 +71,5 @@
     "googleMapsUrl": "https://www.google.com/maps/place/Restaurante+J%C3%B3ia+de+Minas/@-23.6399273,-46.6438144,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5aef01211e87:0x36824e993ff71841!8m2!3d-23.6399273!4d-46.6438144!16s%2Fg%2F1ptzq7x28"
   },
   "publishedAt": "2026-09-25T15:04:52Z",
-  "updatedAt": "2026-09-25T15:04:52Z"
+  "updatedAt": "2026-11-05T01:00:00Z"
 }
