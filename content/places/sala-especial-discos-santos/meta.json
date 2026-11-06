@@ -47,9 +47,14 @@
     "licenseNote": "Real photo of the venue's own permanent fixtures — the arched, backlit vinyl-record display shelving and the in-house DJ booth (Pioneer mixers, a Technics-branded deck seen elsewhere in the feed) — taken from the venue's own promotional post for its recurring VORTEX rock night. Cropped from a taller flyer graphic to the top portion showing only the architecture and the booked guest DJ performing (a public role at a publicized public event, not a private individual), excluding three other posed guests lower in the original frame to avoid presenting posed marketing subjects as candid patrons. Captured via a high-resolution in-browser zoom of the rendered Instagram post (980x1219, cropped to 980x325) since Instagram blocks raw CDN URL extraction through this pipeline's tooling. No AI generation. This venue has no RestaurantGuru/aggregator listing, so the official Instagram was the best available source. Falls under the Discover hero card's 1200px-wide/~16:9 floor at 980x325 — a documented judgment call prioritizing a genuine, on-brand real photo over the exact spec, consistent with this session's precedent for Instagram-only-sourced venues (Grano Ricco, Dubelato)."
   },
   "eventStartsAt": "2026-10-03T22:00:00-03:00",
-  "eventEndsAt": null,
+  "eventEndsAt": "2026-10-04T04:00:00-03:00",
   "status": "active",
   "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-06T00:00:00Z",
+      "note": "Cleanup: VORTEX's one-off Oct 3 date had passed with eventEndsAt left null. It was never surfaced as a board badge anyway (no parentPlace, so getUpcomingEventsByParent never picks it up), but set a real end time (6-hour night, matching this cluster's other nightlife listings) for hygiene and to resolve the loader's dev-mode ambiguity warning for a past eventEndsAt with no parentPlace."
+    },
     {
       "status": "active",
       "at": "2026-09-21T18:00:00Z",

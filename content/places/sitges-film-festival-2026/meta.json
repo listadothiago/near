@@ -58,10 +58,15 @@
     "attributionLink": "https://commons.wikimedia.org/wiki/File:Guillermo_del_Toro,_Festival_de_Sitges_2017.jpg",
     "licenseNote": "CC BY-SA 4.0 — attribution required, share-alike. HONEST DISCLOSURE: Guillermo del Toro at the 2017 Sitges festival. It is the festival, at Sitges, but it is 2017 and del Toro is NOT announced for the 2026 edition — the caption and body make no such implication, and the body names only what the 2026 announcement actually names. 6016x4016, comfortably clears the Discover card floor; 3:2 rather than 16:9."
   },
-  "eventStartsAt": "2026-10-08T00:00:00Z",
-  "eventEndsAt": "2026-10-18T23:59:59Z",
+  "eventStartsAt": null,
+  "eventEndsAt": null,
   "status": "active",
   "statusHistory": [
+    {
+      "status": "active",
+      "at": "2026-11-06T00:00:00Z",
+      "note": "Cleanup: the 59th edition (8-18 Oct 2026) ended and the page has no parentPlace, so the board's parentPlace-only expiry check never dropped it — it would have kept reading as an upcoming festival indefinitely. Cleared eventStartsAt/eventEndsAt back to null rather than invent an unverified 2027 date; this is now an evergreen piece about the festival until next year's dates are confirmed and re-added. The general gap (standalone event pages with no parentPlace never auto-expire) is a known, logged BACKLOG.md item (front-end dynamic filtering), not fixed here — this is a data-only patch for this one page."
+    },
     {
       "status": "active",
       "at": "2026-09-03T00:00:00Z",
